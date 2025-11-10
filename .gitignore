@@ -1,0 +1,41 @@
+# Environment variables with secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# Logs
+*.log
+conversion_errors.csv
+
+# OS
+.DS_Store
+
+# Converted documents (too large for git)
+converted_documents/
+
+# Supabase CSV exports (too large for git)
+supabase-csv/
+
+# Keep .claude folder structure but ignore some contents
+.claude/debug/
+.claude/file-history/
+.claude/history.jsonl
+.claude/shell-snapshots/
+.claude/todos/
+.claude/statsig/
+
+# Node modules in subfolders
+node_modules/
+
+# Git worktrees
+.worktrees/
