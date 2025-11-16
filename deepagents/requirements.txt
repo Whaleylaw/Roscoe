@@ -5,20 +5,23 @@
 # Install via: pip install -e ./libs/deepagents
 
 # LangChain Integrations
+# NOTE: langchain 1.0.7 requires langgraph>=1.0.2,<1.1.0 and langchain-core>=1.0.4,<2.0.0
 langchain>=1.0.2,<2.0.0
-langchain-core>=1.0.0,<2.0.0
+langchain-core>=1.0.4,<2.0.0
 langchain-anthropic>=1.0.0,<2.0.0
 langchain-openai>=0.3.0,<1.0.0
 
 # Google Workspace Integrations (Gmail, Calendar)
-langchain-google-community>=2.0.0
+# Updated to 3.x for compatibility with langchain 1.0.x
+langchain-google-community>=3.0.0,<4.0.0
 
 # MCP Integration for Supabase and Tavily
 langchain-mcp-adapters>=0.1.0
 
 # LangGraph for Agent Runtime
-langgraph>=0.3.0,<1.0.0
-langgraph-checkpoint-postgres>=2.0.0
+# Updated to 1.x to match langchain 1.0.7 requirement (langgraph>=1.0.2,<1.1.0)
+langgraph>=1.0.2,<1.1.0
+langgraph-checkpoint-postgres>=2.0.0,<4.0.0
 
 # RunLoop Sandboxed Execution
 runloop-api-client>=0.66.1
