@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "langchain-docs": {
+      "transport": {
+        "type": "http",
+        "url": "http://localhost:8082/mcp"
+      }
+    },
+    "tavily-mcp": {
+      "command": "npx",
+      "args": ["-y", "tavily-mcp@latest"],
+      "env": {
+        "TAVILY_API_KEY": "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"
+      }
+    }
+  }
+}

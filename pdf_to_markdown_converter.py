@@ -25,12 +25,27 @@ import sys
 import argparse
 import logging
 import csv
+import traceback
+import psutil
+import multiprocessing
 from pathlib import Path
 from datetime import datetime
 from typing import Optional, List, Dict
 import requests
+from dotenv import load_dotenv
 from supabase import create_client, Client
-from docling.document_converter import DocumentConverter
+from docling.document_converter import DocumentConverter, PdfFormatOption
+from docling.datamodel.pipeline_options import PipelineOptions
+from docling.datamodel.accelerator_options import AcceleratorOptions
+from docling.datamodel.base_models import InputFormat
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Fix for macOS segmentation faults with multiprocessing
+# Must set before any multiprocessing code runs
+if sys.platform == 'darwin':  # macOS
+    multiprocessing.set_start_method('spawn', force=True)
 
 # Configure logging
 logging.basicConfig(
@@ -66,7 +81,11 @@ class PDFToMarkdownConverter:
         self.supabase: Client = create_client(supabase_url, supabase_key)
         self.output_base_dir = Path(output_base_dir)
         self.max_file_size_bytes = int(max_file_size_mb * 1024 * 1024)
+
+        # Initialize DocumentConverter with default settings
+        # macOS fork() issue is handled by setting multiprocessing start method to 'spawn'
         self.converter = DocumentConverter()
+
         self.error_log_path = Path("conversion_errors.csv")
 
         # Create output directory if it doesn't exist
@@ -133,10 +152,11 @@ class PDFToMarkdownConverter:
 
         while True:
             # Build query with pagination
+            # Only fetch files that haven't been converted yet (markdown_path is null)
             query = self.supabase.table('doc_files').select(
                 'uuid, project_name, filename, storage_path, file_url, '
-                'content_type, size_bytes, storage_bucket'
-            ).eq('content_type', 'application/pdf').not_.is_('file_url', 'null')
+                'content_type, size_bytes, storage_bucket, markdown_path'
+            ).eq('content_type', 'application/pdf').not_.is_('file_url', 'null').is_('markdown_path', 'null')
 
             # Apply pagination
             query = query.range(offset, offset + page_size - 1)
@@ -220,6 +240,7 @@ class PDFToMarkdownConverter:
 
         except Exception as e:
             logger.error(f"Failed to convert {pdf_path}: {str(e)}")
+            logger.error(f"Conversion error traceback:\n{traceback.format_exc()}")
             return None
 
     def save_markdown(self, content: str, output_path: Path) -> bool:
@@ -288,8 +309,8 @@ class PDFToMarkdownConverter:
         size_bytes = file_record.get('size_bytes', 0)
         uuid = file_record['uuid']
 
-        # Check file size
-        if size_bytes > self.max_file_size_bytes:
+        # Check file size (handle None values from database)
+        if size_bytes is not None and size_bytes > self.max_file_size_bytes:
             size_mb = size_bytes / (1024 * 1024)
             logger.warning(
                 f"Skipping {filename} - size {size_mb:.2f} MB exceeds limit "
@@ -313,7 +334,9 @@ class PDFToMarkdownConverter:
         markdown_output_path = self.output_base_dir / relative_dir / f"{base_filename}.md"
         relative_markdown_path = str(relative_dir / f"{base_filename}.md")
 
-        logger.info(f"Processing: {filename} ({size_bytes / 1024:.2f} KB)")
+        # Display file size safely
+        size_display = f"({size_bytes / 1024:.2f} KB)" if size_bytes is not None else "(unknown size)"
+        logger.info(f"Processing: {filename} {size_display}")
 
         if dry_run:
             logger.info(f"  [DRY RUN] Would download from: {file_url}")
@@ -356,7 +379,8 @@ class PDFToMarkdownConverter:
         except Exception as e:
             error_msg = f"Error processing {filename}: {str(e)}"
             logger.error(error_msg)
-            self._log_error(file_record, 'processing_error', str(e))
+            logger.error(f"Full traceback:\n{traceback.format_exc()}")
+            self._log_error(file_record, 'processing_error', f"{str(e)} | {traceback.format_exc()[:500]}")
             # Clean up downloaded PDF if conversion failed
             if pdf_download_path.exists():
                 try:
@@ -388,16 +412,41 @@ class PDFToMarkdownConverter:
         logger.info("=" * 80)
 
         for i, file_record in enumerate(files, 1):
-            logger.info(f"\n[{i}/{total}] Processing {file_record['filename']}")
+            try:
+                # Log memory usage every 10 files
+                if i % 10 == 0:
+                    process = psutil.Process()
+                    memory_mb = process.memory_info().rss / 1024 / 1024
+                    logger.info(f"Memory usage: {memory_mb:.2f} MB")
 
-            result = self.process_file(file_record, dry_run)
+                logger.info(f"\n[{i}/{total}] Processing {file_record['filename']}")
 
-            if result:
-                successful += 1
-            elif file_record.get('size_bytes', 0) > self.max_file_size_bytes:
-                skipped += 1
-            else:
+                result = self.process_file(file_record, dry_run)
+
+                if result:
+                    successful += 1
+                else:
+                    # Check if it was skipped due to size
+                    file_size = file_record.get('size_bytes')
+                    if file_size is not None and file_size > self.max_file_size_bytes:
+                        skipped += 1
+                    else:
+                        failed += 1
+            except Exception as e:
+                logger.error(f"CRITICAL ERROR processing file {i}/{total}: {file_record.get('filename', 'UNKNOWN')}")
+                logger.error(f"Error: {str(e)}")
+                logger.error(f"Full traceback:\n{traceback.format_exc()}")
+                # Log memory at time of error
+                try:
+                    process = psutil.Process()
+                    memory_mb = process.memory_info().rss / 1024 / 1024
+                    logger.error(f"Memory at error: {memory_mb:.2f} MB")
+                except:
+                    pass
+                self._log_error(file_record, 'critical_error', f"Critical loop error: {str(e)} | {traceback.format_exc()[:500]}")
                 failed += 1
+                # Continue processing next file instead of crashing
+                continue
 
         # Summary
         logger.info("\n" + "=" * 80)
@@ -463,7 +512,17 @@ def main():
         logger.info("\n\nConversion interrupted by user")
         sys.exit(0)
     except Exception as e:
-        logger.error(f"Fatal error: {str(e)}", exc_info=True)
+        logger.error(f"FATAL ERROR: {str(e)}", exc_info=True)
+        # Write detailed crash report
+        crash_report_path = Path("conversion_crash_report.log")
+        with open(crash_report_path, 'a', encoding='utf-8') as f:
+            f.write(f"\n{'='*80}\n")
+            f.write(f"CRASH REPORT - {datetime.now().isoformat()}\n")
+            f.write(f"{'='*80}\n")
+            f.write(f"Error: {str(e)}\n\n")
+            f.write(f"Full Traceback:\n{traceback.format_exc()}\n")
+            f.write(f"{'='*80}\n\n")
+        logger.error(f"Crash report written to {crash_report_path}")
         sys.exit(1)
 
 

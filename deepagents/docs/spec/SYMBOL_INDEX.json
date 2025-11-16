@@ -1,0 +1,170 @@
+{
+  "load_dotenv": {
+    "file": "src/config/settings.py",
+    "planned_line_start": 1,
+    "planned_line_end": 1,
+    "purpose": "Load environment variables from .env file into OS environment"
+  },
+  "DB_URI": {
+    "file": "src/config/settings.py",
+    "planned_line_start": 2,
+    "planned_line_end": 10,
+    "purpose": "PostgreSQL connection string constructed from Supabase credentials"
+  },
+  "get_setting": {
+    "file": "src/config/settings.py",
+    "planned_line_start": 11,
+    "planned_line_end": 16,
+    "purpose": "Safely retrieve environment variable with optional default value"
+  },
+  "validate_required_settings": {
+    "file": "src/config/settings.py",
+    "planned_line_start": 17,
+    "planned_line_end": 35,
+    "purpose": "Verify all critical environment variables present, raise error if missing"
+  },
+  "MCPCategory": {
+    "file": "src/app/utils/toolCategories.ts",
+    "planned_line_start": 1,
+    "planned_line_end": 8,
+    "purpose": "TypeScript union type defining valid MCP server categories"
+  },
+  "getMCPCategory": {
+    "file": "src/app/utils/toolCategories.ts",
+    "planned_line_start": 9,
+    "planned_line_end": 60,
+    "purpose": "Determine which MCP category a tool belongs to based on its name"
+  },
+  "CATEGORY_ICONS": {
+    "file": "src/app/utils/toolCategories.ts",
+    "planned_line_start": 61,
+    "planned_line_end": 70,
+    "purpose": "Map each MCP category to its emoji icon for visual display"
+  },
+  "CATEGORY_COLORS": {
+    "file": "src/app/utils/toolCategories.ts",
+    "planned_line_start": 71,
+    "planned_line_end": 90,
+    "purpose": "Map each MCP category to Tailwind CSS classes for badge styling"
+  },
+  "make_backend": {
+    "file": "src/agents/legal_agent.py",
+    "planned_line_start": 11,
+    "planned_line_end": 20,
+    "purpose": "Create CompositeBackend routing /memories/ to persistent storage"
+  },
+  "store": {
+    "file": "src/agents/legal_agent.py",
+    "planned_line_start": 21,
+    "planned_line_end": 25,
+    "purpose": "PostgresStore instance for long-term memory persistence in Supabase"
+  },
+  "checkpointer": {
+    "file": "src/agents/legal_agent.py",
+    "planned_line_start": 26,
+    "planned_line_end": 30,
+    "purpose": "PostgresSaver instance for agent state persistence after each step"
+  },
+  "python_repl": {
+    "file": "src/agents/legal_agent.py",
+    "planned_line_start": 31,
+    "planned_line_end": 35,
+    "purpose": "PythonREPLTool for code execution implementing Anthropic pattern"
+  },
+  "system_prompt": {
+    "file": "src/agents/legal_agent.py",
+    "planned_line_start": 36,
+    "planned_line_end": 120,
+    "purpose": "Comprehensive agent instructions including skills-first workflow"
+  },
+  "subagents": {
+    "file": "src/agents/legal_agent.py",
+    "planned_line_start": 121,
+    "planned_line_end": 180,
+    "purpose": "List of specialized subagent configurations for delegation"
+  },
+  "agent": {
+    "file": "src/agents/legal_agent.py",
+    "planned_line_start": 181,
+    "planned_line_end": 200,
+    "purpose": "DeepAgent instance with all tools, middleware, and configuration"
+  },
+  "graph": {
+    "file": "src/agents/legal_agent.py",
+    "planned_line_start": 201,
+    "planned_line_end": 210,
+    "purpose": "Compiled LangGraph ready for deployment and execution"
+  },
+  "logger": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 5,
+    "planned_line_end": 6,
+    "purpose": "Logger instance for recording MCP initialization events and errors"
+  },
+  "init_supabase_mcp": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 7,
+    "planned_line_end": 30,
+    "purpose": "Initialize Supabase MCP client and return database tools list"
+  },
+  "init_tavily_mcp": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 31,
+    "planned_line_end": 50,
+    "purpose": "Initialize Tavily MCP client and return web search tools list"
+  },
+  "init_gmail_mcp": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 51,
+    "planned_line_end": 70,
+    "purpose": "Initialize Gmail MCP client and return email tools list"
+  },
+  "init_calendar_mcp": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 71,
+    "planned_line_end": 90,
+    "purpose": "Initialize Google Calendar MCP client and return scheduling tools list"
+  },
+  "supabase_tools": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 92,
+    "planned_line_end": 92,
+    "purpose": "List of Supabase database tools for agent use"
+  },
+  "tavily_tools": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 93,
+    "planned_line_end": 93,
+    "purpose": "List of Tavily web search tools for agent use"
+  },
+  "gmail_tools": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 94,
+    "planned_line_end": 94,
+    "purpose": "List of Gmail email tools for agent use"
+  },
+  "calendar_tools": {
+    "file": "src/mcp/clients.py",
+    "planned_line_start": 95,
+    "planned_line_end": 95,
+    "purpose": "List of Google Calendar scheduling tools for agent use"
+  },
+  "CodeExecutionBoxProps": {
+    "file": "src/app/components/CodeExecutionBox.tsx",
+    "planned_line_start": 13,
+    "planned_line_end": 22,
+    "purpose": "TypeScript props interface for CodeExecutionBox component"
+  },
+  "getStatusIcon": {
+    "file": "src/app/components/CodeExecutionBox.tsx",
+    "planned_line_start": 23,
+    "planned_line_end": 40,
+    "purpose": "Return appropriate icon component based on execution status"
+  },
+  "CodeExecutionBox": {
+    "file": "src/app/components/CodeExecutionBox.tsx",
+    "planned_line_start": 41,
+    "planned_line_end": 120,
+    "purpose": "React component rendering Python code execution with syntax highlighting"
+  }
+}

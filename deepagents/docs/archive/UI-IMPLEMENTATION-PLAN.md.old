@@ -1,0 +1,1029 @@
+# Deep Agents UI Implementation Plan
+
+## Overview
+
+This document outlines the implementation plan for integrating the Whaley Law Firm DeepAgent architecture (defined in `ARCHITECTURE.md`) with the existing Deep Agents UI (`deep-agents-ui-main/`).
+
+The UI already has strong foundations:
+- ✅ LangGraph SDK integration
+- ✅ Message streaming and display
+- ✅ Todo/task management UI
+- ✅ Filesystem UI (state-based files)
+- ✅ Tool call rendering
+- ✅ Debug mode with step-by-step execution
+- ✅ Thread management
+
+**What's needed**: Enhanced UI components to fully support the Anthropic Code Execution pattern, skills library, persistent memory, and MCP tool categorization.
+
+---
+
+## Current UI Architecture
+
+### Key Components
+
+1. **ClientProvider** (`src/providers/ClientProvider.tsx`)
+   - Creates `@langchain/langgraph-sdk` Client
+   - Connects to deployment URL with API key
+   - Context provider for client access
+
+2. **useChat Hook** (`src/app/hooks/useChat.ts`)
+   - Uses `useStream` from `@langchain/langgraph-sdk/react`
+   - State: `messages`, `todos`, `files`, `email`, `ui`
+   - Methods: `sendMessage`, `runSingleStep`, `continueStream`
+   - Already supports interrupts and debug mode
+
+3. **ChatInterface** (`src/app/components/ChatInterface.tsx`)
+   - Main chat UI component
+   - Displays messages, todos, files in collapsible sections
+   - Textarea input with submit button
+   - Stop/Continue controls
+
+4. **ToolCallBox** (`src/app/components/ToolCallBox.tsx`)
+   - Displays individual tool calls
+   - Status icons: completed, pending, interrupted, error
+   - Expandable to show arguments and results
+   - Supports custom UI components via `LoadExternalComponent`
+
+5. **TasksFilesSidebar** (`src/app/components/TasksFilesSidebar.tsx`)
+   - Shows todos grouped by status
+   - Shows filesystem files in grid layout
+   - Auto-expands when content is added
+
+6. **ConfigDialog** (`src/app/components/ConfigDialog.tsx`)
+   - Simple configuration: Deployment URL, Assistant ID, LangSmith API Key
+   - Saved to browser localStorage
+
+### State Structure
+
+From `useChat.ts`, the agent state includes:
+```typescript
+type StateType = {
+  messages: Message[];
+  todos: TodoItem[];
+  files: Record<string, string>;  // Filesystem (state-based)
+  email?: { id, subject, page_content };
+  ui?: any;  // Custom UI components
+};
+```
+
+---
+
+## Implementation Requirements
+
+### 1. Enhanced Code Execution Display
+
+**Purpose**: Properly display Python code execution from `python_repl` tool with syntax highlighting and clear visual distinction.
+
+**Current State**: ToolCallBox shows all tools generically with collapsible arguments/results.
+
+**What's Needed**:
+
+#### A. Detect `python_repl` Tool Calls
+Modify `ToolCallBox.tsx` to detect when `toolCall.name === "python_repl"`:
+
+```typescript
+const isPythonREPL = name === "python_repl" || name === "PythonREPLTool";
+```
+
+#### B. Add Syntax Highlighting Component
+Install and configure `react-syntax-highlighter` (already in dependencies):
+
+```typescript
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+```
+
+#### C. Create `CodeExecutionBox` Component
+New component: `src/app/components/CodeExecutionBox.tsx`
+
+**Features**:
+- Syntax highlighted Python code in arguments
+- Execution status indicator
+- Output/result display with stdout/stderr differentiation
+- Execution time (if available in metadata)
+- Token efficiency badge (if using skill)
+
+**Example UI**:
+```
+┌─ Code Execution ────────────────────────────────────┐
+│ ✓ Executed in 1.2s              [SKILL: 98% savings] │
+├──────────────────────────────────────────────────────┤
+│ Code:                                                 │
+│   # Python syntax highlighted                         │
+│   result = await supabase_query(...)                  │
+│   ...                                                 │
+├──────────────────────────────────────────────────────┤
+│ Output:                                               │
+│   Processed 100 documents                             │
+│   Success: 95, Failed: 5                              │
+└──────────────────────────────────────────────────────┘
+```
+
+**Implementation**:
+```typescript
+interface CodeExecutionBoxProps {
+  code: string;
+  result: string;
+  status: ToolCall['status'];
+  isSkillExecution?: boolean;
+  skillName?: string;
+  executionTime?: number;
+}
+
+export function CodeExecutionBox({ ... }) {
+  return (
+    <div className="code-execution-container">
+      <div className="header">
+        {statusIcon}
+        <span>Code Execution</span>
+        {isSkillExecution && (
+          <Badge>SKILL: {skillName} (98% token savings)</Badge>
+        )}
+      </div>
+
+      <div className="code-section">
+        <Label>Code:</Label>
+        <SyntaxHighlighter language="python" style={vscDarkPlus}>
+          {code}
+        </SyntaxHighlighter>
+      </div>
+
+      <div className="output-section">
+        <Label>Output:</Label>
+        <pre>{result}</pre>
+      </div>
+    </div>
+  );
+}
+```
+
+**Doc Reference**: [LangChain Tools - PythonREPLTool](https://python.langchain.com/docs/integrations/tools/python)
+
+---
+
+### 2. Skills Library UI
+
+**Purpose**: Display and manage the `/memories/skills/` directory where reusable Python patterns are stored.
+
+**Current State**: Files are shown generically via the `files` state. No distinction for skills.
+
+**What's Needed**:
+
+#### A. Extend State Structure
+The skills are stored in LangGraph Store (not ephemeral state). Need to add a new state field:
+
+```typescript
+type StateType = {
+  messages: Message[];
+  todos: TodoItem[];
+  files: Record<string, string>;
+  skills?: Record<string, SkillMetadata>;  // NEW
+  memory?: Record<string, any>;  // NEW (for persistent store)
+  email?: { ... };
+  ui?: any;
+};
+
+interface SkillMetadata {
+  name: string;
+  path: string;  // e.g., "/memories/skills/batch_document_processor.py"
+  description: string;  // From docstring
+  usage: string;  // From docstring
+  lastUsed?: Date;
+  timesUsed: number;
+  tokensSaved?: number;  // Estimated
+}
+```
+
+#### B. Create `SkillsPanel` Component
+New component: `src/app/components/SkillsPanel.tsx`
+
+**Features**:
+- List all skills with name, description, usage count
+- Search/filter skills
+- View skill source code
+- Token savings metrics
+- "Use this skill" button (populates chat input with usage example)
+
+**Example UI**:
+```
+┌─ Skills Library ─────────────────────────────────────┐
+│ 📚 5 skills available       [Token savings: 425K]    │
+├──────────────────────────────────────────────────────┤
+│ 🔥 batch_document_processor.py          [Used 12x]   │
+│    Process all unconverted PDFs for a case           │
+│    Avg savings: 28K tokens/use                       │
+│    [View] [Use]                                      │
+├──────────────────────────────────────────────────────┤
+│ 🔍 case_search.py                       [Used 8x]    │
+│    Search cases by client name, date, type           │
+│    Avg savings: 15K tokens/use                       │
+│    [View] [Use]                                      │
+└──────────────────────────────────────────────────────┘
+```
+
+**Implementation**:
+```typescript
+interface SkillsPanelProps {
+  skills: Record<string, SkillMetadata>;
+  onViewSkill: (skillName: string) => void;
+  onUseSkill: (skillName: string) => void;
+}
+
+export function SkillsPanel({ skills, onViewSkill, onUseSkill }) {
+  const [search, setSearch] = useState("");
+  const [selectedSkill, setSelectedSkill] = useState<string | null>(null);
+
+  const filteredSkills = Object.entries(skills).filter(([name, meta]) =>
+    name.includes(search) || meta.description.includes(search)
+  );
+
+  return (
+    <div className="skills-panel">
+      <div className="header">
+        <h3>Skills Library</h3>
+        <Input
+          placeholder="Search skills..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+
+      <ScrollArea>
+        {filteredSkills.map(([name, meta]) => (
+          <SkillCard
+            key={name}
+            name={name}
+            metadata={meta}
+            onView={() => onViewSkill(name)}
+            onUse={() => onUseSkill(name)}
+          />
+        ))}
+      </ScrollArea>
+
+      {selectedSkill && (
+        <SkillViewDialog
+          skill={skills[selectedSkill]}
+          onClose={() => setSelectedSkill(null)}
+        />
+      )}
+    </div>
+  );
+}
+```
+
+#### C. Integrate into ChatInterface
+Add a third tab/section alongside "Tasks" and "Files":
+
+```typescript
+<div className="metadata-sections">
+  <button onClick={() => setMetaOpen("tasks")}>Tasks</button>
+  <button onClick={() => setMetaOpen("files")}>Files (State)</button>
+  <button onClick={() => setMetaOpen("skills")}>Skills Library</button>  {/* NEW */}
+  <button onClick={() => setMetaOpen("memory")}>Memory Store</button>  {/* NEW */}
+</div>
+
+{metaOpen === "skills" && (
+  <SkillsPanel
+    skills={stream.values.skills ?? {}}
+    onViewSkill={handleViewSkill}
+    onUseSkill={handleUseSkill}
+  />
+)}
+```
+
+**Doc Reference**: [LangGraph Store - Persistent Memory](https://langchain-ai.github.io/langgraph/how-tos/store/)
+
+---
+
+### 3. Memory Store UI
+
+**Purpose**: Display persistent data from LangGraph Store at `/memories/` paths (not skills, but other persistent data like case summaries, search history, etc.).
+
+**Current State**: No UI for persistent store data.
+
+**What's Needed**:
+
+#### A. Create `MemoryStorePanel` Component
+New component: `src/app/components/MemoryStorePanel.tsx`
+
+**Features**:
+- Tree view of `/memories/` paths
+- View individual memory items
+- Timestamp and metadata
+- Search across memories
+
+**Example UI**:
+```
+┌─ Memory Store ───────────────────────────────────────┐
+│ 🧠 Persistent Agent Memory                           │
+├──────────────────────────────────────────────────────┤
+│ 📁 /memories/                                        │
+│   ├─ 📁 skills/                [5 items]            │
+│   ├─ 📁 case_summaries/         [23 items]           │
+│   ├─ 📁 search_history/         [156 items]          │
+│   ├─ 📄 last_sync.json                               │
+│   └─ 📄 preferences.json                             │
+└──────────────────────────────────────────────────────┘
+```
+
+**Implementation**:
+```typescript
+interface MemoryItem {
+  path: string;
+  data: any;
+  created_at: Date;
+  updated_at: Date;
+}
+
+interface MemoryStorePanelProps {
+  memory: Record<string, MemoryItem>;
+  onViewItem: (path: string) => void;
+}
+
+export function MemoryStorePanel({ memory, onViewItem }) {
+  const [expandedPaths, setExpandedPaths] = useState<Set<string>>(new Set());
+
+  const memoryTree = buildTreeFromPaths(Object.keys(memory));
+
+  return (
+    <div className="memory-store-panel">
+      <h3>Memory Store</h3>
+      <TreeView
+        tree={memoryTree}
+        expandedPaths={expandedPaths}
+        onToggle={(path) => togglePath(path)}
+        onViewItem={onViewItem}
+      />
+    </div>
+  );
+}
+```
+
+**Doc Reference**: [LangGraph Memory Management](https://langchain-ai.github.io/langgraph/concepts/memory/)
+
+---
+
+### 4. MCP Tool Categorization
+
+**Purpose**: Group tool calls by their MCP server source for better organization and understanding.
+
+**Current State**: All tools displayed generically in ToolCallBox.
+
+**What's Needed**:
+
+#### A. Tool Category Detection
+Create utility to categorize tools:
+
+```typescript
+// src/app/utils/toolCategories.ts
+
+export type MCPCategory = 'supabase' | 'tavily' | 'gmail' | 'calendar' | 'code' | 'builtin' | 'other';
+
+export function getMCPCategory(toolName: string): MCPCategory {
+  // Supabase tools
+  if (toolName.includes('supabase') ||
+      toolName.includes('query') ||
+      toolName.includes('insert') ||
+      toolName.includes('update') ||
+      toolName.includes('delete') ||
+      toolName.includes('storage')) {
+    return 'supabase';
+  }
+
+  // Tavily tools
+  if (toolName.includes('tavily') ||
+      toolName.includes('search') ||
+      toolName.includes('web_search')) {
+    return 'tavily';
+  }
+
+  // Gmail tools
+  if (toolName.includes('gmail') ||
+      toolName.includes('email') ||
+      toolName.includes('send_message') ||
+      toolName.includes('read_message')) {
+    return 'gmail';
+  }
+
+  // Calendar tools
+  if (toolName.includes('calendar') ||
+      toolName.includes('event') ||
+      toolName.includes('schedule')) {
+    return 'calendar';
+  }
+
+  // Code execution
+  if (toolName.includes('python_repl') ||
+      toolName === 'PythonREPLTool') {
+    return 'code';
+  }
+
+  // Built-in DeepAgent middleware
+  if (toolName === 'write_todos' ||
+      toolName === 'ls' ||
+      toolName === 'read_file' ||
+      toolName === 'write_file' ||
+      toolName === 'edit_file' ||
+      toolName === 'task') {
+    return 'builtin';
+  }
+
+  return 'other';
+}
+
+export const CATEGORY_ICONS: Record<MCPCategory, string> = {
+  supabase: '🗄️',
+  tavily: '🔍',
+  gmail: '📧',
+  calendar: '📅',
+  code: '⚡',
+  builtin: '🛠️',
+  other: '🔧',
+};
+
+export const CATEGORY_COLORS: Record<MCPCategory, string> = {
+  supabase: 'bg-green-500/10 text-green-700 border-green-300',
+  tavily: 'bg-blue-500/10 text-blue-700 border-blue-300',
+  gmail: 'bg-red-500/10 text-red-700 border-red-300',
+  calendar: 'bg-purple-500/10 text-purple-700 border-purple-300',
+  code: 'bg-orange-500/10 text-orange-700 border-orange-300',
+  builtin: 'bg-gray-500/10 text-gray-700 border-gray-300',
+  other: 'bg-zinc-500/10 text-zinc-700 border-zinc-300',
+};
+```
+
+#### B. Update ToolCallBox Component
+Add category badge to tool calls:
+
+```typescript
+// In ToolCallBox.tsx
+import { getMCPCategory, CATEGORY_ICONS, CATEGORY_COLORS } from '@/app/utils/toolCategories';
+
+const category = getMCPCategory(name);
+const categoryIcon = CATEGORY_ICONS[category];
+const categoryColor = CATEGORY_COLORS[category];
+
+return (
+  <div className="tool-call-box">
+    <div className="header">
+      {statusIcon}
+      <span className="tool-name">{name}</span>
+      <Badge className={categoryColor}>
+        {categoryIcon} {category.toUpperCase()}
+      </Badge>
+    </div>
+    {/* ... rest of component */}
+  </div>
+);
+```
+
+#### C. Tool Call Filtering
+Add filter controls to ChatInterface to show/hide specific categories:
+
+```typescript
+const [toolFilters, setToolFilters] = useState<Set<MCPCategory>>(new Set());
+
+<div className="tool-filters">
+  <Label>Filter Tools:</Label>
+  {Object.entries(CATEGORY_ICONS).map(([cat, icon]) => (
+    <Checkbox
+      key={cat}
+      checked={toolFilters.has(cat as MCPCategory)}
+      onCheckedChange={(checked) => toggleFilter(cat as MCPCategory, checked)}
+    >
+      {icon} {cat}
+    </Checkbox>
+  ))}
+</div>
+```
+
+**Doc Reference**: [LangChain MCP Adapters](https://github.com/langchain-ai/langchain-mcp-adapters)
+
+---
+
+### 5. Token Efficiency Metrics
+
+**Purpose**: Display token savings achieved by using the skills-first workflow.
+
+**Current State**: No metrics display.
+
+**What's Needed**:
+
+#### A. Add Metrics to Agent State
+Backend should track and send metrics:
+
+```typescript
+type StateType = {
+  // ... existing fields
+  metrics?: {
+    total_tokens_used: number;
+    total_tokens_saved: number;
+    skills_executed: number;
+    avg_token_saving_percent: number;
+  };
+};
+```
+
+#### B. Create `MetricsPanel` Component
+New component: `src/app/components/MetricsPanel.tsx`
+
+**Example UI**:
+```
+┌─ Token Efficiency ───────────────────────────────────┐
+│ 📊 Session Metrics                                   │
+├──────────────────────────────────────────────────────┤
+│ Skills Used:           12 executions                 │
+│ Tokens Used:           48,234                        │
+│ Tokens Saved:          425,766                       │
+│ Efficiency:            89.8% reduction               │
+│                                                       │
+│ Without Skills:        ~474,000 tokens               │
+│ With Skills:           ~48,234 tokens                │
+│ Savings:               ~$2.13 in API costs           │
+└──────────────────────────────────────────────────────┘
+```
+
+**Implementation**:
+```typescript
+interface MetricsPanelProps {
+  metrics: {
+    total_tokens_used: number;
+    total_tokens_saved: number;
+    skills_executed: number;
+    avg_token_saving_percent: number;
+  };
+}
+
+export function MetricsPanel({ metrics }) {
+  const totalTokensWithoutSkills = metrics.total_tokens_used + metrics.total_tokens_saved;
+  const efficiencyPercent = (metrics.total_tokens_saved / totalTokensWithoutSkills) * 100;
+  const costSavings = (metrics.total_tokens_saved / 1_000_000) * 5; // Example pricing
+
+  return (
+    <Card className="metrics-panel">
+      <CardHeader>
+        <CardTitle>Token Efficiency</CardTitle>
+        <CardDescription>Skills-first workflow savings</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <div className="metrics-grid">
+          <Metric label="Skills Used" value={metrics.skills_executed} />
+          <Metric label="Tokens Used" value={metrics.total_tokens_used.toLocaleString()} />
+          <Metric label="Tokens Saved" value={metrics.total_tokens_saved.toLocaleString()} />
+          <Metric label="Efficiency" value={`${efficiencyPercent.toFixed(1)}%`} highlight />
+          <Metric label="Cost Savings" value={`$${costSavings.toFixed(2)}`} />
+        </div>
+
+        <div className="comparison-chart">
+          <BarChart data={[
+            { label: 'Without Skills', value: totalTokensWithoutSkills },
+            { label: 'With Skills', value: metrics.total_tokens_used },
+          ]} />
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+```
+
+#### C. Add to Header or Sidebar
+Display metrics in header next to assistant ID:
+
+```typescript
+<div className="header-metrics">
+  <span>Assistant: {config.assistantId}</span>
+  <Badge variant="success">
+    ⚡ {efficiencyPercent}% token savings
+  </Badge>
+</div>
+```
+
+---
+
+### 6. Skill Execution Indicator
+
+**Purpose**: Visual feedback showing when a saved skill is being executed vs. when the agent is discovering a new pattern.
+
+**Current State**: No distinction in UI.
+
+**What's Needed**:
+
+#### A. Detect Skill Execution
+Backend should indicate in tool call metadata when executing a skill:
+
+```typescript
+interface ToolCall {
+  id: string;
+  name: string;
+  args: Record<string, unknown>;
+  result?: string;
+  status: "pending" | "completed" | "error" | "interrupted";
+  metadata?: {
+    is_skill_execution?: boolean;
+    skill_name?: string;
+    token_savings?: number;
+  };
+}
+```
+
+#### B. Update CodeExecutionBox
+Show badge when executing a skill:
+
+```typescript
+{toolCall.metadata?.is_skill_execution && (
+  <div className="skill-execution-badge">
+    <Badge variant="success">
+      🎯 Using Skill: {toolCall.metadata.skill_name}
+    </Badge>
+    <Tooltip>
+      This task matched an existing skill pattern. Executed directly without
+      discovery phase, saving ~{toolCall.metadata.token_savings?.toLocaleString()} tokens.
+    </Tooltip>
+  </div>
+)}
+```
+
+#### C. Loading States
+Different loading messages:
+
+```typescript
+const loadingMessage = toolCall.metadata?.is_skill_execution
+  ? `Executing skill: ${toolCall.metadata.skill_name}...`
+  : "Discovering and executing code pattern...";
+
+{status === "pending" && (
+  <div className="loading-state">
+    <Loader2 className="animate-spin" />
+    <span>{loadingMessage}</span>
+  </div>
+)}
+```
+
+---
+
+### 7. Configuration Updates
+
+**Purpose**: Add Supabase-specific configuration for the backend deployment.
+
+**Current State**: Generic deployment URL and assistant ID.
+
+**What's Needed**:
+
+#### A. Update ConfigDialog
+Add optional Supabase configuration section:
+
+```typescript
+// src/lib/config.ts
+export interface StandaloneConfig {
+  deploymentUrl: string;
+  assistantId: string;
+  langsmithApiKey?: string;
+  supabase?: {  // NEW
+    url: string;
+    anonKey?: string;  // For client-side RLS queries (optional)
+  };
+}
+```
+
+```typescript
+// In ConfigDialog.tsx
+<div className="grid gap-2">
+  <Label>Supabase URL (Optional)</Label>
+  <Input
+    placeholder="https://xxxxx.supabase.co"
+    value={supabaseUrl}
+    onChange={(e) => setSupabaseUrl(e.target.value)}
+  />
+  <p className="text-xs text-muted-foreground">
+    Optionally provide Supabase URL for direct client-side features
+  </p>
+</div>
+```
+
+#### B. Environment Variables
+Document required environment variables for deployment:
+
+```bash
+# .env.local (for local development)
+NEXT_PUBLIC_LANGSMITH_API_KEY="lsv2_pt_..."
+NEXT_PUBLIC_DEPLOYMENT_URL="https://your-langgraph-deployment.com"
+NEXT_PUBLIC_ASSISTANT_ID="your-assistant-id"
+
+# Optional: Supabase (for direct client queries)
+NEXT_PUBLIC_SUPABASE_URL="https://xxxxx.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="your-anon-key"
+```
+
+#### C. Deployment Instructions
+Create deployment guide: `deep-agents-ui-main/DEPLOYMENT.md`
+
+**Contents**:
+- Build and deployment steps
+- Environment variable configuration
+- Backend API endpoint setup (LangGraph deployment)
+- Supabase PostgreSQL connection (for checkpointer/store)
+- CORS configuration if needed
+- Production deployment to Vercel/Netlify
+
+---
+
+## Implementation Phases
+
+### Phase 1: Enhanced Tool Display (Week 1)
+**Priority: HIGH**
+
+Tasks:
+1. ✅ Create `CodeExecutionBox` component with syntax highlighting
+2. ✅ Update `ToolCallBox` to detect and render `python_repl` specially
+3. ✅ Add MCP tool categorization utilities
+4. ✅ Add category badges to all tool calls
+5. ✅ Test with example tool calls
+
+**Success Criteria**:
+- Python code is syntax highlighted
+- MCP tools have visual badges
+- Code execution clearly distinguished from other tools
+
+### Phase 2: Skills Library UI (Week 2)
+**Priority: HIGH**
+
+Tasks:
+1. ✅ Extend state type to include `skills`
+2. ✅ Create `SkillsPanel` component
+3. ✅ Create `SkillCard` component
+4. ✅ Create `SkillViewDialog` component
+5. ✅ Integrate into ChatInterface as new tab
+6. ✅ Add "Use Skill" functionality (populate chat input)
+7. ✅ Test with example skills
+
+**Success Criteria**:
+- Skills library is visible and browsable
+- Users can view skill source code
+- Users can easily use skills via UI
+
+### Phase 3: Memory Store UI (Week 3)
+**Priority: MEDIUM**
+
+Tasks:
+1. ✅ Extend state type to include `memory`
+2. ✅ Create `MemoryStorePanel` component
+3. ✅ Create tree view component for paths
+4. ✅ Create memory item viewer
+5. ✅ Integrate into ChatInterface as new tab
+6. ✅ Test with example memory items
+
+**Success Criteria**:
+- Memory store is browsable in tree format
+- Users can view individual memory items
+- Path navigation works correctly
+
+### Phase 4: Token Efficiency Metrics (Week 4)
+**Priority: MEDIUM**
+
+Tasks:
+1. ✅ Add metrics to state type
+2. ✅ Create `MetricsPanel` component
+3. ✅ Create metrics visualization (bar chart)
+4. ✅ Add metrics to header
+5. ✅ Add skill execution badges
+6. ✅ Test with example metrics data
+
+**Success Criteria**:
+- Token savings are visible and accurate
+- Skills show execution badges
+- Metrics display correctly in header/panel
+
+### Phase 5: Configuration & Deployment (Week 5)
+**Priority: MEDIUM**
+
+Tasks:
+1. ✅ Update `ConfigDialog` with Supabase fields
+2. ✅ Create `.env.local.example` file
+3. ✅ Write `DEPLOYMENT.md` guide
+4. ✅ Test deployment to Vercel
+5. ✅ Document backend setup requirements
+
+**Success Criteria**:
+- UI can be configured for production
+- Deployment documentation is complete
+- UI successfully connects to deployed backend
+
+---
+
+## Technical Implementation Details
+
+### State Management Strategy
+
+The UI uses LangGraph SDK's `useStream` hook which automatically syncs state from the backend. No additional state management library needed.
+
+**Backend State Updates**:
+The backend (DeepAgent) should send state updates that include:
+
+```python
+# In the agent graph
+state["skills"] = {
+    "batch_document_processor": {
+        "name": "batch_document_processor.py",
+        "path": "/memories/skills/batch_document_processor.py",
+        "description": "Process all unconverted PDFs for a case",
+        "usage": "await run_skill(case_id='MVA-2024-001')",
+        "lastUsed": "2025-11-15T10:30:00Z",
+        "timesUsed": 12,
+        "tokensSaved": 28000,
+    },
+    # ... more skills
+}
+
+state["memory"] = {
+    "/memories/case_summaries/MVA-2024-001": { ... },
+    "/memories/search_history/2025-11-15": { ... },
+}
+
+state["metrics"] = {
+    "total_tokens_used": 48234,
+    "total_tokens_saved": 425766,
+    "skills_executed": 12,
+    "avg_token_saving_percent": 89.8,
+}
+```
+
+**Frontend Consumption**:
+```typescript
+const { stream } = useChatContext();
+const skills = stream.values.skills ?? {};
+const memory = stream.values.memory ?? {};
+const metrics = stream.values.metrics ?? { ... };
+```
+
+### Styling Approach
+
+The UI uses Tailwind CSS with custom design tokens. New components should follow existing patterns:
+
+```typescript
+// Use existing UI components
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
+
+// Follow existing color scheme
+const colorClasses = {
+  success: "text-success/80",
+  warning: "text-warning/80",
+  error: "text-destructive",
+  muted: "text-muted-foreground",
+};
+```
+
+### Component Architecture
+
+```
+src/app/components/
+├── ChatInterface.tsx          (main container)
+├── ChatMessage.tsx            (individual messages)
+├── ToolCallBox.tsx            (generic tool calls)
+├── CodeExecutionBox.tsx       (NEW: python_repl display)
+├── SkillsPanel.tsx            (NEW: skills library)
+│   ├── SkillCard.tsx          (NEW: individual skill)
+│   └── SkillViewDialog.tsx    (NEW: skill source viewer)
+├── MemoryStorePanel.tsx       (NEW: memory store browser)
+│   ├── MemoryTreeView.tsx     (NEW: tree navigation)
+│   └── MemoryItemViewer.tsx   (NEW: item details)
+├── MetricsPanel.tsx           (NEW: token efficiency)
+├── TasksFilesSidebar.tsx      (existing, update with new tabs)
+└── ConfigDialog.tsx           (existing, add Supabase fields)
+
+src/app/utils/
+├── toolCategories.ts          (NEW: MCP tool detection)
+└── utils.ts                   (existing utilities)
+```
+
+---
+
+## Testing Strategy
+
+### Unit Tests
+- Test tool category detection with various tool names
+- Test skill metadata parsing
+- Test metrics calculations
+
+### Integration Tests
+- Test full chat flow with code execution
+- Test skill execution flow
+- Test memory store browsing
+- Test configuration save/load
+
+### E2E Tests
+- Test complete conversation with skills
+- Test tool filtering
+- Test skill library interaction
+- Test metrics accuracy
+
+### Manual Testing Checklist
+- [ ] Code execution displays correctly with syntax highlighting
+- [ ] Skills library shows all available skills
+- [ ] Skill execution shows badge and token savings
+- [ ] Memory store is browsable and accurate
+- [ ] MCP tools are correctly categorized
+- [ ] Token metrics are accurate
+- [ ] Configuration persists correctly
+- [ ] Debug mode works with all new features
+- [ ] UI is responsive and performant
+
+---
+
+## Open Questions & Decisions Needed
+
+1. **Skills Refresh**: Should skills automatically refresh when new ones are added? Or manual refresh button?
+   - **Recommendation**: Auto-refresh via state updates from backend
+
+2. **Memory Store Depth**: How many levels deep should the tree view display by default?
+   - **Recommendation**: All levels, with collapsible folders
+
+3. **Metrics Persistence**: Should token metrics persist across sessions?
+   - **Recommendation**: Yes, store in localStorage for historical view
+
+4. **Tool Call Limits**: Should we limit the number of tool calls displayed to prevent UI slowdown?
+   - **Recommendation**: Virtualized scrolling for >50 tool calls
+
+5. **Skill Editing**: Should users be able to edit skills from the UI?
+   - **Recommendation**: No, view-only for security. Skills should be created by the agent.
+
+---
+
+## Documentation References
+
+### LangGraph Core Docs
+- [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
+- [Memory & Persistence](https://langchain-ai.github.io/langgraph/concepts/memory/)
+- [LangGraph Store](https://langchain-ai.github.io/langgraph/how-tos/store/)
+- [Checkpointers](https://langchain-ai.github.io/langgraph/concepts/checkpointers/)
+- [React SDK](https://langchain-ai.github.io/langgraph-sdk-js/react/)
+
+### Deep Agents
+- [DeepAgents Repository](https://github.com/hwchase17/deepagents)
+- [DeepAgents Tutorial](https://www.youtube.com/watch?v=TTMYJAw5tiA)
+
+### MCP Integration
+- [LangChain MCP Adapters](https://github.com/langchain-ai/langchain-mcp-adapters)
+- [Anthropic MCP Docs](https://modelcontextprotocol.io/)
+
+### Anthropic Code Execution
+- [Code Execution with MCP (Article)](https://www.anthropic.com/engineering/code-execution-with-mcp)
+
+### Component Libraries
+- [Radix UI](https://www.radix-ui.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+
+---
+
+## Next Steps
+
+1. **Review this plan** with stakeholders
+2. **Prioritize phases** based on business needs
+3. **Set up development environment** for UI work
+4. **Begin Phase 1 implementation** (Enhanced Tool Display)
+5. **Coordinate with backend team** on state structure updates
+
+---
+
+## Success Metrics
+
+### User Experience
+- Users can easily identify which MCP server each tool belongs to
+- Code execution is clearly visible with readable syntax
+- Skills library is intuitive and useful
+- Token savings are transparent and motivating
+
+### Performance
+- UI remains responsive with 100+ messages
+- Tool calls render without lag
+- Skills library loads instantly
+- Memory store tree navigation is smooth
+
+### Developer Experience
+- New components are well-documented
+- Code is maintainable and testable
+- Integration with backend is straightforward
+- Deployment process is clear
+
+---
+
+## Conclusion
+
+This implementation plan provides a clear roadmap for integrating the Anthropic Code Execution pattern and full DeepAgent capabilities into the Deep Agents UI. The phased approach ensures incremental progress with testable milestones.
+
+The existing UI foundation is strong, requiring primarily additive changes rather than major refactoring. The LangGraph SDK's real-time state streaming makes it straightforward to display new state fields like skills, memory, and metrics.
+
+**Estimated Total Timeline**: 5 weeks (1 week per phase)
+
+**Key Deliverables**:
+1. Enhanced code execution display with syntax highlighting
+2. Skills library browser with usage metrics
+3. Memory store tree viewer
+4. Token efficiency metrics dashboard
+5. MCP tool categorization
+6. Production deployment guide
+
+Once complete, users will have full visibility into the agent's workflow, token efficiency gains, and ability to leverage the growing skills library for increasingly efficient task execution.
