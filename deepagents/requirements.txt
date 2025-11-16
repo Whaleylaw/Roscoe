@@ -1,0 +1,34 @@
+# Legal Agent Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core DeepAgents Framework (from local libs/)
+# Install via: pip install -e ./libs/deepagents
+
+# LangChain Integrations
+langchain>=1.0.2,<2.0.0
+langchain-core>=1.0.0,<2.0.0
+langchain-anthropic>=1.0.0,<2.0.0
+langchain-openai>=0.3.0,<1.0.0
+
+# Google Workspace Integrations (Gmail, Calendar)
+langchain-google-community>=2.0.0
+
+# MCP Integration for Supabase and Tavily
+langchain-mcp-adapters>=0.1.0
+
+# LangGraph for Agent Runtime
+langgraph>=0.3.0,<1.0.0
+langgraph-checkpoint-postgres>=2.0.0
+
+# RunLoop Sandboxed Execution
+runloop-api-client>=0.66.1
+
+# Database and Storage
+supabase>=2.0.0
+psycopg[binary,pool]>=3.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# Optional: Observability
+# langsmith>=0.1.0  # Uncomment for LangSmith tracing
