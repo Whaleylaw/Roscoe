@@ -15,6 +15,35 @@ Phase 2 implementation includes **breaking changes** that require environment re
 
 ## Breaking Changes
 
+### Important: Package Version Updates (January 2025)
+
+**LangChain Ecosystem Updates**
+
+The LangChain ecosystem has been updated to resolve dependency conflicts:
+
+**Updated Versions:**
+- `langgraph`: **0.3.x → 1.0.2+** (major version bump)
+- `langchain-core`: **1.0.0+ → 1.0.4+** (minimum version increased)
+- `langchain-google-community`: **2.0.x → 3.0.x** (major version bump)
+- `langgraph-checkpoint-postgres`: **2.0.x+ → 2.0.x-3.x** (added upper bound)
+
+**Why This Changed:**
+- `langchain 1.0.7` requires `langgraph>=1.0.2,<1.1.0`
+- Previous requirements specified `langgraph>=0.3.0,<1.0.0` (conflict!)
+- These updates resolve: "Cannot install -r requirements.txt because these package versions have conflicting dependencies"
+
+**Impact:**
+- Most changes are backward-compatible within the LangChain API
+- `langchain-google-community 3.x` may have minor API changes from 2.x
+- Test Gmail and Calendar toolkit initialization after upgrade
+- No environment variable changes required for this update
+
+**Migration:**
+```bash
+# Simply reinstall with updated requirements.txt
+pip install --upgrade -r requirements.txt
+```
+
 ### 1. Code Execution Tool
 
 **Before (Phase 1):**
