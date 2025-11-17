@@ -1,0 +1,15 @@
+{
+  "graphs": {
+    "legal_agent": {
+      "path": "src/agents/legal_agent.py:initialize_agent",
+      "config": {
+        "checkpointer": true,
+        "store": true
+      }
+    }
+  },
+  "python_version": "3.11",
+  "dependencies": [
+    "."
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Symbol Index for Corrected DeepAgents Implementation",
+  "description": "Maps all symbols to their defining files and planned line ranges for cross-reference validation",
+  "version": "1.0.0-corrected",
+  "generated": "2025-11-15",
+  "symbols": {
+    "init_gmail_toolkit": {
+      "file": "src/tools/toolkits.py",
+      "planned_line_start": 15,
+      "planned_line_end": 45,
+      "purpose": "Initialize Gmail toolkit with OAuth credentials, return list of 5 Gmail tools",
+      "returns": "list[BaseTool]",
+      "async": true
+    },
+    "init_calendar_toolkit": {
+      "file": "src/tools/toolkits.py",
+      "planned_line_start": 47,
+      "planned_line_end": 77,
+      "purpose": "Initialize Calendar toolkit with OAuth credentials, return list of 7 Calendar tools",
+      "returns": "list[BaseTool]",
+      "async": true
+    },
+    "init_supabase_mcp": {
+      "file": "src/tools/toolkits.py",
+      "planned_line_start": 79,
+      "planned_line_end": 109,
+      "purpose": "Initialize Supabase MCP client with corrected package (@supabase/mcp-server-postgrest)",
+      "returns": "list[BaseTool]",
+      "async": true
+    },
+    "init_tavily_mcp": {
+      "file": "src/tools/toolkits.py",
+      "planned_line_start": 111,
+      "planned_line_end": 141,
+      "purpose": "Initialize Tavily MCP client with corrected package (@mcptools/mcp-tavily)",
+      "returns": "list[BaseTool]",
+      "async": true
+    },
+    "RunLoopExecutor": {
+      "file": "src/tools/runloop_executor.py",
+      "planned_line_start": 15,
+      "planned_line_end": 95,
+      "purpose": "Wrapper class for RunLoop sandboxed code execution",
+      "type": "class",
+      "methods": ["execute_code", "cleanup"]
+    },
+    "Badge": {
+      "file": "src/components/ui/badge.tsx",
+      "planned_line_start": 29,
+      "planned_line_end": 45,
+      "purpose": "Render badge UI component with variant styling",
+      "type": "React.FC<BadgeProps>",
+      "variants": ["default", "success", "destructive", "outline"]
+    },
+    "BadgeProps": {
+      "file": "src/components/ui/badge.tsx",
+      "planned_line_start": 21,
+      "planned_line_end": 28,
+      "purpose": "TypeScript interface for Badge component props",
+      "type": "interface"
+    },
+    "badgeVariants": {
+      "file": "src/components/ui/badge.tsx",
+      "planned_line_start": 5,
+      "planned_line_end": 20,
+      "purpose": "CVA function for variant-based Badge styling",
+      "type": "cva function"
+    },
+    "cn": {
+      "file": "src/lib/utils.ts",
+      "status": "existing",
+      "purpose": "Utility to merge className strings with Tailwind conflict resolution",
+      "type": "function"
+    },
+    "get_setting": {
+      "file": "src/config/settings.py",
+      "status": "existing",
+      "purpose": "Safely retrieve environment variable with optional default",
+      "returns": "Optional[str]"
+    },
+    "DB_URI": {
+      "file": "src/config/settings.py",
+      "status": "existing",
+      "purpose": "PostgreSQL connection string for Supabase",
+      "type": "str"
+    },
+    "getMCPCategory": {
+      "file": "src/app/utils/toolCategories.ts",
+      "status": "to_be_updated",
+      "planned_line_start": 10,
+      "planned_line_end": 85,
+      "purpose": "Categorize tool by name pattern (updated for LangChain toolkits)",
+      "returns": "MCPCategory"
+    },
+    "MCPCategory": {
+      "file": "src/app/utils/toolCategories.ts",
+      "status": "to_be_updated",
+      "planned_line_start": 1,
+      "planned_line_end": 8,
+      "purpose": "TypeScript union type for tool categories",
+      "type": "type",
+      "values": ["supabase", "tavily", "gmail", "calendar", "code", "builtin", "other"]
+    },
+    "CATEGORY_ICONS": {
+      "file": "src/app/utils/toolCategories.ts",
+      "status": "to_be_updated",
+      "planned_line_start": 87,
+      "planned_line_end": 95,
+      "purpose": "Map categories to emoji icons",
+      "type": "Record<MCPCategory, string>"
+    },
+    "CATEGORY_COLORS": {
+      "file": "src/app/utils/toolCategories.ts",
+      "status": "to_be_updated",
+      "planned_line_start": 97,
+      "planned_line_end": 105,
+      "purpose": "Map categories to Tailwind CSS classes",
+      "type": "Record<MCPCategory, string>"
+    }
+  },
+  "tool_names": {
+    "description": "Actual tool names from LangChain toolkits and MCP servers",
+    "gmail_toolkit": [
+      "create_gmail_draft",
+      "send_gmail_message",
+      "search_gmail",
+      "get_gmail_message",
+      "get_gmail_thread"
+    ],
+    "calendar_toolkit": [
+      "create_calendar_event",
+      "search_calendar_events",
+      "update_calendar_event",
+      "get_calendars_info",
+      "move_calendar_event",
+      "delete_calendar_event",
+      "get_current_datetime"
+    ],
+    "runloop_executor": [
+      "runloop_execute_code"
+    ],
+    "builtin_deepagents": [
+      "write_todos",
+      "ls",
+      "read_file",
+      "write_file",
+      "edit_file",
+      "task"
+    ],
+    "supabase_mcp": [
+      "Note: Tool names determined by @supabase/mcp-server-postgrest implementation"
+    ],
+    "tavily_mcp": [
+      "Note: Tool names determined by @mcptools/mcp-tavily implementation"
+    ]
+  },
+  "dependencies": {
+    "python_packages": {
+      "langchain-google-community": {
+        "extras": ["gmail", "calendar"],
+        "purpose": "Gmail and Calendar toolkits",
+        "version": "latest"
+      },
+      "runloop-api-client": {
+        "purpose": "Sandboxed code execution",
+        "version": "latest",
+        "docs": "https://github.com/runloopai/api-client-python"
+      },
+      "langchain-mcp-adapters": {
+        "purpose": "MCP client for Supabase/Tavily",
+        "version": ">=0.1.0"
+      }
+    },
+    "npm_packages": {
+      "@supabase/mcp-server-postgrest": {
+        "purpose": "Supabase MCP server (corrected package name)",
+        "test_command": "npx -y @supabase/mcp-server-postgrest"
+      },
+      "@mcptools/mcp-tavily": {
+        "purpose": "Tavily MCP server (corrected package name)",
+        "test_command": "npx -y @mcptools/mcp-tavily"
+      }
+    }
+  },
+  "validation": {
+    "total_symbols": 14,
+    "new_symbols": 10,
+    "updated_symbols": 4,
+    "existing_symbols": 3,
+    "unresolved_references": 0,
+    "circular_dependencies": false
+  }
+}

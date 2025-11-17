@@ -1,0 +1,1476 @@
+# Legal DeepAgent - Architecture Plan
+
+*All components referenced from official LangChain/LangGraph documentation*
+
+## Overview
+
+This document outlines the architecture for a LangGraph DeepAgent system for Whaley Law Firm's legal case management. The system leverages Supabase PostgreSQL for all persistence needs, integrates multiple MCP servers for external tools, and implements **Anthropic's Code Execution with MCP pattern** for maximum token efficiency (88-98% reduction).
+
+**Key Innovation:** Agent executes Python code to filter/process data instead of passing large results through LLM context, combined with a growing skills library for instant task execution.
+
+---
+
+## 1. Core DeepAgent Setup
+
+**Library:** `deepagents` (standalone library built on LangGraph)
+**Doc Reference:** https://docs.langchain.com/oss/python/deepagents/overview
+
+### Basic Configuration
+
+```python
+from deepagents import create_deep_agent
+
+agent = create_deep_agent(
+    tools=[],  # Custom tools we'll add
+    system_prompt="You are a legal case management assistant...",
+    model="claude-sonnet-4-5-20250929",  # Default model
+    store=None,  # We'll configure Supabase-backed store
+    backend=None,  # We'll configure memory backend
+    subagents=[]  # We'll define specialized subagents
+)
+```
+
+### Automatically Included Middleware
+
+When using `create_deep_agent()`, these middleware are automatically attached:
+
+- **TodoListMiddleware** - `write_todos` tool for planning
+- **FilesystemMiddleware** - `ls`, `read_file`, `write_file`, `edit_file` tools
+- **SubAgentMiddleware** - `task` tool for spawning subagents
+
+**Doc Reference:** https://docs.langchain.com/oss/python/deepagents/middleware
+
+---
+
+## 2. Middleware Components
+
+### 2.1 TodoListMiddleware ✅
+
+**Purpose:** Planning and task decomposition
+**What it provides:** `write_todos` tool
+**Doc Reference:** https://docs.langchain.com/oss/python/deepagents/middleware
+
+**Included automatically** - No additional configuration needed.
+
+The agent uses this tool to:
+- Break down complex tasks into discrete steps
+- Track progress throughout execution
+- Adapt plans as new information emerges
+
+### 2.2 FilesystemMiddleware ✅
+
+**Purpose:** Context management (short-term & long-term memory)
+**What it provides:**
+- `ls` - List files
+- `read_file` - Read file contents
+- `write_file` - Write new files
+- `edit_file` - Edit existing files
+
+**Doc Reference:** https://docs.langchain.com/oss/python/deepagents/middleware
+
+**Configuration:** We'll customize with `CompositeBackend` for hybrid storage (see Memory section).
+
+Benefits:
+- Prevents context window overflow
+- Enables work with variable-length tool results (web search, database queries)
+- Manages large amounts of information across tasks
+
+### 2.3 SubAgentMiddleware ✅
+
+**Purpose:** Delegate specialized tasks to subagents
+**What it provides:** `task` tool for spawning subagents
+**Doc Reference:** https://docs.langchain.com/oss/python/deepagents/subagents
+
+**Configuration:**
+
+```python
+subagents=[
+    {
+        "name": "legal-researcher",
+        "description": "Conducts legal research using Tavily web search",
+        "system_prompt": "You are a legal research specialist...",
+        "tools": [tavily_mcp_tools],
+        "model": "claude-sonnet-4-5-20250929"
+    },
+    {
+        "name": "email-coordinator",
+        "description": "Manages client communications via Gmail",
+        "system_prompt": "You handle email communications...",
+        "tools": [gmail_mcp_tools],
+        "model": "gpt-4o"  # Can use different models per subagent
+    },
+    {
+        "name": "database-specialist",
+        "description": "Manages Supabase database operations",
+        "system_prompt": "You handle database queries and updates...",
+        "tools": [supabase_mcp_tools],
+        "model": "claude-sonnet-4-5-20250929"
+    }
+]
+```
+
+Benefits:
+- **Context isolation** - Keeps main agent's context clean
+- **Specialized instructions** - Each subagent optimized for specific domain
+- **Flexible routing** - Different models and tools per subagent
+
+---
+
+## 3. Memory Architecture
+
+### 3.1 Short-Term Memory (Thread-Scoped) ✅
+
+**Backend:** `StateBackend`
+**Storage:** In LangGraph agent state (persists within single thread via checkpointer)
+**Use case:** Working files, temporary data, current task context
+**Path:** Root filesystem (e.g., `/working/`, `/temp/`)
+
+**Doc Reference:** https://docs.langchain.com/oss/python/deepagents/backends
+
+**Characteristics:**
+- Stored in agent state
+- Persists across multiple agent turns on same thread via checkpoints
+- Deleted when conversation/thread ends
+- Best for: scratch pad, intermediate results, large tool outputs
+
+### 3.2 Long-Term Memory (Cross-Thread) ✅
+
+**Backend:** `StoreBackend` (routes to LangGraph Store)
+**Storage:** Supabase PostgreSQL database
+**Use case:** Firm templates, case conventions, learned patterns
+**Path:** `/memories/*` (any file starting with `/memories/`)
+
+**Doc Reference:** https://docs.langchain.com/oss/python/deepagents/long-term-memory
+
+**Characteristics:**
+- Stored in LangGraph Store (Supabase PostgreSQL)
+- Persists across all threads and conversations
+- Survives agent restarts
+- Best for: templates, conventions, schemas, learned patterns
+
+### 3.3 CompositeBackend Configuration ✅
+
+**Doc Reference:** https://docs.langchain.com/oss/python/deepagents/backends
+
+```python
+from deepagents.backends import CompositeBackend, StateBackend, StoreBackend
+from langgraph.store.postgres import PostgresStore
+
+# Supabase connection (PostgreSQL)
+DB_URI = "postgresql://postgres:[PASSWORD]@[SUPABASE_HOST]:5432/postgres"
+
+def make_backend(runtime):
+    return CompositeBackend(
+        default=StateBackend(runtime),  # Ephemeral storage
+        routes={
+            "/memories/": StoreBackend(runtime)  # Persistent storage in Supabase
+        }
+    )
+
+store = PostgresStore.from_conn_string(DB_URI)
+
+agent = create_deep_agent(
+    backend=make_backend,
+    store=store
+)
+```
+
+**File Routing:**
+- `/working/task.md` → StateBackend (ephemeral, deleted after thread ends)
+- `/temp/search-results.json` → StateBackend (ephemeral)
+- `/memories/case-templates.md` → StoreBackend (persists across all threads in Supabase)
+- `/memories/firm-conventions.md` → StoreBackend (persists forever)
+
+**Memory Organization:**
+
+```
+/memories/
+├── skills/                          # 🔥 NEW: Executable code patterns (Anthropic pattern)
+│   ├── batch_document_processor.py
+│   ├── case_search_and_summarize.py
+│   ├── client_email_workflow.py
+│   └── legal_research_synthesis.py
+├── templates/
+│   ├── motion-to-dismiss.md
+│   ├── discovery-request.md
+│   └── client-intake-form.md
+├── conventions/
+│   ├── case-naming-convention.md
+│   ├── document-categorization.md
+│   └── billing-codes.md
+├── schemas/
+│   ├── doc-files-schema.md
+│   ├── case-projects-schema.md
+│   └── relationships.md
+└── patterns/
+    ├── pdf-processing-workflow.md
+    └── client-communication-protocols.md
+```
+
+### 3.4 Skills Library (Code Execution Pattern) 🔥 NEW
+
+**Inspired by:** Anthropic's Code Execution with MCP
+**Doc Reference:** https://www.anthropic.com/engineering/code-execution-with-mcp
+
+**Purpose:** Store reusable executable code patterns that the agent can run directly, achieving 88-98% token reduction on repeated tasks.
+
+**How it Works:**
+1. Agent completes a complex multi-step task
+2. Successful workflow is saved as a Python script to `/memories/skills/`
+3. Next time: Agent checks skills library first, executes skill directly (4K tokens vs 32K)
+
+**Example Skill:**
+
+`/memories/skills/batch_document_processor.py`:
+```python
+"""
+Process all unconverted PDFs for a case.
+
+Usage:
+    result = await run_skill(case_id='MVA-2024-001', limit=100)
+
+Returns:
+    {
+        'total': 50,
+        'success': 48,
+        'failed': 2,
+        'errors': [...]
+    }
+"""
+
+async def run_skill(case_id: str, limit: int = 100):
+    # Import MCP tools (available in execution environment)
+    from mcp_tools import supabase_query, supabase_update
+
+    # Query unconverted documents
+    docs = await supabase_query(
+        table='doc_files',
+        filters={'project_name': case_id, 'markdown_path': None},
+        limit=limit
+    )
+
+    results = {'total': len(docs), 'success': 0, 'failed': 0, 'errors': []}
+
+    # Process each document
+    for doc in docs:
+        try:
+            # Convert PDF (tool call stays in code execution environment)
+            # ... conversion logic
+
+            # Update database
+            await supabase_update(
+                table='doc_files',
+                record_id=doc['uuid'],
+                updates={'markdown_path': f'/converted/{doc["filename"]}.md'}
+            )
+            results['success'] += 1
+        except Exception as e:
+            results['failed'] += 1
+            results['errors'].append({'file': doc['filename'], 'error': str(e)})
+
+    return results
+```
+
+**Token Efficiency:**
+- **Without skill (first time):** 12,000-32,000 tokens
+- **With skill (subsequent):** 4,000 tokens
+- **Savings:** 88-98% reduction
+
+---
+
+## 4. Persistence Layer (Supabase PostgreSQL)
+
+### 4.1 Checkpointer ✅
+
+**Purpose:** Save agent state at every step (enables resuming, time-travel, HITL)
+**Backend:** `PostgresSaver` (Supabase PostgreSQL)
+**Doc Reference:** https://docs.langchain.com/oss/python/langgraph/persistence
+
+```python
+from langgraph.checkpoint.postgres import PostgresSaver
+
+DB_URI = "postgresql://postgres:[PASSWORD]@[SUPABASE_HOST]:5432/postgres"
+
+with PostgresSaver.from_conn_string(DB_URI) as checkpointer:
+    # First-time setup: creates necessary tables
+    # checkpointer.setup()
+
+    agent = create_deep_agent(
+        # ... other config
+    )
+    graph = agent.compile(checkpointer=checkpointer)
+```
+
+**Capabilities Enabled:**
+- **Resuming** - Continue execution after failures
+- **Time-travel** - Replay execution from any checkpoint
+- **Human-in-the-loop** - Pause for approval, then resume
+- **Fault tolerance** - Restart from last successful step
+- **Memory** - Access conversation history across turns
+
+**First-time setup requires:** `checkpointer.setup()` to create tables in Supabase
+
+### 4.2 Store (Long-Term Memory) ✅
+
+**Purpose:** Persistent cross-thread memory storage
+**Backend:** `PostgresStore` (Supabase PostgreSQL)
+**Doc Reference:** https://docs.langchain.com/oss/python/langgraph/add-memory
+
+```python
+from langgraph.store.postgres import PostgresStore
+
+store = PostgresStore.from_conn_string(DB_URI)
+# First-time: store.setup()
+
+agent = create_deep_agent(
+    store=store,
+    backend=make_backend  # Routes /memories/ to StoreBackend
+)
+```
+
+**Storage Format:**
+- JSON documents organized by namespace + key
+- Namespace: tuple like `("user_id", "context")` or `("firm", "templates")`
+- Example: `store.put(("firm", "templates"), "motion-template", {content: "..."})`
+
+**Memory Operations:**
+
+```python
+# Store a memory
+store.put(
+    namespace=("firm", "templates"),
+    key="motion-to-dismiss",
+    value={"content": "...", "last_updated": "2025-01-15"}
+)
+
+# Retrieve a memory
+item = store.get(("firm", "templates"), "motion-to-dismiss")
+
+# Search memories (with vector similarity if embeddings configured)
+results = store.search(
+    namespace=("firm", "templates"),
+    query="discovery motion",
+    filter={"category": "litigation"}
+)
+```
+
+**Key Insight:** Both checkpointer and store use the **same Supabase PostgreSQL database** - no additional infrastructure needed!
+
+---
+
+## 5. Code Execution Tool (Anthropic Pattern) 🔥 NEW
+
+**Inspired by:** Anthropic's Code Execution with MCP
+**Doc Reference:** https://www.anthropic.com/engineering/code-execution-with-mcp
+
+### Why Code Execution?
+
+**Problem:** Traditional MCP agents pass all data through LLM context:
+- Query returns 1000 documents → 150K tokens in context
+- Agent processes in LLM → expensive, slow, context overflow
+- Every intermediate result flows through model
+
+**Solution:** Agent writes and executes Python code to filter/process data:
+- Query returns 1000 documents → processed in code execution environment
+- Agent returns summary → "Found 1000 docs, 850 unconverted, largest is 25MB"
+- **Token savings: 88-98%**
+
+### Implementation
+
+**Tool:** `PythonREPLTool` from LangChain
+**Doc Reference:** https://python.langchain.com/docs/integrations/tools/python
+
+```python
+from langchain_experimental.tools import PythonREPLTool
+
+# Code execution tool
+python_repl = PythonREPLTool()
+
+agent = create_deep_agent(
+    tools=[
+        python_repl,  # 🔥 Add code execution capability
+        *supabase_tools,
+        *tavily_tools,
+        *gmail_tools,
+        *calendar_tools
+    ],
+    ...
+)
+```
+
+### Skills-First Workflow
+
+**Agent follows this pattern (inspired by Claude Code):**
+
+```
+1. Check /memories/skills/ for existing skill
+   └─ ls /memories/skills/
+   └─ If match found → Execute skill → Done (4K tokens)
+
+2. If no skill found, discover tools needed
+   └─ Based on task: Database? Research? Email?
+
+3. Write Python code to combine tools
+   └─ Execute in python_repl
+   └─ Process data in code, not LLM context
+
+4. Return summary to user
+   └─ "Processed 100 documents, 95 success, 5 failed"
+   └─ Not: [full 100-document array]
+
+5. Suggest saving as skill
+   └─ Save to /memories/skills/ for next time
+```
+
+### Code Execution Examples
+
+**Example 1: Filter Large Query Results**
+
+Instead of this (traditional MCP):
+```python
+# ❌ Bad: Returns 1000 records to LLM context
+docs = supabase_query(table='doc_files', limit=1000)
+# Agent now has 150K tokens in context
+# Processes each document in LLM (expensive!)
+```
+
+Do this (code execution pattern):
+```python
+# ✅ Good: Process in code, return summary
+import json
+
+# Query executes in code environment
+docs = supabase_query(table='doc_files', filters={'project': 'MVA-2024-001'})
+
+# Filter in code (fast, free)
+unconverted = [d for d in docs if not d['markdown_path']]
+largest = max(docs, key=lambda x: x['size_bytes'])
+
+# Return summary only (2K tokens vs 150K)
+summary = {
+    'total': len(docs),
+    'unconverted': len(unconverted),
+    'largest_file': largest['filename'],
+    'total_size_mb': sum(d['size_bytes'] for d in docs) / 1024 / 1024
+}
+print(json.dumps(summary))
+```
+
+**Example 2: Batch Processing with Progress**
+
+```python
+# Agent writes this code in python_repl
+import asyncio
+
+async def process_batch(case_id, batch_size=10):
+    docs = await supabase_query(
+        table='doc_files',
+        filters={'project_name': case_id, 'markdown_path': None},
+        limit=100
+    )
+
+    results = {'success': 0, 'failed': 0}
+
+    # Process in batches
+    for i in range(0, len(docs), batch_size):
+        batch = docs[i:i+batch_size]
+
+        for doc in batch:
+            try:
+                # Convert PDF (stays in code environment)
+                # ... conversion logic
+                results['success'] += 1
+            except Exception as e:
+                results['failed'] += 1
+
+        # Log progress (doesn't pollute LLM context)
+        print(f"Processed {i+len(batch)}/{len(docs)}")
+
+    return results
+
+# Run it
+result = await process_batch('MVA-2024-001')
+```
+
+**Example 3: Execute Saved Skill**
+
+```python
+# Agent checks /memories/skills/ first
+import sys
+sys.path.append('/memories/skills/')
+
+from batch_document_processor import run_skill
+
+# Execute skill directly (4K tokens vs 32K)
+result = await run_skill(case_id='MVA-2024-001', limit=50)
+print(result)
+# {'total': 50, 'success': 48, 'failed': 2, 'errors': [...]}
+```
+
+### Token Efficiency Comparison
+
+| Approach | First Run | With Skill | Reduction |
+|----------|-----------|------------|-----------|
+| **Traditional MCP** | 32K tokens | 32K tokens | - |
+| **Code Execution** | 12K tokens | 4K tokens | **88%** |
+
+**Real Example (from Anthropic):**
+- Task: Copy Google Doc transcript to Notion page
+- Traditional: 32,000 tokens (full transcript flows through LLM twice)
+- Code execution: 12,000 tokens first time, 4,000 with skill
+- **Savings: 88-98%**
+
+---
+
+## 6. MCP Server Integration
+
+**Doc Reference:** https://docs.langchain.com/oss/python/langchain/mcp
+
+### Overview
+
+MCP (Model Context Protocol) servers provide tools to agents in a standardized format. We'll use `langchain-mcp-adapters` to integrate multiple MCP servers.
+
+**Integration Pattern:** We use standard MCP (JSON-RPC tool calls) + code execution layer for filtering/processing. This hybrid approach is easier to implement than full MCP-as-code while still achieving major token savings.
+
+```python
+from langchain_mcp_adapters import MultiServerMCPClient
+```
+
+### 6.1 Supabase MCP ✅
+
+**Purpose:** Database operations (query, insert, update)
+**MCP Server:** `@modelcontextprotocol/server-supabase`
+
+```python
+supabase_mcp = MultiServerMCPClient({
+    "supabase": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-supabase"],
+        "env": {
+            "SUPABASE_URL": os.getenv("SUPABASE_URL"),
+            "SUPABASE_SERVICE_ROLE_KEY": os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+        }
+    }
+})
+
+supabase_tools = supabase_mcp.list_tools()
+```
+
+**Available as tools** for querying:
+- `doc_files` table (PDF metadata, markdown paths)
+- `case_projects` table (case information)
+- `case_notes` table (notes and updates)
+- `contact_directory` table (clients, contacts)
+- Other case management tables
+
+### 6.2 Tavily MCP ✅
+
+**Purpose:** Web search for legal research
+**MCP Server:** `@modelcontextprotocol/server-tavily`
+
+```python
+tavily_mcp = MultiServerMCPClient({
+    "tavily": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-tavily"],
+        "env": {
+            "TAVILY_API_KEY": os.getenv("TAVILY_API_KEY")
+        }
+    }
+})
+
+tavily_tools = tavily_mcp.list_tools()
+```
+
+**Use cases:**
+- Legal research (case law, statutes, regulations)
+- Finding precedents
+- Researching legal concepts
+- Staying up-to-date on legal changes
+
+### 6.3 Gmail MCP ✅
+
+**Purpose:** Email management (read, send, search)
+**MCP Server:** `@modelcontextprotocol/server-gmail`
+
+```python
+gmail_mcp = MultiServerMCPClient({
+    "gmail": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-gmail"],
+        "env": {
+            "GMAIL_CREDENTIALS": os.getenv("GMAIL_CREDENTIALS")
+        }
+    }
+})
+
+gmail_tools = gmail_mcp.list_tools()
+```
+
+**Use cases:**
+- Client communications
+- Sending case updates
+- Email discovery and archiving
+- Scheduling follow-ups
+
+### 6.4 Google Calendar MCP ✅
+
+**Purpose:** Calendar management (events, scheduling)
+**MCP Server:** `@modelcontextprotocol/server-google-calendar`
+
+```python
+calendar_mcp = MultiServerMCPClient({
+    "calendar": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-google-calendar"],
+        "env": {
+            "GOOGLE_CALENDAR_CREDENTIALS": os.getenv("GOOGLE_CALENDAR_CREDENTIALS")
+        }
+    }
+})
+
+calendar_tools = calendar_mcp.list_tools()
+```
+
+**Use cases:**
+- Scheduling client meetings
+- Court date tracking
+- Deadline management
+- Appointment reminders
+
+---
+
+## 7. Complete Agent Configuration
+
+### Full Setup Example
+
+```python
+from deepagents import create_deep_agent
+from deepagents.backends import CompositeBackend, StateBackend, StoreBackend
+from langgraph.checkpoint.postgres import PostgresSaver
+from langgraph.store.postgres import PostgresStore
+from langchain_mcp_adapters import MultiServerMCPClient
+from langchain_experimental.tools import PythonREPLTool  # 🔥 NEW: Code execution
+import os
+
+# Database connection (Supabase PostgreSQL)
+DB_URI = os.getenv("POSTGRES_CONNECTION_STRING")
+# Format: postgresql://postgres:[PASSWORD]@[SUPABASE_HOST]:5432/postgres
+
+# Setup store and checkpointer
+store = PostgresStore.from_conn_string(DB_URI)
+checkpointer = PostgresSaver.from_conn_string(DB_URI)
+
+# First-time setup (uncomment once):
+# store.setup()
+# checkpointer.setup()
+
+# Memory backend configuration
+def make_backend(runtime):
+    return CompositeBackend(
+        default=StateBackend(runtime),
+        routes={"/memories/": StoreBackend(runtime)}
+    )
+
+# Initialize MCP clients
+supabase_mcp = MultiServerMCPClient({
+    "supabase": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-supabase"],
+        "env": {
+            "SUPABASE_URL": os.getenv("SUPABASE_URL"),
+            "SUPABASE_SERVICE_ROLE_KEY": os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+        }
+    }
+})
+
+tavily_mcp = MultiServerMCPClient({
+    "tavily": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-tavily"],
+        "env": {"TAVILY_API_KEY": os.getenv("TAVILY_API_KEY")}
+    }
+})
+
+gmail_mcp = MultiServerMCPClient({
+    "gmail": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-gmail"],
+        "env": {"GMAIL_CREDENTIALS": os.getenv("GMAIL_CREDENTIALS")}
+    }
+})
+
+calendar_mcp = MultiServerMCPClient({
+    "calendar": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-google-calendar"],
+        "env": {"GOOGLE_CALENDAR_CREDENTIALS": os.getenv("GOOGLE_CALENDAR_CREDENTIALS")}
+    }
+})
+
+# Get tools from MCP servers
+supabase_tools = supabase_mcp.list_tools()
+tavily_tools = tavily_mcp.list_tools()
+gmail_tools = gmail_mcp.list_tools()
+calendar_tools = calendar_mcp.list_tools()
+
+# Code execution tool (Anthropic pattern)
+python_repl = PythonREPLTool()
+
+# Create agent
+agent = create_deep_agent(
+    # Custom tools (MCP servers + code execution)
+    tools=[
+        python_repl,  # 🔥 NEW: Code execution for efficiency
+        *supabase_tools,
+        *tavily_tools,
+        *gmail_tools,
+        *calendar_tools
+    ],
+
+    # System prompt
+    system_prompt="""You are a legal case management assistant for Whaley Law Firm.
+
+    You have access to:
+    - python_repl (execute Python code for data processing)
+    - Supabase database (case files, documents, notes, contacts)
+    - Tavily web search (legal research, case law, statutes)
+    - Gmail (client communications)
+    - Google Calendar (scheduling, deadlines)
+
+    # Skills-First Workflow (Maximum Token Efficiency)
+
+    For EVERY task, follow this pattern:
+
+    1. **Check for existing skill**: ls /memories/skills/
+       - If skill matches task → Execute it directly → Done (4K tokens)
+       - Example: `exec(open('/memories/skills/batch_document_processor.py').read())`
+
+    2. **If no skill exists**: Discover and combine tools using code
+
+    3. **Use python_repl for data processing**:
+       - Query MCP tools in code (data stays in execution environment)
+       - Filter, process, transform in Python (not in LLM context)
+       - Return summaries only: "Processed 100 docs, 95 success, 5 failed"
+       - NOT: [full 100-document array]
+
+    4. **Save successful workflows as skills**:
+       - After completing complex multi-step task
+       - Save to /memories/skills/{descriptive_name}.py
+       - Include docstring with usage instructions
+       - Next time: 4K tokens instead of 32K tokens
+
+    # Code Execution Examples
+
+    **Example 1: Filter large query** (saves 148K tokens)
+    ```python
+    import json
+    docs = supabase_query(table='doc_files', limit=1000)  # Executes in code
+    unconverted = [d for d in docs if not d['markdown_path']]  # Filter in code
+    summary = {'total': len(docs), 'unconverted': len(unconverted)}
+    print(json.dumps(summary))  # Return summary only (2K tokens vs 150K)
+    ```
+
+    **Example 2: Execute saved skill** (88% token reduction)
+    ```python
+    exec(open('/memories/skills/batch_document_processor.py').read())
+    result = run_skill(case_id='MVA-2024-001', limit=50)
+    ```
+
+    # Filesystem Organization
+
+    - /working/* - Temporary files (deleted after thread)
+    - /memories/skills/*.py - Executable code patterns (persistent)
+    - /memories/templates/*.md - Document templates (persistent)
+    - /memories/conventions/*.md - Firm standards (persistent)
+
+    # Memory-First Protocol
+
+    1. RESEARCH: Check /memories/skills/ for executable patterns
+    2. RESPONSE: Use python_repl to process large datasets
+    3. LEARNING: Save successful multi-step workflows as skills
+
+    # Additional Guidelines
+
+    - Use subagents to delegate specialized work
+    - Use write_todos to plan complex multi-step tasks
+    - Always return summaries, never full datasets
+    - Suggest saving new skills after completing novel workflows
+    """,
+
+    # Model
+    model="claude-sonnet-4-5-20250929",
+
+    # Memory
+    store=store,
+    backend=make_backend,
+
+    # Subagents
+    subagents=[
+        {
+            "name": "legal-researcher",
+            "description": "Specialized in legal research, case law, and statutory analysis. Use for complex research requiring multiple searches and synthesis.",
+            "system_prompt": """You are a legal research specialist.
+
+            Conduct thorough research using Tavily web search.
+            Focus on: case law, statutes, regulations, legal precedents.
+
+            Save research results to files for the main agent to access later.
+            Synthesize findings into clear, actionable summaries.""",
+            "tools": [*tavily_tools],
+            "model": "claude-sonnet-4-5-20250929"
+        },
+        {
+            "name": "email-manager",
+            "description": "Handles client email communications, drafts responses, and manages email workflows. Use for client communications and email tasks.",
+            "system_prompt": """You manage professional email communications for the law firm.
+
+            Draft clear, professional emails.
+            Maintain attorney-client confidentiality.
+            Track important email threads and follow-ups.""",
+            "tools": [*gmail_tools],
+            "model": "gpt-4o"
+        },
+        {
+            "name": "database-specialist",
+            "description": "Manages Supabase database operations including queries, updates, and data analysis. Use for complex database tasks.",
+            "system_prompt": """You handle database queries and updates for the case management system.
+
+            Query efficiently: use filters to reduce data returned.
+            Update carefully: verify before making changes.
+            Return summaries, not full datasets, to save tokens.""",
+            "tools": [*supabase_tools],
+            "model": "claude-sonnet-4-5-20250929"
+        },
+        {
+            "name": "scheduler",
+            "description": "Manages calendar events, court dates, deadlines, and scheduling. Use for all scheduling-related tasks.",
+            "system_prompt": """You manage the firm's calendar and scheduling.
+
+            Track court dates, client meetings, deadlines.
+            Coordinate schedules and send reminders.
+            Ensure no scheduling conflicts.""",
+            "tools": [*calendar_tools],
+            "model": "gpt-4o"
+        }
+    ]
+)
+
+# Compile with checkpointer
+graph = agent.compile(checkpointer=checkpointer)
+```
+
+### Usage Example
+
+```python
+# Run agent with thread persistence
+config = {"configurable": {"thread_id": "case-MVA-2024-001"}}
+
+result = graph.invoke(
+    {"messages": [{"role": "user", "content": "Find all documents for this case and summarize the key medical records"}]},
+    config
+)
+
+# Later conversation in same thread - agent remembers context
+result2 = graph.invoke(
+    {"messages": [{"role": "user", "content": "Draft an email to the client with an update"}]},
+    config
+)
+```
+
+---
+
+## 8. Project Structure
+
+```
+deepagents/
+├── src/
+│   ├── agents/
+│   │   └── legal_agent.py           # Main agent configuration
+│   ├── config/
+│   │   ├── __init__.py
+│   │   └── settings.py              # Environment variables, DB URIs
+│   └── mcp/
+│       ├── __init__.py
+│       └── clients.py               # MCP client setup
+├── tests/
+│   ├── test_agent.py                # Agent tests
+│   └── test_mcp.py                  # MCP integration tests
+├── langgraph.json                   # LangGraph config for deployment
+├── pyproject.toml                   # Dependencies
+├── .env                             # Secrets (not committed)
+├── .gitignore
+├── ARCHITECTURE.md                  # This document
+└── README.md
+```
+
+---
+
+## 9. Configuration File (langgraph.json)
+
+**Doc Reference:** https://docs.langchain.com/langsmith/cli
+
+```json
+{
+  "dependencies": [".", "deepagents", "langchain-mcp-adapters"],
+  "graphs": {
+    "legal_agent": "./src/agents/legal_agent.py:graph"
+  },
+  "env": ".env",
+  "checkpointer": {
+    "type": "postgres",
+    "connection_string": "${POSTGRES_CONNECTION_STRING}",
+    "ttl": {
+      "strategy": "expire_after_last_access",
+      "default_ttl": 10080,
+      "sweep_interval_minutes": 60
+    }
+  },
+  "store": {
+    "type": "postgres",
+    "connection_string": "${POSTGRES_CONNECTION_STRING}",
+    "index": {
+      "embed": "openai:text-embedding-3-small",
+      "dims": 1536
+    }
+  }
+}
+```
+
+**Key Settings:**
+- `dependencies` - Python packages to install
+- `graphs` - Path to compiled graph (format: `file_path:variable_name`)
+- `env` - Path to `.env` file with secrets
+- `checkpointer.ttl` - Checkpoint expiration (10080 min = 7 days)
+- `store.index` - Optional: enable vector search on memories
+
+---
+
+## 10. Dependencies (pyproject.toml)
+
+```toml
+[project]
+name = "whaley-legal-agent"
+version = "0.1.0"
+description = "Legal case management AI agent for Whaley Law Firm"
+requires-python = ">=3.10"
+
+dependencies = [
+    # Core DeepAgent
+    "deepagents>=0.1.0",
+    "langgraph>=0.3.0",
+    "langchain>=0.3.0",
+
+    # LLM Providers
+    "langchain-anthropic>=0.3.0",
+    "langchain-openai>=0.3.0",
+
+    # Code Execution (Anthropic pattern)
+    "langchain-experimental>=0.3.0",  # 🔥 NEW: For PythonREPLTool
+
+    # MCP Integration
+    "langchain-mcp-adapters>=0.1.0",
+
+    # Persistence (Supabase PostgreSQL)
+    "langgraph-checkpoint-postgres>=2.0.0",
+    "psycopg[binary,pool]>=3.0.0",
+
+    # Supabase
+    "supabase>=2.0.0",
+
+    # Utilities
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+```
+
+---
+
+## 11. Environment Variables (.env)
+
+```bash
+# LLM API Keys
+ANTHROPIC_API_KEY=sk-ant-...
+OPENAI_API_KEY=sk-...
+
+# Supabase
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+POSTGRES_CONNECTION_STRING=postgresql://postgres:[PASSWORD]@db.your-project.supabase.co:5432/postgres
+
+# MCP Servers
+TAVILY_API_KEY=tvly-...
+GMAIL_CREDENTIALS={"installed":{"client_id":"...","client_secret":"...","redirect_uris":["..."]}}
+GOOGLE_CALENDAR_CREDENTIALS={"installed":{"client_id":"...","client_secret":"...","redirect_uris":["..."]}}
+
+# LangSmith (optional - for observability)
+LANGSMITH_API_KEY=lsv2_...
+LANGSMITH_TRACING=true
+LANGSMITH_PROJECT=whaley-legal-agent-dev
+```
+
+**Security Notes:**
+- Never commit `.env` to git
+- Use Supabase **service role key** (not anon key) to bypass RLS
+- Store sensitive credentials in a secrets manager for production
+
+---
+
+## 12. Key Concepts Summary
+
+| Component | Purpose | Backend | Doc Reference |
+|-----------|---------|---------|---------------|
+| **PythonREPLTool** 🔥 | Code execution for efficiency | N/A (executes Python) | [Anthropic Pattern](https://www.anthropic.com/engineering/code-execution-with-mcp) |
+| **Skills Library** 🔥 | Reusable code patterns | /memories/skills/ | [Anthropic Pattern](https://www.anthropic.com/engineering/code-execution-with-mcp) |
+| **TodoListMiddleware** | Planning & task tracking | N/A (built-in) | [Middleware](https://docs.langchain.com/oss/python/deepagents/middleware) |
+| **FilesystemMiddleware** | Context management | CompositeBackend | [Middleware](https://docs.langchain.com/oss/python/deepagents/middleware) |
+| **SubAgentMiddleware** | Task delegation | N/A (built-in) | [Subagents](https://docs.langchain.com/oss/python/deepagents/subagents) |
+| **Short-term memory** | Working files | StateBackend | [Backends](https://docs.langchain.com/oss/python/deepagents/backends) |
+| **Long-term memory** | Persistent knowledge | StoreBackend → PostgresStore | [Long-term Memory](https://docs.langchain.com/oss/python/deepagents/long-term-memory) |
+| **Checkpointer** | State persistence | PostgresSaver (Supabase) | [Persistence](https://docs.langchain.com/oss/python/langgraph/persistence) |
+| **Store** | Cross-thread memory | PostgresStore (Supabase) | [Add Memory](https://docs.langchain.com/oss/python/langgraph/add-memory) |
+| **MCP Servers** | External tools | langchain-mcp-adapters | [MCP](https://docs.langchain.com/oss/python/langchain/mcp) |
+
+---
+
+## 13. Infrastructure Requirements
+
+### What We Need ✅
+
+1. **Supabase PostgreSQL database** (already have)
+   - Used for: Checkpointer, Store, and Supabase MCP
+   - Connection string format: `postgresql://postgres:[PASSWORD]@[HOST]:5432/postgres`
+   - **Note:** Same database for everything - no additional infrastructure needed!
+
+2. **API Keys** (in `.env`):
+   - `ANTHROPIC_API_KEY` - For Claude Sonnet 4.5
+   - `OPENAI_API_KEY` - For GPT-4o (optional, for subagents)
+   - `SUPABASE_URL` - Your Supabase project URL
+   - `SUPABASE_SERVICE_ROLE_KEY` - Service role key (bypasses RLS)
+   - `TAVILY_API_KEY` - For web search
+   - `GMAIL_CREDENTIALS` - Gmail OAuth credentials
+   - `GOOGLE_CALENDAR_CREDENTIALS` - Calendar OAuth credentials
+
+3. **Node.js/npm** - Required for MCP servers (they run via `npx`)
+
+### What We DON'T Need ❌
+
+- ❌ Separate database for memory (using Supabase PostgreSQL for everything)
+- ❌ Redis (only needed for LangSmith Cloud deployments with `langgraph up`)
+- ❌ Docker (for local development with `langgraph dev`; needed for production deployment)
+- ❌ Additional vector database (PostgreSQL supports pgvector for semantic search)
+
+---
+
+## 14. Development Workflow
+
+**Doc Reference:** https://docs.langchain.com/langsmith/cli
+
+### Local Development
+
+```bash
+# Install dependencies
+pip install -e ".[dev]"
+
+# Install LangGraph CLI
+pip install langgraph-cli
+
+# Start local development server (no Docker)
+langgraph dev --config langgraph.json
+
+# Server starts at http://localhost:8123
+# Studio UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
+```
+
+### Testing
+
+```python
+# Test with thread ID for persistence
+config = {"configurable": {"thread_id": "test-thread-001"}}
+
+result = graph.invoke(
+    {"messages": [{"role": "user", "content": "Test query"}]},
+    config
+)
+
+# Test same thread - should have memory of previous conversation
+result2 = graph.invoke(
+    {"messages": [{"role": "user", "content": "What did I just ask?"}]},
+    config
+)
+```
+
+### Observability with LangSmith
+
+```bash
+# Enable tracing in .env
+LANGSMITH_TRACING=true
+LANGSMITH_PROJECT=whaley-legal-agent-dev
+
+# All agent calls automatically traced
+# View at https://smith.langchain.com
+```
+
+### Production Deployment
+
+```bash
+# Option 1: Build Docker image locally
+langgraph build -t whaley-legal-agent:v1
+
+# Option 2: Deploy to LangSmith Cloud
+# Push to GitHub, then deploy via LangSmith UI
+# https://smith.langchain.com → Deployments → New Deployment
+```
+
+---
+
+## 15. Usage Patterns
+
+### Pattern 0: Skills-First Execution 🔥 NEW (Anthropic Pattern)
+
+```python
+config = {"configurable": {"thread_id": "case-MVA-2024-001"}}
+
+# First time: Agent writes code, processes 100 documents (12K tokens)
+result = graph.invoke({
+    "messages": [{
+        "role": "user",
+        "content": "Process all unconverted PDFs for this case"
+    }]
+}, config)
+
+# Agent suggests: "I successfully processed 100 documents. Should I save this as a skill?"
+
+# Next time: Agent executes saved skill directly (4K tokens, 88% savings!)
+result2 = graph.invoke({
+    "messages": [{
+        "role": "user",
+        "content": "Process all unconverted PDFs for case MVA-2024-002"
+    }]
+}, config)
+```
+
+**What happens (first time - 12K tokens):**
+1. Agent checks `/memories/skills/` - no match found
+2. Agent writes Python code in `python_repl`:
+   ```python
+   docs = supabase_query(table='doc_files', filters={'markdown_path': None})
+   for doc in docs:
+       # Convert and update in code environment
+       ...
+   summary = {'total': 100, 'success': 95, 'failed': 5}
+   ```
+3. Returns summary only (not 100 full documents)
+4. Suggests saving as skill
+
+**What happens (subsequent times - 4K tokens):**
+1. Agent checks `/memories/skills/` - finds `batch_document_processor.py`
+2. Executes skill directly:
+   ```python
+   exec(open('/memories/skills/batch_document_processor.py').read())
+   result = run_skill(case_id='MVA-2024-002')
+   ```
+3. **88% token reduction!**
+
+---
+
+## 16. Usage Patterns (Traditional)
+
+### Pattern 1: Case Document Query with Code Execution 🔥
+
+```python
+config = {"configurable": {"thread_id": "case-MVA-2024-001"}}
+
+# Agent uses code execution to filter and process documents efficiently
+result = graph.invoke({
+    "messages": [{
+        "role": "user",
+        "content": "Find all medical records for case MVA-2024-001 and summarize key injuries"
+    }]
+}, config)
+```
+
+**What happens (with code execution - saves 140K tokens):**
+1. Main agent uses `write_todos` to plan task
+2. Agent writes code in `python_repl`:
+   ```python
+   # Query executes in code environment
+   docs = supabase_query(
+       table='doc_files',
+       filters={'project_name': 'MVA-2024-001', 'content_type': 'medical'}
+   )
+
+   # Filter for medical records in code (not LLM)
+   medical_recs = [d for d in docs if 'medical' in d['filename'].lower()]
+
+   # Extract key info in code
+   summary = {
+       'total_medical_records': len(medical_recs),
+       'record_types': list(set(d['document_type'] for d in medical_recs)),
+       'date_range': f"{min(d['date'] for d in medical_recs)} to {max(d['date'] for d in medical_recs)}",
+       'key_files': [d['filename'] for d in medical_recs[:5]]
+   }
+   ```
+3. Returns summary only (2K tokens vs 150K if passing all docs to LLM)
+4. Main agent generates natural language response
+5. **Token savings: 98%**
+
+**Without code execution (❌ inefficient):**
+- Supabase returns 1000 documents to LLM context (150K tokens)
+- Agent processes each in LLM (expensive, slow)
+- Total: 150K+ tokens
+
+### Pattern 2: Legal Research with Memory
+
+```python
+config = {"configurable": {"thread_id": "research-session-001"}}
+
+# Agent delegates to legal-researcher subagent
+# Saves findings to /memories/ for future reference
+result = graph.invoke({
+    "messages": [{
+        "role": "user",
+        "content": "Research California product liability law regarding manufacturing defects"
+    }]
+}, config)
+```
+
+**What happens:**
+1. Agent checks `/memories/legal-research/` for existing research
+2. If not found, delegates to `legal-researcher` subagent
+3. Subagent conducts multiple Tavily searches
+4. Synthesizes findings into structured document
+5. Saves to `/memories/legal-research/ca-product-liability.md` (persistent)
+6. Returns summary to main agent, which responds to user
+7. **Future queries can reference the saved research!**
+
+### Pattern 3: Client Communication
+
+```python
+config = {"configurable": {"thread_id": "case-MVA-2024-001"}}
+
+# Agent delegates to email-manager subagent
+result = graph.invoke({
+    "messages": [{
+        "role": "user",
+        "content": "Draft an email to client updating them on case progress"
+    }]
+}, config)
+```
+
+**What happens:**
+1. Agent retrieves case context from Supabase
+2. Checks `/memories/templates/client-update-email.md` for template
+3. Delegates to `email-manager` subagent
+4. Subagent drafts email using Gmail MCP
+5. Returns draft for user approval
+6. After approval, sends via Gmail
+
+---
+
+## 17. Best Practices
+
+### Memory Management
+
+1. **Use /memories/ for:**
+   - Templates (motion templates, email templates)
+   - Firm conventions (case naming, billing codes)
+   - Schemas (database structure, API specs)
+   - Learned patterns (successful workflows)
+
+2. **Use /working/ for:**
+   - Search results (large JSON responses)
+   - Intermediate processing files
+   - Temporary calculations
+   - Draft documents before finalization
+
+3. **Memory-First Protocol:**
+   - **Research:** Check `/memories/` before starting tasks
+   - **Response:** Reference `/memories/` when uncertain
+   - **Learning:** Save new patterns to `/memories/`
+
+### Subagent Usage
+
+1. **Delegate when:**
+   - Task requires specialized tools (research → tavily, email → gmail)
+   - Complex subtask would pollute main agent context
+   - Need different model for cost/performance optimization
+
+2. **Don't delegate when:**
+   - Simple tool call (just use tool directly)
+   - Main agent already has necessary context
+   - Overhead of delegation exceeds benefit
+
+### Token Efficiency (Code Execution Pattern) 🔥
+
+1. **Always use python_repl for data processing:**
+   - Query MCP tools in code (data stays in execution environment)
+   - Filter, transform, aggregate in Python (free, fast)
+   - Return summaries only: `{'total': 100, 'success': 95}`
+   - **NOT:** Return full datasets to LLM context
+
+2. **Build skills library progressively:**
+   - After completing multi-step workflow, save as skill
+   - Next time: Execute skill directly (88-98% token reduction)
+   - Skills grow smarter over time
+
+3. **Skills-first mindset:**
+   - Check `/memories/skills/` before starting EVERY task
+   - Use existing skills when possible (4K vs 32K tokens)
+   - Suggest new skills after novel workflows
+
+4. **Code execution examples:**
+
+   **❌ Bad (traditional MCP):**
+   ```python
+   # Returns 1000 records to LLM (150K tokens)
+   docs = supabase_query(table='doc_files')
+   # Agent processes in LLM context (expensive!)
+   ```
+
+   **✅ Good (code execution):**
+   ```python
+   # Process in code environment (2K tokens)
+   docs = supabase_query(table='doc_files')
+   summary = {'total': len(docs), 'unconverted': sum(1 for d in docs if not d['markdown_path'])}
+   print(summary)  # Return summary only
+   ```
+
+5. **Use subagents for specialization, code for processing:**
+   - Subagents: Delegate specialized domains
+   - Code execution: Filter/process large data
+   - Combination: Subagent writes code to process domain-specific data
+
+---
+
+## 18. Next Steps
+
+### Phase 1: Setup (Week 1)
+- [ ] Create project structure
+- [ ] Install dependencies (including `langchain-experimental` for PythonREPLTool)
+- [ ] Configure environment variables
+- [ ] Setup Supabase checkpointer and store (`setup()` calls)
+- [ ] Test basic agent with simple query
+- [ ] Test code execution: agent writes and runs Python code
+
+### Phase 2: MCP Integration (Week 1-2)
+- [ ] Setup Supabase MCP
+- [ ] Setup Tavily MCP
+- [ ] Setup Gmail MCP (optional for MVP)
+- [ ] Setup Calendar MCP (optional for MVP)
+- [ ] Test each MCP server independently
+
+### Phase 3: Memory, Subagents & Skills (Week 2)
+- [ ] Configure CompositeBackend for hybrid storage
+- [ ] Create `/memories/skills/` directory
+- [ ] Define specialized subagents
+- [ ] Populate `/memories/` with initial templates/conventions
+- [ ] Test memory persistence across threads
+- [ ] Create first reusable skill and test execution
+
+### Phase 4: Testing & Refinement (Week 3)
+- [ ] Test with real case data from Supabase
+- [ ] Measure token savings (compare with/without code execution)
+- [ ] Build skills library (5-10 common workflows)
+- [ ] Optimize system prompts for skills-first behavior
+- [ ] Add error handling
+- [ ] LangSmith tracing and evaluation
+
+### Phase 5: Deployment (Week 4)
+- [ ] Build Docker image
+- [ ] Deploy to staging environment
+- [ ] User acceptance testing
+- [ ] Production deployment
+
+---
+
+## 19. Troubleshooting
+
+### Common Issues
+
+**1. MCP servers not connecting:**
+- Ensure Node.js/npm installed
+- Check API keys in `.env`
+- Test MCP server independently: `npx @modelcontextprotocol/server-supabase`
+
+**2. Checkpointer errors:**
+- Run `checkpointer.setup()` first time
+- Verify PostgreSQL connection string
+- Check Supabase database is accessible
+
+**3. Memory not persisting:**
+- Ensure files prefixed with `/memories/`
+- Verify `StoreBackend` configured in `CompositeBackend`
+- Check `store.setup()` was run
+
+**4. Subagents not working:**
+- Verify subagent configuration in `create_deep_agent()`
+- Check tools are passed to subagent
+- Test subagent independently
+
+**5. Code execution errors:**
+- Ensure `langchain-experimental` installed
+- Check Python syntax in agent-generated code
+- Verify MCP tools are accessible in code execution environment
+- Test `python_repl` tool independently
+
+**6. Skills not executing:**
+- Verify files exist in `/memories/skills/`
+- Check file permissions (readable)
+- Ensure skills have valid Python syntax
+- Test skill execution manually before agent use
+
+---
+
+## 20. Resources
+
+### Official Documentation
+- **DeepAgents Overview:** https://docs.langchain.com/oss/python/deepagents/overview
+- **Middleware:** https://docs.langchain.com/oss/python/deepagents/middleware
+- **Long-term Memory:** https://docs.langchain.com/oss/python/deepagents/long-term-memory
+- **Backends:** https://docs.langchain.com/oss/python/deepagents/backends
+- **Subagents:** https://docs.langchain.com/oss/python/deepagents/subagents
+- **LangGraph Persistence:** https://docs.langchain.com/oss/python/langgraph/persistence
+- **MCP Integration:** https://docs.langchain.com/oss/python/langchain/mcp
+- **LangGraph CLI:** https://docs.langchain.com/langsmith/cli
+
+### Related Projects
+- **Anthropic's Code Execution with MCP:** https://www.anthropic.com/engineering/code-execution-with-mcp
+- **LangGraph:** https://github.com/langchain-ai/langgraph
+- **DeepAgents:** https://github.com/langchain-ai/deepagents
+
+---
+
+## Conclusion
+
+This architecture provides:
+- ✅ **Code Execution** via PythonREPLTool (Anthropic pattern) 🔥 **NEW**
+- ✅ **Skills Library** for reusable workflows (88-98% token savings) 🔥 **NEW**
+- ✅ **Planning** via TodoListMiddleware
+- ✅ **Context Management** via FilesystemMiddleware
+- ✅ **Task Delegation** via SubAgentMiddleware
+- ✅ **Short-term Memory** via StateBackend
+- ✅ **Long-term Memory** via StoreBackend + PostgresStore
+- ✅ **Persistence** via PostgresSaver checkpointer
+- ✅ **External Tools** via MCP servers (Supabase, Tavily, Gmail, Calendar)
+- ✅ **Single Database** - Everything uses Supabase PostgreSQL
+
+**Key Innovation:** Implements Anthropic's Code Execution with MCP pattern for maximum token efficiency:
+- Traditional MCP: 32K tokens per task
+- With code execution: 12K tokens first time, 4K with skills
+- **Token savings: 88-98%**
+
+**No custom infrastructure needed** - leverages official LangChain/LangGraph patterns with your existing Supabase database.
+
+Ready to implement!
