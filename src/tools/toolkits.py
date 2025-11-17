@@ -225,7 +225,7 @@ def fix_mcp_tool_signature(tool: BaseTool) -> BaseTool:
 
 async def init_gmail_toolkit() -> List[BaseTool]:
     """
-    Initialize Gmail toolkit with OAuth credentials from GMAIL_CREDENTIALS environment variable.
+    Initialize Gmail toolkit with OAuth credentials from GMAIL_CREDENTIALS and GMAIL_TOKEN environment variables.
 
     Returns:
         list[BaseTool]: List containing 5 Gmail tools (create_gmail_draft, send_gmail_message,
@@ -233,61 +233,86 @@ async def init_gmail_toolkit() -> List[BaseTool]:
         missing or initialization fails.
 
     Note:
-        Credentials file should be path to OAuth 2.0 credentials JSON file downloaded from
-        Google Cloud Console per LangChain documentation.
+        For cloud deployments, provide both GMAIL_CREDENTIALS (JSON string of OAuth client credentials)
+        and GMAIL_TOKEN (JSON string from token.json after completing OAuth flow).
+        For local development, can use file path in GMAIL_CREDENTIALS.
 
     Citation: https://python.langchain.com/docs/integrations/tools/google_gmail
     """
-    try:
-        # Read GMAIL_CREDENTIALS environment variable to get path to credentials JSON file
-        # for OAuth authentication
-        credentials_path = os.getenv("GMAIL_CREDENTIALS")
+    import tempfile
+    import json
+    import asyncio
+    import os as os_module
 
-        # Check if credentials missing and log warning, return empty list for graceful degradation
-        if not credentials_path:
+    temp_dir = None
+
+    try:
+        gmail_token = os.getenv("GMAIL_TOKEN")
+        credentials_env = os.getenv("GMAIL_CREDENTIALS")
+
+        if not credentials_env:
             logger.warning("Gmail credentials not configured, skipping Gmail toolkit initialization")
             return []
 
-        # Log initialization attempt for debugging and monitoring
-        logger.info(f"Initializing Gmail toolkit with credentials from {credentials_path}")
+        # Determine if credentials_env is a file path or JSON string
+        if credentials_env.startswith("{"):
+            # It's a JSON string - create temp directory and write both files
+            logger.info("Using Gmail credentials from environment variable (JSON string)")
 
-        # Create toolkit instance with OAuth authentication per official docs
-        # Use asyncio.to_thread to run blocking OAuth calls in thread pool
-        import asyncio
+            # Create temporary directory for credentials and token
+            temp_dir = tempfile.mkdtemp(prefix="gmail_auth_")
+            credentials_path = os_module.path.join(temp_dir, "credentials.json")
+            token_path = os_module.path.join(temp_dir, "token.json")
+
+            # Write credentials file
+            with open(credentials_path, 'w') as f:
+                f.write(credentials_env)
+            logger.info(f"Wrote credentials to {credentials_path}")
+
+            # Write token file if provided (for cloud deployment)
+            if gmail_token:
+                with open(token_path, 'w') as f:
+                    f.write(gmail_token)
+                logger.info(f"Wrote token to {token_path}")
+        else:
+            # It's a file path - use directly
+            logger.info(f"Using Gmail credentials from file path: {credentials_env}")
+            credentials_path = credentials_env
+
+        # Create toolkit instance with OAuth authentication
+        logger.info(f"Initializing Gmail toolkit with credentials from {credentials_path}")
         gmail_toolkit = await asyncio.to_thread(GmailToolkit, credentials_file=credentials_path)
 
-        # Retrieve list of 5 Gmail tools as BaseTool instances per LangChain toolkit pattern
+        # Retrieve list of 5 Gmail tools
         gmail_tools = gmail_toolkit.get_tools()
 
-        # Confirm successful initialization without exposing sensitive credentials
         logger.info(f"Successfully initialized Gmail toolkit with {len(gmail_tools)} tools")
-
-        # Return tools to caller agent compilation code which will add these to agent's available tools
         return gmail_tools
 
     except FileNotFoundError as e:
-        # Catch missing credentials file error for clearer error messaging
-        logger.error(f"Gmail credentials file not found at path: {e}")
-        return []  # Graceful degradation: continue agent startup without Gmail functionality
+        logger.error(f"Gmail credentials file not found: {e}")
+        return []
 
     except Exception as e:
-        # Catch all other errors: OAuth flow failures, API errors, network issues, etc.
         logger.error(f"Gmail toolkit initialization failed: {str(e)}")
-        return []  # Empty list is preferred over raising exception for agent resilience
+        import traceback
+        logger.error(f"Full traceback: {traceback.format_exc()}")
+        return []
 
-    # Credentials file path should point to credentials.json downloaded from Google Cloud Console
-    # with Gmail API enabled.
-    # First time initialization may trigger OAuth consent flow requiring user interaction to
-    # authorize application.
-    # After initial authorization, token.json created for subsequent automatic authentication
-    # per LangChain Google Community package behavior.
-    # Toolkit initialization is expensive so this function should only be called once during
-    # agent startup not per request.
+    finally:
+        # Clean up temporary directory if created
+        if temp_dir and os_module.path.exists(temp_dir):
+            try:
+                import shutil
+                shutil.rmtree(temp_dir)
+                logger.debug(f"Cleaned up temporary directory: {temp_dir}")
+            except Exception as e:
+                logger.warning(f"Failed to clean up temporary directory {temp_dir}: {e}")
 
 
 async def init_calendar_toolkit() -> List[BaseTool]:
     """
-    Initialize Calendar toolkit with OAuth credentials from GOOGLE_CALENDAR_CREDENTIALS environment variable.
+    Initialize Calendar toolkit with OAuth credentials from GOOGLE_CALENDAR_CREDENTIALS and GOOGLE_CALENDAR_TOKEN environment variables.
 
     Returns:
         list[BaseTool]: List containing 7 Calendar tools (create_calendar_event, search_calendar_events,
@@ -295,58 +320,81 @@ async def init_calendar_toolkit() -> List[BaseTool]:
         get_current_datetime) or empty list if credentials missing or initialization fails.
 
     Note:
-        Credentials file should be path to OAuth 2.0 credentials JSON file downloaded from
-        Google Cloud Console with Calendar API enabled.
+        For cloud deployments, provide both GOOGLE_CALENDAR_CREDENTIALS (JSON string of OAuth client credentials)
+        and GOOGLE_CALENDAR_TOKEN (JSON string from token.json after completing OAuth flow).
+        For local development, can use file path in GOOGLE_CALENDAR_CREDENTIALS.
 
     Citation: https://python.langchain.com/docs/integrations/tools/google_calendar
     """
-    try:
-        # Read GOOGLE_CALENDAR_CREDENTIALS environment variable to get path to credentials JSON file
-        # for OAuth authentication
-        credentials_path = os.getenv("GOOGLE_CALENDAR_CREDENTIALS")
+    import tempfile
+    import json
+    import asyncio
+    import os as os_module
 
-        # Check if credentials missing and log warning, return empty list for graceful degradation
-        if not credentials_path:
+    temp_dir = None
+
+    try:
+        calendar_token = os.getenv("GOOGLE_CALENDAR_TOKEN")
+        credentials_env = os.getenv("GOOGLE_CALENDAR_CREDENTIALS")
+
+        if not credentials_env:
             logger.warning("Calendar credentials not configured, skipping Calendar toolkit initialization")
             return []
 
-        # Log initialization attempt for debugging and monitoring
-        logger.info(f"Initializing Calendar toolkit with credentials from {credentials_path}")
+        # Determine if credentials_env is a file path or JSON string
+        if credentials_env.startswith("{"):
+            # It's a JSON string - create temp directory and write both files
+            logger.info("Using Calendar credentials from environment variable (JSON string)")
 
-        # Create toolkit instance with OAuth authentication per official docs
-        # Use asyncio.to_thread to run blocking OAuth calls in thread pool
-        import asyncio
+            # Create temporary directory for credentials and token
+            temp_dir = tempfile.mkdtemp(prefix="calendar_auth_")
+            credentials_path = os_module.path.join(temp_dir, "credentials.json")
+            token_path = os_module.path.join(temp_dir, "token.json")
+
+            # Write credentials file
+            with open(credentials_path, 'w') as f:
+                f.write(credentials_env)
+            logger.info(f"Wrote credentials to {credentials_path}")
+
+            # Write token file if provided (for cloud deployment)
+            if calendar_token:
+                with open(token_path, 'w') as f:
+                    f.write(calendar_token)
+                logger.info(f"Wrote token to {token_path}")
+        else:
+            # It's a file path - use directly
+            logger.info(f"Using Calendar credentials from file path: {credentials_env}")
+            credentials_path = credentials_env
+
+        # Create toolkit instance with OAuth authentication
+        logger.info(f"Initializing Calendar toolkit with credentials from {credentials_path}")
         calendar_toolkit = await asyncio.to_thread(CalendarToolkit, credentials_file=credentials_path)
 
-        # Retrieve list of 7 Calendar tools as BaseTool instances per LangChain toolkit pattern
+        # Retrieve list of 7 Calendar tools
         calendar_tools = calendar_toolkit.get_tools()
 
-        # Confirm successful initialization without exposing sensitive credentials
         logger.info(f"Successfully initialized Calendar toolkit with {len(calendar_tools)} tools")
-
-        # Return tools to caller agent compilation code which will add these to agent's available tools
         return calendar_tools
 
     except FileNotFoundError as e:
-        # Catch missing credentials file error for clearer error messaging
-        logger.error(f"Calendar credentials file not found at path: {e}")
-        return []  # Graceful degradation: continue agent startup without Calendar functionality
+        logger.error(f"Calendar credentials file not found: {e}")
+        return []
 
     except Exception as e:
-        # Catch all other errors: OAuth flow failures, API errors, network issues, etc.
         logger.error(f"Calendar toolkit initialization failed: {str(e)}")
-        return []  # Empty list ensures agent can start even if Calendar toolkit fails
+        import traceback
+        logger.error(f"Full traceback: {traceback.format_exc()}")
+        return []
 
-    # Calendar toolkit shares same OAuth credential pattern as Gmail toolkit allowing same
-    # credentials file if both APIs enabled in project.
-    # get_current_datetime tool is particularly useful for legal scheduling and deadline
-    # calculations providing timezone-aware datetime.
-    # OAuth flow for Calendar may be separate from Gmail requiring user to authorize Calendar
-    # API access specifically.
-    # token.json created after authorization stores refresh token for automatic reauthentication
-    # per Google OAuth 2.0 flow.
-    # Toolkit initialization is expensive so this function should only be called once during
-    # agent startup not per request.
+    finally:
+        # Clean up temporary directory if created
+        if temp_dir and os_module.path.exists(temp_dir):
+            try:
+                import shutil
+                shutil.rmtree(temp_dir)
+                logger.debug(f"Cleaned up temporary directory: {temp_dir}")
+            except Exception as e:
+                logger.warning(f"Failed to clean up temporary directory {temp_dir}: {e}")
 
 
 async def init_supabase_mcp() -> List[BaseTool]:
