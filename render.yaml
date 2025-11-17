@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: roscoe-telegram-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python telegram_webhook.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_WEBHOOK_URL
+        sync: false
+      - key: TELEGRAM_ALLOWED_USER_IDS
+        sync: false
+      - key: ELEVENLABS_API_KEY
+        sync: false
+      - key: ELEVENLABS_VOICE_ID
+        value: NNl6r8mD7vthiJatiJt1
+      - key: LANGGRAPH_DEPLOYMENT_URL
+        sync: false
+      - key: LANGGRAPH_GRAPH_ID
+        value: legal_agent
+      - key: PYTHON_VERSION
+        value: 3.11.0
