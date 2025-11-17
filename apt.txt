@@ -1,0 +1,9 @@
+# System dependencies for LangGraph Cloud deployment
+# This file ensures Node.js is available for MCP servers (Supabase and Tavily)
+
+# Node.js is required for:
+# - @supabase/mcp-server-postgrest (Supabase database MCP server)
+# - @mcptools/mcp-tavily (Tavily search MCP server)
+
+nodejs
+npm
