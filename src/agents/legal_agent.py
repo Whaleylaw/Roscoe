@@ -60,8 +60,29 @@ async def init_tools():
     Note: runloop_tool initialization is synchronous but toolkit initializations
     are async requiring await keywords per LangChain pattern.
     """
+    import logging
+    logger = logging.getLogger(__name__)
+
+    # Log environment variable status for debugging deployment issues
+    logger.error("=" * 80)
+    logger.error("🔍 DEPLOYMENT DIAGNOSTICS - Environment Variables Check")
+    logger.error("=" * 80)
+    logger.error(f"RUNLOOP_API_KEY: {'✅ Set' if os.getenv('RUNLOOP_API_KEY') else '❌ MISSING'}")
+    logger.error(f"SUPABASE_URL: {'✅ Set' if os.getenv('SUPABASE_URL') else '❌ MISSING'}")
+    logger.error(f"SUPABASE_SERVICE_ROLE_KEY: {'✅ Set' if os.getenv('SUPABASE_SERVICE_ROLE_KEY') else '❌ MISSING'}")
+    logger.error(f"TAVILY_API_KEY: {'✅ Set' if os.getenv('TAVILY_API_KEY') else '❌ MISSING'}")
+    logger.error(f"ELEVENLABS_API_KEY: {'✅ Set' if os.getenv('ELEVENLABS_API_KEY') else '❌ MISSING'}")
+    logger.error(f"GMAIL_CREDENTIALS: {'✅ Set' if os.getenv('GMAIL_CREDENTIALS') else '❌ MISSING (optional)'}")
+    logger.error(f"GOOGLE_CALENDAR_CREDENTIALS: {'✅ Set' if os.getenv('GOOGLE_CALENDAR_CREDENTIALS') else '❌ MISSING (optional)'}")
+    logger.error("=" * 80)
+
     # Create RunLoop code execution tool (synchronous)
-    runloop_tool = create_runloop_tool()
+    try:
+        runloop_tool = create_runloop_tool()
+        logger.error("✅ RunLoop code executor initialized successfully")
+    except Exception as e:
+        logger.error(f"❌ RunLoop initialization failed: {e}")
+        runloop_tool = None
 
     # Initialize async toolkits
     gmail_tools = await init_gmail_toolkit()
@@ -70,8 +91,26 @@ async def init_tools():
     tavily_tools = await init_tavily_mcp()
     tts_tools = await init_elevenlabs_tts()
 
+    # Log toolkit initialization results
+    logger.error("=" * 80)
+    logger.error("📊 TOOLKIT INITIALIZATION RESULTS")
+    logger.error("=" * 80)
+    logger.error(f"RunLoop Code Executor: {1 if runloop_tool else 0} tools")
+    logger.error(f"Gmail: {len(gmail_tools)} tools")
+    logger.error(f"Calendar: {len(calendar_tools)} tools")
+    logger.error(f"Supabase: {len(supabase_tools)} tools")
+    logger.error(f"Tavily: {len(tavily_tools)} tools")
+    logger.error(f"ElevenLabs TTS: {len(tts_tools)} tools")
+    logger.error(f"TOTAL TOOLS: {(1 if runloop_tool else 0) + len(gmail_tools) + len(calendar_tools) + len(supabase_tools) + len(tavily_tools) + len(tts_tools)}")
+    logger.error("=" * 80)
+
+    if not runloop_tool and not supabase_tools and not tavily_tools:
+        logger.error("⚠️  WARNING: Critical tools missing!")
+        logger.error("⚠️  See LANGGRAPH_CLOUD_SETUP.md for environment variable requirements")
+        logger.error("=" * 80)
+
     return {
-        "code_executor": [runloop_tool],
+        "code_executor": [runloop_tool] if runloop_tool else [],
         "gmail": gmail_tools,
         "calendar": calendar_tools,
         "supabase": supabase_tools,
