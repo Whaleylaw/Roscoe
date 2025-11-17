@@ -63,6 +63,7 @@ TELEGRAM_ALLOWED_USER_IDS=123456789  # Your Telegram user ID (get from @userinfo
 
 # LangGraph Configuration
 LANGGRAPH_DEPLOYMENT_URL=https://your-langgraph-deployment.com  # Your LangGraph deployment
+LANGGRAPH_API_KEY=lsv2_xxx...  # X-API-Key from LangGraph Cloud deployment settings
 LANGGRAPH_GRAPH_ID=legal_agent
 
 # ElevenLabs TTS
@@ -148,6 +149,7 @@ Expected response:
 | `TELEGRAM_WEBHOOK_URL` | ✅ Yes | - | Your Render service URL (HTTPS) |
 | `TELEGRAM_ALLOWED_USER_IDS` | ⚠️ Recommended | Empty (allows all) | Comma-separated user IDs |
 | `LANGGRAPH_DEPLOYMENT_URL` | ✅ Yes | `http://127.0.0.1:2024` | Your LangGraph deployment URL |
+| `LANGGRAPH_API_KEY` | ✅ Yes | - | X-API-Key for LangGraph Cloud authentication |
 | `LANGGRAPH_GRAPH_ID` | No | `legal_agent` | Agent ID in LangGraph |
 | `ELEVENLABS_API_KEY` | ⚠️ Recommended | - | For audio responses |
 | `ELEVENLABS_VOICE_ID` | No | Professional voice | Voice customization |
@@ -203,10 +205,14 @@ curl https://api.telegram.org/bot<YOUR_BOT_TOKEN>/deleteWebhook
 ### LangGraph Connection Errors
 
 1. Verify `LANGGRAPH_DEPLOYMENT_URL` is correct (include https://)
-2. Check LangGraph deployment is running
-3. Test connection:
+2. **Check `LANGGRAPH_API_KEY` is set correctly**:
+   - Get X-API-Key from LangGraph Cloud deployment settings
+   - The key should look like `lsv2_xxx...`
+   - Authentication errors will show "Failed to create thread" or "401 Unauthorized"
+3. Check LangGraph deployment is running
+4. Test connection with authentication:
    ```bash
-   curl https://your-langgraph-deployment.com/threads
+   curl -H "X-API-Key: your-api-key" https://your-langgraph-deployment.com/threads
    ```
 
 ### Audio Not Working
