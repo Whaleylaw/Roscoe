@@ -42,6 +42,7 @@ TELEGRAM_ALLOWED_USER_IDS = os.getenv("TELEGRAM_ALLOWED_USER_IDS", "").split(","
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 ELEVENLABS_VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID", "NNl6r8mD7vthiJatiJt1")
 LANGGRAPH_API_URL = os.getenv("LANGGRAPH_DEPLOYMENT_URL", "http://127.0.0.1:2024")
+LANGGRAPH_API_KEY = os.getenv("LANGGRAPH_API_KEY")  # X-API-Key for authentication
 AGENT_ID = os.getenv("LANGGRAPH_GRAPH_ID", "legal_agent")
 
 # User session management: maps telegram_user_id -> langgraph_thread_id
@@ -137,9 +138,14 @@ def send_chat_action(chat_id: int, action: str = "typing"):
 def create_thread_for_user(user_id: int) -> str:
     """Create a new LangGraph thread for a Telegram user."""
     try:
+        headers = {}
+        if LANGGRAPH_API_KEY:
+            headers["X-API-Key"] = LANGGRAPH_API_KEY
+
         response = requests.post(
             f"{LANGGRAPH_API_URL}/threads",
             json={"assistant_id": AGENT_ID},
+            headers=headers,
             timeout=30
         )
         response.raise_for_status()
@@ -174,6 +180,11 @@ async def stream_agent_response(thread_id: str, message: str, chat_id: int):
 
         message_id = sent_message["result"]["message_id"]
 
+        # Prepare headers with authentication
+        headers = {}
+        if LANGGRAPH_API_KEY:
+            headers["X-API-Key"] = LANGGRAPH_API_KEY
+
         # Stream the agent response
         response = requests.post(
             f"{LANGGRAPH_API_URL}/threads/{thread_id}/runs/stream",
@@ -184,6 +195,7 @@ async def stream_agent_response(thread_id: str, message: str, chat_id: int):
                 },
                 "stream_mode": "messages"
             },
+            headers=headers,
             stream=True,
             timeout=300
         )
