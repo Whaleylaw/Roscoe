@@ -2,7 +2,7 @@
 # Install with: pip install -r requirements.txt
 
 # Core DeepAgents Framework (from local libs/)
-# Install via: pip install -e ./libs/deepagents
+./libs/deepagents
 
 # LangChain Integrations
 # NOTE: langchain 1.0.7 requires langgraph>=1.0.2,<1.1.0 and langchain-core>=1.0.4,<2.0.0
