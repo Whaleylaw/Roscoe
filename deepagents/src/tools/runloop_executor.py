@@ -233,7 +233,7 @@ class RunLoopExecutor:
     # Line 085: Cleanup is idempotent; can be safely called multiple times
 
 
-def create_runloop_tool() -> RunLoopExecutor:
+def create_runloop_tool():
     """
     Factory function to create RunLoopExecutor instance as LangChain-compatible tool.
 
@@ -241,7 +241,7 @@ def create_runloop_tool() -> RunLoopExecutor:
     actually added to the agent, avoiding startup cost if not used.
 
     Returns:
-        RunLoopExecutor: Configured executor instance ready for agent tools list
+        Decorated execute_code method ready for agent tools list
 
     Example:
         from src.tools.runloop_executor import create_runloop_tool
@@ -253,7 +253,8 @@ def create_runloop_tool() -> RunLoopExecutor:
     executor = RunLoopExecutor()
 
     # Line 090-091: Tool decorator on execute_code provides LangChain interface
-    return executor
+    # Return the decorated method, not the instance
+    return executor.execute_code
 
 # Line 095: Executor can be reused across multiple code execution calls
 # Each execution gets fresh devbox; no state sharing between calls

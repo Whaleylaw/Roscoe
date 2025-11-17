@@ -19,10 +19,199 @@ from typing import Optional, List
 
 from langchain_google_community import GmailToolkit
 from langchain_google_community import CalendarToolkit
-from langchain_mcp_adapters import MCPClient
-from langchain_core.tools import BaseTool
+from langchain_mcp_adapters.client import MultiServerMCPClient
+from langchain_core.tools import BaseTool, StructuredTool
 
 logger = logging.getLogger(__name__)
+
+
+def fix_mcp_tool_signature(tool: BaseTool) -> BaseTool:
+    """
+    Fix MCP tool signature to prevent 'got multiple values for argument self' error.
+
+    MCP tools sometimes have incorrect signatures where self is included as a parameter.
+    This fixes the issue by:
+    1. Removing 'self' from args_schema (prevents LangChain from passing it)
+    2. Monkey-patching _run/_arun to filter 'self' from kwargs (safety net)
+
+    Args:
+        tool: The MCP tool to fix
+
+    Returns:
+        BaseTool: The fixed tool with correct signature
+    """
+    # If tool is not a StructuredTool, return as-is
+    if not isinstance(tool, StructuredTool):
+        logger.debug(f"Tool {tool.name} is not a StructuredTool, skipping fix")
+        return tool
+
+    logger.info(f"Applying signature fix to tool: {tool.name}")
+
+    # Store the original _run method
+    original_run = tool._run
+    original_arun = tool._arun if hasattr(tool, '_arun') else None
+
+    # CRITICAL DEBUGGING: Inspect the _run method signature directly
+    import inspect
+    logger.error(f"🔍 Tool {tool.name} - Inspecting _run method:")
+    logger.error(f"  - original_run type: {type(original_run)}")
+    logger.error(f"  - is bound method: {hasattr(original_run, '__self__')}")
+
+    try:
+        run_sig = inspect.signature(original_run)
+        logger.error(f"  - _run signature: {run_sig}")
+        logger.error(f"  - _run parameters: {list(run_sig.parameters.keys())}")
+        logger.error(f"  - 'self' in _run signature: {'self' in run_sig.parameters}")
+    except Exception as e:
+        logger.error(f"  - Could not get _run signature: {e}")
+
+    # CRITICAL DEBUGGING: Inspect the actual function signature
+    logger.warning(f"Tool {tool.name} - hasattr(tool, 'func'): {hasattr(tool, 'func')}")
+    if hasattr(tool, 'func'):
+        logger.warning(f"Tool {tool.name} - tool.func: {tool.func}")
+        logger.warning(f"Tool {tool.name} - func type: {type(tool.func)}")
+        if tool.func:
+            try:
+                sig = inspect.signature(tool.func)
+                logger.warning(f"Tool {tool.name} - func signature: {sig}")
+                logger.warning(f"Tool {tool.name} - func parameters: {list(sig.parameters.keys())}")
+            except Exception as e:
+                logger.warning(f"Tool {tool.name} - Could not get func signature: {e}")
+        else:
+            logger.warning(f"Tool {tool.name} - func is None/False")
+    else:
+        logger.warning(f"Tool {tool.name} - NO func attribute")
+
+    # FIX 1: Remove 'self' from args_schema if present
+    # This prevents LangChain from trying to pass 'self' in the first place
+    # CRITICAL DISCOVERY: MCP tools use JSON Schema (dict), not Pydantic models
+    if hasattr(tool, 'args_schema') and tool.args_schema:
+        logger.warning(f"Tool {tool.name} - HAS args_schema type: {type(tool.args_schema)}")
+
+        # Handle JSON Schema (dict) - this is what MCP tools actually use!
+        if isinstance(tool.args_schema, dict):
+            logger.warning(f"Tool {tool.name} - Schema is JSON Schema (dict)")
+            properties = tool.args_schema.get('properties', {})
+            logger.warning(f"Tool {tool.name} - Properties: {list(properties.keys())}")
+
+            if 'self' in properties:
+                logger.error(f"Tool {tool.name} - 'self' found in JSON Schema properties, removing it!")
+
+                # Create a copy of the schema without 'self'
+                import copy
+                new_schema = copy.deepcopy(tool.args_schema)
+                del new_schema['properties']['self']
+
+                # Also remove from required list if present
+                if 'required' in new_schema and 'self' in new_schema['required']:
+                    new_schema['required'].remove('self')
+
+                tool.args_schema = new_schema
+                logger.error(f"Tool {tool.name} - Successfully removed 'self' from JSON Schema")
+            else:
+                logger.info(f"Tool {tool.name} - No 'self' in JSON Schema properties (good!)")
+
+        # Handle Pydantic models (for completeness)
+        else:
+            fields_dict = getattr(tool.args_schema, 'model_fields', None) or getattr(tool.args_schema, '__fields__', None)
+            if fields_dict:
+                logger.warning(f"Tool {tool.name} - Schema is Pydantic model")
+                logger.warning(f"Tool {tool.name} - Pydantic fields: {list(fields_dict.keys())}")
+
+                if 'self' in fields_dict:
+                    logger.error(f"Tool {tool.name} - 'self' found in Pydantic schema, removing it")
+
+                    # Create new schema without 'self' field
+                    from pydantic import create_model
+
+                    # Build new fields dict excluding 'self'
+                    new_fields = {}
+                    for name, field in fields_dict.items():
+                        if name != 'self':
+                            # Get field type and default
+                            field_type = field.annotation if hasattr(field, 'annotation') else field.outer_type_
+                            field_default = field.default if hasattr(field, 'default') else ...
+                            new_fields[name] = (field_type, field_default)
+
+                    # Create new schema model
+                    if new_fields:
+                        new_schema = create_model(
+                            f"{tool.args_schema.__name__}_Fixed",
+                            **new_fields
+                        )
+                        tool.args_schema = new_schema
+                        logger.error(f"Tool {tool.name} - Successfully removed 'self' from Pydantic schema")
+                    else:
+                        # If no fields left after removing 'self', set schema to None
+                        tool.args_schema = None
+                        logger.error(f"Tool {tool.name} - Set args_schema to None (only had 'self' field)")
+                else:
+                    logger.info(f"Tool {tool.name} - No 'self' in Pydantic schema (good!)")
+
+    # FIX 2: Monkey-patch _run and _arun as a safety net
+    # Even though we removed 'self' from args_schema, we still patch the methods
+    # in case 'self' gets passed through other code paths
+    def patched_run(*args, **kwargs):
+        """Patched _run that removes 'self' from kwargs."""
+        logger.info(f"🔧 PATCHED_RUN called for {tool.name}")
+        logger.debug(f"  - Received args: {args}")
+        logger.debug(f"  - Received kwargs: {kwargs}")
+        logger.debug(f"  - 'self' in kwargs: {'self' in kwargs}")
+
+        # Don't pass *args because original_run is already a bound method
+        # args[0] is the tool instance, which is already bound to original_run
+        cleaned_kwargs = {k: v for k, v in kwargs.items() if k != 'self'}
+        logger.debug(f"  - Cleaned kwargs: {cleaned_kwargs}")
+
+        try:
+            result = original_run(**cleaned_kwargs)
+            logger.info(f"✅ PATCHED_RUN succeeded for {tool.name}")
+            return result
+        except Exception as e:
+            logger.error(f"❌ PATCHED_RUN failed for {tool.name}: {type(e).__name__}: {e}")
+            raise
+
+    async def patched_arun(*args, **kwargs):
+        """Patched _arun that removes 'self' from kwargs and ensures config is provided."""
+        logger.info(f"🔧 PATCHED_ARUN called for {tool.name}")
+        logger.info(f"  - Received kwargs keys: {list(kwargs.keys())}")
+        logger.info(f"  - 'self' in kwargs: {'self' in kwargs}")
+        logger.info(f"  - 'config' in kwargs: {'config' in kwargs}")
+
+        # Filter out 'self', keep everything else
+        cleaned_kwargs = {k: v for k, v in kwargs.items() if k != 'self'}
+
+        # If config is not provided, add a default empty RunnableConfig
+        # (StructuredTool._arun requires config as a keyword-only argument)
+        if 'config' not in cleaned_kwargs:
+            from langchain_core.runnables.config import RunnableConfig
+            cleaned_kwargs['config'] = RunnableConfig()
+            logger.info(f"  - Added default config to kwargs")
+
+        logger.info(f"  - Final cleaned kwargs keys: {list(cleaned_kwargs.keys())}")
+
+        try:
+            if original_arun:
+                result = await original_arun(**cleaned_kwargs)
+            else:
+                # If no async version, call sync version
+                import asyncio
+                result = await asyncio.to_thread(original_run, **cleaned_kwargs)
+            logger.info(f"✅ PATCHED_ARUN succeeded for {tool.name}")
+            return result
+        except Exception as e:
+            logger.error(f"❌ PATCHED_ARUN failed for {tool.name}: {type(e).__name__}: {e}")
+            logger.error(f"  - Final cleaned_kwargs keys: {list(cleaned_kwargs.keys())}")
+            raise
+
+    # Monkey-patch the methods
+    logger.debug(f"Tool {tool.name} - Before patch: _run = {tool._run}")
+    tool._run = patched_run
+    tool._arun = patched_arun
+    logger.debug(f"Tool {tool.name} - After patch: _run = {tool._run}")
+    logger.info(f"✅ Successfully patched tool: {tool.name}")
+
+    return tool
 
 # Gmail and Calendar use native LangChain toolkits for better stability and
 # simpler authentication compared to MCP approach.
@@ -63,7 +252,9 @@ async def init_gmail_toolkit() -> List[BaseTool]:
         logger.info(f"Initializing Gmail toolkit with credentials from {credentials_path}")
 
         # Create toolkit instance with OAuth authentication per official docs
-        gmail_toolkit = GmailToolkit(credentials_file=credentials_path)
+        # Use asyncio.to_thread to run blocking OAuth calls in thread pool
+        import asyncio
+        gmail_toolkit = await asyncio.to_thread(GmailToolkit, credentials_file=credentials_path)
 
         # Retrieve list of 5 Gmail tools as BaseTool instances per LangChain toolkit pattern
         gmail_tools = gmail_toolkit.get_tools()
@@ -123,7 +314,9 @@ async def init_calendar_toolkit() -> List[BaseTool]:
         logger.info(f"Initializing Calendar toolkit with credentials from {credentials_path}")
 
         # Create toolkit instance with OAuth authentication per official docs
-        calendar_toolkit = CalendarToolkit(credentials_file=credentials_path)
+        # Use asyncio.to_thread to run blocking OAuth calls in thread pool
+        import asyncio
+        calendar_toolkit = await asyncio.to_thread(CalendarToolkit, credentials_file=credentials_path)
 
         # Retrieve list of 7 Calendar tools as BaseTool instances per LangChain toolkit pattern
         calendar_tools = calendar_toolkit.get_tools()
@@ -192,15 +385,28 @@ async def init_supabase_mcp() -> List[BaseTool]:
         # Log initialization attempt with corrected package name
         logger.info("Initializing Supabase MCP client with corrected package @supabase/mcp-server-postgrest")
 
-        # Create MCP client with corrected package and environment variables
+        # Create MCP client with corrected package and command-line arguments
         # Corrected package @supabase/mcp-server-postgrest verified to exist on npm registry
-        supabase_client = MCPClient(
-            server_config={
-                "command": "npx",
-                "args": ["-y", "@supabase/mcp-server-postgrest"],
-                "env": {
-                    "SUPABASE_URL": supabase_url,
-                    "SUPABASE_SERVICE_ROLE_KEY": service_key
+        # transport=stdio specifies that MCP server communicates via standard input/output streams
+        # Note: This MCP server expects full PostgREST endpoint URL (not just base URL)
+        # PostgREST endpoint is at /rest/v1 path on Supabase project URL
+        postgrest_url = f"{supabase_url}/rest/v1" if not supabase_url.endswith("/rest/v1") else supabase_url
+
+        supabase_client = MultiServerMCPClient(
+            {
+                "supabase": {
+                    "command": "npx",
+                    "args": [
+                        "-y",
+                        "@supabase/mcp-server-postgrest",
+                        "--apiUrl",
+                        postgrest_url,  # Use full PostgREST endpoint URL
+                        "--apiKey",
+                        service_key,
+                        "--schema",
+                        "public"  # Default to public schema for case management tables
+                    ],
+                    "transport": "stdio"
                 }
             }
         )
@@ -210,6 +416,10 @@ async def init_supabase_mcp() -> List[BaseTool]:
 
         # Confirm successful MCP server spawn and tool retrieval
         logger.info(f"Successfully initialized Supabase MCP with {len(supabase_tools)} tools")
+
+        # Note: MCP tool signature issues are now handled by middleware (src/middleware/mcp_tool_fix.py)
+        # rather than monkey-patching each tool individually. The middleware approach is superior
+        # because it persists across subagent creation and is the proper LangChain pattern.
 
         # Return database tools to caller agent compilation code
         return supabase_tools
@@ -226,7 +436,9 @@ async def init_supabase_mcp() -> List[BaseTool]:
 
     except Exception as e:
         # Catch all other errors: MCP server crashes, API errors, network issues, etc.
+        import traceback
         logger.error(f"Supabase MCP initialization failed: {str(e)}")
+        logger.error(f"Full traceback: {traceback.format_exc()}")
         return []  # Prevent complete agent failure from single integration issue
 
     # MCP server runs as long-lived subprocess communicating via JSON-RPC protocol per
@@ -272,12 +484,16 @@ async def init_tavily_mcp() -> List[BaseTool]:
 
         # Create MCP client with corrected package and API key environment variable
         # Corrected package @mcptools/mcp-tavily verified to exist on npm registry
-        tavily_client = MCPClient(
-            server_config={
-                "command": "npx",
-                "args": ["-y", "@mcptools/mcp-tavily"],
-                "env": {
-                    "TAVILY_API_KEY": tavily_api_key
+        # transport=stdio specifies that MCP server communicates via standard input/output streams
+        tavily_client = MultiServerMCPClient(
+            {
+                "tavily": {
+                    "command": "npx",
+                    "args": ["-y", "@mcptools/mcp-tavily"],
+                    "transport": "stdio",
+                    "env": {
+                        "TAVILY_API_KEY": tavily_api_key
+                    }
                 }
             }
         )
@@ -287,6 +503,10 @@ async def init_tavily_mcp() -> List[BaseTool]:
 
         # Confirm successful MCP server spawn and tool retrieval
         logger.info(f"Successfully initialized Tavily MCP with {len(tavily_tools)} tools")
+
+        # Note: MCP tool signature issues are now handled by middleware (src/middleware/mcp_tool_fix.py)
+        # rather than monkey-patching each tool individually. The middleware approach is superior
+        # because it persists across subagent creation and is the proper LangChain pattern.
 
         # Return search tools to caller agent compilation code
         return tavily_tools
@@ -303,7 +523,9 @@ async def init_tavily_mcp() -> List[BaseTool]:
 
     except Exception as e:
         # Catch all other errors: MCP server crashes, API errors, invalid API key, etc.
+        import traceback
         logger.error(f"Tavily MCP initialization failed: {str(e)}")
+        logger.error(f"Full traceback: {traceback.format_exc()}")
         return []  # Prevent complete agent failure from single integration issue
 
     # Tavily provides AI-optimized search specifically designed for LLM applications with
@@ -314,3 +536,63 @@ async def init_tavily_mcp() -> List[BaseTool]:
     # statutes and legal databases with AI-enhanced relevance.
     # MCP client spawns subprocess so cleanup may be needed on agent shutdown to prevent
     # orphaned processes.
+
+
+async def init_elevenlabs_tts() -> List[BaseTool]:
+    """
+    Initialize ElevenLabs text-to-speech tool with API key from ELEVENLABS_API_KEY environment variable.
+
+    Returns:
+        list[BaseTool]: List containing ElevenLabs text-to-speech tool or empty list if API key
+        missing or initialization fails.
+
+    Note:
+        Requires ELEVENLABS_API_KEY environment variable for authenticating with ElevenLabs
+        text-to-speech API per service requirements.
+        Uses custom tool compatible with elevenlabs>=1.0.0 (generator-based API).
+
+    Citation: https://python.langchain.com/docs/integrations/tools/eleven_labs_tts
+    """
+    try:
+        # Read ELEVENLABS_API_KEY environment variable to get API key for authenticating TTS requests
+        api_key = os.getenv("ELEVENLABS_API_KEY")
+
+        # Check if API key missing and log warning, return empty list for graceful degradation
+        if not api_key:
+            logger.warning("ElevenLabs API key not configured, skipping text-to-speech initialization")
+            return []
+
+        # Log initialization attempt
+        logger.info("Initializing ElevenLabs text-to-speech tool")
+
+        # Import custom ElevenLabs tool compatible with elevenlabs>=1.0.0
+        from src.tools.elevenlabs_tts import create_elevenlabs_tts_tool
+
+        # Create tool instance - custom tool handles generator-based API properly
+        # Use asyncio.to_thread to run potentially blocking initialization in thread pool
+        import asyncio
+        tts_tool = await asyncio.to_thread(create_elevenlabs_tts_tool)
+
+        # Confirm successful initialization without exposing sensitive credentials
+        logger.info("Successfully initialized ElevenLabs text-to-speech tool")
+
+        # Return tool in list format to match other toolkit patterns
+        return [tts_tool]
+
+    except ImportError as e:
+        # Catch missing package error for clearer error messaging
+        logger.error(f"ElevenLabs package not installed (elevenlabs required): {e}")
+        return []  # Graceful degradation: continue agent startup without TTS functionality
+
+    except Exception as e:
+        # Catch all other errors: API errors, network issues, invalid API key, etc.
+        logger.error(f"ElevenLabs text-to-speech initialization failed: {str(e)}")
+        return []  # Empty list ensures agent can start even if TTS initialization fails
+
+    # ElevenLabs provides high-quality AI voice synthesis with natural-sounding speech generation
+    # Custom tool compatible with elevenlabs>=1.0.0 which uses generator-based streaming API
+    # Tool can generate audio from text input and save to temporary file
+    # Particularly useful for legal agent to provide voice output for client communications
+    # reading case summaries or legal documents aloud
+    # Tool initialization reads API key from environment so no credentials need to be passed
+    # explicitly per LangChain pattern

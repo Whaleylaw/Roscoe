@@ -15,8 +15,10 @@ from src.tools.toolkits import (
     init_calendar_toolkit,
     init_supabase_mcp,
     init_tavily_mcp,
+    init_elevenlabs_tts,
 )
 from src.config.settings import get_setting, DB_URI
+from src.middleware import MCPToolFixMiddleware
 
 
 def make_backend(runtime):
@@ -66,6 +68,7 @@ async def init_tools():
     calendar_tools = await init_calendar_toolkit()
     supabase_tools = await init_supabase_mcp()
     tavily_tools = await init_tavily_mcp()
+    tts_tools = await init_elevenlabs_tts()
 
     return {
         "code_executor": [runloop_tool],
@@ -73,6 +76,7 @@ async def init_tools():
         "calendar": calendar_tools,
         "supabase": supabase_tools,
         "tavily": tavily_tools,
+        "tts": tts_tools,
     }
 
 
@@ -87,6 +91,56 @@ system_prompt = """You are a legal case management assistant for Whaley Law Firm
 - Tavily web search for legal research, case law, statutes
 - Gmail for client communications
 - Google Calendar for scheduling and deadlines
+- ElevenLabs text-to-speech for generating voice output from text
+
+## PostgREST Database Query Syntax (CRITICAL)
+
+**IMPORTANT:** Supabase uses PostgREST, NOT raw SQL. You MUST use PostgREST query syntax.
+
+**Available Supabase Tools:**
+1. **postgrestRequest** - Execute PostgREST queries
+   - Parameters: `method` (GET/POST/PATCH/DELETE), `path`, `body`
+   - Example: `{"method": "GET", "path": "/doc_files?project_name=eq.MVA-2024-001&select=filename,markdown_path"}`
+
+2. **sqlToRest** - Convert SQL to PostgREST syntax (use this if unsure)
+   - Input: SQL query string
+   - Output: `{method, path}` for use with postgrestRequest
+
+**PostgREST Query Syntax:**
+- Query path: `/table?column=operator.value`
+- Operators: `eq` (=), `neq` (!=), `gt` (>), `gte` (>=), `lt` (<), `lte` (<=), `like`, `ilike`, `is`, `in`
+- Select columns: `?select=col1,col2,col3`
+- Filtering: `?column=eq.value&other_column=gt.100`
+- Ordering: `?order=column.asc` or `?order=column.desc`
+- Limit: `?limit=10`
+- Offset: `?offset=20`
+
+**Examples:**
+```
+# Get all documents for a case
+GET /doc_files?project_name=eq.MVA-2024-001&select=uuid,filename,markdown_path
+
+# Get unconverted PDFs
+GET /doc_files?markdown_path=is.null&content_type=eq.application/pdf&limit=100
+
+# Search by filename pattern
+GET /doc_files?filename=ilike.*medical*&select=filename,project_name
+
+# Get cases with expenses over $1000
+GET /case_expenses?amount=gt.1000&select=case_id,description,amount
+
+# Complex query - use sqlToRest tool first
+Use sqlToRest: "SELECT * FROM doc_files WHERE project_name = 'MVA-2024-001' AND markdown_path IS NULL"
+Then use the returned {method, path} with postgrestRequest
+```
+
+**Common Mistakes to Avoid:**
+- ❌ DON'T use SQL syntax: `WHERE column = 'value'`
+- ✅ DO use PostgREST syntax: `?column=eq.value`
+- ❌ DON'T write SQL queries directly to postgrestRequest
+- ✅ DO use sqlToRest first if you're thinking in SQL
+
+**When in doubt:** Use the `sqlToRest` tool to convert your SQL to PostgREST syntax!
 
 ## Skills-First Workflow (Maximum Token Efficiency)
 
@@ -221,14 +275,131 @@ Maintain attorney-client confidentiality in all communications.
 Track important email threads and follow-ups in /working/ files.
 Use formal professional tone appropriate for legal communications.""",
         "tools": "gmail",  # Will be replaced with actual tools in create_agent()
-        "model": "gpt-4o",
+        "model": "claude-sonnet-4-5-20250929",
     },
     {
         "name": "database-specialist",
         "description": "Manages Supabase database operations, queries, updates, data analysis for case files.",
-        "system_prompt": """You handle database queries and updates for case management system.
+        "system_prompt": """You handle database queries and updates for case management system using PostgREST.
 
-Query efficiently: always use filters to reduce data returned.
+**CRITICAL: PostgREST Query Syntax**
+Supabase uses PostgREST, NOT raw SQL. You MUST use PostgREST query syntax.
+
+Available tools:
+1. postgrestRequest - Execute queries with method and path
+2. sqlToRest - Convert SQL to PostgREST (use this if you think in SQL)
+
+PostgREST syntax: `/table?column=eq.value&select=col1,col2`
+Operators: eq, neq, gt, gte, lt, lte, like, ilike, is, in
+Example: `/doc_files?project_name=eq.MVA-2024-001&markdown_path=is.null&limit=100`
+
+**When in doubt:** Use sqlToRest tool to convert SQL to PostgREST!
+
+## ⚠️ CRITICAL FILTERING RULES ⚠️
+
+**MANDATORY project_name FILTERING:**
+- ❌ NEVER query case_* tables or doc_files WITHOUT project_name filter
+- ❌ NEVER do `/case_expenses` or `/doc_files` (returns 14,000+ rows!)
+- ✅ ALWAYS use `?project_name=eq.{value}` for case_* tables and doc_files
+
+**WORKFLOW: Get project_name first**
+1. Query case_projects to get available project names:
+   - Use: `GET /case_projects?select=project_name,current_status,accident_date`
+   - This returns list of active cases with their project_name values
+2. Use the project_name from step 1 to query other tables:
+   - `GET /case_expenses?project_name=eq.{value}&select=...`
+   - `GET /doc_files?project_name=eq.{value}&select=...`
+
+**EXCEPTIONS - No project_name required:**
+- ✅ contact_directory - Can query without project_name filter
+- ✅ contact_clients - Can query without project_name filter (though it has project_name column)
+- ✅ email_messages - Can query without project_name filter
+
+**Tables requiring project_name filter:**
+- case_expenses, case_insurance, case_liens, case_litigation_contacts
+- case_medical_providers, case_notes, case_pleadings, case_todos
+- doc_files (14,000+ rows!)
+
+**Special cases:**
+- case_projects: Query with `?select=project_name` to get list of cases (don't list all columns)
+- case_summary: Uses `case_name` column (not project_name)
+
+## Database Schema
+
+**case_projects** - Main case/project information (USE THIS TO GET PROJECT NAMES)
+Columns: project_name, phase, last_activity, create_date, uuid, case_summary, current_status, agent_name, tag, case_role, parent_project_name, case_group_id, last_status_update, system_message, accident_date
+Query pattern: `GET /case_projects?select=project_name,current_status,accident_date` to get list of active cases
+
+**case_notes** - Case notes and communications (REQUIRES project_name filter)
+Columns: project_name, author_name, note, last_activity, uuid, time, note_summary, summary_done, created_by_id, applies_to_projects, related_insurance_uuid, related_medical_provider_id, related_lien_uuid, related_expense_uuid, note_type
+
+**case_expenses** - Case-related expenses (REQUIRES project_name filter)
+Columns: project_name, payable_to, description, expense_amount, notes, created_date, uuid, applies_to_projects
+
+**case_insurance** - Insurance claim information (REQUIRES project_name filter)
+Columns: project_name, claim_number, current_negotiation_status, current_offer, date_coots_letter_sent, date_demand_sent, demand_summary, demanded_amount, insurance_adjuster_name, insurance_company_name, settlement_amount, settlement_date, uuid, insurance_type, coverage_confirmation, applies_to_projects, is_active_negotiation
+
+**case_liens** - Lien information (REQUIRES project_name filter)
+Columns: project_name, lien_holder_name, final_lien_amount, amount_owed_from_settlement, date_final_lien_requested, date_lien_paid, date_of_final_lien_received, reduction_amount, uuid, applies_to_projects
+
+**case_litigation_contacts** - Litigation-related contacts (REQUIRES project_name filter)
+Columns: id, created_at, project_name, contact, role, applies_to_projects
+
+**case_medical_providers** - Medical provider information (REQUIRES project_name filter)
+Columns: id, project_name, provider_full_name, medical_provider_notes, date_treatment_started, date_treatment_completed, date_medical_bills_requested, medical_bills_received_date, date_medical_records_requested, date_medical_records_received, billed_amount, number_of_visits, settlement_payment, applies_to_projects
+
+**case_pleadings** - Court pleadings and filings (REQUIRES project_name filter)
+Columns: project_name, filing_party_name, pleading_type, certificate_of_service, motion_hour_or_hearing_date, motion_hour_or_hearing_notes, pleadings_notes, uuid, applies_to_projects
+
+**case_todos** - Case to-do items (REQUIRES project_name filter)
+Columns: uuid, project_name, to_do, due_date, progress, to_do_id, created_at, done, done_date, created_by
+
+**case_summary** - Case summary information (uses case_name column, not project_name)
+Columns: case_name, summary_text, last_updated, uuid
+Note: Filter by case_name, not project_name
+
+**contact_directory** - General contact information (NO project_name filter required)
+Columns: full_name, email, phone, address, uuid, phone_normalized
+
+**contact_clients** - Client contact information (NO project_name filter required)
+Columns: project_name, full_name, email, phone, address, date_of_birth, social_security_number, uuid
+Note: Has project_name column but can be queried without filter
+
+**doc_files** - Document file metadata (REQUIRES project_name filter - 14,000+ rows!)
+Columns: project_name, filename, upload_date, size_bytes, uuid, storage_path, file_url, content_type, is_uploaded_to_storage, mapping_error, summary_done, client_name, revised_file_name, applies_to_projects, chunked, summary, storage_bucket, markdown_path, markdown_regenerated_at
+
+**email_messages** - Email messages synced from Gmail (NO project_name filter required)
+Columns: uuid, from, to, subject, text, id, messageid, threadid, date, labelids, attachments, created_at, updated_at, category, categorized, read, project_names, attachment_urls, draft_email, from_contact_id, context, html
+
+## Query Examples
+
+```
+# STEP 1: Get list of active cases (ALWAYS DO THIS FIRST)
+GET /case_projects?select=project_name,current_status,accident_date&limit=50
+
+# STEP 2: Query case data using project_name from step 1
+GET /doc_files?project_name=eq.MVA-2024-001&select=filename,upload_date,markdown_path
+
+# Get case expenses for specific case
+GET /case_expenses?project_name=eq.MVA-2024-001&select=payable_to,expense_amount,description
+
+# Get today's work emails (no project_name needed)
+GET /email_messages?category=eq.Work&date=gte.2025-11-16&select=subject,from,date,text
+
+# Get active insurance negotiations for a case
+GET /case_insurance?project_name=eq.MVA-2024-001&is_active_negotiation=eq.true&select=insurance_company_name,current_offer,demanded_amount
+
+# Get unpaid liens for a case
+GET /case_liens?project_name=eq.MVA-2024-001&date_lien_paid=is.null&select=lien_holder_name,final_lien_amount
+
+# Get medical providers with pending records for a case
+GET /case_medical_providers?project_name=eq.MVA-2024-001&date_medical_records_received=is.null&select=provider_full_name,date_medical_records_requested
+
+# Search contacts (no project_name needed)
+GET /contact_directory?full_name=ilike.*smith*&select=full_name,email,phone
+```
+
+Query efficiently: always use filters and select to reduce data returned.
 Update carefully: verify data before making changes to prevent corruption.
 Return summaries not full datasets to save tokens using runloop_execute_code for processing in isolated sandbox.
 Use runloop_execute_code to filter and aggregate database results in sandbox before returning to main agent.""",
@@ -245,7 +416,7 @@ Coordinate schedules and send reminders for important events.
 Ensure no scheduling conflicts by checking existing events before creating new ones.
 Include all required event fields: title, datetime, description, location, attendees.""",
         "tools": "calendar",  # Will be replaced with actual tools in create_agent()
-        "model": "gpt-4o",
+        "model": "claude-sonnet-4-5-20250929",
     },
 ]
 
@@ -267,6 +438,7 @@ async def create_agent():
         *tools_dict["calendar"],
         *tools_dict["supabase"],
         *tools_dict["tavily"],
+        *tools_dict["tts"],
     ]
 
     # Update subagent tools from dictionary
@@ -292,14 +464,17 @@ async def create_agent():
     # create_deep_agent automatically attaches TodoListMiddleware for planning
     # FilesystemMiddleware automatically attached for file operations
     # SubAgentMiddleware automatically attached for delegation
-    # Agent is not yet compiled and cannot be executed until compiled with checkpointer
+    # create_deep_agent compiles the agent automatically when checkpointer is provided
+    # Custom middleware (MCPToolFixMiddleware) applies to main agent AND all subagents
     agent = create_deep_agent(
         tools=tools,
         system_prompt=system_prompt,
         model="claude-sonnet-4-5-20250929",
         store=store,
         backend=make_backend,
+        checkpointer=checkpointer,
         subagents=configured_subagents,
+        middleware=[MCPToolFixMiddleware()],  # DeepAgents middleware for MCP tool fix
     )
 
     return agent
@@ -318,16 +493,16 @@ async def initialize_agent():
     """
     agent = await create_agent()
 
+    # create_deep_agent() returns a CompiledStateGraph that's ready to use
+    # The agent is already compiled with the checkpointer parameter passed to create_deep_agent
     # Graph is what LangGraph deploys and executes in production
-    # Checkpointer enables agent state persistence after every step
     # Graph can be invoked with thread ID to maintain conversation context
     # Graph supports interrupts for human-in-the-loop workflows
     # Graph can be debugged using LangSmith tracing for observability
     # Graph is the exported artifact referenced in langgraph.json deployment config
-    # Example invocation: graph.invoke({"messages": [...]}, config={"configurable": {"thread_id": "..."}})
-    graph = agent.compile(checkpointer=checkpointer)
+    # Example invocation: agent.invoke({"messages": [...]}, config={"configurable": {"thread_id": "..."}})
 
-    return graph
+    return agent
 
 
 # Note: The graph must be initialized asynchronously for deployment

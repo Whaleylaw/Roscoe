@@ -213,3 +213,15 @@ __marimo__/
 .claude
 
 .idea
+audio_outputs/
+
+# Google OAuth credentials and tokens
+credentials.json
+client_secret_*.json
+token.json
+
+# macOS
+.DS_Store
+
+# Playwright MCP cache
+.playwright-mcp/

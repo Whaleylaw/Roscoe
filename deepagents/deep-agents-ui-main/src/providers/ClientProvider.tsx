@@ -21,12 +21,18 @@ export function ClientProvider({
   apiKey,
 }: ClientProviderProps) {
   const client = useMemo(() => {
+    // Only include X-Api-Key header if apiKey is provided
+    const headers: Record<string, string> = {
+      "Content-Type": "application/json",
+    };
+
+    if (apiKey && apiKey.trim() !== "") {
+      headers["X-Api-Key"] = apiKey;
+    }
+
     return new Client({
       apiUrl: deploymentUrl,
-      defaultHeaders: {
-        "Content-Type": "application/json",
-        "X-Api-Key": apiKey,
-      },
+      defaultHeaders: headers,
     });
   }, [deploymentUrl, apiKey]);
 

@@ -1,5 +1,6 @@
 """Deepagents come with planning, filesystem, and subagents."""
 
+import os
 from collections.abc import Callable, Sequence
 from typing import Any
 
@@ -8,8 +9,7 @@ from langchain.agents.middleware import HumanInTheLoopMiddleware, InterruptOnCon
 from langchain.agents.middleware.summarization import SummarizationMiddleware
 from langchain.agents.middleware.types import AgentMiddleware
 from langchain.agents.structured_output import ResponseFormat
-from langchain_anthropic import ChatAnthropic
-from langchain_anthropic.middleware import AnthropicPromptCachingMiddleware
+from langchain_openai import ChatOpenAI
 from langchain_core.language_models import BaseChatModel
 from langchain_core.tools import BaseTool
 from langgraph.cache.base import BaseCache
@@ -25,15 +25,21 @@ from deepagents.middleware.subagents import CompiledSubAgent, SubAgent, SubAgent
 BASE_AGENT_PROMPT = "In order to complete the objective that the user asks of you, you have access to a number of standard tools."
 
 
-def get_default_model() -> ChatAnthropic:
+def get_default_model() -> ChatOpenAI:
     """Get the default model for deep agents.
 
     Returns:
-        ChatAnthropic instance configured with Claude Sonnet 4.
+        ChatOpenAI instance configured with GPT-4.
     """
-    return ChatAnthropic(
-        model_name="claude-sonnet-4-5-20250929",
-        max_tokens=20000,
+    # Explicitly read API key from environment and pass it
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY environment variable not set")
+
+    return ChatOpenAI(
+        model="gpt-4o",
+        temperature=0,
+        api_key=api_key,
     )
 
 
@@ -98,24 +104,35 @@ def create_deep_agent(
     if model is None:
         model = get_default_model()
 
-    deepagent_middleware = [
+    # Build middleware list with custom middleware FIRST so they intercept tool calls before built-in middleware
+    deepagent_middleware = []
+    if middleware:
+        deepagent_middleware.extend(middleware)
+
+    # Build subagent middleware list with custom middleware FIRST (same pattern as main agent)
+    subagent_middleware = []
+    if middleware:
+        subagent_middleware.extend(middleware)  # Custom middleware first for subagents too
+    subagent_middleware.extend([
+        TodoListMiddleware(),
+        FilesystemMiddleware(backend=backend),
+        SummarizationMiddleware(
+            model=model,
+            max_tokens_before_summary=170000,
+            messages_to_keep=6,
+        ),
+        PatchToolCallsMiddleware(),
+    ])
+
+    # Then add built-in middleware
+    deepagent_middleware.extend([
         TodoListMiddleware(),
         FilesystemMiddleware(backend=backend),
         SubAgentMiddleware(
             default_model=model,
             default_tools=tools,
             subagents=subagents if subagents is not None else [],
-            default_middleware=[
-                TodoListMiddleware(),
-                FilesystemMiddleware(backend=backend),
-                SummarizationMiddleware(
-                    model=model,
-                    max_tokens_before_summary=170000,
-                    messages_to_keep=6,
-                ),
-                AnthropicPromptCachingMiddleware(unsupported_model_behavior="ignore"),
-                PatchToolCallsMiddleware(),
-            ],
+            default_middleware=subagent_middleware,  # Use the middleware list that includes custom middleware
             default_interrupt_on=interrupt_on,
             general_purpose_agent=True,
         ),
@@ -124,11 +141,8 @@ def create_deep_agent(
             max_tokens_before_summary=170000,
             messages_to_keep=6,
         ),
-        AnthropicPromptCachingMiddleware(unsupported_model_behavior="ignore"),
         PatchToolCallsMiddleware(),
-    ]
-    if middleware:
-        deepagent_middleware.extend(middleware)
+    ])
     if interrupt_on is not None:
         deepagent_middleware.append(HumanInTheLoopMiddleware(interrupt_on=interrupt_on))
 
