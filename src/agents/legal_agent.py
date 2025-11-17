@@ -122,16 +122,84 @@ async def init_tools():
 # System prompt implements skills-first workflow per Anthropic code execution pattern
 # Prompt designed to be comprehensive yet concise to fit within model context limits
 # Examples in prompt teach agent concrete patterns to follow
-system_prompt = """You are Roscoe, a legal case management assistant for Whaley Law Firm.
+# NOTE: The system prompt is now built dynamically based on available tools
+# See build_system_prompt() function below
 
-**Available Tools:**
-- runloop_execute_code for sandboxed code execution and data processing
-- Supabase database access for case files, documents, notes, contacts
-- Tavily web search for legal research, case law, statutes
-- Gmail for client communications
-- Google Calendar for scheduling and deadlines
-- ElevenLabs text-to-speech for generating voice output from text
+def build_system_prompt(tools_dict: dict) -> str:
+    """
+    Build system prompt dynamically based on which tools are actually available.
 
+    Args:
+        tools_dict: Dictionary of tool lists returned by init_tools()
+
+    Returns:
+        Complete system prompt with accurate tool availability information
+    """
+    # Check which tools are available
+    has_code_executor = len(tools_dict["code_executor"]) > 0
+    has_supabase = len(tools_dict["supabase"]) > 0
+    has_tavily = len(tools_dict["tavily"]) > 0
+    has_gmail = len(tools_dict["gmail"]) > 0
+    has_calendar = len(tools_dict["calendar"]) > 0
+    has_tts = len(tools_dict["tts"]) > 0
+
+    # Build available tools list
+    available_tools = []
+    if has_code_executor:
+        available_tools.append("- ✅ **runloop_execute_code** for sandboxed code execution and data processing")
+    else:
+        available_tools.append("- ❌ **runloop_execute_code** (unavailable - RUNLOOP_API_KEY not configured)")
+
+    if has_supabase:
+        available_tools.append("- ✅ **Supabase database access** for case files, documents, notes, contacts")
+    else:
+        available_tools.append("- ❌ **Supabase database** (unavailable - SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not configured)")
+
+    if has_tavily:
+        available_tools.append("- ✅ **Tavily web search** for legal research, case law, statutes")
+    else:
+        available_tools.append("- ❌ **Tavily web search** (unavailable - TAVILY_API_KEY not configured)")
+
+    if has_gmail:
+        available_tools.append("- ✅ **Gmail** for client communications")
+    else:
+        available_tools.append("- ⚪ **Gmail** (optional - not configured)")
+
+    if has_calendar:
+        available_tools.append("- ✅ **Google Calendar** for scheduling and deadlines")
+    else:
+        available_tools.append("- ⚪ **Google Calendar** (optional - not configured)")
+
+    if has_tts:
+        available_tools.append("- ✅ **ElevenLabs text-to-speech** for generating voice output from text")
+    else:
+        available_tools.append("- ⚪ **ElevenLabs TTS** (optional - not configured)")
+
+    tools_section = "\n".join(available_tools)
+
+    # Add warning if critical tools are missing
+    warning_section = ""
+    if not has_code_executor or not has_supabase or not has_tavily:
+        missing_tools = []
+        if not has_code_executor:
+            missing_tools.append("code execution")
+        if not has_supabase:
+            missing_tools.append("database access")
+        if not has_tavily:
+            missing_tools.append("web search")
+
+        warning_section = f"""
+⚠️  **IMPORTANT LIMITATION:** This deployment is missing critical tools: {', '.join(missing_tools)}.
+Your capabilities are significantly limited. You should inform users about missing tools if they request functionality that requires them.
+For full functionality, the deployment administrator needs to configure the missing environment variables.
+See LANGGRAPH_CLOUD_SETUP.md for configuration instructions.
+
+"""
+
+    # Build PostgREST documentation section (only if Supabase is available)
+    postgrest_section = ""
+    if has_supabase:
+        postgrest_section = """
 ## PostgREST Database Query Syntax (CRITICAL)
 
 **IMPORTANT:** Supabase uses PostgREST, NOT raw SQL. You MUST use PostgREST query syntax.
@@ -180,7 +248,14 @@ Then use the returned {method, path} with postgrestRequest
 - ✅ DO use sqlToRest first if you're thinking in SQL
 
 **When in doubt:** Use the `sqlToRest` tool to convert your SQL to PostgREST syntax!
+"""
 
+    # Build the complete system prompt
+    return f"""You are Roscoe, a legal case management assistant for Whaley Law Firm.
+
+**Available Tools:**
+{tools_section}
+{warning_section}{postgrest_section}
 ## Skills-First Workflow (Maximum Token Efficiency)
 
 Follow this pattern for EVERY task:
@@ -500,6 +575,10 @@ async def create_agent():
 
         configured_subagents.append(subagent_config)
 
+    # Build dynamic system prompt based on available tools
+    # This ensures users see accurate information about what's actually available
+    dynamic_system_prompt = build_system_prompt(tools_dict)
+
     # create_deep_agent automatically attaches TodoListMiddleware for planning
     # FilesystemMiddleware automatically attached for file operations
     # SubAgentMiddleware automatically attached for delegation
@@ -507,7 +586,7 @@ async def create_agent():
     # Custom middleware (MCPToolFixMiddleware) applies to main agent AND all subagents
     agent = create_deep_agent(
         tools=tools,
-        system_prompt=system_prompt,
+        system_prompt=dynamic_system_prompt,
         model="claude-sonnet-4-5-20250929",
         store=store,
         backend=make_backend,

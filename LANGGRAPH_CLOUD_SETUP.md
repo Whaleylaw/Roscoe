@@ -1,5 +1,40 @@
 # LangGraph Cloud Deployment Setup
 
+## Recent Fixes (November 2024)
+
+### ✅ Fixed: `execute_code` Tool Parameter Error
+
+**Issue:** The `execute_code` tool was failing with error: `self: Field required`
+
+**Root Cause:** The `@tool` decorator was applied to an instance method, causing LangChain to incorrectly include `self` as a required parameter in the tool schema.
+
+**Fix:** Restructured the tool creation to use a closure-based wrapper function that doesn't expose `self` in the signature. The tool now works correctly without the parameter error.
+
+**File Modified:** `src/tools/runloop_executor.py`
+
+### ✅ Fixed: Static System Prompt Showing Unavailable Tools
+
+**Issue:** The system prompt listed all tools as "Available Tools" even when they weren't configured, creating false expectations.
+
+**Root Cause:** The system prompt was a static string that didn't reflect actual tool availability.
+
+**Fix:** Implemented dynamic system prompt generation via `build_system_prompt()` function that:
+- Shows ✅ for available tools, ❌ for missing required tools, ⚪ for missing optional tools
+- Includes configuration hints (e.g., "RUNLOOP_API_KEY not configured")
+- Only includes PostgREST documentation when Supabase tools are available
+- Adds a warning banner when critical tools are missing
+
+**File Modified:** `src/agents/legal_agent.py`
+
+### 📊 Improved: Tool Availability Diagnostics
+
+The agent now provides clear visibility into which tools are available:
+- Diagnostic logging shows environment variable status at startup
+- Dynamic system prompt shows tool availability status
+- Users see accurate information about missing tools and configuration requirements
+
+---
+
 ## Issue: Missing Tools in Deployment
 
 If your deployed agent only has text-to-speech and native filesystem tools, but is missing Gmail, Calendar, Supabase, Tavily, and code execution tools, this is because **required environment variables are not set** in the LangGraph Cloud deployment.

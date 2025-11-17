@@ -48,10 +48,9 @@ class RunLoopExecutor:
             logger.error(f"RunLoop initialization failed: {str(e)}")
             raise RuntimeError("RunLoop API key not configured or invalid") from e
 
-    @tool
-    def execute_code(self, code: str, timeout: int = 60) -> Dict:
+    def _execute_code_impl(self, code: str, timeout: int = 60) -> Dict:
         """
-        Execute Python code in isolated RunLoop devbox.
+        Internal implementation of code execution (called by wrapper function).
 
         Runs the provided Python code in a sandboxed environment with resource
         limits and timeout protection. Returns structured results for agent parsing.
@@ -241,7 +240,7 @@ def create_runloop_tool():
     actually added to the agent, avoiding startup cost if not used.
 
     Returns:
-        Decorated execute_code method ready for agent tools list
+        Decorated execute_code function ready for agent tools list (with executor closure)
 
     Example:
         from src.tools.runloop_executor import create_runloop_tool
@@ -252,9 +251,36 @@ def create_runloop_tool():
     # Line 088-089: Create executor instance (initializes RunLoop client)
     executor = RunLoopExecutor()
 
-    # Line 090-091: Tool decorator on execute_code provides LangChain interface
-    # Return the decorated method, not the instance
-    return executor.execute_code
+    # Create a standalone function that closes over the executor instance
+    # This avoids 'self' appearing in the tool signature
+    @tool
+    def execute_code(code: str, timeout: int = 60) -> Dict:
+        """
+        Execute Python code in isolated RunLoop devbox.
+
+        Runs the provided Python code in a sandboxed environment with resource
+        limits and timeout protection. Returns structured results for agent parsing.
+
+        Args:
+            code: Python code string to execute
+            timeout: Maximum seconds before termination (default: 60)
+
+        Returns:
+            Dictionary with keys:
+                - success (bool): Whether execution completed without errors
+                - stdout (str): Standard output from code execution
+                - stderr (str): Standard error from code execution
+                - exit_status (int): Exit code from Python process
+                - error (str, optional): Error message if execution failed
+        """
+        # Delegate to the executor instance's method (closure)
+        # Note: We can't use the @tool decorator on the instance method directly
+        # because it would include 'self' in the signature. Instead, we create
+        # this wrapper function that closes over the executor instance.
+        return executor._execute_code_impl(code, timeout)
+
+    # Return the standalone decorated function
+    return execute_code
 
 # Line 095: Executor can be reused across multiple code execution calls
 # Each execution gets fresh devbox; no state sharing between calls
