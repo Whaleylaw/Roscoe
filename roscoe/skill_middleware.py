@@ -233,7 +233,7 @@ def model_selector_middleware(request, handler):
     Returns:
         Response from handler with potentially overridden model
     """
-    from models import agent_llm, fact_investigator_llm, medical_sub_agent_llm
+    from .models import agent_llm, fact_investigator_llm, medical_sub_agent_llm
 
     # Check if skills were selected by SkillSelectorMiddleware
     selected_skills = request.state.get('selected_skills', [])
