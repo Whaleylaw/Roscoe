@@ -18,10 +18,10 @@ See workspace/Skills/skills_manifest.json for available skills.
 
 from deepagents import create_deep_agent
 from deepagents.backends import FilesystemBackend
-from models import agent_llm
-from prompts import minimal_personal_assistant_prompt
-from middleware import shell_tool
-from skill_middleware import SkillSelectorMiddleware, model_selector_middleware
+from .models import agent_llm
+from .prompts import minimal_personal_assistant_prompt
+from .middleware import shell_tool
+from .skill_middleware import SkillSelectorMiddleware, model_selector_middleware
 
 # Get absolute path to workspace directory (outside repo)
 workspace_dir = "/Volumes/X10 Pro/whaley law firm"
