@@ -3,7 +3,7 @@ from typing import Literal, Optional
 from pathlib import Path
 from tavily import TavilyClient
 from langchain_core.messages import HumanMessage
-from roscoe.models import multimodal_llm
+from models import multimodal_llm
 import base64
 
 # Initialize the Tavily client
