@@ -32,9 +32,9 @@ fact_investigator_fallback_llm = ChatGoogleGenerativeAI(
 summary_causation_llm = agent_llm  # Reuse Sonnet 4.5 configuration
 
 # Multimodal model for image, audio, and video analysis
-# Uses Gemini 2.0 Flash for fast, high-quality multimodal understanding
+# Uses Gemini 3 Pro with native code execution for video summarization
 multimodal_llm = ChatGoogleGenerativeAI(
-    model="gemini-2.0-flash-exp",
+    model="gemini-3-pro-preview",
     max_retries=3,
     temperature=0
-)
+).bind_tools([{"code_execution": {}}])
