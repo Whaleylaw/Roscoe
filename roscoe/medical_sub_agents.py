@@ -13,8 +13,8 @@ Models:
 - All other medical sub-agents: Claude Haiku 4.5 with bash tool (fast, cost-effective)
 """
 
-from .models import medical_sub_agent_llm, fact_investigator_llm, summary_causation_llm, fact_investigator_fallback_llm
-from .middleware import shell_tool
+from roscoe.models import medical_sub_agent_llm, fact_investigator_llm, summary_causation_llm, fact_investigator_fallback_llm
+from roscoe.middleware import shell_tool
 from langchain.agents.middleware import ModelFallbackMiddleware
 
 
