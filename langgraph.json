@@ -1,7 +1,7 @@
 {
     "dependencies": ["."],
     "graphs": {
-        "personal_assistant_agent": "./roscoe/agent.py:personal_assistant_agent"
+        "personal_assistant_agent": "roscoe.agent:personal_assistant_agent"
     },
     "env": "../.env"
 }
