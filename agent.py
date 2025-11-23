@@ -16,6 +16,8 @@ Architecture:
 See workspace/Skills/skills_manifest.json for available skills.
 """
 
+import os
+from pathlib import Path
 from deepagents import create_deep_agent
 from deepagents.backends import FilesystemBackend
 from models import agent_llm
@@ -23,8 +25,10 @@ from prompts import minimal_personal_assistant_prompt
 from middleware import shell_tool
 from skill_middleware import SkillSelectorMiddleware, model_selector_middleware
 
-# Get absolute path to workspace directory (outside repo)
-workspace_dir = "/Volumes/X10 Pro/whaley law firm"
+# Get workspace directory - use env variable or default to repo workspace
+# In deployment, this will be the workspace/ directory in the repo
+# In local dev, can override with WORKSPACE_DIR env variable
+workspace_dir = os.environ.get("WORKSPACE_DIR", str(Path(__file__).parent / "workspace"))
 
 # Create Roscoe with dynamic skills architecture
 # No hardcoded sub-agents - uses only built-in general-purpose sub-agent
@@ -39,7 +43,7 @@ personal_assistant_agent = create_deep_agent(
     middleware=[
         # Skill selector runs first: semantic search + skill injection
         SkillSelectorMiddleware(
-            skills_dir=f"{workspace_dir}/skills",  # Lowercase to match actual directory
+            skills_dir=f"{workspace_dir}/Skills",  # Uppercase to match actual directory
             max_skills=1,  # Load top 1 matching skill per request
             similarity_threshold=0.3  # Minimum similarity score (0-1)
         ),
