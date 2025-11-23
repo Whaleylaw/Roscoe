@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roscoe"
+version = "0.1.0"
+description = "Dynamic Skills-Based Paralegal AI Agent"
+requires-python = ">=3.11"
+dependencies = [
+    "deepagents",
+    "langchain",
+    "langgraph",
+    "langchain-anthropic",
+    "langchain-google-genai",
+    "langchain-community",
+    "tavily-python",
+    "sentence-transformers",
+    "pdfplumber",
+    "PyPDF2",
+    "pandas",
+    "numpy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["roscoe*"]
