@@ -5,11 +5,10 @@ This module provides additional tools for enhanced agent capabilities including
 shell/bash execution for running commands, scripts, and utilities.
 """
 
-from pathlib import Path
 from langchain_community.tools import ShellTool
 
 # Get absolute path to workspace directory for shell tool
-workspace_root = str(Path(__file__).parent / "workspace")
+workspace_root = "/Volumes/X10 Pro/whaley law firm"
 
 # Configure Shell Tool for command execution
 # Reference: https://docs.langchain.com/oss/python/integrations/tools/bash
