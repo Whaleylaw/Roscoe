@@ -25,10 +25,10 @@ from typing import Any, Dict, List, Optional
 from pathlib import Path
 import json
 from sentence_transformers import SentenceTransformer, util
-from langchain.agents.middleware import Middleware, wrap_model_call
+from langchain.agents.middleware import AgentMiddleware, wrap_model_call
 
 
-class SkillSelectorMiddleware(Middleware):
+class SkillSelectorMiddleware(AgentMiddleware):
     """
     Semantic skill selection middleware.
 
