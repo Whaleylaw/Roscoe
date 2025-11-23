@@ -1,45 +1,50 @@
+"""
+Roscoe - Dynamic Skills-Based Paralegal AI Agent
+
+This agent uses a dynamic skills architecture:
+- Skills are loaded automatically based on semantic matching to user requests
+- Models are switched dynamically based on skill requirements
+- Only uses the built-in general-purpose sub-agent (no hardcoded sub-agents)
+- Unlimited skills can be added to /workspace/Skills/ without code changes
+
+Architecture:
+1. SkillSelectorMiddleware: Semantic search to find relevant skills
+2. model_selector_middleware: Dynamic model switching (Gemini/Sonnet/Haiku)
+3. Skills injection: Relevant skills loaded into system prompt
+4. General-purpose sub-agent: Inherits current model, executes sub-tasks
+
+See workspace/Skills/skills_manifest.json for available skills.
+"""
+
 from pathlib import Path
 from deepagents import create_deep_agent
 from deepagents.backends import FilesystemBackend
 from models import agent_llm
-from sub_agents import research_sub_agent
-from medical_sub_agents import (
-    fact_investigator_agent,
-    organizer_agent,
-    record_extractor_agent,
-    inconsistency_detector_agent,
-    red_flag_identifier_agent,
-    causation_analyzer_agent,
-    missing_records_detective_agent,
-    summary_writer_agent,
-)
-from prompts import personal_assistant_prompt
+from prompts import minimal_personal_assistant_prompt
 from middleware import shell_tool
+from skill_middleware import SkillSelectorMiddleware, model_selector_middleware
 
 # Get absolute path to workspace directory
-# FilesystemBackend requires absolute paths per docs
 workspace_dir = str(Path(__file__).parent / "workspace")
 
-# Compile the Personal Assistant Agent
-# Per deepagents docs: subagents are passed directly to create_deep_agent()
-# FilesystemBackend with virtual_mode=True for sandboxing
-# ShellTool added for bash/command execution capabilities
-# Reference: https://docs.langchain.com/oss/python/deepagents/backends.md
-# Reference: https://docs.langchain.com/oss/python/integrations/tools/bash
+# Create Roscoe with dynamic skills architecture
+# No hardcoded sub-agents - uses only built-in general-purpose sub-agent
+# Skills are loaded dynamically via middleware based on user requests
+# Models switch automatically based on skill requirements
 personal_assistant_agent = create_deep_agent(
-    system_prompt=personal_assistant_prompt,
-    subagents=[
-        research_sub_agent,
-        fact_investigator_agent,
-        organizer_agent,
-        record_extractor_agent,
-        inconsistency_detector_agent,
-        red_flag_identifier_agent,
-        causation_analyzer_agent,
-        missing_records_detective_agent,
-        summary_writer_agent,
-    ],
-    model=agent_llm,
+    system_prompt=minimal_personal_assistant_prompt,
+    subagents=[],  # EMPTY - relies on built-in general-purpose sub-agent
+    model=agent_llm,  # Default: Claude Sonnet 4.5 (switches per skill)
     backend=FilesystemBackend(root_dir=workspace_dir, virtual_mode=True),
-    tools=[shell_tool]
+    tools=[shell_tool],
+    middleware=[
+        # Skill selector runs first: semantic search + skill injection
+        SkillSelectorMiddleware(
+            skills_dir=f"{workspace_dir}/Skills",
+            max_skills=1,  # Load top 1 matching skill per request
+            similarity_threshold=0.3  # Minimum similarity score (0-1)
+        ),
+        # Model selector runs second: reads skill metadata, switches model
+        model_selector_middleware,
+    ]
 ).with_config({"recursion_limit": 1000})

@@ -1,0 +1,22 @@
+# Roscoe Paralegal Agent Dependencies
+
+# Core Framework
+deepagents
+langchain
+langgraph
+langchain-anthropic
+langchain-google-genai
+
+# Tools
+tavily-python
+
+# Middleware - Skill Selection
+sentence-transformers
+
+# PDF Processing (for sub-agents)
+pdfplumber
+PyPDF2
+
+# Data Analysis (for code execution)
+pandas
+numpy

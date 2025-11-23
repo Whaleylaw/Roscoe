@@ -24,57 +24,110 @@ Given the knowledge cutoff mismatch, always check this reference for current API
 - Tavily for internet search
 - Google Gemini multimodal capabilities for image/audio/video analysis
 
-## Architecture
+## Architecture: Dynamic Skills-Based System
+
+Roscoe uses a **dynamic skills architecture** with semantic skill selection and automatic model switching. This eliminates hardcoded sub-agents and enables unlimited skill expansion without code changes.
 
 ### Main Agent Structure
 
-The main agent (`roscoe/agent.py`) is named `personal_assistant_agent` and is configured in `langgraph.json`:
+The main agent (`roscoe/agent.py`) uses middleware for dynamic behavior:
 
 ```python
 personal_assistant_agent = create_deep_agent(
-    system_prompt=personal_assistant_prompt,
-    subagents=[...],  # 9 specialized sub-agents
-    model=agent_llm,  # Claude Sonnet 4.5
+    system_prompt=minimal_personal_assistant_prompt,  # Minimal prompt
+    subagents=[],  # EMPTY - uses only built-in general-purpose sub-agent
+    model=agent_llm,  # Default: Claude Sonnet 4.5 (switches dynamically)
     backend=FilesystemBackend(root_dir=workspace_dir, virtual_mode=True),
-    tools=[shell_tool]
+    tools=[shell_tool],
+    middleware=[
+        SkillSelectorMiddleware(...),  # Semantic skill selection
+        model_selector_middleware,      # Dynamic model switching
+    ]
 ).with_config({"recursion_limit": 1000})
 ```
 
-**Key architectural principle:** The main agent orchestrates sub-agents but also synthesizes outputs (e.g., building medical chronologies from extraction reports).
+**Key Innovation:** No hardcoded sub-agents. Behavior is controlled entirely by dynamically loaded skills.
 
-### Sub-Agent Architecture
+### Middleware Architecture
 
-**Research Sub-Agent** (`roscoe/sub_agents.py`):
-- General-purpose internet research using Tavily
-- Uses Claude Sonnet 4.5
-- Designed for focused, single-topic queries
+**1. SkillSelectorMiddleware** (`roscoe/skill_middleware.py`):
+- Embeds all skill descriptions using sentence-transformers
+- On each request, computes cosine similarity between user query and skills
+- Loads top-matching skill(s) into system prompt
+- Sets skill metadata in request state for model selector
+- **Token Efficient**: Only relevant skills loaded per conversation
 
-**Medical Sub-Agents** (`roscoe/medical_sub_agents.py`) - 8 specialized agents:
-1. **fact-investigator**: Analyzes litigation documents, photos, audio, video using Gemini 3 Pro with code execution
-2. **organizer**: Inventories medical records and bills using Claude Haiku 4.5
-3. **record-extractor**: Extracts structured data from 1-2 documents (batch parallel processing) using Claude Haiku 4.5
-4. **inconsistency-detector**: Finds contradictions in medical documentation using Claude Haiku 4.5
-5. **red-flag-identifier**: Identifies case weaknesses using Claude Haiku 4.5
-6. **causation-analyzer**: Evaluates injury causation evidence using Claude Sonnet 4.5
-7. **missing-records-detective**: Identifies gaps in records using Claude Haiku 4.5
-8. **summary-writer**: Synthesizes comprehensive attorney-ready reports using Claude Sonnet 4.5
+**2. model_selector_middleware** (`roscoe/skill_middleware.py`):
+- Reads skill metadata from request state
+- Dynamically switches agent model based on skill requirements:
+  - `gemini-3-pro`: Multimodal analysis, code execution
+  - `sonnet`: Complex reasoning, analysis (DEFAULT)
+  - `haiku`: Simple high-volume tasks only
+- General-purpose sub-agent inherits the current model
 
-**Model selection rationale:**
-- Sonnet 4.5: Complex analysis, synthesis, causation reasoning
-- Haiku 4.5: Fast document processing, extraction, pattern detection
-- Gemini 3 Pro: Native code execution for PDF processing and multimedia analysis
+### Skills System
+
+**Skills Location:** `/workspace/Skills/`
+
+**Skills Manifest:** `skills_manifest.json` - Registry of all available skills with:
+- Semantic descriptions for matching
+- Trigger keywords for search optimization
+- Model requirements
+- Sub-skill definitions
+- Tool requirements
+
+**Main Skills:**
+1. **medical-records-analysis** - 5-phase medical analysis pipeline
+2. **legal-research** - Internet research using Tavily
+
+**Sub-Skills** (`/workspace/Skills/sub-agents/`):
+- **fact-investigation.md** - Gemini 3 Pro (multimodal + code execution)
+- **medical-organization.md** - Haiku (simple inventory)
+- **record-extraction.md** - Sonnet (accurate medical data extraction)
+- **inconsistency-detection.md** - Sonnet (reasoning about contradictions)
+- **red-flag-identification.md** - Sonnet (legal/medical judgment)
+- **causation-analysis.md** - Sonnet (complex medical-legal reasoning)
+- **missing-records-detection.md** - Sonnet (pattern recognition)
+- **summary-writing.md** - Sonnet (synthesis)
+
+### Model Strategy (Accuracy > Cost for POC)
+
+**Gemini 3 Pro Preview:**
+- Fact investigation (multimodal + code execution required)
+- PDF-heavy document processing
+- Image/audio/video analysis
+
+**Claude Sonnet 4.5** (DEFAULT):
+- Medical records extraction (needs accuracy)
+- Inconsistency detection (requires reasoning)
+- Red flag identification (legal/medical judgment)
+- Causation analysis (complex reasoning)
+- Missing records detection (pattern recognition)
+- Summary writing (synthesis)
+
+**Claude Haiku 4.5** (Minimal Use):
+- Medical organization only (simple listing/categorizing)
+- High-volume parallel tasks where speed matters and complexity is low
+
+**Rationale:** For proof of concept, prioritize accuracy. Use Haiku only for genuinely simple tasks.
 
 ### Workflow Execution
 
-Medical records analysis follows a **5-phase pipeline** defined in the `/medical-records-review` slash command:
+Medical records analysis follows a **5-phase pipeline** via the medical-records-analysis skill:
 
-1. **Phase 1**: Fact investigation (litigation documents, multimedia evidence)
-2. **Phase 2**: Medical records organization (inventory creation)
-3. **Phase 3**: Parallel extraction (spawn 3-4 record-extractors simultaneously)
-4. **Phase 4**: Specialized analysis (inconsistencies, red flags, causation, missing records)
-5. **Phase 5**: Final synthesis (comprehensive summary)
+1. **Phase 1**: Fact investigation (litigation documents, multimedia evidence) - Gemini 3 Pro
+2. **Phase 2**: Medical organization (inventory creation) - Haiku
+3. **Phase 3**: Parallel extraction (spawn 3-4 general-purpose sub-agents) - Sonnet
+4. **Phase 4**: Specialized analysis (inconsistencies, red flags, causation, missing records) - Sonnet
+5. **Phase 5**: Final synthesis (comprehensive summary) - Sonnet
 
-**Critical workflow note:** Main agent synthesizes extraction reports into chronology - it's not delegated to a sub-agent.
+**How It Works:**
+- Main agent's skill selector loads medical-records-analysis skill
+- Skill instructs which sub-skills to use for each phase
+- Main agent spawns general-purpose sub-agent with sub-skill instructions
+- Model selector switches model based on sub-skill requirements
+- General-purpose sub-agent inherits the appropriate model
+- Main agent synthesizes results (e.g., chronology from extraction reports)
 
 ### FilesystemBackend Workspace
 
@@ -330,12 +383,89 @@ When adding new tools:
 3. Document in sub-agent system prompt
 4. Test with workspace-relative paths
 
+## Adding New Skills
+
+The dynamic skills architecture makes it easy to add new capabilities without touching agent code:
+
+### 1. Create Skill File
+
+Create `/workspace/Skills/skill-name/skill.md` with skill instructions:
+```markdown
+# Skill Name
+
+## When to Use
+[Describe when this skill applies]
+
+## Workflow
+[Step-by-step instructions for executing the skill]
+
+## Tools Required
+[List any tools from /Tools/ directory]
+
+## Sub-Skills
+[If this skill uses sub-agents, list sub-skills to load]
+
+## Model Required
+sonnet | haiku | gemini-3-pro
+
+## Output Format
+[Expected output format and location]
+```
+
+### 2. Update Skills Manifest
+
+Add entry to `/workspace/Skills/skills_manifest.json`:
+```json
+{
+  "name": "skill-name",
+  "description": "Use when [triggers/use cases] - [what it does]",
+  "file": "skill-name/skill.md",
+  "triggers": ["keyword1", "keyword2", "keyword3"],
+  "model_required": "sonnet",
+  "tools_required": ["/Tools/tool_name.py"],
+  "sub_skills": {
+    "sub-skill-name": {
+      "file": "sub-agents/sub-skill.md",
+      "model": "sonnet",
+      "description": "What this sub-skill does"
+    }
+  }
+}
+```
+
+### 3. Create Sub-Skills (If Needed)
+
+If skill requires specialized sub-agents, create `/workspace/Skills/sub-agents/sub-skill-name.md`:
+```markdown
+# Sub-Skill Name Sub-Skill
+
+[Instructions for the general-purpose sub-agent when using this sub-skill]
+
+## Your Task
+[Detailed task description]
+
+## Tools Available
+[File system tools, bash, code execution]
+
+## Output Location
+[Where to save results]
+```
+
+### 4. No Code Changes Required!
+
+The skill is immediately available:
+- SkillSelectorMiddleware will find it via semantic search
+- ModelSelectorMiddleware will switch to the appropriate model
+- Main agent will load and follow the skill instructions
+
 ## Key Design Principles
 
-1. **Hierarchical Agent Architecture**: Main agent delegates to specialists but also synthesizes
-2. **Parallel Processing**: Spawn multiple extractors for batch document processing
-3. **Centralized Reporting**: All outputs go to `/Reports/` directory
-4. **Citation Integrity**: Every factual claim must cite source document + page/timestamp
-5. **Workspace Sandboxing**: All operations scoped to workspace root with virtual paths
-6. **Cost-Optimized Models**: Use fastest/cheapest model that can handle the task
-7. **Multimedia Evidence**: Native support for images, audio, video with AI analysis
+1. **Dynamic Skill Loading**: Skills loaded semantically based on user request, not hardcoded
+2. **Automatic Model Optimization**: Right model selected per task automatically
+3. **Zero-Code Skill Addition**: Add unlimited skills by editing files, no deployment needed
+4. **Parallel Processing**: Spawn multiple general-purpose sub-agents for batch work
+5. **Centralized Reporting**: All outputs go to `/Reports/` directory
+6. **Citation Integrity**: Every factual claim must cite source document + page/timestamp
+7. **Workspace Sandboxing**: All operations scoped to workspace root with virtual paths
+8. **Token Efficiency**: Only relevant skills loaded per conversation
+9. **Multimedia Evidence**: Native support for images, audio, video with AI analysis (Gemini 3 Pro)
