@@ -8,14 +8,14 @@ tools from the main Roscoe agent, allowing them to read and search files.
 Each sub-agent is spawned by the main agent following the medical-records-review skill workflow.
 
 Models:
-- fact-investigator: Google Gemini 3 Pro with native code execution (for document-heavy litigation analysis)
+- fact-investigator: Google Gemini 3 Pro with native code execution and multimodal capabilities
+  (for document-heavy litigation analysis with image/audio/video support)
 - All other medical sub-agents: Claude Haiku 4.5 with bash tool (fast, cost-effective)
 """
 
 from models import medical_sub_agent_llm, fact_investigator_llm, summary_causation_llm, fact_investigator_fallback_llm
 from middleware import shell_tool
 from langchain.agents.middleware import ModelFallbackMiddleware
-from tools import analyze_image, analyze_audio, analyze_video
 
 
 # ============================================================================
@@ -71,28 +71,36 @@ Look for and review these evidence types in the case folder:
 - Multimedia evidence (audio recordings, video footage)
 
 ### 5. Multimedia Evidence Analysis
-You have access to specialized multimodal analysis tools for photos, audio, and video:
+You have **native multimodal capabilities** with Gemini 3 Pro. Use code execution to analyze images, audio, and video directly:
 
 **For Images (accident photos, scene documentation, injury photos):**
-- Use `analyze_image(file_path, analysis_prompt)` tool
-- Provides detailed visual analysis of photos
-- Automatically identifies damage, conditions, visible text, and legally relevant details
-- Example: `analyze_image("/case_folder/photos/accident_scene_01.jpg")`
+- Read image files using code execution
+- Pass images directly in your messages for analysis
+- Example approach:
+```python
+import base64
+from langchain_core.messages import HumanMessage
+
+with open('/case_folder/photos/accident_scene_01.jpg', 'rb') as f:
+    image_data = base64.b64encode(f.read()).decode()
+
+# Include image in your analysis prompt
+analysis_prompt = "Analyze this accident scene photo for legally relevant details..."
+# Process with your native multimodal capabilities
+```
 
 **For Audio (911 calls, witness statements, dispatch recordings):**
-- Use `analyze_audio(file_path, analysis_focus)` tool
-- Provides complete transcription + contextual analysis
-- Identifies speakers, timestamps, emotional state, key statements
-- Example: `analyze_audio("/case_folder/investigation/911_call.mp3")`
+- Read audio files using code execution
+- Pass audio directly for transcription and analysis
+- Automatically get speaker identification, timestamps, emotional state
 
 **For Video (body camera, dashcam, surveillance footage):**
-- Use `analyze_video(file_path, analysis_focus, extract_key_frames)` tool
-- Provides timeline analysis, audio transcription, and visual documentation
-- Can note key frame timestamps for later extraction
-- Example: `analyze_video("/case_folder/investigation/bodycam.mp4", extract_key_frames=True)`
+- Read video files using code execution
+- Pass video directly for timeline analysis and audio transcription
+- Native frame-level reasoning and action recognition
 
 **Frame Extraction (when needed):**
-- After analyzing video and identifying key timestamps, use bash tool to extract specific frames:
+- After analyzing video and identifying key timestamps, extract specific frames:
 - Example: `ffmpeg -i /path/to/video.mp4 -ss 00:01:30 -frames:v 1 /Reports/frames/frame_description_00-01-30.jpg`
 
 ### 6. Key Facts for Causation Analysis
@@ -198,17 +206,14 @@ This ensures attorneys can immediately see the visual evidence supporting your f
 - `grep` - Search for text patterns
 - `write_file` - Create new files
 
-**Multimodal Analysis Tools:**
-- `analyze_image(file_path, analysis_prompt)` - Analyze photos and images with AI vision
-- `analyze_audio(file_path, analysis_focus)` - Transcribe and analyze audio recordings
-- `analyze_video(file_path, analysis_focus, extract_key_frames)` - Analyze video with timeline and transcription
-
 **Native Code Execution:**
-You have access to Gemini's native code execution capability. Use this for:
+You have access to Gemini 3 Pro's native code execution capability. Use this for:
+- **Multimodal analysis**: Read and analyze images, audio, and video files directly
 - Advanced PDF processing (pdfplumber, PyPDF2)
 - Data analysis (pandas, numpy)
 - File operations and data manipulation
 - Generating Python scripts for later use
+- Video frame extraction (ffmpeg)
 
 **Code Execution Example for PDF:**
 ```python
@@ -240,8 +245,8 @@ fact_investigator_agent = {
     "name": "fact-investigator",
     "description": fact_investigator_description,
     "system_prompt": fact_investigator_prompt,
-    "tools": [analyze_image, analyze_audio, analyze_video],  # Multimodal tools for evidence analysis
-    "model": fact_investigator_llm,  # Uses Google Gemini 3 Pro with code execution
+    "tools": [],  # Uses native multimodal capabilities - no tools needed
+    "model": fact_investigator_llm,  # Uses Google Gemini 3 Pro with native code execution
     "middleware": [
         # Fallback to Gemini 2.5 Pro if Gemini 3 Pro encounters server errors
         ModelFallbackMiddleware(fact_investigator_fallback_llm)
