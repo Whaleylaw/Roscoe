@@ -106,7 +106,7 @@ gcloud storage ls gs://whaley_law_firm/projects/ | wc -l
 **Enter:**
 - Deployment URL: `http://34.63.223.97:8123`
 - Assistant ID: `roscoe_paralegal` (or `roscoe_coding`)
-- LangSmith API Key: `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`
+- LangSmith API Key: (see .claude/KEYS.txt for your key)
 
 ### Option 2: Python SDK
 
