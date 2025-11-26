@@ -1,0 +1,66 @@
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Environment
+.env
+.env.local
+.env.*.local
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+._*
+Thumbs.db
+
+# Documentation
+documents/
+docs/
+*.md
+!README.md
+
+# Workspace (runtime generated files and case files)
+workspace_paralegal/Reports/
+workspace_paralegal/Tools/_generated/
+workspace_paralegal/projects/
+workspace_coding/Reports/
+workspace_coding/Tools/_generated/
+workspace_coding/projects/
+*.egg-info/
+
+# Test and development
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Other
+.dockerignore
+docker-compose.yml
+deploy.sh
+build-docker.sh

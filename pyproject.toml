@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "roscoe"
 version = "0.1.0"
@@ -7,8 +11,10 @@ dependencies = [
     "deepagents",
     "langchain",
     "langgraph",
+    "langgraph-cli[inmem]",
     "langchain-anthropic",
     "langchain-google-genai",
+    "langchain-openai",
     "langchain-community",
     "langchain-experimental",
     "tavily-python",
@@ -17,4 +23,14 @@ dependencies = [
     "PyPDF2",
     "pandas",
     "numpy",
+    "slack-sdk",
+    "slack-bolt",
+    "python-dotenv",
 ]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["roscoe", "roscoe.core", "roscoe.agents", "roscoe.agents.paralegal", "roscoe.agents.coding"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.txt", "*.json"]
