@@ -28,7 +28,7 @@ from roscoe.agents.paralegal.models import agent_llm
 from roscoe.core.skill_middleware import SkillSelectorMiddleware
 from roscoe.agents.paralegal.prompts import minimal_personal_assistant_prompt
 from roscoe.agents.paralegal.sub_agents import multimodal_sub_agent
-from roscoe.agents.paralegal.tools import send_slack_message, upload_file_to_slack
+from roscoe.agents.paralegal.tools import send_slack_message, upload_file_to_slack, execute_code
 
 # Get path to skills manifest (in src/, packaged with code)
 MANIFEST_PATH = Path(__file__).parent / "skills_manifest.json"
@@ -56,6 +56,7 @@ personal_assistant_agent = create_deep_agent(
     tools=[
         send_slack_message,
         upload_file_to_slack,
+        execute_code,  # Runloop sandbox for code execution (stateless, no pickle issues)
     ],
     middleware=[
         # Skill selector: semantic search + skill injection
