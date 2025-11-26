@@ -18,6 +18,15 @@ if os.environ.get("SLACK_BOT_TOKEN"):
     except ImportError:
         print("Warning: slack-sdk not installed. Slack integration disabled.")
 
+# Initialize Runloop client (optional - only if API key is set)
+runloop_client = None
+if os.environ.get("RUNLOOP_API_KEY"):
+    try:
+        from runloop_api_client import Runloop
+        runloop_client = Runloop(bearer_token=os.environ["RUNLOOP_API_KEY"])
+    except ImportError:
+        print("Warning: runloop-api-client not installed. Code execution disabled.")
+
 # Get workspace root for file operations (paralegal agent workspace)
 # Path is relative to repo root (5 levels up from this file)
 workspace_root = Path(__file__).parent.parent.parent.parent.parent / "workspace_paralegal"
@@ -423,3 +432,76 @@ def upload_file_to_slack(
 
     except Exception as e:
         return f"Failed to upload file to Slack: {str(e)}"
+
+
+# Define the code execution tool (Runloop sandbox)
+def execute_code(
+    command: str,
+    working_dir: str = "/workspace",
+    timeout: int = 60,
+) -> str:
+    """
+    Execute shell commands or Python code in an isolated Runloop sandbox.
+
+    Perfect for running Tools scripts, data analysis, file processing, or any
+    code execution tasks. Each execution runs in a clean, isolated container.
+
+    Use this to:
+    - Execute Tools scripts: `python /workspace/Tools/pubmed_search.py "query"`
+    - Run data analysis, process files, extract PDFs
+    - Install packages and run complex workflows
+    - Any bash/Python code that needs execution
+
+    Args:
+        command: Shell command or script to execute
+        working_dir: Working directory in sandbox (default: /workspace)
+        timeout: Maximum execution time in seconds (default: 60)
+
+    Returns:
+        Command output (stdout + stderr) or error message
+
+    Examples:
+        execute_code("python /workspace/Tools/pubmed_search.py 'whiplash'")
+        execute_code("ls -la /workspace/projects/Abby-Sitgraves-MVA-7-13-2024")
+        execute_code("pip install pandas && python analyze.py")
+    """
+    if not runloop_client:
+        return "Code execution not configured. Set RUNLOOP_API_KEY environment variable."
+
+    try:
+        # Create a devbox (sandbox container)
+        devbox = runloop_client.devboxes.create_and_await_running(
+            name=f"roscoe-exec-{os.urandom(4).hex()}",
+            # Can add blueprint_id here if you have a pre-configured environment
+        )
+
+        try:
+            # Execute command in devbox
+            result = runloop_client.devboxes.execute_and_await_completion(
+                id=devbox.id,
+                command=command,
+                working_directory=working_dir,
+                timeout_ms=timeout * 1000,
+            )
+
+            # Format output
+            output = []
+            if result.stdout:
+                output.append(f"**stdout:**\n{result.stdout}")
+            if result.stderr:
+                output.append(f"**stderr:**\n{result.stderr}")
+
+            exit_code = result.exit_code or 0
+            output.append(f"\n**Exit code:** {exit_code}")
+
+            return "\n\n".join(output) if output else "Command completed (no output)"
+
+        finally:
+            # Clean up devbox
+            try:
+                runloop_client.devboxes.shutdown(id=devbox.id)
+            except:
+                pass  # Best effort cleanup
+
+    except Exception as e:
+        return f"Code execution error: {str(e)}"
