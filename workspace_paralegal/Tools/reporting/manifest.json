@@ -1,0 +1,72 @@
+{
+  "category": "reporting",
+  "description": "Operational status reports querying Database JSON files",
+  "tools": [
+    {
+      "name": "active_negotiations_report",
+      "file": "active_negotiations_report.py",
+      "description": "Generate report of cases currently in settlement negotiation",
+      "usage": "python /workspace/Tools/reporting/active_negotiations_report.py [--format markdown|json] [--output path]",
+      "examples": [
+        "python /workspace/Tools/reporting/active_negotiations_report.py",
+        "python /workspace/Tools/reporting/active_negotiations_report.py --format json",
+        "python /workspace/Tools/reporting/active_negotiations_report.py --output /Reports/operational/active_negotiations.md"
+      ],
+      "when_to_use": [
+        "User asks 'show me active negotiations'",
+        "User asks 'what cases are negotiating'",
+        "User asks 'settlement status'",
+        "User wants to see current offers and demands",
+        "User needs to identify stalled negotiations"
+      ],
+      "output_format": "Markdown table to stdout (or JSON with --format json)",
+      "data_source": "/workspace/Database/master_lists/insurance.json",
+      "filters": "is_active_negotiation = true",
+      "cost": "FREE"
+    },
+    {
+      "name": "outstanding_medical_records_report",
+      "file": "outstanding_medical_records_report.py",
+      "description": "Generate report of medical records requests still pending",
+      "usage": "python /workspace/Tools/reporting/outstanding_medical_records_report.py [--format markdown|json] [--output path]",
+      "examples": [
+        "python /workspace/Tools/reporting/outstanding_medical_records_report.py",
+        "python /workspace/Tools/reporting/outstanding_medical_records_report.py --format json",
+        "python /workspace/Tools/reporting/outstanding_medical_records_report.py --output /Reports/operational/outstanding_records.md"
+      ],
+      "when_to_use": [
+        "User asks 'what medical records are outstanding'",
+        "User asks 'waiting on records'",
+        "User asks 'pending medical records'",
+        "User needs to identify stale records requests",
+        "User wants to see follow-up dates"
+      ],
+      "output_format": "Markdown table with summary statistics (or JSON with --format json)",
+      "data_source": "/workspace/Database/master_lists/medical_providers.json",
+      "filters": "date_medical_records_requested IS NOT NULL AND date_medical_records_received IS NULL",
+      "cost": "FREE"
+    },
+    {
+      "name": "outstanding_medical_bills_report",
+      "file": "outstanding_medical_bills_report.py",
+      "description": "Generate report of medical bills requests still pending",
+      "usage": "python /workspace/Tools/reporting/outstanding_medical_bills_report.py [--format markdown|json] [--output path]",
+      "examples": [
+        "python /workspace/Tools/reporting/outstanding_medical_bills_report.py",
+        "python /workspace/Tools/reporting/outstanding_medical_bills_report.py --format json",
+        "python /workspace/Tools/reporting/outstanding_medical_bills_report.py --output /Reports/operational/outstanding_bills.md"
+      ],
+      "when_to_use": [
+        "User asks 'what medical bills are outstanding'",
+        "User asks 'waiting on bills'",
+        "User asks 'pending billing'",
+        "User needs to identify stale billing requests",
+        "User wants to see billing follow-up dates"
+      ],
+      "output_format": "Markdown table with summary statistics (or JSON with --format json)",
+      "data_source": "/workspace/Database/master_lists/medical_providers.json",
+      "filters": "date_medical_bills_requested IS NOT NULL AND medical_bills_received_date IS NULL",
+      "cost": "FREE"
+    }
+  ]
+}

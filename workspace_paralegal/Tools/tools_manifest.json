@@ -1,0 +1,930 @@
+{
+  "version": "1.0.0",
+  "description": "Tool registry for Roscoe paralegal agent. Agents can discover and execute tools dynamically to save context tokens.",
+  "usage_instructions": "Read this manifest to find available tools. Execute tools as standalone Python scripts. Process output with grep/jq/awk as needed.",
+  "tools": [
+    {
+      "name": "internet_search",
+      "file": "research/internet_search.py",
+      "description": "Web search using Tavily API. Search for legal research, medical literature, expert witnesses, case law, news, current events, or general information.",
+      "category": "research",
+      "input_format": "command_line",
+      "usage": "python /Tools/research/internet_search.py \"your query\" [--max-results N] [--topic general|news|finance] [--include-content] [--pretty]",
+      "examples": [
+        "python /Tools/research/internet_search.py \"Kentucky statute of limitations personal injury\"",
+        "python /Tools/research/internet_search.py \"whiplash causation medical literature 2025\" --max-results 10 --topic news",
+        "python /Tools/research/internet_search.py \"expert witness neurology qualifications\" --include-content --pretty"
+      ],
+      "output_format": "JSON to stdout",
+      "output_processing": [
+        "For large results: pipe to jq to extract specific fields",
+        "Search results: jq '.results.results[] | .title, .url'",
+        "Filter by keyword: grep -i 'keyword'",
+        "Count results: jq '.results.results | length'"
+      ],
+      "environment_requirements": [
+        "TAVILY_API_KEY environment variable must be set"
+      ],
+      "dependencies": [
+        "tavily-python (install: pip install tavily-python)"
+      ],
+      "when_to_use": [
+        "Research legal statutes and case law",
+        "Find medical literature and research papers",
+        "Research expert witnesses and their qualifications",
+        "Monitor news about defendants or cases",
+        "Find current information on any topic",
+        "Verify facts or get multiple sources"
+      ],
+      "cost": "API calls to Tavily (usage-based pricing)",
+      "token_savings": "Saves ~500-1000 tokens per message by not including tool description in context"
+    },
+    {
+      "name": "pubmed_search",
+      "file": "medical_research/pubmed_search.py",
+      "description": "Search 39M+ peer-reviewed medical citations using NCBI PubMed. Essential for medical causation research, expert witness verification, and standards of care investigation.",
+      "category": "research",
+      "subcategory": "medical",
+      "input_format": "command_line",
+      "usage": "python /Tools/medical_research/pubmed_search.py \"your query\" [--max-results N] [--sort relevance|date] [--details] [--pretty]",
+      "examples": [
+        "python /Tools/medical_research/pubmed_search.py \"whiplash cervical spine injury\"",
+        "python /Tools/medical_research/pubmed_search.py \"traumatic brain injury long-term effects\" --max-results 20 --details",
+        "python /Tools/medical_research/pubmed_search.py \"lumbar disc herniation motor vehicle accident\" --sort date --pretty"
+      ],
+      "output_format": "JSON to stdout",
+      "output_processing": [
+        "Extract titles: jq '.results[] | .title'",
+        "Filter by year: jq '.results[] | select(.year >= \"2020\")'",
+        "Get abstracts: jq '.results[] | .abstract'"
+      ],
+      "environment_requirements": [
+        "NCBI_EMAIL (required for API tracking)",
+        "NCBI_API_KEY (optional, enables 10 req/sec vs 3 req/sec)"
+      ],
+      "dependencies": [
+        "biopython (install: pip install biopython)"
+      ],
+      "when_to_use": [
+        "Research medical causation for case theory",
+        "Verify expert witness publications",
+        "Find literature supporting or contradicting medical opinions",
+        "Research standards of care",
+        "Build medical arguments with peer-reviewed evidence"
+      ],
+      "cost": "FREE (rate limit: 3-10 req/sec)",
+      "token_savings": "Saves ~600-1200 tokens by not loading tool description"
+    },
+    {
+      "name": "semantic_scholar_search",
+      "file": "medical_research/semantic_scholar_search.py",
+      "description": "Search 230M+ academic papers with AI-powered relevance ranking and citation tracking. Excellent for tracking expert witness publication quality and finding contradictory research.",
+      "category": "research",
+      "subcategory": "academic",
+      "input_format": "command_line",
+      "usage": "python /Tools/medical_research/semantic_scholar_search.py \"your query\" [--max-results N] [--min-citations N] [--year-from YYYY] [--pretty]",
+      "examples": [
+        "python /Tools/medical_research/semantic_scholar_search.py \"biomechanics whiplash injury\"",
+        "python /Tools/medical_research/semantic_scholar_search.py \"traumatic brain injury prognosis\" --max-results 20 --min-citations 50",
+        "python /Tools/medical_research/semantic_scholar_search.py \"spinal cord injury recovery\" --year-from 2020 --pretty"
+      ],
+      "output_format": "JSON to stdout",
+      "output_processing": [
+        "Sort by citations: jq '.results | sort_by(.citation_count) | reverse'",
+        "Filter high-impact: jq '.results[] | select(.citation_count > 100)'",
+        "Get authors: jq '.results[] | .authors[]'"
+      ],
+      "environment_requirements": [],
+      "dependencies": [],
+      "when_to_use": [
+        "Track expert witness publication quality (citation counts)",
+        "Find contradictory published research",
+        "Verify medical testimony against research consensus",
+        "Cross-disciplinary research (biomechanics, psychology)",
+        "Assess research credibility and impact"
+      ],
+      "cost": "FREE (rate limit: 100 req per 5 minutes)",
+      "token_savings": "Saves ~550-1100 tokens per message"
+    },
+    {
+      "name": "oral_arguments_search",
+      "file": "legal_research/oral_arguments_search.py",
+      "description": "Search appellate court oral arguments with automatic speech-to-text transcription. Essential for analyzing attorney performance, reviewing appellate strategy, and understanding judicial questioning patterns.",
+      "category": "research",
+      "subcategory": "legal",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal_research/oral_arguments_search.py \"your query\" [--court COURT] [--after-date YYYY-MM-DD] [--max-results N] [--pretty]",
+      "examples": [
+        "python /Tools/legal_research/oral_arguments_search.py \"personal injury damages\"",
+        "python /Tools/legal_research/oral_arguments_search.py \"whiplash causation medical evidence\" --court ca6 --max-results 10",
+        "python /Tools/legal_research/oral_arguments_search.py \"expert witness Daubert\" --after-date 2020-01-01 --pretty"
+      ],
+      "output_format": "JSON to stdout with full transcripts",
+      "output_processing": [
+        "Extract transcripts: jq '.results[] | .transcript_full'",
+        "Get audio URLs: jq '.results[] | .audio_url'",
+        "Filter by duration: jq '.results[] | select(.duration_seconds > 600)'",
+        "Search transcript text: jq '.results[] | select(.transcript_full | contains(\"causation\"))'"
+      ],
+      "environment_requirements": [
+        "COURTLISTENER_API_KEY (required for v4 API access)"
+      ],
+      "dependencies": [],
+      "when_to_use": [
+        "Analyze attorney performance and argumentation strategies",
+        "Review successful appellate arguments",
+        "Understand judicial questioning patterns",
+        "Prepare for oral arguments (study similar cases)",
+        "Find precedent on specific legal arguments",
+        "Research how courts handle evidentiary issues",
+        "Cross-examination preparation (opposing counsel analysis)"
+      ],
+      "court_codes": {
+        "scotus": "U.S. Supreme Court",
+        "ca6": "6th Circuit (KY, MI, OH, TN)",
+        "ca1-ca11": "Other Federal Circuit Courts",
+        "state_appellate": "State supreme courts and appellate courts"
+      },
+      "features": [
+        "Automatic speech-to-text transcription (no manual transcription needed)",
+        "Full searchable transcripts included in JSON output",
+        "MP3 audio download URLs",
+        "Panel judges listed",
+        "Argument duration (formatted and in seconds)",
+        "Transcript status indicator"
+      ],
+      "cost": "FREE with API key",
+      "token_savings": "Saves ~1000-2000 tokens per message (no need to load audio analysis tools)",
+      "api_version": "v4",
+      "high_value_feature": "Auto-generated transcripts eliminate need for manual listening/transcription"
+    },
+    {
+      "name": "expert_witness_lookup",
+      "file": "research/expert_witness_lookup.py",
+      "description": "Look up expert witness publication record, h-index, citation counts, and credentials using Semantic Scholar Author Search.",
+      "category": "research",
+      "subcategory": "expert_verification",
+      "input_format": "command_line",
+      "usage": "python /Tools/research/expert_witness_lookup.py \"Expert Name\" [--max-papers N] [--field-filter FIELD] [--pretty]",
+      "examples": [
+        "python /Tools/research/expert_witness_lookup.py \"John Smith neurology\"",
+        "python /Tools/research/expert_witness_lookup.py \"Dr. Jane Doe biomechanics\" --max-papers 20",
+        "python /Tools/research/expert_witness_lookup.py \"Robert Jones orthopedic surgery\" --field-filter Medicine --pretty"
+      ],
+      "output_format": "JSON to stdout",
+      "output_processing": [
+        "Get h-index: jq '.primary_match.h_index'",
+        "Count papers: jq '.primary_match.total_papers'",
+        "Top papers: jq '.top_papers | sort_by(.citations) | reverse | .[0:5]'",
+        "Check affiliations: jq '.primary_match.affiliations[]'"
+      ],
+      "environment_requirements": [],
+      "dependencies": [],
+      "when_to_use": [
+        "Verify expert witness credentials before hiring",
+        "Check publication quality via citation counts",
+        "Identify actual areas of expertise",
+        "Find expert's most cited work",
+        "Cross-examination preparation",
+        "Challenge opposing expert's qualifications"
+      ],
+      "cost": "FREE (rate limit: 100 req per 5 minutes)",
+      "token_savings": "Saves ~650-1200 tokens per message"
+    },
+    {
+      "name": "read_pdf",
+      "file": "document_processing/read_pdf.py",
+      "description": "Extract text and tables from PDFs to Markdown format using tiered OCR pipeline: PDFPlumber (text PDFs), PyTesseract (scanned PDFs), with future Google Cloud Document AI support. Auto-detects best method, provides quality metrics, and caches results to .md files for instant re-access.",
+      "category": "document_processing",
+      "subcategory": "extraction",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_processing/read_pdf.py <pdf_path> [output_path] [--output-format markdown|text|json] [--no-cache] [--force-ocr] [--quality-report]",
+      "examples": [
+        "python /Tools/document_processing/read_pdf.py /case/medical_records/report.pdf",
+        "python /Tools/document_processing/read_pdf.py /case/records/scan.pdf --no-cache",
+        "python /Tools/document_processing/read_pdf.py /case/records/labs.pdf --output-format text",
+        "python /Tools/document_processing/read_pdf.py /case/records/doc.pdf --quality-report",
+        "python /Tools/document_processing/read_pdf.py /case/records/report.pdf /Reports/report.md"
+      ],
+      "output_format": "Markdown (default) with frontmatter metadata and inline tables, saved as .md alongside PDF",
+      "output_processing": [
+        "Default: Creates .md file alongside PDF automatically",
+        "Read cached file: read_file('/case/records/report.md')",
+        "Force re-process: python /Tools/read_pdf.py file.pdf --no-cache",
+        "Get quality report: python /Tools/read_pdf.py file.pdf --quality-report"
+      ],
+      "environment_requirements": [],
+      "dependencies": [
+        "pdfplumber (install: pip install pdfplumber)",
+        "pytesseract (install: pip install pytesseract)",
+        "pdf2image (install: pip install pdf2image)",
+        "tesseract binary (install: brew install tesseract on macOS)"
+      ],
+      "when_to_use": [
+        "Process PDF once to markdown for instant agent access",
+        "Extract text from modern electronic medical records (PDFPlumber)",
+        "OCR scanned medical records and older documents (PyTesseract)",
+        "Extract tables from lab results, medication lists, vitals (inline in markdown)",
+        "Process discovery documents with mixed content",
+        "Auto-detect whether document is text-based or scanned",
+        "Get quality metrics to know if cloud processing is needed"
+      ],
+      "features": [
+        "Tier 1: PDFPlumber for text-based PDFs (fast, accurate)",
+        "Tier 2: PyTesseract OCR for scanned PDFs (handles images)",
+        "Auto-detection of PDF type (text vs scanned)",
+        "Markdown output with frontmatter metadata (quality scores, extraction method, timestamp)",
+        "Tables embedded inline as markdown tables (not separate JSON)",
+        "Quality metrics and confidence scoring",
+        "Hybrid mode with automatic fallback",
+        "Smart caching: checks for existing .md file and validates by timestamp",
+        "Cache invalidation: re-processes if PDF newer than .md file",
+        "Tier 3 placeholder for Google Cloud Document AI (future)"
+      ],
+      "flags": {
+        "--output-format FMT": "Output format: markdown (default), text, or json",
+        "--no-cache": "Force re-processing even if .md file exists",
+        "--force-ocr": "Force OCR processing even if text is detected",
+        "--extract-tables": "Save tables to separate JSON file (text format only, markdown includes inline)",
+        "--quality-report": "Show detailed quality metrics",
+        "--method METHOD": "Force specific method (pdfplumber|ocr|auto)",
+        "--ocr-dpi DPI": "OCR resolution (default: 300)"
+      },
+      "caching_behavior": {
+        "default": "Creates .md file alongside PDF (e.g., report.pdf \u2192 report.md)",
+        "cache_check": "Automatically uses cached .md if it exists and is newer than PDF",
+        "cache_invalidation": "Re-processes if PDF modified after .md was created",
+        "force_reprocess": "Use --no-cache flag to ignore cached .md file"
+      },
+      "cost": "FREE (Tiers 1 & 2), future Tier 3 uses Google Cloud credits",
+      "token_savings": "Saves ~800-2000 tokens per document access (agents read .md instead of processing PDF)",
+      "upgrade_date": "2025-11-23",
+      "upgrade_notes": "Added markdown output with frontmatter, inline tables, and smart caching. Default behavior now creates .md files for instant re-access."
+    },
+    {
+      "name": "import_documents",
+      "file": "document_processing/import_documents.py",
+      "description": "Batch import all PDFs in a case folder to markdown format. Pre-processes all documents once so agents can read .md files instantly instead of re-processing PDFs every time. Creates processing logs and quality reports.",
+      "category": "document_processing",
+      "subcategory": "batch_import",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_processing/import_documents.py <case_folder> [--force] [--quality-threshold N] [--report-dir DIR]",
+      "examples": [
+        "python /Tools/document_processing/import_documents.py /mo_alif",
+        "python /Tools/document_processing/import_documents.py /mo_alif --force",
+        "python /Tools/document_processing/import_documents.py /mo_alif --quality-threshold 70",
+        "python /Tools/document_processing/import_documents.py /mo_alif --report-dir /custom_reports"
+      ],
+      "output_format": "Creates .md files alongside each PDF + reports in /Reports/ directory",
+      "output_processing": [
+        "Generates /Reports/import_log.json (machine-readable processing log)",
+        "Generates /Reports/DOCUMENT_INDEX.md (human-readable index with quality metrics)",
+        "Each PDF gets companion .md file in same directory"
+      ],
+      "environment_requirements": [],
+      "dependencies": [
+        "Requires read_pdf.py and all its dependencies",
+        "pdfplumber, pytesseract, pdf2image, tesseract binary"
+      ],
+      "when_to_use": [
+        "Initial case setup - import all documents at once",
+        "Pre-process entire case folder for fast agent access",
+        "Batch convert all PDFs to markdown",
+        "Get quality assessment of all case documents",
+        "Identify low-quality documents needing review or cloud processing",
+        "Periodic re-import when new documents added to case"
+      ],
+      "features": [
+        "Recursive PDF discovery (finds all PDFs in case folder and subfolders)",
+        "Batch processing with progress tracking",
+        "Smart caching: skips PDFs that already have .md files (unless --force)",
+        "Quality tracking and flagging (documents below threshold marked for review)",
+        "Two-format reporting: JSON log + Markdown index",
+        "Error handling: continues processing if individual PDFs fail",
+        "Processing statistics: counts by method (PDFPlumber vs OCR), quality levels"
+      ],
+      "flags": {
+        "--force": "Re-process all PDFs even if .md files already exist",
+        "--quality-threshold N": "Flag documents with quality score below N (default: 60)",
+        "--report-dir DIR": "Custom directory for reports (default: /Reports)"
+      },
+      "workflow": {
+        "step_1": "Find all PDFs in case folder recursively",
+        "step_2": "Process each PDF to markdown using read_pdf.py (with caching)",
+        "step_3": "Track results: quality scores, methods used, errors",
+        "step_4": "Generate import_log.json with all processing metadata",
+        "step_5": "Generate DOCUMENT_INDEX.md organized by folder with quality breakdown",
+        "step_6": "Report summary: total processed, quality distribution, files needing review"
+      },
+      "output_files": {
+        "per_pdf": "<pdf_name>.md (same directory as PDF)",
+        "reports": [
+          "/Reports/import_log.json - Complete processing log with metadata",
+          "/Reports/DOCUMENT_INDEX.md - Human-readable index organized by folder"
+        ]
+      },
+      "performance": {
+        "text_pdfs": "~1-2 seconds per document (PDFPlumber)",
+        "scanned_pdfs": "~5-10 seconds per document (OCR)",
+        "incremental": "Only processes new PDFs (skips existing .md files)"
+      },
+      "cost": "FREE (uses local OCR tiers)",
+      "token_savings": "Massive - agents read .md files instantly vs re-processing PDFs every time (saves 5-10 seconds + 800-2000 tokens per document access)",
+      "added_date": "2025-11-23",
+      "use_with_skill": "/workspace/Skills/import-case-documents/skill.md"
+    },
+    {
+      "name": "search_case_law",
+      "file": "legal_research/search_case_law.py",
+      "description": "Search CourtListener for legal opinions by keyword, court, date range, and precedential status. Primary tool for legal research when writing briefs or responding to motions.",
+      "category": "research",
+      "subcategory": "legal",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal_research/search_case_law.py \"query\" [--courts COURTS] [--after DATE] [--before DATE] [--precedential] [--order ORDER] [--limit N]",
+      "examples": [
+        "python /Tools/legal_research/search_case_law.py \"negligence standard of care\" --courts ky,kyctapp,ked,kwd",
+        "python /Tools/legal_research/search_case_law.py \"proximate cause personal injury\" --courts ky --precedential",
+        "python /Tools/legal_research/search_case_law.py \"Daubert expert witness\" --courts ca6 --after 2020-01-01"
+      ],
+      "output_format": "JSON to stdout with opinion metadata, citations, snippets",
+      "kentucky_courts": {
+        "ky": "Kentucky Supreme Court",
+        "kyctapp": "Kentucky Court of Appeals",
+        "ked": "U.S. District Court, Eastern District of Kentucky",
+        "kwd": "U.S. District Court, Western District of Kentucky",
+        "ca6": "U.S. Court of Appeals, Sixth Circuit"
+      },
+      "flags": {
+        "--courts": "Comma-separated court IDs (e.g., ky,kyctapp,ked)",
+        "--after": "Date after (YYYY-MM-DD)",
+        "--before": "Date before (YYYY-MM-DD)",
+        "--precedential": "Only precedential opinions",
+        "--unpublished": "Only unpublished opinions",
+        "--order": "Sort order (score, -dateFiled, citeCount)",
+        "--limit": "Maximum results (default 20)",
+        "--json": "Output raw JSON"
+      },
+      "when_to_use": [
+        "Research legal precedent for motions and briefs",
+        "Find Kentucky case law on specific issues",
+        "Search federal cases in E.D. Ky, W.D. Ky, 6th Circuit",
+        "Build citation support for legal arguments",
+        "Find recent rulings on legal issues"
+      ],
+      "environment_requirements": [
+        "COURTLISTENER_API_KEY"
+      ],
+      "cost": "FREE with API key",
+      "token_savings": "Saves ~800-1500 tokens per search",
+      "added_date": "2025-11-24"
+    },
+    {
+      "name": "explore_citations",
+      "file": "legal_research/explore_citations.py",
+      "description": "Navigate citation networks to find cases citing a given opinion and cases cited by that opinion. Essential for building comprehensive legal research around key precedents.",
+      "category": "research",
+      "subcategory": "legal",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal_research/explore_citations.py CLUSTER_ID [--depth N] [--limit N] OR python /Tools/legal_research/explore_citations.py --citation \"123 F.3d 456\"",
+      "examples": [
+        "python /Tools/legal_research/explore_citations.py 12345 --depth 2",
+        "python /Tools/legal_research/explore_citations.py --citation \"123 S.W.3d 456\"",
+        "python /Tools/legal_research/explore_citations.py 12345 --limit 100"
+      ],
+      "output_format": "JSON with citing cases, cited cases, and optional second-level citations",
+      "flags": {
+        "--citation": "Citation string instead of cluster ID (e.g., '123 F.3d 456')",
+        "--depth": "Depth of citation exploration (1=immediate, 2=second level)",
+        "--limit": "Maximum cases per level (default 50)",
+        "--json": "Output raw JSON"
+      },
+      "when_to_use": [
+        "Find cases that cite a key precedent (Shepardizing)",
+        "Discover what cases an opinion relies on",
+        "Build citation network for comprehensive research",
+        "Find related cases through citation relationships",
+        "Track how precedent has been applied/distinguished"
+      ],
+      "environment_requirements": [
+        "COURTLISTENER_API_KEY"
+      ],
+      "cost": "FREE with API key",
+      "token_savings": "Saves ~900-1600 tokens per exploration",
+      "added_date": "2025-11-24"
+    },
+    {
+      "name": "get_opinion_full_text",
+      "file": "legal_research/get_opinion_full_text.py",
+      "description": "Retrieve the complete text and metadata for a specific opinion. Get full opinion after finding it via search.",
+      "category": "research",
+      "subcategory": "legal",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal_research/get_opinion_full_text.py OPINION_ID [--format FMT] [--save PATH] [--metadata-only]",
+      "examples": [
+        "python /Tools/legal_research/get_opinion_full_text.py 12345",
+        "python /Tools/legal_research/get_opinion_full_text.py 12345 --format html",
+        "python /Tools/legal_research/get_opinion_full_text.py 12345 --save /Reports/opinion.txt",
+        "python /Tools/legal_research/get_opinion_full_text.py 12345 --metadata-only"
+      ],
+      "output_format": "Full opinion text (plain or HTML) with metadata",
+      "flags": {
+        "--format": "Output format (plain, html, json)",
+        "--save": "Save full text to file",
+        "--metadata-only": "Show only metadata, not full text",
+        "--json": "Output complete metadata as JSON"
+      },
+      "when_to_use": [
+        "Read full opinion after finding via search",
+        "Quote exact language from opinion for brief",
+        "Save opinion to case file",
+        "Analyze opinion content in detail",
+        "Extract specific holding or reasoning"
+      ],
+      "environment_requirements": [
+        "COURTLISTENER_API_KEY"
+      ],
+      "cost": "FREE with API key",
+      "token_savings": "Saves ~700-1400 tokens per retrieval",
+      "added_date": "2025-11-24"
+    },
+    {
+      "name": "find_my_cases",
+      "file": "legal_research/find_my_cases.py",
+      "description": "Find all dockets where a specific attorney is listed. Track your own cases across multiple courts.",
+      "category": "docket_monitoring",
+      "subcategory": "case_tracking",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal_research/find_my_cases.py \"Attorney Name\" [--courts COURTS] [--federal] [--state] [--status STATUS] [--limit N]",
+      "examples": [
+        "python /Tools/legal_research/find_my_cases.py \"John Smith\" --federal",
+        "python /Tools/legal_research/find_my_cases.py \"Smith, John\" --courts ked,kwd",
+        "python /Tools/legal_research/find_my_cases.py \"John Smith\" --status Open --limit 50"
+      ],
+      "output_format": "JSON with all dockets where attorney appears",
+      "flags": {
+        "--courts": "Comma-separated court IDs",
+        "--federal": "Kentucky federal courts only (E.D. Ky, W.D. Ky, 6th Cir)",
+        "--state": "Kentucky state courts only (KY Supreme, KY CoA)",
+        "--status": "Filter by case status (Open, Closed)",
+        "--limit": "Maximum results (default 100)",
+        "--method": "Search method (search, direct)",
+        "--json": "Output raw JSON"
+      },
+      "when_to_use": [
+        "Find all your cases in federal court",
+        "Track cases where you're attorney of record",
+        "Get list of open cases across multiple courts",
+        "Monitor case status changes",
+        "Build case list for reporting"
+      ],
+      "environment_requirements": [
+        "COURTLISTENER_API_KEY"
+      ],
+      "cost": "FREE with API key",
+      "token_savings": "Saves ~850-1550 tokens per search",
+      "added_date": "2025-11-24",
+      "note": "Best coverage for federal courts (PACER). State court coverage limited."
+    },
+    {
+      "name": "get_docket_details",
+      "file": "legal_research/get_docket_details.py",
+      "description": "Get complete docket information including all filings, parties, and dates. Full docket sheet for a case.",
+      "category": "docket_monitoring",
+      "subcategory": "case_tracking",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal_research/get_docket_details.py DOCKET_ID [--filings-only] [--upcoming] [--save PATH]",
+      "examples": [
+        "python /Tools/legal_research/get_docket_details.py 12345",
+        "python /Tools/legal_research/get_docket_details.py 12345 --filings-only",
+        "python /Tools/legal_research/get_docket_details.py 12345 --upcoming",
+        "python /Tools/legal_research/get_docket_details.py 12345 --save /Reports/docket.json"
+      ],
+      "output_format": "JSON with complete docket sheet: all entries, parties, dates, judge",
+      "flags": {
+        "--filings-only": "Show only docket entries (filings)",
+        "--upcoming": "Show only upcoming court dates",
+        "--save": "Save complete data to JSON file",
+        "--json": "Output raw JSON"
+      },
+      "when_to_use": [
+        "Get full docket sheet with all filings",
+        "Review case history and timeline",
+        "Check for upcoming hearings/deadlines",
+        "Identify parties and attorneys",
+        "Download complete case record"
+      ],
+      "environment_requirements": [
+        "COURTLISTENER_API_KEY"
+      ],
+      "cost": "FREE with API key",
+      "token_savings": "Saves ~900-1700 tokens per retrieval",
+      "added_date": "2025-11-24"
+    },
+    {
+      "name": "monitor_upcoming_dates",
+      "file": "legal_research/monitor_upcoming_dates.py",
+      "description": "Monitor upcoming court dates, hearings, and deadlines across multiple cases. Calendar management and deadline tracking.",
+      "category": "docket_monitoring",
+      "subcategory": "calendar",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal_research/monitor_upcoming_dates.py --attorney \"Name\" [--days N] OR python /Tools/legal_research/monitor_upcoming_dates.py --dockets IDs [--days N]",
+      "examples": [
+        "python /Tools/legal_research/monitor_upcoming_dates.py --attorney \"John Smith\" --days 30",
+        "python /Tools/legal_research/monitor_upcoming_dates.py --dockets 12345,67890",
+        "python /Tools/legal_research/monitor_upcoming_dates.py --attorney \"John Smith\" --courts ked,kwd --calendar"
+      ],
+      "output_format": "JSON with all upcoming events sorted by date",
+      "flags": {
+        "--attorney": "Attorney name to find all their cases",
+        "--dockets": "Comma-separated docket IDs to monitor",
+        "--courts": "Filter by court IDs",
+        "--days": "Look ahead this many days (default 90)",
+        "--calendar": "Output in calendar format",
+        "--json": "Output raw JSON"
+      },
+      "event_types": [
+        "Trials",
+        "Hearings (motion, status, pretrial conferences)",
+        "Deadlines (filing, discovery, expert disclosure)"
+      ],
+      "when_to_use": [
+        "Calendar management across multiple cases",
+        "Deadline tracking and monitoring",
+        "Find upcoming hearings for next 30/60/90 days",
+        "Trial preparation scheduling",
+        "Avoid missing court dates"
+      ],
+      "environment_requirements": [
+        "COURTLISTENER_API_KEY"
+      ],
+      "cost": "FREE with API key",
+      "token_savings": "Saves ~1000-1800 tokens per monitoring",
+      "added_date": "2025-11-24",
+      "note": "Extracts dates from docket entries. Real-time court calendars may not be comprehensive."
+    },
+    {
+      "name": "transcribe_audio_gemini",
+      "file": "document_processing/transcribe_audio_gemini.py",
+      "description": "Transcribe audio files using Google Gemini's multimodal API with timestamps and speaker identification. Perfect for 911 calls, witness statements, depositions, and recorded conversations.",
+      "category": "document_processing",
+      "subcategory": "transcription",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_processing/transcribe_audio_gemini.py \"/path/to/audio.mp3\" [--timestamps] [--speaker-labels] [--format json|text|srt] [--output PATH] [--pretty]",
+      "examples": [
+        "python /Tools/document_processing/transcribe_audio_gemini.py \"/case/911_call.mp3\" --timestamps --speaker-labels --pretty",
+        "python /Tools/document_processing/transcribe_audio_gemini.py \"/case/deposition.m4a\" --format text",
+        "python /Tools/document_processing/transcribe_audio_gemini.py \"/case/witness_statement.wav\" --output /Reports/transcript.json"
+      ],
+      "output_format": "JSON with full transcript, segments, timestamps, speakers, and metadata",
+      "supported_formats": ["MP3", "WAV", "M4A", "OGG", "FLAC"],
+      "environment_requirements": ["GOOGLE_API_KEY"],
+      "dependencies": ["google-generativeai"],
+      "when_to_use": [
+        "Transcribe 911 calls with multiple speakers",
+        "Convert witness statements to searchable text",
+        "Transcribe deposition audio for review and citation",
+        "Quick transcription with context-aware AI",
+        "Need multimodal understanding (Gemini can infer context)"
+      ],
+      "features": [
+        "Native multimodal audio processing",
+        "Context-aware transcription",
+        "Speaker identification via prompts",
+        "Timestamp segmentation",
+        "Multiple output formats (JSON, text, SRT)"
+      ],
+      "cost": "Paid - Google Gemini API (included in existing API usage)",
+      "token_savings": "~800-1200 tokens per transcription (tool not loaded in context until needed)",
+      "added_date": "2025-11-24"
+    },
+    {
+      "name": "transcribe_video_gemini",
+      "file": "document_processing/transcribe_video_gemini.py",
+      "description": "Transcribe video files and generate visual timeline using Google Gemini's multimodal API. Provides both audio transcript and visual descriptions. ONLY tool that provides visual timeline.",
+      "category": "document_processing",
+      "subcategory": "transcription",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_processing/transcribe_video_gemini.py \"/path/to/video.mp4\" [--timestamps] [--audio-only] [--extract-frames] [--frames-dir DIR] [--format json|text] [--output PATH] [--pretty]",
+      "examples": [
+        "python /Tools/document_processing/transcribe_video_gemini.py \"/case/dashcam.mp4\" --timestamps --extract-frames --pretty",
+        "python /Tools/document_processing/transcribe_video_gemini.py \"/case/bodycam.mp4\" --format text",
+        "python /Tools/document_processing/transcribe_video_gemini.py \"/case/surveillance.mp4\" --audio-only"
+      ],
+      "output_format": "JSON with audio transcript, visual timeline, key events, and metadata",
+      "supported_formats": ["MP4", "MOV", "AVI", "WEBM", "MKV"],
+      "environment_requirements": ["GOOGLE_API_KEY"],
+      "dependencies": ["google-generativeai", "ffmpeg (optional, for frame extraction)"],
+      "when_to_use": [
+        "Analyze dashcam footage (need visual timeline + audio)",
+        "Review body camera recordings (visual + audio correlation)",
+        "Document surveillance video events with timestamps",
+        "ONLY option for visual timeline description",
+        "Correlate what's said with what's shown"
+      ],
+      "features": [
+        "Audio transcript with timestamps",
+        "Visual timeline describing what's happening",
+        "Key event identification",
+        "Audio-visual correlation",
+        "Optional frame extraction at critical moments",
+        "UNIQUE: Only tool with visual understanding"
+      ],
+      "cost": "Paid - Google Gemini API",
+      "token_savings": "~1200-1500 tokens per transcription",
+      "added_date": "2025-11-24",
+      "unique_capability": "ONLY transcription tool that provides visual timeline and scene descriptions"
+    },
+    {
+      "name": "transcribe_audio_whisper",
+      "file": "document_processing/transcribe_audio_whisper.py",
+      "description": "Transcribe audio using OpenAI Whisper (local FREE or API paid) with exceptional accuracy. Word-level timestamps. Optional speaker diarization with pyannote.audio.",
+      "category": "document_processing",
+      "subcategory": "transcription",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_processing/transcribe_audio_whisper.py \"/path/to/audio.mp3\" [--api] [--model SIZE] [--language LANG] [--speaker-labels] [--format json|text|srt] [--output PATH] [--pretty]",
+      "examples": [
+        "python /Tools/document_processing/transcribe_audio_whisper.py \"/case/911_call.mp3\" --model medium --speaker-labels --pretty",
+        "python /Tools/document_processing/transcribe_audio_whisper.py \"/case/deposition.m4a\" --api --format srt",
+        "python /Tools/document_processing/transcribe_audio_whisper.py \"/case/witness.wav\" --model large --language en"
+      ],
+      "output_format": "JSON with full transcript, word-level timestamps, segments, and speaker labels (if requested)",
+      "supported_formats": ["MP3", "WAV", "M4A", "OGG", "FLAC", "and more"],
+      "environment_requirements": ["OPENAI_API_KEY (for API mode)", "HUGGINGFACE_TOKEN (for speaker diarization)"],
+      "dependencies": ["openai-whisper (local mode)", "openai (API mode)", "pyannote.audio (for speaker labels)"],
+      "when_to_use": [
+        "Need highest accuracy transcription",
+        "FREE local processing (no API costs)",
+        "Word-level timestamps required",
+        "Multilingual transcription (99 languages)",
+        "Batch processing where cost matters"
+      ],
+      "features": [
+        "Industry-leading accuracy",
+        "Word-level timestamps",
+        "FREE local option (unlimited usage)",
+        "Fast API option (paid)",
+        "Multilingual (99 languages)",
+        "Speaker diarization via pyannote.audio",
+        "Multiple model sizes (tiny to large)"
+      ],
+      "modes": {
+        "local": "FREE - runs on your hardware (slower without GPU)",
+        "api": "Paid $0.006/min - fast cloud processing"
+      },
+      "cost": "FREE (local) or $0.006/min (API)",
+      "token_savings": "~800-1200 tokens per transcription",
+      "added_date": "2025-11-24"
+    },
+    {
+      "name": "transcribe_video_whisper",
+      "file": "document_processing/transcribe_video_whisper.py",
+      "description": "Extract audio from video and transcribe using OpenAI Whisper. Audio-only transcription (no visual timeline). Use Gemini video tool for visual timeline.",
+      "category": "document_processing",
+      "subcategory": "transcription",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_processing/transcribe_video_whisper.py \"/path/to/video.mp4\" [--api] [--model SIZE] [--speaker-labels] [--keep-audio] [--format json|text] [--output PATH] [--pretty]",
+      "examples": [
+        "python /Tools/document_processing/transcribe_video_whisper.py \"/case/dashcam.mp4\" --model medium --speaker-labels --pretty",
+        "python /Tools/document_processing/transcribe_video_whisper.py \"/case/deposition.mp4\" --api --format text",
+        "python /Tools/document_processing/transcribe_video_whisper.py \"/case/bodycam.mp4\" --keep-audio"
+      ],
+      "output_format": "JSON with audio transcript, word-level timestamps, and speaker labels",
+      "supported_formats": ["MP4", "MOV", "AVI", "WEBM", "MKV"],
+      "environment_requirements": ["OPENAI_API_KEY (for API mode)", "HUGGINGFACE_TOKEN (for speaker labels)"],
+      "dependencies": ["openai-whisper or openai", "pyannote.audio (speaker labels)", "ffmpeg (audio extraction)"],
+      "when_to_use": [
+        "Transcribe video audio only (no visual analysis needed)",
+        "Deposition videos (transcript focus)",
+        "FREE local processing for video",
+        "Highest accuracy audio transcription from video"
+      ],
+      "features": [
+        "Automatic audio extraction from video",
+        "Whisper accuracy for video audio",
+        "FREE local option",
+        "Speaker diarization",
+        "Word-level timestamps"
+      ],
+      "note": "Audio-only. For visual timeline, use transcribe_video_gemini.py",
+      "cost": "FREE (local) or $0.006/min (API)",
+      "token_savings": "~800-1200 tokens per transcription",
+      "added_date": "2025-11-24"
+    },
+    {
+      "name": "transcribe_audio_assemblyai",
+      "file": "document_processing/transcribe_audio_assemblyai.py",
+      "description": "Transcribe audio using AssemblyAI specialized API with built-in speaker diarization, sentiment analysis, entity detection, and auto-highlights. Purpose-built for transcription.",
+      "category": "document_processing",
+      "subcategory": "transcription",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_processing/transcribe_audio_assemblyai.py \"/path/to/audio.mp3\" [--speaker-labels] [--sentiment] [--entities] [--highlights] [--custom-vocabulary WORDS] [--format json|text] [--output PATH] [--pretty]",
+      "examples": [
+        "python /Tools/document_processing/transcribe_audio_assemblyai.py \"/case/911_call.mp3\" --speaker-labels --sentiment --entities --pretty",
+        "python /Tools/document_processing/transcribe_audio_assemblyai.py \"/case/deposition.m4a\" --highlights --format text",
+        "python /Tools/document_processing/transcribe_audio_assemblyai.py \"/case/witness.wav\" --custom-vocabulary \"whiplash\" \"cervical\" \"lumbar\""
+      ],
+      "output_format": "JSON with transcript, speakers, sentiment, entities, auto-highlights, and metadata",
+      "supported_formats": ["MP3", "WAV", "M4A", "OGG", "FLAC", "and more"],
+      "environment_requirements": ["ASSEMBLYAI_API_KEY"],
+      "dependencies": ["assemblyai"],
+      "when_to_use": [
+        "Need built-in speaker diarization (no separate tool)",
+        "Sentiment analysis important (911 calls, emotional state)",
+        "Entity detection valuable (names, places, dates)",
+        "Auto-highlights needed (key testimony moments)",
+        "Custom legal/medical vocabulary for accuracy",
+        "Highest claimed accuracy (95%+)"
+      ],
+      "features": [
+        "Built-in speaker diarization (no separate tool needed)",
+        "Sentiment analysis (positive/negative/neutral per sentence)",
+        "Entity detection (names, locations, dates, organizations)",
+        "Auto-highlights (automatically identify key moments)",
+        "Custom vocabulary (medical/legal terms)",
+        "Word-level timestamps and confidence scores",
+        "PII redaction available"
+      ],
+      "cost": "Free tier: 5 hours/month, then $0.00867/min (~$0.52/hour with all features)",
+      "token_savings": "~800-1200 tokens per transcription",
+      "added_date": "2025-11-24",
+      "unique_features": ["sentiment_analysis", "entity_detection", "auto_highlights", "custom_vocabulary"]
+    },
+    {
+      "name": "transcribe_video_assemblyai",
+      "file": "document_processing/transcribe_video_assemblyai.py",
+      "description": "Extract audio from video and transcribe using AssemblyAI with built-in speaker diarization and sentiment analysis. Audio-only (no visual timeline).",
+      "category": "document_processing",
+      "subcategory": "transcription",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_processing/transcribe_video_assemblyai.py \"/path/to/video.mp4\" [--speaker-labels] [--sentiment] [--entities] [--highlights] [--keep-audio] [--format json|text] [--output PATH] [--pretty]",
+      "examples": [
+        "python /Tools/document_processing/transcribe_video_assemblyai.py \"/case/dashcam.mp4\" --speaker-labels --sentiment --pretty",
+        "python /Tools/document_processing/transcribe_video_assemblyai.py \"/case/deposition.mp4\" --highlights --format text",
+        "python /Tools/document_processing/transcribe_video_assemblyai.py \"/case/bodycam.mp4\" --entities --keep-audio"
+      ],
+      "output_format": "JSON with audio transcript, speakers, sentiment, entities, and metadata",
+      "supported_formats": ["MP4", "MOV", "AVI", "WEBM", "MKV"],
+      "environment_requirements": ["ASSEMBLYAI_API_KEY"],
+      "dependencies": ["assemblyai", "ffmpeg (audio extraction)"],
+      "when_to_use": [
+        "Transcribe video audio with advanced features",
+        "Built-in speaker diarization for video",
+        "Sentiment analysis for video testimony",
+        "Auto-highlights for video depositions"
+      ],
+      "features": [
+        "Automatic audio extraction",
+        "Built-in speaker diarization",
+        "Sentiment analysis",
+        "Entity detection",
+        "Auto-highlights"
+      ],
+      "note": "Audio-only. For visual timeline, use transcribe_video_gemini.py",
+      "cost": "Free tier: 5 hours/month, then $0.00867/min",
+      "token_savings": "~800-1200 tokens per transcription",
+      "added_date": "2025-11-24"
+    },
+    {
+      "name": "active_negotiations_report",
+      "file": "reporting/active_negotiations_report.py",
+      "description": "Generate report of cases currently in settlement negotiation. Queries insurance.json for cases with is_active_negotiation = true.",
+      "category": "reporting",
+      "subcategory": "operational",
+      "input_format": "command_line",
+      "usage": "python /Tools/reporting/active_negotiations_report.py [--format markdown|json] [--output PATH]",
+      "examples": [
+        "python /Tools/reporting/active_negotiations_report.py",
+        "python /Tools/reporting/active_negotiations_report.py --format json",
+        "python /Tools/reporting/active_negotiations_report.py --output /Reports/operational/active_negotiations.md"
+      ],
+      "output_format": "Markdown table (default) or JSON with case details",
+      "output_processing": [
+        "Save to /Reports/operational/ directory for review",
+        "Parse JSON for programmatic access: jq '.cases[]'",
+        "Filter by days since activity: jq '.cases[] | select(.days_since_activity > 60)'"
+      ],
+      "environment_requirements": [],
+      "dependencies": [],
+      "when_to_use": [
+        "User asks 'show me active negotiations'",
+        "User asks 'what cases are negotiating'",
+        "User asks for 'settlement status'",
+        "User wants to see current offers and demands",
+        "User needs to identify stalled negotiations",
+        "Generate operational status report"
+      ],
+      "data_source": "/workspace/Database/master_lists/insurance.json",
+      "filters": "is_active_negotiation = true",
+      "sort_order": "Days since last activity (oldest first - needs attention)",
+      "cost": "FREE",
+      "token_savings": "Saves ~500-800 tokens by not loading report logic in context",
+      "added_date": "2025-11-25"
+    },
+    {
+      "name": "outstanding_medical_records_report",
+      "file": "reporting/outstanding_medical_records_report.py",
+      "description": "Generate report of medical records requests still pending. Identifies stale requests that may need follow-up.",
+      "category": "reporting",
+      "subcategory": "operational",
+      "input_format": "command_line",
+      "usage": "python /Tools/reporting/outstanding_medical_records_report.py [--format markdown|json] [--output PATH]",
+      "examples": [
+        "python /Tools/reporting/outstanding_medical_records_report.py",
+        "python /Tools/reporting/outstanding_medical_records_report.py --format json",
+        "python /Tools/reporting/outstanding_medical_records_report.py --output /Reports/operational/outstanding_records.md"
+      ],
+      "output_format": "Markdown table with summary statistics (default) or JSON",
+      "output_processing": [
+        "Summary includes count by age: over 90 days, 60-90 days, 30-60 days, under 30 days",
+        "Filter urgent (>90 days): jq '.providers[] | select(.days_outstanding > 90)'",
+        "Get provider list: jq '.providers[] | .provider_full_name'"
+      ],
+      "environment_requirements": [],
+      "dependencies": [],
+      "when_to_use": [
+        "User asks 'what medical records are outstanding'",
+        "User asks 'waiting on records'",
+        "User asks 'pending medical records'",
+        "User needs to identify stale records requests",
+        "User wants to see follow-up dates",
+        "Generate operational status report"
+      ],
+      "data_source": "/workspace/Database/master_lists/medical_providers.json",
+      "filters": "date_medical_records_requested IS NOT NULL AND date_medical_records_received IS NULL",
+      "sort_order": "Days outstanding (longest first - needs attention)",
+      "cost": "FREE",
+      "token_savings": "Saves ~550-850 tokens",
+      "added_date": "2025-11-25"
+    },
+    {
+      "name": "outstanding_medical_bills_report",
+      "file": "reporting/outstanding_medical_bills_report.py",
+      "description": "Generate report of medical bills requests still pending. Identifies stale billing requests that may need follow-up.",
+      "category": "reporting",
+      "subcategory": "operational",
+      "input_format": "command_line",
+      "usage": "python /Tools/reporting/outstanding_medical_bills_report.py [--format markdown|json] [--output PATH]",
+      "examples": [
+        "python /Tools/reporting/outstanding_medical_bills_report.py",
+        "python /Tools/reporting/outstanding_medical_bills_report.py --format json",
+        "python /Tools/reporting/outstanding_medical_bills_report.py --output /Reports/operational/outstanding_bills.md"
+      ],
+      "output_format": "Markdown table with summary statistics (default) or JSON",
+      "output_processing": [
+        "Summary includes count by age: over 90 days, 60-90 days, 30-60 days, under 30 days",
+        "Filter urgent (>90 days): jq '.providers[] | select(.days_outstanding > 90)'",
+        "Get provider list: jq '.providers[] | .provider_full_name'"
+      ],
+      "environment_requirements": [],
+      "dependencies": [],
+      "when_to_use": [
+        "User asks 'what medical bills are outstanding'",
+        "User asks 'waiting on bills'",
+        "User asks 'pending billing'",
+        "User needs to identify stale billing requests",
+        "User wants to see billing follow-up dates",
+        "Generate operational status report"
+      ],
+      "data_source": "/workspace/Database/master_lists/medical_providers.json",
+      "filters": "date_medical_bills_requested IS NOT NULL AND medical_bills_received_date IS NULL",
+      "sort_order": "Days outstanding (longest first - needs attention)",
+      "cost": "FREE",
+      "token_savings": "Saves ~550-850 tokens",
+      "added_date": "2025-11-25"
+    }
+  ],
+  "planned_tools": [
+    {
+      "name": "video_frame_extractor",
+      "description": "Extract frames from video at specific timestamps using ffmpeg",
+      "status": "planned"
+    },
+    {
+      "name": "document_summarizer",
+      "description": "Summarize long documents using LLM",
+      "status": "planned"
+    },
+    {
+      "name": "medical_terminology_lookup",
+      "description": "Look up medical terms and definitions",
+      "status": "planned"
+    }
+  ],
+  "how_to_use_this_manifest": {
+    "step_1": "When you need a tool, read this manifest: read_file('/Tools/tools_manifest.json')",
+    "step_2": "Find the appropriate tool by reading the descriptions and 'when_to_use' fields",
+    "step_3": "Check the usage examples to understand how to call it",
+    "step_4": "Execute the tool: Run the Python script with appropriate arguments",
+    "step_5": "Process output: If output is large, use grep/jq/awk to extract what you need",
+    "step_6": "Parse results: Read JSON output and use the information in your analysis"
+  },
+  "advantages_of_this_approach": [
+    "Token efficiency: Tool descriptions not in every message context",
+    "Scalability: Add unlimited tools without bloating agent configuration",
+    "Flexibility: Tools can be updated without redeploying agent",
+    "Output control: Agent can process large outputs incrementally with grep/jq",
+    "Modularity: Tools are standalone and can be tested independently",
+    "Discovery: Agent can discover new tools added to directory",
+    "Cost savings: Reduced token usage = lower API costs"
+  ]
+}
