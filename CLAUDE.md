@@ -13,7 +13,21 @@ Given the knowledge cutoff mismatch, always check this reference for current API
 
 ## Project Overview
 
-**Roscoe** is a LangGraph-based paralegal AI agent specializing in personal injury litigation. The agent uses LangChain's DeepAgent framework with multiple specialized sub-agents to handle complex medical records analysis, legal research, and case management tasks.
+**Roscoe** is a multi-agent platform built on LangGraph with shared infrastructure supporting multiple specialized AI agents. The platform currently includes a paralegal agent for personal injury litigation, with plans for a personal assistant agent and a coding agent for agent development.
+
+**Current Agents:**
+1. **Paralegal Agent** (`paralegal_agent`) - Personal injury litigation specialist
+   - Medical records analysis
+   - Legal research
+   - Case management
+   - Document processing
+2. **Personal Assistant** (planned) - Personal task management
+3. **Coding Agent** (planned) - Agent development and maintenance
+
+**Architecture:**
+- **src/roscoe/core/** - Shared infrastructure (models, middleware, skill system)
+- **src/roscoe/agents/** - Individual agent implementations (each with own workspace, skills, tools, prompts)
+- **Isolation:** Each agent has completely separate workspace, skills, and tools
 
 **Core Technology Stack:**
 - LangGraph for agent orchestration (deployed via LangGraph Cloud)
@@ -26,11 +40,11 @@ Given the knowledge cutoff mismatch, always check this reference for current API
 
 ## Architecture: Dynamic Skills-Based System
 
-Roscoe uses a **dynamic skills architecture** with semantic skill selection and automatic model switching. This eliminates hardcoded sub-agents and enables unlimited skill expansion without code changes.
+Roscoe uses a **dynamic skills architecture** with semantic skill selection. This eliminates hardcoded sub-agents and enables unlimited skill expansion without code changes.
 
 ### Main Agent Structure
 
-The main agent (`roscoe/agent.py`) uses middleware for dynamic behavior:
+The main agent (`src/roscoe/agents/paralegal/agent.py`) uses middleware for dynamic behavior:
 
 ```python
 personal_assistant_agent = create_deep_agent(
@@ -41,7 +55,6 @@ personal_assistant_agent = create_deep_agent(
     tools=[shell_tool],
     middleware=[
         SkillSelectorMiddleware(...),  # Semantic skill selection
-        model_selector_middleware,      # Dynamic model switching
     ]
 ).with_config({"recursion_limit": 1000})
 ```
@@ -50,24 +63,16 @@ personal_assistant_agent = create_deep_agent(
 
 ### Middleware Architecture
 
-**1. SkillSelectorMiddleware** (`roscoe/skill_middleware.py`):
+**SkillSelectorMiddleware** (`src/roscoe/core/skill_middleware.py`):
 - Embeds all skill descriptions using sentence-transformers
 - On each request, computes cosine similarity between user query and skills
 - Loads top-matching skill(s) into system prompt
-- Sets skill metadata in request state for model selector
+- Sets skill metadata in request state
 - **Token Efficient**: Only relevant skills loaded per conversation
-
-**2. model_selector_middleware** (`roscoe/skill_middleware.py`):
-- Reads skill metadata from request state
-- Dynamically switches agent model based on skill requirements:
-  - `gemini-3-pro`: Multimodal analysis, code execution
-  - `sonnet`: Complex reasoning, analysis (DEFAULT)
-  - `haiku`: Simple high-volume tasks only
-- General-purpose sub-agent inherits the current model
 
 ### Skills System
 
-**Skills Location:** `/workspace/Skills/`
+**Skills Location:** `/workspace_paralegal/Skills/` (paralegal agent)
 
 **Skills Manifest:** `skills_manifest.json` - Registry of all available skills with:
 - Semantic descriptions for matching
@@ -80,7 +85,7 @@ personal_assistant_agent = create_deep_agent(
 1. **medical-records-analysis** - 5-phase medical analysis pipeline
 2. **legal-research** - Internet research using Tavily
 
-**Sub-Skills** (`/workspace/Skills/sub-agents/`):
+**Sub-Skills** (`/workspace_paralegal/Skills/sub-agents/`):
 - **fact-investigation.md** - Gemini 3 Pro (multimodal + code execution)
 - **medical-organization.md** - Haiku (simple inventory)
 - **record-extraction.md** - Sonnet (accurate medical data extraction)
@@ -125,8 +130,7 @@ Medical records analysis follows a **5-phase pipeline** via the medical-records-
 - Main agent's skill selector loads medical-records-analysis skill
 - Skill instructs which sub-skills to use for each phase
 - Main agent spawns general-purpose sub-agent with sub-skill instructions
-- Model selector switches model based on sub-skill requirements
-- General-purpose sub-agent inherits the appropriate model
+- General-purpose sub-agent uses the main agent's model (Sonnet)
 - Main agent synthesizes results (e.g., chronology from extraction reports)
 
 ### FilesystemBackend Workspace
@@ -142,7 +146,12 @@ The agent operates in a sandboxed workspace with this structure:
 │   ├── chronology.md
 │   ├── causation.md
 │   └── FINAL_SUMMARY.md
-├── Tools/                  # Python scripts generated during analysis
+├── Tools/                  # Standalone executable tools (permanent)
+│   ├── research/           # General research tools
+│   ├── medical_research/   # Medical/academic research tools
+│   ├── legal_research/     # Legal research tools
+│   ├── document_processing/ # PDF extraction tools
+│   └── _generated/         # Agent-generated scripts (temporary, case-specific)
 ├── [case_name]/            # Case-specific folders
 │   ├── medical_records/
 │   ├── medical_bills/
@@ -155,7 +164,8 @@ The agent operates in a sandboxed workspace with this structure:
 - Use workspace-relative paths starting with `/` (e.g., `/Reports/case_facts.md`)
 - NEVER use absolute system paths in sub-agent prompts
 - All reports MUST go to `/Reports/` directory
-- All generated Python scripts go to `/Tools/`
+- All **permanent tools** go to `/Tools/[category]/` (e.g., `/Tools/legal_research/`)
+- All **temporary agent-generated scripts** go to `/Tools/_generated/` (e.g., reorganize scripts, case-specific automation)
 
 ## Development Commands
 
@@ -190,62 +200,318 @@ Required environment variables (in `../.env`):
 - `GOOGLE_API_KEY` - For Gemini models
 - `TAVILY_API_KEY` - For internet search
 
-## Model Configuration (`roscoe/models.py`)
+## Model Configuration (`src/roscoe/core/models.py`)
 
 ```python
-# Main agent and complex analysis
-agent_llm = ChatAnthropic(model="claude-sonnet-4-5-20250929")
+# Main agent model (Claude Sonnet 4.5)
+agent_llm = ChatAnthropic(model="claude-sonnet-4-5-20250929", max_retries=3)
 
-# Fast medical sub-agents (extraction, organization)
-medical_sub_agent_llm = ChatAnthropic(model="claude-haiku-4-5-20251001", temperature=0)
+# General-purpose sub-agent model (same as main agent)
+sub_agent_llm = ChatAnthropic(model="claude-sonnet-4-5-20250929", max_retries=3)
 
-# Fact investigation with code execution
-fact_investigator_llm = ChatGoogleGenerativeAI(
+# Multimodal sub-agent model (Gemini 3 Pro with code execution)
+# Used for image/audio/video analysis and document processing tasks
+multimodal_llm = ChatGoogleGenerativeAI(
     model="gemini-3-pro-preview",
+    max_retries=3,
     temperature=0
 ).bind_tools([{"code_execution": {}}])
-
-# Fallback for fact investigator
-fact_investigator_fallback_llm = ChatGoogleGenerativeAI(model="gemini-2.5-pro", ...)
-
-# Multimodal analysis (images, audio, video)
-multimodal_llm = ChatGoogleGenerativeAI(model="gemini-3-pro-preview", ...)
 ```
 
-**Model Fallback Middleware:**
-Fact investigator uses `ModelFallbackMiddleware` to fall back from Gemini 3 Pro → Gemini 2.5 Pro on server errors.
+## Tools Architecture: Standalone Executable Scripts
 
-## Tools and Capabilities
+**IMPORTANT:** Roscoe uses a **unique tools architecture** that differs from typical LangChain agents. Tools are NOT added to the agent's context window. Instead, they are standalone Python scripts that the agent executes via the shell tool.
 
-### Core Tools (`roscoe/tools.py`)
+### Why Standalone Scripts?
 
-1. **internet_search**: Tavily-powered web search
-   - Supports general/news/finance topics
-   - Optional raw content extraction
+**Problems with traditional tool loading:**
+- Tool descriptions consume 500-1300 tokens per tool per message
+- Agent context bloated with tool signatures for rarely-used capabilities
+- Adding new tools requires redeploying the agent
+- Large tool outputs fill context window
 
-2. **analyze_image**: Multimodal image analysis (accident photos, scene documentation)
-   - Uses Gemini 3 Pro with vision
-   - Provides legal evidence analysis
+**Our solution:**
+1. Tools are executable Python scripts in `/Tools/` directory
+2. Agent discovers tools by reading `/Tools/tools_manifest.json`
+3. Agent executes tools via shell: `python /Tools/tool_name.py "query"`
+4. Results output to stdout (JSON or text)
+5. Agent processes results with grep/jq/awk or reads directly
 
-3. **analyze_audio**: Audio transcription and analysis (911 calls, depositions)
-   - Uses Gemini 3 Pro with audio
-   - Speaker identification, timestamps, emotional state
+**Benefits:**
+- ✅ **Zero context bloat** - Tools not loaded until needed
+- ✅ **Terminal output processing** - Agent can grep/filter large results
+- ✅ **Dynamic discovery** - Add tools without redeploying agent
+- ✅ **Token efficiency** - Saves 500-1300 tokens per tool per message
+- ✅ **Composable** - Tools work with Unix pipes and standard tools
+- ✅ **Scalable** - Add unlimited tools without performance degradation
 
-4. **analyze_video**: Video analysis with timeline (body camera, dashcam)
-   - Uses Gemini 3 Pro with video
-   - Audio transcription + visual timeline
-   - Optional key frame timestamp extraction
+### Tools Directory Structure
 
-### Shell Tool (`roscoe/middleware.py`)
+```
+/workspace_paralegal/Tools/
+├── tools_manifest.json       # Master registry of all permanent tools
+├── README.md                 # Tools documentation
+│
+├── research/                 # General research (2 tools)
+│   ├── manifest.json         # Category-specific manifest
+│   ├── internet_search.py
+│   └── expert_witness_lookup.py
+│
+├── medical_research/         # Medical/academic research (2 tools)
+│   ├── manifest.json
+│   ├── pubmed_search.py
+│   └── semantic_scholar_search.py
+│
+├── legal_research/           # Legal research (7 tools)
+│   ├── manifest.json
+│   ├── search_case_law.py
+│   ├── explore_citations.py
+│   ├── get_opinion_full_text.py
+│   ├── find_my_cases.py
+│   ├── get_docket_details.py
+│   ├── monitor_upcoming_dates.py
+│   └── oral_arguments_search.py
+│
+├── document_processing/      # PDF extraction (2 tools)
+│   ├── manifest.json
+│   ├── read_pdf.py
+│   └── import_documents.py
+│
+├── _generated/               # Agent-generated scripts (temporary)
+│   └── README.md             # Guidelines for generated scripts
+│
+└── _archive/                 # Deprecated tools (replaced/obsolete)
+```
 
-The bash/shell tool enables:
-- Python script execution
+**IMPORTANT: Permanent vs. Generated Scripts**
+
+- **Permanent tools** (reusable, tested, general-purpose) → `/Tools/[category]/tool_name.py`
+  - Example: `/Tools/legal_research/search_case_law.py`
+  - Listed in `tools_manifest.json`
+  - Discovered via manifest by agent
+
+- **Generated scripts** (temporary, case-specific, one-off) → `/Tools/_generated/script_name.sh`
+  - Example: `/Tools/_generated/reorganize_Amy-Mills-Premise-04-26-2019.sh`
+  - NOT in manifest
+  - Cleanup policy: Delete after 90 days or when case closes
+
+### Tool Pattern (All Tools Follow This)
+
+Every tool in `/Tools/` follows this standardized pattern:
+
+```python
+#!/usr/bin/env python3
+"""
+Tool Name and Description
+
+Comprehensive docstring with usage examples.
+"""
+
+import argparse
+import json
+import sys
+
+def tool_function(query: str, **kwargs) -> dict:
+    """Core function that does the work."""
+    try:
+        # Perform the task
+        results = do_something(query)
+
+        return {
+            "success": True,
+            "query": query,
+            "results": results
+        }
+    except Exception as e:
+        return {
+            "error": f"Tool failed: {str(e)}",
+            "query": query
+        }
+
+def main():
+    """Command-line interface."""
+    parser = argparse.ArgumentParser(description="Tool description")
+    parser.add_argument("query", help="Query string")
+    parser.add_argument("--max-results", type=int, default=10)
+    parser.add_argument("--pretty", action="store_true")
+
+    args = parser.parse_args()
+
+    result = tool_function(args.query, max_results=args.max_results)
+
+    # Output JSON to stdout
+    if args.pretty:
+        print(json.dumps(result, indent=2))
+    else:
+        print(json.dumps(result))
+
+    # Exit code
+    sys.exit(0 if "success" in result else 1)
+
+if __name__ == "__main__":
+    main()
+```
+
+**Key requirements:**
+1. ✅ Shebang: `#!/usr/bin/env python3`
+2. ✅ Comprehensive docstring with examples
+3. ✅ argparse CLI with `--help` support
+4. ✅ JSON output to stdout (or text for documents)
+5. ✅ Status messages to stderr (keeps stdout clean)
+6. ✅ Exit codes: 0 = success, 1 = error
+7. ✅ Environment variables for API keys
+8. ✅ Graceful error handling
+9. ✅ `--pretty` flag for human-readable output
+
+### Tools Manifest System
+
+The agent discovers tools by reading `/Tools/tools_manifest.json`:
+
+```json
+{
+  "version": "1.0.0",
+  "description": "Tool registry for dynamic discovery",
+  "tools": [
+    {
+      "name": "tool_name",
+      "file": "tool_name.py",
+      "description": "What the tool does",
+      "category": "research|document_processing|...",
+      "usage": "python /Tools/tool_name.py \"query\" [--flags]",
+      "examples": ["example command 1", "example command 2"],
+      "when_to_use": ["Use case 1", "Use case 2"],
+      "output_format": "JSON to stdout",
+      "dependencies": ["package1", "package2"],
+      "environment_requirements": ["ENV_VAR_NAME"],
+      "cost": "FREE | paid"
+    }
+  ]
+}
+```
+
+**Agent workflow:**
+1. Agent reads manifest when it needs a tool
+2. Finds appropriate tool via `when_to_use` descriptions
+3. Checks `usage` and `examples` for syntax
+4. Executes: `python /Tools/tool_name.py "query"`
+5. Processes JSON output or pipes through grep/jq
+
+### Current Tools Inventory
+
+**Research Tools (All FREE):**
+
+1. **internet_search.py** - General web search
+   - Tavily API for news, general research, fact-finding
+   - Env: `TAVILY_API_KEY` (required)
+   - Package: `tavily-python`
+
+2. **pubmed_search.py** - Medical research
+   - 39M+ peer-reviewed medical citations
+   - Essential for causation research, standards of care
+   - Env: `NCBI_EMAIL` (required), `NCBI_API_KEY` (optional)
+   - Package: `biopython`
+
+3. **semantic_scholar_search.py** - Academic research
+   - 230M+ papers with citation tracking
+   - Expert witness publication verification
+   - No API key required, 100% FREE
+
+4. **court_case_search.py** - Legal precedent
+   - Millions of court opinions via CourtListener
+   - Kentucky 6th Circuit coverage
+   - Env: `COURTLISTENER_API_KEY` (optional)
+   - No packages needed
+
+5. **expert_witness_lookup.py** - Expert verification
+   - Publication records, h-index, citation counts
+   - Credential checking for cross-examination
+   - No API key required, 100% FREE
+
+**Document Processing Tools:**
+
+6. **read_pdf.py** - PDF text extraction
+   - Multi-page support, error recovery
+   - Medical records, bills, reports
+   - Package: `pypdf`
+
+### Agent-Facing Tools (Loaded in Context)
+
+These tools ARE loaded into the agent context (in `src/roscoe/agents/paralegal/tools.py`) because they require multimodal models:
+
+1. **analyze_image** - Gemini 3 Pro vision for accident photos
+2. **analyze_audio** - Gemini 3 Pro audio for 911 calls, depositions
+3. **analyze_video** - Gemini 3 Pro video for dashcam, body camera
+
+### Shell Tool
+
+The bash/shell tool (via `FilesystemBackend`) enables:
+- Executing `/Tools/*.py` scripts
 - Package installation (`pip install`)
 - PDF processing (`pdftotext`, `pdfplumber`)
 - Video frame extraction (`ffmpeg`)
-- Data analysis and manipulation
+- Data analysis with piping: `python /Tools/tool.py "query" | jq '.results[0]'`
 
-**Working directory:** Commands execute from workspace root
+**Working directory:** Workspace root
+
+### How to Add New Tools
+
+1. **Create the Python script** in `/Tools/tool_name.py`:
+   - Follow the standardized pattern above
+   - Include comprehensive docstring
+   - Add argparse CLI with `--help`
+   - Output JSON to stdout
+   - Make it executable: `chmod +x /Tools/tool_name.py`
+
+2. **Update tools_manifest.json**:
+   - Add entry with name, description, usage, examples
+   - Specify `when_to_use` cases clearly
+   - List dependencies and environment variables
+   - Document output format
+
+3. **Test the tool**:
+   ```bash
+   python /Tools/tool_name.py --help  # Check help works
+   python /Tools/tool_name.py "test query" --pretty  # Test output
+   ```
+
+4. **No agent changes needed!**
+   - Agent discovers tool via manifest
+   - Tool immediately usable in next conversation
+
+### Tool Usage Examples
+
+**Agent executing a tool:**
+```python
+# Agent runs via shell tool:
+python /Tools/pubmed_search.py "whiplash cervical spine" --max-results 10
+```
+
+**Agent processing large output:**
+```bash
+# Filter results with jq:
+python /Tools/semantic_scholar_search.py "brain injury" | jq '.results[] | select(.citation_count > 100)'
+
+# Search for keywords:
+python /Tools/court_case_search.py "personal injury" | grep -i "kentucky"
+
+# Count results:
+python /Tools/expert_witness_lookup.py "John Smith" | jq '.primary_match.total_papers'
+```
+
+### Environment Variables for Tools
+
+Required in `../.env`:
+```bash
+# Research APIs
+TAVILY_API_KEY=sk-...           # Required for internet_search
+NCBI_EMAIL=user@example.com     # Required for pubmed_search
+NCBI_API_KEY=...                # Optional for pubmed_search (10 req/sec vs 3)
+COURTLISTENER_API_KEY=...       # Optional for court_case_search (higher limits)
+
+# Core agent (already configured)
+ANTHROPIC_API_KEY=sk-...
+GOOGLE_API_KEY=...
+```
 
 ## Critical Citation Requirements
 
@@ -308,21 +574,45 @@ read_file("../workspace/Reports/case_facts.md")
 
 ```
 /Volumes/X10 Pro/Roscoe/
-├── roscoe/                 # Main agent code
-│   ├── agent.py            # Main agent entry point
-│   ├── models.py           # LLM configurations
-│   ├── prompts.py          # System prompts
-│   ├── sub_agents.py       # Research sub-agent
-│   ├── medical_sub_agents.py  # 8 medical sub-agents
-│   ├── tools.py            # Tool definitions
-│   └── middleware.py       # Shell tool configuration
-├── workspace/              # Sandboxed workspace (gitignored)
+├── src/                           # Source code (src/ layout)
+│   └── roscoe/                    # Main package
+│       ├── __init__.py
+│       ├── core/                  # Shared infrastructure (all agents)
+│       │   ├── __init__.py
+│       │   ├── models.py          # LLM configurations (Claude, Gemini)
+│       │   ├── middleware.py      # Shell tool configuration
+│       │   └── skill_middleware.py # Skill selector middleware
+│       │
+│       └── agents/                # Individual agent implementations
+│           ├── __init__.py
+│           └── paralegal/         # Paralegal agent (law office)
+│               ├── __init__.py
+│               ├── agent.py       # Main agent entry point
+│               ├── prompts.py     # Agent-specific system prompts
+│               ├── sub_agents.py  # Multimodal sub-agent definition
+│               └── tools.py       # Multimodal tool definitions
+│
+├── workspace_paralegal/           # Paralegal agent workspace (gitignored)
+│   ├── Reports/                   # Analysis reports
+│   ├── Tools/                     # Paralegal-specific tools
+│   ├── Skills/                    # Paralegal-specific skills
+│   └── [case_folders]/            # Case-specific folders
+│
+├── langgraph.json                 # LangGraph Cloud config (multi-agent)
+├── pyproject.toml                 # Python project configuration
+├── CLAUDE.md                      # This file
+└── README.md                      # Project README
+
+Future agent structure (when added):
+├── workspace_personal_assistant/  # Personal assistant workspace
 │   ├── Reports/
 │   ├── Tools/
-│   └── [case_folders]/
-├── langgraph.json          # LangGraph Cloud config
-├── roscoe_prompt.md        # Original agent description
-└── QUICK_START.txt         # Web scraping tools analysis
+│   └── Skills/
+│
+└── workspace_coding/              # Coding agent workspace
+    ├── Reports/
+    ├── Tools/
+    └── Skills/
 ```
 
 ## Important Notes
@@ -337,8 +627,7 @@ Sub-agents are defined as dictionaries per LangChain DeepAgents documentation:
     "description": "Description for when to invoke",
     "system_prompt": "Detailed system prompt",
     "tools": [list_of_tools],
-    "model": llm_instance,
-    "middleware": [optional_middleware]  # e.g., ModelFallbackMiddleware
+    "model": llm_instance
 }
 ```
 
@@ -374,12 +663,17 @@ When modifying sub-agents:
 1. Test individual sub-agent prompts for clarity and completeness
 2. Verify citation requirements are explicit in prompts
 3. Ensure file paths use workspace-relative format
-4. Test fallback mechanisms (e.g., ModelFallbackMiddleware)
-5. Verify parallel processing works for record-extractor batch operations
+4. Verify parallel processing works for batch operations
 
-When adding new tools:
-1. Define in `roscoe/tools.py`
-2. Import and add to relevant sub-agent `tools` list
+When adding new standalone tools (in `/Tools/`):
+1. Create executable Python script following the standardized pattern
+2. Update `/Tools/tools_manifest.json` with tool metadata
+3. Test: `python /Tools/tool_name.py --help` and with sample queries
+4. No agent code changes or redeployment needed!
+
+When adding multimodal tools (requires agent context):
+1. Define in `src/roscoe/agents/paralegal/tools.py` (for analyze_image, analyze_audio, analyze_video)
+2. Import and add to relevant sub-agent `tools` list in `sub_agents.py`
 3. Document in sub-agent system prompt
 4. Test with workspace-relative paths
 
@@ -389,7 +683,7 @@ The dynamic skills architecture makes it easy to add new capabilities without to
 
 ### 1. Create Skill File
 
-Create `/workspace/Skills/skill-name/skill.md` with skill instructions:
+Create `/workspace_paralegal/Skills/skill-name/skill.md` with skill instructions (for paralegal agent):
 ```markdown
 # Skill Name
 
@@ -414,7 +708,7 @@ sonnet | haiku | gemini-3-pro
 
 ### 2. Update Skills Manifest
 
-Add entry to `/workspace/Skills/skills_manifest.json`:
+Add entry to `/workspace_paralegal/Skills/skills_manifest.json` (for paralegal agent):
 ```json
 {
   "name": "skill-name",
@@ -435,7 +729,7 @@ Add entry to `/workspace/Skills/skills_manifest.json`:
 
 ### 3. Create Sub-Skills (If Needed)
 
-If skill requires specialized sub-agents, create `/workspace/Skills/sub-agents/sub-skill-name.md`:
+If skill requires specialized sub-agents, create `/workspace_paralegal/Skills/sub-agents/sub-skill-name.md` (for paralegal agent):
 ```markdown
 # Sub-Skill Name Sub-Skill
 
@@ -455,17 +749,15 @@ If skill requires specialized sub-agents, create `/workspace/Skills/sub-agents/s
 
 The skill is immediately available:
 - SkillSelectorMiddleware will find it via semantic search
-- ModelSelectorMiddleware will switch to the appropriate model
 - Main agent will load and follow the skill instructions
 
 ## Key Design Principles
 
 1. **Dynamic Skill Loading**: Skills loaded semantically based on user request, not hardcoded
-2. **Automatic Model Optimization**: Right model selected per task automatically
-3. **Zero-Code Skill Addition**: Add unlimited skills by editing files, no deployment needed
-4. **Parallel Processing**: Spawn multiple general-purpose sub-agents for batch work
-5. **Centralized Reporting**: All outputs go to `/Reports/` directory
-6. **Citation Integrity**: Every factual claim must cite source document + page/timestamp
-7. **Workspace Sandboxing**: All operations scoped to workspace root with virtual paths
-8. **Token Efficiency**: Only relevant skills loaded per conversation
-9. **Multimedia Evidence**: Native support for images, audio, video with AI analysis (Gemini 3 Pro)
+2. **Zero-Code Skill Addition**: Add unlimited skills by editing files, no deployment needed
+3. **Parallel Processing**: Spawn multiple general-purpose sub-agents for batch work
+4. **Centralized Reporting**: All outputs go to `/Reports/` directory
+5. **Citation Integrity**: Every factual claim must cite source document + page/timestamp
+6. **Workspace Sandboxing**: All operations scoped to workspace root with virtual paths
+7. **Token Efficiency**: Only relevant skills loaded per conversation
+8. **Multimedia Evidence**: Native support for images, audio, video with AI analysis (Gemini 3 Pro)

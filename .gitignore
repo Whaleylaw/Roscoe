@@ -4,13 +4,40 @@ __pycache__/
 *.so
 .Python
 .langgraph_api/
-workspace/
 .DS_Store
+
+# Workspace runtime files (ALL stay in GCS, NOT in git/Docker)
+workspace_paralegal/
+workspace_coding/
+
+# Separate UI project (has its own repo)
+deep-agents-ui-main/
+
+# Database scripts (not needed in Docker)
+DatabaseScripts/
+Reports/
+
+# Build artifacts
+*.egg-info/
+uv.lock
+
+# Temp/error files
+wrapper-error.md
+error report.md
+
+# Old documentation (moved to docs/)
+documents/
 
 # Secrets and local config
 .claude/KEYS.txt
 .claude/settings.local.json
 .mcp.json
+.env
+.env.local
+
+# Docker volumes and data
+postgres_data/
+redis_data/
 
 # macOS metadata
 ._*
