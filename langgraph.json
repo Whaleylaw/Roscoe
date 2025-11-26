@@ -1,8 +1,13 @@
 {
     "dependencies": ["."],
     "graphs": {
-        "personal_assistant_agent": "./agent.py:personal_assistant_agent"
+        "roscoe_paralegal": "./src/roscoe/agents/paralegal/agent.py:personal_assistant_agent",
+        "roscoe_coding": "./src/roscoe/agents/coding/agent.py:coding_agent"
     },
-    "env": "../.env"
+    "env": ".env",
+    "python_version": "3.11",
+    "store": {
+        "uri": "postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable"
+    }
 }
   
