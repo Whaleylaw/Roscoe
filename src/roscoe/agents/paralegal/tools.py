@@ -477,9 +477,10 @@ def execute_code(
 
     try:
         # Create a devbox (sandbox container)
+        blueprint_id = os.environ.get("RUNLOOP_BLUEPRINT_ID") or "bpt_31iZV5lcUlYql1wz5ngWT"  # Default to roscoe-paralegal-env-v1 if not set
         devbox = runloop_client.devboxes.create_and_await_running(
             name=f"roscoe-exec-{os.urandom(4).hex()}",
-            # Can add blueprint_id here if you have a pre-configured environment
+            blueprint_id=blueprint_id,
         )
 
         try:
