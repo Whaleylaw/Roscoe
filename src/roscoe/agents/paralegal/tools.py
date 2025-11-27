@@ -476,10 +476,10 @@ def execute_code(
         )
 
         try:
-            # Execute command in devbox
+            # Execute command in devbox (devbox_id is positional!)
             result = runloop_client.devboxes.execute_and_await_completion(
-                devbox_id=devbox.id,
-                command=command,
+                devbox.id,  # Positional argument
+                command=command,  # Keyword argument
             )
 
             # Format output
@@ -497,7 +497,7 @@ def execute_code(
         finally:
             # Clean up devbox
             try:
-                runloop_client.devboxes.shutdown(devbox_id=devbox.id)
+                runloop_client.devboxes.shutdown(devbox.id)  # Positional
             except:
                 pass  # Best effort cleanup
 
