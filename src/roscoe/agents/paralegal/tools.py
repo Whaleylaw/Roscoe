@@ -489,7 +489,7 @@ def execute_code(
             if result.stderr:
                 output.append(f"**stderr:**\n{result.stderr}")
 
-            exit_code = result.exit_code or 0
+            exit_code = result.exit_status or 0
             output.append(f"\n**Exit code:** {exit_code}")
 
             return "\n\n".join(output) if output else "Command completed (no output)"
