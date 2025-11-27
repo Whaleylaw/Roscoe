@@ -478,10 +478,8 @@ def execute_code(
         try:
             # Execute command in devbox
             result = runloop_client.devboxes.execute_and_await_completion(
-                id=devbox.id,
+                devbox_id=devbox.id,
                 command=command,
-                working_directory=working_dir,
-                timeout_ms=timeout * 1000,
             )
 
             # Format output
@@ -499,7 +497,7 @@ def execute_code(
         finally:
             # Clean up devbox
             try:
-                runloop_client.devboxes.shutdown(id=devbox.id)
+                runloop_client.devboxes.shutdown(devbox_id=devbox.id)
             except:
                 pass  # Best effort cleanup
 
