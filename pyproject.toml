@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Dynamic Skills-Based Paralegal AI Agent"
 requires-python = ">=3.11"
 dependencies = [
-    "deepagents",
+    "deepagents>=0.2.0",
     "langchain",
     "langgraph",
     "langgraph-cli[inmem]",
