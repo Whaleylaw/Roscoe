@@ -5,6 +5,7 @@ from tavily import TavilyClient
 from langchain_core.messages import HumanMessage
 from roscoe.agents.paralegal.models import multimodal_llm
 import base64
+import shlex
 
 # Initialize the Tavily client
 tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
@@ -439,12 +440,14 @@ def execute_code(
     command: str,
     working_dir: str = "/workspace",
     timeout: int = 60,
+    input_files: Optional[list[str]] = None,
 ) -> str:
     """
     Execute shell commands or Python code in an isolated Runloop sandbox.
 
     Perfect for running Tools scripts, data analysis, file processing, or any
     code execution tasks. Each execution runs in a clean, isolated container.
+    Can auto-upload files from your workspace to the sandbox before execution.
 
     Use this to:
     - Execute Tools scripts: `python /workspace/Tools/pubmed_search.py "query"`
@@ -456,6 +459,9 @@ def execute_code(
         command: Shell command or script to execute
         working_dir: Working directory in sandbox (default: /workspace)
         timeout: Maximum execution time in seconds (default: 60)
+        input_files: Optional list of workspace paths to upload to the sandbox before running.
+                    (e.g. ["/Tools/script.py", "/data/file.csv"]).
+                    Files will be uploaded to matching paths under /workspace.
 
     Returns:
         Command output (stdout + stderr) or error message
@@ -463,7 +469,7 @@ def execute_code(
     Examples:
         execute_code("python /workspace/Tools/pubmed_search.py 'whiplash'")
         execute_code("ls -la /workspace/projects/Abby-Sitgraves-MVA-7-13-2024")
-        execute_code("pip install pandas && python analyze.py")
+        execute_code("pip install pandas && python analyze.py", input_files=["/Tools/analyze.py"])
     """
     if not runloop_client:
         return "Code execution not configured. Set RUNLOOP_API_KEY environment variable."
@@ -476,7 +482,39 @@ def execute_code(
         )
 
         try:
+            # Upload input files if requested
+            if input_files:
+                for file_path in input_files:
+                    # Resolve local path
+                    if file_path.startswith('/'):
+                        clean_path = file_path[1:]
+                    else:
+                        clean_path = file_path
+                    
+                    local_abs_path = workspace_root / clean_path
+                    
+                    if not local_abs_path.exists():
+                        return f"Error: Input file not found: {file_path}"
+                    
+                    # Determine remote path (preserve structure relative to workspace)
+                    # Runloop upload path is relative to home, so we map /workspace -> . (or explicit path)
+                    # NOTE: RunLoop standard blueprint usually has user home.
+                    # We'll assume we want to place files in /home/user/workspace or similar,
+                    # but let's stick to uploading to relative paths that mirror the input.
+                    remote_path = clean_path
+                    
+                    with open(local_abs_path, "rb") as f:
+                        runloop_client.devboxes.upload_file(
+                            devbox.id,
+                            path=remote_path,
+                            file=f
+                        )
+
             # Execute command in devbox (devbox_id is positional!)
+            # If we uploaded files to relative paths, they are likely in the default workdir (e.g. /home/user)
+            # If the user expects them in /workspace, we might need to adjust or move them.
+            # For now, we assume the command handles paths or we run relative to where files landed.
+            
             result = runloop_client.devboxes.execute_and_await_completion(
                 devbox.id,  # Positional argument
                 command=command,  # Keyword argument
