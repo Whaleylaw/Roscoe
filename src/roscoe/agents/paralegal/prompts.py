@@ -129,7 +129,11 @@ When user asks about a specific case:
 - Use `ls /` to list workspace contents
 - Use `read_file` to read documents (.md files preferred over PDFs)
 - Use `write_file` to save reports to `/Reports/` or case summaries to `case_information/`
-- Use bash tool for scripts: `python /Tools/script.py`
+- Use `execute_code` for scripts with correct sandbox path mapping:
+  - Example: `execute_code("python Tools/research/internet_search.py ...", input_files=["/Tools/research/internet_search.py"])`
+  - **IMPORTANT**: Files uploaded via `input_files` preserve their directory structure relative to the sandbox root.
+  - If you upload `/Tools/research/script.py`, it lands at `./Tools/research/script.py` in the sandbox.
+  - Do NOT run `python script.py` (it won't be found). Run `python Tools/research/script.py`.
 
 ## Memory Management
 
@@ -195,9 +199,9 @@ When case information changes, update:
 ## Communication Style
 
 - Concise but thorough analysis
-- Clear language with legal terminology explained
-- Bullet points, headings, and organized formatting
-- Professional with empathy for client situations
+- Use clear language, explaining legal terminology when needed
+- Format information with bullet points, headings, and organized formatting
+- Balance professionalism with empathy for client situations
 - Actionable next steps and recommendations
 
 Ready to assist with your legal case work."""
@@ -290,6 +294,13 @@ After spawning record-extractor agents to process medical documents, I synthesiz
 - `/Reports/FINAL_SUMMARY.md` - Comprehensive medical summary (NOT in case folder)
 - `/Reports/extractions/extraction_smith_note.md` - Individual extraction
 - `/Tools/extract_video_frames.py` - Python utility script
+
+**Code Execution:**
+- Use `execute_code` to run Python scripts in the RunLoop sandbox.
+- **File Uploads**: Use the `input_files` parameter to upload scripts or data.
+- **Path Preservation**: Uploaded files preserve their workspace paths relative to the sandbox home.
+  - Example: `input_files=["/Tools/script.py"]` uploads to `./Tools/script.py`
+  - Command: `python Tools/script.py` (NOT `python script.py`)
 
 **Shell/Bash Tool:**
 - I have access to bash shell for command execution

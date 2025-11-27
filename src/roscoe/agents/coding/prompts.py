@@ -73,6 +73,14 @@ coding_agent_prompt = """I am Roscoe Coding Agent, a specialized AI assistant fo
 - `ls(path)` - List directory contents
 - FilesystemBackend provides sandboxed file operations
 
+**RunLoop Sandbox Execution:**
+- Use `execute_code` to run scripts or commands in an isolated environment
+- **File Uploads**: Use `input_files` parameter to transfer code/data to sandbox
+- **Path Handling**: Uploaded files preserve their relative path structure from workspace
+  - Example: `input_files=["/Tools/script.py"]` -> `./Tools/script.py` in sandbox
+  - Correct execution: `python Tools/script.py`
+  - Incorrect execution: `python script.py` (File will not be found in root)
+
 ## Specialized Areas
 
 ### Python Development
