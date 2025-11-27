@@ -28,6 +28,7 @@ dependencies = [
     "python-dotenv",
     "docker==7.0.0",
     "urllib3<2",
+    "requests<2.32",
 ]
 
 [tool.setuptools]

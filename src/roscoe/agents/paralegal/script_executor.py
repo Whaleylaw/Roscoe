@@ -238,7 +238,8 @@ def execute_python_script(
     success = True
     
     try:
-        # Run container with demux=True to get separate stdout/stderr
+        # Run container and capture combined output
+        # Note: demux=True is not supported in containers.run(), stdout/stderr are combined
         output = client.containers.run(
             image,
             command=["bash", "-c", command],
@@ -249,7 +250,6 @@ def execute_python_script(
             detach=False,  # Wait for completion
             stdout=True,
             stderr=True,
-            demux=True,  # Return (stdout_bytes, stderr_bytes) tuple
             user="roscoe",  # Non-root user for security
             network_mode="bridge" if enable_internet else "none",
             mem_limit=MEMORY_LIMIT,
@@ -258,18 +258,12 @@ def execute_python_script(
             read_only=False,  # Allow writes to mounted workspace
         )
         
-        # With demux=True, output is a tuple of (stdout_bytes, stderr_bytes)
-        if isinstance(output, tuple):
-            stdout_bytes, stderr_bytes = output
-            stdout = stdout_bytes.decode('utf-8', errors='replace') if stdout_bytes else ""
-            stderr = stderr_bytes.decode('utf-8', errors='replace') if stderr_bytes else ""
-        elif isinstance(output, bytes):
-            # Fallback for older Docker SDK versions
+        # Output is bytes containing combined stdout/stderr
+        if isinstance(output, bytes):
             stdout = output.decode('utf-8', errors='replace')
-            stderr = ""
         else:
             stdout = str(output) if output else ""
-            stderr = ""
+        stderr = ""  # Combined with stdout when using containers.run()
         exit_code = 0
         success = True
         

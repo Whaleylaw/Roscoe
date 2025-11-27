@@ -1,0 +1,99 @@
+Please review the attached text file.We use a Google Cloud Storage bucket and a virtual machine on Google Compute Engine, and we use a sandbox through run-loop. 
+The document outlines the problem I need you to research codebase and do any outside research necessary to come up with three potential solutions to the problem: 
+alternative providers, alternate ways to sandbox. The ultimate goal is to have my agents be able to run code freely on the files (file transformations, file modifications) 
+as well as execute code such as internet searches, browser use, Play Write, etc.When you're done, outline
+
+We have a technical constraint problem involving a cloud-based file workspace and the way a code-execution sandbox interacts with it.
+
+Environment structure (persistent workspace):
+
+Root folders (persistent, shared across sessions):
+/projects/ – contains all case folders (e.g., /projects/Caryn-McCay-MVA-7-30-2023/)
+/Database/ – JSON metadata (e.g., caselist.json, overview.json)
+/Tools/ – Python and shell scripts (e.g., /Tools/create_file_inventory.py)
+/Reports/ – global analysis reports
+Each case folder under /projects/{project_name}/ has (or should have) an 8-bucket structure:
+case_information/, Client/, Investigation/, Medical Records/, Insurance/, Lien/, Expenses/, Negotiation Settlement/, Litigation/
+Many PDFs have pre-processed .md companions with the same basename.
+Goal:
+
+We want to run Python tools (e.g., create_file_inventory.py, future reorganization scripts) directly against the real /projects tree to:
+
+Inventory and analyze case files,
+Move/rename PDFs and .md files,
+Enforce the 8-bucket structure,
+Write mapping JSON and markdown reports back into the case folders.
+In other words, the point of the tooling is to operate on the actual, persistent case files, not just on copies.
+
+Available “code execution” mechanism:
+
+We have an execute_code-style tool that:
+
+Starts a fresh sandbox environment (e.g., with working directory /workspace or /home/user).
+Does not automatically see or mount the real filesystem root (/projects, /Tools, /Database).
+Only sees files we explicitly pass in via an input_files parameter.
+input_files behavior:
+Uploads a copy of each specified path from the workspace into the sandbox under a mirrored relative path (e.g., /Tools/create_file_inventory.py becomes ./Tools/create_file_inventory.py inside the sandbox).
+The sandbox can then read/write those copies.
+There is no automatic write-back from sandbox to the original workspace paths.
+Core limitation:
+
+Because of the sandbox model:
+
+Code run via execute_code cannot directly mutate the real /projects/... tree.
+
+It only ever sees and modifies copies of those files inside the sandbox.
+Any changes (renames, moves, added files) stay inside the sandbox and are not persisted back to the main workspace.
+Attempts to “just run the script on /Tools/create_file_inventory.py” inside the sandbox fail because:
+
+The sandbox starts empty; /Tools/create_file_inventory.py and /projects/... do not exist there unless we explicitly upload them as input_files.
+When we try to specify /Tools/create_file_inventory.py as an input_file, the system sometimes errors with “Input file not found” because of how it resolves workspace vs sandbox paths.
+Even when we successfully upload:
+
+create_file_inventory.py and a case folder, the script runs only on the uploaded copy of the case directory.
+There is no mechanism to sync the modified directory structure back to the original /projects/{project_name}.
+What we can do today vs. what we can’t:
+
+We can:
+
+Read any file under /projects, /Database, /Tools using read-only tools.
+Generate reports and reorganization maps (e.g., markdown listing of current path → desired path) and save them back to /projects/{case}/Reports/.
+Optionally generate bash scripts as text files that, if executed in an environment with direct access to /projects, would perform the reorganization.
+We cannot (in this environment):
+
+Execute Python or shell code that directly:
+renames/moves files in /projects,
+creates or deletes folders under /projects,
+or otherwise mutates the persistent workspace tree.
+Round-trip modifications from the sandbox back to the persistent workspace automatically.
+Why this is a problem for our use case:
+
+The entire point of the case-file-organization tooling is to:
+
+Programmatically reorganize actual case files at scale (hundreds/thousands of files per case),
+Without manual downloading / re-uploading,
+And without a human needing shell access.
+The current sandbox model is effectively read-only with respect to the persistent workspace; it’s good for analysis, but not for directly restructuring the live /projects tree.
+
+What I’m looking for from you (the model):
+
+Please propose one or more alternative designs or workarounds that:
+
+Allow safe, programmatic restructuring of the persistent /projects filesystem (moves/renames/creates/deletes) without:
+
+requiring the human user to manually download and re-upload entire case folders,
+or manually run Python/bash in a separate environment.
+Could involve:
+
+Different sandbox mounting strategies,
+A controlled “file operations” API (e.g., a higher-privilege tool that accepts a generated plan like a reorg map),
+A background worker that consumes reorganization scripts generated by the LLM and applies them to the workspace,
+Or other patterns you recommend for bridging the gap between analysis-in-sandbox and mutation-of-real-files.
+Should include concrete patterns or architectures that are:
+
+Compatible with our Google Cloud Storage and Google Compute Engine Virtual Machine workspace where /projects and /Tools are centrally hosted,
+Safe (minimal risk of mass deletion or mis-moves),
+Practical to implement.
+In short:
+How can we redesign or augment this system so that code or plans generated in an LLM context can actually, safely, and programmatically reorganize the real /projects filesystem, given that the current sandbox execution model only ever operates on copies and cannot push changes back?
+
