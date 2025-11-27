@@ -26,7 +26,7 @@ dependencies = [
     "slack-sdk",
     "slack-bolt",
     "python-dotenv",
-    "runloop-api-client",
+    "docker==7.0.0",
 ]
 
 [tool.setuptools]
