@@ -20,3 +20,6 @@ PyPDF2
 # Data Analysis (for code execution)
 pandas
 numpy
+
+# Docker SDK (for script execution with GCS filesystem access)
+docker==7.0.0
