@@ -477,10 +477,30 @@ def execute_code(
 
     try:
         # Create a devbox (sandbox container)
-        blueprint_id = os.environ.get("RUNLOOP_BLUEPRINT_ID") or "bpt_31iZV5lcUlYql1wz5ngWT"  # Default to roscoe-paralegal-env-v1 if not set
+        blueprint_id = os.environ.get("RUNLOOP_BLUEPRINT_ID") or "bpt_31iZm4TQlxpsOb142mLWN"  # Default to roscoe-paralegal-env-v2 if not set
+        
+        # Collect environment variables to pass to Devbox
+        env_vars = {}
+        
+        # Pass specific API keys if they exist in the environment
+        # This ensures tools running in the sandbox have access to external services
+        keys_to_pass = [
+            "TAVILY_API_KEY", 
+            "OPENAI_API_KEY", 
+            "ANTHROPIC_API_KEY", 
+            "GEMINI_API_KEY", 
+            "GOOGLE_API_KEY",
+            "AIRTABLE_API_KEY"  # Added for future Airtable support
+        ]
+        
+        for key in keys_to_pass:
+            if val := os.environ.get(key):
+                env_vars[key] = val
+
         devbox = runloop_client.devboxes.create_and_await_running(
             name=f"roscoe-exec-{os.urandom(4).hex()}",
             blueprint_id=blueprint_id,
+            environment_variables=env_vars,
         )
 
         try:
