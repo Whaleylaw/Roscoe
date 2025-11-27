@@ -15,6 +15,11 @@ Architecture:
 Research and other capabilities are handled through the skills system.
 See workspace/Skills/skills_manifest.json for available skills.
 
+Script Execution:
+- Docker-based script execution with direct GCS filesystem access
+- Scripts in /Tools/ run in isolated containers with read-write access
+- Playwright browser automation available for web scraping
+
 NOTE: Switched from Gemini 3 Pro to GPT-5.1 Thinking due to rate limits.
 """
 
@@ -28,7 +33,13 @@ from roscoe.agents.paralegal.models import agent_llm
 from roscoe.core.skill_middleware import SkillSelectorMiddleware
 from roscoe.agents.paralegal.prompts import minimal_personal_assistant_prompt
 from roscoe.agents.paralegal.sub_agents import multimodal_sub_agent
-from roscoe.agents.paralegal.tools import send_slack_message, upload_file_to_slack, execute_code
+from roscoe.agents.paralegal.tools import (
+    send_slack_message,
+    upload_file_to_slack,
+    execute_python_script,  # Docker-based script execution with GCS access
+    execute_python_script_with_browser,  # Playwright browser automation
+)
+from roscoe.slack_launcher import ensure_bridge_started
 
 # Get path to skills manifest (in src/, packaged with code)
 MANIFEST_PATH = Path(__file__).parent / "skills_manifest.json"
@@ -56,7 +67,8 @@ personal_assistant_agent = create_deep_agent(
     tools=[
         send_slack_message,
         upload_file_to_slack,
-        execute_code,  # Runloop sandbox for code execution (stateless, no pickle issues)
+        execute_python_script,  # Docker-based script execution with GCS filesystem access
+        execute_python_script_with_browser,  # Playwright browser automation for web scraping
     ],
     middleware=[
         # Skill selector: semantic search + skill injection
@@ -75,3 +87,6 @@ personal_assistant_agent = create_deep_agent(
     ]),
     checkpointer=False if not is_production else None,  # Let server handle checkpointing in production
 ).with_config({"recursion_limit": 1000})
+
+# Start Slack Socket-Mode bridge inside the container if configured
+ensure_bridge_started()
