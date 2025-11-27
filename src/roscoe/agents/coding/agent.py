@@ -19,6 +19,7 @@ from langchain.agents.middleware import ShellToolMiddleware, HostExecutionPolicy
 
 from roscoe.agents.coding.models import agent_llm
 from roscoe.agents.coding.prompts import coding_agent_prompt
+from roscoe.slack_launcher import ensure_bridge_started
 
 # Get workspace directory - use env variable or default to repo workspace_coding
 # In deployment, this will be the workspace_coding/ directory in the repo
@@ -45,3 +46,6 @@ coding_agent = create_deep_agent(
     ],
     checkpointer=False,  # Disable checkpointing - shell sessions can't be pickled
 ).with_config({"recursion_limit": 1000})
+
+# Ensure Slack bridge also runs when only the coding agent is loaded
+ensure_bridge_started()

@@ -345,6 +345,43 @@
         "/Reports/chronology.md - Full narrative chronology",
         "/Reports/visits_summary.md - Structured tabular data"
       ]
+    },
+    {
+      "name": "script-execution",
+      "description": "Use when executing Python scripts from /Tools/ with direct GCS filesystem access - runs scripts in Docker containers for file operations, data processing, web scraping, and automation tasks",
+      "file": "script-execution/skill.md",
+      "triggers": [
+        "run script",
+        "execute script",
+        "run python",
+        "execute python",
+        "run tool",
+        "execute tool",
+        "file inventory",
+        "create inventory",
+        "batch process",
+        "batch import",
+        "web scraping",
+        "scrape website",
+        "browser automation",
+        "playwright",
+        "run analysis script",
+        "execute analysis"
+      ],
+      "model_required": "sonnet",
+      "tools_required": [
+        "execute_python_script",
+        "execute_python_script_with_browser"
+      ],
+      "use_cases": [
+        "Run /Tools/ scripts with filesystem access",
+        "Execute data processing scripts",
+        "Run file organization scripts",
+        "Perform batch operations on case folders",
+        "Web scraping with Playwright browser",
+        "Execute legal research scripts",
+        "Run medical research scripts"
+      ]
     }
   ]
 }

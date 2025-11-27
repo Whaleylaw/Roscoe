@@ -1,3 +1,13 @@
+"""
+Roscoe Paralegal Agent Tools
+
+This module provides tools for the paralegal agent:
+- Internet search (Tavily)
+- Multimodal analysis (image, audio, video)
+- Slack notifications
+- Script execution with GCS filesystem access (Docker)
+"""
+
 import os
 from typing import Literal, Optional
 from pathlib import Path
@@ -5,10 +15,18 @@ from tavily import TavilyClient
 from langchain_core.messages import HumanMessage
 from roscoe.agents.paralegal.models import multimodal_llm
 import base64
-import shlex
+
+# Import Docker-based script executor
+from roscoe.agents.paralegal.script_executor import (
+    execute_python_script as _execute_python_script,
+    format_execution_result,
+    ScriptExecutionError,
+    check_docker_available,
+    get_execution_stats,
+)
 
 # Initialize the Tavily client
-tavily_client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])
+tavily_client = TavilyClient(api_key=os.environ.get("TAVILY_API_KEY", ""))
 
 # Initialize Slack client (optional - only if token is set)
 slack_client = None
@@ -19,18 +37,10 @@ if os.environ.get("SLACK_BOT_TOKEN"):
     except ImportError:
         print("Warning: slack-sdk not installed. Slack integration disabled.")
 
-# Initialize Runloop client (optional - only if API key is set)
-runloop_client = None
-if os.environ.get("RUNLOOP_API_KEY"):
-    try:
-        from runloop_api_client import Runloop
-        runloop_client = Runloop(bearer_token=os.environ["RUNLOOP_API_KEY"])
-    except ImportError:
-        print("Warning: runloop-api-client not installed. Code execution disabled.")
-
 # Get workspace root for file operations (paralegal agent workspace)
 # Path is relative to repo root (5 levels up from this file)
 workspace_root = Path(__file__).parent.parent.parent.parent.parent / "workspace_paralegal"
+
 
 # Define the internet search tool
 def internet_search(
@@ -435,136 +445,183 @@ def upload_file_to_slack(
         return f"Failed to upload file to Slack: {str(e)}"
 
 
-# Define the code execution tool (Runloop sandbox)
-def execute_code(
-    command: str,
-    working_dir: str = "/workspace",
-    timeout: int = 60,
-    input_files: Optional[list[str]] = None,
+# =============================================================================
+# Script Execution Tools (Docker-based with GCS filesystem access)
+# =============================================================================
+
+def execute_python_script(
+    script_path: str,
+    case_name: Optional[str] = None,
+    script_args: Optional[list[str]] = None,
+    working_dir: Optional[str] = None,
+    timeout: int = 300,
 ) -> str:
     """
-    Execute shell commands or Python code in an isolated Runloop sandbox.
+    Execute a Python script from /Tools/ with direct GCS filesystem access.
 
-    Perfect for running Tools scripts, data analysis, file processing, or any
-    code execution tasks. Each execution runs in a clean, isolated container.
-    Can auto-upload files from your workspace to the sandbox before execution.
+    This runs scripts in isolated Docker containers that have read-write access
+    to the entire workspace at /mnt/workspace. Changes made by scripts persist
+    to GCS automatically via gcsfuse.
 
-    Use this to:
-    - Execute Tools scripts: `python /workspace/Tools/pubmed_search.py "query"`
-    - Run data analysis, process files, extract PDFs
-    - Install packages and run complex workflows
-    - Any bash/Python code that needs execution
+    Use this for:
+    - Running /Tools/ scripts (create_file_inventory.py, analyze_medical_records.py)
+    - Data processing that needs to modify actual files
+    - Complex analysis workflows requiring filesystem access
+    - Batch operations on case folders
+
+    Note: For simple file operations (read, write, move), use native filesystem
+    capabilities. This tool is specifically for executing Python scripts.
 
     Args:
-        command: Shell command or script to execute
-        working_dir: Working directory in sandbox (default: /workspace)
-        timeout: Maximum execution time in seconds (default: 60)
-        input_files: Optional list of workspace paths to upload to the sandbox before running.
-                    (e.g. ["/Tools/script.py", "/data/file.csv"]).
-                    Files will be uploaded to matching paths under /home/user (the default sandbox CWD).
-                    Example: "/Tools/script.py" uploads to "./Tools/script.py"
+        script_path: Path to Python script relative to workspace root.
+                    Example: "/Tools/create_file_inventory.py" or "Tools/analyze.py"
+        case_name: Optional case folder name to set as working directory.
+                  Example: "Wilson-MVA-2024" -> sets working dir to /workspace/projects/Wilson-MVA-2024
+        script_args: Optional list of command-line arguments for the script.
+                    Example: ["--format", "json", "--output", "Reports/result.json"]
+        working_dir: Optional explicit working directory (overrides case_name).
+        timeout: Maximum execution time in seconds (default: 300, max: 1800).
 
     Returns:
-        Command output (stdout + stderr) or error message
+        Formatted execution results including stdout, stderr, and status.
 
     Examples:
-        execute_code("python /workspace/Tools/pubmed_search.py 'whiplash'")
-        execute_code("ls -la /workspace/projects/Abby-Sitgraves-MVA-7-13-2024")
-        execute_code("pip install pandas && python analyze.py", input_files=["/Tools/analyze.py"])
-    """
-    if not runloop_client:
-        return "Code execution not configured. Set RUNLOOP_API_KEY environment variable."
-
-    try:
-        # Create a devbox (sandbox container)
-        blueprint_id = os.environ.get("RUNLOOP_BLUEPRINT_ID") or "bpt_31iZm4TQlxpsOb142mLWN"  # Default to roscoe-paralegal-env-v2 if not set
-        
-        # Collect environment variables to pass to Devbox
-        env_vars = {}
-        
-        # Pass specific API keys if they exist in the environment
-        # This ensures tools running in the sandbox have access to external services
-        keys_to_pass = [
-            "TAVILY_API_KEY", 
-            "OPENAI_API_KEY", 
-            "ANTHROPIC_API_KEY", 
-            "GEMINI_API_KEY", 
-            "GOOGLE_API_KEY",
-            "AIRTABLE_API_KEY"  # Added for future Airtable support
-        ]
-        
-        for key in keys_to_pass:
-            if val := os.environ.get(key):
-                env_vars[key] = val
-
-        devbox = runloop_client.devboxes.create_and_await_running(
-            name=f"roscoe-exec-{os.urandom(4).hex()}",
-            blueprint_id=blueprint_id,
-            environment_variables=env_vars,
+        # Run file inventory on a case
+        execute_python_script(
+            script_path="/Tools/create_file_inventory.py",
+            case_name="Wilson-MVA-2024"
         )
 
-        try:
-            # Upload input files if requested
-            uploaded_paths = []
-            if input_files:
-                for file_path in input_files:
-                    # Resolve local path
-                    if file_path.startswith('/'):
-                        clean_path = file_path[1:]
-                    else:
-                        clean_path = file_path
-                    
-                    local_abs_path = workspace_root / clean_path
-                    
-                    if not local_abs_path.exists():
-                        return f"Error: Input file not found: {file_path}"
-                    
-                    # Determine remote path (preserve structure relative to workspace)
-                    # Runloop upload path is relative to home, so we map /workspace -> . (or explicit path)
-                    # NOTE: RunLoop standard blueprint usually has user home.
-                    # We'll assume we want to place files in /home/user/workspace or similar,
-                    # but let's stick to uploading to relative paths that mirror the input.
-                    remote_path = clean_path
-                    
-                    with open(local_abs_path, "rb") as f:
-                        runloop_client.devboxes.upload_file(
-                            devbox.id,
-                            path=remote_path,
-                            file=f
-                        )
-                    uploaded_paths.append(remote_path)
+        # Run analysis with arguments
+        execute_python_script(
+            script_path="/Tools/analyze_medical_records.py",
+            case_name="Wilson-MVA-2024",
+            script_args=["--output", "Reports/analysis.md", "--verbose"]
+        )
 
-            # Execute command in devbox (devbox_id is positional!)
-            # If we uploaded files to relative paths, they are likely in the default workdir (e.g. /home/user)
-            # If the user expects them in /workspace, we might need to adjust or move them.
-            # For now, we assume the command handles paths or we run relative to where files landed.
-            
-            result = runloop_client.devboxes.execute_and_await_completion(
-                devbox.id,  # Positional argument
-                command=command,  # Keyword argument
-            )
+        # Run document import
+        execute_python_script(
+            script_path="/Tools/document_processing/batch_import_all.py",
+            script_args=["--case", "Wilson-MVA-2024"]
+        )
 
-            # Format output
-            output = []
-            if uploaded_paths:
-                output.append(f"**Uploaded Files (relative to sandbox home):**\n" + "\n".join([f"- {p}" for p in uploaded_paths]))
-                
-            if result.stdout:
-                output.append(f"**stdout:**\n{result.stdout}")
-            if result.stderr:
-                output.append(f"**stderr:**\n{result.stderr}")
+        # Run legal research script
+        execute_python_script(
+            script_path="/Tools/legal_research/search_case_law.py",
+            script_args=["negligence standard of care", "--courts", "ky,kyctapp"]
+        )
+    """
+    try:
+        result = _execute_python_script(
+            script_path=script_path,
+            case_name=case_name,
+            script_args=script_args,
+            working_dir=working_dir,
+            timeout=timeout,
+            enable_playwright=False,
+        )
 
-            exit_code = result.exit_status or 0
-            output.append(f"\n**Exit code:** {exit_code}")
+        return format_execution_result(result)
 
-            return "\n\n".join(output) if output else "Command completed (no output)"
-
-        finally:
-            # Clean up devbox
-            try:
-                runloop_client.devboxes.shutdown(devbox.id)  # Positional
-            except:
-                pass  # Best effort cleanup
-
+    except ScriptExecutionError as e:
+        return f"❌ Script execution failed: {str(e)}"
     except Exception as e:
-        return f"Code execution error: {str(e)}"
+        return f"❌ Unexpected error: {str(e)}"
+
+
+def execute_python_script_with_browser(
+    script_path: str,
+    case_name: Optional[str] = None,
+    script_args: Optional[list[str]] = None,
+    timeout: int = 600,
+) -> str:
+    """
+    Execute a Python script with Playwright browser automation capabilities.
+
+    This uses a Docker image with Chromium pre-installed for browser automation.
+    Scripts can use Playwright to navigate websites, extract data, take screenshots,
+    and perform web automation tasks.
+
+    Use this for:
+    - Web scraping (legal research, court records, public records)
+    - Automated form filling
+    - Screenshot capture of web pages
+    - Web-based data extraction
+
+    Note: This uses a larger Docker image and may be slower to start.
+    Use regular execute_python_script() when browser automation isn't needed.
+
+    Args:
+        script_path: Path to Playwright-enabled Python script.
+        case_name: Optional case folder for working directory.
+        script_args: Optional command-line arguments.
+        timeout: Maximum execution time (default: 600s due to browser overhead).
+
+    Returns:
+        Formatted execution results.
+
+    Examples:
+        # Scrape court records
+        execute_python_script_with_browser(
+            script_path="/Tools/web_scraping/courtlistener_search.py",
+            script_args=["personal injury", "Kentucky"]
+        )
+
+        # Take screenshot of a webpage
+        execute_python_script_with_browser(
+            script_path="/Tools/web_scraping/screenshot_page.py",
+            script_args=["https://example.com", "--output", "Reports/screenshot.png"]
+        )
+    """
+    try:
+        result = _execute_python_script(
+            script_path=script_path,
+            case_name=case_name,
+            script_args=script_args,
+            timeout=timeout,
+            enable_playwright=True,
+        )
+
+        return format_execution_result(result)
+
+    except ScriptExecutionError as e:
+        return f"❌ Browser script execution failed: {str(e)}"
+    except Exception as e:
+        return f"❌ Unexpected error: {str(e)}"
+
+
+def get_script_execution_stats(hours: int = 24) -> str:
+    """
+    Get statistics on script execution health and usage.
+
+    Use this to monitor script execution performance and identify issues.
+
+    Args:
+        hours: Number of hours to look back (default: 24).
+
+    Returns:
+        Formatted statistics report.
+
+    Examples:
+        get_script_execution_stats()        # Last 24 hours
+        get_script_execution_stats(hours=1) # Last hour
+    """
+    stats = get_execution_stats(hours)
+
+    lines = [
+        f"**Script Execution Stats (Last {hours} hours)**",
+        "",
+        f"Total Executions: {stats['total_executions']}",
+        f"Success Rate: {stats['success_rate']*100:.1f}%",
+        f"Average Duration: {stats['average_duration']:.2f}s",
+        "",
+        "**Most Used Scripts:**",
+    ]
+
+    for script, count in stats['most_used_scripts'].items():
+        lines.append(f"  - `{script}`: {count} executions")
+
+    if not stats['most_used_scripts']:
+        lines.append("  (none)")
+
+    return "\n".join(lines)
