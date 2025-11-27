@@ -461,7 +461,8 @@ def execute_code(
         timeout: Maximum execution time in seconds (default: 60)
         input_files: Optional list of workspace paths to upload to the sandbox before running.
                     (e.g. ["/Tools/script.py", "/data/file.csv"]).
-                    Files will be uploaded to matching paths under /workspace.
+                    Files will be uploaded to matching paths under /home/user (the default sandbox CWD).
+                    Example: "/Tools/script.py" uploads to "./Tools/script.py"
 
     Returns:
         Command output (stdout + stderr) or error message
@@ -483,6 +484,7 @@ def execute_code(
 
         try:
             # Upload input files if requested
+            uploaded_paths = []
             if input_files:
                 for file_path in input_files:
                     # Resolve local path
@@ -509,6 +511,7 @@ def execute_code(
                             path=remote_path,
                             file=f
                         )
+                    uploaded_paths.append(remote_path)
 
             # Execute command in devbox (devbox_id is positional!)
             # If we uploaded files to relative paths, they are likely in the default workdir (e.g. /home/user)
@@ -522,6 +525,9 @@ def execute_code(
 
             # Format output
             output = []
+            if uploaded_paths:
+                output.append(f"**Uploaded Files (relative to sandbox home):**\n" + "\n".join([f"- {p}" for p in uploaded_paths]))
+                
             if result.stdout:
                 output.append(f"**stdout:**\n{result.stdout}")
             if result.stderr:
