@@ -3,14 +3,16 @@ Roscoe - Dynamic Skills-Based Paralegal AI Agent
 
 This agent uses a dynamic skills architecture:
 - Skills are loaded automatically based on semantic matching to user requests
+- Case context is automatically injected when client names are mentioned
 - Specialized sub-agent for multimodal analysis (images/audio/video)
 - Unlimited skills can be added to /workspace/Skills/ without code changes
 
 Architecture:
-1. SkillSelectorMiddleware: Semantic search to find relevant skills
-2. Skills injection: Relevant skills loaded into system prompt
-3. Custom sub-agent: multimodal-agent (GPT-5.1 with multimodal capabilities)
-4. General-purpose sub-agent: Built-in, inherits main agent model (GPT-5.1 Thinking)
+1. CaseContextMiddleware: Detects client/case mentions, injects case context
+2. SkillSelectorMiddleware: Semantic search to find relevant skills
+3. Skills injection: Relevant skills loaded into system prompt
+4. Custom sub-agent: multimodal-agent (GPT-5.1 with multimodal capabilities)
+5. General-purpose sub-agent: Built-in, inherits main agent model (GPT-5.1 Thinking)
 
 Research and other capabilities are handled through the skills system.
 See workspace/Skills/skills_manifest.json for available skills.
@@ -31,6 +33,7 @@ from langchain.agents.middleware import ShellToolMiddleware, HostExecutionPolicy
 
 from roscoe.agents.paralegal.models import agent_llm
 from roscoe.core.skill_middleware import SkillSelectorMiddleware
+from roscoe.core.case_context_middleware import CaseContextMiddleware
 from roscoe.agents.paralegal.prompts import minimal_personal_assistant_prompt
 from roscoe.agents.paralegal.sub_agents import multimodal_sub_agent
 from roscoe.agents.paralegal.tools import (
@@ -71,6 +74,12 @@ personal_assistant_agent = create_deep_agent(
         execute_python_script_with_browser,  # Playwright browser automation for web scraping
     ],
     middleware=[
+        # Case context injection: detects client mentions, loads case data
+        CaseContextMiddleware(
+            workspace_dir=workspace_dir,
+            fuzzy_threshold=80,  # Minimum fuzzy match score (0-100)
+            max_cases=2,  # Support up to 2 cases mentioned in same query
+        ),
         # Skill selector: semantic search + skill injection
         SkillSelectorMiddleware(
             manifest_path=str(MANIFEST_PATH),  # Manifest in src/ (code)
