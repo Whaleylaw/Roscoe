@@ -360,19 +360,33 @@ class CaseContextMiddleware(AgentMiddleware):
                 case_section += f"- **Email**: {overview.get('client_email', 'N/A')}\n"
                 case_section += f"- **Address**: {overview.get('client_address', 'N/A')}\n\n"
 
-            # Contacts
-            contacts = context.get('contacts')
+            # Contacts (handle nested jsonb_agg structure)
+            contacts_raw = context.get('contacts')
+            contacts = []
+            if contacts_raw:
+                # Handle jsonb_agg nested structure
+                if isinstance(contacts_raw, list) and len(contacts_raw) > 0:
+                    if isinstance(contacts_raw[0], dict) and 'jsonb_agg' in contacts_raw[0]:
+                        contacts = contacts_raw[0].get('jsonb_agg', [])
+                    else:
+                        contacts = contacts_raw
+            
             if contacts and isinstance(contacts, list) and len(contacts) > 0:
                 case_section += "## Key Contacts\n"
                 for contact in contacts[:10]:  # Limit to 10 contacts
                     if isinstance(contact, dict):
-                        name = contact.get('name', contact.get('full_name', 'Unknown'))
-                        role = contact.get('role', contact.get('type', ''))
+                        # Use actual field names from contacts.json
+                        name = contact.get('full_name', 'Unknown')
+                        roles = contact.get('roles', [])
                         phone = contact.get('phone', '')
                         email = contact.get('email', '')
+                        
+                        # Format roles as string
+                        role_str = ', '.join(roles) if isinstance(roles, list) else str(roles) if roles else ''
+                        
                         case_section += f"- **{name}**"
-                        if role:
-                            case_section += f" ({role})"
+                        if role_str:
+                            case_section += f" ({role_str})"
                         if phone:
                             case_section += f" - {phone}"
                         if email:
@@ -383,18 +397,29 @@ class CaseContextMiddleware(AgentMiddleware):
             # Insurance
             insurance = context.get('insurance')
             if insurance and isinstance(insurance, list) and len(insurance) > 0:
-                case_section += "## Insurance\n"
+                case_section += "## Insurance Claims\n"
                 for policy in insurance[:5]:  # Limit to 5 policies
                     if isinstance(policy, dict):
-                        carrier = policy.get('carrier', policy.get('company', 'Unknown'))
-                        policy_type = policy.get('type', policy.get('coverage_type', ''))
-                        limits = policy.get('limits', policy.get('policy_limits', ''))
+                        # Use actual field names from insurance.json
+                        carrier = policy.get('insurance_company_name', 'Unknown')
+                        policy_type = policy.get('insurance_type', '')
+                        claim_num = policy.get('claim_number', '')
+                        adjuster = policy.get('insurance_adjuster_name', '')
+                        settlement = policy.get('settlement_amount')
+                        current_offer = policy.get('current_offer')
+                        
                         case_section += f"- **{carrier}**"
                         if policy_type:
-                            case_section += f" - {policy_type}"
-                        if limits:
-                            case_section += f" (Limits: {limits})"
+                            case_section += f" ({policy_type})"
+                        if claim_num:
+                            case_section += f" - Claim #{claim_num}"
                         case_section += "\n"
+                        if adjuster:
+                            case_section += f"  - Adjuster: {adjuster}\n"
+                        if settlement:
+                            case_section += f"  - Settlement: ${settlement:,.2f}\n"
+                        elif current_offer:
+                            case_section += f"  - Current Offer: ${current_offer:,.2f}\n"
                 case_section += "\n"
 
             # Liens
@@ -404,14 +429,17 @@ class CaseContextMiddleware(AgentMiddleware):
                 total_liens = 0
                 for lien in liens[:10]:  # Limit to 10 liens
                     if isinstance(lien, dict):
-                        provider = lien.get('provider', lien.get('name', 'Unknown'))
-                        amount = lien.get('amount', lien.get('balance', 0))
-                        if isinstance(amount, (int, float)):
+                        # Use actual field names from liens.json
+                        holder = lien.get('lien_holder_name', 'Unknown')
+                        amount = lien.get('final_lien_amount', lien.get('amount_owed_from_settlement', 0))
+                        if isinstance(amount, (int, float)) and amount:
                             total_liens += amount
-                            case_section += f"- {provider}: ${amount:,.2f}\n"
-                        else:
-                            case_section += f"- {provider}: {amount}\n"
-                case_section += f"- **Total Liens**: ${total_liens:,.2f}\n\n"
+                            case_section += f"- {holder}: ${amount:,.2f}\n"
+                        elif amount:
+                            case_section += f"- {holder}: {amount}\n"
+                if total_liens > 0:
+                    case_section += f"- **Total Liens**: ${total_liens:,.2f}\n"
+                case_section += "\n"
 
             # Medical Providers
             providers = context.get('medical_providers')
@@ -419,11 +447,19 @@ class CaseContextMiddleware(AgentMiddleware):
                 case_section += "## Medical Providers\n"
                 for provider in providers[:10]:  # Limit to 10 providers
                     if isinstance(provider, dict):
-                        name = provider.get('name', provider.get('provider_name', 'Unknown'))
-                        specialty = provider.get('specialty', provider.get('type', ''))
+                        # Use actual field names from medical_providers.json
+                        name = provider.get('provider_full_name', 'Unknown')
+                        billed = provider.get('billed_amount')
+                        start_date = provider.get('date_treatment_started', '')
+                        end_date = provider.get('date_treatment_completed', '')
+                        
                         case_section += f"- {name}"
-                        if specialty:
-                            case_section += f" ({specialty})"
+                        if billed:
+                            case_section += f" (Billed: ${billed:,.2f})"
+                        if start_date and end_date:
+                            case_section += f" - Treatment: {start_date} to {end_date}"
+                        elif start_date:
+                            case_section += f" - Started: {start_date}"
                         case_section += "\n"
                 case_section += "\n"
 
