@@ -27,6 +27,7 @@ dependencies = [
     "slack-bolt",
     "python-dotenv",
     "docker>=7.0.0",
+    "rapidfuzz",  # Fuzzy string matching for case context middleware
 ]
 
 [tool.setuptools]
