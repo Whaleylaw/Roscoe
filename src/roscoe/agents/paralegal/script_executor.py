@@ -250,7 +250,8 @@ def execute_python_script(
             detach=False,  # Wait for completion
             stdout=True,
             stderr=True,
-            user="roscoe",  # Non-root user for security
+            # Run as root for GCS filesystem write access (gcsfuse mounts as root)
+            # user="roscoe",
             network_mode="bridge" if enable_internet else "none",
             mem_limit=MEMORY_LIMIT,
             cpu_period=CPU_PERIOD,
