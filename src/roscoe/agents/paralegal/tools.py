@@ -6,40 +6,81 @@ This module provides tools for the paralegal agent:
 - Multimodal analysis (image, audio, video)
 - Slack notifications
 - Script execution with GCS filesystem access (Docker)
+- UI script execution (render_ui_script) - universal UI renderer
 """
 
 import os
-from typing import Literal, Optional
+import json
+import re
+from typing import Literal, Optional, Any, List, Dict
 from pathlib import Path
 from tavily import TavilyClient
 from langchain_core.messages import HumanMessage
-from roscoe.agents.paralegal.models import multimodal_llm
 import base64
 
-# Import Docker-based script executor
+# Import multimodal LLM getter for analyze_image, analyze_audio, analyze_video tools
+# IMPORTANT: Use the getter function, not the module-level variable (which is None)
+from roscoe.agents.paralegal.models import get_multimodal_llm
+
+# GCS bucket name (client created lazily to avoid pickle errors)
+GCS_BUCKET_NAME = os.environ.get("GCS_BUCKET_NAME", "whaley_law_firm")
+
+# Import script executor (supports Docker or native execution)
 from roscoe.agents.paralegal.script_executor import (
     execute_python_script as _execute_python_script,
     format_execution_result,
     ScriptExecutionError,
     check_docker_available,
     get_execution_stats,
+    get_execution_mode_info,
 )
 
-# Initialize the Tavily client
-tavily_client = TavilyClient(api_key=os.environ.get("TAVILY_API_KEY", ""))
+# =============================================================================
+# LAZY CLIENT INITIALIZATION
+# These clients contain thread locks that can't be serialized by LangGraph
+# checkpointing. We create them only when needed, not at module import time.
+# =============================================================================
 
-# Initialize Slack client (optional - only if token is set)
-slack_client = None
-if os.environ.get("SLACK_BOT_TOKEN"):
+def _get_gcs_client():
+    """Lazily initialize GCS client to avoid pickle errors with LangGraph checkpointing."""
+    try:
+        from google.cloud import storage
+        client = storage.Client()
+        return client, client.bucket(GCS_BUCKET_NAME)
+    except Exception as e:
+        print(f"Warning: GCS client initialization failed: {e}")
+        return None, None
+
+
+def _get_tavily_client():
+    """Lazily initialize Tavily client to avoid pickle errors."""
+    api_key = os.environ.get("TAVILY_API_KEY")
+    if not api_key:
+        return None
+    try:
+        return TavilyClient(api_key=api_key)
+    except Exception as e:
+        print(f"Warning: Tavily client initialization failed: {e}")
+        return None
+
+
+
+
+def _get_slack_client():
+    """Lazily initialize Slack client to avoid pickle errors."""
+    token = os.environ.get("SLACK_BOT_TOKEN")
+    if not token:
+        return None
     try:
         from slack_sdk import WebClient
-        slack_client = WebClient(token=os.environ["SLACK_BOT_TOKEN"])
+        return WebClient(token=token)
     except ImportError:
         print("Warning: slack-sdk not installed. Slack integration disabled.")
+        return None
 
 # Get workspace root for file operations (paralegal agent workspace)
-# Path is relative to repo root (5 levels up from this file)
-workspace_root = Path(__file__).parent.parent.parent.parent.parent / "workspace_paralegal"
+# Use WORKSPACE_DIR env var (set in production), fallback to relative path for local dev
+workspace_root = Path(os.environ.get("WORKSPACE_DIR", str(Path(__file__).parent.parent.parent.parent.parent / "workspace_paralegal")))
 
 
 # Define the internet search tool
@@ -61,9 +102,13 @@ def internet_search(
     Returns:
         A string containing the top search results and page content.
     """
+    # Lazy initialization to avoid pickle errors
+    client = _get_tavily_client()
+    if not client:
+        return "Error: Tavily API key not configured. Set TAVILY_API_KEY environment variable."
 
     try:
-        search_results = tavily_client.search(
+        search_results = client.search(
             query=query,
             max_results=max_results,
             topic=topic,
@@ -135,19 +180,19 @@ def analyze_image(
 
 Be specific, objective, and thorough. Focus on facts, not conclusions."""
 
-        # Create message with image
+        # Create message with image using Gemini's inline_data format
         message = HumanMessage(
             content=[
                 {"type": "text", "text": analysis_prompt},
                 {
                     "type": "image_url",
-                    "image_url": f"data:{mime_type};base64,{image_data}"
+                    "image_url": {"url": f"data:{mime_type};base64,{image_data}"}
                 }
             ]
         )
 
-        # Get analysis from Gemini
-        response = multimodal_llm.invoke([message])
+        # Get analysis from LLM (lazily initialized)
+        response = get_multimodal_llm().invoke([message])
 
         return f"**Image Analysis: {file_path}**\n\n{response.content}"
 
@@ -155,20 +200,20 @@ Be specific, objective, and thorough. Focus on facts, not conclusions."""
         return f"Image analysis error: {str(e)}"
 
 
-# Define the audio analysis tool
+# Define the audio analysis tool (uses OpenAI Whisper for transcription)
 def analyze_audio(
     file_path: str,
     analysis_focus: Optional[str] = None,
 ) -> str:
     """
-    Analyze an audio file using Google Gemini's multimodal audio capabilities.
+    Transcribe and analyze an audio file using OpenAI Whisper.
 
     Perfect for analyzing 911 calls, witness statements, dispatch recordings,
     recorded depositions, or any audio evidence in personal injury cases.
 
     Args:
         file_path: Workspace-relative path to the audio file (e.g., "/case_folder/audio/911_call.mp3")
-        analysis_focus: Optional specific analysis focus. If not provided, provides transcription + legal analysis.
+        analysis_focus: Optional specific analysis focus for post-transcription analysis.
 
     Returns:
         Transcription and analysis of the audio with legally relevant observations.
@@ -178,6 +223,8 @@ def analyze_audio(
         analyze_audio("/mo_alif/investigation/witness_statement.wav", "Focus on the witness's description of the accident sequence")
     """
     try:
+        from openai import OpenAI
+        
         # Convert workspace-relative path to absolute path
         if file_path.startswith('/'):
             file_path = file_path[1:]  # Remove leading slash
@@ -186,54 +233,63 @@ def analyze_audio(
         if not abs_path.exists():
             return f"Error: Audio file not found at {file_path}"
 
-        # Read and encode audio
-        with open(abs_path, 'rb') as f:
-            audio_data = base64.b64encode(f.read()).decode('utf-8')
+        # Check file size - Whisper has a 25MB limit
+        file_size_mb = abs_path.stat().st_size / (1024 * 1024)
+        if file_size_mb > 25:
+            return f"Error: Audio file is {file_size_mb:.1f}MB, exceeds Whisper's 25MB limit. Please compress or split the file."
 
-        # Determine audio type
+        # Supported formats for Whisper
+        supported_formats = {'.mp3', '.mp4', '.mpeg', '.mpga', '.m4a', '.wav', '.webm'}
         ext = abs_path.suffix.lower()
-        mime_types = {
-            '.mp3': 'audio/mp3',
-            '.wav': 'audio/wav',
-            '.m4a': 'audio/m4a',
-            '.ogg': 'audio/ogg',
-            '.flac': 'audio/flac'
-        }
-        mime_type = mime_types.get(ext, 'audio/mp3')
+        if ext not in supported_formats:
+            return f"Error: Unsupported audio format '{ext}'. Supported: {', '.join(supported_formats)}"
 
-        # Default legal evidence analysis prompt
-        if not analysis_focus:
-            analysis_focus = """Analyze this audio recording as legal evidence in a personal injury case. Provide:
+        # Initialize OpenAI client
+        client = OpenAI()
+        
+        # Transcribe with Whisper
+        with open(abs_path, 'rb') as audio_file:
+            transcription = client.audio.transcriptions.create(
+                model="whisper-1",
+                file=audio_file,
+                response_format="verbose_json",  # Get timestamps
+                timestamp_granularities=["segment"]
+            )
+        
+        # Format the transcription with timestamps
+        transcript_text = transcription.text
+        segments = getattr(transcription, 'segments', [])
+        
+        # Build formatted output
+        result_parts = [f"**Audio Transcription: {file_path}**\n"]
+        result_parts.append(f"Duration: {transcription.duration:.1f} seconds\n")
+        result_parts.append(f"Language: {transcription.language}\n\n")
+        
+        result_parts.append("## Full Transcript\n\n")
+        result_parts.append(transcript_text)
+        result_parts.append("\n\n")
+        
+        # Add timestamped segments if available
+        if segments:
+            result_parts.append("## Timestamped Segments\n\n")
+            for seg in segments:
+                # Segments are objects with attributes, not dicts
+                start = getattr(seg, 'start', 0)
+                end = getattr(seg, 'end', 0)
+                text = getattr(seg, 'text', '')
+                result_parts.append(f"[{start:.1f}s - {end:.1f}s] {text}\n")
+        
+        # If analysis focus provided, add note for agent to analyze
+        if analysis_focus:
+            result_parts.append(f"\n\n## Analysis Focus\n\n{analysis_focus}\n")
+            result_parts.append("\n*Note: Use the transcript above to provide analysis based on the focus area.*")
 
-1. **Complete Transcription**: Full verbatim transcript of all speech
-2. **Speaker Identification**: Identify different speakers (Caller, Dispatcher, Witness, etc.)
-3. **Timeline of Statements**: Key statements with timestamps
-4. **Emotional State**: Tone, urgency, emotional indicators in speech
-5. **Key Factual Statements**: Important facts stated about the incident
-6. **Inconsistencies or Contradictions**: Any conflicting statements
-7. **Background Sounds**: Relevant ambient sounds or environmental audio
-8. **Legally Relevant Observations**: Statements that support or weaken case theories
+        return "".join(result_parts)
 
-Be thorough and accurate. Use quotation marks for direct quotes."""
-
-        # Create message with audio
-        message = HumanMessage(
-            content=[
-                {"type": "text", "text": analysis_focus},
-                {
-                    "type": "media",
-                    "media_url": f"data:{mime_type};base64,{audio_data}"
-                }
-            ]
-        )
-
-        # Get analysis from Gemini
-        response = multimodal_llm.invoke([message])
-
-        return f"**Audio Analysis: {file_path}**\n\n{response.content}"
-
+    except ImportError:
+        return "Error: OpenAI package not installed. Run: pip install openai"
     except Exception as e:
-        return f"Audio analysis error: {str(e)}"
+        return f"Audio transcription error: {str(e)}"
 
 
 # Define the video analysis tool
@@ -301,19 +357,20 @@ def analyze_video(
 
 Be thorough and precise. Quote audio verbatim. Note exact timestamps for all significant events."""
 
-        # Create message with video
+        # Create message with video using Gemini's inline_data format
         message = HumanMessage(
             content=[
                 {"type": "text", "text": analysis_focus},
                 {
                     "type": "media",
-                    "media_url": f"data:{mime_type};base64,{video_data}"
+                    "data": video_data,
+                    "mime_type": mime_type
                 }
             ]
         )
 
-        # Get analysis from Gemini
-        response = multimodal_llm.invoke([message])
+        # Get analysis from LLM (lazily initialized)
+        response = get_multimodal_llm().invoke([message])
 
         analysis_result = f"**Video Analysis: {file_path}**\n\n{response.content}"
 
@@ -357,7 +414,9 @@ def send_slack_message(
         send_slack_message("⚠️ Red flag: 6-month treatment gap detected", urgency="high")
         send_slack_message("Research complete on Kentucky comparative negligence", "#legal-research")
     """
-    if not slack_client:
+    # Lazy initialization to avoid pickle errors
+    client = _get_slack_client()
+    if not client:
         return "Slack integration not configured. Set SLACK_BOT_TOKEN environment variable."
 
     try:
@@ -375,7 +434,7 @@ def send_slack_message(
         formatted_message = f"{emoji_map.get(urgency, '📢')} {message}"
 
         # Send message
-        response = slack_client.chat_postMessage(
+        response = client.chat_postMessage(
             channel=channel,
             text=formatted_message,
             thread_ts=thread_ts
@@ -411,7 +470,9 @@ def upload_file_to_slack(
         upload_file_to_slack("/Reports/FINAL_SUMMARY_Wilson.md", "#wilson-case", "Final Medical Analysis")
         upload_file_to_slack("/Reports/causation_analysis.md", title="Causation Report", comment="Strong causation found")
     """
-    if not slack_client:
+    # Lazy initialization to avoid pickle errors
+    client = _get_slack_client()
+    if not client:
         return "Slack integration not configured. Set SLACK_BOT_TOKEN environment variable."
 
     try:
@@ -432,7 +493,7 @@ def upload_file_to_slack(
             title = abs_path.name
 
         # Upload file
-        response = slack_client.files_upload_v2(
+        response = client.files_upload_v2(
             channel=channel,
             file=str(abs_path),
             title=title,
@@ -625,3 +686,289 @@ def get_script_execution_stats(hours: int = 24) -> str:
         lines.append("  (none)")
 
     return "\n".join(lines)
+
+
+def check_script_execution_mode() -> str:
+    """
+    Check the current script execution mode and capabilities.
+    
+    Use this to diagnose script execution issues. Shows whether Docker
+    or native Python execution will be used, and what capabilities are available.
+    
+    Returns:
+        Diagnostic information about script execution setup.
+    
+    Examples:
+        check_script_execution_mode()
+    """
+    info = get_execution_mode_info()
+    
+    # Determine status indicators
+    docker_status = "✅" if info['docker_daemon_available'] else "❌"
+    base_image_status = "✅" if info['base_image_available'] else "❌"
+    playwright_status = "✅" if info['playwright_image_available'] else "❌"
+    
+    mode_emoji = "🐳" if info['effective_mode'] == "docker" else "🐍"
+    
+    lines = [
+        "**Script Execution Configuration**",
+        "",
+        f"Configured Mode: `{info['configured_mode']}`",
+        f"Effective Mode: {mode_emoji} **{info['effective_mode']}**",
+        "",
+        "**Docker Status:**",
+        f"  {docker_status} Docker SDK installed: {info['docker_sdk_installed']}",
+        f"  {docker_status} Docker daemon available: {info['docker_daemon_available']}",
+        f"  {base_image_status} Base image (`{info['base_image']}`): {'Available' if info['base_image_available'] else 'Not found'}",
+        f"  {playwright_status} Playwright image (`{info['playwright_image']}`): {'Available' if info['playwright_image_available'] else 'Not found'}",
+        "",
+        "**Paths:**",
+        f"  Workspace: `{info['workspace_root']}`",
+        f"  Python: `{info['native_python']}`",
+    ]
+    
+    # Add recommendations if Docker isn't working
+    if info['effective_mode'] == 'native' and info['configured_mode'] == 'auto':
+        lines.append("")
+        lines.append("**Note:** Running in native mode because Docker/images unavailable.")
+        lines.append("Scripts will run directly with the host Python interpreter.")
+        
+        if not info['docker_daemon_available']:
+            lines.append("")
+            lines.append("To enable Docker execution:")
+            lines.append("  1. Ensure Docker is installed and running")
+            lines.append("  2. Run: `cd docker/roscoe-python-runner && ./build.sh`")
+    
+    return "\n".join(lines)
+
+
+# =============================================================================
+# Skills Discovery Tools
+# =============================================================================
+
+def list_skills() -> str:
+    """
+    List all available skills with their YAML descriptions.
+    
+    Use this tool when you need to:
+    - See what skills are available for a task
+    - Find the right skill for a specific workflow
+    - Understand what capabilities are available
+    
+    The middleware automatically injects relevant skills based on user messages,
+    but you can use this tool to manually browse and select skills when needed.
+    
+    Returns:
+        Formatted list of all available skills with their descriptions,
+        triggers, and requirements.
+    
+    Examples:
+        list_skills()  # Show all available skills
+    """
+    try:
+        from roscoe.core.skill_middleware import get_middleware_instance
+        
+        middleware = get_middleware_instance()
+        if middleware is None:
+            return "Error: Skill middleware not initialized. Skills may not be available yet."
+        
+        return middleware.get_skills_summary()
+        
+    except ImportError:
+        return "Error: Could not import skill middleware."
+    except Exception as e:
+        return f"Error listing skills: {str(e)}"
+
+
+def refresh_skills() -> str:
+    """
+    Rescan skills directory and reload all skills.
+    
+    Use this if new skills have been added mid-session and you want
+    to make them available without restarting.
+    
+    Returns:
+        Confirmation message with number of skills loaded.
+    
+    Examples:
+        refresh_skills()  # Reload all skills from disk
+    """
+    try:
+        from roscoe.core.skill_middleware import get_middleware_instance
+        
+        middleware = get_middleware_instance()
+        if middleware is None:
+            return "Error: Skill middleware not initialized."
+        
+        count = middleware.refresh_skills()
+        return f"✅ Skills refreshed. Loaded {count} skills."
+        
+    except ImportError:
+        return "Error: Could not import skill middleware."
+    except Exception as e:
+        return f"Error refreshing skills: {str(e)}"
+
+
+def load_skill(skill_name: str) -> str:
+    """
+    Load a specific skill by name and return its full content.
+    
+    Use this when:
+    - The middleware didn't auto-select the skill you need
+    - You want to explicitly use a specific skill
+    - You need to see the full skill instructions
+    
+    Args:
+        skill_name: Name of the skill to load (e.g., "pdf", "docx", "medical-records-analysis")
+    
+    Returns:
+        Full skill content (SKILL.md) or error message if not found.
+    
+    Examples:
+        load_skill("pdf")  # Load the PDF skill
+        load_skill("docx")  # Load the DOCX skill
+        load_skill("medical-records-analysis")  # Load medical records skill
+    """
+    try:
+        from roscoe.core.skill_middleware import get_middleware_instance
+        
+        middleware = get_middleware_instance()
+        if middleware is None:
+            return "Error: Skill middleware not initialized."
+        
+        skill = middleware.get_skill_by_name(skill_name)
+        if skill is None:
+            # Try to find similar skills
+            available = [s['name'] for s in middleware.manifest['skills']]
+            return f"Skill '{skill_name}' not found. Available skills: {', '.join(available)}"
+        
+        # Load and return full skill content
+        content = middleware._load_skill_file(skill['file'])
+        return f"# Skill: {skill_name}\n\n{content}"
+        
+    except ImportError:
+        return "Error: Could not import skill middleware."
+    except Exception as e:
+        return f"Error loading skill: {str(e)}"
+
+
+# UI Script Execution Tool (Universal UI Component Renderer)
+# =============================================================================
+
+def render_ui_script(
+    script_path: str,
+    script_args: Optional[List[str]] = None,
+) -> Dict[str, Any]:
+    """
+    Execute a UI script and return structured data for frontend rendering.
+    
+    This is the universal tool for rendering UI components. It runs a Python script
+    from /Tools/UI/ that outputs JSON with component data, which the frontend
+    then renders as an interactive UI component.
+    
+    Available UI scripts (in /Tools/UI/):
+    - case_snapshot.py: Quick case overview (client, status, financials)
+    - case_dashboard.py: Comprehensive case dashboard with all sections
+    - medical_overview.py: Medical treatment overview with documents
+    - insurance.py: Insurance coverage
+    - liens.py: All liens for a case
+    - expenses.py: All expenses for a case
+    - contact_card.py: Contact lookup from directory
+    - negotiations.py: Active negotiations overview
+    - calendar.py: Calendar view with events
+    - notes.py: Case notes listing
+
+    Args:
+        script_path: Path to UI script (e.g., "UI/case_dashboard.py")
+        script_args: Arguments to pass to the script (e.g., ["--project-name", "Case-Name"])
+
+    Returns:
+        Dictionary with component name and data for frontend rendering
+
+    Examples:
+        render_ui_script("UI/case_dashboard.py", ["--project-name", "Wilson-MVA-2024"])
+        render_ui_script("UI/medical_overview.py", ["--project-name", "Abby-Sitgraves-MVA"])
+        render_ui_script("UI/calendar.py", ["--view", "week"])
+    """
+    import subprocess
+    import sys
+    
+    # Normalize script path
+    if not script_path.startswith("/"):
+        script_path = "/" + script_path
+    if not script_path.startswith("/Tools/"):
+        script_path = "/Tools" + script_path
+    
+    # Get workspace path
+    workspace_dir = os.environ.get("WORKSPACE_DIR", str(workspace_root))
+    workspace_path = Path(workspace_dir)
+    
+    # Build full script path
+    full_script_path = workspace_path / script_path.lstrip("/")
+    
+    if not full_script_path.exists():
+        return {
+            "error": f"UI script not found: {script_path}",
+            "success": False
+        }
+    
+    # Build command
+    cmd = [sys.executable, str(full_script_path)]
+    if script_args:
+        cmd.extend(script_args)
+    
+    # Set environment for script
+    env = os.environ.copy()
+    env["WORKSPACE_DIR"] = str(workspace_path)
+    
+    # Add UI directory to Python path
+    ui_dir = str(workspace_path / "Tools" / "UI")
+    existing_pythonpath = env.get("PYTHONPATH", "")
+    env["PYTHONPATH"] = f"{ui_dir}:{existing_pythonpath}" if existing_pythonpath else ui_dir
+    
+    try:
+        # Run the script
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=60,
+            env=env,
+            cwd=ui_dir,
+        )
+        
+        # Parse JSON output
+        if result.returncode == 0:
+            try:
+                output = json.loads(result.stdout)
+                return output
+            except json.JSONDecodeError:
+                return {
+                    "error": f"Script output is not valid JSON: {result.stdout[:500]}",
+                    "stdout": result.stdout,
+                    "stderr": result.stderr,
+                    "success": False
+                }
+        else:
+            error_output = result.stderr or result.stdout
+            try:
+                output = json.loads(result.stdout)
+                return output
+            except json.JSONDecodeError:
+                return {
+                    "error": f"Script execution failed: {error_output[:500]}",
+                    "stdout": result.stdout,
+                    "stderr": result.stderr,
+                    "success": False
+                }
+        
+    except subprocess.TimeoutExpired:
+        return {
+            "error": "Script execution timed out after 60 seconds",
+            "success": False
+        }
+    except Exception as e:
+        return {
+            "error": f"Failed to execute script: {str(e)}",
+            "success": False
+    }

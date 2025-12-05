@@ -10,7 +10,7 @@ __pycache__/
 workspace_paralegal/
 workspace_coding/
 
-# Separate UI project (has its own repo)
+# Old UI project (superseded by roscoe-ui)
 deep-agents-ui-main/
 
 # Database scripts (not needed in Docker)
@@ -34,6 +34,9 @@ documents/
 .mcp.json
 .env
 .env.local
+credentials.json
+token.json
+client_secret_*.json
 
 # Docker volumes and data
 postgres_data/
@@ -42,5 +45,34 @@ redis_data/
 # macOS metadata
 ._*
 
-# Temporary/build files
+# Node.js
+node_modules/
+
+# Generated docs and reference materials (not essential for runtime)
+docs/*.pdf
+docs/*.mp3
+docs/*.wav
+docs/cross examination/
+docs/damages/
+docs/depositions/
+docs/discovery/
+docs/general_practice/
+docs/legal-docs/
+docs/liens/
+docs/medical/
+docs/negotiations/
+docs/Trial-Preparation/
+docs/ui-update/
+
+# Temporary/working files
 documents/*.csv
+sean-may-*.md
+*.pdf
+
+# IDE and tools
+.vscode/
+.venv/
+.playwright-mcp/
+
+# Claude skills source (not needed in git - copied to workspace_paralegal/Skills)
+.claude/skills-main/

@@ -21,6 +21,7 @@ dependencies = [
     "sentence-transformers",
     "pdfplumber",
     "PyPDF2",
+    "pypdf",  # Modern PDF library for skills
     "pandas",
     "numpy",
     "slack-sdk",
@@ -28,6 +29,24 @@ dependencies = [
     "python-dotenv",
     "docker>=7.0.0",
     "rapidfuzz",  # Fuzzy string matching for case context middleware
+    "copilotkit",  # CopilotKit SDK for UI integration
+    "fastapi",     # Web framework for CopilotKit endpoint
+    "uvicorn",     # ASGI server
+    "openai",      # OpenAI SDK (used for Thesys C1 API)
+    "google-cloud-storage",  # GCS SDK for signed URL generation
+    "langchain-google-community[gmail]",  # Gmail toolkit for LangChain
+    "google-auth-oauthlib>=1.2.0",  # OAuth2 authentication for Google APIs
+    "google-api-python-client>=2.100.0",  # Google API client for Calendar
+    # Skills dependencies (PDF, DOCX, XLSX, PPTX, Canvas)
+    "reportlab",  # PDF creation
+    "pdf2image",  # PDF to images for OCR
+    "pytesseract",  # OCR for scanned PDFs
+    "openpyxl",  # Excel file handling
+    "python-docx",  # Word document handling
+    "defusedxml",  # Secure XML parsing for OOXML
+    "pillow",  # Image processing
+    "pyyaml",  # YAML parsing for skill frontmatter
+    "markitdown",  # Markdown conversion for presentations
 ]
 
 [tool.setuptools]

@@ -1,0 +1,141 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: roscoe-postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+    - 5432:5432
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U postgres
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+    - roscoe-network
+  redis:
+    image: redis:7-alpine
+    container_name: roscoe-redis
+    ports:
+    - 6379:6379
+    volumes:
+    - redis_data:/data
+    healthcheck:
+      test:
+      - CMD
+      - redis-cli
+      - ping
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+    - roscoe-network
+  roscoe:
+    image: agwhaley/roscoe-agents:latest
+    container_name: roscoe-agents
+    ports:
+    - 8123:8000
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+      TAVILY_API_KEY: ${TAVILY_API_KEY:-}
+      THESYS_API_KEY: ${THESYS_API_KEY}
+      LANGCHAIN_TRACING_V2: 'true'
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
+      SLACK_APP_TOKEN: ${SLACK_APP_TOKEN}
+      SLACK_DEFAULT_CHANNEL: '#legal-updates'
+      LANGGRAPH_API_URL: http://localhost:8000
+      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY}
+      LANGCHAIN_PROJECT: ${LANGCHAIN_PROJECT:-roscoe-local}
+      DATABASE_URI: postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
+      REDIS_URI: redis://redis:6379
+      WORKSPACE_DIR: /app/workspace_paralegal
+      WORKSPACE_ROOT: /mnt/workspace
+      LANGGRAPH_DEPLOYMENT: 'true'
+      LANGGRAPH_RECURSION_LIMIT: '500'
+      PYTHONUNBUFFERED: 1
+    volumes:
+    - /mnt/workspace:/app/workspace_paralegal
+    - /mnt/workspace:/mnt/workspace
+    - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+    - roscoe-network
+    restart: unless-stopped
+    entrypoint:
+    - /storage/entrypoint.sh
+  roscoe-copilotkit:
+    image: agwhaley/roscoe-agents:latest
+    container_name: roscoe-copilotkit
+    ports:
+    - 8124:8124
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+      TAVILY_API_KEY: ${TAVILY_API_KEY:-}
+      THESYS_API_KEY: ${THESYS_API_KEY}
+      LANGCHAIN_TRACING_V2: 'true'
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
+      SLACK_APP_TOKEN: ${SLACK_APP_TOKEN}
+      SLACK_DEFAULT_CHANNEL: '#legal-updates'
+      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY}
+      LANGCHAIN_PROJECT: ${LANGCHAIN_PROJECT:-roscoe-local}
+      DATABASE_URI: postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
+      REDIS_URI: redis://redis:6379
+      WORKSPACE_DIR: /mnt/workspace
+      LANGGRAPH_DEPLOYMENT: 'true'
+      PYTHONUNBUFFERED: 1
+    volumes:
+    - /mnt/workspace:/mnt/workspace
+    - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+    - roscoe-network
+    restart: unless-stopped
+    entrypoint: []
+    command: ["python", "-m", "uvicorn", "roscoe.copilotkit_server:app", "--host", "0.0.0.0", "--port", "8124"]
+  ui:
+    image: agwhaley/roscoe-ui:latest
+    container_name: roscoe-ui
+    ports:
+    - 3000:3000
+    environment:
+      NEXT_PUBLIC_LANGSMITH_API_KEY: ${LANGSMITH_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
+      SLACK_APP_TOKEN: ${SLACK_APP_TOKEN}
+      SLACK_DEFAULT_CHANNEL: '#legal-updates'
+      ROSCOE_LANGGRAPH_URL: http://roscoe-agents:8000
+      LANGGRAPH_API_URL: http://roscoe-agents:8000
+      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY}
+    networks:
+    - roscoe-network
+    restart: unless-stopped
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+networks:
+  roscoe-network:
+    driver: bridge
+
