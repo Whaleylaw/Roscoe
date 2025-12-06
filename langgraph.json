@@ -1,0 +1,6 @@
+{
+  "graphs": {
+    "coder": "deep_agent_coder.agent:create_agent_for_langgraph"
+  },
+  "dependencies": ["."]
+}

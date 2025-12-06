@@ -1,0 +1,14 @@
+# Deep Agent Coder - Python Dependencies
+
+# Core framework (includes LangChain, LangGraph, PostgresStore)
+deepagents>=0.2.0
+
+# Anthropic model support
+langchain-anthropic>=1.0.0
+
+# Postgres support for persistence (PostgresStore is in langgraph core)
+langgraph-checkpoint-postgres>=3.0.0
+psycopg[binary]>=3.0.0
+
+# Development/testing
+python-dotenv>=1.0.0

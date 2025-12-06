@@ -1,0 +1,160 @@
+{
+  "project": "deep-agent-coder",
+  "description": "Multi-agent coding system built on LangChain Deep Agents",
+  "created": "2025-12-06T00:00:00Z",
+  "last_updated": "2025-12-06T00:00:00Z",
+  "tech_stack": {
+    "language": "Python 3.11+",
+    "framework": "deepagents (LangChain Deep Agents)",
+    "persistence": "PostgresStore + PostgresSaver",
+    "model": "claude-sonnet-4-5-20250929",
+    "containerization": "Docker + docker-compose"
+  },
+  "features": [
+    {
+      "id": "F001",
+      "description": "Verify and fix agent.py - ensure create_coder_agent works",
+      "priority": 1,
+      "status": "complete",
+      "category": "core",
+      "file": "deep_agent_coder/agent.py",
+      "acceptance_criteria": [
+        "create_coder_agent() returns a valid agent",
+        "create_simple_agent() returns a valid agent", 
+        "CompositeBackend routes correctly",
+        "Postgres store and checkpointer initialize"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "F002",
+      "description": "Verify and fix subagents.py - ensure configs are valid",
+      "priority": 2,
+      "status": "complete",
+      "category": "core",
+      "file": "deep_agent_coder/subagents.py",
+      "acceptance_criteria": [
+        "get_subagents() returns list of 4 subagents",
+        "Each subagent has name, description, system_prompt",
+        "Names are: coder, tester, reviewer, fixer"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "F003",
+      "description": "Verify and fix prompts.py - ensure prompts are complete",
+      "priority": 3,
+      "status": "complete",
+      "category": "core",
+      "file": "deep_agent_coder/prompts.py",
+      "acceptance_criteria": [
+        "INITIALIZER_SYSTEM_PROMPT is comprehensive",
+        "All 4 subagent prompts exist and are detailed",
+        "No references to non-existent tools"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "F004",
+      "description": "Verify and fix cli.py - ensure all commands work",
+      "priority": 4,
+      "status": "complete",
+      "category": "core",
+      "file": "deep_agent_coder/cli.py",
+      "acceptance_criteria": [
+        "python -m deep_agent_coder --help works",
+        "new command creates thread and starts agent",
+        "continue command resumes existing thread",
+        "chat command starts interactive session",
+        "status command shows workspace contents"
+      ],
+      "dependencies": ["F001"]
+    },
+    {
+      "id": "F005",
+      "description": "Add tests/conftest.py with pytest fixtures",
+      "priority": 5,
+      "status": "complete",
+      "category": "testing",
+      "file": "tests/conftest.py",
+      "acceptance_criteria": [
+        "mock_store fixture using InMemoryStore",
+        "mock_checkpointer fixture using MemorySaver",
+        "temp_workspace fixture with temp directory"
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "F006",
+      "description": "Add tests/test_agent.py - agent creation tests",
+      "priority": 6,
+      "status": "complete",
+      "category": "testing",
+      "file": "tests/test_agent.py",
+      "acceptance_criteria": [
+        "test_create_simple_agent passes",
+        "test_agent_has_invoke passes",
+        "test_agent_responds passes (with mock or real)"
+      ],
+      "dependencies": ["F001", "F005"]
+    },
+    {
+      "id": "F007",
+      "description": "Add tests/test_subagents.py - subagent config tests",
+      "priority": 7,
+      "status": "complete",
+      "category": "testing",
+      "file": "tests/test_subagents.py",
+      "acceptance_criteria": [
+        "test_get_subagents_returns_list passes",
+        "test_subagent_required_fields passes",
+        "test_subagent_names passes"
+      ],
+      "dependencies": ["F002", "F005"]
+    },
+    {
+      "id": "F008",
+      "description": "Add tests/test_cli.py - CLI argument tests",
+      "priority": 8,
+      "status": "complete",
+      "category": "testing",
+      "file": "tests/test_cli.py",
+      "acceptance_criteria": [
+        "test_help_command passes",
+        "test_new_command_parsing passes",
+        "test_continue_command_parsing passes"
+      ],
+      "dependencies": ["F004", "F005"]
+    },
+    {
+      "id": "F009",
+      "description": "Verify Docker setup works",
+      "priority": 9,
+      "status": "complete",
+      "category": "infrastructure",
+      "file": "docker-compose.yml",
+      "acceptance_criteria": [
+        "docker-compose config validates",
+        "docker-compose build succeeds",
+        "Postgres container starts and is healthy",
+        "Agent container can connect to Postgres"
+      ],
+      "dependencies": ["F001"]
+    },
+    {
+      "id": "F010",
+      "description": "End-to-end integration test",
+      "priority": 10,
+      "status": "complete",
+      "category": "testing",
+      "file": "tests/test_integration.py",
+      "acceptance_criteria": [
+        "Agent can be invoked with a message",
+        "Agent responds appropriately",
+        "State persists across invocations (same thread)",
+        "New thread starts fresh"
+      ],
+      "dependencies": ["F001", "F002", "F003", "F004"]
+    }
+  ]
+}
