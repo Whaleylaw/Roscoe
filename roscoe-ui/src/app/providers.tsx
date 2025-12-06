@@ -76,9 +76,11 @@ function CopilotProviderInner({ children }: { children: React.ReactNode }) {
         runtimeUrl="/api/chat" 
         agent="roscoe_paralegal"
         threadId={threadId}
-        // NOTE: Removed key={threadId} - this was causing CopilotKit to remount
-        // and lose streaming state when switching threads. CopilotKit handles
-        // thread switching internally via the threadId prop.
+        // key={threadId} forces CopilotKit to remount and load the new thread's messages.
+        // Without this, CopilotKit v1.10.6 doesn't reload messages on threadId change.
+        // Tradeoff: Switching threads will cancel any running streams on the current thread.
+        // This is a known limitation that v1.50 will fix with stream reconnection.
+        key={threadId || "new"}
       >
         {children}
       </CopilotKit>

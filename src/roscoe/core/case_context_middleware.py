@@ -130,21 +130,140 @@ class CaseContextMiddleware(AgentMiddleware):
 
 """
 
+    def _load_calendar_context(self) -> str:
+        """
+        Load today's tasks and overdue items from calendar.json.
+        
+        Reads the calendar file and filters events into:
+        - Today's tasks: date == today AND status != "completed"
+        - Overdue: date < today AND status != "completed"
+        
+        Returns formatted markdown for injection into system prompt.
+        """
+        calendar_path = self.database_dir / "calendar.json"
+        if not calendar_path.exists():
+            logger.info("[CALENDAR] calendar.json not found, skipping calendar context")
+            return ""
+        
+        try:
+            eastern = pytz.timezone('America/New_York')
+            today = datetime.now(eastern).date()
+            
+            with open(calendar_path) as f:
+                data = json.load(f)
+            
+            events = data.get("events", [])
+            today_tasks = []
+            overdue = []
+            
+            for evt in events:
+                # Skip completed events
+                if evt.get("status") == "completed":
+                    continue
+                
+                # Parse event date
+                evt_date_str = evt.get("date")
+                if not evt_date_str:
+                    continue
+                    
+                try:
+                    evt_date = datetime.strptime(evt_date_str, "%Y-%m-%d").date()
+                except ValueError:
+                    logger.warning(f"[CALENDAR] Invalid date format: {evt_date_str}")
+                    continue
+                
+                # Categorize by date
+                if evt_date == today:
+                    today_tasks.append(evt)
+                elif evt_date < today:
+                    overdue.append(evt)
+            
+            # If no tasks, return empty
+            if not today_tasks and not overdue:
+                logger.info("[CALENDAR] No pending tasks for today or overdue")
+                return ""
+            
+            # Build formatted output
+            sections = []
+            sections.append("## 📅 Calendar Overview\n")
+            sections.append("**Calendar Location**: `/Database/calendar.json`")
+            sections.append("_(Use this path when creating, updating, or completing calendar events)_\n")
+            
+            # Overdue section
+            if overdue:
+                # Sort by date (oldest first) then priority
+                priority_order = {"high": 0, "medium": 1, "low": 2}
+                overdue.sort(key=lambda x: (x.get("date", ""), priority_order.get(x.get("priority", "low"), 2)))
+                
+                sections.append(f"### ⚠️ OVERDUE ({len(overdue)} item{'s' if len(overdue) != 1 else ''})")
+                sections.append("| Task | Due | Case | Priority |")
+                sections.append("|------|-----|------|----------|")
+                
+                for evt in overdue:
+                    title = evt.get("title", "Untitled")
+                    due_date = evt.get("date", "Unknown")
+                    # Format date nicely
+                    try:
+                        due_formatted = datetime.strptime(due_date, "%Y-%m-%d").strftime("%b %d")
+                    except:
+                        due_formatted = due_date
+                    project = evt.get("project_name", "")
+                    # Extract client name from project name (first part before hyphen pattern)
+                    case_display = project.split("-")[0] + " " + project.split("-")[1] if "-" in project and len(project.split("-")) > 1 else project
+                    priority = evt.get("priority", "medium")
+                    sections.append(f"| {title} | {due_formatted} | {case_display} | {priority} |")
+                
+                sections.append("")
+            
+            # Today's tasks section
+            if today_tasks:
+                # Sort by priority
+                priority_order = {"high": 0, "medium": 1, "low": 2}
+                today_tasks.sort(key=lambda x: priority_order.get(x.get("priority", "low"), 2))
+                
+                sections.append(f"### 📋 TODAY'S TASKS ({len(today_tasks)} item{'s' if len(today_tasks) != 1 else ''})")
+                sections.append("| Task | Case | Priority | Notes |")
+                sections.append("|------|------|----------|-------|")
+                
+                for evt in today_tasks:
+                    title = evt.get("title", "Untitled")
+                    project = evt.get("project_name", "")
+                    # Extract client name from project name
+                    case_display = project.split("-")[0] + " " + project.split("-")[1] if "-" in project and len(project.split("-")) > 1 else project
+                    priority = evt.get("priority", "medium")
+                    notes = evt.get("notes", "")[:50] + "..." if len(evt.get("notes", "")) > 50 else evt.get("notes", "")
+                    sections.append(f"| {title} | {case_display} | {priority} | {notes} |")
+                
+                sections.append("")
+            
+            result = "\n".join(sections) + "\n---\n\n"
+            logger.info(f"[CALENDAR] Loaded {len(overdue)} overdue and {len(today_tasks)} today's tasks")
+            print(f"📅 [CALENDAR] Loaded {len(overdue)} overdue and {len(today_tasks)} today's tasks", flush=True)
+            return result
+            
+        except Exception as e:
+            logger.error(f"[CALENDAR] Error loading calendar: {e}")
+            return ""
+
     def _inject_datetime(self, request) -> Any:
-        """Inject current datetime at the start of the system message."""
+        """Inject current datetime and calendar context at the start of the system message."""
         from langchain_core.messages import SystemMessage
         
         messages = list(request.messages)
         datetime_header = self._get_datetime_header()
+        calendar_context = self._load_calendar_context()
+        
+        # Combine datetime header and calendar context
+        combined_header = datetime_header + calendar_context
         
         # Check if first message is a system message
         if messages and hasattr(messages[0], 'type') and messages[0].type == 'system':
-            # Prepend datetime to existing system message
+            # Prepend datetime + calendar to existing system message
             existing_content = messages[0].content
-            messages[0] = SystemMessage(content=datetime_header + existing_content)
+            messages[0] = SystemMessage(content=combined_header + existing_content)
         else:
-            # Insert new system message with datetime at beginning
-            messages.insert(0, SystemMessage(content=datetime_header))
+            # Insert new system message with datetime + calendar at beginning
+            messages.insert(0, SystemMessage(content=combined_header))
         
         return request.override(messages=messages)
 

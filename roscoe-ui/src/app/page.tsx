@@ -374,7 +374,7 @@ export default function Page() {
   const [currentArtifact, setCurrentArtifact] = useState<GeneratedArtifact | null>(null);
   
   // Track which tool call results we've already processed to prevent infinite loops
-  // Key is a hash of the result, value is true if we've captured it
+  // Keys are permanent per page session - each tool call only captures once
   const capturedResultsRef = useRef<Set<string>>(new Set());
   
   // Thread management state
@@ -438,23 +438,18 @@ export default function Page() {
   }, [setThreadId, fetchThreads]);
 
   // Callback to update artifact - with deduplication to prevent infinite loops
-  // The render function of useRenderToolCall runs on every render, so we need to
-  // track which results we've already processed
-  const captureArtifact = useCallback((artifact: GeneratedArtifact, resultKey: string) => {
-    // Skip if we've already captured this exact result
-    if (capturedResultsRef.current.has(resultKey)) {
+  // Each unique content key only captures ONCE per page session
+  // When user asks to see a document again, agent makes a NEW tool call (different message)
+  const captureArtifact = useCallback((artifact: GeneratedArtifact, contentKey: string) => {
+    // Skip if already captured this exact content
+    if (capturedResultsRef.current.has(contentKey)) {
       return;
     }
     
-    // Mark as captured and update state
-    capturedResultsRef.current.add(resultKey);
+    // Mark as captured permanently (for this page session)
+    capturedResultsRef.current.add(contentKey);
+    console.log(`[captureArtifact] Captured: ${contentKey}`);
     setCurrentArtifact(artifact);
-    
-    // Clean up old keys to prevent memory leak (keep last 50)
-    if (capturedResultsRef.current.size > 50) {
-      const keys = Array.from(capturedResultsRef.current);
-      keys.slice(0, keys.length - 50).forEach(k => capturedResultsRef.current.delete(k));
-    }
   }, []);
 
   // Listen for the generate_ui tool calls from the agent - uses useRenderToolCall for backend tools
@@ -488,15 +483,14 @@ export default function Page() {
       console.log("[generate_ui] args:", args);
       
       if (status === "complete" && result?.ui_content) {
-        // Create a unique key for this result to prevent re-capturing
-        const resultKey = `generate_ui:${result.ui_type}:${JSON.stringify(args.instruction).slice(0, 50)}`;
+        const contentKey = `generate_ui:${result.ui_type}:${(args.instruction as string || '').slice(0, 30)}`;
         console.log("[generate_ui] ✅ Capturing artifact with ui_content");
         captureArtifact({
           ui_content: result.ui_content,
           ui_type: result.ui_type || "auto",
           instruction: args.instruction as string,
           data: args.data as Record<string, unknown>,
-        }, resultKey);
+        }, contentKey);
 
         return (
           <div className="p-3 bg-zinc-800/50 rounded-lg border border-zinc-700">
@@ -554,14 +548,14 @@ export default function Page() {
     ],
     render: ({ args, status, result }) => {
       if (status === "complete" && result?.artifact_content) {
-        const resultKey = `generate_artifact:${result.artifact_id || result.artifact_type}:${Date.now()}`;
+        const contentKey = `generate_artifact:${result.artifact_id || ''}:${result.artifact_type || ''}`;
         captureArtifact({
           ui_content: result.artifact_content,
           ui_type: result.artifact_type || "report",
           instruction: args.prompt as string,
           artifact_id: result.artifact_id,
           artifact_type: result.artifact_type,
-        }, resultKey);
+        }, contentKey);
 
         return (
           <div className="p-3 bg-zinc-800/50 rounded-lg border border-zinc-700">
@@ -616,7 +610,7 @@ export default function Page() {
       console.log("[show_medical_overview] result:", JSON.stringify(result, null, 2));
 
       if (status === "complete" && result?.success && result?.data) {
-        const resultKey = `show_medical_overview:${args.project_name}:${result.data?.providers?.length || 0}`;
+        const contentKey = `show_medical_overview:${args.project_name}`;
         console.log("[show_medical_overview] ✅ Capturing medical overview artifact");
         captureArtifact({
           ui_content: "", // Not using C1 for this
@@ -624,7 +618,7 @@ export default function Page() {
           instruction: `Medical overview for ${args.project_name}`,
           component: "MedicalTreatmentOverview",
           componentData: result.data,
-        }, resultKey);
+        }, contentKey);
 
         return (
           <div className="p-3 bg-zinc-800/50 rounded-lg border border-zinc-700">
@@ -691,15 +685,17 @@ export default function Page() {
       console.log("[render_ui_script] result:", JSON.stringify(result, null, 2));
 
       if (status === "complete" && result?.success && result?.component && result?.data) {
-        const resultKey = `render_ui_script:${args.script_path}:${result.component}:${JSON.stringify(result.data).slice(0, 100)}`;
-        console.log(`[render_ui_script] ✅ Capturing artifact for component: ${result.component}`);
+        // Use file_path from data for documents, or component name as fallback
+        const docPath = result.data?.file_path || result.data?.path || '';
+        const contentKey = `render_ui_script:${result.component}:${docPath}`;
+        console.log(`[render_ui_script] ✅ Capturing artifact for component: ${result.component}, key: ${contentKey}`);
         captureArtifact({
           ui_content: "",
           ui_type: "ui_script",
           instruction: `UI script: ${args.script_path}`,
           component: result.component,
           componentData: result.data,
-        }, resultKey);
+        }, contentKey);
 
         // Get badge info for the component type
         const getBadgeInfo = (component: string) => {

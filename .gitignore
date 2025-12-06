@@ -1,78 +1,107 @@
+# ===========================================
+# Python
+# ===========================================
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-.langgraph_api/
-.DS_Store
+*.egg-info/
+.venv/
+uv.lock
 
-# Workspace runtime files (ALL stay in GCS, NOT in git/Docker)
+# ===========================================
+# LangGraph
+# ===========================================
+.langgraph_api/
+
+# ===========================================
+# Runtime Workspace (GCS mount - NOT in git)
+# ===========================================
 workspace_paralegal/
 workspace_coding/
 
-# Old UI project (superseded by roscoe-ui)
-deep-agents-ui-main/
-
-# Database scripts (not needed in Docker)
-DatabaseScripts/
-Reports/
-
-# Build artifacts
-*.egg-info/
-uv.lock
-
-# Temp/error files
-wrapper-error.md
-error report.md
-
-# Old documentation (moved to docs/)
+# ===========================================
+# Documentation & Notes (NOT essential for runtime)
+# ===========================================
+docs/
 documents/
 
-# Secrets and local config
-.claude/KEYS.txt
-.claude/settings.local.json
-.mcp.json
+# ===========================================
+# Old/Duplicate Files at Root (moved to src/roscoe/)
+# ===========================================
+agent.py
+models.py
+prompts.py
+tools.py
+sub_agents.py
+middleware.py
+skill_middleware.py
+medical_sub_agents.py
+roscoe_prompt.md
+# GRAPH_RECURSION_LIMIT.md
+
+# ===========================================
+# Old UI (superseded by roscoe-ui)
+# ===========================================
+deep-agents-ui-main/
+
+# ===========================================
+# Claude Skills (runtime in workspace, not repo)
+# ===========================================
+.claude/SKILLS/
+.claude/skills-main/
+.claude/claude-old.md
+
+# ===========================================
+# Secrets & Local Config
+# ===========================================
 .env
 .env.local
+.mcp.json
 credentials.json
 token.json
 client_secret_*.json
+.claude/KEYS.txt
+.claude/settings.local.json
 
-# Docker volumes and data
+# ===========================================
+# Docker Volumes & Data
+# ===========================================
 postgres_data/
 redis_data/
 
-# macOS metadata
-._*
+# ===========================================
+# Build Artifacts & Temp Files
+# ===========================================
+wrapper-error.md
+error report.md
+DEPLOYMENT_COMPLETE.md
+QUICK_START.txt
+langraph.example.json
 
+# ===========================================
+# Media & Binary Files
+# ===========================================
+*.pdf
+*.mp3
+*.wav
+*.csv
+sean-may-*.md
+
+# ===========================================
 # Node.js
+# ===========================================
 node_modules/
 
-# Generated docs and reference materials (not essential for runtime)
-docs/*.pdf
-docs/*.mp3
-docs/*.wav
-docs/cross examination/
-docs/damages/
-docs/depositions/
-docs/discovery/
-docs/general_practice/
-docs/legal-docs/
-docs/liens/
-docs/medical/
-docs/negotiations/
-docs/Trial-Preparation/
-docs/ui-update/
+# ===========================================
+# macOS
+# ===========================================
+.DS_Store
+._*
 
-# Temporary/working files
-documents/*.csv
-sean-may-*.md
-*.pdf
-
-# IDE and tools
+# ===========================================
+# IDE & Tools
+# ===========================================
 .vscode/
-.venv/
 .playwright-mcp/
-
-# Claude skills source (not needed in git - copied to workspace_paralegal/Skills)
-.claude/skills-main/
