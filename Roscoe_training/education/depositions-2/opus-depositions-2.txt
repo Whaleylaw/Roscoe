@@ -1,0 +1,353 @@
+-
+
+# AI Paralegal Deposition Training Framework
+
+## High-Level Report Map
+
+Based on analysis of the five source documents in `/01-Depositions`, I propose **four core reports** as modules for the AI Paralegal Operating System:
+
+---
+
+### **Report 1: Corporate Representative Deposition Strategy**
+**Purpose:** Train the AI paralegal to support attorneys in planning, noticing, and executing CR 30.02(6) / Rule 30(b)(6) corporate representative depositions to pierce the corporate veil and bind corporations to testimony.
+
+**Main Focus Areas:**
+- Deposition notice drafting with "reasonable particularity"
+- Topic selection strategy (documents, discovery compliance, ESI, liability)
+- Binding testimony mechanics
+- Sample deposition topics and template language
+
+---
+
+### **Report 2: Defense Expert Deposition Playbook**
+**Purpose:** Equip the AI paralegal to assist in preparing for depositions of defense experts and DME doctors, focusing on pre-deposition workup, conflict-clip creation, and jury-persuasion strategies.
+
+**Main Focus Areas:**
+- Pre-deposition workup (notice, document requests, expert dossiers)
+- Jury attitude research (tribals, moderates, progressives)
+- Creating "conflict clips" for trial
+- Ensuring expert attendance / designating trial depositions
+- Discoverability of draft reports and correspondence
+
+---
+
+### **Report 3: Client Deposition Defense Guide**
+**Purpose:** Provide a comprehensive guide to defending client depositions, including objection protocols, privilege protection, and form objection mastery.
+
+**Main Focus Areas:**
+- When to instruct client not to answer (privilege, court orders)
+- Terminating examinations under CR 30.04
+- Form objections cheat sheet (9 core objections)
+- Waiver rules and objection timing
+- Protecting the client's confidence and credibility
+
+---
+
+### **Report 4: Rules-Based Deposition Examination Framework**
+**Purpose:** Teach the AI paralegal how to establish liability "rules" during depositions that defendants cannot credibly dispute, creating a framework for trial that simplifies complex cases for juries.
+
+**Main Focus Areas:**
+- Characteristics of effective "rules" (understandable, undeniable, violated, important)
+- Sources of rules (statutes, case law, policies, industry standards)
+- Best practices for rule establishment sequence
+- Corporate representative depositions for binding rule admissions
+- Sample rule-establishing questions by case type
+
+---
+
+## Detailed Specifications for Each Report
+
+---
+
+### **Report 1: Corporate Representative Deposition Strategy**
+
+**Purpose:**  
+This report will serve as the definitive training module for AI paralegal support of corporate representative depositions under Kentucky CR 30.02(6) and Federal Rule 30(b)(6). It covers the entire lifecycle from drafting the deposition notice with sufficient particularity to executing the deposition to lock in corporate testimony.
+
+**Intended Use in AI Paralegal OS:**  
+Used when: (1) a corporate defendant is named in litigation, (2) discovery responses are inadequate or confusing, (3) ESI/electronic discovery must be mapped, or (4) the attorney needs to bind a corporation to specific factual admissions before trial.
+
+**Core Topics & Sections:**
+- Overview of CR 30.02(6) and Fed. R. Civ. P. 30(b)(6)
+- "Reasonable Particularity" standard for topic descriptions
+- Witness designation rules (not "most knowledgeable")
+- Strategic uses of corporate depositions:
+  - Document identification and location
+  - Discovery compliance verification
+  - Document/database explanation
+  - Liability pin-down
+  - ESI mapping and retention policy discovery
+- Template deposition topics by case type
+- Binding nature of testimony and trial implications
+- Checklist: Pre-notice, notice drafting, deposition execution
+
+**Source Coverage:**  
+Primarily: "Deposing Corporations and Organizations" (Brian Vines) – covers rules, strategic uses, sample topic language, and ESI discovery topics.
+
+**Report Type Recommendation:**  
+Mixed – Training manual with embedded practical checklists and template language.
+
+---
+
+### **Report 2: Defense Expert Deposition Playbook**
+
+**Purpose:**  
+This report trains the AI paralegal to support comprehensive defense expert deposition preparation, from building expert dossiers to creating "conflict clips" that resonate with different juror types. It emphasizes that expert depositions should be treated as trial testimony.
+
+**Intended Use in AI Paralegal OS:**  
+Used when: (1) defendants disclose expert witnesses, (2) DME/IME depositions are scheduled, (3) the attorney needs conflict material for trial, or (4) motion practice regarding expert qualifications is anticipated.
+
+**Core Topics & Sections:**
+- Philosophy: Expert depositions as trial testimony
+- Jury attitude research (tribals, moderates, progressives) and implications
+- Pre-deposition workup:
+  - Deposition notice language for trial designation
+  - Document requests and interrogatories
+  - Expert dossier compilation (TrialSmith, court filings, social media, licensing)
+- Discoverability issues:
+  - Draft reports and correspondence (federal vs. Kentucky)
+  - Privilege log requirements and waiver arguments
+- Deposition techniques for conflict creation:
+  - "Squaring up" with prior testimony
+  - Ten questions method for multiple experts
+  - Credential-based framing
+  - Timing and opinion evolution
+- Ensuring attendance at trial (KRE 804, CR 32.01)
+- Motion practice hooks (KRE 403 cumulative evidence)
+
+**Source Coverage:**  
+Primarily: "Deposing Experts and DME Doctors" (Laraclay Parker) – covers jury research, pre-deposition workup, discoverability, dossiers, trial designation, and conflict techniques.
+
+**Report Type Recommendation:**  
+Practical playbook with checklists, dossier templates, and strategic decision trees.
+
+---
+
+### **Report 3: Client Deposition Defense Guide**
+
+**Purpose:**  
+This report provides the AI paralegal with a complete framework for supporting attorneys in defending client depositions, including mastery of objection protocols, privilege protection, and strategies to build client confidence.
+
+**Intended Use in AI Paralegal OS:**  
+Used when: (1) client deposition is scheduled, (2) deposition preparation is needed, (3) objection review/analysis is required post-deposition, or (4) motion practice related to deposition conduct arises.
+
+**Core Topics & Sections:**
+- Overview of deposition discovery rules (CR 26.02(1), CR 27-31)
+- When to instruct not to answer:
+  - Privilege (attorney-client per KRE 503)
+  - Court-ordered limitations
+  - Motion to terminate (CR 30.04)
+- Terminating examinations: bad faith, annoyance, oppression
+- Form objections master list:
+  1. Leading
+  2. Calls for speculation
+  3. Asked and answered
+  4. Argumentative
+  5. Assumes facts not in evidence
+  6. Calls for legal conclusion
+  7. Lacks foundation
+  8. Compound
+  9. Calls for narrative
+- Waiver rules (CR 32.04) – what's preserved vs. waived
+- Trial implications of missed objections (with examples)
+- Practice pointers for building client confidence
+
+**Source Coverage:**  
+Primarily: "Deposition Techniques" (Jason Murphy) – covers defending depositions, privilege, objection types, waiver rules, and CR 30.04 procedures.
+
+**Report Type Recommendation:**  
+Practical checklist & playbook with objection cheat sheet for quick reference.
+
+---
+
+### **Report 4: Rules-Based Deposition Examination Framework**
+
+**Purpose:**  
+This report teaches the AI paralegal to support attorneys in constructing "rules" during depositions—simple, undeniable principles that defendants have violated—creating a powerful framework for jury presentation at trial.
+
+**Intended Use in AI Paralegal OS:**  
+Used when: (1) preparing deposition outlines, (2) developing case theory, (3) drafting corporate representative deposition topics, or (4) synthesizing deposition testimony for trial preparation.
+
+**Core Topics & Sections:**
+- Four characteristics of effective rules:
+  1. Easy for jury to understand
+  2. Cannot be credibly disputed by defendant
+  3. Defendant has violated the rule
+  4. Violation is important to plaintiff's case
+- Sources of rules:
+  - Statutes and regulations (e.g., KRS Ch. 189)
+  - Case law and jury instructions
+  - Defendant policies, training manuals, handbooks
+  - Industry standards, textbooks, expert testimony
+  - Common sense
+- Best practice: Establish rules before discussing case facts
+- Handling defense objections (speculation, legal opinion)
+- Corporate representative depositions for binding rule admissions
+- End-of-deposition strategy: "Any mistakes?" closing
+- Sample rule-establishing questions:
+  - Premises liability
+  - Trucking/motor vehicle cases
+  - General safety principles
+
+**Source Coverage:**  
+Primarily: "Using Rules as Foundation for Depo Questions" (Matt McGill) – covers rule characteristics, sources, establishment techniques, and sample questions.
+
+**Report Type Recommendation:**  
+Training manual with embedded question templates and case-type examples.
+
+---
+
+## Custom Report Prompts
+
+---
+
+### Custom Report Prompt for "Corporate Representative Deposition Strategy"
+
+```
+You are generating a structured report titled "Corporate Representative Deposition Strategy" as part of an AI Paralegal education framework.
+
+Sources:
+- Use documents from the 01-Depositions folder, focusing on "Deposing Corporations and Organizations" by Brian Vines.
+- Include any content related to CR 30.02(6), Fed. R. Civ. P. 30(b)(6), corporate representative depositions, and ESI discovery.
+
+Goal of this report:
+- Train the AI paralegal to support attorneys in planning, noticing, and executing corporate representative depositions under Kentucky and federal rules.
+- Cover the entire lifecycle from drafting deposition notices with "reasonable particularity" to locking in binding corporate testimony for trial.
+
+Required sections:
+1. Overview & Purpose – What corporate representative depositions accomplish and their strategic value
+2. Key Legal Rules – CR 30.02(6), Fed. R. Civ. P. 30(b)(6), "reasonable particularity" standard, witness designation requirements
+3. Strategic Uses – Document identification, discovery compliance, ESI mapping, liability pin-down, database explanation
+4. Practical Checklists – Pre-notice preparation, notice drafting checklist, deposition execution steps
+5. Template Deposition Topics – Sample topic descriptions by use case (documents, ESI, liability, compliance)
+6. Red Flags and Escalation Triggers – When to seek court intervention, objection handling, "know nothing" witnesses
+
+Style:
+- Use clear, plain language suitable for training an AI paralegal or non-lawyer staff.
+- Include template language that can be adapted for specific cases.
+- Avoid giving legal advice; focus on structure, procedures, and support tasks.
+
+Constraints:
+- Base content only on supplied sources and reasonable inferences.
+- If sources are thin on a subtopic, note briefly rather than inventing material.
+```
+
+---
+
+### Custom Report Prompt for "Defense Expert Deposition Playbook"
+
+```
+You are generating a structured report titled "Defense Expert Deposition Playbook" as part of an AI Paralegal education framework.
+
+Sources:
+- Use documents from the 01-Depositions folder, focusing on "Deposing Experts and DME Doctors" by Laraclay Parker.
+- Include content on expert discovery, jury attitudes, conflict clips, and trial designation procedures.
+
+Goal of this report:
+- Equip the AI paralegal to support comprehensive defense expert deposition preparation.
+- Focus on pre-deposition workup, expert dossier compilation, conflict-clip creation strategies, and ensuring expert attendance at trial.
+- Treat expert depositions as de facto trial testimony.
+
+Required sections:
+1. Overview & Purpose – Why expert depositions require special preparation and trial-focused approach
+2. Jury Attitude Research – Tribals, moderates, progressives and their views on expert credibility
+3. Pre-Deposition Workup Checklist – Deposition notice language, document requests, interrogatories, timing
+4. Expert Dossier Compilation – Sources (TrialSmith, court filings, social media, licensing boards), what to gather
+5. Discoverability Rules – Draft reports, correspondence, privilege logs, Kentucky vs. federal differences
+6. Conflict Creation Techniques – Squaring up, ten questions method, credential framing, timing issues
+7. Trial Designation Procedures – KRE 804, CR 32.01, notice requirements, motion practice
+8. Red Flags and Escalation Triggers – When to file motions, discovery disputes, waiver arguments
+
+Style:
+- Practical, actionable guidance for paralegal support tasks.
+- Include checklists and decision trees where appropriate.
+- Avoid legal advice; focus on preparation and organization tasks.
+
+Constraints:
+- Base content only on supplied sources and reasonable inferences.
+- Note where sources are limited on specific procedures.
+```
+
+---
+
+### Custom Report Prompt for "Client Deposition Defense Guide"
+
+```
+You are generating a structured report titled "Client Deposition Defense Guide" as part of an AI Paralegal education framework.
+
+Sources:
+- Use documents from the 01-Depositions folder, focusing on "Deposition Techniques" by Jason Murphy.
+- Include content on defending depositions, privilege, objections, and CR 30.04 procedures.
+
+Goal of this report:
+- Provide the AI paralegal with a complete framework for supporting attorneys defending client depositions.
+- Cover objection protocols, privilege protection, and the nine core form objections.
+- Explain waiver rules and trial implications of deposition conduct.
+
+Required sections:
+1. Overview & Purpose – Role of paralegal in deposition defense preparation and support
+2. Key Legal Rules – CR 26.02(1), CR 27-31, CR 30.03(3), CR 30.04, CR 32.04, KRE 503
+3. When to Instruct Not to Answer – Privilege, court limitations, motion to terminate
+4. Form Objections Master List – All 9 objections with definitions and examples
+5. Waiver Rules – What's waived vs. preserved, timing requirements
+6. Practical Checklists – Pre-deposition prep, objection quick-reference, post-deposition review
+7. Trial Implications – How missed objections affect trial, example scenarios
+8. Red Flags and Escalation Triggers – Bad faith conduct, when to suspend and seek court order
+
+Style:
+- Clear, practical language for paralegal training.
+- Include a one-page objection cheat sheet format.
+- Focus on support tasks, not legal judgment calls.
+
+Constraints:
+- Base content only on supplied sources.
+- If sources lack detail on specific objection types, note briefly.
+```
+
+---
+
+### Custom Report Prompt for "Rules-Based Deposition Examination Framework"
+
+```
+You are generating a structured report titled "Rules-Based Deposition Examination Framework" as part of an AI Paralegal education framework.
+
+Sources:
+- Use documents from the 01-Depositions folder, focusing on "Using Rules as Foundation for Depo Questions" by Matt McGill.
+- Include content on establishing liability rules, corporate representative depositions, and sample questions.
+
+Goal of this report:
+- Teach the AI paralegal how attorneys establish undeniable "rules" during depositions that create a simple liability framework for jury presentation.
+- Cover the four characteristics of effective rules, sources of rules, and techniques for rule establishment.
+
+Required sections:
+1. Overview & Purpose – What "rules" are in deposition context and why they matter for trial
+2. Four Characteristics of Effective Rules – Understandable, undeniable, violated, important
+3. Sources of Rules – Statutes, case law, jury instructions, policies, industry standards, common sense
+4. Best Practices – Establish rules before facts, maintain rule annotations, handle objections
+5. Corporate Representative Depositions – Using 30.02(6) for binding rule admissions
+6. End-of-Deposition Strategy – "Any mistakes?" closing technique
+7. Sample Questions by Case Type – Premises liability, trucking, general safety
+8. Data Points AI Paralegal Must Capture – Rules established, sources cited, defendant responses
+
+Style:
+- Training manual format with embedded templates.
+- Include sample question frameworks that can be adapted.
+- Plain language suitable for non-lawyer staff.
+
+Constraints:
+- Base content only on supplied sources.
+- Adapt sample questions as templates, not case-specific advice.
+```
+
+---
+
+## Summary
+
+| Report # | Title | Primary Source | Type |
+|----------|-------|----------------|------|
+| 1 | Corporate Representative Deposition Strategy | Brian Vines | Manual + Checklists |
+| 2 | Defense Expert Deposition Playbook | Laraclay Parker | Playbook + Templates |
+| 3 | Client Deposition Defense Guide | Jason Murphy | Checklist + Quick Reference |
+| 4 | Rules-Based Deposition Examination Framework | Matt McGill | Manual + Question Templates |
+
+These four reports form a complete **Deposition Module** for the AI Paralegal Operating System, covering offensive depositions (corporate reps, experts), defensive depositions (client protection), and strategic examination frameworks (rules-based questioning).

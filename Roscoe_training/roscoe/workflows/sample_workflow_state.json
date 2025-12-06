@@ -1,0 +1,73 @@
+{
+  "current_phase": "treatment",
+  "case_type": "new",
+  "initialized_at": "2024-01-15T10:30:00Z",
+  "phase_history": [
+    {
+      "phase": "onboarding",
+      "started": "2024-01-15T10:30:00Z",
+      "completed": "2024-01-15T10:35:00Z"
+    },
+    {
+      "phase": "intake",
+      "started": "2024-01-15T10:35:00Z",
+      "completed": "2024-01-22T14:00:00Z"
+    },
+    {
+      "phase": "treatment",
+      "started": "2024-01-22T14:00:00Z",
+      "completed": null
+    }
+  ],
+  "workflows": {
+    "case_initialization": {
+      "status": "completed",
+      "started_at": "2024-01-15T10:30:00Z",
+      "completed_at": "2024-01-15T10:35:00Z"
+    },
+    "client_intake_screening": {
+      "status": "completed",
+      "started_at": "2024-01-15T10:35:00Z",
+      "completed_at": "2024-01-16T09:00:00Z"
+    },
+    "initial_documentation": {
+      "status": "completed",
+      "started_at": "2024-01-16T09:00:00Z",
+      "completed_at": "2024-01-17T11:00:00Z"
+    },
+    "accident_investigation": {
+      "status": "completed",
+      "started_at": "2024-01-17T11:00:00Z",
+      "completed_at": "2024-01-18T15:00:00Z"
+    },
+    "insurance_identification_setup": {
+      "status": "completed",
+      "started_at": "2024-01-18T15:00:00Z",
+      "completed_at": "2024-01-20T10:00:00Z"
+    },
+    "medical_records_request": {
+      "status": "in_progress",
+      "started_at": "2024-02-01T09:00:00Z",
+      "completed_at": null
+    },
+    "lien_identification": {
+      "status": "completed",
+      "started_at": "2024-01-25T09:00:00Z",
+      "completed_at": "2024-01-26T14:00:00Z"
+    },
+    "ongoing_medical_chronology": {
+      "status": "in_progress",
+      "started_at": "2024-02-05T10:00:00Z",
+      "completed_at": null
+    }
+  },
+  "exit_criteria_status": {
+    "treatment_complete": false,
+    "all_records_requested": true,
+    "all_records_received": false,
+    "all_bills_received": false,
+    "liens_identified": true,
+    "chronology_current": true
+  }
+}
+

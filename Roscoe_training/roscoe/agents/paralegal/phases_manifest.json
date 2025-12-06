@@ -1,0 +1,300 @@
+{
+  "version": "1.0.0",
+  "description": "Phase definitions for personal injury case lifecycle. Each phase has exit criteria that must be met before advancing.",
+  "phases": [
+    {
+      "id": "onboarding",
+      "name": "Onboarding",
+      "order": 0,
+      "description": "Initial case setup and workflow state initialization. This meta-phase ensures the case is properly configured before entering the standard workflow.",
+      "is_meta_phase": true,
+      "auto_advance": true,
+      "exit_criteria": [
+        "workflow_state_initialized",
+        "case_type_determined"
+      ],
+      "exit_criteria_labels": {
+        "workflow_state_initialized": "Workflow state file created",
+        "case_type_determined": "New case or transfer case identified"
+      },
+      "next_phase": "intake",
+      "workflows": ["case_initialization", "transfer_case_assessment"],
+      "skills_used": ["fact-investigation", "client-communication"]
+    },
+    {
+      "id": "intake",
+      "name": "Intake and File Setup",
+      "order": 1,
+      "description": "Initial client onboarding, document collection, accident investigation, and insurance setup.",
+      "exit_criteria": [
+        "accident_report_received",
+        "client_documents_signed",
+        "hipaa_authorizations_obtained",
+        "contracts_signed",
+        "scene_information_collected",
+        "insurance_companies_identified",
+        "pip_claim_opened",
+        "bi_claim_opened",
+        "letters_of_rep_acknowledged",
+        "initial_providers_documented"
+      ],
+      "exit_criteria_labels": {
+        "accident_report_received": "Accident report obtained",
+        "client_documents_signed": "All client documents signed",
+        "hipaa_authorizations_obtained": "HIPAA authorizations on file",
+        "contracts_signed": "Representation contracts executed",
+        "scene_information_collected": "Scene photos/info collected",
+        "insurance_companies_identified": "All insurance carriers identified",
+        "pip_claim_opened": "PIP claim opened with client's insurer",
+        "bi_claim_opened": "BI claim opened with at-fault insurer",
+        "letters_of_rep_acknowledged": "Letters of representation acknowledged",
+        "initial_providers_documented": "Initial medical providers documented"
+      },
+      "next_phase": "treatment",
+      "workflows": [
+        "client_intake_screening",
+        "initial_documentation",
+        "accident_investigation",
+        "insurance_identification_setup",
+        "file_setup_checklist"
+      ],
+      "skills_used": [
+        "fact-investigation",
+        "client-communication",
+        "insurance-coverage-analysis",
+        "document-organization",
+        "conflicts-check"
+      ]
+    },
+    {
+      "id": "treatment",
+      "name": "Treatment",
+      "order": 2,
+      "description": "Monitor client treatment, maintain insurance correspondence, identify liens, and build medical chronology.",
+      "exit_criteria": [
+        "treatment_complete",
+        "all_records_requested",
+        "all_records_received",
+        "all_bills_received",
+        "liens_identified",
+        "chronology_current"
+      ],
+      "exit_criteria_labels": {
+        "treatment_complete": "Client has finished medical treatment",
+        "all_records_requested": "Records requested from all providers",
+        "all_records_received": "All medical records received",
+        "all_bills_received": "All medical bills received",
+        "liens_identified": "All potential liens identified",
+        "chronology_current": "Medical chronology up to date"
+      },
+      "next_phase": "demand",
+      "workflows": [
+        "insurance_correspondence",
+        "lien_identification",
+        "client_status_check",
+        "medical_records_request",
+        "ongoing_medical_chronology"
+      ],
+      "skills_used": [
+        "medical-record-extraction",
+        "lien-classification",
+        "medical-chronology-generation",
+        "client-communication",
+        "insurance-correspondence"
+      ]
+    },
+    {
+      "id": "demand",
+      "name": "Demand Preparation",
+      "order": 3,
+      "description": "Complete medical documentation, compile damages, obtain expert reports if needed, and prepare demand package.",
+      "exit_criteria": [
+        "final_records_collected",
+        "medical_chronology_complete",
+        "damages_compiled",
+        "expert_reports_obtained",
+        "demand_prepared",
+        "demand_sent"
+      ],
+      "exit_criteria_labels": {
+        "final_records_collected": "All final medical records collected",
+        "medical_chronology_complete": "Medical chronology finalized",
+        "damages_compiled": "All damages documented (medical, wage loss, out-of-pocket)",
+        "expert_reports_obtained": "Expert reports obtained (if needed)",
+        "demand_prepared": "Demand letter drafted and approved",
+        "demand_sent": "Demand sent to insurance company"
+      },
+      "next_phase": "negotiation",
+      "workflows": [
+        "final_records_collection",
+        "medical_chronology_completion",
+        "damages_compilation",
+        "expert_evaluation",
+        "demand_preparation"
+      ],
+      "skills_used": [
+        "medical-chronology-generation",
+        "damages-calculation",
+        "demand-letter-drafting",
+        "expert-witness-evaluation",
+        "causation-analysis"
+      ]
+    },
+    {
+      "id": "negotiation",
+      "name": "Negotiation",
+      "order": 4,
+      "description": "Evaluate offers, advise client, negotiate settlement. Leads to either settlement or litigation.",
+      "exit_criteria": [
+        "initial_response_received",
+        "offers_evaluated",
+        "client_advised",
+        "settlement_reached_or_litigation_elected"
+      ],
+      "exit_criteria_labels": {
+        "initial_response_received": "Initial response from adjuster received",
+        "offers_evaluated": "All offers evaluated and documented",
+        "client_advised": "Client advised on offers and options",
+        "settlement_reached_or_litigation_elected": "Case settled OR decision to litigate made"
+      },
+      "next_phase": "settlement",
+      "alternate_next_phase": "litigation",
+      "branch_condition": "settlement_reached",
+      "workflows": [
+        "offer_evaluation",
+        "client_communication_negotiation",
+        "negotiation_strategy"
+      ],
+      "skills_used": [
+        "negotiation-strategy",
+        "offer-evaluation",
+        "client-communication",
+        "settlement-analysis"
+      ]
+    },
+    {
+      "id": "settlement",
+      "name": "Settlement",
+      "order": 5,
+      "description": "Finalize settlement, negotiate liens, pay providers, distribute funds, close case.",
+      "exit_criteria": [
+        "settlement_confirmed",
+        "liens_negotiated",
+        "providers_paid",
+        "client_funds_distributed",
+        "case_closed"
+      ],
+      "exit_criteria_labels": {
+        "settlement_confirmed": "Settlement amount confirmed in writing",
+        "liens_negotiated": "All liens negotiated and resolved",
+        "providers_paid": "All medical providers paid",
+        "client_funds_distributed": "Client received their portion",
+        "case_closed": "Case officially closed"
+      },
+      "next_phase": null,
+      "is_terminal": true,
+      "workflows": [
+        "settlement_confirmation",
+        "lien_negotiation",
+        "provider_payment",
+        "funds_distribution",
+        "case_resolution"
+      ],
+      "skills_used": [
+        "lien-negotiation",
+        "settlement-disbursement",
+        "client-communication"
+      ]
+    },
+    {
+      "id": "litigation",
+      "name": "Litigation",
+      "order": 6,
+      "description": "File lawsuit and pursue case through court system. Contains sub-phases for different litigation stages.",
+      "exit_criteria": [
+        "complaint_filed",
+        "discovery_complete",
+        "depositions_complete",
+        "mediation_complete",
+        "case_resolved"
+      ],
+      "exit_criteria_labels": {
+        "complaint_filed": "Complaint filed and served",
+        "discovery_complete": "Written discovery completed",
+        "depositions_complete": "All depositions taken",
+        "mediation_complete": "Mediation conducted",
+        "case_resolved": "Case resolved (settlement, verdict, or dismissal)"
+      },
+      "next_phase": "settlement",
+      "sub_phases": [
+        {
+          "id": "complaint_service",
+          "name": "Complaint & Service",
+          "order": 1,
+          "workflows": ["complaint_drafting", "service_of_process"]
+        },
+        {
+          "id": "discovery",
+          "name": "Discovery",
+          "order": 2,
+          "workflows": ["written_discovery", "document_production", "interrogatories"]
+        },
+        {
+          "id": "depositions",
+          "name": "Depositions",
+          "order": 3,
+          "workflows": [
+            "client_deposition_prep",
+            "defendant_deposition",
+            "expert_deposition",
+            "30b6_deposition",
+            "dme_deposition"
+          ]
+        },
+        {
+          "id": "mediation",
+          "name": "Mediation",
+          "order": 4,
+          "workflows": ["mediation_preparation", "mediation_attendance"]
+        },
+        {
+          "id": "experts",
+          "name": "Expert Witnesses",
+          "order": 5,
+          "workflows": ["expert_identification", "expert_retention", "expert_reports"]
+        },
+        {
+          "id": "trial_prep",
+          "name": "Trial Preparation",
+          "order": 6,
+          "workflows": ["trial_preparation", "witness_preparation", "exhibit_preparation"]
+        }
+      ],
+      "workflows": [
+        "complaint_drafting",
+        "service_of_process",
+        "written_discovery",
+        "document_production",
+        "client_deposition_prep",
+        "defendant_deposition",
+        "expert_deposition",
+        "30b6_deposition",
+        "dme_deposition",
+        "mediation_preparation",
+        "expert_coordination",
+        "trial_preparation"
+      ],
+      "skills_used": [
+        "complaint-drafting",
+        "discovery-drafting",
+        "deposition-preparation",
+        "cross-examination-fundamentals",
+        "30b6-topic-drafting",
+        "dme-ime-cross-examination",
+        "trial-preparation",
+        "expert-witness-evaluation"
+      ]
+    }
+  ]
+}
+

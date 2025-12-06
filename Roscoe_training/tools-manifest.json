@@ -1,0 +1,210 @@
+{
+  "version": "1.0.0",
+  "description": "Available Python tools for Roscoe agent. Tools are callable via python_execute.",
+  "tools": [
+    {
+      "name": "internet_search",
+      "file": "Tools/research/internet_search.py",
+      "description": "Search the internet using Tavily API for current information, medical definitions, and general research.",
+      "category": "research",
+      "input_format": "command_line",
+      "usage": "python /Tools/research/internet_search.py QUERY [--include-content] [--max-results N]",
+      "examples": [
+        "python /Tools/research/internet_search.py \"cervical radiculopathy definition site:mayoclinic.org\" --include-content",
+        "python /Tools/research/internet_search.py \"Kentucky personal injury statute of limitations\" --max-results 5"
+      ],
+      "output_format": "JSON with search results",
+      "cost": "API_CALL",
+      "token_savings": "~500 tokens"
+    },
+    {
+      "name": "pubmed_search",
+      "file": "Tools/research/pubmed_search.py",
+      "description": "Search PubMed for medical literature and research articles.",
+      "category": "research",
+      "input_format": "command_line",
+      "usage": "python /Tools/research/pubmed_search.py QUERY [--max-results N]",
+      "examples": [
+        "python /Tools/research/pubmed_search.py \"cervical radiculopathy treatment outcomes\" --max-results 10"
+      ],
+      "output_format": "JSON with article citations",
+      "cost": "FREE",
+      "token_savings": "~300 tokens"
+    },
+    {
+      "name": "read_pdf",
+      "file": "Tools/documents/read_pdf.py",
+      "description": "Extract text content from PDF files, optionally specific pages.",
+      "category": "documents",
+      "input_format": "command_line",
+      "usage": "python /Tools/documents/read_pdf.py PATH [--pages START-END] [--output-format json|text]",
+      "examples": [
+        "python /Tools/documents/read_pdf.py /Records/Medical/hospital.pdf",
+        "python /Tools/documents/read_pdf.py /Records/Medical/hospital.pdf --pages 1-10"
+      ],
+      "output_format": "Text or JSON with page content",
+      "cost": "FREE",
+      "token_savings": "~200 tokens"
+    },
+    {
+      "name": "search_case_law",
+      "file": "Tools/legal/search_case_law.py",
+      "description": "Search case law databases for relevant legal precedents.",
+      "category": "legal",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal/search_case_law.py QUERY [--jurisdiction STATE] [--max-results N]",
+      "examples": [
+        "python /Tools/legal/search_case_law.py \"premises liability notice requirement\" --jurisdiction KY"
+      ],
+      "output_format": "JSON with case citations",
+      "cost": "API_CALL",
+      "token_savings": "~400 tokens"
+    },
+    {
+      "name": "expert_witness_lookup",
+      "file": "Tools/legal/expert_witness_lookup.py",
+      "description": "Research expert witness background, publications, and prior testimony.",
+      "category": "legal",
+      "input_format": "command_line",
+      "usage": "python /Tools/legal/expert_witness_lookup.py \"EXPERT NAME\" [--include-testimony]",
+      "examples": [
+        "python /Tools/legal/expert_witness_lookup.py \"Dr. John Smith\" --include-testimony"
+      ],
+      "output_format": "JSON with expert information",
+      "cost": "API_CALL",
+      "token_savings": "~350 tokens"
+    },
+    {
+      "name": "render_ui_script",
+      "file": "Tools/ui/render_ui_script.py",
+      "description": "Generate UI reports and visualizations.",
+      "category": "ui",
+      "input_format": "command_line",
+      "usage": "python /Tools/ui/render_ui_script.py --template TEMPLATE --data DATA_PATH --output OUTPUT_PATH",
+      "examples": [
+        "python /Tools/ui/render_ui_script.py --template case_status --data /case/overview.json --output /Reports/"
+      ],
+      "output_format": "HTML or PDF report",
+      "cost": "FREE",
+      "token_savings": "~250 tokens"
+    },
+    {
+      "name": "chronology_add_term",
+      "file": "Tools/medical_chronology/chronology_add_term.py",
+      "description": "Add a researched medical term to the local cache with proper citation. Use after researching a term with internet_search.",
+      "category": "medical_chronology",
+      "input_format": "command_line",
+      "usage": "python /Tools/medical_chronology/chronology_add_term.py --term TERM --definition DEFINITION --source SOURCE --url URL [--category CATEGORY]",
+      "examples": [
+        "python /Tools/medical_chronology/chronology_add_term.py --term \"Cervical Radiculopathy\" --definition \"Compression or irritation of nerve root in cervical spine causing pain and numbness radiating to arm.\" --source \"Mayo Clinic\" --url \"https://www.mayoclinic.org/diseases-conditions/radiculopathy\"",
+        "python /Tools/medical_chronology/chronology_add_term.py --term \"ACDF\" --definition \"Anterior Cervical Discectomy and Fusion - surgical procedure to remove damaged disc and fuse vertebrae.\" --source \"Cleveland Clinic\" --url \"https://my.clevelandclinic.org/health/treatments/22154-acdf\" --category procedures"
+      ],
+      "output_format": "JSON with status and entry added",
+      "cost": "FREE",
+      "token_savings": "~200 tokens"
+    },
+    {
+      "name": "chronology_lookup_term",
+      "file": "Tools/medical_chronology/chronology_lookup_term.py",
+      "description": "Look up a medical term in the local research cache. Returns definition and citation if found, or indicates research is needed.",
+      "category": "medical_chronology",
+      "input_format": "command_line",
+      "usage": "python /Tools/medical_chronology/chronology_lookup_term.py --term TERM",
+      "examples": [
+        "python /Tools/medical_chronology/chronology_lookup_term.py --term \"radiculopathy\"",
+        "python /Tools/medical_chronology/chronology_lookup_term.py --term \"MRI\""
+      ],
+      "output_format": "JSON with definition, source, url, or needs_research flag",
+      "cost": "FREE",
+      "token_savings": "~150 tokens"
+    },
+    {
+      "name": "chronology_analyze_terms",
+      "file": "Tools/medical_chronology/chronology_analyze_terms.py",
+      "description": "Analyze medical text to identify terms that need definition. Returns cached terms, terms needing research, and standard abbreviations.",
+      "category": "medical_chronology",
+      "input_format": "command_line",
+      "usage": "python /Tools/medical_chronology/chronology_analyze_terms.py --text TEXT [--text-file PATH]",
+      "examples": [
+        "python /Tools/medical_chronology/chronology_analyze_terms.py --text \"Patient diagnosed with cervical radiculopathy and underwent ACDF procedure.\"",
+        "python /Tools/medical_chronology/chronology_analyze_terms.py --text-file /Records/Medical/notes.txt"
+      ],
+      "output_format": "JSON with cached_terms, needs_research, and abbreviations lists",
+      "cost": "FREE",
+      "token_savings": "~250 tokens"
+    },
+    {
+      "name": "chronology_generate_pdf",
+      "file": "Tools/medical_chronology/chronology_generate_pdf.py",
+      "description": "Generate a professional medical chronology PDF from structured entry data. Requires reportlab library.",
+      "category": "medical_chronology",
+      "input_format": "command_line",
+      "usage": "python /Tools/medical_chronology/chronology_generate_pdf.py --client-name NAME --dob DATE --injury-date DATE --entries-json PATH --output DIR [--firm-name NAME] [--source-records PATH]",
+      "examples": [
+        "python /Tools/medical_chronology/chronology_generate_pdf.py --client-name \"Mills, Amy\" --dob \"12/28/1983\" --injury-date \"04/26/2019\" --entries-json /Reports/chronology_entries.json --output /Reports/",
+        "python /Tools/medical_chronology/chronology_generate_pdf.py --client-name \"Smith, John\" --dob \"01/15/1975\" --injury-date \"03/10/2023\" --entries-json /Reports/entries.json --output /Reports/ --firm-name \"Whaley Law\" --source-records /Records/all_records.pdf"
+      ],
+      "output_format": "JSON with path to generated PDF and any warnings",
+      "cost": "FREE",
+      "token_savings": "~300 tokens",
+      "dependencies": ["reportlab"]
+    },
+    {
+      "name": "chronology_merge_with_records",
+      "file": "Tools/medical_chronology/chronology_merge_with_records.py",
+      "description": "Merge the generated chronology PDF with source medical records PDF, creating a combined document. Requires PyPDF2 library.",
+      "category": "medical_chronology",
+      "input_format": "command_line",
+      "usage": "python /Tools/medical_chronology/chronology_merge_with_records.py --chronology PATH --records PATH --output PATH",
+      "examples": [
+        "python /Tools/medical_chronology/chronology_merge_with_records.py --chronology /Reports/Mills_Medical_Chronology.pdf --records /Records/all_medical_records.pdf --output /Reports/Mills_Chronology_and_Records.pdf"
+      ],
+      "output_format": "JSON with path to combined PDF",
+      "cost": "FREE",
+      "token_savings": "~250 tokens",
+      "dependencies": ["PyPDF2"]
+    },
+    {
+      "name": "calendar_add_event",
+      "file": "Tools/calendar/calendar_add_event.py",
+      "description": "Add an event to the calendar (deadlines, appointments, etc.).",
+      "category": "calendar",
+      "input_format": "command_line",
+      "usage": "python /Tools/calendar/calendar_add_event.py --title TITLE --date DATE [--time TIME] [--description DESC] [--case-id ID]",
+      "examples": [
+        "python /Tools/calendar/calendar_add_event.py --title \"SOL Deadline\" --date 2025-04-26 --description \"2-year statute of limitations\" --case-id mills_amy"
+      ],
+      "output_format": "JSON with event details",
+      "cost": "FREE",
+      "token_savings": "~100 tokens"
+    },
+    {
+      "name": "calendar_list_events",
+      "file": "Tools/calendar/calendar_list_events.py",
+      "description": "List upcoming calendar events, optionally filtered by case.",
+      "category": "calendar",
+      "input_format": "command_line",
+      "usage": "python /Tools/calendar/calendar_list_events.py [--case-id ID] [--days N] [--type TYPE]",
+      "examples": [
+        "python /Tools/calendar/calendar_list_events.py --days 30",
+        "python /Tools/calendar/calendar_list_events.py --case-id mills_amy"
+      ],
+      "output_format": "JSON with list of events",
+      "cost": "FREE",
+      "token_savings": "~100 tokens"
+    }
+  ],
+  "categories": {
+    "research": "Tools for searching external sources (internet, medical literature, case law)",
+    "documents": "Tools for reading and processing documents",
+    "legal": "Tools for legal research and expert analysis",
+    "medical_chronology": "Tools for building professional medical chronologies",
+    "calendar": "Tools for managing case deadlines and events",
+    "ui": "Tools for generating reports and visualizations"
+  },
+  "usage_notes": {
+    "research_workflow": "1. Use internet_search or pubmed_search to find information. 2. Use chronology_add_term to cache findings with citation. 3. Use chronology_lookup_term before researching to avoid duplicates.",
+    "chronology_workflow": "1. Extract records with read_pdf. 2. Analyze terms with chronology_analyze_terms. 3. Research needed terms with internet_search. 4. Add to cache with chronology_add_term. 5. Generate PDF with chronology_generate_pdf. 6. Optionally merge with records using chronology_merge_with_records."
+  }
+}
+

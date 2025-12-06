@@ -1,0 +1,751 @@
+I'll analyze the legal education materials in the subrogation folder to design a comprehensive AI paralegal training framework. Let me first examine the available documents.
+
+[5 tools called]
+
+Now I have a complete understanding of the materials. Let me design the AI Paralegal training framework based on these comprehensive lien education materials.
+
+---
+
+# AI Paralegal Operating System: Liens & Subrogation Module
+
+## High-Level Report Map
+
+Based on my analysis of the source materials, I propose **6 core reports** that form a coherent training backbone for an AI paralegal handling liens in personal injury litigation:
+
+---
+
+### Report 1: **Lien Fundamentals & Classification**
+**Purpose:** Establish foundational understanding of liens, subrogation, assignments, and reimbursement rights—the vocabulary and conceptual framework for all lien work.
+
+**Main focus areas:**
+- Core definitions (lien vs. subrogation vs. assignment vs. reimbursement)
+- Three-category classification system (statutory, contractual, combination)
+- How classification determines applicable law and negotiation strategy
+- Common examples in each category
+
+---
+
+### Report 2: **Statutory & Hospital Liens: Identification, Perfection, and Challenge**
+**Purpose:** Train the AI to identify, validate, and challenge statutory liens—particularly hospital liens—using perfection requirements and statutory limitations.
+
+**Main focus areas:**
+- Hospital lien perfection requirements (state-specific filing, notice)
+- Workers' compensation liens (automatic attachment)
+- Child support liens (discovery methods)
+- Validity challenges (no underlying debt, balance billing)
+- Statutory caps and percentage rules
+
+---
+
+### Report 3: **ERISA & Contractual Liens: Investigation and Negotiation**
+**Purpose:** Enable the AI to handle complex ERISA plans and contractual liens (LOPs), including document requests, plan analysis, and strategic negotiation.
+
+**Main focus areas:**
+- Self-funded vs. fully-funded ERISA plan distinction
+- Plan document requests and Form 5500 analysis
+- Letters of Protection (LOPs) and ethical considerations
+- Made Whole and Common Fund doctrine applicability
+- Settlement timing strategies for ERISA leverage
+
+---
+
+### Report 4: **Government Health Benefits: Medicare, Medicaid, VA & TRICARE**
+**Purpose:** Comprehensive guide to government lien resolution, including conditional payment recovery, waiver/compromise processes, and eligibility preservation.
+
+**Main focus areas:**
+- Medicare Secondary Payer Act and conditional payments
+- Medicare Parts A/B/C/D contact procedures (BCRC, CRC)
+- Medicaid state-specific rules and needs-based eligibility
+- Medicaid planning (spend-down, Special Needs Trusts, pooled trusts)
+- VA and TRICARE lien procedures
+
+---
+
+### Report 5: **Medicare Set-Asides (MSAs): Compliance and Strategy**
+**Purpose:** Detailed guidance on when MSAs are required, how to calculate/reduce them, and the consequences of non-compliance.
+
+**Main focus areas:**
+- When MSAs are triggered (future medical damages claims)
+- Avoiding MSAs (certification of no future treatment)
+- Reducing MSA allocations (rated ages, generic medications, surgery elections)
+- CMS approval thresholds (workers' comp vs. liability)
+- Non-compliance risks (entire settlement deemed primary)
+
+---
+
+### Report 6: **Lien Resolution Workflow & Ethical Duties**
+**Purpose:** Operational playbook covering the end-to-end lien resolution process and attorney/paralegal ethical obligations.
+
+**Main focus areas:**
+- Step-by-step lien resolution flowchart
+- Client communication and expectation setting
+- Negotiation arguments and reduction strategies
+- Ethical rules (Rule 1.15 safekeeping, Rule 1.7 conflicts, Rule 5.3 supervision)
+- Trust account management and disbursement procedures
+- Documentation requirements
+
+---
+
+## Detailed Specifications for Each Report
+
+---
+
+### Report 1: Lien Fundamentals & Classification
+
+**Purpose:**
+This foundational report establishes the conceptual vocabulary and classification framework that an AI paralegal must understand before handling any lien-related tasks. It defines the precise distinctions between liens, subrogation, assignments, and reimbursement rights—terms often confused but legally distinct. The AI must understand why classification matters: it determines which laws apply, what defenses are available, and which negotiation strategies work.
+
+**Intended Use in AI Paralegal OS:**
+- **When:** At case intake and initial lien identification
+- **How:** When a new case involves potential third-party claims, the AI references this module to properly categorize each claim and flag the applicable legal framework
+- **Integration:** Feeds into all downstream lien modules; serves as prerequisite knowledge
+
+**Core Topics & Sections:**
+- Definition of "lien" in personal injury context
+- Definition and distinction: subrogation vs. lien
+- Definition and examples: assignments (including LOPs and litigation funding)
+- Definition: rights of reimbursement
+- Three-category classification system:
+  - Statutory liens (hospital, workers' comp, child support, Medicare/Medicaid)
+  - Contractual liens (LOPs, private insurance)
+  - Combination liens (FEHBP, ERISA plans)
+- Why classification determines strategy:
+  - Statutory = strict compliance requirements
+  - Contractual = governed by agreement terms plus applicable regulations
+  - Combination = federal preemption analysis required
+- Quick-reference classification decision tree
+
+**Source Coverage:**
+All four source documents cover these fundamentals extensively. The Chapter provides formal definitions; the FAQ offers accessible Q&A explanations; the Briefing provides practical distinctions; the Study Guide includes the most comprehensive glossary.
+
+**Report Type Recommendation:**
+**Training manual / study guide** — This report should teach foundational concepts with clear definitions, examples, and a classification framework the AI can apply repeatedly.
+
+---
+
+### Report 2: Statutory & Hospital Liens: Identification, Perfection, and Challenge
+
+**Purpose:**
+This report trains the AI paralegal to handle statutory liens—the most rule-bound category—with particular focus on hospital liens, which require strict perfection and are frequently challengeable. The AI must learn perfection requirements, validation procedures, and arguments for defeating or reducing these liens.
+
+**Intended Use in AI Paralegal OS:**
+- **When:** During lien identification and validation phase
+- **How:** When a hospital or workers' comp lien is asserted, the AI runs a validation checklist, flags perfection defects, and generates challenge arguments
+- **Integration:** Outputs feed into negotiation workflows and client advisories
+
+**Core Topics & Sections:**
+- Hospital lien perfection requirements:
+  - Filing deadlines (state-specific)
+  - Notice requirements
+  - Recording with clerk's office
+- Validity challenges:
+  - No underlying debt defense
+  - Balance billing prohibitions
+  - Charges exceeding insurance-accepted amounts
+- Statutory limitations:
+  - Percentage caps (e.g., Tennessee one-third rule, Indiana 20% rule)
+  - Maximum recovery rules
+- Workers' compensation liens:
+  - Automatic attachment (no filing required)
+  - State vs. federal (FECA)
+- Child support liens:
+  - "Secret lien" nature
+  - Discovery procedures
+- Checklist: Hospital Lien Validation
+- Checklist: Statutory Lien Challenge Arguments
+
+**Source Coverage:**
+Chapter (statutory liens section, hospital liens, perfection); Briefing (Section 2.1 on statutory liens, perfection rules); Study Guide (Types of Liens section); FAQ (Question 3 on lien categories).
+
+**Report Type Recommendation:**
+**Practical checklist & playbook** — This report should be procedural and actionable, with validation checklists and challenge argument templates.
+
+---
+
+### Report 3: ERISA & Contractual Liens: Investigation and Negotiation
+
+**Purpose:**
+This report addresses the most complex lien category: ERISA plans and contractual arrangements. The AI must learn to distinguish self-funded from fully-funded plans, request and analyze plan documents, determine whether equitable doctrines apply, and strategically time settlements to maximize leverage.
+
+**Intended Use in AI Paralegal OS:**
+- **When:** When private health insurance or employer plan asserts a lien
+- **How:** AI generates document request letters, analyzes plan language for explicit disclaimers, flags self-funded status, and recommends negotiation strategy
+- **Integration:** Critical for maximizing client recovery; feeds into settlement strategy module
+
+**Core Topics & Sections:**
+- Self-funded vs. fully-funded ERISA plans:
+  - Why the distinction matters (federal preemption)
+  - How to determine funding status
+- Plan document request procedure:
+  - What to request (SPD, master plan document, Form 5500s)
+  - 30-day response requirement
+  - Penalties for non-compliance
+- Plan language analysis:
+  - Does plan explicitly grant subrogation/reimbursement right?
+  - Does plan identify specific fund for constructive trust/equitable lien?
+  - Does plan explicitly disavow Made Whole and Common Fund doctrines?
+- Form 5500 analysis:
+  - Schedule A = fully insured
+  - Schedule C = self-funded (claims administrator listed)
+- Letters of Protection (LOPs):
+  - Validity requirements
+  - Ethical concerns with referral agreements
+- Settlement timing strategy:
+  - Hold settlement until lien agreement reached
+  - Leverage created by prospect of no recovery
+- Key cases: Sereboff, McCutchen, FMC Corp. v. Holliday, Coventry v. Nevils
+- Checklist: ERISA Plan Investigation
+- Template: Plan Document Request Letter
+
+**Source Coverage:**
+All sources cover ERISA extensively. Briefing Section 2.3 and 3.3 provide detailed ERISA strategy; Study Guide Section V.3 covers ERISA negotiation; Chapter covers ERISA under combination liens; FAQ Question 8 addresses ERISA strategies.
+
+**Report Type Recommendation:**
+**Mixed: Training manual + practical playbook** — Must teach the complex legal framework AND provide actionable procedures.
+
+---
+
+### Report 4: Government Health Benefits: Medicare, Medicaid, VA & TRICARE
+
+**Purpose:**
+This report provides comprehensive guidance on government health benefit liens—Medicare, Medicaid, VA, and TRICARE—which have unique statutory frameworks, powerful recovery rights, and specific resolution procedures. The AI must understand conditional payments, waiver/compromise processes, and Medicaid eligibility preservation strategies.
+
+**Intended Use in AI Paralegal OS:**
+- **When:** During case evaluation, lien identification, and settlement planning
+- **How:** AI identifies government beneficiaries early, initiates appropriate lien searches, calculates conditional payments, and flags eligibility preservation needs
+- **Integration:** Critical for client protection and attorney liability avoidance
+
+**Core Topics & Sections:**
+- Medicare overview:
+  - Eligibility (65+, SSD after 24 months, minor children)
+  - Medicare Secondary Payer Act
+  - "Super lien" powers (double damages, attorney liability)
+- Medicare conditional payments:
+  - What they are and how they work
+  - BCRC vs. CRC contact procedures
+  - Part C (Medicare Advantage) and Part D procedures
+  - Final CP Process (online, 3-day settlement requirement)
+- Medicare reductions:
+  - Pro-rata procurement costs
+  - Waiver requests (post-final demand, hardship)
+  - Compromise requests (any time, cannot be appealed)
+  - $750 threshold (2025)
+- Medicaid overview:
+  - Needs-based eligibility (asset/income limits)
+  - State-specific programs and rules
+  - Reimbursement rights (medical damages only)
+- Medicaid planning strategies:
+  - Spend-down within month of receipt
+  - Special Needs Trusts (under 65)
+  - Pooled/Community Trusts (65+)
+  - Coordination with settlement timing
+- VA liens:
+  - Reimbursement rights and procedures
+  - Judge Advocate Office contact
+  - Compromise/waiver process
+- TRICARE:
+  - Separate lien search required
+  - Military family coverage
+- Checklist: Government Lien Identification
+- Checklist: Medicare Conditional Payment Resolution
+- Checklist: Medicaid Eligibility Preservation
+
+**Source Coverage:**
+All sources provide extensive Medicare/Medicaid coverage. Chapter Section on Medicare/Medicaid; Briefing Section 4; Study Guide Section IV; FAQ Questions 4 and 7.
+
+**Report Type Recommendation:**
+**Practical checklist & playbook** — Heavily procedural with multiple checklists for different government programs.
+
+---
+
+### Report 5: Medicare Set-Asides (MSAs): Compliance and Strategy
+
+**Purpose:**
+This specialized report addresses Medicare Set-Asides—the allocation of settlement funds for future medical expenses. The AI must understand when MSAs are triggered, how to avoid or reduce them, and the severe consequences of non-compliance (entire settlement deemed primary to Medicare).
+
+**Intended Use in AI Paralegal OS:**
+- **When:** During settlement negotiations when client is Medicare-eligible or will become eligible
+- **How:** AI flags MSA requirements based on damages claimed, recommends avoidance strategies, calculates potential allocations, and drafts compliance language
+- **Integration:** Critical for protecting client's future Medicare coverage
+
+**Core Topics & Sections:**
+- Purpose of MSAs:
+  - CMS "preferred method" of MSP compliance
+  - Preventing cost-shifting to Medicare
+- When MSAs are triggered:
+  - Current Medicare beneficiary
+  - Expected Medicare eligibility within 30 months
+  - Settlement releases future/permanent medical damages
+  - Language that triggers requirements ("lifetime medical," "ongoing care")
+- What MSAs include:
+  - Future Medicare-covered treatment
+  - Medications (including refills, generic vs. brand)
+  - Surgeries (including joint replacement revisions)
+  - Durable medical equipment
+  - Diagnostic imaging
+  - Physical therapy
+- Avoiding MSAs:
+  - Certification of no future treatment (requirements: treating physician, letterhead, explicit language, no qualifiers)
+  - No medical damages claimed (wrongful death for living heirs)
+- Reducing MSA allocations:
+  - Rated ages (shortened life expectancy)
+  - Generic medication substitutions
+  - Patient election against surgery
+  - Physician statements on treatment candidacy
+- MSA administration:
+  - Lump sum vs. structured annuity
+  - Self-administered vs. professional administration
+- CMS approval thresholds:
+  - Workers' comp: $25k (Medicare-eligible) or $250k (expected eligible within 30 months)
+  - Liability/no-fault: No formal review process yet
+- Non-compliance consequences:
+  - CMS deems entire settlement primary to Medicare
+  - Medicare denies payment until full settlement exhausted
+  - "Evidence-based" MSAs may not protect adequately
+- Checklist: MSA Necessity Evaluation
+- Template: Certification of No Future Treatment Request
+
+**Source Coverage:**
+All sources cover MSAs. Chapter Section on MSAs; Briefing Section 6; Study Guide Section VI; FAQ Question 7.
+
+**Report Type Recommendation:**
+**Mixed: Training manual + practical playbook** — Requires understanding of complex rules AND actionable compliance procedures.
+
+---
+
+### Report 6: Lien Resolution Workflow & Ethical Duties
+
+**Purpose:**
+This operational report provides the end-to-end lien resolution workflow and comprehensive guidance on ethical obligations. The AI must understand the step-by-step process from identification through disbursement, negotiation strategies, and the strict ethical rules governing client funds and conflicts of interest.
+
+**Intended Use in AI Paralegal OS:**
+- **When:** Throughout the entire case lifecycle, from intake through settlement disbursement
+- **How:** AI follows the workflow at each stage, generates appropriate communications, flags ethical issues, and ensures compliant fund handling
+- **Integration:** Master operational workflow that integrates all other lien modules
+
+**Core Topics & Sections:**
+- Lien Resolution Workflow (7-step process):
+  1. Identify potential liens (intake questionnaire, medical history review)
+  2. Verify validity and perfection
+  3. Classify the lien
+  4. Evaluate defenses and reductions
+  5. Negotiate with lienholders
+  6. Finalize settlement and lien agreement
+  7. Disburse funds ethically
+- Client communication best practices:
+  - Set expectations at intake
+  - Explain medical bills = potential repayment
+  - Document all advice in writing
+- Negotiation arguments:
+  - Validity/perfection challenges
+  - Unreasonable charges
+  - Unrelated charges
+  - Pro-rata fee/cost reductions (Common Fund)
+  - Made Whole sympathy/hardship
+  - Doubtful claim (litigation risks)
+  - Limited policy recovery
+  - Comparative fault allocation
+- Ethical Rules:
+  - Rule 1.15: Safekeeping funds (strict liability)
+    - Prompt notification
+    - Segregation in trust account
+    - Hold disputed amounts until resolution
+    - Full accounting
+  - Rule 1.7: Conflicts of interest
+    - Client vs. lienholder disputes
+    - Referral agreement problems
+  - Rule 1.4: Communication requirements
+  - Rule 5.3: Supervision of non-lawyers and vendors
+  - Rule 1.2: Scope of representation clarity
+- Government action risk:
+  - Medicare can sue attorneys directly
+  - Double damages liability
+- Trust account management:
+  - IOLTA requirements
+  - Disbursement procedures
+  - Disputed fund handling
+- Red flags and escalations:
+  - Undisclosed liens discovered late
+  - Client disputes valid lien
+  - Conflicting referral arrangements
+  - Non-compliant MSA situations
+- Checklist: Lien Resolution Workflow
+- Checklist: Ethical Compliance
+- Template: Client Lien Disclosure Letter
+- Template: Lienholder Negotiation Letter
+
+**Source Coverage:**
+All sources address ethics and workflow. Chapter Ethics section and Flowchart; Briefing Section 5; Study Guide Section V.4; FAQ Question 6; Chapter Case Study.
+
+**Report Type Recommendation:**
+**Practical checklist & playbook** — Primary operational document with comprehensive procedures and templates.
+
+---
+
+## Custom Report Prompts
+
+Below are ready-to-paste prompts for generating each report:
+
+---
+
+### Custom Report Prompt for "Lien Fundamentals & Classification"
+
+```
+You are generating a structured report titled "Lien Fundamentals & Classification" as part of an AI Paralegal education framework.
+
+Sources:
+- Use all relevant documents attached to this notebook. Focus on materials related to: definitions of liens, subrogation, assignments, and reimbursement rights; the three-category classification system (statutory, contractual, combination); and why classification determines legal strategy.
+
+Goal of this report:
+- Establish the foundational vocabulary and classification framework that an AI paralegal must understand before handling any lien-related tasks. This report defines the precise distinctions between liens, subrogation, assignments, and reimbursement rights, and teaches why proper classification determines applicable law, available defenses, and negotiation strategies.
+
+Required sections:
+1. Overview & Purpose
+   - Why this foundational knowledge matters for AI paralegal operations
+2. Key Legal Concepts and Rules
+   - Definition of "lien" in personal injury context
+   - Subrogation: definition, how it differs from a lien
+   - Assignments: definition, examples (Letters of Protection, litigation funding)
+   - Rights of reimbursement: definition, relationship to other concepts
+3. Three-Category Classification System
+   - Statutory liens: definition, examples, governing principles
+   - Contractual liens: definition, examples, governing principles
+   - Combination liens: definition, examples (FEHBP, ERISA), federal preemption issues
+4. Practical Checklists and Procedures
+   - Classification decision tree: how to categorize a lien
+   - Initial lien identification checklist
+5. Critical Data Points the AI Paralegal Must Capture
+   - Source of the claim (statute, contract, or both)
+   - Applicable jurisdiction (state vs. federal)
+   - Plan type if ERISA (self-funded vs. fully-funded)
+6. Red Flags and Escalation Triggers
+   - Unclear classification requiring attorney review
+   - Multiple lien types on same case
+7. Example Applications / Scenarios
+   - Brief examples illustrating each category if available from sources
+
+Style:
+- Use clear, plain language suitable for training an AI paralegal or non-lawyer staff member.
+- Avoid giving legal advice. Focus on structure, concepts, and procedures.
+- Include a quick-reference glossary of key terms from this module.
+
+Constraints:
+- Base the content only on the supplied sources and reasonable inferences.
+- If the sources are thin on a subtopic, say so briefly rather than inventing material.
+```
+
+---
+
+### Custom Report Prompt for "Statutory & Hospital Liens: Identification, Perfection, and Challenge"
+
+```
+You are generating a structured report titled "Statutory & Hospital Liens: Identification, Perfection, and Challenge" as part of an AI Paralegal education framework.
+
+Sources:
+- Use all relevant documents attached to this notebook. Focus on materials related to: hospital lien perfection requirements, workers' compensation liens, child support liens, statutory limitations and percentage caps, validity challenges, and balance billing prohibitions.
+
+Goal of this report:
+- Train the AI paralegal to handle statutory liens—the most rule-bound category—with particular focus on hospital liens. The AI must learn state-specific perfection requirements, validation procedures, and arguments for defeating or reducing statutory liens based on perfection defects, lack of underlying debt, or statutory caps.
+
+Required sections:
+1. Overview & Purpose
+   - Why statutory liens require strict compliance analysis
+   - The AI's role in validating and challenging these liens
+2. Key Legal Concepts and Rules
+   - Hospital lien perfection requirements (filing deadlines, notice, recording)
+   - Workers' compensation liens (automatic attachment, state vs. federal)
+   - Child support liens ("secret liens," discovery procedures)
+   - Balance billing prohibitions
+   - Statutory caps and percentage rules (with state examples)
+3. Practical Checklists and Procedures
+   - Hospital Lien Validation Checklist
+   - Statutory Lien Perfection Verification Steps
+   - Challenge Argument Generation Workflow
+4. Critical Data Points the AI Paralegal Must Capture
+   - Lien filing date and method
+   - State-specific perfection requirements
+   - Billed amount vs. insurance-accepted amount
+   - Any balance billing indicators
+   - Applicable statutory caps
+5. Red Flags and Escalation Triggers
+   - Perfection deadline missed by lienholder
+   - Charges exceeding statutory limits
+   - Balance billing attempted
+   - Child support lien discovered late
+6. Example Applications / Scenarios
+   - Hospital lien challenge scenario if available
+   - Case study from sources
+
+Style:
+- Use clear, plain language suitable for training an AI paralegal or non-lawyer staff member.
+- Emphasize procedural steps and validation checklists.
+- Avoid giving legal advice. Focus on identification, verification, and challenge procedures.
+
+Constraints:
+- Base the content only on the supplied sources and reasonable inferences.
+- Note that perfection requirements are state-specific; provide general framework and examples.
+- If the sources are thin on a subtopic, say so briefly rather than inventing material.
+```
+
+---
+
+### Custom Report Prompt for "ERISA & Contractual Liens: Investigation and Negotiation"
+
+```
+You are generating a structured report titled "ERISA & Contractual Liens: Investigation and Negotiation" as part of an AI Paralegal education framework.
+
+Sources:
+- Use all relevant documents attached to this notebook. Focus on materials related to: ERISA plans (self-funded vs. fully-funded distinction), plan document requests, Form 5500 analysis, Made Whole and Common Fund doctrines, Letters of Protection, settlement timing strategies, and key ERISA cases (Sereboff, McCutchen, FMC Corp. v. Holliday, Coventry v. Nevils).
+
+Goal of this report:
+- Enable the AI paralegal to handle complex ERISA plans and contractual liens. The AI must learn to distinguish self-funded from fully-funded plans, properly request and analyze plan documents, determine whether equitable doctrines apply, and strategically time settlements to maximize negotiation leverage.
+
+Required sections:
+1. Overview & Purpose
+   - Why ERISA liens are the most complex category
+   - Federal preemption and its impact on strategy
+2. Key Legal Concepts and Rules
+   - Self-funded vs. fully-funded ERISA plans (definitions, legal consequences)
+   - Federal preemption of state insurance laws
+   - Made Whole Doctrine (when it applies, when disclaimed)
+   - Common Fund Doctrine (when it applies, when disclaimed)
+   - Key ERISA cases and their holdings
+   - Letters of Protection (LOPs): validity and limitations
+3. Practical Checklists and Procedures
+   - ERISA Plan Investigation Checklist
+   - Plan Document Request Procedure (what to request, 30-day rule, penalties)
+   - Form 5500 Analysis (Schedule A vs. Schedule C indicators)
+   - Plan Language Analysis Checklist (subrogation rights, specific fund identification, doctrine disclaimers)
+   - Settlement Timing Strategy Workflow
+4. Critical Data Points the AI Paralegal Must Capture
+   - Plan funding type (self-funded or fully-funded)
+   - Explicit subrogation/reimbursement language
+   - Explicit disclaimer of equitable doctrines
+   - Form 5500 indicators
+   - LOP terms and referral arrangement status
+5. Red Flags and Escalation Triggers
+   - Self-funded plan with explicit disclaimers (limited negotiation room)
+   - Referral agreement with provider (ethical concern)
+   - Plan documents not provided within 30 days
+   - Inconsistencies between SPD and master plan document
+6. Example Applications / Scenarios
+   - ERISA negotiation scenario from sources
+   - LOP ethical dilemma example
+
+Style:
+- Use clear, plain language suitable for training an AI paralegal or non-lawyer staff member.
+- Balance teaching the legal framework with providing actionable procedures.
+- Avoid giving legal advice. Focus on investigation, analysis, and negotiation procedures.
+
+Constraints:
+- Base the content only on the supplied sources and reasonable inferences.
+- If the sources are thin on a subtopic, say so briefly rather than inventing material.
+```
+
+---
+
+### Custom Report Prompt for "Government Health Benefits: Medicare, Medicaid, VA & TRICARE"
+
+```
+You are generating a structured report titled "Government Health Benefits: Medicare, Medicaid, VA & TRICARE" as part of an AI Paralegal education framework.
+
+Sources:
+- Use all relevant documents attached to this notebook. Focus on materials related to: Medicare eligibility and Secondary Payer Act, conditional payments, BCRC and CRC procedures, Medicare Parts A/B/C/D, waivers and compromises, Medicaid state programs and needs-based eligibility, Medicaid planning (spend-down, Special Needs Trusts, pooled trusts), VA liens, and TRICARE.
+
+Goal of this report:
+- Provide comprehensive guidance on government health benefit liens, which have unique statutory frameworks, powerful recovery rights ("super lien" powers), and specific resolution procedures. The AI must understand conditional payments, waiver/compromise processes, contact procedures for each program, and Medicaid eligibility preservation strategies.
+
+Required sections:
+1. Overview & Purpose
+   - Why government liens carry special risks (attorney liability, double damages)
+   - The AI's role in early identification and proper handling
+2. Key Legal Concepts and Rules
+   - Medicare: eligibility, Secondary Payer Act, "super lien" powers
+   - Medicare conditional payments: definition, how they work
+   - Medicare Parts A/B/C/D: coverage and contact procedures
+   - Medicare reductions: procurement costs, waivers, compromises, $750 threshold
+   - Final CP Process: requirements and timeline
+   - Medicaid: needs-based eligibility, state variation, reimbursement rights
+   - VA: reimbursement rights, procedures
+   - TRICARE: military family coverage, separate search required
+3. Practical Checklists and Procedures
+   - Government Lien Identification Checklist (at intake)
+   - Medicare Conditional Payment Resolution Workflow
+   - Medicare Contact Procedures (BCRC, CRC, Part C/D plans)
+   - Medicaid Eligibility Preservation Checklist
+   - Medicaid Planning Strategy Decision Tree
+4. Critical Data Points the AI Paralegal Must Capture
+   - Medicare beneficiary status (current or expected within 30 months)
+   - Conditional payment amount and date of injury
+   - Medicaid eligibility status and state program
+   - Asset/income thresholds for Medicaid
+   - Client age (for trust type determination)
+   - VA/TRICARE beneficiary status
+5. Red Flags and Escalation Triggers
+   - Medicare beneficiary with no lien search initiated
+   - Medicaid recipient receiving settlement that may disqualify them
+   - Client turning 65 during case (trust type changes)
+   - Medicare demands not addressed before disbursement
+6. Example Applications / Scenarios
+   - Medicare conditional payment resolution scenario
+   - Medicaid planning case study from sources
+
+Style:
+- Use clear, plain language suitable for training an AI paralegal or non-lawyer staff member.
+- Heavily procedural with multiple checklists for different government programs.
+- Avoid giving legal advice. Focus on identification, contact procedures, and preservation strategies.
+
+Constraints:
+- Base the content only on the supplied sources and reasonable inferences.
+- Note that Medicaid rules are state-specific; provide general framework.
+- If the sources are thin on a subtopic, say so briefly rather than inventing material.
+```
+
+---
+
+### Custom Report Prompt for "Medicare Set-Asides (MSAs): Compliance and Strategy"
+
+```
+You are generating a structured report titled "Medicare Set-Asides (MSAs): Compliance and Strategy" as part of an AI Paralegal education framework.
+
+Sources:
+- Use all relevant documents attached to this notebook. Focus on materials related to: MSA purpose and legal basis, when MSAs are required, what MSAs include, avoiding MSAs (certification of no future treatment), reducing MSA allocations (rated ages, medications, surgery elections), CMS approval thresholds, MSA administration options, and non-compliance consequences.
+
+Goal of this report:
+- Provide detailed guidance on Medicare Set-Asides—the allocation of settlement funds for future medical expenses that would otherwise be covered by Medicare. The AI must understand when MSAs are triggered, how to evaluate avoidance strategies, methods to reduce allocations, and the severe consequences of non-compliance where the entire settlement may be deemed primary to Medicare.
+
+Required sections:
+1. Overview & Purpose
+   - MSAs as CMS "preferred method" of MSP compliance
+   - Preventing cost-shifting to Medicare
+   - Why non-compliance creates catastrophic client outcomes
+2. Key Legal Concepts and Rules
+   - MSA legal basis (Medicare Secondary Payer Act)
+   - When MSAs are triggered (eligibility + future medical damages claimed)
+   - Language that triggers requirements ("lifetime medical," "ongoing care," etc.)
+   - What MSAs must include (future Medicare-covered treatment categories)
+   - CMS approval thresholds (workers' comp vs. liability differences)
+   - Non-compliance consequences (entire settlement deemed primary)
+3. Practical Checklists and Procedures
+   - MSA Necessity Evaluation Checklist
+   - Certification of No Future Treatment: requirements and template elements
+   - MSA Reduction Strategies Checklist
+   - MSA Administration Options (lump sum vs. annuity, self vs. professional)
+4. Critical Data Points the AI Paralegal Must Capture
+   - Medicare eligibility status (current or expected within 30 months)
+   - Damages claimed in demand letters and pleadings
+   - Treating physician's prognosis for future care
+   - Client's rated age (if applicable)
+   - Current medications (generic availability)
+   - Recommended surgeries and client's election
+5. Red Flags and Escalation Triggers
+   - Settlement releases future medical without MSA analysis
+   - Certification of no future treatment contains qualifying language
+   - "Evidence-based" MSA used without CMS approval
+   - Client refuses to fund adequate MSA
+6. Example Applications / Scenarios
+   - MSA avoidance scenario (strong certification)
+   - MSA reduction scenario (rated age, generic medications)
+   - Non-compliance consequence example from sources
+
+Style:
+- Use clear, plain language suitable for training an AI paralegal or non-lawyer staff member.
+- Balance teaching the complex rules with providing actionable compliance procedures.
+- Avoid giving legal advice. Focus on evaluation, documentation, and compliance procedures.
+
+Constraints:
+- Base the content only on the supplied sources and reasonable inferences.
+- Note there is no formal CMS review for liability MSAs; explain current landscape.
+- If the sources are thin on a subtopic, say so briefly rather than inventing material.
+```
+
+---
+
+### Custom Report Prompt for "Lien Resolution Workflow & Ethical Duties"
+
+```
+You are generating a structured report titled "Lien Resolution Workflow & Ethical Duties" as part of an AI Paralegal education framework.
+
+Sources:
+- Use all relevant documents attached to this notebook. Focus on materials related to: lien resolution workflow steps, negotiation arguments and strategies, ethical rules (Rule 1.15 safekeeping, Rule 1.7 conflicts, Rule 5.3 supervision, Rule 1.4 communication), client communication practices, trust account management, disbursement procedures, government action risks against attorneys, and the case study showing multiple lien resolution.
+
+Goal of this report:
+- Provide the end-to-end operational workflow for lien resolution and comprehensive guidance on ethical obligations. The AI must understand the step-by-step process from identification through disbursement, master the negotiation arguments, and strictly follow the ethical rules governing client funds, conflicts of interest, and supervision of non-lawyers.
+
+Required sections:
+1. Overview & Purpose
+   - Lien resolution as critical practice area
+   - Ethical duties as strict liability (attorney risks)
+   - The AI's role in workflow compliance and ethical flagging
+2. Key Legal Concepts and Rules
+   - Lien Resolution Workflow (7 steps):
+     1. Identify potential liens
+     2. Verify validity and perfection
+     3. Classify the lien
+     4. Evaluate defenses and reductions
+     5. Negotiate with lienholders
+     6. Finalize settlement and lien agreement
+     7. Disburse funds ethically
+   - Ethical Rules:
+     - Rule 1.15: Safekeeping funds (prompt notification, segregation, hold disputed amounts, full accounting)
+     - Rule 1.7: Conflicts of interest (client vs. lienholder, referral arrangements)
+     - Rule 1.4: Communication (document advice, client signatures)
+     - Rule 5.3: Supervision of non-lawyers and vendors
+     - Rule 1.2: Scope of representation
+   - Government action risks (Medicare can sue attorneys, double damages)
+3. Practical Checklists and Procedures
+   - Complete Lien Resolution Workflow Checklist
+   - Ethical Compliance Checklist
+   - Client Communication Timeline
+   - Trust Account Disbursement Procedure
+   - Disputed Lien Handling Procedure
+4. Negotiation Arguments Toolkit
+   - Validity/perfection challenges
+   - Unreasonable and unrelated charges
+   - Pro-rata fee/cost reductions (Common Fund)
+   - Made Whole sympathy/hardship arguments
+   - Doubtful claim (litigation risk) arguments
+   - Limited policy and comparative fault arguments
+5. Critical Data Points the AI Paralegal Must Capture
+   - All identified liens and their classification
+   - Perfection status of each lien
+   - Negotiation communications and agreements
+   - Client acknowledgment of lien implications
+   - Trust account balance and disputed amounts
+   - Final lien resolution agreements
+6. Red Flags and Escalation Triggers
+   - Undisclosed lien discovered after settlement
+   - Client disputes paying valid lien
+   - Referral arrangement with medical provider
+   - Third-party vendor error in lien resolution
+   - Disbursement requested before liens resolved
+7. Example Applications / Scenarios
+   - Case study: Resolving multiple liens (from sources)
+   - Ethical dilemma scenario
+
+Style:
+- Use clear, plain language suitable for training an AI paralegal or non-lawyer staff member.
+- Primary operational document with comprehensive procedures and templates.
+- Avoid giving legal advice. Focus on workflow, procedures, and ethical compliance.
+
+Constraints:
+- Base the content only on the supplied sources and reasonable inferences.
+- If the sources are thin on a subtopic, say so briefly rather than inventing material.
+```
+
+---
+
+## Summary
+
+I've designed a **6-report modular framework** that transforms your lien education materials into an AI Paralegal Operating System backbone:
+
+| # | Report Title | Type | Primary Use |
+|---|--------------|------|-------------|
+| 1 | Lien Fundamentals & Classification | Training manual | Foundational knowledge at intake |
+| 2 | Statutory & Hospital Liens | Practical playbook | Validation and challenge procedures |
+| 3 | ERISA & Contractual Liens | Mixed: manual + playbook | Complex plan investigation and negotiation |
+| 4 | Government Health Benefits | Practical playbook | Medicare/Medicaid/VA/TRICARE procedures |
+| 5 | Medicare Set-Asides (MSAs) | Mixed: manual + playbook | MSA compliance and strategy |
+| 6 | Lien Resolution Workflow & Ethical Duties | Practical playbook | Master operational workflow |
+
+Each report is self-contained, covers coherent subject matter, and includes actionable checklists, procedures, and data capture requirements that can feed directly into AI paralegal operational workflows and prompts.
