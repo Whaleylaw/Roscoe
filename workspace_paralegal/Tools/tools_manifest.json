@@ -891,6 +891,300 @@
       "cost": "FREE",
       "token_savings": "Saves ~550-850 tokens",
       "added_date": "2025-11-25"
+    },
+    {
+      "name": "docusign_send",
+      "file": "esignature/docusign_send.py",
+      "description": "Send a document for electronic signature via DocuSign. Uses JWT authentication for secure server-to-server communication.",
+      "category": "esignature",
+      "input_format": "command_line",
+      "usage": "python /Tools/esignature/docusign_send.py <document_path> --signer-email <email> --signer-name <name> [--subject <subject>] [--anchor <anchor_string>]",
+      "examples": [
+        "python /Tools/esignature/docusign_send.py \"/case/retainer.pdf\" --signer-email \"client@email.com\" --signer-name \"John Smith\" --subject \"Retainer Agreement\"",
+        "python /Tools/esignature/docusign_send.py \"/case/hipaa.pdf\" -e \"client@email.com\" -n \"John Smith\" --anchor \"/sig1/\"",
+        "python /Tools/esignature/docusign_send.py \"/case/settlement.pdf\" -e \"client@email.com\" -n \"John Smith\" -e \"spouse@email.com\" -n \"Jane Smith\""
+      ],
+      "output_format": "JSON with envelope_id, status, sent timestamp",
+      "environment_requirements": [
+        "DOCUSIGN_INTEGRATION_KEY (configured)",
+        "DOCUSIGN_USER_ID (configured)",
+        "DOCUSIGN_ACCOUNT_ID (configured)",
+        "DOCUSIGN_PRIVATE_KEY_PATH (configured)"
+      ],
+      "dependencies": ["docusign-esign"],
+      "when_to_use": [
+        "Send retainer agreement for client signature",
+        "Send HIPAA authorization for signature",
+        "Send Medicare authorization for signature",
+        "Send settlement authorization for client signature",
+        "Send any document requiring electronic signature"
+      ],
+      "signature_anchors": {
+        "guide": "/Tools/esignature/SIGNATURE_PLACEMENT_GUIDE.md",
+        "quick_ref": {
+          "/sig1/": "Primary signer signature",
+          "/sig2/": "Second signer signature",
+          "/date1/": "Auto-populated date for signer 1",
+          "/date2/": "Auto-populated date for signer 2",
+          "/init1/": "Initials for signer 1"
+        },
+        "note": "First --signer-email maps to /sig1/, second to /sig2/, etc."
+      },
+      "cost": "Paid (DocuSign subscription)",
+      "token_savings": "Saves ~600-1000 tokens per signature request",
+      "added_date": "2025-12-08"
+    },
+    {
+      "name": "docusign_status",
+      "file": "esignature/docusign_status.py",
+      "description": "Check the status of a DocuSign envelope or list recent envelopes. Track whether documents have been signed.",
+      "category": "esignature",
+      "input_format": "command_line",
+      "usage": "python /Tools/esignature/docusign_status.py <envelope_id> [--recipients] OR python /Tools/esignature/docusign_status.py --list [--days N]",
+      "examples": [
+        "python /Tools/esignature/docusign_status.py abc123-def456 --pretty",
+        "python /Tools/esignature/docusign_status.py --list --days 30",
+        "python /Tools/esignature/docusign_status.py abc123 --recipients"
+      ],
+      "output_format": "JSON with envelope status, recipients, timestamps",
+      "environment_requirements": [
+        "DOCUSIGN_INTEGRATION_KEY (configured)",
+        "DOCUSIGN_USER_ID (configured)",
+        "DOCUSIGN_ACCOUNT_ID (configured)",
+        "DOCUSIGN_PRIVATE_KEY_PATH (configured)"
+      ],
+      "dependencies": ["docusign-esign"],
+      "when_to_use": [
+        "Check if client has signed a document",
+        "Follow up on unsigned documents",
+        "Update case status after signature received",
+        "List all pending signature requests",
+        "Monitor signature workflow progress"
+      ],
+      "cost": "Paid (DocuSign subscription)",
+      "token_savings": "Saves ~500-900 tokens per status check",
+      "added_date": "2025-12-08"
+    },
+    {
+      "name": "pip_waterfall",
+      "file": "insurance/pip_waterfall.py",
+      "description": "Determine the correct PIP insurer using Kentucky's statutory waterfall priority rules. Handles disqualification (uninsured owner) and KAC referral scenarios.",
+      "category": "insurance",
+      "input_format": "command_line",
+      "usage": "python /Tools/insurance/pip_waterfall.py --interactive OR python /Tools/insurance/pip_waterfall.py --client-on-title <yes/no> --vehicle-insured <yes/no> [options]",
+      "examples": [
+        "python /Tools/insurance/pip_waterfall.py --interactive --pretty",
+        "python /Tools/insurance/pip_waterfall.py --client-on-title no --vehicle-insured yes --vehicle-insurer \"State Farm\" --pretty",
+        "python /Tools/insurance/pip_waterfall.py --client-on-title no --vehicle-insured no --client-has-insurance yes --client-insurer \"GEICO\""
+      ],
+      "output_format": "JSON with pip_insurer, recommendation, next_steps, template_to_use",
+      "exit_codes": {
+        "0": "Normal PIP claim - insurer determined",
+        "1": "KAC required - no standard coverage",
+        "2": "Client DISQUALIFIED from PIP"
+      },
+      "when_to_use": [
+        "Opening a new MVA case - determine where to file PIP claim",
+        "Client was passenger in someone else's vehicle",
+        "Client was in uninsured vehicle",
+        "Client doesn't have their own auto insurance",
+        "Need to determine if client qualifies for Kentucky Assigned Claims"
+      ],
+      "waterfall_logic": [
+        "Step 1: Client on vehicle TITLE? If yes+insured → that insurer. If yes+uninsured → DISQUALIFIED",
+        "Step 2: Vehicle occupied insured? If yes → that insurer",
+        "Step 3: Client has own insurance? If yes → client's insurer",
+        "Step 4: Household member has insurance? If yes → their insurer",
+        "Step 5: None → Kentucky Assigned Claims Plan (KAC)"
+      ],
+      "kentucky_specific": true,
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE",
+      "token_savings": "Saves ~800-1200 tokens per PIP determination",
+      "added_date": "2025-12-08",
+      "gap_filled": "#6 PIP Claim Opening with Waterfall Logic"
+    },
+    {
+      "name": "settlement_calculator",
+      "file": "settlement/settlement_calculator.py",
+      "description": "Calculate settlement distributions and generate DocuSign-ready settlement statements. Handles attorney fees, medical bills with reductions, expenses, and liens.",
+      "category": "settlement",
+      "input_format": "command_line or JSON file",
+      "usage": "python /Tools/settlement/settlement_calculator.py --client-name NAME --settlement AMOUNT [options]",
+      "examples": [
+        "python /Tools/settlement/settlement_calculator.py --interactive --pretty",
+        "python /Tools/settlement/settlement_calculator.py --from-json /case/settlement_data.json --output-md /Reports/settlement_statement.md",
+        "python /Tools/settlement/settlement_calculator.py --client-name \"John Doe\" --settlement 50000 --bills '[{\"provider\": \"Dr. Smith\", \"amount\": 5000}]' --pretty"
+      ],
+      "output_format": "JSON calculation, markdown statement, or plain summary",
+      "docusign_anchors": {
+        "/sig1/": "Client signature",
+        "/date1/": "Date signed"
+      },
+      "when_to_use": [
+        "Case has settled - need to calculate distribution",
+        "Preparing settlement statement for client signature",
+        "Need to show client their net recovery",
+        "Sending settlement statement via DocuSign"
+      ],
+      "calculations": [
+        "Attorney fee = Settlement × Fee%",
+        "Net Medical Bills = Gross - Reductions",
+        "Net Liens = Gross - Reductions",
+        "Total to Client = Settlement - Fee - Bills - Expenses - Liens"
+      ],
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE",
+      "token_savings": "Saves ~1500-2000 tokens per settlement calculation",
+      "added_date": "2025-12-08",
+      "gap_filled": "#17 Settlement Statement Generator"
+    },
+    {
+      "name": "lexis_crash_order",
+      "file": "crash_reports/lexis_crash_order.py",
+      "description": "Automates ordering police/crash reports from LexisNexis BuyCrash using Playwright browser automation.",
+      "category": "crash_reports",
+      "input_format": "command_line",
+      "usage": "python /Tools/crash_reports/lexis_crash_order.py --report-number NUMBER [options]",
+      "examples": [
+        "python /Tools/crash_reports/lexis_crash_order.py --report-number \"12345\" --interactive",
+        "python /Tools/crash_reports/lexis_crash_order.py --report-number \"12345\" --last-name \"Smith\" --output /case/reports/"
+      ],
+      "output_format": "JSON with success, file_path, error fields",
+      "when_to_use": [
+        "Need to order a police/crash report from LexisNexis",
+        "Have a BuyCrash slip with report number",
+        "Client provided report number verbally",
+        "Starting a new MVA case"
+      ],
+      "first_time_setup": "Run with --interactive flag first to verify login works",
+      "dependencies": ["playwright"],
+      "setup_command": "pip install playwright && playwright install chromium",
+      "environment_requirements": ["LEXIS_USERNAME", "LEXIS_PASSWORD"],
+      "cost": "LexisNexis subscription (per-report cost)",
+      "token_savings": "Automates entire ordering workflow",
+      "added_date": "2025-12-08",
+      "gap_filled": "#4 Accident Report Ordering"
+    },
+    {
+      "name": "negotiation_tracker",
+      "file": "negotiation/negotiation_tracker.py",
+      "description": "Track offer/counteroffer history for PI negotiations. Records events, calculates gaps, monitors status.",
+      "category": "negotiation",
+      "input_format": "command_line",
+      "usage": "python /Tools/negotiation/negotiation_tracker.py --case CASE_NAME [action]",
+      "examples": [
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --status --pretty",
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --add-offer 25000 --from insurance --notes \"Initial offer\"",
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --settle 45000"
+      ],
+      "output_format": "JSON with status, current_position, gap analysis, and history",
+      "when_to_use": [
+        "Insurance makes an offer - record it",
+        "Sending counteroffer - record client position",
+        "Check current negotiation status",
+        "Case settles - record settlement"
+      ],
+      "tracks": [
+        "Demand date/amount",
+        "All offers with dates",
+        "Gap analysis ($ and %)",
+        "Days since activity",
+        "Settlement details"
+      ],
+      "data_storage": "/case_name/negotiation.json",
+      "database_sync": "--sync-from-db syncs initial data from insurance.json",
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE",
+      "token_savings": "Replaces context about negotiation history",
+      "added_date": "2025-12-08",
+      "gap_filled": "#15 Negotiation Tracking System"
+    },
+    {
+      "name": "checkin_tracker",
+      "file": "client/checkin_tracker.py",
+      "description": "Track bi-weekly client check-ins during treatment phase. Records treatment status, providers, and flags important changes.",
+      "category": "client",
+      "input_format": "command_line",
+      "usage": "python /Tools/client/checkin_tracker.py --case CASE_NAME [action]",
+      "examples": [
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --status --pretty",
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --checkin --still-treating --providers \"Dr. Smith\" --new-provider \"Pain Mgmt\" --pretty",
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --checkin --treatment-complete"
+      ],
+      "output_format": "JSON with status, providers, schedule, and flags",
+      "when_to_use": [
+        "Time for bi-weekly client check-in",
+        "Client reports new provider",
+        "Client reports treatment complete",
+        "Check if check-in is overdue"
+      ],
+      "auto_flags": [
+        "NEW_PROVIDER → Triggers provider setup",
+        "DISCHARGED → Request final records",
+        "TREATMENT_COMPLETE → Ready for demand",
+        "HIGH_PAIN → Document pain level 8-10",
+        "NOT_WORKING → Wage loss needed",
+        "TREATMENT_GAP → >30 days since check-in"
+      ],
+      "data_storage": "/case_name/checkins.json",
+      "database_sync": "--sync-providers syncs provider list from medical_providers.json",
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE",
+      "added_date": "2025-12-08",
+      "gap_filled": "#9 Client Check-in Automation"
+    },
+    {
+      "name": "case_data_adapter",
+      "file": "_adapters/case_data.py",
+      "description": "Unified adapter for reading/writing to existing case database (medical_providers, insurance, liens, notes). Used by other tools for database integration.",
+      "category": "_adapters",
+      "input_format": "command_line or Python import",
+      "usage": "python /Tools/_adapters/case_data.py --case CASE_NAME [action]",
+      "examples": [
+        "python /Tools/_adapters/case_data.py --case \"Smith-MVA\" --summary --pretty",
+        "python /Tools/_adapters/case_data.py --case \"Smith-MVA\" --providers --pretty",
+        "python /Tools/_adapters/case_data.py --case \"Smith-MVA\" --insurance --pretty",
+        "python /Tools/_adapters/case_data.py --case \"Smith-MVA\" --liens --pretty"
+      ],
+      "python_usage": [
+        "from _adapters.case_data import CaseData",
+        "case = CaseData('Smith-MVA')",
+        "providers = case.medical_providers",
+        "case.add_note('Note text', note_type='Update')",
+        "case.save()"
+      ],
+      "output_format": "JSON with case summary, providers, insurance, liens, notes",
+      "when_to_use": [
+        "Get overview of case data",
+        "List providers and their status",
+        "Check insurance claims and negotiations",
+        "View lien totals",
+        "Add activity notes"
+      ],
+      "data_sources": [
+        "Database/medical_providers.json - Provider tracking",
+        "Database/insurance.json - Claims, negotiations",
+        "Database/liens.json - Lien amounts",
+        "Database/notes.json - Activity log",
+        "Database/case_overview.json - Case metadata"
+      ],
+      "features": [
+        "Automatic project filtering by case name",
+        "Excel date conversion to ISO format",
+        "Provider status derivation (Active/Complete)",
+        "BI/PIP/UIM claim filtering",
+        "Active negotiation detection",
+        "Totals calculation (bills, liens)"
+      ],
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE",
+      "added_date": "2025-12-08"
     }
   ],
   "planned_tools": [

@@ -42,6 +42,21 @@ from langchain.agents.middleware import AgentMiddleware
 # Configure logger
 logger = logging.getLogger(__name__)
 
+# Import workflow state computer (lazy load to avoid circular imports)
+_workflow_state_computer = None
+
+def get_workflow_state_computer():
+    """Lazy load workflow state computer."""
+    global _workflow_state_computer
+    if _workflow_state_computer is None:
+        try:
+            from roscoe.core.workflow_state_computer import compute_workflow_state
+            _workflow_state_computer = compute_workflow_state
+        except ImportError as e:
+            logger.warning(f"[WORKFLOW STATE] Could not import workflow_state_computer: {e}")
+            _workflow_state_computer = lambda x: None
+    return _workflow_state_computer
+
 
 class CaseContextMiddleware(AgentMiddleware):
     """
@@ -596,38 +611,103 @@ class CaseContextMiddleware(AgentMiddleware):
         - insurance.json
         - liens.json
         - medical_providers.json
+        
+        Falls back to CaseData adapter for centralized database when 
+        per-project directories don't exist.
         """
+        context = {}
+        
+        # Try per-project directory first
         case_dir = self.projects_dir / project_name
-        if not case_dir.exists():
-            logger.warning(f"[CASE CONTEXT] Case directory not found: {case_dir}")
+        if case_dir.exists():
+            for filename in self.CONTEXT_FILES:
+                file_path = case_dir / filename
+                if file_path.exists():
+                    try:
+                        with open(file_path) as f:
+                            data = json.load(f)
+                            # Handle nested jsonb_agg structure from overview.json
+                            if isinstance(data, list) and len(data) > 0:
+                                if isinstance(data[0], dict) and 'jsonb_agg' in data[0]:
+                                    # Flatten jsonb_agg structure
+                                    data = data[0]['jsonb_agg']
+                                    if isinstance(data, list) and len(data) > 0:
+                                        data = data[0]
+                            context[filename.replace('.json', '')] = data
+                    except Exception as e:
+                        logger.error(f"[CASE CONTEXT] Error loading {file_path}: {e}")
+            if context:
+                return context
+        
+        # Fall back to centralized database via CaseData adapter
+        try:
+            import sys
+            tools_path = str(self.workspace_dir / "Tools")
+            if tools_path not in sys.path:
+                sys.path.insert(0, tools_path)
+            
+            from _adapters.case_data import CaseData
+            
+            case_data = CaseData(project_name)
+            
+            # Build context from CaseData
+            context = {
+                'overview': case_data.overview,
+                'medical_providers': case_data.medical_providers,
+                'insurance': case_data.insurance_claims,
+                'liens': case_data.liens,
+            }
+            
+            # Add client name to overview if missing
+            if context['overview'] and not context['overview'].get('client_name'):
+                context['overview']['client_name'] = case_data.client_name
+            
+            logger.info(f"[CASE CONTEXT] Loaded {project_name} from centralized database")
+            return context
+            
+        except Exception as e:
+            logger.warning(f"[CASE CONTEXT] Failed to load {project_name} via CaseData: {e}")
             return {}
 
-        context = {}
-
-        for filename in self.CONTEXT_FILES:
-            file_path = case_dir / filename
-            if file_path.exists():
-                try:
-                    with open(file_path) as f:
-                        data = json.load(f)
-                        # Handle nested jsonb_agg structure from overview.json
-                        if isinstance(data, list) and len(data) > 0:
-                            if isinstance(data[0], dict) and 'jsonb_agg' in data[0]:
-                                # Flatten jsonb_agg structure
-                                data = data[0]['jsonb_agg']
-                                if isinstance(data, list) and len(data) > 0:
-                                    data = data[0]
-                        context[filename.replace('.json', '')] = data
-                except Exception as e:
-                    logger.error(f"[CASE CONTEXT] Error loading {file_path}: {e}")
-
-        return context
+    def _compute_workflow_state(self, project_name: str) -> str:
+        """
+        Compute workflow state for a case and return formatted status.
+        
+        Uses the WorkflowStateComputer to derive:
+        - Current phase and progress
+        - Completed/in-progress/pending workflows
+        - Blockers (external waits, user actions needed)
+        - Next actions with linked skills/tools
+        
+        Returns formatted markdown string for injection.
+        """
+        try:
+            compute_fn = get_workflow_state_computer()
+            if compute_fn is None:
+                return ""
+            
+            state = compute_fn(project_name)
+            if state is None:
+                logger.warning(f"[WORKFLOW STATE] No state computed for {project_name}")
+                return ""
+            
+            # Return the pre-formatted status
+            formatted = getattr(state, 'formatted_status', '')
+            if formatted:
+                logger.info(f"[WORKFLOW STATE] Computed state for {project_name}: phase={state.current_phase}")
+                print(f"📊 [WORKFLOW STATE] Computed state for {project_name}: phase={state.current_phase}", flush=True)
+            return formatted
+            
+        except Exception as e:
+            logger.error(f"[WORKFLOW STATE] Error computing state for {project_name}: {e}")
+            return ""
 
     def _format_context_for_injection(self, detected_cases: List[Dict]) -> str:
         """
         Format detected case contexts for system prompt injection.
 
-        Returns formatted markdown string with all relevant case information.
+        Returns formatted markdown string with all relevant case information,
+        including computed workflow state with next actions.
         """
         if not detected_cases:
             return ""
@@ -779,6 +859,11 @@ class CaseContextMiddleware(AgentMiddleware):
                         case_section += "\n"
                 case_section += "\n"
 
+            # Compute and append workflow state
+            workflow_status = self._compute_workflow_state(project_name)
+            if workflow_status:
+                case_section += "\n" + workflow_status + "\n"
+
             sections.append(case_section)
 
         if not sections:
@@ -791,33 +876,42 @@ class CaseContextMiddleware(AgentMiddleware):
         client_names = [c['client_name'] for c in detected_cases if c.get('client_name')]
         client_list = " and ".join(client_names) if client_names else "the client"
         
-        # Auto-UI instruction - tells agent to use render_ui_script for visual display
-        auto_ui_instruction = f"""
+        # Workflow-centric instruction - tells agent to follow workflows and use skills/tools
+        workflow_instruction = f"""
 ---
 
-## 🎯 AUTO-GENERATE UI INSTRUCTION
+## 🎯 WORKFLOW-GUIDED ACTIONS
 
-**IMPORTANT**: Case context for {client_list} has been automatically loaded above. You SHOULD now:
+**Case context and workflow status for {client_list} has been automatically loaded above.**
 
-1. **DO NOT make additional tool calls** to fetch case information - it's already above!
-2. **Call `render_ui_script`** to display this information visually
-3. Use the appropriate UI script based on what the user asked for
+### How to Use This Context
 
-**Available UI scripts** (call via `render_ui_script`):
-- `UI/case_dashboard.py` - Full case dashboard with all sections
-- `UI/case_snapshot.py` - Quick case summary (client, status, financials)
-- `UI/medical_overview.py` - Medical providers with document links
-- `UI/insurance_overview.py` - Insurance coverage with documents
-- `UI/liens.py` - All liens for the case
-- `UI/expenses.py` - All expenses for the case
-- `UI/negotiations.py` - Active negotiations
+1. **Review the Workflow Status section** - it shows:
+   - Current phase and progress
+   - Active workflows with linked skills/tools
+   - Blockers requiring attention
+   - Recommended next actions
 
-Example: `render_ui_script("UI/case_dashboard.py", ["--project-name", "{client_list}"])`
+2. **Follow workflow-driven actions** - When proposing next steps:
+   - Prefer actions listed in "Next Actions" (they include skill/tool references)
+   - Use linked checklists for multi-step processes
+   - Address blockers when user can unblock them
 
-If user just mentions a case without specific request, use `case_dashboard.py` for a comprehensive view.
+3. **Use the linked resources**:
+   - **Skills**: Load skill files for specialized guidance (e.g., `/Skills/medical-chronology/skill.md`)
+   - **Tools**: Execute via shell (e.g., `python /Tools/negotiation/negotiation_tracker.py`)
+   - **Checklists**: Reference for manual workflows (e.g., `/workflow_engine/checklists/bi_claim_opening.md`)
+   - **Templates**: Generate documents (e.g., `/forms/insurance/BI/lor_to_bi_adjuster_TEMPLATE.md`)
+
+4. **Blocker handling**:
+   - `[external]` blockers: Inform user about wait status, suggest follow-up timing
+   - `[user]` blockers: Provide specific information/steps needed from user
+   - `[agent]` blockers: Take action using available skills/tools
+
+**DO NOT manipulate workflow state directly** - state is derived from case data.
 """
         
-        return header + "\n---\n\n".join(sections) + auto_ui_instruction
+        return header + "\n---\n\n".join(sections) + workflow_instruction
 
     def _sanitize_messages(self, messages: List) -> List:
         """

@@ -15,7 +15,10 @@
         "injury documentation",
         "medical case analysis"
       ],
-      "model_required": "sonnet"
+      "model_required": "sonnet",
+      "canonical_phase": "demand_in_progress",
+      "canonical_workflow": "gather_demand_materials",
+      "canonical_skill": "extract_medical_data"
     },
     {
       "name": "fact-investigation",
@@ -40,6 +43,35 @@
         "multimodal analysis"
       ],
       "model_required": "gemini-3-pro"
+    },
+    {
+      "name": "police-report-analysis",
+      "description": "Use when analyzing Kentucky police/collision reports - extracts parties, insurance info, liability indicators, red flags, and PIP-relevant ownership data. Includes Kentucky code reference for decoding report fields.",
+      "file": "police-report-analysis/skill.md",
+      "triggers": [
+        "police report",
+        "collision report",
+        "accident report",
+        "crash report",
+        "buycrash",
+        "extract from police report",
+        "analyze accident report",
+        "who was at fault",
+        "insurance from report",
+        "liability analysis"
+      ],
+      "model_required": "sonnet",
+      "canonical_phase": "file_setup",
+      "canonical_workflow": "accident_report",
+      "supporting_files": [
+        "police-report-analysis/kentucky_codes.md",
+        "police-report-analysis/output_template.md"
+      ],
+      "output_location": "/Reports/extractions/police_report_{{REPORT_NUMBER}}.md",
+      "feeds_into": [
+        "/Tools/insurance/pip_waterfall.py",
+        "/workflow_engine/checklists/bi_claim_opening.md"
+      ]
     },
     {
       "name": "medical-organization",
@@ -180,7 +212,10 @@
         "messy files",
         "file management"
       ],
-      "model_required": "sonnet"
+      "model_required": "sonnet",
+      "canonical_phase": "file_setup",
+      "canonical_workflow": "intake",
+      "canonical_skill": "organize_case_files"
     },
     {
       "name": "import-case-documents",
@@ -201,7 +236,10 @@
         "pdf batch processing"
       ],
       "model_required": "sonnet",
-      "tools_required": ["/Tools/import_documents.py", "/Tools/read_pdf.py"]
+      "tools_required": ["/Tools/import_documents.py", "/Tools/read_pdf.py"],
+      "canonical_phase": "file_setup",
+      "canonical_workflow": "intake",
+      "canonical_skill": "import_documents"
     },
     {
       "name": "courtlistener-legal-research",
@@ -258,7 +296,10 @@
         "kentucky_state": ["Kentucky Supreme Court (ky)", "Kentucky Court of Appeals (kyctapp)"],
         "kentucky_federal": ["E.D. Kentucky (ked)", "W.D. Kentucky (kwd)", "6th Circuit (ca6)"],
         "coverage_notes": "Excellent coverage of appellate courts. Limited trial court coverage."
-      }
+      },
+      "canonical_phase": "discovery",
+      "canonical_workflow": "propound_discovery",
+      "applicable_phases": ["complaint", "discovery", "trial_prep"]
     },
     {
       "name": "multimedia-evidence-trigger",
@@ -329,7 +370,10 @@
         "medical treatment timeline"
       ],
       "model_required": "sonnet",
-      "tools_required": [],
+      "tools_required": [
+        "/Tools/medical_chronology/chronology_generate_pdf.py",
+        "/Tools/medical_chronology/chronology_merge_with_records.py"
+      ],
       "use_cases": [
         "Create standalone medical chronology from extraction reports",
         "Synthesize treatment timeline for settlement demand",
@@ -344,7 +388,40 @@
       "outputs": [
         "/Reports/chronology.md - Full narrative chronology",
         "/Reports/visits_summary.md - Structured tabular data"
-      ]
+      ],
+      "canonical_phase": "demand_in_progress",
+      "canonical_workflow": "gather_demand_materials",
+      "canonical_skill": "complete_chronology"
+    },
+    {
+      "name": "calendar-scheduling",
+      "description": "Use when managing calendar events, deadlines, reminders, or scheduling tasks - handles SOL tracking, client check-ins, discovery deadlines, depositions, mediation, and trial dates",
+      "file": "calendar-scheduling/skill.md",
+      "triggers": [
+        "calendar",
+        "schedule",
+        "deadline",
+        "reminder",
+        "appointment",
+        "SOL",
+        "statute of limitations",
+        "check-in",
+        "follow-up",
+        "deposition",
+        "mediation",
+        "trial date",
+        "discovery deadline"
+      ],
+      "model_required": "sonnet",
+      "tools_required": [
+        "/Tools/calendar/calendar_add_event.py",
+        "/Tools/calendar/calendar_list_events.py",
+        "/Tools/calendar/calendar_update_event.py",
+        "/Tools/calendar/calendar_delete_event.py"
+      ],
+      "canonical_phase": "file_setup",
+      "canonical_workflow": "intake",
+      "applicable_phases": ["file_setup", "treatment", "demand_in_progress", "negotiation", "complaint", "discovery", "mediation", "trial_prep", "trial"]
     }
   ]
 }
