@@ -39,6 +39,8 @@ dependencies = [
     # Word document template filling and PDF generation
     "python-docx>=1.1.0",  # Read/write .docx files
     "docxtpl>=0.18.0",     # Jinja2 template filling for .docx
+    # CopilotKit for UI integration (copilotkit pins ag-ui-langgraph version)
+    "copilotkit>=0.1.73",
 ]
 
 [tool.setuptools]
