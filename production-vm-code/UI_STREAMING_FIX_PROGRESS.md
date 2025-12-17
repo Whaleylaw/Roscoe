@@ -8,10 +8,16 @@
 **❌ DevTools not appearing**: Lower-right corner should show DevTools modal but doesn't
 **❌ Debug logs not appearing**: No [Custom Runtime] or [RenderCalendarTool] logs in console
 
-**CRITICAL DISCOVERY**: Despite deploying custom runtime code, the browser is still using the old `@assistant-ui/react-langgraph` library runtime. This means:
-- Next.js build might have cached old client-side code
-- OR import path issue preventing custom runtime from loading
-- OR JavaScript error silently failing custom runtime initialization
+**CRITICAL DISCOVERY**: The app renders `Workbench` (not `Assistant`), which uses the LIBRARY runtime!
+- `page.tsx` renders `<Workbench />`
+- `workbench.tsx:215` uses `useLangGraphRuntime` from `@assistant-ui/react-langgraph`
+- `assistant.tsx` with custom runtime is NEVER used
+- All changes to `assistant.tsx` and `useCustomLangGraphRuntime.tsx` have NO effect!
+
+**ROOT CAUSE FOUND**:
+- Library runtime with `stream_mode: ["values"]` doesn't handle tool results (issue #2166)
+- Changed to `stream_mode: ["messages"]` which library CAN handle
+- This should allow tool results to flow to `RenderCalendarTool` component
 
 ---
 
@@ -168,6 +174,33 @@ docker exec roscoe-agents cp /deps/Roscoe/... /deps/roscoe/...
 ```
 
 **Proper Fix**: Rebuild roscoe image OR fix volume mount path
+
+---
+
+## Latest Fix (December 17, 15:20 UTC)
+
+### Discovery: Wrong Runtime Being Used
+All work on `useCustomLangGraphRuntime` was wasted because:
+- `page.tsx` renders `<Workbench />`, not `<Assistant />`
+- `workbench.tsx` uses library's `useLangGraphRuntime`
+- Custom runtime code never executes
+
+### The Real Fix
+Changed `chatApi.ts` line 46:
+- **FROM**: `stream_mode: ["values"]` (library can't handle this)
+- **TO**: `stream_mode: ["messages"]` (library CAN handle this)
+
+This should fix the tool rendering issue because:
+1. Library runtime processes "messages" events correctly
+2. Tool results flow through as proper message parts
+3. `RenderCalendarTool` component gets proper tool-call and tool-result data
+4. useEffect triggers and executes workbench commands
+
+### Testing Status
+🔄 **Building now** (as of 15:20 UTC)
+- UI container will restart with `["messages"]` stream mode
+- Should see tool UI card render properly
+- Calendar should populate with events
 
 ---
 
