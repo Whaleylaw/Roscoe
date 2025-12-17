@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { useWorkbenchStore } from "@/lib/workbench-store";
 import { ArtifactCanvas } from "@/components/artifacts/artifact-canvas";
 import { useCopilotArtifactTools } from "@/lib/copilotkit-artifact-tools";
+import { useCopilotWorkspaceTools } from "@/lib/copilotkit-workspace-tools";
 
 // Import all artifact components to register them
 import "@/components/artifacts/contact-card";
@@ -24,6 +25,9 @@ export function Workbench() {
 
   // Enable artifact tools
   useCopilotArtifactTools();
+
+  // Enable workspace tools
+  useCopilotWorkspaceTools();
 
   const centerView = useWorkbenchStore((s) => s.centerView);
   const setCenterView = useWorkbenchStore((s) => s.setCenterView);
