@@ -41,10 +41,9 @@ export const sendMessage = async (params: {
   command?: LangGraphCommand | undefined;
 }) => {
   const client = createClient();
-  // Use ONLY "values" mode which sends complete state snapshots
-  // This avoids partial streaming issues and metadata events that freeze the UI
-  // See: https://github.com/assistant-ui/assistant-ui/issues/2166
-  const streamMode: ("messages" | "updates" | "values")[] = ["values"];
+  // Use "messages" mode - library runtime can handle this
+  // "values" mode causes tool results to be ignored (issue #2166)
+  const streamMode: ("messages" | "updates" | "values")[] = ["messages"];
   const payload = {
     input: params.messages?.length
       ? {

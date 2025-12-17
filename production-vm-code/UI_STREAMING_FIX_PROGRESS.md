@@ -1,9 +1,17 @@
 # UI Streaming Fix Progress - December 17, 2025
 
-## Current Status: PARTIAL SUCCESS
+## Current Status: LIBRARY RUNTIME STILL IN USE
 
 **✅ No longer freezing**: UI streams without hanging
 **❌ Calendar not rendering**: Tool UI component not executing workbench commands
+**❌ Custom runtime not being used**: Console shows library runtime warnings ("Unhandled event received: values")
+**❌ DevTools not appearing**: Lower-right corner should show DevTools modal but doesn't
+**❌ Debug logs not appearing**: No [Custom Runtime] or [RenderCalendarTool] logs in console
+
+**CRITICAL DISCOVERY**: Despite deploying custom runtime code, the browser is still using the old `@assistant-ui/react-langgraph` library runtime. This means:
+- Next.js build might have cached old client-side code
+- OR import path issue preventing custom runtime from loading
+- OR JavaScript error silently failing custom runtime initialization
 
 ---
 
