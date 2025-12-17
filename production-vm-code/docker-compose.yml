@@ -1,0 +1,179 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: roscoe-postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+    - 5432:5432
+    volumes:
+    - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - pg_isready -U postgres
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+    - roscoe-network
+  redis:
+    image: redis:7-alpine
+    container_name: roscoe-redis
+    ports:
+    - 6379:6379
+    volumes:
+    - redis_data:/data
+    healthcheck:
+      test:
+      - CMD
+      - redis-cli
+      - ping
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+    - roscoe-network
+  roscoe:
+    image: roscoe-agents:local
+    container_name: roscoe-agents
+    ports:
+    - 8123:8000
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+      TAVILY_API_KEY: ${TAVILY_API_KEY:-}
+      THESYS_API_KEY: ${THESYS_API_KEY}
+      LANGCHAIN_TRACING_V2: 'true'
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN:-}
+      SLACK_APP_TOKEN: ${SLACK_APP_TOKEN:-}
+      SLACK_DEFAULT_CHANNEL: '#legal-updates'
+      LANGGRAPH_API_URL: http://localhost:8000
+      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY:-}
+      LANGCHAIN_PROJECT: ${LANGCHAIN_PROJECT:-roscoe-local}
+      DATABASE_URI: postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
+      REDIS_URI: redis://redis:6379
+      WORKSPACE_DIR: /app/workspace_paralegal
+      WORKSPACE_ROOT: /mnt/workspace
+      GOOGLE_CREDENTIALS_FILE: /deps/Roscoe/credentials.json
+      GOOGLE_TOKEN_FILE: /deps/Roscoe/token.json
+      KYECOURTS_USERNAME: ${KYECOURTS_USERNAME:-}
+      KYECOURTS_PASSWORD: ${KYECOURTS_PASSWORD:-}
+      LANGGRAPH_DEPLOYMENT: 'true'
+      LANGGRAPH_RECURSION_LIMIT: '500'
+      PYTHONUNBUFFERED: 1
+    volumes:
+    - /mnt/workspace:/app/workspace_paralegal
+    - /mnt/workspace:/mnt/workspace
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /home/aaronwhaley/roscoe/src/roscoe:/deps/Roscoe/src/roscoe
+    - /home/aaronwhaley/roscoe/credentials.json:/deps/Roscoe/credentials.json
+    - /home/aaronwhaley/roscoe/token.json:/deps/Roscoe/token.json
+    networks:
+    - roscoe-network
+    restart: unless-stopped
+    entrypoint:
+    - /storage/entrypoint.sh
+  uploads:
+    image: roscoe-agents:local
+    container_name: roscoe-uploads
+    ports:
+    - 8125:8125
+    environment:
+      # Write uploads into the GCS-backed mount
+      WORKSPACE_ROOT: /mnt/workspace
+      UPLOADS_BASE_DIR: uploads/inbox
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-50}
+      # Optional: set UPLOAD_TOKEN in .env and send it as X-Upload-Token header
+      UPLOAD_TOKEN: ${UPLOAD_TOKEN:-}
+      PYTHONPATH: /deps/Roscoe/src
+    volumes:
+    - /mnt/workspace:/mnt/workspace
+    - /home/aaronwhaley/roscoe/src/roscoe:/deps/Roscoe/src/roscoe
+    networks:
+    - roscoe-network
+    restart: unless-stopped
+    entrypoint: []
+    command: ["python", "-m", "uvicorn", "roscoe.upload_service:app", "--host", "0.0.0.0", "--port", "8125"]
+  copilotkit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: roscoe-copilotkit
+    ports:
+    - 8124:8124
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      LANGGRAPH_DEPLOYMENT: 'true'
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+      TAVILY_API_KEY: ${TAVILY_API_KEY:-}
+      THESYS_API_KEY: ${THESYS_API_KEY:-}
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+      LANGCHAIN_TRACING_V2: ${LANGCHAIN_TRACING_V2:-true}
+      LANGCHAIN_PROJECT: ${LANGCHAIN_PROJECT:-roscoe-local}
+      DATABASE_URI: postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
+      REDIS_URI: redis://redis:6379
+      WORKSPACE_ROOT: /mnt/workspace
+      WORKSPACE_DIR: /mnt/workspace
+      PYTHONUNBUFFERED: 1
+    volumes:
+    - /mnt/workspace:/mnt/workspace:ro
+    - /home/aaronwhaley/roscoe/src/roscoe:/deps/Roscoe/src/roscoe
+    networks:
+    - roscoe-network
+    restart: unless-stopped
+    command: python -m roscoe.copilotkit_server
+  ui:
+    build:
+      context: ./ui
+      args:
+        NEXT_PUBLIC_LANGGRAPH_API_URL: /api
+        NEXT_PUBLIC_LANGGRAPH_ASSISTANT_ID: roscoe_paralegal
+    container_name: roscoe-ui
+    ports:
+    - 3001:3000
+    depends_on:
+      roscoe:
+        condition: service_started
+    environment:
+      # Proxy target for Next.js API route
+      # The UI and LangGraph API are on the same Docker network; use service DNS.
+      LANGGRAPH_API_URL: http://roscoe:8000
+      # CopilotKit endpoint (new)
+      COPILOTKIT_LANGGRAPH_URL: http://copilotkit:8124
+      # Local workspace mount for file browsing/viewing
+      WORKSPACE_ROOT: /mnt/workspace
+      # Public variables used by the browser runtime
+      NEXT_PUBLIC_LANGGRAPH_API_URL: /api
+      NEXT_PUBLIC_LANGGRAPH_ASSISTANT_ID: roscoe_paralegal
+      # Optional for secured LangGraph Cloud endpoints
+      LANGCHAIN_API_KEY: ${LANGCHAIN_API_KEY:-}
+    volumes:
+    - /mnt/workspace:/mnt/workspace:ro
+    networks:
+    - roscoe-network
+    restart: unless-stopped
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+networks:
+  roscoe-network:
+    driver: bridge
