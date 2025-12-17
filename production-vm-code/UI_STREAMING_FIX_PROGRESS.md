@@ -1,5 +1,17 @@
 # UI Streaming Fix Progress - December 17, 2025
 
+## FINAL STATUS: VERSION MISMATCH BREAKS STREAMING
+
+**Date**: December 17, 2025, 15:35 UTC
+**Root Cause FOUND**: LangChain/LangGraph v1 message format incompatible with assistant-ui v0.7.12
+
+### The Version Mismatch
+- **UI Library**: `@assistant-ui/react-langgraph` v0.7.12 (expects v0 message format)
+- **SDK**: `@langchain/langgraph-sdk` v1.2.0 (sends v1 message format with standard content blocks)
+- **Backend**: LangGraph v1.x (sends new standard content block format)
+
+**The Problem**: assistant-ui v0.7.12 was built BEFORE LangChain/LangGraph v1. It expects the old v0 message format. When it receives v1 messages with standard content blocks, it can't parse tool calls/results properly → freeze!
+
 ## FINAL STATUS: LIBRARY RUNTIME IS INCOMPATIBLE
 
 **Date**: December 17, 2025, 15:32 UTC
@@ -17,8 +29,31 @@
 ### Root Cause
 The app uses `useLangGraphRuntime` from `@assistant-ui/react-langgraph` in `workbench.tsx:215`. This library has a critical bug (issue #2166) where it cannot process tool results from LangGraph's streaming API.
 
-### Only Solution
-**Replace library runtime with custom implementation in workbench.tsx**
+### Possible Solutions
+
+**Option 1: Upgrade assistant-ui Library** (EASIEST)
+Check if there's a newer version of `@assistant-ui/react-langgraph` that supports LangChain v1:
+```bash
+npm install @assistant-ui/react-langgraph@latest
+```
+
+**Option 2: Downgrade LangGraph SDK** (RISKY)
+Downgrade to v0.x format that matches assistant-ui v0.7.12:
+```bash
+npm install @langchain/langgraph-sdk@0.x
+```
+But this might break other things!
+
+**Option 3: Custom Runtime** (MOST WORK)
+Replace `useLangGraphRuntime` in `workbench.tsx` with custom implementation that handles v1 format
+
+**Option 4: Backend Output Version** (WORTH TRYING)
+Set backend to output v0 format:
+```python
+# Set environment variable
+LC_OUTPUT_VERSION=v0
+```
+Or configure model with `output_version="v0"`
 
 All work on `useCustomLangGraphRuntime.tsx` was wasted because `assistant.tsx` is never rendered - the app uses `workbench.tsx` instead.
 
