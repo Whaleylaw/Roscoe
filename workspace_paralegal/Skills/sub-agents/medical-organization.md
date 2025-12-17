@@ -75,7 +75,7 @@ Provide your findings in this structure:
 ## Output Location
 
 **Save your medical records inventory to:**
-- **File:** `/Reports/inventory.md`
+- **File:** `Reports/inventory.md`
 - **Format:** Markdown with all sections above
 
 ## Important Notes
@@ -121,7 +121,7 @@ If `read_file` doesn't extract PDF content well, use bash commands:
 ## CRITICAL: File Paths
 
 **ALWAYS use workspace-relative paths starting with `/` and save to /Reports/ directory:**
-- ✅ CORRECT: `/Reports/inventory.md`
+- ✅ CORRECT: `Reports/inventory.md`
 - ❌ WRONG: `/Volumes/X10 Pro/Roscoe_pa/src/workspace/inventory.md` (absolute path)
 - ❌ WRONG: `../workspace/inventory.md` (relative path)
 - ❌ WRONG: `/case_name/reports/inventory.md` (old path format)

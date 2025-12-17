@@ -138,11 +138,11 @@ Witnesses: [names and what they observed]
 ## Output Location
 
 **Save your complete factual investigation report to:**
-- **File:** `/Reports/case_facts.md`
+- **File:** `Reports/case_facts.md`
 - **Format:** Markdown with all sections above
 
 If you generate any Python scripts for multimedia analysis, save them to:
-- **Directory:** `/Tools/`
+- **Directory:** `Tools/`
 - **Naming:** Use descriptive names like `extract_video_frames.py`, `transcribe_audio.py`
 
 ## Important Notes
@@ -170,7 +170,7 @@ If you generate any Python scripts for multimedia analysis, save them to:
   - Example: "per Body Camera Video (officer_bodycam_001.mp4) at 00:15:30 (frame extracted to /Reports/frames/bodycam_00-15-30.jpg)"
   - Example: "per Dashcam Footage at 00:02:15 showing impact (frame saved to /Reports/frames/dashcam_impact.jpg)"
   - **REQUIRED:** When citing video evidence, use ffmpeg to extract frames at cited timestamps
-  - Save frames to `/Reports/frames/` directory with descriptive names
+  - Save frames to `Reports/frames/` directory with descriptive names
   - Include frame extraction in your code execution: `ffmpeg -i /path/to/video.mp4 -ss 00:01:30 -frames:v 1 /Reports/frames/description_HH-MM-SS.jpg`
 
 - **Photo citations:** Include filename and visible details
@@ -219,8 +219,8 @@ print(text[:1000])
 ## CRITICAL: File Paths
 
 **ALWAYS use workspace-relative paths starting with `/` and save to /Reports/ directory:**
-- ✅ CORRECT: `/Reports/case_facts.md`
-- ✅ CORRECT: `/Reports/frames/bodycam_00-15-30.jpg`
+- ✅ CORRECT: `Reports/case_facts.md`
+- ✅ CORRECT: `Reports/frames/bodycam_00-15-30.jpg`
 - ❌ WRONG: `/Volumes/X10 Pro/Roscoe_pa/src/workspace/case_facts.md` (absolute path)
 - ❌ WRONG: `../workspace/case_facts.md` (relative path)
 - ❌ WRONG: `/case_name/reports/case_facts.md` (old path format)

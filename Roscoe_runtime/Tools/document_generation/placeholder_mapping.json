@@ -1,0 +1,348 @@
+{
+  "version": "1.0.0",
+  "description": "Maps template placeholders to database field paths. Supports special prefixes: @computed, @static, @context",
+  "mappings": {
+    "TODAY_LONG": {
+      "type": "computed",
+      "format": "date_long",
+      "description": "Current date in long format (e.g., December 9, 2025)"
+    },
+    "TODAY": {
+      "type": "computed",
+      "format": "date_short",
+      "description": "Current date in short format (e.g., 12/09/2025)"
+    },
+    "incidentDate": {
+      "type": "database",
+      "source": "case_overview",
+      "field": "accident_date",
+      "format": "date_long",
+      "description": "Date of incident/accident"
+    },
+    "id": {
+      "type": "database",
+      "source": "case_overview",
+      "field": "project_name",
+      "description": "Case ID / project name"
+    },
+    "client.name": {
+      "type": "database",
+      "source": "case_overview",
+      "field": "client_name",
+      "description": "Client full name"
+    },
+    "client.firstname": {
+      "type": "computed",
+      "source": "case_overview",
+      "field": "client_name",
+      "transform": "first_name",
+      "description": "Client first name only"
+    },
+    "client.address1Block": {
+      "type": "database",
+      "source": "case_overview",
+      "field": "client_address",
+      "description": "Client address block"
+    },
+    "client.addressBlock": {
+      "type": "database",
+      "source": "case_overview",
+      "field": "client_address",
+      "description": "Client full address block"
+    },
+    "client.birthDate": {
+      "type": "database",
+      "source": "clients",
+      "field": "dob",
+      "format": "date_short",
+      "match_field": "project_name",
+      "description": "Client date of birth"
+    },
+    "client.custom.ssn": {
+      "type": "database",
+      "source": "clients",
+      "field": "ssn",
+      "format": "ssn_masked",
+      "match_field": "project_name",
+      "description": "Client SSN (masked format XXX-XX-1234)"
+    },
+    "intake.clientInformation.name": {
+      "type": "database",
+      "source": "case_overview",
+      "field": "client_name",
+      "description": "Client name from intake"
+    },
+    "intake.incidenttype": {
+      "type": "computed",
+      "source": "case_overview",
+      "field": "project_name",
+      "transform": "incident_type",
+      "description": "Type of incident (MVA, Slip & Fall, etc.)"
+    },
+    "intake.locationofclientsvehicle": {
+      "type": "agent_input",
+      "description": "Location of client's vehicle at time of incident"
+    },
+    "insurance.claimNumber": {
+      "type": "context",
+      "source": "insurance",
+      "field": "claim_number",
+      "context_key": "insurance_selected",
+      "description": "Insurance claim number"
+    },
+    "insurance.insuranceAdjuster.name": {
+      "type": "context_lookup",
+      "source": "insurance",
+      "field": "insurance_adjuster_name",
+      "context_key": "insurance_selected",
+      "description": "Adjuster full name"
+    },
+    "insurance.insuranceAdjuster.firstname": {
+      "type": "context_lookup",
+      "source": "insurance",
+      "field": "insurance_adjuster_name",
+      "context_key": "insurance_selected",
+      "transform": "first_name",
+      "description": "Adjuster first name only"
+    },
+    "insurance.insuranceAdjuster.email1": {
+      "type": "context_directory_lookup",
+      "source": "directory",
+      "lookup_field": "insurance_adjuster_name",
+      "field": "email",
+      "context_key": "insurance_selected",
+      "description": "Adjuster email address"
+    },
+    "insurance.insuranceAdjuster.address1Block": {
+      "type": "context_directory_lookup",
+      "source": "directory",
+      "lookup_field": "insurance_adjuster_name",
+      "field": "address",
+      "context_key": "insurance_selected",
+      "description": "Adjuster address"
+    },
+    "insurance.insuranceCompany.name": {
+      "type": "context",
+      "source": "insurance",
+      "field": "insurance_company_name",
+      "context_key": "insurance_selected",
+      "description": "Insurance company name"
+    },
+    "insurance.insuranceCompany.addressBlock": {
+      "type": "context_directory_lookup",
+      "source": "directory",
+      "lookup_field": "insurance_company_name",
+      "field": "address",
+      "context_key": "insurance_selected",
+      "description": "Insurance company address block"
+    },
+    "insurance.defendantInsuranceCompany.name": {
+      "type": "context",
+      "source": "insurance",
+      "field": "insurance_company_name",
+      "filter": {"insurance_type": "bi"},
+      "context_key": "insurance_bi",
+      "description": "Defendant's insurance company name"
+    },
+    "insurance.policylimits": {
+      "type": "context",
+      "source": "insurance",
+      "field": "coverage_confirmation",
+      "context_key": "insurance_selected",
+      "description": "Insurance policy limits"
+    },
+    "insurance.uMCarrier.name": {
+      "type": "context",
+      "source": "insurance",
+      "field": "insurance_company_name",
+      "filter": {"insurance_type": "um"},
+      "context_key": "insurance_um",
+      "description": "UM/UIM carrier name"
+    },
+    "insurance.lORSent": {
+      "type": "context",
+      "source": "insurance",
+      "field": "date_demand_sent",
+      "format": "date_long",
+      "context_key": "insurance_selected",
+      "description": "Date letter of representation was sent"
+    },
+    "liens.claimNumber_1": {
+      "type": "context",
+      "source": "liens",
+      "field": "id",
+      "context_key": "lien_selected",
+      "description": "Lien claim/reference number"
+    },
+    "liens.lienholder.name": {
+      "type": "context",
+      "source": "liens",
+      "field": "lien_holder_name",
+      "context_key": "lien_selected",
+      "description": "Lien holder name"
+    },
+    "liens.lienholder.address1Block": {
+      "type": "context_directory_lookup",
+      "source": "directory",
+      "lookup_field": "lien_holder_name",
+      "field": "address",
+      "context_key": "lien_selected",
+      "description": "Lien holder address"
+    },
+    "liens.lienholder.phoneFax": {
+      "type": "context_directory_lookup",
+      "source": "directory",
+      "lookup_field": "lien_holder_name",
+      "field": "phone",
+      "context_key": "lien_selected",
+      "description": "Lien holder phone/fax"
+    },
+    "liens.datelorsent": {
+      "type": "context",
+      "source": "liens",
+      "field": "date_lien_notice_sent",
+      "format": "date_long",
+      "context_key": "lien_selected",
+      "description": "Date initial lien request was sent"
+    },
+    "medical.provider.address1Block": {
+      "type": "context_directory_lookup",
+      "source": "directory",
+      "lookup_field": "provider_full_name",
+      "field": "address",
+      "context_key": "medical_provider_selected",
+      "description": "Medical provider address"
+    },
+    "medical.provider.phoneFax": {
+      "type": "context_directory_lookup",
+      "source": "directory",
+      "lookup_field": "provider_full_name",
+      "field": "phone",
+      "context_key": "medical_provider_selected",
+      "description": "Medical provider phone/fax"
+    },
+    "litigation.clientDepositionDate": {
+      "type": "database",
+      "source": "litigation",
+      "field": "client_deposition_date",
+      "format": "date_long",
+      "match_field": "project_name",
+      "description": "Client deposition date"
+    },
+    "litigation.clientDepositionTime": {
+      "type": "database",
+      "source": "litigation",
+      "field": "client_deposition_time",
+      "description": "Client deposition time"
+    },
+    "casesummary.caseType": {
+      "type": "computed",
+      "source": "case_overview",
+      "field": "project_name",
+      "transform": "case_type",
+      "description": "Case type (MVA, WC, S&F)"
+    },
+    "casesummary.wCSOL.due": {
+      "type": "database",
+      "source": "litigation",
+      "field": "sol_date",
+      "format": "date_long",
+      "match_field": "project_name",
+      "description": "Workers Comp statute of limitations date"
+    },
+    "team.role.caseManager.fullName": {
+      "type": "static",
+      "path": "static_config.team_roles.caseManager.fullName",
+      "description": "Case manager full name"
+    },
+    "team.role.caseManager.email": {
+      "type": "static",
+      "path": "static_config.team_roles.caseManager.email",
+      "description": "Case manager email"
+    },
+    "team.role.medicalRecordClerk.fullName": {
+      "type": "static",
+      "path": "static_config.team_roles.medicalRecordClerk.fullName",
+      "description": "Medical records clerk full name"
+    },
+    "team.role.medicalRecordClerk.email": {
+      "type": "static",
+      "path": "static_config.team_roles.medicalRecordClerk.email",
+      "description": "Medical records clerk email"
+    },
+    "team.role.negotiator.email": {
+      "type": "static",
+      "path": "static_config.team_roles.negotiator.email",
+      "description": "Settlement negotiator email"
+    },
+    "primary": {
+      "type": "static",
+      "path": "static_config.primary_attorney.signature_block",
+      "description": "Primary attorney signature block"
+    }
+  },
+  "transforms": {
+    "first_name": {
+      "description": "Extract first name from full name",
+      "logic": "split on space, take first element"
+    },
+    "incident_type": {
+      "description": "Extract incident type from project name",
+      "logic": "Look for MVA, S&F, WC patterns in project name",
+      "mappings": {
+        "MVA": "motor vehicle collision",
+        "S&F": "slip and fall incident",
+        "WC": "workplace injury"
+      }
+    },
+    "case_type": {
+      "description": "Extract case type abbreviation from project name",
+      "logic": "Look for MVA, S&F, WC patterns"
+    },
+    "ssn_masked": {
+      "description": "Mask SSN to show only last 4 digits",
+      "logic": "Replace first 5 digits with XXX-XX-"
+    }
+  },
+  "date_formats": {
+    "date_long": {
+      "format": "%B %d, %Y",
+      "example": "December 9, 2025"
+    },
+    "date_short": {
+      "format": "%m/%d/%Y",
+      "example": "12/09/2025"
+    }
+  },
+  "database_sources": {
+    "case_overview": {
+      "file": "Database/case_overview.json",
+      "match_field": "project_name"
+    },
+    "clients": {
+      "file": "Database/clients.json",
+      "match_field": "project_name"
+    },
+    "insurance": {
+      "file": "Database/insurance.json",
+      "match_field": "project_name"
+    },
+    "liens": {
+      "file": "Database/liens.json",
+      "match_field": "project_name"
+    },
+    "medical_providers": {
+      "file": "Database/medical_providers.json",
+      "match_field": "project_name"
+    },
+    "litigation": {
+      "file": "Database/litigation.json",
+      "match_field": "project_name"
+    },
+    "directory": {
+      "file": "Database/directory.json",
+      "match_field": "full_name"
+    }
+  }
+}
+

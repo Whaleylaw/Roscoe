@@ -18,9 +18,9 @@ You are analyzing multimedia evidence (audio or video) for a personal injury cas
 
 ### Step 1: Read Case Overview
 
-```bash
+```python
 # Read the case overview from the case folder
-read_file("/projects/{case-folder}/case_information/overview.json")
+read_file("projects/{case-folder}/overview.json")
 ```
 
 **Extract from overview:**
@@ -31,11 +31,11 @@ read_file("/projects/{case-folder}/case_information/overview.json")
 
 ### Step 2: Read Accident Report
 
-```bash
+```python
 # Look in the Investigation folder for the accident report
-ls("/projects/{case-folder}/Investigation/")
+ls("projects/{case-folder}/Investigation/")
 # Find and read: "Traffic Collision Report" (PDF or markdown)
-read_file("/projects/{case-folder}/Investigation/{accident-report-file}")
+read_file("projects/{case-folder}/Investigation/{accident-report-file}")
 ```
 
 **Extract from accident report:**
@@ -47,11 +47,11 @@ read_file("/projects/{case-folder}/Investigation/{accident-report-file}")
 
 ### Step 3: Read Litigation Documents (if available)
 
-```bash
+```python
 # Check for complaint or other litigation documents
-ls("/projects/{case-folder}/Litigation/")
+ls("projects/{case-folder}/Litigation/")
 # Read complaint if available
-read_file("/projects/{case-folder}/Litigation/complaint.pdf")
+read_file("projects/{case-folder}/Litigation/complaint.pdf")
 ```
 
 **What you now know (define these variables for use throughout analysis):**
@@ -80,8 +80,9 @@ import os
 # Configure API (already set via GOOGLE_API_KEY environment variable)
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
-# Upload the multimedia file
-file_path = "/absolute/path/to/audio_or_video_file"  # Convert workspace path to absolute
+# Upload the multimedia file - use workspace path
+# Files are accessible at /workspace/ within the execution environment
+file_path = "/workspace/projects/{case-folder}/Investigation/{video-file}.mp4"
 uploaded_file = genai.upload_file(file_path)
 
 # Wait for processing
@@ -94,7 +95,7 @@ while uploaded_file.state.name == "PROCESSING":
 model = genai.GenerativeModel("gemini-3-pro-preview")
 
 # Create analysis prompt with case context
-prompt = f'''Analyze this {"audio" if ".mp3" or ".wav" in file_path else "video"} as legal evidence in a personal injury case.
+prompt = f'''Analyze this {"audio" if ".mp3" in file_path or ".wav" in file_path else "video"} as legal evidence in a personal injury case.
 
 CASE CONTEXT:
 - Client: {client_name} ({client_role})
@@ -148,20 +149,35 @@ genai.delete_file(uploaded_file.name)
 print(response.text)
 ```
 
-**Important:**
-- Convert workspace-relative paths to absolute paths before uploading to Gemini
+**Important Path Notes:**
+- Within code execution, files are accessible at `/workspace/` paths
+- Virtual paths (`projects/...`) need to be translated to `/workspace/projects/...` in code
 - Video files must be under 2GB
-- Use absolute paths: `os.path.join("/Volumes/X10 Pro/Roscoe/workspace", path.lstrip("/"))`
 
 ---
 
 ## Phase 3: Extract Video Frames (if needed)
 
-If analysis identifies key moments, extract frames using ffmpeg:
+If analysis identifies key moments, extract frames using a Python script.
 
-```bash
-# Extract frame at critical timestamp
-ffmpeg -i /absolute/path/to/video.mp4 -ss 00:01:15 -frames:v 1 /Reports/frames/{video_name}_00-01-15.jpg
+**Ask the main agent to run frame extraction via `execute_python_script`:**
+
+```
+Main agent: Please extract frames at these critical timestamps:
+- 00:01:15 - Red light violation visible
+- 00:02:30 - Impact moment
+- 00:03:45 - Vehicle damage visible
+
+Use execute_python_script to run:
+execute_python_script(
+    script_path="Tools/extract_video_frames.py",
+    script_args=[
+        "/workspace/projects/{case-folder}/Investigation/{video-file}.mp4",
+        "00:01:15",
+        "00:02:30", 
+        "00:03:45"
+    ]
+)
 ```
 
 **When to extract frames:**
@@ -176,7 +192,7 @@ ffmpeg -i /absolute/path/to/video.mp4 -ss 00:01:15 -frames:v 1 /Reports/frames/{
 
 ## Phase 4: Synthesize Attorney-Ready Report
 
-**Format your analysis into this structure and save to `/Reports/`:**
+**Format your analysis into this structure and save to `Reports/`:**
 
 ```markdown
 # Multimedia Evidence Analysis: {Evidence Name}
@@ -199,199 +215,134 @@ ffmpeg -i /absolute/path/to/video.mp4 -ss 00:01:15 -frames:v 1 /Reports/frames/{
 
 ## Case Context Summary
 
-**Incident:** {incident_summary}
-
-**Client's Version:** {client_version_from_case_summary}
-
-**Disputed Facts:**
-- {fact_1}
-- {fact_2}
+[Brief summary of case facts loaded in Phase 1]
 
 ---
 
-## Transcript
+## Full Transcript
 
-### Full Transcript with Timestamps
+[Complete transcript with timestamps and speaker identification]
 
-[00:00:00 - 00:00:05] **Speaker (identified as: 911 Dispatcher)**: "911, what's your emergency?"
-- **Basis for ID:** Professional language, 911 protocol questions
-
-[00:00:05 - 00:00:12] **Speaker (identified as: {client_name})**: "There's been a car accident at {location}."
-- **Basis for ID:** Provides personal information matching client, describes incident consistent with case facts at {incident_location}
-
-[Continue full transcript with ALL speech and timestamps...]
+[HH:MM:SS] **SPEAKER (Identification Basis):** "Quote"
 
 ---
 
 ## Visual Timeline (Video Only)
 
-[00:00:00] Scene opens - {description}
-- **Observations:** Weather, lighting, road conditions, traffic
-- **Visible:** {what's in frame}
+| Timestamp | Description | Legal Significance |
+|-----------|-------------|-------------------|
+| 00:00:00 | Video begins, shows... | |
+| 00:01:15 | **KEY**: Red light visible | Proves defendant negligence |
+| ... | ... | ... |
 
-[00:00:15] ⚠️ **KEY EVENT: {Critical moment}**
-- **What happened:** {detailed description}
-- **Frame extracted:** `/Reports/frames/{video}_00-00-15.jpg`
-- **Legal significance:** {why this matters}
+---
 
-[Continue timeline for entire video...]
+## Speaker Identification
+
+| Speaker | Identification | Basis for ID |
+|---------|---------------|--------------|
+| Male Voice 1 | {client_name} | States personal information, describes injuries consistent with complaint |
+| Female Voice | 911 Dispatcher | Official procedural language, call routing |
+| ... | ... | ... |
+
+---
+
+## Key Evidence Points
+
+### Supports Client's Case:
+1. [Finding with timestamp]
+2. [Finding with timestamp]
+
+### Raises Questions / Weaknesses:
+1. [Finding with timestamp]
+2. [Finding with timestamp]
+
+### New Facts Revealed:
+1. [Finding with timestamp]
+
+---
+
+## Extracted Frames (if applicable)
+
+| Timestamp | Description | File |
+|-----------|-------------|------|
+| 00:01:15 | Red light visible | `Reports/frames/{case}_00-01-15.jpg` |
+| 00:02:30 | Impact moment | `Reports/frames/{case}_00-02-30.jpg` |
 
 ---
 
 ## Legal Analysis
 
-### Consistency with Case Facts
+### Liability Evidence:
+[What this evidence shows about fault]
 
-✅ **CONSISTENT:**
-- Client stated "{quote}" → Evidence shows: {what evidence confirms}
-- Case summary says "{fact}" → Evidence confirms: {corroboration}
+### Causation Evidence:
+[What this evidence shows about injury causation]
 
-⚠️ **INCONSISTENCIES:**
-- Client stated "{quote}" BUT evidence shows: {contradiction}
-- OR: None identified
-
-### Key Evidence Observations
-
-**1. {Evidence Item}** (timestamp: HH:MM:SS)
-- **Description:** {what was observed}
-- **Legal significance:** {supports liability / causation / damages}
-- **Citation:** per {Evidence Type} at HH:MM:SS (frame: {path if video})
-
-**2. {Evidence Item}** (timestamp: HH:MM:SS)
-- **Description:** {what was observed}
-- **Legal significance:** {how this helps case}
-- **Citation:** per {Evidence Type} at HH:MM:SS
-
-[Continue for all key observations...]
-
-### Red Flags / Weaknesses
-
-⚠️ **Potential Issues:**
-- {weakness_1} - {why this could be problematic}
-- {weakness_2} - {concern}
-
-**Mitigation:**
-- {how to address weakness_1}
-- {how to address weakness_2}
-
----
-
-## Emotional State / Sentiment (if applicable for audio)
-
-**Caller emotion:** {distressed / calm / angry / frightened}
-**Voice characteristics:** {shakiness / urgency / confusion}
-**Consistency:** {is emotional state consistent with traumatic event?}
-**Legal relevance:** {supports genuineness of injuries / credibility}
+### Damages Evidence:
+[What this evidence shows about injuries/pain]
 
 ---
 
 ## Recommendations
 
-**Attorney Action Items:**
-1. ✅ {Action based on strong evidence found}
-2. ✅ {Action based on helpful evidence}
-3. ⚠️ {Action to address identified weakness}
-
-**Additional Investigation:**
-- {Suggested follow-up investigation}
-- {Additional evidence to obtain}
-- {Witnesses to interview}
-
----
-
-## Citations for Pleadings
-
-**For Complaint/Demand:**
-> "Per {Evidence Type} at timestamp HH:MM:SS (frame: {path if applicable}), {factual statement with legal significance}."
-
-**For Causation:**
-> "Per {Evidence Type} at HH:MM:SS, {evidence of injury causation}."
-
-**For Liability:**
-> "Per {Evidence Type} at HH:MM:SS, {evidence of fault}."
-
----
-
-**Analysis Complete**
+1. [Action item for attorney]
+2. [Additional evidence to obtain]
+3. [Witness to depose based on this evidence]
 ```
 
-**Save report to:**
-- `/Reports/multimedia_analysis_{evidence_name}_{client_lastname}.md`
+---
 
-**Save frames to:**
-- `/Reports/frames/{video_name}_{HH-MM-SS}.jpg`
+## Output Location
+
+**Save your analysis report to:**
+- **File:** `projects/{case-folder}/Reports/multimedia_analysis_{evidence_name}.md`
+- **Format:** Markdown with all sections above
+
+**Save extracted frames to:**
+- **Directory:** `projects/{case-folder}/Reports/frames/`
+- **Naming:** `{case_name}_{timestamp}.jpg`
 
 ---
 
-## Citation Requirements
+## CRITICAL: File Paths
 
-**Every factual claim must have a precise citation:**
-- Audio: "per 911 Call at 00:02:30, caller states..."
-- Video: "per Body Camera Video at 00:15:30 (frame: /Reports/frames/bodycam_00-15-30.jpg), officer observes..."
-- Always include timestamp in [HH:MM:SS] format
-- For video, include frame path if extracted
+**ALWAYS use workspace-relative paths:**
 
----
+**For FilesystemBackend tools (read_file, ls, write_file):**
+- ✅ CORRECT: `projects/{case-folder}/Reports/analysis.md`
+- ✅ CORRECT: `projects/{case-folder}/Investigation/video.mp4`
+- ❌ WRONG: `/Volumes/X10 Pro/Roscoe/workspace/Reports/...` (Mac path)
+- ❌ WRONG: `../workspace/...` (relative path)
 
-## Speaker Identification Best Practices
-
-**Don't just label "Speaker A, Speaker B"**
-
-**Make informed inferences:**
-- "Speaker identified as {client_name} based on:
-  - Provides personal information matching client (name, address)
-  - Describes incident consistent with case summary
-  - Uses first-person perspective consistent with client role"
-
-- "Speaker identified as Police Officer based on:
-  - Professional language and terminology
-  - Radio communication patterns
-  - Official capacity statements"
-
-- "Speaker identified as Witness based on:
-  - Third-person perspective
-  - Location at scene
-  - Knowledge of events"
-
-**Always note the basis for identification**
+**For code execution (when accessing files in Python):**
+- ✅ CORRECT: `/workspace/projects/{case-folder}/Investigation/video.mp4`
+- ❌ WRONG: `/Volumes/X10 Pro/...` (Mac path)
 
 ---
 
-## Example Usage
+## Tools Available
 
-**User gives you task:**
-> "Analyze the body camera video from Officer Kelly for the Alma Cristobal case. File: `/projects/Alma-Cristobal-MVA-2-15-2024/Investigation/2024-02-15 - Body Camera Officer Kelly (Redacted).mp4`"
+**FilesystemBackend Tools:**
+- `ls` - List files and directories
+- `read_file` - Read text files and extract text from PDFs
+- `grep` - Search for text patterns
+- `write_file` - Create new files
 
-**Your workflow:**
+**Code Execution:**
+- Native Python code execution with access to google.generativeai
+- Files accessible at `/workspace/` paths
 
-1. **Load context:**
-   - Read `/projects/Alma-Cristobal-MVA-2-15-2024/case_information/overview.json`
-   - Extract: client_name = "Alma Socorro Cristobal Avendaño", incident_summary = "Sideswipe collision with commercial truck on I-65"
-   - Read accident report from Investigation folder
-   - Extract: incident_location = "I-65 northbound, Louisville, KY", incident_date = "2024-02-15"
-
-2. **Analyze video with Gemini:**
-   - Upload video to Gemini File API
-   - Provide full case context in prompt
-   - Request transcript, visual timeline, speaker ID, legal analysis
-   - Get comprehensive response
-
-3. **Extract frames:**
-   - Identify key moments from analysis
-   - Use ffmpeg to extract frames at critical timestamps
-   - Save to `/Reports/frames/`
-
-4. **Write attorney-ready report:**
-   - Format analysis into structured report
-   - Add citations with timestamps and frame references
-   - Include legal observations and recommendations
-   - Save to `/Reports/multimedia_analysis_bodycam_kelly_Cristobal.md`
-
-5. **Deliver:**
-   - Summarize key findings
-   - Highlight supportive evidence and concerns
-   - Provide path to full report
+**For video frame extraction, ask main agent to use:**
+- `execute_python_script` with `Tools/extract_video_frames.py`
 
 ---
 
-**Remember: Context + Analysis, not just transcription. Use case knowledge to identify speakers, spot contradictions, and provide legal insights.**
+## Important Notes
+
+1. **Load case context FIRST** - Never analyze in vacuum
+2. **Use case facts to inform speaker ID** - Don't use generic "Speaker A"
+3. **Think like an attorney** - What does this evidence prove or disprove?
+4. **Cite timestamps for everything** - Makes evidence usable in court
+5. **Note weaknesses too** - Attorney needs to know problems before opponents find them
+6. **Extract key frames** - Visual evidence for depositions and trial

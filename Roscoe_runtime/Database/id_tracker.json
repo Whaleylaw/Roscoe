@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "description": "Tracks the next available ID number for each entity type. Used to ensure unique IDs when creating new records.",
+  "usage_instructions": "Before creating a new record, read next_id for that entity type. Use that ID for the new record, then increment next_id and update last_updated.",
+  "entities": {
+    "insurance": {
+      "next_id": 304,
+      "last_used_id": 303,
+      "json_source": "insurance.json",
+      "id_field": "id",
+      "last_updated": "2025-12-13"
+    },
+    "medical_providers": {
+      "next_id": 714,
+      "last_used_id": 713,
+      "json_source": "medical_providers.json",
+      "id_field": "id",
+      "last_updated": "2025-12-13"
+    },
+    "liens": {
+      "next_id": 123,
+      "last_used_id": 122,
+      "json_source": "liens.json",
+      "id_field": "id",
+      "last_updated": "2025-12-13"
+    },
+    "directory": {
+      "next_id": 2288,
+      "last_used_id": 2287,
+      "json_source": "directory.json",
+      "id_field": "uuid",
+      "last_updated": "2025-12-13"
+    },
+    "contacts": {
+      "next_id": 100,
+      "last_used_id": 99,
+      "json_source": "contacts.json",
+      "id_field": "contact_id",
+      "last_updated": "2025-12-13",
+      "notes": "contact_id in case-specific files, separate from directory uuid"
+    },
+    "templates": {
+      "next_id": 41,
+      "last_used_id": 40,
+      "json_source": "templates/template_registry.json",
+      "id_field": "id",
+      "last_updated": "2025-12-13"
+    },
+    "notes": {
+      "next_id": 1000,
+      "last_used_id": 999,
+      "json_source": "notes.json",
+      "id_field": "id",
+      "last_updated": "2025-12-13",
+      "notes": "Auto-generated IDs for case notes"
+    },
+    "expenses": {
+      "next_id": 500,
+      "last_used_id": 499,
+      "json_source": "expenses.json",
+      "id_field": "id",
+      "last_updated": "2025-12-13"
+    }
+  },
+  "how_to_use": {
+    "step_1": "Load this file before creating a new record",
+    "step_2": "Read entities[TYPE].next_id to get the ID for your new record",
+    "step_3": "Create your record using that ID",
+    "step_4": "Increment entities[TYPE].next_id by 1",
+    "step_5": "Update entities[TYPE].last_used_id to match",
+    "step_6": "Update entities[TYPE].last_updated to today's date",
+    "step_7": "Save this file"
+  }
+}
+

@@ -1,0 +1,45 @@
+API REFERENCE https://docs.thesys.dev/api-reference/getting-started
+
+Use the full model string (including version) as shown below. Copy the complete string to use in your API requests.
+​
+Stable Models (Recommended for Production)
+​
+EMBED ENDPOINT MODELS
+
+Claude Sonnet 4
+Model: c1/anthropic/claude-sonnet-4/v-20250930
+Install Dependencies:
+
+Copy
+
+Ask AI
+npm install @thesysai/genui-sdk@~0.7.3 @crayonai/react-ui@~0.9.1 @crayonai/react-core@~0.7.6
+GPT-5
+Model: c1/openai/gpt-5/v-20250930
+Install Dependencies:
+
+Copy
+
+Ask AI
+npm install @thesysai/genui-sdk@~0.7.3 @crayonai/react-ui@~0.9.1 @crayonai/react-core@~0.7.6
+
+
+VISUALIZE ENDPOINT MODEL 
+Claude Sonnet 4
+Model: c1/anthropic/claude-sonnet-4/v-20250915
+Install Dependencies:
+
+Copy
+
+Ask AI
+npm install @thesysai/genui-sdk@~0.7.3 @crayonai/react-ui@~0.9.1 @crayonai/react-core@~0.7.6
+
+ARTIFACTS ENDPOINT MODEL
+Artifacts Model
+Model: c1/artifact/v-20251030
+Install Dependencies:
+
+Copy
+
+Ask AI
+npm install @thesysai/genui-sdk@~0.7.3 @crayonai/react-ui@~0.9.1 @crayonai/react-core@~0.7.6

@@ -1,0 +1,152 @@
+{
+  "version": "2.0.0",
+  "description": "Resource index for the workflow engine. JSON schemas are canonical for execution; SOP markdown lives under Roscoe_workflows/workflows/. Central tools/skills/templates manifests provide discoverability.",
+
+  "central_registries": {
+    "tools_manifest": "workflows/tools/tools_manifest.json",
+    "skills_manifest": "workflows/skills/skills_manifest.json",
+    "templates_manifest": "workflows/templates/templates_manifest.json"
+  },
+
+  "workflows": {
+    "phase_0_onboarding": {
+      "path": "workflows/phase_0_onboarding/",
+      "workflows": ["case_setup", "document_collection"],
+      "description": "Case setup + initial document collection"
+    },
+    "phase_1_file_setup": {
+      "path": "workflows/phase_1_file_setup/",
+      "workflows": ["accident_report", "insurance_bi_claim", "insurance_pip_claim", "medical_provider_setup"],
+      "description": "Accident report, open claims, provider setup"
+    },
+    "phase_2_treatment": {
+      "path": "workflows/phase_2_treatment/",
+      "workflows": [
+        "client_check_in",
+        "medical_provider_status",
+        "request_records_bills",
+        "referral_new_provider",
+        "lien_identification",
+        "medical_chronology"
+      ],
+      "description": "Treatment monitoring + records/bills + liens/chronology"
+    },
+    "phase_3_demand": {
+      "path": "workflows/phase_3_demand/",
+      "workflows": ["gather_demand_materials", "draft_demand", "send_demand"],
+      "description": "Demand preparation, drafting, sending"
+    },
+    "phase_4_negotiation": {
+      "path": "workflows/phase_4_negotiation/",
+      "workflows": ["negotiate_claim", "track_offers", "offer_evaluation"],
+      "description": "Negotiation workflow suite"
+    },
+    "phase_5_settlement": {
+      "path": "workflows/phase_5_settlement/",
+      "workflows": ["settlement_processing", "lien_negotiation"],
+      "description": "Settlement processing + lien negotiation"
+    },
+    "phase_6_lien": {
+      "path": "workflows/phase_6_lien/",
+      "workflows": ["get_final_lien", "negotiate_lien", "final_distribution"],
+      "description": "Post-settlement lien resolution"
+    },
+    "phase_7_litigation": {
+      "path": "workflows/phase_7_litigation/",
+      "description": "Litigation track (nested subphases; non-linear)",
+      "subphases": {
+        "phase_7_1_complaint": {
+          "path": "workflows/phase_7_litigation/subphases/7_1_complaint/",
+          "workflows": ["draft_file_complaint", "serve_defendant", "process_answer"]
+        },
+        "phase_7_2_discovery": {
+          "path": "workflows/phase_7_litigation/subphases/7_2_discovery/",
+          "workflows": [
+            "propound_discovery",
+            "respond_to_discovery",
+            "review_responses",
+            "party_depositions",
+            "client_deposition_prep",
+            "corp_rep_deposition",
+            "defense_expert_depo",
+            "third_party_deposition"
+          ]
+        },
+        "phase_7_3_mediation": {
+          "path": "workflows/phase_7_litigation/subphases/7_3_mediation/",
+          "workflows": ["prepare_mediation", "attend_mediation"]
+        },
+        "phase_7_4_trial_prep": {
+          "path": "workflows/phase_7_litigation/subphases/7_4_trial_prep/",
+          "workflows": ["expert_management", "trial_materials"]
+        },
+        "phase_7_5_trial": {
+          "path": "workflows/phase_7_litigation/subphases/7_5_trial/",
+          "workflows": ["conduct_trial"]
+        }
+      }
+    },
+    "phase_8_closed": {
+      "path": "workflows/phase_8_closed/",
+      "workflows": ["close_case"],
+      "description": "Case closure + archiving"
+    }
+  },
+
+  "phase_to_resource_mapping": {
+    "phase_0_onboarding": {
+      "workflow_dir": "workflows/phase_0_onboarding/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    },
+    "phase_1_file_setup": {
+      "workflow_dir": "workflows/phase_1_file_setup/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    },
+    "phase_2_treatment": {
+      "workflow_dir": "workflows/phase_2_treatment/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    },
+    "phase_3_demand": {
+      "workflow_dir": "workflows/phase_3_demand/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    },
+    "phase_4_negotiation": {
+      "workflow_dir": "workflows/phase_4_negotiation/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    },
+    "phase_5_settlement": {
+      "workflow_dir": "workflows/phase_5_settlement/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    },
+    "phase_6_lien": {
+      "workflow_dir": "workflows/phase_6_lien/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    },
+    "phase_7_litigation": {
+      "workflow_dir": "workflows/phase_7_litigation/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    },
+    "phase_8_closed": {
+      "workflow_dir": "workflows/phase_8_closed/",
+      "tools_manifest": "workflows/tools/tools_manifest.json",
+      "skills_manifest": "workflows/skills/skills_manifest.json",
+      "templates_manifest": "workflows/templates/templates_manifest.json"
+    }
+  }
+}

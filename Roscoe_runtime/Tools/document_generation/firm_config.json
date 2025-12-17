@@ -1,0 +1,65 @@
+{
+  "firm": {
+    "name": "Whaley Law Firm",
+    "full_name": "The Whaley Law Firm",
+    "logo_path": "assets/Whaley_logo_cropped.png"
+  },
+  "attorney": {
+    "name": "Aaron G. Whaley, Esq.",
+    "bar_number": "",
+    "email": "aaron@whtlaw.com"
+  },
+  "contact": {
+    "address": "712 Lyndon Lane",
+    "city": "Louisville",
+    "state": "KY",
+    "zip": "40222",
+    "phone": "(502)583-4022",
+    "fax": "(502)364-9363"
+  },
+  "team": {
+    "medicalRecordClerk": {
+      "fullName": "Crystal Whaley",
+      "email": "crystal@whtlaw.com",
+      "phone": "(502)583-4022"
+    },
+    "paralegal": {
+      "fullName": "Crystal Whaley",
+      "email": "crystal@whtlaw.com",
+      "phone": "(502)583-4022"
+    },
+    "negotiator": {
+      "fullName": "Aaron G. Whaley",
+      "email": "aaron@whtlaw.com",
+      "phone": "(502)583-4022"
+    }
+  },
+  "formatting": {
+    "font_body": "Times New Roman",
+    "font_heading": "Times New Roman",
+    "font_size_body": 12,
+    "font_size_heading": 14,
+    "font_size_section": 12,
+    "margins": {
+      "top": 1.0,
+      "bottom": 1.0,
+      "left": 1.0,
+      "right": 1.0
+    },
+    "line_spacing": 1.15
+  },
+  "demand_letter": {
+    "confidential_header": "CONFIDENTIAL AND INADMISSIBLE\nOFFER OF COMPROMISE PURSUANT TO KENTUCKY RULE OF EVIDENCE 408",
+    "default_response_days": 30,
+    "section_numbering": true,
+    "provider_header_color": "#E0E0E0",
+    "table_header_color": "#404040",
+    "table_alt_row_color": "#F5F5F5"
+  },
+  "exhibit_pages": {
+    "separator_text": "EXHIBIT",
+    "separator_font_size": 48,
+    "separator_font": "Times New Roman",
+    "page_size": "letter"
+  }
+}

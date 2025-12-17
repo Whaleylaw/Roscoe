@@ -1,0 +1,139 @@
+[
+  {
+    "jsonb_agg": [
+      {
+        "email": "douglivers@gmail.com",
+        "phone": "502-558-8900",
+        "roles": [
+          "client"
+        ],
+        "address": "9510 Rustling Tree Way #202, Louisville, KY 40291",
+        "full_name": "Douglas G. Livers",
+        "contact_id": 2077,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": null,
+        "phone": null,
+        "roles": [
+          "payee"
+        ],
+        "address": "700 W. Jefferson Street, Louisville, KY 40202",
+        "full_name": "Jefferson County Circuit Court",
+        "contact_id": 125,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": null,
+        "phone": "(330) 655-1956",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Thomas Blizzard",
+        "contact_id": 1169,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": null,
+        "phone": "(713) 277-9437",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Brittany Carr",
+        "contact_id": 1217,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": "angela.casey@joinroot.com",
+        "phone": "380-235-7317",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Angela Casey",
+        "contact_id": 1220,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": "claims@claims.allstate.com",
+        "phone": "(800) 255-7828 Main",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "PO Box 2874, Claims Department, Clinton, IA 52733",
+        "full_name": "Allstate Insurance",
+        "contact_id": 16,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": "claims@joinroot.com",
+        "phone": "614-591-4463 Fax",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "6602 E 7th St, Suite 500, Indiapolis, IN 46250",
+        "full_name": "Root Auto Insurance",
+        "contact_id": 1529,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": "kycsecsln@ky.gov",
+        "phone": null,
+        "roles": [
+          "lien_holder"
+        ],
+        "address": "PO Box 14059, Lexington, ky 40512",
+        "full_name": "Kentucky Child Support Enforcement",
+        "contact_id": 635,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": "amullins@aptivahealth.com",
+        "phone": "844-999-3627 Main, 502-583-1011 Main, 502-583-1011 Main",
+        "roles": [
+          "lien_holder",
+          "medical_provider"
+        ],
+        "address": "3615 Newburg Road, , Louisville, KY 40218; 300 S 13th Street, , Louisville, KY 40203; 300 S 13th Street, , Louisville, KY 40203",
+        "full_name": "Aptiva Health",
+        "contact_id": 321,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": null,
+        "phone": "(502)-447-9554",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "4917 Dixie Hwy Ste. B, Louisville, KY 40216",
+        "full_name": "Dixie Injury And Rehab",
+        "contact_id": 485,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": "vherbert@thattorneys.com",
+        "phone": "502-245-7474 Main",
+        "roles": [
+          "filing_party"
+        ],
+        "address": "11507 Main Street, , Louisville, KY 40243",
+        "full_name": "Valerie A Herbert",
+        "contact_id": 1470,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      },
+      {
+        "email": "bryce@whaleylawfirm.com, wmbkoon@gmail.com",
+        "phone": "502-759-9549",
+        "roles": [
+          "filing_party"
+        ],
+        "address": null,
+        "full_name": "Bryce Koon",
+        "contact_id": 1594,
+        "project_name": "Douglas-Livers-MVA-1-19-2023"
+      }
+    ]
+  }
+]

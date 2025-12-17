@@ -1,105 +1,124 @@
-# Roscoe - Dynamic Skills-Based Paralegal AI Agent
+# Roscoe - Paralegal AI Agent
 
-Roscoe is an AI paralegal agent built with LangGraph that uses a dynamic skills architecture to handle legal research, medical records analysis, and case management.
+Production LangGraph-based paralegal AI agent for personal injury litigation.
 
-## Features
+## Repository Structure
 
-- **Dynamic Skills Loading**: Skills are loaded automatically based on semantic matching to user requests
-- **Adaptive Model Selection**: Switches between Claude Sonnet, Claude Haiku, and Gemini 3 Pro based on task requirements
-- **Workflow Checkpointing**: Resume complex workflows after errors without starting over
-- **Large Filesystem Support**: Access to 68GB+ of case files, medical records, and legal documents
-- **HIPAA-Ready**: Self-hosted deployment keeps all data on your local machine
+This repository contains:
 
-## Architecture
+### 📦 production-vm-code/ (1.1MB)
+**VM Code Snapshot** - Exact copy of code running on production VM
 
-```
-User Request
-    ↓
-SkillSelectorMiddleware (semantic search for relevant skills)
-    ↓
-Model Selector (choose optimal LLM: Gemini/Sonnet/Haiku)
-    ↓
-Agent Execution (with checkpointing)
-    ↓
-General-Purpose Sub-agents (inherit current model)
-```
+- Complete Python source (25 files)
+- Production configuration (docker-compose.yml)
+- Documentation (CLAUDE.md, bug fixes)
+- **Use this to**: Compare with local dev, reference production settings
 
-## Quick Start
+**Production VM**: `34.63.223.97` (roscoe-paralegal-vm, us-central1-a)
 
-### 1. Deploy Locally with Docker
+### 💻 local-dev-code/ (764KB)
+**Local Development** - Clean working version for development
+
+- Source code (src/roscoe/)
+- Configuration (pyproject.toml, langgraph.json)
+- Documentation (CLAUDE.md, SLACK_SETUP.md)
+- Build scripts (build-docker.sh, deploy-to-vm.sh)
+
+**Use this to**: Develop and test locally before deploying
+
+### 📚 archive-20251208.tar.gz (775MB)
+**Archived Clutter** - Everything else compressed
+
+Contents:
+- roscoe-ui/ (1.4GB) - Next.js UI project
+- workspace_paralegal/ (75MB) - Runtime workspace (gitignored)
+- Roscoe_workflows/ (65MB) - Old workflow materials
+- Document_templates/ (39MB)
+- forms/ (16MB)
+- PDF case files (123MB)
+- Misc loose files
+
+## Development Workflow
+
+### Local Development
 
 ```bash
-./deploy.sh
-```
+cd "/Volumes/X10 Pro/Roscoe/local-dev-code"
 
-This will:
-- Start PostgreSQL for checkpointing
-- Start Redis for caching
-- Start LangGraph API server
-- Mount your local filesystem
-- Connect to LangSmith for monitoring
+# Install dependencies
+uv sync
 
-### 2. Configure API Keys
-
-Copy `.env.example` to `.env` and add your API keys:
-
-```bash
+# Configure environment
 cp .env.example .env
-# Edit .env and add your keys
+# Edit .env with your API keys
+
+# Run locally
+langgraph dev
 ```
 
-Required keys:
-- `LANGSMITH_API_KEY` - For tracing and checkpointing
-- `ANTHROPIC_API_KEY` - For Claude models
-- `GOOGLE_API_KEY` - For Gemini models
-- `TAVILY_API_KEY` - For web search (optional)
-
-### 3. Access the API
+### Deploy to Production
 
 ```bash
-curl http://localhost:8123/ok
+# 1. Test locally first
+cd local-dev-code
+langgraph dev
+
+# 2. Copy changes to VM
+gcloud compute scp --recurse --zone us-central1-a \
+  src/roscoe/agents/paralegal/ \
+  roscoe-paralegal-vm:~/roscoe/src/roscoe/agents/paralegal/
+
+# 3. Restart on VM
+gcloud compute ssh roscoe-paralegal-vm --zone us-central1-a \
+  --command "cd ~ && docker compose restart roscoe"
 ```
+
+### Compare Production vs Local
+
+```bash
+# See what's different
+diff production-vm-code/src/roscoe/agents/paralegal/agent.py \
+     local-dev-code/src/roscoe/agents/paralegal/agent.py
+```
+
+## Production Environment
+
+**VM**: roscoe-paralegal-vm (us-central1-a)  
+**IP**: 34.63.223.97  
+**Workspace**: GCS bucket (whaley_law_firm) at `/mnt/workspace`  
+**Services**: Docker Compose (postgres, redis, roscoe, ui)
+
+**Ports**:
+- 8123: LangGraph API
+- 8124: CopilotKit
+- 3000: UI
+- 5432: PostgreSQL
+- 6379: Redis
 
 ## Documentation
 
-- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Complete deployment guide with checkpointing setup
-- **[workspace/Skills/](workspace/Skills/)** - Available skills and how to add new ones
+- **local-dev-code/CLAUDE.md** - Complete architecture & development guide
+- **production-vm-code/CLAUDE.md** - Production deployment guide
+- **local-dev-code/SLACK_SETUP.md** - Slack integration setup
+- **production-vm-code/BUGFIX_CASE_MATCHING.md** - Recent bug fixes
 
-## Skills
+## Archive Contents
 
-Skills are defined in `workspace/Skills/skills_manifest.json`:
+To extract archived files if needed:
 
-- **Medical Records Analysis**: Parse, analyze, and summarize medical records with timeline extraction
-- **Legal Research**: Research case law, statutes, and regulations
+```bash
+# List contents
+tar -tzf archive-20251208.tar.gz | head -20
 
-New skills can be added without code changes - just add a skill definition and markdown file.
+# Extract specific file
+tar -xzf archive-20251208.tar.gz path/to/file
 
-## Models
-
-- **Claude Sonnet 4.5**: Complex reasoning, medical analysis (default)
-- **Claude Haiku 4.5**: Simple tasks, categorization
-- **Gemini 3 Pro**: Multimodal analysis (images, PDFs), code execution
-
-Models are selected automatically based on skill requirements.
-
-## Checkpointing
-
-Every workflow is automatically checkpointed to PostgreSQL. If an error occurs:
-
-1. Fix the issue (code, data, or configuration)
-2. Resume from the checkpoint
-3. Continue where you left off
-
-View all checkpoints in LangSmith: https://smith.langchain.com
-
-## Cost
-
-- **Infrastructure**: FREE (self-hosted on your machine)
-- **LangSmith**: FREE (self-hosted tier)
-- **API Calls**: ~$20-200/month depending on usage
+# Extract everything
+tar -xzf archive-20251208.tar.gz
+```
 
 ## Support
 
-For deployment issues, see [DEPLOYMENT.md](DEPLOYMENT.md).
-
-For LangGraph documentation: https://langchain-ai.github.io/langgraph/
+- **LangGraph Docs**: https://langchain-ai.github.io/langgraph/
+- **LangSmith**: https://smith.langchain.com/projects/roscoe-local
+- **Production VM**: `gcloud compute ssh roscoe-paralegal-vm --zone us-central1-a`

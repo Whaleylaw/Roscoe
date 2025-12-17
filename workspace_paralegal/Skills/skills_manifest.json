@@ -422,6 +422,202 @@
       "canonical_phase": "file_setup",
       "canonical_workflow": "intake",
       "applicable_phases": ["file_setup", "treatment", "demand_in_progress", "negotiation", "complaint", "discovery", "mediation", "trial_prep", "trial"]
+    },
+    {
+      "name": "complaint-drafting",
+      "description": "Use when drafting initial complaint for lawsuit - analyzes case type (MVA, premises, etc.) and claims (negligence, bad faith, UM/UIM, vicarious liability) to select appropriate template from 20+ available complaint templates, then guides complaint drafting with Kentucky fact pleading standards",
+      "file": "litigation-pleadings/complaint-drafting-skill.md",
+      "triggers": [
+        "draft complaint",
+        "file complaint",
+        "file lawsuit",
+        "file suit",
+        "complaint drafting",
+        "write complaint",
+        "prepare complaint",
+        "litigation complaint",
+        "petition",
+        "draft petition",
+        "complaint template"
+      ],
+      "model_required": "sonnet",
+      "canonical_phase": "litigation",
+      "canonical_workflow": "file_complaint",
+      "templates_available": [
+        "/forms/complaints/2022 Whaley MVA Complaint - Standard_Template.md",
+        "/forms/complaints/Complaint - Premises Liability_Template.md",
+        "/forms/complaints/Complaint with UM_Template.md",
+        "/forms/complaints/Complaint. (Negligence & Bad Faith & UIM)_Template.md",
+        "/forms/complaints/Complaint.MVA. Respondeat Superior[vicarious liability]_Template.md",
+        "/forms/complaints/Complaint - Premises Liability. Dog Bite_Template.md"
+      ],
+      "supporting_files": [
+        "/forms/complaints/AOC 105 - Civil Summons.pdf",
+        "/forms/complaints/CERTIFICATE OF SERVICE_Template.md"
+      ],
+      "output_location": "/Litigation/Pleadings/complaint_draft.docx",
+      "feeds_into": [
+        "/workflow_engine/workflows/phase_6_litigation/file_complaint.md"
+      ]
+    },
+    {
+      "name": "requests-for-admission",
+      "description": "Use when responding to defendant's requests for admission (CR 36) - THE MOST CRITICAL discovery deadline in litigation with 30-day deemed admitted consequence. Missing deadline results in automatic admission of facts which can support summary judgment. Requires immediate calendar management with multiple reminders and prioritization over other discovery.",
+      "file": "litigation-discovery/requests-for-admission-skill.md",
+      "triggers": [
+        "requests for admission",
+        "RFA",
+        "request for admission",
+        "respond to RFA",
+        "answer RFA",
+        "admission requests",
+        "deemed admitted",
+        "CR 36",
+        "Rule 36"
+      ],
+      "model_required": "sonnet",
+      "canonical_phase": "discovery",
+      "canonical_workflow": "respond_to_discovery",
+      "critical_deadline": "30 days (45 for defendant) - DEEMED ADMITTED if missed",
+      "tools_required": [
+        "/Tools/calendar/calendar_add_event.py"
+      ],
+      "output_location": "/Litigation/Discovery/Interrogatories/plaintiff_responses_to_rfa.pdf",
+      "feeds_into": [
+        "/workflow_engine/workflows/phase_6_litigation/respond_to_discovery.md"
+      ]
+    },
+    {
+      "name": "document-docx",
+      "description": "Use when creating, editing, or analyzing Word documents (.docx) - includes workflows for new document creation, redlining/tracked changes, text extraction, and format preservation. Essential for demand letters, pleadings, correspondence, and legal document review.",
+      "file": "document-docx/skill.md",
+      "triggers": [
+        "create word document",
+        "edit word document",
+        "docx",
+        "word file",
+        "create demand letter",
+        "draft pleading",
+        "tracked changes",
+        "redline",
+        "redlining",
+        "edit document",
+        "document review",
+        "create correspondence",
+        "legal document",
+        "word processing",
+        "extract text from word"
+      ],
+      "model_required": "sonnet",
+      "supporting_files": [
+        "document-docx/docx-js.md",
+        "document-docx/ooxml.md",
+        "document-docx/ooxml/",
+        "document-docx/scripts/"
+      ],
+      "applicable_phases": ["demand_in_progress", "negotiation", "complaint", "discovery", "mediation", "trial_prep"]
+    },
+    {
+      "name": "document-pdf",
+      "description": "Use when processing PDF documents - includes text extraction, table extraction (great for medical bills), PDF creation, form filling, merging/splitting, and OCR for scanned documents. Essential for court forms, insurance forms, medical bill summaries, and reports.",
+      "file": "document-pdf/skill.md",
+      "triggers": [
+        "pdf",
+        "extract from pdf",
+        "create pdf",
+        "merge pdf",
+        "split pdf",
+        "fill pdf form",
+        "court form",
+        "pdf form",
+        "extract tables",
+        "ocr",
+        "scanned document",
+        "convert to pdf",
+        "pdf processing",
+        "extract medical bills",
+        "add watermark",
+        "bates number"
+      ],
+      "model_required": "sonnet",
+      "supporting_files": [
+        "document-pdf/forms.md",
+        "document-pdf/reference.md",
+        "document-pdf/scripts/"
+      ],
+      "applicable_phases": ["file_setup", "treatment", "demand_in_progress", "negotiation", "complaint", "discovery", "trial_prep"]
+    },
+    {
+      "name": "document-xlsx",
+      "description": "Use when creating or analyzing spreadsheets (.xlsx) - includes formula-based calculations, data analysis, formatting, and table extraction. Essential for medical bill summaries, settlement worksheets, damage calculations, and data from insurance claims/medical records.",
+      "file": "document-xlsx/skill.md",
+      "triggers": [
+        "excel",
+        "spreadsheet",
+        "xlsx",
+        "create spreadsheet",
+        "medical bill summary",
+        "settlement worksheet",
+        "damage calculation",
+        "analyze data",
+        "data analysis",
+        "extract from excel",
+        "create table",
+        "financial calculation",
+        "expense summary",
+        "billing summary",
+        "lost wages calculation"
+      ],
+      "model_required": "sonnet",
+      "supporting_files": [
+        "document-xlsx/recalc.py"
+      ],
+      "applicable_phases": ["treatment", "demand_in_progress", "negotiation", "mediation", "trial_prep"]
+    },
+    {
+      "name": "demand-letter-generation",
+      "description": "Use when creating a complete demand package with letter and exhibits - generates professional DOCX/PDF demand letter from markdown, creates exhibit cover pages, and compiles everything into a single PDF ready to send to opposing counsel. Full workflow from drafting to final compiled package.",
+      "file": "demand-letter-generation/SKILL.md",
+      "triggers": [
+        "demand letter",
+        "settlement demand",
+        "policy limits demand",
+        "create demand",
+        "draft demand",
+        "generate demand",
+        "demand package",
+        "compile exhibits",
+        "demand with exhibits",
+        "settlement package",
+        "send demand",
+        "prepare demand",
+        "final demand",
+        "complete demand package"
+      ],
+      "model_required": "opus",
+      "tools_required": [
+        "demand-letter-generation/demand_generator.py",
+        "demand-letter-generation/exhibit_compiler.py",
+        "demand-letter-generation/letterhead_generator.py"
+      ],
+      "canonical_phase": "negotiation",
+      "canonical_workflow": "demand",
+      "prerequisites": [
+        "All medical records collected and reviewed",
+        "All medical bills obtained with final amounts",
+        "Treatment complete or client at MMI",
+        "Liability established",
+        "Policy limits confirmed"
+      ],
+      "outputs": [
+        "{date} - {client} - Policy Limits Demand.md",
+        "{date} - {client} - Policy Limits Demand.docx",
+        "{date} - {client} - Policy Limits Demand.pdf",
+        "exhibit_manifest.yaml",
+        "{date} - {client} - Policy Limits Demand - COMPLETE.pdf"
+      ],
+      "output_location": "/Negotiation Settlement/",
+      "applicable_phases": ["demand_in_progress", "negotiation"]
     }
   ]
 }

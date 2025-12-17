@@ -1,0 +1,2380 @@
+[
+  {
+    "jsonb_agg": [
+      {
+        "uuid": 8,
+        "notes": "",
+        "payable_to": "Powell Circuit Court",
+        "description": "Hope Padgett v. Progressive Insurance",
+        "created_date": "2025-03-05",
+        "project_name": "Hope-Renee-Padgett-MVA-1-16-2023",
+        "expense_amount": 318.31,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 10,
+        "notes": "2025.02.26: Recvd Notice CMR Ready - Recvd Password - Only Invoice - $147.30 - Confirmed No Pre-Lit Results - Called Facility - Requested Fee Waived under 1st Copy - Transferred to Supervisor - LVM for Neisha - Awaiting Return Call",
+        "payable_to": "Cardone Record Service",
+        "description": "Certified Medical Records - Advocate Medical Group",
+        "created_date": "2025-02-26",
+        "project_name": "Nayram-Adadevoh-MVA-7-13-2024",
+        "expense_amount": null,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 12,
+        "notes": "2025.02.17: Recvd Invoice 0007565 - $1850.00 - Paid Online - Hard Copy saved to hard File",
+        "payable_to": "Commonwealth IME",
+        "description": "Commonwealth IME - Dr. Nazar - March 7, 2025",
+        "created_date": "2025-02-17",
+        "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+        "expense_amount": 1850,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 14,
+        "notes": "2025.02.10: Pulled Exp Recpt - Alias Summons - $62.20 - Split between 2 companions - $31.10 each",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def CAAL WorldWide via Sheriff Service",
+        "created_date": "2025-02-10",
+        "project_name": "Nayram-Adadevoh-MVA-7-13-2024",
+        "expense_amount": 31.1,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 15,
+        "notes": "2025.02.10: Pulled Exp Recpt - Alias Summons - $62.20 - Split between 2 companions - $31.10 each",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def CAAL WorldWide via Sheriff Service",
+        "created_date": "2025-02-07",
+        "project_name": "Abby-Sitgraves-MVA-7-13-2024",
+        "expense_amount": 31.1,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 16,
+        "notes": "2025.01.29 BK Filed Complaint - Exp $239.54 - Split 3ways - Total for Client $79.85",
+        "payable_to": "Floyd County Circuit Court",
+        "description": "Williams, Ward, Moore v. Naomi Robinson",
+        "created_date": "2025-01-29",
+        "project_name": "Julmonzhae-Moore-MVA-8-29-2023",
+        "expense_amount": 79.85,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 17,
+        "notes": "2025.01.29 BK Filed Complaint - Exp $239.54 - Split 3ways - Total for Client $79.85",
+        "payable_to": "Floyd County Circuit Court",
+        "description": "Williams, Ward, Moore v. Naomi Robinson",
+        "created_date": "2025-01-29",
+        "project_name": "Dewayne-Ward-MVA-8-29-2023",
+        "expense_amount": 79.85,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 20,
+        "notes": "2025.01.27: Hearing Transcript Ready for Pick up - $25.00 (1/2 per Party)",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Def Hearing Transcript - $25.00",
+        "created_date": "2025-01-27",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 12.5,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 25,
+        "notes": "2025.01.17: Recvd Invoice 006539609 - Paid Online",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - University Diagnostic",
+        "created_date": "2025-01-17",
+        "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+        "expense_amount": 20,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 28,
+        "notes": "2025.02.10: Pulled Exp Recpt - Filing Fee - $313.72 - Split between 2 Companions - $156.86 each",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Sitgraves & Adadevoh v. CAAL Worldwide, et al.",
+        "created_date": "2025-01-08",
+        "project_name": "Nayram-Adadevoh-MVA-7-13-2024",
+        "expense_amount": 156.86,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 29,
+        "notes": "2025.02.10: Pulled Exp Recpt - Filing Fee - $313.72 - Split between 2 Companions - $156.86 each",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Sitgraves & Adadevoh v. CAAL Worldwide, et al.",
+        "created_date": "2025-01-08",
+        "project_name": "Abby-Sitgraves-MVA-7-13-2024",
+        "expense_amount": 156.86,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 30,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "James Sadler v. Eyob Tafesse",
+        "created_date": "2025-01-08",
+        "project_name": "James-Sadler-MVA-4-07-2023",
+        "expense_amount": 297.94,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 32,
+        "notes": "2024.09.30 Checked Service - Still Outstanding w/JCSO - Ran Lexis Search - Found New Address - Issued Alias Summons to New Address - Fee $64.17 - Split w/Companion Cecil Finley",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Kiebler - 2051 S. Shelby Street, 40217",
+        "created_date": "2024-12-31",
+        "project_name": "Dana-Jackson-MVA-1-24-2024",
+        "expense_amount": 32.09,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 33,
+        "notes": "2024.08.28: Checked Service - Cert Mail - Returned as Unknown - UTF \nIssued Alias Summons via Sheriff Svc to 1650 Stevens Ave 40205 - Fee $64.17 Split w/Companion Cecil Finley",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Kiebler - 1650 Stevens Ave, 40205",
+        "created_date": "2024-12-31",
+        "project_name": "Dana-Jackson-MVA-1-24-2024",
+        "expense_amount": 32.09,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 34,
+        "notes": "2024.08.15: Def Service Cert Mail - 4525 S. 3rd Street 40214 - Filing Fee $298.04 split with Companion Cecil Finley",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Cecil Finley & Dana Jackson v Justin Kiebler",
+        "created_date": "2024-12-31",
+        "project_name": "Dana-Jackson-MVA-1-24-2024",
+        "expense_amount": 149.02,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 35,
+        "notes": "2024.12.31: Recvd & Paid Invoice Online - Awaiting USPS Delivery",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Southeastern Emergency Services",
+        "created_date": "2024-12-31",
+        "project_name": "Dana-Jackson-MVA-1-24-2024",
+        "expense_amount": 10,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 40,
+        "notes": "2024.12.11: Recvd Invoice Notice $50.00 - $30.00 of this is 'Instant Download Fee' - Requested USPS Delivery & Invoice Adjustment\n2024.12.12: Recvd Invoice Adjustment Notice - Now $23.00 - Paid Online - Awaiting USPS Delivery of CMR/CMB",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - AmeriPro EMS",
+        "created_date": "2024-12-12",
+        "project_name": "Julmonzhae-Moore-MVA-8-29-2023",
+        "expense_amount": 23,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 41,
+        "notes": "2024.12.10: Recvd CMR/CMB w/Certification & Invoice - Hard Copy of Invoice to AW for Payment Processing\n2025.01.29 Recvd Invoice back from AW - Not Paying - Does not want Actual Imaging - CD Already Recvd - Noted as such & Must Pay to AW",
+        "payable_to": "ULP Radiological Associates",
+        "description": "Certified Medical Records - ULP Radiological Associates",
+        "created_date": "2024-12-10",
+        "project_name": "Julmonzhae-Moore-MVA-8-29-2023",
+        "expense_amount": 35,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 43,
+        "notes": "",
+        "payable_to": "Kentucky Court Reporters",
+        "description": "",
+        "created_date": "2024-12-02",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 497.8,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 44,
+        "notes": "",
+        "payable_to": "Burke Neal PLLC",
+        "description": "",
+        "created_date": "2024-12-02",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 687.5,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 45,
+        "notes": "",
+        "payable_to": "Vocational Economics",
+        "description": "",
+        "created_date": "2024-12-02",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 3200,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 46,
+        "notes": "",
+        "payable_to": "Cowles & Thompson",
+        "description": "",
+        "created_date": "2024-12-02",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 2000,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 47,
+        "notes": "",
+        "payable_to": "Brickell Key Court Reporting",
+        "description": "",
+        "created_date": "2024-12-02",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 622.4,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 48,
+        "notes": "",
+        "payable_to": "Focus Investigations",
+        "description": "",
+        "created_date": "2024-12-02",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 20579.34,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 49,
+        "notes": "",
+        "payable_to": "Stidham Reconstruction",
+        "description": "",
+        "created_date": "2024-12-02",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 2000,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 51,
+        "notes": "2024.11.25: Recvd CMR & CMB w/Invoice\n2024.11.26: Called Sharecare - Requested Invoice Waiver as 1st Copy (Free) - They are sending to Billing for Review",
+        "payable_to": "Sharecare Health Data Services LLC",
+        "description": "Certified Medical Records - Baptist Health Hardin - Unrelated",
+        "created_date": "2024-11-26",
+        "project_name": "Shannon-Colvin-MVA-10-1-2023",
+        "expense_amount": 119,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 57,
+        "notes": "2024.11.08: Recvd Invoice - Paid Online",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Doverside Emerg Phy Services",
+        "created_date": "2024-11-08",
+        "project_name": "Debra-Marshall-MVA-12-3-2022",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 59,
+        "notes": "2024.09.26 BK sent Invoice to DC for Payment",
+        "payable_to": "Kentuckiana Court Reporters",
+        "description": "Def Trinity Cohara Deposition Cancellation Fee - Late Cancellation",
+        "created_date": "2024-11-05",
+        "project_name": "Cecelia-Neltner-MVA-4-1-2023",
+        "expense_amount": 51.5,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 60,
+        "notes": "",
+        "payable_to": "EvenUP",
+        "description": "EvenUp Demand - Basic +",
+        "created_date": "2024-11-01",
+        "project_name": "Julmonzhae-Moore-MVA-8-29-2023",
+        "expense_amount": 400,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 64,
+        "notes": "",
+        "payable_to": "Prince & Brien, PSC",
+        "description": "Probate Attorney and filing",
+        "created_date": "2024-10-24",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 2145.36,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 66,
+        "notes": "2024.10.18 Recvd Notice Invoice Ready - Paid Online - CMR/CMB will be Mailed",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Southeastern Emergency Services",
+        "created_date": "2024-10-18",
+        "project_name": "Cecil-Finley-MVA-1-24-2024",
+        "expense_amount": 10,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 67,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Baptist Hardin",
+        "created_date": "2024-10-17",
+        "project_name": "Jimmy-Ferguson-MVA-5-30-2024",
+        "expense_amount": 21.38,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 68,
+        "notes": "2024.10.14 Recvd Invoice 123849 - Hard Copy to AW for Payment Processing",
+        "payable_to": "Kentuckiana Court Reporters",
+        "description": "Client Deposition Transcript - Depo Date 10/01/2024",
+        "created_date": "2024-10-14",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 307.9,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 194,
+        "notes": "",
+        "payable_to": "Commonwealth IME",
+        "description": "IME Addendum",
+        "created_date": "2022-01-11",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 300,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 195,
+        "notes": "",
+        "payable_to": "Commonwealth IME",
+        "description": "Plaintiff IME",
+        "created_date": "2022-01-11",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 1300,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 70,
+        "notes": "",
+        "payable_to": "Fayette County Circuit Court",
+        "description": "Caryn McCay v. Allstate Casualty & Property Insurance Company",
+        "created_date": "2024-10-01",
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "expense_amount": 319.82,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 71,
+        "notes": "2024.09.30 Checked Service - Still Outstanding w/JCSO - Ran Lexis Search - Found New Address - Issued Alias Summons to New Address - Fee $64.17 - Split w/Companion Dana Jackson",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Kiebler - 2051 S. Shelby Street, 40217",
+        "created_date": "2024-09-30",
+        "project_name": "Cecil-Finley-MVA-1-24-2024",
+        "expense_amount": 32.09,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 78,
+        "notes": "Frankfort Regional Medical Center",
+        "payable_to": "ChartSwap",
+        "description": "",
+        "created_date": "2024-09-13",
+        "project_name": "Frances-Whitis-WC-MVA-9-6-2024",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 79,
+        "notes": "2024.09.10: BK Filed via CourtNet Envelope 8781676 - Updated Exp Tab - Filing Fee $314.36 - Split w/Companion - $157.18 added",
+        "payable_to": "Hardin County Circuit Court",
+        "description": "Colleen & Shannon Colvin v Paul Rafferty",
+        "created_date": "2024-09-11",
+        "project_name": "Shannon-Colvin-MVA-10-1-2023",
+        "expense_amount": 157.18,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 81,
+        "notes": "2024.09.27: Recvd 2nd Invoice - Same Records - $40.00 - Paid Online - Awaiting USPS Delivery\n\n2024.09.05: Recvd Invoice - $80.00 - CMR only 25 page - Sent Fee Dispute w/KRS 422.317(k) - CMR should be Free as 1st Copy - 2nd Copy should be about $35/45.00 at most - Awaiting Response",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Radiology Alliance",
+        "created_date": "2024-09-05",
+        "project_name": "Debra-Marshall-MVA-12-3-2022",
+        "expense_amount": 40,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 83,
+        "notes": "2024.08.28: Checked Service - Cert Mail - Returned as Unknown - UTF \nIssued Alias Summons via Sheriff Svc to 1650 Stevens Ave 40205 - Fee $64.17 Split w/Companion Dana Jackson",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Kiebler - 1650 Stevens Ave, 40205",
+        "created_date": "2024-08-28",
+        "project_name": "Cecil-Finley-MVA-1-24-2024",
+        "expense_amount": 32.09,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 84,
+        "notes": "2024.08.21: Recvd Invoice Notice - Paid Online - CMR will be mailed",
+        "payable_to": "ChartSwap",
+        "description": "CMR - Southeastern Emer Med Svc",
+        "created_date": "2024-08-21",
+        "project_name": "Debra-Marshall-MVA-12-3-2022",
+        "expense_amount": 10,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 89,
+        "notes": "2024.08.15: Def Service Cert Mail - 4525 S. 3rd Street 40214 - Filing Fee $298.04 split with Companion Dana Jackson",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Cecil Finley v. Justin Kiebler",
+        "created_date": "2024-08-15",
+        "project_name": "Cecil-Finley-MVA-1-24-2024",
+        "expense_amount": 149.02,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 90,
+        "notes": "2024.08.12 Recvd CRR Resp - Download Link - Paid Invoice 18879424 - $12.87 - CMR will be mailed",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Heartland Imaging",
+        "created_date": "2024-08-12",
+        "project_name": "Alma-Cristobal-MVA-2-15-2024",
+        "expense_amount": 12.87,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 96,
+        "notes": "",
+        "payable_to": "Digital Owl",
+        "description": "",
+        "created_date": "2024-07-29",
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "expense_amount": 495,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 99,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Hardin EMS",
+        "created_date": "2024-07-12",
+        "project_name": "Jimmy-Ferguson-MVA-5-30-2024",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 100,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alma Cristobal v. Roy Hamilton and Crete Carriers Corporation",
+        "created_date": "2024-07-09",
+        "project_name": "Alma-Cristobal-MVA-2-15-2024",
+        "expense_amount": 328.11,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 102,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Douglas Livers v. Allstate & Daetoia Lewis",
+        "created_date": "2024-06-26",
+        "project_name": "Douglas-Livers-MVA-1-19-2023",
+        "expense_amount": 310.11,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 104,
+        "notes": "Hard Copy to AW for Payment Processing - Total Invoice $106.00 Split w/Companion - $53.00ea",
+        "payable_to": "Metro Investigations LLC",
+        "description": "Def D. E. Turner - Special Bailiff - Served 06.06.2024",
+        "created_date": "2024-06-25",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 53,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 145,
+        "notes": "2024.02.19 Hard Copy to AW for Check Processing\n2024.05.24 Recvd Check 2015 - Sent to Vendor via USPS",
+        "payable_to": "Melissa A. Engleman RPR",
+        "description": "Robert Prince Deposition Transcripts - 02/06/2024",
+        "created_date": "2024-02-19",
+        "project_name": "Estate-of-Betty-Prince-Premise-7-14-2020",
+        "expense_amount": 178.2,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 106,
+        "notes": "Located new Address since MVA - Attempted to Issue Alias Summons - CourtNet Envelope 8225922 - Firm CC Declined - Sent to AW - Awaiting Response on how to proceed\n\nReattempted to Issue - CourtNet Envelope 8234198 - Firm CC Declined again\n\nReattempted to Issue - CourtNet Envelope 8243974 - Processed & Issued",
+        "payable_to": "Morgan County Circuit Court",
+        "description": "Alias Summons - Def Megan Combs - Morgan Co. Sheriff Svc - 36 Oldfield Drive #9",
+        "created_date": "2024-06-24",
+        "project_name": "Michael-Crader-MVA-5-19-2023",
+        "expense_amount": 64.07,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 107,
+        "notes": "Invoiced $139.00 - Adjusted $139.00 = Balance $0.00",
+        "payable_to": "VRC Companies dba Vital Chart",
+        "description": "Certified Medical Records - UK HealthCare",
+        "created_date": "2024-06-24",
+        "project_name": "Michael-Crader-MVA-5-19-2023",
+        "expense_amount": 0,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 108,
+        "notes": "2024.02.16 Lien Invoice in File - Unsure if Paid",
+        "payable_to": "Zipliens",
+        "description": "Zip Lien Request - Lien Resolution - Equian",
+        "created_date": "2024-06-10",
+        "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023",
+        "expense_amount": 59,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 111,
+        "notes": "2024.02.05: Hard Copy to AW for Check Processing",
+        "payable_to": "Medicopy",
+        "description": "Knoxville TN - Ortho TN CMR",
+        "created_date": "2024-02-05",
+        "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+        "expense_amount": 91,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 112,
+        "notes": "Def Turner added via Amended Complaint",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Summons - Def Turner",
+        "created_date": "2024-01-29",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 32.24,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 114,
+        "notes": "2024.06.10 Checked Service - Cert Mail - Last Noted 05.27.24 Still in Transit - Been 2 weeks w/o Upd - Reissued Service via Morgan Co. Sheriff",
+        "payable_to": "Morgan County Circuit Court",
+        "description": "Alias Summons - Def Megan Combs - Morgan Co. Sheriff Svc",
+        "created_date": "2024-06-10",
+        "project_name": "Michael-Crader-MVA-5-19-2023",
+        "expense_amount": 64.07,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 116,
+        "notes": "Circuit Civil Filing Fee",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Evangeline Young v. Jacob Ray, et al.",
+        "created_date": "2024-06-03",
+        "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023",
+        "expense_amount": 319.54,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 118,
+        "notes": "",
+        "payable_to": "Morgan County Circuit Court",
+        "description": "Michael Crader v. Megan Combs",
+        "created_date": "2024-05-21",
+        "project_name": "Michael-Crader-MVA-5-19-2023",
+        "expense_amount": 294.08,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 119,
+        "notes": "2024.05.15 Found by Printer - Not Saved to File - Update - Hardcopy to AW for Payment Processing",
+        "payable_to": "Kentuckiana Court Reporters",
+        "description": "Witness Depo Transcripts - Lucretia Vinsom - Norton Intake Rep",
+        "created_date": "2024-05-15",
+        "project_name": "Estate-of-Betty-Prince-Premise-7-14-2020",
+        "expense_amount": 312.81,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 120,
+        "notes": "2024.04.29 Hardcopy to AW for Payment Processing",
+        "payable_to": "DataVant",
+        "description": "Certified Medical Records - Skyline Medical Center",
+        "created_date": "2024-04-29",
+        "project_name": "Debra-Marshall-MVA-12-3-2022",
+        "expense_amount": 192.5,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 124,
+        "notes": "",
+        "payable_to": "EvenUP",
+        "description": "",
+        "created_date": "2024-04-17",
+        "project_name": "Curtis-Lee-Justice-MVA-2-5-2023",
+        "expense_amount": 250,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 130,
+        "notes": "CourtNet Envelope 7668880 - 1/2 of Expense",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Def D. E. Turner - 2nd Attempt - Jeff Co Sheriff",
+        "created_date": "2024-04-03",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 31.46,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 131,
+        "notes": "Barren Co. Circuit Court - 23-CI-00659",
+        "payable_to": "Barren County Circuit Court",
+        "description": "Debra Marshall v Jasmine Reed",
+        "created_date": "2024-04-01",
+        "project_name": "Debra-Marshall-MVA-12-3-2022",
+        "expense_amount": 310.27,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 132,
+        "notes": "1/2",
+        "payable_to": "Boone County Circuit Court",
+        "description": "Greg Neltner and Cecelia Neltner v. Trinity Cohara",
+        "created_date": "2024-03-29",
+        "project_name": "Cecelia-Neltner-MVA-4-1-2023",
+        "expense_amount": 319.83,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 133,
+        "notes": "1/2",
+        "payable_to": "Boone County Circuit Court",
+        "description": "Greg Neltner and Cecelia Neltner v. Trinity Cohara",
+        "created_date": "2024-03-29",
+        "project_name": "Greg-Neltner-MVA-4-1-2023",
+        "expense_amount": 319.83,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 39,
+        "notes": "",
+        "payable_to": "DataVant",
+        "description": "",
+        "created_date": "2024-02-07",
+        "project_name": "Daniel-W.-Volk-MVA-09-24-2021",
+        "expense_amount": 31.29,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 122,
+        "notes": "CourtNet Envelope 7797647",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Robert Lowe - Jeff Co. Sheriff Service",
+        "created_date": "2024-04-23",
+        "project_name": "Charles-T-Johnson-MVA-4-18-2023",
+        "expense_amount": 64.07,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 127,
+        "notes": "Jefferson County Cir Crt - 24-CI-002475\nCert Mail Service: 9236090194038356759483",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Charles Johnson v. Robert Lowe",
+        "created_date": "2024-04-10",
+        "project_name": "Charles-T-Johnson-MVA-4-18-2023",
+        "expense_amount": 296.14,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 77,
+        "notes": "",
+        "payable_to": "EvenUP",
+        "description": "",
+        "created_date": "2024-09-17",
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "expense_amount": 500,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 134,
+        "notes": "CourtNet Envelope 7578453",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Amended Complaint Summons - Travelers - Cert Mail Reg Agent",
+        "created_date": "2024-03-20",
+        "project_name": "James-Kiper-MVA-12-5-2022",
+        "expense_amount": 18.08,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 138,
+        "notes": "Order No#: 992611-280123 - Paid Online",
+        "payable_to": "Lexis Nexis Risk Solutions",
+        "description": "Boyle Co. Sheriff Collision Report - 24-003933",
+        "created_date": "2024-03-05",
+        "project_name": "Christopher-Wilkerson-WC-MVA-02-15-2024",
+        "expense_amount": 10,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 139,
+        "notes": "Paid Online 03.05.2024",
+        "payable_to": "ChartSwap",
+        "description": "KORT Madisonville IN CMR",
+        "created_date": "2024-03-05",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 2.07,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 140,
+        "notes": "2024.03.05 Hard Copy to AW for Check Processing\n2024.03.05 Recvd Check 1098 - Mailed via USPS to Provider",
+        "payable_to": "Orthopaedic Associates - East Newburgh",
+        "description": "Certified Medical Records",
+        "created_date": "2024-03-05",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 42,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 141,
+        "notes": "2024.03.05 Hard Copy to AW for Check Processing\n2024.03.05 Recvd Check 1097 - Mailed via USPS to Provider",
+        "payable_to": "Deaconess Henderson Hospital",
+        "description": "Certified Medical Records",
+        "created_date": "2024-03-05",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 10,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 142,
+        "notes": "2024.02.22 Hard Copy to AW for Check Processing",
+        "payable_to": "Deaconess Hospital ROI",
+        "description": "Deaconess Hospital Medical Records - Certified",
+        "created_date": "2024-02-22",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 20,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 146,
+        "notes": "Walgreens/Rite Aid - 120 Main St,\nCalhoun, KY 42327\n\nMcLean County 24-CI-00012",
+        "payable_to": "McLean County Circuit Court",
+        "description": "Kimberly Brasher v Reit Property Management & Networks USA XIV",
+        "created_date": "2024-02-14",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 357.14,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 147,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Lexington Fayette",
+        "created_date": "2024-02-13",
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 148,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "KORT",
+        "created_date": "2024-02-13",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 150,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Hardin County EMS",
+        "created_date": "2024-02-13",
+        "project_name": "Roxanne-Simpson-MVA-9-27-2023",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 151,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Baptist Health Hardin",
+        "created_date": "2024-02-13",
+        "project_name": "Roxanne-Simpson-MVA-9-27-2023",
+        "expense_amount": 61.2,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 152,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Baptist Health Hardin",
+        "created_date": "2024-02-13",
+        "project_name": "Roxanne-Simpson-MVA-9-27-2023",
+        "expense_amount": 25.19,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 154,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Ephraim Mcdowell",
+        "created_date": "2024-02-13",
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 156,
+        "notes": "",
+        "payable_to": "Jefferson County District Court",
+        "description": "Estate Filing Fee",
+        "created_date": "2024-01-26",
+        "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023",
+        "expense_amount": 232.27,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 157,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "James Kiper v AMANI, MUSIMBI",
+        "created_date": "2024-01-24",
+        "project_name": "James-Kiper-MVA-12-5-2022",
+        "expense_amount": 284.77,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 158,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def AMANI, MUSIMBI - 3233 Utah Ave, 40215",
+        "created_date": "2024-01-24",
+        "project_name": "James-Kiper-MVA-12-5-2022",
+        "expense_amount": 62.83,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 167,
+        "notes": "MRN: 469590\nInv #: 221587",
+        "payable_to": "Orthopaedic Associates - East Newburgh",
+        "description": "Orthopaedic Associates of East Newburgh, IN - Records Request",
+        "created_date": "2023-10-06",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 22,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 175,
+        "notes": "Juanita Downs Depo Transcript",
+        "payable_to": "Paul A. Klapheke, CCR, CLVS",
+        "description": "Plaintiff's Depo Transcript",
+        "created_date": "2023-07-06",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 115,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 176,
+        "notes": "Immediately Filed Upon Recpt",
+        "payable_to": "Henry County Circuit Court",
+        "description": "Clarence Robinson v Eastern Express Inc & Gary W. Isham",
+        "created_date": "2023-06-09",
+        "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+        "expense_amount": 389.42,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 178,
+        "notes": "2023.04.11 Provided Hard Copy to AW for Check",
+        "payable_to": "Louisville Metro Emergency Medical Service",
+        "description": "Certified Medical Records - Lou Metro EMS",
+        "created_date": "2023-04-11",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 7,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 179,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - KORT Physical Therapy",
+        "created_date": "2023-04-07",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 74,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 180,
+        "notes": "Paid by CoC - Chauncey Hiestand",
+        "payable_to": "Marshall County Circuit Court",
+        "description": "Robert Sneed et. al v Mayiquel Tossaint et. al - 23-CI-00074",
+        "created_date": "2023-04-06",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 1257.7,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 182,
+        "notes": "1/2 of Fee",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Stephanie Nail - Sheriff Service",
+        "created_date": "2023-03-21",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 32.19,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 189,
+        "notes": "Envelope Number 4694487\n1/2 of Filing Fee - Companion Destiny Adkins to pay other half",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Adkins & Downs v Stephanie Nail, Unknown Driver & Allstate Insurance Company",
+        "created_date": "2022-06-08",
+        "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021",
+        "expense_amount": 155.18,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 199,
+        "notes": null,
+        "payable_to": "Test Payee",
+        "description": "Test Description",
+        "created_date": "2025-10-04",
+        "project_name": "Hope-Renee-Padgett-MVA-1-16-2023",
+        "expense_amount": 100,
+        "applies_to_projects": [
+          "Hope-Renee-Padgett-MVA-1-16-2023"
+        ]
+      },
+      {
+        "uuid": 204,
+        "notes": null,
+        "payable_to": "TEST Vendor - please delete",
+        "description": "TEST expense for tool validation",
+        "created_date": null,
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 0.01,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 203,
+        "notes": null,
+        "payable_to": "Jefferson County Circuit Court",
+        "description": null,
+        "created_date": null,
+        "project_name": "Hope-Renee-Padgett-MVA-1-16-2023",
+        "expense_amount": null,
+        "applies_to_projects": [
+          "Hope-Renee-Padgett-MVA-1-16-2023"
+        ]
+      },
+      {
+        "uuid": 11,
+        "notes": "2025.02.24: Recvd Invoice - $10.00 - Paid Online - Awaiting USPS Delivery",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Southeastern Emergency Services",
+        "created_date": "2025-02-24",
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 10,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 22,
+        "notes": "2025.01.23: Recvd Past Due Notice - No record of Initial Notice - Hard Copy to AW for Payment Processing",
+        "payable_to": "Sharecare Health Data Services LLC",
+        "description": "Certified Medical Records - Lou Ortho Clinic",
+        "created_date": "2025-01-23",
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 12.49,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 63,
+        "notes": "2024.10.24: Check 2071 - $60.00 - BK will Hand Delivery",
+        "payable_to": "Floyd County, Indiana Sheriff",
+        "description": "Alias Summons - Def Austin Whitman - Floyd Co. Sheriff Svc",
+        "created_date": "2024-10-24",
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 60,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 73,
+        "notes": "2024.09.27: Recvd Invoice - Hardcopy to AW for Payment Processing",
+        "payable_to": "Stierle & Rettig PLLC",
+        "description": "Warning Order Attorney for Unknown Employees",
+        "created_date": "2024-09-27",
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 133.18,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 85,
+        "notes": "2024.08.21: Recvd Invoice Notice - Paid Online - CMR will be mailed",
+        "payable_to": "ChartSwap",
+        "description": "CMR Lou Metro Emer Med Assoc",
+        "created_date": "2024-08-21",
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 10,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 86,
+        "notes": "Served via SOS",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Timothy Ruhl v. Hoosier Cargo Express, et al.",
+        "created_date": "2024-08-21",
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 348.35,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 92,
+        "notes": "2024.08.08 Recvd Exp Inv - 13778753 - Access Code 993546 - $30.00 - Paid Online - Awaiting CMRs",
+        "payable_to": "HealthMark Group",
+        "description": "CMR Capitol Pain Institute",
+        "created_date": "2024-08-08",
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 97,
+        "notes": "cc'd Shelter Insurance Agent A. Hamm via Email",
+        "payable_to": "USPS",
+        "description": "BI LOR to Robert Cobb - Hoosier Cargo Express - Cert Mail: 7019-1120-0002-0843-8718",
+        "created_date": "2024-07-26",
+        "project_name": "Timothy-Ruhl-Premise-09-14-2023",
+        "expense_amount": 12.26,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 1,
+        "notes": "",
+        "payable_to": "Belanger & Associates",
+        "description": "Dwight Young v. Jacob Ray and Derby City Gaming",
+        "created_date": "2025-06-04",
+        "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023",
+        "expense_amount": 110,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 3,
+        "notes": "2025.03.25: Pulled Invoice from Repository per BK",
+        "payable_to": "Kentuckiana Court Reporters",
+        "description": "Deposition of Def Hamlet",
+        "created_date": "2025-03-25",
+        "project_name": "Brenda-Lang-MVA-09-03-2021",
+        "expense_amount": 423.95,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 4,
+        "notes": "Defendant Marcus Hamlet Deposition",
+        "payable_to": "Kentuckiana Court Reporters",
+        "description": "Brenda Lang v. Marcus Hamlet (Jefferson Circuit Court 23-CI-005931)",
+        "created_date": "2025-03-25",
+        "project_name": "Brenda-Lang-MVA-09-03-2021",
+        "expense_amount": 423.95,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 5,
+        "notes": "2025.03.21 Recvd Invoice - Sent to AW for Permission to Pay Online",
+        "payable_to": "Commonwealth IME",
+        "description": "Commonwealth IME Addendum",
+        "created_date": "2025-03-21",
+        "project_name": "Michael-Johnston-WC-05-03-2023",
+        "expense_amount": 400,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 6,
+        "notes": "2025.03.17: Recvd Invoice - Printed Hard Copy to AW for Payment Processing",
+        "payable_to": "Dr. Michael Salamon (Ortho Surgeon)",
+        "description": "WC Treating Narrative Request",
+        "created_date": "2025-03-17",
+        "project_name": "Amy-Stich-WC-01-17-2024",
+        "expense_amount": 550,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 7,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Southeastern Emergency Services",
+        "created_date": "2025-03-10",
+        "project_name": "Jae-Kale-Lewis-MVA-02-24-2025",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 9,
+        "notes": "2025.02.26: Recvd ChartSwap Notice Invoice Ready - $22.87 - Paid Online - Awaiting USPS Delivery",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Heartland Imaging",
+        "created_date": "2025-02-26",
+        "project_name": "Robin-Willis-Beck-Premise-09-21-2023",
+        "expense_amount": 22.87,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 13,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Florence EMS",
+        "created_date": "2025-02-13",
+        "project_name": "Chase-Lindsey-MVA-12-01-2024",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 18,
+        "notes": "2025.01.29 BK Filed Complaint - Exp $239.54 - Split 3ways - Total for Client $79.85",
+        "payable_to": "Floyd County Circuit Court",
+        "description": "Williams, Ward, Moore v. Naomi Robinson",
+        "created_date": "2025-01-29",
+        "project_name": "Ashlee-Williams-MVA-08-29-2023",
+        "expense_amount": 79.85,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 19,
+        "notes": "2025.01.27: Hearing Transcript Ready for Pick up - $25.00 (1/2 per Party)",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Def Hearing Transcript - $25.00",
+        "created_date": "2025-01-27",
+        "project_name": "Destiny-Adkins-MVA-04-16-2021",
+        "expense_amount": 12.5,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 21,
+        "notes": "",
+        "payable_to": "Cincinnati Children's Hospital",
+        "description": "",
+        "created_date": "2025-01-27",
+        "project_name": "Brooklyn-Ballard-MVA-02-28-2024",
+        "expense_amount": 50,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 23,
+        "notes": "",
+        "payable_to": "Cincinnati Children's Hospital",
+        "description": "",
+        "created_date": "2025-01-22",
+        "project_name": "Owen-Lindsey-MVA-12-01-2024",
+        "expense_amount": 50,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 24,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Central Emergency Physicians",
+        "created_date": "2025-01-17",
+        "project_name": "Fina-Fatty-MVA-11-05-2024",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 26,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Radiology Associates",
+        "created_date": "2025-01-17",
+        "project_name": "Fina-Fatty-MVA-11-05-2024",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 27,
+        "notes": "2025.01.15: Recvd Notice Invoice Ready - Paid Online - Recvd Confirmation",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - VIP Imaging",
+        "created_date": "2025-01-15",
+        "project_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023",
+        "expense_amount": 26,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 31,
+        "notes": "University of Cincinnati Medical Center",
+        "payable_to": "MRO",
+        "description": "",
+        "created_date": "2025-01-02",
+        "project_name": "Elizabeth-Lindsey-MVA-12-01-2024",
+        "expense_amount": 72.01,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 144,
+        "notes": "Hard copy of Invoice to AW for Check Processing\n2024.03.12 Recvd Approval to Pay Online - Paid",
+        "payable_to": "Commonwealth IME",
+        "description": "Dr. Barefoot Record Review",
+        "created_date": "2024-02-21",
+        "project_name": "Estate-of-Keith-Graser-WC-12-07-2020",
+        "expense_amount": 1050,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 193,
+        "notes": "",
+        "payable_to": "Commonwealth IME",
+        "description": "Doctor Hourly - Misc",
+        "created_date": "2022-01-11",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 300,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 2,
+        "notes": "Mediation unsuccessful",
+        "payable_to": "Thomas J. Knopf Mediation Services",
+        "description": "Brasher v. Walgreens (McLean 24-CI-00012)",
+        "created_date": "2025-04-17",
+        "project_name": "Kimberly-Brasher-Premise-2-25-2023",
+        "expense_amount": 400,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 37,
+        "notes": "2024.12.12: Recvd Invoice Notice - Paid Online - Awaiting USPS Delivery",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Diagnostic Imaging Alliance",
+        "created_date": "2024-12-12",
+        "project_name": "Wayne-Weber-MVA-01-01-2022",
+        "expense_amount": 20,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 38,
+        "notes": "",
+        "payable_to": "Sharecare",
+        "description": "RR Baptist Health Hardin",
+        "created_date": "2024-02-13",
+        "project_name": "Colleen-Colvin-MVA-10-01-2023",
+        "expense_amount": 2.99,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 36,
+        "notes": "2024.12.26: Checked Svc - Issued 11.15 via JCSO - Still in Progress - Ran Lexis Search - Possible new address 7308 Shelbyville Rd, 40067 - Issued Alias Summons via Shelby County SO via CourtNet Envelope 9547126",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Shelby Co. Sheriff Service - 7308 Shelbyville Rd, 40067",
+        "created_date": "2024-12-26",
+        "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023",
+        "expense_amount": 73.34,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 53,
+        "notes": "2024.11.15: Checked Svc - Cert Mail - Tracked - Undelivered - Issued Alias via JCSO",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Jessica Burden - Jefferson Co. Sheriff Svc",
+        "created_date": "2024-11-15",
+        "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023",
+        "expense_amount": 63.04,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 61,
+        "notes": "2024.11.01: Checked Amended Complaint Service - Not Issued by Court - Filed Amended Complaint Svc via Cert Mail - CourtNet Envelope 9173353 - Added $19.92 to Expenses",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Amended Complaint Summons - Def Jessica Burden - Cert Mail",
+        "created_date": "2024-11-01",
+        "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023",
+        "expense_amount": 19.92,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 65,
+        "notes": "2024.10.04: Cert Mail Svc Failed - Unclaimed \n2024.10.21: Ran Address Search - Last Address was location of Incident - Def Brown arrested in July at 4303 Newport Address - Sent Svc to 4303 Newport via Sheriff - Also noted DV Court Date 12/06/2024 to JCSO",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Dahlyn Brown - Jefferson Co. Sheriff Svc",
+        "created_date": "2024-10-21",
+        "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023",
+        "expense_amount": 62.52,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 50,
+        "notes": "2024.11.27: Recvd CMB w/Invoice - Hard Copy to AW for Payment Processing",
+        "payable_to": "Health Lift Pharmacy Service, LLC",
+        "description": "Certified Medical Records - Health Lift Pharm Svc",
+        "created_date": "2024-11-27",
+        "project_name": "Ashlee-Williams-MVA-08-29-2023",
+        "expense_amount": 11,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 72,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Jerome Hedinger v. Dahlyn Brown, et al.",
+        "created_date": "2024-09-27",
+        "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023",
+        "expense_amount": 313.41,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 54,
+        "notes": "2024.11.14: Recvd Invoice - 006244315 - Paid Online - USPS Delivery",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Louisville Emergency Medical Associates",
+        "created_date": "2024-11-14",
+        "project_name": "Brenda-Lang-MVA-09-03-2021",
+        "expense_amount": 20,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 55,
+        "notes": "2024.11.14: Recvd Invoice 006244291 - Paid Online - Mail Delivery",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Louisville Emergency Medical Associates",
+        "created_date": "2024-11-14",
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "expense_amount": 20,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 56,
+        "notes": "2024.11.13: Recvd Inv - Paid Online",
+        "payable_to": "Commonwealth IME",
+        "description": "IME w/ Dr. Bloemer - Commonwealth IME - Addendum",
+        "created_date": "2024-11-13",
+        "project_name": "Michael-Johnston-WC-05-03-2023",
+        "expense_amount": 350,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 58,
+        "notes": "2024.11.05: Recvd Invoice - Hard Copy to AW for Payment Processing or Permission to Pay\n2024.12.10: Recvd Permission to Pay from FG - Paid Online",
+        "payable_to": "Commonwealth IME",
+        "description": "Commonwealth IME Record Collection Fee",
+        "created_date": "2024-11-05",
+        "project_name": "Michael-Johnston-WC-05-03-2023",
+        "expense_amount": 100,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 62,
+        "notes": "2024.10.31 Recvd Exp Inv from BK - Hard copy to AW for Payment Processing\n2025.01.31 Recvd Exp Inv from BK - Over Due Notice - Hard Copy to AW for Payment Processing",
+        "payable_to": "Buechler-Haws Reporting",
+        "description": "Nancy Graser Deposition 05.24.2022",
+        "created_date": "2024-11-01",
+        "project_name": "Estate-of-Keith-Graser-WC-12-07-2020",
+        "expense_amount": 85,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 69,
+        "notes": "2024.10.04: Recvd Invoice\n2024.10.07: Hard Copy to AW for Payment Processing (Permission to Pay)\n2024.12.10: Recvd Permission to Pay from FG - Paid Online",
+        "payable_to": "Commonwealth IME",
+        "description": "IME w/ Dr. Bloemer - Commonwealth IME",
+        "created_date": "2024-10-07",
+        "project_name": "Michael-Johnston-WC-05-03-2023",
+        "expense_amount": 1200,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 42,
+        "notes": "",
+        "payable_to": "Jackson Kelly PLLC",
+        "description": "",
+        "created_date": "2024-12-02",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": 570,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 52,
+        "notes": "",
+        "payable_to": "Matt Hillbrecht",
+        "description": "",
+        "created_date": "2024-11-21",
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "expense_amount": null,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 74,
+        "notes": "2024.09.27: Paid ChartSwap Invoice - Awaiting USPS Delivery\n2024.09.26: ChartSwap not waiving $40 Fee - Sent to AW - AW approved payment\n2024.08.29: Recvd Invoice - Attempted to Dispute",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Radiology Alliance",
+        "created_date": "2024-09-27",
+        "project_name": "Muhammad-Alif-MVA-11-08-2022",
+        "expense_amount": 40,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 75,
+        "notes": "2024.09.19: Recvd Invoice Notice - Paid Invoice Online - $10.00 - CMR/CMB will be Mailed via USPS",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Southeastern Emergency Services",
+        "created_date": "2024-09-19",
+        "project_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023",
+        "expense_amount": 10,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 80,
+        "notes": "2024.09.10: BK Filed via CourtNet Envelope 8781676 - Paid 314.36 - Split w Companion - Corrected Tab",
+        "payable_to": "Hardin County Circuit Court",
+        "description": "Collen & Shannon Colvin v. Paul Rafferty",
+        "created_date": "2024-09-10",
+        "project_name": "Colleen-Colvin-MVA-10-01-2023",
+        "expense_amount": 157.18,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 82,
+        "notes": "2024.08.29: Recvd Invoice - Hard Copy to AW for Payment Processing/Permission to Pay",
+        "payable_to": "Kentuckiana Court Reporters",
+        "description": "Client 3rd Deposition Transcripts",
+        "created_date": "2024-08-29",
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "expense_amount": 192.75,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 87,
+        "notes": "2024.08.19: Recvd Invoice B87BF84068544031A339 - W/CMR - Printed - Sent to AW for Payment Processing",
+        "payable_to": "ScanStat Technologies",
+        "description": "Certified Medical Records - Mayo Spine Clinic",
+        "created_date": "2024-08-19",
+        "project_name": "Muhammad-Alif-MVA-11-08-2022",
+        "expense_amount": 86.45,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 88,
+        "notes": "2024.08.19: Called Reporter - BK needs Officer Transcript - Reporter only accepts checks - Sending to AW for Payment Processing - BK Paid Out of Pocket 08.19.2024",
+        "payable_to": "Patricia Schneider",
+        "description": "Responding Officer Deposition Transcript",
+        "created_date": "2024-08-19",
+        "project_name": "Shawna-Broyles-MVA-08-26-2022",
+        "expense_amount": 175.75,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 91,
+        "notes": "2024.08.12: Recvd CRR Download Link - Downloaded - Found Invoice in Download - Went to Pay Online - Noted Already paid (not added to expenses) - Added to Expenses",
+        "payable_to": "DataVant",
+        "description": "Certified Medical Billing Records - Parkridge Medical Center",
+        "created_date": "2024-08-12",
+        "project_name": "Muhammad-Alif-MVA-11-08-2022",
+        "expense_amount": 38,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 93,
+        "notes": "2024.08.07: Filed Alias Summons via Jeff Co Sheriff - Court Net Envelope 8541489",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Trevor Logsdon (Amended from Steven Logsdon)",
+        "created_date": "2024-08-07",
+        "project_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023",
+        "expense_amount": 64.07,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 94,
+        "notes": "2024.08.06 Recvd Invoice 005745497 - $3.75 - Mail Delivery - Paid Online - Awaiting Delivery",
+        "payable_to": "ChartSwap",
+        "description": "Muhammad Alif CMR/CMB - KORT All Locations - $3.75",
+        "created_date": "2024-08-06",
+        "project_name": "Muhammad-Alif-MVA-11-08-2022",
+        "expense_amount": 3.75,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 95,
+        "notes": "2024.11.20: Recvd OverDue Notice - Hard Copy to AW for Payment Processing",
+        "payable_to": "CJV Reporting Company, Inc.",
+        "description": "Estate of Keith Graser v. Coupe Construction - Final Hearing Transcript",
+        "created_date": "2024-08-05",
+        "project_name": "Estate-of-Keith-Graser-WC-12-07-2020",
+        "expense_amount": 49.77,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 98,
+        "notes": "2024.07.22: Recvd Overdue Invoice - Hard Copy to AW for Payment Processing\n2024.08.26: Recvd 2nd Overdue Notice - Hard Copy to AW for Payment Processing or Permission to Pay\n2024.10.23: Recvd 3rd Overdue Notice - Hard Copy to AW for Payment Processing\n\nmailed check #2063 for $593.80 to KY Court Reporters on behalf of Muhammad Alif - Invoice #116205#cc\nPosted by Faye Gaither on 12/3/2024 at 2:42 PM.",
+        "payable_to": "Kentucky Court Reporters",
+        "description": "Client Deposition Transcript - Depo Date 05.23.2024",
+        "created_date": "2024-07-22",
+        "project_name": "Muhammad-Alif-MVA-11-08-2022",
+        "expense_amount": 593.8,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 101,
+        "notes": "2024.07.02: Recvd Invoice - BK Awaiting Report - Paid Online",
+        "payable_to": "Commonwealth IME",
+        "description": "Dr. Jules Barefoot Medical Record Review",
+        "created_date": "2024-07-02",
+        "project_name": "Shawna-Broyles-MVA-08-26-2022",
+        "expense_amount": 1050,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 103,
+        "notes": "Hard Copy to AW for Payment Processing - Total Invoice $106.00 Split w/Companion - $53.00ea",
+        "payable_to": "Metro Investigations LLC",
+        "description": "Def D. E. Turner - Special Bailiff - Served 06.06.2024",
+        "created_date": "2024-06-25",
+        "project_name": "Destiny-Adkins-MVA-04-16-2021",
+        "expense_amount": 53,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 105,
+        "notes": "Info listed for Kentucky Court Reporters - But still has come Kentuckiana Court Reporter Info - Possibly Changing Names ??\n\n2024.06.24: Hard Copy to AW for Payment Processing",
+        "payable_to": "Kentucky Court Reporters",
+        "description": "Def Wickcliffe Deposition - 05/23/2024",
+        "created_date": "2024-06-25",
+        "project_name": "Muhammad-Alif-MVA-11-08-2022",
+        "expense_amount": 373.1,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 191,
+        "notes": "",
+        "payable_to": "Commonwealth IME",
+        "description": "IME Addendum - 2nd",
+        "created_date": "2022-03-21",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 300,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 76,
+        "notes": "initial payment",
+        "payable_to": "Caryn McCay",
+        "description": "",
+        "created_date": "2024-09-17",
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "expense_amount": 5000,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 135,
+        "notes": "Cert Mail: 7018-1830-0002-2504-2968",
+        "payable_to": "USPS",
+        "description": "Premise LOR to Animal Owner - Dahlyn Brown",
+        "created_date": "2024-03-19",
+        "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023",
+        "expense_amount": 11.01,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 109,
+        "notes": "Claim already Filed when Retained",
+        "payable_to": "",
+        "description": "Court Filing Fee",
+        "created_date": "2024-06-10",
+        "project_name": "Shawna-Broyles-MVA-08-26-2022",
+        "expense_amount": 0,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 110,
+        "notes": "",
+        "payable_to": "DataVant",
+        "description": "",
+        "created_date": "2024-02-07",
+        "project_name": "Daniel-W.-Volk-MVA-09-24-2021",
+        "expense_amount": 40.87,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 136,
+        "notes": "Cert Mail: 7018-1830-0002-2504-2951",
+        "payable_to": "USPS",
+        "description": "Premise LOR to Property Owner - 432 Atwood LLC",
+        "created_date": "2024-03-19",
+        "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023",
+        "expense_amount": 11.01,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 113,
+        "notes": "2024.06.10 Hard Copy to AW for Payment Processing\n2024.09.06 Hard Copy to AW for Payment Processing\n2024.11.07 Hard Copy to AW for Payment Processing\n\nmailed check #2064 to Soergel Abell Arnold & Meyers LLC, 2950 Breckinridge Ln, Suite 11A\nLouisville, KY 40220 on behalf of Shawna Broyes - for $268.80 (Inv # 156105)",
+        "payable_to": "Soergel, Abell, Arnold & Davis, LLC",
+        "description": "Client Deposition Transcript - Depo Date 03/12/2024",
+        "created_date": "2024-06-10",
+        "project_name": "Shawna-Broyles-MVA-08-26-2022",
+        "expense_amount": 268.8,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 115,
+        "notes": "CourtNet Envelope: 8098260\n24-CI-003910",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Marvynn Alexandre v Steven Logsdon - MVA",
+        "created_date": "2024-06-07",
+        "project_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023",
+        "expense_amount": 287.51,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 117,
+        "notes": "Invoice Dated 12/11/2020\n2024.05.23 Recvd Check 2013 - Sent to Vendor via USPS",
+        "payable_to": "Theresa A. Saylor",
+        "description": "Client & Bobby Vaughn Deposition & Transcripts",
+        "created_date": "2024-05-24",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 453,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 121,
+        "notes": "2024.04.25 Paid Online via CC 9609",
+        "payable_to": "Commonwealth IME",
+        "description": "Commonwealth IME - Dr. Barefoot 2nd Addendum",
+        "created_date": "2024-04-25",
+        "project_name": "Estate-of-Keith-Graser-WC-12-07-2020",
+        "expense_amount": 350,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 123,
+        "notes": "",
+        "payable_to": "EvenUP",
+        "description": "",
+        "created_date": "2024-04-17",
+        "project_name": "Wayne-Weber-MVA-01-01-2022",
+        "expense_amount": 700,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 125,
+        "notes": "CourtNet Envelope 7757998",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Amended Complaint via Sheriff Service to Def Vilches",
+        "created_date": "2024-04-17",
+        "project_name": "Sariya-Mason-DB-08-19-2022",
+        "expense_amount": 135.34,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 126,
+        "notes": "2024.04.11 Invoice REQ-17947622 - Paid Online",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - KORT Physical Therapy",
+        "created_date": "2024-04-11",
+        "project_name": "Michael-Johnston-WC-05-03-2023",
+        "expense_amount": 95,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 128,
+        "notes": "2024.04.05 Hardcopy to AW for Payment Processing\n2024.05.24 Recvd Check 2026 - $82.50 - Sent to Vendor via USPS - Also sent Payment Verification Email to Vendor - If not received in 7-10 days contact us",
+        "payable_to": "Buechler-Haws Reporting",
+        "description": "Nancy Graser - Depo 2 (re Discover/PNC Statements)",
+        "created_date": "2024-04-05",
+        "project_name": "Estate-of-Keith-Graser-WC-12-07-2020",
+        "expense_amount": 82.5,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 129,
+        "notes": "CourtNet Envelope 7668880 - Expense 1/2",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Def D. E. Turner - 2nd Attempt - Jeff Co Sheriff",
+        "created_date": "2024-04-03",
+        "project_name": "Destiny-Adkins-MVA-04-16-2021",
+        "expense_amount": 31.47,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 137,
+        "notes": "2024.03.13 CMRs & DME Report Sent to Expert - Hard Copy to AW for Payment Processing\n2024.04.25 Paid Invoice Online via CC 9609 - Facility Needed Payment to Release Report",
+        "payable_to": "Commonwealth IME",
+        "description": "WC IME - Dr. Gary F. Bloemer - Commonwealth IME",
+        "created_date": "2024-03-13",
+        "project_name": "Cora-Hall-WC-12-05-2022",
+        "expense_amount": 1200,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 143,
+        "notes": "Hard Copy to AW for Check Processing\n2024.03.12 Recvd Approval to Pay - Paid Online",
+        "payable_to": "Commonwealth IME",
+        "description": "Dr. Barefoot Record Review Addedum",
+        "created_date": "2024-02-21",
+        "project_name": "Estate-of-Keith-Graser-WC-12-07-2020",
+        "expense_amount": 350,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 149,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "DXP",
+        "created_date": "2024-02-13",
+        "project_name": "Robin-Willis-Beck-Premise-09-21-2023",
+        "expense_amount": 30,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 153,
+        "notes": "",
+        "payable_to": "ChartSwap",
+        "description": "Baptist Health Hardin",
+        "created_date": "2024-02-13",
+        "project_name": "Colleen-Colvin-MVA-10-01-2023",
+        "expense_amount": 76.35,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 155,
+        "notes": "Def Turner added by Amended Complaint",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Summons - Def Turner",
+        "created_date": "2024-01-29",
+        "project_name": "Destiny-Adkins-MVA-04-16-2021",
+        "expense_amount": 32.24,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 159,
+        "notes": "Jefferson County Circuit Court - 24-CI-000532",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Complaint Filing Fee",
+        "created_date": "2024-01-23",
+        "project_name": "Robin-Willis-Beck-Premise-09-21-2023",
+        "expense_amount": 357.88,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 160,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Marcus Hamlet - Sheriff Service - Shelvis Dr Address",
+        "created_date": "2024-01-18",
+        "project_name": "Brenda-Lang-MVA-09-03-2021",
+        "expense_amount": 62.42,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 161,
+        "notes": "Defendant is an IN resident, have to go through SOS\n$308.03 + Lexis Fee = $317.27",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Wayne Weber v. James Fenwick - 23-CI-008019",
+        "created_date": "2023-12-28",
+        "project_name": "Wayne-Weber-MVA-01-01-2022",
+        "expense_amount": 317.27,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 162,
+        "notes": "CourtNet Envelope 7086354",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Marcus Hamlet - Sheriff Service",
+        "created_date": "2023-12-28",
+        "project_name": "Brenda-Lang-MVA-09-03-2021",
+        "expense_amount": 62.32,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 163,
+        "notes": "2023.10.30 Recvd Overdue Notice",
+        "payable_to": "Kentuckiana Court Reporters",
+        "description": "Deposition of Def Sewell 03.23.2023",
+        "created_date": "2023-10-30",
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "expense_amount": 236.49,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 164,
+        "notes": "2023.10.16 Hardcopy to AW for Check Processing",
+        "payable_to": "X-ray Associates of Louisville",
+        "description": "Certified Medical Records - Free Copy Already Recvd (Twice)",
+        "created_date": "2023-10-16",
+        "project_name": "Brenda-Lang-MVA-09-03-2021",
+        "expense_amount": 4,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 165,
+        "notes": "10.12.2023: Invoice to AW for Processing",
+        "payable_to": "Thomas J. Knopf Mediation Services",
+        "description": "Amy Mills v Fortch Bank Mediation",
+        "created_date": "2023-10-12",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 600,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 166,
+        "notes": "Curt Sitlinger sent in LOR advising he is defending Estate of Deshawn Ford - Sent Alias summons for Service via Jefferson County Sheriff - Courtnet Envelope 6716906",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Sheriff Service - Def Deshawn Ford c/o Sitlinger Law",
+        "created_date": "2023-10-11",
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "expense_amount": 62.52,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 168,
+        "notes": "Filed via CourtNet Envelope 6670275",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Schrice Thomas as next of Kin, Sariya Mason, a minor v Yanleys & Surelis Castillo",
+        "created_date": "2023-10-02",
+        "project_name": "Sariya-Mason-DB-08-19-2022",
+        "expense_amount": 400.67,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 169,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Brenda Lang v Lou Metro Gov & Marcus Hamlet",
+        "created_date": "2023-09-27",
+        "project_name": "Brenda-Lang-MVA-09-03-2021",
+        "expense_amount": 309.27,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 170,
+        "notes": "",
+        "payable_to": "Linda Jones",
+        "description": "",
+        "created_date": "2023-09-20",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 3200,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 171,
+        "notes": "",
+        "payable_to": "Scott Barton",
+        "description": "Jefferson County Public Administrator Fee for Appointment",
+        "created_date": "2023-09-11",
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "expense_amount": 1500,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 172,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Muhammad Alif v Jacquelyn B Wickcliffe & Harbor House of Louisville",
+        "created_date": "2023-09-08",
+        "project_name": "Muhammad-Alif-MVA-11-08-2022",
+        "expense_amount": 401.7,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 173,
+        "notes": "Deshawn Ford Estate and Petition for Appointment of Public Administrator",
+        "payable_to": "",
+        "description": "Filing Fee - Deshawn Ford Estate",
+        "created_date": "2023-07-25",
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "expense_amount": 232.27,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 174,
+        "notes": "Destiny Adkins Depo Transcript",
+        "payable_to": "Paul A. Klapheke, CCR, CLVS",
+        "description": "Plaintiff's Depo Transcript",
+        "created_date": "2023-07-06",
+        "project_name": "Destiny-Adkins-MVA-04-16-2021",
+        "expense_amount": 182.5,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 177,
+        "notes": "CourtNet Envelope 5932003",
+        "payable_to": "Shelby County Sheriff Office",
+        "description": "Amended Complaint - Service on Deshawn Ford - Shelby County Sheriff",
+        "created_date": "2023-04-28",
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "expense_amount": 72.82,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 181,
+        "notes": "",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Stephanie Nail - Sheriff Service",
+        "created_date": "2023-03-21",
+        "project_name": "Destiny-Adkins-MVA-04-16-2021",
+        "expense_amount": 32.19,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 183,
+        "notes": "2023.03.02 Provided Invoice to AW for Check\n2023.06.05 Recvd FU email from Reporter - Provided to AW\n2023.07.06 Recvd FU Email from Reporter - Fwd' To AW to Address",
+        "payable_to": "Buechler-Haws Reporting",
+        "description": "Witness Depo Transcripts - Eric Bergstrom, Nick Hyde & Jason Jackman",
+        "created_date": "2023-03-02",
+        "project_name": "Estate-of-Keith-Graser-WC-12-07-2020",
+        "expense_amount": 265,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 184,
+        "notes": "2023.02.27 Invoice # 110470 - AW paid online",
+        "payable_to": "Migliore & Associates",
+        "description": "Client Deposition Transcript",
+        "created_date": "2023-02-27",
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "expense_amount": 117.92,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 185,
+        "notes": "2023.02.20 Recvd Invoice for Instant Download Fee - $16.00\n2023.02.20 Paid Invoice & Downloaded MRs & MBs",
+        "payable_to": "ChartSwap",
+        "description": "KORT Physical Therapy - Instant Download Fee",
+        "created_date": "2023-02-20",
+        "project_name": "Muhammad-Alif-MVA-11-08-2022",
+        "expense_amount": 16,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 186,
+        "notes": "Mailed to NY DMV per Instructions on Accident Info Exchange Sheet",
+        "payable_to": "New York Department of Motor Vehicles",
+        "description": "New York Police Report",
+        "created_date": "2023-01-06",
+        "project_name": "Muhammad-Alif-MVA-12-09-2022",
+        "expense_amount": 25,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 187,
+        "notes": "",
+        "payable_to": "EvenUP",
+        "description": "",
+        "created_date": "2022-12-23",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 1400,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 188,
+        "notes": "Envelope 4694487\n1/2 Filing Fee - Companion Juanita Downs to pay other half",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Adkins & Downs v Stephanie Nail, Unknown Driver & Allstate Insurance Company",
+        "created_date": "2022-06-08",
+        "project_name": "Destiny-Adkins-MVA-04-16-2021",
+        "expense_amount": 155.18,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 190,
+        "notes": "",
+        "payable_to": "BioKinetics",
+        "description": "Amy Mills v Forcht Bank FCE Report",
+        "created_date": "2022-04-25",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 550,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 192,
+        "notes": "Mediation Agreement Received 03/11/2022 - Mediation Scheduled for 07/14/2022",
+        "payable_to": "National Academy of Distinguished Neutrals",
+        "description": "Amy Mills v Forcht Bank",
+        "created_date": "2022-03-11",
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "expense_amount": 375,
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 205,
+        "project_name": "Faizon-Procter-Witcher-MVA-7-01-2025",
+        "payable_to": "ChartSwap",
+        "description": null,
+        "expense_amount": 37.0,
+        "notes": null,
+        "created_date": "10/29/2025 12:25 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 206,
+        "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+        "payable_to": null,
+        "description": "DEPOSITION INVOICE PLACEHOLDER",
+        "expense_amount": 500.0,
+        "notes": null,
+        "created_date": "5/8/2025 7:45 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 207,
+        "project_name": "Timothy-Ruhl-A-B-9-14-2023",
+        "payable_to": "ChartSwap",
+        "description": "Certified Medical Records - Southeastern Emergency Services",
+        "expense_amount": 10.0,
+        "notes": "2025.02.24: Recvd Invoice - $10.00 - Paid Online - Awaiting USPS Delivery",
+        "created_date": "2/24/2025 11:16 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 208,
+        "project_name": "Timothy-Ruhl-A-B-9-14-2023",
+        "payable_to": "Sharecare Health Data Services LLC",
+        "description": "Certified Medical Records - Lou Ortho Clinic",
+        "expense_amount": 12.49,
+        "notes": "2025.01.23: Recvd Past Due Notice - No record of Initial Notice - Hard Copy to AW for Payment Processing",
+        "created_date": "1/23/2025 12:08 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 209,
+        "project_name": "Elizabeth-Lindsey-MVA-12-01-2024",
+        "payable_to": "MRO",
+        "description": null,
+        "expense_amount": 72.01,
+        "notes": "University of Cincinnati Medical Center",
+        "created_date": "1/2/2025 7:28 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 210,
+        "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Shelby Co. Sheriff Service - 7308 Shelbyville Rd, 40067",
+        "expense_amount": 73.34,
+        "notes": "2024.12.26: Checked Svc - Issued 11.15 via JCSO - Still in Progress - Ran Lexis Search - Possible new address 7308 Shelbyville Rd, 40067 - Issued Alias Summons via Shelby County SO via CourtNet Envelope 9547126",
+        "created_date": "12/26/2024 11:28 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 211,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Jackson Kelly PLLC",
+        "description": null,
+        "expense_amount": 570.0,
+        "notes": null,
+        "created_date": "12/2/2024 12:05 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 212,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Kentucky Court Reporters",
+        "description": null,
+        "expense_amount": 497.8,
+        "notes": null,
+        "created_date": "12/2/2024 12:05 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 213,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Burke Neal PLLC",
+        "description": null,
+        "expense_amount": 687.5,
+        "notes": null,
+        "created_date": "12/2/2024 12:04 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 214,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Vocational Economics",
+        "description": null,
+        "expense_amount": 3200.0,
+        "notes": null,
+        "created_date": "12/2/2024 12:03 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 215,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Cowles & Thompson",
+        "description": null,
+        "expense_amount": 2000.0,
+        "notes": null,
+        "created_date": "12/2/2024 12:02 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 216,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Brickell Key Court Reporting",
+        "description": null,
+        "expense_amount": 622.4,
+        "notes": null,
+        "created_date": "12/2/2024 12:00 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 217,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Focus Investigations",
+        "description": null,
+        "expense_amount": 20579.34,
+        "notes": null,
+        "created_date": "12/2/2024 11:57 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 218,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Stidham Reconstruction",
+        "description": null,
+        "expense_amount": 2000.0,
+        "notes": null,
+        "created_date": "12/2/2024 11:55 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 219,
+        "project_name": "Robyn-Hester-WD-MVA-02-23-2022",
+        "payable_to": "Matt Hillbrecht",
+        "description": null,
+        "expense_amount": null,
+        "notes": null,
+        "created_date": "11/21/2024 10:23 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 220,
+        "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Jessica Burden - Jefferson Co. Sheriff Svc",
+        "expense_amount": 63.04,
+        "notes": "2024.11.15: Checked Svc - Cert Mail - Tracked - Undelivered - Issued Alias via JCSO",
+        "created_date": "11/15/2024 12:15 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 221,
+        "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Amended Complaint Summons - Def Jessica Burden - Cert Mail",
+        "expense_amount": 19.92,
+        "notes": "2024.11.01: Checked Amended Complaint Service - Not Issued by Court - Filed Amended Complaint Svc via Cert Mail - CourtNet Envelope 9173353 - Added $19.92 to Expenses",
+        "created_date": "11/1/2024 10:11 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 222,
+        "project_name": "Timothy-Ruhl-A-B-9-14-2023",
+        "payable_to": "Floyd County, Indiana Sheriff",
+        "description": "Alias Summons - Def Austin Whitman - Floyd Co. Sheriff Svc",
+        "expense_amount": 60.0,
+        "notes": "2024.10.24: Check 2071 - $60.00 - BK will Hand Delivery",
+        "created_date": "10/24/2024 12:29 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 223,
+        "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Def Dahlyn Brown - Jefferson Co. Sheriff Svc",
+        "expense_amount": 62.52,
+        "notes": "2024.10.04: Cert Mail Svc Failed - Unclaimed \n2024.10.21: Ran Address Search - Last Address was location of Incident - Def Brown arrested in July at 4303 Newport Address - Sent Svc to 4303 Newport via Sheriff - Also noted DV Court Date 12/06/2024 to JCSO",
+        "created_date": "10/21/2024 11:00 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 224,
+        "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Jerome Hedinger v. Dahlyn Brown, et al.",
+        "expense_amount": 313.41,
+        "notes": null,
+        "created_date": "9/27/2024 12:36 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 225,
+        "project_name": "Timothy-Ruhl-A-B-9-14-2023",
+        "payable_to": "Stierle & Rettig PLLC",
+        "description": "Warning Order Attorney for Unknown Employees",
+        "expense_amount": 133.18,
+        "notes": "2024.09.27: Recvd Invoice - Hardcopy to AW for Payment Processing",
+        "created_date": "9/27/2024 11:30 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 226,
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "payable_to": "Caryn McCay",
+        "description": null,
+        "expense_amount": 5000.0,
+        "notes": "initial payment",
+        "created_date": "9/17/2024 10:41 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 227,
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "payable_to": "EvenUP",
+        "description": null,
+        "expense_amount": 500.0,
+        "notes": null,
+        "created_date": "9/17/2024 10:40 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 228,
+        "project_name": "Frances-Whitis-WC-MVA-9-6-2024",
+        "payable_to": "ChartSwap",
+        "description": null,
+        "expense_amount": 30.0,
+        "notes": "Frankfort Regional Medical Center",
+        "created_date": "9/13/2024 12:52 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 229,
+        "project_name": "Timothy-Ruhl-A-B-9-14-2023",
+        "payable_to": "ChartSwap",
+        "description": "CMR Lou Metro Emer Med Assoc",
+        "expense_amount": 10.0,
+        "notes": "2024.08.21: Recvd Invoice Notice - Paid Online - CMR will be mailed",
+        "created_date": "8/21/2024 11:22 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 230,
+        "project_name": "Timothy-Ruhl-A-B-9-14-2023",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Timothy Ruhl v. Hoosier Cargo Express, et al.",
+        "expense_amount": 348.35,
+        "notes": "Served via SOS",
+        "created_date": "8/21/2024 10:52 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 231,
+        "project_name": "Timothy-Ruhl-A-B-9-14-2023",
+        "payable_to": "HealthMark Group",
+        "description": "CMR Capitol Pain Institute",
+        "expense_amount": 30.0,
+        "notes": "2024.08.08 Recvd Exp Inv - 13778753 - Access Code 993546 - $30.00 - Paid Online - Awaiting CMRs",
+        "created_date": "8/8/2024 1:35 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 232,
+        "project_name": "Caryn-McCay-MVA-7-30-2023",
+        "payable_to": "Digital Owl",
+        "description": null,
+        "expense_amount": 495.0,
+        "notes": null,
+        "created_date": "7/29/2024 9:03 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 233,
+        "project_name": "Timothy-Ruhl-A-B-9-14-2023",
+        "payable_to": "USPS",
+        "description": "BI LOR to Robert Cobb - Hoosier Cargo Express - Cert Mail: 7019-1120-0002-0843-8718",
+        "expense_amount": 12.26,
+        "notes": "cc'd Shelter Insurance Agent A. Hamm via Email",
+        "created_date": "7/26/2024 8:32 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 234,
+        "project_name": "Charles-T.-Johnson-MVA-4-18-2023",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Alias Summons - Robert Lowe - Jeff Co. Sheriff Service",
+        "expense_amount": 64.07,
+        "notes": "CourtNet Envelope 7797647",
+        "created_date": "4/23/2024 10:38 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 235,
+        "project_name": "Wayne-Weber-MVA-01-01-2022",
+        "payable_to": "EvenUP",
+        "description": null,
+        "expense_amount": 700.0,
+        "notes": null,
+        "created_date": "4/17/2024 11:04 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 236,
+        "project_name": "Curtis-Lee-Justice-MVA-2-5-2023",
+        "payable_to": "EvenUP",
+        "description": null,
+        "expense_amount": 250.0,
+        "notes": null,
+        "created_date": "4/17/2024 10:41 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 237,
+        "project_name": "Charles-T.-Johnson-MVA-4-18-2023",
+        "payable_to": "Jefferson County Circuit Court",
+        "description": "Charles Johnson v. Robert Lowe",
+        "expense_amount": 296.14,
+        "notes": "Jefferson County Cir Crt - 24-CI-002475\nCert Mail Service: 9236090194038356759483",
+        "created_date": "4/10/2024 8:59 AM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 238,
+        "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023",
+        "payable_to": "USPS",
+        "description": "Premise LOR to Animal Owner - Dahlyn Brown",
+        "expense_amount": 11.01,
+        "notes": "Cert Mail: 7018-1830-0002-2504-2968",
+        "created_date": "3/19/2024 2:41 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 239,
+        "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023",
+        "payable_to": "USPS",
+        "description": "Premise LOR to Property Owner - 432 Atwood LLC",
+        "expense_amount": 11.01,
+        "notes": "Cert Mail: 7018-1830-0002-2504-2951",
+        "created_date": "3/19/2024 2:24 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 240,
+        "project_name": "Daniel-W.-Volk-MVA-09-24-2021",
+        "payable_to": "DataVant",
+        "description": null,
+        "expense_amount": 31.29,
+        "notes": null,
+        "created_date": "2/7/2024 1:51 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 241,
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "payable_to": "Linda Jones",
+        "description": null,
+        "expense_amount": 3200.0,
+        "notes": null,
+        "created_date": "9/20/2023 7:49 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 242,
+        "project_name": "Anella-Noble-MVA-01-03-2021",
+        "payable_to": null,
+        "description": "Filing Fee - Deshawn Ford Estate",
+        "expense_amount": 232.27,
+        "notes": "Deshawn Ford Estate and Petition for Appointment of Public Administrator",
+        "created_date": "7/25/2023 12:02 PM",
+        "applies_to_projects": []
+      },
+      {
+        "uuid": 243,
+        "project_name": "Amy-Mills-Premise-04-26-2019",
+        "payable_to": "EvenUP",
+        "description": null,
+        "expense_amount": 1400.0,
+        "notes": null,
+        "created_date": "12/23/2022 1:09 PM",
+        "applies_to_projects": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "category": "_adapters",
+  "description": "Data adapters for connecting tools to existing JSON data structures",
+  "modules": [
+    {
+      "name": "case_data",
+      "file": "case_data.py",
+      "description": "Unified adapter for reading/writing case data (providers, insurance, liens, notes)",
+      "class": "CaseData",
+      "usage": "from _adapters.case_data import CaseData",
+      "example": [
+        "case = CaseData('Smith-MVA-01-15-2024')",
+        "providers = case.medical_providers",
+        "bi_claims = case.bi_claims",
+        "case.update_provider('Dr. Smith', {'date_medical_records_requested': '2024-01-20'})",
+        "case.add_note('Requested records', note_type='Medical Records')",
+        "case.save()"
+      ],
+      "data_sources": [
+        "Database/medical_providers.json - Provider tracking",
+        "Database/insurance.json - Claims, negotiations",
+        "Database/liens.json - Lien amounts",
+        "Database/notes.json - Activity log",
+        "Database/case_overview.json - Case metadata"
+      ],
+      "features": [
+        "Automatic project filtering",
+        "Excel date conversion",
+        "Provider status derivation",
+        "BI/PIP/UIM claim filtering",
+        "Active negotiation detection",
+        "Totals calculation",
+        "Note logging"
+      ]
+    }
+  ],
+  "cli_usage": {
+    "summary": "python /Tools/_adapters/case_data.py --case CASE_NAME --summary --pretty",
+    "providers": "python /Tools/_adapters/case_data.py --case CASE_NAME --providers --pretty",
+    "insurance": "python /Tools/_adapters/case_data.py --case CASE_NAME --insurance --pretty",
+    "liens": "python /Tools/_adapters/case_data.py --case CASE_NAME --liens --pretty",
+    "notes": "python /Tools/_adapters/case_data.py --case CASE_NAME --notes 10 --pretty"
+  }
+}
+

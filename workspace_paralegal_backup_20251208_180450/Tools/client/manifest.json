@@ -1,0 +1,83 @@
+{
+  "category": "client",
+  "description": "Tools for client communication and tracking",
+  "tools": [
+    {
+      "name": "checkin_tracker",
+      "file": "checkin_tracker.py",
+      "description": "Track bi-weekly client check-ins during treatment phase. Records treatment status, providers, and flags important changes.",
+      "usage": "python /Tools/client/checkin_tracker.py --case CASE_NAME [action]",
+      "examples": [
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --status --pretty",
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --schedule --days 14",
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --checkin --still-treating --providers \"Dr. Smith, PT Plus\" --pain 6 --pretty",
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --checkin --still-treating --new-provider \"Pain Management Associates\" --notes \"Client started pain management\"",
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --checkin --treatment-complete --discharged \"All providers\"",
+        "python /Tools/client/checkin_tracker.py --case \"Smith-MVA\" --history --pretty",
+        "python /Tools/client/checkin_tracker.py --questions --pretty"
+      ],
+      "when_to_use": [
+        "Time for bi-weekly client check-in",
+        "Client reports new provider",
+        "Client reports treatment complete",
+        "Need to review client treatment history",
+        "Check if check-in is overdue"
+      ],
+      "actions": {
+        "--status": "View current check-in status and schedule",
+        "--history": "View all recorded check-ins",
+        "--checkin": "Record a new check-in",
+        "--schedule": "Schedule next check-in",
+        "--questions": "Show standard check-in questions"
+      },
+      "checkin_options": {
+        "--still-treating": "Client is still in treatment",
+        "--treatment-complete": "Client finished treatment",
+        "--providers": "Current providers (comma-separated)",
+        "--new-provider": "New provider(s) added",
+        "--discharged": "Provider(s) discharged from",
+        "--notes": "Treatment notes",
+        "--pain": "Pain level 1-10",
+        "--working/--not-working": "Work status"
+      },
+      "auto_flags": [
+        "NEW_PROVIDER - Triggers provider setup workflow",
+        "DISCHARGED - Provider treatment complete",
+        "TREATMENT_COMPLETE - Ready for demand phase",
+        "HIGH_PAIN - Pain level 8-10",
+        "NOT_WORKING - Wage loss documentation needed",
+        "TREATMENT_GAP - >30 days since last check-in"
+      ],
+      "output_format": "JSON with status, providers, schedule, and flags",
+      "data_storage": "/case_name/checkins.json",
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE"
+    }
+  ],
+  "workflow_integration": {
+    "phase": "treatment",
+    "workflow": "client_check_in",
+    "triggers": [
+      "Check-in date reached",
+      "Treatment status change",
+      "New provider added"
+    ],
+    "downstream_workflows": [
+      "medical_provider_setup (when NEW_PROVIDER flagged)",
+      "request_records_bills (when DISCHARGED flagged)",
+      "gather_demand_materials (when TREATMENT_COMPLETE flagged)"
+    ]
+  },
+  "standard_questions": [
+    "Are you still treating for your injuries?",
+    "Which providers are you currently seeing?",
+    "Have you started with any new providers since we last spoke?",
+    "Have you been discharged from any providers?",
+    "On a scale of 1-10, how would you rate your pain today?",
+    "Are you currently working?",
+    "Do you have any upcoming appointments scheduled?",
+    "Is there anything else you'd like me to know about your treatment?"
+  ]
+}
+

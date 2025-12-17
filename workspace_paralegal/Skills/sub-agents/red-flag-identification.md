@@ -81,7 +81,7 @@ Find red flags in the medical records BEFORE opposing counsel does. Identify iss
 ## Output Location
 
 **Save your red flag analysis to:**
-- **File:** `/Reports/red_flags.md`
+- **File:** `Reports/red_flags.md`
 - **Format:** Markdown with all sections above
 
 ## Important Notes

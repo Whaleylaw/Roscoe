@@ -11,7 +11,7 @@ Use when conducting legal research for:
 
 ## Available Tools
 
-You have access to 6 CourtListener tools in `/Tools/`:
+You have access to 6 CourtListener tools in `Tools/`:
 
 ### Research Tools
 1. **search_case_law.py** - Search opinions by keyword, court, date, precedential status
@@ -59,12 +59,12 @@ python /Tools/explore_citations.py [CLUSTER_ID] --depth 2 --limit 50 --json
 ```
 
 **Step 5: Synthesize Research**
-- Read full opinions saved to `/Reports/`
+- Read full opinions saved to `Reports/`
 - Create comprehensive research memo
 - List all relevant cases with citations
 - Summarize holdings and applications
 
-**Output Location**: Save research memo to `/Reports/legal_research_[topic].md`
+**Output Location**: Save research memo to `Reports/legal_research_[topic].md`
 
 ### Workflow 2: Case Law Precedent Research
 
@@ -143,7 +143,7 @@ python /Tools/get_docket_details.py [DOCKET_ID] --json
 - List all upcoming hearings
 - Note filing deadlines
 - Flag urgent matters
-- Save to `/Reports/court_calendar_[date].md`
+- Save to `Reports/court_calendar_[date].md`
 
 ### Workflow 5: Case-Specific Docket Review
 
@@ -165,7 +165,7 @@ python /Tools/get_docket_details.py [DOCKET_ID] --json
 - Identify significant events
 - Note any procedural issues
 
-**Output**: Save complete docket summary to `/Reports/docket_[case_name].md`
+**Output**: Save complete docket summary to `Reports/docket_[case_name].md`
 
 ## Best Practices
 
@@ -194,10 +194,10 @@ For Kentucky personal injury research:
 
 ### Saving Research
 
-- **Full opinions**: Save to `/Reports/opinion_[case_name].txt`
-- **Research memos**: Save to `/Reports/legal_research_[topic].md`
-- **Docket sheets**: Save to `/Reports/docket_[case_name].md`
-- **Citation networks**: Save JSON to `/Reports/citations_[case_name].json`
+- **Full opinions**: Save to `Reports/opinion_[case_name].txt`
+- **Research memos**: Save to `Reports/legal_research_[topic].md`
+- **Docket sheets**: Save to `Reports/docket_[case_name].md`
+- **Citation networks**: Save JSON to `Reports/citations_[case_name].json`
 
 ## Output Format Requirements
 
@@ -219,7 +219,7 @@ When completing legal research, provide:
    - Treatment analysis
 
 4. **Saved Files**
-   - List all files saved to `/Reports/`
+   - List all files saved to `Reports/`
    - Provide file paths for user reference
 
 ## Tool Limitations to Note
@@ -275,8 +275,8 @@ Found 15 cases citing this precedent in the last 5 years, all applying the same 
 [Your comprehensive analysis with citations, quotes, and holdings]
 
 **Files Saved**:
-- `/Reports/opinion_statute_limitations.txt` - Full text of lead case
-- `/Reports/legal_research_statute_limitations.md` - This research memo
+- `Reports/opinion_statute_limitations.txt` - Full text of lead case
+- `Reports/legal_research_statute_limitations.md` - This research memo
 
 Ready to discuss or refine the research further.
 
@@ -285,7 +285,7 @@ Ready to discuss or refine the research further.
 ## Integration with Other Skills
 
 This skill works well with:
-- **Internet search** (`/Tools/internet_search.py`) - For secondary sources, law review articles
+- **Internet search** (`Tools/internet_search.py`) - For secondary sources, law review articles
 - **Document processing** - Saving and organizing research findings
 - **Case management** - Linking research to specific case files
 

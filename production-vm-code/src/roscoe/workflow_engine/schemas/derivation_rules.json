@@ -1,0 +1,464 @@
+{
+  "version": "1.0.0",
+  "description": "Rules for deriving workflow state from existing case data. Used by WorkflowStateComputer to determine what's complete, in progress, and pending.",
+  
+  "phase_derivation": {
+    "description": "Derive current phase from case_overview.phase or infer from data",
+    "source": "case_overview.phase",
+    "fallback_logic": [
+      {"condition": "settlement_amount > 0", "phase": "settlement"},
+      {"condition": "date_demand_sent AND current_offer", "phase": "negotiation"},
+      {"condition": "date_demand_sent", "phase": "demand_sent"},
+      {"condition": "all_providers_complete AND all_records_received", "phase": "demand_in_progress"},
+      {"condition": "has_insurance_claims AND has_medical_providers", "phase": "treatment"},
+      {"condition": "has_insurance_claims", "phase": "file_setup"},
+      {"condition": "default", "phase": "file_setup"}
+    ],
+    "phase_order": [
+      "file_setup",
+      "treatment", 
+      "demand_in_progress",
+      "demand_sent",
+      "negotiation",
+      "settlement",
+      "litigation",
+      "closed"
+    ]
+  },
+
+  "workflow_derivations": {
+    "intake": {
+      "workflow_id": "intake",
+      "phase": "file_setup",
+      "completion_rules": [
+        {
+          "data_path": "case_overview.client_name",
+          "condition": "exists_and_not_empty",
+          "step": "collect_client_info"
+        },
+        {
+          "data_path": "case_overview.accident_date",
+          "condition": "exists_and_not_empty", 
+          "step": "collect_accident_info"
+        }
+      ],
+      "complete_when": "case_overview.client_name AND case_overview.accident_date",
+      "linked_skills": ["/Skills/case-file-organization/skill.md"],
+      "linked_tools": []
+    },
+
+    "open_bi_claim": {
+      "workflow_id": "open_insurance_claims",
+      "phase": "file_setup",
+      "completion_rules": [
+        {
+          "data_path": "insurance[insurance_type='Bodily Injury (BI)'].claim_number",
+          "condition": "exists_and_not_empty",
+          "result": "complete"
+        }
+      ],
+      "complete_when": "any_bi_claim_has_claim_number",
+      "in_progress_when": "has_bi_insurer_but_no_claim_number",
+      "linked_skills": ["/Skills/police-report-analysis/skill.md"],
+      "linked_tools": [],
+      "linked_templates": [
+        "/forms/insurance/BI/lor_to_bi_adjuster_TEMPLATE.md",
+        "/forms/insurance/BI/request_dec_page_TEMPLATE.md"
+      ],
+      "linked_checklists": ["/workflow_engine/checklists/bi_claim_opening.md"]
+    },
+
+    "open_pip_claim": {
+      "workflow_id": "open_insurance_claims",
+      "phase": "file_setup",
+      "completion_rules": [
+        {
+          "data_path": "insurance[insurance_type='Personal Injury Protection (PIP)'].claim_number",
+          "condition": "exists_and_not_empty",
+          "result": "complete"
+        }
+      ],
+      "complete_when": "any_pip_claim_has_claim_number",
+      "in_progress_when": "has_pip_insurer_but_no_claim_number",
+      "linked_skills": [],
+      "linked_tools": ["/Tools/insurance/pip_waterfall.py"],
+      "linked_templates": ["/forms/insurance/PIP/lor_to_pip_adjuster_TEMPLATE.md"]
+    },
+
+    "open_uim_claim": {
+      "workflow_id": "open_insurance_claims",
+      "phase": "file_setup",
+      "completion_rules": [
+        {
+          "data_path": "insurance[insurance_type='Uninsured Motorist (UM)'].claim_number",
+          "condition": "exists_and_not_empty",
+          "result": "complete"
+        }
+      ],
+      "complete_when": "any_uim_claim_has_claim_number",
+      "linked_templates": ["/forms/insurance/UIM/coots_letter_TEMPLATE.md"]
+    },
+
+    "accident_report": {
+      "workflow_id": "accident_report",
+      "phase": "file_setup",
+      "completion_rules": [
+        {
+          "data_path": "case_overview.has_police_report",
+          "condition": "true",
+          "result": "complete"
+        },
+        {
+          "infer_from": "insurance[].insurance_notes",
+          "pattern": "Police report|Accident report|crash report|PR|Report #",
+          "result": "complete"
+        }
+      ],
+      "linked_skills": ["/Skills/police-report-analysis/skill.md"],
+      "linked_tools": ["/Tools/crash_reports/lexis_crash_order.py"]
+    },
+
+    "medical_provider_setup": {
+      "workflow_id": "medical_provider_setup",
+      "phase": "file_setup",
+      "completion_rules": [
+        {
+          "data_path": "medical_providers",
+          "condition": "length > 0",
+          "result": "complete"
+        }
+      ],
+      "complete_when": "medical_providers.length > 0",
+      "linked_checklists": ["/workflow_engine/checklists/medical_provider_setup.md"]
+    },
+
+    "send_documents_for_signature": {
+      "workflow_id": "send_documents_for_signature",
+      "phase": "file_setup",
+      "completion_rules": [
+        {
+          "infer_from": "notes",
+          "pattern": "retainer signed|fee agreement signed|HIPAA signed|documents signed",
+          "result": "complete"
+        }
+      ],
+      "linked_tools": ["/Tools/esignature/docusign_send.py"],
+      "linked_templates": [
+        "/forms/intake/whaley_mva_fee_agreement_TEMPLATE.md",
+        "/forms/intake/whaley_hipaa_authorization_TEMPLATE.md"
+      ],
+      "linked_checklists": ["/workflow_engine/checklists/client_intake.md"]
+    },
+
+    "client_check_in": {
+      "workflow_id": "client_check_in",
+      "phase": "treatment",
+      "recurring": true,
+      "completion_rules": [
+        {
+          "infer_from": "notes",
+          "pattern": "check-in|spoke with client|client update",
+          "recency_days": 14,
+          "result": "current"
+        }
+      ],
+      "overdue_when": "last_client_contact > 14 days ago",
+      "linked_tools": ["/Tools/client/checkin_tracker.py"],
+      "linked_checklists": ["/workflow_engine/checklists/client_checkin.md"]
+    },
+
+    "request_records_bills": {
+      "workflow_id": "request_records_bills",
+      "phase": "treatment",
+      "per_provider": true,
+      "completion_rules": [
+        {
+          "data_path": "medical_providers[].date_medical_records_received",
+          "condition": "exists_and_not_empty",
+          "per_item": true,
+          "result": "records_received"
+        },
+        {
+          "data_path": "medical_providers[].medical_bills_received_date",
+          "condition": "exists_and_not_empty",
+          "per_item": true,
+          "result": "bills_received"
+        }
+      ],
+      "complete_when_provider": "records_received AND bills_received",
+      "in_progress_when_provider": "records_requested OR bills_requested",
+      "pending_when_provider": "!records_requested AND !bills_requested",
+      "linked_templates": ["/forms/medical_requests/medical_records_request_TEMPLATE.md"],
+      "linked_checklists": ["/workflow_engine/checklists/medical_records_request.md"]
+    },
+
+    "lien_identification": {
+      "workflow_id": "lien_identification",
+      "phase": "treatment",
+      "completion_rules": [
+        {
+          "data_path": "liens",
+          "condition": "length > 0",
+          "result": "liens_identified"
+        }
+      ],
+      "linked_templates": [
+        "/forms/liens/initial_lien_request_TEMPLATE.md",
+        "/forms/liens/final_lien_request_TEMPLATE.md"
+      ]
+    },
+
+    "gather_demand_materials": {
+      "workflow_id": "gather_demand_materials",
+      "phase": "demand_in_progress",
+      "completion_rules": [
+        {
+          "composite": true,
+          "requires": [
+            "all_active_providers_have_records",
+            "all_active_providers_have_bills"
+          ],
+          "result": "complete"
+        }
+      ],
+      "linked_skills": [
+        "/Skills/medical-chronology/skill.md",
+        "/Skills/medical-records-analysis/skill.md"
+      ],
+      "linked_checklists": ["/workflow_engine/checklists/wage_loss_documentation.md"]
+    },
+
+    "draft_demand": {
+      "workflow_id": "draft_demand",
+      "phase": "demand_in_progress",
+      "completion_rules": [
+        {
+          "infer_from": "notes",
+          "pattern": "demand drafted|demand prepared|demand ready",
+          "result": "complete"
+        }
+      ],
+      "linked_skills": ["/Skills/medical-chronology/skill.md"]
+    },
+
+    "send_demand": {
+      "workflow_id": "send_demand",
+      "phase": "demand_in_progress",
+      "completion_rules": [
+        {
+          "data_path": "insurance[insurance_type='Bodily Injury (BI)'].date_demand_sent",
+          "condition": "exists_and_not_empty",
+          "result": "complete"
+        }
+      ],
+      "complete_when": "any_bi_claim_has_date_demand_sent",
+      "linked_checklists": ["/workflow_engine/checklists/demand_tracking.md"]
+    },
+
+    "bi_negotiation": {
+      "workflow_id": "negotiate_claim",
+      "phase": "negotiation",
+      "completion_rules": [
+        {
+          "data_path": "insurance[insurance_type='Bodily Injury (BI)'].settlement_amount",
+          "condition": "exists_and_gt_zero",
+          "result": "settled"
+        },
+        {
+          "data_path": "insurance[insurance_type='Bodily Injury (BI)'].current_offer",
+          "condition": "exists_and_gt_zero",
+          "result": "active_negotiation"
+        },
+        {
+          "data_path": "insurance[insurance_type='Bodily Injury (BI)'].is_active_negotiation",
+          "condition": "true",
+          "result": "active_negotiation"
+        }
+      ],
+      "linked_tools": ["/Tools/negotiation/negotiation_tracker.py"]
+    },
+
+    "settlement_processing": {
+      "workflow_id": "settlement_processing",
+      "phase": "settlement",
+      "completion_rules": [
+        {
+          "data_path": "insurance[].settlement_amount",
+          "condition": "exists_and_gt_zero",
+          "result": "settlement_reached"
+        },
+        {
+          "data_path": "insurance[].settlement_date",
+          "condition": "exists_and_not_empty",
+          "result": "settlement_completed"
+        }
+      ],
+      "linked_tools": ["/Tools/settlement/settlement_calculator.py"],
+      "linked_templates": [
+        "/forms/intake/authorization_to_settle_TEMPLATE.md",
+        "/forms/intake/property_damage_release_TEMPLATE.md"
+      ],
+      "linked_checklists": ["/workflow_engine/checklists/release_processing.md"]
+    }
+  },
+
+  "blocker_detection": {
+    "description": "Rules for detecting what's blocking progress",
+    "blockers": [
+      {
+        "id": "waiting_bi_acknowledgment",
+        "condition": "bi_claim_opened AND !acknowledgment_received",
+        "blocker_type": "external",
+        "message": "Waiting on BI acknowledgment from {{insurance_company_name}}",
+        "action": "Follow up with adjuster {{insurance_adjuster_name}}"
+      },
+      {
+        "id": "waiting_pip_acknowledgment", 
+        "condition": "pip_claim_opened AND !acknowledgment_received",
+        "blocker_type": "external",
+        "message": "Waiting on PIP acknowledgment from {{insurance_company_name}}"
+      },
+      {
+        "id": "waiting_medical_records",
+        "condition": "records_requested AND !records_received",
+        "blocker_type": "external",
+        "per_provider": true,
+        "message": "Waiting on medical records from {{provider_full_name}}",
+        "overdue_after_days": 21
+      },
+      {
+        "id": "waiting_medical_bills",
+        "condition": "bills_requested AND !bills_received",
+        "blocker_type": "external",
+        "per_provider": true,
+        "message": "Waiting on medical bills from {{provider_full_name}}",
+        "overdue_after_days": 21
+      },
+      {
+        "id": "waiting_lien_amounts",
+        "condition": "lien_identified AND !final_lien_amount",
+        "blocker_type": "external",
+        "per_lien": true,
+        "message": "Waiting on final lien amount from {{lien_holder}}"
+      },
+      {
+        "id": "client_checkin_overdue",
+        "condition": "last_client_contact > 14 days",
+        "blocker_type": "user",
+        "message": "Client check-in overdue by {{days_overdue}} days",
+        "action": "Schedule client check-in"
+      },
+      {
+        "id": "treatment_in_progress",
+        "condition": "any_provider_still_treating",
+        "blocker_type": "external",
+        "message": "Client still treating with {{active_provider_count}} providers",
+        "action": "Continue monitoring treatment progress"
+      },
+      {
+        "id": "demand_response_pending",
+        "condition": "demand_sent AND !current_offer AND days_since_demand < 45",
+        "blocker_type": "external",
+        "message": "Awaiting response to demand sent {{days_since_demand}} days ago"
+      },
+      {
+        "id": "settlement_documents_pending",
+        "condition": "settlement_reached AND !release_signed",
+        "blocker_type": "user",
+        "message": "Need to process settlement documents",
+        "action": "Send release to client via DocuSign"
+      }
+    ]
+  },
+
+  "next_action_derivation": {
+    "description": "Rules for determining what the agent can do next",
+    "priority_order": [
+      "unblock_user_actions",
+      "complete_in_progress_workflows",
+      "start_next_workflow_in_phase",
+      "advance_to_next_phase"
+    ],
+    "actions": [
+      {
+        "id": "open_bi_claim",
+        "condition": "has_at_fault_insurer AND !bi_claim_opened",
+        "owner": "user",
+        "message": "Open BI claim with {{at_fault_insurer}}",
+        "workflow": "open_insurance_claims",
+        "skill": "/Skills/police-report-analysis/skill.md",
+        "checklist": "/workflow_engine/checklists/bi_claim_opening.md"
+      },
+      {
+        "id": "open_pip_claim",
+        "condition": "client_has_pip_coverage AND !pip_claim_opened",
+        "owner": "user",
+        "message": "Open PIP claim with {{pip_insurer}}",
+        "workflow": "open_insurance_claims",
+        "tool": "/Tools/insurance/pip_waterfall.py"
+      },
+      {
+        "id": "send_records_request",
+        "condition": "provider_exists AND hipaa_signed AND !records_requested",
+        "owner": "agent",
+        "message": "Send medical records request to {{provider_name}}",
+        "workflow": "request_records_bills",
+        "template": "/forms/medical_requests/medical_records_request_TEMPLATE.md"
+      },
+      {
+        "id": "follow_up_records",
+        "condition": "records_requested AND !records_received AND days_since_request > 14",
+        "owner": "user",
+        "message": "Follow up on records from {{provider_name}} (requested {{days_since_request}} days ago)"
+      },
+      {
+        "id": "schedule_checkin",
+        "condition": "in_treatment_phase AND last_checkin > 14 days",
+        "owner": "user",
+        "message": "Schedule client check-in (last contact {{days_since_checkin}} days ago)",
+        "tool": "/Tools/client/checkin_tracker.py"
+      },
+      {
+        "id": "prepare_demand",
+        "condition": "all_records_received AND all_providers_complete AND !demand_sent",
+        "owner": "agent",
+        "message": "Prepare demand package",
+        "workflow": "gather_demand_materials",
+        "skill": "/Skills/medical-chronology/skill.md"
+      },
+      {
+        "id": "record_offer",
+        "condition": "demand_sent AND received_new_offer",
+        "owner": "agent",
+        "message": "Record and analyze new offer from {{insurer}}",
+        "tool": "/Tools/negotiation/negotiation_tracker.py"
+      },
+      {
+        "id": "process_settlement",
+        "condition": "settlement_reached AND !settlement_processed",
+        "owner": "agent",
+        "message": "Generate settlement statement and authorization",
+        "tool": "/Tools/settlement/settlement_calculator.py"
+      }
+    ]
+  },
+
+  "sol_tracking": {
+    "description": "Statute of Limitations tracking for Kentucky PI cases",
+    "default_sol_years": 1,
+    "sol_types": {
+      "mva": {"years": 2, "description": "Motor Vehicle Accidents - KRS 304.39-230"},
+      "premise": {"years": 1, "description": "Premise Liability"},
+      "medical_malpractice": {"years": 1, "description": "Medical Malpractice"},
+      "product_liability": {"years": 1, "description": "Product Liability"},
+      "workers_comp": {"years": 2, "description": "Workers' Compensation"}
+    },
+    "warning_thresholds": {
+      "safe": {"days_remaining": 180, "status": "safe"},
+      "attention": {"days_remaining": 90, "status": "attention"},
+      "urgent": {"days_remaining": 30, "status": "urgent"},
+      "critical": {"days_remaining": 14, "status": "critical"}
+    }
+  }
+}
+

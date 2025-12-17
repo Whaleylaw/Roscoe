@@ -1,0 +1,61 @@
+[
+  {
+    "jsonb_agg": [
+      {
+        "email": "noeticnikki@gmail.com",
+        "phone": "859-652-1483",
+        "roles": [
+          "client"
+        ],
+        "address": "",
+        "full_name": "Nicole Lynn Tewes",
+        "contact_id": 2113,
+        "project_name": "Nicole-Tewes-MVA-7-5-2025"
+      },
+      {
+        "email": null,
+        "phone": "502-909-3643",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Nachand Downs",
+        "contact_id": 1337,
+        "project_name": "Nicole-Tewes-MVA-7-5-2025"
+      },
+      {
+        "email": "leigh.king@erieinsurance.com",
+        "phone": "859-219-4951",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Leigh King",
+        "contact_id": 1585,
+        "project_name": "Nicole-Tewes-MVA-7-5-2025"
+      },
+      {
+        "email": null,
+        "phone": "877-589-3743",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "1146 Monarch Street Suite 140, Lexington, KY 40503",
+        "full_name": "Erie Insurance Group",
+        "contact_id": 512,
+        "project_name": "Nicole-Tewes-MVA-7-5-2025"
+      },
+      {
+        "email": null,
+        "phone": "(800) 776-4737",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "9520 Ormbsy Station Rd, Ste 200, louisville, KY 40223",
+        "full_name": "Progressive Insurance Company",
+        "contact_id": 863,
+        "project_name": "Nicole-Tewes-MVA-7-5-2025"
+      }
+    ]
+  }
+]

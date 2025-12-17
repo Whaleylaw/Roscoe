@@ -1,0 +1,358 @@
+[
+  {
+    "jsonb_agg": [
+      {
+        "email": "altoption@aol.com",
+        "phone": "502-773-1181",
+        "roles": [
+          "client"
+        ],
+        "address": "11815 Cedardale Rd, Louisville, KY 40223",
+        "full_name": "Wayne Weber",
+        "contact_id": 2133,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "support@evenuplaw.com",
+        "phone": "415-570-7414",
+        "roles": [
+          "payee"
+        ],
+        "address": "2261 Market Street #4068, San Francisco, CA 94114",
+        "full_name": "EvenUP",
+        "contact_id": 90,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": null,
+        "roles": [
+          "payee"
+        ],
+        "address": "700 W. Jefferson Street, Louisville, KY 40202",
+        "full_name": "Jefferson County Circuit Court",
+        "contact_id": 125,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": null,
+        "roles": [
+          "payee"
+        ],
+        "address": "2951 Marina Bay Drive, Suite 130-132, League City, TX 77573",
+        "full_name": "ChartSwap",
+        "contact_id": 421,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "740-364-5600",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Lyn Zangmeister",
+        "contact_id": 1287,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "ashley.mcneese@kyfb.com",
+        "phone": "502-493-7683",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Ashley Mcneese",
+        "contact_id": 1661,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "statefarmclaims@statefarm.com",
+        "phone": "1-800-782-8332",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "P.O Box 106171, Atlanta, GA 30348",
+        "full_name": "State Farm Insurance Company",
+        "contact_id": 220,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "",
+        "phone": "(866) 532-2524, 502-266-6100",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "P.O. Box 20400, Louisville, KY 40250",
+        "full_name": "Kentucky Farm Bureau",
+        "contact_id": 640,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "800-264-4000",
+        "roles": [
+          "lien_holder"
+        ],
+        "address": "P.O. Box 14770, Lexington, KY 40512",
+        "full_name": "Southern Guaranty Insurance Company - Medicare Supplement",
+        "contact_id": 216,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "medicare@medicare.com",
+        "phone": "1-855-798-2627 (BCRC) Main",
+        "roles": [
+          "lien_holder"
+        ],
+        "address": "NGHP P.O. Box 138832, , Oklahoma City, OK 73113",
+        "full_name": "Medicare",
+        "contact_id": 728,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "kbrooks@amfems.org",
+        "phone": "(502) 245-8086 Fax",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "108 Urton Lane, Louisville, KY 40223",
+        "full_name": "Anchorage Middletown Fire & EMS",
+        "contact_id": 315,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-222-5388",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "1025 New Moody Ln., Lagrange, KY 40031",
+        "full_name": "Baptist Health La Grange",
+        "contact_id": 348,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "(502) 253-4828",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "2400 Eastpoint Parkway #550, Louisville, KY 40223",
+        "full_name": "Baptist Health Medical Group - Eastpoint",
+        "contact_id": 353,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "(812) 944-2663",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "2125 State Street, Suite 5, New Albany, IN 47150",
+        "full_name": "Baptist Health Medical Group Orthopedics - Floyd",
+        "contact_id": 360,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "(502) 897-5139",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "4003 Kresge Way #300, Louisville, KY 40207",
+        "full_name": "Baptist Health Vascular Surgery",
+        "contact_id": 364,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "cassoleye@gmail.com",
+        "phone": "(502) 938-3937",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "704 Breckenridge Lane #100, Louisville, KY 40207",
+        "full_name": "Cassol Eye",
+        "contact_id": 407,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "(502) 636-7176",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "1 Audubon Plaza Drive, Louisville, KY 40217",
+        "full_name": "Clinical Associates",
+        "contact_id": 443,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-585-1735",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "234 E Gray St #850, Louisville, KY 40202",
+        "full_name": "Diagnostic Imaging Alliance Of Louisville, PSC",
+        "contact_id": 479,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-491-2000 Main",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "3901 Dutchmans Lane Suite 100, , Louisville, KY 40207",
+        "full_name": "Gould's Discount Medical",
+        "contact_id": 570,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "(502) 968-2233",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "7397 Jefferson Blvd, Louisville, KY 40241",
+        "full_name": "Kentucky Indiana Foot & Ankle",
+        "contact_id": 641,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-899-7646 Main",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "P.O. Box 6749, , Louisville, KY 40206",
+        "full_name": "Louisville Emergency Medical Associates",
+        "contact_id": 694,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "award534@gmail.com",
+        "phone": "502-904-0297 Main",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "3950 Kresge Way Ste 308, , Louisville, KY 40207",
+        "full_name": "Louisville Hospitalist Associates PLLC",
+        "contact_id": 696,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "317-780-3340 Fax",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "6400 Dutchmans Pkwy #250, , Louisville, KY 40205",
+        "full_name": "Nephrology Associates of Kentuckiana",
+        "contact_id": 756,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-446-8000",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "4960 Norton Healthcare Blvd., Louisville, KY 40241",
+        "full_name": "Norton Brownsboro Hospital",
+        "contact_id": 765,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": "jdabu@medac.com",
+        "phone": null,
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "7 Parkway Center Suite 375, , Pittsburgh, PA 15237",
+        "full_name": "One Anesthesia, PLLC",
+        "contact_id": 818,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-589-9488 Main",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "2511 Terra Crossing Boulevard, , Louisville, KY 40245",
+        "full_name": "Premier Surgery Center of Louisville",
+        "contact_id": 857,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "(502) 895-2600",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "6450 Dutchmans Parkway, Louisville, KY 40205",
+        "full_name": "Retina Associates Of KY",
+        "contact_id": 891,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-634-6767 Main",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "PO Box 36218, , Louisville, KY 40233",
+        "full_name": "Southern Emergency Medical Specialists",
+        "contact_id": 933,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-894-9544 Fax",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "PO Box 7159, , Louisville, KY 40257-0159",
+        "full_name": "Xray Associates of Louisville",
+        "contact_id": 1079,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": null,
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "P.O. Box 24576, Lexington, KY 40524-4576",
+        "full_name": "Commonwealth Anesthesia",
+        "contact_id": 1110,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-253-6699",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "2400 Eastpoint Pkwy, Suite 110, Louisville, KY 40223",
+        "full_name": "Baptist Health Medical Group Sports Medicine",
+        "contact_id": 1666,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-583-4022",
+        "roles": [
+          "filing_party"
+        ],
+        "address": "712 Lyndon Lane, Louisville, KY 40222",
+        "full_name": "The Whaley Law Firm",
+        "contact_id": 987,
+        "project_name": "Wayne-Weber-MVA-01-01-2022"
+      }
+    ]
+  }
+]

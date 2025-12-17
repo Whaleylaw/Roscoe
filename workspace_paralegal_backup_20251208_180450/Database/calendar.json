@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "description": "Agent calendar for tracking deadlines, tasks, and events linked to cases",
+  "events": [
+    {
+      "id": "evt-001",
+      "title": "Discuss settlement offer with client",
+      "date": "2025-12-03",
+      "time": null,
+      "event_type": "meeting",
+      "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+      "priority": "high",
+      "status": "pending",
+      "notes": "Settlement discussion - need medical overview completed first",
+      "prerequisite_for": null,
+      "depends_on": ["evt-003"],
+      "created_at": "2025-12-01T20:00:00Z",
+      "created_by": "user"
+    },
+    {
+      "id": "evt-002",
+      "title": "Send counter offer to defense counsel",
+      "date": "2025-12-04",
+      "time": null,
+      "event_type": "deadline",
+      "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+      "priority": "high",
+      "status": "pending",
+      "notes": "Counter offer following client meeting",
+      "prerequisite_for": null,
+      "depends_on": ["evt-001"],
+      "created_at": "2025-12-01T20:00:00Z",
+      "created_by": "user"
+    },
+    {
+      "id": "evt-003",
+      "title": "Complete comprehensive medical overview",
+      "date": "2025-12-02",
+      "time": null,
+      "event_type": "task",
+      "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+      "priority": "high",
+      "status": "pending",
+      "notes": "Must be completed before client meeting on 12/3",
+      "prerequisite_for": ["evt-001"],
+      "depends_on": null,
+      "created_at": "2025-12-01T20:00:00Z",
+      "created_by": "user"
+    }
+  ]
+}

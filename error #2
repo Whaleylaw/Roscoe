@@ -1,0 +1,14 @@
+error #2
+
+## Error Type
+Runtime Error
+
+## Error Message
+Should not already be working.
+
+
+    at performWorkOnRoot (file:///Volumes/X10 Pro/deep-agents-ui/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:9045:87)
+    at performWorkOnRootViaSchedulerTask (file:///Volumes/X10 Pro/deep-agents-ui/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:10224:9)
+    at MessagePort.performWorkUntilDeadline (file:///Volumes/X10 Pro/deep-agents-ui/.next/dev/static/chunks/node_modules_next_dist_compiled_a0e4c7b4._.js:2647:64)
+
+Next.js version: 16.0.7 (Turbopack)

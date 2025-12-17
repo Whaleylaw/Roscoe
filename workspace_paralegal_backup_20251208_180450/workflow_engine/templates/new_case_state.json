@@ -1,0 +1,209 @@
+{
+  "case_id": "",
+  "case_name": "",
+  "client": {
+    "name": "",
+    "dob": null,
+    "ssn_last_four": null,
+    "phone": "",
+    "phone_alt": null,
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "KY",
+      "zip": ""
+    },
+    "preferred_contact": "phone",
+    "employer": {
+      "name": null,
+      "address": null,
+      "phone": null,
+      "missed_work": false,
+      "wage_rate": null,
+      "pay_frequency": null
+    },
+    "on_disability": false,
+    "medicare_beneficiary": false,
+    "medicaid_recipient": false
+  },
+  "accident": {
+    "date": "",
+    "time": null,
+    "type": "mva",
+    "location": {
+      "description": "",
+      "street": "",
+      "city": "",
+      "state": "KY",
+      "county": ""
+    },
+    "description": "",
+    "police_report": {
+      "report_number": null,
+      "agency": null,
+      "officer_name": null,
+      "requested_date": null,
+      "received_date": null,
+      "file_path": null
+    },
+    "photos": [],
+    "police_called": false
+  },
+  "injuries": [],
+  "liability": {
+    "status": "unknown",
+    "client_fault_percentage": 0,
+    "notes": "",
+    "at_fault_parties": []
+  },
+  "witnesses": [],
+  "insurance_claims": [],
+  "pip_waterfall": {
+    "step_1_on_title": null,
+    "step_1_vehicle_insured": null,
+    "step_2_vehicle_in_insured": null,
+    "step_3_client_own_insurance": null,
+    "step_4_household_insurance": null,
+    "determined_pip_insurer": null,
+    "kac_required": false,
+    "pip_disqualified": false,
+    "pip_disqualification_reason": null
+  },
+  "medical_providers": [],
+  "liens": [],
+  "current_phase": "file_setup",
+  "phase_history": [],
+  "phases": {
+    "file_setup": {
+      "status": "in_progress",
+      "entered_at": "",
+      "completed_at": null,
+      "workflows": {
+        "intake": {
+          "status": "in_progress",
+          "started_at": "",
+          "completed_at": null,
+          "waiting_on": null,
+          "steps": {}
+        }
+      },
+      "exit_criteria": {
+        "retainer_signed": false,
+        "hipaa_signed": false,
+        "all_claims_opened": false,
+        "police_report_obtained": false,
+        "all_providers_added": false
+      }
+    }
+  },
+  "pending_items": [],
+  "deadlines": [],
+  "calendar_events": [],
+  "statute_of_limitations": {
+    "base_date": "",
+    "jurisdiction": "Kentucky",
+    "claim_type": "mva",
+    "years": 2,
+    "deadline": "",
+    "days_remaining": 0,
+    "status": "safe",
+    "pip_extension": null,
+    "tolling_events": []
+  },
+  "financials": {
+    "total_medical_bills": 0,
+    "total_medical_paid": 0,
+    "pip_payments": 0,
+    "total_liens": 0,
+    "expenses": 0,
+    "fee_percentage": 0.33,
+    "fee_type": "standard",
+    "demand_amount": null,
+    "settlement_amount": null,
+    "offers": [],
+    "net_to_client": null
+  },
+  "documents": {
+    "retainer": {
+      "required": true,
+      "status": "not_sent",
+      "sent_date": null,
+      "signed_date": null,
+      "file_path": null
+    },
+    "hipaa": {
+      "required": true,
+      "status": "not_sent",
+      "sent_date": null,
+      "signed_date": null,
+      "file_path": null
+    },
+    "medicare_auth": {
+      "required": false,
+      "status": "not_applicable",
+      "condition": "client.medicare_beneficiary == true"
+    },
+    "wage_auth": {
+      "required": false,
+      "status": "not_applicable",
+      "condition": "client.employer.missed_work == true"
+    },
+    "demand_letter": {
+      "required": false,
+      "status": "not_applicable"
+    },
+    "settlement_auth": {
+      "required": false,
+      "status": "not_applicable"
+    },
+    "release": {
+      "required": false,
+      "status": "not_applicable"
+    }
+  },
+  "litigation": {
+    "status": "not_filed",
+    "complaint_filed_date": null,
+    "case_number": null,
+    "court": null,
+    "judge": null,
+    "defendants_served": [],
+    "answer_received_date": null,
+    "discovery_deadline": null,
+    "mediation_date": null,
+    "trial_date": null,
+    "expert_disclosure_deadline": null
+  },
+  "negotiations": {
+    "status": "not_started",
+    "demands": [],
+    "offers": [],
+    "counters": [],
+    "settlement_reached": false,
+    "settlement_date": null
+  },
+  "contacts": [],
+  "notes": [],
+  "audit_log": [],
+  "created_at": "",
+  "updated_at": "",
+  "last_client_contact": null,
+  "next_action": {
+    "description": "Collect client information",
+    "owner": "agent",
+    "workflow": "intake",
+    "step": "collect_client_info",
+    "due_date": null,
+    "blocking": false
+  },
+  "data_files": {
+    "overview": "case_information/overview.json",
+    "contacts": "case_information/contacts.json",
+    "insurance": "Insurance/insurance.json",
+    "medical_providers": "Medical Records/medical_providers.json",
+    "liens": "Liens/liens.json",
+    "calendar": "case_information/calendar.json",
+    "expenses": "Expenses/expenses.json"
+  }
+}

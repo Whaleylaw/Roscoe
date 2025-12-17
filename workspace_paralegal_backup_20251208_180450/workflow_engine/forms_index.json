@@ -1,0 +1,1023 @@
+{
+  "version": "1.0.0",
+  "description": "Comprehensive index of all legal form templates for the Roscoe workflow engine",
+  "forms_directory": "/forms/",
+  "total_forms": 186,
+  "placeholder_convention": {
+    "description": "All templates use square bracket placeholders",
+    "examples": ["[CASE_NUMBER]", "[PLAINTIFF_NAME]", "[DEFENDANT_NAME]", "[DATE]", "[ATTORNEY_NAME]"]
+  },
+  "categories": {
+    "complaints": {
+      "path": "forms/complaints/",
+      "phase": "complaint",
+      "workflows": ["draft_file_complaint"],
+      "count": 33,
+      "forms": [
+        {
+          "path": "complaints/2022 Whaley MVA Complaint - Standard_Template.md",
+          "docx": "complaints/2022 Whaley MVA Complaint - Standard.docx",
+          "name": "Standard MVA Complaint",
+          "case_types": ["mva"],
+          "use_when": "Standard motor vehicle accident with clear liability",
+          "placeholders": ["PLAINTIFF_NAME", "DEFENDANT_NAME", "DATE", "CASE_NUMBER", "COUNTY", "ATTORNEY_NAME"]
+        },
+        {
+          "path": "complaints/2022 Whaley MVA Complaint - Owner Reported Stolen_Template.md",
+          "docx": "complaints/2022 Whaley MVA Complaint - Owner Reported Stolen.docx",
+          "name": "MVA Complaint - Stolen Vehicle",
+          "case_types": ["mva"],
+          "use_when": "Vehicle owner claims car was stolen at time of accident"
+        },
+        {
+          "path": "complaints/2022 Whaley MVA Complaint - Standard (w CoCounsel) _Template.md",
+          "docx": "complaints/2022 Whaley MVA Complaint - Standard (w CoCounsel) .docx",
+          "name": "Standard MVA Complaint with Co-Counsel",
+          "case_types": ["mva"],
+          "use_when": "MVA case with co-counsel arrangement"
+        },
+        {
+          "path": "complaints/2022 Whaley MVA Complaint - UM (State Farm)_Template.md",
+          "docx": "complaints/2022 Whaley MVA Complaint - UM (State Farm).docx",
+          "name": "UM Complaint - State Farm",
+          "case_types": ["mva", "um"],
+          "use_when": "Uninsured motorist claim against State Farm"
+        },
+        {
+          "path": "complaints/2022 Whaley Premise Liability Complaint Template_Template.md",
+          "docx": "complaints/2022 Whaley Premise Liability Complaint Template.docx",
+          "name": "Premises Liability Complaint",
+          "case_types": ["premises", "slip_fall"],
+          "use_when": "General premises liability claim"
+        },
+        {
+          "path": "complaints/2022 Whaley Bird & City of Louisville Premise Liability Complaint Template_Template.md",
+          "docx": "complaints/2022 Whaley Bird & City of Louisville Premise Liability Complaint Template.docx",
+          "name": "Premises Liability - City of Louisville",
+          "case_types": ["premises"],
+          "use_when": "Premises liability against Louisville Metro Government"
+        },
+        {
+          "path": "complaints/2022 Whaley Metro Lou Sidewalk Complaint_Template.md",
+          "docx": "complaints/2022 Whaley Metro Lou Sidewalk Complaint.docx",
+          "name": "Sidewalk Fall Complaint - Louisville Metro",
+          "case_types": ["premises", "slip_fall"],
+          "use_when": "Fall on Louisville Metro sidewalk or public property"
+        },
+        {
+          "path": "complaints/2022 Whaley MLF Amended Complaint_Template.md",
+          "docx": "complaints/2022 Whaley MLF Amended Complaint.docx",
+          "name": "Amended Complaint",
+          "case_types": ["any"],
+          "use_when": "Amending an existing complaint"
+        },
+        {
+          "path": "complaints/BI Complaint_Template.md",
+          "docx": "complaints/BI Complaint.docx",
+          "name": "Bodily Injury Complaint",
+          "case_types": ["mva"],
+          "use_when": "Basic bodily injury claim"
+        },
+        {
+          "path": "complaints/BI Complaint - unknown driver & fraud_Template.md",
+          "docx": "complaints/BI Complaint - unknown driver & fraud.docx",
+          "name": "BI Complaint - Unknown Driver",
+          "case_types": ["mva", "hit_and_run"],
+          "use_when": "Hit and run with unknown driver and potential fraud"
+        },
+        {
+          "path": "complaints/BI Complaint with vicarious liability_Template.md",
+          "docx": "complaints/BI Complaint with vicarious liability.docx",
+          "name": "BI Complaint - Vicarious Liability",
+          "case_types": ["mva"],
+          "use_when": "Employer liability for employee driver"
+        },
+        {
+          "path": "complaints/Complaint - Negligence & Bad Faith_Template.md",
+          "docx": "complaints/Complaint - Negligence & Bad Faith.docx",
+          "name": "Negligence & Bad Faith Complaint",
+          "case_types": ["mva", "bad_faith"],
+          "use_when": "Including bad faith claim against insurance"
+        },
+        {
+          "path": "complaints/Complaint - Premises Liability_Template.md",
+          "docx": "complaints/Complaint - Premises Liability.docx",
+          "name": "Premises Liability Complaint (Generic)",
+          "case_types": ["premises", "slip_fall"],
+          "use_when": "General premises liability"
+        },
+        {
+          "path": "complaints/Complaint - Premises Liability. Dog Bite_Template.md",
+          "docx": "complaints/Complaint - Premises Liability. Dog Bite.docx",
+          "name": "Dog Bite Complaint",
+          "case_types": ["premises", "dog_bite"],
+          "use_when": "Dog bite injury claim"
+        },
+        {
+          "path": "complaints/Complaint - UIM_Template.md",
+          "docx": "complaints/Complaint - UIM.docx",
+          "name": "Underinsured Motorist Complaint",
+          "case_types": ["mva", "uim"],
+          "use_when": "Underinsured motorist claim"
+        },
+        {
+          "path": "complaints/COMPLAINT BI and PIP_Template.md",
+          "docx": "complaints/COMPLAINT BI and PIP.docx",
+          "name": "BI and PIP Complaint",
+          "case_types": ["mva"],
+          "use_when": "Combined BI and PIP claim"
+        },
+        {
+          "path": "complaints/Complaint BI with UIM_Template.md",
+          "docx": "complaints/Complaint BI with UIM.docx",
+          "name": "BI with UIM Complaint",
+          "case_types": ["mva", "uim"],
+          "use_when": "BI claim with UIM coverage"
+        },
+        {
+          "path": "complaints/COMPLAINT with bad faith against @fault carrier_Template.md",
+          "docx": "complaints/COMPLAINT with bad faith against @fault carrier.docx",
+          "name": "Bad Faith Against At-Fault Carrier",
+          "case_types": ["mva", "bad_faith"],
+          "use_when": "Bad faith claim against defendant's carrier"
+        },
+        {
+          "path": "complaints/Complaint with UM_Template.md",
+          "docx": "complaints/Complaint with UM.docx",
+          "name": "UM Coverage Complaint",
+          "case_types": ["mva", "um"],
+          "use_when": "Uninsured motorist claim"
+        },
+        {
+          "path": "complaints/Complaint-MVA (negligence only)_Template.md",
+          "docx": "complaints/Complaint-MVA (negligence only).docx",
+          "name": "MVA Negligence Only",
+          "case_types": ["mva"],
+          "use_when": "Simple negligence only, no other claims"
+        },
+        {
+          "path": "complaints/Complaint. (Negligence & Bad Faith & UIM)_Template.md",
+          "docx": "complaints/Complaint. (Negligence & Bad Faith & UIM).docx",
+          "name": "Negligence, Bad Faith & UIM Complaint",
+          "case_types": ["mva", "uim", "bad_faith"],
+          "use_when": "Combined negligence, bad faith, and UIM"
+        },
+        {
+          "path": "complaints/Complaint.MVA. Respondeat Superior[vicarious liability]_Template.md",
+          "docx": "complaints/Complaint.MVA. Respondeat Superior[vicarious liability].docx",
+          "name": "MVA Respondeat Superior",
+          "case_types": ["mva"],
+          "use_when": "Vicarious liability claim"
+        },
+        {
+          "path": "complaints/mva.complaint_Template.md",
+          "docx": "complaints/mva.complaint.docx",
+          "name": "MVA Complaint (Basic)",
+          "case_types": ["mva"],
+          "use_when": "Basic MVA complaint template"
+        },
+        {
+          "path": "complaints/Certificate of E-Service_Template.md",
+          "docx": "complaints/Certificate of E-Service.docx",
+          "name": "Certificate of E-Service",
+          "case_types": ["any"],
+          "use_when": "Electronic service certification"
+        },
+        {
+          "path": "complaints/CERTIFICATE OF SERVICE_Template.md",
+          "docx": "complaints/CERTIFICATE OF SERVICE.docx",
+          "name": "Certificate of Service",
+          "case_types": ["any"],
+          "use_when": "Standard service certification"
+        },
+        {
+          "path": "complaints/Affidavit for Special Bailiff - Lou Metro Process Services_Template.md",
+          "docx": "complaints/Affidavit for Special Bailiff - Lou Metro Process Services.docx",
+          "name": "Special Bailiff Affidavit",
+          "case_types": ["any"],
+          "use_when": "Requesting special bailiff for service"
+        },
+        {
+          "path": "complaints/Affidavit of Good Cause_Template.md",
+          "docx": "complaints/Affidavit of Good Cause.docx",
+          "name": "Affidavit of Good Cause",
+          "case_types": ["any"],
+          "use_when": "Good cause showing for court"
+        },
+        {
+          "path": "complaints/2022 Whaley Notice of Complaint to BI Adjuster_Template.md",
+          "docx": "complaints/2022 Whaley Notice of Complaint to BI Adjuster.docx",
+          "name": "Notice of Complaint to Adjuster",
+          "case_types": ["any"],
+          "use_when": "Notifying adjuster of lawsuit filing"
+        },
+        {
+          "path": "complaints/2022 Whaley Payment to Metro Investigations (Special Bailiff)_Template.md",
+          "docx": "complaints/2022 Whaley Payment to Metro Investigations (Special Bailiff).docx",
+          "name": "Special Bailiff Payment",
+          "case_types": ["any"],
+          "use_when": "Payment for special bailiff services"
+        },
+        {
+          "path": "complaints/COMPLAINT HEADER_Template.md",
+          "docx": "complaints/COMPLAINT HEADER.docx",
+          "name": "Complaint Header Template",
+          "case_types": ["any"],
+          "use_when": "Standard complaint header/caption"
+        }
+      ],
+      "official_forms": [
+        "Form 1. Summons.pdf",
+        "Form 2. Complaint on a promissory note.pdf",
+        "Form 8. Complaint for negligence.pdf",
+        "AOC 105 - Civil Summons.pdf"
+      ]
+    },
+    "discovery": {
+      "path": "forms/discovery/",
+      "phase": "discovery",
+      "workflows": ["propound_discovery", "respond_to_discovery"],
+      "count": 57,
+      "forms": [
+        {
+          "path": "discovery/2022 Whaley Discovery Request - MVA Standard_Template.md",
+          "docx": "discovery/2022 Whaley Discovery Request - MVA Standard.docx",
+          "name": "MVA Discovery Request (Standard)",
+          "case_types": ["mva"],
+          "use_when": "Standard MVA discovery to defendant"
+        },
+        {
+          "path": "discovery/2022 Whaley Discovery Request - MVA Owner Reported Stolen_Template.md",
+          "docx": "discovery/2022 Whaley Discovery Request - MVA Owner Reported Stolen.docx",
+          "name": "Discovery - Stolen Vehicle MVA",
+          "case_types": ["mva"],
+          "use_when": "Discovery for stolen vehicle cases"
+        },
+        {
+          "path": "discovery/2022 Whaley Discovery Request - UM Template_Template.md",
+          "docx": "discovery/2022 Whaley Discovery Request - UM Template.docx",
+          "name": "UM Discovery Request",
+          "case_types": ["mva", "um"],
+          "use_when": "Discovery to UM carrier"
+        },
+        {
+          "path": "discovery/DISCOVERY [MVA] to propound_Template.md",
+          "docx": "discovery/DISCOVERY [MVA] to propound.docx",
+          "name": "MVA Discovery to Propound",
+          "case_types": ["mva"],
+          "use_when": "Discovery requests to defendant in MVA"
+        },
+        {
+          "path": "discovery/DISCOVERY [MVA-CDL Driver] to propound_Template.md",
+          "docx": "discovery/DISCOVERY [MVA-CDL Driver] to propound.docx",
+          "name": "CDL Driver Discovery",
+          "case_types": ["mva", "trucking"],
+          "use_when": "Discovery for commercial driver cases"
+        },
+        {
+          "path": "discovery/Discovery (PIP)_Template.md",
+          "docx": "discovery/Discovery (PIP).docx",
+          "name": "PIP Discovery",
+          "case_types": ["mva"],
+          "use_when": "Discovery related to PIP claims"
+        },
+        {
+          "path": "discovery/Discovery (KAC-PIP)_Template.md",
+          "docx": "discovery/Discovery (KAC-PIP).docx",
+          "name": "KAC PIP Discovery",
+          "case_types": ["mva"],
+          "use_when": "Kentucky Assigned Claims PIP discovery"
+        },
+        {
+          "path": "discovery/Discovery (Respondeat Superior)_Template.md",
+          "docx": "discovery/Discovery (Respondeat Superior).docx",
+          "name": "Respondeat Superior Discovery",
+          "case_types": ["mva"],
+          "use_when": "Discovery for employer liability"
+        },
+        {
+          "path": "discovery/Discovery UIM shell_Template.md",
+          "docx": "discovery/Discovery UIM shell.docx",
+          "name": "UIM Discovery Shell",
+          "case_types": ["mva", "uim"],
+          "use_when": "Underinsured motorist discovery"
+        },
+        {
+          "path": "discovery/Discovery Shell (UM) Plaintiff's 1st Set of Discovery Requests to D Insurance Co. (UM)_Template.md",
+          "docx": "discovery/DISCOVERY Shell (UM) Plaintiff's 1st Set of Discovery Requests to D Insurance Co. (UM).docx",
+          "name": "UM Discovery Shell",
+          "case_types": ["mva", "um"],
+          "use_when": "Uninsured motorist discovery"
+        },
+        {
+          "path": "discovery/Discovery shell (bad faith)_Template.md",
+          "docx": "discovery/Discovery shell (bad faith).docx",
+          "name": "Bad Faith Discovery",
+          "case_types": ["bad_faith"],
+          "use_when": "Discovery for bad faith claims"
+        },
+        {
+          "path": "discovery/Extra-Contractual Discovery to State Farm_Template.md",
+          "docx": "discovery/Extra-Contractual Discovery to State Farm.docx",
+          "name": "Extra-Contractual Discovery - State Farm",
+          "case_types": ["bad_faith"],
+          "use_when": "Bad faith discovery against State Farm"
+        },
+        {
+          "path": "discovery/Discovery to Def. Cab Company_Template.md",
+          "docx": "discovery/Discovery to Def. Cab Company.docx",
+          "name": "Cab Company Discovery",
+          "case_types": ["mva"],
+          "use_when": "Discovery to taxi/rideshare company"
+        },
+        {
+          "path": "discovery/Standard Trucking Interrogatories to Defendant Driver_Template.md",
+          "docx": "discovery/Standard Trucking Interrogatories to Defendant Driver.docx",
+          "name": "Trucking Interrogatories - Driver",
+          "case_types": ["mva", "trucking"],
+          "use_when": "Interrogatories to truck driver"
+        },
+        {
+          "path": "discovery/Standard Trucking Interrogatories_ Trucking Company_Motor Carrier_Template.md",
+          "docx": "discovery/Standard Trucking Interrogatories_ Trucking Company_Motor Carrier.docx",
+          "name": "Trucking Interrogatories - Carrier",
+          "case_types": ["mva", "trucking"],
+          "use_when": "Interrogatories to trucking company"
+        },
+        {
+          "path": "discovery/Standard Trucking Request for Production to Defendant Driver_Template.md",
+          "docx": "discovery/Standard Trucking Request for Production to Defendant Driver.docx",
+          "name": "Trucking RFP - Driver",
+          "case_types": ["mva", "trucking"],
+          "use_when": "Document requests to truck driver"
+        },
+        {
+          "path": "discovery/Standard Trucking Request for Production to Trucking Company_Motor Carrier_Template.md",
+          "docx": "discovery/Standard Trucking Request for Production to Trucking Company_Motor Carrier.docx",
+          "name": "Trucking RFP - Carrier",
+          "case_types": ["mva", "trucking"],
+          "use_when": "Document requests to trucking company"
+        },
+        {
+          "path": "discovery/2022 Whaley Premise Liability Roggs to Def_Template.md",
+          "docx": "discovery/2022 Whaley Premise Liability Roggs to Def.docx",
+          "name": "Premises Liability Interrogatories",
+          "case_types": ["premises", "slip_fall"],
+          "use_when": "Discovery for premises liability"
+        },
+        {
+          "path": "discovery/2022 Whaley Premise Liability Roggs to Kroger Limited Partnership I_Template.md",
+          "docx": "discovery/2022 Whaley Premise Liability Roggs to Kroger Limited Partnership I.docx",
+          "name": "Kroger Premises Liability Discovery",
+          "case_types": ["premises", "slip_fall"],
+          "use_when": "Discovery for Kroger slip and fall"
+        },
+        {
+          "path": "discovery/2022 Whaley Resp to DC Discovery Requests Template_Template.md",
+          "docx": "discovery/2022 Whaley Resp to DC Discovery Requests Template.docx",
+          "name": "Discovery Response Template",
+          "case_types": ["any"],
+          "use_when": "Responding to defendant's discovery"
+        },
+        {
+          "path": "discovery/Bad Faith - Discovery Responses - Plaintiff_Template.md",
+          "docx": "discovery/Bad Faith - Discovery Responses - Plaintiff.docx",
+          "name": "Bad Faith Discovery Responses",
+          "case_types": ["bad_faith"],
+          "use_when": "Plaintiff responses in bad faith case"
+        },
+        {
+          "path": "discovery/GENERAL OBJECTIONS_Template.md",
+          "docx": "discovery/GENERAL OBJECTIONS.docx",
+          "name": "General Discovery Objections",
+          "case_types": ["any"],
+          "use_when": "Standard objections to discovery"
+        },
+        {
+          "path": "discovery/Interroratory Forms Book_Template.md",
+          "docx": "discovery/Interroratory Forms Book.docx",
+          "name": "Interrogatory Forms Book",
+          "case_types": ["any"],
+          "use_when": "Reference for interrogatory drafting"
+        },
+        {
+          "path": "discovery/Plaintiffs Interrogatiories (AMM -Shell-Draft)_Template.md",
+          "docx": "discovery/Plaintiffs Interrogatiories (AMM -Shell-Draft).docx",
+          "name": "Plaintiff Interrogatories Shell",
+          "case_types": ["any"],
+          "use_when": "General plaintiff interrogatories"
+        },
+        {
+          "path": "discovery/VERIFICATION page_Template.md",
+          "docx": "discovery/VERIFICATION page.docx",
+          "name": "Verification Page",
+          "case_types": ["any"],
+          "use_when": "Verification for discovery responses"
+        },
+        {
+          "path": "discovery/Notice of Depo_Template.md",
+          "docx": "discovery/Notice of Depo.docx",
+          "name": "Notice of Deposition",
+          "case_types": ["any"],
+          "use_when": "Standard deposition notice"
+        },
+        {
+          "path": "discovery/Notice of Depo for Coporate Rep_Template.md",
+          "docx": "discovery/Notice of Depo for Coporate Rep.docx",
+          "name": "30(b)(6) Corporate Deposition Notice",
+          "case_types": ["any"],
+          "use_when": "Corporate representative deposition"
+        },
+        {
+          "path": "discovery/Notice of Depo for (PIP) Coporate Rep_Template.md",
+          "docx": "discovery/Notice of Depo for (PIP) Coporate Rep.docx",
+          "name": "PIP Corporate Rep Deposition",
+          "case_types": ["mva"],
+          "use_when": "PIP carrier 30(b)(6) deposition"
+        },
+        {
+          "path": "discovery/Notice of Depo for (UIM) Coporate Rep_Template.md",
+          "docx": "discovery/Notice of Depo for (UIM) Coporate Rep.docx",
+          "name": "UIM Corporate Rep Deposition",
+          "case_types": ["mva", "uim"],
+          "use_when": "UIM carrier 30(b)(6) deposition"
+        },
+        {
+          "path": "discovery/2022 Whaley NTTD - Single Depo_Template.md",
+          "docx": "discovery/2022 Whaley NTTD - Single Depo.docx",
+          "name": "Notice to Take Deposition - Single",
+          "case_types": ["any"],
+          "use_when": "Single witness deposition"
+        },
+        {
+          "path": "discovery/2022 Whaley NTTD - Both Def & Plaintiff_Template.md",
+          "docx": "discovery/2022 Whaley NTTD - Both Def & Plaintiff.docx",
+          "name": "Notice to Take Deposition - Both Parties",
+          "case_types": ["any"],
+          "use_when": "Scheduling both party depositions"
+        },
+        {
+          "path": "discovery/NTTD (no video)_Template.md",
+          "docx": "discovery/NTTD (no video).docx",
+          "name": "NTTD - No Videographer",
+          "case_types": ["any"],
+          "use_when": "Non-video recorded deposition"
+        },
+        {
+          "path": "discovery/2022 Whaley Notice of Deposition to Client_Template.md",
+          "docx": "discovery/2022 Whaley Notice of Deposition to Client.docx",
+          "name": "Deposition Notice to Client",
+          "case_types": ["any"],
+          "use_when": "Informing client of their deposition"
+        },
+        {
+          "path": "discovery/Ltr to client re DEPO_Template.md",
+          "docx": "discovery/Ltr to client re DEPO.docx",
+          "name": "Letter to Client re: Deposition",
+          "case_types": ["any"],
+          "use_when": "Preparing client for deposition"
+        },
+        {
+          "path": "discovery/2022 Whaley Notice of DME to Client_Template.md",
+          "docx": "discovery/2022 Whaley Notice of DME to Client.docx",
+          "name": "DME Notice to Client",
+          "case_types": ["any"],
+          "use_when": "Notifying client of defense medical exam"
+        },
+        {
+          "path": "discovery/2022 Whaley Notice of Service - Intent to Depose 3rd Party via SDT_Template.md",
+          "docx": "discovery/2022 Whaley Notice of Service - Intent to Depose 3rd Party via SDT.docx",
+          "name": "Third Party Subpoena Deposition Notice",
+          "case_types": ["any"],
+          "use_when": "Deposing non-party witness"
+        },
+        {
+          "path": "discovery/2022 Whaley Expert Disclosures_Template.md",
+          "docx": "discovery/2022 Whaley Expert Disclosures.docx",
+          "name": "Expert Witness Disclosures",
+          "case_types": ["any"],
+          "use_when": "Disclosing expert witnesses"
+        },
+        {
+          "path": "discovery/2022 Whaley MLF Expert Disclosures_Template.md",
+          "docx": "discovery/2022 Whaley MLF Expert Disclosures.docx",
+          "name": "Expert Disclosures (MLF)",
+          "case_types": ["any"],
+          "use_when": "Medical legal expert disclosures"
+        },
+        {
+          "path": "discovery/2022 Whaley Medical Records Request Template_Template.md",
+          "docx": "discovery/2022 Whaley Medical Records Request Template.docx",
+          "name": "Medical Records Request",
+          "case_types": ["any"],
+          "use_when": "Requesting medical records from provider"
+        },
+        {
+          "path": "discovery/REQ for certified recs_Template.md",
+          "docx": "discovery/REQ for certified recs.docx",
+          "name": "Request for Certified Records",
+          "case_types": ["any"],
+          "use_when": "Requesting certified medical records for trial"
+        },
+        {
+          "path": "discovery/REQ for certified NORTON recs_Template.md",
+          "docx": "discovery/REQ for certified NORTON recs.docx",
+          "name": "Norton Healthcare Certified Records Request",
+          "case_types": ["any"],
+          "use_when": "Certified records from Norton Healthcare"
+        },
+        {
+          "path": "discovery/Notice of Service of Plaintiff's discovery responses_Template.md",
+          "docx": "discovery/Notice of Service of Plaintiff's discovery responses.docx",
+          "name": "Notice of Service - Discovery Responses",
+          "case_types": ["any"],
+          "use_when": "Filing proof of discovery response service"
+        },
+        {
+          "path": "discovery/2022 Whaley Notice of Service - Resp to DC 1st Discovery Request_Template.md",
+          "docx": "discovery/2022 Whaley Notice of Service - Resp to DC 1st Discovery Request.docx",
+          "name": "Notice of Service - Response to DC Discovery",
+          "case_types": ["any"],
+          "use_when": "Filing proof of response service"
+        },
+        {
+          "path": "discovery/2022 Whaley Notice of Overdue Discovery to DC_Template.md",
+          "docx": "discovery/2022 Whaley Notice of Overdue Discovery to DC.docx",
+          "name": "Overdue Discovery Notice",
+          "case_types": ["any"],
+          "use_when": "Notifying defense of overdue discovery"
+        },
+        {
+          "path": "discovery/2022 Whaley Agreed Order to Def Disc Responses - 30 Days_Template.md",
+          "docx": "discovery/2022 Whaley Agreed Order to Def Disc Responses - 30 Days.docx",
+          "name": "Agreed Order - Discovery Extension",
+          "case_types": ["any"],
+          "use_when": "Granting defense discovery extension"
+        },
+        {
+          "path": "discovery/letter re insufficient discovery responses_Template.md",
+          "docx": "discovery/letter re insufficient discovery responses.docx",
+          "name": "Insufficient Discovery Response Letter",
+          "case_types": ["any"],
+          "use_when": "Objecting to inadequate responses"
+        },
+        {
+          "path": "discovery/CL with discovery Req to Def_Template.md",
+          "docx": "discovery/CL with discovery Req to Def.docx",
+          "name": "Cover Letter with Discovery Requests",
+          "case_types": ["any"],
+          "use_when": "Sending discovery to defendant"
+        },
+        {
+          "path": "discovery/CL with discovery responses_Template.md",
+          "docx": "discovery/CL with discovery responses.docx",
+          "name": "Cover Letter with Discovery Responses",
+          "case_types": ["any"],
+          "use_when": "Sending discovery responses"
+        },
+        {
+          "path": "discovery/2022 Whaley DC Discovery Request to Client Cover Letter_Template.md",
+          "docx": "discovery/2022 Whaley DC Discovery Request to Client Cover Letter.docx",
+          "name": "Discovery Request to Client Cover Letter",
+          "case_types": ["any"],
+          "use_when": "Sending defendant's discovery to client"
+        },
+        {
+          "path": "discovery/Depo & Mediation tracking table_Template.md",
+          "docx": "discovery/Depo & Mediation tracking table.docx",
+          "name": "Deposition & Mediation Tracker",
+          "case_types": ["any"],
+          "use_when": "Tracking deposition and mediation dates"
+        }
+      ],
+      "official_forms": [
+        "Form 19. Request for production of documents, etc., under rule 34.pdf",
+        "Form 20. Request for admission under rule 36.pdf",
+        "Subpoena Duces Tecum Form.pdf"
+      ]
+    },
+    "liens": {
+      "path": "forms/liens/",
+      "phase": "demand_in_progress",
+      "workflows": ["lien_identification", "get_final_lien", "negotiate_lien"],
+      "count": 11,
+      "forms": [
+        {
+          "path": "liens/Letter of Rep to Humana Subrogation_Template.md",
+          "docx": "liens/Letter of Rep to Humana Subrogation.docx",
+          "name": "LOR to Humana Subrogation",
+          "use_when": "Client has Humana health insurance"
+        },
+        {
+          "path": "liens/LOR - Subro for Health Plan_Template.md",
+          "docx": "liens/LOR - Subro for Health Plan.docx",
+          "name": "LOR to Health Plan Subrogation",
+          "use_when": "Generic health plan subrogation notice"
+        },
+        {
+          "path": "liens/LOR . WC. to Employer.doc",
+          "name": "LOR to Workers Comp",
+          "use_when": "Workers compensation lien notification"
+        },
+        {
+          "path": "liens/LOR Conduent Subro.doc",
+          "name": "LOR to Conduent",
+          "use_when": "Conduent subrogation claim"
+        },
+        {
+          "path": "liens/LOR to Medicare Subro - CH.doc",
+          "name": "LOR to Medicare",
+          "use_when": "Medicare beneficiary - conditional payment notice"
+        },
+        {
+          "path": "liens/Ltr with HIPPA (BW)_Template.md",
+          "docx": "liens/Ltr with HIPPA (BW).docx",
+          "name": "Letter with HIPAA Authorization",
+          "use_when": "Lien holder requires HIPAA to release info"
+        },
+        {
+          "path": "liens/Ltr to Xerox REQ itemized lien_Template.md",
+          "docx": "liens/Ltr to Xerox REQ itemized lien.docx",
+          "name": "Request Itemized Lien from Xerox",
+          "use_when": "Requesting itemized Medicare lien"
+        },
+        {
+          "path": "liens/Ltr to Xerox to reduce for atty fees_Template.md",
+          "docx": "liens/Ltr to Xerox to reduce for atty fees.docx",
+          "name": "Lien Reduction Request - Attorney Fees",
+          "use_when": "Requesting Medicare lien reduction"
+        },
+        {
+          "path": "liens/LTR to Xerox. Offer to pay with atty fee reduction_Template.md",
+          "docx": "liens/LTR to Xerox. Offer to pay with atty fee reduction.docx",
+          "name": "Medicare Lien Payment Offer",
+          "use_when": "Offering settlement with fee reduction"
+        },
+        {
+          "path": "liens/Medicare Req for FINAL lien._Template.md",
+          "docx": "liens/Medicare Req for FINAL lien..docx",
+          "name": "Request Final Medicare Lien",
+          "use_when": "Requesting final lien amount at settlement"
+        },
+        {
+          "path": "liens/REQ for final lien with atty fee discount_Template.md",
+          "docx": "liens/REQ for final lien with atty fee discount.docx",
+          "name": "Final Lien Request with Discount",
+          "use_when": "Requesting final lien with reduction"
+        },
+        {
+          "path": "liens/Dispute and Negotiating FINAL Xerox Lien_Template.md",
+          "docx": "liens/Dispute and Negotiating FINAL Xerox Lien.docx",
+          "name": "Dispute Medicare Lien",
+          "use_when": "Disputing Medicare lien charges"
+        }
+      ]
+    },
+    "mediation": {
+      "path": "forms/mediation/",
+      "phase": "mediation",
+      "workflows": ["prepare_mediation", "attend_mediation"],
+      "count": 4,
+      "forms": [
+        {
+          "path": "mediation/2022 Whaley Notice of Mediation Pleading_Template.md",
+          "docx": "mediation/2022 Whaley Notice of Mediation Pleading.docx",
+          "name": "Notice of Mediation (Pleading)",
+          "use_when": "Filing notice of mediation with court"
+        },
+        {
+          "path": "mediation/2022 Whaley Mediation Notice to Client_Template.md",
+          "docx": "mediation/2022 Whaley Mediation Notice to Client.docx",
+          "name": "Mediation Notice to Client",
+          "use_when": "Informing client of scheduled mediation"
+        },
+        {
+          "path": "mediation/Ltr to clients re mediation _Template.md",
+          "docx": "mediation/Ltr to clients re mediation .docx",
+          "name": "Mediation Preparation Letter",
+          "use_when": "Preparing client for mediation"
+        },
+        {
+          "path": "mediation/2022 Whaley Mediation Financial Summary.xlsx",
+          "name": "Mediation Financial Summary",
+          "use_when": "Preparing financial analysis for mediation"
+        }
+      ]
+    },
+    "motions": {
+      "path": "forms/motions/",
+      "phase": "discovery",
+      "workflows": ["file_motion", "respond_to_motion"],
+      "count": 28,
+      "forms": [
+        {
+          "path": "motions/2022 Whaley Motion to Compel_Template.md",
+          "docx": "motions/2022 Whaley Motion to Compel.docx",
+          "name": "Motion to Compel Discovery",
+          "use_when": "Defendant fails to respond to discovery"
+        },
+        {
+          "path": "motions/2022 Whaley Motion To Compel Order_Template.md",
+          "docx": "motions/2022 Whaley Motion To Compel Order.docx",
+          "name": "Order Granting Motion to Compel",
+          "use_when": "Proposed order for MTC"
+        },
+        {
+          "path": "motions/MTC Def Disc Responses_Template.md",
+          "docx": "motions/MTC Def Disc Responses.docx",
+          "name": "Motion to Compel Defendant Responses",
+          "use_when": "Generic MTC template"
+        },
+        {
+          "path": "motions/MTC Def State Farm Disc Responses_Template.md",
+          "docx": "motions/MTC Def State Farm Disc Responses.docx",
+          "name": "Motion to Compel - State Farm",
+          "use_when": "MTC against State Farm specifically"
+        },
+        {
+          "path": "motions/MTC ORDER_Template.md",
+          "docx": "motions/MTC ORDER.docx",
+          "name": "Motion to Compel Order",
+          "use_when": "Proposed order for MTC"
+        },
+        {
+          "path": "motions/Motion for Default Judgment_Template.md",
+          "docx": "motions/Motion for Default Judgment.docx",
+          "name": "Motion for Default Judgment",
+          "use_when": "Defendant fails to answer"
+        },
+        {
+          "path": "motions/ORDER awarding DF Jugment_Template.md",
+          "docx": "motions/ORDER awarding DF Jugment.docx",
+          "name": "Order Awarding Default Judgment",
+          "use_when": "Proposed default judgment order"
+        },
+        {
+          "path": "motions/Motion to Withdraw_Template.md",
+          "docx": "motions/Motion to Withdraw.docx",
+          "name": "Motion to Withdraw",
+          "use_when": "Seeking to withdraw from representation"
+        },
+        {
+          "path": "motions/Motion to Withdraw - Proposed Order_Template.md",
+          "docx": "motions/Motion to Withdraw - Proposed Order.docx",
+          "name": "Order Granting Motion to Withdraw",
+          "use_when": "Proposed order for withdrawal"
+        },
+        {
+          "path": "motions/2022 Whaley Motion to WD_Template.md",
+          "docx": "motions/2022 Whaley Motion to WD.docx",
+          "name": "Motion to Withdraw (Alternate)",
+          "use_when": "Alternate withdrawal template"
+        },
+        {
+          "path": "motions/2022 Whaley Proposed Order Granting WD_Template.md",
+          "docx": "motions/2022 Whaley Proposed Order Granting WD.docx",
+          "name": "Proposed Order Granting Withdrawal",
+          "use_when": "Alternate withdrawal order"
+        },
+        {
+          "path": "motions/2022 Whaley Motion to Substitute Defendant_Template.md",
+          "docx": "motions/2022 Whaley Motion to Substitute Defendant.docx",
+          "name": "Motion to Substitute Defendant",
+          "use_when": "Substituting proper defendant"
+        },
+        {
+          "path": "motions/Motion for Leave to file CrossClaim_Template.md",
+          "docx": "motions/Motion for Leave to file CrossClaim.docx",
+          "name": "Motion for Leave to File Cross-Claim",
+          "use_when": "Seeking to add cross-claim"
+        },
+        {
+          "path": "motions/16.12.12 Motion to transfer venue_Template.md",
+          "docx": "motions/16.12.12 Motion to transfer venue.docx",
+          "name": "Motion to Transfer Venue",
+          "use_when": "Changing venue to proper county"
+        },
+        {
+          "path": "motions/Agreed Order of Dismissal_Template.md",
+          "docx": "motions/Agreed Order of Dismissal.docx",
+          "name": "Agreed Order of Dismissal",
+          "use_when": "Settlement dismissal"
+        },
+        {
+          "path": "motions/Agreed Order of Partial Dismissal_Template.md",
+          "docx": "motions/Agreed Order of Partial Dismissal.docx",
+          "name": "Agreed Order of Partial Dismissal",
+          "use_when": "Settling with some defendants"
+        },
+        {
+          "path": "motions/220113 Proposed Agreed Order 4856-6322-4841 v.1_Template.md",
+          "docx": "motions/220113 Proposed Agreed Order 4856-6322-4841 v.1.docx",
+          "name": "Proposed Agreed Order",
+          "use_when": "Generic agreed order template"
+        },
+        {
+          "path": "motions/Response to MTD for lack of prosecution_Template.md",
+          "docx": "motions/Response to MTD for lack of prosecution.docx",
+          "name": "Response to Motion to Dismiss",
+          "use_when": "Opposing dismissal for lack of prosecution"
+        },
+        {
+          "path": "motions/Motion Affidavit Order re Special Bailiff_Template.md",
+          "docx": "motions/Motion Affidavit Order re Special Bailiff.docx",
+          "name": "Special Bailiff Motion Package",
+          "use_when": "Requesting special process server"
+        },
+        {
+          "path": "motions/Petition & Order for Special Needs Trust_Template.md",
+          "docx": "motions/Petition & Order for Special Needs Trust.docx",
+          "name": "Special Needs Trust Petition",
+          "use_when": "Minor or disabled plaintiff settlement"
+        },
+        {
+          "path": "motions/2022 Whaley NMO Trial Date - Franklin_Template.md",
+          "docx": "motions/2022 Whaley NMO Trial Date - Franklin.docx",
+          "name": "Notice of Motion - Trial Date (Franklin)",
+          "use_when": "Requesting trial date in Franklin County"
+        },
+        {
+          "path": "motions/MIL Motions in Limine_Template.md",
+          "docx": "motions/MIL Motions in Limine.docx",
+          "name": "Motions in Limine",
+          "use_when": "Pre-trial evidentiary motions"
+        },
+        {
+          "path": "motions/MIL- shell for daubert challenge_Template.md",
+          "docx": "motions/MIL- shell for daubert challenge.docx",
+          "name": "Daubert Challenge Motion",
+          "use_when": "Challenging expert testimony"
+        },
+        {
+          "path": "motions/[draft] MIL to Exclude I-Drive Data_Template.md",
+          "docx": "motions/[draft] MIL to Exclude I-Drive Data.docx",
+          "name": "Motion to Exclude EDR Data",
+          "use_when": "Excluding event data recorder evidence"
+        },
+        {
+          "path": "motions/[draft] MSJ. PIP only. Defendants Lack Expert_Template.md",
+          "docx": "motions/[draft] MSJ. PIP only. Defendants Lack Expert.docx",
+          "name": "Motion for Summary Judgment - PIP",
+          "use_when": "MSJ on PIP claim"
+        },
+        {
+          "path": "motions/SUMMARY JUDGMENT STANDARD_Template.md",
+          "docx": "motions/SUMMARY JUDGMENT STANDARD.docx",
+          "name": "Summary Judgment Standard",
+          "use_when": "Legal standard for MSJ"
+        },
+        {
+          "path": "motions/ORDER_Template.md",
+          "docx": "motions/ORDER.docx",
+          "name": "Generic Order Template",
+          "use_when": "Blank order template"
+        }
+      ],
+      "official_forms": [
+        "Form 14. Motion to dismiss, presenting defenses of failure to state a claim, of lack of service of p.pdf",
+        "Form 17. Motion to bring in third-party defendant.pdf",
+        "Form 18. Motion to intervene as a defendant under rule 24.pdf"
+      ]
+    },
+    "trial": {
+      "path": "forms/trial/",
+      "phase": "trial_prep",
+      "workflows": ["expert_management", "trial_materials"],
+      "count": 10,
+      "forms": [
+        {
+          "path": "trial/NMO for Trial Date_Template.md",
+          "docx": "trial/NMO for Trial Date.docx",
+          "name": "Notice of Motion for Trial Date",
+          "use_when": "Requesting trial date assignment"
+        },
+        {
+          "path": "trial/NMO pre-trial conference_Template.md",
+          "docx": "trial/NMO pre-trial conference.docx",
+          "name": "Notice of Motion for Pre-Trial Conference",
+          "use_when": "Scheduling pre-trial conference"
+        },
+        {
+          "path": "trial/Pre-Trial Compliance_Template.md",
+          "docx": "trial/Pre-Trial Compliance.docx",
+          "name": "Pre-Trial Compliance Statement",
+          "use_when": "Filing pre-trial compliance"
+        },
+        {
+          "path": "trial/220113 Joint Motion to Adopt Order on Extension of Deadlines brc 4882-9633-0249 v.1_Template.md",
+          "docx": "trial/220113 Joint Motion to Adopt Order on Extension of Deadlines brc 4882-9633-0249 v.1.docx",
+          "name": "Joint Motion for Deadline Extension",
+          "use_when": "Extending trial deadlines"
+        },
+        {
+          "path": "trial/Trial Brief (memorandum)_Template.md",
+          "docx": "trial/Trial Brief (memorandum).docx",
+          "name": "Trial Brief",
+          "use_when": "Pre-trial brief/memorandum"
+        },
+        {
+          "path": "trial/16.02.27 [draft] Motions in Limine_Template.md",
+          "docx": "trial/16.02.27 [draft] Motions in Limine.docx",
+          "name": "Motions in Limine (Draft)",
+          "use_when": "Pre-trial evidentiary motions"
+        },
+        {
+          "path": "trial/16.02.27 [draft] Memorandum in Support of MIL_Template.md",
+          "docx": "trial/16.02.27 [draft] Memorandum in Support of MIL.docx",
+          "name": "MIL Memorandum",
+          "use_when": "Supporting memorandum for MIL"
+        },
+        {
+          "path": "trial/ITEMIZED DAMAGES TABLE, template_Template.md",
+          "docx": "trial/ITEMIZED DAMAGES TABLE, template.docx",
+          "name": "Itemized Damages Table",
+          "use_when": "Trial exhibit - damages breakdown"
+        },
+        {
+          "path": "trial/Itemized Damages table (blank)_Template.md",
+          "docx": "trial/Itemized Damages table (blank).docx",
+          "name": "Itemized Damages Table (Blank)",
+          "use_when": "Blank damages table template"
+        },
+        {
+          "path": "trial/Itemized Damages Spreadsheet.xlsx",
+          "name": "Itemized Damages Spreadsheet",
+          "use_when": "Excel version of damages calculation"
+        },
+        {
+          "path": "trial/TRIAL DEADLINES.xlsx",
+          "name": "Trial Deadlines Tracker",
+          "use_when": "Tracking trial calendar deadlines"
+        }
+      ],
+      "official_forms": [
+        "Objection List.pdf",
+        "PL-Trial Expert Disclosure.doc"
+      ]
+    },
+    "appeals": {
+      "path": "forms/appeals/",
+      "phase": "appeal",
+      "workflows": ["file_appeal"],
+      "count": 1,
+      "forms": [
+        {
+          "path": "appeals/Notice_of_Appeal_Template.md",
+          "name": "Notice of Appeal",
+          "use_when": "Appealing adverse judgment"
+        }
+      ],
+      "official_forms": [
+        "Form 22. Notice of appeal under rule 73.03.pdf",
+        "Form 23. Certificate as to transcript under rule 75.01 (2).pdf",
+        "Form 24. Cover of brief to be filed in the Court of Appeals.pdf",
+        "Form 25. Cover of brief to be filed in the Supreme Court of Kentucky.pdf",
+        "Notice of Appeal.pdf"
+      ]
+    },
+    "demand": {
+      "path": "forms/",
+      "phase": "demand_in_progress",
+      "workflows": ["draft_demand"],
+      "count": 2,
+      "forms": [
+        {
+          "path": "demand_letter_TEMPLATE.md",
+          "name": "Demand Letter Template",
+          "use_when": "Drafting demand letter to insurance"
+        },
+        {
+          "path": "demand_letter_mills_example.md",
+          "name": "Demand Letter Example (Mills)",
+          "use_when": "Reference example for demand structure"
+        }
+      ]
+    }
+  },
+  "form_selection_rules": {
+    "mva_standard": {
+      "complaint": "complaints/2022 Whaley MVA Complaint - Standard_Template.md",
+      "discovery": "discovery/2022 Whaley Discovery Request - MVA Standard_Template.md",
+      "condition": "accident.type == 'mva' AND NOT vicarious_liability AND NOT um_claim"
+    },
+    "mva_um": {
+      "complaint": "complaints/2022 Whaley MVA Complaint - UM (State Farm)_Template.md",
+      "discovery": "discovery/2022 Whaley Discovery Request - UM Template_Template.md",
+      "condition": "accident.type == 'mva' AND um_claim == true"
+    },
+    "premises_liability": {
+      "complaint": "complaints/2022 Whaley Premise Liability Complaint Template_Template.md",
+      "discovery": "discovery/2022 Whaley Premise Liability Roggs to Def_Template.md",
+      "condition": "accident.type == 'premises' OR accident.type == 'slip_fall'"
+    },
+    "trucking": {
+      "complaint": "complaints/BI Complaint with vicarious liability_Template.md",
+      "discovery": [
+        "discovery/Standard Trucking Interrogatories to Defendant Driver_Template.md",
+        "discovery/Standard Trucking Interrogatories_ Trucking Company_Motor Carrier_Template.md"
+      ],
+      "condition": "accident.type == 'mva' AND defendant.is_commercial_vehicle"
+    }
+  }
+}
+

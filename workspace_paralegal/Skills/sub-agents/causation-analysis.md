@@ -99,7 +99,7 @@ Direct causation statements are strongest evidence.
 ## Output Location
 
 **Save your causation analysis to:**
-- **File:** `/Reports/causation.md`
+- **File:** `Reports/causation.md`
 - **Format:** Markdown with all sections above
 
 ## Important Notes

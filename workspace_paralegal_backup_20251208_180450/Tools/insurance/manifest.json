@@ -1,0 +1,50 @@
+{
+  "category": "insurance",
+  "description": "Insurance claim management tools for PI cases",
+  "tools": [
+    {
+      "name": "pip_waterfall",
+      "file": "pip_waterfall.py",
+      "description": "Determine the correct PIP (Personal Injury Protection) insurer using Kentucky's statutory waterfall priority rules. Handles all scenarios including disqualification and KAC referral.",
+      "usage": "python /Tools/insurance/pip_waterfall.py --interactive OR python /Tools/insurance/pip_waterfall.py --client-on-title <yes/no> --vehicle-insured <yes/no> [options]",
+      "examples": [
+        "python /Tools/insurance/pip_waterfall.py --interactive --pretty",
+        "python /Tools/insurance/pip_waterfall.py --client-on-title no --vehicle-insured yes --vehicle-insurer \"State Farm\" --pretty",
+        "python /Tools/insurance/pip_waterfall.py --client-on-title no --vehicle-insured no --client-has-insurance yes --client-insurer \"GEICO\"",
+        "python /Tools/insurance/pip_waterfall.py --from-json /case/pip_answers.json"
+      ],
+      "when_to_use": [
+        "Opening a new MVA case - determine where to file PIP claim",
+        "Client was passenger in someone else's vehicle",
+        "Client was in uninsured vehicle",
+        "Client doesn't have their own auto insurance",
+        "Need to determine if client qualifies for Kentucky Assigned Claims"
+      ],
+      "output_format": "JSON with pip_insurer, recommendation, next_steps, template_to_use",
+      "exit_codes": {
+        "0": "Normal PIP claim - insurer determined",
+        "1": "KAC required - no standard coverage available",
+        "2": "Client DISQUALIFIED from PIP benefits"
+      },
+      "kentucky_specific": true,
+      "legal_reference": "Kentucky PIP Waterfall - KRS 304.39",
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE"
+    }
+  ],
+  "waterfall_logic_summary": {
+    "step_1": "Is client on TITLE of vehicle occupied? If yes AND insured → that vehicle's insurer. If yes AND uninsured → DISQUALIFIED",
+    "step_2": "Was vehicle occupied insured? If yes → that vehicle's insurer",
+    "step_3": "Does client have OWN auto insurance? If yes → client's insurer",
+    "step_4": "Does household member have auto insurance? If yes → household member's insurer",
+    "step_5": "None of the above → Kentucky Assigned Claims Plan (KAC)"
+  },
+  "kac_contact": {
+    "name": "Kentucky Assigned Claims Plan",
+    "address": "P.O. Box 517, Frankfort, KY 40602",
+    "phone": "(502) 875-4460",
+    "form": "/forms/insurance/PIP/KAC_Application.pdf"
+  }
+}
+

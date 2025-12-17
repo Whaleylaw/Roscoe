@@ -1,0 +1,469 @@
+{
+  "phases": {
+    "file_setup": {
+      "name": "File Setup",
+      "description": "Getting all initial information and documentation about the accident and client's injuries to create the initial file and progress the case.",
+      "order": 1,
+      "track": "pre_litigation",
+      "entry_triggers": [
+        "new_case_created",
+        "case_transferred_in"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {
+          "retainer_signed": {
+            "description": "Client must sign retainer agreement",
+            "field_path": "documents.retainer.status",
+            "required_value": "signed"
+          }
+        },
+        "soft_blockers": {
+          "hipaa_signed": {
+            "description": "HIPAA authorization signed (needed for records)",
+            "field_path": "documents.hipaa.status",
+            "required_value": "signed",
+            "can_override": true,
+            "override_consequence": "Cannot request medical records without HIPAA"
+          },
+          "all_insurance_claims_opened": {
+            "description": "All identified insurance claims opened and acknowledged",
+            "check_function": "check_all_claims_acknowledged",
+            "can_override": true,
+            "override_consequence": "May miss recovery sources"
+          },
+          "police_report_obtained": {
+            "description": "Police report requested and received (if applicable)",
+            "condition": "accident.type == 'mva'",
+            "field_path": "accident.police_report.received_date",
+            "can_override": true,
+            "override_consequence": "May be missing party/insurance info"
+          },
+          "all_providers_added": {
+            "description": "All known medical providers added to file",
+            "check_function": "check_providers_added",
+            "can_override": true
+          }
+        }
+      },
+      "workflows": [
+        "intake",
+        "accident_report",
+        "open_insurance_claims",
+        "medical_provider_setup"
+      ],
+      "next_phase": "treatment",
+      "can_skip_to": [],
+      "notes": "Cannot proceed without signed retainer. Other items can be followed up during Treatment phase."
+    },
+    "treatment": {
+      "name": "Treatment",
+      "description": "Monitoring the client's medical care to ensure they get better and gathering documentation for subsequent phases.",
+      "order": 2,
+      "track": "pre_litigation",
+      "entry_triggers": [
+        "file_setup_complete",
+        "returned_from_negotiation"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {},
+        "soft_blockers": {
+          "treatment_complete": {
+            "description": "Client reports done treating OR discharged from all providers",
+            "check_function": "check_treatment_complete",
+            "can_override": true,
+            "override_consequence": "May settle before Maximum Medical Improvement"
+          }
+        },
+        "early_exit_conditions": {
+          "low_limits_clear_liability": {
+            "description": "Low policy limits + clear liability + significant injuries",
+            "check_function": "check_early_demand_conditions",
+            "allows_exit_to": "demand_in_progress"
+          },
+          "sol_approaching": {
+            "description": "Within 60 days of statute of limitations",
+            "check_function": "check_sol_critical",
+            "allows_exit_to": "complaint",
+            "required_action": "Must file suit or decline representation"
+          }
+        }
+      },
+      "workflows": [
+        "client_check_in",
+        "medical_provider_status",
+        "request_records_bills",
+        "referral_new_provider"
+      ],
+      "recurring_tasks": {
+        "client_check_in": {
+          "frequency_days": 14,
+          "until": "demand_sent"
+        }
+      },
+      "next_phase": "demand_in_progress",
+      "can_skip_to": ["complaint"],
+      "notes": "Treatment phase continues in parallel with other phases. Provider monitoring and records requests can happen anytime."
+    },
+    "demand_in_progress": {
+      "name": "Demand in Progress",
+      "description": "Gathering all medical records, bills, liens, and reports necessary to draft a demand, drafting a demand, and sending it to the insurance company or attorney.",
+      "order": 3,
+      "track": "pre_litigation",
+      "entry_triggers": [
+        "treatment_complete",
+        "early_demand_trigger"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {
+          "demand_sent": {
+            "description": "Demand letter sent to all BI adjusters",
+            "check_function": "check_demand_sent_all_bi"
+          }
+        },
+        "soft_blockers": {
+          "all_records_received": {
+            "description": "Medical records received from all providers",
+            "check_function": "check_all_records_received",
+            "can_override": true,
+            "override_consequence": "Demand may be incomplete"
+          },
+          "all_bills_received": {
+            "description": "Medical bills received from all providers",
+            "check_function": "check_all_bills_received",
+            "can_override": true,
+            "override_consequence": "May undervalue case"
+          },
+          "liens_identified": {
+            "description": "All liens identified and conditional amounts requested",
+            "check_function": "check_liens_identified",
+            "can_override": true,
+            "override_consequence": "May have surprise liens at settlement"
+          }
+        }
+      },
+      "workflows": [
+        "gather_demand_materials",
+        "draft_demand",
+        "send_demand"
+      ],
+      "next_phase": "negotiation",
+      "can_skip_to": ["complaint"],
+      "notes": "Once demand is sent, automatically enter Negotiation phase."
+    },
+    "negotiation": {
+      "name": "Negotiation",
+      "description": "Negotiating with an insurance adjuster or attorney to resolve the case.",
+      "order": 4,
+      "track": "pre_litigation",
+      "entry_triggers": [
+        "demand_sent"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {},
+        "soft_blockers": {},
+        "completion_conditions": {
+          "settlement_reached": {
+            "description": "Settlement agreement reached with insurance",
+            "check_function": "check_settlement_reached",
+            "next_phase": "settlement"
+          },
+          "negotiation_failed": {
+            "description": "Impasse reached - denied liability or fundamental disagreement",
+            "check_function": "check_negotiation_impasse",
+            "next_phase": "complaint",
+            "alternative_phase": "treatment"
+          }
+        }
+      },
+      "workflows": [
+        "negotiate_claim",
+        "track_offers"
+      ],
+      "next_phase": "settlement",
+      "can_skip_to": ["treatment", "complaint"],
+      "notes": "Can return to Treatment if client needs more care. Can file suit if negotiation fails. Multiple BI claims negotiated in parallel."
+    },
+    "settlement": {
+      "name": "Settlement",
+      "description": "Finalizing the settlement and distributing funds.",
+      "order": 5,
+      "track": "pre_litigation",
+      "entry_triggers": [
+        "settlement_reached"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {
+          "client_received_funds": {
+            "description": "Client has received their distribution",
+            "check_function": "check_client_paid"
+          }
+        },
+        "soft_blockers": {
+          "all_liens_resolved": {
+            "description": "All liens paid or negotiated",
+            "check_function": "check_liens_resolved",
+            "can_override": false,
+            "override_alternative": "lien_phase"
+          }
+        }
+      },
+      "workflows": [
+        "settlement_processing"
+      ],
+      "next_phase": "closed",
+      "can_skip_to": ["lien_phase"],
+      "notes": "If liens not resolved, case moves to Lien Phase before closing."
+    },
+    "lien_phase": {
+      "name": "Lien Phase",
+      "description": "Resolving difficult liens that couldn't be finalized before settlement.",
+      "order": 6,
+      "track": "pre_litigation",
+      "entry_triggers": [
+        "settlement_complete_liens_outstanding"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {
+          "all_liens_resolved": {
+            "description": "All liens resolved and paid",
+            "check_function": "check_all_liens_resolved"
+          },
+          "final_distribution_complete": {
+            "description": "Additional distribution to client completed",
+            "check_function": "check_final_distribution"
+          }
+        }
+      },
+      "workflows": [
+        "get_final_lien",
+        "negotiate_lien",
+        "final_distribution"
+      ],
+      "next_phase": "closed",
+      "can_skip_to": [],
+      "notes": "Only entered if liens outstanding after settlement. Medicare liens often require this phase."
+    },
+    "complaint": {
+      "name": "Complaint",
+      "description": "Filing suit - the initiating document for litigation.",
+      "order": 7,
+      "track": "litigation",
+      "entry_triggers": [
+        "negotiation_failed",
+        "sol_approaching",
+        "case_transferred_in_litigation"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {
+          "defendant_served": {
+            "description": "All defendants served with complaint",
+            "check_function": "check_all_defendants_served"
+          }
+        },
+        "soft_blockers": {
+          "answer_received": {
+            "description": "Answer received from defendant(s)",
+            "check_function": "check_answer_received",
+            "can_override": true,
+            "alternative_action": "Seek default judgment"
+          }
+        }
+      },
+      "workflows": [
+        "draft_file_complaint",
+        "serve_defendant",
+        "process_answer"
+      ],
+      "next_phase": "discovery",
+      "can_skip_to": ["settlement"],
+      "parallel_phases": ["treatment"],
+      "notes": "Filing suit doesn't preclude settlement at any point. Treatment monitoring continues in parallel."
+    },
+    "discovery": {
+      "name": "Discovery",
+      "description": "The official method of gathering information to resolve the claim.",
+      "order": 8,
+      "track": "litigation",
+      "entry_triggers": [
+        "defendant_served"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {},
+        "soft_blockers": {
+          "discovery_complete": {
+            "description": "Discovery deadline passed or all needed discovery obtained",
+            "check_function": "check_discovery_complete",
+            "can_override": true
+          }
+        }
+      },
+      "workflows": [
+        "propound_discovery",
+        "respond_to_discovery",
+        "review_responses",
+        "party_depositions"
+      ],
+      "next_phase": "mediation",
+      "can_skip_to": ["settlement", "trial_prep"],
+      "parallel_phases": ["treatment"],
+      "notes": "Settlement can happen at any point. If no mediation ordered, can skip to Trial Prep."
+    },
+    "mediation": {
+      "name": "Mediation",
+      "description": "A formal attempt at resolution of the case prior to trial preparation and trial itself.",
+      "order": 9,
+      "track": "litigation",
+      "entry_triggers": [
+        "discovery_substantial_complete",
+        "mediation_ordered",
+        "parties_agree_mediation"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {
+          "mediation_occurred": {
+            "description": "Mediation attended (regardless of outcome)",
+            "check_function": "check_mediation_complete"
+          }
+        }
+      },
+      "workflows": [
+        "prepare_mediation",
+        "attend_mediation"
+      ],
+      "next_phase": "trial_prep",
+      "can_skip_to": ["settlement"],
+      "notes": "Mediation can happen multiple times. If settlement reached, goes to Settlement phase."
+    },
+    "trial_prep": {
+      "name": "Trial Prep",
+      "description": "All preparation governed by trial calendar deadlines.",
+      "order": 10,
+      "track": "litigation",
+      "entry_triggers": [
+        "mediation_unsuccessful",
+        "trial_date_set"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {
+          "trial_begins": {
+            "description": "Trial date arrived",
+            "check_function": "check_trial_date"
+          }
+        },
+        "soft_blockers": {
+          "experts_disclosed": {
+            "description": "All expert witnesses disclosed by deadline",
+            "check_function": "check_experts_disclosed",
+            "can_override": false
+          },
+          "exhibits_prepared": {
+            "description": "Trial exhibits prepared and exchanged",
+            "check_function": "check_exhibits_ready",
+            "can_override": true
+          }
+        }
+      },
+      "workflows": [
+        "expert_management",
+        "trial_materials"
+      ],
+      "next_phase": "trial",
+      "can_skip_to": ["settlement"],
+      "notes": "Settlement can happen at any point, even after trial begins."
+    },
+    "trial": {
+      "name": "Trial",
+      "description": "Putting the case in front of a jury and letting them decide because we cannot reach a resolution by agreement.",
+      "order": 11,
+      "track": "litigation",
+      "entry_triggers": [
+        "trial_date_arrived"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {
+          "verdict_rendered": {
+            "description": "Jury has returned verdict",
+            "check_function": "check_verdict"
+          }
+        }
+      },
+      "workflows": [
+        "conduct_trial"
+      ],
+      "next_phase": "closed",
+      "can_skip_to": ["settlement"],
+      "notes": "Settlement can happen during trial, even while jury is deliberating."
+    },
+    "closed": {
+      "name": "Closed / Archived",
+      "description": "Case complete - final documentation and file retention.",
+      "order": 12,
+      "track": "terminal",
+      "entry_triggers": [
+        "client_paid",
+        "verdict_rendered",
+        "case_declined",
+        "case_withdrawn"
+      ],
+      "exit_criteria": {
+        "hard_blockers": {}
+      },
+      "workflows": [
+        "close_case"
+      ],
+      "next_phase": null,
+      "can_reopen_if": [
+        "client_returned",
+        "new_insurance_discovered"
+      ],
+      "cannot_reopen_if": [
+        "settlement_completed",
+        "verdict_paid"
+      ],
+      "retention_years": 5,
+      "notes": "Final letter to client, request review if appropriate, archive file."
+    }
+  },
+  "phase_order": [
+    "file_setup",
+    "treatment",
+    "demand_in_progress",
+    "negotiation",
+    "settlement",
+    "lien_phase",
+    "complaint",
+    "discovery",
+    "mediation",
+    "trial_prep",
+    "trial",
+    "closed"
+  ],
+  "tracks": {
+    "pre_litigation": {
+      "phases": ["file_setup", "treatment", "demand_in_progress", "negotiation", "settlement", "lien_phase"],
+      "description": "Standard case flow without filing suit"
+    },
+    "litigation": {
+      "phases": ["complaint", "discovery", "mediation", "trial_prep", "trial"],
+      "description": "When suit is filed",
+      "parallel_with": ["treatment"]
+    },
+    "terminal": {
+      "phases": ["closed"],
+      "description": "Case complete"
+    }
+  },
+  "global_rules": {
+    "sol_check": {
+      "description": "Check statute of limitations on every case access",
+      "action": "If within 60 days of SOL and not in litigation, CRITICAL alert",
+      "critical_threshold_days": 60,
+      "warning_threshold_days": 180
+    },
+    "client_contact": {
+      "description": "Track last client contact",
+      "warning_threshold_days": 30,
+      "critical_threshold_days": 60
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "category": "esignature",
+  "description": "DocuSign electronic signature integration tools",
+  "signature_placement_guide": "/Tools/esignature/SIGNATURE_PLACEMENT_GUIDE.md",
+  "quick_reference": {
+    "primary_signer": {
+      "signature": "/sig1/",
+      "date": "/date1/",
+      "initials": "/init1/",
+      "text_input": "/text1/"
+    },
+    "second_signer": {
+      "signature": "/sig2/",
+      "date": "/date2/",
+      "initials": "/init2/",
+      "text_input": "/text2/"
+    },
+    "placement_note": "Place anchor tags where you want the field to appear. The anchor text is replaced by the signature/date field."
+  },
+  "tools": [
+    {
+      "name": "docusign_send",
+      "file": "docusign_send.py",
+      "description": "Send a document for electronic signature via DocuSign",
+      "usage": "python /Tools/esignature/docusign_send.py <document_path> --signer-email <email> --signer-name <name> [--subject <subject>]",
+      "examples": [
+        "python /Tools/esignature/docusign_send.py \"/case/retainer.pdf\" --signer-email \"client@email.com\" --signer-name \"John Smith\" --subject \"Retainer Agreement\"",
+        "python /Tools/esignature/docusign_send.py \"/case/hipaa.pdf\" -e \"client@email.com\" -n \"John Smith\" -s \"HIPAA Authorization\""
+      ],
+      "when_to_use": [
+        "When a client needs to sign a retainer agreement",
+        "When sending HIPAA authorization for signature",
+        "When sending Medicare authorization for signature",
+        "When sending settlement authorization for signature",
+        "When any document requires client signature"
+      ],
+      "output_format": "JSON with envelope_id, status, sent_at",
+      "dependencies": ["docusign-esign"],
+      "environment_requirements": [
+        "DOCUSIGN_INTEGRATION_KEY",
+        "DOCUSIGN_USER_ID",
+        "DOCUSIGN_ACCOUNT_ID",
+        "DOCUSIGN_PRIVATE_KEY or DOCUSIGN_PRIVATE_KEY_PATH"
+      ],
+      "cost": "Paid (DocuSign subscription)"
+    },
+    {
+      "name": "docusign_status",
+      "file": "docusign_status.py",
+      "description": "Check the status of a DocuSign envelope (pending, signed, etc.)",
+      "usage": "python /Tools/esignature/docusign_status.py <envelope_id> [--recipients]",
+      "examples": [
+        "python /Tools/esignature/docusign_status.py abc123-def456 --pretty",
+        "python /Tools/esignature/docusign_status.py --list --days 30",
+        "python /Tools/esignature/docusign_status.py abc123 --recipients"
+      ],
+      "when_to_use": [
+        "When checking if a client has signed a document",
+        "When following up on unsigned documents",
+        "When updating case status after signature received",
+        "When listing all recent signature requests"
+      ],
+      "output_format": "JSON with status, recipients, timestamps",
+      "dependencies": ["docusign-esign"],
+      "environment_requirements": [
+        "DOCUSIGN_INTEGRATION_KEY",
+        "DOCUSIGN_USER_ID", 
+        "DOCUSIGN_ACCOUNT_ID",
+        "DOCUSIGN_PRIVATE_KEY or DOCUSIGN_PRIVATE_KEY_PATH"
+      ],
+      "cost": "Paid (DocuSign subscription)"
+    }
+  ],
+  "setup_instructions": [
+    "1. Install SDK: pip install docusign-esign",
+    "2. Set environment variables (see environment_requirements)",
+    "3. Grant JWT consent by visiting the consent URL once",
+    "4. Test with: python /Tools/esignature/docusign_config.py"
+  ],
+  "consent_url": "https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature%20impersonation&client_id=db757a98-c874-49cc-a158-d0d1c6107f41&redirect_uri=https://localhost/callback"
+}
+

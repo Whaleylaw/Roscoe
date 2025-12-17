@@ -48,8 +48,8 @@ python /Tools/read_pdf.py /path/to/document.pdf /Reports/extractions/document_na
 - Provides quality metrics
 
 **Output per file:**
-- `/Reports/extractions/document_name.txt` - Extracted text
-- `/Reports/extractions/document_name.tables.json` - Tables (if any)
+- `Reports/extractions/document_name.txt` - Extracted text
+- `Reports/extractions/document_name.tables.json` - Tables (if any)
 - Quality metrics to stderr
 
 ---
@@ -58,7 +58,7 @@ python /Tools/read_pdf.py /path/to/document.pdf /Reports/extractions/document_na
 
 As each PDF is processed, create a processing log:
 
-**File:** `/Reports/document_processing_log.json`
+**File:** `Reports/document_processing_log.json`
 
 ```json
 {
@@ -70,8 +70,8 @@ As each PDF is processed, create a processing log:
   "documents": [
     {
       "source_path": "/case_name/medical_records/doctor_note.pdf",
-      "output_text": "/Reports/extractions/doctor_note.txt",
-      "output_tables": "/Reports/extractions/doctor_note.tables.json",
+      "output_text": "Reports/extractions/doctor_note.txt",
+      "output_tables": "Reports/extractions/doctor_note.tables.json",
       "method": "pdfplumber",
       "quality": "excellent",
       "confidence_score": 95,
@@ -81,7 +81,7 @@ As each PDF is processed, create a processing log:
     },
     {
       "source_path": "/case_name/medical_records/old_scan.pdf",
-      "output_text": "/Reports/extractions/old_scan.txt",
+      "output_text": "Reports/extractions/old_scan.txt",
       "output_tables": null,
       "method": "ocr",
       "quality": "good",
@@ -100,7 +100,7 @@ As each PDF is processed, create a processing log:
 
 Create a human-readable index of all processed documents:
 
-**File:** `/Reports/DOCUMENT_INDEX.md`
+**File:** `Reports/DOCUMENT_INDEX.md`
 
 ```markdown
 # Document Processing Index
@@ -112,7 +112,7 @@ Create a human-readable index of all processed documents:
 
 ### ✓ doctor_note.pdf
 - **Source:** `/case_name/medical_records/doctor_note.pdf`
-- **Extracted Text:** `/Reports/extractions/doctor_note.txt`
+- **Extracted Text:** `Reports/extractions/doctor_note.txt`
 - **Tables:** 1 table extracted
 - **Method:** PDFPlumber (Tier 1)
 - **Quality:** Excellent (95/100)
@@ -120,7 +120,7 @@ Create a human-readable index of all processed documents:
 
 ### ✓ old_scan.pdf
 - **Source:** `/case_name/medical_records/old_scan.pdf`
-- **Extracted Text:** `/Reports/extractions/old_scan.txt`
+- **Extracted Text:** `Reports/extractions/old_scan.txt`
 - **Tables:** None
 - **Method:** OCR (Tier 2)
 - **Quality:** Good (72/100)
@@ -178,7 +178,7 @@ Processing log saved: /Reports/document_processing_log.json
 
 ## Tools Required
 
-- `/Tools/read_pdf.py` - Tiered PDF processing pipeline
+- `Tools/read_pdf.py` - Tiered PDF processing pipeline
 - File system tools (ls, find, mkdir)
 - Bash for scripting
 

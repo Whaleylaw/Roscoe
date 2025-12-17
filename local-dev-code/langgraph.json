@@ -1,0 +1,10 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+        "roscoe_paralegal": "./src/roscoe/agents/paralegal/agent.py:personal_assistant_agent",
+        "roscoe_coding": "./src/roscoe/agents/coding/agent.py:coding_agent"
+    },
+    "env": ".env",
+    "python_version": "3.11"
+}
+  

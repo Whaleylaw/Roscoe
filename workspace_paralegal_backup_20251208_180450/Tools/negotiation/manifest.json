@@ -1,0 +1,71 @@
+{
+  "category": "negotiation",
+  "description": "Tools for tracking PI case negotiations (offers, counteroffers, settlements)",
+  "tools": [
+    {
+      "name": "negotiation_tracker",
+      "file": "negotiation_tracker.py",
+      "description": "Track offer/counteroffer history for PI negotiations. Records events, calculates gaps, monitors status.",
+      "usage": "python /Tools/negotiation/negotiation_tracker.py --case CASE_NAME [action]",
+      "examples": [
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --status --pretty",
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --add-offer 25000 --from insurance --notes \"Initial offer\"",
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --add-offer 75000 --from client --notes \"Counteroffer\"",
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --history --pretty",
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --settle 45000",
+        "python /Tools/negotiation/negotiation_tracker.py --case \"Smith-MVA\" --set-demand 100000 --set-demand-date 2024-01-15 --set-insurance \"State Farm\""
+      ],
+      "when_to_use": [
+        "Insurance company makes an offer - record it",
+        "Sending a counteroffer - record client's position",
+        "Need to check current negotiation status",
+        "Case settles - record settlement amount",
+        "Review offer history before strategy discussion"
+      ],
+      "actions": {
+        "--status": "View current negotiation position and summary",
+        "--history": "View full chronological offer history",
+        "--add-offer AMOUNT": "Add an offer/counteroffer",
+        "--settle AMOUNT": "Record final settlement"
+      },
+      "offer_options": {
+        "--from": "insurance | client (required for --add-offer)",
+        "--type": "initial_demand | offer | counteroffer | final_offer",
+        "--notes": "Notes about the offer"
+      },
+      "setup_options": {
+        "--set-demand": "Set demand amount",
+        "--set-demand-date": "Set demand date (YYYY-MM-DD)",
+        "--set-insurance": "Set insurance company name",
+        "--set-adjuster": "Set adjuster name",
+        "--set-claim": "Set claim number",
+        "--set-limits": "Set policy limits",
+        "--set-status": "pending | active | stalled | settled | litigation"
+      },
+      "output_format": "JSON with status, current_position, activity, and settlement info",
+      "data_storage": "Case folder: /case_name/negotiation.json",
+      "tracks": [
+        "Demand date and amount",
+        "All offers with dates and parties",
+        "Current offer from insurance",
+        "Current position from client",
+        "Gap analysis (amount and percentage)",
+        "Days since last activity",
+        "Settlement details"
+      ],
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE"
+    }
+  ],
+  "workflow_integration": {
+    "phase": "negotiation",
+    "workflow": "negotiate_claim",
+    "triggers_on": [
+      "Insurance makes offer",
+      "Client approves counteroffer",
+      "Case settles"
+    ]
+  }
+}
+

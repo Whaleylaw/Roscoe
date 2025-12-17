@@ -66,7 +66,7 @@ Reports saved to: /Reports/
 
 ### Step 2: Review Document Index
 
-Open `/Reports/DOCUMENT_INDEX.md` to see:
+Open `Reports/DOCUMENT_INDEX.md` to see:
 - List of all processed documents organized by folder
 - Quality scores and extraction methods for each
 - Documents flagged for review (low quality)
@@ -231,7 +231,7 @@ After import, agents can read .md files directly:
 
 ```python
 # Instead of processing PDF every time:
-read_file("/mo_alif/medical_records/doctor_note_2024-03-15.md")
+read_file("projects/mo_alif/medical_records/doctor_note_2024-03-15.md")
 
 # Fast, no OCR overhead, includes all metadata and tables
 ```
@@ -260,8 +260,8 @@ read_file("/mo_alif/medical_records/doctor_note_2024-03-15.md")
 
 ## Tools Required
 
-- `/Tools/import_documents.py` - Batch processing tool
-- `/Tools/read_pdf.py` - PDF extraction pipeline
+- `Tools/import_documents.py` - Batch processing tool
+- `Tools/read_pdf.py` - PDF extraction pipeline
 - File system tools (ls, find)
 
 ---

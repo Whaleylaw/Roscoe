@@ -1,0 +1,92 @@
+
+Goal
+Swap WorkflowStateComputer from a derived-from-data calculator into a state-machine-backed workflow status generator using the Roscoe runtime’s workflow_engine/orchestrator/state_machine.py, and ensure CaseContextMiddleware injects this status whenever a case is detected.
+
+Current integration points (what exists today)
+Case context injection is done in /Volumes/X10 Pro/Roscoe/production-vm-code/src/roscoe/core/case_context_middleware.py.
+It lazily imports compute_workflow_state from /Volumes/X10 Pro/Roscoe/production-vm-code/src/roscoe/core/workflow_state_computer.py and expects the return value to have:
+formatted_status (markdown string to inject)
+current_phase (used for logging)
+The existing workflow_state_computer.py computes a WorkflowState dataclass from CaseData and derivation_rules.json, without persisting per-case workflow state.
+Target runtime components to adopt
+Roscoe runtime state machine: /Volumes/X10 Pro/Roscoe/Roscoe_runtime/workflow_engine/orchestrator/state_machine.py
+Key API we’ll use:
+StateMachine.get_case_status(case_state: dict) -> dict
+StateMachine.format_status_for_agent(status: dict) -> str
+It already supports syncing/comparing against actual case data via its own _adapters.case_data.
+Decisions already locked in (per your answers)
+Mode: state_machine_only
+Storage location: projects/{project_name}/Case Information/case_state.json
+Approach
+1) Vendor Roscoe_runtime workflow engine into the production codebase
+To make production deployments deterministic (Docker image contains the engine), copy the runtime workflow engine package into the repo under a non-conflicting namespace, e.g.:
+
+production-vm-code/src/roscoe/runtime_workflow_engine/ (mirrors the structure of Roscoe_runtime/workflow_engine/)
+Include:
+
+orchestrator/state_machine.py
+schemas/*.json
+_adapters/case_data.py
+Rationale:
+
+Avoid depending on /Volumes/.../Roscoe_runtime existing inside the container.
+Avoid import-path collisions with the workspace’s Tools/_adapters by using relative imports inside the vendored package (we’ll adjust the runtime code accordingly).
+2) Add a CaseStateStore responsible for load/create/save
+Create a small module (new file) in production code, e.g.:
+
+production-vm-code/src/roscoe/core/case_state_store.py
+Responsibilities:
+
+Compute path: WORKSPACE_DIR/projects/{project_name}/Case Information/case_state.json
+load(project_name) -> dict | None
+save(project_name, case_state: dict) -> None
+ensure(project_name) -> dict
+If file missing: bootstrap a new case state by:
+Loading CaseData(project_name) (from the vendored runtime adapter)
+Calling StateMachine.create_new_case(case_id=project_name, client_name=..., accident_date=..., accident_type=...)
+Persisting it to case_state.json
+Notes on bootstrapping fields:
+
+Use case_id = project_name to ensure StateMachine’s load_case_data(case_id) resolves correctly.
+Infer accident_type from project_name (e.g. contains -MVA- -> mva, contains -Premise- -> premises, etc.) with a safe fallback to mva.
+3) Replace workflow_state_computer.py with a thin compatibility wrapper
+Update /Volumes/X10 Pro/Roscoe/production-vm-code/src/roscoe/core/workflow_state_computer.py so that:
+
+compute_workflow_state(project_name: str):
+Loads/ensures case_state.json via CaseStateStore
+Instantiates StateMachine(schemas_dir=<vendored schemas dir>)
+Calls status = sm.get_case_status(case_state)
+Calls formatted = sm.format_status_for_agent(status)
+Returns a lightweight object (dataclass) with:
+project_name
+`current_phase = status['current_phase']`
+formatted_status = formatted
+optionally raw_status = status (debugging)
+This preserves the interface that CaseContextMiddleware already expects.
+
+4) Update CaseContextMiddleware injection instructions to match the new runtime layout
+In /Volumes/X10 Pro/Roscoe/production-vm-code/src/roscoe/core/case_context_middleware.py:
+
+Adjust the “WORKFLOW-GUIDED ACTIONS” section so it points to runtime SOP paths referenced by the state machine (e.g. workflows/phase_*/workflows/*/workflow.md) rather than the legacy /workflow_engine/checklists/... paths.
+Keep the existing behavior of appending the workflow status section into the injected case context.
+5) Put Roscoe_runtime workflows/ content into the workspace (so manual fallbacks are readable)
+Because workflow_definitions.json manual fallbacks reference workflows/.../workflow.md, ensure the workspace filesystem contains:
+
+/mnt/workspace/workflows/ (from Roscoe_runtime/workflows/)
+This is data/content, not Python code; it must be accessible to the agent’s FilesystemBackend.
+
+Migration tactic:
+
+Copy Roscoe_runtime/workflows/ into the GCS-backed workspace root.
+If an older workflows/ exists, rename it to workflows.bak.<date> before copying.
+6) One-time migration: generate case_state.json for existing cases
+Add a small CLI script (in repo) to iterate WORKSPACE_DIR/projects/*/Case Information/ and create missing case_state.json files.
+
+This prevents context injection from “first touch” creating state unexpectedly.
+7) Verification
+Pick 1–2 known cases (project names) and run the new compute_workflow_state(project_name) locally/in-container.
+Confirm:
+It creates/reads case_state.json in the correct location.
+CaseContextMiddleware injects the formatted status block.
+Status reflects reality (via sync_workflows_with_data corrections).
+

@@ -1,0 +1,53 @@
+{
+  "category": "crash_reports",
+  "description": "Police/crash report ordering automation tools",
+  "tools": [
+    {
+      "name": "lexis_crash_order",
+      "file": "lexis_crash_order.py",
+      "description": "Automates ordering police/crash reports from LexisNexis BuyCrash using Playwright browser automation.",
+      "usage": "python /Tools/crash_reports/lexis_crash_order.py --report-number NUMBER [options]",
+      "examples": [
+        "python /Tools/crash_reports/lexis_crash_order.py --report-number \"12345\" --interactive",
+        "python /Tools/crash_reports/lexis_crash_order.py --report-number \"12345\" --last-name \"Smith\" --output /case/reports/",
+        "python /Tools/crash_reports/lexis_crash_order.py --report-number \"12345\" --date \"2024-01-15\" --pretty"
+      ],
+      "when_to_use": [
+        "Need to order a police/crash report from LexisNexis",
+        "Have a BuyCrash slip with report number",
+        "Client provided report number verbally",
+        "Starting a new MVA case - need to obtain accident report"
+      ],
+      "input_parameters": {
+        "--report-number": "REQUIRED - The crash report number",
+        "--last-name": "Driver's last name for search",
+        "--date": "Report date (YYYY-MM-DD)",
+        "--output": "Directory to save downloaded PDF",
+        "--interactive": "Run with visible browser for debugging/first-time setup",
+        "--show-browser": "Show browser but don't pause for input"
+      },
+      "output_format": "JSON with success, file_path, and error fields",
+      "first_time_setup": [
+        "1. Set environment variables: LEXIS_USERNAME and LEXIS_PASSWORD",
+        "2. Run with --interactive flag first time to verify login works",
+        "3. Tool will save cookies for faster subsequent runs"
+      ],
+      "dependencies": ["playwright"],
+      "environment_requirements": ["LEXIS_USERNAME", "LEXIS_PASSWORD"],
+      "setup_command": "pip install playwright && playwright install chromium",
+      "cost": "Uses LexisNexis subscription (per-report cost varies)",
+      "notes": [
+        "First run MUST use --interactive to verify the automation works",
+        "Website selectors may need updating if LexisNexis changes their UI",
+        "Saves cookies to /Tools/crash_reports/config/ for session persistence"
+      ]
+    }
+  ],
+  "workflow_integration": {
+    "phase": "file_setup",
+    "workflow": "accident_report",
+    "step": "order_report",
+    "next_step": "Process with Police Report Analysis skill after download"
+  }
+}
+

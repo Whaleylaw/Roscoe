@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "description": "Context chunks for dynamic prompt injection based on user query semantics",
+  "chunks": [
+    {
+      "name": "ui_dashboard_rules",
+      "description": "Rules for displaying case information using dashboard or case card UI components.",
+      "file": "ui_dashboard_rules.md",
+      "triggers": ["dashboard", "case card", "render_ui", "visualize"],
+      "exact_triggers": [],
+      "priority": 1
+    },
+    {
+      "name": "notes_recording",
+      "description": "How to record notes, activity logs, and case updates.",
+      "file": "notes_recording.md",
+      "triggers": ["record note", "add note", "write note", "log activity", "case note", "journal entry", "notes.json"],
+      "exact_triggers": [],
+      "priority": 2
+    },
+    {
+      "name": "directory_organization",
+      "description": "The 8-bucket directory organization system for case folders.",
+      "file": "directory_organization.md",
+      "triggers": ["organize files", "folder structure", "where to save", "8-bucket", "file organization", "move file", "save to folder"],
+      "exact_triggers": [],
+      "priority": 2
+    },
+    {
+      "name": "memory_management",
+      "description": "System for storing user preferences in the Memories folder.",
+      "file": "memory_management.md",
+      "triggers": ["remember this", "save preference", "my preference", "always do", "store memory", "learn preference", "memories folder", "preference"],
+      "exact_triggers": [],
+      "priority": 2
+    },
+    {
+      "name": "calendar_management",
+      "description": "Calendar system for tracking deadlines, tasks, hearings, and events.",
+      "file": "calendar_management.md",
+      "triggers": ["calendar", "deadline", "schedule", "reminder", "hearing date", "deposition date", "due date", "court date"],
+      "exact_triggers": [],
+      "priority": 2
+    },
+    {
+      "name": "slack_communication",
+      "description": "Guidelines for responding when user is communicating via Slack.",
+      "file": "slack_communication.md",
+      "triggers": [],
+      "exact_triggers": ["[SLACK CONVERSATION]"],
+      "priority": 1
+    }
+  ]
+}

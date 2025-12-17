@@ -1,0 +1,551 @@
+{
+  "version": "1.0.0",
+  "description": "Registry of all templates available for document generation. Templates are copied here for central access.",
+  "base_path": "workflows/templates",
+  "roscoe_root_env": "ROSCOE_ROOT",
+  "template_collections": [
+    {
+      "collection": "demand",
+      "description": "Templates for demand letters and settlement packages",
+      "path": "demand/",
+      "templates": [
+        {
+          "id": "demand_template",
+          "name": "Demand Letter Template",
+          "file": "demand_template.md",
+          "path": "demand/demand_template.md",
+          "type": "agent_filled",
+          "description": "Full demand letter template with YAML frontmatter, sections for facts, injuries, treatment, damages, and exhibits.",
+          "output_format": "pdf_with_exhibits",
+          "tool": "generate_document.py"
+        },
+        {
+          "id": "demand_letter_alt",
+          "name": "Demand Letter (Alternate)",
+          "file": "demand_letter_TEMPLATE.md",
+          "path": "demand/demand_letter_TEMPLATE.md",
+          "type": "agent_filled",
+          "description": "Alternate demand letter template format."
+        }
+      ]
+    },
+    {
+      "collection": "complaint",
+      "description": "Complaint templates for various case types and causes of action",
+      "path": "complaint/",
+      "base_templates": [
+        {
+          "id": "complaint_mva_standard",
+          "name": "MVA Standard Complaint",
+          "file": "mva_standard.md",
+          "path": "complaint/base/mva_standard.md",
+          "case_type": "MVA",
+          "description": "Standard motor vehicle accident complaint with negligence count."
+        },
+        {
+          "id": "complaint_mva_um",
+          "name": "MVA UM Complaint",
+          "file": "mva_um.md",
+          "path": "complaint/base/mva_um.md",
+          "case_type": "MVA",
+          "description": "MVA complaint with uninsured motorist claim."
+        },
+        {
+          "id": "complaint_mva_uim",
+          "name": "MVA UIM Complaint",
+          "file": "mva_uim.md",
+          "path": "complaint/base/mva_uim.md",
+          "case_type": "MVA",
+          "description": "MVA complaint with underinsured motorist claim."
+        },
+        {
+          "id": "complaint_mva_vicarious",
+          "name": "MVA Vicarious Liability",
+          "file": "mva_vicarious_liability.md",
+          "path": "complaint/base/mva_vicarious_liability.md",
+          "case_type": "MVA",
+          "description": "MVA complaint with respondeat superior/vicarious liability."
+        },
+        {
+          "id": "complaint_mva_negligent_entrustment",
+          "name": "MVA Negligent Entrustment",
+          "file": "mva_negligent_entrustment.md",
+          "path": "complaint/base/mva_negligent_entrustment.md",
+          "case_type": "MVA",
+          "description": "MVA complaint with negligent entrustment claim."
+        },
+        {
+          "id": "complaint_mva_stolen_fraud",
+          "name": "MVA Stolen Vehicle Fraud",
+          "file": "mva_stolen_vehicle_fraud.md",
+          "path": "complaint/base/mva_stolen_vehicle_fraud.md",
+          "case_type": "MVA",
+          "description": "MVA complaint involving stolen vehicle and insurance fraud."
+        },
+        {
+          "id": "complaint_premises_standard",
+          "name": "Premises Liability Standard",
+          "file": "premises_standard.md",
+          "path": "complaint/base/premises_standard.md",
+          "case_type": "Premises",
+          "description": "Standard premises liability complaint."
+        },
+        {
+          "id": "complaint_premises_dog_bite",
+          "name": "Premises Dog Bite",
+          "file": "premises_dog_bite.md",
+          "path": "complaint/base/premises_dog_bite.md",
+          "case_type": "Premises",
+          "description": "Premises liability complaint for dog bite injury."
+        },
+        {
+          "id": "complaint_premises_government",
+          "name": "Premises Government Entity",
+          "file": "premises_government_entity.md",
+          "path": "complaint/base/premises_government_entity.md",
+          "case_type": "Premises",
+          "description": "Premises liability complaint against government entity."
+        },
+        {
+          "id": "complaint_bi_bad_faith",
+          "name": "BI with Bad Faith",
+          "file": "bi_with_bad_faith.md",
+          "path": "complaint/base/bi_with_bad_faith.md",
+          "case_type": "Insurance",
+          "description": "Bodily injury complaint with bad faith insurance claim."
+        },
+        {
+          "id": "complaint_bi_bad_faith_uim",
+          "name": "BI Bad Faith UIM",
+          "file": "bi_bad_faith_uim.md",
+          "path": "complaint/base/bi_bad_faith_uim.md",
+          "case_type": "Insurance",
+          "description": "UIM complaint with bad faith against own insurer."
+        }
+      ],
+      "module_templates": [
+        {
+          "id": "count_negligence",
+          "name": "Count: Negligence",
+          "file": "count_negligence.md",
+          "path": "complaint/modules/count_negligence.md",
+          "description": "Standard negligence count module."
+        },
+        {
+          "id": "count_vicarious_liability",
+          "name": "Count: Vicarious Liability",
+          "file": "count_vicarious_liability.md",
+          "path": "complaint/modules/count_vicarious_liability.md",
+          "description": "Vicarious liability / respondeat superior count."
+        },
+        {
+          "id": "count_negligent_entrustment",
+          "name": "Count: Negligent Entrustment",
+          "file": "count_negligent_entrustment.md",
+          "path": "complaint/modules/count_negligent_entrustment.md",
+          "description": "Negligent entrustment count module."
+        },
+        {
+          "id": "count_parental_liability",
+          "name": "Count: Parental Liability",
+          "file": "count_parental_liability.md",
+          "path": "complaint/modules/count_parental_liability.md",
+          "description": "Parental liability count for minor defendants."
+        },
+        {
+          "id": "count_fraud",
+          "name": "Count: Fraud",
+          "file": "count_fraud.md",
+          "path": "complaint/modules/count_fraud.md",
+          "description": "Fraud count module."
+        },
+        {
+          "id": "count_bad_faith",
+          "name": "Count: Bad Faith",
+          "file": "count_bad_faith.md",
+          "path": "complaint/modules/count_bad_faith.md",
+          "description": "Insurance bad faith count."
+        },
+        {
+          "id": "count_um",
+          "name": "Count: UM Coverage",
+          "file": "count_um.md",
+          "path": "complaint/modules/count_um.md",
+          "description": "Uninsured motorist coverage count."
+        },
+        {
+          "id": "count_uim",
+          "name": "Count: UIM Coverage",
+          "file": "count_uim.md",
+          "path": "complaint/modules/count_uim.md",
+          "description": "Underinsured motorist coverage count."
+        }
+      ],
+      "generic_template": {
+        "id": "complaint_template",
+        "name": "Complaint Template (Generic)",
+        "file": "complaint_template.md",
+        "path": "complaint/complaint_template.md"
+      }
+    },
+    {
+      "collection": "discovery",
+      "description": "Templates for propounding and responding to discovery",
+      "path": "discovery/",
+      "interrogatories": [
+        {
+          "id": "interrog_mva_standard",
+          "name": "Interrogatories - MVA Standard",
+          "file": "mva_standard.md",
+          "path": "discovery/interrogatories/mva_standard.md"
+        },
+        {
+          "id": "interrog_mva_pip",
+          "name": "Interrogatories - MVA PIP",
+          "file": "mva_pip.md",
+          "path": "discovery/interrogatories/mva_pip.md"
+        },
+        {
+          "id": "interrog_mva_um_uim",
+          "name": "Interrogatories - MVA UM/UIM",
+          "file": "mva_um_uim.md",
+          "path": "discovery/interrogatories/mva_um_uim.md"
+        },
+        {
+          "id": "interrog_mva_trucking_company",
+          "name": "Interrogatories - Trucking Company",
+          "file": "mva_trucking_company.md",
+          "path": "discovery/interrogatories/mva_trucking_company.md"
+        },
+        {
+          "id": "interrog_mva_trucking_driver",
+          "name": "Interrogatories - Trucking Driver",
+          "file": "mva_trucking_driver.md",
+          "path": "discovery/interrogatories/mva_trucking_driver.md"
+        },
+        {
+          "id": "interrog_mva_respondeat",
+          "name": "Interrogatories - Respondeat Superior",
+          "file": "mva_respondeat_superior.md",
+          "path": "discovery/interrogatories/mva_respondeat_superior.md"
+        },
+        {
+          "id": "interrog_premises",
+          "name": "Interrogatories - Premises Liability",
+          "file": "premises_standard.md",
+          "path": "discovery/interrogatories/premises_standard.md"
+        },
+        {
+          "id": "interrog_bad_faith",
+          "name": "Interrogatories - Bad Faith",
+          "file": "bad_faith.md",
+          "path": "discovery/interrogatories/bad_faith.md"
+        }
+      ],
+      "rfas": [
+        {
+          "id": "rfa_mva_liability",
+          "name": "RFA - MVA Liability",
+          "file": "mva_liability.md",
+          "path": "discovery/rfas/mva_liability.md"
+        },
+        {
+          "id": "rfa_mva_damages",
+          "name": "RFA - MVA Damages",
+          "file": "mva_damages.md",
+          "path": "discovery/rfas/mva_damages.md"
+        },
+        {
+          "id": "rfa_premises",
+          "name": "RFA - Premises Liability",
+          "file": "premises_liability.md",
+          "path": "discovery/rfas/premises_liability.md"
+        },
+        {
+          "id": "rfa_bad_faith",
+          "name": "RFA - Bad Faith",
+          "file": "bad_faith.md",
+          "path": "discovery/rfas/bad_faith.md"
+        }
+      ],
+      "rfps": [
+        {
+          "id": "rfp_mva_standard",
+          "name": "RFP - MVA Standard",
+          "file": "mva_standard.md",
+          "path": "discovery/rfps/mva_standard.md"
+        },
+        {
+          "id": "rfp_mva_trucking",
+          "name": "RFP - MVA Trucking",
+          "file": "mva_trucking.md",
+          "path": "discovery/rfps/mva_trucking.md"
+        },
+        {
+          "id": "rfp_premises",
+          "name": "RFP - Premises Standard",
+          "file": "premises_standard.md",
+          "path": "discovery/rfps/premises_standard.md"
+        },
+        {
+          "id": "rfp_bad_faith",
+          "name": "RFP - Bad Faith",
+          "file": "bad_faith.md",
+          "path": "discovery/rfps/bad_faith.md"
+        }
+      ],
+      "response_templates": [
+        {
+          "id": "response_shell",
+          "name": "Response Shell",
+          "file": "response_shell.md",
+          "path": "discovery/response/response_shell.md"
+        },
+        {
+          "id": "general_objections",
+          "name": "General Objections",
+          "file": "general_objections.md",
+          "path": "discovery/response/general_objections.md"
+        }
+      ],
+      "modules": [
+        {
+          "id": "mod_cell_phone",
+          "name": "Module: Cell Phone Discovery",
+          "file": "mod_cell_phone.md",
+          "path": "discovery/modules/mod_cell_phone.md"
+        },
+        {
+          "id": "mod_employment_scope",
+          "name": "Module: Employment Scope",
+          "file": "mod_employment_scope.md",
+          "path": "discovery/modules/mod_employment_scope.md"
+        },
+        {
+          "id": "mod_expert_disclosure",
+          "name": "Module: Expert Disclosure",
+          "file": "mod_expert_disclosure.md",
+          "path": "discovery/modules/mod_expert_disclosure.md"
+        },
+        {
+          "id": "mod_insurance_coverage",
+          "name": "Module: Insurance Coverage",
+          "file": "mod_insurance_coverage.md",
+          "path": "discovery/modules/mod_insurance_coverage.md"
+        },
+        {
+          "id": "mod_prior_incidents",
+          "name": "Module: Prior Incidents",
+          "file": "mod_prior_incidents.md",
+          "path": "discovery/modules/mod_prior_incidents.md"
+        },
+        {
+          "id": "mod_witness_identification",
+          "name": "Module: Witness Identification",
+          "file": "mod_witness_identification.md",
+          "path": "discovery/modules/mod_witness_identification.md"
+        }
+      ]
+    },
+    {
+      "collection": "deposition",
+      "description": "Templates for deposition notices, outlines, and tracking",
+      "path": "deposition/",
+      "notices": [
+        {
+          "id": "notice_standard",
+          "name": "Notice to Take Deposition (Standard)",
+          "file": "notice_standard.md",
+          "path": "deposition/notices/notice_standard.md"
+        },
+        {
+          "id": "notice_video",
+          "name": "Notice to Take Deposition (Video)",
+          "file": "notice_video.md",
+          "path": "deposition/notices/notice_video.md"
+        },
+        {
+          "id": "notice_corp_rep",
+          "name": "Notice CR 30.02(6) Corp Rep",
+          "file": "notice_corp_rep.md",
+          "path": "deposition/notices/notice_corp_rep.md"
+        },
+        {
+          "id": "notice_corp_rep_pip",
+          "name": "Notice Corp Rep - PIP Carrier",
+          "file": "notice_corp_rep_pip.md",
+          "path": "deposition/notices/notice_corp_rep_pip.md"
+        },
+        {
+          "id": "notice_corp_rep_uim",
+          "name": "Notice Corp Rep - UIM Carrier",
+          "file": "notice_corp_rep_uim.md",
+          "path": "deposition/notices/notice_corp_rep_uim.md"
+        },
+        {
+          "id": "notice_expert",
+          "name": "Notice - Defense Expert",
+          "file": "notice_expert.md",
+          "path": "deposition/notices/notice_expert.md"
+        }
+      ],
+      "client_prep": [
+        {
+          "id": "client_letter",
+          "name": "Client Deposition Letter",
+          "file": "client_letter.md",
+          "path": "deposition/client_prep/client_letter.md"
+        },
+        {
+          "id": "client_checklist",
+          "name": "Client Deposition Checklist",
+          "file": "client_checklist.md",
+          "path": "deposition/client_prep/client_checklist.md"
+        },
+        {
+          "id": "privilege_review",
+          "name": "Privilege Review Guide",
+          "file": "privilege_review.md",
+          "path": "deposition/client_prep/privilege_review.md"
+        }
+      ],
+      "outlines": [
+        {
+          "id": "outline_rules_based",
+          "name": "Outline - Rules-Based Examination",
+          "file": "outline_rules_based.md",
+          "path": "deposition/outlines/outline_rules_based.md"
+        },
+        {
+          "id": "outline_corp_rep",
+          "name": "Outline - Corporate Representative",
+          "file": "outline_corp_rep.md",
+          "path": "deposition/outlines/outline_corp_rep.md"
+        },
+        {
+          "id": "outline_expert",
+          "name": "Outline - Defense Expert",
+          "file": "outline_expert.md",
+          "path": "deposition/outlines/outline_expert.md"
+        }
+      ],
+      "tracking": [
+        {
+          "id": "depo_schedule",
+          "name": "Deposition Schedule Tracker",
+          "file": "depo_schedule.md",
+          "path": "deposition/tracking/depo_schedule.md"
+        },
+        {
+          "id": "testimony_tracker",
+          "name": "Testimony Tracker",
+          "file": "testimony_tracker.md",
+          "path": "deposition/tracking/testimony_tracker.md"
+        }
+      ]
+    },
+    {
+      "collection": "medical",
+      "description": "Templates for medical records requests and chronologies",
+      "path": "medical/",
+      "templates": [
+        {
+          "id": "records_request_template",
+          "name": "Medical Records Request Template",
+          "file": "records_request_TEMPLATE.md",
+          "path": "medical/records_request_TEMPLATE.md",
+          "type": "auto_filled"
+        },
+        {
+          "id": "check_in_note",
+          "name": "Client Check-in Note",
+          "file": "check_in_note.md",
+          "path": "medical/check_in_note.md"
+        },
+        {
+          "id": "chronology_entry",
+          "name": "Chronology Entry Template",
+          "file": "chronology_entry.md",
+          "path": "medical/chronology_entry.md"
+        }
+      ]
+    },
+    {
+      "collection": "negotiation",
+      "description": "Templates for offer evaluation and tracking",
+      "path": "negotiation/",
+      "templates": [
+        {
+          "id": "offer_analysis_template",
+          "name": "Offer Analysis Template",
+          "file": "offer_analysis_template.md",
+          "path": "negotiation/offer_analysis_template.md"
+        }
+      ]
+    },
+    {
+      "collection": "mediation",
+      "description": "Templates for mediation preparation",
+      "path": "mediation/",
+      "templates": [
+        {
+          "id": "mediation_brief_template",
+          "name": "Mediation Brief Template",
+          "file": "mediation-brief-template.md",
+          "path": "mediation/mediation-brief-template.md"
+        }
+      ]
+    },
+    {
+      "collection": "output",
+      "description": "Output format templates for skill results",
+      "path": "output/",
+      "templates": [
+        {
+          "id": "police_report_output",
+          "name": "Police Report Analysis Output",
+          "file": "police_report_output.md",
+          "path": "output/police_report_output.md"
+        },
+        {
+          "id": "lien_inventory",
+          "name": "Lien Inventory Template",
+          "file": "lien_inventory.md",
+          "path": "output/lien_inventory.md"
+        }
+      ]
+    }
+  ],
+  "template_types": {
+    "agent_filled": "Agent writes content sections; firm/case data auto-merged",
+    "auto_filled": "All fields auto-populated from case JSONs",
+    "pdf_form": "Fillable PDF form with form fields",
+    "modular": "Can be combined with other modules to build custom documents"
+  },
+  "total_templates": {
+    "demand": 2,
+    "complaint_base": 11,
+    "complaint_modules": 8,
+    "interrogatories": 8,
+    "rfas": 4,
+    "rfps": 4,
+    "discovery_response": 2,
+    "discovery_modules": 6,
+    "deposition_notices": 6,
+    "deposition_client_prep": 3,
+    "deposition_outlines": 3,
+    "deposition_tracking": 2,
+    "medical": 3,
+    "negotiation": 1,
+    "mediation": 1,
+    "output": 2,
+    "total": 66
+  },
+  "how_to_use": {
+    "step_1": "Identify template collection for your task (complaint, discovery, deposition, etc.)",
+    "step_2": "Find specific template by id or browse collection",
+    "step_3": "Copy template from templates/{path} to case destination folder",
+    "step_4": "Fill template sections (agent_filled) or let tool auto-fill",
+    "step_5": "Run generate_document.py to create final DOCX/PDF"
+  }
+}

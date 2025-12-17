@@ -1,0 +1,125 @@
+Integrate Roscoe Runtime State Machine
+Summary
+Replace the monolithic workflow_state_computer.py (909 lines) with the more sophisticated StateMachine class from Roscoe_runtime (1797 lines). The new system provides:
+
+Data-driven state derivation with self-healing (auto-corrects workflow status from case data)
+JSON schema-based phase and workflow definitions
+Nested litigation subphase support
+SOL tracking with complaint filing awareness
+User-approval-gated phase transitions (no auto-advancement)
+Architecture Overview
+Database Layer
+Roscoe Runtime - workflow_engine
+Case Context Middleware
+Database JSON Files
+Case State Files
+StateMachine
+CaseData Adapter
+phase_definitions.json
+workflow_definitions.json
+derivation_rules.json
+case_context_middleware.py
+Files to Create/Modify
+1. Copy New Workflow Engine
+Copy the entire workflow_engine directory structure to production:
+
+Source: Roscoe_runtime/workflow_engine/
+
+Destination: production-vm-code/src/roscoe/workflow_engine/
+
+Key files:
+
+Roscoe_runtime/workflow_engine/orchestrator/state_machine.py - StateMachine class (1797 lines)
+Roscoe_runtime/workflow_engine/_adapters/case_data.py - CaseData adapter
+Roscoe_runtime/workflow_engine/schemas/ - JSON schemas
+2. Update Case Context Middleware
+Modify production-vm-code/src/roscoe/core/case_context_middleware.py to use the new StateMachine:
+
+# Current implementation (lines 46-58):
+_workflow_state_computer = None
+def get_workflow_state_computer():
+    from roscoe.core.workflow_state_computer import compute_workflow_state
+    ...
+
+# New implementation:
+_state_machine = None
+def get_state_machine():
+    global _state_machine
+    if _state_machine is None:
+        from roscoe.workflow_engine.orchestrator.state_machine import StateMachine
+        _state_machine = StateMachine()
+    return _state_machine
+Update _compute_workflow_state() method (lines 698-729):
+
+def _compute_workflow_state(self, project_name: str) -> str:
+    try:
+        sm = get_state_machine()
+        case_data = sm.load_case_data(project_name)
+        if not case_data:
+            return ""
+        
+        # Load or create case state
+        case_state = self._load_case_state(project_name)
+        
+        # Get status with data sync and corrections
+        status = sm.get_case_status(case_state)
+        
+        # Format for agent
+        return sm.format_status_for_agent(status)
+    except Exception as e:
+        logger.error(f"Error computing state: {e}")
+        return ""
+3. Delete Old Workflow State Computer
+Remove production-vm-code/src/roscoe/core/workflow_state_computer.py (909 lines) after integration.
+
+4. Set ROSCOE_ROOT Environment Variable
+The new state machine uses ROSCOE_ROOT to find schemas and data. Update deployment configs:
+
+In Docker/VM: Set ROSCOE_ROOT=/mnt/workspace or appropriate path pointing to the Roscoe_runtime root.
+
+Key Integration Points
+StateMachine API
+The new StateMachine class provides:
+
+sm = StateMachine(schemas_dir=Path("..."))
+
+# Load case data
+case_data = sm.load_case_data("Smith-MVA-01-15-2024")
+
+# Get comprehensive status (triggers data sync + validation)
+status = sm.get_case_status(case_state)
+# Returns: case_id, client_name, current_phase, phase_progress,
+#          completed_items, pending_items, blocking_items,
+#          next_actions, alerts, data_corrections, pending_phase_change
+
+# Format for agent injection
+formatted = sm.format_status_for_agent(status)
+
+# Check SOL with litigation awareness
+sol = sm.compute_sol_status(case_data, litigation_data)
+
+# Validate litigation workflows
+corrections = sm.validate_litigation_state(case_state, litigation_data)
+Data Flow Changes
+Current: compute_workflow_state() returns a WorkflowState dataclass with formatted_status string.
+
+New: StateMachine.get_case_status() returns a dict with rich data, then format_status_for_agent() produces the formatted string.
+
+Migration Checklist
+Create production-vm-code/src/roscoe/workflow_engine/ directory
+Copy orchestrator/, _adapters/, schemas/ from Roscoe_runtime
+Update imports in case_context_middleware.py
+Update _compute_workflow_state() to use StateMachine
+Add case state loading/saving logic (currently state is computed but not persisted)
+Test with existing cases
+Delete old workflow_state_computer.py
+Update CLAUDE.md with new architecture notes
+Environment Configuration
+The StateMachine resolves paths using:
+
+ROSCOE_ROOT = Path(os.environ.get("ROSCOE_ROOT", Path(__file__).resolve().parents[2]))
+Ensure ROSCOE_ROOT points to the directory containing:
+
+Database/ - JSON data files
+workflow_engine/schemas/ - Phase and workflow definitions
+workflows/ - Workflow markdown files and skills

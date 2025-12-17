@@ -86,9 +86,9 @@ Your output should be structured JSON or markdown that can be easily parsed:
 ## Output Location
 
 **Save your extraction to:**
-- **Directory:** `/Reports/extractions/`
+- **Directory:** `Reports/extractions/`
 - **Filename:** Use source document name, e.g., `extraction_[document_name].md`
-- **Example:** `/Reports/extractions/extraction_smith_office_note_2024-03-15.md`
+- **Example:** `Reports/extractions/extraction_smith_office_note_2024-03-15.md`
 - **Format:** Markdown with all sections above
 
 ## Important Guidelines
@@ -136,8 +136,8 @@ If `read_file` doesn't extract PDF content well:
 ## CRITICAL: File Paths
 
 **ALWAYS use workspace-relative paths starting with `/` and save to /Reports/extractions/ directory:**
-- ✅ CORRECT: `/Reports/extractions/file1_extraction.md`
-- ✅ CORRECT: `/Reports/extractions/extraction_001.md`
+- ✅ CORRECT: `Reports/extractions/file1_extraction.md`
+- ✅ CORRECT: `Reports/extractions/extraction_001.md`
 - ❌ WRONG: `/Volumes/X10 Pro/Roscoe_pa/src/workspace/extraction.md` (absolute path)
 - ❌ WRONG: `../workspace/extraction.md` (relative path)
 - ❌ WRONG: `/case_name/reports/extractions/extraction_001.md` (old path format)

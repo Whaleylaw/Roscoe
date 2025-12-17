@@ -1,0 +1,83 @@
+[
+  {
+    "jsonb_agg": [
+      {
+        "email": "saminal@twc.com",
+        "phone": "502-416-4006",
+        "roles": [
+          "client"
+        ],
+        "address": "8101 Brixton Rd, Apt 5, Louisville, KY 40222",
+        "full_name": "Samuel Clites",
+        "contact_id": 2123,
+        "project_name": "Samuel-Clites-MVA-4-23-2024"
+      },
+      {
+        "email": null,
+        "phone": "615-692-3880",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Calandra Turner",
+        "contact_id": 1966,
+        "project_name": "Samuel-Clites-MVA-4-23-2024"
+      },
+      {
+        "email": "statefarmclaims@statefarm.com",
+        "phone": "1-800-782-8332",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "P.O Box 106171, Atlanta, GA 30348",
+        "full_name": "State Farm Insurance Company",
+        "contact_id": 220,
+        "project_name": "Samuel-Clites-MVA-4-23-2024"
+      },
+      {
+        "email": null,
+        "phone": "866-891-7397",
+        "roles": [
+          "lien_holder"
+        ],
+        "address": "P.O. Box 659940, San Antonio, TX 78265",
+        "full_name": "Anthem",
+        "contact_id": 18,
+        "project_name": "Samuel-Clites-MVA-4-23-2024"
+      },
+      {
+        "email": "",
+        "phone": "502-253-4820 Main",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "2600 Stanley Gault Parkway Suite 101, , MEADOWBRK FRM, KY 40223",
+        "full_name": "Baptist Health",
+        "contact_id": 351,
+        "project_name": "Samuel-Clites-MVA-4-23-2024"
+      },
+      {
+        "email": null,
+        "phone": "502-899-7646 Main",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "P.O. Box 6749, , Louisville, KY 40206",
+        "full_name": "Louisville Emergency Medical Associates",
+        "contact_id": 694,
+        "project_name": "Samuel-Clites-MVA-4-23-2024"
+      },
+      {
+        "email": null,
+        "phone": "502-894-9544 Fax",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "PO Box 7159, , Louisville, KY 40257-0159",
+        "full_name": "Xray Associates of Louisville",
+        "contact_id": 1079,
+        "project_name": "Samuel-Clites-MVA-4-23-2024"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2398 @@
+{
+  "workflows": {
+    "case_setup": {
+      "name": "case_setup",
+      "phase_id": "phase_0_onboarding",
+      "description": ">\n  Creates the case folder structure and initializes all JSON tracking files.\n  Triggered when user indicates a new case (e.g., \"new client\", \"new file\").\n  Requires only 3 inputs: client name, case type, and accident date.",
+      "sop_path": "workflows/phase_0_onboarding/workflows/case_setup/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_recognize_new_case_intent",
+          "name": "Recognize New Case Intent",
+          "description": "- \"New client\"",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/case_setup/workflow.md (Steps \u2192 Recognize New Case Intent)"
+        },
+        {
+          "id": "step_02_gather_required_inputs",
+          "name": "Gather Required Inputs",
+          "description": "Ask the user for any missing information:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/case_setup/workflow.md (Steps \u2192 Gather Required Inputs)"
+        },
+        {
+          "id": "step_03_run_create_case_tool",
+          "name": "Run Create Case Tool",
+          "description": "Execute `create_case.py` with the gathered inputs:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/case_setup/workflow.md (Steps \u2192 Run Create Case Tool)"
+        },
+        {
+          "id": "step_04_confirm_success",
+          "name": "Confirm Success",
+          "description": "Report to user:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/case_setup/workflow.md (Steps \u2192 Confirm Success)"
+        },
+        {
+          "id": "step_05_proceed_to_document_collection",
+          "name": "Proceed to Document Collection",
+          "description": "Automatically transition to `document_collection` workflow to begin gathering intake documents.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/case_setup/workflow.md (Steps \u2192 Proceed to Document Collection)"
+        }
+      ],
+      "related_skills": [],
+      "related_tools": [
+        "create_case.py"
+      ],
+      "templates": [],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "document_collection": {
+      "name": "document_collection",
+      "phase_id": "phase_0_onboarding",
+      "description": ">\n  Collects required intake documents from personal injury clients based on case type\n  (MVA, S&F, WC). Tracks document status, updates landmarks, and determines Phase 0\n  completion. Uses fillable PDF templates from templates/intake_forms/. Supports\n  DocuSign for electronic signatures on Fee Agreement, HIPAA, and other documents.\n  Follows case_setup workflow automatically after new case creation.",
+      "sop_path": "workflows/phase_0_onboarding/workflows/document_collection/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_load_document_checklist",
+          "name": "Load Document Checklist",
+          "description": "Read `workflow_state.json` to determine:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/document_collection/workflow.md (Steps \u2192 Load Document Checklist)"
+        },
+        {
+          "id": "step_02_for_each_missing_document",
+          "name": "For Each Missing Document",
+          "description": "For each document not yet received, offer the user three options:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/document_collection/workflow.md (Steps \u2192 For Each Missing Document)"
+        },
+        {
+          "id": "step_03_update_landmarks",
+          "name": "Update Landmarks",
+          "description": "After each landmark document is received, update `workflow_state.json`:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/document_collection/workflow.md (Steps \u2192 Update Landmarks)"
+        },
+        {
+          "id": "step_04_check_phase_completion",
+          "name": "Check Phase Completion",
+          "description": "After each update, check if all 3 landmarks are met:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_0_onboarding/workflows/document_collection/workflow.md (Steps \u2192 Check Phase Completion)"
+        }
+      ],
+      "related_skills": [
+        "document-request",
+        "document-intake",
+        "docusign-send"
+      ],
+      "related_tools": [
+        "docusign_send.py"
+      ],
+      "templates": [
+        "templates/document-checklist.md",
+        "templates/request-email.md",
+        "templates/intake_forms/  # Contains all fillable PDF templates"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "accident_report": {
+      "name": "accident_report",
+      "phase_id": "phase_1_file_setup",
+      "description": ">\n  Request and process police/accident report for motor vehicle accidents.\n  This workflow identifies the reporting agency, requests the report,\n  and extracts key information including parties, insurance, witnesses,\n  and liability indicators using the police-report-analysis skill.",
+      "sop_path": "workflows/phase_1_file_setup/workflows/accident_report/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/accident_report/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "document-pdf",
+        "police-report-analysis",
+        "insurance"
+      ],
+      "related_tools": [
+        "read_pdf (tools/read_pdf.py)",
+        "lexis_crash_order (tools/lexis_crash_order.py)"
+      ],
+      "templates": [],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "insurance_bi_claim": {
+      "name": "insurance_bi_claim",
+      "phase_id": "phase_1_file_setup",
+      "description": ">\n  Open and set up Bodily Injury (BI) insurance claims against at-fault parties.\n  Sends Letter of Representation, follows up for acknowledgment, obtains liability\n  determination, and confirms coverage limits. When Claude needs to open a BI claim,\n  send LOR to insurance carrier, check liability status, or verify BI coverage.\n  Use for at-fault party insurance setup in MVA cases. Flags user when liability\n  is not 100% accepted for potential additional claims.",
+      "sop_path": "workflows/phase_1_file_setup/workflows/insurance_bi_claim/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_identify_at_fault_party_insurance",
+          "name": "Identify At-Fault Party Insurance",
+          "description": "**Source:** Police report, property damage claim, or client communication",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_bi_claim/workflow.md (Steps \u2192 Identify At-Fault Party Insurance)"
+        },
+        {
+          "id": "step_02_send_letter_of_representation",
+          "name": "Send Letter of Representation",
+          "description": "**Template:** `templates/2022 Whaley LOR to BI Adjuster(1)(1)(1) (1).docx`",
+          "owner": "agent",
+          "can_automate": true,
+          "tool_available": true,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_bi_claim/workflow.md (Steps \u2192 Send Letter of Representation)"
+        },
+        {
+          "id": "step_03_open_claim_if_not_already_open",
+          "name": "Open Claim (if not already open)",
+          "description": "**Owner:** User (phone call to carrier)",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_bi_claim/workflow.md (Steps \u2192 Open Claim (if not already open))"
+        },
+        {
+          "id": "step_04_confirm_claim_acknowledgment",
+          "name": "Confirm Claim Acknowledgment",
+          "description": "**Timeline:** 3-5 business days after LOR sent",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_bi_claim/workflow.md (Steps \u2192 Confirm Claim Acknowledgment)"
+        },
+        {
+          "id": "step_05_obtain_liability_determination",
+          "name": "Obtain Liability Determination",
+          "description": "**Timeline:** Varies - can be immediate to weeks/months",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_bi_claim/workflow.md (Steps \u2192 Obtain Liability Determination)"
+        },
+        {
+          "id": "step_06_confirm_coverage_and_policy_limits",
+          "name": "Confirm Coverage and Policy Limits",
+          "description": "**Timeline:** Can take 30+ days after LOR (statutory disclosure period)",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_bi_claim/workflow.md (Steps \u2192 Confirm Coverage and Policy Limits)"
+        }
+      ],
+      "related_skills": [
+        "lor-generator",
+        "liability-analysis"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "templates/2022 Whaley LOR to BI Adjuster(1)(1)(1) (1).docx"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "insurance_pip_claim": {
+      "name": "insurance_pip_claim",
+      "phase_id": "phase_1_file_setup",
+      "description": ">\n  Open and set up Personal Injury Protection (PIP) insurance claims. Runs the Kentucky\n  PIP waterfall to determine correct carrier, completes KACP Application (ALWAYS required),\n  sends Letter of Representation, follows up for acknowledgment, and confirms coverage\n  ready to pay bills. When Claude needs to open a PIP claim, determine PIP carrier,\n  complete PIP application, or verify PIP is paying bills. Use for MVA cases in Kentucky.",
+      "sop_path": "workflows/phase_1_file_setup/workflows/insurance_pip_claim/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_run_pip_waterfall",
+          "name": "Run PIP Waterfall",
+          "description": "**Tool:** `tools/pip_waterfall.py`",
+          "owner": "agent",
+          "can_automate": true,
+          "tool_available": true,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_pip_claim/workflow.md (Steps \u2192 Run PIP Waterfall)"
+        },
+        {
+          "id": "step_02_complete_kacp_application",
+          "name": "Complete KACP Application",
+          "description": "**Template:** `templates/KACP-Application-03.2021(1) (1).pdf`",
+          "owner": "agent",
+          "can_automate": true,
+          "tool_available": true,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_pip_claim/workflow.md (Steps \u2192 Complete KACP Application)"
+        },
+        {
+          "id": "step_03_send_letter_of_representation",
+          "name": "Send Letter of Representation",
+          "description": "**Template:** `templates/2022 Whaley LOR to PIP Adjuster(1)(1) (1).docx`",
+          "owner": "agent",
+          "can_automate": true,
+          "tool_available": true,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_pip_claim/workflow.md (Steps \u2192 Send Letter of Representation)"
+        },
+        {
+          "id": "step_04_open_claim_if_needed",
+          "name": "Open Claim (if needed)",
+          "description": "**Owner:** User (phone call to carrier)",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_pip_claim/workflow.md (Steps \u2192 Open Claim (if needed))"
+        },
+        {
+          "id": "step_05_confirm_claim_acknowledgment",
+          "name": "Confirm Claim Acknowledgment",
+          "description": "**Timeline:** 3-5 business days after LOR sent",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_pip_claim/workflow.md (Steps \u2192 Confirm Claim Acknowledgment)"
+        },
+        {
+          "id": "step_06_verify_ready_to_pay_bills",
+          "name": "Verify Ready to Pay Bills",
+          "description": "**Timeline:** Within 7-10 days of LOR",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/insurance_pip_claim/workflow.md (Steps \u2192 Verify Ready to Pay Bills)"
+        }
+      ],
+      "related_skills": [
+        "pip-waterfall",
+        "pip-application",
+        "lor-generator"
+      ],
+      "related_tools": [
+        "pip_waterfall.py",
+        "generate_document.py"
+      ],
+      "templates": [
+        "templates/2022 Whaley LOR to PIP Adjuster(1)(1) (1).docx",
+        "templates/KACP-Application-03.2021(1) (1).pdf"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "medical_provider_setup": {
+      "name": "medical_provider_setup",
+      "phase_id": "phase_1_file_setup",
+      "description": ">\n  Add medical providers to the case file with complete contact information,\n  treatment dates, and injuries treated. AUTOMATICALLY sends medical records\n  requests for providers with completed treatment (e.g., EMS, ER). Uses signed\n  HIPAA from Phase 0. When Claude needs to add a medical provider, request\n  medical records, or track provider treatment status. Use throughout case\n  lifecycle as new providers are identified.",
+      "sop_path": "workflows/phase_1_file_setup/workflows/medical_provider_setup/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_1_file_setup/workflows/medical_provider_setup/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "medical-records-request"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "templates/2022 Whaley Medical Record Request (URR) (1).docx",
+        "templates/2023 Whaley Law Firm Medical Request Template (1).pdf",
+        "templates/2023 Whaley Initial Medical Billing Request to Provider (MBR) (1).pdf"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "client_check_in": {
+      "name": "client_check_in",
+      "phase_id": "phase_2_treatment",
+      "description": ">\n  Bi-weekly check-in with client during treatment to monitor their medical progress,\n  identify new providers, gather updates on treatment status, and maintain the\n  attorney-client relationship. This is a recurring workflow until demand is sent.",
+      "sop_path": "workflows/phase_2_treatment/workflows/client_check_in/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_2_treatment/workflows/client_check_in/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "skills/calendar-scheduling/skill.md"
+      ],
+      "related_tools": [
+        "calendar_add (Google Calendar integration)"
+      ],
+      "templates": [
+        "templates/check_in_note.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "lien_identification": {
+      "name": "lien_identification",
+      "phase_id": "phase_2_treatment",
+      "description": ">\n  Identify and classify all potential liens that may affect case recovery during\n  treatment phase. Includes Medicare, Medicaid, ERISA health plans, hospital liens,\n  and letters of protection.",
+      "sop_path": "workflows/phase_2_treatment/workflows/lien_identification/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_2_treatment/workflows/lien_identification/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "skills/lien-classification/skill.md"
+      ],
+      "related_tools": [],
+      "templates": [
+        "templates/lien_inventory.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "medical_chronology": {
+      "name": "medical_chronology",
+      "phase_id": "phase_2_treatment",
+      "description": ">\n  Maintain running medical chronology as records are received. Extracts treatment\n  information, researches medical terminology, identifies red flags, and generates\n  professional chronology documents.",
+      "sop_path": "workflows/phase_2_treatment/workflows/medical_chronology/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_2_treatment/workflows/medical_chronology/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "skills/medical-chronology-generation/skill.md"
+      ],
+      "related_tools": [
+        "tools/read_pdf.py (CRITICAL - convert PDFs to markdown)",
+        "tools/chronology_tools.py (generate chronology PDF)"
+      ],
+      "templates": [
+        "templates/chronology_entry.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "medical_provider_status": {
+      "name": "medical_provider_status",
+      "phase_id": "phase_2_treatment",
+      "description": ">\n  Monitor and update treatment status for medical providers. Track whether\n  client is still treating, has been discharged, or needs follow-up with\n  each provider. This workflow helps identify when treatment is complete.",
+      "sop_path": "workflows/phase_2_treatment/workflows/medical_provider_status/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_2_treatment/workflows/medical_provider_status/workflow.md"
+        }
+      ],
+      "related_skills": [],
+      "related_tools": [],
+      "templates": [
+        "templates/provider_status_summary.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "referral_new_provider": {
+      "name": "referral_new_provider",
+      "phase_id": "phase_2_treatment",
+      "description": ">\n  Facilitate referral of client to a new medical provider, either from\n  another provider's referral or based on case needs. This workflow\n  handles provider selection, appointment coordination, and case file updates.",
+      "sop_path": "workflows/phase_2_treatment/workflows/referral_new_provider/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_2_treatment/workflows/referral_new_provider/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "calendar-scheduling (for scheduling appointments)"
+      ],
+      "related_tools": [],
+      "templates": [
+        "templates/referral_note.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "request_records_bills": {
+      "name": "request_records_bills",
+      "phase_id": "phase_2_treatment",
+      "description": ">\n  Request medical records and bills from healthcare providers. This workflow\n  generates HIPAA-compliant records requests, tracks submissions, monitors for\n  receipt, and triggers medical chronology updates when records are received.",
+      "sop_path": "workflows/phase_2_treatment/workflows/request_records_bills/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_2_treatment/workflows/request_records_bills/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "skills/medical-records-request/skill.md"
+      ],
+      "related_tools": [
+        "tools/read_pdf.py (convert received PDFs to markdown)",
+        "tools/generate_document.py (unified document generation)"
+      ],
+      "templates": [
+        "templates/2022 Whaley Medical Record Request (URR) (1).docx"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "draft_demand": {
+      "name": "draft_demand",
+      "phase_id": "phase_3_demand",
+      "description": ">\n  Draft the demand letter using gathered materials, templates, and case data.\n  This workflow creates the demand narrative, compiles exhibits, and obtains\n  attorney approval before the demand is sent.",
+      "sop_path": "workflows/phase_3_demand/workflows/draft_demand/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_3_demand/workflows/draft_demand/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "skills/demand-letter-generation/skill.md"
+      ],
+      "related_tools": [
+        "tools/generate_document.py (unified document generation)",
+        "tools/read_pdf.py (extract text from medical records for chronology)"
+      ],
+      "templates": [
+        "templates/demand_template.md (markdown template agent fills in)"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "gather_demand_materials": {
+      "name": "gather_demand_materials",
+      "phase_id": "phase_3_demand",
+      "description": ">\n  Collect all materials needed for the demand package including final medical\n  records, bills, liens, wage loss documentation, and complete the medical\n  chronology. This workflow ensures all components are ready before drafting.",
+      "sop_path": "workflows/phase_3_demand/workflows/gather_demand_materials/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_3_demand/workflows/gather_demand_materials/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "skills/medical-chronology-generation/skill.md",
+        "skills/lien-classification/skill.md",
+        "skills/damages-calculation/skill.md"
+      ],
+      "related_tools": [
+        "tools/read_pdf.py (CRITICAL - convert medical record PDFs)",
+        "tools/chronology_tools.py (generate chronology)",
+        "tools/generate_document.py (fill templates)"
+      ],
+      "templates": [
+        "templates/materials_checklist.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "send_demand": {
+      "name": "send_demand",
+      "phase_id": "phase_3_demand",
+      "description": ">\n  Send the approved demand letter and package to insurance adjuster(s).\n  This workflow identifies recipients, coordinates sending, notifies the\n  client, and sets up follow-up tracking.",
+      "sop_path": "workflows/phase_3_demand/workflows/send_demand/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_3_demand/workflows/send_demand/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "skills/calendar-scheduling/skill.md"
+      ],
+      "related_tools": [
+        "calendar_add (Google Calendar integration)"
+      ],
+      "templates": [
+        "templates/demand_tracking.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "negotiate_claim": {
+      "name": "negotiate_claim",
+      "phase_id": "phase_4_negotiation",
+      "description": ">\n  Negotiate settlement with insurance company. This workflow handles receiving\n  and documenting offers, calculating net to client, evaluating offers with\n  attorney input, communicating with client, and responding to offers.",
+      "sop_path": "workflows/phase_4_negotiation/workflows/negotiate_claim/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_4_negotiation/workflows/negotiate_claim/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "negotiation-strategy",
+        "calendar-scheduling"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "templates/counter_offer_letter.md",
+        "templates/settlement_summary.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "offer_evaluation": {
+      "name": "offer_evaluation",
+      "phase_id": "phase_4_negotiation",
+      "description": ">\n  Evaluate settlement offers and prepare recommendation for client. This workflow\n  handles calculating net to client, analyzing offer merits, researching comparable\n  verdicts, and coordinating client decision-making.",
+      "sop_path": "workflows/phase_4_negotiation/workflows/offer_evaluation/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_4_negotiation/workflows/offer_evaluation/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "offer-evaluation",
+        "lien-negotiation"
+      ],
+      "related_tools": [],
+      "templates": [
+        "offer_analysis_template.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "track_offers": {
+      "name": "track_offers",
+      "phase_id": "phase_4_negotiation",
+      "description": ">\n  Document and track all offers and counteroffers throughout the negotiation\n  process. This workflow maintains a complete record of negotiation history\n  for each claim.",
+      "sop_path": "workflows/phase_4_negotiation/workflows/track_offers/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_4_negotiation/workflows/track_offers/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "offer-tracking"
+      ],
+      "related_tools": [],
+      "templates": [
+        "negotiation_summary.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "lien_negotiation": {
+      "name": "lien_negotiation",
+      "phase_id": "phase_5_settlement",
+      "description": ">\n  Negotiate lien reductions to maximize client recovery at settlement.\n  This workflow handles Medicare, Medicaid, ERISA, hospital, and provider\n  lien negotiations to reduce amounts owed and increase client net.",
+      "sop_path": "workflows/phase_5_settlement/workflows/lien_negotiation/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_5_settlement/workflows/lien_negotiation/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "lien-resolution",
+        "lien-classification"
+      ],
+      "related_tools": [],
+      "templates": [
+        "lien_reduction_letter.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "settlement_processing": {
+      "name": "settlement_processing",
+      "phase_id": "phase_5_settlement",
+      "description": ">\n  Finalize settlement and distribute funds. This workflow handles settlement\n  statement preparation, authorization to settle, release processing, check\n  receipt, lien payment, and final distribution to client.",
+      "sop_path": "workflows/phase_5_settlement/workflows/settlement_processing/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_5_settlement/workflows/settlement_processing/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "settlement-statement",
+        "docusign-send"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "templates/settlement_statement.md",
+        "templates/authorization_to_settle.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "final_distribution": {
+      "name": "final_distribution",
+      "phase_id": "phase_6_lien",
+      "description": ">\n  Distribute remaining funds to client after all liens resolved. This workflow\n  prepares supplemental settlement statement and issues final payment.",
+      "sop_path": "workflows/phase_6_lien/workflows/final_distribution/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_6_lien/workflows/final_distribution/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "supplemental-statement"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "supplemental_settlement_statement.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "get_final_lien": {
+      "name": "get_final_lien",
+      "phase_id": "phase_6_lien",
+      "description": ">\n  Obtain final lien amounts from all outstanding lien holders. This workflow\n  requests final demands from Medicare, health insurance, and other lien holders\n  after settlement is reached.",
+      "sop_path": "workflows/phase_6_lien/workflows/get_final_lien/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_6_lien/workflows/get_final_lien/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "final-lien-request"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "templates/final_lien_request.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "negotiate_lien": {
+      "name": "negotiate_lien",
+      "phase_id": "phase_6_lien",
+      "description": ">\n  Negotiate lien reduction with lien holders. This workflow handles negotiation\n  strategies, reduction requests, and documentation of negotiated amounts.",
+      "sop_path": "workflows/phase_6_lien/workflows/negotiate_lien/workflow.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in workflow.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_6_lien/workflows/negotiate_lien/workflow.md"
+        }
+      ],
+      "related_skills": [
+        "lien-reduction"
+      ],
+      "related_tools": [],
+      "templates": [
+        "lien_reduction_request.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    },
+    "draft_file_complaint": {
+      "name": "draft_file_complaint",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Draft and file complaint to initiate litigation. Creates complaint document,\n  files with court, obtains summons. Use when decision made to sue, SOL approaching,\n  or negotiation failed.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_1_complaint/workflows/draft_file_complaint/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_gather_case_information",
+          "name": "Gather Case Information",
+          "description": "Compile facts, parties, damages from case file.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/draft_file_complaint/workflow.md (Steps \u2192 Gather Case Information)"
+        },
+        {
+          "id": "step_02_draft_complaint",
+          "name": "Draft Complaint",
+          "description": "Generate complaint using template and case facts.",
+          "owner": "agent",
+          "can_automate": true,
+          "tool_available": true,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/draft_file_complaint/workflow.md (Steps \u2192 Draft Complaint)"
+        },
+        {
+          "id": "step_03_attorney_review",
+          "name": "Attorney Review",
+          "description": "Review for legal sufficiency and strategy.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/draft_file_complaint/workflow.md (Steps \u2192 Attorney Review)"
+        },
+        {
+          "id": "step_04_e_file_with_court",
+          "name": "E-File with Court",
+          "description": "File via eFlex, pay filing fee, receive case number.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/draft_file_complaint/workflow.md (Steps \u2192 E-File with Court)"
+        },
+        {
+          "id": "step_05_obtain_summons",
+          "name": "Obtain Summons",
+          "description": "Receive summons from clerk for each defendant.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/draft_file_complaint/workflow.md (Steps \u2192 Obtain Summons)"
+        }
+      ],
+      "related_skills": [
+        "complaint-drafting"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "templates/complaint_template.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_1_complaint"
+    },
+    "process_answer": {
+      "name": "process_answer",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Process defendant's answer to complaint. Reviews for affirmative defenses,\n  counterclaims, third-party claims. Handles default judgment if no answer.\n  Use when answer deadline reached.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_1_complaint/workflows/process_answer/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_check_for_answer",
+          "name": "Check for Answer",
+          "description": "Verify if answer filed by deadline.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/process_answer/workflow.md (Steps \u2192 Check for Answer)"
+        },
+        {
+          "id": "step_02_review_answer",
+          "name": "Review Answer",
+          "description": "Analyze answer for key elements.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/process_answer/workflow.md (Steps \u2192 Review Answer)"
+        },
+        {
+          "id": "step_03_document_findings",
+          "name": "Document Findings",
+          "description": "Create answer summary with:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/process_answer/workflow.md (Steps \u2192 Document Findings)"
+        },
+        {
+          "id": "step_04_default_path_file_default_motion",
+          "name": "Default Path: File Default Motion",
+          "description": "File motion for default judgment.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/process_answer/workflow.md (Steps \u2192 Default Path: File Default Motion)"
+        },
+        {
+          "id": "step_05_attend_default_hearing",
+          "name": "Attend Default Hearing",
+          "description": "Present evidence of damages at prove-up hearing.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/process_answer/workflow.md (Steps \u2192 Attend Default Hearing)"
+        }
+      ],
+      "related_skills": [
+        "answer-analysis"
+      ],
+      "related_tools": [],
+      "templates": [
+        "answer_summary.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_1_complaint"
+    },
+    "serve_defendant": {
+      "name": "serve_defendant",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Serve complaint and summons on all defendants. Coordinates service of process,\n  tracks attempts, files proof of service, and calendars answer deadlines.\n  Use after complaint filed and summons issued.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_1_complaint/workflows/serve_defendant/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_select_service_method",
+          "name": "Select Service Method",
+          "description": "Determine appropriate service method per defendant.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/serve_defendant/workflow.md (Steps \u2192 Select Service Method)"
+        },
+        {
+          "id": "step_02_arrange_service",
+          "name": "Arrange Service",
+          "description": "Contact sheriff or process server.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/serve_defendant/workflow.md (Steps \u2192 Arrange Service)"
+        },
+        {
+          "id": "step_03_track_attempts",
+          "name": "Track Attempts",
+          "description": "Document each service attempt with date, method, result.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/serve_defendant/workflow.md (Steps \u2192 Track Attempts)"
+        },
+        {
+          "id": "step_03_5_evaluate_service_failures_if_applicable",
+          "name": "5. Evaluate Service Failures (If Applicable)",
+          "description": "If 2+ service attempts have failed, consider alternative methods:",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/serve_defendant/workflow.md (Steps \u2192 5. Evaluate Service Failures (If Applicable))"
+        },
+        {
+          "id": "step_04_file_proof_of_service",
+          "name": "File Proof of Service",
+          "description": "File proof of service with court for each served defendant.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/serve_defendant/workflow.md (Steps \u2192 File Proof of Service)"
+        },
+        {
+          "id": "step_05_calendar_answer_deadline",
+          "name": "Calendar Answer Deadline",
+          "description": "Calculate 20-day answer deadline and create calendar event.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_1_complaint/workflows/serve_defendant/workflow.md (Steps \u2192 Calendar Answer Deadline)"
+        }
+      ],
+      "related_skills": [
+        "service-of-process"
+      ],
+      "related_tools": [],
+      "templates": [
+        "service_tracking.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_1_complaint"
+    },
+    "client_deposition_prep": {
+      "name": "client_deposition_prep",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Prepare client for their deposition. Covers pre-deposition preparation including\n  document compilation, privilege identification, client coaching on rules and topics.\n  Includes day-of support procedures and post-deposition transcript analysis.\n  Use when client's deposition noticed to ensure effective testimony defense.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_review_deposition_notice",
+          "name": "Review Deposition Notice",
+          "description": "Extract and verify notice details.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Review Deposition Notice)"
+        },
+        {
+          "id": "step_02_schedule_prep_sessions",
+          "name": "Schedule Prep Sessions",
+          "description": "Plan 2-3 preparation sessions before deposition.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Schedule Prep Sessions)"
+        },
+        {
+          "id": "step_03_compile_documents",
+          "name": "Compile Documents",
+          "description": "Gather and organize all relevant documents.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Compile Documents)"
+        },
+        {
+          "id": "step_04_review_privilege_issues",
+          "name": "Review Privilege Issues",
+          "description": "Identify privileged materials and topics.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Review Privilege Issues)"
+        },
+        {
+          "id": "step_05_send_client_letter",
+          "name": "Send Client Letter",
+          "description": "Send preparation letter to client.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Send Client Letter)"
+        },
+        {
+          "id": "step_06_explain_deposition_process_session_1",
+          "name": "Explain Deposition Process (Session 1)",
+          "description": "Explain what deposition is and how it works.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Explain Deposition Process (Session 1))"
+        },
+        {
+          "id": "step_07_cover_fundamental_rules_session_1",
+          "name": "Cover Fundamental Rules (Session 1)",
+          "description": "Teach key rules for testimony.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Cover Fundamental Rules (Session 1))"
+        },
+        {
+          "id": "step_08_review_key_topics_session_2",
+          "name": "Review Key Topics (Session 2)",
+          "description": "Go through expected question areas.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Review Key Topics (Session 2))"
+        },
+        {
+          "id": "step_09_address_problem_areas_session_2",
+          "name": "Address Problem Areas (Session 2)",
+          "description": "Prepare client for difficult topics.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Address Problem Areas (Session 2))"
+        },
+        {
+          "id": "step_10_practice_session_session_3",
+          "name": "Practice Session (Session 3)",
+          "description": "Conduct mock examination.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Practice Session (Session 3))"
+        },
+        {
+          "id": "step_11_day_before_review",
+          "name": "Day-Before Review",
+          "description": "Final refresher and logistics.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Day-Before Review)"
+        },
+        {
+          "id": "step_12_day_of_support",
+          "name": "Day-of Support",
+          "description": "Support during deposition.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Day-of Support)"
+        },
+        {
+          "id": "step_13_post_deposition_analysis",
+          "name": "Post-Deposition Analysis",
+          "description": "Analyze transcript when received.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/client_deposition_prep/workflow.md (Steps \u2192 Post-Deposition Analysis)"
+        }
+      ],
+      "related_skills": [
+        "deposition-defense"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "deposition_library/templates/client_prep/client_letter.md",
+        "deposition_library/templates/client_prep/client_checklist.md",
+        "deposition_library/templates/client_prep/privilege_review.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_2_discovery"
+    },
+    "corp_rep_deposition": {
+      "name": "corp_rep_deposition",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Plan and conduct corporate representative depositions under CR 30.02(6). Covers\n  strategic goal identification, topic drafting with reasonable particularity,\n  coordinated document requests, and handling know-nothing witnesses. Use when\n  deposing corporate defendants to bind them to facts.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_identify_strategic_goals",
+          "name": "Identify Strategic Goals",
+          "description": "Determine primary objectives for the deposition.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Identify Strategic Goals)"
+        },
+        {
+          "id": "step_02_draft_notice_topics",
+          "name": "Draft Notice Topics",
+          "description": "Draft topics with \"reasonable particularity.\"",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Draft Notice Topics)"
+        },
+        {
+          "id": "step_03_prepare_coordinated_rfp",
+          "name": "Prepare Coordinated RFP",
+          "description": "Draft RFP aligned with notice topics.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Prepare Coordinated RFP)"
+        },
+        {
+          "id": "step_04_serve_notice_and_rfp",
+          "name": "Serve Notice and RFP",
+          "description": "Serve notice and RFP on defense counsel.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Serve Notice and RFP)"
+        },
+        {
+          "id": "step_05_prepare_deposition_outline",
+          "name": "Prepare Deposition Outline",
+          "description": "Create topic-by-topic examination outline.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Prepare Deposition Outline)"
+        },
+        {
+          "id": "step_06_conduct_deposition",
+          "name": "Conduct Deposition",
+          "description": "Conduct the deposition.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Conduct Deposition)"
+        },
+        {
+          "id": "step_07_handle_know_nothing_witness",
+          "name": "Handle Know-Nothing Witness",
+          "description": "If witness cannot answer on noticed topic, build record.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Handle Know-Nothing Witness)"
+        },
+        {
+          "id": "step_08_post_deposition_analysis",
+          "name": "Post-Deposition Analysis",
+          "description": "Analyze testimony and document outcomes.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Post-Deposition Analysis)"
+        },
+        {
+          "id": "step_09_motion_to_compel_if_needed",
+          "name": "Motion to Compel (if needed)",
+          "description": "If topics not adequately addressed, file motion.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/corp_rep_deposition/workflow.md (Steps \u2192 Motion to Compel (if needed))"
+        }
+      ],
+      "related_skills": [
+        "corp-rep-deposition"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "deposition_library/templates/notices/notice_corp_rep.md",
+        "deposition_library/templates/outlines/outline_corp_rep.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_2_discovery"
+    },
+    "defense_expert_depo": {
+      "name": "defense_expert_depo",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Plan and conduct defense expert depositions (DME/IME, liability experts). Covers\n  dossier compilation, conflict mapping by juror archetype, trial preservation under\n  KRE 804, and conflict-focused examination. Treats expert depositions as trial testimony.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_serve_expert_discovery_60_day_rule",
+          "name": "Serve Expert Discovery (60-Day Rule)",
+          "description": "Prepare and serve discovery at least 60 days before deposition.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Serve Expert Discovery (60-Day Rule))"
+        },
+        {
+          "id": "step_02_compile_expert_dossier",
+          "name": "Compile Expert Dossier",
+          "description": "Research expert and compile dossier.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Compile Expert Dossier)"
+        },
+        {
+          "id": "step_03_map_conflict_opportunities",
+          "name": "Map Conflict Opportunities",
+          "description": "Identify conflicts by type and juror archetype.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Map Conflict Opportunities)"
+        },
+        {
+          "id": "step_04_draft_deposition_notice",
+          "name": "Draft Deposition Notice",
+          "description": "Prepare notice with trial-use language.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Draft Deposition Notice)"
+        },
+        {
+          "id": "step_05_send_kre_804_trial_designation_notice",
+          "name": "Send KRE 804 Trial Designation Notice",
+          "description": "Send notice 3-5 days before deposition.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Send KRE 804 Trial Designation Notice)"
+        },
+        {
+          "id": "step_06_prepare_deposition_outline",
+          "name": "Prepare Deposition Outline",
+          "description": "Create conflict-focused examination outline.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Prepare Deposition Outline)"
+        },
+        {
+          "id": "step_07_arrange_video_recording",
+          "name": "Arrange Video Recording",
+          "description": "Arrange court reporter and videographer.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Arrange Video Recording)"
+        },
+        {
+          "id": "step_08_conduct_deposition",
+          "name": "Conduct Deposition",
+          "description": "Conduct the deposition.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Conduct Deposition)"
+        },
+        {
+          "id": "step_09_post_deposition_conflict_extraction",
+          "name": "Post-Deposition Conflict Extraction",
+          "description": "Extract and catalog conflicts with citations.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/defense_expert_depo/workflow.md (Steps \u2192 Post-Deposition Conflict Extraction)"
+        }
+      ],
+      "related_skills": [
+        "expert-deposition"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "deposition_library/templates/notices/notice_expert.md",
+        "deposition_library/templates/outlines/outline_expert.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_2_discovery"
+    },
+    "party_depositions": {
+      "name": "party_depositions",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Plan and conduct depositions of adverse parties and key witnesses using rules-based\n  examination framework. Covers deposition planning, notice drafting, rules-based\n  outline preparation, and testimony extraction. Use when taking depositions of\n  opposing individual parties and fact witnesses.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_identify_deponents",
+          "name": "Identify Deponents",
+          "description": "List all parties and witnesses to depose.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Identify Deponents)"
+        },
+        {
+          "id": "step_02_create_deposition_schedule",
+          "name": "Create Deposition Schedule",
+          "description": "Create master schedule tracking all depositions.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Create Deposition Schedule)"
+        },
+        {
+          "id": "step_03_schedule_depositions",
+          "name": "Schedule Depositions",
+          "description": "Coordinate with defense counsel on dates and location.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Schedule Depositions)"
+        },
+        {
+          "id": "step_04_identify_rules_for_examination",
+          "name": "Identify Rules for Examination",
+          "description": "Catalog rules from authoritative sources.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Identify Rules for Examination)"
+        },
+        {
+          "id": "step_05_draft_deposition_notice",
+          "name": "Draft Deposition Notice",
+          "description": "Prepare and generate notice.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Draft Deposition Notice)"
+        },
+        {
+          "id": "step_06_prepare_deposition_outline",
+          "name": "Prepare Deposition Outline",
+          "description": "Create topic outline using rules-based framework.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Prepare Deposition Outline)"
+        },
+        {
+          "id": "step_07_prepare_exhibits",
+          "name": "Prepare Exhibits",
+          "description": "Organize documents to use as deposition exhibits.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Prepare Exhibits)"
+        },
+        {
+          "id": "step_08_conduct_deposition",
+          "name": "Conduct Deposition",
+          "description": "Take testimony using rules-based approach.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Conduct Deposition)"
+        },
+        {
+          "id": "step_09_order_transcript",
+          "name": "Order Transcript",
+          "description": "Order transcript from court reporter.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Order Transcript)"
+        },
+        {
+          "id": "step_10_review_and_extract_testimony",
+          "name": "Review and Extract Testimony",
+          "description": "Review transcript, extract key testimony.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/party_depositions/workflow.md (Steps \u2192 Review and Extract Testimony)"
+        }
+      ],
+      "related_skills": [
+        "rules-based-examination"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "deposition_library/templates/notices/notice_standard.md",
+        "deposition_library/templates/notices/notice_video.md",
+        "deposition_library/templates/outlines/outline_rules_based.md",
+        "deposition_library/templates/tracking/depo_schedule.md",
+        "deposition_library/templates/tracking/testimony_tracker.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_2_discovery"
+    },
+    "propound_discovery": {
+      "name": "propound_discovery",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Draft and serve written discovery on defendant. Includes interrogatories,\n  requests for production, and requests for admission. Use after answer filed\n  to gather liability facts, damages information, and documents.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_plan_discovery_strategy",
+          "name": "Plan Discovery Strategy",
+          "description": "Identify what information is needed:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md (Steps \u2192 Plan Discovery Strategy)"
+        },
+        {
+          "id": "step_02_select_appropriate_templates",
+          "name": "Select Appropriate Templates",
+          "description": "Use the decision tree to select the appropriate templates based on:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md (Steps \u2192 Select Appropriate Templates)"
+        },
+        {
+          "id": "step_03_add_modular_question_sets_if_needed",
+          "name": "Add Modular Question Sets (If Needed)",
+          "description": "Review case facts and add relevant modules:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md (Steps \u2192 Add Modular Question Sets (If Needed))"
+        },
+        {
+          "id": "step_04_draft_interrogatories",
+          "name": "Draft Interrogatories",
+          "description": "Copy selected template, fill case-specific information, generate document.",
+          "owner": "agent",
+          "can_automate": true,
+          "tool_available": true,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md (Steps \u2192 Draft Interrogatories)"
+        },
+        {
+          "id": "step_05_draft_requests_for_production",
+          "name": "Draft Requests for Production",
+          "description": "Copy RFP template, fill case-specific details, generate document.",
+          "owner": "agent",
+          "can_automate": true,
+          "tool_available": true,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md (Steps \u2192 Draft Requests for Production)"
+        },
+        {
+          "id": "step_06_draft_requests_for_admission_strategic_timing",
+          "name": "Draft Requests for Admission (Strategic Timing)",
+          "description": "RFAs may be served with initial discovery OR held for strategic timing (post-deposition, pre-MSJ).",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md (Steps \u2192 Draft Requests for Admission (Strategic Timing))"
+        },
+        {
+          "id": "step_07_attorney_review",
+          "name": "Attorney Review",
+          "description": "Review and approve discovery before service:",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md (Steps \u2192 Attorney Review)"
+        },
+        {
+          "id": "step_08_serve_discovery",
+          "name": "Serve Discovery",
+          "description": "Serve discovery via permitted method, calendar response deadline.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/propound_discovery/workflow.md (Steps \u2192 Serve Discovery)"
+        }
+      ],
+      "related_skills": [
+        "discovery-drafting"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "discovery_library/propounding/templates/interrogatories/",
+        "discovery_library/propounding/templates/rfps/",
+        "discovery_library/propounding/templates/rfas/"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_2_discovery"
+    },
+    "respond_to_discovery": {
+      "name": "respond_to_discovery",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Respond to defendant's written discovery requests. Reviews requests,\n  gathers information, drafts responses and objections, prepares document\n  production. Use when discovery received from defendant.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_calendar_deadline",
+          "name": "Calendar Deadline",
+          "description": "Calculate and calendar response deadline.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Calendar Deadline)"
+        },
+        {
+          "id": "step_02_review_each_request",
+          "name": "Review Each Request",
+          "description": "For each request, determine:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Review Each Request)"
+        },
+        {
+          "id": "step_03_identify_valid_objections",
+          "name": "Identify Valid Objections",
+          "description": "Review each request for valid objection grounds:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Identify Valid Objections)"
+        },
+        {
+          "id": "step_04_gather_information",
+          "name": "Gather Information",
+          "description": "Collect information needed to respond:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Gather Information)"
+        },
+        {
+          "id": "step_05_draft_responses",
+          "name": "Draft Responses",
+          "description": "Draft responses using library templates.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Draft Responses)"
+        },
+        {
+          "id": "step_06_prepare_document_production",
+          "name": "Prepare Document Production",
+          "description": "Organize responsive documents:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Prepare Document Production)"
+        },
+        {
+          "id": "step_07_prepare_privilege_log_if_withholding_documents",
+          "name": "Prepare Privilege Log (If Withholding Documents)",
+          "description": "If withholding documents on privilege, create log containing:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Prepare Privilege Log (If Withholding Documents))"
+        },
+        {
+          "id": "step_08_attorney_client_review",
+          "name": "Attorney/Client Review",
+          "description": "Review responses with client:",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Attorney/Client Review)"
+        },
+        {
+          "id": "step_09_obtain_verification",
+          "name": "Obtain Verification",
+          "description": "Interrogatory responses MUST be verified under oath by the party.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Obtain Verification)"
+        },
+        {
+          "id": "step_10_serve_responses",
+          "name": "Serve Responses",
+          "description": "Serve responses and production timely:",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/respond_to_discovery/workflow.md (Steps \u2192 Serve Responses)"
+        }
+      ],
+      "related_skills": [
+        "discovery-response"
+      ],
+      "related_tools": [],
+      "templates": [
+        "discovery_library/responding/templates/response_shell.md",
+        "discovery_library/responding/templates/general_objections.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_2_discovery"
+    },
+    "review_responses": {
+      "name": "review_responses",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Review defendant's discovery responses for completeness and sufficiency.\n  Identifies deficiencies, prepares follow-up, and initiates motion to\n  compel if needed. Use when responses received from defendant.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_initial_review_use_deficiency_checklist",
+          "name": "Initial Review - Use Deficiency Checklist",
+          "description": "Systematically review each response using the checklist.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md (Steps \u2192 Initial Review - Use Deficiency Checklist)"
+        },
+        {
+          "id": "step_02_categorize_deficiencies",
+          "name": "Categorize Deficiencies",
+          "description": "Document deficiencies by severity.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md (Steps \u2192 Categorize Deficiencies)"
+        },
+        {
+          "id": "step_03_review_document_production",
+          "name": "Review Document Production",
+          "description": "Catalog produced documents and identify gaps:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md (Steps \u2192 Review Document Production)"
+        },
+        {
+          "id": "step_04_analyze_defense_answer_if_applicable",
+          "name": "Analyze Defense Answer (If Applicable)",
+          "description": "If reviewing defendant's answer to complaint, check for:",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md (Steps \u2192 Analyze Defense Answer (If Applicable))"
+        },
+        {
+          "id": "step_05_prepare_meet_and_confer_letter",
+          "name": "Prepare Meet and Confer Letter",
+          "description": "Draft deficiency letter per CR 37 requirements.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md (Steps \u2192 Prepare Meet and Confer Letter)"
+        },
+        {
+          "id": "step_06_conduct_meet_and_confer",
+          "name": "Conduct Meet and Confer",
+          "description": "Conference with defense counsel to resolve issues.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md (Steps \u2192 Conduct Meet and Confer)"
+        },
+        {
+          "id": "step_07_evaluate_resolution_options",
+          "name": "Evaluate Resolution Options",
+          "description": "For unresolved deficiencies, determine strategy.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md (Steps \u2192 Evaluate Resolution Options)"
+        },
+        {
+          "id": "step_08_file_motion_to_compel_if_needed",
+          "name": "File Motion to Compel (If Needed)",
+          "description": "Prepare and file motion if deficiencies not cured.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/review_responses/workflow.md (Steps \u2192 File Motion to Compel (If Needed))"
+        }
+      ],
+      "related_skills": [
+        "response-analysis"
+      ],
+      "related_tools": [],
+      "templates": [
+        "deficiency_letter.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_2_discovery"
+    },
+    "third_party_deposition": {
+      "name": "third_party_deposition",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Plan and conduct depositions of third-party (non-party) witnesses. Covers subpoena\n  requirements, document requests via subpoena duces tecum, and rules-based examination.\n  Use for eyewitnesses, employers, records custodians, and other non-party witnesses.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_identify_witness_and_information_needed",
+          "name": "Identify Witness and Information Needed",
+          "description": "Determine what information the witness has.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Identify Witness and Information Needed)"
+        },
+        {
+          "id": "step_02_determine_subpoena_requirements",
+          "name": "Determine Subpoena Requirements",
+          "description": "Assess subpoena power and requirements.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Determine Subpoena Requirements)"
+        },
+        {
+          "id": "step_03_prepare_subpoena",
+          "name": "Prepare Subpoena",
+          "description": "Prepare subpoena for witness attendance.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Prepare Subpoena)"
+        },
+        {
+          "id": "step_04_prepare_notice_of_deposition",
+          "name": "Prepare Notice of Deposition",
+          "description": "Prepare and serve notice to all parties.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Prepare Notice of Deposition)"
+        },
+        {
+          "id": "step_05_serve_subpoena_on_witness",
+          "name": "Serve Subpoena on Witness",
+          "description": "Properly serve subpoena.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Serve Subpoena on Witness)"
+        },
+        {
+          "id": "step_06_serve_notice_on_parties",
+          "name": "Serve Notice on Parties",
+          "description": "Serve notice of deposition on all parties.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Serve Notice on Parties)"
+        },
+        {
+          "id": "step_07_prepare_deposition_outline",
+          "name": "Prepare Deposition Outline",
+          "description": "Prepare examination outline.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Prepare Deposition Outline)"
+        },
+        {
+          "id": "step_08_conduct_deposition",
+          "name": "Conduct Deposition",
+          "description": "Conduct the deposition.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Conduct Deposition)"
+        },
+        {
+          "id": "step_09_post_deposition_analysis",
+          "name": "Post-Deposition Analysis",
+          "description": "Summarize testimony for case file.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_2_discovery/workflows/third_party_deposition/workflow.md (Steps \u2192 Post-Deposition Analysis)"
+        }
+      ],
+      "related_skills": [
+        "rules-based-examination"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "deposition_library/templates/notices/notice_standard.md",
+        "deposition_library/templates/outlines/outline_rules_based.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_2_discovery"
+    },
+    "attend_mediation": {
+      "name": "attend_mediation",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Attend and negotiate at mediation session. Executes negotiation strategy,\n  responds to offers, works toward settlement. Use on mediation day to\n  maximize settlement opportunity.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_3_mediation/workflows/attend_mediation/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_opening_session",
+          "name": "Opening Session",
+          "description": "Present opening statement, establish case value.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/attend_mediation/workflow.md (Steps \u2192 Opening Session)"
+        },
+        {
+          "id": "step_02_private_caucuses",
+          "name": "Private Caucuses",
+          "description": "Negotiate through mediator, adjust positions strategically.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/attend_mediation/workflow.md (Steps \u2192 Private Caucuses)"
+        },
+        {
+          "id": "step_03_evaluate_offers",
+          "name": "Evaluate Offers",
+          "description": "Analyze each offer, calculate net to client, advise client.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/attend_mediation/workflow.md (Steps \u2192 Evaluate Offers)"
+        },
+        {
+          "id": "step_04_client_consultations",
+          "name": "Client Consultations",
+          "description": "Keep client informed, get authority for positions.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/attend_mediation/workflow.md (Steps \u2192 Client Consultations)"
+        },
+        {
+          "id": "step_05_work_toward_resolution",
+          "name": "Work Toward Resolution",
+          "description": "Use negotiation tactics to bridge gap.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/attend_mediation/workflow.md (Steps \u2192 Work Toward Resolution)"
+        },
+        {
+          "id": "step_06_document_outcome",
+          "name": "Document Outcome",
+          "description": "Document settlement terms or impasse result.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/attend_mediation/workflow.md (Steps \u2192 Document Outcome)"
+        }
+      ],
+      "related_skills": [
+        "mediation-strategy"
+      ],
+      "related_tools": [],
+      "templates": [
+        "settlement_terms.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_3_mediation"
+    },
+    "prepare_mediation": {
+      "name": "prepare_mediation",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Prepare for mediation session. Creates mediation brief, prepares client,\n  gathers settlement authority. Use when mediation scheduled to ensure\n  effective negotiation.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_3_mediation/workflows/prepare_mediation/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_schedule_preparation_meeting",
+          "name": "Schedule Preparation Meeting",
+          "description": "Calendar client prep meeting before mediation.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/prepare_mediation/workflow.md (Steps \u2192 Schedule Preparation Meeting)"
+        },
+        {
+          "id": "step_02_draft_mediation_brief",
+          "name": "Draft Mediation Brief",
+          "description": "Create mediation brief with case summary, liability analysis, damages.",
+          "owner": "agent",
+          "can_automate": true,
+          "tool_available": true,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/prepare_mediation/workflow.md (Steps \u2192 Draft Mediation Brief)"
+        },
+        {
+          "id": "step_03_prepare_damage_summary",
+          "name": "Prepare Damage Summary",
+          "description": "Compile medical specials, lost wages, pain and suffering analysis.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/prepare_mediation/workflow.md (Steps \u2192 Prepare Damage Summary)"
+        },
+        {
+          "id": "step_04_confirm_settlement_authority",
+          "name": "Confirm Settlement Authority",
+          "description": "Discuss range with client, confirm authority level.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/prepare_mediation/workflow.md (Steps \u2192 Confirm Settlement Authority)"
+        },
+        {
+          "id": "step_05_prepare_client",
+          "name": "Prepare Client",
+          "description": "Explain mediation process, expectations, patience required.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/prepare_mediation/workflow.md (Steps \u2192 Prepare Client)"
+        },
+        {
+          "id": "step_06_submit_brief",
+          "name": "Submit Brief",
+          "description": "Send brief to mediator and opposing counsel per rules.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_3_mediation/workflows/prepare_mediation/workflow.md (Steps \u2192 Submit Brief)"
+        }
+      ],
+      "related_skills": [
+        "mediation-prep"
+      ],
+      "related_tools": [
+        "generate_document.py"
+      ],
+      "templates": [
+        "templates/mediation_brief_template.md",
+        "templates/damage_summary.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_3_mediation"
+    },
+    "expert_management": {
+      "name": "expert_management",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Manage expert witness disclosures and preparation. Handles disclosure\n  deadlines, expert depositions, and trial preparation of experts.\n  Use when expert disclosure deadline approaching.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/expert_management/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_confirm_expert_opinions",
+          "name": "Confirm Expert Opinions",
+          "description": "Ensure expert has finalized opinions and can support them.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/expert_management/workflow.md (Steps \u2192 Confirm Expert Opinions)"
+        },
+        {
+          "id": "step_02_prepare_expert_disclosure",
+          "name": "Prepare Expert Disclosure",
+          "description": "Draft disclosure with all required information.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/expert_management/workflow.md (Steps \u2192 Prepare Expert Disclosure)"
+        },
+        {
+          "id": "step_03_file_disclosure",
+          "name": "File Disclosure",
+          "description": "Serve disclosure by deadline.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/expert_management/workflow.md (Steps \u2192 File Disclosure)"
+        },
+        {
+          "id": "step_04_review_defense_expert_disclosure",
+          "name": "Review Defense Expert Disclosure",
+          "description": "Analyze defense expert opinions and qualifications.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/expert_management/workflow.md (Steps \u2192 Review Defense Expert Disclosure)"
+        },
+        {
+          "id": "step_05_depose_defense_experts",
+          "name": "Depose Defense Experts",
+          "description": "Take depositions of defense experts.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/expert_management/workflow.md (Steps \u2192 Depose Defense Experts)"
+        },
+        {
+          "id": "step_06_prepare_our_experts_for_trial",
+          "name": "Prepare Our Experts for Trial",
+          "description": "Prepare experts for direct examination and cross.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/expert_management/workflow.md (Steps \u2192 Prepare Our Experts for Trial)"
+        }
+      ],
+      "related_skills": [
+        "expert-coordination"
+      ],
+      "related_tools": [],
+      "templates": [
+        "expert_disclosure.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_4_trial_prep"
+    },
+    "trial_materials": {
+      "name": "trial_materials",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Prepare all trial materials including exhibit list, witness list,\n  pretrial brief, and jury instructions. Use when trial date\n  approaching to ensure court requirements satisfied.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/trial_materials/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_prepare_exhibit_list",
+          "name": "Prepare Exhibit List",
+          "description": "Compile list of all exhibits with Bates numbers.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/trial_materials/workflow.md (Steps \u2192 Prepare Exhibit List)"
+        },
+        {
+          "id": "step_02_prepare_witness_list",
+          "name": "Prepare Witness List",
+          "description": "List all witnesses with contact info and summary of testimony.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/trial_materials/workflow.md (Steps \u2192 Prepare Witness List)"
+        },
+        {
+          "id": "step_03_draft_pretrial_brief",
+          "name": "Draft Pretrial Brief",
+          "description": "Create pretrial memorandum with case summary, legal issues.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/trial_materials/workflow.md (Steps \u2192 Draft Pretrial Brief)"
+        },
+        {
+          "id": "step_04_prepare_jury_instructions",
+          "name": "Prepare Jury Instructions",
+          "description": "Draft proposed jury instructions.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/trial_materials/workflow.md (Steps \u2192 Prepare Jury Instructions)"
+        },
+        {
+          "id": "step_05_organize_trial_notebook",
+          "name": "Organize Trial Notebook",
+          "description": "Compile all materials in trial organization system.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/trial_materials/workflow.md (Steps \u2192 Organize Trial Notebook)"
+        },
+        {
+          "id": "step_06_file_required_documents",
+          "name": "File Required Documents",
+          "description": "File all pretrial materials by deadlines.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/trial_materials/workflow.md (Steps \u2192 File Required Documents)"
+        },
+        {
+          "id": "step_07_attend_pretrial_conference",
+          "name": "Attend Pretrial Conference",
+          "description": "Attend pretrial conference, resolve disputes.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_4_trial_prep/workflows/trial_materials/workflow.md (Steps \u2192 Attend Pretrial Conference)"
+        }
+      ],
+      "related_skills": [
+        "trial-exhibit-prep"
+      ],
+      "related_tools": [],
+      "templates": [
+        "exhibit_list.md",
+        "witness_list.md",
+        "jury_instructions.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_4_trial_prep"
+    },
+    "conduct_trial": {
+      "name": "conduct_trial",
+      "phase_id": "phase_7_litigation",
+      "description": ">\n  Conduct civil trial from jury selection through verdict. Handles\n  voir dire, opening, evidence presentation, closing, and verdict.\n  Use during trial proceedings.",
+      "sop_path": "workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md",
+      "steps": [
+        {
+          "id": "step_01_jury_selection_voir_dire",
+          "name": "Jury Selection (Voir Dire)",
+          "description": "Question and select jurors, exercise challenges.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md (Steps \u2192 Jury Selection (Voir Dire))"
+        },
+        {
+          "id": "step_02_opening_statement",
+          "name": "Opening Statement",
+          "description": "Present case overview to jury.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md (Steps \u2192 Opening Statement)"
+        },
+        {
+          "id": "step_03_present_plaintiff_s_case",
+          "name": "Present Plaintiff's Case",
+          "description": "Call witnesses, introduce exhibits, establish elements.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md (Steps \u2192 Present Plaintiff's Case)"
+        },
+        {
+          "id": "step_04_handle_motions",
+          "name": "Handle Motions",
+          "description": "Respond to defense motions (directed verdict, etc.).",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md (Steps \u2192 Handle Motions)"
+        },
+        {
+          "id": "step_05_cross_examine_defense_witnesses",
+          "name": "Cross-Examine Defense Witnesses",
+          "description": "Challenge defense evidence and witnesses.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md (Steps \u2192 Cross-Examine Defense Witnesses)"
+        },
+        {
+          "id": "step_06_closing_argument",
+          "name": "Closing Argument",
+          "description": "Summarize evidence, argue for verdict.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md (Steps \u2192 Closing Argument)"
+        },
+        {
+          "id": "step_07_await_verdict",
+          "name": "Await Verdict",
+          "description": "Answer jury questions, await deliberation result.",
+          "owner": "user",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md (Steps \u2192 Await Verdict)"
+        },
+        {
+          "id": "step_08_document_outcome",
+          "name": "Document Outcome",
+          "description": "Record verdict, next steps.",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_7_litigation/subphases/7_5_trial/workflows/conduct_trial/workflow.md (Steps \u2192 Document Outcome)"
+        }
+      ],
+      "related_skills": [
+        "trial-presentation"
+      ],
+      "related_tools": [],
+      "templates": [
+        "opening_outline.md",
+        "closing_outline.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      },
+      "subphase_id": "phase_7_5_trial"
+    },
+    "close_case": {
+      "name": "close_case",
+      "phase_id": "phase_8_closed",
+      "description": ">\n  Final case closure and archiving. This workflow verifies all obligations\n  are complete, sends final letter to client, requests review if appropriate,\n  and archives the case file.",
+      "sop_path": "workflows/phase_8_closed/workflows/close_case.md",
+      "steps": [
+        {
+          "id": "follow_sop",
+          "name": "Follow SOP",
+          "description": "Follow the procedure in close_case.md",
+          "owner": "agent",
+          "can_automate": false,
+          "tool_available": false,
+          "manual_fallback": "Open and follow workflows/phase_8_closed/workflows/close_case.md"
+        }
+      ],
+      "related_skills": [
+        "document-docx"
+      ],
+      "related_tools": [],
+      "templates": [
+        "forms/closing/case_closing_letter_TEMPLATE.md"
+      ],
+      "resources": {
+        "tools_manifest": "workflows/tools/tools_manifest.json",
+        "skills_manifest": "workflows/skills/skills_manifest.json",
+        "templates_manifest": "workflows/templates/templates_manifest.json"
+      }
+    }
+  },
+  "workflow_dependencies": {}
+}

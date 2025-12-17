@@ -18,7 +18,15 @@ export function Assistant() {
         command,
       });
 
-      yield* generator;
+      // Consume generator with timeout protection
+      try {
+        for await (const chunk of generator) {
+          yield chunk;
+        }
+      } catch (error) {
+        console.error("[Stream Error]", error);
+        throw error;
+      }
     },
     create: async () => {
       const { thread_id } = await createThread();

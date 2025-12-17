@@ -30,8 +30,10 @@ async function handleRequest(req: NextRequest, method: string) {
         // Ensure we accept streaming responses
         "Accept": "text/event-stream, application/json",
       },
-      // Enable keepalive for SSE streams (required for long-running connections)
-      keepalive: true,
+      // Disable keepalive to prevent connection hanging with SSE streams
+      keepalive: false,
+      // Add signal for abort controller (prevents infinite hangs)
+      signal: AbortSignal.timeout(290000), // 290s (just under maxDuration)
     };
 
     if (["POST", "PUT", "PATCH"].includes(method)) {

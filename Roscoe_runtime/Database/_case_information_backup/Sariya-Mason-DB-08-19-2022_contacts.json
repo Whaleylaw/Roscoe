@@ -1,0 +1,139 @@
+[
+  {
+    "jsonb_agg": [
+      {
+        "email": "schricethomas@gmail.com",
+        "phone": "(502) 365-0787",
+        "roles": [
+          "client"
+        ],
+        "address": "2328 Quinn Dr, , Louisville, KY 40216-2941",
+        "full_name": "Schrice Thomas",
+        "contact_id": 1952,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": "nichole.smith@kyfb.com",
+        "phone": "(502) 456-1664",
+        "roles": [
+          "adjuster"
+        ],
+        "address": "P.O.  Box 20600, Louisville, KY 40250",
+        "full_name": "Nichole Smith",
+        "contact_id": 1897,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": "",
+        "phone": "(866) 532-2524, 502-266-6100",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "P.O. Box 20400, Louisville, KY 40250",
+        "full_name": "Kentucky Farm Bureau",
+        "contact_id": 640,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": "subrogationunit@bcbsm.com",
+        "phone": "1-866-296-3975",
+        "roles": [
+          "lien_holder"
+        ],
+        "address": "232 S. Capitol Ave., L09A, Lansing, MI 48933-1504",
+        "full_name": "Blue Cross Blue Shield of Michigan",
+        "contact_id": 34,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": null,
+        "phone": "844-847-9951",
+        "roles": [
+          "lien_holder"
+        ],
+        "address": "5100 Commerce Crossings Drvie, Louisville, KY 40229",
+        "full_name": "Passport Health By Molina",
+        "contact_id": 844,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": null,
+        "phone": "(502) 995-2400",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "9700 Stonestreet Road, Louisville, KY 40272",
+        "full_name": "UL MSW Medical Center Southwest",
+        "contact_id": 1011,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-709-0940",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "7098 DISTRIBUTION DR STE A, Louisville, Ky 40258",
+        "full_name": "THR PEDIATRICS & WELLNESS CENTER",
+        "contact_id": 1238,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": null,
+        "phone": null,
+        "roles": [
+          "payee",
+          "filing_party"
+        ],
+        "address": "700 W. Jefferson Street, Louisville, KY 40202",
+        "full_name": "Jefferson County Circuit Court",
+        "contact_id": 125,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": null,
+        "phone": "(502) 625-1670",
+        "roles": [
+          "filing_party"
+        ],
+        "address": "401 W. Main Street #1600, Louisville, KY 40202",
+        "full_name": "Barnes Maloney PLLC",
+        "contact_id": 368,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": null,
+        "phone": "502-583-4022",
+        "roles": [
+          "filing_party"
+        ],
+        "address": "712 Lyndon Lane, Louisville, KY 40222",
+        "full_name": "The Whaley Law Firm",
+        "contact_id": 987,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": "bryce@whaleylawfirm.com, wmbkoon@gmail.com",
+        "phone": "502-759-9549",
+        "roles": [
+          "filing_party"
+        ],
+        "address": null,
+        "full_name": "Bryce Koon",
+        "contact_id": 1594,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      },
+      {
+        "email": "mlondergan@sbmkylaw.com",
+        "phone": "502-583-4777",
+        "roles": [
+          "filing_party"
+        ],
+        "address": "401 W. Main St., Ste. 1600, Louisville, KY 40202",
+        "full_name": "Matthew Londergan",
+        "contact_id": 1625,
+        "project_name": "Sariya-Mason-DB-08-19-2022"
+      }
+    ]
+  }
+]

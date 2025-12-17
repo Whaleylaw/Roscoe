@@ -1,0 +1,564 @@
+{
+  "version": "1.0.0",
+  "generated_from": "analysis_output/*.json",
+  "description": "Maps workflow engine phases and workflows to existing Skills, Tools, and Workflow files",
+  
+  "skills": {
+    "calendar_scheduling": {
+      "path": "Skills/calendar-scheduling/skill.md",
+      "phases": ["file_setup", "treatment", "demand_in_progress", "negotiation", "complaint", "discovery", "mediation", "trial_prep", "trial"],
+      "workflows": ["*"],
+      "capabilities": [
+        "Track statute of limitations",
+        "Schedule client check-ins",
+        "Schedule depositions",
+        "Track discovery deadlines",
+        "Schedule mediation",
+        "Track trial calendar"
+      ],
+      "quality_score": 5.0,
+      "agent_ready": true
+    },
+    "email_management": {
+      "path": "Skills/email-management/skill.md",
+      "phases": ["file_setup", "treatment", "demand_in_progress", "negotiation", "settlement", "complaint", "discovery", "mediation"],
+      "workflows": ["client_check_in", "send_demand", "negotiate_claim"],
+      "capabilities": [
+        "Client communication",
+        "Adjuster correspondence",
+        "Medical records requests",
+        "Litigation communications"
+      ],
+      "quality_score": 4.75,
+      "agent_ready": true
+    },
+    "medical_chronology": {
+      "path": "Skills/medical-records/medical-chronology-generation.md",
+      "phases": ["demand_in_progress"],
+      "workflows": ["gather_demand_materials"],
+      "capabilities": [
+        "Generate professional medical chronology",
+        "Research medical terminology",
+        "Add clickable page references",
+        "Flag causation issues"
+      ],
+      "quality_score": 5.0,
+      "agent_ready": true,
+      "anti_hallucination": true
+    },
+    "lien_classification": {
+      "path": "Skills/liens/lien-classification.md",
+      "phases": ["demand_in_progress", "lien"],
+      "workflows": ["gather_demand_materials", "get_final_lien", "negotiate_lien"],
+      "capabilities": [
+        "Classify liens by source",
+        "Identify legal basis",
+        "Assess reduction potential",
+        "Plan negotiation strategy"
+      ],
+      "quality_score": 3.5,
+      "agent_ready": false,
+      "needs": ["output_schema", "tool_integration"]
+    },
+    "demand_letter_drafting": {
+      "path": "Skills/negotiations/demand-letter-drafting.md",
+      "phases": ["demand_in_progress"],
+      "workflows": ["draft_demand"],
+      "capabilities": [
+        "Draft demand letter structure",
+        "Compile damages summary",
+        "Format medical narrative"
+      ],
+      "quality_score": 2.5,
+      "agent_ready": false,
+      "needs": ["templates", "calculation_examples", "medical_chronology_integration"]
+    },
+    "liable_party_identification": {
+      "path": "Skills/insurance/liable-party-identification.md",
+      "phases": ["file_setup"],
+      "workflows": ["open_insurance_claims"],
+      "capabilities": [
+        "Identify all potentially liable parties",
+        "Research vicarious liability",
+        "Identify insurance coverage"
+      ],
+      "quality_score": 3.5,
+      "agent_ready": false,
+      "needs": ["output_schema", "tool_integration"]
+    },
+    "cross_examination_fundamentals": {
+      "path": "Skills/cross-examination/cross-examination-fundamentals.md",
+      "phases": ["discovery", "trial"],
+      "workflows": ["party_depositions", "conduct_trial"],
+      "capabilities": [
+        "Cross-examination principles",
+        "Question structure",
+        "Preparation checklist"
+      ],
+      "quality_score": 3.5,
+      "agent_ready": false,
+      "needs": ["concrete_examples", "tool_integration"]
+    },
+    "dme_ime_cross_examination": {
+      "path": "Skills/cross-examination/dme-ime-cross-examination.md",
+      "phases": ["discovery", "trial_prep", "trial"],
+      "workflows": ["take_expert_depositions", "conduct_trial"],
+      "capabilities": [
+        "Research DME expert background",
+        "Challenge bias and financial interest",
+        "Attack methodology"
+      ],
+      "quality_score": 4.5,
+      "agent_ready": true
+    },
+    "30b6_topic_drafting": {
+      "path": "Skills/depositions/30b6-topic-drafting.md",
+      "phases": ["discovery"],
+      "workflows": ["propound_discovery"],
+      "capabilities": [
+        "Draft 30(b)(6) deposition topics",
+        "Corporate defendant questioning"
+      ],
+      "quality_score": 4.0,
+      "agent_ready": true
+    },
+    "docx": {
+      "path": "Skills/docx/SKILL.md",
+      "phases": ["demand_in_progress", "discovery", "complaint", "mediation", "trial_prep"],
+      "workflows": ["draft_demand", "draft_complaint", "respond_to_discovery", "prepare_mediation_statement", "draft_jury_instructions"],
+      "capabilities": [
+        "Create Word documents",
+        "Edit with tracked changes",
+        "Redlining workflow"
+      ],
+      "quality_score": 5.0,
+      "agent_ready": true
+    },
+    "pdf": {
+      "path": "Skills/pdf/SKILL.md",
+      "phases": ["file_setup", "demand_in_progress", "settlement", "discovery", "trial_prep"],
+      "workflows": ["send_documents_for_signature", "gather_demand_materials", "settlement_processing", "respond_to_discovery", "prepare_exhibits"],
+      "capabilities": [
+        "Read PDF content",
+        "Create PDFs",
+        "Fill PDF forms",
+        "Merge and split PDFs"
+      ],
+      "quality_score": 5.0,
+      "agent_ready": true
+    },
+    "xlsx": {
+      "path": "Skills/xlsx/SKILL.md",
+      "phases": ["demand_in_progress", "lien", "settlement"],
+      "workflows": ["gather_demand_materials", "negotiate_lien", "settlement_processing"],
+      "capabilities": [
+        "Create spreadsheets with formulas",
+        "Medical billing summaries",
+        "Lien tracking",
+        "Settlement calculations"
+      ],
+      "quality_score": 5.0,
+      "agent_ready": true
+    },
+    "pptx": {
+      "path": "Skills/pptx/SKILL.md",
+      "phases": ["mediation", "trial_prep", "trial"],
+      "workflows": ["prepare_mediation_statement", "prepare_exhibits", "conduct_trial"],
+      "capabilities": [
+        "Create presentations",
+        "Trial exhibits",
+        "Mediation presentations"
+      ],
+      "quality_score": 4.5,
+      "agent_ready": true
+    },
+    "script_execution": {
+      "path": "Skills/script-execution/skill.md",
+      "phases": ["*"],
+      "workflows": ["*"],
+      "capabilities": [
+        "Execute Python scripts",
+        "Batch operations",
+        "Automation tasks"
+      ],
+      "quality_score": 4.5,
+      "agent_ready": true,
+      "infrastructure": true
+    }
+  },
+  
+  "tools": {
+    "calendar": {
+      "path": "Tools/calendar/",
+      "files": [
+        "calendar_add_event.py",
+        "calendar_list_events.py",
+        "calendar_update_event.py",
+        "calendar_delete_event.py"
+      ],
+      "phases": ["*"],
+      "workflows": ["*"],
+      "capabilities": [
+        "Add calendar events",
+        "List/filter events",
+        "Update events",
+        "Delete events",
+        "Dependency tracking"
+      ],
+      "quality_score": 5.0,
+      "agent_ready": true,
+      "data_file": "Database/calendar.json"
+    },
+    "document_processing": {
+      "path": "Tools/document_processing/",
+      "files": [
+        "batch_convert_pdfs.py",
+        "cleanup_markdown.py",
+        "split_pdf.py"
+      ],
+      "phases": ["demand_in_progress", "discovery"],
+      "workflows": ["gather_demand_materials", "respond_to_discovery"],
+      "capabilities": [
+        "Batch convert PDFs to markdown",
+        "Clean conversion artifacts",
+        "Split PDFs by page range"
+      ],
+      "quality_score": 4.5,
+      "agent_ready": true,
+      "dependencies": ["pypdf", "PyPDF2"]
+    },
+    "medical_chronology": {
+      "path": "Tools/medical_chronology/",
+      "files": [
+        "chronology_add_term.py",
+        "chronology_lookup_term.py",
+        "chronology_generate_pdf.py",
+        "chronology_analyze_terms.py",
+        "chronology_merge_with_records.py"
+      ],
+      "phases": ["treatment", "demand_in_progress"],
+      "workflows": ["gather_demand_materials", "draft_demand"],
+      "capabilities": [
+        "Add researched medical terms",
+        "Lookup term definitions",
+        "Generate chronology PDF",
+        "Analyze records for terms",
+        "Merge chronology with source records"
+      ],
+      "quality_score": 4.0,
+      "agent_ready": true,
+      "data_file": "Resources/medical_research_cache.json",
+      "depends_on": "Skills/medical-records/chronology_tools.py"
+    },
+    "web_scraping": {
+      "path": "Tools/web_scraping/",
+      "files": [
+        "kyecourts_docket.py",
+        "kyecourts_download_documents.py"
+      ],
+      "phases": ["complaint", "discovery", "trial_prep"],
+      "workflows": ["process_answer", "review_their_responses"],
+      "capabilities": [
+        "Lookup Kentucky eCourts dockets",
+        "Download court documents"
+      ],
+      "quality_score": 5.0,
+      "agent_ready": true,
+      "dependencies": ["playwright"],
+      "env_vars": ["KYECOURTS_USERNAME", "KYECOURTS_PASSWORD"]
+    },
+    "ui": {
+      "path": "Tools/UI/",
+      "files": [
+        "case_dashboard.py",
+        "contact_card.py",
+        "insurance_overview.py",
+        "medical_overview.py",
+        "negotiations.py",
+        "liens.py",
+        "case_snapshot.py",
+        "calendar_view.py",
+        "expenses.py",
+        "notes.py"
+      ],
+      "phases": ["*"],
+      "workflows": ["*"],
+      "capabilities": [
+        "Case dashboard composition",
+        "Contact card display",
+        "Insurance overview",
+        "Medical provider overview",
+        "Active negotiations view",
+        "Liens display",
+        "Case snapshot",
+        "Calendar view"
+      ],
+      "quality_score": 5.0,
+      "agent_ready": true,
+      "data_files": [
+        "overview.json",
+        "contacts.json",
+        "insurance.json",
+        "medical_providers.json",
+        "liens.json",
+        "expenses.json"
+      ]
+    }
+  },
+  
+  "workflows": {
+    "phase_0_onboarding": {
+      "path": "workflows/phase_0_onboarding/",
+      "maps_to_phase": "file_setup",
+      "description": "Firm onboarding and setup procedures"
+    },
+    "phase_1_intake": {
+      "path": "workflows/phase_1_intake/",
+      "maps_to_phase": "file_setup",
+      "workflows": ["intake", "send_documents_for_signature", "accident_report", "open_insurance_claims", "medical_provider_setup"]
+    },
+    "phase_2_treatment": {
+      "path": "workflows/phase_2_treatment/",
+      "maps_to_phase": "treatment",
+      "workflows": ["client_check_in", "medical_provider_status_check", "request_records_and_bills"]
+    },
+    "phase_3_demand": {
+      "path": "workflows/phase_3_demand/",
+      "maps_to_phase": "demand_in_progress",
+      "workflows": ["gather_demand_materials", "draft_demand", "send_demand"]
+    },
+    "phase_4_negotiation": {
+      "path": "workflows/phase_4_negotiation/",
+      "maps_to_phase": "negotiation",
+      "workflows": ["negotiate_claim"]
+    },
+    "phase_5_settlement": {
+      "path": "workflows/phase_5_settlement/",
+      "maps_to_phase": ["settlement", "lien"],
+      "workflows": ["settlement_processing", "get_final_lien", "negotiate_lien", "final_distribution"]
+    },
+    "phase_6_litigation": {
+      "path": "workflows/phase_6_litigation/",
+      "maps_to_phase": ["complaint", "discovery", "mediation", "trial_prep", "trial"],
+      "workflows": ["draft_and_file_complaint", "serve_defendant", "propound_discovery", "respond_to_discovery", "party_depositions", "prepare_for_mediation", "expert_management", "trial_materials", "conduct_trial"]
+    }
+  },
+  
+  "phase_to_resource_mapping": {
+    "file_setup": {
+      "skills": ["calendar_scheduling", "email_management", "liable_party_identification", "pdf"],
+      "tools": ["calendar", "ui"],
+      "workflow_dir": "workflows/phase_1_intake/"
+    },
+    "treatment": {
+      "skills": ["calendar_scheduling", "email_management", "medical_chronology"],
+      "tools": ["calendar", "medical_chronology", "ui"],
+      "workflow_dir": "workflows/phase_2_treatment/"
+    },
+    "demand_in_progress": {
+      "skills": ["medical_chronology", "lien_classification", "demand_letter_drafting", "docx", "pdf", "xlsx"],
+      "tools": ["document_processing", "medical_chronology", "ui"],
+      "workflow_dir": "workflows/phase_3_demand/"
+    },
+    "negotiation": {
+      "skills": ["calendar_scheduling", "email_management"],
+      "tools": ["calendar", "ui"],
+      "workflow_dir": "workflows/phase_4_negotiation/"
+    },
+    "settlement": {
+      "skills": ["xlsx", "pdf"],
+      "tools": ["ui"],
+      "workflow_dir": "workflows/phase_5_settlement/"
+    },
+    "lien": {
+      "skills": ["lien_classification", "xlsx"],
+      "tools": ["ui"],
+      "workflow_dir": "workflows/phase_5_settlement/"
+    },
+    "complaint": {
+      "skills": ["calendar_scheduling", "docx", "pdf"],
+      "tools": ["calendar", "web_scraping", "ui"],
+      "workflow_dir": "workflows/phase_6_litigation/"
+    },
+    "discovery": {
+      "skills": ["calendar_scheduling", "docx", "cross_examination_fundamentals", "30b6_topic_drafting"],
+      "tools": ["calendar", "document_processing", "web_scraping", "ui"],
+      "workflow_dir": "workflows/phase_6_litigation/"
+    },
+    "mediation": {
+      "skills": ["calendar_scheduling", "docx", "pptx"],
+      "tools": ["calendar", "ui"],
+      "workflow_dir": "workflows/phase_6_litigation/"
+    },
+    "trial_prep": {
+      "skills": ["calendar_scheduling", "dme_ime_cross_examination", "docx", "pptx", "pdf"],
+      "tools": ["calendar", "document_processing", "web_scraping", "ui"],
+      "workflow_dir": "workflows/phase_6_litigation/"
+    },
+    "trial": {
+      "skills": ["cross_examination_fundamentals", "dme_ime_cross_examination", "pptx"],
+      "tools": ["ui"],
+      "workflow_dir": "workflows/phase_6_litigation/"
+    },
+    "closed": {
+      "skills": ["email_management"],
+      "tools": ["ui"],
+      "workflow_dir": null
+    }
+  },
+  
+  "workflow_to_tool_mapping": {
+    "intake": {
+      "tools": ["calendar"],
+      "skills": ["calendar_scheduling"],
+      "tool_calls": [
+        {"tool": "calendar_add_event", "for": "Track intake deadline"},
+        {"tool": "case_snapshot", "for": "Display intake progress"}
+      ],
+      "missing_tools": ["intake_form", "docusign_integration"]
+    },
+    "send_documents_for_signature": {
+      "tools": [],
+      "skills": ["pdf"],
+      "tool_calls": [],
+      "missing_tools": ["docusign_api"]
+    },
+    "accident_report": {
+      "tools": ["document_processing"],
+      "skills": ["pdf"],
+      "tool_calls": [
+        {"tool": "batch_convert_pdfs", "for": "Extract report text"},
+        {"tool": "cleanup_markdown", "for": "Clean extracted text"}
+      ],
+      "missing_tools": ["report_request_generator"]
+    },
+    "open_insurance_claims": {
+      "tools": ["calendar", "ui"],
+      "skills": ["calendar_scheduling", "liable_party_identification"],
+      "tool_calls": [
+        {"tool": "calendar_add_event", "for": "Track claim deadlines"},
+        {"tool": "insurance_overview", "for": "Display claim status"}
+      ],
+      "missing_tools": ["lor_generator", "insurance_portal_api"]
+    },
+    "client_check_in": {
+      "tools": ["calendar"],
+      "skills": ["calendar_scheduling", "email_management"],
+      "tool_calls": [
+        {"tool": "calendar_add_event", "for": "Schedule next check-in"},
+        {"tool": "calendar_update_event", "for": "Mark check-in complete"}
+      ],
+      "missing_tools": ["automated_reminder", "sms_integration"]
+    },
+    "request_records_and_bills": {
+      "tools": ["calendar"],
+      "skills": ["calendar_scheduling", "pdf"],
+      "tool_calls": [
+        {"tool": "calendar_add_event", "for": "Track records request deadline"}
+      ],
+      "missing_tools": ["hipaa_request_generator", "provider_fax_integration"]
+    },
+    "gather_demand_materials": {
+      "tools": ["document_processing", "medical_chronology"],
+      "skills": ["medical_chronology", "lien_classification", "xlsx"],
+      "tool_calls": [
+        {"tool": "batch_convert_pdfs", "for": "Process medical records"},
+        {"tool": "chronology_analyze_terms", "for": "Find terms needing research"},
+        {"tool": "chronology_lookup_term", "for": "Get term definitions"},
+        {"tool": "chronology_add_term", "for": "Add researched terms"}
+      ]
+    },
+    "draft_demand": {
+      "tools": ["medical_chronology"],
+      "skills": ["medical_chronology", "demand_letter_drafting", "docx"],
+      "tool_calls": [
+        {"tool": "chronology_generate_pdf", "for": "Generate medical chronology"},
+        {"tool": "chronology_merge_with_records", "for": "Create demand package"}
+      ]
+    },
+    "negotiate_claim": {
+      "tools": ["calendar", "ui"],
+      "skills": ["calendar_scheduling", "email_management"],
+      "tool_calls": [
+        {"tool": "negotiations", "for": "View active negotiations"},
+        {"tool": "calendar_add_event", "for": "Track response deadlines"}
+      ]
+    },
+    "settlement_processing": {
+      "tools": ["ui"],
+      "skills": ["xlsx", "pdf"],
+      "tool_calls": [
+        {"tool": "liens", "for": "View lien amounts"},
+        {"tool": "case_snapshot", "for": "View settlement calculations"}
+      ],
+      "missing_tools": ["settlement_statement_generator", "check_processing"]
+    },
+    "draft_and_file_complaint": {
+      "tools": ["calendar", "web_scraping"],
+      "skills": ["calendar_scheduling", "docx", "pdf"],
+      "tool_calls": [
+        {"tool": "calendar_add_event", "for": "Track filing deadline"},
+        {"tool": "kyecourts_docket", "for": "Verify case number after filing"}
+      ],
+      "missing_tools": ["complaint_template_generator", "efiling_integration"]
+    },
+    "party_depositions": {
+      "tools": ["calendar"],
+      "skills": ["calendar_scheduling", "cross_examination_fundamentals"],
+      "tool_calls": [
+        {"tool": "calendar_add_event", "for": "Schedule deposition"}
+      ]
+    },
+    "prepare_for_mediation": {
+      "tools": ["calendar", "medical_chronology"],
+      "skills": ["calendar_scheduling", "docx", "pptx"],
+      "tool_calls": [
+        {"tool": "calendar_add_event", "for": "Schedule mediation"},
+        {"tool": "chronology_generate_pdf", "for": "Generate medical summary"}
+      ]
+    },
+    "conduct_trial": {
+      "tools": ["ui"],
+      "skills": ["cross_examination_fundamentals", "dme_ime_cross_examination", "pptx"],
+      "tool_calls": [
+        {"tool": "case_dashboard", "for": "Full case view for trial prep"}
+      ]
+    }
+  },
+  
+  "gap_analysis_summary": {
+    "skills_gaps": [
+      "Client intake structured interview",
+      "DocuSign document signing integration",
+      "Accident report request workflow",
+      "Insurance claim opening workflow",
+      "Medical records request generation",
+      "Settlement document generation",
+      "Complaint template drafting",
+      "Discovery drafting templates",
+      "Trial witness preparation"
+    ],
+    "tool_gaps": [
+      "DocuSign API integration",
+      "Email/SMS automation for client communication",
+      "Insurance portal API integrations",
+      "Medical records request faxing",
+      "E-filing system integration",
+      "Settlement statement generator",
+      "Check processing/trust accounting"
+    ],
+    "workflow_coverage": {
+      "file_setup": "40%",
+      "treatment": "50%",
+      "demand_in_progress": "80%",
+      "negotiation": "60%",
+      "settlement": "30%",
+      "lien": "50%",
+      "complaint": "40%",
+      "discovery": "50%",
+      "mediation": "60%",
+      "trial_prep": "50%",
+      "trial": "40%"
+    }
+  }
+}

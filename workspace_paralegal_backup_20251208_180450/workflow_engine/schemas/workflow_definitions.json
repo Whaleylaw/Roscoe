@@ -1,0 +1,1142 @@
+{
+  "workflows": {
+    "intake": {
+      "name": "Intake",
+      "phase": "file_setup",
+      "description": "Collect initial client and case information",
+      "steps": [
+        {
+          "id": "collect_client_info",
+          "name": "Collect Client Information",
+          "description": "Gather client contact details and basic information",
+          "owner": "agent",
+          "can_automate": true,
+          "collects": [
+            "client.name",
+            "client.phone",
+            "client.email",
+            "client.address",
+            "client.dob",
+            "client.preferred_contact"
+          ],
+          "prompt_user": "Please provide the client's contact information: name, phone, email, address, date of birth, and preferred contact method.",
+          "completion_check": "client.name && client.phone"
+        },
+        {
+          "id": "collect_accident_info",
+          "name": "Collect Accident Information",
+          "description": "Gather details about the accident",
+          "owner": "agent",
+          "can_automate": true,
+          "collects": [
+            "accident.date",
+            "accident.type",
+            "accident.location",
+            "accident.description"
+          ],
+          "prompt_user": "Please describe the accident: What happened? When? Where? What type of accident (car wreck, slip and fall, etc.)?",
+          "completion_check": "accident.date && accident.type && accident.description"
+        },
+        {
+          "id": "collect_injury_info",
+          "name": "Collect Injury Information",
+          "description": "Document client's injuries",
+          "owner": "agent",
+          "can_automate": true,
+          "collects": ["injuries"],
+          "prompt_user": "What injuries did the client sustain? List all affected body parts and symptoms.",
+          "completion_check": "injuries.length > 0"
+        },
+        {
+          "id": "collect_treatment_info",
+          "name": "Collect Treatment Information",
+          "description": "Document current and past medical treatment",
+          "owner": "agent",
+          "can_automate": true,
+          "triggers_workflow": "medical_provider_setup",
+          "prompt_user": "Where has the client received medical treatment? List all providers (ER, doctors, chiropractor, physical therapy, etc.).",
+          "completion_check": "medical_providers.length > 0"
+        },
+        {
+          "id": "collect_insurance_info",
+          "name": "Collect Insurance Information",
+          "description": "Gather known insurance details",
+          "owner": "agent",
+          "can_automate": true,
+          "collects": [
+            "client.auto_insurance",
+            "client.health_insurance"
+          ],
+          "prompt_user": "What insurance information is available? Client's auto insurance? Health insurance? At-fault party's insurance if known?",
+          "completion_check": "true"
+        },
+        {
+          "id": "collect_work_info",
+          "name": "Collect Employment Information",
+          "description": "Document employment status and missed work",
+          "owner": "agent",
+          "can_automate": true,
+          "condition": "client.employer exists OR missed_work",
+          "collects": [
+            "client.employer",
+            "client.employer.missed_work"
+          ],
+          "prompt_user": "Is the client employed? Have they missed any work due to injuries?",
+          "completion_check": "true"
+        },
+        {
+          "id": "conflicts_check",
+          "name": "Conflicts Check",
+          "description": "Check for conflicts of interest",
+          "owner": "agent",
+          "can_automate": true,
+          "tool": "conflicts_database_search",
+          "tool_available": false,
+          "manual_fallback": "Check conflicts database manually for all parties: client, at-fault parties, witnesses, insurance companies.",
+          "prompt_user": null,
+          "completion_check": "conflicts_cleared"
+        },
+        {
+          "id": "case_evaluation",
+          "name": "Case Evaluation",
+          "description": "Evaluate case viability",
+          "owner": "user",
+          "can_automate": false,
+          "requires_attorney_decision": true,
+          "prompt_user": "Review case for acceptance. Consider: liability clarity, injury severity, insurance coverage, client reliability. Accept or decline?",
+          "completion_check": "case_accepted == true"
+        }
+      ],
+      "completion_criteria": {
+        "required": [
+          "client.name",
+          "client.phone",
+          "accident.date",
+          "accident.type",
+          "injuries.length > 0",
+          "case_accepted"
+        ],
+        "recommended": [
+          "client.email",
+          "client.address",
+          "medical_providers.length > 0"
+        ]
+      },
+      "outputs": {
+        "pending_items": [
+          {
+            "condition": "!documents.retainer.signed",
+            "item": {
+              "description": "Send retainer agreement for signature",
+              "owner": "user",
+              "blocking": true
+            }
+          }
+        ]
+      }
+    },
+    "send_documents_for_signature": {
+      "name": "Send Documents for Signature",
+      "phase": "file_setup",
+      "description": "Send required legal documents for client signature",
+      "steps": [
+        {
+          "id": "prepare_retainer",
+          "name": "Prepare Retainer Agreement",
+          "description": "Generate retainer agreement with case details",
+          "owner": "agent",
+          "can_automate": true,
+          "skill": "/Skills/docx/SKILL.md",
+          "tool": "document_generator",
+          "tool_available": false,
+          "manual_fallback": "Prepare retainer agreement from template. Include: client name, accident date, fee percentage (33% pre-lit, 40% lit).",
+          "template": "/forms/intake/retainer_agreement_TEMPLATE.md",
+          "docusign_tool": "/Tools/esignature/docusign_send.py",
+          "docusign_ready": true
+        },
+        {
+          "id": "prepare_hipaa",
+          "name": "Prepare HIPAA Authorization",
+          "description": "Generate HIPAA authorization form",
+          "owner": "agent",
+          "can_automate": true,
+          "template": "/forms/intake/hipaa_authorization_TEMPLATE.md",
+          "docusign_ready": true
+        },
+        {
+          "id": "prepare_medicare",
+          "name": "Prepare Medicare Authorization",
+          "description": "Generate Medicare authorization (if applicable)",
+          "owner": "agent",
+          "can_automate": true,
+          "condition": "client.age >= 65 OR client.on_disability",
+          "template": "/forms/intake/medicare_authorization_TEMPLATE.md",
+          "docusign_ready": true
+        },
+        {
+          "id": "send_for_signature",
+          "name": "Send Documents for Signature",
+          "description": "Send document package via DocuSign",
+          "owner": "user",
+          "can_automate": false,
+          "tool": "/Tools/esignature/docusign_send.py",
+          "tool_available": true,
+          "manual_fallback": "Send documents via DocuSign manually. Include: retainer, HIPAA, Medicare auth (if applicable).",
+          "prompt_user": "Documents prepared. Please send to client via DocuSign and update when sent.",
+          "updates": ["documents.retainer.status = 'sent'", "documents.hipaa.status = 'sent'"]
+        },
+        {
+          "id": "track_signatures",
+          "name": "Track Signature Status",
+          "description": "Monitor for returned signatures",
+          "owner": "user",
+          "can_automate": false,
+          "waiting_on": "client",
+          "follow_up_days": 3,
+          "prompt_user": "Waiting for client signatures. Follow up if not received in 3 days."
+        }
+      ],
+      "completion_criteria": {
+        "required": ["documents.retainer.status == 'signed'"],
+        "recommended": ["documents.hipaa.status == 'signed'"]
+      }
+    },
+    "accident_report": {
+      "name": "Accident Report",
+      "phase": "file_setup",
+      "description": "Request and process police/accident report",
+      "condition": "accident.type == 'mva' OR accident.police_called",
+      "steps": [
+        {
+          "id": "identify_agency",
+          "name": "Identify Reporting Agency",
+          "description": "Determine which agency took the report",
+          "owner": "agent",
+          "can_automate": true,
+          "prompt_user": "Which law enforcement agency responded to the accident? (e.g., LMPD, KSP, Sheriff)",
+          "collects": ["accident.police_report.agency"]
+        },
+        {
+          "id": "get_report_number",
+          "name": "Get Report Number",
+          "description": "Obtain the report number if known",
+          "owner": "agent",
+          "can_automate": true,
+          "prompt_user": "Do you have the police report number? (May be on paperwork given at scene)",
+          "collects": ["accident.police_report.report_number"]
+        },
+        {
+          "id": "request_report",
+          "name": "Request Accident Report",
+          "description": "Submit request for accident report",
+          "owner": "user",
+          "can_automate": false,
+          "manual_fallback": "Request report from agency. Most agencies: online portal, mail request, or in-person. Fee typically $5-15.",
+          "agency_contacts": {
+            "LMPD": "https://louisville-police.org/records",
+            "KSP": "https://kentuckystatepolice.org/records"
+          },
+          "prompt_user": "Please request the accident report from {{accident.police_report.agency}}. Update when requested.",
+          "updates": ["accident.police_report.requested_date = today"]
+        },
+        {
+          "id": "receive_report",
+          "name": "Receive Accident Report",
+          "description": "Receive and upload the accident report",
+          "owner": "user",
+          "waiting_on": "external",
+          "typical_wait_days": 7,
+          "prompt_user": "Waiting for accident report. Typically takes 5-10 business days. Upload when received."
+        },
+        {
+          "id": "extract_report_info",
+          "name": "Extract Report Information",
+          "description": "Parse key information from accident report",
+          "owner": "agent",
+          "can_automate": true,
+          "skill": "/Skills/document-processing/skill.md",
+          "tool": "/Tools/document_processing/batch_convert_pdfs.py",
+          "tool_available": true,
+          "extracts": [
+            "at_fault_parties",
+            "liability.at_fault_parties[].insurance",
+            "witnesses",
+            "accident.police_report.officer_name"
+          ],
+          "prompt_user": null,
+          "agent_action": "I'll extract the key information from the police report: parties, insurance companies, witnesses, and officer notes."
+        },
+        {
+          "id": "update_case",
+          "name": "Update Case with Report Info",
+          "description": "Add extracted information to case file",
+          "owner": "agent",
+          "can_automate": true,
+          "triggers_workflow": "open_insurance_claims",
+          "agent_action": "I've extracted the following from the police report and added it to the file: [summary]. Next step: open insurance claims."
+        }
+      ],
+      "completion_criteria": {
+        "required": ["accident.police_report.received_date"],
+        "recommended": ["liability.at_fault_parties.length > 0"]
+      }
+    },
+    "open_insurance_claims": {
+      "name": "Open Insurance Claims",
+      "phase": "file_setup",
+      "description": "Open all applicable insurance claims (BI, PIP, UM, UIM)",
+      "steps": [
+        {
+          "id": "identify_claims_needed",
+          "name": "Identify Claims Needed",
+          "description": "Determine which insurance claims to open",
+          "owner": "agent",
+          "can_automate": true,
+          "agent_action": "Based on the case, I'm identifying the following claims to open:",
+          "logic": {
+            "bi_claims": "One per at-fault party with insurance",
+            "pip_claim": "Based on PIP waterfall logic (see below)",
+            "um_claim": "If at-fault has no/insufficient insurance",
+            "uim_claim": "After BI settlement if limits exhausted"
+          }
+        },
+        {
+          "id": "pip_waterfall",
+          "name": "Determine PIP Coverage",
+          "description": "Apply PIP waterfall to identify correct PIP insurer",
+          "owner": "agent",
+          "can_automate": true,
+          "jurisdiction": "Kentucky",
+          "tool": "/Tools/insurance/pip_waterfall.py",
+          "tool_available": true,
+          "tool_usage": "python /Tools/insurance/pip_waterfall.py --interactive --pretty",
+          "waterfall_logic": [
+            {
+              "step": 1,
+              "question": "Is client's name on the TITLE of the vehicle they were in?",
+              "if_yes_and_uninsured": "CLIENT DISQUALIFIED FROM PIP - STOP",
+              "if_yes_and_insured": "Open PIP with that vehicle's insurer",
+              "if_no": "Continue to step 2"
+            },
+            {
+              "step": 2,
+              "question": "Is the vehicle the client was in insured?",
+              "if_yes": "Open PIP with that vehicle's insurer",
+              "if_no": "Continue to step 3"
+            },
+            {
+              "step": 3,
+              "question": "Does the client have their own auto insurance?",
+              "if_yes": "Open PIP with client's insurer",
+              "if_no": "Continue to step 4"
+            },
+            {
+              "step": 4,
+              "question": "Does a household member have auto insurance?",
+              "if_yes": "Open PIP with household member's insurer",
+              "if_no": "Apply for KAC (Kentucky Assigned Claims)"
+            }
+          ],
+          "prompt_user": "To determine PIP coverage, I need to know: Was the client driving their own car? If not, whose car were they in and is it insured?"
+        },
+        {
+          "id": "open_bi_claim",
+          "name": "Open BI Claim(s)",
+          "description": "Open bodily injury claim with at-fault party's insurer",
+          "owner": "user",
+          "can_automate": false,
+          "repeatable": true,
+          "per_item": "liability.at_fault_parties",
+          "checklist": "/workflow_engine/checklists/bi_claim_opening.md",
+          "manual_steps": [
+            "Identify at-fault party's insurer from accident report",
+            "Add insurer info to case file",
+            "Send Letter of Representation",
+            "Request declaration page",
+            "Track acknowledgment"
+          ],
+          "prompt_user": "Please open a BI claim with {{insurance_company}}. Follow the BI Claim Opening checklist at /workflow_engine/checklists/bi_claim_opening.md",
+          "templates": {
+            "lor": "/forms/insurance/BI/lor_to_bi_adjuster_TEMPLATE.md",
+            "dec_page_request": "/forms/insurance/BI/request_dec_page_TEMPLATE.md"
+          },
+          "skill": "/Skills/docx/SKILL.md",
+          "collects": [
+            "insurance_claims[].claim_number",
+            "insurance_claims[].adjuster_name",
+            "insurance_claims[].adjuster_phone",
+            "insurance_claims[].adjuster_email"
+          ],
+          "updates": ["insurance_claims[].status = 'opened'", "insurance_claims[].lor_sent_date = today"]
+        },
+        {
+          "id": "open_pip_claim",
+          "name": "Open PIP Claim",
+          "description": "Open PIP claim with identified insurer",
+          "owner": "user",
+          "can_automate": false,
+          "manual_steps": [
+            "Call PIP insurer claims line",
+            "Report accident",
+            "Get claim number",
+            "Get adjuster info",
+            "Send LOR and HIPAA"
+          ],
+          "prompt_user": "Please open a PIP claim with {{pip_insurer}}. Send LOR and HIPAA authorization so they can pay medical bills directly.",
+          "template": "/forms/insurance/PIP/lor_to_pip_adjuster_TEMPLATE.md"
+        },
+        {
+          "id": "send_lor",
+          "name": "Send Letters of Representation",
+          "description": "Send LOR to all insurance companies",
+          "owner": "user",
+          "can_automate": false,
+          "template": "/forms/insurance/BI/lor_to_bi_adjuster_TEMPLATE.md",
+          "prompt_user": "Send Letter of Representation to all insurance companies. Update when sent.",
+          "updates": ["insurance_claims[].lor_sent = today"]
+        },
+        {
+          "id": "track_acknowledgments",
+          "name": "Track Acknowledgments",
+          "description": "Monitor for claim acknowledgment letters and adjuster assignments",
+          "owner": "user",
+          "waiting_on": "external",
+          "typical_wait_days": 14,
+          "follow_up_days": 10,
+          "prompt_user": "Waiting for acknowledgment letters from insurance companies. Follow up if not received in 10 days.",
+          "tracking_fields": {
+            "acknowledgment_received": "boolean - true when any acknowledgment received",
+            "acknowledgment_type": "string - 'letter' | 'phone' | 'email'",
+            "acknowledgment_date": "date - when acknowledgment received",
+            "adjuster_name": "string - current adjuster's name",
+            "adjuster_phone": "string - adjuster's phone number",
+            "adjuster_email": "string - adjuster's email address"
+          },
+          "follow_up_schedule": {
+            "day_14": "Phone follow-up if no acknowledgment",
+            "day_21": "Send second LOR via certified mail",
+            "day_30": "Consider insurance commissioner complaint"
+          },
+          "adjuster_change_note": "When new adjuster assigned: UPDATE case file immediately, do not just file the letter"
+        }
+      ],
+      "completion_criteria": {
+        "required": ["all_bi_claims_opened", "pip_claim_opened_or_na"],
+        "recommended": ["all_claims_acknowledged"]
+      }
+    },
+    "medical_provider_setup": {
+      "name": "Medical Provider Setup",
+      "phase": "file_setup",
+      "description": "Add all medical providers to case file",
+      "repeatable": true,
+      "triggered_by": ["intake", "client_check_in", "referral"],
+      "steps": [
+        {
+          "id": "collect_provider_info",
+          "name": "Collect Provider Information",
+          "description": "Gather provider contact details",
+          "owner": "agent",
+          "can_automate": true,
+          "collects": [
+            "medical_providers[].name",
+            "medical_providers[].type",
+            "medical_providers[].contact"
+          ],
+          "prompt_user": "What is the provider's name, type (ER, chiropractor, orthopedic, etc.), and contact information?"
+        },
+        {
+          "id": "collect_treatment_dates",
+          "name": "Collect Treatment Dates",
+          "description": "Document treatment timeline",
+          "owner": "agent",
+          "can_automate": true,
+          "collects": [
+            "medical_providers[].first_visit",
+            "medical_providers[].status"
+          ],
+          "prompt_user": "When did the client first see this provider? Are they still treating there or is treatment complete?"
+        },
+        {
+          "id": "collect_injuries_treated",
+          "name": "Document Injuries Treated",
+          "description": "Note which injuries this provider is treating",
+          "owner": "agent",
+          "can_automate": true,
+          "collects": ["medical_providers[].injuries_treated"],
+          "prompt_user": "What injuries is this provider treating?"
+        }
+      ],
+      "completion_criteria": {
+        "required": [
+          "medical_providers[].name",
+          "medical_providers[].first_visit",
+          "medical_providers[].status"
+        ]
+      }
+    },
+    "client_check_in": {
+      "name": "Client Check-In",
+      "phase": "treatment",
+      "description": "Bi-weekly check-in with client during treatment",
+      "recurring": true,
+      "frequency_days": 14,
+      "until_condition": "demand_sent",
+      "steps": [
+        {
+          "id": "contact_client",
+          "name": "Contact Client",
+          "description": "Reach out to client for status update",
+          "owner": "agent",
+          "can_automate": true,
+          "contact_method": "client.preferred_contact",
+          "prompt_user": "Time for bi-weekly client check-in. I'll prepare questions.",
+          "questions": [
+            "Are you still treating with your medical providers?",
+            "Have you seen any new doctors or specialists?",
+            "Any new symptoms or changes in your condition?",
+            "Have you been able to return to work?",
+            "Any updates on [outstanding items from File Setup]?"
+          ]
+        },
+        {
+          "id": "document_responses",
+          "name": "Document Responses",
+          "description": "Record client's responses",
+          "owner": "agent",
+          "can_automate": true,
+          "updates": [
+            "last_client_contact = today",
+            "notes.add(check_in_summary)"
+          ]
+        },
+        {
+          "id": "trigger_new_provider",
+          "name": "Add New Providers",
+          "description": "If client mentions new providers, add them",
+          "owner": "agent",
+          "can_automate": true,
+          "condition": "client_mentioned_new_provider",
+          "triggers_workflow": "medical_provider_setup"
+        },
+        {
+          "id": "schedule_next",
+          "name": "Schedule Next Check-In",
+          "description": "Add next check-in to calendar",
+          "owner": "agent",
+          "can_automate": true,
+          "skill": "/Skills/calendar-scheduling/skill.md",
+          "tool": "/Tools/calendar/calendar_add_event.py",
+          "tool_available": true
+        }
+      ],
+      "completion_criteria": {
+        "required": ["last_client_contact updated"]
+      }
+    },
+    "request_records_bills": {
+      "name": "Request Records & Bills",
+      "phase": "treatment",
+      "description": "Request medical records and bills from providers",
+      "triggered_by": ["provider_treatment_complete", "demand_preparation"],
+      "repeatable": true,
+      "per_item": "medical_providers",
+      "steps": [
+        {
+          "id": "prepare_request",
+          "name": "Prepare Records Request",
+          "description": "Generate HIPAA-compliant records request",
+          "owner": "agent",
+          "can_automate": true,
+          "condition": "documents.hipaa.status == 'signed'",
+          "skill": "/Skills/docx/SKILL.md",
+          "template": "/forms/medical_requests/medical_records_request_TEMPLATE.md",
+          "template_certified": "/forms/medical_requests/medical_records_request_TEMPLATE.md",
+          "note": "If in litigation, request CERTIFIED records"
+        },
+        {
+          "id": "send_request",
+          "name": "Send Records Request",
+          "description": "Send request to provider",
+          "owner": "user",
+          "can_automate": false,
+          "methods": ["fax", "mail", "provider_portal"],
+          "prompt_user": "Please send records request to {{provider.name}} via fax ({{provider.contact.fax}}) or mail. Update when sent.",
+          "updates": ["medical_providers[].records.requested_date = today"]
+        },
+        {
+          "id": "track_records",
+          "name": "Track Records Receipt",
+          "description": "Monitor for records and bills",
+          "owner": "user",
+          "waiting_on": "external",
+          "typical_wait_days": 21,
+          "follow_up_days": 14,
+          "prompt_user": "Waiting for records from {{provider.name}}. Follow up if not received in 14 days."
+        },
+        {
+          "id": "receive_records",
+          "name": "Receive and Process Records",
+          "description": "Upload and process received records",
+          "owner": "agent",
+          "can_automate": true,
+          "skill": "/Skills/import-case-documents/skill.md",
+          "tool": "/Tools/document_processing/batch_convert_pdfs.py",
+          "tool_available": true,
+          "updates": [
+            "medical_providers[].records.received_date = today",
+            "medical_providers[].records.file_path = uploaded_path"
+          ],
+          "triggers_workflow": "update_medical_chronology"
+        }
+      ],
+      "completion_criteria": {
+        "required": [
+          "medical_providers[].records.received_date",
+          "medical_providers[].bills.received_date"
+        ]
+      }
+    },
+    "gather_demand_materials": {
+      "name": "Gather Demand Materials",
+      "phase": "demand_in_progress",
+      "description": "Collect all materials needed for demand package",
+      "steps": [
+        {
+          "id": "verify_all_records",
+          "name": "Verify All Records Received",
+          "description": "Check that all medical records are in",
+          "owner": "agent",
+          "can_automate": true,
+          "check_function": "check_all_records_received",
+          "if_incomplete": "List missing records and trigger requests"
+        },
+        {
+          "id": "verify_all_bills",
+          "name": "Verify All Bills Received",
+          "description": "Check that all medical bills are in",
+          "owner": "agent",
+          "can_automate": true,
+          "check_function": "check_all_bills_received",
+          "if_incomplete": "List missing bills and trigger requests"
+        },
+        {
+          "id": "calculate_specials",
+          "name": "Calculate Special Damages",
+          "description": "Total all medical bills and expenses",
+          "owner": "agent",
+          "can_automate": true,
+          "updates": ["financials.total_medical_bills"]
+        },
+        {
+          "id": "identify_liens",
+          "name": "Identify All Liens",
+          "description": "Identify health insurance and other liens",
+          "owner": "agent",
+          "can_automate": true,
+          "triggers_workflow": "lien_identification",
+          "prompt_user": "What health insurance does the client have? I'll identify any potential liens."
+        },
+        {
+          "id": "collect_wage_loss",
+          "name": "Collect Wage Loss Documentation",
+          "description": "Gather wage loss evidence if applicable",
+          "owner": "user",
+          "can_automate": false,
+          "condition": "client.employer.missed_work == true",
+          "documents_needed": [
+            "Off-work notes from doctor",
+            "Pay stubs (pre and post accident)",
+            "Tax returns or W-2s",
+            "Employer verification letter"
+          ],
+          "prompt_user": "Client missed work. Please gather: off-work notes, pay stubs, and employer verification of lost wages."
+        },
+        {
+          "id": "complete_chronology",
+          "name": "Complete Medical Chronology",
+          "description": "Finalize medical chronology for demand",
+          "owner": "agent",
+          "can_automate": true,
+          "skill": "/Skills/medical-chronology/skill.md",
+          "tools": [
+            "/Tools/medical_chronology/chronology_generate_pdf.py",
+            "/Tools/medical_chronology/chronology_merge_with_records.py"
+          ],
+          "tool_available": true
+        }
+      ],
+      "completion_criteria": {
+        "required": [
+          "all_records_received OR attorney_override",
+          "all_bills_received OR attorney_override",
+          "medical_chronology_complete"
+        ],
+        "recommended": [
+          "all_liens_identified",
+          "wage_loss_documented"
+        ]
+      }
+    },
+    "draft_demand": {
+      "name": "Draft Demand",
+      "phase": "demand_in_progress",
+      "description": "Draft the demand letter",
+      "steps": [
+        {
+          "id": "prepare_draft",
+          "name": "Prepare Demand Draft",
+          "description": "Generate demand letter using template and case data",
+          "owner": "agent",
+          "can_automate": true,
+          "skill": "/Skills/docx/SKILL.md",
+          "tool": "demand_letter_generator",
+          "tool_available": false,
+          "template": "/forms/demand_letter_TEMPLATE.md",
+          "example": "/forms/demand_letter_mills_example.md",
+          "sections": [
+            "introduction",
+            "facts_of_accident",
+            "duties_breached",
+            "injuries_narrative",
+            "treatment_narrative",
+            "cpt_icd_codes",
+            "special_damages_summary",
+            "demand_amount"
+          ],
+          "manual_fallback": "Draft demand letter using template. Include: introduction, facts, breach of duty, injuries, treatment, medical specials with codes, and demand amount (typically policy limits)."
+        },
+        {
+          "id": "attach_exhibits",
+          "name": "Compile Exhibits",
+          "description": "Attach supporting documents",
+          "owner": "agent",
+          "can_automate": true,
+          "exhibits": [
+            "Medical records (all providers)",
+            "Medical bills (itemized)",
+            "Medical chronology",
+            "Accident report",
+            "Photos (vehicle, injuries, scene)",
+            "Wage loss documentation (if applicable)"
+          ]
+        },
+        {
+          "id": "attorney_review",
+          "name": "Attorney Review",
+          "description": "Attorney reviews and approves demand",
+          "owner": "user",
+          "can_automate": false,
+          "requires_attorney_decision": true,
+          "prompt_user": "Demand draft prepared. Please review and approve. Consider: Is demand amount appropriate? Are all arguments included? Any strategic changes?"
+        },
+        {
+          "id": "finalize_demand",
+          "name": "Finalize Demand Package",
+          "description": "Finalize demand letter and exhibits",
+          "owner": "agent",
+          "can_automate": true,
+          "updates": ["documents.demand_letter.status = 'prepared'"]
+        }
+      ],
+      "completion_criteria": {
+        "required": ["demand_letter_approved_by_attorney"]
+      }
+    },
+    "send_demand": {
+      "name": "Send Demand",
+      "phase": "demand_in_progress",
+      "description": "Send demand to insurance adjuster(s)",
+      "steps": [
+        {
+          "id": "identify_recipients",
+          "name": "Identify Recipients",
+          "description": "Determine who receives demand",
+          "owner": "agent",
+          "can_automate": true,
+          "logic": "Send to all BI adjusters. If defense attorney involved, send to attorney and copy adjuster.",
+          "collects": ["demand_recipients"]
+        },
+        {
+          "id": "send_demand",
+          "name": "Send Demand Package",
+          "description": "Send demand via certified mail or email",
+          "owner": "user",
+          "can_automate": false,
+          "methods": ["certified_mail", "email", "fax"],
+          "prompt_user": "Please send the demand package to {{adjuster.name}} at {{adjuster.email}} or via certified mail. Track the certified mail number.",
+          "updates": [
+            "insurance_claims[].demand_sent = today",
+            "insurance_claims[].demand_amount = demand_amount"
+          ]
+        },
+        {
+          "id": "notify_client",
+          "name": "Notify Client",
+          "description": "Inform client demand has been sent",
+          "owner": "agent",
+          "can_automate": true,
+          "message_template": "Good news - we've sent the demand letter to {{insurance_company}}. They typically respond within 30 days. I'll keep you updated on any offers."
+        },
+        {
+          "id": "set_follow_up",
+          "name": "Set Follow-Up",
+          "description": "Schedule follow-up if no response",
+          "owner": "agent",
+          "can_automate": true,
+          "skill": "/Skills/calendar-scheduling/skill.md",
+          "tool": "/Tools/calendar/calendar_add_event.py",
+          "tool_available": true,
+          "follow_up_days": 30
+        }
+      ],
+      "completion_criteria": {
+        "required": ["demand_sent_to_all_bi_adjusters"]
+      },
+      "next_phase": "negotiation"
+    },
+    "negotiate_claim": {
+      "name": "Negotiate Claim",
+      "phase": "negotiation",
+      "description": "Negotiate settlement with insurance",
+      "steps": [
+        {
+          "id": "receive_response",
+          "name": "Receive Response",
+          "description": "Receive and document insurance response",
+          "owner": "user",
+          "waiting_on": "external",
+          "prompt_user": "Waiting for response from insurance. They may: make an offer, request more information, or deny the claim. Update when you hear back."
+        },
+        {
+          "id": "document_offer",
+          "name": "Document Offer",
+          "description": "Record offer details",
+          "owner": "agent",
+          "can_automate": true,
+          "collects": [
+            "insurance_claims[].offers[].date",
+            "insurance_claims[].offers[].amount",
+            "insurance_claims[].offers[].notes"
+          ],
+          "prompt_user": "What was their offer? Any conditions or notes from the adjuster?"
+        },
+        {
+          "id": "calculate_net",
+          "name": "Calculate Net to Client",
+          "description": "Calculate what client would receive from this offer",
+          "owner": "agent",
+          "can_automate": true,
+          "calculation": {
+            "settlement": "offer_amount",
+            "attorney_fee": "offer_amount * fee_percentage",
+            "expenses": "case_expenses",
+            "liens": "total_liens",
+            "net_to_client": "offer_amount - attorney_fee - expenses - liens"
+          }
+        },
+        {
+          "id": "evaluate_offer",
+          "name": "Evaluate Offer",
+          "description": "Analyze offer against case value",
+          "owner": "user",
+          "can_automate": false,
+          "requires_attorney_decision": true,
+          "considerations": [
+            "Offer vs. policy limits",
+            "Offer vs. medical specials",
+            "Liability strength",
+            "Jury appeal",
+            "Litigation costs if rejected"
+          ],
+          "prompt_user": "Offer is ${{offer_amount}}. Net to client would be ~${{net_to_client}}. Policy limits are ${{limits}}. Recommend: accept, counter, or reject?"
+        },
+        {
+          "id": "communicate_with_client",
+          "name": "Communicate with Client",
+          "description": "Discuss offer with client",
+          "owner": "user",
+          "can_automate": false,
+          "prompt_user": "Discuss the offer with client. Explain: offer amount, what they'd net after fees/liens, and your recommendation. Get their input."
+        },
+        {
+          "id": "respond_to_offer",
+          "name": "Respond to Offer",
+          "description": "Send response to insurance",
+          "owner": "user",
+          "can_automate": false,
+          "options": ["accept", "counter", "reject"],
+          "prompt_user": "Based on client input, please respond to the offer. If countering, what amount?"
+        }
+      ],
+      "repeatable": true,
+      "completion_criteria": {
+        "one_of": [
+          "settlement_reached",
+          "negotiation_failed_proceed_to_litigation",
+          "negotiation_failed_return_to_treatment"
+        ]
+      }
+    },
+    "settlement_processing": {
+      "name": "Settlement Processing",
+      "phase": "settlement",
+      "description": "Finalize settlement and distribute funds",
+      "steps": [
+        {
+          "id": "prepare_settlement_statement",
+          "name": "Prepare Settlement Statement",
+          "description": "Calculate settlement distribution and generate DocuSign-ready statement",
+          "owner": "agent",
+          "can_automate": true,
+          "tool": "/Tools/settlement/settlement_calculator.py",
+          "tool_available": true,
+          "tool_usage": "python /Tools/settlement/settlement_calculator.py --from-json /case/settlement_data.json --output-md /Reports/settlement_statement.md",
+          "includes": [
+            "Gross settlement amount",
+            "Attorney fee calculation",
+            "Medical bills with reductions",
+            "Case expenses",
+            "Lien payments with reductions",
+            "Net to client"
+          ],
+          "output": "/Reports/settlement_statement.md"
+        },
+        {
+          "id": "prepare_auth_to_settle",
+          "name": "Prepare Authorization to Settle",
+          "description": "Generate authorization form for client signature",
+          "owner": "agent",
+          "can_automate": true,
+          "skill": "/Skills/docx/SKILL.md",
+          "template": "/forms/intake/authorization_to_settle_TEMPLATE.md",
+          "docusign_ready": true
+        },
+        {
+          "id": "client_signs_auth",
+          "name": "Client Signs Authorization",
+          "description": "Get client signature on settlement authorization",
+          "owner": "user",
+          "can_automate": false,
+          "prompt_user": "Send Authorization to Settle to client for signature. Include the settlement statement showing their net amount.",
+          "updates": ["documents.settlement_auth.status = 'signed'"]
+        },
+        {
+          "id": "confirm_with_adjuster",
+          "name": "Confirm Settlement with Adjuster",
+          "description": "Notify adjuster of accepted settlement",
+          "owner": "user",
+          "can_automate": false,
+          "prompt_user": "Contact adjuster to confirm we're accepting the settlement. Request they send the release."
+        },
+        {
+          "id": "receive_release",
+          "name": "Receive Release",
+          "description": "Receive release from insurance company",
+          "owner": "user",
+          "waiting_on": "external",
+          "prompt_user": "Waiting for release from insurance. Update when received."
+        },
+        {
+          "id": "client_signs_release",
+          "name": "Client Signs Release",
+          "description": "Get client signature on release",
+          "owner": "user",
+          "can_automate": false,
+          "prompt_user": "Send release to client for signature via DocuSign.",
+          "updates": ["documents.release.status = 'signed'"]
+        },
+        {
+          "id": "return_release",
+          "name": "Return Release",
+          "description": "Send signed release back to insurance",
+          "owner": "user",
+          "can_automate": false,
+          "prompt_user": "Send signed release back to insurance company. Request they send the settlement check."
+        },
+        {
+          "id": "receive_check",
+          "name": "Receive Settlement Check",
+          "description": "Receive and deposit settlement check",
+          "owner": "user",
+          "waiting_on": "external",
+          "prompt_user": "Waiting for settlement check. When received, deposit to client trust account."
+        },
+        {
+          "id": "pay_liens",
+          "name": "Pay Liens",
+          "description": "Pay all outstanding liens",
+          "owner": "user",
+          "can_automate": false,
+          "condition": "liens.length > 0",
+          "prompt_user": "Pay all liens from settlement. Update each lien with payment date and amount."
+        },
+        {
+          "id": "distribute_funds",
+          "name": "Distribute Funds",
+          "description": "Write distribution checks per settlement statement",
+          "owner": "user",
+          "can_automate": false,
+          "prompt_user": "Write checks: attorney fee, case expenses, and client net. Get client to pick up or mail their check."
+        }
+      ],
+      "completion_criteria": {
+        "required": [
+          "documents.settlement_auth.status == 'signed'",
+          "documents.release.status == 'signed'",
+          "client_paid"
+        ]
+      }
+    },
+    "lien_identification": {
+      "name": "Lien Identification",
+      "phase": "treatment",
+      "description": "Identify all potential liens on the case",
+      "steps": [
+        {
+          "id": "identify_health_insurance",
+          "name": "Identify Health Insurance Liens",
+          "description": "Determine health insurance subrogation rights",
+          "owner": "agent",
+          "can_automate": true,
+          "questions": [
+            "What health insurance does the client have?",
+            "Is it through an employer (ERISA plan)?",
+            "Private market plan?",
+            "Medicare or Medicaid?"
+          ],
+          "prompt_user": "What health insurance does the client have? Is it through their employer or a private plan?"
+        },
+        {
+          "id": "check_medicare",
+          "name": "Check Medicare Status",
+          "description": "Determine if Medicare beneficiary",
+          "owner": "agent",
+          "can_automate": true,
+          "condition": "client.age >= 65 OR client.on_disability",
+          "if_medicare": "Create Medicare lien, send Medicare LOR"
+        },
+        {
+          "id": "check_medicaid",
+          "name": "Check Medicaid Status",
+          "description": "Determine if Medicaid recipient",
+          "owner": "agent",
+          "can_automate": true,
+          "if_medicaid": "Create Medicaid lien"
+        },
+        {
+          "id": "send_lien_lors",
+          "name": "Send Lien Letters of Rep",
+          "description": "Send LOR to all lien holders",
+          "owner": "user",
+          "can_automate": false,
+          "skill": "/Skills/docx/SKILL.md",
+          "templates": {
+            "humana": "/forms/liens/initial_lien_request_TEMPLATE.md",
+            "health_plan": "/forms/liens/initial_lien_request_TEMPLATE.md",
+            "medicare": "/forms/liens/initial_lien_request_TEMPLATE.md",
+            "workers_comp": "/forms/liens/initial_lien_request_TEMPLATE.md"
+          },
+          "prompt_user": "Please send Letter of Representation to {{lien_holder}}. Request conditional lien amount."
+        },
+        {
+          "id": "track_conditional_amounts",
+          "name": "Track Conditional Amounts",
+          "description": "Monitor for conditional lien amounts",
+          "owner": "user",
+          "waiting_on": "external",
+          "prompt_user": "Waiting for conditional lien amounts from lien holders. Update when received."
+        }
+      ],
+      "completion_criteria": {
+        "required": ["all_liens_identified"],
+        "recommended": ["all_conditional_amounts_received"]
+      }
+    },
+    "close_case": {
+      "name": "Close Case",
+      "phase": "closed",
+      "description": "Final case closure and archiving",
+      "steps": [
+        {
+          "id": "verify_complete",
+          "name": "Verify All Complete",
+          "description": "Confirm all settlement/verdict obligations fulfilled",
+          "owner": "agent",
+          "can_automate": true,
+          "checks": [
+            "All liens paid",
+            "Client received funds",
+            "All parties released"
+          ]
+        },
+        {
+          "id": "send_final_letter",
+          "name": "Send Final Letter",
+          "description": "Send closing letter to client",
+          "owner": "user",
+          "can_automate": false,
+          "skill": "/Skills/email-management/skill.md",
+          "template": "forms/case_closing_letter_template.docx",
+          "prompt_user": "Send final letter to client thanking them and confirming case is closed.",
+          "gap_note": "Case closing letter template needed"
+        },
+        {
+          "id": "request_review",
+          "name": "Request Review",
+          "description": "Request client review if appropriate",
+          "owner": "user",
+          "can_automate": false,
+          "condition": "good_outcome AND good_client_relationship",
+          "prompt_user": "If appropriate, request a Google review from the client."
+        },
+        {
+          "id": "archive_file",
+          "name": "Archive File",
+          "description": "Move file to archive storage",
+          "owner": "user",
+          "can_automate": false,
+          "retention_years": 5,
+          "prompt_user": "Archive the physical and digital file. Retain for minimum 5 years."
+        }
+      ],
+      "completion_criteria": {
+        "required": ["file_archived"]
+      }
+    }
+  },
+  "workflow_dependencies": {
+    "intake": {
+      "triggers": ["send_documents_for_signature", "medical_provider_setup"],
+      "requires": []
+    },
+    "accident_report": {
+      "triggers": ["open_insurance_claims"],
+      "requires": ["intake"]
+    },
+    "open_insurance_claims": {
+      "triggers": [],
+      "requires": ["accident_report OR insurance_info_from_client"]
+    },
+    "request_records_bills": {
+      "triggers": [],
+      "requires": ["documents.hipaa.signed", "medical_provider_setup"]
+    },
+    "gather_demand_materials": {
+      "triggers": ["draft_demand"],
+      "requires": ["treatment_complete OR early_demand_trigger"]
+    },
+    "draft_demand": {
+      "triggers": ["send_demand"],
+      "requires": ["gather_demand_materials"]
+    },
+    "send_demand": {
+      "triggers": ["negotiate_claim"],
+      "requires": ["draft_demand", "attorney_approval"]
+    },
+    "settlement_processing": {
+      "triggers": ["close_case OR lien_resolution"],
+      "requires": ["settlement_reached"]
+    }
+  }
+}

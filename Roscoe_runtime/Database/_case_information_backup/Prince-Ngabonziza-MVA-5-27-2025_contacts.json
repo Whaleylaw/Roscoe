@@ -1,0 +1,39 @@
+[
+  {
+    "jsonb_agg": [
+      {
+        "email": "",
+        "phone": "502-705-2996",
+        "roles": [
+          "client"
+        ],
+        "address": "3005 Frank lee Ave, Louisville, KY 40216",
+        "full_name": "Prince Ngabonziza",
+        "contact_id": 2117,
+        "project_name": "Prince-Ngabonziza-MVA-5-27-2025"
+      },
+      {
+        "email": "rcscentral@ehi.com",
+        "phone": "314-949-2200 (for claims already setup)",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "600 Corporate Park Dr, Saint Louis, MO 63105",
+        "full_name": "Elco Insurance",
+        "contact_id": 495,
+        "project_name": "Prince-Ngabonziza-MVA-5-27-2025"
+      },
+      {
+        "email": "starliteinjurycare963@outlook.com",
+        "phone": "502-991-2056",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "1169 Eastern Pkwy, , Louisville, KY 40217",
+        "full_name": "Starlite Chiropractic",
+        "contact_id": 219,
+        "project_name": "Prince-Ngabonziza-MVA-5-27-2025"
+      }
+    ]
+  }
+]

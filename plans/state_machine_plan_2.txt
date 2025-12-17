@@ -1,0 +1,36 @@
+Integration Plan: Roscoe Runtime Workflow Engine
+The goal is to replace the ad-hoc logic in workflow_state_computer.py with the robust StateMachine from Roscoe_runtime, ensuring case_context_middleware continues to function by receiving formatted markdown status updates.
+
+1. Architecture
+Source Code: Roscoe_runtime/workflow_engine will be migrated to src/roscoe/workflow_engine.
+Data Source: workspace_paralegal (Database, Tools) will remain the active data source.
+Adapter: src/roscoe/core/workflow_state_computer.py will be rewritten to act as an adapter between case_context_middleware and the new StateMachine.
+2. Migration Steps
+Step 1: Migrate Workflow Engine Code
+Copy the following components from Roscoe_runtime/workflow_engine to src/roscoe/workflow_engine:
+
+orchestrator/state_machine.py -> src/roscoe/workflow_engine/orchestrator/state_machine.py
+_adapters/case_data.py -> src/roscoe/workflow_engine/_adapters/case_data.py
+schemas/*.json -> src/roscoe/workflow_engine/schemas/
+Step 2: Configure Environment
+Ensure src/roscoe/workflow_engine/_adapters/case_data.py and state_machine.py can locate workspace_paralegal.
+
+Update case_data.py to prioritize WORKSPACE_DIR or ROSCOE_ROOT env vars.
+Step 3: Rewrite workflow_state_computer.py
+Refactor src/roscoe/core/workflow_state_computer.py to:
+
+ Set ROSCOE_ROOT environment variable to point to workspace_paralegal.
+ Import StateMachine from roscoe.workflow_engine.orchestrator.state_machine.
+ Implement compute_workflow_state(project_name):
+  Initialize StateMachine.
+  Load case_state (or generate initial state if missing).
+  Sync state with CaseData (using workspace_paralegal data).
+  Generate status message using state_machine.format_status_for_agent.
+  Return a compatible object (e.g. SimpleNamespace(formatted_status=msg, ...)).
+3. Verification
+Verify case_context_middleware can successfully import and call compute_workflow_state.
+Verify StateMachine correctly loads data from workspace_paralegal/Database.
+Verify markdown output contains correct case status.
+Files to Modify/Create
+src/roscoe/workflow_engine/ (New directory structure)
+src/roscoe/core/workflow_state_computer.py (Rewrite)

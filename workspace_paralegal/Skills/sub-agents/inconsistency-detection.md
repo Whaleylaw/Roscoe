@@ -71,7 +71,7 @@ Review the medical chronology and visit summaries to identify inconsistencies, d
 ## Output Location
 
 **Save your consistency analysis to:**
-- **File:** `/Reports/inconsistencies.md`
+- **File:** `Reports/inconsistencies.md`
 - **Format:** Markdown with all sections above
 
 ## Important Notes

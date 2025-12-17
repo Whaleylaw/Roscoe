@@ -91,7 +91,7 @@ Use grep tool to search records for phrases like:
 ## Output Location
 
 **Save your missing records analysis to:**
-- **File:** `/Reports/missing_records.md`
+- **File:** `Reports/missing_records.md`
 - **Format:** Markdown with all sections above
 
 ## Important Notes

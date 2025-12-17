@@ -1,0 +1,72 @@
+[
+  {
+    "jsonb_agg": [
+      {
+        "email": "dustinmeade87@gmail.com",
+        "phone": "502-799-3729",
+        "roles": [
+          "client"
+        ],
+        "address": "512 Mabel Lane, Scottsburg, IN 47170",
+        "full_name": "Dustin Meade",
+        "contact_id": 2078,
+        "project_name": "Dustin-Meade-MVA-03-09-2025"
+      },
+      {
+        "email": "kara_hoskins@progressive.com",
+        "phone": "865-291-6948",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Kara Hoskins",
+        "contact_id": 1489,
+        "project_name": "Dustin-Meade-MVA-03-09-2025"
+      },
+      {
+        "email": null,
+        "phone": "502-909-9687",
+        "roles": [
+          "adjuster"
+        ],
+        "address": null,
+        "full_name": "Katie Mills",
+        "contact_id": 1686,
+        "project_name": "Dustin-Meade-MVA-03-09-2025"
+      },
+      {
+        "email": null,
+        "phone": "(800) 776-4737",
+        "roles": [
+          "insurance_company"
+        ],
+        "address": "9520 Ormbsy Station Rd, Ste 200, louisville, KY 40223",
+        "full_name": "Progressive Insurance Company",
+        "contact_id": 863,
+        "project_name": "Dustin-Meade-MVA-03-09-2025"
+      },
+      {
+        "email": null,
+        "phone": "502-890-3090",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "5908 Preston Hwy, Louisville, KY 40219",
+        "full_name": "1st Diagnostics",
+        "contact_id": 271,
+        "project_name": "Dustin-Meade-MVA-03-09-2025"
+      },
+      {
+        "email": null,
+        "phone": "(812) 414-2273",
+        "roles": [
+          "medical_provider"
+        ],
+        "address": "1255 N Gardner St., Scottsburg, IN 47170",
+        "full_name": "Scott County Chiropractic",
+        "contact_id": 906,
+        "project_name": "Dustin-Meade-MVA-03-09-2025"
+      }
+    ]
+  }
+]

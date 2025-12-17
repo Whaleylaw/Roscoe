@@ -1,0 +1,143 @@
+{
+  "case_id": "",
+  "client": {
+    "name": "",
+    "dob": null,
+    "ssn_last_four": null,
+    "phone": "",
+    "phone_alt": null,
+    "email": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "KY",
+      "zip": ""
+    },
+    "preferred_contact": "phone",
+    "employer": null
+  },
+  "accident": {
+    "date": "",
+    "time": null,
+    "type": "mva",
+    "location": {
+      "description": "",
+      "street": "",
+      "city": "",
+      "state": "KY",
+      "county": ""
+    },
+    "description": "",
+    "police_report": {
+      "report_number": null,
+      "agency": null,
+      "officer_name": null,
+      "requested_date": null,
+      "received_date": null,
+      "file_path": null
+    },
+    "photos": []
+  },
+  "injuries": [],
+  "liability": {
+    "status": "unknown",
+    "client_fault_percentage": 0,
+    "notes": "",
+    "at_fault_parties": []
+  },
+  "witnesses": [],
+  "insurance_claims": [],
+  "medical_providers": [],
+  "liens": [],
+  "current_phase": "file_setup",
+  "phases": {
+    "file_setup": {
+      "status": "in_progress",
+      "entered_at": "",
+      "completed_at": null,
+      "workflows": {
+        "intake": {
+          "status": "in_progress",
+          "started_at": "",
+          "completed_at": null,
+          "waiting_on": null,
+          "steps": {}
+        }
+      },
+      "exit_criteria": {
+        "retainer_signed": false,
+        "hipaa_signed": false,
+        "all_claims_opened": false,
+        "police_report_obtained": false,
+        "all_providers_added": false
+      }
+    }
+  },
+  "pending_items": [],
+  "deadlines": [],
+  "statute_of_limitations": {
+    "base_date": "",
+    "jurisdiction": "Kentucky",
+    "claim_type": "mva",
+    "years": 2,
+    "deadline": "",
+    "days_remaining": 0,
+    "status": "safe",
+    "pip_extension": null
+  },
+  "financials": {
+    "total_medical_bills": 0,
+    "total_medical_paid": 0,
+    "total_liens": 0,
+    "expenses": 0,
+    "fee_percentage": 0.33,
+    "fee_type": "standard"
+  },
+  "documents": {
+    "retainer": {
+      "required": true,
+      "status": "not_sent",
+      "sent_date": null,
+      "signed_date": null,
+      "file_path": null
+    },
+    "hipaa": {
+      "required": true,
+      "status": "not_sent",
+      "sent_date": null,
+      "signed_date": null,
+      "file_path": null
+    },
+    "medicare_auth": {
+      "required": false,
+      "status": "not_applicable"
+    },
+    "wage_auth": {
+      "required": false,
+      "status": "not_applicable"
+    },
+    "demand_letter": {
+      "required": false,
+      "status": "not_applicable"
+    },
+    "settlement_auth": {
+      "required": false,
+      "status": "not_applicable"
+    },
+    "release": {
+      "required": false,
+      "status": "not_applicable"
+    }
+  },
+  "litigation": null,
+  "notes": [],
+  "created_at": "",
+  "updated_at": "",
+  "last_client_contact": null,
+  "next_action": {
+    "description": "Collect client information",
+    "owner": "agent",
+    "due_date": null,
+    "blocking": false
+  }
+}

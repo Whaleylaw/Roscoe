@@ -1,0 +1,75 @@
+{
+  "category": "settlement",
+  "description": "Settlement calculation and distribution tools for PI cases",
+  "tools": [
+    {
+      "name": "settlement_calculator",
+      "file": "settlement_calculator.py",
+      "description": "Calculate settlement distributions and generate DocuSign-ready settlement statements. Handles attorney fees, medical bills with reductions, expenses, and liens.",
+      "usage": "python /Tools/settlement/settlement_calculator.py [options]",
+      "examples": [
+        "python /Tools/settlement/settlement_calculator.py --interactive --pretty",
+        "python /Tools/settlement/settlement_calculator.py --from-json /case/settlement_data.json --output-md /Reports/settlement_statement.md",
+        "python /Tools/settlement/settlement_calculator.py --client-name \"John Doe\" --settlement 50000 --fee-percent 33.33 --bills '[{\"provider\": \"Dr. Smith\", \"amount\": 5000, \"reduction\": 1000}]' --liens '[{\"holder\": \"Medicare\", \"amount\": 3000, \"reduction\": 500}]' --pretty"
+      ],
+      "when_to_use": [
+        "Case has settled - need to calculate distribution",
+        "Preparing settlement statement for client signature",
+        "Need to show client their net recovery",
+        "Sending settlement statement via DocuSign"
+      ],
+      "input_format": {
+        "client_name": "string (required)",
+        "settlement_amount": "number (required)",
+        "attorney_fee_percent": "number (default: 33.33)",
+        "medical_bills": [
+          {
+            "provider": "string",
+            "amount": "number",
+            "reduction": "number (optional)",
+            "pip_payment": "number (optional)",
+            "health_ins_payment": "number (optional)"
+          }
+        ],
+        "expenses": [
+          {
+            "description": "string",
+            "amount": "number"
+          }
+        ],
+        "liens": [
+          {
+            "holder": "string",
+            "amount": "number",
+            "reduction": "number (optional)"
+          }
+        ]
+      },
+      "output_format": {
+        "json": "Complete calculation with all values",
+        "markdown": "DocuSign-ready settlement statement with /sig1/, /date1/ anchors",
+        "summary": "Plain text summary for client communication"
+      },
+      "calculations_performed": [
+        "Attorney fee = Settlement × Fee%",
+        "Net Medical Bills = Gross Bills - Reductions",
+        "Net Liens = Gross Liens - Reductions",
+        "Total to Client = Settlement - Fee - Net Bills - Expenses - Net Liens"
+      ],
+      "docusign_anchors": {
+        "/sig1/": "Client signature",
+        "/date1/": "Date signed"
+      },
+      "dependencies": [],
+      "environment_requirements": [],
+      "cost": "FREE"
+    }
+  ],
+  "workflow_integration": {
+    "phase": "settlement",
+    "workflow": "settlement_processing",
+    "step": "prepare_settlement_statement",
+    "next_step": "Send markdown to DocuSign: python /Tools/esignature/docusign_send.py"
+  }
+}
+

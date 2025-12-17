@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roscoe"
+version = "0.1.0"
+description = "Dynamic Skills-Based Paralegal AI Agent"
+requires-python = ">=3.11"
+dependencies = [
+    "deepagents>=0.2.0",
+    "langchain",
+    "langgraph",
+    "langgraph-cli[inmem]",
+    "langchain-anthropic",
+    "langchain-google-genai",
+    "langchain-openai>=1.0.0",  # Requires 1.0+ for use_responses_api support
+    "langchain-community",
+    "langchain-experimental",
+    "tavily-python",
+    "sentence-transformers",
+    "pdfplumber",
+    "PyPDF2",
+    "pdf2image",
+    "pytesseract",
+    "pandas",
+    "numpy",
+    "slack-sdk",
+    "slack-bolt",
+    "python-dotenv",
+    "docker>=7.0.0",
+    "rapidfuzz",  # Fuzzy string matching for case context middleware
+    "google-api-python-client",  # Google Calendar/Gmail API client
+    "google-auth-oauthlib",  # Google OAuth2 authentication
+    "google-auth-httplib2",  # Google auth HTTP transport
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["roscoe", "roscoe.core", "roscoe.agents", "roscoe.agents.paralegal", "roscoe.agents.coding"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md", "*.txt", "*.json"]

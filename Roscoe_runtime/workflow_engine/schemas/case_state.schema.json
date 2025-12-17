@@ -1,0 +1,1200 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PI Case State",
+  "description": "Complete state tracking for a personal injury case",
+  "type": "object",
+  "required": [
+    "case_id",
+    "client",
+    "accident",
+    "current_phase",
+    "phases",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "Unique case identifier (format: YYYY-NNNN)",
+      "pattern": "^\\d{4}-\\d{4,}$"
+    },
+    "client": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "dob": {
+          "type": "string",
+          "format": "date"
+        },
+        "ssn_last_four": {
+          "type": "string",
+          "pattern": "^\\d{4}$"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "phone_alt": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "street": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "zip": {
+              "type": "string"
+            }
+          }
+        },
+        "preferred_contact": {
+          "type": "string",
+          "enum": [
+            "phone",
+            "email",
+            "text",
+            "mail"
+          ]
+        },
+        "employer": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "position": {
+              "type": "string"
+            },
+            "missed_work": {
+              "type": "boolean"
+            },
+            "return_to_work_date": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        }
+      }
+    },
+    "accident": {
+      "type": "object",
+      "required": [
+        "date",
+        "type"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "mva",
+            "premises",
+            "slip_fall",
+            "dog_bite",
+            "product",
+            "medical_malpractice",
+            "other"
+          ]
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "street": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "county": {
+              "type": "string"
+            }
+          }
+        },
+        "description": {
+          "type": "string"
+        },
+        "police_report": {
+          "type": "object",
+          "properties": {
+            "report_number": {
+              "type": "string"
+            },
+            "agency": {
+              "type": "string"
+            },
+            "officer_name": {
+              "type": "string"
+            },
+            "officer_badge": {
+              "type": "string"
+            },
+            "requested_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "received_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "file_path": {
+              "type": "string"
+            }
+          }
+        },
+        "photos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": [
+                  "vehicle",
+                  "scene",
+                  "injuries",
+                  "property"
+                ]
+              },
+              "file_path": {
+                "type": "string"
+              },
+              "date_taken": {
+                "type": "string",
+                "format": "date"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "injuries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "body_part": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "minor",
+              "moderate",
+              "severe",
+              "permanent"
+            ]
+          },
+          "pre_existing": {
+            "type": "boolean"
+          },
+          "pre_existing_notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "liability": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "clear",
+            "disputed",
+            "comparative",
+            "unknown"
+          ]
+        },
+        "client_fault_percentage": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "notes": {
+          "type": "string"
+        },
+        "at_fault_parties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              },
+              "fault_percentage": {
+                "type": "integer"
+              },
+              "contact": {
+                "$ref": "#/definitions/contact"
+              },
+              "insurance": {
+                "$ref": "#/definitions/insurance_policy"
+              }
+            }
+          }
+        }
+      }
+    },
+    "witnesses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string"
+          },
+          "statement_obtained": {
+            "type": "boolean"
+          },
+          "statement_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "statement_file": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "insurance_claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/insurance_claim"
+      }
+    },
+    "medical_providers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/medical_provider"
+      }
+    },
+    "liens": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/lien"
+      }
+    },
+    "current_phase": {
+      "type": "string",
+      "enum": [
+        "phase_0_onboarding",
+        "phase_1_file_setup",
+        "phase_2_treatment",
+        "phase_3_demand",
+        "phase_4_negotiation",
+        "phase_5_settlement",
+        "phase_6_lien",
+        "phase_7_litigation",
+        "phase_8_closed"
+      ]
+    },
+    "phases": {
+      "type": "object",
+      "description": "State of each phase Litigation uses nested subphases under phases.phase_7_litigation.subphases.{phase_7_1_complaint,...}.",
+      "additionalProperties": {
+        "$ref": "#/definitions/phase_state"
+      }
+    },
+    "pending_items": {
+      "type": "array",
+      "description": "Items waiting on user or external parties",
+      "items": {
+        "$ref": "#/definitions/pending_item"
+      }
+    },
+    "deadlines": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/deadline"
+      }
+    },
+    "statute_of_limitations": {
+      "type": "object",
+      "properties": {
+        "base_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "jurisdiction": {
+          "type": "string"
+        },
+        "claim_type": {
+          "type": "string"
+        },
+        "years": {
+          "type": "integer"
+        },
+        "deadline": {
+          "type": "string",
+          "format": "date"
+        },
+        "pip_extension": {
+          "type": "object",
+          "properties": {
+            "last_pip_payment": {
+              "type": "string",
+              "format": "date"
+            },
+            "extended_deadline": {
+              "type": "string",
+              "format": "date"
+            },
+            "hard_cap_deadline": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "days_remaining": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "safe",
+            "warning",
+            "critical",
+            "expired"
+          ]
+        }
+      }
+    },
+    "financials": {
+      "type": "object",
+      "properties": {
+        "total_medical_bills": {
+          "type": "number"
+        },
+        "total_medical_paid": {
+          "type": "number"
+        },
+        "total_liens": {
+          "type": "number"
+        },
+        "expenses": {
+          "type": "number"
+        },
+        "fee_percentage": {
+          "type": "number"
+        },
+        "fee_type": {
+          "type": "string",
+          "enum": [
+            "standard",
+            "litigation",
+            "reduced"
+          ]
+        },
+        "settlement_amount": {
+          "type": "number"
+        },
+        "attorney_fee": {
+          "type": "number"
+        },
+        "net_to_client": {
+          "type": "number"
+        }
+      }
+    },
+    "documents": {
+      "type": "object",
+      "properties": {
+        "retainer": {
+          "$ref": "#/definitions/document_status"
+        },
+        "hipaa": {
+          "$ref": "#/definitions/document_status"
+        },
+        "medicare_auth": {
+          "$ref": "#/definitions/document_status"
+        },
+        "wage_auth": {
+          "$ref": "#/definitions/document_status"
+        },
+        "demand_letter": {
+          "$ref": "#/definitions/document_status"
+        },
+        "settlement_auth": {
+          "$ref": "#/definitions/document_status"
+        },
+        "release": {
+          "$ref": "#/definitions/document_status"
+        },
+        "client_info_sheet": {
+          "type": "object",
+          "properties": {
+            "required": {
+              "type": "boolean"
+            },
+            "status": {
+              "type": "string"
+            },
+            "sent_at": {
+              "type": "string"
+            },
+            "signed_at": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "litigation": {
+      "type": "object",
+      "description": "Litigation-specific tracking (if case in suit)",
+      "properties": {
+        "case_number": {
+          "type": "string"
+        },
+        "court": {
+          "type": "string"
+        },
+        "judge": {
+          "type": "string"
+        },
+        "filed_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "service": {
+          "type": "object",
+          "properties": {
+            "method": {
+              "type": "string"
+            },
+            "served_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "answer_due": {
+              "type": "string",
+              "format": "date"
+            },
+            "answer_received": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "discovery_deadline": {
+          "type": "string",
+          "format": "date"
+        },
+        "trial_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "mediation_date": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "author": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "last_client_contact": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_action": {
+      "type": "object",
+      "description": "What needs to happen next",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string",
+          "enum": [
+            "agent",
+            "user",
+            "client",
+            "external"
+          ]
+        },
+        "due_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "blocking": {
+          "type": "boolean"
+        }
+      }
+    },
+    "current_subphase": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Current litigation subphase when current_phase is phase_7_litigation",
+      "enum": [
+        null,
+        "phase_7_1_complaint",
+        "phase_7_2_discovery",
+        "phase_7_3_mediation",
+        "phase_7_4_trial_prep",
+        "phase_7_5_trial"
+      ]
+    }
+  },
+  "definitions": {
+    "contact": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "fax": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+    },
+    "insurance_policy": {
+      "type": "object",
+      "properties": {
+        "company": {
+          "type": "string"
+        },
+        "policy_number": {
+          "type": "string"
+        },
+        "limits_per_person": {
+          "type": "number"
+        },
+        "limits_per_accident": {
+          "type": "number"
+        }
+      }
+    },
+    "insurance_claim": {
+      "type": "object",
+      "required": [
+        "type",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "bi",
+            "pip",
+            "um",
+            "uim",
+            "medpay",
+            "property"
+          ]
+        },
+        "insurance_company": {
+          "type": "string"
+        },
+        "policy_number": {
+          "type": "string"
+        },
+        "claim_number": {
+          "type": "string"
+        },
+        "policy_holder": {
+          "type": "string"
+        },
+        "limits": {
+          "type": "object",
+          "properties": {
+            "per_person": {
+              "type": "number"
+            },
+            "per_accident": {
+              "type": "number"
+            },
+            "total": {
+              "type": "number"
+            }
+          }
+        },
+        "adjuster": {
+          "$ref": "#/definitions/contact"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_opened",
+            "pending_info",
+            "opened",
+            "acknowledged",
+            "in_negotiation",
+            "settled",
+            "denied",
+            "exhausted"
+          ]
+        },
+        "lor_sent": {
+          "type": "string",
+          "format": "date"
+        },
+        "lor_acknowledged": {
+          "type": "string",
+          "format": "date"
+        },
+        "demand_sent": {
+          "type": "string",
+          "format": "date"
+        },
+        "demand_amount": {
+          "type": "number"
+        },
+        "offers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": "string",
+                "format": "date"
+              },
+              "amount": {
+                "type": "number"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "settlement_amount": {
+          "type": "number"
+        },
+        "settlement_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "medical_provider": {
+      "type": "object",
+      "required": [
+        "name",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "ems",
+            "er",
+            "hospital",
+            "primary_care",
+            "orthopedic",
+            "neurologist",
+            "chiropractor",
+            "physical_therapy",
+            "pain_management",
+            "surgeon",
+            "imaging",
+            "other"
+          ]
+        },
+        "contact": {
+          "$ref": "#/definitions/contact"
+        },
+        "injuries_treated": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "first_visit": {
+          "type": "string",
+          "format": "date"
+        },
+        "last_visit": {
+          "type": "string",
+          "format": "date"
+        },
+        "next_appointment": {
+          "type": "string",
+          "format": "date"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "active",
+            "complete",
+            "discharged",
+            "referred_out"
+          ]
+        },
+        "records": {
+          "type": "object",
+          "properties": {
+            "requested_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "received_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "file_path": {
+              "type": "string"
+            },
+            "certified": {
+              "type": "boolean"
+            }
+          }
+        },
+        "bills": {
+          "type": "object",
+          "properties": {
+            "requested_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "received_date": {
+              "type": "string",
+              "format": "date"
+            },
+            "file_path": {
+              "type": "string"
+            },
+            "total_billed": {
+              "type": "number"
+            },
+            "total_paid": {
+              "type": "number"
+            },
+            "paid_by": {
+              "type": "string"
+            }
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "lien": {
+      "type": "object",
+      "required": [
+        "type",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "medicare",
+            "medicaid",
+            "health_insurance",
+            "erisa",
+            "hospital_statutory",
+            "workers_comp",
+            "pip_subrogation",
+            "other"
+          ]
+        },
+        "lien_holder": {
+          "type": "string"
+        },
+        "administrator": {
+          "type": "string"
+        },
+        "contact": {
+          "$ref": "#/definitions/contact"
+        },
+        "case_reference": {
+          "type": "string"
+        },
+        "lor_sent": {
+          "type": "string",
+          "format": "date"
+        },
+        "conditional_amount": {
+          "type": "number"
+        },
+        "conditional_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "final_requested": {
+          "type": "string",
+          "format": "date"
+        },
+        "final_amount": {
+          "type": "number"
+        },
+        "final_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "negotiated_amount": {
+          "type": "number"
+        },
+        "reduction_strategy": {
+          "type": "string"
+        },
+        "paid_amount": {
+          "type": "number"
+        },
+        "paid_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "identified",
+            "lor_sent",
+            "awaiting_conditional",
+            "conditional_received",
+            "awaiting_final",
+            "final_received",
+            "in_negotiation",
+            "negotiated",
+            "paid",
+            "disputed"
+          ]
+        },
+        "federal_preemption": {
+          "type": "boolean"
+        },
+        "erisa_plan": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "phase_state": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_started",
+            "in_progress",
+            "complete",
+            "skipped"
+          ]
+        },
+        "entered_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "completed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "workflows": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/workflow_state"
+          }
+        },
+        "exit_criteria": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "workflow_state": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_started",
+            "in_progress",
+            "waiting_on_user",
+            "waiting_on_external",
+            "complete",
+            "skipped",
+            "blocked"
+          ]
+        },
+        "started_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "completed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "waiting_on": {
+          "type": "string"
+        },
+        "waiting_since": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "blocking_reason": {
+          "type": "string"
+        },
+        "steps": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string"
+              },
+              "completed_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pending_item": {
+      "type": "object",
+      "required": [
+        "id",
+        "description",
+        "owner",
+        "created_at"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string",
+          "enum": [
+            "user",
+            "client",
+            "insurance",
+            "provider",
+            "court",
+            "lien_holder",
+            "other"
+          ]
+        },
+        "phase": {
+          "type": "string"
+        },
+        "workflow": {
+          "type": "string"
+        },
+        "blocking": {
+          "type": "boolean"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "due_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "follow_up_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "follow_up_count": {
+          "type": "integer"
+        },
+        "resolved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "deadline": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "sol",
+            "discovery",
+            "expert_disclosure",
+            "trial",
+            "motion",
+            "response",
+            "follow_up",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "critical",
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "reminder_days": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "completed",
+            "missed"
+          ]
+        }
+      }
+    },
+    "document_status": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_applicable",
+            "not_sent",
+            "sent",
+            "signed",
+            "filed"
+          ]
+        },
+        "sent_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "signed_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "file_path": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

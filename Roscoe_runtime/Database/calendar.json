@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "description": "Agent calendar for tracking deadlines, tasks, and events linked to cases",
+  "events": [
+    {
+      "id": "evt-001",
+      "title": "Discuss settlement offer with client",
+      "date": "2025-12-03",
+      "time": null,
+      "event_type": "meeting",
+      "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+      "priority": "high",
+      "status": "completed",
+      "notes": "Settlement discussion - need medical overview completed first",
+      "prerequisite_for": null,
+      "depends_on": [
+        "evt-003"
+      ],
+      "created_at": "2025-12-01T20:00:00Z",
+      "created_by": "user",
+      "completed_at": "2025-12-09T15:17:00Z"
+    },
+    {
+      "id": "evt-002",
+      "title": "Send counter offer to defense counsel",
+      "date": "2025-12-04",
+      "time": null,
+      "event_type": "deadline",
+      "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+      "priority": "high",
+      "status": "completed",
+      "notes": "Counter offer following client meeting - Case settled for $35,000",
+      "prerequisite_for": null,
+      "depends_on": [
+        "evt-001"
+      ],
+      "created_at": "2025-12-01T20:00:00Z",
+      "created_by": "user",
+      "completed_at": "2025-12-09T15:17:00Z"
+    },
+    {
+      "id": "evt-003",
+      "title": "Complete comprehensive medical overview",
+      "date": "2025-12-02",
+      "time": null,
+      "event_type": "task",
+      "project_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+      "priority": "high",
+      "status": "completed",
+      "notes": "Must be completed before client meeting on 12/3",
+      "prerequisite_for": [
+        "evt-001"
+      ],
+      "depends_on": null,
+      "created_at": "2025-12-01T20:00:00Z",
+      "created_by": "user",
+      "completed_at": "2025-12-09T15:17:00Z"
+    },
+    {
+      "id": "evt-004",
+      "title": "FOLLOW UP: Sadler Policy Limits Demand - Response Deadline",
+      "date": "2025-12-23",
+      "time": "09:00",
+      "event_type": "deadline",
+      "project_name": "James-Sadler-MVA-4-07-2023",
+      "priority": "high",
+      "status": "pending",
+      "notes": "Policy limits demand of $25,000 sent to defense counsel Allison L. Rief (allison@dilbeckandmyers.com). Response deadline is 5:00 PM EST on 12/23/25. Check for response and follow up if none received. Document response or non-response. Advise attorney on next steps (potential lawsuit filing, bad faith considerations).",
+      "prerequisite_for": null,
+      "depends_on": null,
+      "created_at": "2025-12-09T22:16:00Z",
+      "created_by": "Roscoe (AI Paralegal)",
+      "completed_at": null
+    },
+    {
+      "id": "evt-005",
+      "title": "Follow up on State Farm settlement check if not received - Wilson family",
+      "date": "2025-12-15",
+      "time": null,
+      "event_type": "task",
+      "project_name": "Jasmine-Wilson-MVA-10-12-2025",
+      "priority": "high",
+      "status": "pending",
+      "notes": "State Farm check for $50k sent 12/2/2025. Call Katrina Mishoe (901-384-5820) if check not received. Claim #17-91R0-83K. Allocation: Jasmine $20k, Julian $5k, Carmelita $25k",
+      "prerequisite_for": null,
+      "depends_on": null,
+      "created_at": "2025-12-10T19:53:01.460172Z",
+      "created_by": "agent"
+    }
+  ]
+}

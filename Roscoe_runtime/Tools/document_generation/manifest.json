@@ -1,0 +1,80 @@
+{
+  "name": "document_generation",
+  "description": "Tools for generating professional documents on firm letterhead",
+  "version": "1.0.0",
+  "tools": [
+    {
+      "name": "letterhead_generator",
+      "file": "letterhead_generator.py",
+      "function": "generate_letterhead_document",
+      "description": "Takes markdown content and generates a professional document on firm letterhead with optional PDF conversion",
+      "parameters": {
+        "markdown_path": {
+          "type": "string",
+          "description": "Path to markdown file (mutually exclusive with markdown_content)",
+          "required": false
+        },
+        "markdown_content": {
+          "type": "string", 
+          "description": "Markdown string content (mutually exclusive with markdown_path)",
+          "required": false
+        },
+        "output_path": {
+          "type": "string",
+          "description": "Where to save the output .docx file",
+          "required": true
+        },
+        "convert_to_pdf": {
+          "type": "boolean",
+          "description": "Whether to also generate a PDF version",
+          "default": true
+        },
+        "letterhead_template": {
+          "type": "string",
+          "description": "Custom letterhead template path (uses firm default if not specified)",
+          "required": false
+        },
+        "replacements": {
+          "type": "object",
+          "description": "Dictionary of placeholder replacements (e.g., {\"{{CLIENT_NAME}}\": \"John Smith\"})",
+          "required": false
+        }
+      },
+      "returns": {
+        "status": "success or error",
+        "docx_path": "Path to generated .docx file",
+        "pdf_path": "Path to generated .pdf file (if convert_to_pdf=true)",
+        "errors": "List of any errors or warnings"
+      },
+      "examples": [
+        {
+          "description": "Generate demand letter from markdown file",
+          "code": "generate_letterhead_document(markdown_path='/path/to/demand.md', output_path='/path/to/demand.docx')"
+        },
+        {
+          "description": "Generate letter from markdown string with custom replacements",
+          "code": "generate_letterhead_document(markdown_content='Dear {{ADJUSTER}}...', output_path='/path/to/letter.docx', replacements={'{{ADJUSTER}}': 'Jane Doe'})"
+        }
+      ],
+      "dependencies": [
+        "LibreOffice (pre-installed in Docker execution environment)"
+      ]
+    }
+  ],
+  "supported_placeholders": [
+    "{{TODAY_LONG}} - Full date (January 15, 2024)",
+    "{{TODAY_SHORT}} - Short date (01/15/2024)",
+    "{{TODAY}} - Alias for TODAY_LONG",
+    "{{DATE}} - Alias for TODAY_LONG",
+    "Custom placeholders can be passed via replacements parameter"
+  ],
+  "markdown_support": [
+    "Headers (# ## ###)",
+    "Bold (**text** or __text__)",
+    "Italic (*text* or _text_)",
+    "Paragraphs (blank line separated)",
+    "Bullet lists (- or *)",
+    "Numbered lists (1. 2. 3.)"
+  ]
+}
+

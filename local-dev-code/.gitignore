@@ -1,0 +1,108 @@
+# ===========================================
+# Python
+# ===========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+uv.lock
+
+# ===========================================
+# LangGraph
+# ===========================================
+.langgraph_api/
+
+# ===========================================
+# Runtime Workspace (GCS mount - NOT in git)
+# ===========================================
+workspace_paralegal/
+workspace_coding/
+
+# ===========================================
+# Documentation & Notes (NOT essential for runtime)
+# ===========================================
+docs/
+documents/
+
+# ===========================================
+# Old/Duplicate Files at Root (moved to src/roscoe/)
+# ===========================================
+/agent.py
+/models.py
+/prompts.py
+/tools.py
+/sub_agents.py
+/middleware.py
+/skill_middleware.py
+/medical_sub_agents.py
+/roscoe_prompt.md
+/# GRAPH_RECURSION_LIMIT.md
+/__init__.py
+
+# ===========================================
+# Old UI (superseded by roscoe-ui)
+# ===========================================
+deep-agents-ui-main/
+
+# ===========================================
+# Claude Skills (runtime in workspace, not repo)
+# ===========================================
+.claude/SKILLS/
+.claude/skills-main/
+.claude/claude-old.md
+
+# ===========================================
+# Secrets & Local Config
+# ===========================================
+.env
+.env.local
+.mcp.json
+credentials.json
+token.json
+client_secret_*.json
+.claude/KEYS.txt
+.claude/settings.local.json
+
+# ===========================================
+# Docker Volumes & Data
+# ===========================================
+postgres_data/
+redis_data/
+
+# ===========================================
+# Build Artifacts & Temp Files
+# ===========================================
+wrapper-error.md
+error report.md
+DEPLOYMENT_COMPLETE.md
+QUICK_START.txt
+langraph.example.json
+
+# ===========================================
+# Media & Binary Files
+# ===========================================
+*.pdf
+*.mp3
+*.wav
+*.csv
+sean-may-*.md
+
+# ===========================================
+# Node.js
+# ===========================================
+node_modules/
+
+# ===========================================
+# macOS
+# ===========================================
+.DS_Store
+._*
+
+# ===========================================
+# IDE & Tools
+# ===========================================
+.vscode/
+.playwright-mcp/

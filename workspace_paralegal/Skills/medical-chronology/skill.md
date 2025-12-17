@@ -15,7 +15,7 @@ Use this skill when:
 ## Prerequisites
 
 Before using this skill, verify:
-- Medical record extraction reports exist in `/Reports/extractions/`
+- Medical record extraction reports exist in `Reports/extractions/`
 - If no extractions exist, you must run record extractions first
 
 ## What This Skill Does
@@ -38,7 +38,7 @@ ls /Reports/extractions/
 
 ### Step 2: Read All Extraction Reports
 
-Read every extraction report from `/Reports/extractions/`:
+Read every extraction report from `Reports/extractions/`:
 ```bash
 ls /Reports/extractions/
 # Read each file individually
@@ -130,14 +130,14 @@ This enables quick filtering, sorting, and data analysis.
 
 ### Step 6: Save Outputs
 
-Save two files to `/Reports/` directory:
+Save two files to `Reports/` directory:
 
-1. **`/Reports/chronology.md`** - Full narrative chronology with gaps, milestones, attorney notes
-2. **`/Reports/visits_summary.md`** - Structured tabular data for all visits and bills
+1. **`Reports/chronology.md`** - Full narrative chronology with gaps, milestones, attorney notes
+2. **`Reports/visits_summary.md`** - Structured tabular data for all visits and bills
 
 ### Step 7: Create Chronology Summary
 
-After saving, read `/Reports/chronology.md` and provide user with:
+After saving, read `Reports/chronology.md` and provide user with:
 
 1. **Executive Summary:**
    - Total number of visits
@@ -258,7 +258,7 @@ If same visit appears in multiple extraction reports:
 - Cite both sources
 
 ### Incident Date
-If available, read `/Reports/case_facts.md` to get incident date. Use this to calculate:
+If available, read `Reports/case_facts.md` to get incident date. Use this to calculate:
 - Days from incident to first treatment
 - Timeline relative to accident
 
@@ -279,8 +279,8 @@ You have access to:
 ## File Path Conventions
 
 **ALWAYS use workspace-relative paths:**
-- ✅ CORRECT: `/Reports/extractions/file1_extraction.md`
-- ✅ CORRECT: `/Reports/chronology.md`
+- ✅ CORRECT: `Reports/extractions/file1_extraction.md`
+- ✅ CORRECT: `Reports/chronology.md`
 - ❌ WRONG: `/Volumes/X10 Pro/Roscoe/workspace/Reports/chronology.md`
 
 All paths start with `/` and are relative to workspace root.
@@ -306,7 +306,7 @@ All paths start with `/` and are relative to workspace root.
 ✅ Treatment gaps > 30 days identified and flagged
 ✅ Key milestones highlighted
 ✅ Financial summary complete
-✅ Both narrative and structured outputs saved to `/Reports/`
+✅ Both narrative and structured outputs saved to `Reports/`
 ✅ User receives executive summary with file locations
 
 ## Example Usage
@@ -314,14 +314,14 @@ All paths start with `/` and are relative to workspace root.
 **User:** "Create a medical chronology for this case"
 
 **Your workflow:**
-1. Check `/Reports/extractions/` - 24 extraction reports found
+1. Check `Reports/extractions/` - 24 extraction reports found
 2. Read all 24 reports, extract 87 visits and 45 billing entries
 3. Sort chronologically from 2024-01-15 to 2024-11-20
 4. Identify 3 treatment gaps (45 days, 31 days, 62 days)
 5. Calculate totals: $34,521 in bills, 87 visits, 12 providers
 6. Build narrative chronology with all visits in timeline order
 7. Create structured table with all data
-8. Save to `/Reports/chronology.md` and `/Reports/visits_summary.md`
+8. Save to `Reports/chronology.md` and `Reports/visits_summary.md`
 9. Present executive summary to user with key findings
 
 **Result:** User receives comprehensive medical chronology ready for settlement demand letter, deposition prep, or trial preparation.

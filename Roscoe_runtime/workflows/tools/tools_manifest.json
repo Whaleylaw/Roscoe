@@ -1,0 +1,185 @@
+{
+  "version": "1.0.0",
+  "description": "Registry of all tools available for workflow execution. Tools are copied here for central access.",
+  "base_path": "workflows/tools",
+  "roscoe_root_env": "ROSCOE_ROOT",
+  "tools": [
+    {
+      "id": "create_case",
+      "name": "Create Case",
+      "file": "create_case.py",
+      "path": "create_case.py",
+      "category": "case_management",
+      "description": "Creates complete folder structure for a new PI case including all JSON tracking files. Takes client name, case type (MVA/SF/WC), and accident date.",
+      "usage": "python tools/create_case.py or import create_case(client_name, case_type, accident_date)",
+      "inputs": ["client_name", "case_type", "accident_date"],
+      "outputs": ["case_folder", "JSON files"],
+      "when_to_use": [
+        "Starting a new personal injury case",
+        "User says 'new client', 'new file', 'new case'",
+        "Phase 0 case_setup workflow"
+      ]
+    },
+    {
+      "id": "pip_waterfall",
+      "name": "PIP Waterfall Determination",
+      "file": "pip_waterfall.py",
+      "path": "pip_waterfall.py",
+      "category": "insurance",
+      "description": "Determine correct PIP insurer using Kentucky's statutory waterfall priority rules. Handles disqualification (uninsured owner) and KAC referral scenarios.",
+      "usage": "python tools/pip_waterfall.py --interactive",
+      "inputs": ["client_on_title", "vehicle_insured", "client_has_insurance", "household_has_insurance"],
+      "outputs": ["pip_insurer", "recommendation", "next_steps"],
+      "when_to_use": [
+        "Opening PIP claim on MVA case",
+        "Determining which insurer provides PIP coverage",
+        "Phase 1 insurance_pip_claim workflow"
+      ]
+    },
+    {
+      "id": "lexis_crash_order",
+      "name": "LexisNexis Crash Report Ordering",
+      "file": "lexis_crash_order.py",
+      "path": "lexis_crash_order.py",
+      "category": "document_retrieval",
+      "description": "Automates ordering police/crash reports from LexisNexis BuyCrash using Playwright browser automation.",
+      "usage": "python tools/lexis_crash_order.py --report-number NUMBER",
+      "inputs": ["report_number", "last_name"],
+      "outputs": ["crash_report_pdf"],
+      "when_to_use": [
+        "Ordering police/accident report",
+        "Have BuyCrash slip with report number",
+        "Phase 1 accident_report workflow"
+      ]
+    },
+    {
+      "id": "read_pdf",
+      "name": "PDF Reader",
+      "file": "read_pdf.py",
+      "path": "read_pdf.py",
+      "category": "document_processing",
+      "description": "Extract text and tables from PDFs to Markdown. Uses tiered OCR pipeline: PDFPlumber (text) → PyTesseract (scanned).",
+      "usage": "python tools/read_pdf.py document.pdf [--output-format markdown]",
+      "inputs": ["pdf_path"],
+      "outputs": ["markdown_text", "tables"],
+      "when_to_use": [
+        "Reading PDF content",
+        "Extracting text from scanned documents",
+        "Processing medical records",
+        "Multiple workflows"
+      ]
+    },
+    {
+      "id": "docusign_send",
+      "name": "DocuSign Send Document",
+      "file": "docusign_send.py",
+      "path": "docusign_send.py",
+      "category": "esignature",
+      "description": "Send document for electronic signature via DocuSign. Uses JWT authentication.",
+      "usage": "python tools/docusign_send.py document.pdf --signer-email EMAIL --signer-name NAME",
+      "inputs": ["document_path", "signer_email", "signer_name"],
+      "outputs": ["envelope_id", "status"],
+      "when_to_use": [
+        "Send intake documents for signature",
+        "Send retainer/fee agreement",
+        "Send HIPAA authorization",
+        "Phase 0 document_collection workflow"
+      ]
+    },
+    {
+      "id": "docusign_config",
+      "name": "DocuSign Configuration",
+      "file": "docusign_config.py",
+      "path": "docusign_config.py",
+      "category": "esignature",
+      "description": "DocuSign API configuration and authentication helper.",
+      "usage": "import docusign_config",
+      "inputs": [],
+      "outputs": ["api_client", "account_id"],
+      "when_to_use": [
+        "Setting up DocuSign integration",
+        "Supporting docusign_send tool"
+      ]
+    },
+    {
+      "id": "chronology_tools",
+      "name": "Medical Chronology Tools",
+      "file": "chronology_tools.py",
+      "path": "chronology_tools.py",
+      "category": "medical",
+      "description": "Tools for creating and managing medical chronologies from records.",
+      "usage": "import chronology_tools",
+      "inputs": ["medical_records", "case_data"],
+      "outputs": ["chronology_markdown", "chronology_data"],
+      "when_to_use": [
+        "Building medical chronology",
+        "Organizing treatment history",
+        "Phase 2 medical_chronology workflow",
+        "Phase 3 gather_demand_materials workflow"
+      ]
+    },
+    {
+      "id": "medical_request_generator",
+      "name": "Medical Request Generator",
+      "file": "medical_request_generator.py",
+      "path": "medical_request_generator.py",
+      "category": "document_generation",
+      "description": "Generate medical records/bills request packages using client's signed HIPAA.",
+      "usage": "python tools/medical_request_generator.py --case CASE --provider PROVIDER [--records-request] [--bills-request]",
+      "inputs": ["case_name", "provider_name"],
+      "outputs": ["request_package_pdf"],
+      "when_to_use": [
+        "Requesting medical records from provider",
+        "Requesting medical bills",
+        "Phase 2 request_records_bills workflow"
+      ]
+    },
+    {
+      "id": "generate_demand_pdf",
+      "name": "Demand PDF Generator",
+      "file": "generate_demand_pdf.py",
+      "path": "generate_demand_pdf.py",
+      "category": "document_generation",
+      "description": "Convert filled demand letter markdown to professional PDF with letterhead and exhibits.",
+      "usage": "python tools/generate_demand_pdf.py demand.md --output demand.pdf",
+      "inputs": ["markdown_path"],
+      "outputs": ["pdf_path"],
+      "when_to_use": [
+        "Converting demand letter to PDF",
+        "Phase 3 draft_demand workflow"
+      ]
+    },
+    {
+      "id": "generate_document",
+      "name": "Unified Document Generator",
+      "file": "generate_document.py",
+      "path": "generate_document.py",
+      "category": "document_generation",
+      "description": "Unified document generation tool. Auto-detects template type, extracts context from path, generates DOCX/PDF.",
+      "usage": "python tools/generate_document.py /path/to/template.docx [--pretty]",
+      "inputs": ["template_path"],
+      "outputs": ["docx_path", "pdf_path"],
+      "when_to_use": [
+        "Generate any document from template",
+        "LOR letters, demands, complaints",
+        "Any document needing case data merged",
+        "All phases with document generation"
+      ]
+    }
+  ],
+  "tool_categories": {
+    "case_management": "Case folder creation and setup",
+    "insurance": "PIP waterfall, claim processing",
+    "document_retrieval": "Ordering crash reports, external docs",
+    "document_processing": "Reading PDFs, extracting text",
+    "document_generation": "Creating documents from templates",
+    "esignature": "DocuSign integration",
+    "medical": "Medical chronology and records tools"
+  },
+  "how_to_use": {
+    "step_1": "Read this manifest to find available tools",
+    "step_2": "Check 'when_to_use' to match your task",
+    "step_3": "Execute tool from this folder: python tools/{file}",
+    "step_4": "Process output as needed"
+  }
+}

@@ -1139,6 +1139,226 @@
       "gap_filled": "#9 Client Check-in Automation"
     },
     {
+      "name": "medical_request_generator",
+      "file": "document_generation/medical_request_generator.py",
+      "description": "Generate medical records/bills request packages using client's signed HIPAA. Can create: HIPAA only with provider filled in, HIPAA + Records Request, HIPAA + Bills Request, or all three combined. Auto-loads case data from database.",
+      "category": "document_generation",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_generation/medical_request_generator.py --case CASE_NAME --provider PROVIDER_NAME [--records-request] [--bills-request] [--hipaa-only]",
+      "examples": [
+        "python /Tools/document_generation/medical_request_generator.py --case \"Smith-MVA-01-15-2024\" --provider \"Baptist Health\" --hipaa-only --pretty",
+        "python /Tools/document_generation/medical_request_generator.py --case \"Smith-MVA-01-15-2024\" --provider \"Baptist Health\" --records-request --pretty",
+        "python /Tools/document_generation/medical_request_generator.py --case \"Smith-MVA-01-15-2024\" --provider \"Baptist Health\" --records-request --bills-request --pretty"
+      ],
+      "output_format": "JSON with status, output_path, pages, errors",
+      "when_to_use": [
+        "Need to send medical records request to a new provider",
+        "Need to send medical bills request to provider",
+        "Need to generate HIPAA authorization for specific provider",
+        "Setting up new medical provider - need records/bills request package",
+        "Workflow: medical_provider_setup requires sending initial requests"
+      ],
+      "flags": {
+        "--case": "Case/project name (required)",
+        "--provider": "Medical provider name (required)",
+        "--records-request": "Include medical records request letter",
+        "--bills-request": "Include medical bills request letter",
+        "--hipaa-only": "Only generate HIPAA with provider filled in",
+        "--output": "Output path (auto-generated if not specified)",
+        "--signed-hipaa": "Path to client's signed HIPAA (auto-detected)",
+        "--provider-address": "Override provider address",
+        "--provider-fax": "Override provider fax number",
+        "--pretty": "Pretty-print JSON output"
+      },
+      "auto_features": [
+        "Auto-loads case data (client name, DOB, SSN, accident date) from Database/",
+        "Auto-loads provider info from medical_providers.json if available",
+        "Auto-detects signed HIPAA in case folder",
+        "Auto-generates filename with date, client name, provider"
+      ],
+      "output_location": "/projects/{case}/Medical Records/{provider}/{date} - {client} - Medical Records+Bills - {provider}.pdf",
+      "dependencies": [
+        "pypdf, reportlab (pre-installed in Docker execution environment)"
+      ],
+      "cost": "FREE",
+      "token_savings": "Saves ~1500-2500 tokens per request generation",
+      "added_date": "2025-12-09",
+      "canonical_workflow": "medical_provider_setup",
+      "templates_used": [
+        "/forms/templates/2021 Whaley Medical Authorization (HIPAA) (1).pdf",
+        "/forms/templates/2023 Whaley Law Firm Medical Request Template (1).pdf",
+        "/forms/templates/2023 Whaley Initial Medical Billing Request to Provider (MBR) (1).pdf"
+      ]
+    },
+    {
+      "name": "fill_pdf_form",
+      "file": "document_generation/fill_pdf_form.py",
+      "description": "Fill out PDF forms (AcroForms) programmatically. Works with any fillable PDF - just like filling it by hand. Can list available fields, fill from command line args or JSON file.",
+      "category": "document_generation",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_generation/fill_pdf_form.py <template.pdf> <output.pdf> [--field NAME VALUE]... [--from-json fields.json]",
+      "examples": [
+        "python /Tools/document_generation/fill_pdf_form.py form.pdf --list-fields --pretty",
+        "python /Tools/document_generation/fill_pdf_form.py form.pdf filled.pdf --field \"Full Name\" \"John Smith\" --field \"Date\" \"12/9/2025\"",
+        "python /Tools/document_generation/fill_pdf_form.py form.pdf filled.pdf --from-json /path/to/values.json --pretty"
+      ],
+      "output_format": "JSON with status, filled_fields, unfilled_fields, errors",
+      "when_to_use": [
+        "Fill out HIPAA authorization forms",
+        "Fill out client intake forms",
+        "Fill out insurance claim forms",
+        "Fill out court forms (if PDF fillable)",
+        "Any fillable PDF form that needs client data inserted"
+      ],
+      "flags": {
+        "--list-fields": "List all form fields in the PDF and exit",
+        "--field NAME VALUE": "Set a field value (use multiple times)",
+        "--from-json PATH": "Load field values from JSON file",
+        "--flatten": "Make filled fields non-editable",
+        "--pretty": "Pretty-print JSON output"
+      },
+      "dependencies": [
+        "pypdf (pre-installed in Docker execution environment)"
+      ],
+      "cost": "FREE",
+      "token_savings": "Saves ~600-1000 tokens per form fill",
+      "added_date": "2025-12-09",
+      "note": "Works with AcroForm PDFs. First run --list-fields to see available fields."
+    },
+    {
+      "name": "letterhead_generator",
+      "file": "document_generation/letterhead_generator.py",
+      "description": "Generate professional documents on firm letterhead from markdown content with optional PDF conversion. Takes markdown file or string and outputs .docx (and optionally .pdf) on letterhead with logo, header, and footer preserved.",
+      "category": "document_generation",
+      "input_format": "command_line or Python import",
+      "usage": "python /Tools/document_generation/letterhead_generator.py <markdown_file> <output.docx> [--no-pdf] [--template PATH] [--replace KEY VALUE]",
+      "examples": [
+        "python /Tools/document_generation/letterhead_generator.py /path/to/demand.md /path/to/demand.docx",
+        "python /Tools/document_generation/letterhead_generator.py /path/to/letter.md /path/to/letter.docx --no-pdf",
+        "python /Tools/document_generation/letterhead_generator.py /path/to/letter.md /path/to/letter.docx --replace \"{{CLIENT_NAME}}\" \"John Smith\" --replace \"{{CLAIM_NO}}\" \"2024-12345\""
+      ],
+      "python_usage": [
+        "from document_generation import generate_letterhead_document",
+        "result = generate_letterhead_document(markdown_path='/path/to/demand.md', output_path='/path/to/demand.docx')",
+        "result = generate_letterhead_document(markdown_content='Dear {{ADJUSTER}}...', output_path='/path/to/letter.docx', replacements={'{{ADJUSTER}}': 'Jane Doe'})"
+      ],
+      "output_format": "JSON with docx_path, pdf_path, status, errors",
+      "when_to_use": [
+        "Generate demand letter from markdown draft",
+        "Create correspondence on letterhead",
+        "Convert agent-drafted content to professional document",
+        "Generate letters with automatic date insertion",
+        "Create documents with placeholder replacement"
+      ],
+      "supported_placeholders": [
+        "{{TODAY_LONG}} - Full date (December 9, 2025)",
+        "{{TODAY_SHORT}} - Short date (12/09/2025)",
+        "{{TODAY}}, {{DATE}} - Aliases for TODAY_LONG",
+        "Custom placeholders via --replace or replacements parameter"
+      ],
+      "markdown_support": [
+        "Headers (# ## ###)",
+        "Bold (**text**)",
+        "Italic (*text*)",
+        "Paragraphs (blank line separated)",
+        "Bullet lists (- or *)",
+        "Numbered lists (1. 2. 3.)"
+      ],
+      "dependencies": [
+        "LibreOffice (pre-installed in Docker execution environment)"
+      ],
+      "cost": "FREE",
+      "token_savings": "Saves ~800-1200 tokens per document generation",
+      "added_date": "2025-12-09",
+      "letterhead_template": "/workspace/forms/2021 Whaley Letterhead (1).docx"
+    },
+    {
+      "name": "template_filler",
+      "file": "document_generation/template_filler.py",
+      "description": "Fill DOCX templates (LORs, lien requests, medical requests, etc.) with case data. Auto-resolves placeholders from JSON database. Smart context detection for insurance, liens, and providers.",
+      "category": "document_generation",
+      "input_format": "command_line",
+      "usage": "python /Tools/document_generation/template_filler.py --case CASE_NAME --template TEMPLATE_ID [options]",
+      "examples": [
+        "python /Tools/document_generation/template_filler.py --case \"Smith-MVA-01-15-2024\" --template lor_pip --pretty",
+        "python /Tools/document_generation/template_filler.py --case \"Smith-MVA-01-15-2024\" --template lor_bi --insurance-type bi",
+        "python /Tools/document_generation/template_filler.py --case \"Smith-MVA-01-15-2024\" --template initial_lien_request --lien-holder \"Humana\" --injuries \"cervical strain,lumbar sprain\"",
+        "python /Tools/document_generation/template_filler.py --case \"Smith-MVA-01-15-2024\" --template thank_you_client",
+        "python /Tools/document_generation/template_filler.py --list-templates --pretty",
+        "python /Tools/document_generation/template_filler.py --case \"Smith-MVA-01-15-2024\" --show-context --pretty"
+      ],
+      "output_format": "JSON with status, docx_path, pdf_path, placeholders_filled, placeholders_missing, errors",
+      "flags": {
+        "--case": "Case/project name (required for filling)",
+        "--template": "Template ID to fill (e.g., lor_pip, lor_bi, initial_lien_request)",
+        "--insurance-type": "Insurance type (pip|bi|um) for insurance templates",
+        "--lien-holder": "Lien holder name for lien templates",
+        "--provider": "Medical provider name for medical templates",
+        "--body": "Custom body text for blank letter templates",
+        "--injuries": "Comma-separated injuries list for lien letters",
+        "--output": "Custom output path (auto-generated if not specified)",
+        "--no-pdf": "Don't generate PDF version",
+        "--list-templates": "List all available templates",
+        "--show-context": "Show available context options for a case",
+        "--pretty": "Pretty print JSON output"
+      },
+      "available_templates": [
+        "lor_pip - Letter of Representation to PIP Adjuster",
+        "lor_bi - Letter of Representation to BI Adjuster",
+        "pip_ledger_request - Request for Updated PIP Ledger",
+        "pip_direction - PIP Direction Letter",
+        "bi_declaration_request - Request for Declaration Page",
+        "blank_bi_letter - Blank Letter to BI Adjuster",
+        "blank_pip_letter - Blank Letter to PIP Adjuster",
+        "coots_letter - Coots Letter (UM/UIM statutory notice)",
+        "thank_you_client - Thank You Letter with Case Manager Assignment",
+        "initial_lien_request - Initial Lien Request",
+        "final_lien_request - Final Lien Request",
+        "medical_record_request - Medical Records Request (URR)",
+        "wc_medical_record_request - Workers Comp Medical Records Request",
+        "deposition_notice_client - Notice of Deposition to Client",
+        "declined_rep_notice - Declined Representation Notice"
+      ],
+      "auto_features": [
+        "Auto-resolves {{placeholders}} from Database/*.json files",
+        "Auto-detects insurance/lien/provider context when only one exists",
+        "Auto-generates output filename with date, client name, and context",
+        "Auto-looks up adjuster/company contact info from directory.json",
+        "Auto-creates output folder structure in projects/{case}/"
+      ],
+      "placeholder_resolution": {
+        "{{client.*}}": "Resolved from case_overview.json and clients.json",
+        "{{insurance.*}}": "Resolved from insurance.json + directory.json lookups",
+        "{{liens.*}}": "Resolved from liens.json + directory.json lookups",
+        "{{medical.provider.*}}": "Resolved from medical_providers.json + directory.json",
+        "{{litigation.*}}": "Resolved from litigation.json",
+        "{{team.role.*}}": "Resolved from static config (team_roles)",
+        "{{TODAY_LONG}}": "Current date (December 9, 2025)",
+        "{{primary}}": "Primary attorney signature block"
+      },
+      "output_location": "/projects/{case}/{category}/{date} - {client} - {template_name} - {context}.docx",
+      "dependencies": [
+        "LibreOffice for PDF conversion (pre-installed in Docker)",
+        "Uses: context_resolver.py, template_registry.json, placeholder_mapping.json"
+      ],
+      "cost": "FREE",
+      "token_savings": "Saves ~2000-4000 tokens per document - no need to include template in prompt",
+      "added_date": "2025-12-09",
+      "related_files": [
+        "/Tools/document_generation/template_registry.json - Template definitions",
+        "/Tools/document_generation/placeholder_mapping.json - Placeholder mappings",
+        "/Tools/document_generation/context_resolver.py - Context resolution logic"
+      ],
+      "when_to_use": [
+        "Generate LOR to insurance adjuster",
+        "Send lien holder correspondence",
+        "Request medical records or bills",
+        "Send thank you/welcome letter to client",
+        "Any correspondence using firm DOCX templates",
+        "When workflow suggests sending a specific letter type"
+      ]
+    },
+    {
       "name": "case_data_adapter",
       "file": "_adapters/case_data.py",
       "description": "Unified adapter for reading/writing to existing case database (medical_providers, insurance, liens, notes). Used by other tools for database integration.",

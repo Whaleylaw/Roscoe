@@ -13,13 +13,13 @@ Synthesize ALL previous analysis into a cohesive, attorney-ready medical summary
 ## Required Inputs to Review
 
 You must read all previous agent reports:
-1. **/Reports/case_facts.md** - Factual background from litigation documents
-2. **/Reports/inventory.md** - Medical records/bills inventory
-3. **/Reports/chronology.md** - Medical chronology timeline
-4. **/Reports/inconsistencies.md** - Consistency analysis
-5. **/Reports/red_flags.md** - Case weakness analysis
-6. **/Reports/causation.md** - Causation analysis
-7. **/Reports/missing_records.md** - Missing records plan
+1. **Reports/case_facts.md** - Factual background from litigation documents
+2. **Reports/inventory.md** - Medical records/bills inventory
+3. **Reports/chronology.md** - Medical chronology timeline
+4. **Reports/inconsistencies.md** - Consistency analysis
+5. **Reports/red_flags.md** - Case weakness analysis
+6. **Reports/causation.md** - Causation analysis
+7. **Reports/missing_records.md** - Missing records plan
 
 ## Output Structure
 

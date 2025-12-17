@@ -1,0 +1,79 @@
+Integrate Roscoe Runtime StateMachine into Paralegal context injection
+What we have today
+Case context injection happens in production-vm-code/src/roscoe/core/case_context_middleware.py. It lazy-imports compute_workflow_state() from roscoe.core.workflow_state_computer and injects state.formatted_status into the system prompt.
+The current production-vm-code/src/roscoe/core/workflow_state_computer.py does not use per-case workflow_state.json; it derives a status snapshot purely from data.
+Roscoe Runtime provides a real state machine at Roscoe_runtime/workflow_engine/orchestrator/state_machine.py, but it needs to be vendored into the production package and aligned with the current JSON schema IDs.
+Target behavior (your choices)
+Source of truth: projects/<CASE>/Case Information/workflow_state.json.
+Strict behavior: if that file is missing or legacy/unmigrated, do not inject workflow status (log a clear error).
+Data flow (new)
+UserMessage
+CaseContextMiddleware
+DetectCaseMention
+LoadCaseContext
+Read workflow_state.json
+StateMachine.get_case_status
+format_status_for_agent
+InjectIntoSystemPrompt
+Implementation plan
+1) Vendor Roscoe Runtime workflow engine into the production package
+Copy runtime engine code into the installable package so it exists inside the Docker mount /deps/Roscoe/src/roscoe.
+Add a new package tree:
+production-vm-code/src/roscoe/workflow_engine/ (from Roscoe_runtime/workflow_engine/)
+orchestrator/state_machine.py
+_adapters/case_data.py
+schemas/*.json (at least phase_definitions.json, workflow_definitions.json, case_state.schema.json)
+Update production-vm-code/pyproject.toml to include new packages (because it uses an explicit `packages=[...]` list).
+2) Make runtime adapters work in the production environment
+Update the vendored CaseData adapter (roscoe.workflow_engine._adapters.case_data) to resolve workspace root via existing env vars:
+Prefer WORKSPACE_DIR, then WORKSPACE_ROOT, then current runtime fallbacks.
+Ensure it reads case data from ${WORKSPACE_DIR}/Database/*.json as expected.
+3) Define the canonical workflow state file location
+Implement a small “state store” helper in the production package (new file):
+roscoe/workflow_engine/state_store.py
+get_workflow_state_path(case_id, workspace_dir) -> Path resolving:
+${WORKSPACE_DIR}/projects/<CASE>/Case Information/workflow_state.json
+load_workflow_state(case_id, workspace_dir) -> dict
+detect_legacy_workflow_state(payload) -> bool
+4) Align StateMachine validation with schema workflow IDs
+Right now, the runtime StateMachine.validate_workflow_against_data() has hardcoded checks for older IDs like open_bi_claim, while the runtime schema uses newer IDs like insurance_bi_claim.
+
+Update the vendored StateMachine to treat the schema’s IDs as first-class:
+Include insurance_bi_claim wherever open_bi_claim/open_insurance_claims logic exists.
+Include insurance_pip_claim wherever open_pip_claim logic exists.
+Include negotiate_claim wherever negotiation validation exists.
+Keep old IDs as aliases (so old states don’t break during transition).
+Update _get_data_evidence() in the same way.
+This step is key to getting “data validation / self-healing” working with the schema files you’re integrating.
+
+5) Replace workflow_state_computer.py with a thin StateMachine-backed wrapper
+Replace production-vm-code/src/roscoe/core/workflow_state_computer.py implementation so compute_workflow_state(case_id):
+Resolves WORKSPACE_DIR like it does today.
+Loads workflow_state.json from projects/<CASE>/Case Information/ (strict).
+If missing or legacy: raise a clear exception (or return None) so the middleware injects no workflow block.
+If valid: run StateMachine(...).get_case_status(case_state) and format via format_status_for_agent().
+Return an object that preserves the current middleware expectations:
+has .formatted_status (string)
+has .current_phase (string)
+6) Update CaseContextMiddleware to be explicit about strict failures
+In production-vm-code/src/roscoe/core/case_context_middleware.py, keep the lazy import, but improve logging in _compute_workflow_state():
+If workflow_state.json missing/legacy, log the exact expected path and a “run migration” hint.
+Return empty string so nothing is injected.
+7) Add an explicit migration tool (run offline, not during injection)
+Because injection is strict, you need a one-time migration to ensure every case has a valid workflow_state.json.
+
+Add a CLI script in the production codebase, e.g.:
+production-vm-code/src/roscoe/workflow_engine/scripts/migrate_workflow_state_json.py
+It should:
+Enumerate cases under ${WORKSPACE_DIR}/projects/*/Case Information/.
+For each case:
+If workflow_state.json is legacy → convert to the new case_state schema and overwrite (write backup alongside).
+If missing → (optional but recommended in practice) create a new state via StateMachine.create_new_case() and write it.
+Optionally validate output against schemas/case_state.schema.json.
+8) Keep local-dev parity
+Mirror the same changes in local-dev-code/src/roscoe/core/workflow_state_computer.py and local-dev-code/src/roscoe/core/case_context_middleware.py so local langgraph dev behaves the same as production.
+Acceptance criteria
+When a case is detected, middleware attempts to load:
+${WORKSPACE_DIR}/projects/<CASE>/Case Information/workflow_state.json
+If present + migrated, injected workflow status comes from StateMachine.format_status_for_agent().
+If missing/unmigrated, workflow status block is omitted and logs point to the missing file and migration script.

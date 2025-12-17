@@ -1,0 +1,499 @@
+{
+  "version": "1.0.0",
+  "description": "Registry of DOCX templates with placeholder patterns and required context",
+  "templates_directory": "workflows/templates",
+  "templates": [
+    {
+      "id": "lor_pip",
+      "name": "Letter of Representation - PIP Adjuster",
+      "file": "2022 Whaley LOR to PIP Adjuster(1)(1) (1).docx",
+      "category": "insurance",
+      "subcategory": "pip",
+      "required_context": [
+        "insurance_pip"
+      ],
+      "agent_input": [],
+      "description": "Initial letter of representation sent to PIP insurance adjuster",
+      "placeholders": [
+        "TODAY_LONG",
+        "insurance.insuranceAdjuster.name",
+        "insurance.insuranceCompany.addressBlock",
+        "insurance.insuranceAdjuster.email1",
+        "client.name",
+        "insurance.claimNumber",
+        "incidentDate",
+        "insurance.insuranceAdjuster.firstname",
+        "primary"
+      ],
+      "output_folder": "Letters/Insurance"
+    },
+    {
+      "id": "lor_bi",
+      "name": "Letter of Representation - BI Adjuster",
+      "file": "2022 Whaley LOR to BI Adjuster(1)(1)(1) (1).docx",
+      "category": "insurance",
+      "subcategory": "bi",
+      "required_context": [
+        "insurance_bi"
+      ],
+      "agent_input": [],
+      "description": "Initial letter of representation sent to BI (bodily injury) insurance adjuster",
+      "placeholders": [
+        "TODAY_LONG",
+        "insurance.insuranceAdjuster.name",
+        "insurance.insuranceCompany.addressBlock",
+        "insurance.insuranceAdjuster.email1",
+        "client.name",
+        "insurance.claimNumber",
+        "incidentDate",
+        "insurance.insuranceAdjuster.firstname",
+        "intake.clientInformation.name",
+        "primary"
+      ],
+      "output_folder": "Letters/Insurance"
+    },
+    {
+      "id": "pip_ledger_request",
+      "name": "Request for Updated PIP Ledger",
+      "file": "2022 Whaley Request for Updated PIP Ledger (1) (1).docx",
+      "category": "insurance",
+      "subcategory": "pip",
+      "required_context": [
+        "insurance_pip"
+      ],
+      "agent_input": [],
+      "description": "Request for updated PIP benefits ledger from insurance company",
+      "placeholders": [
+        "TODAY_LONG",
+        "insurance.insuranceAdjuster.name",
+        "insurance.insuranceCompany.addressBlock",
+        "insurance.insuranceAdjuster.email1",
+        "client.name",
+        "insurance.claimNumber",
+        "incidentDate",
+        "primary"
+      ],
+      "output_folder": "Letters/Insurance"
+    },
+    {
+      "id": "pip_direction",
+      "name": "PIP Direction Letter",
+      "file": "2023 PIP Direction Letter (1).docx",
+      "category": "insurance",
+      "subcategory": "pip",
+      "required_context": [
+        "insurance_pip"
+      ],
+      "agent_input": [
+        "direction_instructions"
+      ],
+      "description": "Letter directing PIP benefits payment",
+      "placeholders": [
+        "TODAY_LONG",
+        "insurance.insuranceAdjuster.name",
+        "insurance.insuranceCompany.addressBlock",
+        "client.name",
+        "insurance.claimNumber",
+        "incidentDate",
+        "primary"
+      ],
+      "output_folder": "Letters/Insurance"
+    },
+    {
+      "id": "bi_declaration_request",
+      "name": "Request for Declaration Page - BI Adjuster",
+      "file": "2022 Whaley Request for Declaration Page to BI Adjuster(1)(1) (1).docx",
+      "category": "insurance",
+      "subcategory": "bi",
+      "required_context": [
+        "insurance_bi"
+      ],
+      "agent_input": [],
+      "description": "Request for insurance declaration page from BI adjuster",
+      "placeholders": [
+        "TODAY_LONG",
+        "insurance.insuranceAdjuster.name",
+        "insurance.insuranceCompany.addressBlock",
+        "insurance.insuranceAdjuster.email1",
+        "client.name",
+        "insurance.claimNumber",
+        "incidentDate",
+        "primary"
+      ],
+      "output_folder": "Letters/Insurance"
+    },
+    {
+      "id": "blank_bi_letter",
+      "name": "Blank Letter to BI Adjuster",
+      "file": "2022 Whaley Blank Ltr to BI Adjuster(1) (1) (1).docx",
+      "category": "insurance",
+      "subcategory": "bi",
+      "required_context": [
+        "insurance_bi"
+      ],
+      "agent_input": [
+        "body_text"
+      ],
+      "description": "Blank letter template for custom correspondence with BI adjuster",
+      "placeholders": [
+        "TODAY_LONG",
+        "insurance.insuranceAdjuster.name",
+        "insurance.insuranceCompany.addressBlock",
+        "insurance.insuranceAdjuster.email1",
+        "client.name",
+        "insurance.claimNumber",
+        "incidentDate",
+        "primary"
+      ],
+      "output_folder": "Letters/Insurance"
+    },
+    {
+      "id": "blank_pip_letter",
+      "name": "Blank Letter to PIP Adjuster",
+      "file": "2022 Whaley Blank Letter to PIP Adjuster(1) (1).docx",
+      "category": "insurance",
+      "subcategory": "pip",
+      "required_context": [
+        "insurance_pip"
+      ],
+      "agent_input": [
+        "body_text"
+      ],
+      "description": "Blank letter template for custom correspondence with PIP adjuster",
+      "placeholders": [
+        "TODAY_LONG",
+        "insurance.insuranceAdjuster.name",
+        "insurance.insuranceCompany.addressBlock",
+        "insurance.insuranceAdjuster.email1",
+        "client.name",
+        "insurance.claimNumber",
+        "incidentDate",
+        "primary"
+      ],
+      "output_folder": "Letters/Insurance"
+    },
+    {
+      "id": "coots_letter",
+      "name": "Coots Letter",
+      "file": "2021 Coots Ltr.docx",
+      "category": "insurance",
+      "subcategory": "um",
+      "required_context": [
+        "insurance_um"
+      ],
+      "agent_input": [],
+      "description": "Coots letter for UM/UIM claims (Kentucky statutory notice)",
+      "placeholders": [
+        "TODAY_LONG",
+        "insurance.uMCarrier.name",
+        "client.name",
+        "incidentDate",
+        "insurance.defendantInsuranceCompany.name",
+        "insurance.policylimits",
+        "primary"
+      ],
+      "output_folder": "Letters/Insurance"
+    },
+    {
+      "id": "jefferson_insurance_request",
+      "name": "Jefferson County Clerk Insurance Request",
+      "file": "Jefferson County Clerk Insurance Request Form (1).docx",
+      "category": "records",
+      "subcategory": "insurance_verification",
+      "required_context": [],
+      "agent_input": [
+        "vehicle_info"
+      ],
+      "description": "Form to request insurance information from Jefferson County Clerk",
+      "placeholders": [
+        "TODAY_LONG",
+        "client.name",
+        "incidentDate"
+      ],
+      "output_folder": "Letters/Records Requests"
+    },
+    {
+      "id": "thank_you_client",
+      "name": "Thank You Letter to Client - Case Manager Assigned",
+      "file": "2022 Whaley Thank you Ltr to Client - Case Manager Assigned (1).docx",
+      "category": "client",
+      "subcategory": "welcome",
+      "required_context": [],
+      "agent_input": [],
+      "description": "Welcome/thank you letter to client with case manager assignment",
+      "placeholders": [
+        "TODAY_LONG",
+        "client.address1Block",
+        "intake.incidenttype",
+        "incidentDate",
+        "client.name",
+        "team.role.caseManager.fullName"
+      ],
+      "output_folder": "Letters/Client"
+    },
+    {
+      "id": "initial_lien_request",
+      "name": "Initial Lien Request",
+      "file": "2022 Whaley Initial Lien Request(1)(1) (1).docx",
+      "category": "liens",
+      "subcategory": "initial",
+      "required_context": [
+        "lien"
+      ],
+      "agent_input": [
+        "injuries_list"
+      ],
+      "description": "Initial request to lienholder for subrogation interest information",
+      "placeholders": [
+        "TODAY_LONG",
+        "liens.lienholder.address1Block",
+        "liens.lienholder.phoneFax",
+        "client.name",
+        "liens.claimNumber_1",
+        "incidentDate",
+        "intake.incidenttype",
+        "liens.lienholder.name",
+        "team.role.negotiator.email",
+        "primary"
+      ],
+      "output_folder": "Letters/Liens"
+    },
+    {
+      "id": "final_lien_request",
+      "name": "Final Lien Request",
+      "file": "2022 Whaley Final Lien Request(1)(1) (1).docx",
+      "category": "liens",
+      "subcategory": "final",
+      "required_context": [
+        "lien"
+      ],
+      "agent_input": [
+        "injuries_list"
+      ],
+      "description": "Final request for itemized lien ledger before settlement",
+      "placeholders": [
+        "TODAY_LONG",
+        "liens.lienholder.address1Block",
+        "liens.lienholder.phoneFax",
+        "client.name",
+        "liens.claimNumber_1",
+        "incidentDate",
+        "intake.incidenttype",
+        "liens.datelorsent",
+        "liens.lienholder.name",
+        "team.role.negotiator.email",
+        "primary"
+      ],
+      "output_folder": "Letters/Liens"
+    },
+    {
+      "id": "wc_medical_billing_request",
+      "name": "Workers Comp Medical Billing Request",
+      "file": "2022 Whaley Initial WC Medical Billing Request to Provider (MBR) (1).docx",
+      "category": "medical",
+      "subcategory": "billing",
+      "required_context": [
+        "medical_provider"
+      ],
+      "agent_input": [],
+      "description": "Medical billing request for workers compensation cases",
+      "placeholders": [
+        "TODAY_LONG",
+        "medical.provider.address1Block",
+        "medical.provider.phoneFax",
+        "client.name",
+        "client.birthDate",
+        "client.custom.ssn",
+        "incidentDate",
+        "team.role.medicalRecordClerk.email",
+        "primary"
+      ],
+      "output_folder": "Medical Records"
+    },
+    {
+      "id": "medical_record_request",
+      "name": "Medical Record Request (URR)",
+      "file": "2022 Whaley Medical Record Request (URR) (1).docx",
+      "category": "medical",
+      "subcategory": "records",
+      "required_context": [
+        "medical_provider"
+      ],
+      "agent_input": [],
+      "description": "Universal medical records request",
+      "placeholders": [
+        "TODAY_LONG",
+        "medical.provider.address1Block",
+        "medical.provider.phoneFax",
+        "client.name",
+        "client.birthDate",
+        "client.custom.ssn",
+        "incidentDate",
+        "team.role.medicalRecordClerk.email",
+        "primary"
+      ],
+      "output_folder": "Medical Records"
+    },
+    {
+      "id": "wc_medical_record_request",
+      "name": "Workers Comp Medical Record Request (IRR)",
+      "file": "2022 Whaley WC Medical Record Request (IRR) (1).docx",
+      "category": "medical",
+      "subcategory": "records",
+      "required_context": [
+        "medical_provider"
+      ],
+      "agent_input": [],
+      "description": "Medical records request for workers compensation cases",
+      "placeholders": [
+        "TODAY_LONG",
+        "medical.provider.address1Block",
+        "medical.provider.phoneFax",
+        "client.name",
+        "client.birthDate",
+        "client.custom.ssn",
+        "incidentDate",
+        "casesummary.wCSOL.due",
+        "team.role.medicalRecordClerk.email",
+        "primary"
+      ],
+      "output_folder": "Medical Records"
+    },
+    {
+      "id": "deposition_notice_client",
+      "name": "Notice of Deposition to Client",
+      "file": "2021 Whaley Notice of Deposition to Client (1).docx",
+      "category": "litigation",
+      "subcategory": "deposition",
+      "required_context": [
+        "litigation"
+      ],
+      "agent_input": [],
+      "description": "Notice to client regarding scheduled deposition",
+      "placeholders": [
+        "TODAY_LONG",
+        "client.address1Block",
+        "client.name",
+        "incidentDate",
+        "litigation.clientDepositionDate",
+        "litigation.clientDepositionTime",
+        "primary"
+      ],
+      "output_folder": "Letters/Litigation"
+    },
+    {
+      "id": "declined_rep_notice",
+      "name": "Declined Representation Notice to Client",
+      "file": "2021 Whaley Declined Rep Notice to Client (1).docx",
+      "category": "client",
+      "subcategory": "declined",
+      "required_context": [],
+      "agent_input": [
+        "decline_reason"
+      ],
+      "description": "Letter notifying potential client that representation is declined",
+      "placeholders": [
+        "TODAY_LONG",
+        "client.address1Block",
+        "client.name",
+        "primary"
+      ],
+      "output_folder": "Letters/Client"
+    },
+    {
+      "id": "orr_public_works",
+      "name": "Open Records Request - Public Works",
+      "file": "ORR to Public Works (1).docx",
+      "category": "records",
+      "subcategory": "open_records",
+      "required_context": [],
+      "agent_input": [
+        "location_details",
+        "request_specifics"
+      ],
+      "description": "Open records request to public works department",
+      "placeholders": [
+        "TODAY_LONG",
+        "client.name",
+        "incidentDate",
+        "intake.locationofclientsvehicle",
+        "primary"
+      ],
+      "output_folder": "Letters/Records Requests"
+    }
+  ],
+  "static_config": {
+    "primary_attorney": {
+      "name": "Aaron G. Whaley, Esq.",
+      "signature_block": "Aaron G. Whaley, Esq.\nThe Whaley Law Firm"
+    },
+    "firm": {
+      "name": "The Whaley Law Firm",
+      "address": "712 Lyndon Lane",
+      "city_state_zip": "Louisville, KY 40222",
+      "phone": "(502) 583-4022",
+      "fax": "(502) 364-9363"
+    },
+    "team_roles": {
+      "caseManager": {
+        "fullName": "Case Manager",
+        "email": "casemanager@whaleylawfirm.com"
+      },
+      "medicalRecordClerk": {
+        "fullName": "Medical Records Clerk",
+        "email": "records@whaleylawfirm.com"
+      },
+      "negotiator": {
+        "fullName": "Settlement Negotiator",
+        "email": "settlements@whaleylawfirm.com"
+      }
+    }
+  },
+  "categories": {
+    "insurance": {
+      "description": "Letters to insurance adjusters",
+      "subcategories": [
+        "pip",
+        "bi",
+        "um"
+      ]
+    },
+    "liens": {
+      "description": "Lien holder correspondence",
+      "subcategories": [
+        "initial",
+        "final"
+      ]
+    },
+    "medical": {
+      "description": "Medical provider requests",
+      "subcategories": [
+        "records",
+        "billing"
+      ]
+    },
+    "client": {
+      "description": "Client correspondence",
+      "subcategories": [
+        "welcome",
+        "declined",
+        "notices"
+      ]
+    },
+    "litigation": {
+      "description": "Litigation-related documents",
+      "subcategories": [
+        "deposition",
+        "discovery",
+        "motions"
+      ]
+    },
+    "records": {
+      "description": "Records requests",
+      "subcategories": [
+        "insurance_verification",
+        "open_records"
+      ]
+    }
+  }
+}

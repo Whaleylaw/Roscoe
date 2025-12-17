@@ -94,7 +94,7 @@ After sub-agent(s) complete:
 ## Tools Required
 
 **Primary Tool:**
-- `/Tools/internet_search.py` - Standalone Tavily internet search script
+- `Tools/internet_search.py` - Standalone Tavily internet search script
 
 **Tool Usage:**
 ```bash
