@@ -36,17 +36,46 @@ from roscoe.agents.paralegal.script_executor import (
 )
 
 # Import Word template pipeline for document generation
-from roscoe.agents.paralegal.word_template_pipeline import (
-    fill_and_export_template as _fill_and_export_template,
-    render_docx_template as _render_docx_template,
-    convert_docx_to_pdf as _convert_docx_to_pdf,
-    convert_doc_to_docx as _convert_doc_to_docx,
-    list_template_placeholders as _list_template_placeholders,
-    check_dependencies as _check_word_deps,
-    TemplateError,
-    LibreOfficeNotFoundError,
-    TemplateNotFoundError,
-)
+# TEMPORARILY DISABLED - import path issue in container
+# from roscoe.agents.paralegal.word_template_pipeline import (
+#     fill_and_export_template as _fill_and_export_template,
+#     render_docx_template as _render_docx_template,
+#     convert_docx_to_pdf as _convert_docx_to_pdf,
+#     convert_doc_to_docx as _convert_doc_to_docx,
+#     list_template_placeholders as _list_template_placeholders,
+#     check_dependencies as _check_word_deps,
+#     TemplateError,
+#     LibreOfficeNotFoundError,
+#     TemplateNotFoundError,
+# )
+
+# Stub functions while word_template_pipeline is disabled
+def _fill_and_export_template(*args, **kwargs):
+    return {"success": False, "error": "Word template tools temporarily disabled"}
+
+def _render_docx_template(*args, **kwargs):
+    return {"success": False, "error": "Word template tools temporarily disabled"}
+
+def _convert_docx_to_pdf(*args, **kwargs):
+    return {"success": False, "error": "PDF export temporarily disabled"}
+
+def _convert_doc_to_docx(*args, **kwargs):
+    return {"success": False, "error": "DOC conversion temporarily disabled"}
+
+def _list_template_placeholders(*args, **kwargs):
+    return []
+
+def _check_word_deps(*args, **kwargs):
+    return {"all_available": False, "missing": ["word_template_pipeline"], "docxtpl_available": False, "python_docx_available": False, "libreoffice_available": False, "libreoffice_path": None}
+
+class TemplateError(Exception):
+    pass
+
+class LibreOfficeNotFoundError(Exception):
+    pass
+
+class TemplateNotFoundError(Exception):
+    pass
 
 # =============================================================================
 # LAZY CLIENT INITIALIZATION
