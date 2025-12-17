@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-export type CenterView = "viewer" | "monaco" | "calendar";
+export type CenterView = "viewer" | "monaco" | "calendar" | "artifacts";
 
 export type CalendarEvent = {
   id?: string;

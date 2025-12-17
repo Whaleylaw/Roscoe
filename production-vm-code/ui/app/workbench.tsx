@@ -9,11 +9,21 @@ import { FileBrowser } from "@/components/workbench/file-browser";
 import { DocumentViewer } from "@/components/workbench/document-viewer";
 import { Button } from "@/components/ui/button";
 import { useWorkbenchStore } from "@/lib/workbench-store";
+import { ArtifactCanvas } from "@/components/artifacts/artifact-canvas";
+import { useCopilotArtifactTools } from "@/lib/copilotkit-artifact-tools";
+
+// Import all artifact components to register them
+import "@/components/artifacts/contact-card";
+import "@/components/artifacts/medical-provider-card";
+import "@/components/artifacts/insurance-card";
 
 export function Workbench() {
   const copilotRuntimeUrl = typeof window !== 'undefined'
     ? new URL("/api/copilotkit", window.location.href).href
     : "/api/copilotkit";
+
+  // Enable artifact tools
+  useCopilotArtifactTools();
 
   const centerView = useWorkbenchStore((s) => s.centerView);
   const setCenterView = useWorkbenchStore((s) => s.setCenterView);
@@ -37,6 +47,10 @@ export function Workbench() {
 
   const viewerStyle = useMemo(() => {
     return centerView === "viewer" ? "block" : "hidden";
+  }, [centerView]);
+
+  const artifactsStyle = useMemo(() => {
+    return centerView === "artifacts" ? "block" : "hidden";
   }, [centerView]);
 
   // Bridge "Open in Monaco" requests into the Monaco iframe via postMessage.
@@ -90,6 +104,13 @@ export function Workbench() {
             >
               Calendar
             </Button>
+            <Button
+              size="sm"
+              variant={centerView === "artifacts" ? "default" : "outline"}
+              onClick={() => setCenterView("artifacts")}
+            >
+              Artifacts
+            </Button>
             <div className="flex-1" />
             <Button
               size="sm"
@@ -126,6 +147,10 @@ export function Workbench() {
               className="h-full w-full"
               title="Calendar frame"
             />
+          </div>
+
+          <div className={artifactsStyle + " h-[calc(100vh-44px)] overflow-auto"}>
+            <ArtifactCanvas />
           </div>
         </section>
 
