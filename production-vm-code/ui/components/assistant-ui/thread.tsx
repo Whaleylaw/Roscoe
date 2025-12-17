@@ -31,6 +31,7 @@ import { ToolFallback } from "@/components/assistant-ui/tool-fallback";
 import { TooltipIconButton } from "@/components/assistant-ui/tooltip-icon-button";
 import { ListEventsTool } from "@/components/tools/list-events-tool";
 import { RenderUiScriptTool } from "@/components/tools/render-ui-script-tool";
+import { RenderCalendarTool } from "@/components/tools/render-calendar-tool";
 import { SearchEmailsTool } from "@/components/tools/search-emails-tool";
 import {
   ComposerAddAttachment,
@@ -277,6 +278,7 @@ const AssistantMessage: FC = () => {
                 by_name: {
                   list_events: ListEventsTool,
                   render_ui_script: RenderUiScriptTool,
+                  render_calendar: RenderCalendarTool,
                   search_emails: SearchEmailsTool,
                 },
                 Fallback: ToolFallback,
