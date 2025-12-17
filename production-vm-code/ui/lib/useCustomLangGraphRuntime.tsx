@@ -22,120 +22,122 @@ export function useCustomLangGraphRuntime(config: LangGraphConfig) {
     return data.thread_id;
   }, [config.apiUrl]);
 
-  const runtime = useLocalRuntime({
-    adapters: {
-      chatAdapter: {
-        sendMessage: async ({ message, messages }) => {
-          console.log("[Custom Runtime] Sending message:", message.content[0]?.text);
+  const chatAdapter = useCallback(
+    async ({ messages, abortSignal }: { messages: any[]; abortSignal: AbortSignal }) => {
+      console.log("[Custom Runtime] run() called with", messages.length, "messages");
 
-          // Create thread if needed
-          let tid = threadId;
-          if (!tid) {
-            tid = await createThread();
+      // Create thread if needed
+      let tid = threadId;
+      if (!tid) {
+        tid = await createThread();
+      }
+
+      // Convert messages to LangChain format
+      const lcMessages = messages.map((m) => ({
+        role: m.role,
+        content: m.content
+          .filter((c: any) => c.type === "text")
+          .map((c: any) => c.text)
+          .join(""),
+      }));
+
+      // Start SSE stream
+      const response = await fetch(
+        `${config.apiUrl}/threads/${tid}/runs/stream`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            assistant_id: config.assistantId,
+            input: { messages: lcMessages },
+            stream_mode: ["values"],
+            if_not_exists: "create",
+          }),
+          signal: abortSignal || AbortSignal.timeout(290000),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Stream failed: ${response.status}`);
+      }
+
+      if (!response.body) {
+        throw new Error("No response body");
+      }
+
+      // Parse SSE stream
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      let lastState: any = null;
+
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) {
+            console.log("[Custom Runtime] Stream ended");
+            break;
           }
 
-          // Convert messages to LangChain format
-          const lcMessages = messages.map((m) => ({
-            role: m.role,
-            content: m.content.map((c) => {
-              if (c.type === "text") return c.text;
-              return "";
-            }).join(""),
-          }));
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split("\n");
+          buffer = lines.pop() || "";
 
-          // Start SSE stream
-          const response = await fetch(
-            `${config.apiUrl}/threads/${tid}/runs/stream`,
-            {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                assistant_id: config.assistantId,
-                input: { messages: lcMessages },
-                stream_mode: ["values"],
-                if_not_exists: "create",
-              }),
-              signal: AbortSignal.timeout(290000),
-            }
-          );
+          for (const line of lines) {
+            if (!line.trim() || line.startsWith(":")) continue;
 
-          if (!response.ok) {
-            throw new Error(`Stream failed: ${response.status}`);
-          }
+            if (line.startsWith("data: ")) {
+              const data = line.slice(6);
+              if (data === "[DONE]") {
+                console.log("[Custom Runtime] Received [DONE]");
+                break;
+              }
 
-          if (!response.body) {
-            throw new Error("No response body");
-          }
+              try {
+                const event = JSON.parse(data);
 
-          // Parse SSE stream
-          const reader = response.body.getReader();
-          const decoder = new TextDecoder();
-          let buffer = "";
-          let lastState: any = null;
-
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) {
-              console.log("[Custom Runtime] Stream ended");
-              break;
-            }
-
-            buffer += decoder.decode(value, { stream: true });
-            const lines = buffer.split("\n");
-            buffer = lines.pop() || "";
-
-            for (const line of lines) {
-              if (!line.trim() || line.startsWith(":")) continue;
-
-              if (line.startsWith("data: ")) {
-                const data = line.slice(6);
-                if (data === "[DONE]") {
-                  console.log("[Custom Runtime] Received [DONE]");
-                  reader.releaseLock();
-
-                  // Return final messages
-                  if (lastState?.messages) {
-                    const finalMessages = lastState.messages.map(convertMessage);
-                    return {
-                      messages: finalMessages,
-                    };
-                  }
-                  return { messages };
+                // Process values events (complete state snapshots)
+                if (event.event === "values") {
+                  lastState = event.data;
+                  console.log(
+                    "[Custom Runtime] Got state with",
+                    lastState?.messages?.length,
+                    "messages"
+                  );
                 }
 
-                try {
-                  const event = JSON.parse(data);
-
-                  // Process values events (complete state snapshots)
-                  if (event.event === "values") {
-                    lastState = event.data;
-                    console.log("[Custom Runtime] Got state with", lastState?.messages?.length, "messages");
-                  }
-
-                  // Ignore metadata
-                  if (event.event.includes("metadata")) {
-                    console.log("[Custom Runtime] Ignoring metadata");
-                  }
-                } catch (e) {
-                  console.error("[Custom Runtime] Parse error:", e);
+                // Ignore metadata
+                if (event.event.includes("metadata")) {
+                  console.log("[Custom Runtime] Ignoring metadata");
                 }
+              } catch (e) {
+                console.error("[Custom Runtime] Parse error:", e);
               }
             }
           }
+        }
+      } finally {
+        reader.releaseLock();
+      }
 
-          // Stream ended, return final state
-          if (lastState?.messages) {
-            const finalMessages = lastState.messages.map(convertMessage);
-            return {
-              messages: finalMessages,
-            };
-          }
+      // Stream ended, return final state
+      if (lastState?.messages) {
+        const lastMessage = lastState.messages[lastState.messages.length - 1];
+        const converted = convertMessage(lastMessage);
+        console.log("[Custom Runtime] Returning:", converted);
+        return converted;
+      }
 
-          return { messages };
-        },
-      },
+      // Fallback
+      return {
+        role: "assistant" as const,
+        content: [{ type: "text" as const, text: "No response" }],
+      };
     },
-  });
+    [threadId, createThread, config.apiUrl, config.assistantId]
+  );
+
+  const runtime = useLocalRuntime({ run: chatAdapter });
 
   return runtime;
 }
