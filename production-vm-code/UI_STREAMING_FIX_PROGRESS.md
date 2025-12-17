@@ -47,13 +47,13 @@ But this might break other things!
 **Option 3: Custom Runtime** (MOST WORK)
 Replace `useLangGraphRuntime` in `workbench.tsx` with custom implementation that handles v1 format
 
-**Option 4: Backend Output Version** (WORTH TRYING)
+**Option 4: Backend Output Version** ~~(WORTH TRYING)~~ ❌ TRIED - STILL FREEZES
 Set backend to output v0 format:
-```python
-# Set environment variable
+```bash
+# Added to ~/.env on VM:
 LC_OUTPUT_VERSION=v0
 ```
-Or configure model with `output_version="v0"`
+**Result**: Backend restarted with v0 output, UI still freezes. This suggests the freeze isn't caused by v1 content blocks but by something else in the library runtime's streaming handling.
 
 All work on `useCustomLangGraphRuntime.tsx` was wasted because `assistant.tsx` is never rendered - the app uses `workbench.tsx` instead.
 
