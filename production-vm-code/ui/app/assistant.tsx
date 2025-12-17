@@ -1,6 +1,7 @@
 "use client";
 
 import { AssistantRuntimeProvider } from "@assistant-ui/react";
+import { DevToolsModal } from "@assistant-ui/react-devtools";
 import { useCustomLangGraphRuntime } from "@/lib/useCustomLangGraphRuntime";
 import { Thread } from "@/components/assistant-ui/thread";
 
@@ -16,6 +17,7 @@ export function Assistant() {
 
   return (
     <AssistantRuntimeProvider runtime={runtime}>
+      <DevToolsModal />
       <Thread />
     </AssistantRuntimeProvider>
   );
