@@ -30,8 +30,8 @@ async function handleRequest(req: NextRequest, method: string) {
         // Ensure we accept streaming responses
         "Accept": "text/event-stream, application/json",
       },
-      // Disable keepalive to prevent connection hanging
-      keepalive: false,
+      // Enable keepalive for SSE streams (required for long-running connections)
+      keepalive: true,
     };
 
     if (["POST", "PUT", "PATCH"].includes(method)) {

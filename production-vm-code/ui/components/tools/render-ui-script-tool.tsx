@@ -38,8 +38,18 @@ function isObject(v: unknown): v is Record<string, any> {
 }
 
 function coerceCommands(result: unknown): UiCommand[] | null {
-  if (!isObject(result)) return null;
-  const cmds = (result as any).commands;
+  // Tool results come as JSON strings from LangGraph - parse them first
+  let parsed = result;
+  if (typeof result === "string") {
+    try {
+      parsed = JSON.parse(result);
+    } catch {
+      return null;
+    }
+  }
+
+  if (!isObject(parsed)) return null;
+  const cmds = (parsed as any).commands;
   if (!Array.isArray(cmds)) return null;
   return cmds as UiCommand[];
 }
@@ -87,10 +97,21 @@ export const RenderUiScriptTool = makeAssistantToolUI<
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [commands, status.type]);
 
-    const title =
-      isObject(result) && typeof (result as any).title === "string"
-        ? ((result as any).title as string)
+    // Parse title from result (handle JSON string from LangGraph)
+    const getTitle = () => {
+      let parsed = result;
+      if (typeof result === "string") {
+        try {
+          parsed = JSON.parse(result);
+        } catch {
+          return "UI render";
+        }
+      }
+      return isObject(parsed) && typeof (parsed as any).title === "string"
+        ? ((parsed as any).title as string)
         : "UI render";
+    };
+    const title = getTitle();
 
     return (
       <div className="mb-4 w-full rounded-lg border p-3">
@@ -111,11 +132,25 @@ export const RenderUiScriptTool = makeAssistantToolUI<
           render_ui_script({JSON.stringify(args)})
         </div>
 
-        {isObject(result) && (result as any).success === false && (
-          <div className="mt-3 whitespace-pre-wrap rounded-md border border-destructive bg-destructive/10 p-2 text-sm text-destructive">
-            {(result as any).error ?? "render_ui_script failed"}
-          </div>
-        )}
+        {(() => {
+          // Parse error from result (handle JSON string from LangGraph)
+          let parsed = result;
+          if (typeof result === "string") {
+            try {
+              parsed = JSON.parse(result);
+            } catch {
+              return null;
+            }
+          }
+          if (isObject(parsed) && (parsed as any).success === false) {
+            return (
+              <div className="mt-3 whitespace-pre-wrap rounded-md border border-destructive bg-destructive/10 p-2 text-sm text-destructive">
+                {(parsed as any).error ?? "render_ui_script failed"}
+              </div>
+            );
+          }
+          return null;
+        })()}
       </div>
     );
   },
