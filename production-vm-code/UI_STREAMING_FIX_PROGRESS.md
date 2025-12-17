@@ -197,10 +197,42 @@ This should fix the tool rendering issue because:
 4. useEffect triggers and executes workbench commands
 
 ### Testing Status
-🔄 **Building now** (as of 15:20 UTC)
-- UI container will restart with `["messages"]` stream mode
-- Should see tool UI card render properly
-- Calendar should populate with events
+❌ **FAILED** (tested at 15:24 UTC)
+- Changed to `["messages"]` stream mode
+- UI still froze during tool call
+- Page became unresponsive, Playwright connection closed
+- **Conclusion**: "messages" mode also doesn't work with library runtime
+
+---
+
+## CONCLUSION (December 17, 15:24 UTC)
+
+### The Library Runtime is Fundamentally Broken
+
+Tested stream modes with `useLangGraphRuntime` from `@assistant-ui/react-langgraph`:
+- `["values"]` mode: ❌ Freezes (tool results ignored, issue #2166)
+- `["messages"]` mode: ❌ Freezes (page becomes unresponsive)
+- `["messages", "updates"]` mode: ❌ Not tested (likely same issue)
+
+**Root Cause**: The `@assistant-ui/react-langgraph` library (v0.7.12) cannot properly handle LangGraph streaming with tool calls, regardless of stream mode configuration.
+
+### Required Solution
+
+**Option 1: Implement Custom Runtime in Workbench** (RECOMMENDED)
+Replace library runtime in `workbench.tsx:215` with custom implementation:
+1. Remove `useLangGraphRuntime` import
+2. Implement custom SSE stream consumer (like `useCustomLangGraphRuntime`)
+3. Manually convert LangGraph messages to assistant-ui format
+4. Handle tool calls/results explicitly
+
+**Option 2: Downgrade Library**
+Try older version of `@assistant-ui/react-langgraph` that might work better
+
+**Option 3: Wait for Library Fix**
+Wait for issue #2166 to be resolved upstream (not practical)
+
+**Option 4: Non-Streaming Mode**
+Use polling instead of streaming (loses real-time updates)
 
 ---
 
