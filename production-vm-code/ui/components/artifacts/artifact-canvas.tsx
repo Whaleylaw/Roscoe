@@ -92,7 +92,7 @@ export function ArtifactCanvas({ initialArtifacts = [], onArtifactAction }: Arti
             <Component
               artifactId={artifact.id}
               data={artifact.data}
-              onAction={(action, payload) => handleArtifactAction(artifact.id, action, payload)}
+              onAction={(action: string, payload: any) => handleArtifactAction(artifact.id, action, payload)}
             />
           </div>
         );
