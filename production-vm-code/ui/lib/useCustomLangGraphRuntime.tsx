@@ -23,7 +23,7 @@ export function useCustomLangGraphRuntime(config: LangGraphConfig) {
   }, [config.apiUrl]);
 
   const chatAdapter = useCallback(
-    async ({ messages, abortSignal }: { messages: any[]; abortSignal: AbortSignal }) => {
+    async ({ messages, abortSignal }: { messages: readonly any[]; abortSignal: AbortSignal }) => {
       console.log("[Custom Runtime] run() called with", messages.length, "messages");
 
       // Create thread if needed
@@ -70,9 +70,10 @@ export function useCustomLangGraphRuntime(config: LangGraphConfig) {
       const decoder = new TextDecoder();
       let buffer = "";
       let lastState: any = null;
+      let streamComplete = false;
 
       try {
-        while (true) {
+        while (!streamComplete) {
           const { done, value } = await reader.read();
           if (done) {
             console.log("[Custom Runtime] Stream ended");
@@ -90,6 +91,7 @@ export function useCustomLangGraphRuntime(config: LangGraphConfig) {
               const data = line.slice(6);
               if (data === "[DONE]") {
                 console.log("[Custom Runtime] Received [DONE]");
+                streamComplete = true;
                 break;
               }
 
