@@ -1,5 +1,29 @@
 # UI Streaming Fix Progress - December 17, 2025
 
+## FINAL STATUS: LIBRARY RUNTIME IS INCOMPATIBLE
+
+**Date**: December 17, 2025, 15:32 UTC
+**Conclusion**: `@assistant-ui/react-langgraph` v0.7.12 cannot handle LangGraph tool streaming
+
+### What Was Confirmed
+- ✅ Backend works perfectly (`render_calendar` returns correct JSON)
+- ✅ Simple text messages stream without issues
+- ❌ **ANY tool call freezes the UI** (regardless of stream mode)
+- ❌ Tested in production (Docker) - freezes
+- ❌ Tested locally (dev server) - freezes
+- ❌ Tested with `["values"]` mode - freezes
+- ❌ Tested with `["messages"]` mode - freezes
+
+### Root Cause
+The app uses `useLangGraphRuntime` from `@assistant-ui/react-langgraph` in `workbench.tsx:215`. This library has a critical bug (issue #2166) where it cannot process tool results from LangGraph's streaming API.
+
+### Only Solution
+**Replace library runtime with custom implementation in workbench.tsx**
+
+All work on `useCustomLangGraphRuntime.tsx` was wasted because `assistant.tsx` is never rendered - the app uses `workbench.tsx` instead.
+
+---
+
 ## Current Status: LIBRARY RUNTIME STILL IN USE
 
 **✅ No longer freezing**: UI streams without hanging
@@ -197,11 +221,12 @@ This should fix the tool rendering issue because:
 4. useEffect triggers and executes workbench commands
 
 ### Testing Status
-❌ **FAILED** (tested at 15:24 UTC)
+❌ **FAILED** - Both production AND local dev (tested at 15:24 UTC and 15:32 UTC)
 - Changed to `["messages"]` stream mode
-- UI still froze during tool call
-- Page became unresponsive, Playwright connection closed
-- **Conclusion**: "messages" mode also doesn't work with library runtime
+- Tested in Docker (production) - ❌ Froze
+- Tested locally with Next.js dev server - ❌ Froze
+- Page becomes unresponsive during tool call
+- **CONFIRMED**: Library runtime is broken regardless of stream mode or environment
 
 ---
 
