@@ -905,6 +905,111 @@ def render_ui_script(
     }
 
 
+def render_calendar(
+    date: str,
+    days: int = 1,
+    include_google: bool = True,
+    include_roscoe: bool = True,
+) -> Dict[str, Any]:
+    """
+    Render the calendar UI with events from local calendar database.
+
+    This is a direct calendar rendering tool that reads from the JSON calendar
+    database and returns UI commands without executing external scripts.
+
+    Args:
+        date: Date to show in ISO format (YYYY-MM-DD), e.g., "2025-12-17"
+        days: Number of days to display (default: 1)
+        include_google: Include Google Calendar events (default: True)
+        include_roscoe: Include Roscoe/local calendar events (default: True)
+
+    Returns:
+        Dictionary with UI commands to display the calendar.
+
+    Examples:
+        render_calendar("2025-12-17")
+        render_calendar("2025-12-17", days=7)
+        render_calendar("2025-12-17", include_google=False)  # Local only
+    """
+    from datetime import datetime, timedelta
+
+    try:
+        # Parse the date
+        try:
+            start_date = datetime.strptime(date, "%Y-%m-%d")
+        except ValueError:
+            return {
+                "success": False,
+                "error": f"Invalid date format: {date}. Use YYYY-MM-DD format."
+            }
+
+        end_date = start_date + timedelta(days=days - 1)
+
+        # Read calendar.json from workspace
+        calendar_json_path = workspace_root / "Database" / "calendar.json"
+
+        if not calendar_json_path.exists():
+            return {
+                "success": False,
+                "error": "Calendar database not found at /Database/calendar.json"
+            }
+
+        with open(calendar_json_path, 'r') as f:
+            all_events = json.load(f)
+
+        # Filter events for the date range
+        filtered_events = []
+        for event in all_events:
+            event_date_str = event.get("date") or event.get("start_date")
+            if not event_date_str:
+                continue
+
+            try:
+                event_date = datetime.strptime(event_date_str[:10], "%Y-%m-%d")
+                if start_date <= event_date <= end_date:
+                    # Filter by source if requested
+                    source = event.get("source", "roscoe")
+                    if source == "google" and not include_google:
+                        continue
+                    if source == "roscoe" and not include_roscoe:
+                        continue
+                    filtered_events.append(event)
+            except (ValueError, TypeError):
+                continue
+
+        # Sort events by date/time
+        filtered_events.sort(key=lambda e: (
+            e.get("date") or e.get("start_date", ""),
+            e.get("time") or e.get("start_time", "00:00")
+        ))
+
+        # Build UI commands
+        title_suffix = f" - {days} day{'s' if days > 1 else ''}" if days > 1 else ""
+
+        return {
+            "success": True,
+            "title": f"Calendar ({date}){title_suffix}",
+            "commands": [
+                {
+                    "type": "workbench.setCenterView",
+                    "view": "calendar"
+                },
+                {
+                    "type": "calendar.setEvents",
+                    "events": filtered_events,
+                    "date": date,
+                    "days": days
+                }
+            ]
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": f"Failed to render calendar: {str(e)}"
+        }
+
+
 # =============================================================================
 # Word Template & PDF Export Tools
 # =============================================================================
