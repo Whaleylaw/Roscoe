@@ -57,25 +57,49 @@ export const RenderCalendarTool = makeAssistantToolUI<
 >({
   toolName: "render_calendar",
   render: ({ args, result, status }) => {
+    console.log("[RenderCalendarTool] Render called:", { args, result, status });
+
     const setCenterView = useWorkbenchStore((s) => s.setCenterView);
     const setCalendarEvents = useWorkbenchStore((s) => s.setCalendarEvents);
 
-    const commands = useMemo(() => coerceCommands(result), [result]);
+    const commands = useMemo(() => {
+      const cmds = coerceCommands(result);
+      console.log("[RenderCalendarTool] Commands parsed:", cmds);
+      return cmds;
+    }, [result]);
 
     useEffect(() => {
-      if (!commands?.length) return;
-      if (status.type === "running") return;
+      console.log("[RenderCalendarTool] useEffect triggered:", {
+        hasCommands: !!commands?.length,
+        commandsLength: commands?.length,
+        statusType: status.type
+      });
+
+      if (!commands?.length) {
+        console.log("[RenderCalendarTool] No commands, skipping");
+        return;
+      }
+      if (status.type === "running") {
+        console.log("[RenderCalendarTool] Still running, skipping");
+        return;
+      }
+
+      console.log("[RenderCalendarTool] Executing commands:", commands);
 
       for (const c of commands) {
+        console.log("[RenderCalendarTool] Processing command:", c.type);
         switch (c.type) {
           case "workbench.setCenterView":
+            console.log("[RenderCalendarTool] Setting center view:", c.view);
             setCenterView(c.view);
             break;
           case "calendar.setEvents":
+            console.log("[RenderCalendarTool] Setting calendar events:", c.events?.length, "events");
             setCalendarEvents(c.events ?? []);
             setCenterView("calendar");
             break;
           case "calendar.clear":
+            console.log("[RenderCalendarTool] Clearing calendar");
             setCalendarEvents([]);
             break;
         }
