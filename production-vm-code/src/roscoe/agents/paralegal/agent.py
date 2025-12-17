@@ -45,7 +45,7 @@ from roscoe.agents.paralegal.tools import (
     analyze_image,  # Main-agent image viewing (Gemini vision via tool)
     execute_python_script,  # Docker-based script execution with GCS access
     execute_python_script_with_browser,  # Playwright browser automation
-    render_ui_script,  # Universal UI script executor for case dashboards, etc.
+    # render_ui_script,  # TEMPORARILY DISABLED - testing direct render_calendar
     render_calendar,  # Direct calendar rendering (no subprocess)
     # NOTE: generate_ui, generate_artifact (Thesys C1) removed - use render_ui_script
     # NOTE: internet_search, analyze_image, analyze_audio, analyze_video
@@ -103,7 +103,7 @@ personal_assistant_agent = create_deep_agent(
         analyze_image,
         execute_python_script,  # Docker-based script execution with GCS filesystem access
         execute_python_script_with_browser,  # Playwright browser automation for web scraping
-        render_ui_script,  # Universal UI script executor (case dashboards, insurance, liens, etc.)
+        # render_ui_script,  # TEMPORARILY DISABLED - testing direct render_calendar
         render_calendar,  # Direct calendar rendering (no subprocess, faster and more reliable)
         # Gmail tools (requires GOOGLE_CREDENTIALS_FILE env var)
         search_emails,
