@@ -1,0 +1,18 @@
+todos:
+  - content: Read case context (overview.json) and verify audio files existence
+    status: in_progress
+  - content: Check for available transcription tools or scripts in /workspace/Tools and /workspace/Skills
+    status: pending
+  - content: Transcribe audio files (using appropriate tool or method found)
+    status: pending
+  - content: Combine transcripts and perform legal analysis
+    status: pending
+  - content: Generate final report and save to Reports/deposition_transcript_Timothy_Ruhl_2025-08-14.md
+    status: pending
+
+    read_file 58b24188-741e-4d3f-93c6-461353a53296
+
+file_path: /workspace/projects/Timothy-Ruhl-Premise-09-14-2023/overview.json
+ls a3a8b578-7dc0-45e1-ae41-88c6b58b7cc0
+
+path: /workspace/projects/Timothy-Ruhl-Premise-09-14-2023
