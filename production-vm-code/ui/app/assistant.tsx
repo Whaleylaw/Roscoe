@@ -18,11 +18,15 @@ export function Assistant() {
         command,
       });
 
-      // Consume generator with timeout protection
+      // Consume with logging to debug
+      let count = 0;
       try {
         for await (const chunk of generator) {
+          count++;
+          console.log(`[Stream ${count}]`, chunk.event);
           yield chunk;
         }
+        console.log(`[Stream Done] ${count} chunks`);
       } catch (error) {
         console.error("[Stream Error]", error);
         throw error;
@@ -39,8 +43,6 @@ export function Assistant() {
           state.tasks?.flatMap((t) => t.interrupts ?? [])?.filter(Boolean) ?? [];
         return {
           messages: state.values.messages,
-          // Restore LangGraph interrupts (human-in-the-loop) if present.
-          // ThreadState does not expose a thread-level `interrupts`; interrupts are attached to tasks.
           interrupts: interrupts.length ? interrupts : undefined,
         };
       } catch {

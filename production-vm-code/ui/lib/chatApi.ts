@@ -41,10 +41,10 @@ export const sendMessage = async (params: {
   command?: LangGraphCommand | undefined;
 }) => {
   const client = createClient();
-  // Use only "messages" stream mode to avoid unhandled metadata events
-  // that cause UI freezing. "updates" mode causes duplicate events that
-  // @assistant-ui/react-langgraph doesn't handle properly.
-  const streamMode: ("messages" | "updates")[] = ["messages"];
+  // Use ONLY "values" mode which sends complete state snapshots
+  // This avoids partial streaming issues and metadata events that freeze the UI
+  // See: https://github.com/assistant-ui/assistant-ui/issues/2166
+  const streamMode: ("messages" | "updates" | "values")[] = ["values"];
   const payload = {
     input: params.messages?.length
       ? {
