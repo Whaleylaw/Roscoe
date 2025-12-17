@@ -984,7 +984,15 @@ def render_calendar(
             }
 
         with open(calendar_json_path, 'r') as f:
-            all_events = json.load(f)
+            calendar_data = json.load(f)
+
+        # Extract events array from calendar JSON
+        all_events = calendar_data.get("events", [])
+        if not isinstance(all_events, list):
+            return {
+                "success": False,
+                "error": "Invalid calendar.json format: 'events' must be an array"
+            }
 
         # Filter events for the date range
         filtered_events = []
