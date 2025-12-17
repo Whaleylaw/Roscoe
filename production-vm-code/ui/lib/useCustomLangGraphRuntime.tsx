@@ -122,12 +122,57 @@ export function useCustomLangGraphRuntime(config: LangGraphConfig) {
         reader.releaseLock();
       }
 
-      // Stream ended, return final state
+      // Stream ended, return merged assistant message with all tool calls/results
       if (lastState?.messages) {
-        const lastMessage = lastState.messages[lastState.messages.length - 1];
-        const converted = convertMessage(lastMessage);
-        console.log("[Custom Runtime] Returning:", converted);
-        return converted;
+        // Find all new assistant/tool messages from this turn
+        const newMessages = lastState.messages.slice(lcMessages.length);
+
+        // Merge into single assistant message
+        const mergedContent: any[] = [];
+        let finalText = "";
+
+        for (const msg of newMessages) {
+          if (msg.role === "assistant") {
+            // Add tool calls
+            if (msg.tool_calls && Array.isArray(msg.tool_calls)) {
+              for (const tc of msg.tool_calls) {
+                mergedContent.push({
+                  type: "tool-call",
+                  toolCallId: tc.id,
+                  toolName: tc.name,
+                  args: tc.args || {},
+                  result: undefined, // Will be filled when we find the tool message
+                });
+              }
+            }
+            // Collect text content
+            if (msg.content && typeof msg.content === "string") {
+              finalText = msg.content;
+            }
+          } else if (msg.role === "tool") {
+            // Add tool result
+            mergedContent.push({
+              type: "tool-result",
+              toolCallId: msg.tool_call_id,
+              toolName: msg.name,
+              result: msg.content,
+            });
+          }
+        }
+
+        // Add final text if any
+        if (finalText) {
+          mergedContent.push({ type: "text", text: finalText });
+        }
+
+        const result = {
+          id: crypto.randomUUID(),
+          role: "assistant" as const,
+          content: mergedContent,
+        };
+
+        console.log("[Custom Runtime] Returning merged message:", result);
+        return result;
       }
 
       // Fallback
