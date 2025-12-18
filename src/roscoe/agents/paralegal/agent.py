@@ -37,6 +37,7 @@ from langchain.agents.middleware import ShellToolMiddleware, HostExecutionPolicy
 from roscoe.agents.paralegal.models import get_agent_llm, MODEL_PROVIDER
 from roscoe.core.skill_middleware import SkillSelectorMiddleware, set_middleware_instance
 from roscoe.core.case_context_middleware import CaseContextMiddleware
+from roscoe.core.ui_context_middleware import UIContextMiddleware
 from roscoe.agents.paralegal.prompts import minimal_personal_assistant_prompt
 from roscoe.agents.paralegal.sub_agents import get_multimodal_sub_agent
 from roscoe.agents.paralegal.tools import (
@@ -148,11 +149,13 @@ personal_assistant_agent = create_deep_agent(
         # NOTE: Do NOT add SummarizationMiddleware here - create_deep_agent already adds one!
         # Adding another causes "duplicate middleware instances" error.
         # The framework's default SummarizationMiddleware is configured appropriately.
-        
+
         # Case context injection: detects client mentions, loads case data
         case_context_middleware,
         # Skill selector: semantic search + skill injection (scans SKILL.md files)
         skill_selector_middleware,
+        # UI context: bridges CopilotKit UI state to agent (open documents, workspace location)
+        UIContextMiddleware(),
     ],
     # DISABLED: ShellToolMiddleware causes pickle errors with LangGraph checkpointing
     # The middleware below was causing TypeError: cannot pickle '_thread.lock' object
