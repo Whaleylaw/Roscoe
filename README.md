@@ -1,105 +1,100 @@
-# Roscoe - Dynamic Skills-Based Paralegal AI Agent
+# Roscoe - AI Paralegal Agent
 
-Roscoe is an AI paralegal agent built with LangGraph that uses a dynamic skills architecture to handle legal research, medical records analysis, and case management.
-
-## Features
-
-- **Dynamic Skills Loading**: Skills are loaded automatically based on semantic matching to user requests
-- **Adaptive Model Selection**: Switches between Claude Sonnet, Claude Haiku, and Gemini 3 Pro based on task requirements
-- **Workflow Checkpointing**: Resume complex workflows after errors without starting over
-- **Large Filesystem Support**: Access to 68GB+ of case files, medical records, and legal documents
-- **HIPAA-Ready**: Self-hosted deployment keeps all data on your local machine
+An AI-powered paralegal assistant built on LangGraph with a custom React UI.
 
 ## Architecture
 
 ```
-User Request
-    ↓
-SkillSelectorMiddleware (semantic search for relevant skills)
-    ↓
-Model Selector (choose optimal LLM: Gemini/Sonnet/Haiku)
-    ↓
-Agent Execution (with checkpointing)
-    ↓
-General-Purpose Sub-agents (inherit current model)
+roscoe/
+├── src/roscoe/           # Backend (Python/LangGraph)
+│   ├── agents/
+│   │   ├── paralegal/    # Main paralegal agent
+│   │   └── coding/       # Coding agent
+│   ├── core/             # Middleware (case context, skills)
+│   └── workflow_engine/  # State machine
+│
+├── ui/                   # Frontend (Next.js)
+│   └── src/
+│       ├── app/          # Pages & API routes
+│       ├── components/   # React components
+│       └── hooks/        # Custom hooks
+│
+├── slack_bot.py          # Slack integration
+└── langgraph.json        # Agent configuration
 ```
 
 ## Quick Start
 
-### 1. Deploy Locally with Docker
+### 1. Environment Setup
 
 ```bash
-./deploy.sh
-```
-
-This will:
-- Start PostgreSQL for checkpointing
-- Start Redis for caching
-- Start LangGraph API server
-- Mount your local filesystem
-- Connect to LangSmith for monitoring
-
-### 2. Configure API Keys
-
-Copy `.env.example` to `.env` and add your API keys:
-
-```bash
+# Copy and configure environment variables
 cp .env.example .env
-# Edit .env and add your keys
+# Edit .env with your API keys (Anthropic, OpenAI, Tavily, etc.)
 ```
 
-Required keys:
-- `LANGSMITH_API_KEY` - For tracing and checkpointing
-- `ANTHROPIC_API_KEY` - For Claude models
-- `GOOGLE_API_KEY` - For Gemini models
-- `TAVILY_API_KEY` - For web search (optional)
-
-### 3. Access the API
+### 2. Backend (LangGraph Agent)
 
 ```bash
-curl http://localhost:8123/ok
+# Install Python dependencies
+uv sync  # or pip install -e .
+
+# Run development server
+langgraph dev
 ```
 
-## Documentation
+The agent will be available at `http://localhost:8123`
 
-- **[DEPLOYMENT.md](DEPLOYMENT.md)** - Complete deployment guide with checkpointing setup
-- **[workspace/Skills/](workspace/Skills/)** - Available skills and how to add new ones
+### 3. Frontend (Next.js UI)
 
-## Skills
+```bash
+cd ui
+npm install
+npm run dev
+```
 
-Skills are defined in `workspace/Skills/skills_manifest.json`:
+The UI will be available at `http://localhost:3000`
 
-- **Medical Records Analysis**: Parse, analyze, and summarize medical records with timeline extraction
-- **Legal Research**: Research case law, statutes, and regulations
+### 4. Slack Bot (Optional)
 
-New skills can be added without code changes - just add a skill definition and markdown file.
+```bash
+# Set Slack tokens in .env
+# SLACK_BOT_TOKEN=xoxb-...
+# SLACK_APP_TOKEN=xapp-...
 
-## Models
+python slack_bot.py
+```
 
-- **Claude Sonnet 4.5**: Complex reasoning, medical analysis (default)
-- **Claude Haiku 4.5**: Simple tasks, categorization
-- **Gemini 3 Pro**: Multimodal analysis (images, PDFs), code execution
+## Google OAuth Setup (Gmail/Calendar)
 
-Models are selected automatically based on skill requirements.
+1. Create OAuth credentials in Google Cloud Console
+2. Download as `client_secret_*.json` 
+3. Run the agent - it will prompt for OAuth on first use
+4. Token saved to `token.json`
 
-## Checkpointing
+## Production Deployment
 
-Every workflow is automatically checkpointed to PostgreSQL. If an error occurs:
+The VM deployment uses Docker Compose with mounted source code:
 
-1. Fix the issue (code, data, or configuration)
-2. Resume from the checkpoint
-3. Continue where you left off
+```bash
+# Sync code to VM
+gcloud compute scp --recurse src/roscoe VM:/home/user/roscoe/src/
+gcloud compute scp --recurse ui/src VM:/home/user/roscoe-ui/
 
-View all checkpoints in LangSmith: https://smith.langchain.com
+# Restart services
+ssh VM "cd /home/user && docker compose restart roscoe-agents"
+```
 
-## Cost
+## Key Files
 
-- **Infrastructure**: FREE (self-hosted on your machine)
-- **LangSmith**: FREE (self-hosted tier)
-- **API Calls**: ~$20-200/month depending on usage
+| File | Purpose |
+|------|---------|
+| `langgraph.json` | Agent entry points |
+| `pyproject.toml` | Python dependencies |
+| `.env` | API keys (not in git) |
+| `slack_bot.py` | Slack integration |
+| `CLAUDE.md` | AI context documentation |
 
-## Support
+## License
 
-For deployment issues, see [DEPLOYMENT.md](DEPLOYMENT.md).
-
-For LangGraph documentation: https://langchain-ai.github.io/langgraph/
+Private - Whaley Law Firm

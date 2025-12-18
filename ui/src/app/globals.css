@@ -1,0 +1,99 @@
+/* Import Google Fonts - must be at the very top */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Professional Legal Theme */
+    /* Navy Blue: #1e3a5f | Gold: #c9a227 | Warm White: #f8f7f4 */
+    --background: 40 14% 97%;           /* #f8f7f4 - warm off-white */
+    --foreground: 213 54% 24%;          /* #1e3a5f - navy blue */
+    --card: 0 0% 100%;                  /* white */
+    --card-foreground: 213 54% 24%;     /* navy */
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 54% 24%;
+    --primary: 213 54% 24%;             /* #1e3a5f - navy blue */
+    --primary-foreground: 0 0% 100%;    /* white */
+    --secondary: 40 30% 82%;            /* #d4c5a9 - warm tan */
+    --secondary-foreground: 213 54% 24%;
+    --muted: 40 20% 94%;                /* #f5f3ed - light warm */
+    --muted-foreground: 213 20% 40%;    /* muted navy */
+    --accent: 43 72% 47%;               /* #c9a227 - gold */
+    --accent-foreground: 213 54% 20%;   /* dark navy */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 30% 82%;               /* #d4c5a9 - warm tan border */
+    --input: 40 30% 82%;
+    --ring: 43 72% 47%;                 /* gold ring */
+    --radius: 0.5rem;
+    
+    /* Custom theme variables */
+    --gold: 43 72% 47%;                 /* #c9a227 */
+    --navy: 213 54% 24%;                /* #1e3a5f */
+    --navy-light: 213 45% 35%;          /* #2c4a6e */
+    --warm-white: 40 14% 97%;           /* #f8f7f4 */
+    --warm-tan: 40 30% 82%;             /* #d4c5a9 */
+  }
+
+  .dark {
+    /* Keep dark mode as fallback but maintain legal aesthetic */
+    --background: 213 54% 10%;
+    --foreground: 40 14% 95%;
+    --card: 213 54% 15%;
+    --card-foreground: 40 14% 95%;
+    --popover: 213 54% 15%;
+    --popover-foreground: 40 14% 95%;
+    --primary: 43 72% 47%;              /* gold becomes primary in dark */
+    --primary-foreground: 213 54% 10%;
+    --secondary: 213 40% 25%;
+    --secondary-foreground: 40 14% 95%;
+    --muted: 213 40% 20%;
+    --muted-foreground: 40 14% 70%;
+    --accent: 43 72% 47%;
+    --accent-foreground: 213 54% 10%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 213 40% 25%;
+    --input: 213 40% 25%;
+    --ring: 43 72% 47%;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', Georgia, serif;
+  }
+}
+
+/* Professional Legal custom utilities */
+@layer utilities {
+  .bg-navy {
+    background-color: #1e3a5f;
+  }
+  .bg-navy-gradient {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c4a6e 100%);
+  }
+  .text-gold {
+    color: #c9a227;
+  }
+  .border-gold {
+    border-color: #c9a227;
+  }
+  .bg-warm-white {
+    background-color: #f8f7f4;
+  }
+  .shadow-legal {
+    box-shadow: 0 2px 8px rgba(30, 58, 95, 0.12);
+  }
+}

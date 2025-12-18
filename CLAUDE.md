@@ -13,7 +13,7 @@ Significant changes have occurred in the LangChain/LangGraph ecosystem since the
 
 ## Project Overview
 
-**Roscoe** is a multi-agent platform built on LangGraph with CopilotKit UI integration. The platform uses a dynamic skills architecture for unlimited capability expansion without code changes.
+**Roscoe** is a multi-agent platform built on LangGraph with a custom lean UI (direct LangGraph integration via SSE). The platform uses a dynamic skills architecture for unlimited capability expansion without code changes.
 
 **Current Agents:**
 1. **Paralegal Agent** (`roscoe_paralegal`) - Personal injury litigation specialist
@@ -39,15 +39,15 @@ Significant changes have occurred in the LangChain/LangGraph ecosystem since the
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                              Frontend (roscoe-ui)                            │
-│  Next.js 16 + CopilotKit + Generative UI                                    │
-│  ├─ CopilotSidebar: Chat interface with thread management                   │
-│  ├─ MainContent: Renders UI components from agent tool calls                │
-│  └─ API Route (/api/chat): CopilotKit → LangGraph API direct connection     │
+│                              Frontend (ui/)                                  │
+│  Next.js 16 + Custom Lean UI (Direct LangGraph Integration)                 │
+│  ├─ ChatPanel: Chat interface with streaming SSE responses                  │
+│  ├─ Workbench: File browser, document viewer, artifacts                     │
+│  └─ API Route (/api/chat): Direct proxy to LangGraph API                    │
 └─────────────────────────────────────────────────────────────────────────────┘
                                       │
-                                      │ LangGraphAgent (CopilotKit SDK)
-                                      │ http://roscoe-agents:8000
+                                      │ Server-Sent Events (SSE)
+                                      │ http://localhost:2024
                                       ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                      LangGraph API Server (roscoe-agents)                    │
@@ -94,8 +94,8 @@ Significant changes have occurred in the LangChain/LangGraph ecosystem since the
 | Alternative Models | GPT-5.1 Thinking, Gemini 3 Pro | Configurable via MODEL_PROVIDER |
 | API Server | LangGraph API (langgraph_api.server) | Serves agent via standard protocol |
 | Frontend | Next.js 16 + React 19 | Web interface |
-| Chat UI | CopilotKit | LangGraph agent integration |
-| Generative UI | render_ui_script + React | Dynamic UI component rendering |
+| Chat UI | Custom Lean UI | Direct LangGraph SSE integration |
+| State Management | Zustand | Client-side state |
 | File System | FilesystemBackend | Sandboxed workspace operations |
 | Script Execution | Native Python subprocess | Scripts run directly on VM |
 | Storage | Google Cloud Storage (gcsfuse) | Persistent workspace mount at /mnt/workspace |
@@ -851,7 +851,7 @@ gcloud compute ssh roscoe-paralegal-vm --zone=us-central1-a --command="
 langgraph dev
 
 # Run UI locally (connects to local LangGraph dev server)
-cd roscoe-ui && npm run dev
+cd ui && npm run dev
 ```
 
 ### Environment Variables
@@ -901,14 +901,11 @@ SCRIPT_EXECUTION_MODE=auto  # Options: auto, native, docker
 # Install dependencies
 uv sync
 
-# Run LangGraph development server
+# Run LangGraph development server (port 2024)
 langgraph dev
 
-# Run CopilotKit server (separate terminal)
-uvicorn roscoe.copilotkit_server:app --port 8124 --reload
-
-# Run frontend (separate terminal)
-cd roscoe-ui && npm run dev
+# Run frontend (separate terminal, port 3000)
+cd ui && npm run dev
 ```
 
 ### Docker Image Building
@@ -1009,31 +1006,41 @@ write_file("/Database/master_lists/notes.json", updated_master)
 │   │   │   ├── script_executor.py # Docker execution
 │   │   │   └── skills_manifest.json
 │   │   └── coding/                # Coding agent (planned)
-│   ├── copilotkit_server.py       # CopilotKit FastAPI server
+│   ├── workflow_engine/           # State machine orchestrator
+│   │   └── orchestrator/
+│   │       └── state_machine.py   # PI case lifecycle management
+│   ├── copilotkit_server.py       # Legacy CopilotKit server (unused)
 │   └── slack_launcher.py          # Slack bridge auto-start
 │
-├── roscoe-ui/                     # Next.js frontend
-│   └── src/app/
-│       ├── api/chat/route.ts      # CopilotKit proxy
-│       ├── layout.tsx             # Provider wrapper
-│       └── page.tsx               # Main UI
+├── ui/                            # Next.js frontend (Custom Lean UI)
+│   └── src/
+│       ├── app/
+│       │   ├── api/chat/route.ts  # LangGraph proxy
+│       │   ├── layout.tsx         # App layout
+│       │   └── page.tsx           # Main workbench UI
+│       ├── components/            # UI components
+│       │   ├── chat/              # Chat panel components
+│       │   ├── workbench/         # File browser, viewers
+│       │   └── ui/                # Shadcn UI primitives
+│       ├── hooks/                 # React hooks
+│       ├── lib/                   # Utilities
+│       │   └── langgraph-client.ts # Direct LangGraph SSE client
+│       └── stores/                # Zustand stores
 │
 ├── docker/roscoe-python-runner/   # Script execution images
 │   ├── Dockerfile                 # Base image
 │   ├── Dockerfile.playwright      # Browser automation
 │   └── build.sh                   # Build script
 │
-├── workspace_paralegal/           # Runtime workspace (gitignored)
+├── workspace/                     # Runtime workspace (GCS mirror)
+│   ├── Database/                  # JSON databases
 │   ├── Skills/                    # Self-contained skill folders
-│   │   ├── pdf/                   # Claude: PDF manipulation
-│   │   ├── docx/                  # Claude: Word documents
-│   │   ├── xlsx/                  # Claude: Spreadsheets
-│   │   ├── pptx/                  # Claude: Presentations
-│   │   ├── canvas-design/         # Claude: Visual design
-│   │   ├── theme-factory/         # Claude: Theme styling
-│   │   └── [native skills]/       # Legal analysis skills
 │   ├── Tools/                     # Executable scripts
 │   ├── Reports/                   # Analysis outputs
+│   ├── workflow_engine/           # Workflow schemas and definitions
+│   │   ├── schemas/               # JSON schemas
+│   │   ├── checklists/            # Checklist templates
+│   │   └── templates/             # Document templates
 │   └── projects/                  # Case folders
 │
 ├── langgraph.json                 # LangGraph Cloud config
