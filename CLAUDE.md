@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Important Context for Claude Code
 
 **Training Data Cutoff:** January 2025
-**Current Date:** November 2025
+**Current Date:** December 2025
 
 Significant changes have occurred in the LangChain/LangGraph ecosystem since the training cutoff. When working with LangChain or LangGraph code, **always reference the "langchain-docs" MCP server** for the most current documentation links and implementation patterns.
 
@@ -28,8 +28,10 @@ Significant changes have occurred in the LangChain/LangGraph ecosystem since the
 **Key Innovations:**
 - **Dynamic Skills System**: Skills loaded via semantic search, not hardcoded
 - **Case Context Middleware**: Auto-detects client mentions and injects case data
-- **Docker-Based Script Execution**: Python scripts run in isolated containers with GCS filesystem access
-- **Generative UI**: Rich interactive components via Thesys C1
+- **Workflow Engine**: Graph-based state machine with deterministic phase tracking
+- **Knowledge Graph**: Graphiti integration for semantic case memory
+- **Native Script Execution**: Python scripts run directly on VM (Docker optional)
+- **Custom Lean UI**: Direct LangGraph SSE integration with real-time streaming
 
 ---
 
@@ -40,14 +42,14 @@ Significant changes have occurred in the LangChain/LangGraph ecosystem since the
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                              Frontend (ui/)                                  │
-│  Next.js 16 + Custom Lean UI (Direct LangGraph Integration)                 │
-│  ├─ ChatPanel: Chat interface with streaming SSE responses                  │
+│  Next.js 16 + Custom Lean UI (Direct LangGraph SSE)                         │
+│  ├─ ChatPanel: Streaming chat via LangGraph protocol                        │
 │  ├─ Workbench: File browser, document viewer, artifacts                     │
-│  └─ API Route (/api/chat): Direct proxy to LangGraph API                    │
+│  └─ lib/langgraph-client.ts: Direct SSE connection to LangGraph             │
 └─────────────────────────────────────────────────────────────────────────────┘
                                       │
                                       │ Server-Sent Events (SSE)
-                                      │ http://localhost:2024
+                                      │ http://localhost:8123
                                       ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                      LangGraph API Server (roscoe-agents)                    │
@@ -63,14 +65,19 @@ Significant changes have occurred in the LangChain/LangGraph ecosystem since the
 │  src/roscoe/agents/paralegal/agent.py                                       │
 │  ├─ Middleware Pipeline:                                                    │
 │  │   1. CaseContextMiddleware: Detects clients, injects case data           │
-│  │   2. SkillSelectorMiddleware: Semantic skill matching + injection        │
+│  │   2. WorkflowMiddleware: Computes workflow state, injects guidance       │
+│  │   3. SkillSelectorMiddleware: Semantic skill matching + injection        │
+│  │   4. UIContextMiddleware: Bridges UI state to agent                      │
 │  ├─ Sub-Agents:                                                             │
 │  │   └─ multimodal-agent: Image/audio/video analysis                        │
 │  └─ Tools:                                                                  │
-│       ├─ send_slack_message, upload_file_to_slack                           │
-│       ├─ execute_python_script (native subprocess on VM)                    │
-│       ├─ render_ui_script (generates UI components)                         │
-│       └─ analyze_image, analyze_audio, analyze_video                        │
+│       ├─ Knowledge Graph: update_case_data, query_case_graph, graph_query   │
+│       ├─ Workflow: get_case_workflow_status, update_landmark, advance_phase │
+│       ├─ Gmail: search_emails, save_email_to_case, save_emails_batch        │
+│       ├─ Calendar: list_events, create_event, find_free_time                │
+│       ├─ Slack: send_slack_message, upload_file_to_slack                    │
+│       ├─ Scripts: execute_python_script (native subprocess)                 │
+│       └─ Skills: list_skills, load_skill, refresh_skills                    │
 └─────────────────────────────────────────────────────────────────────────────┘
                                       │
                     ┌─────────────────┴─────────────────┐
@@ -94,14 +101,17 @@ Significant changes have occurred in the LangChain/LangGraph ecosystem since the
 | Alternative Models | GPT-5.1 Thinking, Gemini 3 Pro | Configurable via MODEL_PROVIDER |
 | API Server | LangGraph API (langgraph_api.server) | Serves agent via standard protocol |
 | Frontend | Next.js 16 + React 19 | Web interface |
-| Chat UI | Custom Lean UI | Direct LangGraph SSE integration |
+| Chat UI | Custom Lean UI | Direct LangGraph SSE integration (no CopilotKit) |
 | State Management | Zustand | Client-side state |
 | File System | FilesystemBackend | Sandboxed workspace operations |
-| Script Execution | Native Python subprocess | Scripts run directly on VM |
+| Script Execution | Native Python subprocess | Scripts run directly on VM (Docker optional) |
 | Storage | Google Cloud Storage (gcsfuse) | Persistent workspace mount at /mnt/workspace |
 | Checkpointing | PostgreSQL | Thread state persistence |
+| Knowledge Graph | Graphiti + FalkorDB | Semantic case memory with episodes |
+| Workflow Engine | Graph-based state machine | Deterministic phase/landmark tracking |
 | Search | Tavily | Internet search |
 | Legal Research | CourtListener API | Case law, citations, dockets |
+| Email/Calendar | Gmail/Google Calendar API | OAuth2 integration for email and scheduling |
 | Embeddings | sentence-transformers | Local semantic skill matching |
 | Notifications | Slack SDK | Real-time alerts |
 
@@ -202,6 +212,32 @@ SkillSelectorMiddleware(
 **Runtime Methods:**
 - `refresh_skills()` - Rescan skills directory for new additions mid-session
 - `get_all_skills()` - Return list of all skill metadata for `list_skills()` tool
+
+### 3. WorkflowMiddleware (`src/roscoe/core/workflow_middleware.py`)
+
+**Purpose:** Computes deterministic workflow state from case data and injects phase-specific guidance with resource paths.
+
+**How It Works:**
+1. Runs AFTER CaseContextMiddleware to access detected cases
+2. Loads workflow schemas from `/workspace/workflow_engine/schemas/`
+3. Computes current phase and landmark completion status
+4. Injects guidance with next actions and resource paths to skills/templates
+5. Maintains deterministic state via graph-based rules (no hallucinations)
+
+**Key Features:**
+- Phase-aware guidance (Intake, Pre-Litigation, Litigation, etc.)
+- Landmark tracking with completion status
+- Blocker detection (e.g., can't advance without signed retainer)
+- Resource path injection (skills, checklists, templates)
+
+### 4. UIContextMiddleware (`src/roscoe/core/ui_context_middleware.py`)
+
+**Purpose:** Bridges CopilotKit UI state to the agent, providing awareness of user's workspace context.
+
+**Injected Context:**
+- Currently open documents in workbench
+- Active workspace location/path
+- UI component state (file browser selection, etc.)
 
 ---
 
@@ -451,15 +487,228 @@ check_script_execution_mode()  # Returns diagnostic info
 
 ---
 
+## Knowledge Graph (Graphiti)
+
+### Overview
+
+Roscoe uses **Graphiti** for semantic case memory, replacing direct JSON file writes with a knowledge graph backend.
+
+**Backend:** FalkorDB (graph database)
+**Embedding Model:** sentence-transformers (all-MiniLM-L6-v2)
+**Purpose:** Track case entities, relationships, and temporal state changes
+
+### Architecture
+
+```
+Agent → update_case_data() → Graphiti Client → FalkorDB
+                                              ↓
+                                    Episodes + Entities + Facts
+                                              ↓
+Agent ← query_case_graph() ← Semantic Search ← Graph
+```
+
+### Key Concepts
+
+| Concept | Description |
+|---------|-------------|
+| **Episodes** | Timestamped events (e.g., "Dr. Smith performed surgery on 2024-03-15") |
+| **Entities** | People, organizations, documents (e.g., "Dr. John Smith", "UK Hospital") |
+| **Facts** | Relationships and attributes (e.g., "Wilson treated by Dr. Smith") |
+| **Temporal State** | Time-aware queries for case history |
+
+### Agent Tools
+
+```python
+# Record case updates to knowledge graph (creates episodes)
+update_case_data(
+    case_name="Wilson-MVA-2024",
+    data={"provider": "Dr. Smith", "diagnosis": "L4-L5 herniation"},
+    source_type="medical_record",
+    source_id="spine_mri_2024_03_15.pdf"
+)
+
+# Search knowledge graph with natural language
+query_case_graph(
+    case_name="Wilson-MVA-2024",
+    query="What medical providers treated the patient?"
+)
+
+# Direct Cypher queries for structural lookups
+graph_query(
+    query_name="cases_by_provider",  # Pre-defined in workflow_state_computer.py
+    params={"provider_name": "Dr. Smith"}
+)
+
+# Link documents to entities
+associate_document(
+    case_name="Wilson-MVA-2024",
+    document_path="/Medical Records/spine_mri.pdf",
+    entity_ids=["dr_smith", "uk_hospital"]
+)
+```
+
+### Migration from JSON Files
+
+**Before (JSON):**
+```python
+# Agent directly writes to notes.json
+write_file("/projects/Wilson-MVA-2024/notes.json", updated_notes)
+write_file("/Database/master_lists/notes.json", master_notes)
+```
+
+**After (Knowledge Graph):**
+```python
+# Agent records to graph, system syncs to JSON if needed
+update_case_data(
+    case_name="Wilson-MVA-2024",
+    data=note_data,
+    source_type="user_note"
+)
+```
+
+**Benefits:**
+- ✅ Semantic search across all case data
+- ✅ Temporal queries ("What changed since last week?")
+- ✅ Automatic entity extraction and linking
+- ✅ No duplicate data in multiple JSON files
+- ✅ Relationship inference (e.g., provider networks)
+
+---
+
+## Hybrid Graph Architecture
+
+### Two-Layer Design
+
+Roscoe uses a **hybrid approach** for graph management:
+
+**Layer 1: Structured Core (Direct Cypher - 65%)**
+- Entities: Case, Client, Claim, Provider, Lien
+- Workflow State: Phase, Landmark status, progress
+- Deterministic relationships
+- Module: `src/roscoe/core/graph_manager.py`
+
+**Layer 2: Unstructured Layer (Graphiti - 35%)**
+- Entities: Note, Episode
+- Operations: Semantic search, community summaries
+- Module: `src/roscoe/core/graphiti_client.py`
+
+### When to Use Each
+
+| Operation | Module | Reason |
+|-----------|--------|--------|
+| Create Case | graph_manager | Structured form data |
+| Create Claim | graph_manager | Structured insurance data |
+| Update Phase | graph_manager | State machine logic |
+| Update Landmark | graph_manager | Deterministic verification |
+| Add Note | graphiti_client | Unstructured communication |
+| Search Notes | graphiti_client | Semantic search |
+| Case Summary | graphiti_client | LLM aggregation |
+
+### Example Usage
+
+```python
+# Structured: Use Direct Cypher
+from roscoe.core.graph_manager import create_case, create_biclaim
+
+case_name = await create_case("Elizabeth Lindsey", "2024-12-01", "MVA")
+await create_biclaim(case_name, "12345", "Progressive", "Jennifer Howard")
+
+# Unstructured: Use Graphiti
+from roscoe.core.graphiti_client import add_case_episode
+
+await add_case_episode(
+    case_name=case_name,
+    episode_name="Adjuster Call",
+    episode_body="Spoke with adjuster - PIP exhausted, $10k paid total"
+)
+```
+
+---
+
+## Workflow Engine
+
+### Overview
+
+The workflow engine provides **deterministic, graph-based workflow state** for personal injury cases, replacing hallucinated guidance with structured phase/landmark tracking.
+
+**Location:** `workspace/workflow_engine/schemas/`
+**State Computer:** `src/roscoe/core/workflow_state_computer.py`
+**Middleware:** `src/roscoe/core/workflow_middleware.py`
+
+### Architecture
+
+```
+Phases (Intake → Pre-Lit → Litigation → Settlement → Closed)
+   ↓
+Workflows (per phase: Medical Analysis, Demand Package, Discovery)
+   ↓
+Landmarks (checkpoints: Retainer Signed, MMI Reached, Complaint Filed)
+   ↓
+Skills + Templates (resources for completing landmarks)
+```
+
+### Workflow State Computation
+
+**Input:** Case data from JSON files (overview.json, notes.json, etc.)
+**Process:** Graph traversal with rule-based state computation
+**Output:** Current phase, completed landmarks, next actions, blockers
+
+```python
+# Agent tool: Get formatted workflow status
+get_case_workflow_status(case_name="Wilson-MVA-2024")
+# Returns: Current phase, progress %, next actions, blockers
+
+# Agent tool: Update landmark status
+update_landmark(
+    case_name="Wilson-MVA-2024",
+    workflow_name="intake",
+    landmark_name="retainer_signed",
+    status="complete"
+)
+
+# Agent tool: Advance to next phase
+advance_phase(case_name="Wilson-MVA-2024")
+# Checks blockers, advances if criteria met
+```
+
+### Deterministic Rules
+
+| Phase | Entry Criteria | Blockers |
+|-------|---------------|----------|
+| Intake | Case created | Missing retainer signature |
+| Pre-Litigation | Retainer signed, liability clear | MMI not reached |
+| Litigation | Demand rejected OR statute approaching | Complaint not filed |
+| Settlement | Negotiation active | Authorization not received |
+| Closed | Settlement paid OR case dismissed | N/A |
+
+### Resource Injection
+
+WorkflowMiddleware injects phase-specific resources into the system prompt:
+
+```
+Current Phase: Pre-Litigation
+Next Actions:
+  1. Complete medical records analysis (use skill: medical-records-analysis)
+  2. Draft demand letter (template: /Templates/demand_letter.docx)
+  3. Calculate damages (use skill: damages-calculator)
+
+Blockers:
+  - Waiting on final medical bill from UK Hospital
+```
+
+---
+
 ## Frontend (roscoe-ui)
 
 ### Technology Stack
 
-- **Next.js 16** with App Router
-- **React 19** with CopilotKit integration
-- **Thesys C1** for generative UI components
+- **Next.js 16** with App Router (Turbopack dev server)
+- **React 19** with custom hooks
 - **Tailwind CSS 4** for styling
 - **Radix UI** primitives
+- **Zustand** for state management
+- **TipTap** for rich text editing
+- **react-pdf** for PDF viewing
 
 ### Architecture
 
@@ -467,34 +716,56 @@ check_script_execution_mode()  # Returns diagnostic info
 roscoe-ui/
 ├── src/
 │   ├── app/
-│   │   ├── api/chat/route.ts   # CopilotKit proxy endpoint
-│   │   ├── layout.tsx          # CopilotKit provider wrapper
-│   │   ├── page.tsx            # Main UI with sidebar + content
+│   │   ├── layout.tsx          # Root layout
+│   │   ├── page.tsx            # Main workbench UI
 │   │   └── globals.css         # Tailwind + CSS variables
-│   ├── components/ui/          # Radix-based UI components
-│   └── lib/utils.ts            # Utility functions
+│   ├── components/
+│   │   ├── chat/               # Chat panel components
+│   │   ├── workbench/          # File browser, document viewer
+│   │   └── ui/                 # Radix-based UI primitives
+│   ├── hooks/
+│   │   ├── use-artifact-listener.ts  # SSE artifact streaming
+│   │   └── use-langgraph-client.ts   # Direct LangGraph integration
+│   ├── lib/
+│   │   └── langgraph-client.ts # SSE connection to LangGraph API
+│   └── stores/
+│       └── workbench-store.ts  # Zustand state (files, artifacts)
 └── package.json
 ```
 
-### CopilotKit Integration
+### Custom Lean UI (No CopilotKit)
 
-**Layout** (`layout.tsx`):
+The UI connects **directly to the LangGraph API** via Server-Sent Events (SSE), without CopilotKit:
+
+**LangGraph Client** (`lib/langgraph-client.ts`):
 ```typescript
-<CopilotKit runtimeUrl="/api/chat" agent="roscoe_paralegal">
-  {children}
-</CopilotKit>
+export class LangGraphClient {
+  streamThread(threadId: string, input: any): EventSource {
+    const url = `${LANGGRAPH_API_URL}/threads/${threadId}/runs/stream`;
+    return new EventSource(url);
+  }
+}
 ```
 
-**API Route** (`api/chat/route.ts`):
+**Chat Integration** (`hooks/use-langgraph-client.ts`):
 ```typescript
-const runtime = new CopilotRuntime({
-  remoteEndpoints: [{ url: ROSCOE_COPILOTKIT_URL }],
-});
+// Direct SSE connection to LangGraph
+const eventSource = langgraphClient.streamThread(threadId, userMessage);
+eventSource.onmessage = (event) => {
+  const parsed = JSON.parse(event.data);
+  // Handle agent messages, tool calls, artifacts
+};
 ```
+
+**Benefits:**
+- ✅ Zero dependency on CopilotKit SDK
+- ✅ Full control over streaming protocol
+- ✅ Custom artifact rendering
+- ✅ Lightweight and fast
 
 ### Generative UI
 
-The `render_ui_script` tool executes Python scripts that generate UI component data:
+The agent can generate UI artifacts via streaming. The `render_ui_script` tool executes Python scripts that output UI component data:
 
 ```python
 # Agent calls render_ui_script with a UI script path
@@ -518,21 +789,25 @@ output_result({
 })
 ```
 
-Frontend renders via `useRenderToolCall`:
+Frontend renders via artifact listener:
 ```typescript
-useRenderToolCall({
-  name: "render_ui_script",
-  render: ({ result }) => {
-    const parsed = JSON.parse(result?.output || "{}");
-    return renderComponent(parsed.component, parsed.data);
-  },
-});
+// hooks/use-artifact-listener.ts
+useEffect(() => {
+  eventSource.onmessage = (event) => {
+    if (event.data.type === "artifact") {
+      const artifact = JSON.parse(event.data.content);
+      workbenchStore.addArtifact(artifact);
+    }
+  };
+}, [eventSource]);
 ```
 
 Available UI components:
-- `CaseDashboard` - Case overview with key metrics
-- `DocumentViewer` - PDF, Markdown, and text file display
-- Custom components as defined in `page.tsx`
+- File browser with workspace navigation
+- PDF viewer with page controls
+- Markdown renderer with syntax highlighting
+- Rich text editor (TipTap) for note-taking
+- Custom artifact rendering (charts, tables, dashboards)
 
 ---
 
@@ -662,19 +937,20 @@ VM: roscoe-paralegal-vm (us-central1-a)
                     └──────────────────┘  └──────────────────┘  └──────────────────┘
 ```
 
-**Important:** 
+**Important:**
 - The UI runs in **dev mode directly on the VM** (not Docker) for instant hot-reload
-- The UI connects to `http://localhost:8123` (the LangGraph API exposed on the host)
-- The `roscoe-copilotkit` container exists but is **not in the active request path** - it's a legacy service
+- The UI connects via **direct SSE** to `http://localhost:8123` (LangGraph API)
+- **No CopilotKit** - custom lean UI with direct LangGraph protocol integration
+- The `roscoe-copilotkit` container may exist but is **deprecated and unused**
 
 ### Docker Containers
 
 | Container | Image | Port (host→container) | Purpose |
 |-----------|-------|----------------------|---------|
 | roscoe-agents | agwhaley/roscoe-agents:latest | 8123→8000 | LangGraph API server (primary) |
-| roscoe-copilotkit | agwhaley/roscoe-agents:latest | 8124→8124 | Legacy CopilotKit server (not used) |
 | roscoe-postgres | postgres:15-alpine | 5432→5432 | LangGraph checkpointing |
 | roscoe-redis | redis:7-alpine | 6379→6379 | Caching |
+| roscoe-falkordb | falkordb/falkordb:latest | 6380→6379 | Knowledge graph backend (Graphiti) |
 
 ### UI Dev Mode (Production)
 
@@ -683,7 +959,7 @@ The UI runs in **dev mode directly on the VM** (not in Docker), enabling instant
 ```
 VM: roscoe-paralegal-vm
 ├── /home/aaronwhaley/roscoe-ui/     # UI source code
-│   ├── .env.local                   # ROSCOE_LANGGRAPH_URL=http://localhost:8123
+│   ├── .env.local                   # NEXT_PUBLIC_LANGGRAPH_API_URL=http://localhost:8123
 │   └── node_modules/                # npm dependencies installed
 └── npm run dev                      # Running via nohup, port 3000
 ```
@@ -717,24 +993,29 @@ The UI runs in dev mode directly on the VM and connects to the LangGraph API via
 
 ```bash
 # /home/aaronwhaley/roscoe-ui/.env.local
-ROSCOE_LANGGRAPH_URL=http://localhost:8123
+NEXT_PUBLIC_LANGGRAPH_API_URL=http://localhost:8123
 ```
 
-The Next.js `/api/chat/route.ts` uses this:
+The UI uses a custom LangGraph client (`lib/langgraph-client.ts`) for direct SSE connection:
 
 ```typescript
-const langGraphUrl = process.env.ROSCOE_LANGGRAPH_URL || "http://localhost:8123";
-return new CopilotRuntime({
-  agents: {
-    roscoe_paralegal: new LangGraphAgent({
-      deploymentUrl: langGraphUrl,
-      graphId: "roscoe_paralegal",
-    }),
-  },
-});
+const LANGGRAPH_API_URL = process.env.NEXT_PUBLIC_LANGGRAPH_API_URL || "http://localhost:8123";
+
+export class LangGraphClient {
+  async createThread(): Promise<Thread> {
+    return fetch(`${LANGGRAPH_API_URL}/threads`, { method: "POST" });
+  }
+
+  streamRun(threadId: string, input: any): EventSource {
+    return new EventSource(`${LANGGRAPH_API_URL}/threads/${threadId}/runs/stream`);
+  }
+}
 ```
 
-**Note:** Since UI runs on the VM host (not in Docker), it uses `localhost:8123` to reach the LangGraph API which is exposed on the host port.
+**Note:**
+- No CopilotKit SDK - direct LangGraph protocol integration
+- Since UI runs on the VM host (not in Docker), it uses `localhost:8123`
+- Environment variable must be `NEXT_PUBLIC_*` for client-side access
 
 ### Syncing Code to VM
 
@@ -868,9 +1149,6 @@ NCBI_EMAIL=user@example.com
 NCBI_API_KEY=...
 COURTLISTENER_API_KEY=...
 
-# UI Integration
-THESYS_API_KEY=...
-
 # Slack Integration
 SLACK_BOT_TOKEN=xoxb-...
 SLACK_APP_TOKEN=xapp-...
@@ -881,6 +1159,14 @@ LANGCHAIN_TRACING_V2=true
 LANGCHAIN_API_KEY=ls-...
 LANGCHAIN_PROJECT=roscoe
 
+# Google OAuth (Gmail/Calendar)
+GOOGLE_CREDENTIALS_FILE=/path/to/client_secret.json  # OAuth2 credentials
+GOOGLE_TOKEN_FILE=/path/to/token.json  # Cached OAuth token
+
+# Knowledge Graph (Graphiti)
+FALKORDB_HOST=localhost  # FalkorDB host
+FALKORDB_PORT=6380       # FalkorDB port
+
 # Production
 WORKSPACE_DIR=/mnt/workspace
 WORKSPACE_ROOT=/mnt/workspace  # Alternative name used by script executor
@@ -889,6 +1175,9 @@ ROSCOE_ENABLE_SLACK_BRIDGE=true
 
 # Script Execution Mode
 SCRIPT_EXECUTION_MODE=auto  # Options: auto, native, docker
+
+# UI (client-side, must be NEXT_PUBLIC_*)
+NEXT_PUBLIC_LANGGRAPH_API_URL=http://localhost:8123
 ```
 
 ---
@@ -898,15 +1187,17 @@ SCRIPT_EXECUTION_MODE=auto  # Options: auto, native, docker
 ### Local Development
 
 ```bash
-# Install dependencies
+# Install Python dependencies
 uv sync
 
 # Run LangGraph development server (port 2024)
 langgraph dev
 
 # Run frontend (separate terminal, port 3000)
-cd ui && npm run dev
+cd ui && npm run dev --turbopack
 ```
+
+**Note:** The UI uses Turbopack for faster dev server startup and hot-reload.
 
 ### Docker Image Building
 
@@ -1187,6 +1478,39 @@ gcloud compute ssh roscoe-paralegal-vm --zone=us-central1-a --command="
 # Run LangGraph development server locally
 langgraph dev
 
-# Run UI locally (in roscoe-ui directory)
-npm run dev
+# Run UI locally (in ui directory)
+cd ui && npm run dev --turbopack
+```
+
+### Knowledge Graph Issues
+
+```bash
+# Check FalkorDB connection
+docker exec roscoe-falkordb redis-cli -p 6379 PING
+# Should return: PONG
+
+# View Graphiti logs
+# Check agent logs for Graphiti errors (KeyError, connection issues)
+
+# Reset knowledge graph (if corrupted)
+docker exec roscoe-falkordb redis-cli -p 6379 FLUSHALL
+# WARNING: This deletes ALL graph data!
+
+# Test knowledge graph tools
+# In agent: call update_case_data() to add test episode
+# Then call query_case_graph() to verify retrieval
+```
+
+### UI Build Issues
+
+```bash
+# Clear Next.js cache and rebuild
+cd ui
+rm -rf .next node_modules
+npm install --legacy-peer-deps
+npm run dev --turbopack
+
+# If Tailwind not working, check:
+# - tailwind.config.ts uses @tailwindcss/postcss v4
+# - No conflicting Tailwind versions in package.json
 ```
