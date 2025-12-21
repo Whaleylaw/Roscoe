@@ -127,7 +127,7 @@ ENTITY_FILES = {
     "Insurer": "insurers.json",
     "MedicalProvider": "medical_providers.json",
     "Lien": "liens.json",
-    "Lienholder": "lienholders.json",
+    "LienHolder": "lienholders.json",  # Capital H to match relationship files
     "Attorney": "attorneys.json",
     "Court": "courts.json",
     "Defendant": "defendants.json",
