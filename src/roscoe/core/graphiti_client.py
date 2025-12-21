@@ -22,6 +22,20 @@ from graphiti_core.driver.falkordb_driver import FalkorDriver
 from graphiti_core.nodes import EpisodeType
 
 # =============================================================================
+# SCOPE: This module is for UNSTRUCTURED data operations only
+# =============================================================================
+# USE THIS FOR:
+# - Adding notes (add_case_episode)
+# - Searching notes (search_case)
+# - Generating case summaries (generate_case_summary)
+#
+# DO NOT USE FOR:
+# - Creating structured entities (Case, Client, Claim) - use graph_manager.py
+# - Workflow state management - use graph_manager.py
+# - Deterministic relationships - use graph_manager.py
+# =============================================================================
+
+# =============================================================================
 # Entity Type Definitions (Pydantic Models)
 # =============================================================================
 
@@ -1974,6 +1988,8 @@ async def get_landmark_status(case_name: str, landmark_id: str) -> dict:
     return results[0] if results else None
 
 
+# DEPRECATED: Use graph_manager.update_landmark_status() instead
+# This function modifies structured workflow state, which should be handled by graph_manager.py
 async def update_case_landmark_status(
     case_name: str,
     landmark_id: str,
@@ -2100,6 +2116,8 @@ async def check_phase_can_advance(case_name: str, current_phase: str = None) -> 
     }
 
 
+# DEPRECATED: Use graph_manager.advance_phase() instead
+# This function modifies structured workflow state, which should be handled by graph_manager.py
 async def advance_case_to_phase(case_name: str, target_phase: str, force: bool = False) -> dict:
     """
     Advance a case to a new phase.
