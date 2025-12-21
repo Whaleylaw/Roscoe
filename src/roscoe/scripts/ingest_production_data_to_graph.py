@@ -63,7 +63,11 @@ async def run_direct_cypher(query: str, params: dict = None):
 
     # If params provided, substitute them into the query
     if params:
-        for key, value in params.items():
+        # Sort keys in reverse order by length to avoid partial matches
+        # This ensures $prop_10 gets replaced before $prop_1
+        sorted_params = sorted(params.items(), key=lambda x: len(x[0]), reverse=True)
+
+        for key, value in sorted_params:
             placeholder = f"${key}"
 
             # Format value based on type
