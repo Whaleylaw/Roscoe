@@ -25,8 +25,8 @@ from graphiti_core.nodes import EpisodeType
 # SCOPE: This module is for UNSTRUCTURED data operations only
 # =============================================================================
 # USE THIS FOR:
-# - Adding notes (add_case_episode)
-# - Searching notes (search_case)
+# - Adding notes (add_case_note)
+# - Searching notes (search_case_notes)
 # - Generating case summaries (generate_case_summary)
 #
 # DO NOT USE FOR:
