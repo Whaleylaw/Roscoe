@@ -24,7 +24,8 @@ async def cleanup_test_data():
               n.name = 'State Farm Insurance Company' OR
               n.name = 'Allstate Insurance' OR
               n.name = 'Test Adjuster' OR
-              (n.entity_type = 'Phase' AND n.name = 'treatment')
+              (n.entity_type = 'Phase' AND n.name = 'treatment') OR
+              (n.entity_type = 'Landmark' AND n.landmark_id = 'test_landmark')
         DETACH DELETE n
     ''')
     # Close the Graphiti connection to prevent event loop issues
@@ -185,5 +186,50 @@ async def test_set_case_phase():
         assert len(result) == 1
         assert result[0]["phase.name"] == "treatment"
         assert result[0]["r.entered_at"] is not None
+    finally:
+        await cleanup_test_data()
+
+
+@pytest.mark.asyncio
+async def test_update_landmark_status():
+    """Test updating landmark status for a case."""
+    from roscoe.core.graph_manager import create_case, update_landmark_status
+
+    try:
+        case_name = await create_case("Test Client 5", "2024-12-01", "MVA")
+
+        # Create a dummy landmark entity for testing
+        from roscoe.core.graphiti_client import run_cypher_query, WORKFLOW_GROUP_ID
+        await run_cypher_query('''
+            CREATE (l:Entity {
+                name: 'test_landmark',
+                entity_type: 'Landmark',
+                landmark_id: 'test_landmark',
+                display_name: 'Test Landmark',
+                phase: 'file_setup',
+                group_id: $group_id
+            })
+        ''', {"group_id": WORKFLOW_GROUP_ID})
+
+        # Update status to complete
+        success = await update_landmark_status(
+            case_name=case_name,
+            landmark_id="test_landmark",
+            status="complete",
+            notes="Test completion"
+        )
+
+        assert success == True
+
+        # Verify LANDMARK_STATUS relationship
+        result = await run_cypher_query('''
+            MATCH (case:Entity {name: $case_name})-[r:LANDMARK_STATUS]->(lm:Entity {landmark_id: 'test_landmark'})
+            RETURN r.status, r.notes, r.completed_at
+        ''', {"case_name": case_name})
+
+        assert len(result) == 1
+        assert result[0]["r.status"] == "complete"
+        assert result[0]["r.notes"] == "Test completion"
+        assert result[0]["r.completed_at"] is not None
     finally:
         await cleanup_test_data()

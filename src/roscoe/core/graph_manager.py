@@ -318,3 +318,74 @@ async def set_case_phase(
     })
 
     return len(result) > 0
+
+
+async def update_landmark_status(
+    case_name: str,
+    landmark_id: str,
+    status: str,
+    sub_steps: Optional[Dict] = None,
+    notes: Optional[str] = None
+) -> bool:
+    """
+    Update a landmark's status for a case.
+
+    Args:
+        case_name: Case identifier
+        landmark_id: Landmark identifier
+        status: 'complete', 'in_progress', 'not_started', 'not_applicable'
+        sub_steps: Optional dict of sub-step completion
+        notes: Optional notes about completion
+
+    Returns:
+        True if updated successfully
+    """
+    from roscoe.core.graphiti_client import run_cypher_query
+    import json
+
+    now = datetime.now().isoformat()
+    sub_steps_json = json.dumps(sub_steps) if sub_steps else None
+
+    if status == "complete":
+        query = '''
+        MATCH (case:Entity {entity_type: 'Case', name: $case_name})
+        MATCH (lm:Entity {entity_type: 'Landmark', landmark_id: $landmark_id})
+        MERGE (case)-[r:LANDMARK_STATUS]->(lm)
+        SET r.status = $status,
+            r.sub_steps = $sub_steps,
+            r.notes = $notes,
+            r.completed_at = $completed_at,
+            r.updated_at = $updated_at
+        RETURN case.name, lm.landmark_id
+        '''
+        params = {
+            "case_name": case_name,
+            "landmark_id": landmark_id,
+            "status": status,
+            "sub_steps": sub_steps_json,
+            "notes": notes,
+            "completed_at": now,
+            "updated_at": now
+        }
+    else:
+        query = '''
+        MATCH (case:Entity {entity_type: 'Case', name: $case_name})
+        MATCH (lm:Entity {entity_type: 'Landmark', landmark_id: $landmark_id})
+        MERGE (case)-[r:LANDMARK_STATUS]->(lm)
+        SET r.status = $status,
+            r.sub_steps = $sub_steps,
+            r.notes = $notes,
+            r.updated_at = $updated_at
+        RETURN case.name, lm.landmark_id
+        '''
+        params = {
+            "case_name": case_name,
+            "landmark_id": landmark_id,
+            "status": status,
+            "sub_steps": sub_steps_json,
+            "notes": notes,
+            "updated_at": now
+        }
+
+    result = await run_cypher_query(query, params)
+    return len(result) > 0
