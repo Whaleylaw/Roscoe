@@ -274,3 +274,47 @@ async def create_pipclaim(
     ''', {"claim_number": claim_number, "insurer_name": insurer_name})
 
     return claim_name
+
+
+async def set_case_phase(
+    case_name: str,
+    phase_name: str,
+    previous_phase: Optional[str] = None
+) -> bool:
+    """
+    Set case to a specific phase.
+
+    Creates or updates IN_PHASE relationship.
+
+    Args:
+        case_name: Case identifier
+        phase_name: Target phase (file_setup, treatment, demand, etc.)
+        previous_phase: Optional previous phase name
+
+    Returns:
+        True if successful
+    """
+    from roscoe.core.graphiti_client import run_cypher_query
+
+    # Remove existing IN_PHASE relationship
+    await run_cypher_query('''
+        MATCH (case:Entity {name: $case_name})-[r:IN_PHASE]->()
+        DELETE r
+    ''', {"case_name": case_name})
+
+    # Create new IN_PHASE relationship
+    result = await run_cypher_query('''
+        MATCH (case:Entity {name: $case_name})
+        MATCH (phase:Entity {entity_type: 'Phase', name: $phase_name})
+        CREATE (case)-[r:IN_PHASE]->(phase)
+        SET r.entered_at = $now,
+            r.previous_phase = $previous_phase
+        RETURN case.name, phase.name
+    ''', {
+        "case_name": case_name,
+        "phase_name": phase_name,
+        "previous_phase": previous_phase,
+        "now": datetime.now().isoformat()
+    })
+
+    return len(result) > 0

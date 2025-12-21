@@ -23,7 +23,8 @@ async def cleanup_test_data():
               n.name STARTS WITH 'PIPClaim-TEST' OR
               n.name = 'State Farm Insurance Company' OR
               n.name = 'Allstate Insurance' OR
-              n.name = 'Test Adjuster'
+              n.name = 'Test Adjuster' OR
+              (n.entity_type = 'Phase' AND n.name = 'treatment')
         DETACH DELETE n
     ''')
     # Close the Graphiti connection to prevent event loop issues
@@ -149,5 +150,40 @@ async def test_create_pipclaim():
         assert len(result) == 1
         assert result[0]["claim.exhausted"] == False
         assert result[0]["claim.policy_limit"] == 10000.0
+    finally:
+        await cleanup_test_data()
+
+
+@pytest.mark.asyncio
+async def test_set_case_phase():
+    """Test setting case phase creates IN_PHASE relationship."""
+    from roscoe.core.graph_manager import set_case_phase
+
+    try:
+        case_name = await create_case("Test Client 4", "2024-12-01", "MVA")
+
+        # Create treatment phase entity (in production, this will be pre-loaded)
+        from roscoe.core.graphiti_client import run_cypher_query, CASE_DATA_GROUP_ID
+        await run_cypher_query('''
+            MERGE (phase:Entity {
+                name: 'treatment',
+                entity_type: 'Phase',
+                group_id: $group_id
+            })
+        ''', {"group_id": CASE_DATA_GROUP_ID})
+
+        # Set phase to treatment
+        result = await set_case_phase(case_name, "treatment")
+        assert result is True
+
+        # Verify IN_PHASE relationship
+        result = await run_cypher_query('''
+            MATCH (case:Entity {name: $case_name})-[r:IN_PHASE]->(phase:Entity {entity_type: 'Phase'})
+            RETURN phase.name, r.entered_at
+        ''', {"case_name": case_name})
+
+        assert len(result) == 1
+        assert result[0]["phase.name"] == "treatment"
+        assert result[0]["r.entered_at"] is not None
     finally:
         await cleanup_test_data()
