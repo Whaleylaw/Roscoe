@@ -901,7 +901,7 @@ async def get_graphiti() -> Graphiti:
     if not google_api_key:
         raise ValueError("GOOGLE_API_KEY environment variable is required for Graphiti")
     
-    falkordb_host = os.getenv("FALKORDB_HOST", "localhost")
+    falkordb_host = os.getenv("FALKORDB_HOST", "roscoe-graphdb")
     falkordb_port = int(os.getenv("FALKORDB_PORT", "6379"))
     
     # Configure Gemini 3 Flash as the LLM (released Dec 2025)
