@@ -40,8 +40,8 @@ from roscoe.core.graphiti_client import CASE_DATA_GROUP_ID
 
 def get_falkordb_connection():
     """Get direct FalkorDB connection without Graphiti."""
-    host = os.getenv("FALKORDB_HOST", "localhost")
-    port = int(os.getenv("FALKORDB_PORT", "6380"))
+    host = os.getenv("FALKORDB_HOST", "roscoe-graphdb")
+    port = int(os.getenv("FALKORDB_PORT", "6379"))
     return redis.Redis(host=host, port=port, decode_responses=True)
 
 
