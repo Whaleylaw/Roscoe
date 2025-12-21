@@ -49,40 +49,42 @@ async def run_direct_cypher(query: str, params: dict = None):
     """
     Execute Cypher query directly against FalkorDB.
 
+    FalkorDB doesn't support parameterized queries like Neo4j.
+    We need to inline values with proper escaping.
+
     Args:
-        query: Cypher query string
-        params: Query parameters
+        query: Cypher query string with $param placeholders
+        params: Query parameters to substitute
 
     Returns:
         List of result dictionaries
     """
     client = get_falkordb_connection()
 
-    # Convert params to Cypher parameter syntax
+    # If params provided, substitute them into the query
     if params:
-        # FalkorDB expects params as: CYPHER $param1="value1" $param2="value2" 'query'
-        param_parts = []
         for key, value in params.items():
-            if isinstance(value, str):
-                # Escape quotes in strings
-                escaped_value = value.replace('"', '\\"')
-                param_parts.append(f'${key}="{escaped_value}"')
+            placeholder = f"${key}"
+
+            # Format value based on type
+            if value is None:
+                formatted_value = "null"
             elif isinstance(value, bool):
-                param_parts.append(f'${key}={str(value).lower()}')
-            elif value is None:
-                param_parts.append(f'${key}=null')
+                formatted_value = str(value).lower()
             elif isinstance(value, (int, float)):
-                param_parts.append(f'${key}={value}')
+                formatted_value = str(value)
+            elif isinstance(value, str):
+                # Escape quotes in strings
+                escaped = value.replace("'", "\\'").replace('"', '\\"')
+                formatted_value = f'"{escaped}"'
             else:
-                # For other types, convert to string
-                param_parts.append(f'${key}="{str(value)}"')
+                # Default: convert to string and quote
+                formatted_value = f'"{str(value)}"'
 
-        cypher_params = "CYPHER " + " ".join(param_parts) + " "
-        full_query = cypher_params + query
-    else:
-        full_query = query
+            query = query.replace(placeholder, formatted_value)
 
-    result = client.execute_command("GRAPH.QUERY", "roscoe_graph", full_query)
+    # Execute query
+    result = client.execute_command("GRAPH.QUERY", "roscoe_graph", query, "--compact")
 
     # Parse result
     if not result or len(result) < 2:
@@ -97,7 +99,9 @@ async def run_direct_cypher(query: str, params: dict = None):
     for row in rows:
         row_dict = {}
         for i, col_name in enumerate(header):
-            row_dict[col_name] = row[i] if i < len(row) else None
+            # Extract column name (remove type info if present)
+            col_key = col_name[0] if isinstance(col_name, list) else col_name
+            row_dict[col_key] = row[i] if i < len(row) else None
         parsed_results.append(row_dict)
 
     return parsed_results
