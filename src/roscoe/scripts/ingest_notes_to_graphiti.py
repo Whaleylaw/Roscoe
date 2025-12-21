@@ -147,7 +147,7 @@ async def create_episode_from_note(note: Dict, case_exists_cache: set) -> bool:
             episode_body=episode_body,
             source=source_desc,
             reference_time=reference_time,
-            use_custom_types=True
+            use_custom_types=False  # Disable custom types for now
         )
 
         return True
