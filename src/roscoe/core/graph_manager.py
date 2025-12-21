@@ -76,3 +76,201 @@ async def create_case(
     ''', {"case_name": case_name, "client_name": client_name})
 
     return case_name
+
+
+async def create_biclaim(
+    case_name: str,
+    claim_number: str,
+    insurer_name: str,
+    adjuster_name: Optional[str] = None,
+    policy_limit: Optional[float] = None,
+    coverage_confirmation: Optional[str] = None,
+    adjuster_email: Optional[str] = None,
+    adjuster_phone: Optional[str] = None
+) -> str:
+    """
+    Create new BI claim with insurer and optional adjuster relationships.
+
+    Uses Direct Cypher for deterministic entity creation.
+
+    Args:
+        case_name: Case entity name
+        claim_number: Insurance claim number
+        insurer_name: Insurance company name
+        adjuster_name: Optional adjuster name
+        policy_limit: Optional policy limit amount
+        coverage_confirmation: Optional coverage status
+        adjuster_email: Optional adjuster email
+        adjuster_phone: Optional adjuster phone
+
+    Returns:
+        claim_name: Generated claim identifier
+    """
+    from roscoe.core.graphiti_client import run_cypher_query, CASE_DATA_GROUP_ID
+
+    # Generate claim name
+    claim_name = f"BIClaim-{claim_number}"
+
+    # Create BIClaim entity
+    await run_cypher_query('''
+        CREATE (claim:Entity {
+            name: $claim_name,
+            entity_type: 'BIClaim',
+            claim_number: $claim_number,
+            insurer_name: $insurer_name,
+            policy_limit: $policy_limit,
+            coverage_confirmation: $coverage_confirmation,
+            group_id: $group_id,
+            created_at: $now
+        })
+    ''', {
+        "claim_name": claim_name,
+        "claim_number": claim_number,
+        "insurer_name": insurer_name,
+        "policy_limit": policy_limit,
+        "coverage_confirmation": coverage_confirmation,
+        "group_id": CASE_DATA_GROUP_ID,
+        "now": datetime.now().isoformat()
+    })
+
+    # MERGE insurer entity
+    await run_cypher_query('''
+        MERGE (insurer:Entity {
+            name: $insurer_name,
+            entity_type: 'Insurer',
+            group_id: $group_id
+        })
+    ''', {
+        "insurer_name": insurer_name,
+        "group_id": CASE_DATA_GROUP_ID
+    })
+
+    # Create HAS_CLAIM relationship (Case -> Claim)
+    await run_cypher_query('''
+        MATCH (case:Entity {entity_type: 'Case', name: $case_name})
+        MATCH (claim:Entity {entity_type: 'BIClaim', claim_number: $claim_number})
+        CREATE (case)-[:HAS_CLAIM]->(claim)
+    ''', {"case_name": case_name, "claim_number": claim_number})
+
+    # Create INSURED_BY relationship (Claim -> Insurer)
+    await run_cypher_query('''
+        MATCH (claim:Entity {entity_type: 'BIClaim', claim_number: $claim_number})
+        MATCH (insurer:Entity {entity_type: 'Insurer', name: $insurer_name})
+        CREATE (claim)-[:INSURED_BY]->(insurer)
+    ''', {"claim_number": claim_number, "insurer_name": insurer_name})
+
+    # If adjuster provided, create adjuster entity and relationships
+    if adjuster_name:
+        await run_cypher_query('''
+            MERGE (adjuster:Entity {
+                name: $adjuster_name,
+                entity_type: 'Adjuster',
+                group_id: $group_id
+            })
+            ON CREATE SET
+                adjuster.email = $adjuster_email,
+                adjuster.phone = $adjuster_phone
+        ''', {
+            "adjuster_name": adjuster_name,
+            "adjuster_email": adjuster_email,
+            "adjuster_phone": adjuster_phone,
+            "group_id": CASE_DATA_GROUP_ID
+        })
+
+        # Create ASSIGNED_ADJUSTER relationship (Claim -> Adjuster)
+        await run_cypher_query('''
+            MATCH (claim:Entity {entity_type: 'BIClaim', claim_number: $claim_number})
+            MATCH (adjuster:Entity {entity_type: 'Adjuster', name: $adjuster_name})
+            CREATE (claim)-[:ASSIGNED_ADJUSTER]->(adjuster)
+        ''', {"claim_number": claim_number, "adjuster_name": adjuster_name})
+
+        # Create HANDLES_INSURANCE_CLAIM relationship (Adjuster -> Claim)
+        await run_cypher_query('''
+            MATCH (adjuster:Entity {entity_type: 'Adjuster', name: $adjuster_name})
+            MATCH (claim:Entity {entity_type: 'BIClaim', claim_number: $claim_number})
+            CREATE (adjuster)-[:HANDLES_INSURANCE_CLAIM]->(claim)
+        ''', {"adjuster_name": adjuster_name, "claim_number": claim_number})
+
+    return claim_name
+
+
+async def create_pipclaim(
+    case_name: str,
+    claim_number: str,
+    insurer_name: str,
+    policy_limit: Optional[float] = None,
+    exhausted: bool = False,
+    amount_paid: Optional[float] = None
+) -> str:
+    """
+    Create new PIP claim with insurer relationship.
+
+    Uses Direct Cypher for deterministic entity creation.
+
+    Args:
+        case_name: Case entity name
+        claim_number: PIP claim number
+        insurer_name: Insurance company name
+        policy_limit: Optional policy limit
+        exhausted: Whether PIP benefits exhausted
+        amount_paid: Optional amount paid so far
+
+    Returns:
+        claim_name: Generated claim identifier
+    """
+    from roscoe.core.graphiti_client import run_cypher_query, CASE_DATA_GROUP_ID
+
+    # Generate claim name
+    claim_name = f"PIPClaim-{claim_number}"
+
+    # Create PIPClaim entity
+    await run_cypher_query('''
+        CREATE (claim:Entity {
+            name: $claim_name,
+            entity_type: 'PIPClaim',
+            claim_number: $claim_number,
+            insurer_name: $insurer_name,
+            policy_limit: $policy_limit,
+            exhausted: $exhausted,
+            amount_paid: $amount_paid,
+            group_id: $group_id,
+            created_at: $now
+        })
+    ''', {
+        "claim_name": claim_name,
+        "claim_number": claim_number,
+        "insurer_name": insurer_name,
+        "policy_limit": policy_limit,
+        "exhausted": exhausted,
+        "amount_paid": amount_paid,
+        "group_id": CASE_DATA_GROUP_ID,
+        "now": datetime.now().isoformat()
+    })
+
+    # MERGE insurer entity
+    await run_cypher_query('''
+        MERGE (insurer:Entity {
+            name: $insurer_name,
+            entity_type: 'Insurer',
+            group_id: $group_id
+        })
+    ''', {
+        "insurer_name": insurer_name,
+        "group_id": CASE_DATA_GROUP_ID
+    })
+
+    # Create HAS_CLAIM relationship (Case -> Claim)
+    await run_cypher_query('''
+        MATCH (case:Entity {entity_type: 'Case', name: $case_name})
+        MATCH (claim:Entity {entity_type: 'PIPClaim', claim_number: $claim_number})
+        CREATE (case)-[:HAS_CLAIM]->(claim)
+    ''', {"case_name": case_name, "claim_number": claim_number})
+
+    # Create INSURED_BY relationship (Claim -> Insurer)
+    await run_cypher_query('''
+        MATCH (claim:Entity {entity_type: 'PIPClaim', claim_number: $claim_number})
+        MATCH (insurer:Entity {entity_type: 'Insurer', name: $insurer_name})
+        CREATE (claim)-[:INSURED_BY]->(insurer)
+    ''', {"claim_number": claim_number, "insurer_name": insurer_name})
+
+    return claim_name
