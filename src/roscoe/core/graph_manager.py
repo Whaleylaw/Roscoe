@@ -389,3 +389,90 @@ async def update_landmark_status(
 
     result = await run_cypher_query(query, params)
     return len(result) > 0
+
+
+async def verify_landmark(case_name: str, landmark_id: str) -> bool:
+    """
+    Run verification query for a landmark.
+
+    Args:
+        case_name: Case identifier
+        landmark_id: Landmark identifier
+
+    Returns:
+        True if landmark conditions are met
+    """
+    from roscoe.core.graphiti_client import run_cypher_query
+
+    # Get landmark verification query
+    result = await run_cypher_query('''
+        MATCH (l:Entity {entity_type: 'Landmark', landmark_id: $landmark_id})
+        WHERE l.verification_method IN ['graph_query', 'hybrid']
+          AND l.verification_query IS NOT NULL
+        RETURN l.verification_query as query
+    ''', {"landmark_id": landmark_id})
+
+    if not result or not result[0].get("query"):
+        return False
+
+    verification_query = result[0]["query"]
+
+    # Run the verification query
+    verification_result = await run_cypher_query(
+        verification_query,
+        {"case_name": case_name}
+    )
+
+    # Check if verified (query should return 'verified' field)
+    return verification_result and verification_result[0].get("verified", False)
+
+
+async def auto_verify_all_landmarks(case_name: str) -> List[str]:
+    """
+    Check all auto-verifiable landmarks for a case and update statuses.
+
+    Call this after major graph updates (adding claims, providers, documents).
+
+    Args:
+        case_name: Case identifier
+
+    Returns:
+        List of landmark IDs that were auto-verified
+    """
+    from roscoe.core.graphiti_client import run_cypher_query, get_case_phase
+
+    # Get current phase
+    phase_info = await get_case_phase(case_name)
+    if not phase_info:
+        return []
+
+    # Get auto-verifiable landmarks for current phase
+    landmarks_to_check = await run_cypher_query('''
+        MATCH (phase:Entity {entity_type: 'Phase', name: $phase_name})-[:HAS_LANDMARK]->(l:Entity {entity_type: 'Landmark'})
+        WHERE l.auto_verify = true
+          AND l.verification_query IS NOT NULL
+        MATCH (case:Entity {name: $case_name})
+        OPTIONAL MATCH (case)-[ls:LANDMARK_STATUS]->(l)
+        WHERE ls.status IS NULL OR ls.status <> 'complete'
+        RETURN l.landmark_id, l.verification_query
+    ''', {
+        "phase_name": phase_info["name"],
+        "case_name": case_name
+    })
+
+    verified_landmarks = []
+
+    # Verify each and update if passed
+    for lm in landmarks_to_check:
+        is_verified = await verify_landmark(case_name, lm["landmark_id"])
+
+        if is_verified:
+            await update_landmark_status(
+                case_name=case_name,
+                landmark_id=lm["landmark_id"],
+                status="complete",
+                notes="Auto-verified from graph data"
+            )
+            verified_landmarks.append(lm["landmark_id"])
+
+    return verified_landmarks

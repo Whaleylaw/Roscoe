@@ -23,9 +23,11 @@ async def cleanup_test_data():
               n.name STARTS WITH 'PIPClaim-TEST' OR
               n.name = 'State Farm Insurance Company' OR
               n.name = 'Allstate Insurance' OR
+              n.name = 'Progressive' OR
               n.name = 'Test Adjuster' OR
               (n.entity_type = 'Phase' AND n.name = 'treatment') OR
-              (n.entity_type = 'Landmark' AND n.landmark_id = 'test_landmark')
+              (n.entity_type = 'Landmark' AND n.landmark_id = 'test_landmark') OR
+              (n.entity_type = 'Landmark' AND n.landmark_id = 'test_claim_setup')
         DETACH DELETE n
     ''')
     # Close the Graphiti connection to prevent event loop issues
@@ -231,5 +233,42 @@ async def test_update_landmark_status():
         assert result[0]["r.status"] == "complete"
         assert result[0]["r.notes"] == "Test completion"
         assert result[0]["r.completed_at"] is not None
+    finally:
+        await cleanup_test_data()
+
+
+@pytest.mark.asyncio
+async def test_verify_landmark_returns_true_when_conditions_met():
+    """Test that verify_landmark checks graph conditions."""
+    from roscoe.core.graph_manager import create_case, create_biclaim, verify_landmark
+
+    try:
+        # Create case and claim
+        case_name = await create_case("Test Client 6", "2024-12-01", "MVA")
+        await create_biclaim(
+            case_name=case_name,
+            claim_number="TEST-123",
+            insurer_name="Progressive",
+            coverage_confirmation="Confirmed"
+        )
+
+        # Create test landmark with verification query
+        from roscoe.core.graphiti_client import run_cypher_query
+        await run_cypher_query('''
+            CREATE (l:Entity {
+                name: 'test_claim_setup',
+                entity_type: 'Landmark',
+                landmark_id: 'test_claim_setup',
+                verification_method: 'graph_query',
+                verification_query: 'MATCH (case:Entity {name: $case_name})-[:HAS_CLAIM]->(claim:Entity {entity_type: \\'BIClaim\\'}) RETURN count(claim) > 0 as verified',
+                auto_verify: true,
+                group_id: '__workflow_definitions__'
+            })
+        ''')
+
+        # Verify landmark
+        is_verified = await verify_landmark(case_name, "test_claim_setup")
+
+        assert is_verified == True
     finally:
         await cleanup_test_data()
