@@ -25,11 +25,82 @@ from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 import sys
+import redis
+import os
 
 # Add src to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from roscoe.core.graphiti_client import run_cypher_query, CASE_DATA_GROUP_ID
+from roscoe.core.graphiti_client import CASE_DATA_GROUP_ID
+
+
+# =============================================================================
+# Direct FalkorDB Connection (No Graphiti)
+# =============================================================================
+
+def get_falkordb_connection():
+    """Get direct FalkorDB connection without Graphiti."""
+    host = os.getenv("FALKORDB_HOST", "localhost")
+    port = int(os.getenv("FALKORDB_PORT", "6380"))
+    return redis.Redis(host=host, port=port, decode_responses=True)
+
+
+async def run_direct_cypher(query: str, params: dict = None):
+    """
+    Execute Cypher query directly against FalkorDB.
+
+    Args:
+        query: Cypher query string
+        params: Query parameters
+
+    Returns:
+        List of result dictionaries
+    """
+    client = get_falkordb_connection()
+
+    # Convert params to Cypher parameter syntax
+    if params:
+        # FalkorDB expects params as: CYPHER $param1="value1" $param2="value2" 'query'
+        param_parts = []
+        for key, value in params.items():
+            if isinstance(value, str):
+                # Escape quotes in strings
+                escaped_value = value.replace('"', '\\"')
+                param_parts.append(f'${key}="{escaped_value}"')
+            elif isinstance(value, bool):
+                param_parts.append(f'${key}={str(value).lower()}')
+            elif value is None:
+                param_parts.append(f'${key}=null')
+            elif isinstance(value, (int, float)):
+                param_parts.append(f'${key}={value}')
+            else:
+                # For other types, convert to string
+                param_parts.append(f'${key}="{str(value)}"')
+
+        cypher_params = "CYPHER " + " ".join(param_parts) + " "
+        full_query = cypher_params + query
+    else:
+        full_query = query
+
+    result = client.execute_command("GRAPH.QUERY", "roscoe_graph", full_query)
+
+    # Parse result
+    if not result or len(result) < 2:
+        return []
+
+    # Result format: [header, rows, stats]
+    header = result[0] if result else []
+    rows = result[1] if len(result) > 1 else []
+
+    # Convert to dict format
+    parsed_results = []
+    for row in rows:
+        row_dict = {}
+        for i, col_name in enumerate(header):
+            row_dict[col_name] = row[i] if i < len(row) else None
+        parsed_results.append(row_dict)
+
+    return parsed_results
 
 
 # =============================================================================
@@ -132,7 +203,7 @@ async def create_entity(
         """
         params["name"] = name
 
-        await run_cypher_query(query, params)
+        await run_direct_cypher(query, params)
         return True
 
     except Exception as e:
@@ -274,7 +345,7 @@ async def create_relationship(
         if set_clause:
             query += f"\nSET {set_clause}"
 
-        await run_cypher_query(query, params)
+        await run_direct_cypher(query, params)
         return True
 
     except Exception as e:
