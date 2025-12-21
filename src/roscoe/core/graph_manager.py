@@ -417,14 +417,21 @@ async def verify_landmark(case_name: str, landmark_id: str) -> bool:
 
     verification_query = result[0]["query"]
 
-    # Run the verification query
-    verification_result = await run_cypher_query(
-        verification_query,
-        {"case_name": case_name}
-    )
+    # Run the verification query with error handling
+    try:
+        verification_result = await run_cypher_query(
+            verification_query,
+            {"case_name": case_name}
+        )
+    except Exception:
+        # Malformed query - skip gracefully
+        return False
 
-    # Check if verified (query should return 'verified' field)
-    return verification_result and verification_result[0].get("verified", False)
+    # Check if verified (query should return 'verified' field) - consistent null check
+    if not verification_result or len(verification_result) == 0:
+        return False
+
+    return verification_result[0].get("verified", False)
 
 
 async def auto_verify_all_landmarks(case_name: str) -> List[str]:
