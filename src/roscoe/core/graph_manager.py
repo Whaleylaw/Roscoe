@@ -434,6 +434,39 @@ async def verify_landmark(case_name: str, landmark_id: str) -> bool:
     return verification_result[0].get("verified", False)
 
 
+async def initialize_phase_landmarks(case_name: str, phase_name: str) -> int:
+    """
+    Create initial LANDMARK_STATUS relationships for all landmarks in a phase.
+
+    Sets status to 'not_started' for each landmark.
+
+    Args:
+        case_name: Case identifier
+        phase_name: Phase name
+
+    Returns:
+        Number of landmarks initialized
+    """
+    from roscoe.core.graphiti_client import run_cypher_query
+
+    result = await run_cypher_query('''
+        MATCH (case:Entity {name: $case_name})
+        MATCH (phase:Entity {entity_type: 'Phase', name: $phase_name})-[:HAS_LANDMARK]->(lm:Entity {entity_type: 'Landmark'})
+        MERGE (case)-[r:LANDMARK_STATUS]->(lm)
+        ON CREATE SET
+          r.status = 'not_started',
+          r.created_at = $now,
+          r.updated_at = $now
+        RETURN count(lm) as landmark_count
+    ''', {
+        "case_name": case_name,
+        "phase_name": phase_name,
+        "now": datetime.now().isoformat()
+    })
+
+    return result[0]["landmark_count"] if result else 0
+
+
 async def auto_verify_all_landmarks(case_name: str) -> List[str]:
     """
     Check all auto-verifiable landmarks for a case and update statuses.

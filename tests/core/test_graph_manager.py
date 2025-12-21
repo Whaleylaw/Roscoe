@@ -26,8 +26,10 @@ async def cleanup_test_data():
               n.name = 'Progressive' OR
               n.name = 'Test Adjuster' OR
               (n.entity_type = 'Phase' AND n.name = 'treatment') OR
+              (n.entity_type = 'Phase' AND n.name = 'file_setup') OR
               (n.entity_type = 'Landmark' AND n.landmark_id = 'test_landmark') OR
-              (n.entity_type = 'Landmark' AND n.landmark_id = 'test_claim_setup')
+              (n.entity_type = 'Landmark' AND n.landmark_id = 'test_claim_setup') OR
+              (n.entity_type = 'Landmark' AND n.landmark_id = 'test_lm_init')
         DETACH DELETE n
     ''')
     # Close the Graphiti connection to prevent event loop issues
@@ -270,5 +272,54 @@ async def test_verify_landmark_returns_true_when_conditions_met():
         is_verified = await verify_landmark(case_name, "test_claim_setup")
 
         assert is_verified == True
+    finally:
+        await cleanup_test_data()
+
+
+@pytest.mark.asyncio
+async def test_initialize_phase_landmarks():
+    """Test initializing landmark statuses for a phase."""
+    from roscoe.core.graph_manager import create_case, initialize_phase_landmarks
+    from roscoe.core.graphiti_client import run_cypher_query
+
+    try:
+        case_name = await create_case("Test Client 7", "2024-12-01", "MVA")
+
+        # Create test landmark
+        await run_cypher_query('''
+            CREATE (l:Entity {
+                name: 'test_lm_init',
+                entity_type: 'Landmark',
+                landmark_id: 'test_lm_init',
+                phase: 'file_setup',
+                group_id: '__workflow_definitions__'
+            })
+        ''')
+
+        # Create phase
+        await run_cypher_query('''
+            MERGE (p:Entity {
+                name: 'file_setup',
+                entity_type: 'Phase',
+                group_id: '__workflow_definitions__'
+            })
+            WITH p
+            MATCH (l:Entity {landmark_id: 'test_lm_init'})
+            CREATE (p)-[:HAS_LANDMARK]->(l)
+        ''')
+
+        # Initialize landmarks
+        count = await initialize_phase_landmarks(case_name, "file_setup")
+
+        assert count >= 1
+
+        # Verify LANDMARK_STATUS created
+        result = await run_cypher_query('''
+            MATCH (case:Entity {name: $case_name})-[r:LANDMARK_STATUS]->(lm:Entity {landmark_id: 'test_lm_init'})
+            RETURN r.status
+        ''', {"case_name": case_name})
+
+        assert len(result) == 1
+        assert result[0]["r.status"] == "not_started"
     finally:
         await cleanup_test_data()
