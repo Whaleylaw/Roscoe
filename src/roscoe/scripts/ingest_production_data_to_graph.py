@@ -178,10 +178,23 @@ async def create_entity(
         True if created, False if error
     """
     try:
-        # Build property dictionary
+        # Generate Graphiti-required fields
+        import uuid as uuid_lib
+        import hashlib
+
+        # uuid: Generate deterministic UUID from name (required by Graphiti for deduplication)
+        name_hash = hashlib.md5(name.encode()).hexdigest()
+        entity_uuid = str(uuid_lib.UUID(name_hash))
+
+        # summary: Use name as summary (required by Graphiti EntityNode schema)
+        summary = name
+
+        # Build property dictionary with Graphiti-required fields
         props = {
             "name": name,
             "entity_type": entity_type,
+            "uuid": entity_uuid,  # Graphiti-required
+            "summary": summary,    # Graphiti-required
             "group_id": CASE_DATA_GROUP_ID,
             "created_at": datetime.now().isoformat(),
             "source_id": source_id,
