@@ -236,18 +236,26 @@ async def ingest_notes(
     errors = 0
 
     for i, note in enumerate(all_notes[start_index:], start=start_index):
+        # Verbose logging per note
+        case_name = note.get("project_name", "Unknown")
+        note_id = note.get("id", "unknown")
+        print(f"  [{i+1}/{len(all_notes)}] Processing note {note_id} for {case_name}...")
+
         success = await create_episode_from_note(note, case_exists_cache)
 
         if success:
             created += 1
+            print(f"    ✅ Created")
         elif note["project_name"] not in case_exists_cache:
             skipped += 1  # Case doesn't exist
+            print(f"    ⏭️  Skipped (case not found)")
         else:
             errors += 1
+            print(f"    ❌ Error")
 
-        # Progress indicator every 100 notes
+        # Progress summary every 100 notes
         if (i + 1) % 100 == 0:
-            print(f"  Progress: {i + 1}/{len(all_notes)} processed (✅ {created} created, ⏭️  {skipped} skipped, ❌ {errors} errors)")
+            print(f"\n  📊 Progress: {i + 1}/{len(all_notes)} processed (✅ {created} created, ⏭️  {skipped} skipped, ❌ {errors} errors)\n")
 
             # Update checkpoint
             with open(checkpoint_file, 'w') as f:
