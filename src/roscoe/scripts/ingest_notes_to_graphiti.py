@@ -189,24 +189,32 @@ async def get_existing_cases() -> set:
 async def ingest_notes(
     notes_file: str = "/Volumes/X10 Pro/Roscoe/json-files/memory-cards/notes_cleaned.json",
     checkpoint_file: str = "/tmp/notes_ingestion_checkpoint.txt",
-    resume: bool = True
+    resume: bool = True,
+    months_back: int = 6,
+    batch_size: int = 10
 ):
     """
-    Ingest all case notes as Graphiti episodes.
+    Ingest case notes as Graphiti episodes with parallel batch processing.
 
     Args:
         notes_file: Path to notes_cleaned.json
         checkpoint_file: Path to checkpoint file for resuming
         resume: Whether to resume from checkpoint (default True)
+        months_back: Only ingest notes from last N months (default 6)
+        batch_size: Number of notes to process in parallel (default 10)
     """
+    from dateutil.relativedelta import relativedelta
+
     start_time = datetime.now()
 
     print("\n" + "="*80)
-    print("🚀 ROSCOE NOTES INGESTION TO GRAPHITI")
+    print("🚀 ROSCOE NOTES INGESTION TO GRAPHITI (Parallel)")
     print("="*80)
     print(f"Start time: {start_time.isoformat()}")
     print(f"Notes file: {notes_file}")
     print(f"Checkpoint: {checkpoint_file}")
+    print(f"Filter: Last {months_back} months")
+    print(f"Batch size: {batch_size} parallel")
 
     # Load notes
     print(f"\n📖 Loading notes from {notes_file}...")
@@ -214,6 +222,25 @@ async def ingest_notes(
         all_notes = json.load(f)
 
     print(f"✅ Loaded {len(all_notes)} notes")
+
+    # Filter to last N months
+    cutoff_date = start_time - relativedelta(months=months_back)
+    print(f"\n🗓️  Filtering notes after {cutoff_date.date()}...")
+
+    filtered_notes = []
+    for note in all_notes:
+        note_date_str = note.get("last_activity")
+        if note_date_str:
+            try:
+                note_date = datetime.fromisoformat(note_date_str)
+                if note_date >= cutoff_date:
+                    filtered_notes.append(note)
+            except:
+                # If can't parse date, skip
+                pass
+
+    all_notes = filtered_notes
+    print(f"✅ Filtered to {len(all_notes)} notes from last {months_back} months")
 
     # Get existing cases from graph
     print(f"\n🔍 Fetching existing cases from graph...")
@@ -227,43 +254,51 @@ async def ingest_notes(
             start_index = int(f.read().strip())
         print(f"📍 Resuming from checkpoint: {start_index}/{len(all_notes)}")
 
-    # Process notes
-    print(f"\n📝 Creating episodes...")
+    # Process notes in parallel batches
+    print(f"\n📝 Creating episodes in batches of {batch_size}...")
     print("="*80)
 
     created = 0
     skipped = 0
     errors = 0
 
-    for i, note in enumerate(all_notes[start_index:], start=start_index):
-        # Verbose logging per note
-        case_name = note.get("project_name", "Unknown")
-        note_id = note.get("id", "unknown")
-        print(f"  [{i+1}/{len(all_notes)}] Processing note {note_id} for {case_name}...")
+    # Process in batches for parallel execution
+    for batch_start in range(start_index, len(all_notes), batch_size):
+        batch_end = min(batch_start + batch_size, len(all_notes))
+        batch = all_notes[batch_start:batch_end]
 
-        success = await create_episode_from_note(note, case_exists_cache)
+        print(f"\n🔄 Batch {batch_start//batch_size + 1}: Processing notes {batch_start+1}-{batch_end}...")
 
-        if success:
-            created += 1
-            print(f"    ✅ Created")
-        elif note["project_name"] not in case_exists_cache:
-            skipped += 1  # Case doesn't exist
-            print(f"    ⏭️  Skipped (case not found)")
-        else:
-            errors += 1
-            print(f"    ❌ Error")
+        # Process batch in parallel
+        tasks = [create_episode_from_note(note, case_exists_cache) for note in batch]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
 
-        # Progress summary every 100 notes
-        if (i + 1) % 100 == 0:
-            print(f"\n  📊 Progress: {i + 1}/{len(all_notes)} processed (✅ {created} created, ⏭️  {skipped} skipped, ❌ {errors} errors)\n")
+        # Count results
+        for i, (note, result) in enumerate(zip(batch, results)):
+            note_idx = batch_start + i
+            note_id = note.get("id", "unknown")
+            case_name = note.get("project_name", "Unknown")
 
-            # Update checkpoint
-            with open(checkpoint_file, 'w') as f:
-                f.write(str(i + 1))
+            if isinstance(result, Exception):
+                errors += 1
+                print(f"  [{note_idx+1}] Note {note_id}: ❌ Exception - {result}")
+            elif result:
+                created += 1
+                print(f"  [{note_idx+1}] Note {note_id} ({case_name}): ✅ Created")
+            elif note["project_name"] not in case_exists_cache:
+                skipped += 1
+                print(f"  [{note_idx+1}] Note {note_id}: ⏭️  Skipped (no case)")
+            else:
+                errors += 1
+                print(f"  [{note_idx+1}] Note {note_id}: ❌ Error")
 
-        # Brief pause to avoid overwhelming Graphiti
-        if (i + 1) % 10 == 0:
-            await asyncio.sleep(0.1)
+        # Update checkpoint after each batch
+        with open(checkpoint_file, 'w') as f:
+            f.write(str(batch_end))
+
+        # Progress summary every 10 batches
+        if (batch_start // batch_size + 1) % 10 == 0:
+            print(f"\n  📊 Progress: {batch_end}/{len(all_notes)} processed (✅ {created} created, ⏭️  {skipped} skipped, ❌ {errors} errors)\n")
 
     # Final summary
     end_time = datetime.now()
