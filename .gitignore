@@ -18,9 +18,9 @@ uv.lock
 # ===========================================
 # Runtime Workspace (GCS mount - NOT in git)
 # ===========================================
-workspace/
-workspace_paralegal/
-workspace_coding/
+/workspace/
+/workspace_paralegal/
+/workspace_coding/
 
 # ===========================================
 # Documentation & Notes (NOT essential for runtime)
