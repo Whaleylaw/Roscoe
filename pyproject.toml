@@ -47,11 +47,15 @@ dependencies = [
     "pillow",  # Image processing
     "pyyaml",  # YAML parsing for skill frontmatter
     "markitdown",  # Markdown conversion for presentations
+    # Graphiti Knowledge Graph
+    "graphiti-core[falkordb,google-genai]>=0.24.0",
+    # Physical mail API (Lob.com)
+    "lob>=4.5.0",
 ]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["roscoe", "roscoe.core", "roscoe.agents", "roscoe.agents.paralegal", "roscoe.agents.coding", "roscoe.workflow_engine", "roscoe.workflow_engine.orchestrator"]
+packages = ["roscoe", "roscoe.core", "roscoe.agents", "roscoe.agents.paralegal", "roscoe.agents.coding", "roscoe.workflow_engine", "roscoe.workflow_engine.orchestrator", "roscoe.scripts"]
 
 [tool.setuptools.package-data]
 "*" = ["*.md", "*.txt", "*.json"]

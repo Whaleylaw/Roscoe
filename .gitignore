@@ -59,10 +59,12 @@ deep-agents-ui-main/
 # ===========================================
 .env
 .env.local
+.env.backup
 .mcp.json
 credentials.json
 token.json
 client_secret_*.json
+api-keys-backup.txt
 .claude/KEYS.txt
 .claude/settings.local.json
 

@@ -3,7 +3,7 @@ Graphiti Knowledge Graph Client
 
 Provides a singleton Graphiti client for the Roscoe platform, configured with:
 - FalkorDB as the graph database backend
-- Gemini 3 Flash as the LLM for entity/relationship extraction
+- OpenAI for LLM inference and embeddings (defaults: gpt-4o-mini, text-embedding-3-small)
 - Custom entity types for legal case management
 """
 
@@ -14,12 +14,12 @@ from pydantic import BaseModel, Field
 
 # Graphiti imports
 from graphiti_core import Graphiti
-from graphiti_core.llm_client.gemini_client import GeminiClient
-from graphiti_core.llm_client.config import LLMConfig
-from graphiti_core.embedder.gemini import GeminiEmbedder, GeminiEmbedderConfig
-from graphiti_core.cross_encoder.gemini_reranker_client import GeminiRerankerClient
 from graphiti_core.driver.falkordb_driver import FalkorDriver
 from graphiti_core.nodes import EpisodeType
+
+# FalkorDB connection config
+FALKORDB_HOST = os.getenv("FALKORDB_HOST", "roscoe-graphdb")
+FALKORDB_PORT = int(os.getenv("FALKORDB_PORT", "6379"))
 
 # =============================================================================
 # SCOPE: This module is for UNSTRUCTURED data operations only
@@ -44,7 +44,7 @@ from graphiti_core.nodes import EpisodeType
 # Do NOT include 'name' fields in these models.
 
 class Case(BaseModel):
-    """A personal injury case - immutable facts only. Name is auto-set by Graphiti (e.g., 'Christopher-Lanier-MVA-6-28-2025')."""
+    """A personal injury case - immutable facts only. Name is set explicitly (not auto-generated) (e.g., 'Christopher-Lanier-MVA-6-28-2025')."""
     case_type: Optional[str] = Field(default=None, description="Type: MVA, Premise, WC, Med-Mal, Dog-Bite, Slip-Fall")
     accident_date: Optional[date] = Field(default=None, description="Date of accident/incident")
     sol_date: Optional[date] = Field(default=None, description="Statute of limitations deadline")
@@ -52,7 +52,7 @@ class Case(BaseModel):
 
 
 class Client(BaseModel):
-    """A client/plaintiff in a personal injury case. Name is auto-set by Graphiti."""
+    """A client/plaintiff in a personal injury case. Name is set explicitly (not auto-generated)."""
     phone: Optional[str] = Field(default=None, description="Phone number")
     email: Optional[str] = Field(default=None, description="Email address")
     address: Optional[str] = Field(default=None, description="Mailing address")
@@ -60,7 +60,7 @@ class Client(BaseModel):
 
 
 class Defendant(BaseModel):
-    """The at-fault party in a case. Name is auto-set by Graphiti."""
+    """The at-fault party in a case. Name is set explicitly (not auto-generated)."""
     insurer: Optional[str] = Field(default=None, description="Defendant's insurance company")
     policy_number: Optional[str] = Field(default=None, description="Policy number for defendant's coverage")
     driver_license: Optional[str] = Field(default=None, description="Driver's license number")
@@ -69,18 +69,8 @@ class Defendant(BaseModel):
     project_name: Optional[str] = Field(default=None, description="Associated case name")
 
 
-class Note(BaseModel):
-    """A timestamped note attached to any entity (case, claim, provider, etc.). Name is auto-set by Graphiti."""
-    note_date: Optional[date] = Field(default=None, description="Date of note (when event occurred)")
-    content: Optional[str] = Field(default=None, description="Note content - narrative text")
-    author: Optional[str] = Field(default=None, description="Author: staff name (e.g., 'Coleen Madayag', 'Justin Chumbley') or 'agent'")
-    category: Optional[str] = Field(default=None, description="Type: insurance_note, medical_note, client_contact, status_change, litigation_note, general")
-    project_name: Optional[str] = Field(default=None, description="Associated case name")
-    source_file: Optional[str] = Field(default=None, description="Source document if note was imported from file")
-
-
 class Organization(BaseModel):
-    """A generic organization not fitting other specific types. Name is auto-set by Graphiti."""
+    """A generic organization not fitting other specific types. Name is set explicitly (not auto-generated)."""
     org_type: Optional[str] = Field(default=None, description="Type: law_firm, medical_practice, insurance_company, government, vendor, trucking, other")
     phone: Optional[str] = Field(default=None, description="Main phone number")
     email: Optional[str] = Field(default=None, description="Email address")
@@ -88,10 +78,18 @@ class Organization(BaseModel):
     address: Optional[str] = Field(default=None, description="Address")
 
 
+class Community(BaseModel):
+    """Group of related entities for collective queries (Graphiti-inspired). Name is set explicitly (not auto-generated)."""
+    community_type: Optional[str] = Field(default=None, description="Type: provider_group, attorney_network, related_cases, injury_type, defendant_group")
+    description: Optional[str] = Field(default=None, description="What this community represents")
+    created_date: Optional[date] = Field(default=None, description="When community was created")
+    member_count: Optional[int] = Field(default=None, description="Number of members")
+
+
 # --- Insurance Entities ---
 
 class Insurer(BaseModel):
-    """An insurance company. Name is auto-set by Graphiti (e.g., State Farm, Progressive)."""
+    """An insurance company. Name is set explicitly (not auto-generated) (e.g., State Farm, Progressive)."""
     phone: Optional[str] = Field(default=None, description="Main phone number")
     email: Optional[str] = Field(default=None, description="Email address")
     fax: Optional[str] = Field(default=None, description="Fax number")
@@ -99,10 +97,53 @@ class Insurer(BaseModel):
 
 
 class Adjuster(BaseModel):
-    """An insurance adjuster handling a claim. Name is auto-set by Graphiti."""
+    """An insurance adjuster handling a claim. Name is set explicitly (not auto-generated)."""
     phone: Optional[str] = Field(default=None, description="Phone number")
     email: Optional[str] = Field(default=None, description="Email address")
     fax: Optional[str] = Field(default=None, description="Fax number")
+
+
+class InsurancePolicy(BaseModel):
+    """An insurance policy providing coverage. One policy can have multiple claim types. Name is set explicitly (policy number or identifier)."""
+    policy_number: str = Field(description="Policy number - REQUIRED")
+    insurer_name: str = Field(description="Insurance company name")
+    policyholder_name: str = Field(description="Who owns the policy (may be client or defendant)")
+
+    # Coverage limits by type
+    pip_limit: Optional[float] = Field(default=None, description="PIP coverage limit")
+    bi_limit: Optional[float] = Field(default=None, description="BI liability limit per person/occurrence")
+    pd_limit: Optional[float] = Field(default=None, description="Property damage limit")
+    um_limit: Optional[float] = Field(default=None, description="UM coverage limit")
+    uim_limit: Optional[float] = Field(default=None, description="UIM coverage limit")
+    medpay_limit: Optional[float] = Field(default=None, description="MedPay coverage limit")
+
+    # Policy dates
+    effective_date: Optional[date] = Field(default=None, description="Policy effective/start date")
+    expiration_date: Optional[date] = Field(default=None, description="Policy expiration date")
+
+    # Policy type
+    policy_type: Optional[str] = Field(default=None, description="auto | health | workers_comp | homeowners | umbrella")
+
+    # Metadata
+    source: Optional[str] = Field(default=None, description="dec_page | verbal | email | case_data")
+    validation_state: Optional[str] = Field(default=None, description="verified | unverified | needs_review")
+
+
+class InsurancePayment(BaseModel):
+    """Individual payment from insurance company (PIP advance, BI settlement payment, etc.). Name is set explicitly."""
+    payment_date: date = Field(description="Date payment received - REQUIRED")
+    amount: float = Field(description="Payment amount - REQUIRED")
+    payment_type: str = Field(description="partial | final | advance | medpay | pip | bi_settlement | um_settlement")
+    check_number: Optional[str] = Field(default=None, description="Check number or transaction reference")
+    memo: Optional[str] = Field(default=None, description="Payment memo or description")
+
+    # What this payment is for
+    for_medical_bills: Optional[bool] = Field(default=None, description="Whether payment is for medical bills")
+    for_settlement: Optional[bool] = Field(default=None, description="Whether payment is settlement")
+    for_lost_wages: Optional[bool] = Field(default=None, description="Whether payment is for lost wages")
+
+    # Metadata
+    notes: Optional[str] = Field(default=None, description="Free-form notes about payment")
 
 
 class PIPClaim(BaseModel):
@@ -116,6 +157,13 @@ class PIPClaim(BaseModel):
     lor_sent_date: Optional[date] = Field(default=None, description="Date letter of representation was sent")
     coverage_confirmation: Optional[str] = Field(default=None, description="Coverage status: 'Coverage Confirmed', 'Coverage Pending', 'Coverage Denied'")
     project_name: Optional[str] = Field(default=None, description="Associated case name")
+
+    # Denial and appeal tracking
+    denial_reason: Optional[str] = Field(default=None, description="Reason for denial if coverage denied")
+    denial_date: Optional[date] = Field(default=None, description="Date of denial")
+    appeal_filed: Optional[bool] = Field(default=None, description="Whether appeal was filed")
+    appeal_date: Optional[date] = Field(default=None, description="Date appeal filed")
+    appeal_outcome: Optional[str] = Field(default=None, description="granted | denied | pending")
 
 
 class BIClaim(BaseModel):
@@ -134,6 +182,13 @@ class BIClaim(BaseModel):
     is_active_negotiation: Optional[bool] = Field(default=None, description="Whether actively negotiating settlement")
     project_name: Optional[str] = Field(default=None, description="Associated case name")
 
+    # Denial and appeal tracking
+    denial_reason: Optional[str] = Field(default=None, description="Reason for denial if coverage denied")
+    denial_date: Optional[date] = Field(default=None, description="Date of denial")
+    appeal_filed: Optional[bool] = Field(default=None, description="Whether appeal was filed")
+    appeal_date: Optional[date] = Field(default=None, description="Date appeal filed")
+    appeal_outcome: Optional[str] = Field(default=None, description="granted | denied | pending")
+
 
 class UMClaim(BaseModel):
     """An Uninsured Motorist (UM) insurance claim - when at-fault driver has no insurance."""
@@ -149,6 +204,13 @@ class UMClaim(BaseModel):
     coverage_confirmation: Optional[str] = Field(default=None, description="Coverage status: 'Coverage Confirmed', 'Coverage Pending', 'Coverage Denied'")
     is_active_negotiation: Optional[bool] = Field(default=None, description="Whether actively negotiating settlement")
     project_name: Optional[str] = Field(default=None, description="Associated case name")
+
+    # Denial and appeal tracking
+    denial_reason: Optional[str] = Field(default=None, description="Reason for denial if coverage denied")
+    denial_date: Optional[date] = Field(default=None, description="Date of denial")
+    appeal_filed: Optional[bool] = Field(default=None, description="Whether appeal was filed")
+    appeal_date: Optional[date] = Field(default=None, description="Date appeal filed")
+    appeal_outcome: Optional[str] = Field(default=None, description="granted | denied | pending")
 
 
 class UIMClaim(BaseModel):
@@ -167,6 +229,13 @@ class UIMClaim(BaseModel):
     is_active_negotiation: Optional[bool] = Field(default=None, description="Whether actively negotiating settlement")
     project_name: Optional[str] = Field(default=None, description="Associated case name")
 
+    # Denial and appeal tracking
+    denial_reason: Optional[str] = Field(default=None, description="Reason for denial if coverage denied")
+    denial_date: Optional[date] = Field(default=None, description="Date of denial")
+    appeal_filed: Optional[bool] = Field(default=None, description="Whether appeal was filed")
+    appeal_date: Optional[date] = Field(default=None, description="Date appeal filed")
+    appeal_outcome: Optional[str] = Field(default=None, description="granted | denied | pending")
+
 
 class WCClaim(BaseModel):
     """A Workers Compensation (WC) insurance claim - workplace injury coverage."""
@@ -183,6 +252,13 @@ class WCClaim(BaseModel):
     is_active_negotiation: Optional[bool] = Field(default=None, description="Whether actively negotiating settlement")
     project_name: Optional[str] = Field(default=None, description="Associated case name")
 
+    # Denial and appeal tracking
+    denial_reason: Optional[str] = Field(default=None, description="Reason for denial if coverage denied")
+    denial_date: Optional[date] = Field(default=None, description="Date of denial")
+    appeal_filed: Optional[bool] = Field(default=None, description="Whether appeal was filed")
+    appeal_date: Optional[date] = Field(default=None, description="Date appeal filed")
+    appeal_outcome: Optional[str] = Field(default=None, description="granted | denied | pending")
+
 
 class MedPayClaim(BaseModel):
     """A Medical Payments (MedPay) insurance claim - first-party medical expense coverage."""
@@ -198,17 +274,127 @@ class MedPayClaim(BaseModel):
 
 # --- Medical Entities ---
 
+class HealthSystem(BaseModel):
+    """Parent healthcare organization (UofL Health, Norton Healthcare, etc.). Individual locations connect via PART_OF. Name is set explicitly (not auto-generated)."""
+    medical_records_endpoint: Optional[str] = Field(default=None, description="Central endpoint for medical records requests")
+    billing_endpoint: Optional[str] = Field(default=None, description="Central endpoint for billing/medical bills")
+    phone: Optional[str] = Field(default=None, description="Main phone number")
+    fax: Optional[str] = Field(default=None, description="Main fax number")
+    email: Optional[str] = Field(default=None, description="Contact email")
+    address: Optional[str] = Field(default=None, description="Corporate headquarters address")
+    website: Optional[str] = Field(default=None, description="Website URL")
+
+    # Records request fields (centralized for all facilities/locations in system)
+    records_request_method: Optional[str] = Field(default=None, description="mail | fax | portal | online")
+    records_request_url: Optional[str] = Field(default=None, description="URL for online records request")
+    records_request_address: Optional[str] = Field(default=None, description="Mailing address for records requests")
+    records_request_fax: Optional[str] = Field(default=None, description="Fax number for records requests")
+    records_request_phone: Optional[str] = Field(default=None, description="Phone for records requests")
+    records_request_notes: Optional[str] = Field(default=None, description="Special instructions for records requests")
+
+    # Billing request fields
+    billing_request_method: Optional[str] = Field(default=None, description="mail | fax | portal | online")
+    billing_request_address: Optional[str] = Field(default=None, description="Billing department address")
+    billing_request_phone: Optional[str] = Field(default=None, description="Billing department phone")
+
+    # Metadata
+    source: Optional[str] = Field(default=None, description="official_website | csv | case_data | manual")
+    validation_state: Optional[str] = Field(default=None, description="verified | unverified | needs_review")
+    last_verified: Optional[datetime] = Field(default=None, description="Last verification timestamp")
+
+
+class Facility(BaseModel):
+    """Treatment facility or medical group - conceptual unit (Norton Orthopedic Institute, Baptist Medical Group). Can have multiple locations or be standalone. Name is set explicitly (not auto-generated)."""
+    parent_system: Optional[str] = Field(default=None, description="Parent HealthSystem name if applicable (null for independent)")
+    location_count: Optional[int] = Field(default=None, description="Number of locations for this facility")
+
+    # Records request (facility-level override - if different from HealthSystem)
+    records_request_method: Optional[str] = Field(default=None, description="mail | fax | portal | online")
+    records_request_url: Optional[str] = None
+    records_request_address: Optional[str] = None
+    records_request_fax: Optional[str] = None
+    records_request_phone: Optional[str] = None
+    records_request_notes: Optional[str] = None
+
+    # Billing request (facility-level)
+    billing_request_method: Optional[str] = None
+    billing_request_address: Optional[str] = None
+    billing_request_phone: Optional[str] = None
+
+    # Contact
+    main_phone: Optional[str] = Field(default=None, description="Main contact phone")
+    website: Optional[str] = None
+
+    # Classification
+    facility_type: Optional[str] = Field(default=None, description="hospital | clinic | imaging_center | urgent_care | chiropractic")
+    specialty: Optional[str] = Field(default=None, description="orthopedics | cardiology | primary_care | etc.")
+
+    # Metadata
+    source: Optional[str] = Field(default=None, description="official_website | csv | case_data | manual")
+    validation_state: Optional[str] = Field(default=None, description="verified | unverified | needs_review | duplicate | archived")
+    last_verified: Optional[datetime] = None
+    notes: Optional[str] = Field(default=None, description="Free-form paralegal notes")
+
+
+class Location(BaseModel):
+    """Specific physical location with street address. Part of a Facility (or standalone). Name is set explicitly (not auto-generated)."""
+    # Address (REQUIRED for locations)
+    address: str = Field(description="Street address - REQUIRED")
+    city: Optional[str] = None
+    state: Optional[str] = None
+    zip: Optional[str] = None
+
+    # Contact
+    phone: Optional[str] = None
+    fax: Optional[str] = None
+    email: Optional[str] = None
+
+    # Hierarchy
+    parent_facility: Optional[str] = Field(default=None, description="Parent Facility name")
+    parent_system: Optional[str] = Field(default=None, description="Parent HealthSystem name (for reference)")
+
+    # Classification
+    location_type: Optional[str] = Field(default=None, description="main_campus | satellite | department")
+    specialty: Optional[str] = None
+
+    # Records request (location-specific override - rare)
+    records_request_method: Optional[str] = None
+    records_request_url: Optional[str] = None
+    records_request_address: Optional[str] = None
+    records_request_fax: Optional[str] = None
+    records_request_phone: Optional[str] = None
+    records_request_notes: Optional[str] = None
+
+    # Metadata
+    source: Optional[str] = None
+    validation_state: Optional[str] = None
+    last_verified: Optional[datetime] = None
+
+
 class MedicalProvider(BaseModel):
-    """A medical provider treating a client. Name is auto-set by Graphiti."""
+    """A specific medical provider location (hospital, clinic, imaging center, etc.). Connected to HealthSystem via PART_OF if part of larger system. Name is set explicitly (not auto-generated)."""
     specialty: Optional[str] = Field(default=None, description="Medical specialty: chiropractic, orthopedic, PT, pain management, primary care, ER, imaging, etc.")
     phone: Optional[str] = Field(default=None, description="Phone number")
     email: Optional[str] = Field(default=None, description="Email address")
     fax: Optional[str] = Field(default=None, description="Fax number")
     address: Optional[str] = Field(default=None, description="Address")
+    provider_type: Optional[str] = Field(default=None, description="Type: hospital, clinic, imaging_center, therapy_center, etc.")
+    parent_system: Optional[str] = Field(default=None, description="Parent HealthSystem name if applicable")
+    medical_records_endpoint: Optional[str] = Field(default=None, description="Where to request records (overrides parent HealthSystem if set)")
+    billing_endpoint: Optional[str] = Field(default=None, description="Where to request bills (overrides parent HealthSystem if set)")
+
+
+class Doctor(BaseModel):
+    """An individual physician. Name is set explicitly (not auto-generated). Connected to MedicalProvider via WORKS_AT."""
+    specialty: Optional[str] = Field(default=None, description="Medical specialty: orthopedic, neurology, pain management, etc.")
+    credentials: Optional[str] = Field(default=None, description="Credentials: MD, DO, DC, PT, etc.")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    npi: Optional[str] = Field(default=None, description="National Provider Identifier")
 
 
 class Lien(BaseModel):
-    """A lien on a specific case. Name is auto-set by Graphiti. Lienholder identified via HELD_BY relationship."""
+    """A lien on a specific case. Name is set explicitly (not auto-generated). Lienholder identified via HELD_BY relationship."""
     amount: Optional[float] = Field(default=None, description="Original lien amount")
     account_number: Optional[str] = Field(default=None, description="Account or reference number")
     project_name: Optional[str] = Field(default=None, description="Associated case name")
@@ -220,8 +406,8 @@ class Lien(BaseModel):
 
 
 class LienHolder(BaseModel):
-    """An entity holding a lien (hospital, ERISA plan, Medicare, collection agency, etc.). Name is auto-set by Graphiti."""
-    lien_type: Optional[str] = Field(default=None, description="Primary lien type: medical, ERISA, Medicare, Medicaid, child_support, collection")
+    """An entity holding a lien (hospital, ERISA plan, Medicare, collection agency, litigation funding company, etc.). Name is set explicitly (not auto-generated)."""
+    lien_type: Optional[str] = Field(default=None, description="Primary lien type: medical, ERISA, Medicare, Medicaid, child_support, case_funding, workers_comp, collection, other")
     phone: Optional[str] = Field(default=None, description="Phone number")
     email: Optional[str] = Field(default=None, description="Email address")
     fax: Optional[str] = Field(default=None, description="Fax number")
@@ -231,33 +417,128 @@ class LienHolder(BaseModel):
 # --- Document Entity ---
 
 class Document(BaseModel):
-    """A document in the case file system. Name is auto-set by Graphiti (filename)."""
+    """A document in the case file system. Name is set explicitly (not auto-generated) (filename)."""
     path: Optional[str] = Field(default=None, description="Path relative to case folder")
     document_type: Optional[str] = Field(default=None, description="Type: letter_of_rep, demand_package, medical_records, medical_bills, records_request, hipaa, retainer, pleading, discovery, correspondence, evidence")
     file_type: Optional[str] = Field(default=None, description="File extension: pdf, docx, jpg, etc.")
     description: Optional[str] = Field(default=None, description="Brief description of document contents")
 
 
+# --- Document Subtypes (Specific document entities) ---
+
+class MedicalRecords(BaseModel):
+    """Medical records received from provider. Name is set explicitly (not auto-generated)."""
+    received_date: Optional[date] = Field(default=None, description="Date records received")
+    date_range_start: Optional[date] = Field(default=None, description="Records cover from this date")
+    date_range_end: Optional[date] = Field(default=None, description="Records cover to this date")
+    pages: Optional[int] = Field(default=None, description="Number of pages")
+    format: Optional[str] = Field(default=None, description="Format: pdf, paper, cd, electronic")
+    provider_name: Optional[str] = Field(default=None, description="Provider who sent records")
+
+
+class MedicalBills(BaseModel):
+    """Medical bills received from provider. Name is set explicitly (not auto-generated)."""
+    received_date: Optional[date] = Field(default=None, description="Date bills received")
+    total_billed: Optional[float] = Field(default=None, description="Total amount billed")
+    provider_name: Optional[str] = Field(default=None, description="Provider who billed")
+    bill_ids: Optional[str] = Field(default=None, description="Associated Bill entity IDs (JSON list)")
+
+
+class MedicalRecordsRequest(BaseModel):
+    """Outgoing medical records request. Name is set explicitly (not auto-generated)."""
+    sent_date: Optional[date] = Field(default=None, description="Date request sent")
+    request_number: Optional[int] = Field(default=None, description="Request number: 1 (initial), 2 (follow-up), etc.")
+    via: Optional[str] = Field(default=None, description="Method: email, fax, mail, chartswap, nextrequest")
+    response_deadline: Optional[date] = Field(default=None, description="Expected response date")
+    provider_name: Optional[str] = Field(default=None, description="Provider request sent to")
+
+
+class LetterOfRepresentation(BaseModel):
+    """Letter of representation sent to insurer or provider. Name is set explicitly (not auto-generated)."""
+    sent_date: Optional[date] = Field(default=None, description="Date letter sent")
+    sent_to_name: Optional[str] = Field(default=None, description="Entity name (insurer/provider)")
+    sent_to_type: Optional[str] = Field(default=None, description="Entity type: insurer, medical_provider, lienholder")
+    acknowledged: Optional[bool] = Field(default=None, description="Whether acknowledgement received")
+    acknowledged_date: Optional[date] = Field(default=None, description="Date acknowledgement received")
+
+
+class InsuranceDocument(BaseModel):
+    """Insurance-related document. Name is set explicitly (not auto-generated)."""
+    doc_subtype: Optional[str] = Field(default=None, description="Type: dec_page, eob, denial_letter, coverage_letter, policy")
+    received_date: Optional[date] = Field(default=None, description="Date received")
+    insurer_name: Optional[str] = Field(default=None, description="Insurance company")
+
+
+class CorrespondenceDocument(BaseModel):
+    """General correspondence. Name is set explicitly (not auto-generated)."""
+    correspondence_type: Optional[str] = Field(default=None, description="Type: email, letter, fax, text")
+    direction: Optional[str] = Field(default=None, description="Direction: inbound, outbound")
+    from_entity: Optional[str] = Field(default=None, description="Sender name")
+    to_entity: Optional[str] = Field(default=None, description="Recipient name")
+    sent_date: Optional[date] = Field(default=None, description="Date sent/received")
+
+
 # --- Legal/Litigation Entities ---
 
 class LawFirm(BaseModel):
-    """A law firm. Name is auto-set by Graphiti."""
+    """A law firm. Name is set explicitly (not auto-generated)."""
     phone: Optional[str] = Field(default=None, description="Main phone number")
     fax: Optional[str] = Field(default=None, description="Fax number")
-    address: Optional[str] = Field(default=None, description="Address")
+    address: Optional[str] = Field(default=None, description="Main office address")
+    website: Optional[str] = Field(default=None, description="Firm website")
+
+
+class LawFirmOffice(BaseModel):
+    """Specific office/branch of a law firm. Similar to Location for medical providers. Name is set explicitly."""
+    office_name: str = Field(description="Office identifier (e.g., 'Louisville Office', 'Lexington Office')")
+    parent_firm: str = Field(description="Parent law firm name")
+
+    # Address
+    address: str = Field(description="Office address - REQUIRED")
+    city: Optional[str] = None
+    state: Optional[str] = None
+    zip: Optional[str] = None
+
+    # Contact
+    phone: Optional[str] = None
+    fax: Optional[str] = None
+    email: Optional[str] = None
+
+    # Office details
+    office_type: Optional[str] = Field(default=None, description="main | branch | satellite")
+
+    # Metadata
+    source: Optional[str] = None
+    validation_state: Optional[str] = None
 
 
 class Attorney(BaseModel):
-    """An attorney on a case. Name is auto-set by Graphiti."""
+    """An attorney on a case. Name is set explicitly (not auto-generated)."""
     role: Optional[str] = Field(default=None, description="Role: plaintiff_counsel, defense_counsel, co_counsel, referring_attorney")
     bar_number: Optional[str] = Field(default=None, description="State bar number")
     firm_name: Optional[str] = Field(default=None, description="Law firm name")
     phone: Optional[str] = Field(default=None, description="Phone number")
     email: Optional[str] = Field(default=None, description="Email address")
 
+    # Additional professional details
+    practice_areas: Optional[str] = Field(default=None, description="Practice areas (comma-separated or list)")
+    bar_admission_date: Optional[date] = Field(default=None, description="Date admitted to bar")
+    bar_states: Optional[str] = Field(default=None, description="States where licensed (comma-separated)")
+    office_address: Optional[str] = Field(default=None, description="Attorney's office address (may differ from firm main office)")
+    direct_phone: Optional[str] = Field(default=None, description="Direct dial number (vs firm main number)")
+    preferred_contact: Optional[str] = Field(default=None, description="email | phone | text | fax")
+
+
+class CaseManager(BaseModel):
+    """Law firm case manager or paralegal. Name is set explicitly."""
+    role: Optional[str] = Field(default=None, description="Role: case_manager, paralegal, legal_assistant")
+    firm_name: Optional[str] = Field(default=None, description="Law firm name")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+
 
 class Court(BaseModel):
-    """A court where a case is filed. Name is auto-set by Graphiti."""
+    """A court where a case is filed. Name is set explicitly (not auto-generated)."""
     county: Optional[str] = Field(default=None, description="County")
     state: Optional[str] = Field(default=None, description="State")
     case_number: Optional[str] = Field(default=None, description="Court case number")
@@ -267,19 +548,164 @@ class Court(BaseModel):
     address: Optional[str] = Field(default=None, description="Court mailing address")
 
 
+class CircuitDivision(BaseModel):
+    """Circuit court division. Name format: 'County Circuit Court, Division II'. Connected to Court via PART_OF, Judge via PRESIDES_OVER."""
+    division_number: Optional[str] = Field(default=None, description="Division number: 01, 02, etc.")
+    court_name: Optional[str] = Field(default=None, description="Parent court name")
+    circuit_number: Optional[str] = Field(default=None, description="Circuit number: 30, 18, etc.")
+    local_rules: Optional[str] = Field(default=None, description="Division-specific local rules")
+    scheduling_preferences: Optional[str] = Field(default=None, description="Judge's scheduling preferences")
+    mediation_required: Optional[bool] = Field(default=None, description="Whether mediation is required before trial")
+
+
+class DistrictDivision(BaseModel):
+    """District court division. Name format: 'County District Court, Division 1'. Connected to Court via PART_OF, Judge via PRESIDES_OVER."""
+    division_number: Optional[str] = Field(default=None, description="Division number: 01, 02, etc.")
+    court_name: Optional[str] = Field(default=None, description="Parent court name")
+    district_number: Optional[str] = Field(default=None, description="District number: 30, 18, etc.")
+
+
+class AppellateDistrict(BaseModel):
+    """Court of Appeals district. Connected to Court of Appeals via PART_OF, Judge via PRESIDES_OVER."""
+    district_number: Optional[str] = Field(default=None, description="Appellate district number")
+    region: Optional[str] = Field(default=None, description="Geographic region served")
+    counties: Optional[str] = Field(default=None, description="Counties in district")
+
+
+class SupremeCourtDistrict(BaseModel):
+    """Kentucky Supreme Court district. Justices are elected from districts. Connected to Supreme Court via PART_OF, Justice via PRESIDES_OVER."""
+    district_number: Optional[str] = Field(default=None, description="Supreme Court district number (1-7)")
+    counties: Optional[str] = Field(default=None, description="Counties in district")
+    region: Optional[str] = Field(default=None, description="Geographic region")
+
+
+class CircuitJudge(BaseModel):
+    """Circuit court judge. Name is set explicitly (not auto-generated). Connected to Court via PRESIDES_OVER."""
+    county: Optional[str] = Field(default=None, description="County or multi-county area served")
+    circuit: Optional[str] = Field(default=None, description="Circuit number (e.g., Cir. 18, Div. 01)")
+    division: Optional[str] = Field(default=None, description="Division number")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    address: Optional[str] = Field(default=None, description="Chambers address")
+
+
+class DistrictJudge(BaseModel):
+    """District court judge. Name is set explicitly (not auto-generated). Connected to Court via PRESIDES_OVER."""
+    county: Optional[str] = Field(default=None, description="County or multi-county area served")
+    district: Optional[str] = Field(default=None, description="District number (e.g., Dist. 18, Div. 01)")
+    division: Optional[str] = Field(default=None, description="Division number")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    address: Optional[str] = Field(default=None, description="Chambers address")
+
+
+class AppellateJudge(BaseModel):
+    """Court of Appeals judge. Name is set explicitly (not auto-generated)."""
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    address: Optional[str] = Field(default=None, description="Chambers address")
+
+
+class SupremeCourtJustice(BaseModel):
+    """Kentucky Supreme Court justice. Name is set explicitly (not auto-generated)."""
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    address: Optional[str] = Field(default=None, description="Chambers address")
+
+
+class CourtClerk(BaseModel):
+    """Circuit or district court clerk. Name is set explicitly (not auto-generated). Connected to Court via WORKS_AT."""
+    clerk_type: Optional[str] = Field(default=None, description="Type: circuit, district")
+    county: Optional[str] = Field(default=None, description="County served")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    address: Optional[str] = Field(default=None, description="Office address")
+
+
+class MasterCommissioner(BaseModel):
+    """Court-appointed master commissioner. Name is set explicitly (not auto-generated). Connected to Court via APPOINTED_BY."""
+    county: Optional[str] = Field(default=None, description="County served")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    address: Optional[str] = Field(default=None, description="Office address")
+
+
+class CourtAdministrator(BaseModel):
+    """Court administrator or staff. Name is set explicitly (not auto-generated). Connected to Court via WORKS_AT."""
+    role: Optional[str] = Field(default=None, description="Specific role or title")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    address: Optional[str] = Field(default=None, description="Office address")
+
+
 class Pleading(BaseModel):
-    """A litigation pleading or court filing. Name is auto-set by Graphiti (title)."""
+    """A litigation pleading or court filing. Name is set explicitly (not auto-generated) (title)."""
     pleading_type: Optional[str] = Field(default=None, description="Type: complaint, answer, motion, discovery_request, discovery_response, subpoena, order, judgment")
     filed_date: Optional[date] = Field(default=None, description="Date filed")
     due_date: Optional[date] = Field(default=None, description="Response due date if applicable")
     filed_by: Optional[str] = Field(default=None, description="Who filed it: plaintiff, defendant")
 
+    # Discovery-specific fields (if pleading_type is discovery)
+    discovery_type: Optional[str] = Field(default=None, description="interrogatories | rfp | rfa | deposition_notice | subpoena (if pleading_type is discovery)")
+    propounded_to: Optional[str] = Field(default=None, description="plaintiff | defendant | third_party")
+    response_due: Optional[date] = Field(default=None, description="When discovery response is due")
+    response_received: Optional[bool] = Field(default=None, description="Whether response has been received")
+    response_date: Optional[date] = Field(default=None, description="Date response was received")
+
+
+class CourtEvent(BaseModel):
+    """Court hearing, trial, mediation, or other scheduled event. Name is set explicitly (event description)."""
+    event_type: str = Field(description="hearing | trial | mediation | status_conference | pretrial | motion_hearing | deposition | docket_call")
+    event_date: date = Field(description="Date of event - REQUIRED")
+    event_time: Optional[str] = Field(default=None, description="Time of event (e.g., '9:00 AM', '2:00 PM')")
+
+    # Location
+    location: Optional[str] = Field(default=None, description="Courtroom number or location (e.g., 'Courtroom 5A', 'Zoom', 'Mediator Office')")
+    virtual: Optional[bool] = Field(default=None, description="Whether event is virtual/remote")
+
+    # Event details
+    purpose: Optional[str] = Field(default=None, description="Purpose or subject of event")
+    outcome: Optional[str] = Field(default=None, description="Outcome: continued, heard, settled, dismissed, granted, denied")
+    continued_to: Optional[date] = Field(default=None, description="If continued, new event date")
+
+    # Metadata
+    notes: Optional[str] = Field(default=None, description="Free-form notes about event")
+    source: Optional[str] = Field(default=None, description="calendar | court_notice | case_data")
+
 
 # --- Vendor Entities ---
 
+class Expert(BaseModel):
+    """An expert witness (vocational, medical, accident reconstruction, life care planner, etc.). Name is set explicitly (not auto-generated)."""
+    expert_type: Optional[str] = Field(default=None, description="Type: vocational, medical, accident_reconstruction, life_care_planner, economist, engineering, biomechanics, other")
+    credentials: Optional[str] = Field(default=None, description="Professional credentials")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    firm_name: Optional[str] = Field(default=None, description="Expert firm/organization if applicable")
+    hourly_rate: Optional[float] = Field(default=None, description="Hourly rate for services")
+
+
+class Mediator(BaseModel):
+    """A mediator or arbitrator. Name is set explicitly (not auto-generated)."""
+    credentials: Optional[str] = Field(default=None, description="Credentials: Retired Judge, Esq., etc.")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    firm_name: Optional[str] = Field(default=None, description="Mediation service organization if applicable")
+    hourly_rate: Optional[float] = Field(default=None, description="Hourly rate for mediation services")
+
+
+class Witness(BaseModel):
+    """A fact witness (not expert). Name is set explicitly (not auto-generated)."""
+    witness_type: Optional[str] = Field(default=None, description="Type: eyewitness, scene_witness, character_witness, treating_witness, other")
+    phone: Optional[str] = Field(default=None, description="Phone number")
+    email: Optional[str] = Field(default=None, description="Email address")
+    address: Optional[str] = Field(default=None, description="Address")
+    relationship_to_case: Optional[str] = Field(default=None, description="How they relate to case: bystander, passenger, coworker, etc.")
+
+
 class Vendor(BaseModel):
-    """A vendor/service provider used in case management. Name is auto-set by Graphiti."""
-    vendor_type: Optional[str] = Field(default=None, description="Type: towing, court_reporting, investigation, moving, records_retrieval, process_server, expert_witness, mediation, litigation_funding, medical_equipment, claims_services, legal_software, other")
+    """A vendor/service provider used in case management (non-professional services). Name is set explicitly (not auto-generated)."""
+    vendor_type: Optional[str] = Field(default=None, description="Type: towing, court_reporting, investigation, moving, records_retrieval, process_server, litigation_funding, medical_equipment, claims_services, legal_software, other")
     phone: Optional[str] = Field(default=None, description="Phone number")
     email: Optional[str] = Field(default=None, description="Email address")
     fax: Optional[str] = Field(default=None, description="Fax number")
@@ -289,21 +715,98 @@ class Vendor(BaseModel):
 # --- Financial Entities ---
 
 class Expense(BaseModel):
-    """A case expense. Name is auto-set by Graphiti (description)."""
+    """A case expense. Name is set explicitly (not auto-generated) (description)."""
     amount: Optional[float] = Field(default=None, description="Amount in dollars")
     expense_date: Optional[date] = Field(default=None, description="Date of expense")
     category: Optional[str] = Field(default=None, description="Category: filing_fee, service_fee, medical_records, expert, travel, other")
     vendor: Optional[str] = Field(default=None, description="Vendor/payee name")
 
 
+class Bill(BaseModel):
+    """Medical bill or other bill (different from lien). Name is set explicitly (not auto-generated)."""
+    bill_type: Optional[str] = Field(default=None, description="Type: medical, legal_fee, expert_fee, filing_fee, vendor, other")
+    amount: Optional[float] = Field(default=None, description="Billed amount")
+    bill_date: Optional[date] = Field(default=None, description="Date of bill")
+    due_date: Optional[date] = Field(default=None, description="Payment due date")
+    paid_date: Optional[date] = Field(default=None, description="Date paid")
+    paid_amount: Optional[float] = Field(default=None, description="Amount actually paid")
+    balance: Optional[float] = Field(default=None, description="Outstanding balance")
+    provider_name: Optional[str] = Field(default=None, description="Who sent the bill")
+
+
+class MedicalVisit(BaseModel):
+    """Individual medical visit/appointment on specific date. Each visit date separated into its own PDF in medical chronology. Name is set explicitly (not auto-generated)."""
+    visit_date: date = Field(description="Date of visit - REQUIRED for chronology ordering")
+
+    # CRITICAL for lien negotiations - determines if bill should be repaid
+    related_to_injury: bool = Field(default=True, description="Whether visit is related to case injury (vs unrelated like cold, routine checkup)")
+    unrelated_reason: Optional[str] = Field(default=None, description="If unrelated, explain why (e.g., 'upper respiratory infection', 'annual physical', 'pre-existing condition')")
+
+    # Visit details
+    diagnosis: Optional[str] = Field(default=None, description="Diagnosis or chief complaint for this visit")
+    treatment_type: Optional[str] = Field(default=None, description="Type: ER, surgery, follow-up, imaging, physical_therapy, chiropractic, etc.")
+    visit_number: Optional[int] = Field(default=None, description="Sequential visit number in treatment timeline")
+
+    # Provider info (redundant with relationships but helpful for queries)
+    provider_name: Optional[str] = Field(default=None, description="Where patient was seen (Location or Facility name)")
+    doctor_name: Optional[str] = Field(default=None, description="Doctor who saw patient")
+
+    # Notes and metadata
+    notes: Optional[str] = Field(default=None, description="Free-form paralegal notes about visit")
+    duration_minutes: Optional[int] = Field(default=None, description="Visit duration if known")
+
+    # Source tracking
+    source: Optional[str] = Field(default=None, description="medical_records | case_notes | episode")
+    validation_state: Optional[str] = Field(default=None, description="verified | unverified | needs_review")
+
+
+class Negotiation(BaseModel):
+    """Active settlement negotiation with insurer (before final settlement). Name is set explicitly (not auto-generated)."""
+    claim_type: Optional[str] = Field(default=None, description="Which claim type: PIP, BI, UM, UIM, WC")
+    demand_amount: Optional[float] = Field(default=None, description="Initial demand amount")
+    demand_sent_date: Optional[date] = Field(default=None, description="Date demand sent")
+    current_offer: Optional[float] = Field(default=None, description="Latest offer from insurer")
+    offer_date: Optional[date] = Field(default=None, description="Date of latest offer")
+    counter_offer: Optional[float] = Field(default=None, description="Our counter-offer")
+    counter_date: Optional[date] = Field(default=None, description="Date of counter-offer")
+    is_active: Optional[bool] = Field(default=None, description="Whether negotiation is ongoing")
+    final_amount: Optional[float] = Field(default=None, description="Final agreed amount if settled")
+    settled_date: Optional[date] = Field(default=None, description="Date agreement reached")
+
+
 class Settlement(BaseModel):
-    """Settlement details for a resolved case. Name is auto-set by Graphiti."""
+    """Final settlement breakdown for a resolved case. Name is set explicitly (not auto-generated)."""
     gross_amount: Optional[float] = Field(default=None, description="Gross settlement amount")
     attorney_fee: Optional[float] = Field(default=None, description="Attorney fee amount")
     expenses_total: Optional[float] = Field(default=None, description="Total case expenses")
     liens_total: Optional[float] = Field(default=None, description="Total liens paid")
     net_to_client: Optional[float] = Field(default=None, description="Net amount to client")
     settlement_date: Optional[date] = Field(default=None, description="Date of settlement")
+
+
+class Episode(BaseModel):
+    """
+    A note/communication/event in the case timeline (the 'why/how' narrative).
+
+    Episodes explain WHY things happened and HOW they were accomplished.
+    The graph structure (Case, Provider, Insurance) represents WHAT currently exists.
+
+    Examples:
+    - "Called State Farm to confirm coverage - adjuster unavailable"
+    - "Sent medical records request to UK Hospital via fax"
+    - "Client reported new pain symptoms, referred to orthopedic specialist"
+
+    Episodes link to entities they discuss (ABOUT relationships) and to other
+    related episodes (FOLLOWS relationships for sequential/topical grouping).
+    """
+    content: str = Field(description="Natural language narrative (LLM-converted for readability and semantic search)")
+    valid_at: datetime = Field(description="When episode occurred (timestamp)")
+    invalid_at: Optional[datetime] = Field(default=None, description="When info became outdated (usually null)")
+    author: str = Field(description="Who created: agent, user, or staff name")
+    episode_type: str = Field(description="Type: call, email, fax, meeting, document, internal_note, etc.")
+    case_name: str = Field(description="Case this episode belongs to (required - no orphan episodes)")
+    source_description: Optional[str] = Field(default=None, description="Original source if imported from legacy system")
+    embedding: Optional[list[float]] = Field(default=None, description="Semantic embedding (enriched with entity context)")
 
 
 # =============================================================================
@@ -314,20 +817,29 @@ class Settlement(BaseModel):
 # NOTE: 'name' is a protected Graphiti attribute - do NOT include it.
 
 class Phase(BaseModel):
-    """A case lifecycle phase (e.g., file_setup, treatment, negotiation). Name is auto-set."""
+    """A case lifecycle phase (e.g., file_setup, treatment, negotiation). Name is set explicitly."""
     display_name: Optional[str] = Field(default=None, description="Human-readable phase name")
     description: Optional[str] = Field(default=None, description="Description of the phase")
-    order: Optional[int] = Field(default=None, description="Phase order in lifecycle (1-12)")
-    track: Optional[str] = Field(default=None, description="Track: pre_litigation, litigation, terminal")
+    order: Optional[int] = Field(default=None, description="Phase order in lifecycle (0-8)")
+    track: Optional[str] = Field(default=None, description="Track: pre_litigation, litigation, settlement, closed")
     next_phase: Optional[str] = Field(default=None, description="Default next phase name")
 
 
+class SubPhase(BaseModel):
+    """A sub-phase within litigation (e.g., complaint, discovery, trial). Name is set explicitly."""
+    display_name: Optional[str] = Field(default=None, description="Human-readable sub-phase name")
+    parent_phase: Optional[str] = Field(default=None, description="Parent phase name (litigation)")
+    order: Optional[int] = Field(default=None, description="Sub-phase order (1-5)")
+    description: Optional[str] = Field(default=None, description="Description of the sub-phase")
+
+
 class Landmark(BaseModel):
-    """A checkpoint within a phase that must be verified before advancing. Name is auto-set."""
+    """A checkpoint within a phase that must be verified before advancing. Name is set explicitly."""
     # Basic info
     landmark_id: Optional[str] = Field(default=None, description="Unique landmark identifier (e.g., 'retainer_signed')")
     display_name: Optional[str] = Field(default=None, description="Human-readable name")
     phase: Optional[str] = Field(default=None, description="Phase this landmark belongs to")
+    subphase: Optional[str] = Field(default=None, description="SubPhase this landmark belongs to (for litigation landmarks)")
     description: Optional[str] = Field(default=None, description="What this landmark verifies")
     landmark_type: Optional[str] = Field(default=None, description="Type: document, entity, communication, verification")
 
@@ -352,9 +864,10 @@ class Landmark(BaseModel):
 
 
 class WorkflowDef(BaseModel):
-    """A workflow definition within a phase. Name is auto-set."""
+    """A workflow definition within a phase. Name is set explicitly."""
     display_name: Optional[str] = Field(default=None, description="Human-readable workflow name")
     phase: Optional[str] = Field(default=None, description="Phase this workflow belongs to")
+    subphase: Optional[str] = Field(default=None, description="SubPhase this workflow belongs to (for litigation workflows)")
     description: Optional[str] = Field(default=None, description="What this workflow accomplishes")
     trigger: Optional[str] = Field(default=None, description="When this workflow is triggered")
     prerequisites: Optional[str] = Field(default=None, description="What must be complete before starting")
@@ -362,7 +875,7 @@ class WorkflowDef(BaseModel):
 
 
 class WorkflowStep(BaseModel):
-    """A step within a workflow. Name is auto-set."""
+    """A step within a workflow. Name is set explicitly."""
     step_id: Optional[str] = Field(default=None, description="Step identifier within workflow")
     workflow: Optional[str] = Field(default=None, description="Parent workflow name")
     description: Optional[str] = Field(default=None, description="What this step does")
@@ -374,14 +887,14 @@ class WorkflowStep(BaseModel):
 
 
 class WorkflowChecklist(BaseModel):
-    """A procedural checklist for completing a task. Name is auto-set."""
+    """A procedural checklist for completing a task. Name is set explicitly."""
     path: Optional[str] = Field(default=None, description="Path to checklist file")
     when_to_use: Optional[str] = Field(default=None, description="When to use this checklist")
     related_workflow: Optional[str] = Field(default=None, description="Associated workflow name")
 
 
 class WorkflowSkill(BaseModel):
-    """An agent skill that can be used in workflows. Name is auto-set."""
+    """An agent skill that can be used in workflows. Name is set explicitly."""
     path: Optional[str] = Field(default=None, description="Path to skill.md file")
     description: Optional[str] = Field(default=None, description="What this skill does")
     capabilities: Optional[str] = Field(default=None, description="List of capabilities")
@@ -390,7 +903,7 @@ class WorkflowSkill(BaseModel):
 
 
 class WorkflowTemplate(BaseModel):
-    """A document template used in workflows. Name is auto-set."""
+    """A document template used in workflows. Name is set explicitly."""
     path: Optional[str] = Field(default=None, description="Path to template file")
     purpose: Optional[str] = Field(default=None, description="What this template is for")
     file_type: Optional[str] = Field(default=None, description="File type: docx, pdf, md")
@@ -398,9 +911,23 @@ class WorkflowTemplate(BaseModel):
 
 
 class WorkflowTool(BaseModel):
-    """A Python tool used in workflows. Name is auto-set."""
+    """A Python tool used in workflows. Name is set explicitly."""
     path: Optional[str] = Field(default=None, description="Path to Python script")
     purpose: Optional[str] = Field(default=None, description="What this tool does")
+
+
+class LandmarkStatus(BaseModel):
+    """Tracks completion status of a landmark for a specific case. Name is set explicitly."""
+    case_name: Optional[str] = Field(default=None, description="Case this status belongs to")
+    landmark_id: Optional[str] = Field(default=None, description="Landmark this status tracks")
+    status: Optional[str] = Field(default=None, description="Status: complete, incomplete, in_progress, not_started, not_applicable")
+    sub_steps: Optional[str] = Field(default=None, description="JSON dict tracking sub-step completion for composite landmarks")
+    notes: Optional[str] = Field(default=None, description="Notes about current status or blockers")
+    completed_at: Optional[datetime] = Field(default=None, description="When landmark was completed")
+    updated_at: Optional[datetime] = Field(default=None, description="Last update timestamp")
+    updated_by: Optional[str] = Field(default=None, description="Who updated: agent, user, system")
+    version: Optional[int] = Field(default=None, description="Version number for audit trail")
+    archived_at: Optional[datetime] = Field(default=None, description="When this version was superseded")
 
 
 # =============================================================================
@@ -412,8 +939,9 @@ ENTITY_TYPES = [
     Case,
     Client,
     Defendant,       # At-fault party
-    Note,            # Timestamped notes attached to any entity
+    Episode,         # Timeline narrative (why/how documentation) - replaces Note
     Organization,    # Generic organizations
+    Community,       # Groups of related entities (Graphiti-inspired)
     # Insurance claim types (each is distinct)
     PIPClaim,        # Personal Injury Protection - first-party no-fault
     BIClaim,         # Bodily Injury - third-party liability
@@ -423,24 +951,57 @@ ENTITY_TYPES = [
     MedPayClaim,     # Medical Payments coverage
     Insurer,         # Insurance company
     Adjuster,        # Insurance adjuster
+    InsurancePolicy, # Insurance policy providing coverage - NEW
+    InsurancePayment,# Individual payment from insurer - NEW
     # Medical entities
-    MedicalProvider,
+    HealthSystem,    # Parent healthcare organization (UofL Health, Norton Healthcare, etc.)
+    Facility,        # Treatment facility/program (Norton Orthopedic Institute) - NEW
+    Location,        # Specific physical location with address - NEW
+    MedicalProvider, # DEPRECATED - being replaced by Facility/Location structure
+    Doctor,          # Individual physician (WORKS_AT -> Location)
     Lien,
     LienHolder,      # Entity holding a lien
     # Document tracking
-    Document,
+    Document,        # Generic document
+    MedicalRecords,  # Received medical records
+    MedicalBills,    # Received medical bills
+    MedicalRecordsRequest,  # Outgoing records request
+    LetterOfRepresentation,  # Letter of rep sent
+    InsuranceDocument,  # Insurance docs (dec pages, EOBs, etc.)
+    CorrespondenceDocument,  # General correspondence
     # Legal/litigation entities
     LawFirm,
+    LawFirmOffice,   # Specific office/branch of law firm - NEW
     Attorney,
+    CaseManager,     # Law firm case managers and paralegals
     Court,
+    CircuitDivision,  # Circuit court divisions (PART_OF -> Court)
+    DistrictDivision, # District court divisions (PART_OF -> Court)
+    AppellateDistrict, # Court of Appeals districts (PART_OF -> Court of Appeals)
+    SupremeCourtDistrict, # Supreme Court districts (PART_OF -> Supreme Court)
+    CircuitJudge,    # Circuit court judges (PRESIDES_OVER -> CircuitDivision)
+    DistrictJudge,   # District court judges (PRESIDES_OVER -> DistrictDivision)
+    AppellateJudge,  # Court of Appeals judges (PRESIDES_OVER -> AppellateDistrict)
+    SupremeCourtJustice,  # Kentucky Supreme Court justices (PRESIDES_OVER -> SupremeCourtDistrict)
+    CourtClerk,      # Circuit/district court clerks (WORKS_AT -> Court)
+    MasterCommissioner,  # Court-appointed master commissioners (APPOINTED_BY -> Court)
+    CourtAdministrator,  # Court administrators (WORKS_AT -> Court)
     Pleading,
-    # Vendor types
+    CourtEvent,      # Court hearings, trials, mediations, conferences - NEW
+    # Professional services / Expert witnesses
+    Expert,          # Expert witness (WORKS_AT -> Organization if applicable)
+    Mediator,        # Mediator/arbitrator (WORKS_AT -> Organization if applicable)
+    Witness,         # Fact witness (eyewitness, scene witness, etc.)
     Vendor,
     # Financial
-    Expense,
-    Settlement,
+    Bill,            # Medical bills and other bills (separate from liens)
+    MedicalVisit,    # Individual medical visit/appointment by date (for chronology)
+    Expense,         # Case expenses
+    Negotiation,     # Active settlement negotiation process
+    Settlement,      # Final settlement breakdown
     # Workflow definition entities (structural, not case data)
     Phase,
+    SubPhase,         # Litigation sub-phases
     Landmark,
     WorkflowDef,
     WorkflowStep,
@@ -448,6 +1009,8 @@ ENTITY_TYPES = [
     WorkflowSkill,
     WorkflowTemplate,
     WorkflowTool,
+    # Workflow state entities (case-specific state)
+    LandmarkStatus,   # Tracks landmark completion per case
 ]
 
 # =============================================================================
@@ -507,6 +1070,13 @@ class FiledIn(BaseModel):
     """Case filed in court."""
     filing_date: Optional[date] = Field(default=None, description="Date case was filed")
     case_number: Optional[str] = Field(default=None, description="Court case number")
+
+
+class RelatedAccident(BaseModel):
+    """Links cases from the same accident/incident."""
+    accident_date: Optional[date] = Field(default=None, description="Date of the shared accident")
+    relationship_type: Optional[str] = Field(default=None, description="Type: same_incident, same_defendant, family_members")
+    notes: Optional[str] = Field(default=None, description="Additional context about the relationship")
 
 
 class WorksAt(BaseModel):
@@ -669,6 +1239,44 @@ class NotedOn(BaseModel):
     relevance: Optional[str] = Field(default=None, description="How note relates to entity")
 
 
+class HasStatus(BaseModel):
+    """Case has a landmark status tracking node."""
+    pass  # Status details are on the LandmarkStatus entity
+
+
+class ForLandmark(BaseModel):
+    """LandmarkStatus node tracks a specific Landmark."""
+    pass  # Links status tracking node to its landmark definition
+
+
+class HasSubPhase(BaseModel):
+    """Phase has sub-phases (used for litigation phase breakdown)."""
+    order: Optional[int] = Field(default=None, description="SubPhase order within parent phase")
+
+
+class UsesTemplate(BaseModel):
+    """Workflow uses a document template."""
+    template_type: Optional[str] = Field(default=None, description="Type: letter, form, pleading, agreement")
+
+
+class About(BaseModel):
+    """Episode discusses/references an entity (provider, claim, attorney, etc.)."""
+    relevance: Optional[str] = Field(default=None, description="How entity relates to episode content")
+    extracted_method: Optional[str] = Field(default=None, description="How link was determined: llm_extraction, manual, semantic_match")
+
+
+class Follows(BaseModel):
+    """Episode follows another episode (sequential or topically related)."""
+    relationship_type: Optional[str] = Field(default="sequential", description="Type: sequential, same_topic, same_workflow")
+    similarity_score: Optional[float] = Field(default=None, description="Semantic similarity score if auto-linked")
+
+
+class PartOfWorkflow(BaseModel):
+    """Episode is part of workflow execution."""
+    step_id: Optional[str] = Field(default=None, description="Which workflow step this episode documents")
+    workflow_name: Optional[str] = Field(default=None, description="Workflow name")
+
+
 EDGE_TYPES_DICT = {
     # Core case relationships
     "TreatingAt": TreatingAt,
@@ -700,10 +1308,13 @@ EDGE_TYPES_DICT = {
     # Workflow state relationships
     "InPhase": InPhase,
     "LandmarkStatus": LandmarkStatus,
+    "HasStatus": HasStatus,
+    "ForLandmark": ForLandmark,
     # Workflow structure relationships
     "BelongsToPhase": BelongsToPhase,
     "HasLandmark": HasLandmark,
     "HasSubLandmark": HasSubLandmark,
+    "HasSubPhase": HasSubPhase,
     "AchievedBy": AchievedBy,
     "Achieves": Achieves,
     "DefinedInPhase": DefinedInPhase,
@@ -712,9 +1323,14 @@ EDGE_TYPES_DICT = {
     "StepOf": StepOf,
     "NextPhase": NextPhase,
     "CanSkipTo": CanSkipTo,
+    "UsesTemplate": UsesTemplate,
     # Note relationships
     "HasNote": HasNote,
     "NotedOn": NotedOn,
+    # Episode relationships (timeline narrative)
+    "About": About,
+    "Follows": Follows,
+    "PartOfWorkflow": PartOfWorkflow,
     # Generic relationships
     "Mentions": Mentions,
     "RelatesTo": RelatesTo,
@@ -742,7 +1358,9 @@ EDGE_TYPE_MAP = {
     ("Case", "UIMClaim"): ["HasClaim"],
     ("Case", "WCClaim"): ["HasClaim"],
     ("Case", "MedPayClaim"): ["HasClaim"],
-    
+    # Case to Case (related accidents)
+    ("Case", "Case"): ["RelatedAccident"],
+
     # =========================================================================
     # Client relationships (bidirectional where needed)
     # =========================================================================
@@ -750,10 +1368,48 @@ EDGE_TYPE_MAP = {
     ("Client", "MedicalProvider"): ["TreatingAt"],
     
     # =========================================================================
-    # Medical Provider relationships (bidirectional)
+    # Facility and Location relationships (NEW - 3-tier hierarchy)
     # =========================================================================
-    ("MedicalProvider", "Client"): ["TreatedBy"],
-    ("MedicalProvider", "Case"): ["TreatedBy"],
+    # Hierarchy relationships
+    ("Location", "Facility"): ["PartOf"],
+    ("Facility", "HealthSystem"): ["PartOf"],
+    ("Facility", "Location"): ["HasLocation"],      # Reverse for convenience
+    ("HealthSystem", "Facility"): ["HasFacility"],  # Reverse for convenience
+
+    # Treatment relationships (multi-level - can link to Facility OR Location)
+    ("Client", "Location"): ["TreatedAt"],   # Specific location known
+    ("Client", "Facility"): ["TreatedAt"],   # Location unknown, link to facility
+    ("Case", "Location"): ["TreatingAt"],
+    ("Case", "Facility"): ["TreatingAt"],
+
+    # Multi-role relationships (same entity, different roles)
+    ("Case", "Location"): ["Defendant", "VendorFor", "TreatingAt"],  # Location can be provider, defendant, or vendor
+    ("Case", "Facility"): ["Defendant", "VendorFor", "TreatingAt"],  # Facility can be provider, defendant, or vendor
+    ("Case", "HealthSystem"): ["Defendant"],  # Rare but possible (suing entire system)
+
+    # Staff relationships
+    ("Doctor", "Location"): ["WorksAt"],           # Doctor works at specific location
+    ("Doctor", "Facility"): ["AffiliatedWith"],    # Doctor affiliated with facility (multiple locations)
+
+    # Document relationships
+    ("Document", "Location"): ["From"],
+    ("Document", "Facility"): ["From"],
+
+    # =========================================================================
+    # Medical Provider relationships (DEPRECATED - use Facility/Location instead)
+    # =========================================================================
+    ("MedicalProvider", "Client"): ["HasTreated"],  # Provider treated client
+    ("Client", "MedicalProvider"): ["TreatedBy"],   # Client treated by provider
+    ("Case", "MedicalProvider"): ["TreatingAt"],    # Case involves treatment at provider
+
+    # =========================================================================
+    # Doctor relationships (UPDATED to use Location)
+    # =========================================================================
+    ("Doctor", "Location"): ["WorksAt"],         # Doctor works at specific location (NEW)
+    ("Doctor", "Facility"): ["AffiliatedWith"],  # Doctor affiliated with facility (NEW)
+    ("Doctor", "MedicalProvider"): ["WorksAt"],  # DEPRECATED - use Location instead
+    ("Doctor", "Client"): ["HasTreated"],        # Doctor treated client
+    ("Client", "Doctor"): ["TreatedBy"],         # Client treated by doctor
     
     # =========================================================================
     # Insurance claim relationships
@@ -771,6 +1427,19 @@ EDGE_TYPE_MAP = {
     ("Insurer", "UIMClaim"): ["HasClaim"],
     ("Insurer", "WCClaim"): ["HasClaim"],
     ("Insurer", "MedPayClaim"): ["HasClaim"],
+    # Client to insurance/claims
+    ("Client", "Insurer"): ["HasInsurance"],  # Client has insurance policy with
+    ("Client", "PIPClaim"): ["FiledClaim"],   # Client filed this claim
+    ("Client", "BIClaim"): ["FiledClaim"],
+    ("Client", "UMClaim"): ["FiledClaim"],
+    ("Client", "UIMClaim"): ["FiledClaim"],
+    ("Client", "WCClaim"): ["FiledClaim"],
+    # Claims cover client (bidirectional)
+    ("PIPClaim", "Client"): ["Covers"],
+    ("BIClaim", "Client"): ["Covers"],
+    ("UMClaim", "Client"): ["Covers"],
+    ("UIMClaim", "Client"): ["Covers"],
+    ("WCClaim", "Client"): ["Covers"],
     
     # =========================================================================
     # Adjuster relationships
@@ -787,31 +1456,173 @@ EDGE_TYPE_MAP = {
     ("BIClaim", "Adjuster"): ["AssignedAdjuster"],
     ("UMClaim", "Adjuster"): ["AssignedAdjuster"],
     ("UIMClaim", "Adjuster"): ["AssignedAdjuster"],
-    
+
     # =========================================================================
-    # Lien relationships
+    # Insurance Policy relationships (NEW)
     # =========================================================================
-    ("Lien", "LienHolder"): ["HeldBy"],
-    ("Lien", "MedicalProvider"): ["HeldBy"],
-    ("LienHolder", "Lien"): ["Holds"],
-    ("Case", "LienHolder"): ["HasLienFrom"],
-    
+    ("Client", "InsurancePolicy"): ["HasPolicy"],
+    ("Defendant", "InsurancePolicy"): ["HasPolicy"],
+    ("InsurancePolicy", "Insurer"): ["WithInsurer"],
+    ("PIPClaim", "InsurancePolicy"): ["UnderPolicy"],
+    ("BIClaim", "InsurancePolicy"): ["UnderPolicy"],
+    ("UMClaim", "InsurancePolicy"): ["UnderPolicy"],
+    ("UIMClaim", "InsurancePolicy"): ["UnderPolicy"],
+    ("WCClaim", "InsurancePolicy"): ["UnderPolicy"],
+    ("MedPayClaim", "InsurancePolicy"): ["UnderPolicy"],
+
+    # =========================================================================
+    # Insurance Payment relationships (NEW)
+    # =========================================================================
+    ("PIPClaim", "InsurancePayment"): ["MadePayment"],
+    ("BIClaim", "InsurancePayment"): ["MadePayment"],
+    ("UMClaim", "InsurancePayment"): ["MadePayment"],
+    ("UIMClaim", "InsurancePayment"): ["MadePayment"],
+    ("WCClaim", "InsurancePayment"): ["MadePayment"],
+    ("InsurancePayment", "Insurer"): ["From"],
+    ("InsurancePayment", "Bill"): ["PaidBill"],
+
+    # =========================================================================
+    # Defendant Insurance relationships (NEW)
+    # =========================================================================
+    ("Defendant", "Insurer"): ["HasInsurance"],
+    ("BIClaim", "Defendant"): ["CoversDefendant"],
+
+    # =========================================================================
+    # Lien and Bill relationships
+    # =========================================================================
+    ("Case", "Lien"): ["HasLien"],  # Case has lien
+    ("Case", "LienHolder"): ["HasLienFrom"],  # Case has lien from holder
+    ("Lien", "LienHolder"): ["HeldBy"],  # Lien held by lienholder (kept for now)
+    ("Lien", "Bill"): ["ForBill"],   # Lien is for specific bill
+    ("Lien", "Bill"): ["PaidBill"],  # Lien holder paid this bill (for tracking what they paid)
+    # Bills
+    ("Case", "Bill"): ["HasBill"],  # Case has bill
+    ("Bill", "Location"): ["BilledBy"],      # Bill from specific location (NEW)
+    ("Bill", "Facility"): ["BilledBy"],      # Bill from facility (NEW)
+    ("Bill", "MedicalProvider"): ["BilledBy"],  # Bill from provider (DEPRECATED)
+    ("Bill", "Vendor"): ["BilledBy"],  # Bill from vendor
+    ("Bill", "Attorney"): ["BilledBy"],  # Bill from attorney/expert
+
+    # =========================================================================
+    # Medical Visit relationships (NEW - for medical chronology)
+    # =========================================================================
+    ("Case", "MedicalVisit"): ["HasVisit"],           # Case has visit
+    ("MedicalVisit", "Location"): ["AtLocation"],     # Visit at specific location
+    ("MedicalVisit", "Facility"): ["AtLocation"],     # Visit at facility (location unknown)
+    ("MedicalVisit", "Bill"): ["HasBill"],            # Visit has associated bill(s)
+    ("MedicalVisit", "Document"): ["HasDocument"],    # Visit has PDF of records
+    ("MedicalVisit", "Doctor"): ["SeenBy"],           # Doctor who saw patient
+    ("Client", "MedicalVisit"): ["Had"],              # Client had visit (optional - can infer from Case)
+
+    # =========================================================================
+    # Negotiation relationships
+    # =========================================================================
+    ("Case", "Negotiation"): ["HasNegotiation"],
+    ("Negotiation", "PIPClaim"): ["ForClaim"],
+    ("Negotiation", "BIClaim"): ["ForClaim"],
+    ("Negotiation", "UMClaim"): ["ForClaim"],
+    ("Negotiation", "UIMClaim"): ["ForClaim"],
+    ("Negotiation", "WCClaim"): ["ForClaim"],
+
     # =========================================================================
     # Legal/litigation relationships
     # =========================================================================
     ("Attorney", "Case"): ["RepresentsClient"],
     ("Attorney", "LawFirm"): ["WorksAt"],
+    ("Attorney", "LawFirmOffice"): ["WorksAt"],  # NEW - can work at specific office
+    ("CaseManager", "LawFirm"): ["WorksAt"],
+    ("CaseManager", "LawFirmOffice"): ["WorksAt"],  # NEW - can work at specific office
+    ("LawFirmOffice", "LawFirm"): ["PartOf"],  # NEW - office belongs to firm
     ("Case", "Attorney"): ["DefenseCounsel", "RepresentedBy"],
     ("Pleading", "Case"): ["FiledFor"],
     ("Pleading", "Court"): ["FiledIn"],
+    ("Pleading", "Attorney"): ["FiledBy"],  # NEW - who filed this pleading
+
+    # =========================================================================
+    # Court Event relationships (NEW)
+    # =========================================================================
+    ("Case", "CourtEvent"): ["HasEvent"],
+    ("CourtEvent", "Court"): ["In"],
+    ("CourtEvent", "CircuitDivision"): ["In"],
+    ("CourtEvent", "DistrictDivision"): ["In"],
+
+    # =========================================================================
+    # Court Division relationships
+    # =========================================================================
+    ("CircuitDivision", "Court"): ["PartOf"],  # Division belongs to court
+    ("DistrictDivision", "Court"): ["PartOf"],
+    ("AppellateDistrict", "Court"): ["PartOf"],
+    ("SupremeCourtDistrict", "Court"): ["PartOf"],
+
+    # =========================================================================
+    # Court Personnel relationships
+    # =========================================================================
+    ("CircuitJudge", "CircuitDivision"): ["PresidesOver"],  # Judge presides over division
+    ("DistrictJudge", "DistrictDivision"): ["PresidesOver"],
+    ("AppellateJudge", "AppellateDistrict"): ["PresidesOver"],
+    ("SupremeCourtJustice", "SupremeCourtDistrict"): ["PresidesOver"],
+    ("CourtClerk", "Court"): ["WorksAt"],  # Clerk works at court (not division-specific)
+    ("MasterCommissioner", "Court"): ["AppointedBy"],  # Commissioner appointed by court
+    ("CourtAdministrator", "Court"): ["WorksAt"],  # Administrator works at court
+    ("Case", "CircuitDivision"): ["FiledIn"],  # Case filed in division
+    ("Case", "DistrictDivision"): ["FiledIn"],
+    ("Case", "CircuitJudge"): ["AssignedTo"],  # Case assigned to judge (via division)
+    ("Case", "DistrictJudge"): ["AssignedTo"],
+
+    # =========================================================================
+    # Expert, Mediator, and Witness relationships
+    # =========================================================================
+    ("Expert", "Organization"): ["WorksAt"],  # Expert works for firm/organization
+    ("Expert", "Case"): ["RetainedFor"],
+    ("Mediator", "Organization"): ["WorksAt"],  # Mediator with mediation service
+    ("Mediator", "Case"): ["RetainedFor"],
+    ("Witness", "Case"): ["WitnessFor"],  # Fact witness for case
+    ("Case", "Expert"): ["RetainedExpert"],
+    ("Case", "Mediator"): ["RetainedMediator"],
+    ("Case", "Witness"): ["HasWitness"],
     
     # =========================================================================
     # Organization relationships
     # =========================================================================
     ("Organization", "Organization"): ["PartOf"],  # Hierarchies
-    ("MedicalProvider", "Organization"): ["PartOf"],  # Provider belongs to health system
+    ("MedicalProvider", "HealthSystem"): ["PartOf"],  # Specific location belongs to health system
+    ("HealthSystem", "Organization"): ["PartOf"],  # Health system can be part of larger org
     ("LawFirm", "Organization"): ["PartOf"],
-    
+
+    # =========================================================================
+    # Document relationships
+    # =========================================================================
+    ("Case", "Document"): ["HasDocument"],  # Generic documents
+    ("Document", "Case"): ["Regarding"],
+    # Specific document types
+    ("MedicalRecords", "MedicalProvider"): ["ReceivedFrom"],
+    ("MedicalBills", "MedicalProvider"): ["ReceivedFrom"],
+    ("MedicalRecordsRequest", "MedicalProvider"): ["SentTo"],
+    ("LetterOfRepresentation", "Insurer"): ["SentTo"],
+    ("LetterOfRepresentation", "MedicalProvider"): ["SentTo"],
+    ("LetterOfRepresentation", "LienHolder"): ["SentTo"],
+    ("InsuranceDocument", "Insurer"): ["From"],
+    ("Case", "MedicalRecords"): ["HasDocument"],
+    ("Case", "MedicalBills"): ["HasDocument"],
+    ("Case", "MedicalRecordsRequest"): ["HasDocument"],
+    ("Case", "LetterOfRepresentation"): ["HasDocument"],
+    ("Case", "InsuranceDocument"): ["HasDocument"],
+    ("Case", "CorrespondenceDocument"): ["HasDocument"],
+
+    # =========================================================================
+    # Community relationships
+    # =========================================================================
+    ("Community", "MedicalProvider"): ["HasMember"],
+    ("Community", "Doctor"): ["HasMember"],
+    ("Community", "Attorney"): ["HasMember"],
+    ("Community", "Case"): ["HasMember"],
+    ("Community", "Defendant"): ["HasMember"],
+    ("MedicalProvider", "Community"): ["MemberOf"],
+    ("Doctor", "Community"): ["MemberOf"],
+    ("Attorney", "Community"): ["MemberOf"],
+    ("Case", "Community"): ["MemberOf"],
+    ("Defendant", "Community"): ["MemberOf"],
+
     # =========================================================================
     # Workflow relationships (structural)
     # =========================================================================
@@ -827,45 +1638,63 @@ EDGE_TYPE_MAP = {
     ("Phase", "Phase"): ["NextPhase", "CanSkipTo"],
 
     # =========================================================================
-    # Note relationships (Notes can attach to any entity)
+    # Episode relationships (timeline narrative - explains why/how)
     # =========================================================================
-    ("Case", "Note"): ["HasNote"],
-    ("Client", "Note"): ["HasNote"],
-    ("PIPClaim", "Note"): ["HasNote"],
-    ("BIClaim", "Note"): ["HasNote"],
-    ("UMClaim", "Note"): ["HasNote"],
-    ("UIMClaim", "Note"): ["HasNote"],
-    ("WCClaim", "Note"): ["HasNote"],
-    ("MedPayClaim", "Note"): ["HasNote"],
-    ("MedicalProvider", "Note"): ["HasNote"],
-    ("Insurer", "Note"): ["HasNote"],
-    ("Adjuster", "Note"): ["HasNote"],
-    ("Lien", "Note"): ["HasNote"],
-    ("LienHolder", "Note"): ["HasNote"],
-    ("Defendant", "Note"): ["HasNote"],
-    ("Court", "Note"): ["HasNote"],
-    ("Attorney", "Note"): ["HasNote"],
-    ("LawFirm", "Note"): ["HasNote"],
-    ("Vendor", "Note"): ["HasNote"],
-    ("Organization", "Note"): ["HasNote"],
-    ("Pleading", "Note"): ["HasNote"],
-    ("Document", "Note"): ["HasNote"],
-    # Reverse (Note to Entity)
-    ("Note", "Case"): ["NotedOn"],
-    ("Note", "Client"): ["NotedOn"],
-    ("Note", "PIPClaim"): ["NotedOn"],
-    ("Note", "BIClaim"): ["NotedOn"],
-    ("Note", "UMClaim"): ["NotedOn"],
-    ("Note", "UIMClaim"): ["NotedOn"],
-    ("Note", "WCClaim"): ["NotedOn"],
-    ("Note", "MedPayClaim"): ["NotedOn"],
-    ("Note", "MedicalProvider"): ["NotedOn"],
-    ("Note", "Insurer"): ["NotedOn"],
-    ("Note", "Adjuster"): ["NotedOn"],
-    ("Note", "Lien"): ["NotedOn"],
-    ("Note", "Defendant"): ["NotedOn"],
-    ("Note", "Court"): ["NotedOn"],
-    ("Note", "Attorney"): ["NotedOn"],
+    # Episodes always link to their Case
+    ("Episode", "Case"): ["RelatesTo"],  # Generic for case link
+    # Episodes can discuss (ABOUT) any entity
+    ("Episode", "Client"): ["About"],
+    ("Episode", "HealthSystem"): ["About"],  # Parent healthcare organization
+    ("Episode", "MedicalProvider"): ["About"],  # Specific location
+    ("Episode", "Doctor"): ["About"],  # Individual physicians
+    ("Episode", "Insurer"): ["About"],
+    ("Episode", "Adjuster"): ["About"],
+    ("Episode", "PIPClaim"): ["About"],
+    ("Episode", "BIClaim"): ["About"],
+    ("Episode", "UMClaim"): ["About"],
+    ("Episode", "UIMClaim"): ["About"],
+    ("Episode", "WCClaim"): ["About"],
+    ("Episode", "MedPayClaim"): ["About"],
+    ("Episode", "Lien"): ["About"],
+    ("Episode", "LienHolder"): ["About"],
+    ("Episode", "Attorney"): ["About"],
+    ("Episode", "CaseManager"): ["About"],
+    ("Episode", "Court"): ["About"],
+    ("Episode", "CircuitDivision"): ["About"],  # Court divisions
+    ("Episode", "DistrictDivision"): ["About"],
+    ("Episode", "AppellateDistrict"): ["About"],
+    ("Episode", "SupremeCourtDistrict"): ["About"],
+    ("Episode", "CircuitJudge"): ["About"],  # Judges
+    ("Episode", "DistrictJudge"): ["About"],
+    ("Episode", "AppellateJudge"): ["About"],
+    ("Episode", "SupremeCourtJustice"): ["About"],
+    ("Episode", "CourtClerk"): ["About"],  # Court personnel
+    ("Episode", "MasterCommissioner"): ["About"],
+    ("Episode", "CourtAdministrator"): ["About"],
+    ("Episode", "Defendant"): ["About"],
+    ("Episode", "Pleading"): ["About"],
+    ("Episode", "Organization"): ["About"],
+    ("Episode", "Expert"): ["About"],  # Expert witnesses
+    ("Episode", "Mediator"): ["About"],  # Mediators/arbitrators
+    ("Episode", "Witness"): ["About"],  # Fact witnesses
+    ("Episode", "Vendor"): ["About"],
+    # Financial entities
+    ("Episode", "Bill"): ["About"],
+    ("Episode", "Negotiation"): ["About"],
+    ("Episode", "Settlement"): ["About"],
+    # Document entities
+    ("Episode", "MedicalRecords"): ["About"],
+    ("Episode", "MedicalBills"): ["About"],
+    ("Episode", "MedicalRecordsRequest"): ["About"],
+    ("Episode", "LetterOfRepresentation"): ["About"],
+    ("Episode", "InsuranceDocument"): ["About"],
+    ("Episode", "CorrespondenceDocument"): ["About"],
+    # Community
+    ("Episode", "Community"): ["About"],
+    # Episodes can follow other episodes (topical/sequential)
+    ("Episode", "Episode"): ["Follows"],
+    # Episodes can document workflow execution
+    ("Episode", "WorkflowDef"): ["PartOfWorkflow"],
 
     # =========================================================================
     # Fallback for any entity pair not explicitly mapped
@@ -875,72 +1704,87 @@ EDGE_TYPE_MAP = {
 
 
 # =============================================================================
-# Graphiti Client Singleton
+# Graphiti Client Factory (NOT Singleton - Creates per event loop)
 # =============================================================================
 
-_graphiti_instance: Optional[Graphiti] = None
+# Store clients per event loop to avoid "Lock bound to different event loop" errors
+_graphiti_instances: dict = {}
 
 
 async def get_graphiti() -> Graphiti:
     """
-    Get or create the singleton Graphiti client.
-    
+    Get or create a Graphiti client for the current event loop.
+
+    IMPORTANT: Not a global singleton! Each event loop gets its own instance
+    to avoid asyncio.Lock errors when tools run in different contexts.
+
     Configured with:
     - FalkorDB backend (Redis-compatible graph database)
-    - Gemini 3 Flash for LLM extraction
-    - Gemini embedding model
+    - GPT-5 Mini for LLM entity extraction (reasoning model, Dec 2025)
+    - GPT-5 Nano for small model tasks
+    - OpenAI text-embedding-3-small for embeddings
     - Custom entity types for legal case management
     """
-    global _graphiti_instance
-    
-    if _graphiti_instance is not None:
-        return _graphiti_instance
-    
+    import asyncio
+    from graphiti_core.llm_client.openai_client import OpenAIClient
+    from graphiti_core.llm_client.config import LLMConfig
+
+    # Get current event loop ID
+    try:
+        loop = asyncio.get_running_loop()
+        loop_id = id(loop)
+    except RuntimeError:
+        # No running loop - create a unique key
+        loop_id = "no_loop"
+
+    # Return existing instance for this loop
+    if loop_id in _graphiti_instances:
+        return _graphiti_instances[loop_id]
+
     # Get configuration from environment
-    google_api_key = os.getenv("GOOGLE_API_KEY")
-    if not google_api_key:
-        raise ValueError("GOOGLE_API_KEY environment variable is required for Graphiti")
-    
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    if not openai_api_key:
+        raise ValueError("OPENAI_API_KEY environment variable is required for Graphiti")
+
     falkordb_host = os.getenv("FALKORDB_HOST", "roscoe-graphdb")
     falkordb_port = int(os.getenv("FALKORDB_PORT", "6379"))
-    
-    # Configure Gemini 3 Flash as the LLM (released Dec 2025)
-    llm_config = LLMConfig(
-        api_key=google_api_key,
-        model="gemini-3-flash-preview",
-    )
-    
-    llm_client = GeminiClient(config=llm_config)
-    
-    # Configure Gemini embedder
-    embedder_config = GeminiEmbedderConfig(
-        api_key=google_api_key,
-        embedding_model="text-embedding-004",  # Latest Gemini embedding model
-    )
-    embedder = GeminiEmbedder(config=embedder_config)
-    
-    # Configure Gemini reranker
-    reranker = GeminiRerankerClient(config=llm_config)
-    
+
     # Initialize FalkorDB driver
     falkor_driver = FalkorDriver(
         host=falkordb_host,
         port=falkordb_port,
         database="roscoe_graph",
     )
-    
-    # Initialize Graphiti with FalkorDB driver
-    _graphiti_instance = Graphiti(
+
+    # Configure GPT-5 Mini for entity extraction (reasoning model)
+    llm_config = LLMConfig(
+        api_key=openai_api_key,
+        model="gpt-5-mini",          # Fast reasoning model for entity extraction
+        small_model="gpt-5-nano",    # Smallest reasoning model for simple tasks
+    )
+
+    # Create OpenAI client with reasoning parameters for GPT-5 family
+    llm_client = OpenAIClient(
+        config=llm_config,
+        reasoning='minimal',  # GPT-5 reasoning effort
+        verbosity='low'       # GPT-5 verbosity level
+    )
+
+    # Initialize Graphiti with FalkorDB driver and GPT-5 models
+    # Embeddings default to text-embedding-3-small (best performance/cost ratio)
+    graphiti_instance = Graphiti(
         graph_driver=falkor_driver,
         llm_client=llm_client,
-        embedder=embedder,
-        cross_encoder=reranker,
     )
-    
-    # Build indices and constraints
-    await _graphiti_instance.build_indices_and_constraints()
-    
-    return _graphiti_instance
+
+    # Skip build_indices - indices persist in FalkorDB, no need to rebuild
+    # Building takes 6+ minutes and was causing massive delays on every tool call!
+    # Only build indices manually via management scripts when needed
+
+    # Store instance for this event loop
+    _graphiti_instances[loop_id] = graphiti_instance
+
+    return graphiti_instance
 
 
 async def close_graphiti():
@@ -1003,41 +1847,222 @@ async def add_case_episode(
     await graphiti.add_episode(**kwargs)
 
 
-async def search_case(
+async def search_case_episodes(
     query: str,
     case_name: Optional[str] = None,
     num_results: int = 20,
 ) -> list:
     """
-    Search the knowledge graph for relevant information.
-    
-    All case data is in a unified graph (CASE_DATA_GROUP_ID). To search within
-    a specific case, include the case name in your query. Graphiti's semantic
-    search will find results related to that case through entity relationships.
-    
+    Search episode content (notes, communications, events) for a case.
+
+    This searches EPISODIC data (notes, emails, calls, events) using semantic search.
+    Use this when you need details about:
+    - What happened (timeline, communications, events)
+    - Why something occurred (reasons, explanations in notes)
+    - Granular information not in structured data
+    - "Why was coverage denied?" → Finds email/note explaining denial
+    - "What did adjuster say?" → Finds conversation notes
+
+    For current state/structure (who/what/status), use get_case_entities() instead.
+
     Args:
-        query: Natural language search query
-        case_name: If provided, prepends to query for case-specific filtering
-        num_results: Maximum number of results to return
-    
+        query: Natural language search query (e.g., "Why was coverage denied?")
+        case_name: If provided, filters to only this case's episodes
+        num_results: Maximum results to return
+
     Returns:
-        List of search results with facts, entities, and relationships
+        List of episode content ranked by semantic similarity
+        Empty list if no episodes exist yet
+
+    Examples:
+        search_case_episodes("Why was coverage denied?", case_name="Abby-Sitgraves-MVA-7-13-2024")
+        search_case_episodes("What did the adjuster say about the offer?", case_name="Wilson-MVA-2024")
     """
     graphiti = await get_graphiti()
-    
-    # Prepend case name to query for case-specific filtering
+
+    # CASE-SPECIFIC SEARCH: Use Case entity as focal node
     if case_name:
-        full_query = f"For case {case_name}: {query}"
-    else:
-        full_query = query
-    
+        # Direct query: Get Episode nodes that RELATE_TO this Case
+        # Our episodes use Episode label (not Episodic) and RELATES_TO (not MENTIONS)
+        case_episodes_query = """
+        MATCH (e:Episode)-[:RELATES_TO]->(c:Case {name: $case_name})
+        WHERE e.embedding IS NOT NULL
+        RETURN e.uuid as uuid, e.name as name, e.content as content, e.embedding as embedding, e.valid_at as valid_at
+        """
+        episodes = await run_cypher_query(case_episodes_query, {"case_name": case_name})
+
+        if not episodes:
+            return []  # No episodes for this case
+
+        # Embed query and compute similarity
+        query_embedding = await graphiti.embedder.create(query)
+
+        import numpy as np
+        q_vec = np.array(query_embedding)
+
+        scored = []
+        for ep in episodes:
+            emb = ep.get("embedding")
+            if not emb:
+                continue
+
+            # Convert embedding to numpy array (handle list or array)
+            if isinstance(emb, list):
+                ep_vec = np.array(emb)
+            else:
+                ep_vec = emb
+
+            # Calculate cosine similarity
+            similarity = np.dot(q_vec, ep_vec) / (np.linalg.norm(q_vec) * np.linalg.norm(ep_vec))
+
+            # Apply minimum similarity threshold (lower threshold for better recall)
+            if similarity >= 0.3:  # Relaxed from 0.5 for better results
+                scored.append({
+                    "similarity": float(similarity),
+                    "fact": ep.get("content", ""),
+                    "name": ep.get("name", ""),
+                    "uuid": ep.get("uuid"),
+                    "valid_at": ep.get("valid_at"),
+                })
+
+        # Sort by similarity (highest first)
+        scored.sort(key=lambda x: x["similarity"], reverse=True)
+        return scored[:num_results]
+
+    # No case filter: standard hybrid search
     results = await graphiti.search(
-        query=full_query,
-        group_ids=[CASE_DATA_GROUP_ID],  # All case data in one group
+        query=query,
+        group_ids=[CASE_DATA_GROUP_ID],
         num_results=num_results,
     )
-    
+
     return results
+
+
+async def get_case_entities(
+    case_name: str,
+    entity_types: Optional[list[str]] = None,
+) -> dict:
+    """
+    Get structured entities for a case (parties, insurance, providers, etc.).
+
+    This queries the STRUCTURED graph data (not episodes/notes). Use this when you need:
+    - Current case parties (client, defendants, attorneys)
+    - Insurance companies and claims
+    - Medical providers
+    - Liens and lienholders
+    - Litigation info (court, pleadings)
+    - Phase and workflow status
+
+    Args:
+        case_name: Case folder name (e.g., "Abby-Sitgraves-MVA-7-13-2024")
+        entity_types: Optional list to filter results. Options:
+            - "Client" - Client information
+            - "Insurance" - Insurance claims, insurers, adjusters
+            - "Provider" - Medical providers
+            - "Lien" - Liens and lienholders
+            - "Defendant" - Defendants and their insurance
+            - "Attorney" - Attorneys on the case
+            - "Litigation" - Court, pleadings, case number
+            - "Phase" - Current phase and landmarks
+            - None (default) - Return all entity types
+
+    Returns:
+        Dict with structured entity data organized by category
+
+    Examples:
+        # Get all entities
+        get_case_entities("Abby-Sitgraves-MVA-7-13-2024")
+
+        # Get just insurance
+        get_case_entities("Abby-Sitgraves-MVA-7-13-2024", entity_types=["Insurance"])
+
+        # Get providers and liens
+        get_case_entities("Abby-Sitgraves-MVA-7-13-2024", entity_types=["Provider", "Lien"])
+    """
+    result = {
+        "case_name": case_name,
+        "client": None,
+        "insurance": [],
+        "providers": [],
+        "liens": [],
+        "defendants": [],
+        "attorneys": [],
+        "litigation": [],
+        "phase": None,
+    }
+
+    # Determine which queries to run
+    fetch_all = entity_types is None
+    entity_set = set(entity_types) if entity_types else set()
+
+    # Get Case entity (always needed for relationships)
+    case_query = "MATCH (c:Case {name: $case_name}) RETURN c.uuid as uuid"
+    case_results = await run_cypher_query(case_query, {"case_name": case_name})
+
+    if not case_results:
+        return {"error": f"Case '{case_name}' not found in graph"}
+
+    # Client
+    if fetch_all or "Client" in entity_set:
+        client_query = """
+        MATCH (c:Case {name: $case_name})-[:HAS_CLIENT]->(client:Client)
+        RETURN client.name as name, client.phone as phone, client.email as email, client.address as address
+        LIMIT 1
+        """
+        client_results = await run_cypher_query(client_query, {"case_name": case_name})
+        if client_results:
+            result["client"] = client_results[0]
+
+    # Insurance
+    if fetch_all or "Insurance" in entity_set:
+        insurance_query = """
+        MATCH (c:Case {name: $case_name})-[:HAS_CLAIM]->(claim)
+        WHERE claim:BIClaim OR claim:PIPClaim OR claim:UMClaim OR claim:UIMClaim OR claim:WCClaim OR claim:MedPayClaim
+        OPTIONAL MATCH (claim)-[:INSURED_BY]->(insurer:Insurer)
+        OPTIONAL MATCH (claim)-[:ASSIGNED_ADJUSTER]->(adjuster:Adjuster)
+        RETURN claim.name as claim_number, labels(claim) as claim_labels,
+               insurer.name as insurer_name, adjuster.name as adjuster_name,
+               adjuster.phone as adjuster_phone, claim.policy_limit as policy_limit,
+               claim.current_offer as current_offer, claim.settlement_amount as settlement_amount
+        """
+        insurance_results = await run_cypher_query(insurance_query, {"case_name": case_name})
+        result["insurance"] = insurance_results
+
+    # Medical Providers
+    if fetch_all or "Provider" in entity_set:
+        provider_query = """
+        MATCH (c:Case {name: $case_name})-[:TREATING_AT]->(provider:MedicalProvider)
+        OPTIONAL MATCH (provider)-[:PART_OF]->(org:Organization)
+        RETURN provider.name as name, provider.specialty as specialty,
+               provider.phone as phone, provider.fax as fax, org.name as parent_org
+        """
+        provider_results = await run_cypher_query(provider_query, {"case_name": case_name})
+        result["providers"] = provider_results
+
+    # Liens
+    if fetch_all or "Lien" in entity_set:
+        lien_query = """
+        MATCH (c:Case {name: $case_name})-[:HAS_LIEN]->(lien:Lien)
+        OPTIONAL MATCH (lien)-[:HELD_BY]->(holder:LienHolder)
+        RETURN lien.name as lien_name, holder.name as holder_name,
+               lien.amount as amount, lien.account_number as account_number
+        """
+        lien_results = await run_cypher_query(lien_query, {"case_name": case_name})
+        result["liens"] = lien_results
+
+    # Phase/Workflow
+    if fetch_all or "Phase" in entity_set:
+        phase_query = """
+        MATCH (c:Case {name: $case_name})-[:IN_PHASE]->(phase:Phase)
+        RETURN phase.name as phase_name, phase.display_name as phase_display
+        LIMIT 1
+        """
+        phase_results = await run_cypher_query(phase_query, {"case_name": case_name})
+        if phase_results:
+            result["phase"] = phase_results[0]
+
+    return result
 
 
 async def get_case_context(case_name: str) -> dict:
@@ -1260,21 +2285,55 @@ async def generate_case_summary(case_name: str) -> dict:
 # using Cypher. Use these for structural/relationship queries where you know
 # exactly what you're looking for.
 
-async def run_cypher_query(query: str, parameters: Optional[dict] = None) -> list:
+async def run_cypher_query_direct(query: str, parameters: Optional[dict] = None) -> list:
     """
-    Execute a raw Cypher query against FalkorDB.
-    
-    This bypasses Graphiti's semantic search and queries the graph directly.
-    Use for structural queries like finding relationships, traversing the graph,
-    or aggregating data.
-    
+    Execute a raw Cypher query directly against FalkorDB (sync client, no Graphiti).
+
+    This is a lightweight query function that bypasses Graphiti initialization,
+    avoiding index building and event loop issues. Use for simple structural queries.
+
     Args:
         query: Cypher query string
         parameters: Optional query parameters (for parameterized queries)
-    
+
     Returns:
         List of result records
-    
+    """
+    from falkordb import FalkorDB
+
+    # Direct FalkorDB connection (sync client)
+    db = FalkorDB(host=FALKORDB_HOST, port=FALKORDB_PORT)
+    graph = db.select_graph("roscoe_graph")
+
+    # Execute query (sync)
+    result = graph.query(query, parameters or {})
+
+    # Convert to list of dicts
+    records = []
+    if result.result_set:
+        headers = [h[1] if isinstance(h, (list, tuple)) else str(h) for h in result.header]
+        for row in result.result_set:
+            record = {headers[i]: row[i] for i in range(len(headers))}
+            records.append(record)
+
+    return records
+
+
+async def run_cypher_query(query: str, parameters: Optional[dict] = None) -> list:
+    """
+    Execute a raw Cypher query against FalkorDB.
+
+    This bypasses Graphiti's semantic search and queries the graph directly.
+    Use for structural queries like finding relationships, traversing the graph,
+    or aggregating data.
+
+    Args:
+        query: Cypher query string
+        parameters: Optional query parameters (for parameterized queries)
+
+    Returns:
+        List of result records
+
     Example:
         # Find all cases for a medical provider
         results = await run_cypher_query('''
@@ -1283,31 +2342,8 @@ async def run_cypher_query(query: str, parameters: Optional[dict] = None) -> lis
             RETURN c.name as case_name, type(r) as relationship
         ''')
     """
-    graphiti = await get_graphiti()
-    
-    # Access the underlying FalkorDB driver (async client)
-    driver = graphiti.driver
-    graph = driver.client.select_graph("roscoe_graph")
-    
-    # Execute query - async FalkorDB graph query
-    result = await graph.query(query, parameters or {})
-    
-    # Convert to list of dicts
-    records = []
-    if result.result_set:
-        headers = result.header
-        for row in result.result_set:
-            record = {}
-            for i, header in enumerate(headers):
-                # Header format in FalkorDB async: [type_code, column_name]
-                if isinstance(header, (list, tuple)) and len(header) >= 2:
-                    col_name = header[1]
-                else:
-                    col_name = str(header)
-                record[col_name] = row[i]
-            records.append(record)
-    
-    return records
+    # Use the direct query function to avoid Graphiti initialization
+    return await run_cypher_query_direct(query, parameters)
 
 
 async def get_cases_by_provider(provider_name: str) -> list:
@@ -1885,25 +2921,43 @@ import json
 
 async def get_case_phase(case_name: str) -> dict:
     """
-    Get the current phase for a case.
-    
-    This returns the phase the case is currently in, via the IN_PHASE relationship.
-    
+    Get the current phase (and sub-phase if applicable) for a case.
+
+    This returns the phase the case is currently in via IN_PHASE relationship,
+    and SubPhase via IN_SUBPHASE relationship (for litigation cases).
+
     Args:
         case_name: Case name/identifier
-    
+
     Returns:
-        Dictionary with phase info: {name, display_name, order, track, entered_at}
+        Dictionary with phase info: {name, display_name, order, track, entered_at, subphase_name, subphase_display}
         Returns None if case not found or no phase set.
     """
     query = """
-    MATCH (c:Entity {entity_type: 'Case', name: $case_name})-[r:IN_PHASE]->(p:Entity {entity_type: 'Phase'})
+    // Find case (supports both :Case label and :Entity with entity_type)
+    OPTIONAL MATCH (c1:Case {name: $case_name})
+    OPTIONAL MATCH (c2:Entity {entity_type: 'Case', name: $case_name})
+    WITH COALESCE(c1, c2) as c
+    WHERE c IS NOT NULL
+
+    // Find phase
+    MATCH (c)-[r:IN_PHASE]->(p)
+    WHERE p:Phase OR (p:Entity AND p.entity_type = 'Phase')
+
+    // Find optional subphase
+    OPTIONAL MATCH (c)-[sr:IN_SUBPHASE]->(sp)
+    WHERE sp:SubPhase OR (sp:Entity AND sp.entity_type = 'SubPhase')
+
     RETURN p.name as name,
            p.display_name as display_name,
            p.order as phase_order,
            p.track as track,
-           p.next_phase_name as next_phase,
-           r.entered_at as entered_at
+           p.next_phase as next_phase,
+           r.entered_at as entered_at,
+           sp.name as subphase_name,
+           sp.display_name as subphase_display,
+           sp.order as subphase_order,
+           sr.entered_at as subphase_entered_at
     """
     results = await run_cypher_query(query, {"case_name": case_name})
     return results[0] if results else None
@@ -1911,51 +2965,91 @@ async def get_case_phase(case_name: str) -> dict:
 
 async def get_case_landmark_statuses(case_name: str, phase_name: str = None) -> list:
     """
-    Get all landmark statuses for a case.
-    
+    Get ALL landmark statuses for a case, including landmarks without status set.
+
+    This returns ALL landmarks (from phase definitions), with their status if set,
+    or "not_started" if no LANDMARK_STATUS relationship exists yet.
+
     Args:
         case_name: Case name/identifier
         phase_name: Optional - filter to landmarks for a specific phase
-    
+
     Returns:
-        List of landmark statuses with:
+        List of ALL landmarks with:
         - landmark_id, display_name, landmark_type, is_hard_blocker
-        - status, sub_steps, notes, completed_at
+        - status (actual or "not_started"), sub_steps, notes, completed_at
     """
     if phase_name:
+        # Get ALL landmarks for the phase, LEFT JOIN with status via LandmarkStatus nodes
         query = """
-        MATCH (c:Entity {entity_type: 'Case', name: $case_name})-[r:LANDMARK_STATUS]->(l:Entity {entity_type: 'Landmark', phase: $phase_name})
-        RETURN l.name as landmark_id,
-               l.display_name as display_name,
+        // Find phase (supports both :Phase label and :Entity with entity_type)
+        MATCH (p)-[:HAS_LANDMARK]->(l)
+        WHERE (p:Phase OR (p:Entity AND p.entity_type = 'Phase'))
+          AND p.name = $phase_name
+          AND (l:Landmark OR (l:Entity AND l.entity_type = 'Landmark'))
+
+        // Find case (supports both :Case label and :Entity with entity_type)
+        OPTIONAL MATCH (c1:Case {name: $case_name})
+        OPTIONAL MATCH (c2:Entity {entity_type: 'Case', name: $case_name})
+        WITH p, l, COALESCE(c1, c2) as c
+
+        // Find status for this landmark
+        OPTIONAL MATCH (c)-[:HAS_STATUS]->(ls)-[:FOR_LANDMARK]->(l)
+        WHERE (ls:LandmarkStatus OR (ls:Entity AND ls.entity_type = 'LandmarkStatus'))
+          AND (ls IS NULL OR ls.archived_at IS NULL)
+
+        RETURN COALESCE(l.landmark_id, l.name) as landmark_id,
+               COALESCE(l.display_name, l.name) as display_name,
                l.phase as phase,
                l.landmark_type as landmark_type,
                l.is_hard_blocker as is_hard_blocker,
                l.can_override as can_override,
                l.sub_steps as landmark_sub_steps,
-               r.status as status,
-               r.sub_steps as case_sub_steps,
-               r.notes as notes,
-               r.completed_at as completed_at,
-               r.updated_at as updated_at
-        ORDER BY l.name
+               COALESCE(ls.status, 'not_started') as status,
+               ls.sub_steps as case_sub_steps,
+               ls.notes as notes,
+               ls.completed_at as completed_at,
+               ls.updated_at as updated_at,
+               ls.version as version,
+               ls.updated_by as updated_by,
+               l.order as order
+        ORDER BY l.order, COALESCE(l.landmark_id, l.name)
         """
         return await run_cypher_query(query, {"case_name": case_name, "phase_name": phase_name})
     else:
+        # Get ALL landmarks, LEFT JOIN with case's status via LandmarkStatus nodes
         query = """
-        MATCH (c:Entity {entity_type: 'Case', name: $case_name})-[r:LANDMARK_STATUS]->(l:Entity {entity_type: 'Landmark'})
-        RETURN l.name as landmark_id,
-               l.display_name as display_name,
+        // Find all landmarks (supports both :Landmark label and :Entity with entity_type)
+        MATCH (l)
+        WHERE (l:Landmark OR (l:Entity AND l.entity_type = 'Landmark'))
+          AND l.group_id = '__workflow_definitions__'
+
+        // Find case (supports both :Case label and :Entity with entity_type)
+        OPTIONAL MATCH (c1:Case {name: $case_name})
+        OPTIONAL MATCH (c2:Entity {entity_type: 'Case', name: $case_name})
+        WITH l, COALESCE(c1, c2) as c
+
+        // Find status for this landmark
+        OPTIONAL MATCH (c)-[:HAS_STATUS]->(ls)-[:FOR_LANDMARK]->(l)
+        WHERE (ls:LandmarkStatus OR (ls:Entity AND ls.entity_type = 'LandmarkStatus'))
+          AND (ls IS NULL OR ls.archived_at IS NULL)
+
+        RETURN COALESCE(l.landmark_id, l.name) as landmark_id,
+               COALESCE(l.display_name, l.name) as display_name,
                l.phase as phase,
                l.landmark_type as landmark_type,
                l.is_hard_blocker as is_hard_blocker,
                l.can_override as can_override,
                l.sub_steps as landmark_sub_steps,
-               r.status as status,
-               r.sub_steps as case_sub_steps,
-               r.notes as notes,
-               r.completed_at as completed_at,
-               r.updated_at as updated_at
-        ORDER BY l.phase, l.name
+               COALESCE(ls.status, 'not_started') as status,
+               ls.sub_steps as case_sub_steps,
+               ls.notes as notes,
+               ls.completed_at as completed_at,
+               ls.updated_at as updated_at,
+               ls.version as version,
+               ls.updated_by as updated_by,
+               l.order as order
+        ORDER BY l.phase, l.order, COALESCE(l.landmark_id, l.name)
         """
         return await run_cypher_query(query, {"case_name": case_name})
 
@@ -1963,100 +3057,143 @@ async def get_case_landmark_statuses(case_name: str, phase_name: str = None) -> 
 async def get_landmark_status(case_name: str, landmark_id: str) -> dict:
     """
     Get status for a specific landmark on a case.
-    
+
     Args:
         case_name: Case name/identifier
         landmark_id: Landmark identifier
-    
+
     Returns:
         Landmark status info or None if not found
     """
     query = """
-    MATCH (c:Entity {entity_type: 'Case', name: $case_name})-[r:LANDMARK_STATUS]->(l:Entity {entity_type: 'Landmark', name: $landmark_id})
-    RETURN l.name as landmark_id,
-           l.display_name as display_name,
+    // Find case (supports both :Case label and :Entity with entity_type)
+    OPTIONAL MATCH (c1:Case {name: $case_name})
+    OPTIONAL MATCH (c2:Entity {entity_type: 'Case', name: $case_name})
+    WITH COALESCE(c1, c2) as c
+    WHERE c IS NOT NULL
+
+    // Find landmark status chain
+    MATCH (c)-[:HAS_STATUS]->(ls)-[:FOR_LANDMARK]->(l)
+    WHERE (ls:LandmarkStatus OR (ls:Entity AND ls.entity_type = 'LandmarkStatus'))
+      AND (l:Landmark OR (l:Entity AND l.entity_type = 'Landmark'))
+      AND (l.landmark_id = $landmark_id OR l.name = $landmark_id)
+      AND ls.archived_at IS NULL
+
+    RETURN COALESCE(l.landmark_id, l.name) as landmark_id,
+           COALESCE(l.display_name, l.name) as display_name,
            l.phase as phase,
            l.landmark_type as landmark_type,
            l.is_hard_blocker as is_hard_blocker,
            l.sub_steps as landmark_sub_steps,
-           r.status as status,
-           r.sub_steps as case_sub_steps,
-           r.notes as notes,
-           r.completed_at as completed_at
+           ls.status as status,
+           ls.sub_steps as case_sub_steps,
+           ls.notes as notes,
+           ls.completed_at as completed_at,
+           ls.version as version,
+           ls.updated_by as updated_by
     """
     results = await run_cypher_query(query, {"case_name": case_name, "landmark_id": landmark_id})
     return results[0] if results else None
 
 
-# DEPRECATED: Use graph_manager.update_landmark_status() instead
-# This function modifies structured workflow state, which should be handled by graph_manager.py
 async def update_case_landmark_status(
     case_name: str,
     landmark_id: str,
     status: str,
     sub_steps: dict = None,
-    notes: str = None
+    notes: str = None,
+    updated_by: str = "agent"
 ) -> bool:
     """
-    Update a landmark's status for a case.
-    
+    Update a landmark's status for a case using versioned LandmarkStatus nodes.
+
+    Creates a new LandmarkStatus node with incremented version, archives old version.
+
     Args:
         case_name: Case name/identifier
         landmark_id: Landmark identifier
         status: New status ('complete', 'incomplete', 'in_progress', 'not_applicable')
         sub_steps: Optional dict of sub-step completions
         notes: Optional notes about the status
-    
+        updated_by: Who is updating ('agent', 'user', 'system')
+
     Returns:
         True if updated successfully
     """
+    import hashlib
+    import uuid as uuid_lib
     from datetime import datetime
-    
+
     sub_steps_json = json.dumps(sub_steps) if sub_steps else None
     now = datetime.now().isoformat()
-    
-    # If status is complete, set completed_at
-    if status == "complete":
-        query = """
-        MATCH (c:Entity {entity_type: 'Case', name: $case_name})
-        MATCH (l:Entity {entity_type: 'Landmark', name: $landmark_id})
-        MERGE (c)-[r:LANDMARK_STATUS]->(l)
-        SET r.status = $status,
-            r.sub_steps = $sub_steps,
-            r.notes = $notes,
-            r.completed_at = $completed_at,
-            r.updated_at = $updated_at
-        RETURN c.name, l.name
-        """
-        params = {
-            "case_name": case_name,
-            "landmark_id": landmark_id,
-            "status": status,
-            "sub_steps": sub_steps_json,
-            "notes": notes,
-            "completed_at": now,
-            "updated_at": now
-        }
-    else:
-        query = """
-        MATCH (c:Entity {entity_type: 'Case', name: $case_name})
-        MATCH (l:Entity {entity_type: 'Landmark', name: $landmark_id})
-        MERGE (c)-[r:LANDMARK_STATUS]->(l)
-        SET r.status = $status,
-            r.sub_steps = $sub_steps,
-            r.notes = $notes,
-            r.updated_at = $updated_at
-        RETURN c.name, l.name
-        """
-        params = {
-            "case_name": case_name,
-            "landmark_id": landmark_id,
-            "status": status,
-            "sub_steps": sub_steps_json,
-            "notes": notes,
-            "updated_at": now
-        }
-    
+    completed_at = now if status == "complete" else None
+
+    # Generate deterministic UUID for this case+landmark combination
+    status_key = f"{case_name}_{landmark_id}"
+    status_hash = hashlib.md5(status_key.encode()).hexdigest()
+    status_uuid = str(uuid_lib.UUID(status_hash))
+
+    query = """
+    // Find case (try both :Case label and :Entity with entity_type for schema flexibility)
+    OPTIONAL MATCH (c1:Case {name: $case_name})
+    OPTIONAL MATCH (c2:Entity {entity_type: 'Case', name: $case_name})
+    WITH COALESCE(c1, c2) as c
+    WHERE c IS NOT NULL
+
+    // Find landmark (match by landmark_id OR name property, supports both label patterns)
+    MATCH (l)
+    WHERE (l:Landmark OR (l:Entity AND l.entity_type = 'Landmark'))
+      AND (l.landmark_id = $landmark_id OR l.name = $landmark_id)
+
+    // Find current status (if exists) - LandmarkStatus has :Entity label
+    OPTIONAL MATCH (c)-[:HAS_STATUS]->(old_ls)-[:FOR_LANDMARK]->(l)
+    WHERE (old_ls:LandmarkStatus OR (old_ls:Entity AND old_ls.entity_type = 'LandmarkStatus'))
+      AND old_ls.archived_at IS NULL
+
+    // Get current version
+    WITH c, l, old_ls, COALESCE(old_ls.version, 0) as current_version
+
+    // Create new LandmarkStatus node (with both labels for compatibility)
+    CREATE (new_ls:Entity:LandmarkStatus {
+      entity_type: 'LandmarkStatus',
+      group_id: 'roscoe_graph',
+      uuid: $uuid,
+      case_name: $case_name,
+      landmark_id: $landmark_id,
+      status: $status,
+      sub_steps: $sub_steps,
+      notes: $notes,
+      completed_at: $completed_at,
+      created_at: $now,
+      updated_at: $now,
+      updated_by: $updated_by,
+      version: current_version + 1
+    })
+
+    // Link new status
+    MERGE (c)-[:HAS_STATUS]->(new_ls)
+    MERGE (new_ls)-[:FOR_LANDMARK]->(l)
+
+    // Archive old version (if exists)
+    WITH old_ls, new_ls
+    WHERE old_ls IS NOT NULL
+    SET old_ls.archived_at = $now
+
+    RETURN new_ls.version as new_version
+    """
+
+    params = {
+        "case_name": case_name,
+        "landmark_id": landmark_id,
+        "uuid": status_uuid,
+        "status": status,
+        "sub_steps": sub_steps_json,
+        "notes": notes,
+        "completed_at": completed_at,
+        "now": now,
+        "updated_by": updated_by
+    }
+
     results = await run_cypher_query(query, params)
     return len(results) > 0
 
@@ -2085,23 +3222,40 @@ async def check_phase_can_advance(case_name: str, current_phase: str = None) -> 
         current_phase = phase_info.get("name")
         next_phase = phase_info.get("next_phase")
     else:
-        # Get next phase from phase definition
+        # Get next phase from phase definition (supports both label patterns)
         phase_query = """
-        MATCH (p:Entity {entity_type: 'Phase', name: $phase_name})
+        MATCH (p)
+        WHERE (p:Phase OR (p:Entity AND p.entity_type = 'Phase'))
+          AND p.name = $phase_name
         RETURN p.next_phase_name as next_phase
         """
         results = await run_cypher_query(phase_query, {"phase_name": current_phase})
         next_phase = results[0].get("next_phase") if results else None
     
-    # Find all hard blockers that are not complete
+    # Find all hard blockers that are not complete (via LandmarkStatus nodes)
     blocker_query = """
-    MATCH (p:Entity {entity_type: 'Phase', name: $phase_name})-[:HAS_LANDMARK]->(l:Entity {entity_type: 'Landmark', is_hard_blocker: true})
-    OPTIONAL MATCH (c:Entity {entity_type: 'Case', name: $case_name})-[r:LANDMARK_STATUS]->(l)
-    WITH l, r
-    WHERE r IS NULL OR r.status <> 'complete'
-    RETURN l.name as landmark_id,
-           l.display_name as display_name,
-           COALESCE(r.status, 'not_started') as current_status
+    // Find phase (supports both label patterns)
+    MATCH (p)-[:HAS_LANDMARK]->(l)
+    WHERE (p:Phase OR (p:Entity AND p.entity_type = 'Phase'))
+      AND p.name = $phase_name
+      AND (l:Landmark OR (l:Entity AND l.entity_type = 'Landmark'))
+      AND l.is_hard_blocker = true
+
+    // Find case (supports both label patterns)
+    OPTIONAL MATCH (c1:Case {name: $case_name})
+    OPTIONAL MATCH (c2:Entity {entity_type: 'Case', name: $case_name})
+    WITH l, COALESCE(c1, c2) as c
+
+    // Find status for this landmark
+    OPTIONAL MATCH (c)-[:HAS_STATUS]->(ls)-[:FOR_LANDMARK]->(l)
+    WHERE (ls:LandmarkStatus OR (ls:Entity AND ls.entity_type = 'LandmarkStatus'))
+      AND (ls.archived_at IS NULL OR ls IS NULL)
+
+    WITH l, ls
+    WHERE ls IS NULL OR ls.status <> 'complete'
+    RETURN COALESCE(l.landmark_id, l.name) as landmark_id,
+           COALESCE(l.display_name, l.name) as display_name,
+           COALESCE(ls.status, 'not_started') as current_status
     """
     blocking = await run_cypher_query(blocker_query, {
         "case_name": case_name,
@@ -2148,14 +3302,28 @@ async def advance_case_to_phase(case_name: str, target_phase: str, force: bool =
     
     # Update the phase
     now = datetime.now().isoformat()
-    
+
     # Remove old IN_PHASE relationship and create new one
+    # Support both :Case label and :Entity {entity_type: 'Case'} for schema flexibility
     query = """
-    MATCH (c:Entity {entity_type: 'Case', name: $case_name})
-    OPTIONAL MATCH (c)-[old:IN_PHASE]->(:Entity)
+    // Find case (try both :Case label and :Entity with entity_type)
+    OPTIONAL MATCH (c1:Case {name: $case_name})
+    OPTIONAL MATCH (c2:Entity {entity_type: 'Case', name: $case_name})
+    WITH COALESCE(c1, c2) as c
+    WHERE c IS NOT NULL
+
+    // Remove old IN_PHASE relationship
+    OPTIONAL MATCH (c)-[old:IN_PHASE]->()
     DELETE old
     WITH c
-    MATCH (p:Entity {entity_type: 'Phase', name: $target_phase})
+
+    // Find target phase (try both :Phase label and :Entity with entity_type)
+    OPTIONAL MATCH (p1:Phase {name: $target_phase})
+    OPTIONAL MATCH (p2:Entity {entity_type: 'Phase', name: $target_phase})
+    WITH c, COALESCE(p1, p2) as p
+    WHERE p IS NOT NULL
+
+    // Create new IN_PHASE relationship
     MERGE (c)-[r:IN_PHASE]->(p)
     SET r.entered_at = $entered_at,
         r.previous_phase = $previous_phase
@@ -2239,7 +3407,10 @@ async def get_case_workflow_state(case_name: str) -> dict:
     workflows_needed = []
     for lm in incomplete_landmarks:
         wf_query = """
-        MATCH (l:Entity {entity_type: 'Landmark', name: $landmark_id})-[:ACHIEVED_BY]->(w:Entity {entity_type: 'WorkflowDef'})
+        MATCH (l)-[:ACHIEVED_BY]->(w)
+        WHERE (l:Landmark OR (l:Entity AND l.entity_type = 'Landmark'))
+          AND (l.landmark_id = $landmark_id OR l.name = $landmark_id)
+          AND (w:WorkflowDef OR (w:Entity AND w.entity_type = 'WorkflowDef'))
         RETURN w.name as workflow_name, w.display_name as display_name, w.description as description
         """
         workflows = await run_cypher_query(wf_query, {"landmark_id": lm.get("landmark_id")})

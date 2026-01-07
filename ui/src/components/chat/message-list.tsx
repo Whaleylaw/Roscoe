@@ -4,11 +4,21 @@ import { useEffect, useRef } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MessageBubble } from "./message-bubble";
 
+export interface ToolCallInfo {
+  id: string;
+  name: string;
+  args?: any;
+  status: "running" | "completed";
+  result?: any;
+  startTime: number;
+}
+
 export interface ChatMessage {
   id: string;
   role: "user" | "assistant";
   content: string;
   timestamp: string;
+  toolCalls?: ToolCallInfo[];
 }
 
 interface MessageListProps {
@@ -52,6 +62,7 @@ export function MessageList({ messages, isStreaming }: MessageListProps) {
               role={message.role}
               content={message.content}
               timestamp={message.timestamp}
+              toolCalls={message.toolCalls}
             />
           ))
         )}

@@ -2,15 +2,14 @@
 
 import { File, Folder, ChevronRight, ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { useWorkspace } from "@/hooks/use-workspace";
 import { useWorkbenchStore } from "@/stores/workbench-store";
 import { WorkspaceFile } from "@/types";
 import { cn } from "@/lib/utils";
 
 export function FileBrowser() {
-  const { files, currentPath, loadDirectory, readFile } = useWorkspace();
-  const { setOpenDocument, setCenterView } = useWorkbenchStore();
+  const { files, currentPath, loadDirectory } = useWorkspace();
+  const { setOpenDocument } = useWorkbenchStore();
   const [expandedDirs, setExpandedDirs] = useState<Set<string>>(new Set());
 
   const toggleDirectory = (path: string) => {
@@ -28,19 +27,16 @@ export function FileBrowser() {
     if (file.type === "directory") {
       toggleDirectory(file.path);
     } else {
-      // Determine file type and open in viewer
+      // Determine file type and open in right panel
+      // setOpenDocument also opens the right panel automatically
       const ext = file.name.split(".").pop()?.toLowerCase();
       if (ext === "pdf") {
         setOpenDocument({ path: file.path, type: "pdf" });
-        setCenterView("viewer");
       } else if (ext === "html" || ext === "htm") {
-        // Open HTML in artifacts panel
         setOpenDocument({ path: file.path, type: "html" });
-        setCenterView("artifacts");
       } else {
         // All other files treated as text/markdown
         setOpenDocument({ path: file.path, type: "md" });
-        setCenterView("viewer");
       }
     }
   };
@@ -53,9 +49,9 @@ export function FileBrowser() {
   };
 
   return (
-    <div className="flex h-full flex-col bg-white">
+    <div className="bg-white">
       {/* Header */}
-      <div className="border-b border-[#e5e1d8] p-3 bg-[#f8f7f4]">
+      <div className="sticky top-0 z-10 border-b border-[#e5e1d8] p-3 bg-[#f8f7f4]">
         <div className="flex items-center gap-2">
           <Folder className="h-4 w-4 text-[#c9a227]" />
           <span className="text-[13px] font-medium text-[#1e3a5f] truncate">{currentPath || "/"}</span>
@@ -70,8 +66,7 @@ export function FileBrowser() {
         )}
       </div>
 
-      {/* File list */}
-      <ScrollArea className="flex-1">
+      {/* File list - parent handles scrolling */}
         <div className="flex flex-col gap-0.5 p-2">
           {files.map((file) => (
             <FileItem
@@ -83,7 +78,6 @@ export function FileBrowser() {
             />
           ))}
         </div>
-      </ScrollArea>
     </div>
   );
 }
@@ -122,7 +116,8 @@ function FileItem({ file, isExpanded, onToggle, onClick }: FileItemProps) {
           <File className="h-4 w-4 shrink-0 text-[#1e3a5f]/60" />
         </>
       )}
-      <span className="truncate">{file.name}</span>
+      {/* Allow text to wrap for long names, but truncate if still too long */}
+      <span className="break-words min-w-0">{file.name}</span>
     </button>
   );
 }

@@ -86,7 +86,7 @@ def _create_primary_model():
         )
     elif MODEL_PROVIDER == "google":
         return ChatGoogleGenerativeAI(
-            model="gemini-3-pro-preview",
+            model="gemini-3-flash-preview",
             max_retries=3,
             temperature=0
         )

@@ -1,6 +1,6 @@
 "use client";
 
-import { MessageSquare, Plus, Trash2, Circle } from "lucide-react";
+import { MessageSquare, Plus, Trash2, Circle, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useSimpleThreads, SimpleThread } from "@/hooks/use-simple-threads";
@@ -11,12 +11,23 @@ export function ThreadManager() {
   const { messages, setMessages } = useWorkbenchStore();
   const { threads, activeThreadId, createThread, switchThread, deleteThread } = useSimpleThreads(messages, setMessages);
 
+  // Deselect thread (go back to thread list view)
+  const deselectThread = () => {
+    switchThread(""); // Switch to empty ID (no thread selected)
+    setMessages([]); // Clear chat
+  };
+
   return (
     <div className="flex h-full flex-col">
       {/* Header */}
       <div className="border-b p-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
+            {activeThreadId && (
+              <Button size="sm" variant="ghost" onClick={deselectThread} title="Back to thread list">
+                <ArrowLeft className="h-4 w-4" />
+              </Button>
+            )}
             <MessageSquare className="h-4 w-4" />
             <span className="text-sm font-medium">Conversations</span>
           </div>

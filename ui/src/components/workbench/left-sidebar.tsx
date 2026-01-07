@@ -1,45 +1,59 @@
 "use client";
 
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { useState } from "react";
 import { FileBrowser } from "./file-browser";
 import { ThreadManager } from "./thread-manager";
+import { cn } from "@/lib/utils";
+
+type Tab = "files" | "threads";
 
 export function LeftSidebar() {
+  const [activeTab, setActiveTab] = useState<Tab>("files");
+
   return (
     <div className="flex h-full flex-col bg-white">
       {/* Header */}
-      <div className="bg-navy-gradient border-b-[3px] border-[#c9a227] px-4 py-3">
+      <div className="shrink-0 border-b-[3px] border-[#c9a227] px-4 py-3" style={{ background: 'linear-gradient(135deg, #1e3a5f 0%, #2c4a6e 100%)' }}>
         <h1 className="text-white font-serif text-sm font-semibold tracking-wide">
           Whaley Law Firm
         </h1>
       </div>
       
-      <Tabs defaultValue="files" className="flex-1 flex flex-col">
-        <div className="border-b border-[#d4c5a9] p-2 bg-[#f8f7f4]">
-          <TabsList className="w-full bg-[#f5f3ed] border border-[#d4c5a9]">
-            <TabsTrigger 
-              value="files" 
-              className="flex-1 text-[12px] data-[state=active]:bg-[#1e3a5f] data-[state=active]:text-white data-[state=inactive]:text-[#1e3a5f]"
+      {/* Tab Buttons */}
+      <div className="shrink-0 border-b border-[#d4c5a9] p-2 bg-[#f8f7f4]">
+        <div className="flex w-full bg-[#f5f3ed] border border-[#d4c5a9] rounded-md p-1">
+          <button
+            onClick={() => setActiveTab("files")}
+            className={cn(
+              "flex-1 text-[12px] py-1.5 rounded-sm font-medium transition-colors",
+              activeTab === "files"
+                ? "bg-[#1e3a5f] text-white"
+                : "text-[#1e3a5f] hover:bg-white/50"
+            )}
             >
               Files
-            </TabsTrigger>
-            <TabsTrigger 
-              value="threads" 
-              className="flex-1 text-[12px] data-[state=active]:bg-[#1e3a5f] data-[state=active]:text-white data-[state=inactive]:text-[#1e3a5f]"
+          </button>
+          <button
+            onClick={() => setActiveTab("threads")}
+            className={cn(
+              "flex-1 text-[12px] py-1.5 rounded-sm font-medium transition-colors",
+              activeTab === "threads"
+                ? "bg-[#1e3a5f] text-white"
+                : "text-[#1e3a5f] hover:bg-white/50"
+            )}
             >
               Threads
-            </TabsTrigger>
-          </TabsList>
+          </button>
+        </div>
         </div>
 
-        <TabsContent value="files" className="flex-1 mt-0 overflow-hidden">
-          <FileBrowser />
-        </TabsContent>
-
-        <TabsContent value="threads" className="flex-1 mt-0 overflow-hidden">
-          <ThreadManager />
-        </TabsContent>
-      </Tabs>
+      {/* Tab Content - use h-full instead of inset-0 for reliable height */}
+      <div className="relative flex-1 min-h-0 overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-full overflow-y-auto">
+          {activeTab === "files" && <FileBrowser />}
+          {activeTab === "threads" && <ThreadManager />}
+        </div>
+      </div>
     </div>
   );
 }

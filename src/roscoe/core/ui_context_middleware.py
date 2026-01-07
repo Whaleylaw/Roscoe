@@ -1,13 +1,16 @@
 """
-UI Context Middleware - Bridges CopilotKit UI state to agent.
+UI Context Middleware - Bridges frontend UI state to agent.
 
-Receives UI state from CopilotKit's useCoAgent.setState() and injects
+Receives UI state from the frontend (via LangGraph thread state) and injects
 it into the agent's system prompt so the agent knows what the user is viewing.
 
 UI State Fields:
 - openDocument: Currently open document (path, type, annotations)
 - currentPath: Current workspace directory
 - visibleFiles: Files shown in file browser
+
+The frontend sends this state when the user opens documents or navigates
+the file browser. The agent uses this context to provide relevant responses.
 """
 
 from typing import Optional, Dict, List, Any
@@ -20,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 class UIContextState(AgentState):
-    """State schema for UI context from CopilotKit"""
+    """State schema for UI context from frontend"""
     openDocument: Optional[Dict] = None
     currentPath: str = "/"
     visibleFiles: List[Dict] = []
@@ -28,9 +31,9 @@ class UIContextState(AgentState):
 
 class UIContextMiddleware(AgentMiddleware):
     """
-    Injects UI state from CopilotKit into agent context.
+    Injects UI state from frontend into agent context.
 
-    This middleware receives state sent from the frontend via useCoAgent.setState()
+    This middleware receives state sent from the frontend via LangGraph thread state
     and formats it for injection into the system prompt.
 
     State fields:
@@ -103,7 +106,7 @@ class UIContextMiddleware(AgentMiddleware):
         if not ui_context:
             return handler(request)  # No context to inject
 
-        # Inject into system message (same pattern as CaseContextMiddleware)
+        # Inject into system message
         messages = list(request.messages)
 
         if messages and hasattr(messages[0], 'type') and messages[0].type == 'system':
@@ -137,7 +140,7 @@ class UIContextMiddleware(AgentMiddleware):
         if not ui_context:
             return await handler(request)  # No context to inject
 
-        # Inject into system message (same pattern as CaseContextMiddleware)
+        # Inject into system message
         messages = list(request.messages)
 
         if messages and hasattr(messages[0], 'type') and messages[0].type == 'system':

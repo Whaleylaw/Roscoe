@@ -6,11 +6,12 @@ import { useEffect } from "react";
 function extractHTMLPath(toolResult: any): string | null {
   if (!toolResult) return null;
   
-  // Format 1: String like "Updated file /Reports/file.html"
+  // Format 1: String like "Updated file /Reports/file.html" or "Updated file /projects/Case-Name/Reports/file.html"
   // This is the actual format from LangGraph/deepagents write_file tool
+  // Regex handles paths with alphanumeric, dashes, underscores, dots, and spaces
   if (typeof toolResult === "string") {
-    const match = toolResult.match(/([\/\w\-\_\.]+\.html)/i);
-    if (match) return match[1];
+    const match = toolResult.match(/([\/][\w\-\_\.\s\/]+\.html)/i);
+    if (match) return match[1].trim();
   }
   
   // Format 2: { path: "/Reports/file.html" }

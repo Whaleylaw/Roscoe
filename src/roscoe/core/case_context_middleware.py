@@ -1,11 +1,11 @@
 """
 Case context injection middleware for Roscoe agent.
 
-This module implements automatic case context loading AND context chunk injection:
+This module implements automatic case context loading from the FalkorDB knowledge graph:
 
 CaseContextMiddleware: Detects client/case name mentions and injects case context
 - Uses fuzzy string matching to detect client names in user messages
-- Loads case overview and related JSON files (contacts, insurance, liens, etc.)
+- Queries FalkorDB knowledge graph for case data (NO JSON file fallback)
 - Injects comprehensive case context into system prompt
 - Supports multiple client mentions in a single query
 
@@ -20,6 +20,8 @@ This architecture enables:
 - Rich case information available to the agent immediately
 - Token-efficient loading of only relevant case data
 - Modular prompt injection for specialized instructions
+
+NOTE: All case data comes from the knowledge graph. JSON files are NOT used.
 """
 
 from typing import Any, Dict, List, Optional, Tuple
@@ -30,6 +32,7 @@ import logging
 import asyncio
 import re
 import pytz
+import os
 
 try:
     from rapidfuzz import fuzz, process
@@ -56,38 +59,29 @@ class CaseContextMiddleware(AgentMiddleware):
     - Fuzzy match: "Carmen McCay" → "Caryn McCay" (handles typos)
     - Project name patterns: "Wilson MVA", "Caryn-McCay-MVA-7-30-2023"
 
-    Injected context from case folder:
-    - overview.json: case_summary, current_status, phase, financials
-    - contacts.json: attorneys, adjusters, providers
-    - insurance.json: policies, coverage details
-    - liens.json: medical liens
-    - expenses.json: case expenses
-    - medical_providers.json: treating providers
+    Injected context from FalkorDB knowledge graph:
+    - Case overview: case_type, accident_date, client info
+    - Insurance claims: BIClaim, PIPClaim, UMClaim with policies and adjusters
+    - Medical providers: Facilities, Locations with 3-tier hierarchy
+    - Liens: Lien amounts and holders
+    - Litigation: Attorneys, defendants, court info
+
+    NOTE: All data comes from the knowledge graph. JSON files are NOT used.
 
     Args:
         workspace_dir: Path to workspace directory containing projects/ and Database/
         fuzzy_threshold: Minimum fuzzy match score (0-100) to consider a match (default: 80)
-        max_cases: Maximum number of cases to inject context for (default: 2)
+        max_cases: Maximum number of cases to inject context for (default: 1)
     """
 
     name: str = "case_context"  # Unique name required by LangChain middleware framework
     tools: list = []  # Required by AgentMiddleware base class
 
-    # JSON files to load from case folder (exclude pleadings and notes)
-    CONTEXT_FILES = [
-        "overview.json",
-        "contacts.json",
-        "expenses.json",
-        "insurance.json",
-        "liens.json",
-        "medical_providers.json",
-    ]
-
     def __init__(
         self,
         workspace_dir: str,
         fuzzy_threshold: int = 80,
-        max_cases: int = 2,
+        max_cases: int = 1,
         max_chunks: int = 2,
         chunk_threshold: float = 0.35,
     ):
@@ -106,7 +100,11 @@ class CaseContextMiddleware(AgentMiddleware):
 
         # Load context chunks manifest
         self.chunks_manifest = self._load_chunks_manifest()
-        
+
+        # Cache for loaded case contexts per thread
+        # Key: (thread_id, case_name), Value: context dict
+        self._context_cache = {}
+
         print(f"🔥🔥🔥 CASE CONTEXT MIDDLEWARE INITIALIZED - {len(self.caselist)} cases, {len(self.chunks_manifest.get('chunks', []))} chunks loaded 🔥🔥🔥", flush=True)
         logger.info(f"[CASE CONTEXT] Initialized with {len(self.caselist)} cases and {len(self.chunks_manifest.get('chunks', []))} context chunks")
 
@@ -133,18 +131,23 @@ class CaseContextMiddleware(AgentMiddleware):
     def _load_calendar_context(self) -> str:
         """
         Load today's tasks and overdue items from calendar.json.
-        
+
         Reads the calendar file and filters events into:
         - Today's tasks: date == today AND status != "completed"
         - Overdue: date < today AND status != "completed"
-        
+
         Returns formatted markdown for injection into system prompt.
         """
         calendar_path = self.database_dir / "calendar.json"
-        if not calendar_path.exists():
-            logger.info("[CALENDAR] calendar.json not found, skipping calendar context")
+
+        try:
+            if not calendar_path.exists():
+                logger.info("[CALENDAR] calendar.json not found, skipping calendar context")
+                return ""
+        except PermissionError:
+            logger.warning("[CALENDAR] Permission denied accessing calendar.json, skipping")
             return ""
-        
+
         try:
             eastern = pytz.timezone('America/New_York')
             today = datetime.now(eastern).date()
@@ -585,239 +588,261 @@ class CaseContextMiddleware(AgentMiddleware):
                 return case
         return None
 
-    def _load_case_context(self, project_name: str) -> Dict[str, Any]:
+    async def _load_case_context_from_graph(self, project_name: str) -> Dict[str, Any]:
         """
-        Load all context files for a case.
+        Load case context from FalkorDB knowledge graph using direct Cypher queries.
 
-        Returns dict with data from:
-        - overview.json
-        - contacts.json
-        - expenses.json
-        - insurance.json
-        - liens.json
-        - medical_providers.json
+        Uses relationship-based queries to get structured case data from the unified graph.
+        Returns a structured dict with case overview, insurance, providers, liens, etc.
         """
-        case_dir = self.projects_dir / project_name
-        if not case_dir.exists():
-            logger.warning(f"[CASE CONTEXT] Case directory not found: {case_dir}")
+        
+        try:
+            from roscoe.core.graphiti_client import run_cypher_query
+            
+            context = {
+                'overview': {},
+                'insurance': [],
+                'medical_providers': [],
+                'contacts': [],
+                'liens': [],
+                'client': {},
+                'litigation': [],
+            }
+            
+            # Get case and client info
+            case_query = """
+                MATCH (case:Case {name: $case_name})
+                OPTIONAL MATCH (case)-[:HAS_CLIENT]->(client:Client)
+                RETURN case.name as case_name, case.case_type as case_type,
+                       client.name as client_name, client.phone as client_phone, client.email as client_email
+                LIMIT 1
+            """
+            case_results = await run_cypher_query(case_query, {"case_name": project_name})
+            if case_results:
+                r = case_results[0]
+                context['overview'] = {
+                    'case_name': r.get('case_name'),
+                    'case_type': r.get('case_type'),
+                }
+                context['client'] = {
+                    'name': r.get('client_name'),
+                    'phone': r.get('client_phone'),
+                    'email': r.get('client_email'),
+                }
+            
+            # Get insurance claims with policies, insurers and adjusters
+            insurance_query = """
+                MATCH (case:Case {name: $case_name})-[:HAS_CLAIM]->(claim)
+                WHERE claim:BIClaim OR claim:PIPClaim OR claim:UMClaim OR claim:UIMClaim OR claim:WCClaim
+                OPTIONAL MATCH (claim)-[:UNDER_POLICY]->(policy:InsurancePolicy)
+                OPTIONAL MATCH (policy)-[:WITH_INSURER]->(insurer:Insurer)
+                OPTIONAL MATCH (claim)-[:HANDLED_BY]->(adjuster:Adjuster)
+                RETURN claim.claim_number as claim_number,
+                       labels(claim)[0] as claim_type,
+                       policy.policy_number as policy_number,
+                       insurer.name as insurer_name,
+                       adjuster.name as adjuster_name,
+                       adjuster.phone as adjuster_phone,
+                       adjuster.email as adjuster_email,
+                       policy.bi_limit as bi_limit,
+                       policy.pip_limit as pip_limit,
+                       policy.um_limit as um_limit,
+                       claim.status as claim_status,
+                       claim.amount_demanded as demand_amount,
+                       claim.amount_offered as current_offer
+            """
+            insurance_results = await run_cypher_query(insurance_query, {"case_name": project_name})
+            for r in insurance_results:
+                context['insurance'].append({
+                    'claim_number': r.get('claim_number'),
+                    'claim_type': r.get('claim_type'),
+                    'policy_number': r.get('policy_number'),
+                    'insurer': r.get('insurer_name'),
+                    'adjuster': r.get('adjuster_name'),
+                    'adjuster_phone': r.get('adjuster_phone'),
+                    'adjuster_email': r.get('adjuster_email'),
+                    'bi_limit': r.get('bi_limit'),
+                    'pip_limit': r.get('pip_limit'),
+                    'um_limit': r.get('um_limit'),
+                    'status': r.get('claim_status'),
+                    'demand_amount': r.get('demand_amount'),
+                    'current_offer': r.get('current_offer'),
+                })
+            
+            # Get medical providers using three-tier hierarchy (Client -TREATED_AT-> Facility/Location)
+            provider_query = """
+                MATCH (case:Case {name: $case_name})-[:HAS_CLIENT]->(client:Client)-[:TREATED_AT]->(provider)
+                WHERE provider:Facility OR provider:Location
+                OPTIONAL MATCH (provider)-[:PART_OF]->(parent)
+                WHERE parent:Facility OR parent:HealthSystem
+                OPTIONAL MATCH (parent)-[:PART_OF]->(grandparent:HealthSystem)
+                RETURN provider.name as name,
+                       labels(provider)[0] as provider_type,
+                       provider.specialty as specialty,
+                       provider.phone as phone,
+                       provider.fax as fax,
+                       provider.address as address,
+                       parent.name as parent_name,
+                       grandparent.name as health_system
+            """
+            provider_results = await run_cypher_query(provider_query, {"case_name": project_name})
+            for r in provider_results:
+                context['medical_providers'].append({
+                    'name': r.get('name'),
+                    'type': r.get('provider_type'),
+                    'specialty': r.get('specialty'),
+                    'phone': r.get('phone'),
+                    'fax': r.get('fax'),
+                    'address': r.get('address'),
+                    'parent': r.get('parent_name'),
+                    'health_system': r.get('health_system') or (r.get('parent_name') if r.get('parent_name') and not r.get('health_system') else None),
+                })
+            
+            # Get liens
+            lien_query = """
+                MATCH (case:Case {name: $case_name})-[:HAS_LIEN]->(lien:Lien)
+                OPTIONAL MATCH (lien)-[:HELD_BY]->(holder:LienHolder)
+                RETURN lien.name as lien_name, holder.name as holder_name,
+                       lien.lien_type as lien_type, lien.amount as amount
+            """
+            lien_results = await run_cypher_query(lien_query, {"case_name": project_name})
+            for r in lien_results:
+                context['liens'].append({
+                    'holder': r.get('holder_name') or r.get('lien_name'),
+                    'lien_type': r.get('lien_type'),
+                    'amount': r.get('amount'),
+                })
+            
+            # Get litigation contacts (attorneys, defendants)
+            litigation_query = """
+                MATCH (case:Case {name: $case_name})-[r]->(entity:Entity)
+                WHERE entity:Attorney OR entity:Defendant OR entity:Court
+                RETURN entity.name as name, entity.entity_type as entity_type,
+                       entity.role as role, entity.phone as phone, entity.email as email
+            """
+            litigation_results = await run_cypher_query(litigation_query, {"case_name": project_name})
+            for r in litigation_results:
+                context['litigation'].append({
+                    'name': r.get('name'),
+                    'type': r.get('entity_type'),
+                    'role': r.get('role'),
+                    'phone': r.get('phone'),
+                    'email': r.get('email'),
+                })
+            
+            total_items = (len(context['insurance']) + len(context['medical_providers']) + 
+                          len(context['liens']) + len(context['litigation']))
+            logger.info(f"[GRAPHITI] Loaded context for {project_name}: {total_items} entities")
+            print(f"📊 [GRAPHITI] Loaded {total_items} entities for {project_name}", flush=True)
+            
+            return context
+            
+        except ImportError:
+            logger.warning("[GRAPHITI] graphiti_client not available, falling back to JSON")
+            return {}
+        except Exception as e:
+            logger.error(f"[GRAPHITI] Error loading context from graph: {e}")
             return {}
 
-        context = {}
-
-        for filename in self.CONTEXT_FILES:
-            file_path = case_dir / filename
-            if file_path.exists():
-                try:
-                    with open(file_path) as f:
-                        data = json.load(f)
-                        # Handle nested jsonb_agg structure from overview.json
-                        if isinstance(data, list) and len(data) > 0:
-                            if isinstance(data[0], dict) and 'jsonb_agg' in data[0]:
-                                # Flatten jsonb_agg structure
-                                data = data[0]['jsonb_agg']
-                                if isinstance(data, list) and len(data) > 0:
-                                    data = data[0]
-                        context[filename.replace('.json', '')] = data
-                except Exception as e:
-                    logger.error(f"[CASE CONTEXT] Error loading {file_path}: {e}")
-
-        return context
-
-    def _format_context_for_injection(self, detected_cases: List[Dict]) -> str:
+    def _format_graph_context(self, project_name: str, client_name: str, graph_context: Dict) -> str:
         """
-        Format detected case contexts for system prompt injection.
+        Format graph-sourced context for system prompt injection.
 
-        Returns formatted markdown string with all relevant case information.
+        Creates a markdown summary from graph data.
         """
-        if not detected_cases:
+        if not graph_context:
             return ""
-
+        
         sections = []
+        sections.append(f"# Active Case Context: {client_name}\n")
+        sections.append(f"**Case Folder**: `{project_name}`\n")
+        sections.append("*Context loaded from knowledge graph*\n")
 
-        for case_info in detected_cases:
-            project_name = case_info['project_name']
-            client_name = case_info['client_name']
+        # Overview
+        overview = graph_context.get('overview', {})
+        if overview:
+            sections.append("## Case Overview")
+            if overview.get('case_type'):
+                sections.append(f"- **Case Type**: {overview['case_type']}")
+            if overview.get('case_name'):
+                sections.append(f"- **Case Name**: {overview['case_name']}")
+            sections.append("")
 
-            # Load full context
-            context = self._load_case_context(project_name)
-            if not context:
-                continue
+        # Client info
+        client = graph_context.get('client', {})
+        if client and any(client.values()):
+            sections.append("## Client Information")
+            if client.get('name'):
+                sections.append(f"- **Name**: {client['name']}")
+            if client.get('phone'):
+                sections.append(f"- **Phone**: {client['phone']}")
+            if client.get('email'):
+                sections.append(f"- **Email**: {client['email']}")
+            sections.append("")
 
-            overview = context.get('overview', {})
+        # Insurance claims - concise: type, insurer, adjuster only
+        insurance = graph_context.get('insurance', [])
+        if insurance:
+            sections.append("## Insurance Claims")
+            for claim in insurance[:10]:
+                if isinstance(claim, dict):
+                    claim_type = claim.get('claim_type', 'Unknown')
+                    insurer = claim.get('insurer') or 'Unknown'
+                    adjuster = claim.get('adjuster')
+                    # Simple format: Type - Insurer (Adjuster: Name)
+                    line = f"- **{claim_type}**: {insurer}"
+                    if adjuster:
+                        line += f" (Adjuster: {adjuster})"
+                    sections.append(line)
+                else:
+                    sections.append(f"- {claim}")
+            sections.append("")
 
-            # Build case header
-            case_section = f"# Active Case Context: {client_name}\n\n"
-            case_section += f"**Case Folder**: `{project_name}`\n"
+        # Medical providers - concise: name only
+        providers = graph_context.get('medical_providers', [])
+        if providers:
+            sections.append("## Medical Providers")
+            for provider in providers[:10]:
+                if isinstance(provider, dict):
+                    name = provider.get('name') or 'Unknown'
+                    sections.append(f"- {name}")
+                else:
+                    sections.append(f"- {provider}")
+            sections.append("")
 
-            if overview:
-                case_section += f"**Phase**: {overview.get('phase', 'Unknown')}\n"
-                case_section += f"**Accident Date**: {overview.get('accident_date', 'Unknown')}\n"
-                case_section += f"**Last Activity**: {overview.get('case_last_activity', 'Unknown')}\n\n"
+        # Liens - concise: holder and amount only
+        liens = graph_context.get('liens', [])
+        if liens:
+            sections.append("## Liens")
+            for lien in liens[:10]:
+                if isinstance(lien, dict):
+                    holder = lien.get('holder') or 'Unknown'
+                    amount = lien.get('amount')
+                    line = f"- {holder}"
+                    if amount:
+                        line += f": ${amount:,.2f}" if isinstance(amount, (int, float)) else f": {amount}"
+                    sections.append(line)
+                else:
+                    sections.append(f"- {lien}")
+            sections.append("")
 
-                # Case Summary
-                if overview.get('case_summary'):
-                    case_section += "## Case Summary\n"
-                    case_section += f"{overview['case_summary']}\n\n"
+        # Litigation - concise: name and role only
+        litigation = graph_context.get('litigation', [])
+        if litigation:
+            sections.append("## Litigation Contacts")
+            for entity in litigation[:10]:
+                if isinstance(entity, dict):
+                    name = entity.get('name') or 'Unknown'
+                    role = entity.get('role')
+                    line = f"- {name}"
+                    if role:
+                        line += f" ({role})"
+                    sections.append(line)
+                else:
+                    sections.append(f"- {entity}")
+            sections.append("")
 
-                # Current Status
-                if overview.get('current_status'):
-                    case_section += "## Current Status\n"
-                    case_section += f"{overview['current_status']}\n\n"
-
-                # Financials
-                case_section += "## Financials\n"
-                case_section += f"- **Medical Bills**: ${overview.get('total_medical_bills', 0):,.2f}\n"
-                case_section += f"- **Liens**: ${overview.get('total_liens', 0):,.2f}\n"
-                case_section += f"- **Expenses**: ${overview.get('total_expenses', 0):,.2f}\n\n"
-
-                # Client Contact Info
-                case_section += "## Client Contact\n"
-                case_section += f"- **Phone**: {overview.get('client_phone', 'N/A')}\n"
-                case_section += f"- **Email**: {overview.get('client_email', 'N/A')}\n"
-                case_section += f"- **Address**: {overview.get('client_address', 'N/A')}\n\n"
-
-            # Contacts (handle nested jsonb_agg structure)
-            contacts_raw = context.get('contacts')
-            contacts = []
-            if contacts_raw:
-                # Handle jsonb_agg nested structure
-                if isinstance(contacts_raw, list) and len(contacts_raw) > 0:
-                    if isinstance(contacts_raw[0], dict) and 'jsonb_agg' in contacts_raw[0]:
-                        contacts = contacts_raw[0].get('jsonb_agg', [])
-                    else:
-                        contacts = contacts_raw
-            
-            if contacts and isinstance(contacts, list) and len(contacts) > 0:
-                case_section += "## Key Contacts\n"
-                for contact in contacts[:10]:  # Limit to 10 contacts
-                    if isinstance(contact, dict):
-                        # Use actual field names from contacts.json
-                        name = contact.get('full_name', 'Unknown')
-                        roles = contact.get('roles', [])
-                        phone = contact.get('phone', '')
-                        email = contact.get('email', '')
-                        
-                        # Format roles as string
-                        role_str = ', '.join(roles) if isinstance(roles, list) else str(roles) if roles else ''
-                        
-                        case_section += f"- **{name}**"
-                        if role_str:
-                            case_section += f" ({role_str})"
-                        if phone:
-                            case_section += f" - {phone}"
-                        if email:
-                            case_section += f" - {email}"
-                        case_section += "\n"
-                case_section += "\n"
-
-            # Insurance
-            insurance = context.get('insurance')
-            if insurance and isinstance(insurance, list) and len(insurance) > 0:
-                case_section += "## Insurance Claims\n"
-                for policy in insurance[:5]:  # Limit to 5 policies
-                    if isinstance(policy, dict):
-                        # Use actual field names from insurance.json
-                        carrier = policy.get('insurance_company_name', 'Unknown')
-                        policy_type = policy.get('insurance_type', '')
-                        claim_num = policy.get('claim_number', '')
-                        adjuster = policy.get('insurance_adjuster_name', '')
-                        settlement = policy.get('settlement_amount')
-                        current_offer = policy.get('current_offer')
-                        
-                        case_section += f"- **{carrier}**"
-                        if policy_type:
-                            case_section += f" ({policy_type})"
-                        if claim_num:
-                            case_section += f" - Claim #{claim_num}"
-                        case_section += "\n"
-                        if adjuster:
-                            case_section += f"  - Adjuster: {adjuster}\n"
-                        if settlement:
-                            case_section += f"  - Settlement: ${settlement:,.2f}\n"
-                        elif current_offer:
-                            case_section += f"  - Current Offer: ${current_offer:,.2f}\n"
-                case_section += "\n"
-
-            # Liens
-            liens = context.get('liens')
-            if liens and isinstance(liens, list) and len(liens) > 0:
-                case_section += "## Liens\n"
-                total_liens = 0
-                for lien in liens[:10]:  # Limit to 10 liens
-                    if isinstance(lien, dict):
-                        # Use actual field names from liens.json
-                        holder = lien.get('lien_holder_name', 'Unknown')
-                        amount = lien.get('final_lien_amount', lien.get('amount_owed_from_settlement', 0))
-                        if isinstance(amount, (int, float)) and amount:
-                            total_liens += amount
-                            case_section += f"- {holder}: ${amount:,.2f}\n"
-                        elif amount:
-                            case_section += f"- {holder}: {amount}\n"
-                if total_liens > 0:
-                    case_section += f"- **Total Liens**: ${total_liens:,.2f}\n"
-                case_section += "\n"
-
-            # Medical Providers
-            providers = context.get('medical_providers')
-            if providers and isinstance(providers, list) and len(providers) > 0:
-                case_section += "## Medical Providers\n"
-                for provider in providers[:10]:  # Limit to 10 providers
-                    if isinstance(provider, dict):
-                        # Use actual field names from medical_providers.json
-                        name = provider.get('provider_full_name', 'Unknown')
-                        billed = provider.get('billed_amount')
-                        start_date = provider.get('date_treatment_started', '')
-                        end_date = provider.get('date_treatment_completed', '')
-                        
-                        case_section += f"- {name}"
-                        if billed:
-                            case_section += f" (Billed: ${billed:,.2f})"
-                        if start_date and end_date:
-                            case_section += f" - Treatment: {start_date} to {end_date}"
-                        elif start_date:
-                            case_section += f" - Started: {start_date}"
-                        case_section += "\n"
-                case_section += "\n"
-
-            sections.append(case_section)
-
-        if not sections:
-            return ""
-
-        # Combine all case sections
-        header = "---\n📋 **CASE CONTEXT LOADED** - The following case information has been automatically loaded based on your message:\n\n"
-        
-        # Get client names for the auto-UI instruction
-        client_names = [c['client_name'] for c in detected_cases if c.get('client_name')]
-        client_list = " and ".join(client_names) if client_names else "the client"
-        
-        # Auto-UI instruction - tells agent to use render_ui_script for visual display
-        auto_ui_instruction = f"""
----
-
-## 🎯 AUTO-GENERATE UI INSTRUCTION
-
-**IMPORTANT**: Case context for {client_list} has been automatically loaded above. You SHOULD now:
-
-1. **DO NOT make additional tool calls** to fetch case information - it's already above!
-2. **Call `render_ui_script`** to display this information visually
-3. Use the appropriate UI script based on what the user asked for
-
-**Available UI scripts** (call via `render_ui_script`):
-- `UI/case_dashboard.py` - Full case dashboard with all sections
-- `UI/case_snapshot.py` - Quick case summary (client, status, financials)
-- `UI/medical_overview.py` - Medical providers with document links
-- `UI/insurance_overview.py` - Insurance coverage with documents
-- `UI/liens.py` - All liens for the case
-- `UI/expenses.py` - All expenses for the case
-- `UI/negotiations.py` - Active negotiations
-
-Example: `render_ui_script("UI/case_dashboard.py", ["--project-name", "{client_list}"])`
-
-If user just mentions a case without specific request, use `case_dashboard.py` for a comprehensive view.
-"""
-        
-        return header + "\n---\n\n".join(sections) + auto_ui_instruction
+        return "\n".join(sections)
 
     def _sanitize_messages(self, messages: List) -> List:
         """
@@ -971,49 +996,46 @@ If user just mentions a case without specific request, use `case_dashboard.py` f
         
         return sanitized
 
-    def _inject_context(self, request, detected_cases: List[Dict], detected_chunks: List[Dict] = None):
+    def _inject_context_sync(self, request, detected_cases: List[Dict], detected_chunks: List[Dict] = None):
         """
-        Inject case context and context chunks into request messages.
+        Sync version of context injection - ONLY injects context chunks, NOT case context.
 
-        Modifies system message or inserts new one with case context and chunks.
+        Case context requires async graph queries and is handled by _inject_context_async.
+        This sync fallback only handles context chunks for backwards compatibility.
         """
         messages = list(request.messages)
-        
-        # Build combined context text
         context_parts = []
-        
-        # Add case context if any cases detected
+
+        # NOTE: Case context is NOT injected in sync mode - requires async graph queries
         if detected_cases:
-            case_context = self._format_context_for_injection(detected_cases)
-            if case_context:
-                context_parts.append(case_context)
-        
-        # Add context chunks if any detected
+            logger.warning("[CASE CONTEXT] Sync mode - case context requires async. Use awrap_model_call for case context.")
+            print("⚠️ [CASE CONTEXT] Sync mode detected - case context not loaded (requires async graph queries)", flush=True)
+
+        # Add context chunks if any detected (these are from local files, can be sync)
         if detected_chunks:
             chunk_context = self._format_chunks_for_injection(detected_chunks)
             if chunk_context:
                 context_parts.append(chunk_context)
-        
+
         if not context_parts:
             return request
-        
+
         context_text = "\n\n".join(context_parts)
 
         from langchain_core.messages import SystemMessage
 
         # Check if first message is a system message
         if messages and hasattr(messages[0], 'type') and messages[0].type == 'system':
-            # Append context to existing system message
             existing_content = messages[0].content
             messages[0] = SystemMessage(content=existing_content + "\n\n" + context_text)
         else:
-            # Insert new system message at beginning
             messages.insert(0, SystemMessage(content=context_text))
 
         # Store context metadata in request state
         state = dict(request.state) if request.state else {}
         if detected_cases:
             state['detected_cases'] = detected_cases
+            state['context_source'] = 'none'  # No case context in sync mode
         if detected_chunks:
             state['detected_chunks'] = [c['name'] for c in detected_chunks]
 
@@ -1056,8 +1078,9 @@ If user just mentions a case without specific request, use `case_dashboard.py` f
             logger.error("[CONTEXT CHUNKS] No context chunks matched")
 
         # Inject context if any detections
+        # NOTE: Sync mode only injects chunks, NOT case context (requires async graph queries)
         if detected_cases or detected_chunks:
-            modified_request = self._inject_context(request, detected_cases, detected_chunks)
+            modified_request = self._inject_context_sync(request, detected_cases, detected_chunks)
             return handler(modified_request)
         else:
             return handler(request)
@@ -1100,8 +1123,130 @@ If user just mentions a case without specific request, use `case_dashboard.py` f
 
         # Inject context if any detections
         if detected_cases or detected_chunks:
-            modified_request = await asyncio.to_thread(self._inject_context, request, detected_cases, detected_chunks)
+            modified_request = await self._inject_context_async(request, detected_cases, detected_chunks)
             return await handler(modified_request)
         else:
             return await handler(request)
+
+    async def _inject_context_async(self, request, detected_cases: List[Dict], detected_chunks: List[Dict] = None):
+        """
+        Async context injection using knowledge graph ONLY.
+
+        All case data comes from FalkorDB via direct Cypher queries.
+        NO JSON file fallback - if graph is empty, no case context is injected.
+        """
+        from langchain_core.messages import SystemMessage
+
+        messages = list(request.messages)
+        context_parts = []
+
+        print("=" * 80, flush=True)
+        print("🔍 [CASE CONTEXT] Starting context injection from knowledge graph", flush=True)
+        print(f"   Detected cases: {len(detected_cases) if detected_cases else 0}", flush=True)
+        print("=" * 80, flush=True)
+        logger.info(f"[CASE CONTEXT] Starting context injection, cases={len(detected_cases) if detected_cases else 0}")
+
+        # Load case context from knowledge graph
+        if detected_cases:
+            print("🧠 [GRAPH] Loading case context from FalkorDB...", flush=True)
+            logger.info("[GRAPH] Loading case context from knowledge graph")
+
+            # Get thread_id from request config/state for caching
+            thread_id = None
+            if hasattr(request, 'config') and isinstance(request.config, dict):
+                thread_id = request.config.get('configurable', {}).get('thread_id')
+
+            for case_info in detected_cases:
+                project_name = case_info['project_name']
+                client_name = case_info['client_name']
+
+                print(f"   📂 Processing case: {project_name} ({client_name})", flush=True)
+                logger.info(f"[GRAPH] Processing case: {project_name}")
+
+                # Check cache first
+                cache_key = (thread_id, project_name) if thread_id else None
+                graph_context = None
+
+                if cache_key and cache_key in self._context_cache:
+                    graph_context = self._context_cache[cache_key]
+                    print(f"   ✅ Using CACHED context for {project_name}", flush=True)
+                    logger.info(f"[GRAPH] Using cached context for {project_name}")
+                else:
+                    # Load from graph
+                    try:
+                        print(f"   🔄 Querying graph for {project_name}...", flush=True)
+                        logger.info(f"[GRAPH] Querying graph: {project_name}")
+
+                        graph_context = await self._load_case_context_from_graph(project_name)
+
+                        # Cache it if we have a thread_id
+                        if cache_key and graph_context:
+                            self._context_cache[cache_key] = graph_context
+                            print(f"   💾 Cached context for future calls", flush=True)
+
+                    except Exception as e:
+                        print(f"   ❌ ERROR querying graph: {str(e)}", flush=True)
+                        logger.error(f"[GRAPH] Error loading context: {e}", exc_info=True)
+                        continue
+
+                # Format the context (whether cached or fresh)
+                if graph_context and any(graph_context.values()):
+                    # Count entities returned
+                    entity_count = sum(
+                        len(v) if isinstance(v, list) else (1 if v else 0)
+                        for v in graph_context.values()
+                    )
+                    print(f"   📊 Graph returned {entity_count} entities", flush=True)
+                    logger.info(f"[GRAPH] Returned {entity_count} entities")
+
+                    formatted = self._format_graph_context(project_name, client_name, graph_context)
+                    if formatted:
+                        context_parts.append(formatted)
+                        print(f"   ✅ SUCCESS: Loaded graph data for {client_name}", flush=True)
+                        logger.info(f"[GRAPH] ✅ SUCCESS: Using graph data for {project_name}")
+                    else:
+                        print(f"   ⚠️ Graph data returned but formatting failed", flush=True)
+                        logger.warning(f"[GRAPH] Data returned but formatting failed for {project_name}")
+                else:
+                    print(f"   ⚠️ No data in graph for {project_name}", flush=True)
+                    logger.warning(f"[GRAPH] No data found for {project_name}")
+
+        # Add context chunks if any detected
+        if detected_chunks:
+            chunk_context = self._format_chunks_for_injection(detected_chunks)
+            if chunk_context:
+                context_parts.append(chunk_context)
+                print(f"   📚 Added {len(detected_chunks)} context chunks", flush=True)
+                logger.info(f"[CONTEXT CHUNKS] Added {len(detected_chunks)} chunks")
+
+        if not context_parts:
+            print("⚠️ [CASE CONTEXT] No context to inject", flush=True)
+            logger.warning("[CASE CONTEXT] No context to inject")
+            return request
+
+        context_text = "\n\n".join(context_parts)
+
+        # Add source indicator
+        context_text = "# 🧠 CASE DATA FROM KNOWLEDGE GRAPH\n\n" + context_text
+        print("=" * 80, flush=True)
+        print("✅ KNOWLEDGE GRAPH DATA INJECTED", flush=True)
+        print("=" * 80, flush=True)
+        logger.info("✅ KNOWLEDGE GRAPH DATA INJECTED")
+
+        # Inject into system message
+        if messages and hasattr(messages[0], 'type') and messages[0].type == 'system':
+            existing_content = messages[0].content
+            messages[0] = SystemMessage(content=existing_content + "\n\n" + context_text)
+        else:
+            messages.insert(0, SystemMessage(content=context_text))
+
+        # Store context metadata in request state
+        state = dict(request.state) if request.state else {}
+        if detected_cases:
+            state['detected_cases'] = detected_cases
+            state['context_source'] = 'graph'
+        if detected_chunks:
+            state['detected_chunks'] = [c['name'] for c in detected_chunks]
+
+        return request.override(messages=messages, state=state)
 
