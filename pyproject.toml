@@ -31,6 +31,7 @@ dependencies = [
     "rapidfuzz",  # Fuzzy string matching for case context middleware
     "fastapi",     # Web framework for upload service
     "uvicorn",     # ASGI server
+    "python-multipart",  # Required for FastAPI file uploads
     "openai",      # OpenAI SDK (used for Thesys C1 API)
     "google-cloud-storage",  # GCS SDK for signed URL generation
     "langchain-google-community[gmail]",  # Gmail toolkit for LangChain
