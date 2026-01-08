@@ -174,18 +174,28 @@ def get_markdown_path(pdf_path: Path, gcs_workspace: Path, local_workspace: Path
     return md_path
 
 
-def find_new_pdfs(gcs_workspace: Path, state: dict, watch_dirs: list[str] = None) -> list[tuple[Path, str]]:
+def find_new_pdfs(
+    gcs_workspace: Path,
+    local_workspace: Path,
+    state: dict,
+    watch_dirs: list[str] = None
+) -> tuple[list[tuple[Path, str]], int]:
     """
     Find PDFs that need conversion.
 
     Only searches specified directories to avoid scanning the entire workspace
     (which may have thousands of reference PDFs not relevant to active cases).
 
-    Returns list of (pdf_path, hash) tuples for PDFs that:
-    - Have no corresponding markdown file
-    - Have changed since last conversion (different hash)
+    Checks for existing markdown files in BOTH naming conventions:
+    - OLD style: filename.pdf -> filename.md
+    - NEW style: filename.pdf -> filename.pdf.md
+
+    Returns tuple of:
+    - List of (pdf_path, hash) tuples for PDFs that need conversion
+    - Count of PDFs skipped because markdown already exists
     """
     new_pdfs = []
+    skipped_existing = 0
 
     # Use configured watch directories or fall back to provided list
     dirs_to_watch = watch_dirs or WATCH_DIRECTORIES
@@ -209,21 +219,52 @@ def find_new_pdfs(gcs_workspace: Path, state: dict, watch_dirs: list[str] = None
             except ValueError:
                 rel_path = pdf_path.name
 
-            # Check if already converted
+            # Check if already in state file (already processed)
+            if rel_path in state.get("converted", {}):
+                try:
+                    pdf_hash = get_pdf_hash(pdf_path)
+                except Exception as e:
+                    logger.warning(f"Could not hash {rel_path}: {e}")
+                    continue
+                if state["converted"][rel_path].get("hash") == pdf_hash:
+                    # Already converted with same hash
+                    continue
+
+            # Check if markdown file already exists locally (either naming convention)
+            # NEW style: filename.pdf.md
+            new_style_md = get_markdown_path(pdf_path, gcs_workspace, local_workspace)
+            # OLD style: filename.md (replace .pdf with .md)
+            old_style_md = local_workspace / Path(rel_path).with_suffix('.md')
+
+            if new_style_md.exists() or old_style_md.exists():
+                # Markdown already exists - add to state for tracking but don't reconvert
+                existing_path = new_style_md if new_style_md.exists() else old_style_md
+                try:
+                    pdf_hash = get_pdf_hash(pdf_path)
+                except Exception as e:
+                    logger.warning(f"Could not hash {rel_path}: {e}")
+                    continue
+
+                logger.debug(f"Markdown exists (skipping): {existing_path.name}")
+                state.setdefault("converted", {})[rel_path] = {
+                    "hash": pdf_hash,
+                    "markdown_path": str(existing_path.relative_to(local_workspace)),
+                    "timestamp": datetime.now().isoformat(),
+                    "source": "existing_sync"  # Mark as pre-existing
+                }
+                skipped_existing += 1
+                continue
+
+            # PDF needs conversion - get hash if we haven't already
             try:
                 pdf_hash = get_pdf_hash(pdf_path)
             except Exception as e:
                 logger.warning(f"Could not hash {rel_path}: {e}")
                 continue
 
-            if rel_path in state.get("converted", {}):
-                if state["converted"][rel_path].get("hash") == pdf_hash:
-                    # Already converted with same hash
-                    continue
-
             new_pdfs.append((pdf_path, pdf_hash))
 
-    return new_pdfs
+    return new_pdfs, skipped_existing
 
 
 def process_pdf(
@@ -298,9 +339,15 @@ def run_once(dry_run: bool = False) -> dict:
     }
 
     state = load_conversion_state()
-    new_pdfs = find_new_pdfs(GCS_WORKSPACE, state)
+    new_pdfs, skipped_existing = find_new_pdfs(GCS_WORKSPACE, LOCAL_WORKSPACE, state)
 
-    stats["scanned"] = len(new_pdfs)
+    # Save state immediately to persist "existing_sync" entries found during scan
+    if not dry_run and skipped_existing > 0:
+        save_conversion_state(state)
+        logger.info(f"Registered {skipped_existing} existing markdown files in state")
+
+    stats["scanned"] = len(new_pdfs) + skipped_existing
+    stats["skipped"] = skipped_existing
 
     for pdf_path, pdf_hash in new_pdfs:
         if process_pdf(pdf_path, pdf_hash, GCS_WORKSPACE, LOCAL_WORKSPACE, state, dry_run):
@@ -372,6 +419,7 @@ def main():
         stats = run_once(dry_run=args.dry_run)
         print(f"\nPDF Watcher Summary:")
         print(f"  Scanned: {stats['scanned']}")
+        print(f"  Skipped (existing .md): {stats['skipped']}")
         print(f"  Converted: {stats['converted']}")
         print(f"  Failed: {stats['failed']}")
         return 0 if stats["failed"] == 0 else 1
