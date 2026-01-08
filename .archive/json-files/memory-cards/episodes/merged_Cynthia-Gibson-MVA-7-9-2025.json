@@ -1,0 +1,823 @@
+{
+  "case_name": "Cynthia-Gibson-MVA-7-9-2025",
+  "total_episodes": 36,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Baptist Health Occupational Medicine - Fern Valley",
+        "specialty": null
+      },
+      {
+        "name": "Bullitt County EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Root Auto Insurance"
+      },
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Courtney Heinnickel"
+      },
+      {
+        "name": "Ryan Ricci"
+      },
+      {
+        "name": "Gary Jones"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Cynthia-Gibson-MVA-7-9-2025-Bodily Injury (BI)-BTQW3MKY",
+        "insurer": "Root Auto Insurance",
+        "adjuster": "Courtney Heinnickel"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Cynthia-Gibson-MVA-7-9-2025-Personal Injury Protection (PIP)-1787K940X",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Ryan Ricci"
+      },
+      {
+        "type": "UMClaim",
+        "name": "Cynthia-Gibson-MVA-7-9-2025-Uninsured Motorist (UM)-1787Z112D",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Gary Jones"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Cynthia-Gibson-MVA-7-9-2025-Conduent",
+        "holder": "Conduent",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2025-07-10",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ DOA 7/9/2025\n65 N\nBullitt County\nBullitt County PD\nReport # 25-001020\n\nCynthia Gibson\nDOB 10/21/75\nSSN: 400-33-0003\nPh: 502-921-6076\n\nAddress: 1105 N Buckman St\nApt A2\nShepherdsville, KY 40165\n\nPIP: State Farm\nClaim # 4720852C0317\n\n1787K940X\n\nOn 65N on way to pick up son in Louisville when a silver car in left lane when that car swerved into her lane losing control and doing a 180. Client went across all lanes into the emergency lane \n\nEMS to UofL Hospital \nBullitt County EMS\n\nThinks other car doesn’t have insurance \n__Person Making Contact:__ Justin\n__Date & Time__: July 10 2025",
+      "natural_language": "Initial client contact on July 10, 2025, with Justin regarding a motor vehicle accident case identified as Cynthia-Gibson-MVA-7-9-2025, involving Cynthia Gibson.\n\nClient details: Cynthia Gibson, born 10/21/1975, SSN 400-33-0003, phone 502-921-6076. She resides at 1105 N Buckman St, Apt A2, Shepherdsville, KY 40165. The case involves PIP through State Farm, with Claim # 4720852C0317 and reference 1787K940X. The case is associated with Bullitt County Police Department, Report # 25-001020. Date of accident (DoA): 7/9/2025.\n\nAccident description and EMS: On I-65 North, while on the way to pick up her son in Louisville, a silver car in the left lane swerved into her lane, causing her to lose control and execute a 180-degree spin. She traveled across all lanes and ended up in the emergency lane. Bullitt County EMS transported her to UofL Hospital. She thinks the other vehicle did not have insurance.",
+      "valid_at": "2025-07-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client/subject of case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim involved in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer for PIP claim"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Bullitt County EMS",
+            "relevance": "transported client from scene"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "hospital where client was treated"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Bullitt County Police Department",
+            "relevance": "police report associated with accident (Report #25-001020)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-10",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ Injuries: left hip, two bone abrasions on left arm, stiches on elbow, neck and entire left side hurts \n__Person Making Contact:__ Justin\n__Date & Time__: July 10 2025",
+      "natural_language": "Case: Cynthia-Gibson-MVA-7-9-2025. Client: Cynthia Gibson. The initial client contact occurred on July 10, 2025, and was made by Justin regarding a motor vehicle accident involving Cynthia Gibson.\n\nThe contact notes that the client reports injuries including a left hip injury, two bone abrasions on the left arm, stitches on the elbow, and pain in the neck and the entire left side.",
+      "valid_at": "2025-07-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client who reported injuries"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-07-14",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=d3d64d2f-6ffe-4890-a550-36f8f97cd591.pdf\nSigned: 2025-07-14 13:46:29\nAll signers: Cynthia Gibson((502) 921-6076)\nSender: Justin Chumbley",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 involves client Cynthia Gibson. The matter is associated with Cynthia Gibson as the client.\n\nThe intake document named “intake” was processed through VineSign and has been completed. The signed document was completed on 2025-07-14 at 13:46:29, and the Signed Document URL is https://app.vinesign.com/Jobs/Pdf?pdfKey=d3d64d2f-6ffe-4890-a550-36f8f97cd591.pdf. The signer listed is Cynthia Gibson, with the contact number (502) 921-6076, and the sender of the document was Justin Chumbley.",
+      "valid_at": "2025-07-14T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-14",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nPR still not available via buycrash",
+      "natural_language": "This note concerns Cynthia Gibson in relation to a motor vehicle accident dated July 9, 2025.\n\nThe police report (PR) is still not available via BuyCrash.",
+      "valid_at": "2025-07-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "subject of note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-14",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nSend photos here along with a photo of the front and back of your health insurance card",
+      "natural_language": "This case, Cynthia-Gibson-MVA-7-9-2025, concerns client Cynthia Gibson in connection with a motor vehicle accident.\n\nThe client has been instructed to \"Send photos here along with a photo of the front and back of your health insurance card.\"",
+      "valid_at": "2025-07-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-17",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__New Insurance Note:__ 7/17 spoke with State Farm confirmed injuries etc. They may have found some coverage on unit 1. adjuster emailing me policy information. will need to obtain denial for UM\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Cynthia Gibson is the client in the motor vehicle accident case labeled Cynthia-Gibson-MVA-7-9-2025. The incident occurred on July 9, 2025.\n\nOn July 17, 2025, a new insurance note indicates that State Farm Insurance Company was contacted and injuries were confirmed. They may have found some coverage on unit 1. The adjuster is emailing policy information, and there is a plan to obtain denial for UM. The insurance type is Personal Injury Protection (PIP). The note was written by Justin Chumbley.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "contacted; coverage discussed"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim; injuries confirmed"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "UM claim; plan to obtain denial"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-17",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client about process. cyndiwilhite46@gmail.com \n__Person Making Contact:__ Justin\n__Date & Time__: July 17 2025",
+      "natural_language": "Initial client contact on July 17, 2025 with Cynthia Gibson regarding the motor vehicle accident case Cynthia-Gibson-MVA-7-9-2025.\n\nJustin was the person making contact and spoke with the client about the process. The client's email address on file is cyndiwilhite46@gmail.com.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-17",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ updated client. She had questions about coverage and totaled car. \n__Person Making Contact:__ Aaron\n__Date & Time__: July 17 2025",
+      "natural_language": "Initial client contact on July 17, 2025, with Aaron regarding the Cynthia-Gibson-MVA-7-9-2025 case for Cynthia Gibson. The client was updated during the contact and had questions about coverage and the totaled car.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client contacted/updated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-17",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nA call from aaron whaley was logged at 2025-07-17 18:08:26.789000+00:00 . #outboundcall\n\nCaller Info: 5029216076 \n\nCaller ID: 502-921-6076 \n\nCaller Name: Cynthia Gibson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact on July 17, 2025, with Cynthia Gibson regarding a motor vehicle accident. The contact was logged as an outbound call by Aaron Whaley at 18:08:26.789000+00:00 on 2025-07-17. The record lists the caller info as 5029216076, the caller ID as 502-921-6076, and the caller name as Cynthia Gibson. The caller email field is blank. A Filevine contact link is available at [filevine-link]. This entry corresponds to the Cynthia-Gibson-MVA-7-9-2025 case.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller / initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-23",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__New Insurance Note:__ 7/23 updated claim number and adjuster info\n__Insurance Type:__ Uninsured Motorist (UM)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 involves Cynthia Gibson and a motor vehicle accident that occurred on July 9, 2025. A new Insurance Note dated July 23, 2025 updated the claim number and the adjuster information.\n\nThe record shows Uninsured Motorist (UM) coverage with State Farm Insurance Company. The note was written by Justin Chumbley and is filed in the Inotes internal notes.",
+      "valid_at": "2025-07-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "injured party / case subject"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer providing UM coverage"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "uninsured motorist claim discussed"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Gary Jones",
+            "relevance": "UM adjuster on record"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-29",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__New Insurance Note:__ 7/29 saved ack under coverage investigation\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Root Auto Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 involves client Cynthia Gibson in a motor vehicle accident case dated July 9, 2025. A new insurance note was saved on July 29, 2025, acknowledging under coverage investigation. The note indicates Bodily Injury (BI) coverage with Root Auto Insurance and was written by Justin Chumbley. This entry is categorized under Inotes.",
+      "valid_at": "2025-07-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client involved in the motor vehicle accident case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "Bodily Injury coverage/claim referenced in the insurance note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-29",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nA call from aaron whaley was logged at 2025-07-29 19:59:14.766000+00:00 . #outboundcall\n\nCaller Info: 5029216076 \n\nCaller ID: 502-921-6076 \n\nCaller Name: Cynthia Gibson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 involves client Cynthia Gibson. A call from Aaron Whaley was logged on July 29, 2025 at 19:59:14.766000+00:00, categorized as an outbound call.\n\nThe record lists Caller Info as 5029216076 and Caller ID as 502-921-6076. The Caller Name is Cynthia Gibson, and the Caller Email field is blank. A Filevine contact link is available: [filevine-link].",
+      "valid_at": "2025-07-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller and subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nRecap\nCynthia reported that her physical therapy for her leg is not effective due to pain, and she received a call from Baptist Health about new therapy scheduled by her PCP.\nCynthia's back is fine, but her neck is still tense but improving.\nMo informed Cynthia that she has about two weeks left in her current therapy before starting leg therapy on September 18th.\nAaron confirmed that Cynthia should focus on the best therapy for her leg and will add her new therapy details to her file.\nTasks\nCynthia needs to notify Aaron about the location of her new leg therapy once she has that information.",
+      "natural_language": "In this motor vehicle accident (MVA) case, Cynthia Gibson reports that the physical therapy for her leg is not effective due to pain. She also received a call from Baptist Health about a new therapy scheduled by her primary care physician. Her back is fine, but her neck remains tense though it is improving.\n\nMo informed Cynthia that she has about two weeks left in her current therapy before starting leg therapy on September 18. Aaron confirmed that Cynthia should focus on the therapy that will be best for her leg and that he will add the new therapy details to her file. The plan includes that Cynthia should notify Aaron about the location of her new leg therapy once she has that information.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "patient/client; primary subject of episode"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Occupational Medicine - Fern Valley",
+            "relevance": "scheduled new therapy; contacted patient about therapy"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nRecap\nCynthia reported that her physical therapy for her leg is not effective due to pain, and she received a call from Baptist Health about new therapy scheduled by her PCP.\nCynthia's back is fine, but her neck is still tense but improving.\nMo informed Cynthia that she has about two weeks left in her current therapy before starting leg therapy on September 18th.\nAaron confirmed that Cynthia should focus on the best therapy for her leg and will add her new therapy details to her file.\nTasks\nCynthia needs to notify Aaron about the location of her new leg therapy once she has that information.",
+      "natural_language": "Note date: 7-9-2025\n\nCynthia Gibson reported that her current physical therapy for her leg has not been effective due to pain, and she had received a call from Baptist Health about a new therapy scheduled by her primary care physician. She noted that her back is fine, but her neck remains tense though it is improving. Mo informed her that she has about two weeks left in her current therapy before starting leg therapy on September 18. Aaron confirmed that Cynthia should pursue the therapy that is best for her leg, and he will add the details of the new therapy to her file.\n\nTask: Cynthia needs to notify Aaron about the location of her new leg therapy once she has that information.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "subject/client reporting therapy issues and scheduling"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Occupational Medicine - Fern Valley",
+            "relevance": "called client about new leg therapy scheduled"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nRecap\nCynthia reported that her physical therapy for her leg is not effective due to pain, and she received a call from Baptist Health about new therapy scheduled by her PCP.\nCynthia's back is fine, but her neck is still tense but improving.\nMo informed Cynthia that she has about two weeks left in her current therapy before starting leg therapy on September 18th.\nAaron confirmed that Cynthia should focus on the best therapy for her leg and will add her new therapy details to her file.\nTasks\nCynthia needs to notify Aaron about the location of her new leg therapy once she has that information.",
+      "natural_language": "Initial client contact on July 9, 2025 with Cynthia Gibson regarding a motor vehicle accident. She reports that the physical therapy for her leg has not been effective due to pain and that she received a call from Baptist Health about a new therapy scheduled by her primary care physician. Her back is fine, but her neck remains tense, though it is improving.\n\nMo informed Cynthia that she has about two weeks left in her current therapy before starting leg therapy on September 18. Aaron confirmed that Cynthia should focus on the best therapy for her leg and will add the new therapy details to her file.\n\nTask: Cynthia needs to notify Aaron about the location of her new leg therapy once she has that information.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "primary subject / reporting treatment status"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Occupational Medicine - Fern Valley",
+            "relevance": "new therapy scheduled / treatment provider mentioned"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-11",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nA missed call for aaron whaley was logged at 2025-09-11 15:40:49.262000+00:00 . #missedcall\n\nCaller Info: 5029216076 \n\nCaller ID: 502-921-6076 \n\nCaller Name: Cynthia Gibson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hey, Aaron, this is Cynthia Gibson. When I saw Mode Tuesday, he told me that he is since she sent over that paper for my lost wages and he said he is going to contact you, but he I missed him yesterday when I left physical therapy, but I was just wondering when I may be receiving my lost wages if you Could just give me a call at 950-291-6076. If I do not answer, just leave a message and I will call you back. Thanks, Aaron. Bye bye.",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 for client Cynthia Gibson notes a missed call related to Aaron Whaley. A missed call was logged on 2025-09-11 at 15:40:49.262000+00:00, tagged as #missedcall. Caller information shows the phone number 5029216076, with Caller ID 502-921-6076. The caller name is Cynthia Gibson, and no caller email is provided. A link to the Filevine contact is available: [filevine-link].\n\nVoicemail transcription from Cynthia Gibson states: \"Hey, Aaron, this is Cynthia Gibson. When I saw Mode Tuesday, he told me that he is since she sent over that paper for my lost wages and he said he is going to contact you, but he I missed him yesterday when I left physical therapy, but I was just wondering when I may be receiving my lost wages if you Could just give me a call at 950-291-6076. If I do not answer, just leave a message and I will call you back. Thanks, Aaron. Bye bye.\"",
+      "valid_at": "2025-09-11T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller and client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-12",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nA missed call for aaron whaley was logged at 2025-09-12 17:30:49.185000+00:00 . #missedcall\n\nCaller Info: 5029216076 \n\nCaller ID: 502-921-6076 \n\nCaller Name: Cynthia Gibson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hey, Aaron, this is Cydia Gibson. Just trying to reach out to you again to find that when I will be receiving my lost wages because I could really use that right now, my numbers 502916076 Mo said Tuesday, he said that he sent that paperwork out to you last week and he was going to let me know something, but by the time I got out of physical therapy Wednesday, he was already gone. Please let me know something. Thank you, bye bye.",
+      "natural_language": "Case: Cynthia-Gibson-MVA-7-9-2025. Client: Cynthia Gibson. A missed call to Aaron Whaley was logged on 2025-09-12 at 17:30:49.185000+00:00. The call originated from Cynthia Gibson, using phone number 502-921-6076, with the caller ID also showing 502-921-6076. There is no email on file for the caller, and a Filevine contact link is available: [filevine-link].\n\nVoicemail transcription: \"Hey, Aaron, this is Cydia Gibson. Just trying to reach out to you again to find that when I will be receiving my lost wages because I could really use that right now, my numbers 502916076 Mo said Tuesday, he said that he sent that paperwork out to you last week and he was going to let me know something, but by the time I got out of physical therapy Wednesday, he was already gone. Please let me know something. Thank you, bye bye.\"",
+      "valid_at": "2025-09-12T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller / subject"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "claim referenced regarding lost wages payment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-17",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nA missed call for aaron whaley was logged at 2025-09-17 16:26:22.536000+00:00 . #missedcall\n\nCaller Info: 5029216076 \n\nCaller ID: 502-921-6076 \n\nCaller Name: Cynthia Gibson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hey, Aaron, this is Cynthia Gibson. You wanted me to let you know about physical therapy for my leg. The location of it because I started tomorrow. It is Baptist healthcare. The address is 3605, Fern Valley Road Suite 120. I have not been to the others of physical therapy. Remote is this week because I have had the flu. If you have any questions, you can give me a call back. 502-921-6076. Thank you, Aaron, bye bye.",
+      "natural_language": "This case, Cynthia-Gibson-MVA-7-9-2025, involves client Cynthia Gibson. A missed call for Aaron Whaley was logged on 2025-09-17 at 16:26:22.536000+00:00 (UTC).\n\nCaller information shows the caller as Cynthia Gibson, with phone number 5029216076 and caller ID 502-921-6076. The caller name is Cynthia Gibson, the email field is blank, and there is a Link to the Filevine contact available.\n\nVoicemail transcription from Cynthia Gibson states: “Hey, Aaron, this is Cynthia Gibson. You wanted me to let you know about physical therapy for my leg. The location of it because I started tomorrow. It is Baptist healthcare. The address is 3605, Fern Valley Road Suite 120. I have not been to the others of physical therapy. Remote is this week because I have had the flu. If you have any questions, you can give me a call back. 502-921-6076. Thank you, Aaron, bye bye.”",
+      "valid_at": "2025-09-17T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller/client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Occupational Medicine - Fern Valley",
+            "relevance": "physical therapy location"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-30",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nA missed call for aaron whaley was logged at 2025-09-30 15:42:34.031000+00:00 . #missedcall\n\nCaller Info: 5029216076 \n\nCaller ID: 502-921-6076 \n\nCaller Name: Cynthia Gibson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hey, Aaron, this is Cynthia Gibson. Sorry, I missed the call. I was in physical therapy. If you can call me back, I would greatly appreciate it. Thank you, bye bye.",
+      "natural_language": "In the Cynthia-Gibson-MVA-7-9-2025 case for client Cynthia Gibson, a missed call for Aaron Whaley was logged on September 30, 2025 at 15:42:34.031000+00:00 (UTC), with the call tagged as a missed call.\n\nCaller information shows the phone number 502-921-6076 (also listed as 5029216076), and the caller name is Cynthia Gibson. The caller email was not provided. A link to the Filevine contact is available at [filevine-link].\n\nThe voicemail transcription from Cynthia Gibson states: \"Hey, Aaron, this is Cynthia Gibson. Sorry, I missed the call. I was in physical therapy. If you can call me back, I would greatly appreciate it. Thank you, bye bye.\"",
+      "valid_at": "2025-09-30T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller / left voicemail"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-30",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__New Insurance Note:__ 9/30 requested PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 involves client Cynthia Gibson. A new insurance note was created on September 30, 2025, documenting a request for a PIP ledger. The entry identifies Personal Injury Protection (PIP) as the insurance type and State Farm Insurance Company as the insurer, and it was written by Justin Chumbley. This note is filed under Inotes.",
+      "valid_at": "2025-09-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim referenced (request for PIP ledger)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer identified on note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-30",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ AW forwarded a vm to me. returned call. no answer. left vm \n__Person Making Contact:__ Justin\n__Date & Time__: September 30 2025",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025: Initial client contact on September 30, 2025 with Cynthia Gibson regarding a motor vehicle accident. The outreach was conducted by Justin. According to the client contact details, AW forwarded a voicemail to me. I returned the call, but there was no answer, and I left a voicemail.",
+      "valid_at": "2025-09-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-30",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nA missed call for aaron whaley was logged at 2025-09-30 13:35:38.362000+00:00 . #missedcall\n\nCaller Info: 5029216076 \n\nCaller ID: 502-921-6076 \n\nCaller Name: Cynthia Gibson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hey, Aaron or Justin K, this is Cynthia Gibson. Can when you all give me a call, please? 502-921-6076. Thank you, bye bye.",
+      "natural_language": "In the Cynthia-Gibson-MVA-7-9-2025 case for Cynthia Gibson, a missed call intended for Aaron Whaley was logged on September 30, 2025 at 13:35:38.362000+00:00 (UTC). The event is recorded under the #missedcall tag.\n\nCaller information shows the number 5029216076, with a caller ID of 502-921-6076. The caller name is Cynthia Gibson, and there is no email address on file. A Filevine contact link is available at [filevine-link]. The voicemail transcription reads: \"Hey, Aaron or Justin K, this is Cynthia Gibson. Can when you all give me a call, please? 502-921-6076. Thank you, bye bye.\"",
+      "valid_at": "2025-09-30T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-01",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, stated her ER bill was paid by health insurance. I explained why that's a good thing etc. \n__Person Making Contact:__ Justin\n__Date & Time__: October 01 2025",
+      "natural_language": "Initial client contact on October 1, 2025, in the Cynthia-Gibson-MVA-7-9-2025 case, with Justin speaking to the client, Cynthia Gibson, regarding the motor vehicle accident. The client stated that her ER bill was paid by health insurance, and Justin explained why that's a good thing.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-10",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nwages $800 went on on the 9th. is for 7/1-7/31 for four weeks.",
+      "natural_language": "On July 9, 2025, Cynthia Gibson, the client in a motor vehicle accident (MVA) matter, had wages of $800 issued. The payment covers the period 7/1–7/31, for four weeks.",
+      "valid_at": "2025-10-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "recipient of $800 wages issued"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-10",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__New Insurance Note:__ 10/10 saved PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "On July 9, 2025, Cynthia Gibson is the client in the case Cynthia-Gibson-MVA-7-9-2025, which involves a motor vehicle accident. A new insurance note has been recorded, stating \"10/10 saved PIP ledger.\" The insurance type is Personal Injury Protection (PIP), and the insurer is State Farm Insurance Company. The note was written by Justin Chumbley. This entry is filed under #Inotes.",
+      "valid_at": "2025-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim referenced in the insurance note"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer for the PIP claim / subject of the note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-10",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ clietn called about LW check, called PIP and confirmed it has been processed and in route to client, called client back and informed her. \n__Person Making Contact:__ Justin\n__Date & Time__: October 10 2025",
+      "natural_language": "Case: Cynthia-Gibson-MVA-7-9-2025. Initial client contact on October 10, 2025, with Cynthia Gibson regarding a motor vehicle accident, conducted by Justin. During the contact, the client stated that she had called about an LW check. Justin also called about PIP and confirmed that it has been processed and in route to client, and he subsequently called the client back to inform her of these updates.",
+      "valid_at": "2025-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "initial contact; reported LW check and received updates"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP processed and payment/check en route to client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "carrier handling the PIP claim/payment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-14",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, she received a 500 check from State Farm which is not her LW check, called PIP to confirm LW check is for $800 and she should have any day now. Called client backed and relayed \n__Person Making Contact:__ Justin\n__Date & Time__: October 14 2025",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025. Initial client contact on October 14, 2025 by Justin with Cynthia Gibson regarding motor vehicle accident. Spoke with the client; she reported receiving a 500 check from State Farm which is not her LW check. Justin called PIP to confirm that the LW check is for $800 and she should have it any day now. Justin called the client back and relayed this information.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client who reported receiving the check and was contacted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer that issued the $500 check and handles PIP"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim discussed regarding the LW check for $800"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Ryan Ricci",
+            "relevance": "PIP adjuster associated with the claim / person contacted regarding the LW check"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-14",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\nsend me a photo of the check",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 concerns the client Cynthia Gibson in relation to a motor vehicle accident.\n\nThe client has requested that a photo of the check be sent, stating: \"send me a photo of the check.\"",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "requested photo of the check"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-16",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ client did not receive her LW check. she asked that if she hasn't received by monday to call and have them reissue \n__Person Making Contact:__ Justin\n__Date & Time__: October 16 2025",
+      "natural_language": "Initial client contact on October 16, 2025 in the Cynthia-Gibson-MVA-7-9-2025 case, by Justin, regarding Cynthia Gibson's motor vehicle accident. The client reported that she did not receive her LW check and asked that, if she has not received it by Monday, someone call to have it reissued.",
+      "valid_at": "2025-10-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "reported missing LW check and requested reissue if not received"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__1787K940X__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: State Farm PIP Team [automedicalclaims@statefarm.com](mailto:automedicalclaims@statefarm.com), Cynthia Gibson - Filevine Project Email Address [CynthiaGibsonMVAZ5089428@louisvilleaccidentlawyer.filevineapp.com](mailto:CynthiaGibsonMVAZ5089428@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 02:14:00 GMT-04:00\n\nPlease see the attached letter.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 concerns client Cynthia Gibson. The file includes reference number 1787K940X. On Wednesday, October 29, 2025 at 2:14:00 a.m. (GMT-04:00), Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to the State Farm PIP Team at automedicalclaims@statefarm.com and to Cynthia Gibson’s Filevine project email CynthiaGibsonMVAZ5089428@louisvilleaccidentlawyer.filevineapp.com, stating, “Please see the attached letter.” The message is signed by Aaron Whaley, Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "case client and recipient of project email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "law firm of the sender"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "recipient (State Farm PIP Team) of email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-29",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__New Insurance Note:__ 10/10 saved PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Aaron Whaley\n #Inotes",
+      "natural_language": "The case file Cynthia-Gibson-MVA-7-9-2025 concerns Cynthia Gibson following a motor vehicle accident on July 9, 2025. \n\nA new insurance note indicates that the PIP ledger was saved on October 10. The insurance type is Personal Injury Protection (PIP), and the insurer is State Farm Insurance Company. The note was written by Aaron Whaley. This entry is categorized under Inotes.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "subject of the case (motor vehicle accident)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer identified for the PIP coverage"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP ledger saved; PIP claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-31",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__New Insurance Note:__ 10/31 saved exhausted PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 involves client Cynthia Gibson.\n\nOn October 31, a new insurance note was saved indicating that the PIP ledger has been exhausted. The insurance type is Personal Injury Protection (PIP), and the insurer is State Farm Insurance Company. The note was written by Justin Chumbley. This entry is filed under #Inotes.",
+      "valid_at": "2025-10-31T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP ledger exhausted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer for the PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-04",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ called and has her last PT with Baptist health next week \n__Person Making Contact:__ Justin\n__Date & Time__: November 04 2025",
+      "natural_language": "Initial client contact on November 04, 2025, with Justin regarding Cynthia Gibson’s motor vehicle accident case (Cynthia-Gibson-MVA-7-9-2025). The client, Cynthia Gibson, called in and reported that her last physical therapy appointment with Baptist Health is scheduled for next week.",
+      "valid_at": "2025-11-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller/client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Occupational Medicine - Fern Valley",
+            "relevance": "physical therapy provider; last PT appointment scheduled"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-10",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ client called asking for a $500 loan. \n__Person Making Contact:__ Justin\n__Date & Time__: November 10 2025",
+      "natural_language": "Initial client contact on November 10, 2025, for the Cynthia-Gibson-MVA-7-9-2025 case. The interaction was initiated by Justin, and the client, Cynthia Gibson, called to request a $500 loan.",
+      "valid_at": "2025-11-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "called to request $500 loan / subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-12",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ has completed treatment \n__Person Making Contact:__ Justin\n__Date & Time__: November 12 2025",
+      "natural_language": "Case Cynthia-Gibson-MVA-7-9-2025 involves client Cynthia Gibson. A client contact was made on November 12, 2025, by Justin, and the details indicate that Gibson has completed treatment.",
+      "valid_at": "2025-11-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "client contacted; reported completed treatment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-13",
+      "original_body": "Case: Cynthia-Gibson-MVA-7-9-2025\nClient: Cynthia Gibson\n\n__CLIENT CONTACT__\n__Details:__ client called and confirmed she was able to cash her loan check \n__Person Making Contact:__ Justin\n__Date & Time__: November 13 2025",
+      "natural_language": "Initial client contact on November 13, 2025, with Justin regarding the Cynthia Gibson motor vehicle accident (MVA) case Cynthia-Gibson-MVA-7-9-2025. The client, Cynthia Gibson, called and confirmed she was able to cash her loan check.",
+      "valid_at": "2025-11-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cynthia Gibson",
+            "relevance": "caller; confirmed cashing loan check"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

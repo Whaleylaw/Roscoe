@@ -1,0 +1,1723 @@
+{
+  "case_name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024",
+  "total_episodes": 85,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Anchorage Middletown Fire & EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "University Of Louisville Hospital Radiology",
+        "specialty": "hospital"
+      },
+      {
+        "name": "University Of Louisville Physicians",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Abigail Jett"
+      },
+      {
+        "name": "State Farm PIP Team"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Bodily Injury (BI)-1769H472C",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Abigail Jett"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Personal Injury Protection (PIP)-1769H472C",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "State Farm PIP Team"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-No Private Health Insurance",
+        "holder": null,
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2024-06-18",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ Client doesn't speak English, will wait for the companions case to be uploaded and will make it as the point of contact. PR not available yet on BuyCrash. \n__Person Making Contact:__ Aries\n__Date & Time__: June 18 2024",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval in relation to a motor vehicle accident dated June 13, 2024.\n\nInitial client contact occurred on June 18, 2024, when Aries reached out to Fidel Antonio Bueso Sandoval regarding the case. The client does not speak English and stated that he will wait for the companion's case to be uploaded and will designate that case as the point of contact. PR is not available yet on BuyCrash.",
+      "valid_at": "2024-06-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client contacted / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-06-18",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nClient Contacted today to give update #cc",
+      "natural_language": "Fidel Antonio Bueso Sandoval is the client in case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024, concerning a motor vehicle accident. The client contacted us today to provide update #cc.",
+      "valid_at": "2024-06-18T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client who contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-07-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nClient Contacted today to give update #cc",
+      "natural_language": "Initial client contact on June 13, 2024 with Fidel Antonio Bueso Sandoval regarding the motor vehicle accident (MVA) Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. The client, Fidel Antonio Bueso Sandoval, was contacted today to provide update #cc.",
+      "valid_at": "2024-07-02T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-07-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__1769H472C__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com) State Team\nDate: Tue, 2 Jul 2024 12:51:49 -0400\n\nHi,\n\nPlease see attached files.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns client Fidel Antonio Bueso Sandoval in a motor vehicle accident dated June 13, 2024. The file is associated with internal reference 1769H472C. On July 2, 2024, at 12:51:49 PM (-0400), Aries Penaflor of Whaley Law Firm sent an email from aries@whaleylawfirm.com to the State Farm Claims State Team at statefarmclaims@statefarm.com, identified by the internal reference 1769H472C. The body of the message read, \u201cHi, Please see attached files.\u201d The email was signed, \u201cAll the best, Aries Paul Pe\u00f1aflor,\u201d and included the Whaley Law Firm contact information: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-07-02T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm / contact information in email"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "recipient (State Farm Claims team) of email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-07-03",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ Called client to get info of companions that we'll represent as well. Client wants to speak in spanish. \n__Person Making Contact:__ Aries\n__Date & Time__: July 02 2024",
+      "natural_language": "Initial client contact on July 2, 2024, with Fidel Antonio Bueso Sandoval regarding the Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 motor vehicle accident case. The purpose of the call was to obtain information about companions that we will represent as well. The client requested that communications be conducted in Spanish. The contact was made by Aries.",
+      "valid_at": "2024-07-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "initial contact; requested Spanish communications; discussed representation of companions"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-07-10",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fwd: 17-69H4-72C__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com) Justin Chumbley\nDate: Wed, 10 Jul 2024 09:52:10 -0400\n\n---------- Forwarded message ---------\nFrom: HOME CLMS-STATEFARMCLAIMS \nDate: Tue, Jul 9, 2024 at 4:12?PM\nSubject: 17-69H4-72C\nTo: aries@whaleylawfirm.com \n\nWe have received your representation letter for Fidel Biso. Please note\nthat there is a limits issue on this file. We have liability limits of\n25/50 and there are 10 people who were injured during this accident.\n\nWe have accepted liability on behalf of our insured.\n\nThanks,\n\n*Abby Jett*\n\n*Claims Specialist- Injury*\n\n*Direct: 309-834-5952*\n\n*Fax: **855-820-6318*\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. Client: Fidel Antonio Bueso Sandoval.\n\nThis note reflects an email chain related to the case. On July 10, 2024, at 09:52:10 AM Eastern, Aries Penaflor of Whaley Law Firm forwarded an email to Justin Chumbley (justin@whaleylawfirm.com) with the subject \u201cFwd: 17-69H4-72C.\u201d\n\nThe forwarded message, originally sent on July 9, 2024 at 4:12 PM (time shown as 4:12?PM), came from HOME CLMS-STATEFARMCLAIMS and was addressed to aries@whaleylawfirm.com. In this message, State Farm Claims stated that they had received a representation letter for Fidel Biso. There is a limits issue on the file: liability limits are 25/50, and there were 10 people injured in the accident. They advised that they have accepted liability on behalf of their insured. The message concluded with thanks, from Abby Jett, Claims Specialist \u2013 Injury, who provided Direct: 309-834-5952 and Fax: 855-820-6318.\n\nThe message also included the sign-off from Aries Paul Pe\u00f1aflor of Whaley Law Firm, including contact details: Ph: (502) 365-5788 and Fax: (502) 364-9363, ending with \u201cAll the best.\u201d",
+      "valid_at": "2024-07-10T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client represented / subject of representation letter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "sent email stating acceptance of liability and discussing limits"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Abigail Jett",
+            "relevance": "claims specialist who sent the email"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "bodily injury claim with limits issue (25/50) and multiple injured parties"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "forwarded the email / representative for the client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "client's law firm that forwarded the representation letter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-07-10",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__New Insurance Note:__ 7/10 \"We have liability limits of 25/50 and there are 10 people who were injured during this accident.\"\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval in a motor vehicle accident that occurred on June 13, 2024.\n\nA new insurance note dated 7/10 states: \"We have liability limits of 25/50 and there are 10 people who were injured during this accident.\" The note indicates Bodily Injury (BI) coverage, provided by State Farm Insurance Company, and was written by Justin Chumbley. This entry is labeled #Inotes.",
+      "valid_at": "2024-07-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case client / injured party"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer providing BI coverage"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "bodily injury claim/coverage discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-07-10",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n@aries1 Please add Case summary etc",
+      "natural_language": "This case, Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024, involves the client Fidel Antonio Bueso Sandoval and relates to a motor vehicle accident dated June 13, 2024.\n\nThe note also contains the directive '@aries1 Please add Case summary etc'.",
+      "valid_at": "2024-07-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client involved in motor vehicle accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-07-18",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fwd: 17-69H4-72C__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com](mailto:FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com) Fidel Antonio Bueso Sandoval - Filevine Project Email Address\nDate: Thu, 18 Jul 2024 08:07:06 -0400\n\n---------- Forwarded message ---------\nFrom: AutoMedicalClaims@StateFarm.com \nDate: Wed, Jul 17, 2024 at 6:38?PM\nSubject: 17-69H4-72C\nTo: aries@whaleylawfirm.com \n\nstatefarm.com\u00ae\n\n------------------------------\n\nPlease open the attachment(s) for more claim information or next steps.\n\nFor your protection, please do not include sensitive personal information\nsuch as Social Security Number, credit/debit card number (financial account\nnumber), driver\u2019s license number, or health/medical information in an\nemail. If you must send this type of information to State Farm, please\ncontact your claim associate to request a secure email channel.\n\n------------------------------\n\nDon't miss a call about your Auto claim from State Farm\u00ae!\nText AUTO to 62789 for your claim contact card or download\n it from your mobile device.\n\nDon't miss a call about your Homeowners claim from State Farm\u00ae!\n\nText HOME to 62789 for your claim contact card or download\n it from your mobile device.\n\n*Anne Perez | VAE65C*\n\n(She/Her)\n\nClaim Associate PIP/MPC\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval in a motor vehicle accident matter. On July 18, 2024, Aries Penaflor of Whaley Law Firm forwarded correspondence to Fidel\u2019s Filevine project email address regarding this case. The forwarded thread is titled \u201cFwd: 17-69H4-72C,\u201d referencing State Farm claim number 17-69H4-72C.\n\nThe forwarded material includes an original message from AutoMedicalClaims@StateFarm.com dated July 17, 2024 (about 6:38 PM). The State Farm note instructs the recipient to open attachments for more claim information or next steps. It also cautions, for protection, not to include sensitive personal information such as Social Security numbers, credit/debit card numbers, driver\u2019s license numbers, or health/medical information in email communications; if such information must be sent, the recipient should contact their claim associate to request a secure email channel.\n\nThe message further offers reminders about receiving calls related to the auto and homeowners claims: texting AUTO to 62789 will provide a claim contact card or allow download from a mobile device, and texting HOME to 62789 provides the same for homeowners. The note is signed by Anne Perez, identified as a Claim Associate (PIP/MPC) with the handle VAE65C and she/her pronouns. It also includes the closing from Whaley Law Firm\u2019s representative, Aries Paul Pe\u00f1aflor, with contact details: Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363. The email chain appears to have originated from State Farm and circulated to the Whaley Law Firm as part of the Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 case file.",
+      "valid_at": "2024-07-18T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client involved in the MVA case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm that forwarded the State Farm correspondence into the file"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "Whaley Law Firm representative who forwarded the email"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "originator of the claim communication"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP Claim 17-69H4-72C",
+            "relevance": "claim referenced in the State Farm email"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Anne Perez",
+            "relevance": "claim associate (PIP/MPC) who signed the State Farm message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-07-18",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fwd: 17-69H4-72C__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com](mailto:FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com) Fidel Antonio Bueso Sandoval - Filevine Project Email Address\nDate: Thu, 18 Jul 2024 08:07:49 -0400\n\n---------- Forwarded message ---------\nFrom: AutoMedicalClaims@StateFarm.com \nDate: Wed, Jul 17, 2024 at 6:36?PM\nSubject: 17-69H4-72C\nTo: aries@whaleylawfirm.com \n\nstatefarm.com\u00ae\n\n------------------------------\n\nPlease open the attachment(s) for more claim information or next steps.\n\nFor your protection, please do not include sensitive personal information\nsuch as Social Security Number, credit/debit card number (financial account\nnumber), driver\u2019s license number, or health/medical information in an\nemail. If you must send this type of information to State Farm, please\ncontact your claim associate to request a secure email channel.\n\n------------------------------\n\nDon't miss a call about your Auto claim from State Farm\u00ae!\nText AUTO to 62789 for your claim contact card or download\n it from your mobile device.\n\nDon't miss a call about your Homeowners claim from State Farm\u00ae!\n\nText HOME to 62789 for your claim contact card or download\n it from your mobile device.\n\n*Anne Perez | VAE65C*\n\n(She/Her)\n\nClaim Associate PIP/MPC\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. Client: Fidel Antonio Bueso Sandoval. On July 18, 2024, a forwarded email was sent regarding this case, titled \u201cFwd: 17-69H4-72C,\u201d from Aries Penaflor of Whaley Law Firm to Fidel Antonio Bueso Sandoval\u2019s Filevine project email address (FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com). The forward indicates the underlying matter is the State Farm claim 17-69H4-72C.\n\nThe forwarded thread contains an original message from AutoMedicalClaims@StateFarm.com dated July 17, 2024, at 6:36 PM (time shown as 6:36?PM in the header). The message from State Farm begins with the State Farm domain notation \u201cstatefarm.com\u00ae\u201d and instructs the recipient to \u201cPlease open the attachment(s) for more claim information or next steps.\u201d It adds a safety notice: \u201cFor your protection, please do not include sensitive personal information such as Social Security Number, credit/debit card number (financial account number), driver\u2019s license number, or health/medical information in an email. If you must send this type of information to State Farm, please contact your claim associate to request a secure email channel.\u201d It further promotes engagement with the claim by inviting updates via text: \u201cDon't miss a call about your Auto claim from State Farm\u00ae! Text AUTO to 62789 for your claim contact card or download it from your mobile device.\u201d It repeats the same for Homeowners claims: \u201cDon't miss a call about your Homeowners claim from State Farm\u00ae! Text HOME to 62789 for your claim contact card or download it from your mobile device.\u201d The message is signed with \u201cAnne Perez | VAE65C (She/Her) Claim Associate PIP/MPC.\u201d\n\nThe closing portion of the email shows the Whaley Law Firm signature accompanying the forward, with \u201cAll the best, Aries Paul Pe\u00f1aflor\u201d and the firm\u2019s contact details: Whaley Law Firm, Ph: (502) 365-5788, Fax: (502) 364-9363.",
+      "valid_at": "2024-07-18T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "recipient of forwarded email / case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer sending claim communications"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm claim 17-69H4-72C",
+            "relevance": "claim referenced in the forwarded email"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Anne Perez",
+            "relevance": "claim associate who signed the State Farm message"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of the forwarded email / handling the file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ Called client, unable to get additional information due to language barrier. \n__Person Making Contact:__ Aries\n__Date & Time__: August 02 2024",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval. Initial client contact on August 2, 2024 with Fidel Antonio Bueso Sandoval regarding a motor vehicle accident; the call was conducted by Aries, and no additional information could be obtained due to a language barrier.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nClient Contacted today to give update #cc",
+      "natural_language": "On June 13, 2024, the client, Fidel Antonio Bueso Sandoval, was contacted to provide an update (#cc) regarding his motor vehicle accident.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ No tengo seguro \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024: The client is Fidel Antonio Bueso Sandoval.\n\nInitial client contact occurred on August 2, 2024 via text message. The inbound message was sent from Fidel Antonio Bueso Sandoval\u2019s number +1 502-550-2983 to the office number +1 502-365-5788. The content of the message was \"No tengo seguro.\"",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "person who initiated contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 pertains to client Fidel Antonio Bueso Sandoval. An inbound text message was recorded on August 2, 2024, with the sender listed as +1 502-550-2983 and the recipient as +1 502-365-5788. The content of the message is not provided in the record.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Y esos lo pago estefar es la aseguranza de el carro de mi tia d\u00f3nde tuvimos el acidente yo todav\u00eda ando mal de el pecho\n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on August 2, 2024 with Fidel Antonio Bueso Sandoval regarding a motor vehicle accident (MVA). The contact came via an inbound text message from +15025502983 to +15023655788.\n\nThe inbound message, received on August 2, 2024, reads in Spanish: \"Y esos lo pago estefar es la aseguranza de el carro de mi tia d\u00f3nde tuvimos el accidente yo todav\u00eda ando mal de el pecho.\" The message originated from +15025502983 and was sent to +15023655788.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client who made initial contact regarding MVA"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves Fidel Antonio Bueso Sandoval as the client. In the Text Message section, there is an inbound text message dated August 2, 2024. The message originated from +15025502983 and was sent to +15023655788. The Note does not include any message content\u2014the Message field is blank.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval.\n\nOn August 2, 2024, an inbound text message was received as part of the case. The message originated from +15025502983 and was sent to +15023655788. The content of the message is not provided in the note, as the Message field is blank.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval in relation to a motor vehicle accident. The client is Fidel Antonio Bueso Sandoval. In the Text Message section, an inbound text message was received on August 2, 2024, from the number +15025502983 to the number +15023655788. The note does not provide the content of the message.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval. The client on file is Fidel Antonio Bueso Sandoval. On August 2, 2024, an inbound text message was received from +15025502983 to +15023655788; the body of the message is not provided in the record.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client on file / subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "The client in case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 is Fidel Antonio Bueso Sandoval. \n\nOn August 2, 2024, an inbound text message was recorded, originating from the number +15025502983 and sent to +15023655788. The Message field contains no text, so no message content is provided in the record.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case client; subject of the recorded message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on August 2, 2024 with Fidel Antonio Bueso Sandoval regarding motor vehicle accident case MVA-06-13-2024.\n\nThis contact was an inbound text message. The message was sent from the number +15025502983 to the number +15023655788, and the direction is listed as inbound. The content of the message is not provided in the record.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "initial contact (inbound text)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval.\n\nThe Text Message entry records an inbound text message dated August 2, 2024, sent from +15025502983 to +15023655788. The Message field is blank, and no text content is recorded.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": []
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 pertains to client Fidel Antonio Bueso Sandoval.\n\nWithin the Text Message record, an inbound text was received on August 2, 2024, from +15025502983 to +15023655788; the message body is not provided in the note.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on August 2, 2024 for Fidel Antonio Bueso Sandoval regarding the motor vehicle accident case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024.\n\nThe contact was an inbound text message from +15025502983 to +15023655788. The direction is inbound, and the Message field contains no recorded content.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves the client Fidel Antonio Bueso Sandoval.\n\nText Message: On August 2, 2024, an inbound text message was received from the number +15025502983 to the number +15023655788. The body of the message is not recorded in the note, and the message direction is inbound.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves the client Fidel Antonio Bueso Sandoval.\n\nWithin the file, the Text Message section records an inbound message. The entry lists Date and Time as 2024-08-02, with the From Number as +15025502983 and the To Number as +15023655788. The Direction is indicated as Inbound, and the body of the message is not provided in this note.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of case and associated with inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves Fidel Antonio Bueso Sandoval in relation to a motor vehicle accident dated June 13, 2024.\n\nThe record also notes a text message: on August 2, 2024, an inbound text message was received from +15025502983 to +15023655788. The message content is not provided in the record, though the direction is documented as inbound.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "party involved in motor vehicle accident / subject of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval.\n\nOn August 2, 2024, an inbound text message was recorded in connection with the case. The message was sent from +15025502983 to +15023655788. The actual content of the message is not provided in the record.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client of record"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-08-02 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves the client Fidel Antonio Bueso Sandoval in a motor vehicle accident matter.\n\nIn the Text Message section, an inbound text message was recorded dated 2024-08-02. The message was sent from +15025502983 to +15023655788. The direction is inbound, and the content of the message is not provided in this record.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-05",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ Client sent a text message saying he doesn't have insurance, And those were paid by the insurance company of her aunt's car where they had the accident. He still have a bad chest. \n__Person Making Contact:__ Aries\n__Date & Time__: August 05 2024",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024: The client is Fidel Antonio Bueso Sandoval. Initial client contact on August 5, 2024, with Aries regarding the motor vehicle accident; the contact was made by Aries.\n\nIn a text message, the client stated that he doesn't have insurance, and that those costs were paid by the insurance company of her aunt's car where they had the accident. He still has a bad chest.",
+      "valid_at": "2024-08-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client; primary subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-05",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval. On June 13, 2024, the client was contacted to provide update #cc regarding his motor vehicle accident.",
+      "valid_at": "2024-08-05T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-15",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Buenos d\u00edas Fidel, soy Aries del bufete de abogados Whaley.\n__Date and Time:__ 2024-08-15 \n__From Number:__ +15023655788 \n__To Number:__ +15025502983\n__Direction:__ Outbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval in a motor vehicle accident matter dated June 13, 2024. On August 15, 2024, an outbound text message was sent from Aries at the Whaley law firm to Fidel Antonio Bueso Sandoval. The message read, \"Buenos d\u00edas Fidel, soy Aries del bufete de abogados Whaley.\" The text was sent from number +15023655788 to number +15025502983.",
+      "valid_at": "2024-08-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "recipient of outbound text message"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley law firm",
+            "relevance": "originator/sender of outbound text (Aries)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-15",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Solo quer\u00eda preguntar si ha visitado a otro proveedor m\u00e9dico adem\u00e1s del Hospital de la Universidad de Louisville. Si es as\u00ed, \u00bfpuede enviarnos la informaci\u00f3n del centro? Gracias.\n__Date and Time:__ 2024-08-15 \n__From Number:__ +15023655788 \n__To Number:__ +15025502983\n__Direction:__ Outbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. Client: Fidel Antonio Bueso Sandoval.\n\nOn August 15, 2024, an outbound text message was sent from the number +15023655788 to +15025502983, in relation to the MVA case. The message, written in Spanish, read: \"Solo quer\u00eda preguntar si ha visitado a otro proveedor m\u00e9dico adem\u00e1s del Hospital de la Universidad de Louisville. Si es as\u00ed, \u00bfpuede enviarnos la informaci\u00f3n del centro? Gracias.\" The note shows the direction as outbound and indicates the sender asked whether the recipient has visited another medical provider besides the Hospital de la Universidad de Louisville and, if so, to send the information of the center.",
+      "valid_at": "2024-08-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "recipient of outbound text / client contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "referenced medical provider (mentioned in text)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-15",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ No solo lo que le mand\u00e9 \n__Date and Time:__ 2024-08-15 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval.\n\nOn August 15, 2024, an inbound text message was received from +15025502983 to +15023655788. The content of the message was: \"No solo lo que le mand\u00e9.\"",
+      "valid_at": "2024-08-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client of the case; party related to inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-19",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fidel Sandoval__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [ulhhimroi@uoflhealth.org](mailto:ulhhimroi@uoflhealth.org), [ULHCustomerService@uoflhealth.org](mailto:ULHCustomerService@uoflhealth.org)\nCc: [FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com](mailto:FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com)\n\nAttached is a request for records & bills on our client, Fidel Sandoval.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval.\n\nThis note documents an email sent by Jessica from The Whaley Law Firm, with the From address jessica@whaleylawfirm.com. The message was sent to ulhhimroi@uoflhealth.org and ULHCustomerService@uoflhealth.org, and it CC\u2019d FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com. The body states that attached is a request for records and bills on our client, Fidel Sandoval. The communication ends with \u201cThanks!\u201d and is signed by The Whaley Law Firm.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client whose records and bills were requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "recipient of records and bills request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of the email requesting records"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-19",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nRequest for records & bills e-mailed to University of Louisville Hospital",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves Fidel Antonio Bueso Sandoval in a motor vehicle accident dated June 13, 2024. The client is Fidel Antonio Bueso Sandoval. A request for records and bills was emailed to the University of Louisville Hospital.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client/subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "recipient of records and bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n@aries1 Need treatment locations asap",
+      "natural_language": "This case, Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024, involves client Fidel Antonio Bueso Sandoval. It is an MVA case (motor vehicle accident) dated June 13, 2024.\n\nThe record includes an internal instruction addressed to @aries1, stating: \"Need treatment locations asap.\"",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nA call from Aries Penaflor was logged at 2024-08-20 16:56:00.253000+00:00 . #outboundcall\n\nCaller Info: 5025502983 \n\nCaller ID: 502-550-2983 \n\nCaller Name: Fidel Antonio Bueso Sandoval \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. Client: Fidel Antonio Bueso Sandoval.\n\nAn outbound call from Aries Penaflor was logged on August 20, 2024 at 16:56:00.253000+00:00 (UTC). The call record lists the caller information as 5025502983, with a caller ID of 502-550-2983, and the caller name Fidel Antonio Bueso Sandoval. The Caller Email field is blank. A link to the Filevine contact is provided: [filevine-link].",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "caller / subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ Client confirmed his DOB is 08/07/1982 \n__Person Making Contact:__ Aries\n__Date & Time__: August 20 2024",
+      "natural_language": "Initial client contact on August 20, 2024, with Fidel Antonio Bueso Sandoval regarding the Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 motor vehicle accident case. \n\nThe client confirmed his date of birth as August 7, 1982, and the person making contact was Aries.",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client contacted / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fwd: Fidel Sandoval__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: Fidel Antonio Bueso Sandoval - Filevine Project Email Address [FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com](mailto:FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com)\n\n---------- Forwarded message ---------\nFrom: ULH Customer Service \nDate: Tue, Aug 20, 2024 at 8:43?AM\nSubject: RE: Fidel Sandoval\nTo: jessica@whaleylawfirm.com \n\nUnfortunately I am not able to locate this pt based on name dob you\nprovided please verify pt information and resubmit your request.\n\n *Hallie *\n\n Customer Service Specialist\n\nAccounts Receivable Operation\n\nHallie.Hoback@uoflhealth.org\n\n*From:* jessica@whaleylawfirm.com \n*Sent:* Monday, August 19, 2024 10:41 AM\n*To:* ULH HIM ROI ; ULH Customer Service <\nULHCustomerService@uoflhealth.org>\n*Cc:*\nFidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com\n*Subject:* Fidel Sandoval\n\n*SECURITY ALERT! This message is from an outside sender! Please review with\ncaution and only open links you know are safe. Please click the \u201cReport\nPhishing\u201d button on your tool bar to report this message to the security\nteam for review.*\n------------------------------\n\nAttached is a request for records & bills on our client, Fidel Sandoval.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. The client is Fidel Antonio Bueso Sandoval, associated with a motor vehicle accident dated June 13, 2024.\n\nThe file contains a forwarded email thread beginning with a message titled \u201cFwd: Fidel Sandoval\u201d from Jessica Bottorff of The Whaley Law Firm. The forwarding was addressed to Fidel Antonio Bueso Sandoval\u2019s Filevine project email address FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com.\n\nWithin the forwarded thread, ULH Customer Service responded on Tuesday, August 20, 2024, at approximately 8:43 AM to Jessica Bottorff with the subject \u201cRE: Fidel Sandoval.\u201d They stated that they were unable to locate the patient based on the name and date of birth provided and asked that the patient information be verified and the request resubmitted. The message was signed by Hallie, identified as a Customer Service Specialist in Accounts Receivable Operation, with the email Hallie.Hoback@uoflhealth.org.\n\nBefore that, on Monday, August 19, 2024, at 10:41 AM, Jessica Bottorff had sent a message to ULH HIM ROI and ULH Customer Service, with a copy to FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com, under the subject \u201cFidel Sandoval.\u201d The email included a security alert warning that the message was from an outside sender and advising caution with links, instructing recipients to report phishing using the toolbar. The body stated that an attachment contained a request for records and bills for Fidel Sandoval, and it was signed by The Whaley Law Firm.",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of the medical records request and patient referenced in emails"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of the forwarded records request (Jessica Bottorff)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "recipient of the records request / ULH Customer Service responded about patient lookup"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nClient Contacted today to give update #cc",
+      "natural_language": "Fidel Antonio Bueso Sandoval is the client in the motor vehicle accident case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. He was contacted today to provide an update, with the update noted as #cc.",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ De nada, con gusto\n__Date and Time:__ 2024-08-20 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns the client Fidel Antonio Bueso Sandoval. On August 20, 2024, an inbound text message was received from Fidel Antonio Bueso Sandoval's phone number +15025502983 to our line +15023655788. The message content was \"De nada, con gusto.\"",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "sender of inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Gracias!\n__Date and Time:__ 2024-08-20 \n__From Number:__ +15023655788 \n__To Number:__ +15025502983\n__Direction:__ Outbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 pertains to client Fidel Antonio Bueso Sandoval.\n\nOn August 20, 2024, there was an outbound text message sent from the phone number +15023655788 to +15025502983, with the content \"Gracias!\".",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Buen d\u00eda, Fidel. Soy Aries. \u00bfMe podr\u00edas decir tu fecha de nacimiento? El hospital UofL no puede encontrar tus registros, quieren verificar tu fecha de nacimiento. Gracias.\n__Date and Time:__ 2024-08-20 \n__From Number:__ +15023655788 \n__To Number:__ +15025502983\n__Direction:__ Outbound",
+      "natural_language": "In the Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 case, a text message contact with Fidel Antonio Bueso Sandoval occurred on August 20, 2024.\n\nThe message was an outbound text from Aries, using the number +1 502-365-5788, sent to Fidel's number +1 502-550-2983. The purpose was to obtain Fidel's date of birth because the hospital UofL cannot locate Fidel's records and wants to verify his birth date. The message read: \"Buen d\u00eda, Fidel. Soy Aries. \u00bfMe podr\u00edas decir tu fecha de nacimiento? El hospital UofL no puede encontrar tus registros, quieren verificar tu fecha de nacimiento. Gracias.\"",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "person contacted / subject of message"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "unable to locate records / requesting DOB verification"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Si es 7 de agosto de 1982\n__Date and Time:__ 2024-08-20 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on August 20, 2024 in the Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 case was an inbound text message from +15025502983 to +15023655788. The content of the message was: \"Si es 7 de agosto de 1982.\"",
+      "valid_at": "2024-08-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": []
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-23",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fidel Antonio Bueso Sandoval__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [ulhhimroi@uoflhealth.org](mailto:ulhhimroi@uoflhealth.org), 'ULH Customer Service' [ULHCustomerService@uoflhealth.org](mailto:ULHCustomerService@uoflhealth.org)\nCc: [FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com](mailto:FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Sep 23 2024 11:03:07 GMT-04:00\n\nAttached is a request for records & bills on our client, Fidel Antono Bueso\nSandoval.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. Client: Fidel Antonio Bueso Sandoval.\n\nOn September 23, 2024, at 11:03:07 a.m. GMT-04:00, an email was sent from jessica@whaleylawfirm.com on behalf of The Whaley Law Firm regarding our client Fidel Antonio Bueso Sandoval. The message was addressed to ulhhimroi@uoflhealth.org and to ULHCustomerService@uoflhealth.org, with a copy sent to FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com.\n\nThe body of the email stated that attached is a request for records & bills on our client, Fidel Antono Bueso Sandoval. The message ended with \u201cThanks!\u201d and was signed by The Whaley Law Firm.",
+      "valid_at": "2024-09-23T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of records request / client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "recipient of records & bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-23",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nLocated UofL discharge paperwork in file - they have the DOB listed as 07/08/1982 - resubmitted request for records & bills with corrected DOB",
+      "natural_language": "On June 13, 2024, the case Fidel-Antonio-Bueso-Sandoval-MVA was opened for client Fidel Antonio Bueso Sandoval. \n\nDuring file review, discharge paperwork from the University of Louisville (UofL) was located, and this paperwork lists the date of birth as July 8, 1982. A request for records and bills was resubmitted with the corrected date of birth.",
+      "valid_at": "2024-09-23T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case opened for client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "source of discharge paperwork and recipient of resubmitted records/bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-23",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nRequest for bills sent to University of Louisville Physicians via ChartSwap",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval.\n\nA request for the client's bills to be sent to University of Louisville Physicians via ChartSwap has been made.",
+      "valid_at": "2024-09-23T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University Of Louisville Physicians",
+            "relevance": "recipient of bills via ChartSwap"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-23",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fidel Antonio Bueso Sandoval__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [patient.services@uoflhealth.org](mailto:patient.services@uoflhealth.org), [Sholanda.Wilson@uoflhealth.org](mailto:Sholanda.Wilson@uoflhealth.org)\nCc: [FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com](mailto:FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Sep 23 2024 11:26:21 GMT-04:00\n\nAttached is a request for bills on our client, Fidel Sandoval.\n\n \n\nThanks!\n\n \n\nJessica Bottorff \n\nWhaley Law Firm\n\n712 Lyndon Ln.\n\nLouisville, KY 40222\n\nFax: (502)364-9363",
+      "natural_language": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. The client is Fidel Antonio Bueso Sandoval.\n\nOn September 23, 2024, at 11:26:21 AM (GMT-04:00), Jessica Bottorff of Whaley Law Firm sent an email regarding our client Fidel Sandoval. The message was sent from jessica@whaleylawfirm.com to patient.services@uoflhealth.org and Sholanda.Wilson@uoflhealth.org, with FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com CC\u2019d. The body of the email stated: \u201cAttached is a request for bills on our client, Fidel Sandoval.\u201d The email concluded with \u201cThanks!\u201d and was signed by Jessica Bottorff of Whaley Law Firm. The Whaley Law Firm\u2019s contact details are 712 Lyndon Ln., Louisville, KY 40222, and the fax number is (502) 364-9363.",
+      "valid_at": "2024-09-23T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of email / client referenced"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "recipient of request for bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-23",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nRequest for radiology physician bill faxed to UofL Hospital - Radiology",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval in a motor vehicle accident.\n\nA request for the radiology physician bill was faxed to UofL Hospital \u2013 Radiology.",
+      "valid_at": "2024-09-23T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University Of Louisville Hospital Radiology",
+            "relevance": "recipient of radiology physician bill request (fax)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-30",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nPer ChartSwap on UofL Physicians: \nProvider Note\n9/30/2024 11:40 AM\tUNABLE TO FIND MEMBER UNDER NAME AND DOB",
+      "natural_language": "The case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval in connection with a motor vehicle accident. The client is Fidel Antonio Bueso Sandoval.\n\nPer ChartSwap on UofL Physicians, a provider note dated September 30, 2024 at 11:40 AM reads: UNABLE TO FIND MEMBER UNDER NAME AND DOB.",
+      "valid_at": "2024-09-30T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University Of Louisville Physicians",
+            "relevance": "provider searched (unable to find member)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-22",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ attempted to call client no answer, left vm. \n__Person Making Contact:__ Aries\n__Date & Time__: November 22 2024",
+      "natural_language": "Initial client contact on November 22, 2024, regarding Fidel Antonio Bueso Sandoval\u2019s motor vehicle accident case (MVA-06-13-2024). The client, Fidel Antonio Bueso Sandoval, could not be reached by phone; Aries attempted contact, there was no answer, and a voicemail was left.",
+      "valid_at": "2024-11-22T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of contact / attempted phone outreach"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-11-22",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nClient Contacted today to give update #cc",
+      "natural_language": "Fidel Antonio Bueso Sandoval is the client for the MVA case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. He was contacted today to provide an update, recorded as #cc.",
+      "valid_at": "2024-11-22T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject/contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-22",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nA call from Aries Penaflor was logged at 2024-11-22 21:31:43.202000+00:00 . #outboundcall\n\nCaller Info: 5025502983 \n\nCaller ID: 502-550-2983 \n\nCaller Name: Fidel Antonio Bueso Sandoval \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This case, Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024, concerns Fidel Antonio Bueso Sandoval in a motor vehicle accident matter dated June 13, 2024.\n\nAn outbound call from Aries Penaflor was logged on November 22, 2024 at 21:31:43.202000+00:00 (UTC).\n\nThe caller information lists the phone number 5025502983, with a caller ID of 502-550-2983, and the caller name Fidel Antonio Bueso Sandoval; the caller email is not provided. A link to the Filevine contact is [filevine-link].",
+      "valid_at": "2024-11-22T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "caller/contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-25",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nA call from Aries Penaflor was logged at 2024-11-25 14:46:59.575000+00:00 . #outboundcall\n\nCaller Info: 5025502983 \n\nCaller ID: 502-550-2983 \n\nCaller Name: Fidel Antonio Bueso Sandoval \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact on November 25, 2024 at 14:46:59.575000+00:00 UTC with Fidel Antonio Bueso Sandoval. The call was an outbound log entered by Aries Penaflor from the client\u2019s phone number 502-550-2983 (Caller ID: 502-550-2983). The caller name is Fidel Antonio Bueso Sandoval, and no email address was provided. A link to the Filevine contact is available at [filevine-link]. This note concerns the Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 case.",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "caller / subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-25",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ Call still went to straight to VM. \n__Person Making Contact:__ Aries\n__Date & Time__: November 25 2024",
+      "natural_language": "Initial client contact on November 25, 2024 with Fidel Antonio Bueso Sandoval; the outreach was conducted by Aries, but the call still went straight to voicemail.",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "initial client contact (voicemail)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-11-25",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n@aries1 no contact with client since AUGUST????",
+      "natural_language": "This case, Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024, involves Fidel Antonio Bueso Sandoval in a motor vehicle accident. The client is Fidel Antonio Bueso Sandoval.\n\nThere has been no contact with the client since August???.",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-11-25",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval. On June 13, 2024, the client contacted our office to provide update #cc regarding the motor vehicle accident.",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client who contacted office"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-25",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fidel Sandoval__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: 'ULH Customer Service' [ULHCustomerService@uoflhealth.org](mailto:ULHCustomerService@uoflhealth.org)\nCc: [FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com](mailto:FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Nov 25 2024 12:30:55 GMT-05:00\n\nWe received medical records on our client, Fidel Sandoval, but we still need\nthe bill. I have attached the after visit summary.\n\n \n\nThanks!\n\n \n\nJessica Bottorff \n\nWhaley Law Firm\n\n712 Lyndon Ln.\n\nLouisville, KY 40222\n\nFax: (502)364-9363",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval. On November 25, 2024, at 12:30:55 PM GMT-05:00, Jessica Bottorff of Whaley Law Firm sent an email from jessica@whaleylawfirm.com to ULH Customer Service at ULHCustomerService@uoflhealth.org, with a CC to FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com. In the message, she states: We received medical records on our client, Fidel Sandoval, but we still need the bill. I have attached the after visit summary. The note ends with \u201cThanks!\u201d and is signed by Jessica Bottorff.\n\nSignature details:\nJessica Bottorff\nWhaley Law Firm\n712 Lyndon Ln.\nLouisville, KY 40222\nFax: (502)364-9363",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of records/billing request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "recipient (ULH Customer Service) of email requesting bill"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email / representative for client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-26",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fwd: Fidel Sandoval__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: Fidel Antonio Bueso Sandoval - Filevine Project Email Address [FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com](mailto:FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Nov 26 2024 12:45:28 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: ULH Customer Service \nDate: Tue, Nov 26, 2024 at 9:03?AM\nSubject: RE: Fidel Sandoval\nTo: jessica@whaleylawfirm.com \n\n*\u201cYour request has been received. Please allow 30days for processing.\nSending additional requests by fax, mail, or additional emails will delay\nthe process. If you have not received billing records in 35 days, you may\ncall and check on the status.\u201d *\n\n *Hallie *\n\n Customer Service Specialist\n\nAccounts Receivable Operation\n\n*From:* jessica@whaleylawfirm.com \n*Sent:* Monday, November 25, 2024 12:31 PM\n*To:* ULH Customer Service \n*Cc:*\nFidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com\n*Subject:* Fidel Sandoval\n\n*SECURITY ALERT! This message is from an outside sender! Please review with\ncaution and only open links you know are safe. Please click the \u201cReport\nPhishing\u201d button on your tool bar to report this message to the security\nteam for review.*\n------------------------------\n\nWe received medical records on our client, Fidel Sandoval, but we still\nneed the bill. I have attached the after visit summary.\n\nThanks!\n\nJessica Bottorff\n\nWhaley Law Firm\n\n712 Lyndon Ln.\n\nLouisville, KY 40222\n\nFax: (502)364-9363",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns client Fidel Antonio Bueso Sandoval. This note documents email correspondence related to Fidel Sandoval\u2019s motor vehicle accident case. On November 25, 2024 at 12:31 PM, Jessica Bottorff of Whaley Law Firm (712 Lyndon Ln., Louisville, KY 40222; fax 502-364-9363) emailed ULH Customer Service with the subject \u201cFidel Sandoval.\u201d In that message, she included a security alert stating: \u201cSECURITY ALERT! This message is from an outside sender! Please review with caution and only open links you know are safe. Please click the \u2018Report Phishing\u2019 button on your tool bar to report this message to the security team for review.\u201d She indicated that they had received medical records on their client Fidel Sandoval but still needed the bill, and she noted that the after-visit summary was attached.\n\nULH Customer Service replied on November 26, 2024 at 9:03?AM with: \u201cYour request has been received. Please allow 30days for processing. Sending additional requests by fax, mail, or additional emails will delay the process. If you have not received billing records in 35 days, you may call and check on the status.\u201d The message was from ULH, signed by Hallie, a Customer Service Specialist in Accounts Receivable Operation.\n\nOn November 26, 2024 at 12:45:28 PM EST, Jessica Bottorff forwarded the above exchange to Fidel Antonio Bueso Sandoval\u2019s Filevine project email address: FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com, with the message subject \u201cFidel Sandoval.\u201d The forwarded content reiterates that ULH had received the medical records but that the billing bill was still needed, and it confirms that the after-visit summary was attached. The original CC for Jessica\u2019s message included FidelAntonioBuesoSandovalZ4639720@louisvilleaccidentlawyer.filevineapp.com.",
+      "valid_at": "2024-11-26T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of the case and recipient of the forwarded case emails"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "originator of emails requesting medical bill/records"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sent and forwarded emails regarding medical records and billing for the client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "ULH Customer Service responded about receipt of medical records and pending billing"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-06",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nClient Contacted today to give update #cc",
+      "natural_language": "On June 13, 2024, Fidel Antonio Bueso Sandoval, the client in the Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 case (a motor vehicle accident matter), contacted us to provide an update designated as update #cc.",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "called to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-06",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nA call from Aries Penaflor was logged at 2024-12-06 19:49:21.335000+00:00 . #outboundcall\n\nCaller Info: 5025502983 \n\nCaller ID: 502-550-2983 \n\nCaller Name: Fidel Antonio Bueso Sandoval \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval as the client.\n\nOn December 6, 2024, at 19:49:21.335000+00:00, Aries Penaflor logged an outbound call. The record lists the Caller Info as 5025502983 and the Caller ID as 502-550-2983. The Caller Name is Fidel Antonio Bueso Sandoval, and no Caller Email was provided. A link to the Filevine contact is included: [filevine-link].",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "caller / person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-06",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nA missed call for Aries Penaflor was logged at 2024-12-06 20:08:39.150000+00:00 . #missedcall\n\nCaller Info: 5025502983 \n\nCaller ID: 502-550-2983 \n\nCaller Name: Fidel Antonio Bueso Sandoval \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. The client is Fidel Antonio Bueso Sandoval. On December 6, 2024, at 20:08:39 UTC, a missed call for Aries Penaflor was logged in the system (tagged #missedcall). The call originated from Fidel Antonio Bueso Sandoval, whose phone number is 502-550-2983. The caller ID shown is 502-550-2983, and the caller\u2019s name is Fidel Antonio Bueso Sandoval. The record does not include a caller email. A link to the Filevine contact is available at [filevine-link].\n\nVoicemail Transcription: no transcription is provided.",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-06",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ Client answered the call but he only speaks Spanish. \n__Person Making Contact:__ Aries\n__Date & Time__: December 06 2024",
+      "natural_language": "Initial client contact on December 6, 2024 with Fidel Antonio Bueso Sandoval regarding a motor vehicle accident associated with case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. The client answered the call but spoke only Spanish. The contact was made by Aries.",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-07",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \u00bfHay alguien con quien pueda hablar que hable ingl\u00e9s?\n__Date and Time:__ 2024-12-06 \n__From Number:__ +15023655788 \n__To Number:__ +15025502983\n__Direction:__ Outbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval.\n\nOn December 6, 2024, an outbound text message was sent from +15023655788 to +15025502983. The message, written in Spanish, asked: \"\u00bfHay alguien con quien pueda hablar que hable ingl\u00e9s?\"",
+      "valid_at": "2024-12-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client involved / recipient of communication"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-07",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Necesitamos saber su estado actual de tratamiento relacionado con su accidente vehicular ocurrido el 13/06/2024\n__Date and Time:__ 2024-12-06 \n__From Number:__ +15023655788 \n__To Number:__ +15025502983\n__Direction:__ Outbound",
+      "natural_language": "This narrative concerns Fidel Antonio Bueso Sandoval in the case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. On December 6, 2024, an outbound text message was sent from +15023655788 to +15025502983 regarding the case, asking for the client's current treatment status related to his motor vehicle accident that occurred on 13/06/2024. The message content read: \"Necesitamos saber su estado actual de tratamiento relacionado con su accidente vehicular ocurrido el 13/06/2024.\"",
+      "valid_at": "2024-12-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-07",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Con cie es\n__Date and Time:__ 2024-12-06 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval. The initial client contact occurred on December 6, 2024, via an inbound text message from +15025502983 to +15023655788. The message content read \"Con cie es.\"",
+      "valid_at": "2024-12-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client contact / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nThis case appears to involve a fax received from the University of Louisville, potentially related to a legal matter. The specific details of the case are not clear from the provided data.\nThe most recent activity is a fax message received from the University of Louisville on December 23, 2024, at 2:00 PM. The fax consists of 5 pages. (See details)\nA potential red flag is that a correction was requested and there's no indication it has been sent yet. Justin Chumbley has asked for the documents to be labeled and inquired about the status of the correction. (See details)\nThe next recommended steps are to correct and resubmit the documents as requested by Justin Chumbley, and to label the documents appropriately. It's also important to update the notes to indicate when the correction has been sent. (See details)",
+      "natural_language": "Fidel Antonio Bueso Sandoval is the client for case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. The matter appears to involve a fax received from the University of Louisville that may be related to a legal issue, but the specific details of the case are not clear from the data provided.\n\nThe most recent activity is a fax from the University of Louisville received on December 23, 2024, at 2:00 PM, and the fax consisted of five pages. A potential red flag is that a correction was requested and there is no indication that it has been sent yet. Justin Chumbley has asked for the documents to be labeled and has inquired about the status of the correction. The next recommended steps are to correct and resubmit the documents as Justin Chumbley requested, label the documents appropriately, and update the notes to indicate when the correction has been sent.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client for case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "sender of fax / source of documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-01-27",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Fidel Antonio Bueso Sandoval__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: University of Louisville Hospital [patient.services@uoflhealth.org](mailto:patient.services@uoflhealth.org)\nCc: [Sholanda.Wilson@uoflhealth.org](mailto:Sholanda.Wilson@uoflhealth.org)\nDate: Mon Jan 27 2025 09:39:42 GMT-05:00\n\nHi,\n\nPlease see attached request for ER physicians bill.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns client Fidel Antonio Bueso Sandoval and a motor vehicle accident that occurred on June 13, 2024.\n\nOn Monday, January 27, 2025, at 09:39:42 AM GMT-05:00, Aries Penaflor of Whaley Law Firm sent an email from aries@whaleylawfirm.com to the University of Louisville Hospital\u2019s patient.services@uoflhealth.org, with Sholanda.Wilson@uoflhealth.org CC\u2019d. The body of the message began with \u201cHi,\u201d and stated, \u201cPlease see attached request for ER physicians bill.\u201d The message was signed, \u201cAll the best, Aries Paul Pe\u00f1aflor,\u201d followed by the Whaley Law Firm signature and contact details: Ph: (502)365-5788 and Fax: (502)364-9363. The From address listed was Aries Penaflor, the To address was University of Louisville Hospital patient.services@uoflhealth.org, and the CC address was Sholanda.Wilson@uoflhealth.org. The message indicated there was an attached request for the ER physicians bill.",
+      "valid_at": "2025-01-27T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of case / client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "recipient of ER physicians bill request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email / law firm representing client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender / contact at Whaley Law Firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-27",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nRequest for records & bills sent to Anchorage Middletown Fire & EMS via ChartSwap",
+      "natural_language": "On June 13, 2024, the Fidel-Antonio-Bueso-Sandoval MVA case was opened for Fidel Antonio Bueso Sandoval. \n\nA request for Fidel Antonio Bueso Sandoval's records and bills related to the incident was sent to Anchorage Middletown Fire & EMS via ChartSwap.",
+      "valid_at": "2025-01-27T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case opened for"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Anchorage Middletown Fire & EMS",
+            "relevance": "recipient of records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-19",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__CLIENT CONTACT__\n__Details:__ Still texting client using google translate to communicate. Client said he is no longer getting treatment. \n__Person Making Contact:__ Aries\n__Date & Time__: February 19 2025",
+      "natural_language": "Initial client contact on February 19, 2025, with Aries, the person making contact, regarding Fidel Antonio Bueso Sandoval and the MVA case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. The client is still texting to communicate, using Google Translate, and he states that he is no longer receiving treatment.",
+      "valid_at": "2025-02-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client; subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-19",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__New Demand Negotiation Note:__ 2/19 10 claimants and minimal limits. sent all available records and bills to BI and awaiting global tender discussions\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #negotiations",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval in a motor vehicle accident dated June 13, 2024. A New Demand Negotiation Note dated February 19 indicates there are ten claimants and minimal limits. All available records and bills have been sent to the Bodily Injury (BI) insurer, State Farm Insurance Company, and we are awaiting global tender discussions. The matter is being handled as a Bodily Injury (BI) claim, and the note was written by Justin Chumbley.",
+      "valid_at": "2025-02-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "claimant/subject of the case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "Bodily Injury insurer handling the BI claim; recipient of records and bills; involved in global tender discussions"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ Y grasias\n__Date and Time:__ 2025-02-19 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "The Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 case concerns client Fidel Antonio Bueso Sandoval in a motor vehicle accident matter.\n\nOn February 19, 2025, an inbound text message was received from +15025502983 to +15023655788, with the content \"Y grasias.\" The message direction was inbound.",
+      "valid_at": "2025-02-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ No Tengo y ya me siento mejor solo cuando ago fuersa esque me duele El pecho de ai estoi vien\n__Date and Time:__ 2025-02-19 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This case, Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024, concerns Fidel Antonio Bueso Sandoval in relation to a motor vehicle accident dated June 13, 2024.\n\nOn February 19, 2025, an inbound text message was received from +15025502983 to +15023655788. The direction of the message was inbound. The content of the text reads: \"No Tengo y ya me siento mejor solo cuando ago fuersa esque me duele El pecho de ai estoi vien.\"",
+      "valid_at": "2025-02-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "sender of inbound text reporting symptoms/condition"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \u00bfPuede enviarme una lista de los proveedores m\u00e9dicos que ha visitado para recibir tratamiento relacionado con su accidente?\n__Date and Time:__ 2025-02-19 \n__From Number:__ +15023655788 \n__To Number:__ +15025502983\n__Direction:__ Outbound",
+      "natural_language": "This case note concerns Fidel Antonio Bueso Sandoval in a motor vehicle accident (MVA) case identified as Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024, involving the client Fidel Antonio Bueso Sandoval. The MVA is dated June 13, 2024.\n\nOn February 19, 2025, an outbound text message was sent from +15023655788 to +15025502983. The message content was in Spanish: \"\u00bfPuede enviarme una lista de los proveedores m\u00e9dicos que ha visitado para recibir tratamiento relacionado con su accidente?\"",
+      "valid_at": "2025-02-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "recipient of text message / asked to provide info"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Medical providers (unspecified)",
+            "relevance": "client was asked to list medical providers visited for accident-related treatment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ No solo leaves de El asidente\n__Date and Time:__ 2025-02-19 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "The Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 case concerns Fidel Antonio Bueso Sandoval and relates to a motor vehicle accident dated June 13, 2024.\n\nOn February 19, 2025, an inbound text message was received from +1 502 550 2983 to +1 502 365 5788, containing the content \"No solo leaves de El asidente.\"",
+      "valid_at": "2025-02-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ LA verdad no solo que podia agarrar una aseguransa con El ospital pero fui did vesss y no puede porque no ablo Ingles \n__Date and Time:__ 2025-02-19 \n__From Number:__ +15025502983 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. Client: Fidel Antonio Bueso Sandoval.\n\nInitial client contact on February 19, 2025, with Fidel Antonio Bueso Sandoval regarding the motor vehicle accident (MVA) case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024. The contact was an inbound text message sent from phone number +15025502983 to phone number +15023655788.\n\nThe inbound text message content, sent from +15025502983 to +15023655788, reads in Spanish: \"LA verdad no solo que podia agarrar una aseguransa con El ospital pero fui did vesss y no puede porque no ablo Ingles.\"",
+      "valid_at": "2025-02-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "sender of inbound text / client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__Text Message__\n__Message:__ \u00bfS\u00f3lo fuiste al hospital? \u00bfO tuviste alguna terapia?\n__Date and Time:__ 2025-02-19 \n__From Number:__ +15023655788 \n__To Number:__ +15025502983\n__Direction:__ Outbound",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves client Fidel Antonio Bueso Sandoval. On February 19, 2025, an outbound text message was sent from +15023655788 to +15025502983, containing the Spanish question: \"\u00bfS\u00f3lo fuiste al hospital? \u00bfO tuviste alguna terapia?\"",
+      "valid_at": "2025-02-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of message / case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-21",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nA call from Aries Penaflor was logged at 2025-02-21 14:59:34.919000+00:00 . #outboundcall\n\nCaller Info: 5025502983 \n\nCaller ID: 502-550-2983 \n\nCaller Name: Fidel Antonio Bueso Sandoval \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval. The client is Fidel Antonio Bueso Sandoval.\n\nOn February 21, 2025, at 14:59:34.919000+00:00 (UTC), an outbound call from Aries Penaflor was logged. The caller information lists the phone number 5025502983, with the caller ID 502-550-2983. The caller name is Fidel Antonio Bueso Sandoval, and no email address was provided. A link to the Filevine contact for this individual is available: [filevine-link].",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-21",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__New Insurance Note:__ 02/21 Sent request for updated paylog\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Aries \n #Inotes",
+      "natural_language": "The case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 concerns Fidel Antonio Bueso Sandoval in a motor vehicle accident that occurred on June 13, 2024. The client is Fidel Antonio Bueso Sandoval.\n\nA new insurance note was recorded on February 21 indicating that an updated paylog had been requested. The note concerns Personal Injury Protection (PIP) with State Farm Insurance Company and was written by Aries. This entry is filed under the #Inotes.",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "client involved in the motor vehicle accident"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim referenced; note about updated paylog requested"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer handling the PIP claim referenced in the note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-02-21",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__1769H472C__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: State Team [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com)\nDate: Fri Feb 21 2025 10:40:24 GMT-05:00\n\nHi,\n\nPlease see attached request.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "This case, Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024, involves client Fidel Antonio Bueso Sandoval in a motor vehicle accident dated June 13, 2024. The file includes an internal reference code of 1769H472C.\n\nOn February 21, 2025, at 10:40:24 AM (GMT-05:00), Aries Penaflor of Whaley Law Firm sent an email from aries@whaleylawfirm.com to the State Team at statefarmclaims.com. The message begins with \u201cHi,\u201d and states, \u201cPlease see attached request.\u201d It is signed, \u201cAll the best,\u201d by Aries Paul Pe\u00f1aflor of Whaley Law Firm, with contact information listed as Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "email author/sender"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "recipient (State Team) of the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-27",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__New Insurance Note:__ 02/27 Saved paylog on file\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Aries \n #Inotes",
+      "natural_language": "Fidel Antonio Bueso Sandoval is the client for the motor vehicle accident case MVA-06-13-2024. A New Insurance Note was recorded: on February 27, a paylog was saved on file. The insurance involved is Personal Injury Protection (PIP), provided by State Farm Insurance Company. The note was written by Aries and is filed under #Inotes.",
+      "valid_at": "2025-02-27T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "subject/client of the case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim/insurer involved"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-20",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\n__New Demand Negotiation Note:__ 3/10 adjuster has all demands in and is evaluating\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Case Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 involves Fidel Antonio Bueso Sandoval in a motor vehicle accident on June 13, 2024.\n\nThe New Demand Negotiation Note states that as of 3/10 the adjuster has all demands in and is evaluating them. The insurance type is Bodily Injury (BI), and the insurer is State Farm Insurance Company. The note was written by Aaron Whaley, and this entry is categorized under negotiations.",
+      "valid_at": "2025-03-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "injured party / case subject"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer for BI claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim: State Farm Insurance Company",
+            "relevance": "bodily injury claim being negotiated"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Abigail Jett",
+            "relevance": "adjuster evaluating demands for the BI claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Agent for Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 - 2025-09-12",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nCase overview completed - Updated all memory blocks with current case information from database review. Case summary and status updated in active_cases table. Multi-claimant MVA case in negotiation phase with $12,000 settlement offer from State Farm BI adjuster. All medical records and bills obtained, total medical expenses ~$20,718.50. Client confirmed no ongoing treatment as of 2/19/2025 contact.",
+      "natural_language": "Case Fidel Antonio Bueso Sandoval, a multi-claimant motor vehicle accident (MVA) case, was initiated on June 13, 2024. The case overview has been completed, and memory blocks have been updated with current information drawn from a database review.\n\nThe case summary and status have been updated in the active_cases table.\n\nThis matter is in the negotiation phase, with a settlement offer of $12,000 from the State Farm bodily injury adjuster.\n\nAll medical records and bills have been obtained, with total medical expenses approximately $20,718.50.\n\nThe client confirmed that there is no ongoing treatment as of the February 19, 2025 contact.",
+      "valid_at": "2025-09-12T00:00:00",
+      "author": "Agent for Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case claimant"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "subject of $12,000 settlement offer"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer making settlement offer"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Abigail Jett",
+            "relevance": "State Farm bodily injury adjuster who made the offer"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Anchorage Middletown Fire & EMS",
+            "relevance": "medical records/bills obtained"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "medical records/bills obtained"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University Of Louisville Hospital Radiology",
+            "relevance": "medical records/bills obtained"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University Of Louisville Physicians",
+            "relevance": "medical records/bills obtained"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Agent for Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024 - 2025-09-12",
+      "original_body": "Case: Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024\nClient: Fidel Antonio Bueso Sandoval\n\nCase overview system test completed. Successfully reviewed all database tables (insurance, medical_items, notes, documents, to_do) and updated core memory blocks with current case information. Case summary and status updated to reflect current negotiation phase with $12,000 settlement offer. All medical records and bills documented with total expenses of $20,718.50. Global settlement coordination ongoing with other attorneys representing remaining 9 claimants in multi-party accident case.",
+      "natural_language": "Fidel Antonio Bueso Sandoval is the client in the Fidel-Antonio-Bueso-Sandoval MVA case dated 06-13-2024. A case overview system test was completed, during which all database tables\u2014insurance, medical_items, notes, documents, and to_do\u2014were successfully reviewed and core memory blocks updated with current case information.\n\nThe case summary and status were updated to reflect the current negotiation phase, with a settlement offer of $12,000. All medical records and bills have been documented, totaling expenses of $20,718.50. Global settlement coordination is ongoing with other attorneys representing the remaining 9 claimants in this multi-party accident case.",
+      "valid_at": "2025-09-12T00:00:00",
+      "author": "Agent for Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fidel Antonio Bueso Sandoval",
+            "relevance": "case client"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

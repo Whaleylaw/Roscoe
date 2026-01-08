@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "total": 3319,
+    "by_type": {
+      "Adjuster": 151,
+      "Insurer": 57,
+      "MedicalProvider": 282,
+      "WCClaim": 5,
+      "PIPClaim": 120,
+      "BIClaim": 119,
+      "UMClaim": 14,
+      "UIMClaim": 2,
+      "LienHolder": 42,
+      "Client": 105,
+      "Case": 110,
+      "DirectoryEntry": 2209,
+      "Lien": 103
+    },
+    "errors": 0
+  },
+  "relationships": {
+    "total": 2920,
+    "by_type": {
+      "HasClient": 106,
+      "PlaintiffIn": 106,
+      "HasClaim": 260,
+      "InsuredBy": 254,
+      "AssignedAdjuster": 212,
+      "HandlesInsuranceClaim": 212,
+      "WorksAt": 212,
+      "TreatingAt": 573,
+      "TreatedBy": 573,
+      "HasLien": 103,
+      "HasLienFrom": 103,
+      "HeldBy": 103,
+      "Holds": 103
+    },
+    "errors": 0
+  },
+  "episodes": {
+    "total": 100,
+    "by_case": {
+      "Abby-Sitgraves-MVA-7-13-2024": 100
+    },
+    "errors": 0
+  }
+}

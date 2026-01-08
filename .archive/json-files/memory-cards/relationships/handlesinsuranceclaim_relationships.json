@@ -1,0 +1,2970 @@
+[
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Debbie Smith"
+    },
+    "target": {
+      "entity_type": "WCClaim",
+      "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Workers' Compensation (WC)-238042cs"
+    },
+    "attributes": {},
+    "context": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Joseph Dedeyn"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Mark-Smith-Sr-MVA-5-31-2025-Personal Injury Protection (PIP)-1785Q936Q"
+    },
+    "attributes": {},
+    "context": "Mark-Smith-Sr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "CW"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jeremy-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024"
+    },
+    "attributes": {},
+    "context": "Jeremy-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Douglas Hare"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-56240577"
+    },
+    "attributes": {},
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "CW"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Robin-Wilder-Hamilton-MVA-6-15-2023-Bodily Injury (BI)-C0119952"
+    },
+    "attributes": {},
+    "context": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Walter Kenny"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337"
+    },
+    "attributes": {},
+    "context": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Emma Schumaker"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "James-Kiper-MVA-12-5-2022-Uninsured Motorist (UM)-IZX7996"
+    },
+    "attributes": {},
+    "context": "James-Kiper-MVA-12-5-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Natasha Fortune"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Bodily Injury (BI)-22-8451213"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Sharon Wills"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Timothy-Ruhl-Premise-09-14-2023-Bodily Injury (BI)-GL00000003555090"
+    },
+    "attributes": {},
+    "context": "Timothy-Ruhl-Premise-09-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Cheryl Washington"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Cory-Stephenson-MVA-9-03-2025-Bodily Injury (BI)-1789V463J"
+    },
+    "attributes": {},
+    "context": "Cory-Stephenson-MVA-9-03-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Anthony White"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-None-060018233"
+    },
+    "attributes": {},
+    "context": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kiosha Robinson"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jonah-Price-MVA-8-25-2025-Personal Injury Protection (PIP)-25-918731776"
+    },
+    "attributes": {},
+    "context": "Jonah-Price-MVA-8-25-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Summer Garrett"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Sean-May-MVA-8-19-2025-Personal Injury Protection (PIP)-1789H664T"
+    },
+    "attributes": {},
+    "context": "Sean-May-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Steve Campbell"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Brenda-Lang-MVA-09-03-2021-Personal Injury Protection (PIP)-1724J054B"
+    },
+    "attributes": {},
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Holly Highley"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Michael-Crader-MVA-5-19-2023-Bodily Injury (BI)-4863358"
+    },
+    "attributes": {},
+    "context": "Michael-Crader-MVA-5-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Monica Jones"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jaysha-Aponte-MVA-3-15-2025-Personal Injury Protection (PIP)-25-311813973"
+    },
+    "attributes": {},
+    "context": "Jaysha-Aponte-MVA-3-15-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Cole Barnes"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-AT0000003753979"
+    },
+    "attributes": {},
+    "context": "Malcom-Glass-Jones-MVA-10-2-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Courtny Wolfe"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Morgan-Freeman-MVA-12-31-2021-Bodily Injury (BI)-3100028790"
+    },
+    "attributes": {},
+    "context": "Morgan-Freeman-MVA-12-31-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Deborah Kitchen"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Bodily Injury (BI)-4791863"
+    },
+    "attributes": {},
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Megan Reed"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Shakeith-Simon-MVA-2-16-2025-Personal Injury Protection (PIP)-250151830"
+    },
+    "attributes": {},
+    "context": "Shakeith-Simon-MVA-2-16-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Emily Friedrich"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Malcom-Glass-Jones-MVA-10-2-2024-Personal Injury Protection (PIP)-3753979"
+    },
+    "attributes": {},
+    "context": "Malcom-Glass-Jones-MVA-10-2-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "State Farm PIP Team"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jae-Kale-Lewis-MVA-02-24-2025-Personal Injury Protection (PIP)-1780Z939M"
+    },
+    "attributes": {},
+    "context": "Jae-Kale-Lewis-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "State Farm PIP Team"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Shaylynn-Keeney-MVA-02-24-2025-Personal Injury Protection (PIP)-1780Z939M"
+    },
+    "attributes": {},
+    "context": "Shaylynn-Keeney-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brad Murray"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Lonnie-Stevens-MVA-2-14-2025-Personal Injury Protection (PIP)-17-Q610-2P9"
+    },
+    "attributes": {},
+    "context": "Lonnie-Stevens-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Greg Thielmeier"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "William-Tucker-Premise-11-23-2024-Bodily Injury (BI)-GC20241696797"
+    },
+    "attributes": {},
+    "context": "William-Tucker-Premise-11-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Terry Woodring"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Fina-Fatty-MVA-11-05-2024-Personal Injury Protection (PIP)-25-679103870"
+    },
+    "attributes": {},
+    "context": "Fina-Fatty-MVA-11-05-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "CW"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Chase-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024"
+    },
+    "attributes": {},
+    "context": "Chase-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "GI"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Shakeith-Simon-MVA-2-16-2025-Uninsured Motorist (UM)-250229255"
+    },
+    "attributes": {},
+    "context": "Shakeith-Simon-MVA-2-16-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Lisa Rivera"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Personal Injury Protection (PIP)-054658453-04"
+    },
+    "attributes": {},
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Joshua White"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Justin-Bullock-MVA-6-30-2025-Bodily Injury (BI)-25631251364"
+    },
+    "attributes": {},
+    "context": "Justin-Bullock-MVA-6-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Devon Clark"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Robin-Willis-Beck-Premise-09-21-2023-Bodily Injury (BI)-SF-USTT-26089723"
+    },
+    "attributes": {},
+    "context": "Robin-Willis-Beck-Premise-09-21-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Darria Thomas"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Personal Injury Protection (PIP)-250531476"
+    },
+    "attributes": {},
+    "context": "Faizon-Procter-Witcher-MVA-7-01-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Casey May"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Justin-Bullock-MVA-6-30-2025-Personal Injury Protection (PIP)-5117901"
+    },
+    "attributes": {},
+    "context": "Justin-Bullock-MVA-6-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Ryan Ricci"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Cynthia-Gibson-MVA-7-9-2025-Personal Injury Protection (PIP)-1787K940X"
+    },
+    "attributes": {},
+    "context": "Cynthia-Gibson-MVA-7-9-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Carina Smith"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Morgan-Freeman-MVA-12-31-2021-Medpay - Indiana PIP-187968220"
+    },
+    "attributes": {},
+    "context": "Morgan-Freeman-MVA-12-31-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "J. Clarke McCulloch"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Estate-of-Evangeline-Young-MVA-8-12-2023-Bodily Injury (BI)-305240079"
+    },
+    "attributes": {},
+    "context": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Robert Elliott"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Dewayne-Ward-MVA-8-29-2023-Personal Injury Protection (PIP)-054658453-07"
+    },
+    "attributes": {},
+    "context": "Dewayne-Ward-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Robert Elliott"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023-Personal Injury Protection (PIP)-054658453-03"
+    },
+    "attributes": {},
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Josalyn Van Leer"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "James-Kiper-MVA-12-5-2022-Personal Injury Protection (PIP)-IZX7996"
+    },
+    "attributes": {},
+    "context": "James-Kiper-MVA-12-5-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Michael Santos"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Personal Injury Protection (PIP)-7005284778-1-2"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Steve Campbell"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Shaylynn-Keeney-MVA-02-24-2025-Uninsured Motorist (UM)-1780Z939M"
+    },
+    "attributes": {},
+    "context": "Shaylynn-Keeney-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Hannah Snow"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Jaysha-Aponte-MVA-3-15-2025-Bodily Injury (BI)-250-068-9702"
+    },
+    "attributes": {},
+    "context": "Jaysha-Aponte-MVA-3-15-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kara Hoskins"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Jessica-Mahaney-MVA-03-09-2025-Uninsured Motorist (UM)-25-615241502"
+    },
+    "attributes": {},
+    "context": "Jessica-Mahaney-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Shawna Rice"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Bodily Injury (BI)-17-48L4-99K"
+    },
+    "attributes": {},
+    "context": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Ashley Mcneese"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jimmy-Ferguson-MVA-5-30-2024-Personal Injury Protection (PIP)-4979889"
+    },
+    "attributes": {},
+    "context": "Jimmy-Ferguson-MVA-5-30-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Amy Dunbar"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Trasandra-Miller-MVA-5-30-2025-Personal Injury Protection (PIP)-17-86Q372Z"
+    },
+    "attributes": {},
+    "context": "Trasandra-Miller-MVA-5-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kevin Ydoyaga"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Trasandra-Miller-MVA-5-30-2025-Bodily Injury (BI)-1785S576T"
+    },
+    "attributes": {},
+    "context": "Trasandra-Miller-MVA-5-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kimberle Pishke"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Daniel-W-Volk-MVA-09-24-2021-Under Insured Motorist (UIM)-47060829"
+    },
+    "attributes": {},
+    "context": "Daniel-W-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Bethany Pineda"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Daniel-W-Volk-MVA-09-24-2021-Personal Injury Protection (PIP)-47060829"
+    },
+    "attributes": {},
+    "context": "Daniel-W-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Benjamine Groce"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Charles-T-Johnson-MVA-4-18-2023-Bodily Injury (BI)-1748L638H"
+    },
+    "attributes": {},
+    "context": "Charles-T-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kayla Kinzel"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Daniel-W-Volk-MVA-09-24-2021-Bodily Injury (BI)-ZPA003356461"
+    },
+    "attributes": {},
+    "context": "Daniel-W-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Amy Cox"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Charles-T-Johnson-MVA-4-18-2023-Personal Injury Protection (PIP)-3002385272023"
+    },
+    "attributes": {},
+    "context": "Charles-T-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jim Johnson"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Jacob-Herrle-MVA-6-17-2025-Bodily Injury (BI)-733249"
+    },
+    "attributes": {},
+    "context": "Jacob-Herrle-MVA-6-17-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Gary Jones"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Cynthia-Gibson-MVA-7-9-2025-Uninsured Motorist (UM)-1787Z112D"
+    },
+    "attributes": {},
+    "context": "Cynthia-Gibson-MVA-7-9-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Heath Doran"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-2077817"
+    },
+    "attributes": {},
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jessica Fones"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Patrice-Harris-MVA-6-19-2025-Bodily Injury (BI)-1786S949G"
+    },
+    "attributes": {},
+    "context": "Patrice-Harris-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Leigh King"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Nicole-Tewes-MVA-7-5-2025-Personal Injury Protection (PIP)-A00006928311"
+    },
+    "attributes": {},
+    "context": "Nicole-Tewes-MVA-7-5-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Katie Mills"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jessica-Mahaney-MVA-03-09-2025-Personal Injury Protection (PIP)-25-615241502"
+    },
+    "attributes": {},
+    "context": "Jessica-Mahaney-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kara Hoskins"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Dustin-Meade-MVA-03-09-2025-Uninsured Motorist (UM)-25-615241502"
+    },
+    "attributes": {},
+    "context": "Dustin-Meade-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Guillermo Callejas"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Bryson-Brown-MVA-6-29-2025-Personal Injury Protection (PIP)-799220033"
+    },
+    "attributes": {},
+    "context": "Bryson-Brown-MVA-6-29-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Joseph Dedeyn"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Mark-Smith-Jr-MVA-5-31-2025-Personal Injury Protection (PIP)-1785Q936Q"
+    },
+    "attributes": {},
+    "context": "Mark-Smith-Jr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Carolynn Harris"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Bodily Injury (BI)-250531476"
+    },
+    "attributes": {},
+    "context": "Faizon-Procter-Witcher-MVA-7-01-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Colin Karsnitz"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Henrietta-Jenkins-MVA-5-20-2025-Bodily Injury (BI)-25-391686743"
+    },
+    "attributes": {},
+    "context": "Henrietta-Jenkins-MVA-5-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Taline Clestine"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Mark-Smith-Jr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803"
+    },
+    "attributes": {},
+    "context": "Mark-Smith-Jr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Taline Clestine"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Mark-Smith-Sr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803"
+    },
+    "attributes": {},
+    "context": "Mark-Smith-Sr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Melinda Tracy"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Lejzane-Miftari-MVA-6-18-2025-Personal Injury Protection (PIP)-250488368"
+    },
+    "attributes": {},
+    "context": "Lejzane-Miftari-MVA-6-18-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Danelle Lendsey"
+    },
+    "target": {
+      "entity_type": "UIMClaim",
+      "name": "Lejzane-Miftari-MVA-6-18-2025-Underinsured Motorist (UIM)-250488368"
+    },
+    "attributes": {},
+    "context": "Lejzane-Miftari-MVA-6-18-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brandon Igbo-Nwoke"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Personal Injury Protection (PIP)-2500262226"
+    },
+    "attributes": {},
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kim Francis"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Personal Injury Protection (PIP)-25-806916369"
+    },
+    "attributes": {},
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Martin Trujillo"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-2500262226"
+    },
+    "attributes": {},
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Steve Campbell"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Jae-Kale-Lewis-MVA-02-24-2025-Uninsured Motorist (UM)-1780Z939M"
+    },
+    "attributes": {},
+    "context": "Jae-Kale-Lewis-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Peter Longo"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Curtis-Lee-Justice-MVA-2-5-2023-Bodily Injury (BI)-23ATKY338083287"
+    },
+    "attributes": {},
+    "context": "Curtis-Lee-Justice-MVA-2-5-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Robert Elliott"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-054658453-02"
+    },
+    "attributes": {},
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jennifer Howard"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Elizabeth-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838"
+    },
+    "attributes": {},
+    "context": "Elizabeth-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jennifer Howard"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Jeremy-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838"
+    },
+    "attributes": {},
+    "context": "Jeremy-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "CW"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Elizabeth-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024"
+    },
+    "attributes": {},
+    "context": "Elizabeth-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Meredith Spencer"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Sir-Hinkle-MVA-6-23-2025-Bodily Injury (BI)-4A2506R0N0S0002"
+    },
+    "attributes": {},
+    "context": "Sir-Hinkle-MVA-6-23-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kim Francis"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-25-806916369"
+    },
+    "attributes": {},
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Robert Elliott"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-054658453-02"
+    },
+    "attributes": {},
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Christine Renner"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-224765245"
+    },
+    "attributes": {},
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Calandra Turner"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Samuel-Clites-MVA-4-23-2024-Bodily Injury (BI)-1766M491S"
+    },
+    "attributes": {},
+    "context": "Samuel-Clites-MVA-4-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "William Beaver"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "James-Sadler-MVA-4-07-2023-Bodily Injury (BI)-1748B202X"
+    },
+    "attributes": {},
+    "context": "James-Sadler-MVA-4-07-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Nichole Smith"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Sariya-Mason-DB-08-19-2022-Bodily Injury (BI)-4830025"
+    },
+    "attributes": {},
+    "context": "Sariya-Mason-DB-08-19-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Vivian Hall"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Jimmy-Ferguson-MVA-5-30-2024-Bodily Injury (BI)-VA20241535681"
+    },
+    "attributes": {},
+    "context": "Jimmy-Ferguson-MVA-5-30-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "J. Clarke McCulloch"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Brenda-Lang-MVA-09-03-2021-Bodily Injury (BI)-410220052"
+    },
+    "attributes": {},
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Thomas Blizzard"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Douglas-Livers-MVA-1-19-2023-Uninsured Motorist (UM)-700228547"
+    },
+    "attributes": {},
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Dennis Corley"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Qortez-Jordan-MVA-2-14-2025-Bodily Injury (BI)-VA20251695511."
+    },
+    "attributes": {},
+    "context": "Qortez-Jordan-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jessica Fones"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "James-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1786S949G"
+    },
+    "attributes": {},
+    "context": "James-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "PIPNPC A2"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Sir-Hinkle-MVA-6-23-2025-Personal Injury Protection (PIP)-17-86Q5-96W"
+    },
+    "attributes": {},
+    "context": "Sir-Hinkle-MVA-6-23-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Sarah Riggs"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Paxon-Woodford-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806"
+    },
+    "attributes": {},
+    "context": "Paxon-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Sarah Riggs"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Patrice-Harris-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806"
+    },
+    "attributes": {},
+    "context": "Patrice-Harris-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Sarah Riggs"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "James-Woodford-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806"
+    },
+    "attributes": {},
+    "context": "James-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brad Murray"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Stevie-Hawks-MVA-3-8-2024-Personal Injury Protection (PIP)-17-Q1275R5"
+    },
+    "attributes": {},
+    "context": "Stevie-Hawks-MVA-3-8-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "State Farm PIP Team"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Shannon-Colvin-MVA-10-1-2023-Personal Injury Protection (PIP)-1756Z294R"
+    },
+    "attributes": {},
+    "context": "Shannon-Colvin-MVA-10-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Sarah Mackay"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Fina-Fatty-MVA-11-05-2024-Bodily Injury (BI)-58373025"
+    },
+    "attributes": {},
+    "context": "Fina-Fatty-MVA-11-05-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Dennis Corley"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Lonnie-Stevens-MVA-2-14-2025-Bodily Injury (BI)-VA20251695455"
+    },
+    "attributes": {},
+    "context": "Lonnie-Stevens-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jordan Bahr"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Nayram-Adadevoh-MVA-7-13-2024-Personal Injury Protection (PIP)-633859-N"
+    },
+    "attributes": {},
+    "context": "Nayram-Adadevoh-MVA-7-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jennifer Howard"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Owen-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838"
+    },
+    "attributes": {},
+    "context": "Owen-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Tatisha \"Tish\" Booker"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Kimberly-Brasher-Premise-2-25-2023-Bodily Injury (BI)-C321835845-0001-01"
+    },
+    "attributes": {},
+    "context": "Kimberly-Brasher-Premise-2-25-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Amy Morris"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Greg-Neltner-MVA-4-1-2023-Bodily Injury (BI)-23-6275504"
+    },
+    "attributes": {},
+    "context": "Greg-Neltner-MVA-4-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Zachary Grizzle"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Under Insured Motorist (UIM)-23-4004861"
+    },
+    "attributes": {},
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Beth Freeman"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Personal Injury Protection (PIP)-617417-GM"
+    },
+    "attributes": {},
+    "context": "Juanita-Nicole-Downs-MVA-4-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brandi Chappell-Haggard"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Maryan-Kassim-MVA-08-06-2024-Bodily Injury (BI)-24-711062492"
+    },
+    "attributes": {},
+    "context": "Maryan-Kassim-MVA-08-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Abigail Jett"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Bodily Injury (BI)-1769H472C"
+    },
+    "attributes": {},
+    "context": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jordan Bahr"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Abby-Sitgraves-MVA-7-13-2024-Personal Injury Protection (PIP)-633859-N"
+    },
+    "attributes": {},
+    "context": "Abby-Sitgraves-MVA-7-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Ashley Becerra"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Bodily Injury (BI)-AP92071"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "George Stewart"
+    },
+    "target": {
+      "entity_type": "WCClaim",
+      "name": "Shannon-Lankswert-WC-02-07-2025-Workers' Compensation (WC)-WC80D-H07503"
+    },
+    "attributes": {},
+    "context": "Shannon-Lankswert-WC-02-07-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Emily Pernice"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Owen-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024"
+    },
+    "attributes": {},
+    "context": "Owen-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Wendy Gavinski"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "James-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1009056098"
+    },
+    "attributes": {},
+    "context": "James-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Aaron Lovato"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-1455R002D"
+    },
+    "attributes": {},
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Aaron Lovato"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Dewayne-Ward-MVA-8-29-2023-Bodily Injury (BI)-1455R002D"
+    },
+    "attributes": {},
+    "context": "Dewayne-Ward-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jessica Fones"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Paxon-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1786S949G"
+    },
+    "attributes": {},
+    "context": "Paxon-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Emily Pernice"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jeremy-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024"
+    },
+    "attributes": {},
+    "context": "Jeremy-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Patrice Gaines"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Destiny-Adkins-MVA-04-16-2021-Bodily Injury (BI)-625854435"
+    },
+    "attributes": {},
+    "context": "Destiny-Adkins-MVA-04-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Wendy Gavinski"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Patrice-Harris-MVA-6-19-2025-Bodily Injury (BI)-1009056098"
+    },
+    "attributes": {},
+    "context": "Patrice-Harris-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Wendy Gavinski"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Paxon-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1009056098"
+    },
+    "attributes": {},
+    "context": "Paxon-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Myderia Pittman"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Jaysha-Aponte-MVA-3-15-2025-Bodily Injury (BI)-8838008180000001"
+    },
+    "attributes": {},
+    "context": "Jaysha-Aponte-MVA-3-15-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kip Gunnells"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Roxanne-Simpson-MVA-9-27-2023-Bodily Injury (BI)-1756T368R"
+    },
+    "attributes": {},
+    "context": "Roxanne-Simpson-MVA-9-27-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kari Hand"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Shakeith-Simon-MVA-2-16-2025-Bodily Injury (BI)-COH-0004148"
+    },
+    "attributes": {},
+    "context": "Shakeith-Simon-MVA-2-16-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Molly McAndrews"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Qortez-Jordan-MVA-2-14-2025-Personal Injury Protection (PIP)-17-Q610-2P9"
+    },
+    "attributes": {},
+    "context": "Qortez-Jordan-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jennifer Howard"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Chase-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838"
+    },
+    "attributes": {},
+    "context": "Chase-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Angela Casey"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Douglas-Livers-MVA-1-19-2023-Bodily Injury (BI)-QMJF78KY"
+    },
+    "attributes": {},
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Debra Kelso"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Shawna-Broyles-MVA-08-26-2022-Bodily Injury (BI)-MD4587"
+    },
+    "attributes": {},
+    "context": "Shawna-Broyles-MVA-08-26-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Lauren Smith"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Abigail-Whaley-MVA-10-24-2024-Personal Injury Protection (PIP)-58147807"
+    },
+    "attributes": {},
+    "context": "Abigail-Whaley-MVA-10-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Amanda Clemons"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Frances-Whitis-WC-MVA-9-6-2024-Personal Injury Protection (PIP)-24-727042794"
+    },
+    "attributes": {},
+    "context": "Frances-Whitis-WC-MVA-9-6-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Angela Milliner"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Davis-Robinson-SF-05-02-2025-Bodily Injury (BI)-25 -109767"
+    },
+    "attributes": {},
+    "context": "Davis-Robinson-SF-05-02-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Dana Ballinger"
+    },
+    "target": {
+      "entity_type": "WCClaim",
+      "name": "Michael-Johnston-WC-05-03-2023-Workers' Compensation (WC)-841603"
+    },
+    "attributes": {},
+    "context": "Michael-Johnston-WC-05-03-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Amy Morris"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-243138082"
+    },
+    "attributes": {},
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Lauren Baker"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Alma-Cristobal-MVA-2-15-2024-Personal Injury Protection (PIP)-4943385"
+    },
+    "attributes": {},
+    "context": "Alma-Cristobal-MVA-2-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brenna Rine"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Alma-Cristobal-MVA-2-15-2024-Bodily Injury (BI)-2024346878"
+    },
+    "attributes": {},
+    "context": "Alma-Cristobal-MVA-2-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Shellie Cooper"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Personal Injury Protection (PIP)-4943051"
+    },
+    "attributes": {},
+    "context": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Doris Kenyon"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "James-Sadler-MVA-4-07-2023-Personal Injury Protection (PIP)-1747X443M"
+    },
+    "attributes": {},
+    "context": "James-Sadler-MVA-4-07-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Keri Hall"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Maryan-Kassim-MVA-08-06-2024-Personal Injury Protection (PIP)-24-711062492"
+    },
+    "attributes": {},
+    "context": "Maryan-Kassim-MVA-08-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "State Farm PIP Team"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Personal Injury Protection (PIP)-1769H472C"
+    },
+    "attributes": {},
+    "context": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "CW"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Owen-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024"
+    },
+    "attributes": {},
+    "context": "Owen-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Dana Cohen"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Dana-Jackson-MVA-1-24-2024-Personal Injury Protection (PIP)-1007187244"
+    },
+    "attributes": {},
+    "context": "Dana-Jackson-MVA-1-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Unknown"
+    },
+    "target": {
+      "entity_type": "UIMClaim",
+      "name": "Shannon-Colvin-MVA-10-1-2023-Underinsured Motorist (UIM)-Unknown"
+    },
+    "attributes": {},
+    "context": "Shannon-Colvin-MVA-10-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Ben Taylor"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Shannon-Colvin-MVA-10-1-2023-Bodily Injury (BI)-4908174"
+    },
+    "attributes": {},
+    "context": "Shannon-Colvin-MVA-10-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brittany Carr"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Douglas-Livers-MVA-1-19-2023-Personal Injury Protection (PIP)-700228547"
+    },
+    "attributes": {},
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Lyn Zangmeister"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Wayne-Weber-MVA-01-01-2022-Bodily Injury (BI)-1429C180C"
+    },
+    "attributes": {},
+    "context": "Wayne-Weber-MVA-01-01-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Ashley Mcneese"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Wayne-Weber-MVA-01-01-2022-Personal Injury Protection (PIP)-4671023"
+    },
+    "attributes": {},
+    "context": "Wayne-Weber-MVA-01-01-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Frank Smith"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Michael-Crader-MVA-5-19-2023-Under Insured Motorist (UIM)-A00005338855"
+    },
+    "attributes": {},
+    "context": "Michael-Crader-MVA-5-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Joshua White"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "The-Otts-MVA-8-06-2025-Bodily Injury (BI)-25-934695754"
+    },
+    "attributes": {},
+    "context": "The-Otts-MVA-8-06-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Tarin Kokoska"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Michael-Crader-MVA-5-19-2023-Personal Injury Protection (PIP)-12301632"
+    },
+    "attributes": {},
+    "context": "Michael-Crader-MVA-5-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Amy Hawks"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Tyler-Marzec-MVA-2-26-2024-Occupational Accident Insurance-36885"
+    },
+    "attributes": {},
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kristen Akande"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Tyler-Marzec-MVA-2-26-2024-Personal Injury Protection (PIP)-01-007281597"
+    },
+    "attributes": {},
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Scott Frayer"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Brooklyn-Ballard-MVA-02-28-2024-Bodily Injury (BI)-OIC256504"
+    },
+    "attributes": {},
+    "context": "Brooklyn-Ballard-MVA-02-28-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Thomas Nie"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Brooklyn-Ballard-MVA-02-28-2024-Personal Injury Protection (PIP)-17-63X2-00X"
+    },
+    "attributes": {},
+    "context": "Brooklyn-Ballard-MVA-02-28-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Sharika Moses"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Dana-Jackson-MVA-1-24-2024-Bodily Injury (BI)-1762X766D"
+    },
+    "attributes": {},
+    "context": "Dana-Jackson-MVA-1-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Nachand Downs"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Nicole-Tewes-MVA-7-5-2025-Bodily Injury (BI)-25-407673172"
+    },
+    "attributes": {},
+    "context": "Nicole-Tewes-MVA-7-5-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Courtney Heinnickel"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Cynthia-Gibson-MVA-7-9-2025-Bodily Injury (BI)-BTQW3MKY"
+    },
+    "attributes": {},
+    "context": "Cynthia-Gibson-MVA-7-9-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Andrew Shoultz"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-681812020000004"
+    },
+    "attributes": {},
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Emily Pernice"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Elizabeth-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024"
+    },
+    "attributes": {},
+    "context": "Elizabeth-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Randy Carney"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Brenda-Lang-MVA-09-03-2021-Under Insured Motorist (UIM)"
+    },
+    "attributes": {},
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Stephanie Thomas"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Brooklyn-Ballard-MVA-02-28-2024-Uninsured Motorist (UM)-17-63X2-00X"
+    },
+    "attributes": {},
+    "context": "Brooklyn-Ballard-MVA-02-28-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Patrice Gaines"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Bodily Injury (BI)-625854435"
+    },
+    "attributes": {},
+    "context": "Juanita-Nicole-Downs-MVA-4-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Aaron Lovato"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-1455R002D"
+    },
+    "attributes": {},
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Aaron Ross"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Henrietta-Jenkins-MVA-5-20-2025-Personal Injury Protection (PIP)-HH62DDIN"
+    },
+    "attributes": {},
+    "context": "Henrietta-Jenkins-MVA-5-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Katie Mills"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Dustin-Meade-MVA-03-09-2025-Personal Injury Protection (PIP)-25-615241502"
+    },
+    "attributes": {},
+    "context": "Dustin-Meade-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Pat Hargadon"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-8055562"
+    },
+    "attributes": {},
+    "context": "Malcom-Glass-Jones-MVA-10-2-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Laura Zahringer"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Abigail-Whaley-MVA-10-24-2024-Bodily Injury (BI)-1008251706"
+    },
+    "attributes": {},
+    "context": "Abigail-Whaley-MVA-10-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Lorie Miller"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Morgan-Freeman-MVA-12-31-2021-Personal Injury Protection (PIP)-4900253"
+    },
+    "attributes": {},
+    "context": "Morgan-Freeman-MVA-12-31-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Michael Santos"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Under Insured Motorist (UIM)"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Donald Thomas"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Robin-Wilder-Hamilton-MVA-6-15-2023-Personal Injury Protection (PIP)-300-0377210-2023"
+    },
+    "attributes": {},
+    "context": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "State Farm PIP Team"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Greg-Neltner-MVA-4-1-2023-Personal Injury Protection (PIP)-1747Q474T"
+    },
+    "attributes": {},
+    "context": "Greg-Neltner-MVA-4-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jonathan O'neal"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Personal Injury Protection (PIP)-a00 004-93-2728"
+    },
+    "attributes": {},
+    "context": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Torian Leach"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Curtis-Lee-Justice-MVA-2-5-2023-Personal Injury Protection (PIP)-755905"
+    },
+    "attributes": {},
+    "context": "Curtis-Lee-Justice-MVA-2-5-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Alyssa Howland"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Bodily Injury (BI)-23-4004861"
+    },
+    "attributes": {},
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Terry Woodring"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Personal Injury Protection (PIP)-23-4004861"
+    },
+    "attributes": {},
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jason Osboe"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Debra-Marshall-MVA-12-3-2022-Bodily Injury (BI)-4778044"
+    },
+    "attributes": {},
+    "context": "Debra-Marshall-MVA-12-3-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Steve Dant"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Shawna-Broyles-MVA-08-26-2022-Uninsured Motorist (UM)-22-7969726"
+    },
+    "attributes": {},
+    "context": "Shawna-Broyles-MVA-08-26-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Carla Kiggins"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Shawna-Broyles-MVA-08-26-2022-Personal Injury Protection (PIP)-22-7969726"
+    },
+    "attributes": {},
+    "context": "Shawna-Broyles-MVA-08-26-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Melissa Drury"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Personal Injury Protection (PIP)-23-7942931"
+    },
+    "attributes": {},
+    "context": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brittany Young"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "The-Otts-MVA-8-06-2025-Personal Injury Protection (PIP)-250640481"
+    },
+    "attributes": {},
+    "context": "The-Otts-MVA-8-06-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Chevan Douglas"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Personal Injury Protection (PIP)-1123215"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Michael Santos"
+    },
+    "target": {
+      "entity_type": "UMClaim",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Uninsured Motorist (UM)"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Tonya Kearney"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Renean-Fant-MVA-10-27-2025-Personal Injury Protection (PIP)-799770GQ"
+    },
+    "attributes": {},
+    "context": "Renean-Fant-MVA-10-27-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Tonya Kearney"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Renean-Fant-MVA-10-27-2025-Bodily Injury (BI)-799770GQ"
+    },
+    "attributes": {},
+    "context": "Renean-Fant-MVA-10-27-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kelly Sisco"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Daquan-Locke-MVA-6-11-2024-Bodily Injury (BI)-AT3696194"
+    },
+    "attributes": {},
+    "context": "Daquan-Locke-MVA-6-11-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Meela Dixon"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Lindsey-Dunn-MVA-9-24-2025-Personal Injury Protection (PIP)-1791D291D"
+    },
+    "attributes": {},
+    "context": "Lindsey-Dunn-MVA-9-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Valerie Marlatt"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Lindsey-Dunn-MVA-9-24-2025-Bodily Injury (BI)-2TVV43KY"
+    },
+    "attributes": {},
+    "context": "Lindsey-Dunn-MVA-9-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Yvonne Copas"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Carmelita-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793"
+    },
+    "attributes": {},
+    "context": "Carmelita-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Katrina Mishoe"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Carmelita-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K"
+    },
+    "attributes": {},
+    "context": "Carmelita-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Yvonne Copas"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Julian-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793"
+    },
+    "attributes": {},
+    "context": "Julian-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Katrina Mishoe"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Julian-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K"
+    },
+    "attributes": {},
+    "context": "Julian-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Yvonne Copas"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jasmine-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793"
+    },
+    "attributes": {},
+    "context": "Jasmine-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Katrina Mishoe"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Jasmine-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K"
+    },
+    "attributes": {},
+    "context": "Jasmine-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Robert Alexander"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Dakota-McCord-MVA-10-12-2025-Bodily Injury (BI)-25-423678921"
+    },
+    "attributes": {},
+    "context": "Dakota-McCord-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Jeremy Mathis"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Dakota-McCord-MVA-10-12-2025-Personal Injury Protection (PIP)-25-743079174"
+    },
+    "attributes": {},
+    "context": "Dakota-McCord-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Daniel Castillon"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Taylor-Thompson-MVA-12-06-2024-Medpay - Indiana PIP-038352935-800"
+    },
+    "attributes": {},
+    "context": "Taylor-Thompson-MVA-12-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kristen Carlson"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Taylor-Thompson-MVA-12-06-2024-Bodily Injury (BI)-01-008-378108"
+    },
+    "attributes": {},
+    "context": "Taylor-Thompson-MVA-12-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kelly Sisco"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Daquan-Locke-MVA-6-11-2024-Personal Injury Protection (PIP)-AT3696194"
+    },
+    "attributes": {},
+    "context": "Daquan-Locke-MVA-6-11-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Valerie Marlatt"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Tonya-Dunn-MVA-9-24-2025-Bodily Injury (BI)-2TVV43KY"
+    },
+    "attributes": {},
+    "context": "Tonya-Dunn-MVA-9-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Meela Dixon"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Tonya-Dunn-MVA-9-24-2025-Personal Injury Protection (PIP)-1791D291D"
+    },
+    "attributes": {},
+    "context": "Tonya-Dunn-MVA-9-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kimberlyn Holden"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Deanna-Jones-MVA-7-30-2025-Bodily Injury (BI)-25ATKY446076413"
+    },
+    "attributes": {},
+    "context": "Deanna-Jones-MVA-7-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Andrea Spickler"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Torrey-Green-MVA-9-3-2025-Personal Injury Protection (PIP)-23016864"
+    },
+    "attributes": {},
+    "context": "Torrey-Green-MVA-9-3-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Dominique McCraney"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Sean-May-MVA-8-19-2025-Bodily Injury (BI)-25F68M784958"
+    },
+    "attributes": {},
+    "context": "Sean-May-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Cierra Maniscalco"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Cory-Stephenson-MVA-9-3-2025-Personal Injury Protection (PIP)-23016864"
+    },
+    "attributes": {},
+    "context": "Cory-Stephenson-MVA-9-3-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Cherrel Washington"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Cory-Stephenson-MVA-9-3-2025-Bodily Injury (BI)-1789V463J"
+    },
+    "attributes": {},
+    "context": "Cory-Stephenson-MVA-9-3-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brandi Chappell-Haggard"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Leanora-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337"
+    },
+    "attributes": {},
+    "context": "Leanora-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Walter Kenny"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337"
+    },
+    "attributes": {},
+    "context": "Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Blake Pierce"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Jordan-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-TJ6L8DKY"
+    },
+    "attributes": {},
+    "context": "Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Josh White"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Joseph-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754"
+    },
+    "attributes": {},
+    "context": "Joseph-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Josh White"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Jensen-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754"
+    },
+    "attributes": {},
+    "context": "Jensen-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Josh White"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Maia-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754"
+    },
+    "attributes": {},
+    "context": "Maia-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Brittany Young"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Joseph-Ott-MVA-8-6-2025-Personal Injury Protection (PIP)-250640481"
+    },
+    "attributes": {},
+    "context": "Joseph-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Sharon Wills"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Timothy-Ruhl-A-B-9-14-2023-Bodily Injury (BI)-GL00000003555090"
+    },
+    "attributes": {},
+    "context": "Timothy-Ruhl-A-B-9-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Amy Cox"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Charles-T.-Johnson-MVA-4-18-2023-Personal Injury Protection (PIP)-3002385272023"
+    },
+    "attributes": {},
+    "context": "Charles-T.-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Benjamine Groce"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Charles-T.-Johnson-MVA-4-18-2023-Bodily Injury (BI)-1748L638H"
+    },
+    "attributes": {},
+    "context": "Charles-T.-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kimberle Pishke"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Daniel-W.-Volk-MVA-09-24-2021-Under Insured Motorist (UIM)-47060829"
+    },
+    "attributes": {},
+    "context": "Daniel-W.-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Kayla Kinzel"
+    },
+    "target": {
+      "entity_type": "BIClaim",
+      "name": "Daniel-W.-Volk-MVA-09-24-2021-Bodily Injury (BI)-ZPA003356461"
+    },
+    "attributes": {},
+    "context": "Daniel-W.-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HandlesInsuranceClaim",
+    "source": {
+      "entity_type": "Adjuster",
+      "name": "Bethany Pineda"
+    },
+    "target": {
+      "entity_type": "PIPClaim",
+      "name": "Daniel-W.-Volk-MVA-09-24-2021-Personal Injury Protection (PIP)-47060829"
+    },
+    "attributes": {},
+    "context": "Daniel-W.-Volk-MVA-09-24-2021"
+  }
+]

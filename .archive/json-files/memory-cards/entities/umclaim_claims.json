@@ -1,0 +1,226 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Brooklyn-Ballard-MVA-02-28-2024-Uninsured Motorist (UM)-17-63X2-00X",
+    "attributes": {
+      "claim_number": "17-63X2-00X",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Stephanie Thomas",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Brooklyn-Ballard-MVA-02-28-2024"
+    },
+    "source_id": "102",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Cynthia-Gibson-MVA-7-9-2025-Uninsured Motorist (UM)-1787Z112D",
+    "attributes": {
+      "claim_number": "1787Z112D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Gary Jones",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Cynthia-Gibson-MVA-7-9-2025"
+    },
+    "source_id": "14",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Douglas-Livers-MVA-1-19-2023-Uninsured Motorist (UM)-700228547",
+    "attributes": {
+      "claim_number": "700228547",
+      "insurer_name": "Allstate Insurance",
+      "adjuster_name": "Thomas Blizzard",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 12500,
+      "date_demand_sent": "2023-11-28",
+      "is_active_negotiation": false,
+      "project_name": "Douglas-Livers-MVA-1-19-2023"
+    },
+    "source_id": "133",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Dustin-Meade-MVA-03-09-2025-Uninsured Motorist (UM)-25-615241502",
+    "attributes": {
+      "claim_number": "25-615241502",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Kara Hoskins",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Dustin-Meade-MVA-03-09-2025"
+    },
+    "source_id": "61",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Jae-Kale-Lewis-MVA-02-24-2025-Uninsured Motorist (UM)-1780Z939M",
+    "attributes": {
+      "claim_number": "1780Z939M",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Steve Campbell",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "current_offer": 2500,
+      "settlement_amount": 5000,
+      "settlement_date": "2025-07-28",
+      "date_demand_sent": "2025-06-30",
+      "is_active_negotiation": false,
+      "project_name": "Jae-Kale-Lewis-MVA-02-24-2025"
+    },
+    "source_id": "66",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "James-Kiper-MVA-12-5-2022-Uninsured Motorist (UM)-IZX7996",
+    "attributes": {
+      "claim_number": "IZX7996",
+      "insurer_name": "Travelers Insurance",
+      "adjuster_name": "Emma Schumaker",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 100000,
+      "current_offer": 500,
+      "date_demand_sent": "2023-04-26",
+      "is_active_negotiation": true,
+      "project_name": "James-Kiper-MVA-12-5-2022"
+    },
+    "source_id": "195",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "James-Woodford-MVA-6-19-2025-Uninsured Motorist (UM)-8065806",
+    "attributes": {
+      "claim_number": "8065806",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "James-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "10",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Jessica-Mahaney-MVA-03-09-2025-Uninsured Motorist (UM)-25-615241502",
+    "attributes": {
+      "claim_number": "25-615241502",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Kara Hoskins",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jessica-Mahaney-MVA-03-09-2025"
+    },
+    "source_id": "59",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Muhammad-Alif-MVA-12-09-2022-Uninsured Motorist (UM)",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "Farmers Insurance",
+      "adjuster_name": "Michael Santos",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Muhammad-Alif-MVA-12-09-2022"
+    },
+    "source_id": "185",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Patrice-Harris-MVA-6-19-2025-Uninsured Motorist (UM)-8065806",
+    "attributes": {
+      "claim_number": "8065806",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Patrice-Harris-MVA-6-19-2025"
+    },
+    "source_id": "11",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Paxon-Woodford-MVA-6-19-2025-Uninsured Motorist (UM)-8065806",
+    "attributes": {
+      "claim_number": "8065806",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Paxon-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "9",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Shakeith-Simon-MVA-2-16-2025-Uninsured Motorist (UM)-250229255",
+    "attributes": {
+      "claim_number": "250229255",
+      "insurer_name": "National General",
+      "adjuster_name": "GI",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 25000,
+      "date_demand_sent": "2025-07-17",
+      "is_active_negotiation": false,
+      "project_name": "Shakeith-Simon-MVA-2-16-2025"
+    },
+    "source_id": "57",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Shawna-Broyles-MVA-08-26-2022-Uninsured Motorist (UM)-22-7969726",
+    "attributes": {
+      "claim_number": "22-7969726",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Steve Dant",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Shawna-Broyles-MVA-08-26-2022"
+    },
+    "source_id": "197",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UMClaim",
+    "name": "Shaylynn-Keeney-MVA-02-24-2025-Uninsured Motorist (UM)-1780Z939M",
+    "attributes": {
+      "claim_number": "1780Z939M",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Steve Campbell",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 25000,
+      "date_demand_sent": "2025-07-22",
+      "is_active_negotiation": false,
+      "project_name": "Shaylynn-Keeney-MVA-02-24-2025"
+    },
+    "source_id": "65",
+    "source_file": "insurance.json"
+  }
+]

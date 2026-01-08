@@ -1,0 +1,412 @@
+{
+  "case_name": "Torrey-Green-MVA-9-03-2025",
+  "total_episodes": 20,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Torrey-Green-MVA-9-03-2025\nClient: Torrey Green\n\nCase strategy development and settlement planning.",
+      "natural_language": "Torrey Green is the client for the case Torrey-Green-MVA-9-03-2025, and the engagement centers on case strategy development and settlement planning.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client for the case; focus of strategy and settlement planning"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Torrey-Green-MVA-9-03-2025\nClient: Torrey Green\n\nMedical evaluation and insurance communication coordination.",
+      "natural_language": "Case Torrey-Green-MVA-9-03-2025 involves client Torrey Green in relation to a motor vehicle accident.\n\nThe engagement focuses on medical evaluation and coordination of insurance communications.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "provider involved in medical evaluation"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "provider involved in medical evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Torrey-Green-MVA-9-03-2025\nClient: Torrey Green\n\nRecent accident case management and initial assessment.",
+      "natural_language": "Torrey Green is the client in case Torrey-Green-MVA-9-03-2025. This note documents the recent accident case management and the initial assessment conducted for the matter.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "listed medical provider for the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "listed medical provider for the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Torrey-Green-MVA-9-03-2025\nClient: Torrey Green\n\nMedical evaluation and insurance communication coordination.",
+      "natural_language": "Case Torrey-Green-MVA-9-03-2025 involves client Torrey Green. The engagement centers on a medical evaluation and coordination of insurance communications related to a motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client involved in the motor vehicle accident and subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "chiropractic provider involved in medical evaluation/coordination"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "hospital involved in medical evaluation/coordination"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Torrey-Green-MVA-9-03-2025\nClient: Torrey Green\n\nInitial client consultation and case assessment.",
+      "natural_language": "Initial client contact on September 3, 2025 with Torrey Green regarding a motor vehicle accident, initiating the case Torrey-Green-MVA-9-03-2025. The entry records an initial client consultation and case assessment for Torrey Green.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "subject of initial contact / client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Torrey-Green-MVA-9-03-2025\nClient: Torrey Green\n\nSeptember 3, 2025 motor vehicle accident case management.",
+      "natural_language": "Torrey-Green-MVA-9-03-2025 is a case involving client Torrey Green.\n\nOn September 3, 2025, motor vehicle accident case management was conducted for Torrey Green in this matter.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client of the motor vehicle accident case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Torrey-Green-MVA-9-03-2025\nClient: Torrey Green\n\nCLIENT CONTACT\nDetails: Torrey Green\nPh: 502*-965-6091\nDOB 01/05/1998\nSSN 401-53-5385\n4304 Pruitt Ct\nLouisville, KY 40218\nDOA: 9/3/2025\nAnother vehicle made a turn in front of them at an intersection causing the collision\nNewburg\nEMS to UofL Hospital\nCompanion to Cory Stephenson\nPelvic injury, neck, headaches, lower back and left leg.\nHealth Insurance = None\nTorreygreen284@yahoo.com\nPerson Making Contact: Justin\nDate & Time: September 05 2025",
+      "natural_language": "Initial client contact on September 5, 2025 with Justin regarding a motor vehicle accident involving Torrey Green. The client is Torrey Green, born January 5, 1998, who resides at 4304 Pruitt Court, Louisville, KY 40218. The Social Security Number is redacted for privacy. The phone on file is partially redacted and the email on file is torreygreen284@yahoo.com. The date of the accident is September 3, 2025, and the case reference is Torrey-Green-MVA-9-03-2025.\n\nAccording to the record, the collision occurred in the Newburg area when another vehicle turned in front of Torrey Green\u2019s vehicle at an intersection, resulting in the crash. EMS transported Green to UofL Hospital. Green was the companion of Cory Stephenson at the time. Injuries reported include a pelvic injury, neck injuries, headaches, as well as injuries to the lower back and left leg. Health insurance status is listed as none. The client\u2019s date of accident is September 3, 2025, and the case notes indicate the client was contacted on September 5, 2025.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "primary client / subject of episode"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "transported to / treated at"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-09-09",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\nCOMPANION OF CORY STEPHENSON WHO IS LISTED AT FAULT AND WAS NOT A NAMED DRIVER ON RENTAL VEHICLE.",
+      "natural_language": "Initial client contact on September 3, 2025 with Torrey Green regarding a motor vehicle accident.\n\nTorrey Green is the companion of Cory Stephenson, who is listed at fault and was not a named driver on rental vehicle.",
+      "valid_at": "2025-09-09T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Cory Stephenson",
+            "relevance": "listed as at-fault driver; not a named driver on rental vehicle"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-18",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__New Insurance Note:__ 9/18 updated PIP adj info\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Elco Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "The case Torrey-Green-MVA-9-3-2025 involves client Torrey Green following a motor vehicle accident. On September 18, 2025, a new insurance note was added documenting updated PIP adjustment information. The note specifies Personal Injury Protection (PIP) coverage through Elco Insurance and was written by Justin Chumbley. The entry is categorized under '#Inotes'.",
+      "valid_at": "2025-09-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client involved"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Elco Insurance",
+            "relevance": "insurer providing PIP coverage"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim (Elco Insurance)",
+            "relevance": "PIP claim discussed / updated PIP adjustment information"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Justin Chumbley",
+            "relevance": "author of insurance note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-09-24",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=20a81174-998a-426a-b72e-ca696faffbb4.pdf\nSigned: 2025-09-24 18:23:47\nAll signers: Torrey Green(torreygreen284@yahoo.com (502) 965-6091)\nSender: Justin Chumbley",
+      "natural_language": "The case Torrey-Green-MVA-9-3-2025 involves client Torrey Green. A VineSign intake document has been completed for this case. The document is named intake, and the signed document URL is https://app.vinesign.com/Jobs/Pdf?pdfKey=20a81174-998a-426a-b72e-ca696faffbb4.pdf. The signing occurred on 2025-09-24 18:23:47.\n\nAll signers: Torrey Green (torreygreen284@yahoo.com, (502) 965-6091). Sender: Justin Chumbley.",
+      "valid_at": "2025-09-24T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "case client and signer of the intake document"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "VineSign",
+            "relevance": "platform used to complete/sign the intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-24",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, Moe has apparently threatened him bc he no longers wants to treat. Explained i would request his records/bills and move forward./ \n__Person Making Contact:__ Justin\n__Date & Time__: September 24 2025",
+      "natural_language": "Initial client contact on September 24, 2025, in the Torrey-Green-MVA-9-3-2025 case. Justin spoke with Torrey Green, the client, who reported that Moe has apparently threatened him because he no longer wants to treat. Justin explained that he would request the client's records and bills and move forward.",
+      "valid_at": "2025-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-24",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__CLIENT CONTACT__\n__Details:__ Called to say he is wrapping up treatment. \n__Person Making Contact:__ Justin\n__Date & Time__: September 24 2025",
+      "natural_language": "Case Torrey-Green-MVA-9-3-2025 involves Torrey Green. The initial client contact occurred on September 24, 2025, with Torrey Green regarding a motor vehicle accident. Justin, the person making contact, called to say Torrey Green is wrapping up treatment.",
+      "valid_at": "2025-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client; initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-06",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__CLIENT CONTACT__\n__Details:__ updated client, confirmed he has completed treatment with Starlite \n__Person Making Contact:__ Justin\n__Date & Time__: October 06 2025",
+      "natural_language": "Case Torrey-Green-MVA-9-3-2025 involves client Torrey Green. The initial client contact occurred on October 6, 2025, and was conducted by Justin. During this contact, Justin updated the client\u2019s status and confirmed that Torrey Green has completed treatment with Starlite.",
+      "valid_at": "2025-10-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client/subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite",
+            "relevance": "treatment provider (treatment completed)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-06",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\nA missed call for aaron whaley was logged at 2025-10-06 17:00:36.138000+00:00 . #missedcall\n\nCaller Info: 5029656091 \n\nCaller ID: 502-965-6091 \n\nCaller Name: Torrey Green \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "In the Torrey-Green-MVA-9-3-2025 case for client Torrey Green, a missed call for Aaron Whaley was logged on 2025-10-06 at 17:00:36.138000+00:00 (UTC). The entry is tagged with #missedcall.\n\nCaller information shows the caller name as Torrey Green, with the phone number 502-965-6091 and caller ID 502-965-6091. No email address was provided.\n\nThere is a link to the Filevine contact: [filevine-link].\n\nVoicemail transcription: not provided.",
+      "valid_at": "2025-10-06T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-06",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\nA missed call for aaron whaley was logged at 2025-10-06 16:40:16.505000+00:00 . #missedcall\n\nCaller Info: 5029656091 \n\nCaller ID: 502-965-6091 \n\nCaller Name: Torrey Green \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Torrey-Green-MVA-9-3-2025. Client: Torrey Green.\n\nOn 2025-10-06 at 16:40:16.505000+00:00, a missed call for Aaron Whaley was logged and tagged #missedcall. The caller information lists the phone number 5029656091, with a caller ID of 502-965-6091, and the caller name Torrey Green. No caller email was provided. A Filevine contact link is available at [filevine-link]. Voicemail transcription is not provided.",
+      "valid_at": "2025-10-06T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "caller / subject of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-13",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__CLIENT CONTACT__\n__Details:__ updated client \n__Person Making Contact:__ Justin\n__Date & Time__: October 13 2025",
+      "natural_language": "Initial client contact on October 13, 2025, regarding Torrey Green's motor vehicle accident case (Torrey-Green-MVA-9-3-2025). The contact was made by Justin.\n\nThe client is Torrey Green, and the notes indicate that the client was updated.",
+      "valid_at": "2025-10-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-22",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__CLIENT CONTACT__\n__Details:__ client called with updated number. added to system \n__Person Making Contact:__ Justin\n__Date & Time__: October 22 2025",
+      "natural_language": "Initial client contact on October 22, 2025 with Torrey Green regarding a motor vehicle accident for case Torrey-Green-MVA-9-3-2025. The client called with an updated phone number and was added to the system. The contact was made by Justin.",
+      "valid_at": "2025-10-22T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client contacted and added to system"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-29",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__CLIENT CONTACT__\n__Details:__ Updated client. \n__Person Making Contact:__ Justin\n__Date & Time__: October 29 2025",
+      "natural_language": "Case Torrey-Green-MVA-9-3-2025 involves client Torrey Green. Under the client-contact section, the details indicate that the client was updated. The contact was made by Justin on October 29 2025.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client updated; contact made"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-06",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__CLIENT CONTACT__\n__Details:__ client called with a new number. added to file \n__Person Making Contact:__ Justin\n__Date & Time__: November 06 2025",
+      "natural_language": "Initial client contact on November 6, 2025, regarding the motor vehicle accident case Torrey-Green-MVA-9-3-2025, with client Torrey Green. The client called with a new number, and that number was added to the file. The contact was made by Justin.",
+      "valid_at": "2025-11-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "client who called / subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-12",
+      "original_body": "Case: Torrey-Green-MVA-9-3-2025\nClient: Torrey Green\n\n__CLIENT CONTACT__\n__Details:__ client updated. \n__Person Making Contact:__ Justin\n__Date & Time__: November 12 2025",
+      "natural_language": "Case Torrey-Green-MVA-9-3-2025 involves the client Torrey Green. On November 12, 2025, Justin made contact with the client, and the records indicate that the client was updated during this contact.",
+      "valid_at": "2025-11-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Torrey Green",
+            "relevance": "subject of contact / client updated"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,482 @@
+{
+  "case_name": "Jonah-Price-MVA-8-25-2025",
+  "total_episodes": 20,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Mobilitas Insurance Company"
+      },
+      {
+        "name": "Farmers Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Kiosha Robinson"
+      }
+    ],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Jonah-Price-MVA-8-25-2025-Personal Injury Protection (PIP)-25-918731776",
+        "insurer": "Mobilitas Insurance Company",
+        "adjuster": "Kiosha Robinson"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Jonah-Price-MVA-8-25-2025-None",
+        "insurer": "Farmers Insurance",
+        "adjuster": null
+      },
+      {
+        "type": "BIClaim",
+        "name": "Jonah-Price-MVA-8-25-2025-Bodily Injury (BI)",
+        "insurer": "Farmers Insurance",
+        "adjuster": null
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nAaron addressed Jonah's concerns about insurance coverage and potential settlement negotiations for his motor vehicle accident case.\nRecap\nAaron Whaley discussed insurance coverage details and potential settlement scenarios with Jonah Price regarding his recent accident.\nJonah asked specific questions about coverage limits and settlement timelines, which Aaron addressed comprehensively.\nTasks\nAaron needs to conduct a thorough review of all applicable insurance policies and prepare preliminary settlement strategy.",
+      "natural_language": "On August 25, 2025, in the motor vehicle accident case for Jonah Price (Jonah-Price-MVA-8-25-2025), Aaron Whaley addressed Jonah Price's concerns about insurance coverage and potential settlement negotiations. \n\nAaron Whaley discussed insurance coverage details and potential settlement scenarios related to Jonah Price's recent accident. Jonah asked specific questions about coverage limits and settlement timelines, which Aaron addressed comprehensively. \n\nGoing forward, Aaron will conduct a thorough review of all applicable insurance policies and prepare a preliminary settlement strategy.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "client whose coverage and settlement questions were discussed"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney addressing coverage questions and preparing settlement strategy"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nAaron Whaley confirmed Jonah Price's understanding of the case timeline and established communication protocols for ongoing updates.\nRecap\nAaron Whaley reviewed the expected timeline for Jonah Price's motor vehicle accident case and established regular communication protocols.\nJonah expressed satisfaction with the proposed timeline and agreed to the communication schedule.\nTasks\nAaron needs to maintain the established communication schedule and provide regular updates to Jonah throughout the case progression.",
+      "natural_language": "On August 25, 2025, in the case Jonah-Price-MVA-8-25-2025 involving client Jonah Price, attorney Aaron Whaley confirmed Jonah Price\u2019s understanding of the case timeline and established the protocols for ongoing updates. He also reviewed the expected timeline for Jonah Price\u2019s motor vehicle accident case and set up regular communication protocols.\n\nJonah Price expressed satisfaction with the proposed timeline and agreed to the communication schedule. Going forward, Aaron Whaley will maintain the established communication schedule and provide regular updates to Jonah Price throughout the progression of the case.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney confirming timeline and managing communications"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nAaron discussed follow-up protocols with Jonah regarding medical treatment and documentation for his motor vehicle accident case.\nRecap\nAaron Whaley provided Jonah Price with guidance on proper medical treatment protocols and documentation requirements for his recent accident.\nJonah confirmed his understanding of the next steps and agreed to follow the recommended medical treatment plan.\nTasks\nAaron needs to monitor Jonah's medical treatment progress and ensure proper documentation is maintained for the case.",
+      "natural_language": "On August 25, 2025, in the case Jonah-Price-MVA-8-25-2025, the client Jonah Price discussed follow-up protocols with Aaron Whaley regarding medical treatment and documentation for his motor vehicle accident case.\n\nAaron Whaley provided Jonah Price with guidance on proper medical treatment protocols and the documentation requirements for his recent accident. Jonah Price confirmed his understanding of the next steps and agreed to follow the recommended medical treatment plan. Aaron will monitor Jonah's medical treatment progress and ensure proper documentation is maintained for the case.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "client discussing follow-up medical treatment and documentation"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "provided guidance to client on medical treatment protocols and documentation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nAaron Whaley contacted Jonah Price to confirm the details of his recent motor vehicle accident and discuss potential legal representation.\nRecap\nAaron Whaley called Jonah Price to assess his recent motor vehicle accident from August 25, 2025, and determine the scope of potential legal assistance.\nJonah confirmed the accident details and expressed interest in pursuing a claim.\nTasks\nAaron needs to gather detailed information about Jonah's accident and begin the formal case evaluation process.",
+      "natural_language": "Initial client contact on August 25, 2025, with Jonah Price regarding a motor vehicle accident. Aaron Whaley contacted Price to confirm the details of the incident and to discuss potential legal representation.\n\nRecap: Whaley spoke with Price to assess the August 25, 2025 accident and determine the scope of potential legal assistance. Price confirmed the accident details and expressed an interest in pursuing a claim.\n\nNext steps: Aaron needs to gather detailed information about the accident and begin the formal case evaluation process.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "client contacted / subject of intake"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney/representative who contacted client and will handle intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nsaved PR. no insurance on Unit 1. faxed CC request",
+      "natural_language": "Initial client contact on August 25, 2025 with Jonah Price regarding a motor vehicle accident. The file for case Jonah-Price-MVA-8-25-2025 notes \"saved PR.\" There is no insurance on Unit 1, and a CC request was faxed.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nDetails: Jonah Price\nDOB: 9/28/89\nSSN: 407-37-4981\nPh: 502-356-4203\nAddress:\n3101 Elliot Ave\nLouisville, KY 40211\nDOA: 8/25/2025\nLocation: Dixie Highway near old Hooters\nRear ended while stopped at a light\nLMPD\nReport # 25100181\nWent to UofL Downtown\nInjuries: back, left leg\nHad a previous gunshot wound a year and half ago. Treated at UofL\nHealth Insurance \u2013 Passport\nUber driver \u2013 white ford explorer\nWill have lost wages via Elmwood staffing.\nPerson Making Contact: Justin\nDate & Time: August 27 2025",
+      "natural_language": "Initial client contact on August 27, 2025 with Justin regarding a motor vehicle accident involving Jonah Price. The client is Jonah Price, born September 28, 1989, with Social Security Number 407-37-4981 and phone number 502-356-4203. He resides at 3101 Elliot Ave, Louisville, KY 40211. The date of the accident was August 25, 2025, at Dixie Highway near the old Hooters, where he was rear-ended while stopped at a light. The incident was investigated by the Louisville Metro Police Department (LMPD), Report Number 25100181. He went to UofL Downtown for treatment, and the documented injuries are to the back and left leg.\n\nMedical history includes a prior gunshot wound about a year and a half ago, treated at UofL. His health insurance is Passport. The Uber driver involved in the incident was driving a white Ford Explorer. Lost wages are expected to be provided via Elmwood Staffing.\n\nDate and time of this contact: August 27, 2025. Person making contact: Justin.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "injured party / client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "treatment facility (UofL Downtown)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Passport",
+            "relevance": "health insurance"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Elmwood Staffing",
+            "relevance": "expected source of lost wages"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Louisville Metro Police Department (LMPD)",
+            "relevance": "investigative agency / police report #25100181"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-08",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\n__New Insurance Note:__ 9/8 had to submit claim info via Uber.com Confirmation Thank you for your inquiry. Our team will review and will respond as soon as possible. You will be receiving an email shortly with confirmation. Your inquiry reference number: 7Kdeb3Er9p6BxfZmOMwAvG\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Mobilitas Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "This case, Jonah-Price-MVA-8-25-2025, concerns client Jonah Price.\n\nOn September 8, 2025, Price was required to submit claim information via Uber.com. A confirmation message followed: \u201cThank you for your inquiry. Our team will review and will respond as soon as possible. You will be receiving an email shortly with confirmation.\u201d The inquiry reference number provided was 7Kdeb3Er9p6BxfZmOMwAvG.\n\nThe insurance type associated with this matter is Personal Injury Protection (PIP), and the insurer is Mobilitas Insurance Company.\n\nThe note was written by Justin Chumbley and is labeled as #Inotes.",
+      "valid_at": "2025-09-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Mobilitas Insurance Company",
+            "relevance": "insurer mentioned (PIP)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Mobilitas Insurance Company",
+            "relevance": "PIP claim associated with the matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-22",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\n__New Insurance Note:__ 9/22 saved ack. no UM/UIM coverage\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Jonah-Price-MVA-8-25-2025 concerns client Jonah Price following a motor vehicle accident on August 25, 2025.\n\nA new insurance note was saved on September 22, with the entry reading \"ack. no UM/UIM coverage.\" The note specifies the Insurance Type as Personal Injury Protection (PIP) and lists Progressive Insurance Company as the insurer. The note was written by Justin Chumbley and is categorized under internal notes (#Inotes).",
+      "valid_at": "2025-09-22T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "client involved in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer listed on note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Personal Injury Protection (PIP) - Progressive Insurance Company",
+            "relevance": "insurance type noted on the entry"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "No UM coverage - Progressive Insurance Company",
+            "relevance": "absence of UM coverage acknowledged"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "No UIM coverage - Progressive Insurance Company",
+            "relevance": "absence of UIM coverage acknowledged"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-09-30",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\n@aaronw ok to decline? NO BI coverage and rejected UM.",
+      "natural_language": "On August 25, 2025, a case file titled Jonah-Price-MVA-8-25-2025 was opened for client Jonah Price in connection with a motor vehicle accident. An internal message addressed to @aaronw asks whether it is acceptable to decline the case, noting that there is no BI coverage and that UM was rejected.",
+      "valid_at": "2025-09-30T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "case opened for client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Farmers Insurance",
+            "relevance": "no BI coverage noted (reason to decline case)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-09",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nA missed call for aaron whaley was logged at 2025-10-09 17:44:46.430000+00:00 . #missedcall\n\nCaller Info: 5027930723 \n\nCaller ID: 502-356-4203 \n\nCaller Name: Jonah Price \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Jonah-Price-MVA-8-25-2025 concerns the client Jonah Price. A missed call regarding Aaron Whaley was logged on October 9, 2025 at 17:44:46.430000+00:00 (UTC), and the entry is labeled #missedcall.\n\nThe log lists the caller name as Jonah Price. The caller\u2019s phone number is 502-793-0723, and the caller ID displayed is 502-356-4203. The caller email field is blank. A link to the corresponding Filevine contact is provided: [filevine-link].\n\nVoicemail Transcription: no transcription is provided in the note.",
+      "valid_at": "2025-10-09T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "caller / subject of note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-09",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nA missed call for Jessa Galosmo was logged at 2025-10-09 17:44:16.063000+00:00 . #missedcall\n\nCaller Info: 5027930723 \n\nCaller ID: 502-356-4203 \n\nCaller Name: Jonah Price \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Jonah-Price-MVA-8-25-2025. Client: Jonah Price.\n\nA missed call for Jessa Galosmo was logged on October 9, 2025 at 17:44:16.063000+00:00, marked with the tag #missedcall. The entry indicates the call was associated with the Jonah-Price-MVA file and pertains to the client Jonah Price.\n\nCaller information shows the call originated from 5027930723, with a caller ID of 502-356-4203. The caller name is listed as Jonah Price, and the caller email field is blank. A Filevine contact link is available at [filevine-link]. The Voicemail Transcription field contains no content (no transcription provided).",
+      "valid_at": "2025-10-09T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "caller / subject of entry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-09",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, is being released from Starlite, we never got intake docs back from him so I resent them to new number and added to system. NO BI coverage and no UM coverage though so dead in the water \n__Person Making Contact:__ Justin\n__Date & Time__: October 09 2025",
+      "natural_language": "Case Jonah-Price-MVA-8-25-2025: Initial client contact on October 9, 2025, with Jonah Price regarding a motor vehicle accident. The contact was made by Justin.\n\nDuring the conversation, the client stated he is being released from Starlite. We never received the intake documents back from him, so I resent them to his new number and added them to the system. There is no BI coverage and no UM coverage, so the case is dead in the water.",
+      "valid_at": "2025-10-09T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "initial contact / client for the MVA case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "provider the client is being released from"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Farmers Insurance",
+            "relevance": "no BI coverage"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "UM coverage",
+            "relevance": "no UM coverage"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-10-09",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=f02b695a-4465-40be-bada-e92344d919f1.pdf\nSigned: 2025-10-09 17:50:40\nAll signers: Jonah Price((502) 793-0723)\nSender: Justin Chumbley",
+      "natural_language": "This case concerns client Jonah Price in relation to a motor vehicle accident that occurred on August 25, 2025, under the case identifier Jonah-Price-MVA-8-25-2025.\n\nAn intake document for this case has been completed via VineSign. The document, named \u201cintake,\u201d was signed on October 9, 2025 at 5:50:40 PM. The signed document can be accessed at https://app.vinesign.com/Jobs/Pdf?pdfKey=f02b695a-4465-40be-bada-e92344d919f1.pdf. All signers listed were Jonah Price, with the phone number (502) 793-0723. The sender of the document was Justin Chumbley.",
+      "valid_at": "2025-10-09T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "case client; signer of intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-24",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nA missed call for Aries Penaflor was logged at 10/24/25 - 11:18:13 . #missedcall\n\nCaller Info: 5023564203 \n\nCaller ID: 502-356-4203 \n\nCaller Name: Jonah Price \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "The case Jonah-Price-MVA-8-25-2025 involves client Jonah Price in a motor vehicle accident matter. A missed call for Aries Penaflor was logged on October 24, 2025 at 11:18:13. The caller information shows the number 5023564203, with the Caller ID listed as 502-356-4203, and the Caller Name as Jonah Price. The Caller Email field is blank, and there is a link to the Filevine contact at [filevine-link]. Voicemail Transcription is not provided in the note. The record is tagged with #missedcall.",
+      "valid_at": "2025-10-24T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "caller and client involved in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-11-05",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nA missed call for aaron whaley was logged at 11/05/25 - 11:00:44 . #missedcall\n\nCaller Info: 5027930723 \n\nCaller ID: 502-356-4203 \n\nCaller Name: Jonah Price \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Jonah-Price-MVA-8-25-2025. Client: Jonah Price.\n\nA missed call related to Aaron Whaley was logged on November 5, 2025 at 11:00:44. The caller is Jonah Price, whose listed contact information includes 5027930723, and the caller ID shown is 502-356-4203. The caller name is Jonah Price, and there is no email address on file. A link to the Filevine contact is available: [filevine-link]. Voicemail transcription is not provided.",
+      "valid_at": "2025-11-05T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "caller / subject of the missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-05",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\n__CLIENT CONTACT__\n__Details:__ updated client \n__Person Making Contact:__ Justin\n__Date & Time__: November 05 2025",
+      "natural_language": "Case Jonah-Price-MVA-8-25-2025 involves client Jonah Price.\n\nIn the client contact section, the entry shows Details: updated client. The contact was made by Justin on November 5, 2025.",
+      "valid_at": "2025-11-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "updated client / subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-11-10",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nRecorded statement is scheduled 11/17 at 11am. I'll call you a couple minutes beforehand",
+      "natural_language": "The case Jonah-Price-MVA-8-25-2025 involves the client Jonah Price.\n\nA recorded statement has been scheduled for November 17, 2025 at 11:00 a.m. I will call you a couple of minutes beforehand.",
+      "valid_at": "2025-11-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "subject of recorded statement / client involved"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-10",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\n__CLIENT CONTACT__\n__Details:__ client is available 11/17 at 11 for RS with Progressive. emailed adj \n__Person Making Contact:__ Justin\n__Date & Time__: November 10 2025",
+      "natural_language": "Case Jonah-Price-MVA-8-25-2025: Initial client contact on November 10, 2025, with Jonah Price regarding the motor vehicle accident. The client was contacted by Justin. The details indicate that the client is available on November 17 at 11:00 a.m. for a recorded statement (RS) with Progressive, and an email was sent to the adjuster.",
+      "valid_at": "2025-11-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "client contacted / subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "insurer with whom recorded statement (RS) is scheduled"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Progressive adjuster",
+            "relevance": "recipient of email / person scheduled to take RS"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-11-10",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nA missed call for Jessa Galosmo was logged at 11/10/25 - 09:28:17 . #missedcall\n\nCaller Info: 5027930723 \n\nCaller ID: 502-356-4203 \n\nCaller Name: Jonah Price \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "This case, Jonah-Price-MVA-8-25-2025, concerns client Jonah Price in relation to a motor vehicle accident that occurred on August 25, 2025.\n\nOn November 10, 2025 at 09:28:17, a missed call for Jessa Galosmo was logged. The call originated from the number 502-793-0723, with a caller ID of 502-356-4203, and the caller name listed as Jonah Price. The caller email field is not provided. A link to the Filevine contact is available at [filevine-link]. A voicemail transcription was not provided in this note.",
+      "valid_at": "2025-11-10T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "subject of case and caller on missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Jonah-Price-MVA-8-25-2025\nClient: Jonah Price\n\nCompleted comprehensive case file organization for Jonah-Price-MVA-8-25-2025 using 5-phase systematic workflow with content-only mode (filename bias elimination). Processed 26 total files: moved 10 document pairs (20 files) to proper 8-bucket locations with standardized naming convention, identified and deleted 6 duplicate files. All files now organized in Client/, Investigation/, and Insurance/PIP/Progressive/ folders. Key documents organized: intake documents (10/9/2025), police report (Master File #73223930), Progressive PIP correspondence (7 documents including dec page, LOR, acknowledgments, application package, preservation letter). Verified 100% naming convention compliance and PDF+MD companion matching. Generated 5 comprehensive reports documenting inventory, mapping, quality review (10% error rate - 1 date correction), and final verification. Case folder structure now fully compliant with 8-bucket system and ready for active case management. Important findings documented: PIP carrier is Progressive (Rasier LLC policy #06258582), not Mobilitas; at-fault driver Shaun Travis (Unit 1) had defective brakes; client was passenger in Unit 2 driven by Donald Kidwell (Uber driver); no UM/UIM coverage on Rasier policy (rejected 2/28/2025); $10,000 PIP coverage available.",
+      "natural_language": "Case: Jonah-Price-MVA-8-25-2025. The client is Jonah Price. A comprehensive case file organization for Jonah-Price-MVA-8-25-2025 was completed using a five-phase systematic workflow in content-only mode to eliminate filename bias. A total of 26 files were processed: 10 document pairs (20 files) were moved to proper eight-bucket locations with a standardized naming convention, and six duplicate files were identified and deleted. All materials are now organized within the Client/, Investigation/, and Insurance/PIP/Progressive/ folders.\n\nKey documents were organized, including intake documents dated 10/9/2025, the police report filed under Master File #73223930, and Progressive PIP correspondence consisting of seven documents, including the declaration page, the LOR, acknowledgments, the application package, and a preservation letter.\n\nNaming convention compliance was verified at 100%, and PDF+MD companion files were confirmed to match. Five comprehensive reports were generated documenting inventory, mapping, quality review (noting a 10% error rate with one date corrected), and final verification. The case folder structure is now fully compliant with the eight-bucket system and ready for active case management.\n\nImportant findings: the PIP carrier is Progressive (Rasier LLC policy #06258582), not Mobilitas; the at-fault driver Shaun Travis (Unit 1) had defective brakes; the client was a passenger in Unit 2 driven by Donald Kidwell, an Uber driver; there is no UM/UIM coverage on the Rasier policy, which was rejected on 2/28/2025; and $10,000 PIP coverage is available.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jonah Price",
+            "relevance": "case client / subject of the file organization"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Mobilitas Insurance Company",
+            "relevance": "previously presumed PIP carrier (explicitly ruled out in favor of Progressive/Rasier)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

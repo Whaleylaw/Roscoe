@@ -1,0 +1,196 @@
+{
+  "project": "Workflow System Implementation",
+  "started_at": "2025-12-23T17:30:00Z",
+  "last_updated": "2025-12-23T22:30:00Z",
+  "status": "complete",
+  "total_tasks": 11,
+  "completed_tasks": 11,
+  "tasks": [
+    {
+      "id": "task_1",
+      "name": "Add Pydantic models (SubPhase, LandmarkStatus)",
+      "status": "complete",
+      "file": "src/roscoe/core/graphiti_client.py",
+      "changes": [
+        "Added SubPhase model (line 321-326)",
+        "Added LandmarkStatus model (line 412-423)",
+        "Updated Landmark model - added subphase field",
+        "Updated WorkflowDef model - added subphase field",
+        "Added both to ENTITY_TYPES list"
+      ],
+      "completed_at": "2025-12-23T17:30:00Z"
+    },
+    {
+      "id": "task_2",
+      "name": "Update insurance claim queries for specific types",
+      "status": "complete",
+      "files": [
+        "src/roscoe/workflow_engine/orchestrator/graph_state_computer.py",
+        "src/roscoe/core/case_context_middleware.py"
+      ],
+      "changes": [
+        "Changed query from entity_type='InsuranceClaim' to WHERE IN ['BIClaim', 'PIPClaim', ...]",
+        "Updated graph_state_computer.py line 341",
+        "Updated case_context_middleware.py line 680"
+      ],
+      "completed_at": "2025-12-23T17:31:00Z"
+    },
+    {
+      "id": "task_3",
+      "name": "Update landmark status queries for LandmarkStatus nodes",
+      "status": "complete",
+      "file": "src/roscoe/core/graphiti_client.py",
+      "subtasks": [
+        {
+          "function": "get_case_landmark_statuses()",
+          "line": "2001-2049",
+          "status": "complete",
+          "pattern": "OPTIONAL MATCH -> HAS_STATUS -> LandmarkStatus -> FOR_LANDMARK",
+          "changes": "Updated both if/else clauses, added version and updated_by fields"
+        },
+        {
+          "function": "get_landmark_status()",
+          "line": "2063-2080",
+          "status": "complete",
+          "pattern": "MATCH -> HAS_STATUS -> LandmarkStatus -> FOR_LANDMARK",
+          "changes": "Added WHERE archived_at IS NULL filter, added version/updated_by"
+        },
+        {
+          "function": "update_case_landmark_status()",
+          "line": "2083-2174",
+          "status": "complete",
+          "pattern": "CREATE versioned LandmarkStatus node with archiving",
+          "changes": "Complete rewrite - creates versioned nodes, archives old versions, deterministic UUIDs"
+        },
+        {
+          "function": "check_phase_can_advance()",
+          "line": "2210-2223",
+          "status": "complete",
+          "pattern": "Check landmark statuses via LandmarkStatus nodes",
+          "changes": "Updated blocker query to use HAS_STATUS -> LandmarkStatus -> FOR_LANDMARK"
+        }
+      ],
+      "completed_at": "2025-12-23T17:35:00Z"
+    },
+    {
+      "id": "task_4",
+      "name": "Add SubPhase support to queries",
+      "status": "complete",
+      "file": "src/roscoe/core/graphiti_client.py",
+      "subtasks": [
+        {
+          "function": "get_case_phase()",
+          "line": "1973-1988",
+          "status": "complete",
+          "change": "Added OPTIONAL MATCH for IN_SUBPHASE, returns subphase info"
+        }
+      ],
+      "completed_at": "2025-12-23T17:36:00Z"
+    },
+    {
+      "id": "task_5",
+      "name": "Enhance ingest_workflow_definitions.py",
+      "status": "complete",
+      "file": "src/roscoe/scripts/ingest_workflow_definitions.py",
+      "changes": [
+        "Added process_subphases() function (lines 400-538)",
+        "Parses litigation/subphases/ folders",
+        "Creates SubPhase nodes, subphase landmarks, subphase workflows",
+        "Added call to process_subphases() for litigation phase (line 645-646)"
+      ],
+      "completed_at": "2025-12-23T17:40:00Z"
+    },
+    {
+      "id": "task_6",
+      "name": "Run ingest_workflow_definitions.py",
+      "status": "complete",
+      "command": "sudo docker exec roscoe-agents python -m roscoe.scripts.ingest_workflow_definitions --workspace /mnt/workspace",
+      "actual_output": "9 Phases, 5 SubPhases, 82 Landmarks, 39 WorkflowDefs, 28 Templates, 21 Tools, 12 Checklists",
+      "completed_at": "2025-12-23T22:07:00Z"
+    },
+    {
+      "id": "task_7",
+      "name": "Create initialize_case_states_NEW.py",
+      "status": "complete",
+      "file": "src/roscoe/scripts/initialize_case_states_NEW.py",
+      "purpose": "Set all 110 cases to Phase 0, create ~7,480 LandmarkStatus nodes",
+      "changes": [
+        "All cases set to Phase:onboarding",
+        "Creates versioned LandmarkStatus nodes (not relationship metadata)",
+        "All statuses='not_started', version=1",
+        "Deterministic UUIDs for status nodes"
+      ],
+      "completed_at": "2025-12-23T17:42:00Z"
+    },
+    {
+      "id": "task_8",
+      "name": "Run initialize_case_states_NEW.py",
+      "status": "complete",
+      "command": "sudo docker exec roscoe-agents python -m roscoe.scripts.initialize_case_states_NEW",
+      "actual_output": "110 cases initialized to Phase: onboarding, 9,020 LandmarkStatus nodes created (18,480 total with archived)",
+      "completed_at": "2025-12-23T22:10:00Z"
+    },
+    {
+      "id": "task_9",
+      "name": "Add recalculate_case_phase() agent tool",
+      "status": "complete",
+      "file": "src/roscoe/agents/paralegal/tools.py",
+      "purpose": "Agent tool to check if case ready to advance based on landmark completion",
+      "changes": [
+        "Added recalculate_case_phase() function (lines 2115-2239)",
+        "Analyzes landmark completion percentage",
+        "Checks for hard blockers",
+        "Recommends advancement when >80% complete",
+        "Supports SubPhase display"
+      ],
+      "completed_at": "2025-12-23T17:45:00Z"
+    },
+    {
+      "id": "task_10",
+      "name": "Verify workflow system with test queries",
+      "status": "complete",
+      "verification_results": {
+        "workflow_definitions": "✅ 82 Landmarks, 9 Phases, 5 SubPhases, 39 WorkflowDef",
+        "cases_initialized": "✅ All 110 cases in onboarding phase",
+        "landmark_statuses": "✅ 18,480 LandmarkStatus nodes (all not_started)",
+        "insurance_claims": "✅ 255 claims (119 BIClaim, 120 PIPClaim, 14 UMClaim, 2 UIMClaim)",
+        "relationships": "✅ IN_PHASE, HAS_STATUS, HAS_CLIENT, HAS_CLAIM, TREATING_AT, HAS_LIEN"
+      },
+      "completed_at": "2025-12-23T22:15:00Z"
+    },
+    {
+      "id": "task_11",
+      "name": "Verify and update graph_state_computer.py",
+      "status": "complete",
+      "file": "src/roscoe/workflow_engine/orchestrator/graph_state_computer.py",
+      "changes": [
+        "Updated docstring comments to reflect LandmarkStatus node model",
+        "Verified all queries match actual graph structure",
+        "Confirmed HAS_CLIENT relationship (bidirectional with PLAINTIFF_IN)",
+        "Tested with Caryn-McCay case - successfully retrieved client, phase, landmarks"
+      ],
+      "test_results": {
+        "case": "Caryn-McCay-MVA-7-30-2023",
+        "client": "Caryn McCay ✓",
+        "phase": "onboarding ✓",
+        "landmarks": "0/3 complete ✓",
+        "formatted_prompt": "Working ✓"
+      },
+      "completed_at": "2025-12-23T22:30:00Z"
+    }
+  ],
+  "notes": [
+    "Using LandmarkStatus nodes (not relationship metadata) for audit trail",
+    "Keeping granular claim types (BIClaim, PIPClaim, etc.)",
+    "All cases start at Phase 0 (onboarding)",
+    "SubPhase support added for litigation",
+    "Graph has bidirectional client relationships: HAS_CLIENT and PLAINTIFF_IN",
+    "graph_state_computer.py verified and tested successfully"
+  ],
+  "next_steps": [
+    "Agent can now use workflow system in production",
+    "Landmark statuses can be updated via update_case_landmark_status()",
+    "Cases can advance phases via advance_case_to_phase()",
+    "Workflow state automatically injected into agent context"
+  ]
+}

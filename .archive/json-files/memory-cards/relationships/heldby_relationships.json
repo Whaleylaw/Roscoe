@@ -1,0 +1,1444 @@
+[
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Daniel-W-Volk-MVA-09-24-2021-Anthem Medicaid"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Medicaid"
+    },
+    "attributes": {},
+    "context": "Daniel-W-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Charles-T-Johnson-MVA-4-18-2023-Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Medicare"
+    },
+    "attributes": {},
+    "context": "Charles-T-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Timothy-Ruhl-Premise-09-14-2023-Humana"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Humana"
+    },
+    "attributes": {},
+    "context": "Timothy-Ruhl-Premise-09-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-12-09-2022-ASP Cares"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "ASP Cares"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Anointed Hands Injury Rehab"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anointed Hands Injury Rehab"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Plano Surgical Hospital Funding LLC"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Plano Surgical Hospital Funding LLC"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Cutting Edge Orthopedics"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Cutting Edge Orthopedics"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Optum"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Optum"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "James-Sadler-MVA-4-07-2023-Anthem Medicaid"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Medicaid"
+    },
+    "attributes": {},
+    "context": "James-Sadler-MVA-4-07-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Morgan-Freeman-MVA-12-31-2021-Indiana Medicaid"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Indiana Medicaid"
+    },
+    "attributes": {},
+    "context": "Morgan-Freeman-MVA-12-31-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Samuel-Clites-MVA-4-23-2024-Anthem"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem"
+    },
+    "attributes": {},
+    "context": "Samuel-Clites-MVA-4-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Sariya-Mason-DB-08-19-2022-Passport Health By Molina"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Passport Health By Molina"
+    },
+    "attributes": {},
+    "context": "Sariya-Mason-DB-08-19-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023-TeamCare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "TeamCare"
+    },
+    "attributes": {},
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Medicare"
+    },
+    "attributes": {},
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Wayne-Weber-MVA-01-01-2022-Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Medicare"
+    },
+    "attributes": {},
+    "context": "Wayne-Weber-MVA-01-01-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Nayram-Adadevoh-MVA-7-13-2024-Blue Cross Blue Shield of Illinois"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Blue Cross Blue Shield of Illinois"
+    },
+    "attributes": {},
+    "context": "Nayram-Adadevoh-MVA-7-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Maryan-Kassim-MVA-08-06-2024-Conduent"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Conduent"
+    },
+    "attributes": {},
+    "context": "Maryan-Kassim-MVA-08-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Passport Health By Molina"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Passport Health By Molina"
+    },
+    "attributes": {},
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Kentucky Pain Associates"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Kentucky Pain Associates"
+    },
+    "attributes": {},
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Stevie-Hawks-MVA-3-8-2024-Rawlings Company"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Rawlings Company"
+    },
+    "attributes": {},
+    "context": "Stevie-Hawks-MVA-3-8-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Michael-Crader-MVA-5-19-2023-VA CCN - Optum"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "VA CCN - Optum"
+    },
+    "attributes": {},
+    "context": "Michael-Crader-MVA-5-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Estate-of-Betty-Prince-Premise-7-14-2020-Humana"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Humana"
+    },
+    "attributes": {},
+    "context": "Estate-of-Betty-Prince-Premise-7-14-2020"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Amy-Mills-Premise-04-26-2019-Equian (WellCare)"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Equian (WellCare)"
+    },
+    "attributes": {},
+    "context": "Amy-Mills-Premise-04-26-2019"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Destiny-Adkins-MVA-04-16-2021-Conduent"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Conduent"
+    },
+    "attributes": {},
+    "context": "Destiny-Adkins-MVA-04-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Wayne-Weber-MVA-01-01-2022-Southern Guaranty Insurance Company - Medicare Supplement"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Southern Guaranty Insurance Company - Medicare Supplement"
+    },
+    "attributes": {},
+    "context": "Wayne-Weber-MVA-01-01-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Shawna-Broyles-MVA-08-26-2022-Blue Cross Blue Shield of Michigan"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Blue Cross Blue Shield of Michigan"
+    },
+    "attributes": {},
+    "context": "Shawna-Broyles-MVA-08-26-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Brenda-Lang-MVA-09-03-2021-Humana"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Humana"
+    },
+    "attributes": {},
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Kimberly-Brasher-Premise-2-25-2023-UHP Administrators"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "UHP Administrators"
+    },
+    "attributes": {},
+    "context": "Kimberly-Brasher-Premise-2-25-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Estate-of-Evangeline-Young-MVA-8-12-2023-TeamCare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "TeamCare"
+    },
+    "attributes": {},
+    "context": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Greg-Neltner-MVA-4-1-2023-Southgate Chiropractic"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Southgate Chiropractic"
+    },
+    "attributes": {},
+    "context": "Greg-Neltner-MVA-4-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Jerome-Hedinger-Premise-DB-10-24-2023-Aetna Life Insurance Company"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Aetna Life Insurance Company"
+    },
+    "attributes": {},
+    "context": "Jerome-Hedinger-Premise-DB-10-24-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Jimmy-Ferguson-MVA-5-30-2024-Wellcare of Kentucky"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Wellcare of Kentucky"
+    },
+    "attributes": {},
+    "context": "Jimmy-Ferguson-MVA-5-30-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Chase-Lindsey-MVA-12-01-2024-Rawlings Company"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Rawlings Company"
+    },
+    "attributes": {},
+    "context": "Chase-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "James-Kiper-MVA-12-5-2022-Conduent"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Conduent"
+    },
+    "attributes": {},
+    "context": "James-Kiper-MVA-12-5-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Shannon-Colvin-MVA-10-1-2023-United Healthcare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "United Healthcare"
+    },
+    "attributes": {},
+    "context": "Shannon-Colvin-MVA-10-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Conduent"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Conduent"
+    },
+    "attributes": {},
+    "context": "Juanita-Nicole-Downs-MVA-4-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Elizabeth-Lindsey-MVA-12-01-2024-Rawlings Company"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Rawlings Company"
+    },
+    "attributes": {},
+    "context": "Elizabeth-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Abby-Sitgraves-MVA-7-13-2024-Key Benefit Administrators"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Key Benefit Administrators"
+    },
+    "attributes": {},
+    "context": "Abby-Sitgraves-MVA-7-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Dana-Jackson-MVA-1-24-2024-Aetna Better Health of Kentucky"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Aetna Better Health of Kentucky"
+    },
+    "attributes": {},
+    "context": "Dana-Jackson-MVA-1-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Douglas-Livers-MVA-1-19-2023-Kentucky Child Support Enforcement"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Kentucky Child Support Enforcement"
+    },
+    "attributes": {},
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Debra-Marshall-MVA-12-3-2022-Wellcare of Kentucky"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Wellcare of Kentucky"
+    },
+    "attributes": {},
+    "context": "Debra-Marshall-MVA-12-3-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Frances-Whitis-WC-MVA-9-6-2024-Aetna Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Aetna Medicare"
+    },
+    "attributes": {},
+    "context": "Frances-Whitis-WC-MVA-9-6-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Sariya-Mason-DB-08-19-2022-Anthem Medicaid"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Medicaid"
+    },
+    "attributes": {},
+    "context": "Sariya-Mason-DB-08-19-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Robin-Willis-Beck-Premise-09-21-2023-The Phia Group"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "The Phia Group"
+    },
+    "attributes": {},
+    "context": "Robin-Willis-Beck-Premise-09-21-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Douglas-Livers-MVA-1-19-2023-Aptiva Health"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Aptiva Health"
+    },
+    "attributes": {},
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Debra-Marshall-MVA-12-3-2022-Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Medicare"
+    },
+    "attributes": {},
+    "context": "Debra-Marshall-MVA-12-3-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Owen-Lindsey-MVA-12-01-2024-Rawlings Company"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Rawlings Company"
+    },
+    "attributes": {},
+    "context": "Owen-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Stevie-Hawks-MVA-3-8-2024-Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Medicare"
+    },
+    "attributes": {},
+    "context": "Stevie-Hawks-MVA-3-8-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Brooklyn-Ballard-MVA-02-28-2024-Anthem Medicaid"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Medicaid"
+    },
+    "attributes": {},
+    "context": "Brooklyn-Ballard-MVA-02-28-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Frances-Whitis-WC-MVA-9-6-2024-Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Medicare"
+    },
+    "attributes": {},
+    "context": "Frances-Whitis-WC-MVA-9-6-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Jae-Kale-Lewis-MVA-02-24-2025-United Healthcare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "United Healthcare"
+    },
+    "attributes": {},
+    "context": "Jae-Kale-Lewis-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Lonnie-Stevens-MVA-2-14-2025-Wellcare of Kentucky"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Wellcare of Kentucky"
+    },
+    "attributes": {},
+    "context": "Lonnie-Stevens-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Jeremy-Lindsey-MVA-12-01-2024-Rawlings Company"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Rawlings Company"
+    },
+    "attributes": {},
+    "context": "Jeremy-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "James-Sadler-MVA-4-07-2023-Delta Dental of Kentucky"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Delta Dental of Kentucky"
+    },
+    "attributes": {},
+    "context": "James-Sadler-MVA-4-07-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Anthem BCBS of Tennessee"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem BCBS of Tennessee"
+    },
+    "attributes": {},
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Estate-of-Evangeline-Young-MVA-8-12-2023-Blue Cross Blue Shield of Illinois"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Blue Cross Blue Shield of Illinois"
+    },
+    "attributes": {},
+    "context": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Dewayne-Ward-MVA-8-29-2023-Conduent"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Conduent"
+    },
+    "attributes": {},
+    "context": "Dewayne-Ward-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Robin-Wilder-Hamilton-MVA-6-15-2023-U.S Department of Veterans Affairs"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "U.S Department of Veterans Affairs"
+    },
+    "attributes": {},
+    "context": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022-Legal Funding Partners"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Legal Funding Partners"
+    },
+    "attributes": {},
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022-Thrivest Link"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Thrivest Link"
+    },
+    "attributes": {},
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Jacob-Herrle-MVA-6-17-2025-Anthem"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem"
+    },
+    "attributes": {},
+    "context": "Jacob-Herrle-MVA-6-17-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Cynthia-Gibson-MVA-7-9-2025-Conduent"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Conduent"
+    },
+    "attributes": {},
+    "context": "Cynthia-Gibson-MVA-7-9-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Anthem"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem"
+    },
+    "attributes": {},
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Henrietta-Jenkins-MVA-5-20-2025-Legal Funding Partners"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Legal Funding Partners"
+    },
+    "attributes": {},
+    "context": "Henrietta-Jenkins-MVA-5-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Qortez-Jordan-MVA-2-14-2025-Legal Funding Partners"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Legal Funding Partners"
+    },
+    "attributes": {},
+    "context": "Qortez-Jordan-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "William-Tucker-Premise-11-23-2024-Conduent"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Conduent"
+    },
+    "attributes": {},
+    "context": "William-Tucker-Premise-11-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Optum"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Optum"
+    },
+    "attributes": {},
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Qortez-Jordan-MVA-2-14-2025-Humana"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Humana"
+    },
+    "attributes": {},
+    "context": "Qortez-Jordan-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Shaylynn-Keeney-MVA-02-24-2025-No Private Health Insurance"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "No Private Health Insurance"
+    },
+    "attributes": {},
+    "context": "Shaylynn-Keeney-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-No Private Health Insurance"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "No Private Health Insurance"
+    },
+    "attributes": {},
+    "context": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Shannon-Lankswert-WC-02-07-2025-Anthem Blue Cross Blue Shield"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Blue Cross Blue Shield"
+    },
+    "attributes": {},
+    "context": "Shannon-Lankswert-WC-02-07-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Fina-Fatty-MVA-11-05-2024-No Private Health Insurance"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "No Private Health Insurance"
+    },
+    "attributes": {},
+    "context": "Fina-Fatty-MVA-11-05-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Dana-Jackson-MVA-1-24-2024-Capital Strategies"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Capital Strategies"
+    },
+    "attributes": {},
+    "context": "Dana-Jackson-MVA-1-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Michael-Ditto-Jr-Med-Mal-04-11-2023-United Healthcare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "United Healthcare"
+    },
+    "attributes": {},
+    "context": "Michael-Ditto-Jr-Med-Mal-04-11-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "William-Tucker-Premise-11-23-2024-The State Pharmacy, Inc."
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "The State Pharmacy, Inc."
+    },
+    "attributes": {},
+    "context": "William-Tucker-Premise-11-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "William-Tucker-Premise-11-23-2024-Synergy Injury Care & Rehab"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Synergy Injury Care & Rehab"
+    },
+    "attributes": {},
+    "context": "William-Tucker-Premise-11-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Passport Health By Molina"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Passport Health By Molina"
+    },
+    "attributes": {},
+    "context": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Amy-Mills-Premise-04-26-2019-Optum"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Optum"
+    },
+    "attributes": {},
+    "context": "Amy-Mills-Premise-04-26-2019"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Brenda-Lang-MVA-09-03-2021-Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Medicare"
+    },
+    "attributes": {},
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Blue Cross Blue Shield of Michigan"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Blue Cross Blue Shield of Michigan"
+    },
+    "attributes": {},
+    "context": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Sariya-Mason-DB-08-19-2022-Blue Cross Blue Shield of Michigan"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Blue Cross Blue Shield of Michigan"
+    },
+    "attributes": {},
+    "context": "Sariya-Mason-DB-08-19-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Timothy-Ruhl-Premise-09-14-2023-Anthem Blue Cross Blue Shield"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Blue Cross Blue Shield"
+    },
+    "attributes": {},
+    "context": "Timothy-Ruhl-Premise-09-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Timothy-Ruhl-Premise-09-14-2023-Blue Cross Blue Shield of Michigan"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Blue Cross Blue Shield of Michigan"
+    },
+    "attributes": {},
+    "context": "Timothy-Ruhl-Premise-09-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Mark-Smith-Jr-MVA-5-31-2025-United Healthcare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "United Healthcare"
+    },
+    "attributes": {},
+    "context": "Mark-Smith-Jr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Aptiva Health"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Aptiva Health"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Justin-Bullock-MVA-6-30-2025-Legal Funding Partners"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Legal Funding Partners"
+    },
+    "attributes": {},
+    "context": "Justin-Bullock-MVA-6-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Sir-Hinkle-MVA-6-23-2025-Optum"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Optum"
+    },
+    "attributes": {},
+    "context": "Sir-Hinkle-MVA-6-23-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Justin-Bullock-MVA-6-30-2025-Rawlings Company"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Rawlings Company"
+    },
+    "attributes": {},
+    "context": "Justin-Bullock-MVA-6-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Tina-Smith-S&F-4-2-2025-Anthem (Carelon Subrogation)"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem (Carelon Subrogation)"
+    },
+    "attributes": {},
+    "context": "Tina-Smith-S&F-4-2-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Timothy-Ruhl-A-B-9-14-2023-Humana"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Humana"
+    },
+    "attributes": {},
+    "context": "Timothy-Ruhl-A-B-9-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Timothy-Ruhl-A-B-9-14-2023-Anthem Blue Cross Blue Shield"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Blue Cross Blue Shield"
+    },
+    "attributes": {},
+    "context": "Timothy-Ruhl-A-B-9-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Timothy-Ruhl-A-B-9-14-2023-Blue Cross Blue Shield of Michigan"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Blue Cross Blue Shield of Michigan"
+    },
+    "attributes": {},
+    "context": "Timothy-Ruhl-A-B-9-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Aptiva Health"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Aptiva Health"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Jerome-Hedinger-Premise-(DB)-10-24-2023-Aetna Life Insurance Company"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Aetna Life Insurance Company"
+    },
+    "attributes": {},
+    "context": "Jerome-Hedinger-Premise-(DB)-10-24-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Charles-T.-Johnson-MVA-4-18-2023-Medicare"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Medicare"
+    },
+    "attributes": {},
+    "context": "Charles-T.-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Optum"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Optum"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Plano Surgical Hospital Funding LLC"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Plano Surgical Hospital Funding LLC"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Cutting Edge Orthopedics"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Cutting Edge Orthopedics"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Anointed Hands Injury Rehab"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anointed Hands Injury Rehab"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Muhammad-Alif-MVA-11-08-2022-ASP Cares"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "ASP Cares"
+    },
+    "attributes": {},
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Sariya-Mason-DB-08-19-2022-Anthem Blue Cross Blue Shield"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Blue Cross Blue Shield"
+    },
+    "attributes": {},
+    "context": "Sariya-Mason-DB-08-19-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "James-Sadler-MVA-4-07-2023-Anthem Blue Cross Blue Shield"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Blue Cross Blue Shield"
+    },
+    "attributes": {},
+    "context": "James-Sadler-MVA-4-07-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HeldBy",
+    "source": {
+      "entity_type": "Lien",
+      "name": "Daniel-W.-Volk-MVA-09-24-2021-Anthem Blue Cross Blue Shield"
+    },
+    "target": {
+      "entity_type": "LienHolder",
+      "name": "Anthem Blue Cross Blue Shield"
+    },
+    "attributes": {},
+    "context": "Daniel-W.-Volk-MVA-09-24-2021"
+  }
+]

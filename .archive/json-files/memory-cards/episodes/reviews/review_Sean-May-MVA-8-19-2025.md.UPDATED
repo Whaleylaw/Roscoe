@@ -1,0 +1,75 @@
+# Relationship Review: Sean-May-MVA-8-19-2025
+
+**Total Episodes:** 19
+
+**Total Proposed Relationships:** 49
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (2)
+- MiiSpine
+- Starlite Chiropractic (chiropractic)
+
+### Insurance Claims (2)
+- **BIClaim**: CCMSI
+  - Adjuster: Dominique McCraney
+- **PIPClaim**: State Farm Insurance Company
+  - Adjuster: Summer Garrett
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (3 consolidated)
+- [ ] Dominique McCraney — *✓ MATCHES: Dominique McCraney*
+- [ ] Nicole Gramlich — *✓ MATCHES: Nicole Gramlich*
+- [ ] Summer Garrett — *✓ MATCHES: Summer Garrett*
+
+### Attorney (1 consolidated)
+- [ ] Justin Chumbley — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+
+### BIClaim (2 consolidated)
+- [ ] BIClaim (CCMSI) — *IGNORED - claim description*
+- [ ] CCMSI — *✓ MATCHES: CCMSI*
+
+### Client (1 consolidated)
+- [ ] Sean May — *✓ MATCHES: Sean May*
+
+### Insurer (2 consolidated)
+- [ ] CCMSI — *✓ MATCHES: CCMSI*
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+### LawFirm (1 consolidated)
+- [ ] Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### MedicalProvider (2 consolidated)
+- [ ] MiiSpine — *✓ MATCHES: MiiSpine*
+- [ ] Norton West Louisville Hospital Hospital — *✓ MATCHES: Norton*
+
+### Organization (1 consolidated)
+- [ ] Rumpke — *IGNORED - waste management company*
+
+### PIPClaim (1 consolidated)
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

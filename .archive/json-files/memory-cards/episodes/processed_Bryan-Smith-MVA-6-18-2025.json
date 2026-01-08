@@ -1,0 +1,130 @@
+{
+  "case_name": "Bryan-Smith-MVA-6-18-2025",
+  "total_episodes": 7,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Bryan-Smith-MVA-6-18-2025\nClient: Bryan Smith\n\nFinal case documentation and client communication protocols established.",
+      "natural_language": "Case Bryan-Smith-MVA-6-18-2025 concerns client Bryan Smith in a motor vehicle accident. Final case documentation and client communication protocols have been established.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryan Smith",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Bryan-Smith-MVA-6-18-2025\nClient: Bryan Smith\n\nSettlement negotiations preparation and strategy discussion completed.",
+      "natural_language": "On June 18, 2025, for client Bryan Smith in the motor vehicle accident matter Bryan-Smith-MVA-6-18-2025, the settlement negotiations preparation and the strategy discussion were completed.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryan Smith",
+            "relevance": "client for matter Bryan-Smith-MVA-6-18-2025; subject of settlement preparation and strategy discussion"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Bryan-Smith-MVA-6-18-2025\nClient: Bryan Smith\n\nMedical treatment monitoring and case progression review conducted with Bryan Smith.",
+      "natural_language": "On June 18, 2025, a medical treatment monitoring and case progression review was conducted with Bryan Smith for the case Bryan-Smith-MVA-6-18-2025.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryan Smith",
+            "relevance": "subject of medical treatment monitoring and case progression review"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Bryan-Smith-MVA-6-18-2025\nClient: Bryan Smith\n\nCase timeline established",
+      "natural_language": "Case timeline established for Bryan-Smith-MVA-6-18-2025, with Bryan Smith identified as the client.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryan Smith",
+            "relevance": "identified as the client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Bryan-Smith-MVA-6-18-2025\nClient: Bryan Smith\n\nInsurance communications established",
+      "natural_language": "Case Bryan-Smith-MVA-6-18-2025 involves the client Bryan Smith. Insurance communications have been established.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryan Smith",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Bryan-Smith-MVA-6-18-2025\nClient: Bryan Smith\n\nClient agreement signed",
+      "natural_language": "Bryan Smith is the client in case Bryan-Smith-MVA-6-18-2025.\n\nThe client agreement has been signed.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryan Smith",
+            "relevance": "case client; client agreement signed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Bryan-Smith-MVA-6-18-2025\nClient: Bryan Smith\n\nInitial assessment conducted",
+      "natural_language": "On June 18, 2025, an initial assessment was conducted for the client Bryan Smith in case Bryan-Smith-MVA-6-18-2025.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryan Smith",
+            "relevance": "subject of initial assessment"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

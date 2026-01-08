@@ -1,0 +1,160 @@
+{
+  "case_name": "Jensen-Ott-MVA-8-6-2025",
+  "total_episodes": 7,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jensen-Ott-MVA-8-6-2025\nClient: Jensen Ott\n\nFamily settlement strategy and insurance coordination.",
+      "natural_language": "Case Jensen-Ott-MVA-8-6-2025 concerns client Jensen Ott in a motor vehicle accident matter.\n\nThe primary focus noted for this matter is developing a family settlement strategy and coordinating the insurance related to the case.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "client of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jensen-Ott-MVA-8-6-2025\nClient: Jensen Ott\n\nMedical evaluation and treatment planning coordination.",
+      "natural_language": "On August 6, 2025, the Jensen-Ott-MVA-8-6-2025 case was opened for client Jensen Ott. The engagement involves a medical evaluation and coordination of a treatment plan related to a motor vehicle accident (MVA).",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "case opened for client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jensen-Ott-MVA-8-6-2025\nClient: Jensen Ott\n\nMulti-family accident coordination and case management.",
+      "natural_language": "Case Jensen-Ott-MVA-8-6-2025 involves client Jensen Ott and encompasses multi-family accident coordination and case management related to a motor vehicle accident. The case file is dated August 6, 2025.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jensen-Ott-MVA-8-6-2025\nClient: Jensen Ott\n\nMedical evaluation and treatment planning coordination.",
+      "natural_language": "Case Jensen-Ott-MVA-8-6-2025 concerns the client Jensen Ott.\n\nThe work involves medical evaluation and treatment planning coordination related to a motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jensen-Ott-MVA-8-6-2025\nClient: Jensen Ott\n\nFamily coordination with multiple related accident victims.",
+      "natural_language": "Case Jensen-Ott-MVA-8-6-2025 involves client Jensen Ott. The matter centers on family coordination for multiple related accident victims.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "primary client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jensen-Ott-MVA-8-6-2025\nClient: Jensen Ott\n\nJensen Ott motor vehicle accident case for August 6, 2025.",
+      "natural_language": "This is the Jensen-Ott-MVA-8-6-2025 case involving the client Jensen Ott in a motor vehicle accident matter related to August 6, 2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "client involved in matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Jensen-Ott-MVA-8-6-2025\nClient: Jensen Ott\n\n__The Otts__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Jensen Ott - Filevine Project Email Address [JensenOttMVAZ5116960@louisvilleaccidentlawyer.filevineapp.com](mailto:JensenOttMVAZ5116960@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 01:57:34 GMT-04:00\n\nIt might be done treating with Starlight. I know some of them may have gone\nto primary care or were seeking MRIs or something. Let's get the records\nand bills from Starlight, assuming they are done because we've got three\npeople, and I bet it's minimum limits and pretty bad accident. There's no\nway they want to defend this dude. If you read the police report.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Jensen-Ott-MVA-8-6-2025 involves client Jensen Ott. On Wednesday, October 29, 2025, at 01:57:34 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley (Justin@whaleylawfirm.com) and to Jensen Ott’s Filevine project address JensenOttMVAZ5116960@louisvilleaccidentlawyer.filevineapp.com.\n\nIn the body of the message, Whaley writes that treatment with Starlight “might be done,” and he notes that some of the injured may have gone to primary care or were seeking MRIs or something. He proposes getting the records and bills from Starlight, assuming they are done, because there are three people involved. He also bets that the case involves minimum insurance limits and describes the accident as pretty bad. He adds that there’s no way the defendants would want to defend this dude, if you read the police report. The message ends with the signature of Aaron Whaley of the Whaley Law Firm, including the firm’s address at 712 Lyndon Ln, Louisville, KY 40222, and the phone number 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "client of the case / email recipient"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "sender of the email / attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient / attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "law firm handling the matter"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlight",
+            "relevance": "medical provider with records and bills to obtain"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "project/email system used as recipient address"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "unnamed defendants",
+            "relevance": "defendants referenced in email discussion"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

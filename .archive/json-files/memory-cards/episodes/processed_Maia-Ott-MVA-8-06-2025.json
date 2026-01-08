@@ -1,0 +1,75 @@
+{
+  "case_name": "Maia-Ott-MVA-8-06-2025",
+  "total_episodes": 2,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "AaronW - 2025-09-07",
+      "original_body": "Case: Maia-Ott-MVA-8-06-2025\nClient: Maia Ott\n\nJustin Chumbley\n8/11/2025 \u2022 2:42 PM\nsent intake to dad via vinesign",
+      "natural_language": "Case Maia-Ott-MVA-8-06-2025 for client Maia Ott. On August 11, 2025 at 2:42 PM, Justin Chumbley sent Maia Ott's intake to her dad via vinesign.",
+      "valid_at": "2025-09-07T00:00:00",
+      "author": "AaronW",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "case client; subject of intake sent"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Maia-Ott-MVA-8-06-2025\nClient: Maia Ott\n\nCompleted comprehensive case file organization using 8-bucket system. All 5 phases completed successfully on 11/25/2025. Phase 1: Generated file inventory (9 files total). Phase 2: Analysis and mapping completed with 100% accuracy. Phase 3: Quality review showed 0.0% error rate. Phase 4: Executed reorganization - moved 7 files (3 PDFs + 3 .md companions + 1 DOCX) into proper buckets with standardized naming (YYYY-MM-DD format), deleted 2 duplicate files. Phase 5: Verification confirmed all 8 buckets created, files properly organized. Medical Records: 4 files (2 chiropractic record sets from Auto Accident Urgent Care - visits 2-8 and 9-14, dated 8/11/2025). Insurance: 2 files (NGIC PIP Ledger dated 10/6/2025). Negotiation Settlement: 1 file (WLF Settlement Demand dated 11/11/2025). Case Information: 8 JSON metadata files preserved. All filenames follow standardized naming convention. All PDFs have matching .md companions. Root directory clean. Case folder structure fully compliant and ready for active case management.",
+      "natural_language": "The Maia-Ott-MVA-8-06-2025 case for client Maia Ott underwent comprehensive case file organization using an eight-bucket system, with all five phases completed on November 25, 2025. Phase 1 generated a file inventory consisting of nine files in total. Phase 2 completed analysis and mapping with 100% accuracy. Phase 3\u2019s quality review showed a 0.0% error rate. In Phase 4, the reorganization was executed: seven files were moved into the proper buckets (three PDFs, three Markdown companions, and one DOCX) and renamed using a standardized YYYY-MM-DD format, with two duplicate files deleted. Phase 5 verification confirmed that all eight buckets were created and the files were properly organized.\n\nThe medical records for this case include four files: two chiropractic record sets from Auto Accident Urgent Care, covering visits 2-8 and 9-14, dated August 11, 2025. The insurance materials consist of two files, including an NGIC PIP Ledger dated October 6, 2025. There is also a single file in the Negotiation Settlement category\u2014the WLF Settlement Demand dated November 11, 2025. Case information comprises eight JSON metadata files preserved. All filenames follow the standardized naming convention, and all PDFs have matching Markdown (.md) companions. The root directory is clean, and the case folder structure is fully compliant and ready for active case management.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Auto Accident Urgent Care",
+            "relevance": "provider of chiropractic medical records (visits 2-14)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "NGIC",
+            "relevance": "PIP insurer (ledger present)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "NGIC PIP Ledger",
+            "relevance": "PIP claim documentation"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "WLF",
+            "relevance": "author/source of settlement demand (WLF Settlement Demand)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

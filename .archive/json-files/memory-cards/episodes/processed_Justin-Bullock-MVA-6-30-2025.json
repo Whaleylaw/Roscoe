@@ -1,0 +1,68 @@
+{
+  "case_name": "Justin-Bullock-MVA-6-30-2025",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Southeastern Emergency Physician Services",
+        "specialty": null
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Kentucky Farm Bureau"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Joshua White"
+      },
+      {
+        "name": "Casey May"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Justin-Bullock-MVA-6-30-2025-Bodily Injury (BI)-25631251364",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Joshua White"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Justin-Bullock-MVA-6-30-2025-Personal Injury Protection (PIP)-5117901",
+        "insurer": "Kentucky Farm Bureau",
+        "adjuster": "Casey May"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Justin-Bullock-MVA-6-30-2025-Legal Funding Partners",
+        "holder": "Legal Funding Partners",
+        "amount": 2500.0
+      },
+      {
+        "name": "Justin-Bullock-MVA-6-30-2025-Rawlings Company",
+        "holder": "Rawlings Company",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "entity_type": "HealthSystem",
+    "name": "Norton Healthcare",
+    "properties": {
+      "records_request_method": "online",
+      "records_request_url": "https://nortonhealthcare.com/patient-resources/medical-record-request/",
+      "records_request_address": "Norton Healthcare Medical Records, PO Box 35070, Louisville, KY 40232",
+      "records_request_phone": "(502) 629-1234",
+      "website": "nortonhealthcare.com",
+      "source": "official_website",
+      "validation_state": "verified",
+      "last_verified": "2026-01-03T16:45:59.282706"
+    }
+  },
+  {
+    "entity_type": "HealthSystem",
+    "name": "UofL Health",
+    "properties": {
+      "records_request_method": "online",
+      "records_request_url": "https://uoflhealth.org/patients-visitors/medical-records-requests/",
+      "records_request_address": "UofL Health Medical Records, 530 South Jackson Street, Louisville, KY 40202",
+      "records_request_phone": "(502) 562-3000",
+      "website": "uoflhealth.org",
+      "source": "official_website",
+      "validation_state": "verified",
+      "last_verified": "2026-01-03T16:45:59.282710"
+    }
+  },
+  {
+    "entity_type": "HealthSystem",
+    "name": "Baptist Health",
+    "properties": {
+      "records_request_method": "online",
+      "records_request_url": "https://www.baptisthealth.com/patients-visitors/after-your-visit/medical-records",
+      "records_request_address": "Baptist Health Medical Records, PO Box 950243, Louisville, KY 40295",
+      "records_request_phone": "(502) 896-5000",
+      "website": "baptisthealth.com",
+      "source": "official_website",
+      "validation_state": "verified",
+      "last_verified": "2026-01-03T16:45:59.282711"
+    }
+  },
+  {
+    "entity_type": "HealthSystem",
+    "name": "CHI Saint Joseph Health",
+    "properties": {
+      "records_request_method": "online",
+      "records_request_url": "https://chisaintjosephhealth.org/",
+      "records_request_address": "CHI Saint Joseph Medical Records, Lexington, KY",
+      "website": "chisaintjosephhealth.org",
+      "source": "official_website",
+      "validation_state": "verified",
+      "last_verified": "2026-01-03T16:45:59.282712"
+    }
+  },
+  {
+    "entity_type": "HealthSystem",
+    "name": "St. Elizabeth Healthcare",
+    "properties": {
+      "records_request_method": "online",
+      "records_request_url": "https://stelizabeth.com/",
+      "records_request_address": "St. Elizabeth Medical Records, Northern Kentucky",
+      "records_request_phone": "(859) 344-2000",
+      "website": "stelizabeth.com",
+      "source": "official_website",
+      "validation_state": "verified",
+      "last_verified": "2026-01-03T16:45:59.282713"
+    }
+  }
+]

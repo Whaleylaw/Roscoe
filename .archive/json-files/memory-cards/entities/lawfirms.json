@@ -1,0 +1,683 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Assistant Jefferson County Attorneys",
+    "attributes": {
+      "phone": "(502) 574-3337",
+      "address": "200 S Fifth Street #300N, Louisville, KY 40202"
+    },
+    "source_id": "326",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "BWTK",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "502-582-203",
+      "email": "britty@sonlegal.com"
+    },
+    "source_id": "17",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Barnes Maloney PLLC",
+    "attributes": {
+      "phone": "(502) 625-1670",
+      "address": "401 W. Main Street #1600, Louisville, KY 40202"
+    },
+    "source_id": "368",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Belanger & Associates",
+    "attributes": {
+      "phone": "502-727-4755",
+      "email": "trevab@twc.com",
+      "address": "P.O. Box 323, Harrods Creek, KY 40027"
+    },
+    "source_id": "372",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Blackburn Domene & Burchett, PLLC",
+    "attributes": {
+      "address": "614 West Main Street, Suite 3000, Louisville, Kentucky 40202",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs",
+    "notes": "Also known as BDB Law",
+    "aliases": [
+      "BDB Law"
+    ],
+    "website": "bdblawky.com"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Boehl, Stopher & Graves",
+    "attributes": {
+      "phone": "(502) 589-5980",
+      "address": "400 W. Market Street #2300, Louisville, KY 40202"
+    },
+    "source_id": "386",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Burke Neal PLLC",
+    "attributes": {
+      "phone": "502-709-9975",
+      "address": "2200 Dundee Rd., Suite C, Louisville, ky 40205"
+    },
+    "source_id": "45",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Carlisle Law",
+    "attributes": {
+      "address": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Casey, Bailey & Maines, PLLC",
+    "attributes": {
+      "phone": "(859) 243-0228",
+      "address": "3151 Beaumont Centre Circle #200, Lexington, KY 40513"
+    },
+    "source_id": "406",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Coghlan Law LLC",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "Nayram-Adadevoh-MVA-7-13-2024",
+    "source_file": "review_Nayram-Adadevoh-MVA-7-13-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Cowles & Thompson",
+    "attributes": {},
+    "source_id": "460",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "DSJ & Associates",
+    "attributes": {},
+    "source_id": "1118",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "DeCamillis & Mattingly, PLLC",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Dehner & Ellis, PLLC",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "Michael-Crader-backfill",
+    "source_file": "review_Michael-Crader-MVA-5-19-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Dettman and Associates",
+    "attributes": {},
+    "source_id": "77",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Dilbeck & Myers",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "Brenda-Lang-annotations",
+    "source_file": "review_Brenda-Lang-MVA-09-03-2021.md",
+    "notes": "Contact info at https://www.dilbeckandmyers.com/"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Dinsmore & Shohl LLP",
+    "attributes": {
+      "phone": "502-540-2539",
+      "fax": "",
+      "address": "101 South Fifth Street, Suite 2500, Louisville, KY 40202"
+    },
+    "aliases": [],
+    "source_id": "Anella-Noble-annotations",
+    "source_file": "review_Anella-Noble-MVA-01-03-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Don K. Brown, PSC",
+    "attributes": {
+      "phone": "502-588-9000",
+      "email": "donbrown@donkbrownlaw.com",
+      "address": "13102 Eastpoint Park Blvd., Ste. 200, Louisville, KY 40223"
+    },
+    "source_id": "486",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Ewen & Kinney, PLLC",
+    "attributes": {
+      "phone": "(502) 584-1090",
+      "address": "315 Guthrie Street #400, Louisville, KY 40202"
+    },
+    "source_id": "522",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Fulton, Maddox, Dickens & Stewart PLLC",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [
+      "FMD Legal"
+    ],
+    "source_id": "Brenda-Lang-annotations",
+    "source_file": "review_Brenda-Lang-MVA-09-03-2021.md",
+    "notes": "Website: https://www.fmdlegal.com/"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Hensley & Ross",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": "207 E. Main Street, P.O. Box 350, Horse Cave, KY 42749"
+    },
+    "aliases": [],
+    "source_id": "Debra-Marshall-backfill",
+    "source_file": "review_Debra-Marshall-MVA-12-3-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Isaacs and Isaacs Law Firm",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [
+      "Isaacs & Isaacs"
+    ],
+    "source_id": "Brenda-Lang-annotations",
+    "source_file": "review_Brenda-Lang-MVA-09-03-2021.md",
+    "notes": "Website: https://wewin.com/"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Jackson Kelly PLLC",
+    "attributes": {},
+    "source_id": "608",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "KW",
+    "attributes": {
+      "role": "defense_counsel"
+    },
+    "source_id": "9",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Kamensky & Patteson, LLP",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Kanter & Pintaluga",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "Julmonzhae-Moore-backfill",
+    "source_file": "review_Julmonzhae-Moore-MVA-8-29-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Kopka Pinkus Dolin, PC",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "review_annotations",
+    "source_file": "Alma-Cristobal-MVA-2-15-2024",
+    "aliases": [
+      "Kopka Law"
+    ]
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Law Office of Bryan B. Davenport, P.C.",
+    "attributes": {
+      "address": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs",
+    "notes": "Bryan Davenport is the attorney, this is his law firm"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Lewis, Brisbois, Bisgaard & Smith, LLP",
+    "attributes": {
+      "phone": "(513) 808-9911",
+      "address": "2333 Alexandria Drive, Lexington, KY 40504"
+    },
+    "source_id": "675",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Logan, Burch & Fox",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [
+      "LBF Attorneys"
+    ],
+    "website": "lbfattorneys.com",
+    "source_id": "Frances-Whitis-backfill",
+    "source_file": "review_Frances-Whitis-WC-MVA-9-6-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Merk & Gile",
+    "attributes": {
+      "phone": "513-481-5678",
+      "email": "spencer@merkandgilelaw.com"
+    },
+    "source_id": "157",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Phillips, Parker, Orberson & Arnett, PLC",
+    "attributes": {
+      "phone": "(502) 583-9900",
+      "address": "716 W. Main Street $300, Louisville, KY 40202"
+    },
+    "source_id": "195",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Prince & Brien, PSC",
+    "attributes": {
+      "address": "P.O. Box 466, 1005 Main Street, Benton, KY 42025"
+    },
+    "source_id": "862",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Quintairos, Prieto, Wood & Boyer, P.A.",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Reminger Co. LPA",
+    "attributes": {
+      "phone": "(502) 625-7306",
+      "address": "730 W. Main Street #300, Louisville, KY 40202"
+    },
+    "source_id": "888",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Rice Gumm, PLLC",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [
+      "Rice Gumm Law"
+    ],
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Richardson Law Group, PLLC",
+    "attributes": {
+      "phone": "(859) 219-9090",
+      "address": "771 Corporate Drive #900, Lexington, KY 40503"
+    },
+    "source_id": "894",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "SBL",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "502-625-7306",
+      "email": "slowery@reminger.com"
+    },
+    "source_id": "22",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Sewell & Neal, PLLC",
+    "attributes": {
+      "phone": "(502) 582-2030",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "James-Kiper-backfill",
+    "source_file": "review_James-Kiper-MVA-12-5-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Sitlinger Law",
+    "attributes": {
+      "phone": "(502) 562-0820",
+      "address": "320 Whittington Parkway #304, Louisville, KY 40222"
+    },
+    "source_id": "923",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Smith & Hoskins PLLC",
+    "attributes": {
+      "phone": "(502) 899-5220",
+      "address": "6010 Brownsboro Park Blvd Suite B, Louisville, KY 40207"
+    },
+    "source_id": "924",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Soergel, Abell, Arnold & Davis, LLC",
+    "attributes": {
+      "phone": "502-459-4000",
+      "address": "2950 Breckenridge Lane #11A, Louisville, KY 40220"
+    },
+    "source_id": "925",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Son Legal",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "James-Kiper-backfill",
+    "source_file": "review_James-Kiper-MVA-12-5-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Stierle & Rettig PLLC",
+    "attributes": {
+      "phone": "(502) 584-5223",
+      "address": "410 W. Chestnut Street #617, Louisville, KY 40202"
+    },
+    "source_id": "967",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Stoll Keenon Ogden PLLC",
+    "attributes": {
+      "phone": "317-464-1100",
+      "fax": "",
+      "address": "334 North Senate Avenue, Indianapolis, IN 46204"
+    },
+    "aliases": [
+      "Skofirm"
+    ],
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Stout & Heuke Law Office",
+    "attributes": {
+      "phone": "502-966-3347",
+      "fax": "502-966-9394",
+      "address": "300 High Rise Drive, Suite 292, Louisville, KY 40213"
+    },
+    "aliases": [
+      "Stout & Heuke"
+    ],
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Sturgill Turner",
+    "attributes": {
+      "phone": "",
+      "address": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "Amy-Mills-Premise-04-26-2019"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "TK",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "502-315-4682",
+      "email": "tkellebrew@sonlegal.com"
+    },
+    "source_id": "14",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "The Whaley Law Firm",
+    "attributes": {
+      "phone": "502-583-4022",
+      "address": "712 Lyndon Lane, Louisville, KY 40222"
+    },
+    "source_id": "987",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "The Zoppoth Law Firm",
+    "attributes": {
+      "phone": "502-568-8884",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [],
+    "source_id": "Christopher-Wilkerson-annotations",
+    "source_file": "review_Christopher-Wilkerson-WC-MVA-02-15-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Travis Herbert & Stempien, PLLC",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "aliases": [
+      "TRAVIS, HERBERT & STEMPIEN ATTORNEYS",
+      "TRAVIS, HERBERT & STEMPIEN, PLLC"
+    ],
+    "website": "thattorneys.com",
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Ward, Hocker & Thornton, PLLC",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "Attorneys: Betsy R. Catron, George B. Hocker, Gregg E. Thornton"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Winton & Hiestand Law Group",
+    "attributes": {
+      "phone": "(502) 444-4357",
+      "address": "905 Baxter Ave, Louisville, KY 40204"
+    },
+    "source_id": "266",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Lochmiller Bond",
+    "attributes": {
+      "phone": "270-900-1248",
+      "address": "PO Box 826 Elizabethtown, KY 42702"
+    },
+    "source_id": "Shannon-Colvin-annotations",
+    "source_file": "review_Shannon-Colvin-MVA-10-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Morgan and Morgan",
+    "attributes": {
+      "phone": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Taylor-Thompson-annotations",
+    "source_file": "review_Taylor-Thompson-MVA-12-06-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "LUCAS & DIETZ, PLLC",
+    "attributes": {
+      "phone": "859-795-2830",
+      "address": "1521 Cavalry Lane, Suite 103 Florence, KY 41042"
+    },
+    "aliases": ["Lucas Dietz Law"],
+    "source_id": "Shannon-Lankswert-annotations",
+    "source_file": "review_Shannon-Lankswert-WC-02-07-2025.md"
+  }
+]

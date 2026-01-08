@@ -1,0 +1,1865 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Abby-Sitgraves-MVA-7-13-2024-Personal Injury Protection (PIP)-633859-N",
+    "attributes": {
+      "claim_number": "633859-N",
+      "insurer_name": "National Indemnity Company",
+      "adjuster_name": "Jordan Bahr",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "is_active_negotiation": false,
+      "project_name": "Abby-Sitgraves-MVA-7-13-2024"
+    },
+    "source_id": "1",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Abigail-Whaley-MVA-10-24-2024-Personal Injury Protection (PIP)-58147807",
+    "attributes": {
+      "claim_number": "58147807",
+      "insurer_name": "SafeCo Insurance Company",
+      "adjuster_name": "Lauren Smith",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Abigail-Whaley-MVA-10-24-2024"
+    },
+    "source_id": "89",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Alma-Cristobal-MVA-2-15-2024-Personal Injury Protection (PIP)-4943385",
+    "attributes": {
+      "claim_number": "4943385",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Lauren Baker",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Alma-Cristobal-MVA-2-15-2024"
+    },
+    "source_id": "112",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Antonio-Lopez-MVA-11-14-2025-Personal Injury Protection (PIP)-25695180369",
+    "attributes": {
+      "claim_number": "25695180369",
+      "insurer_name": "Progressive Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Antonio-Lopez-MVA-11-14-2025"
+    },
+    "source_id": "247",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Ashlee-Williams-MVA-08-29-2023-Personal Injury Protection (PIP)-054658453-04",
+    "attributes": {
+      "claim_number": "054658453-04",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Lisa Rivera",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    "source_id": "162",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Azaire-Lopez-MVA-11-14-2025-Personal Injury Protection (PIP)-25695180369",
+    "attributes": {
+      "claim_number": "25695180369",
+      "insurer_name": "Progressive Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Azaire-Lopez-MVA-11-14-2025"
+    },
+    "source_id": "245",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Brenda-Lang-MVA-09-03-2021-Personal Injury Protection (PIP)-1724J054B",
+    "attributes": {
+      "claim_number": "1724J054B",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Steve Campbell",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Brenda-Lang-MVA-09-03-2021"
+    },
+    "source_id": "155",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Brenda-Lang-MVA-09-03-2021-Under Insured Motorist (UIM)",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Randy Carney",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Brenda-Lang-MVA-09-03-2021"
+    },
+    "source_id": "142",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Brooklyn-Ballard-MVA-02-28-2024-Personal Injury Protection (PIP)-17-63X2-00X",
+    "attributes": {
+      "claim_number": "17-63X2-00X",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Thomas Nie",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Brooklyn-Ballard-MVA-02-28-2024"
+    },
+    "source_id": "117",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Bryson-Brown-MVA-6-29-2025-Personal Injury Protection (PIP)-799220033",
+    "attributes": {
+      "claim_number": "799220033",
+      "insurer_name": "Allstate Insurance",
+      "adjuster_name": "Guillermo Callejas",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Bryson-Brown-MVA-6-29-2025"
+    },
+    "source_id": "20",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Carmelita-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793",
+    "attributes": {
+      "claim_number": "25663229793",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Yvonne Copas",
+      "is_active_negotiation": false,
+      "project_name": "Carmelita-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "257",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Charles-T-Johnson-MVA-4-18-2023-Personal Injury Protection (PIP)-3002385272023",
+    "attributes": {
+      "claim_number": "3002385272023",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "Amy Cox",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Charles-T-Johnson-MVA-4-18-2023"
+    },
+    "source_id": "178",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Charles-T.-Johnson-MVA-4-18-2023-Personal Injury Protection (PIP)-3002385272023",
+    "attributes": {
+      "claim_number": "3002385272023",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "Amy Cox",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Charles-T.-Johnson-MVA-4-18-2023"
+    },
+    "source_id": "299",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Chase-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024",
+    "attributes": {
+      "claim_number": "300-793616-2024",
+      "insurer_name": "Auto Owners Insurance - Lexington",
+      "adjuster_name": "CW",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Chase-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "79",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Chase-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024",
+    "attributes": {
+      "claim_number": "300-793616-2024",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": "2025-07-28",
+      "is_active_negotiation": false,
+      "project_name": "Chase-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "54",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Personal Injury Protection (PIP)-4943051",
+    "attributes": {
+      "claim_number": "4943051",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Shellie Cooper",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+    },
+    "source_id": "118",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Cory-Stephenson-MVA-9-3-2025-Personal Injury Protection (PIP)-23016864",
+    "attributes": {
+      "claim_number": "23016864",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "Cierra Maniscalco",
+      "is_active_negotiation": false,
+      "project_name": "Cory-Stephenson-MVA-9-3-2025"
+    },
+    "source_id": "274",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Curtis-Lee-Justice-MVA-2-5-2023-Personal Injury Protection (PIP)-755905",
+    "attributes": {
+      "claim_number": "755905",
+      "insurer_name": "Trexis Insurance Corporation",
+      "adjuster_name": "Torian Leach",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Curtis-Lee-Justice-MVA-2-5-2023"
+    },
+    "source_id": "183",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Cynthia-Gibson-MVA-7-9-2025-Personal Injury Protection (PIP)-1787K940X",
+    "attributes": {
+      "claim_number": "1787K940X",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Ryan Ricci",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Cynthia-Gibson-MVA-7-9-2025"
+    },
+    "source_id": "13",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Dakota-McCord-MVA-10-12-2025-Personal Injury Protection (PIP)-25-743079174",
+    "attributes": {
+      "claim_number": "25-743079174",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jeremy Mathis",
+      "is_active_negotiation": false,
+      "project_name": "Dakota-McCord-MVA-10-12-2025"
+    },
+    "source_id": "264",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Dana-Jackson-MVA-1-24-2024-Personal Injury Protection (PIP)-1007187244",
+    "attributes": {
+      "claim_number": "1007187244",
+      "insurer_name": "The General Insurance",
+      "adjuster_name": "Dana Cohen",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Dana-Jackson-MVA-1-24-2024"
+    },
+    "source_id": "122",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Daniel-W-Volk-MVA-09-24-2021-Personal Injury Protection (PIP)-47060829",
+    "attributes": {
+      "claim_number": "47060829",
+      "insurer_name": "SafeCo Insurance Company",
+      "adjuster_name": "Bethany Pineda",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Daniel-W-Volk-MVA-09-24-2021"
+    },
+    "source_id": "211",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Daniel-W-Volk-MVA-09-24-2021-Under Insured Motorist (UIM)-47060829",
+    "attributes": {
+      "claim_number": "47060829",
+      "insurer_name": "SafeCo Insurance Company",
+      "adjuster_name": "Kimberle Pishke",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 100000,
+      "current_offer": 28500,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": "2024-04-23",
+      "is_active_negotiation": false,
+      "project_name": "Daniel-W-Volk-MVA-09-24-2021"
+    },
+    "source_id": "204",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Daniel-W.-Volk-MVA-09-24-2021-Personal Injury Protection (PIP)-47060829",
+    "attributes": {
+      "claim_number": "47060829",
+      "insurer_name": "SafeCo Insurance Company",
+      "adjuster_name": "Bethany Pineda",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Daniel-W.-Volk-MVA-09-24-2021"
+    },
+    "source_id": "303",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Daniel-W.-Volk-MVA-09-24-2021-Under Insured Motorist (UIM)-47060829",
+    "attributes": {
+      "claim_number": "47060829",
+      "insurer_name": "SafeCo Insurance Company",
+      "adjuster_name": "Kimberle Pishke",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 100000.0,
+      "current_offer": 28500.0,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": "45405.0",
+      "is_active_negotiation": false,
+      "project_name": "Daniel-W.-Volk-MVA-09-24-2021"
+    },
+    "source_id": "301",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Daquan-Locke-MVA-6-11-2024-Personal Injury Protection (PIP)-AT3696194",
+    "attributes": {
+      "claim_number": "AT3696194",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Kelly Sisco",
+      "is_active_negotiation": false,
+      "project_name": "Daquan-Locke-MVA-6-11-2024"
+    },
+    "source_id": "267",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Dewayne-Ward-MVA-8-29-2023-Personal Injury Protection (PIP)-054658453-07",
+    "attributes": {
+      "claim_number": "054658453-07",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Robert Elliott",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Dewayne-Ward-MVA-8-29-2023"
+    },
+    "source_id": "160",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Douglas-Livers-MVA-1-19-2023-Personal Injury Protection (PIP)-700228547",
+    "attributes": {
+      "claim_number": "700228547",
+      "insurer_name": "Allstate Insurance",
+      "adjuster_name": "Brittany Carr",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Douglas-Livers-MVA-1-19-2023"
+    },
+    "source_id": "136",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Dustin-Meade-MVA-03-09-2025-Personal Injury Protection (PIP)-25-615241502",
+    "attributes": {
+      "claim_number": "25-615241502",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Katie Mills",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Dustin-Meade-MVA-03-09-2025"
+    },
+    "source_id": "62",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Elizabeth-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024",
+    "attributes": {
+      "claim_number": "300-793616-2024",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "CW",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Elizabeth-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "81",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Elizabeth-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024",
+    "attributes": {
+      "claim_number": "300-793616-2024",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "Emily Pernice",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Elizabeth-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "53",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Estate-of-Betty-Prince-Premise-7-14-2020-None",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Estate-of-Betty-Prince-Premise-7-14-2020"
+    },
+    "source_id": "205",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Estate-of-Evangeline-Young-MVA-8-12-2023-Personal Injury Protection (PIP)-037621490-0800-000",
+    "attributes": {
+      "claim_number": "037621490-0800-000",
+      "insurer_name": "USAA Insurance Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+    },
+    "source_id": "151",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Personal Injury Protection (PIP)-250531476",
+    "attributes": {
+      "claim_number": "250531476",
+      "insurer_name": "Direct Auto Insurance",
+      "adjuster_name": "Darria Thomas",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Faizon-Procter-Witcher-MVA-7-01-2025"
+    },
+    "source_id": "22",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Personal Injury Protection (PIP)-1769H472C",
+    "attributes": {
+      "claim_number": "1769H472C",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "State Farm PIP Team",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+    },
+    "source_id": "101",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Fina-Fatty-MVA-11-05-2024-Personal Injury Protection (PIP)-25-679103870",
+    "attributes": {
+      "claim_number": "25-679103870",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Terry Woodring",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Fina-Fatty-MVA-11-05-2024"
+    },
+    "source_id": "75",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Frances-Whitis-WC-MVA-9-6-2024-Personal Injury Protection (PIP)-24-727042794",
+    "attributes": {
+      "claim_number": "24-727042794",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Amanda Clemons",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Frances-Whitis-WC-MVA-9-6-2024"
+    },
+    "source_id": "93",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Greg-Neltner-MVA-4-1-2023-Personal Injury Protection (PIP)-1747Q474T",
+    "attributes": {
+      "claim_number": "1747Q474T",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "State Farm PIP Team",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Greg-Neltner-MVA-4-1-2023"
+    },
+    "source_id": "175",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Henrietta-Jenkins-MVA-5-20-2025-Personal Injury Protection (PIP)-HH62DDIN",
+    "attributes": {
+      "claim_number": "HH62DDIN",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Aaron Ross",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Henrietta-Jenkins-MVA-5-20-2025"
+    },
+    "source_id": "47",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Hope-Renee-Padgett-MVA-1-16-2023-Personal Injury Protection (PIP)-23-4004861",
+    "attributes": {
+      "claim_number": "23-4004861",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Terry Woodring",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Hope-Renee-Padgett-MVA-1-16-2023"
+    },
+    "source_id": "189",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Hope-Renee-Padgett-MVA-1-16-2023-Under Insured Motorist (UIM)-23-4004861",
+    "attributes": {
+      "claim_number": "23-4004861",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Zachary Grizzle",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": null,
+      "current_offer": 10000,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": "2025-01-20",
+      "is_active_negotiation": false,
+      "project_name": "Hope-Renee-Padgett-MVA-1-16-2023"
+    },
+    "source_id": "130",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jacob-Herrle-MVA-6-17-2025-Personal Injury Protection (PIP)-1786K421P",
+    "attributes": {
+      "claim_number": "1786K421P",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jacob-Herrle-MVA-6-17-2025"
+    },
+    "source_id": "23",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jae-Kale-Lewis-MVA-02-24-2025-Personal Injury Protection (PIP)-1780Z939M",
+    "attributes": {
+      "claim_number": "1780Z939M",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "State Farm PIP Team",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jae-Kale-Lewis-MVA-02-24-2025"
+    },
+    "source_id": "69",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "James-Crowdus-MVA-8-10-2025-Personal Injury Protection (PIP)-1788V453C",
+    "attributes": {
+      "claim_number": "1788V453C",
+      "insurer_name": "State Farm Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "James-Crowdus-MVA-8-10-2025"
+    },
+    "source_id": "224",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "James-Kiper-MVA-12-5-2022-Personal Injury Protection (PIP)-IZX7996",
+    "attributes": {
+      "claim_number": "IZX7996",
+      "insurer_name": "Travelers Insurance",
+      "adjuster_name": "Josalyn Van Leer",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "James-Kiper-MVA-12-5-2022"
+    },
+    "source_id": "196",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "James-Sadler-MVA-4-07-2023-Personal Injury Protection (PIP)-1747X443M",
+    "attributes": {
+      "claim_number": "1747X443M",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Doris Kenyon",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "James-Sadler-MVA-4-07-2023"
+    },
+    "source_id": "170",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "James-Woodford-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806",
+    "attributes": {
+      "claim_number": "8065806",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Sarah Riggs",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "James-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "32",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jasmine-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793",
+    "attributes": {
+      "claim_number": "25663229793",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Yvonne Copas",
+      "is_active_negotiation": false,
+      "project_name": "Jasmine-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "261",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jaysha-Aponte-MVA-3-15-2025-Personal Injury Protection (PIP)-25-311813973",
+    "attributes": {
+      "claim_number": "25-311813973",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Monica Jones",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jaysha-Aponte-MVA-3-15-2025"
+    },
+    "source_id": "64",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jensen-Ott-MVA-8-6-2025-Personal Injury Protection (PIP)-250640481",
+    "attributes": {
+      "claim_number": "250640481",
+      "insurer_name": "National General",
+      "is_active_negotiation": false,
+      "project_name": "Jensen-Ott-MVA-8-6-2025"
+    },
+    "source_id": "286",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jeremy-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024",
+    "attributes": {
+      "claim_number": "300-793616-2024",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "CW",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Jeremy-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "85",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jeremy-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024",
+    "attributes": {
+      "claim_number": "300-793616-2024",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "Emily Pernice",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Jeremy-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "52",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jessica-Mahaney-MVA-03-09-2025-Personal Injury Protection (PIP)-25-615241502",
+    "attributes": {
+      "claim_number": "25-615241502",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Katie Mills",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jessica-Mahaney-MVA-03-09-2025"
+    },
+    "source_id": "60",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jimmy-Ferguson-MVA-5-30-2024-Personal Injury Protection (PIP)-4979889",
+    "attributes": {
+      "claim_number": "4979889",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Ashley Mcneese",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jimmy-Ferguson-MVA-5-30-2024"
+    },
+    "source_id": "99",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jonah-Price-MVA-8-25-2025-None",
+    "attributes": {
+      "claim_number": null,
+      "insurer_name": "Farmers Insurance",
+      "adjuster_name": null,
+      "coverage_confirmation": null,
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Jonah-Price-MVA-8-25-2025"
+    },
+    "source_id": "276",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jonah-Price-MVA-8-25-2025-Personal Injury Protection (PIP)-25-918731776",
+    "attributes": {
+      "claim_number": "25-918731776",
+      "insurer_name": "Mobilitas Insurance Company",
+      "adjuster_name": "Kiosha Robinson",
+      "is_active_negotiation": false,
+      "project_name": "Jonah-Price-MVA-8-25-2025"
+    },
+    "source_id": "218",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Jordan-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-TJ6L8DKY",
+    "attributes": {
+      "claim_number": "TJ6L8DKY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Blake Pierce",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Jordan-Brown-MVA-8-19-2025"
+    },
+    "source_id": "279",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Joseph-Ott-MVA-8-6-2025-Personal Injury Protection (PIP)-250640481",
+    "attributes": {
+      "claim_number": "250640481",
+      "insurer_name": "National General",
+      "adjuster_name": "Brittany Young",
+      "is_active_negotiation": false,
+      "project_name": "Joseph-Ott-MVA-8-6-2025"
+    },
+    "source_id": "287",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Kentucky Assigned Claims (KAC)-202111021",
+    "attributes": {
+      "claim_number": "202111021",
+      "insurer_name": "",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021"
+    },
+    "source_id": "144",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Personal Injury Protection (PIP)-617417-GM",
+    "attributes": {
+      "claim_number": "617417-GM",
+      "insurer_name": "Nationwide Mutual Insurance Company",
+      "adjuster_name": "Beth Freeman",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021"
+    },
+    "source_id": "213",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Julian-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793",
+    "attributes": {
+      "claim_number": "25663229793",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Yvonne Copas",
+      "is_active_negotiation": false,
+      "project_name": "Julian-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "259",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Julmonzhae-Moore-MVA-8-29-2023-Personal Injury Protection (PIP)-054658453-03",
+    "attributes": {
+      "claim_number": "054658453-03",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Robert Elliott",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Julmonzhae-Moore-MVA-8-29-2023"
+    },
+    "source_id": "161",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Justin-Bullock-MVA-6-30-2025-Personal Injury Protection (PIP)-5117901",
+    "attributes": {
+      "claim_number": "5117901",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Casey May",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Justin-Bullock-MVA-6-30-2025"
+    },
+    "source_id": "25",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Leanora-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-TJ6L8DKY",
+    "attributes": {
+      "claim_number": "TJ6L8DKY",
+      "insurer_name": "Root Auto Insurance",
+      "is_active_negotiation": false,
+      "project_name": "Leanora-Brown-MVA-8-19-2025"
+    },
+    "source_id": "280",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-None-060018233",
+    "attributes": {
+      "claim_number": "060018233",
+      "insurer_name": "SafeCo Insurance Company",
+      "adjuster_name": "Anthony White",
+      "coverage_confirmation": "Coverage Denied",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+    },
+    "source_id": "239",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-J6L8DKY",
+    "attributes": {
+      "claim_number": "J6L8DKY",
+      "insurer_name": "Root Auto Insurance",
+      "is_active_negotiation": false,
+      "project_name": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+    },
+    "source_id": "237",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Lejzane-Miftari-MVA-6-18-2025-Personal Injury Protection (PIP)-250488368",
+    "attributes": {
+      "claim_number": "250488368",
+      "insurer_name": "Direct Auto Insurance",
+      "adjuster_name": "Melinda Tracy",
+      "coverage_confirmation": "Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Lejzane-Miftari-MVA-6-18-2025"
+    },
+    "source_id": "33",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Lindsey-Dunn-MVA-9-24-2025-Personal Injury Protection (PIP)-1791D291D",
+    "attributes": {
+      "claim_number": "1791D291D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Meela Dixon",
+      "is_active_negotiation": false,
+      "project_name": "Lindsey-Dunn-MVA-9-24-2025"
+    },
+    "source_id": "255",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Lonnie-Stevens-MVA-2-14-2025-Personal Injury Protection (PIP)-17-Q610-2P9",
+    "attributes": {
+      "claim_number": "17-Q610-2P9",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Brad Murray",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Lonnie-Stevens-MVA-2-14-2025"
+    },
+    "source_id": "71",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Lori-House-MVA-11-19-2025-Personal Injury Protection (PIP)",
+    "attributes": {
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Lori-House-MVA-11-19-2025"
+    },
+    "source_id": "243",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Maia-Ott-MVA-8-6-2025-Personal Injury Protection (PIP)-250640481",
+    "attributes": {
+      "claim_number": "250640481",
+      "insurer_name": "National General",
+      "is_active_negotiation": false,
+      "project_name": "Maia-Ott-MVA-8-6-2025"
+    },
+    "source_id": "285",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Malcom-Glass-Jones-MVA-10-2-2024-Personal Injury Protection (PIP)-3753979",
+    "attributes": {
+      "claim_number": "3753979",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Emily Friedrich",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Malcom-Glass-Jones-MVA-10-2-2024"
+    },
+    "source_id": "91",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Mark-Smith-Jr-MVA-5-31-2025-Personal Injury Protection (PIP)-1785Q936Q",
+    "attributes": {
+      "claim_number": "1785Q936Q",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Joseph Dedeyn",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Mark-Smith-Jr-MVA-5-31-2025"
+    },
+    "source_id": "41",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Mark-Smith-Sr-MVA-5-31-2025-Personal Injury Protection (PIP)-1785Q936Q",
+    "attributes": {
+      "claim_number": "1785Q936Q",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Joseph Dedeyn",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Mark-Smith-Sr-MVA-5-31-2025"
+    },
+    "source_id": "42",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Personal Injury Protection (PIP)-23-7942931",
+    "attributes": {
+      "claim_number": "23-7942931",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Melissa Drury",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+    },
+    "source_id": "169",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Personal Injury Protection (PIP)-a00 004-93-2728",
+    "attributes": {
+      "claim_number": "a00 004-93-2728",
+      "insurer_name": "Erie Insurance Group",
+      "adjuster_name": "Jonathan O'neal",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+    },
+    "source_id": "176",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Maryan-Kassim-MVA-08-06-2024-Personal Injury Protection (PIP)-24-711062492",
+    "attributes": {
+      "claim_number": "24-711062492",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Keri Hall",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Maryan-Kassim-MVA-08-06-2024"
+    },
+    "source_id": "96",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Mi'Ayla-Lopez-MVA-11-14-2025-Personal Injury Protection (PIP)-25695180369",
+    "attributes": {
+      "claim_number": "25695180369",
+      "insurer_name": "Progressive Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Mi'Ayla-Lopez-MVA-11-14-2025"
+    },
+    "source_id": "248",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Michae-Guyton-MVA-11-14-2025-Personal Injury Protection (PIP)-25695180369",
+    "attributes": {
+      "claim_number": "25695180369",
+      "insurer_name": "Progressive Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Michae-Guyton-MVA-11-14-2025"
+    },
+    "source_id": "246",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Michael-Crader-MVA-5-19-2023-Personal Injury Protection (PIP)-12301632",
+    "attributes": {
+      "claim_number": "12301632",
+      "insurer_name": "Everett Cash Mutual Insurance",
+      "adjuster_name": "Tarin Kokoska",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Michael-Crader-MVA-5-19-2023"
+    },
+    "source_id": "148",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Michael-Crader-MVA-5-19-2023-Under Insured Motorist (UIM)-A00005338855",
+    "attributes": {
+      "claim_number": "A00005338855",
+      "insurer_name": "Erie Insurance Group",
+      "adjuster_name": "Frank Smith",
+      "coverage_confirmation": "Coverage Denied",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Michael-Crader-MVA-5-19-2023"
+    },
+    "source_id": "145",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Michael-Deshields-MVA-10-31-2025-Personal Injury Protection (PIP)-1792K267F",
+    "attributes": {
+      "claim_number": "1792K267F",
+      "insurer_name": "State Farm Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Michael-Deshields-MVA-10-31-2025"
+    },
+    "source_id": "251",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Michael-Johnston-WC-05-03-2023-Short Term Disability-ST00539878",
+    "attributes": {
+      "claim_number": "ST00539878",
+      "insurer_name": "UniCare Life & Health Insurance Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Michael-Johnston-WC-05-03-2023"
+    },
+    "source_id": "114",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Michael-Lanier-MVA-6-28-2025-Personal Injury Protection (PIP)",
+    "attributes": {
+      "insurer_name": "State Farm",
+      "is_active_negotiation": false,
+      "project_name": "Michael-Lanier-MVA-6-28-2025"
+    },
+    "source_id": "292",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Morgan-Freeman-MVA-12-31-2021-Medpay - Indiana PIP-187968220",
+    "attributes": {
+      "claim_number": "187968220",
+      "insurer_name": "State Auto Insurance",
+      "adjuster_name": "Carina Smith",
+      "coverage_confirmation": "Coverage Denied",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Morgan-Freeman-MVA-12-31-2021"
+    },
+    "source_id": "166",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Morgan-Freeman-MVA-12-31-2021-Personal Injury Protection (PIP)-4900253",
+    "attributes": {
+      "claim_number": "4900253",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Lorie Miller",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Morgan-Freeman-MVA-12-31-2021"
+    },
+    "source_id": "163",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Muhammad-Alif-MVA-11-08-2022-3rd Party Vehicle",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "USAA Insurance Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Muhammad-Alif-MVA-11-08-2022"
+    },
+    "source_id": "198",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Muhammad-Alif-MVA-11-08-2022-Personal Injury Protection (PIP)-7005284778-1-2",
+    "attributes": {
+      "claim_number": "7005284778-1-2",
+      "insurer_name": "Farmers Insurance",
+      "adjuster_name": "Michael Santos",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Muhammad-Alif-MVA-11-08-2022"
+    },
+    "source_id": "200",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Muhammad-Alif-MVA-11-08-2022-Under Insured Motorist (UIM)",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "Farmers Insurance",
+      "adjuster_name": "Michael Santos",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Muhammad-Alif-MVA-11-08-2022"
+    },
+    "source_id": "186",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Muhammad-Alif-MVA-12-09-2022-Personal Injury Protection (PIP)-1123215",
+    "attributes": {
+      "claim_number": "1123215",
+      "insurer_name": "American Transit Insurance",
+      "adjuster_name": "Chevan Douglas",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Muhammad-Alif-MVA-12-09-2022"
+    },
+    "source_id": "180",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Nayram-Adadevoh-MVA-7-13-2024-Personal Injury Protection (PIP)-633859-N",
+    "attributes": {
+      "claim_number": "633859-N",
+      "insurer_name": "National Indemnity Company",
+      "adjuster_name": "Jordan Bahr",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Nayram-Adadevoh-MVA-7-13-2024"
+    },
+    "source_id": "2",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Nicole-Tewes-MVA-7-5-2025-Personal Injury Protection (PIP)-A00006928311",
+    "attributes": {
+      "claim_number": "A00006928311",
+      "insurer_name": "Erie Insurance Group",
+      "adjuster_name": "Leigh King",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Nicole-Tewes-MVA-7-5-2025"
+    },
+    "source_id": "8",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Nyiana-Davis-MVA-6-14-2025-Personal Injury Protection (PIP)-25-806916369",
+    "attributes": {
+      "claim_number": "25-806916369",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Kim Francis",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Nyiana-Davis-MVA-6-14-2025"
+    },
+    "source_id": "37",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Nyiana-Davis-MVA-6-14-2025-Personal Injury Protection (PIP)-2500262226",
+    "attributes": {
+      "claim_number": "2500262226",
+      "insurer_name": "Mobilitas Insurance Company",
+      "adjuster_name": "Brandon Igbo-Nwoke",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Nyiana-Davis-MVA-6-14-2025"
+    },
+    "source_id": "34",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Owen-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024",
+    "attributes": {
+      "claim_number": "300-793616-2024",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "CW",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Owen-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "83",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Owen-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024",
+    "attributes": {
+      "claim_number": "300-793616-2024",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "Emily Pernice",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": "2025-07-28",
+      "is_active_negotiation": false,
+      "project_name": "Owen-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "55",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Patrice-Harris-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806",
+    "attributes": {
+      "claim_number": "8065806",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Sarah Riggs",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Patrice-Harris-MVA-6-19-2025"
+    },
+    "source_id": "31",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Paxon-Woodford-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806",
+    "attributes": {
+      "claim_number": "8065806",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Sarah Riggs",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Paxon-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "30",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Prince-Ngabonziza-MVA-5-27-2025-None",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Prince-Ngabonziza-MVA-5-27-2025"
+    },
+    "source_id": "38",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Qortez-Jordan-MVA-2-14-2025-Personal Injury Protection (PIP)-17-Q610-2P9",
+    "attributes": {
+      "claim_number": "17-Q610-2P9",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Molly McAndrews",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Qortez-Jordan-MVA-2-14-2025"
+    },
+    "source_id": "72",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Rayshawn-Wilson-MVA-4-10-2025-Personal Injury Protection (PIP)-25806894629",
+    "attributes": {
+      "claim_number": "25806894629",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Rayshawn-Wilson-MVA-4-10-2025"
+    },
+    "source_id": "56",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Renean-Fant-MVA-10-27-2025-Personal Injury Protection (PIP)-799770GQ",
+    "attributes": {
+      "claim_number": "799770GQ",
+      "insurer_name": "Nationwide Mutual Insurance Company",
+      "adjuster_name": "Tonya Kearney",
+      "is_active_negotiation": true,
+      "project_name": "Renean-Fant-MVA-10-27-2025"
+    },
+    "source_id": "252",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Robin-Wilder-Hamilton-MVA-6-15-2023-Personal Injury Protection (PIP)-300-0377210-2023",
+    "attributes": {
+      "claim_number": "300-0377210-2023",
+      "insurer_name": "Auto Owners Insurance",
+      "adjuster_name": "Donald Thomas",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+    },
+    "source_id": "164",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Robyn-Hester-WD-MVA-02-23-2022-Personal Injury Protection (PIP)",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Robyn-Hester-WD-MVA-02-23-2022"
+    },
+    "source_id": "190",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Samuel-Clites-MVA-4-23-2024-Personal Injury Protection (PIP)-1766P145F",
+    "attributes": {
+      "claim_number": "1766P145F",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Samuel-Clites-MVA-4-23-2024"
+    },
+    "source_id": "110",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Sean-May-MVA-8-19-2025-Personal Injury Protection (PIP)-1789H664T",
+    "attributes": {
+      "claim_number": "1789H664T",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Summer Garrett",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Sean-May-MVA-8-19-2025"
+    },
+    "source_id": "222",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Shakeith-Simon-MVA-2-16-2025-Personal Injury Protection (PIP)-250151830",
+    "attributes": {
+      "claim_number": "250151830",
+      "insurer_name": "National General",
+      "adjuster_name": "Megan Reed",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Shakeith-Simon-MVA-2-16-2025"
+    },
+    "source_id": "67",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Shannon-Colvin-MVA-10-1-2023-Personal Injury Protection (PIP)-1756Z294R",
+    "attributes": {
+      "claim_number": "1756Z294R",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "State Farm PIP Team",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Shannon-Colvin-MVA-10-1-2023"
+    },
+    "source_id": "134",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Shawna-Broyles-MVA-08-26-2022-Personal Injury Protection (PIP)-22-7969726",
+    "attributes": {
+      "claim_number": "22-7969726",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Carla Kiggins",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Shawna-Broyles-MVA-08-26-2022"
+    },
+    "source_id": "201",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Shaylynn-Keeney-MVA-02-24-2025-Personal Injury Protection (PIP)-1780Z939M",
+    "attributes": {
+      "claim_number": "1780Z939M",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "State Farm PIP Team",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Shaylynn-Keeney-MVA-02-24-2025"
+    },
+    "source_id": "70",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Sir-Hinkle-MVA-6-23-2025-Personal Injury Protection (PIP)-17-86Q5-96W",
+    "attributes": {
+      "claim_number": "17-86Q5-96W",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "PIPNPC A2",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Sir-Hinkle-MVA-6-23-2025"
+    },
+    "source_id": "29",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Stevie-Hawks-MVA-3-8-2024-Personal Injury Protection (PIP)-17-Q1275R5",
+    "attributes": {
+      "claim_number": "17-Q1275R5",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Brad Murray",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Stevie-Hawks-MVA-3-8-2024"
+    },
+    "source_id": "87",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Taylor-Thompson-MVA-12-06-2024-Medpay - Indiana PIP-038352935-800",
+    "attributes": {
+      "claim_number": "038352935-800",
+      "insurer_name": "USAA Insurance Company",
+      "adjuster_name": "Daniel Castillon",
+      "coverage_confirmation": null,
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Taylor-Thompson-MVA-12-06-2024"
+    },
+    "source_id": "265",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "The-Otts-MVA-8-06-2025-Personal Injury Protection (PIP)-250640481",
+    "attributes": {
+      "claim_number": "250640481",
+      "insurer_name": "National General",
+      "adjuster_name": "Brittany Young",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "The-Otts-MVA-8-06-2025"
+    },
+    "source_id": "236",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Tonya-Dunn-MVA-9-24-2025-Personal Injury Protection (PIP)-1791D291D",
+    "attributes": {
+      "claim_number": "1791D291D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Meela Dixon",
+      "is_active_negotiation": false,
+      "project_name": "Tonya-Dunn-MVA-9-24-2025"
+    },
+    "source_id": "269",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Torrey-Green-MVA-9-3-2025-Personal Injury Protection (PIP)-23016864",
+    "attributes": {
+      "claim_number": "23016864",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "Andrea Spickler",
+      "is_active_negotiation": false,
+      "project_name": "Torrey-Green-MVA-9-3-2025"
+    },
+    "source_id": "272",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Trasandra-Miller-MVA-5-30-2025-Personal Injury Protection (PIP)-17-86Q372Z",
+    "attributes": {
+      "claim_number": "17-86Q372Z",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Amy Dunbar",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Trasandra-Miller-MVA-5-30-2025"
+    },
+    "source_id": "46",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Tyler-Marzec-MVA-2-26-2024-Occupational Accident Insurance-36885",
+    "attributes": {
+      "claim_number": "36885",
+      "insurer_name": "Blue Star Claims",
+      "adjuster_name": "Amy Hawks",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": null,
+      "current_offer": null,
+      "settlement_amount": null,
+      "settlement_date": null,
+      "date_demand_sent": null,
+      "is_active_negotiation": false,
+      "project_name": "Tyler-Marzec-MVA-2-26-2024"
+    },
+    "source_id": "105",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Tyler-Marzec-MVA-2-26-2024-Personal Injury Protection (PIP)-01-007281597",
+    "attributes": {
+      "claim_number": "01-007281597",
+      "insurer_name": "The General Insurance",
+      "adjuster_name": "Kristen Akande",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Tyler-Marzec-MVA-2-26-2024"
+    },
+    "source_id": "106",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "PIPClaim",
+    "name": "Wayne-Weber-MVA-01-01-2022-Personal Injury Protection (PIP)-4671023",
+    "attributes": {
+      "claim_number": "4671023",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Ashley Mcneese",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Wayne-Weber-MVA-01-01-2022"
+    },
+    "source_id": "141",
+    "source_file": "insurance.json"
+  }
+]

@@ -1,0 +1,144 @@
+# Relationship Review: Julmonzhae-Moore-MVA-8-29-2023
+
+**Total Episodes:** 258
+
+**Total Proposed Relationships:** 606
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (5)
+- AmeriPro EMS Of Kentucky & Indiana
+- Starlite Chiropractic (chiropractic)
+- ULP Radiological Associates (radiology)
+- Norton Audubon Hospital (hospital)
+- Virtual Radiologic Professionals (radiology)
+
+### Insurance Claims (4)
+- **BIClaim**: Liberty Mutual Insurance Company
+  - Adjuster: Robert Elliott
+- **BIClaim**: State Farm Insurance Company
+  - Adjuster: Aaron Lovato
+- **PIPClaim**: Liberty Mutual Insurance Company
+  - Adjuster: Robert Elliott
+- **BIClaim**: Elco Insurance
+
+### Liens (1)
+- TeamCare ($3,318.77)
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (5 consolidated)
+- [ ] Aaron Lovato — *✓ MATCHES: Aaron Lovato*
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Adjuster)*
+- [ ] Ebon I. Moore — *✓ MATCHES: Ebon Moore*
+- [ ] Lisa Rivera — *✓ MATCHES: Lisa Rivera*
+- [ ] Robert Elliott — *✓ MATCHES: Robert Elliott*
+
+### Attorney (16 consolidated)
+- [ ] Aaron G. Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Betsy R. Catron — *✓ MATCHES: Betsy R. Catron*
+- [ ] Defendants' Attorney — *IGNORED - generic term*
+- [ ] Dennis Cantrell — *✓ MATCHES: Dennis Cantrell*
+- [ ] James Kamensky — *✓ MATCHES: James Kamensky, Esq.*
+- [ ] Janet Weile — *✓ MATCHES: Janet Weile*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Justin Chumbley — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Larry Church — *✓ MATCHES: Larry Church (from attorneys)*
+- [ ] Lexi Graham — *✓ MATCHES: Lexi Graham*
+- [ ] Sarena — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Sarena Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Scott Stout — *✓ MATCHES: Scott Stout*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+- [ ] Zachary Reichle, Esq. — *✓ MATCHES: Zachary Reichle, Esq.*
+
+### BIClaim (9 consolidated)
+- [ ] BIClaim 054658453-01 (Liberty Mutual) — *IGNORED - claim number*
+- [ ] BIClaim: Liberty Mutual Insurance Company — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] Elco Insurance - BI claim — *✓ MATCHES: Elco Insurance*
+- [ ] Liberty Mutual - Claim 054658453-01 — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] Liberty Mutual Insurance Company (Adjuster: Robert Elliott) — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] Liberty Mutual Insurance Company (BI Claim #054658453) — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] State Farm BI Claim — *✓ MATCHES: State Farm Insurance Company (from insurers)*
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+- [ ] State Farm Insurance Company (BIClaim) — *✓ MATCHES: State Farm Insurance Company*
+
+### Client (5 consolidated)
+- [ ] Ashlee Williams — *✓ MATCHES: Ashlee K. Williams*
+- [ ] Daquan Graham — *✓ MATCHES: Daquan Graham*
+- [ ] Dewayne Ward — *✓ MATCHES: Dewayne Ward*
+- [ ] Julmonzhae Moore — *✓ MATCHES: Julmonzhae Moore*
+- [ ] Naomi Robinson — *✓ MATCHES: Naomi Robinson (from defendants)*
+
+### Court (5 consolidated)
+- [ ] Floyd 22D03-2501-CT-000157 — *IGNORED - case number*
+- [ ] Floyd County — *✓ MATCHES: Floyd County Circuit Court, Division I*
+- [ ] Floyd County (22D03-2501-CT-000157) — *IGNORED - case number*
+- [ ] Floyd County Circuit Court, Division I — *✓ MATCHES: Floyd County Circuit Court, Division I*
+- [ ] IN Circuit Court — *IGNORED - Indiana court*
+
+### Defendant (3 consolidated)
+- [ ] Dewayne Ward — *✓ MATCHES: Dewayne Ward (from clients - client in related case)*
+- [ ] Naomi Robinson — *✓ MATCHES: Naomi Robinson*
+- [ ] Robinson — *✓ MATCHES: Naomi Robinson*
+
+### Insurer (2 consolidated)
+- [ ] Liberty Mutual Personal Insurance Company — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+### LawFirm (4 consolidated)
+- [ ] Kanter & Pintaluga — *✓ MATCHES: Kanter & Pintaluga (from lawfirms)*
+- [ ] Stoll Keenon Ogden PLLC — *✓ MATCHES: Stoll Keenon Ogden PLLC*
+- [ ] Stout & Heuke Law Office — *✓ MATCHES: Stout & Heuke Law Office*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (3 consolidated)
+- [ ] TeamCare — *✓ MATCHES: TeamCare*
+- [ ] TeamCare ($3318.77) — *✓ MATCHES: TeamCare*
+- [ ] TeamCare – A Central States Health Fund (Lien $3,318.77) — *✓ MATCHES: TeamCare*
+
+### MedicalProvider (6 consolidated)
+- [ ] AmeriPro EMS Of Kentucky & Indiana — *✓ MATCHES: AmeriPro EMS Of Kentucky & Indiana*
+- [ ] AmeriPro EMS Of Kentucky & Indiana — *✓ MATCHES: AmeriPro EMS Of Kentucky & Indiana*
+- [ ] Starlite Chiropractic — *✓ MATCHES: Starlite Chiropractic*
+- [ ] ULP Radiological Associates — *✓ MATCHES: ULP Radiological Associates*
+- [ ] Norton Audubon Hospital — *✓ MATCHES: Norton Audubon Hospital*
+- [ ] Virtual Radiologic Professionals — *✓ MATCHES: Virtual Radiologic Professionals*
+
+### Organization (1 consolidated)
+- [ ] OMBMRR@louisvilleky.gov — *IGNORED - email address*
+
+### PIPClaim (6 consolidated)
+- [ ] Liberty Mutual - PIP (Policy 054658453-03) — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] Liberty Mutual Insurance Company (PIP claim) — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] Liberty Mutual Insurance Company - PIP file (related to Claim 054658453-01) — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] PIPClaim 054658453 (Liberty Mutual) — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] PIPClaim: Liberty Mutual Insurance Company — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] PIPClaim: Liberty Mutual Insurance Company (Adjuster: Robert Elliott) — *✓ MATCHES: Liberty Mutual Insurance Company*
+
+### Vendor (1 consolidated)
+- [ ] Larry Church — *✓ MATCHES: Larry Church (from vendors - mediator)*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

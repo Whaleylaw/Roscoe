@@ -1,0 +1,590 @@
+{
+  "case_name": "Faizon-Procter-Witcher-MVA-7-01-2025",
+  "total_episodes": 24,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Direct Auto Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Carolynn Harris"
+      },
+      {
+        "name": "Darria Thomas"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Bodily Injury (BI)-250531476",
+        "insurer": "Direct Auto Insurance",
+        "adjuster": "Carolynn Harris"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Personal Injury Protection (PIP)-250531476",
+        "insurer": "Direct Auto Insurance",
+        "adjuster": "Darria Thomas"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-07-03",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nsent intake docs via vinesign",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 involves client Faizon Procter Witcher in a motor vehicle accident matter. Intake documents were sent to the client via vinesign.",
+      "valid_at": "2025-07-03T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "recipient of intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-03",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__CLIENT CONTACT__\n__Details:__ Direct Auto\nWife\u2019s Kris Depp\nClaim # 250531476\nD10083717\n\nAdjuster\nBrandy \n\nFaizon Procter-Witcher\nDOB 10/29/92\nSS 330-88-9069\nAddy\n3412 Cathy Dykstra Way\nApt 204\nLouisville,KY 40216\n\nPh: 502-450-3149\n\nDOA 7/1/2025 \nLMPD\n\nWent to St. Mary\u2019s Hospital\nOn bluegrass \n__Person Making Contact:__ Justin\n__Date & Time__: July 03 2025",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025: The initial client contact occurred on July 3, 2025, with Justin regarding the Faizon-Procter-Witcher motor vehicle accident case. The contact method was Direct Auto. The client\u2019s wife is Kris Depp. The claim number is 250531476, and the reference number is D10083717. The assigned adjuster is Brandy.\n\nFaizon Procter Witcher was born on October 29, 1992. His Social Security number is 330-88-9069. He resides at 3412 Cathy Dykstra Way, Apt 204, Louisville, KY 40216, and his phone number is 502-450-3149.\n\nDate of accident: July 1, 2025, with involvement noted by LMPD (Louisville Metro Police Department). The client went to St. Mary\u2019s Hospital on Bluegrass.",
+      "valid_at": "2025-07-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Direct Auto Insurance",
+            "relevance": "insurer contacted / claim referenced"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Brandy",
+            "relevance": "assigned adjuster"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Direct Auto Insurance - BIClaim (claim #250531476)",
+            "relevance": "insurance claim referenced"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Direct Auto Insurance - PIPClaim (reference #D10083717)",
+            "relevance": "insurance claim/reference noted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-07-03",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=7a22866e-dc52-4248-978e-6ff61af2018d.pdf\nSigned: 2025-07-03 15:03:59\nAll signers: Faizon Procter-Witcher((502) 450-3149)\nSender: Justin Chumbley",
+      "natural_language": "This case is titled Faizon-Procter-Witcher-MVA-7-01-2025 and involves client Faizon Procter Witcher.\n\nThe intake document via VineSign has been completed. The document name is intake. It was signed on 2025-07-03 15:03:59. The signed document can be viewed at https://app.vinesign.com/Jobs/Pdf?pdfKey=7a22866e-dc52-4248-978e-6ff61af2018d.pdf. All signers listed are Faizon Procter-Witcher (phone: (502) 450-3149). The sender of the document was Justin Chumbley.",
+      "valid_at": "2025-07-03T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "client and signer of intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-07",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nA missed call for aaron whaley was logged at 2025-07-07 13:30:11.487000+00:00 . #missedcall\n\nCaller Info: 5024503149 \n\nCaller ID: 502-450-3149 \n\nCaller Name: Faizon Procter-Witcher \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 involves client Faizon Procter Witcher. On July 7, 2025 at 13:30:11.487000+00:00 (UTC), a missed call for Aaron Whaley was logged, flagged with the tag #missedcall.\n\nCaller information shows the phone number 5024503149, with a caller ID of 502-450-3149. The caller name on file is Faizon Procter-Witcher. The caller email field is blank. A Filevine contact link is available at [filevine-link]. The voicemail transcription field is present but contains no transcription.",
+      "valid_at": "2025-07-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "case client; caller and subject of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nClient consultation and case strategy development.",
+      "natural_language": "Faizon-Procter-Witcher-MVA-7-01-2025 concerns a motor vehicle accident matter involving the client, Faizon Procter Witcher.\n\nThe record indicates that a client consultation was conducted and that a strategy for the case was developed as part of the engagement.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "primary client of the matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nInsurance claim progression and settlement discussions.",
+      "natural_language": "Faizon Procter Witcher is the client in Case Faizon-Procter-Witcher-MVA-7-01-2025, a motor vehicle accident matter.\n\nThe matter concerns the progression of the client's insurance claim and the related settlement discussions.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "subject of the matter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Direct Auto Insurance",
+            "relevance": "insurer handling the client's claims and party to settlement discussions"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim (Direct Auto Insurance)",
+            "relevance": "bodily injury claim whose progression and settlement are discussed"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim (Direct Auto Insurance)",
+            "relevance": "PIP claim whose progression and settlement are discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nRecent accident case follow-up and medical evaluation.",
+      "natural_language": "Faizon Procter Witcher is the client for case Faizon-Procter-Witcher-MVA-7-01-2025. This record documents a recent follow-up in the motor vehicle accident (MVA) case and the accompanying medical evaluation.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "subject of record"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nInsurance communication and claim initiation process.",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 involves Faizon Procter Witcher and centers on insurance communication and the initiation of a claim.\n\nThe case title itself contains the MVA designation and the date 7-01-2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "subject of case / claimant"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Direct Auto Insurance",
+            "relevance": "party involved in insurance communication"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim - Direct Auto Insurance",
+            "relevance": "claim initiated"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim - Direct Auto Insurance",
+            "relevance": "claim initiated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nInitial medical evaluation and accident documentation.",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 concerns the client Faizon Procter Witcher in a motor vehicle accident (MVA). An initial medical evaluation was conducted, and documentation of the accident was completed as part of the case record.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "subject of the MVA case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nJuly 1, 2025 motor vehicle accident case intake.",
+      "natural_language": "Initial client contact on July 1, 2025 with Faizon Procter Witcher regarding motor vehicle accident case intake.\n\nThis matter is identified as Case Faizon-Procter-Witcher-MVA-7-01-2025, and the client is Faizon Procter Witcher.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "subject of case intake / initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-18",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, has been released from Starlite \n__Person Making Contact:__ Justin\n__Date & Time__: September 18 2025",
+      "natural_language": "Initial client contact on September 18, 2025, regarding the motor vehicle accident case Faizon-Procter-Witcher-MVA-7-01-2025 with client Faizon Procter Witcher. The contact was made by Justin, who spoke with the client and noted that the client has been released from Starlite.",
+      "valid_at": "2025-09-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "person contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "facility client was released from"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-09-29",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nsend those docs here",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 concerns the client Faizon Procter Witcher. The record identifies the client as Faizon Procter Witcher and contains the instruction to \u201csend those docs here.\u201d",
+      "valid_at": "2025-09-29T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "case subject; identified client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-29",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__CLIENT CONTACT__\n__Details:__ spoke with client went over notice of no records. he said he did go to st mary and will attempt to get a copy of those records \n__Person Making Contact:__ Justin\n__Date & Time__: September 29 2025",
+      "natural_language": "Initial client contact on September 29, 2025, in the Faizon-Procter-Witcher-MVA-7-01-2025 case with Faizon Procter Witcher regarding the motor vehicle accident. Justin was the person making contact. He spoke with the client and went over the notice of no records. The client said he had gone to St. Mary and would attempt to obtain a copy of those records.",
+      "valid_at": "2025-09-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+            "relevance": "treatment location / source of records"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-01",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__CLIENT CONTACT__\n__Details:__ updated client confirmed we received discharge docs he sent \n__Person Making Contact:__ Justin\n__Date & Time__: October 01 2025",
+      "natural_language": "Initial client contact on October 1, 2025, regarding Faizon Procter Witcher's motor vehicle accident. The contact was made by Justin. The client updated us to confirm that we had received the discharge documents he had sent.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "client who provided update/confirmed discharge documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-01",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__New Insurance Note:__ 10/1 saved PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Direct Auto Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 concerns client Faizon Procter Witcher.\n\nOn 10/1, a New Insurance Note was saved to the PIP ledger. The Insurance Type is Personal Injury Protection (PIP), and the Insurance Company is Direct Auto Insurance. The note was Written by Justin Chumbley. This entry appears under #Inotes.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Direct Auto Insurance",
+            "relevance": "insurance company noted on the PIP ledger"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Direct Auto Insurance",
+            "relevance": "PIP claim referenced by the insurance note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "3364352000 - 2025-10-01",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nIncoming Fax From (336) 435-2000 Page Count:4",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 concerns client Faizon Procter Witcher in a motor vehicle accident matter. An incoming fax was received from the telephone number (336) 435-2000, and the document consists of four pages.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "3364352000",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-08",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__CLIENT CONTACT__\n__Details:__ Updated client \n__Person Making Contact:__ Justin\n__Date & Time__: October 08 2025",
+      "natural_language": "In the case Faizon-Procter-Witcher-MVA-7-01-2025, the client is Faizon Procter Witcher. On October 08, 2025, Justin made contact with the client, and the record notes the detail: \"Updated client.\"",
+      "valid_at": "2025-10-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "contacted/updated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-17",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__CLIENT CONTACT__\n__Details:__ Client called about a 1k loan. just received his ER records, need bill for demand but will send anyway. \n__Person Making Contact:__ Justin\n__Date & Time__: October 17 2025",
+      "natural_language": "Initial client contact on October 17, 2025 for case Faizon-Procter-Witcher-MVA-7-01-2025 with Faizon Procter Witcher regarding a $1,000 loan. The client had just received his ER records and stated that he needs a bill for demand, but will send it anyway. The contact was initiated by Justin.",
+      "valid_at": "2025-10-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-21",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nA missed call for aaron whaley was logged at 10/21/25 - 11:30:50 . #missedcall\n\nCaller Info: 7439997674 \n\nCaller ID: 743-999-7674 \n\nCaller Name: Darria Thomas \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 involves client Faizon Procter Witcher. A missed call for Aaron Whaley was logged on October 21, 2025 at 11:30:50.\n\nCaller information shows the call originated from 743-999-7674, with the caller ID also listing 743-999-7674. The caller name is Darria Thomas, and the caller email field is blank/not provided. There is a link to the Filevine contact at [filevine-link].\n\nVoicemail transcription is not provided.",
+      "valid_at": "2025-10-21T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Darria Thomas",
+            "relevance": "caller / person who made the missed call"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Direct Auto Insurance",
+            "relevance": "adjuster's PIP claim associated with the caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__faizon Procter-WItcher__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Faizon Procter-Witcher - Filevine Project Email Address [FaizonProcterWitcherMVAZ5051337@louisvilleaccidentlawyer.filevineapp.com](mailto:FaizonProcterWitcherMVAZ5051337@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 01:13:33 GMT-04:00\n\nWhat's the deal with these bills? Looks like we've requested them a couple\ntimes and most recently over a month ago. Also, when I was going through\nthe records, there were EMS records from Pleasure Ridge Park in there. So\nwe need those bills too. Please get these so we can get this case resolved.\nWe've already sent the demand.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Faizon-Procter-Witcher-MVA-7-01-2025. The client is Faizon Procter Witcher.\n\nOn Wednesday, October 29, 2025, at 01:13:33 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley (Justin@whaleylawfirm.com) and to the Faizon Procter-Witcher Filevine project address FaizonProcterWitcherMVAZ5051337@louisvilleaccidentlawyer.filevineapp.com regarding the case.\n\nIn the body of the message, Whaley asks, \u201cWhat\u2019s the deal with these bills? Looks like we\u2019ve requested them a couple times and most recently over a month ago.\u201d He notes that, while reviewing the records, EMS records from Pleasure Ridge Park appeared in the file and states that those EMS bills are needed as well. He asks for these items to be obtained so the case can be resolved and mentions that the demand has already been sent.\n\nThe message is signed by Aaron Whaley of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, with phone number 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient/copied"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-11-05",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n__Faizon Procter-Witcher__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Faizon Procter-Witcher - Filevine Project Email Address [FaizonProcterWitcherMVAZ5051337@louisvilleaccidentlawyer.filevineapp.com](mailto:FaizonProcterWitcherMVAZ5051337@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Nov 05 2025 01:48:32 GMT-05:00\n\nI need to find out who the BI adjuster is on this and confirm that they got\nthe demand.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Faizon-Procter-Witcher-MVA-7-01-2025. Client: Faizon Procter Witcher.\n\nOn Wednesday, November 5, 2025, at 1:48:32 a.m. GMT-05:00 (Eastern time), Aaron Whaley of Whaley Law Firm sent an email regarding the Faizon Procter Witcher MVA case. The message was from agwhaley@whaleylawfirm.com and was addressed to Justin Chumbley (Justin@whaleylawfirm.com) and to Faizon Procter-Witcher\u2019s Filevine project inbox at FaizonProcterWitcherMVAZ5051337@louisvilleaccidentlawyer.filevineapp.com. In the body of the email, Whaley stated: \u201cI need to find out who the BI adjuster is on this and confirm that they got the demand.\u201d The email was signed by Aaron Whaley of Whaley Law Firm, with the firm\u2019s contact information: 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-11-05T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient/colleague"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Direct Auto Insurance",
+            "relevance": "BI claim referenced"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Carolynn Harris",
+            "relevance": "BI adjuster being sought/confirmed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-11-06",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nA missed call for aaron whaley was logged at 11/06/25 - 09:35:03 . #missedcall\n\nCaller Info: 5024503149 \n\nCaller ID: 502-450-3149 \n\nCaller Name: Faizon Procter-Witcher \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n All right, good morning, Mr. Whaley, this is Aaron Witcher calling. I was trying to see if Miss Fa got in touch with you about another long possibly if you give me a call back at 502-450-3149, thank you.",
+      "natural_language": "Case: Faizon-Procter-Witcher-MVA-7-01-2025. Client: Faizon Procter Witcher.\n\nA missed call for Aaron Whaley was logged on November 6, 2025 at 09:35:03. The caller information lists the phone number 502-450-3149, with caller ID 502-450-3149, and the caller name Faizon Procter-Witcher. The caller email is blank, and there is a link to the Filevine contact: [filevine-link].\n\nVoicemail transcription: \"All right, good morning, Mr. Whaley, this is Aaron Witcher calling. I was trying to see if Miss Fa got in touch with you about another long possibly if you give me a call back at 502-450-3149, thank you.\"",
+      "valid_at": "2025-11-06T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "caller / left voicemail"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-11-07",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\nA missed call for aaron whaley was logged at 11/07/25 - 15:04:36 . #missedcall\n\nCaller Info: 5024503149 \n\nCaller ID: 502-450-3149 \n\nCaller Name: Faizon Procter-Witcher \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Faizon-Procter-Witcher-MVA-7-01-2025 involves client Faizon Procter Witcher.\n\nA missed call for Aaron Whaley was logged on November 7, 2025 at 15:04:36, flagged with the #missedcall. The record lists the caller information as follows: phone number 5024503149, with a caller ID of 502-450-3149. The caller name on the entry is Faizon Procter-Witcher. There is no caller email on file. A link to the Filevine contact is provided as [filevine-link]. The Voicemail Transcription field is present but contains no content.",
+      "valid_at": "2025-11-07T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-11-30",
+      "original_body": "Case: Faizon-Procter-Witcher-MVA-7-01-2025\nClient: Faizon Procter Witcher\n\n**CASE FILE ORGANIZATION COMPLETED**\n\nCompleted comprehensive 5-phase case file organization using standardized 8-bucket system:\n\n**Phase 1 - Inventory:** Generated complete file inventory with 35 files identified for analysis\n\n**Phase 2 - Analysis & Mapping:** All files analyzed and mapped to proper categories with standardized naming convention (YYYY-MM-DD - Client Name - Category - Originator - Description)\n\n**Phase 3 - Quality Review:** 0.0% error rate (0 errors / 28 case files) - approved for execution\n\n**Phase 4 - Execution:** 23 file operations completed successfully:\n- 21 move operations (16 PDF+MD pairs, 5 non-PDF files)\n- 2 duplicate deletions\n- Zero execution errors\n\n**Phase 5 - Verification:** All files properly organized into 8-bucket structure\n\n**Final File Distribution:**\n- Client: 7 files (fee agreement, intake form, HIPAA authorization)\n- Insurance: 15 files (organized by BI/PIP with Direct Auto Insurance subfolders)\n- Investigation: 3 files (LMPD traffic collision report)\n- Medical Records: 18 files (organized by provider: Starlite Chiropractic, UofL Health - Mary & Elizabeth Hospital)\n- Negotiation Settlement: 3 files (settlement demand package and draft)\n- Case Information: 12 files (JSON databases)\n\n**Action Items Identified:**\n1. UUID image file in root (c61e4286-860a-43d4-9436-45b491302c80.jpg) requires manual review for categorization\n2. Empty duplicate directory can be deleted\n3. Outstanding medical bills needed from UofL Health and EMS (Pleasure Ridge Park)\n\n**Case Status:** Files now fully organized and ready for settlement negotiations. Demand package already sent to Direct Auto BI adjuster (under review per 11/5/2025 confirmation).",
+      "natural_language": "Case: Faizon-Procter-Witcher-MVA-7-01-2025. This file pertains to client Faizon Procter Witcher and documents the motor vehicle accident (MVA) case. The case file organization was completed in five phases using a standardized eight-bucket system.\n\nPhase 1 (Inventory) produced a complete file inventory identifying 35 files for analysis. Phase 2 (Analysis & Mapping) involved analyzing all files and mapping them to proper categories using the standardized naming convention: YYYY-MM-DD - Client Name - Category - Originator - Description. Phase 3 (Quality Review) achieved a 0.0% error rate, with 0 errors across 28 case files, and the files were approved for execution. Phase 4 (Execution) completed 23 file operations: 21 move operations (comprising 16 PDF+MD pairs and 5 non-PDF files) and 2 duplicate deletions, with zero execution errors. Phase 5 (Verification) ensured all files were properly organized into the eight-bucket structure.\n\nFinal File Distribution included the following: Client \u2014 7 files (fee agreement, intake form, HIPAA authorization); Insurance \u2014 15 files (organized by BI/PIP with Direct Auto Insurance subfolders); Investigation \u2014 3 files (LMPD traffic collision report); Medical Records \u2014 18 files (organized by provider: Starlite Chiropractic, UofL Health - Mary & Elizabeth Hospital); Negotiation Settlement \u2014 3 files (settlement demand package and draft); and Case Information \u2014 12 files (JSON databases).\n\nAction Items identified are: (1) the UUID image file in the root folder, c61e4286-860a-43d4-9436-45b491302c80.jpg, requires manual review for categorization; (2) the empty duplicate directory can be deleted; and (3) outstanding medical bills are needed from UofL Health and EMS (Pleasure Ridge Park).\n\nCase Status: The files are now fully organized and ready for settlement negotiations. The demand package has already been sent to the Direct Auto BI adjuster and is currently under review per a confirmation dated 11/5/2025.",
+      "valid_at": "2025-11-30T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Faizon Procter Witcher",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "treatment provider; medical records present in file"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+            "relevance": "hospital; medical records present and outstanding bills requested"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Direct Auto Insurance",
+            "relevance": "insurer for BI and PIP claims; recipient of demand package"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Direct Auto Insurance (BIClaim)",
+            "relevance": "BI claim to which the demand package was sent; under review"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Direct Auto Insurance (PIPClaim)",
+            "relevance": "PIP claim included in file organization"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Carolynn Harris",
+            "relevance": "Direct Auto BI adjuster; recipient of demand package"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Darria Thomas",
+            "relevance": "Direct Auto PIP adjuster listed in files"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "HealthSystem",
+    "name": "Norton Healthcare",
+    "attributes": {
+      "medical_records_endpoint": "Norton Healthcare Medical Records",
+      "billing_endpoint": "Norton Healthcare Patient Financial Services",
+      "phone": "(502) 629-1234",
+      "fax": "",
+      "email": "",
+      "address": "Louisville, KY",
+      "website": "nortonhealthcare.com"
+    },
+    "source_id": "healthcare_systems",
+    "source_file": "norton_healthcare_locations.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "HealthSystem",
+    "name": "UofL Health",
+    "attributes": {
+      "medical_records_endpoint": "UofL Health Medical Records - Central",
+      "billing_endpoint": "UofL Health Patient Accounts",
+      "phone": "(502) 562-3000",
+      "fax": "",
+      "email": "",
+      "address": "530 South Jackson Street, Louisville, KY 40202",
+      "website": "uoflhealth.org"
+    },
+    "source_id": "healthcare_systems",
+    "source_file": "uofl_health_locations.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "HealthSystem",
+    "name": "Baptist Health",
+    "attributes": {
+      "medical_records_endpoint": "Baptist Health Medical Records",
+      "billing_endpoint": "Baptist Health Patient Financial Services",
+      "phone": "(502) 896-5000",
+      "fax": "",
+      "email": "",
+      "address": "Louisville, KY",
+      "website": "baptisthealth.com"
+    },
+    "source_id": "healthcare_systems",
+    "source_file": "baptist_health_locations.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "HealthSystem",
+    "name": "CHI Saint Joseph Health",
+    "attributes": {
+      "medical_records_endpoint": "CHI Saint Joseph Medical Records",
+      "billing_endpoint": "CHI Saint Joseph Patient Accounts",
+      "phone": "",
+      "fax": "",
+      "email": "",
+      "address": "Lexington, KY",
+      "website": "chisaintjosephhealth.org"
+    },
+    "source_id": "healthcare_systems",
+    "source_file": "chi_saint_joseph_locations.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "HealthSystem",
+    "name": "St. Elizabeth Healthcare",
+    "attributes": {
+      "medical_records_endpoint": "St. Elizabeth Medical Records",
+      "billing_endpoint": "St. Elizabeth Patient Financial Services",
+      "phone": "(859) 344-2000",
+      "fax": "",
+      "email": "",
+      "address": "Northern Kentucky",
+      "website": "stelizabeth.com"
+    },
+    "source_id": "healthcare_systems",
+    "source_file": "stelizabeth_locations.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "HealthSystem",
+    "name": "Norton Children's Hospital",
+    "attributes": {
+      "medical_records_endpoint": "Norton Children's Medical Records",
+      "billing_endpoint": "Norton Children's Patient Financial Services",
+      "phone": "(502) 629-5437",
+      "fax": "",
+      "email": "",
+      "address": "231 East Chestnut Street, Louisville, KY 40202",
+      "website": "nortonchildrens.com"
+    },
+    "source_id": "healthcare_systems",
+    "source_file": "norton_childrens_locations.json"
+  }
+]

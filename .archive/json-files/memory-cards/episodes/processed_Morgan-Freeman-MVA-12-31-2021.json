@@ -1,0 +1,67 @@
+{
+  "case_name": "Morgan-Freeman-MVA-12-31-2021",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Synergy Injury Care & Rehab Diagnostics",
+        "specialty": "physical therapy"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Indiana Farm Bureau"
+      },
+      {
+        "name": "State Auto Insurance"
+      },
+      {
+        "name": "Kentucky Farm Bureau"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Courtny Wolfe"
+      },
+      {
+        "name": "Carina Smith"
+      },
+      {
+        "name": "Lorie Miller"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Morgan-Freeman-MVA-12-31-2021-Bodily Injury (BI)-3100028790",
+        "insurer": "Indiana Farm Bureau",
+        "adjuster": "Courtny Wolfe"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Morgan-Freeman-MVA-12-31-2021-Medpay - Indiana PIP-187968220",
+        "insurer": "State Auto Insurance",
+        "adjuster": "Carina Smith"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Morgan-Freeman-MVA-12-31-2021-Personal Injury Protection (PIP)-4900253",
+        "insurer": "Kentucky Farm Bureau",
+        "adjuster": "Lorie Miller"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Morgan-Freeman-MVA-12-31-2021-Indiana Medicaid",
+        "holder": "Indiana Medicaid",
+        "amount": 420.54
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

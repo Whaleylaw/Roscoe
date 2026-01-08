@@ -1,0 +1,235 @@
+{
+  "case_name": "Carmelita-Wilson-MVA-10-12-2025",
+  "total_episodes": 12,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-10-14",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\nsent intake docs via vinesign",
+      "natural_language": "Case Carmelita-Wilson-MVA-10-12-2025 concerns Carmelita Wilson. Intake documents were sent to her via vinesign.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "case subject; recipient of intake documents"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Vinesign",
+            "relevance": "platform used to send intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-14",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\n__CLIENT CONTACT__\n__Details:__ Carmelita Wilson\n3/27/68\nSSN: 407-23-6750\nPh: 502-216-9544\n\nNeck pain, is having surgery on her neck this week, right hip pain as well.\n\nTerrence Donahue is her previous Dr 502-636-7444\n\nIs missing work.\n\nCarmelita44@yahoo.com send wage verification. \n__Person Making Contact:__ Justin\n__Date & Time__: October 14 2025",
+      "natural_language": "Case Carmelita-Wilson-MVA-10-12-2025. Initial client contact on October 14, 2025, was made by Justin regarding Carmelita Wilson. The client is Carmelita Wilson, born March 27, 1968, with Social Security number 407-23-6750 and phone number 502-216-9544. She reports neck pain and states she is having neck surgery this week, and she also reports pain in the right hip.\n\nHer previous doctor is Terrence Donahue, who can be reached at 502-636-7444. She is missing work. Her email address is Carmelita44@yahoo.com, and wage verification should be sent there.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Dr. Terrence P. Donohue",
+            "relevance": "previous doctor"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-17",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\n__CLIENT CONTACT__\n__Details:__ left vm \n__Person Making Contact:__ Justin\n__Date & Time__: October 17 2025",
+      "natural_language": "Initial client contact on October 17, 2025 regarding the motor vehicle accident case Carmelita-Wilson-MVA-10-12-2025. The client is Carmelita Wilson. Justin, the person making contact, left a voicemail.",
+      "valid_at": "2025-10-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "client of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-10-17",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=dcd2243f-002d-46e0-af4b-ad05d540a95a.pdf\nSigned: 2025-10-17 15:51:56\nAll signers: Carmelita Wilson(carmelita44@yahoo.com (502) 216-9544)\nSender: Justin Chumbley",
+      "natural_language": "Case Carmelita-Wilson-MVA-10-12-2025 concerns client Carmelita Wilson. The intake form named “intake” was processed through VineSign and is completed. The signed intake document can be accessed at https://app.vinesign.com/Jobs/Pdf?pdfKey=dcd2243f-002d-46e0-af4b-ad05d540a95a.pdf. The signature was completed on 2025-10-17 at 15:51:56. All signers listed are Carmelita Wilson, with the contact details carmelita44@yahoo.com and (502) 216-9544. The signature request was sent by Justin Chumbley.",
+      "valid_at": "2025-10-17T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "client and signer of intake form"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "VineSign",
+            "relevance": "platform used to process and host signed intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-22",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\nA missed call for aaron whaley was logged at 10/22/25 - 13:15:14 . #missedcall\n\nCaller Info: 5022169544 \n\nCaller ID: 502-216-9544 \n\nCaller Name: Carmelita Wilson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Good afternoon, Aaron. This is Carmela Wilson and I just have some questions I need to ask you about some things. When you have you have a chance. Could you give me a call back at 502? 2169544 again 522169544, thank you.",
+      "natural_language": "Case Carmelita-Wilson-MVA-10-12-2025. Client: Carmelita Wilson.\n\nOn October 22, 2025 at 13:15:14, a missed call for Aaron Whaley was logged in the record (tagged #missedcall). The caller information lists the number 5022169544 with caller ID 502-216-9544 and the caller name Carmelita Wilson. No email address is provided for the caller, and a Filevine contact link is available: [filevine-link].\n\nVoicemail transcription shows the caller message as: “Good afternoon, Aaron. This is Carmela Wilson and I just have some questions I need to ask you about some things. When you have you have a chance. Could you give me a call back at 502? 2169544 again 522169544, thank you.”",
+      "valid_at": "2025-10-22T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-23",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, is now home from hospital, has a follow up in 30 days. has apt Nov 20th. \n\nis being setup with a bone stimulator to use at home \n__Person Making Contact:__ Justin\n__Date & Time__: October 23 2025",
+      "natural_language": "Initial client contact on October 23, 2025, with Justin regarding Carmelita Wilson and a motor vehicle accident (case Carmelita-Wilson-MVA-10-12-2025). The client reports she is now home from the hospital and has a follow-up in 30 days. She also has an appointment on November 20, 2025. She is being set up with a bone stimulator to use at home.",
+      "valid_at": "2025-10-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "client/subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-30",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\nA missed call for aaron whaley was logged at 10/30/25 - 15:43:58 . #missedcall\n\nCaller Info: 5022169544 \n\nCaller ID: 502-216-9544 \n\nCaller Name: Carmelita Wilson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Good afternoon, Aaron. This is Cara Wilson. I was calling I needed to ask you a couple of questions. Could you give me a call back at your earliest convenience? 502-216-9544. Thank you. Bye bye.",
+      "natural_language": "Case Carmelita-Wilson-MVA-10-12-2025 involves client Carmelita Wilson. On October 30, 2025, at 15:43:58, a missed call for Aaron Whaley was logged. The caller information lists the phone number 5022169544 with caller ID 502-216-9544. The caller name on the record is Carmelita Wilson, and no email address is listed. A Filevine contact link is provided: [filevine-link].\n\nVoicemail transcription: “Good afternoon, Aaron. This is Cara Wilson. I was calling I needed to ask you a couple of questions. Could you give me a call back at your earliest convenience? 502-216-9544. Thank you. Bye bye.”",
+      "valid_at": "2025-10-30T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "caller and case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-03",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, is gathering LW docs for us. sent her a text with my email \n__Person Making Contact:__ Justin\n__Date & Time__: November 03 2025",
+      "natural_language": "Initial client contact on November 3, 2025, with Carmelita Wilson regarding the motor vehicle accident for case Carmelita-Wilson-MVA-10-12-2025.\n\nJustin spoke with the client and is gathering LW docs for us. He also sent her a text containing his email address.",
+      "valid_at": "2025-11-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "client contacted regarding motor vehicle accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-07",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, is sending us her HI card. went over limits tender etc \n__Person Making Contact:__ Justin\n__Date & Time__: November 07 2025",
+      "natural_language": "Initial client contact on November 7, 2025 for the Carmelita-Wilson-MVA-10-12-2025 case with Carmelita Wilson was conducted by Justin. During the call, Justin spoke with the client, who stated that she is sending us her HI card. The discussion included going over limits, tender, etc.",
+      "valid_at": "2025-11-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-11-07",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\nmy email is Justin@whaleylawfirm.com",
+      "natural_language": "Case Carmelita-Wilson-MVA-10-12-2025 concerns client Carmelita Wilson in a motor vehicle accident matter. The email address on file for the matter is Justin@whaleylawfirm.com.",
+      "valid_at": "2025-11-07T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "email domain on file for the matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email contact on file (Justin@whaleylawfirm.com)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-14",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\n__CLIENT CONTACT__\n__Details:__ updated client \n__Person Making Contact:__ Justin\n__Date & Time__: November 14 2025",
+      "natural_language": "Case Carmelita-Wilson-MVA-10-12-2025 involves client Carmelita Wilson in a motor vehicle accident matter. The client contact entry notes that the \"Details: updated client.\" The contact was made by Justin on November 14, 2025.",
+      "valid_at": "2025-11-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-20",
+      "original_body": "Case: Carmelita-Wilson-MVA-10-12-2025\nClient: Carmelita Wilson\n\n__CLIENT CONTACT__\n__Details:__ client will start PT in January \n__Person Making Contact:__ Justin\n__Date & Time__: November 20 2025",
+      "natural_language": "Initial client contact on November 20, 2025, with Carmelita Wilson regarding the Carmelita-Wilson-MVA-10-12-2025 motor vehicle accident. The contact was made by Justin. The client will start physical therapy in January.",
+      "valid_at": "2025-11-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

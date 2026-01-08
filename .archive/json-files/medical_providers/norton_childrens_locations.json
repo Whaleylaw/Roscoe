@@ -1,0 +1,82 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Hospital",
+    "attributes": {
+      "address": "231 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 629-5437",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "pediatric_hospital",
+      "provider_type": "hospital"
+    },
+    "source_id": "1",
+    "source_file": "norton_childrens_manual"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "pediatrics",
+      "provider_type": "medical_group"
+    },
+    "source_id": "2",
+    "source_file": "case_data"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Urology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "pediatric_urology",
+      "provider_type": "specialty_clinic"
+    },
+    "source_id": "3",
+    "source_file": "case_data"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Center",
+    "attributes": {
+      "address": "4001 Dutchmans Lane, Louisville, KY 40207",
+      "phone": "(502) 893-1000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "pediatric_medical_center",
+      "provider_type": "medical_center"
+    },
+    "source_id": "4",
+    "source_file": "norton_childrens_manual"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Emergency at Norton Women's and Children's Hospital",
+    "attributes": {
+      "address": "4001 Dutchmans Lane, Louisville, KY 40207",
+      "phone": "(502) 893-1000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "pediatric_emergency",
+      "provider_type": "emergency_department"
+    },
+    "source_id": "5",
+    "source_file": "norton_childrens_manual"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Downtown",
+    "attributes": {
+      "address": "231 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 629-5437",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "pediatric_hospital",
+      "provider_type": "hospital"
+    },
+    "source_id": "6",
+    "source_file": "norton_childrens_manual"
+  }
+]

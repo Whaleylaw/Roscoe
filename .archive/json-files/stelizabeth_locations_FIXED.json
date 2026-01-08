@@ -1,0 +1,5030 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Acute Care Surgery - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village Drive, Edgewood, KY 41017-3403",
+      "phone": "(859) 578-5880",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "1",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Advanced Heart Failure Management Center - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village Drive, Edgewood, KY 41017-3403",
+      "phone": "(859) 301-0124",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "2",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Advanced Heart Failure Management Center - Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village Drive, Edgewood, KY 41017-3439",
+      "phone": "(859) 301-0124",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "3",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Advanced Heart Failure Management Center - Ft. Thomas Outreach Clinic",
+    "attributes": {
+      "address": "1400 Grand Avenue, Newport, KY 41071-2570",
+      "phone": "(859) 301-0124",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "4",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Arrhythmia Consultants - HVI Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village Drive, Edgewood, KY 41017-3439",
+      "phone": "(859) 331-3353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "5",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Arrhythmia Consultants - HVI Florence Turfway",
+    "attributes": {
+      "address": "7388 Turfway Road, Florence, KY 41042-1381",
+      "phone": "(859) 331-3353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "6",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Arrhythmia Consultants - HVI Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek Road, Lawrenceburg, IN 47025-1095",
+      "phone": "(859) 331-3353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "7",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Arrhythmia Consultants - HVI Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand Avenue, Newport, KY 41071-2570",
+      "phone": "(859) 331-3353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "8",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Burlington",
+    "attributes": {
+      "address": "6105 1st Financial Drive, Burlington, KY 41005-7892",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "9",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr. Way, Covington, KY 41011-0801",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "10",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Acute Care Surgery - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 578-5880",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "11",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Advanced Heart Failure Management Center - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-0124",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "12",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Advanced Heart Failure Management Center - Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village DriveEdgewood, KY 41017-3439",
+      "phone": "(859) 301-0124",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "13",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Advanced Heart Failure Management Center - Ft. Thomas Outreach Clinic",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 301-0124",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "14",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Arrhythmia Consultants - HVI Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village DriveEdgewood, KY 41017-3439",
+      "phone": "(859) 331-3353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "15",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Arrhythmia Consultants - HVI Florence Turfway",
+    "attributes": {
+      "address": "7388 Turfway RoadFlorence, KY 41042-1381",
+      "phone": "(859) 331-3353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "16",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Arrhythmia Consultants - HVI Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek RoadLawrenceburg, IN 47025-1095",
+      "phone": "(859) 331-3353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "17",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Arrhythmia Consultants - HVI Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 331-3353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "18",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Burlington",
+    "attributes": {
+      "address": "6105 1st Financial DriveBurlington, KY 41005-7892",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "19",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr. WayCovington, KY 41011-0801",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "20",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Covington Suite 300",
+    "attributes": {
+      "address": "20 West 18th StreetCovington, KY 41011-3329",
+      "phone": "(859) 757-0717",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "21",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Crestview Hills",
+    "attributes": {
+      "address": "334 Thomas More ParkwayCrestview Hills, KY 41017-3464",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "22",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Crittenden",
+    "attributes": {
+      "address": "405 Violet RoadCrittenden, KY 41030-8956",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "23",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Dry Ridge",
+    "attributes": {
+      "address": "100 Blackburn LaneDry Ridge, KY 41035-8806",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "24",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "25",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Erlanger SUN",
+    "attributes": {
+      "address": "820 Dolwick DriveErlanger, KY 41018-2774",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "26",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "859-301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "27",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Florence Turfway Suite 140",
+    "attributes": {
+      "address": "7300 Turfway RoadFlorence, KY 41042-1398",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "28",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "29",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Hebron",
+    "attributes": {
+      "address": "2000 Litton LaneHebron, KY 41048-8611",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "30",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Highland Heights",
+    "attributes": {
+      "address": "2626 Alexandria PikeHighland Heights, KY 41076-1530",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "31",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Newport Ovation",
+    "attributes": {
+      "address": "200 West 3rd StreetNewport, KY 41071-1814",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "32",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "33",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Turfway",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042-4896",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "34",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Union Richwood",
+    "attributes": {
+      "address": "605 Man O War BoulevardUnion, KY 41091-2007",
+      "phone": "(859) 757-0717",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "35",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Behavioral Health - Walton",
+    "attributes": {
+      "address": "13260 Service RoadWalton, KY 41094-9565",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "36",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Breast Center - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-4329",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "37",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Breast Center - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-2300",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "38",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Breast Center - Grant",
+    "attributes": {
+      "address": "238 Barnes RdWilliamstown, KY 41097-9482",
+      "phone": "(859) 824-8110",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "39",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Breast Center – Covington",
+    "attributes": {
+      "address": "1500 James Simpson, Jr. WayCovington, KY 41011",
+      "phone": "(859) 655-8777",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "40",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Breast Health - Cancer Center Greendale",
+    "attributes": {
+      "address": "17525 Greendale Plaza DriveGreendale, IN 47025-8299",
+      "phone": "(812) 496-7710",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "41",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Breast Health- Cancer Center",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-6257",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "42",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Breast Health- Edgewood Cancer Center",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-6257",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "43",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Breast Health- Greendale",
+    "attributes": {
+      "address": "17525 Greendale Plaza DriveGreendale, IN 47025-8299",
+      "phone": "(812) 496-7710",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "44",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Business Health - Mineola Clinic",
+    "attributes": {
+      "address": "4123 Olympic BoulevardErlanger, KY 41018-3508",
+      "phone": "(859) 301-2999",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "45",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cancer Care Retail Pharmacy",
+    "attributes": {
+      "address": "1 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "859-301-4510",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "46",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cancer Care- Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-2237",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "47",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cardiac & Vascular Diagnostic Imaging - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr. WayCovington, KY 41011",
+      "phone": "(859) 655-8666",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "48",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cardiac Diagnostic Imaging - Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 331-3484",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "49",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cardiac Rehabilitation Center - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025",
+      "phone": "(812) 496-7254",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "50",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cardiac Rehabilitation Center - Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-3600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "51",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cardiac Rehabilitation Center - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3382",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "52",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cardiac Rehabilitation Center - Grant",
+    "attributes": {
+      "address": "300 Barnes Rd.Williamstown, KY 41097",
+      "phone": "(859) 824-8244",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "53",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cardiac Surgeons- Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-9010",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "54",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Cardiac Surgeons- Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village DriveEdgewood, KY 41017-3439",
+      "phone": "(859) 301-9010",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "55",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - CardioVascular Mobile Health Unit",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-9355",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "56",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Care Coordination - Covington",
+    "attributes": {
+      "address": "1500 James Simpson, Jr. WayCovington, KY 41011",
+      "phone": "(859) 301-2275",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "57",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Care Coordination - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2275",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "58",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Care Coordination - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5200",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "59",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Care Coordination - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3100",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "60",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Care Coordination - Grant",
+    "attributes": {
+      "address": "238 Barnes RdWilliamstown, KY 41097-9482",
+      "phone": "(859) 824-8240",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "61",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Case Managers",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "62",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Center for Family Medicine",
+    "attributes": {
+      "address": "413 South Loop RoadEdgewood, KY 41017-5446",
+      "phone": "(859) 301-3800",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "63",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Clinical and Certified Social Workers",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "64",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Colorectal Surgery - Edgewood Suite 271",
+    "attributes": {
+      "address": "20 Medical Village DriveEdgewood, KY 41017- 5401",
+      "phone": "(859) 578-5880",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "65",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Colorectal Surgery - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 578-5880",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "66",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Concierge Complete - Ft. Mitchell",
+    "attributes": {
+      "address": "2300 Chamber Center DriveFt. Mitchell, KY 41017-1686",
+      "phone": "(859) 655-7040",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "67",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Covington Anti-Coagulation Clinic",
+    "attributes": {
+      "address": "1500 James Simpson Jr. WayCovington, KY 41011",
+      "phone": "(859) 301-6790",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "68",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Dearborn Outpatient Pharmacy",
+    "attributes": {
+      "address": "600 Wilson Creek Rd. Lawrenceburg, IN 47025",
+      "phone": "(812) 496-7388",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "69",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Dermatology - Crestview Hills",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 371-3376",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "70",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Dermatology - Florence Turfway",
+    "attributes": {
+      "address": "7300 Turfway RoadFlorence, KY 41042-1338",
+      "phone": "(859) 371-3376",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "71",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Dermatology - Highland Heights",
+    "attributes": {
+      "address": "2626 Alexandria PikeHighland Heights, KY 41076-1530",
+      "phone": "(859) 371-3376",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "72",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Domestic Violence  Program - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-9266",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "73",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Edgewood Anti-Coagulation Clinic",
+    "attributes": {
+      "address": "20 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-6790",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "74",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Family Birth Place - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "75",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Florence Anti-Coagulation Clinic",
+    "attributes": {
+      "address": "7370 Turfway Rd. Suite 170Florence, KY 41042",
+      "phone": "(859) 212-5568",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "76",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Florence Heart & Vascular Institute Outreach Building",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 301-5570",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "77",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Florence Outpatient Pharmacy",
+    "attributes": {
+      "address": "7370 Turfway Rd.Florence, KY 41042",
+      "phone": "(859) 212-4450",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "78",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Foundation - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-3920",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "79",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ft. Thomas Anti-Coagulation Clinic",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3790",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "80",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Crestview Hills Centre View",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "81",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025-2751",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "82",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "83",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "84",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Florence Endoscopy Center – Entrance 1D",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "85",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "86",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Grant",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "87",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek RoadLawrenceburg, IN 47025-1095",
+      "phone": "(812) 496-8794",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "88",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "89",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gastroenterology - Williamstown",
+    "attributes": {
+      "address": "300 Barnes RoadWilliamstown, KY 41097-9483",
+      "phone": "(859) 331-6466",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "90",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 578-5880",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "91",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Edgewood Suite 254",
+    "attributes": {
+      "address": "20 Medical Village DriveEdgewood, KY 41017-5401",
+      "phone": "(859) 344-1600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "92",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Edgewood Suite 271",
+    "attributes": {
+      "address": "20 Medical Village DriveEdgewood, KY 41017-5401",
+      "phone": "(859) 578-5880",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "93",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 212-4625",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "94",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 781-2628",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "95",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Lawrenceburg",
+    "attributes": {
+      "address": "368 Bielby RoadLawrenceburg, IN 47025-1099",
+      "phone": "(812) 496-8771",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "96",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Newport",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 441-3818",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "97",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Owenton",
+    "attributes": {
+      "address": "120 Progress WayOwenton, KY 40359-6032",
+      "phone": "(859) 344-1600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "98",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - General Surgery - Williamstown",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 824-8104",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "99",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Geriatrics - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 212-4302",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "100",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Geriatrics - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-4027",
+      "phone": "(859) 912-7211",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "101",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gift Shop - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek Rd.Lawrenceburg, IN 47025",
+      "phone": "(812) 496-7270",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "102",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gift Shop - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2137",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "103",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gift Shop - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5202",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "104",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Gift Shop - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand Ave.Ft. Thomas, KY 41075",
+      "phone": "(859) 572-3235",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "105",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Grant County Anti-Coagulation Clinic",
+    "attributes": {
+      "address": "238 Barnes Rd.Williamstown, KY 41097",
+      "phone": "(859) 212-5568",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "106",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hand Therapy - Crestview Hills",
+    "attributes": {
+      "address": "741 Centre View Blvd.Crestview Hills, KY 41017",
+      "phone": "(859) 301-5540",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "107",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hand Therapy - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025",
+      "phone": "(812) 496-8790",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "108",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "109",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025-2751",
+      "phone": "(812) 496-4910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "110",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-2000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "111",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village DriveEdgewood, KY 41017-3439",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "112",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - Florence Turfway",
+    "attributes": {
+      "address": "7388 Turfway RoadFlorence, KY 41042-1381",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "113",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr. WayCovington, KY 41011-0801",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "114",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-2000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "115",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village DriveEdgewood, KY 41017-3439",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "116",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 212-5200",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "117",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Florence Turfway",
+    "attributes": {
+      "address": "7388 Turfway RoadFlorence, KY 41042-1381",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "118",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "119",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(812) 496-4910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "120",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek RoadLawrenceburg, IN 47025-1095",
+      "phone": "(812) 496-4910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "121",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Newport",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "122",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - HVI Williamstown",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "123",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek RoadLawrenceburg, IN 47025-1095",
+      "phone": "(812) 496-4910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "124",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "125",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Heart & Vascular - Williamstown",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 287-3045",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "126",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hospice - Edgewood",
+    "attributes": {
+      "address": "483 South Loop RoadEdgewood, KY 41017-5446",
+      "phone": "(859) 301-4600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "127",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hospitalist - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "128",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hospitalist - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025-2751",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "129",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hospitalist - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "130",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hospitalist - Erlanger SUN",
+    "attributes": {
+      "address": "820 Dolwick DriveErlanger, KY 41018-2774",
+      "phone": "(859) 301-5901",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "131",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hospitalist - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "132",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hospitalist - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "133",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Hospitalist - Grant",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "134",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - House Physician - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "135",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - House Physician - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "136",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - House Physician - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "137",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - House Physician - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "138",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - House Physician - Williamstown",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 301-8074",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "139",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr. WayCovington, KY 41011",
+      "phone": "(859) 655-4360",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "140",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek Rd.Lawrenceburg, IN 47025",
+      "phone": "(812) 496-7230",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "141",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-2160",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "142",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging - Florence",
+    "attributes": {
+      "address": "4900 Houston Rd.Florence, KY 41042",
+      "phone": "(859) 212-5420",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "143",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand Ave.Ft. Thomas, KY 41075",
+      "phone": "(859) 572-3140",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "144",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging - Grant",
+    "attributes": {
+      "address": "238 Barnes Rd.Williamstown, KY 41097",
+      "phone": "(859) 824-8110",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "145",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging/Laboratory Services - Alexandria",
+    "attributes": {
+      "address": "7200 Alexandria PikeAlexandria, KY 41001",
+      "phone": "(859) 572-3388",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "146",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging/Laboratory Services - Hebron",
+    "attributes": {
+      "address": "2200 Conner RoadHebron, KY 41048",
+      "phone": "(859) 212-5100",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "147",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging/Laboratory Services - Independence",
+    "attributes": {
+      "address": "135 Courthouse CrossingIndependence, KY 41051",
+      "phone": "(859) 301-0990",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "148",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging/Laboratory Services - Mt. Zion",
+    "attributes": {
+      "address": "10095 Investment WayFlorence, KY 41042",
+      "phone": "(859) 301-7234",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "149",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Imaging/Laboratory Services - Owen",
+    "attributes": {
+      "address": "120 Progress WayOwenton, KY 40359",
+      "phone": "(502) 484-4600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "150",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Crestview Hills",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 757-4446",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "151",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025-2751",
+      "phone": "(859) 757-4446",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "152",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 344-1512",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "153",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Edgewood 20 Medical",
+    "attributes": {
+      "address": "20 Medical Village DriveEdgewood, KY 41017-5401",
+      "phone": "(859) 344-1512",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "154",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 757-4446",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "155",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Florence 7388 Turfway",
+    "attributes": {
+      "address": "7388 Turfway RoadFlorence, KY 41042-1381",
+      "phone": "(859) 757-4446",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "156",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Florence Turfway",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042-4896",
+      "phone": "(859) 757-4446",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "157",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 757-4446",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "158",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Infectious Disease - Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek RoadLawrenceburg, IN 47025-1035",
+      "phone": "(859) 757-4446",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "159",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Intensive Care Units - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek Rd.Lawrenceburg, IN 47025",
+      "phone": "(812) 496-8267",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "160",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Intensive Care Units - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgwood, KY 41017",
+      "phone": "(859) 301-2300",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "161",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Intensive Care Units - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-4213",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "162",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Intensive Care Units - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3160",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "163",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Journey Recovery Center - Aurora Links",
+    "attributes": {
+      "address": "112 Links WayAurora, IN 47001-1403",
+      "phone": "812-496-8785",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "164",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Journey Recovery Center - Covington Suite 300",
+    "attributes": {
+      "address": "20 West 18th StreetCovington, KY 41011-3329",
+      "phone": "(859) 757-0717",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "165",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Journey Recovery Center - Dry Ridge",
+    "attributes": {
+      "address": "100 Blackburn LaneDry Ridge, KY 41035-8806",
+      "phone": "(859) 757-0717",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "166",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Covington Main Entrance",
+    "attributes": {
+      "address": "1500 James Simpson Jr. WayCovington, KY 41011",
+      "phone": "(859) 655-4366",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "167",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Crestview Hills",
+    "attributes": {
+      "address": "334 Thomas More Pkwy. Ste. 110Crestview Hills, KY 41017",
+      "phone": "(859) 331-3302",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "168",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Crittenden MOB",
+    "attributes": {
+      "address": "405 Violet Rd.Crittenden, KY 41030",
+      "phone": "(859) 903-0087",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "169",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Dearborn Main Entrance",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025",
+      "phone": "(812) 496-7300",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "170",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Edgewood 3A Patient Entrance",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-5649",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "171",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Florence 3A Outpatient Entrance",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5450",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "172",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Florence Turfway",
+    "attributes": {
+      "address": "7300 Turfway Rd Ste. 150Florence, KY 41042",
+      "phone": "(859) 578-5010",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "173",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Ft. Thomas 1A Main Entrance",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3198",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "174",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Ft. Thomas MOB",
+    "attributes": {
+      "address": "1400 N. Grand Ave.Newport, KY 41075",
+      "phone": "(859) 905-3893",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "175",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Grant 2A Outpatient",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097",
+      "phone": "(859) 824-8194",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "176",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Greendale MOB",
+    "attributes": {
+      "address": "1640 Flossie Dr.Greendale, IN 47025",
+      "phone": "(812) 496-3500",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "177",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Richwood MOB",
+    "attributes": {
+      "address": "605 Man O War Blvd.Union, KY 41091",
+      "phone": "(859) 578-5673",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "178",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - Taylor Mill",
+    "attributes": {
+      "address": "5100 Peace WayTaylor Mill, KY 41015",
+      "phone": "(859) 578-5390",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "179",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laboratory Services - US 42 Union",
+    "attributes": {
+      "address": "8726 US 42Florence, KY 41042",
+      "phone": "(859) 795-5446",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "180",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Laborist - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-2440",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "181",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - MOHS Surgery - Crestview Hills",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 301-6647",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "182",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Mammography and Dexa Screening Center",
+    "attributes": {
+      "address": "600 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-6382",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "183",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Medical Village Pharmacy",
+    "attributes": {
+      "address": "20 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-9025",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "184",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Mobile Mammography Unit",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(877) 424-5750",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "185",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Crestview Hills",
+    "attributes": {
+      "address": "2670 Chancellor DriveCrestview Hills, KY 41017-5466",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "186",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "187",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Edgewood EMG",
+    "attributes": {
+      "address": "2670 Chancellor Drive 100 BCrestview Hills, KY 41017-5466",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "188",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "189",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Florence Turfway",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042-4896",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "190",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "191",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "192",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Highland Heights",
+    "attributes": {
+      "address": "2626 Alexandria PikeHighland Heights, KY 41076-1530",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "193",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Neurology - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 957-0052",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "194",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Nutrition Services - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "195",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Nutrition Services - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5200",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "196",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Nutrition Services - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3100",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "197",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Occupational Therapy - Crestview Hills",
+    "attributes": {
+      "address": "741 Centre View Blvd.Crestview Hills, KY 41017",
+      "phone": "(859) 301-2168",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "198",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Occupational Therapy - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025",
+      "phone": "(812) 496-8790",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "199",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Occupational Therapy - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5400",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "200",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Occupational Therapy - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3120",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "201",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Oncology - Dearborn Cancer Center",
+    "attributes": {
+      "address": "17525 Greendale Plaza DriveGreendale, IN 47025-8299",
+      "phone": "(859) 301-4000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "202",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Oncology - Edgewood Cancer Center",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-4000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "203",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Oncology - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 572-3298",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "204",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Oncology - Grant",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 824-8210",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "205",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ophthalmology - Batesville",
+    "attributes": {
+      "address": "374 Northside DriveBatesville, IN 47006-7038",
+      "phone": "(812) 496-8782",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "206",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ophthalmology - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 655-3111",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "207",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ophthalmology - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025-2751",
+      "phone": "(812) 496-8781",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "208",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ophthalmology - Edgewood South Loop",
+    "attributes": {
+      "address": "580 South Loop RoadEdgewood, KY 41017-3415",
+      "phone": "(859) 301-6099",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "209",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ophthalmology - Florence",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042-4896",
+      "phone": "(859) 746-1990",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "210",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ophthalmology - Fort Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 781-3110",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "211",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ophthalmology - Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek RoadLawrenceburg, IN 47025-1095",
+      "phone": "(812) 496-8781",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "212",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Ophthalmology - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 781-3110",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "213",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Osteopathic Neuromusculoskeletal Medicine - Florence Turfway",
+    "attributes": {
+      "address": "7300 Turfway RoadFlorence, KY 41042-3801",
+      "phone": "(859) 655-8980",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "214",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Palliative Care - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025-2751",
+      "phone": "(812) 537-1010",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "215",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Palliative Care - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-4688",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "216",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Palliative Care - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 301-4688",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "217",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Palliative Care - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 301-4688",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "218",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Palliative Care - The Yung Family Cancer Center",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2237",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "219",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pathology- Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 301-2018",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "220",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pathology- Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-2018",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "221",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pathology- Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 301-2018",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "222",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Patient Logistics",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "223",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physiatry - Crestview Hills Centre View",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 578-5665",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "224",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy & Sports Medicine - Mt. Zion",
+    "attributes": {
+      "address": "10095 Investment WayFlorence, KY 41042-4798",
+      "phone": "(859) 301-9070",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "225",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Alexandria",
+    "attributes": {
+      "address": "7200 Alexandria PikeAlexandria, KY 41001",
+      "phone": "(859) 572-3700",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "226",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Burlington",
+    "attributes": {
+      "address": "5874 Veterans WayBurlington, KY 41005",
+      "phone": "(859) 212-4200",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "227",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Covington",
+    "attributes": {
+      "address": "1500 James Simpson, Jr. WayCovington, KY 41011",
+      "phone": "(859) 655-4268",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "228",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Crestview Hills",
+    "attributes": {
+      "address": "741 Centre View Blvd.Crestview Hills, KY 41017",
+      "phone": "(859) 301-2168",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "229",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025",
+      "phone": "(812) 496-8790",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "230",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Erlanger Griffin Elite",
+    "attributes": {
+      "address": "700 Dolwick Dr.Erlanger, KY 41018",
+      "phone": "(859) 212-5600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "231",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5400",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "232",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3120",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "233",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Grant",
+    "attributes": {
+      "address": "300 Barnes RoadWilliamstown, KY 41097",
+      "phone": "(859) 824-8217",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "234",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Versailles",
+    "attributes": {
+      "address": "476 West US 50Versailles, IN 47042",
+      "phone": "(812) 496-8787",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "235",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Vevay",
+    "attributes": {
+      "address": "1035 W. Main StreetVevay, IN 47043",
+      "phone": "(812) 496-8792",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "236",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Physical Therapy - Wilder",
+    "attributes": {
+      "address": "106 Crossing Dr.Wilder, KY 41076",
+      "phone": "(859) 572-2360",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "237",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Podiatry - Crestview Hills",
+    "attributes": {
+      "address": "351 Centre View BoulevardCrestview Hills, KY 41017-3477",
+      "phone": "(859) 212-0175",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "238",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Podiatry - Florence Turfway",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042-4896",
+      "phone": "(859) 212-0175",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "239",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Podiatry - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(859) 212-0175",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "240",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Podiatry - Newport Ovation",
+    "attributes": {
+      "address": "200 West 3rd StreetNewport, KY 41071-1814",
+      "phone": "(859) 212-0175",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "241",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Podiatry - Union Richwood",
+    "attributes": {
+      "address": "605 Man O War BoulevardUnion, KY 41091-2007",
+      "phone": "(859) 212-0175",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "242",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Precision Medicine & Genomic Health",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-4363",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "243",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Alexandria",
+    "attributes": {
+      "address": "300 Commercial CircleAlexandria, KY 41001-2107",
+      "phone": "(859) 635-9440",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "244",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Aurora Casket Links",
+    "attributes": {
+      "address": "112 Links WayAurora, IN 47001-1403",
+      "phone": "(812) 926-3133",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "245",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Aurora Internal Medicine Links",
+    "attributes": {
+      "address": "112 Links WayAurora, IN 47001-1403",
+      "phone": "(812) 496-8785",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "246",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Aurora Links",
+    "attributes": {
+      "address": "112 Links WayAurora, IN 47001-1403",
+      "phone": "(812) 926-3133",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "247",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Bellevue",
+    "attributes": {
+      "address": "119 Fairfield AvenueBellevue, KY 41073-1184",
+      "phone": "(859) 431-0090",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "248",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Bright Lawrenceburg",
+    "attributes": {
+      "address": "2018 Jamison DriveLawrenceburg, IN 47025-8436",
+      "phone": "(812) 496-8773",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "249",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Bright Pediatrics Lawrenceburg",
+    "attributes": {
+      "address": "2018 Jamison DriveLawrenceburg, IN 47025-8436",
+      "phone": "(812) 496-8772",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "250",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Burlington",
+    "attributes": {
+      "address": "6105 1st Financial DriveBurlington, KY 41005-7892",
+      "phone": "(859) 586-8200",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "251",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Butler",
+    "attributes": {
+      "address": "79 Country Club DriveButler, KY 41006-8704",
+      "phone": "(859) 654-2283",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "252",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 655-4111",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "253",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Covington Internal Medicine",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 655-8980",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "254",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Crestview Hills Internal Medicine",
+    "attributes": {
+      "address": "334 Thomas More ParkwayCrestview Hills, KY 41017-3464",
+      "phone": "(859) 341-0288",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "255",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Crestview Hills Internal Medicine/Pediatrics",
+    "attributes": {
+      "address": "334 Thomas More ParkwayCrestview Hills, KY 41017-3464",
+      "phone": "(859) 578-3400",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "256",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Crestview Hills Pediatrics",
+    "attributes": {
+      "address": "334 Thomas More ParkwayCrestview Hills, KY 41017-3464",
+      "phone": "(859) 341-3383",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "257",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Crittenden",
+    "attributes": {
+      "address": "405 Violet RoadCrittenden, KY 41030-8956",
+      "phone": "(859) 428-1610",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "258",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Dillsboro Internal Medicine Links",
+    "attributes": {
+      "address": "112 Links WayAurora, IN 47001-1403",
+      "phone": "(812) 496-8783",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "259",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Dry Ridge",
+    "attributes": {
+      "address": "100 Blackburn LaneDry Ridge, KY 41035-8806",
+      "phone": "(859) 823-5441",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "260",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Edgewood",
+    "attributes": {
+      "address": "830 Thomas More ParkwayEdgewood, KY 41017-5102",
+      "phone": "(859) 301-8686",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "261",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Edgewood 308 Internal Medicine/Pediatrics",
+    "attributes": {
+      "address": "20 Medical Village DriveEdgewood, KY 41017-5403",
+      "phone": "(859) 578-5651",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "262",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Florence Ewing Boulevard",
+    "attributes": {
+      "address": "7766 Ewing BoulevardFlorence, KY 41042-7537",
+      "phone": "(859) 371-1153",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "263",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Florence Turfway Pediatrics",
+    "attributes": {
+      "address": "7300 Turfway RoadFlorence, KY 41042-1379",
+      "phone": "(859) 212-5025",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "264",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Ft. Mitchell",
+    "attributes": {
+      "address": "2300 Chamber Center DriveFt. Mitchell, KY 41017-1686",
+      "phone": "(859) 341-3114",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "265",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(877) 670-7264",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "266",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Greendale Pediatrics",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(877) 670-7264",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "267",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Hebron Conner Road",
+    "attributes": {
+      "address": "2200 Conner RoadHebron, KY 41048-8142",
+      "phone": "(859) 442-6600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "268",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Hebron Litton Lane",
+    "attributes": {
+      "address": "2000 Litton LaneHebron, KY 41048-8611",
+      "phone": "(859) 334-8700",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "269",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Highland Heights",
+    "attributes": {
+      "address": "2626 Alexandria PikeHighland Heights, KY 41076-1530",
+      "phone": "(859) 781-4111",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "270",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Independence",
+    "attributes": {
+      "address": "135 Courthouse CrossingIndependence, KY 41051-2509",
+      "phone": "(859) 356-6800",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "271",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Lawrenceburg Elm Street",
+    "attributes": {
+      "address": "98 Elm StreetLawrenceburg, IN 47025-2048",
+      "phone": "(812) 496-8775",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "272",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Lawrenceburg Pediatrics",
+    "attributes": {
+      "address": "98 Elm StreetLawrenceburg, IN 47025-2048",
+      "phone": "(812) 496-8777",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "273",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Lawrenceburg State Line",
+    "attributes": {
+      "address": "19849 State Line RoadLawrenceburg, IN 47025-7791",
+      "phone": "(812) 496-8774",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "274",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Milan",
+    "attributes": {
+      "address": "124 West Indian TrailMilan, IN 47031-8992",
+      "phone": "(812) 496-8784",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "275",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Newport Ovation",
+    "attributes": {
+      "address": "200 West 3rd StreetNewport, KY 41071-1814",
+      "phone": "(859) 578-5662",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "276",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 912-7193",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "277",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Rising Sun",
+    "attributes": {
+      "address": "230 6th StreetRising Sun, IN 47040-1114",
+      "phone": "(812) 496-8793",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "278",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Southgate Internal Medicine",
+    "attributes": {
+      "address": "525 Alexandria PikeSouthgate, KY 41071-3290",
+      "phone": "(859) 781-2210",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "279",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Taylor Mill",
+    "attributes": {
+      "address": "5100 Peace WayTaylor Mill, KY 41015-3506",
+      "phone": "(859) 491-2855",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "280",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Turfway",
+    "attributes": {
+      "address": "7300 Turfway RoadFlorence, KY 41042-1375",
+      "phone": "(859) 212-4700",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "281",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Union Bristow Drive",
+    "attributes": {
+      "address": "1808 Bristow DriveUnion, KY 41091-3513",
+      "phone": "(859) 301-7210",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "282",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Union Richwood",
+    "attributes": {
+      "address": "605 Man O War BoulevardUnion, KY 41091-2007",
+      "phone": "(859) 578-5333",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "283",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Union US Highway 42",
+    "attributes": {
+      "address": "8726 US Highway 42Florence, KY 41042-8550",
+      "phone": "(859) 384-2660",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "284",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Vevay",
+    "attributes": {
+      "address": "1035 West Main StreetVevay, IN 47043-9126",
+      "phone": "(812) 496-8786",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "285",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Walton",
+    "attributes": {
+      "address": "13260 Service RoadWalton, KY 41094-9565",
+      "phone": "(859) 485-4116",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "286",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Primary Care - Williamstown",
+    "attributes": {
+      "address": "300 Barnes RoadWilliamstown, KY 41097-9483",
+      "phone": "(859) 824-8400",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "287",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - PrimeWise - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-5999",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "288",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - PrimeWise - Florence",
+    "attributes": {
+      "address": "4900 Houston Rd.Florence, KY 41042",
+      "phone": "",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "289",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - PrimeWise - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 301-5999",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "290",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonary Hypertension - Crestview Hills",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 757-2927",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "291",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonary Rehabilitation & Asthma Education Center",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-5750",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "292",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Crestview Hills",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 757-2927",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "293",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025-2751",
+      "phone": "(812) 496-8779",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "294",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 212-7700",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "295",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Florence Turfway",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042-4896",
+      "phone": "(859) 212-7700",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "296",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 212-7700",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "297",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Grant County",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 757-2927",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "298",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek RoadLawrenceburg, IN 47025-1095",
+      "phone": "(812) 496-8779",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "299",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 212-7700",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "300",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology - Williamstown",
+    "attributes": {
+      "address": "300 Barnes RoadWilliamstown, KY 41097-9483",
+      "phone": "(859) 757-2927",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "301",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Pulmonology/Critical Care - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 757-2927",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "302",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Quality of Care - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "303",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Radiation Oncology - Dearborn Cancer Center",
+    "attributes": {
+      "address": "17525 Greendale Plaza DriveGreendale, IN 47025-8299",
+      "phone": "(859) 301-2238",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "304",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Radiation Oncology - Edgewood Cancer Center",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-2238",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "305",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Radiation Oncology- Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 572-3298",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "306",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Regional Diabetes Center - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 655-8910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "307",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Regional Diabetes Center - Crittenden",
+    "attributes": {
+      "address": "405 Violet RoadCrittenden, KY 41030-8956",
+      "phone": "(859) 655-8910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "308",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Regional Diabetes Center - Florence 7388 Turfway",
+    "attributes": {
+      "address": "7388 Turfway RoadFlorence, KY 41042-1381",
+      "phone": "(859) 655-8910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "309",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Regional Diabetes Center - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(859) 655-8910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "310",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Regional Diabetes Center - Williamstown",
+    "attributes": {
+      "address": "300 Barnes RoadWilliamstown, KY 41097-9483",
+      "phone": "(859) 655-8910",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "311",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Respiratory Care - Covington",
+    "attributes": {
+      "address": "1500 James Simpson, Jr. WayCovington, KY 41011",
+      "phone": "(859) 655-8800",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "312",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Respiratory Care - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2178",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "313",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Respiratory Care - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5470",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "314",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Respiratory Care - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3118",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "315",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Respiratory Care - Grant",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097",
+      "phone": "(859) 824-8207",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "316",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Rheumatology & Neurology EDG Florence",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042 - 4896",
+      "phone": "(859) 344-1900",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "317",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Rheumatology - Crestview Hills Suite 201",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 344-1900",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "318",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Rheumatology - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(859) 344-1900",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "319",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Rheumatology - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 344-1900",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "320",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Rheumatology - Williamstown",
+    "attributes": {
+      "address": "300 Barnes RoadWilliamstown, KY 41097-9483",
+      "phone": "(859) 344-1900",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "321",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - SEH Medical Affairs Office",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-2115",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "322",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Same Day Surgery - Crestview Hills",
+    "attributes": {
+      "address": "2845 Chancellor DriveCrestview Hills, KY 41017-3418",
+      "phone": "(859) 301-6748",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "323",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Same Day Surgery - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-5650",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "324",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Same Day Surgery - Edgewood South Loop",
+    "attributes": {
+      "address": "580 South Loop RoadEdgewood, KY 41017-3415",
+      "phone": "(859) 301-6099",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "325",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Same Day Surgery - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 212-5478",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "326",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Same Day Surgery - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 572-3366",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "327",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sleep Medicine - Crestview Hills",
+    "attributes": {
+      "address": "651 Centre View BoulevardCrestview Hills, KY 41017-5423",
+      "phone": "(859) 301-9140",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "328",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sleep Medicine - Grant",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 301-9140",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "329",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sleep Medicine - Lawrenceburg",
+    "attributes": {
+      "address": "606 Wilson Creek RoadLawrenceburg, IN 47025-1095",
+      "phone": "(812) 496-8779",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "330",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sleep Medicine - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 301-9140",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "331",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Speech Pathology - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025",
+      "phone": "(812) 496-8790",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "332",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Speech Pathology - Edgewood",
+    "attributes": {
+      "address": "20 Medical Village Dr., Suite 354Edgewood, KY 41017",
+      "phone": "(859) 301-5740",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "333",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Speech Pathology - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5400",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "334",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Speech Pathology - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3120",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "335",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Spine Center - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 212-7000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "336",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Spine Center - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(859) 212-7000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "337",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Spine Center - Highland Heights",
+    "attributes": {
+      "address": "2626 Alexandria PikeHighland Heights, KY 41076-1530",
+      "phone": "(859) 212-7000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "338",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sports Medicine - Bright",
+    "attributes": {
+      "address": "1940 Jamison DriveLawrenceburg, IN 47025",
+      "phone": "(812) 496-8791",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "339",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sports Medicine - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025",
+      "phone": "(812) 496-8790",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "340",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sports Medicine - Wilder Town & Country Sports",
+    "attributes": {
+      "address": "106 Crossing Dr.Wilder, KY 41076",
+      "phone": "(859) 572-2360",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "341",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sports Medicine- Griffin",
+    "attributes": {
+      "address": "700 Dolwick DriveErlanger, KY 41018-3231",
+      "phone": "(859) 212-5600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "342",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Sports Medicine- Mt. Zion",
+    "attributes": {
+      "address": "10095 Investment WayFlorence, KY 41042-4798",
+      "phone": "(859) 301-9070",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "343",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare  --  Dolwick",
+    "attributes": {
+      "address": "1360 Dolwick Dr.Erlanger, KY 41018",
+      "phone": "(859) 301-2000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "344",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - EMG/NCV - Crestview Hills",
+    "attributes": {
+      "address": "2670 Chancellor Dr.Crestview Hills, KY 41017",
+      "phone": "(859) 212-0009",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "345",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - EMG/NCV - Florence",
+    "attributes": {
+      "address": "4900 Houston Rd.Florence, KY 41042",
+      "phone": "(859) 212-5400",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "346",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - EMG/NCV - Newport",
+    "attributes": {
+      "address": "1400 N Grand AveNewport, KY 41071",
+      "phone": "(859) 578-5369",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "347",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Business Health Mineola Clinic",
+    "attributes": {
+      "address": "4123 Olympic Boulevard Suite 151Erlanger, KY 41018-3508",
+      "phone": "(859) 301-2999",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "348",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Covington Hospital",
+    "attributes": {
+      "address": "1500 James Simpson Jr. WayCovington, KY 41011",
+      "phone": "(859) 655-8800",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "349",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Dearborn Hospital",
+    "attributes": {
+      "address": "600 Wilson Creek Rd.Lawrenceburg, IN 47025",
+      "phone": "(812) 496-7000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "350",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Edgewood - Pastoral Care Department",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2190",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "351",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Edgewood Hospital",
+    "attributes": {
+      "address": "1 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-2000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "352",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Edgewood Skilled Nursing Facility",
+    "attributes": {
+      "address": "1 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-9980",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "353",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Emergency Department - Covington",
+    "attributes": {
+      "address": "1500 James Simpson, Jr. WayCovington, KY 41011",
+      "phone": "(859) 655-4353",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "354",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Emergency Department - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek Rd.Lawrenceburg, IN 47025",
+      "phone": "(812) 496-7500",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "355",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Emergency Department - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2250",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "356",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Emergency Department - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5441",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "357",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Emergency Department - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "358",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Emergency Department - Grant",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097",
+      "phone": "(859) 824-8114",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "359",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Florence Hospital",
+    "attributes": {
+      "address": "4900 Houston Rd.Florence, KY 41042",
+      "phone": "(859) 212-5200",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "360",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Ft. Thomas (Obstetrical Ultrasound and Perinatal Testing ONLY)",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 572-3100",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "361",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Ft. Thomas Hospital",
+    "attributes": {
+      "address": "85 N. Grand Ave.Ft. Thomas, KY 41075",
+      "phone": "(859) 572-3100",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "362",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Ft. Thomas Skilled Nursing Facility",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-2350",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "363",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Grant Hospital",
+    "attributes": {
+      "address": "238 Barnes Rd.Williamstown, KY 41097",
+      "phone": "(859) 824-8240",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "364",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Grant Skilled Nursing Facility",
+    "attributes": {
+      "address": "238 Barnes Rd.Williamstown, KY 41097",
+      "phone": "(859) 824-8240",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "365",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Health Ministries",
+    "attributes": {
+      "address": "85 North Grand Ave.Ft. Thomas, KY 41075",
+      "phone": "(859) 655-6749",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "366",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Human Resources",
+    "attributes": {
+      "address": "1360 Dolwick Dr.  Suite 105Erlanger, KY 41018",
+      "phone": "(859) 301-2150",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "367",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Specialty Pharmacy",
+    "attributes": {
+      "address": "850 Thomas More ParkwayEdgewood, KY 41017",
+      "phone": "(859) 301-4525",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "368",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare Training and Education Center (SETEC)",
+    "attributes": {
+      "address": "3861 Olympic BlvdErlanger, KY 41018",
+      "phone": "(859) 655-1600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "369",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Stroke Services - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2000",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "370",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Structural Heart & Valve Center - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-8287",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "371",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Structural Heart & Valve Center - Edgewood Heart & Vascular Institute",
+    "attributes": {
+      "address": "711 Medical Village DriveEdgewood, KY 41017-3439",
+      "phone": "(859) 301-8287",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "372",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Surgical Oncology - Edgewood Cancer Center",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-4186",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "373",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Thoracic Surgeons- Edgewood Cancer Center",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 301-2465",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "374",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Total Joint Center",
+    "attributes": {
+      "address": "1 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-0405",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "375",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urgent Care - Crittenden",
+    "attributes": {
+      "address": "405 Violet RoadCrittenden, KY 41030-8956",
+      "phone": "(859) 903-0268",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "376",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urgent Care - Florence",
+    "attributes": {
+      "address": "8726 US Highway 42Florence, KY 41042-8550",
+      "phone": "(859) 647-2900",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "377",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urgent Care - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(812) 496-3285",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "378",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urgent Care - Highland Heights",
+    "attributes": {
+      "address": "2626 Alexandria PikeHighland Heights, KY 41076-1530",
+      "phone": "(859) 757-0434",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "379",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urgent Care - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 905-3070",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "380",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urgent Care - Union Richwood",
+    "attributes": {
+      "address": "605 Man O War BoulevardUnion, KY 41091-2007",
+      "phone": "(859) 578-5669",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "381",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urogynecology - Edgewood 610 Medical",
+    "attributes": {
+      "address": "610 Medical Village DriveEdgewood, KY 41017-3416",
+      "phone": "(859) 757-2132",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "382",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urogynecology - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(859) 757-2132",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "383",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urology - Florence Turfway",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042-4896",
+      "phone": "(859) 212-0497",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "384",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urology - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 212-0497",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "385",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Urology- Lawrenceburg Bielby",
+    "attributes": {
+      "address": "368 Bielby RoadLawrenceburg, IN 47025-1099",
+      "phone": "(859) 212-0497",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "386",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Vascular Imaging Center - Edgewood",
+    "attributes": {
+      "address": "20 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-5663",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "387",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Vascular Surgery - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 344-1600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "388",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Vascular Surgery - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 344-1600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "389",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Vascular Surgery - Edgewood Suite 254",
+    "attributes": {
+      "address": "20 Medical Village DriveEdgewood, KY 41017-5401",
+      "phone": "(859) 344-1600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "390",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Vascular Surgery - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 344-1600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "391",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Vascular Surgery - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 344-1600",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "392",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Vascular Surgery - Lawrenceburg",
+    "attributes": {
+      "address": "368 Bielby RoadLawrenceburg, IN 47025-1099",
+      "phone": "(812) 496-8771",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "393",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Vascular Surgery - Newport",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 441-3818",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "394",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Virtual Health Center- Dolwick",
+    "attributes": {
+      "address": "1360 Dolwick DriveErlanger, KY 41018-3127",
+      "phone": "(800) 737-7900",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "395",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Volunteer Services - Covington",
+    "attributes": {
+      "address": "1500 James Simpson, Jr. WayCovington, KY 41011",
+      "phone": "(859) 301-2140",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "396",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Volunteer Services - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2140",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "397",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Volunteer Services - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042",
+      "phone": "(859) 212-5375",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "398",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Volunteer Services - Ft. Thomas",
+    "attributes": {
+      "address": "85 N. Grand AvenueFt. Thomas, KY 41075",
+      "phone": "(859) 572-3166",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "399",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Volunteer Services - Grant",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097",
+      "phone": "(859) 301-2140",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "400",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Weight Management - Florence",
+    "attributes": {
+      "address": "4900 Houston RoadFlorence, KY 41042-4824",
+      "phone": "(859) 212-4625",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "401",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Weight Management - Greendale",
+    "attributes": {
+      "address": "1640 Flossie DriveGreendale, IN 47025-8424",
+      "phone": "(859) 212-4625",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "402",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Weight Management - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 212-4625",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "403",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Burlington",
+    "attributes": {
+      "address": "6105 1st Financial DriveBurlington, KY 41005-7892",
+      "phone": "(859) 525-1846",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "404",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Crestview Hills",
+    "attributes": {
+      "address": "351 Centre View BoulevardCrestview Hills, KY 41017-3477",
+      "phone": "(859) 331-4665",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "405",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Crittenden",
+    "attributes": {
+      "address": "405 Violet RoadCrittenden, KY 41030-8956",
+      "phone": "(859) 331-4665",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "406",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Edgewood 1 Medical Village",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017-3403",
+      "phone": "(859) 331-4665",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "407",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Edgewood Suite 302",
+    "attributes": {
+      "address": "20 Medical Village DriveEdgewood, KY 41017-5401",
+      "phone": "(859) 341-2510",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "408",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Florence Turfway",
+    "attributes": {
+      "address": "7370 Turfway RoadFlorence, KY 41042-4896",
+      "phone": "(859) 212-5125",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "409",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Highland Heights",
+    "attributes": {
+      "address": "2626 Alexandria PikeHighland Heights, KY 41076-1530",
+      "phone": "(859) 912-6500",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "410",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Lawrenceburg Elm Street",
+    "attributes": {
+      "address": "98 Elm StreetLawrenceburg, IN 47025-2048",
+      "phone": "(812) 496-8776",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "411",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Newport/Ft. Thomas",
+    "attributes": {
+      "address": "1400 Grand AvenueNewport, KY 41071-2570",
+      "phone": "(859) 781-6222",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "412",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health - Union Richwood",
+    "attributes": {
+      "address": "605 Man O War BoulevardUnion, KY 41091-2007",
+      "phone": "(859) 578-5667",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "413",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Women's Health Center - Edgewood",
+    "attributes": {
+      "address": "600 Medical Village Dr.Edgewood, KY 41017",
+      "phone": "(859) 301-6382",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "414",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Wound Care - Covington",
+    "attributes": {
+      "address": "1500 James Simpson Jr WayCovington, KY 41011-0801",
+      "phone": "(859) 655-1100",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "415",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Wound Care - Dearborn",
+    "attributes": {
+      "address": "600 Wilson Creek RoadLawrenceburg, IN 47025-2751",
+      "phone": "(812) 496-7730",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "416",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Wound Care - Ft. Thomas",
+    "attributes": {
+      "address": "85 North Grand AvenueFt. Thomas, KY 41075-1793",
+      "phone": "(859) 572-3830",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "417",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Wound Care - Grant",
+    "attributes": {
+      "address": "238 Barnes RoadWilliamstown, KY 41097-9482",
+      "phone": "(859) 655-1100",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "418",
+    "source_file": "stelizabeth_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "St. Elizabeth Healthcare - Yung Family Cancer Center - Edgewood",
+    "attributes": {
+      "address": "1 Medical Village DriveEdgewood, KY 41017",
+      "phone": "(859) 301-2238",
+      "parent_system": "St. Elizabeth Healthcare"
+    },
+    "source_id": "419",
+    "source_file": "stelizabeth_website"
+  }
+]

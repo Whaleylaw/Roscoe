@@ -1,0 +1,97 @@
+# Relationship Review: Jimmy-Ferguson-MVA-5-30-2024
+
+**Total Episodes:** 120
+
+**Total Proposed Relationships:** 218
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (6)
+- Baptist Health Breckenridge Imaging Hardin
+- Baptist Health Breckenridge Imaging Medical Group Neurology & Neurosurgery (neurology)
+- Elizabethtown Emergency Physicians
+- Hardin County EMS (emergency medical services)
+- KORT Elizabethtown PT
+- Legacy Healthcare
+
+### Insurance Claims (2)
+- **BIClaim**: KACo Claims Department
+  - Adjuster: Vivian Hall
+- **PIPClaim**: Kentucky Farm Bureau
+  - Adjuster: Ashley Mcneese
+
+### Liens (1)
+- Wellcare of Kentucky
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (2 consolidated)
+- [ ] Ashley Mcneese — *✓ MATCHES: Ashley Mcneese*
+- [ ] Vivian Hall — *✓ MATCHES: Vivian Hall*
+
+### Attorney (7 consolidated)
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Aries — *✓ MATCHES: Aries Penaflor (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Aries Paul Peñaflor — *✓ MATCHES: Aries Penaflor (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Justin Chumbley — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] jessica@whaleylawfirm.com — *IGNORED - email address*
+
+### BIClaim (2 consolidated)
+- [ ] CLM# VA20241535681 (KACo Claims Department) — *✓ MATCHES: KACo Claims Department*
+- [ ] KACo Claims Department — *✓ MATCHES: KACo Claims Department*
+
+### Client (2 consolidated)
+- [ ] Jimmy Ferguson — *✓ MATCHES: Jimmy Ferguson*
+- [ ] Jimmy-Ferguson-MVA-5-30-2024 — *IGNORED - case name*
+
+### Insurer (2 consolidated)
+- [ ] KACo Claims Department — *✓ MATCHES: KACo Claims Department*
+- [ ] Kentucky Farm Bureau — *✓ MATCHES: Kentucky Farm Bureau*
+
+### LawFirm (1 consolidated)
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (1 consolidated)
+- [ ] Wellcare of Kentucky — *✓ MATCHES: Wellcare of Kentucky*
+
+### MedicalProvider (7 consolidated)
+- [ ] Baptist Health Breckenridge Imaging Hardin — *✓ MATCHES: Baptist Health Breckenridge Imaging Hardin*
+- [ ] Baptist Health Breckenridge Imaging Medical Group Neurology & Neurosurgery — *✓ MATCHES: Baptist Health Breckenridge Imaging Medical Group Neurology & Neurosurgery*
+- [ ] Elizabethtown Emergency Physicians — *✓ MATCHES: Elizabethtown Emergency Physicians*
+- [ ] Hardin County EMS — *✓ MATCHES: Hardin County EMS*
+- [ ] KORT Elizabethtown PT — *✓ MATCHES: KORT Elizabethtown PT*
+- [ ] Kentucky Pain Associates Pain Associates PLLC — *✓ MATCHES: Kentucky Pain Associates Pain Associates PLLC Pain Associates PLLC*
+- [ ] Legacy Healthcare — *✓ MATCHES: Legacy Healthcare*
+
+### Organization (1 consolidated)
+- [ ] Charles Taylor — *✓ MATCHES: Charles Taylor Insurance Adjusters (from adjusters)*
+
+### PIPClaim (2 consolidated)
+- [ ] Kentucky Farm Bureau — *✓ MATCHES: Kentucky Farm Bureau*
+- [ ] Kentucky Farm Bureau PIP #0470100 — *✓ MATCHES: Kentucky Farm Bureau*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

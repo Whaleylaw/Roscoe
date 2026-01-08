@@ -1,0 +1,59 @@
+{
+  "case_name": "Christopher-Lanier-MVA-6-28-2025",
+  "total_episodes": 1,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-18",
+      "original_body": "Case: Christopher-Lanier-MVA-6-28-2025\nClient: Christopher Lanier\n\nComprehensive case database update completed. Updated all JSON files with complete insurance information: (1) insurance.json - Added claim numbers (National General BI #250525568, State Farm PIP #17-87C986K), adjuster info (Everado Valle for BI), demand details ($25,000 sent 11/7/2025), coverage confirmations, and LOR dates (8/7/2025). (2) overview.json - Corrected phase from 'File Setup' to 'Negotiation', updated medical bills to $1,130, updated case summary and current status. (3) Both project-specific and master database files synced. All case information now accurately reflects actual case progress and insurance claim status.",
+      "natural_language": "For the Christopher-Lanier-MVA-6-28-2025 case, the comprehensive case database update has been completed for client Christopher Lanier. All JSON files have been updated with complete insurance information. In insurance.json, the claim numbers added are National General BI #250525568 and State Farm PIP #17-87C986K; adjuster information lists Everado Valle for BI; demand details show $25,000 sent on 11/7/2025; coverage confirmations are included; and LOR dates are listed as 8/7/2025.\n\nIn overview.json, the phase was corrected from 'File Setup' to 'Negotiation'; medical bills were updated to $1,130; and the case summary and current status were updated. Both project-specific and master database files have been synced. All case information now accurately reflects the actual case progress and insurance claim status.",
+      "valid_at": "2025-12-18T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Christopher Lanier",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "National General",
+            "relevance": "insurer on BI claim added"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI #250525568",
+            "relevance": "BI claim added to insurance.json"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "insurer on PIP claim added"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #17-87C986K",
+            "relevance": "PIP claim added to insurance.json"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Everado Valle",
+            "relevance": "BI adjuster listed"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

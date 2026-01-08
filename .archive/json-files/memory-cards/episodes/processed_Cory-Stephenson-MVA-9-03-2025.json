@@ -1,0 +1,94 @@
+{
+  "case_name": "Cory-Stephenson-MVA-9-03-2025",
+  "total_episodes": 2,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Cheryl Washington"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Cory-Stephenson-MVA-9-03-2025-Bodily Injury (BI)-1789V463J",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Cheryl Washington"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Cory-Stephenson-MVA-9-03-2025\nClient: Cory Stephenson\n\nNew Insurance Note: 9/5 State Farm denied liability, stated their insured had control of the intersection and made the turn on a yellow light, our client disregarded traffic light\nInsurance Type: Bodily Injury (BI)\nInsurance Company: State Farm Insurance Company\nWritten by: Justin Chumbley",
+      "natural_language": "Case Cory-Stephenson-MVA-9-03-2025 involves client Cory Stephenson in a motor vehicle accident dated September 3, 2025. \n\nA new insurance note dated September 5, 2025 from State Farm Insurance Company, the Bodily Injury (BI) insurer, states that liability is denied. State Farm contends that their insured had control of the intersection and made the turn on a yellow light, and that Cory Stephenson disregarded the traffic light. The note was written by Justin Chumbley.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "injured party / claimant"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "BI insurer denying liability"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim - State Farm Insurance Company",
+            "relevance": "BI claim discussed; liability denial noted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Cory-Stephenson-MVA-9-03-2025\nClient: Cory Stephenson\n\nCLIENT CONTACT\nDetails: Cory Stepheson\nDOB 8/16/98\nSSN: 405-53-1754\nPh: 502-303-6254\nAddress\n5017 Yaupon Lane\nLouisville, KY 40213\nDOA 9/3/2025\nLocation newburg road\nClient was driver\nOn newburg, another vehicle ran a red light causing a t-bone collision. Front end damage to client\u2019s vehicle\nWest Beuchal\nReport:\nEMS to UofL Downtown\nInjuries\nHead, neck, back, left leg and right ankle, left arm\nHealth Insurance \u2013 Humana Medicaid.\nAuto Insurance \u2013 Enterprise rental was in Donisha Brock name (mother of client\u2019s son)\nPerson Making Contact: Justin\nDate & Time: September 04 2025",
+      "natural_language": "Initial client contact on September 4, 2025, with Justin regarding a motor vehicle accident involving Cory Stephenson. The client, Cory Stephenson, was born on August 16, 1998 (SSN 405-53-1754) and can be reached at 502-303-6254. He resides at 5017 Yaupon Lane, Louisville, KY 40213. The date of the accident was September 3, 2025, at Newburg Road, where Cory was the driver and another vehicle ran a red light, resulting in a T-bone collision. The crash occurred in West Beuchal, and the front end of Cory\u2019s vehicle sustained damage.\n\nEMS transported Cory to UofL Downtown. Injuries reported include injuries to the head, neck, back, left leg, right ankle, and left arm. His health insurance is Humana Medicaid. Auto insurance information indicates an Enterprise rental was in the name of Donisha Brock, who is the mother of the client\u2019s son. The contact was made by Justin, on September 4, 2025.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "primary client involved in MVA"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "treated/transported patient (EMS to UofL Downtown)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Humana Medicaid",
+            "relevance": "client's health insurance"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

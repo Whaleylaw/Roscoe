@@ -128,8 +128,8 @@ def get_stub_path(media_path: Path, gcs_workspace: Path, local_workspace: Path) 
     except ValueError:
         relative = Path(media_path.name)
 
-    # Add .md extension
-    stub_path = local_workspace / str(relative) + ".md"
+    # Add .md extension (e.g., accident.jpg -> accident.jpg.md)
+    stub_path = local_workspace / (str(relative) + ".md")
     return stub_path
 
 

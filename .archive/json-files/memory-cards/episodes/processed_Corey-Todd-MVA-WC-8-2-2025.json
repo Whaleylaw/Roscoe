@@ -1,0 +1,200 @@
+{
+  "case_name": "Corey-Todd-MVA-WC-8-2-2025",
+  "total_episodes": 7,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Corey-Todd-MVA-WC-8-2-2025\nClient: Corey Todd\n\nCase strategy development and settlement planning.",
+      "natural_language": "Corey Todd is the client in case Corey-Todd-MVA-WC-8-2-2025. \n\nThe engagement focuses on case strategy development and settlement planning for a motor vehicle accident, with workers\u2019 compensation considerations.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Corey Todd",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Motor vehicle accident / BI claim (Corey-Todd-MVA-WC-8-2-2025)",
+            "relevance": "subject of strategy and settlement planning"
+          },
+          {
+            "entity_type": "WCClaim",
+            "entity_name": "Workers' compensation claim (Corey-Todd-MVA-WC-8-2-2025)",
+            "relevance": "consideration in case strategy"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Corey-Todd-MVA-WC-8-2-2025\nClient: Corey Todd\n\nInsurance communications and benefit coordination review.",
+      "natural_language": "Corey Todd is the client in case Corey-Todd-MVA-WC-8-2-2025. The engagement entails a review of insurance communications and coordination of benefits related to motor vehicle accident and workers\u2019 compensation matters.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Corey Todd",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "WCClaim",
+            "entity_name": "Workers' Compensation claim",
+            "relevance": "matter of engagement"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Motor vehicle accident (MVA) claim",
+            "relevance": "matter of engagement"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Corey-Todd-MVA-WC-8-2-2025\nClient: Corey Todd\n\nDual claim coordination and medical treatment planning.",
+      "natural_language": "Case Corey-Todd-MVA-WC-8-2-2025 involves client Corey Todd.\n\nThe engagement centers on dual claim coordination and medical treatment planning.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Corey Todd",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "WCClaim",
+            "entity_name": "Workers' Compensation claim",
+            "relevance": "one of the dual claims being coordinated"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Motor Vehicle Accident (MVA) / bodily injury claim",
+            "relevance": "one of the dual claims being coordinated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Corey-Todd-MVA-WC-8-2-2025\nClient: Corey Todd\n\nMedical treatment planning and insurance communication.",
+      "natural_language": "This case, Corey-Todd-MVA-WC-8-2-2025, concerns client Corey Todd. The designation suggests the matter involves motor vehicle accident and workers' compensation components.\n\nThe primary topics identified are medical treatment planning and insurance communication.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Corey Todd",
+            "relevance": "primary individual"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Motor vehicle accident (MVA) component",
+            "relevance": "case component"
+          },
+          {
+            "entity_type": "WCClaim",
+            "entity_name": "Workers' compensation (WC) component",
+            "relevance": "case component"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Corey-Todd-MVA-WC-8-2-2025\nClient: Corey Todd\n\nInitial case assessment and claim coordination strategy.",
+      "natural_language": "Corey Todd is the client in the matter identified as Corey-Todd-MVA-WC-8-2-2025, which concerns a motor vehicle accident with workers\u2019 compensation implications. \n\nThis entry documents the initial case assessment and the formulation of a claim coordination strategy to guide the matter moving forward.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Corey Todd",
+            "relevance": "client in matter"
+          },
+          {
+            "entity_type": "WCClaim",
+            "entity_name": "Corey-Todd-MVA-WC-8-2-2025",
+            "relevance": "workers' compensation claim / case matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Corey-Todd-MVA-WC-8-2-2025\nClient: Corey Todd\n\nDual MVA and workers compensation case for August 2, 2025.",
+      "natural_language": "Case Corey-Todd-MVA-WC-8-2-2025 concerns a dual motor vehicle accident and workers' compensation matter for August 2, 2025, involving the client Corey Todd.\n\nThe client of record is Corey Todd, and the case comprises both MVA and workers' compensation components related to the August 2, 2025 incident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Corey Todd",
+            "relevance": "client of record"
+          },
+          {
+            "entity_type": "WCClaim",
+            "entity_name": "Workers' Compensation claim (Aug 2, 2025)",
+            "relevance": "case component"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Motor vehicle accident bodily injury claim (Aug 2, 2025)",
+            "relevance": "case component"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-09",
+      "original_body": "Case: Corey-Todd-MVA-WC-8-2-2025\nClient: Corey Todd\n\nCorey, It's Justin from the Whaley Law Firm. Just wanted to confirm you have completed treatment. If so, I'll request your medical records/bills and start moving your file forward",
+      "natural_language": "Case: Corey-Todd-MVA-WC-8-2-2025. Client: Corey Todd.\n\nOn August 2, 2025, Justin from the Whaley Law Firm contacted Corey Todd to confirm whether he has completed treatment in connection with his motor vehicle accident and workers\u2019 compensation matter. The message to Corey read: \u201cCorey, It\u2019s Justin from the Whaley Law Firm. Just wanted to confirm you have completed treatment. If so, I\u2019ll request your medical records/bills and start moving your file forward.\u201d The note indicates that if treatment has been completed, Justin intends to request Corey Todd\u2019s medical records and bills and to begin moving the file forward.",
+      "valid_at": "2025-10-09T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Corey Todd",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm contacting client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin",
+            "relevance": "person who contacted client"
+          },
+          {
+            "entity_type": "WCClaim",
+            "entity_name": "Workers' Compensation claim",
+            "relevance": "matter discussed"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

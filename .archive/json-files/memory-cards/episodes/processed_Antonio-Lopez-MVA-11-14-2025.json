@@ -1,0 +1,95 @@
+{
+  "case_name": "Antonio-Lopez-MVA-11-14-2025",
+  "total_episodes": 2,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2025-11-17",
+      "original_body": "Case: Antonio-Lopez-MVA-11-14-2025\nClient: Antonio Lopez\n\n__CLIENT CONTACT__\n__Details:__ DOA 11/14/2025\nLocation: Eaton and Dixie Highway was rear ended at a light\n\nAntonio Lopez\nDOB 11/09/1997\nSSn 337-94-7156\nPh: 502-701-5196\n\nAddress\n\n5056 Minette Court\nApt 3\n40258\n\nPIP Progressive\nClaim # 25695180369\n\nCivilian report was done\n\nWent to UofL downtown\n\nInjuries\nMid and lower back pain\n\nMichae Guyton (Mich-Shae)\nDOB 8/6/1997\nSSN 330-94-6903\nPh 502-701-5196\n\nUofL Hospital\nInjuries \nBack pain, both shoulders\n\nA\u2019zaire Lopez\nDOB 3/22-2022\nSSN: 687-56-7027\n\nUofL Hospital\n\nMi\u2019ayla Lopez\nDOB 1/25/2025\nSSN: 097-29-8972\n\nUofL \n__Person Making Contact:__ Justin\n__Date & Time__: November 17 2025",
+      "natural_language": "Initial client contact on November 17, 2025 with Antonio Lopez regarding a motor vehicle accident. This case, Antonio-Lopez-MVA-11-14-2025, concerns an incident that occurred on November 14, 2025, at the intersection of Eaton and Dixie Highway, where Lopez was rear-ended at a traffic light.\n\nAntonio Lopez, date of birth November 9, 1997, with SSn 337-94-7156 and phone number 502-701-5196, reports residence at 5056 Minette Court, Apt 3, 40258. He is a PIP Progressive claimant, Claim # 25695180369. A civilian report was completed. He went to UofL downtown following the accident and reports injuries of mid and lower back pain.\n\nAlso listed in the case is Michae Guyton (Mich-Shae), born August 6, 1997, with SSN 330-94-6903 and phone number 502-701-5196. Michae Guyton was seen at UofL Hospital with injuries including back pain and pain in both shoulders.\n\nA\u2019zaire Lopez is listed with DOB March 22, 2022 and SSN 687-56-7027, who attended UofL Hospital. Mi\u2019ayla Lopez is listed with DOB January 25, 2025 and SSN 097-29-8972, who attended UofL as well.\n\nThe person making contact is Justin, and the date and time of this contact is November 17, 2025.",
+      "valid_at": "2025-11-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Antonio Lopez",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25695180369",
+            "relevance": "PIP claim for client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "insurer on PIP claim"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL downtown",
+            "relevance": "treated at"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Hospital",
+            "relevance": "treated at"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michae Guyton",
+            "relevance": "also injured/treated"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "A\u2019zaire Lopez",
+            "relevance": "also injured/treated"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Mi\u2019ayla Lopez",
+            "relevance": "also injured/treated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-11-17",
+      "original_body": "Case: Antonio-Lopez-MVA-11-14-2025\nClient: Antonio Lopez\n\nIt's Justin from the Whaley Law Firm. Send copy of report here along with plate info",
+      "natural_language": "This case involves Antonio Lopez in a motor vehicle accident, docketed as Antonio-Lopez-MVA-11-14-2025, with Antonio Lopez identified as the client.\n\nThe note from the Whaley Law Firm reads: \"It's Justin from the Whaley Law Firm. Send copy of report here along with plate info,\" instructing that a copy of the report be sent to this location along with the vehicle\u2019s plate information.",
+      "valid_at": "2025-11-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Antonio Lopez",
+            "relevance": "identified as the client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of note/instruction"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin",
+            "relevance": "author of note/contact at Whaley Law Firm"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

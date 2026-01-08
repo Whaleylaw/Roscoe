@@ -1,0 +1,62 @@
+{
+  "case_name": "Shakeith-Simon-MVA-2-16-2025",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Eriksen Chiropractic Centers-Radcliff",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "Kentucky Pain Associates Pain Associates PLLC",
+        "specialty": "pain management"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Commonwealth Casualty Insurance"
+      },
+      {
+        "name": "National General"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Kari Hand"
+      },
+      {
+        "name": "Megan Reed"
+      },
+      {
+        "name": "GI"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Shakeith-Simon-MVA-2-16-2025-Bodily Injury (BI)-COH-0004148",
+        "insurer": "Commonwealth Casualty Insurance",
+        "adjuster": "Kari Hand"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Shakeith-Simon-MVA-2-16-2025-Personal Injury Protection (PIP)-250151830",
+        "insurer": "National General",
+        "adjuster": "Megan Reed"
+      },
+      {
+        "type": "UMClaim",
+        "name": "Shakeith-Simon-MVA-2-16-2025-Uninsured Motorist (UM)-250229255",
+        "insurer": "National General",
+        "adjuster": "GI"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

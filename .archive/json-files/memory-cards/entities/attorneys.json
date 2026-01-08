@@ -1,0 +1,2924 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "A. Campbell Ewen",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Ewen & Kinney, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Aaron Lovato",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "review_annotations",
+    "source_file": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Aletha N. Thomas, Esq.",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "(502) 595-6500",
+      "email": "Aletha@DilbeckandMyers.com",
+      "firm_name": "Dilbeck & Myers, PLLC"
+    },
+    "source_id": "review_annotations",
+    "source_file": "Alma-Cristobal-MVA-2-15-2024"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Allison L. Rief",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dilbeck & Myers, PLLC",
+      "phone": "(502) 595-6500",
+      "email": "allison@dilbeckandmyers.com"
+    },
+    "source_id": "Brenda-Lang-annotations",
+    "source_file": "review_Brenda-Lang-MVA-09-03-2021.md",
+    "notes": "From directory, need firm info"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Allison Orberson-Wiles",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Amanda P. Thompson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Amy Romine",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Charles-T-Johnson-annotations",
+    "source_file": "review_Charles-T-Johnson-MVA-4-18-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Amy Scott",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "317-738-9540",
+      "email": "",
+      "firm": "Law Office of Bryan B. Davenport, P.C."
+    },
+    "source_id": "episode_extraction",
+    "source_file": "Abby-Sitgraves-MVA-7-13-2024",
+    "notes": "Represents UofL Health benefit plan for medical liens"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Amy Smith",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Frances-Whitis-backfill",
+    "source_file": "review_Frances-Whitis-WC-MVA-9-6-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Andie D. Mooradian",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Andrea Higgins",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Estate-of-Betty-Prince-backfill",
+    "source_file": "review_Estate-of-Betty-Prince-Premise-7-14-2020.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Andrew D. DeSimone",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "adesimone@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Andrew D. Moore",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "amoore@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Andrew M. Yocum",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "ayocum@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Anna Rueff",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Smith & Hoskins",
+      "phone": "(502) 899-5220",
+      "email": "arueff@smith-hoskins.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Attorney"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Ashley K. Brown",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Ward, Hocker & Thornton, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Berlin Tsai",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Betsy R. Catron",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Ward, Hocker & Thornton, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Blackburn Domene & Burchett PLLC",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BDB Law",
+      "phone": "(502) 584-1600",
+      "email": "firm@bdblawky.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "General firm contact - no individual attorney directory available on website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Blake Anthony Gerstner",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Estate-of-Betty-Prince-backfill",
+    "source_file": "review_Estate-of-Betty-Prince-Premise-7-14-2020.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Blake V. Edwards",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "bedwards@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Bobby L. Whitmer",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Estate-of-Betty-Prince-backfill",
+    "source_file": "review_Estate-of-Betty-Prince-Premise-7-14-2020.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Brad E. Moore",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Kopka Pinkus Dolin, PC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "James-Kiper-backfill",
+    "source_file": "review_James-Kiper-MVA-12-5-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Brad Zoppoth",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "The Zoppoth Law Firm",
+      "phone": "502-568-8884",
+      "email": ""
+    },
+    "source_id": "Christopher-Wilkerson-annotations",
+    "source_file": "review_Christopher-Wilkerson-WC-MVA-02-15-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Brian M. Gudalis",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Brian Stempien",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Travis Herbert & Stempien, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Bruce Anderson",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Bryan Davenport",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Bryan H. Beauman",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "bbeauman@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Member, Licensed in Kentucky & Tennessee"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Bryce Cotton",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "502.371.0589 ",
+      "email": "bcotton@bdblawky.com"
+    },
+    "source_id": "21",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Cameron Smith",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Juanita-Nicole-Downs-backfill",
+    "source_file": "review_Juanita-Nicole-Downs-MVA-4-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Carmine G. Iaccarino",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "ciaccarino@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Catherine E. Bouvier",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "kbouvier@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Also known as Katie E. Bouvier, Member"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Chad Kessinger",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "ckessinger@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Charles A. Walker",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Charles D. Cole",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "ccole@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Charlotte B. Kessinger",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Chauncey Hiestand",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Winton & Hiestand Law Group",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Brenda-Lang-annotations",
+    "source_file": "review_Brenda-Lang-MVA-09-03-2021.md",
+    "notes": "Contact info at https://louisvillelawoffice.com/"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Christine L. Stanley",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "cstanley@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Christopher D. Bush",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Cornelius Kearns",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "ckearns@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Cornelius R. Kearns",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC (WHT Law)",
+      "phone": "(502) 625-1685",
+      "email": "ckearns@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Fax: (502) 779-3561, Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Curt P. Moutardier",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(812) 948-5053",
+      "email": "cmoutardier@bsg-in.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "New Albany, Indiana office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Curt Sitlinger",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sitlinger Law",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Dana Cohen",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dilbeck & Myers, PLLC",
+      "phone": "(502) 595-6500",
+      "email": "dana@dilbeckandmyers.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Daniel Gumm",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Rice Gumm, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Daniel I. Wenig",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "dwenig@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "David E. Crittenden",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(502) 589-5980",
+      "email": "dcrittenden@bsg-law.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "David K. Barnes",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 625-1668",
+      "email": "dbarnes@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "David Klapheke",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dinsmore & Shohl LLP",
+      "phone": "502-540-2539",
+      "email": "david.klapheke@dinsmore.com",
+      "address": "101 South Fifth Street, Suite 2500, Louisville, KY 40202"
+    },
+    "source_id": "Anella-Noble-annotations",
+    "source_file": "review_Anella-Noble-MVA-01-03-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Deanna M. Marzian Tucker",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 625-1671",
+      "email": "dtucker@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Deborah C. Myers",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dilbeck & Myers, PLLC",
+      "phone": "(502) 595-6500",
+      "email": "Deborah@DilbeckandMyers.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Deborah Myers",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "502-595-6500",
+      "email": "deborah@dilbeckandmyers.com"
+    },
+    "source_id": "2",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Dennis Cantrell",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Stoll Keenon Ogden PLLC",
+      "phone": "317-464-1100",
+      "email": "Dennis.cantrell@skofirm.com"
+    },
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Derek Anthony Harvey",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Derrick T. Wright",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "dwright@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Donald P. Moloney II",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "patmoloney@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "E. Yesel Rodriguez",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Edwin Jones",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(270) 442-4369",
+      "email": "ejones@bsgpad.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Paducah office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Elizabeth A. Arrick",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Elizabeth Harbolt",
+    "attributes": {
+      "role": "paralegal",
+      "firm_name": "Dinsmore & Shohl LLP",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Jerome-Hedinger-backfill",
+    "source_file": "review_Jerome-Hedinger-Premise-DB-10-24-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Elizabeth Romersa",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Emma J. Redinger",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "eredinger@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Eric Rice",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Rice Gumm, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "F. Allon Bailey",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "AV-rated"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "G. Adam Redden",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "DeCamillis & Mattingly, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "George B. Hocker",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Ward, Hocker & Thornton, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Ginny Donnell",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Travis Herbert & Stempien, PLLC",
+      "phone": "",
+      "email": "GDonnell@thattorneys.com"
+    },
+    "source_id": "Douglas-Livers-backfill",
+    "source_file": "review_Douglas-Livers-MVA-1-19-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Gregg E. Thornton",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Ward, Hocker & Thornton, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "G. Thornton is same person"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Gregory J. Simon",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Nayram-Adadevoh-MVA-7-13-2024",
+    "source_file": "review_Nayram-Adadevoh-MVA-7-13-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Gregory L. Smith",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Smith & Hoskins",
+      "phone": "(502) 899-5220",
+      "email": "gsmith@smith-hoskins.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Attorney"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Gregory Scott Gowen",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Fulton, Maddox, Dickens & Stewart PLLC",
+      "phone": "",
+      "email": "sgowen@fmdlegal.com"
+    },
+    "source_id": "Brenda-Lang-annotations",
+    "source_file": "review_Brenda-Lang-MVA-09-03-2021.md",
+    "notes": "Contact info at https://www.fmdlegal.com/people/scott-gowen/"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Guillermo A. Carlos",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(859) 252-6721",
+      "email": "wcarlos@bsglex.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Lexington office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Guy E. Hughes",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Hayden M. Adams",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "hadams@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Licensed in Kentucky & Virginia"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Hayley A. Abbott",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Heather Humble",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Holly D. Hammons",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "hhammons@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "J. Stan Lee",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "slee@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jace S. Martin",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dilbeck & Myers, PLLC",
+      "phone": "(502) 595-6500",
+      "email": "jmartin@dilbeckandmyers.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jacob A. Beavin",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "James B. Cooper",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(859) 252-6721",
+      "email": "jcooper@bsglex.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Lexington office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "James E. Skaggs",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "James Kamensky, Esq.",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Kamensky & Patteson, LLP",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "James P. Dilbeck, Jr.",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dilbeck & Myers, PLLC",
+      "phone": "(502) 595-6500",
+      "email": "Jay@DilbeckandMyers.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "James R. Chadward Kessinger",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC (WHT Law)",
+      "phone": "(502) 625-1675",
+      "email": "ckessinger@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Fax: (502) 779-9333, Partner, Goes by Chad Kessinger"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "James T. McSweeney",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "jmcsweeney@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "James W. Gardner",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "jgardner@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jamie K. Neal",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Burke Neal PLLC",
+      "phone": "(502) 709-9992",
+      "email": "jamie@burkeneal.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Founding Member, Appellate Practice"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jamie W. Dittert",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "jdittert@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jane C. Higgins",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Janet Weile",
+    "attributes": {
+      "role": "paralegal",
+      "firm_name": "Stoll Keenon Ogden PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md",
+    "notes": "Paralegal at Stoll Keenon Ogden PLLC"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jared Hoskins",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Smith & Hoskins",
+      "phone": "(502) 899-5220",
+      "email": "jhoskins@smith-hoskins.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Attorney"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jared M. Hudson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jeffrey L. Hansford",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(812) 948-5053",
+      "email": "jhansford@bsg-in.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Indiana office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jennifer Peterson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Travis Herbert & Stempien, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Douglas-Livers-backfill",
+    "source_file": "review_Douglas-Livers-MVA-1-19-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jennifer Styles",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dilbeck & Myers",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "James-Sadler-backfill",
+    "source_file": "review_James-Sadler-MVA-4-07-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jillian D. House",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Joe Mordino",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Greg-Neltner-backfill",
+    "source_file": "review_Greg-Neltner-MVA-4-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Joel A. Franklin",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Estate-of-Betty-Prince-backfill",
+    "source_file": "review_Estate-of-Betty-Prince-Premise-7-14-2020.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "John C. Phillips",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "John Doyle",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "John F. Parker, Jr.",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(305) 395-5227",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville/Florida offices"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "John W. Phillips",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jonathan M. Gifford",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "jgifford@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Goes by Jonny"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Joseph M. Effinger",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Joseph Patrick Hummel",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Josh Ellis",
+    "attributes": {
+      "role": "plaintiff_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "Not defense attorney"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Josh Leckrone",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Greg-Neltner-backfill",
+    "source_file": "review_Greg-Neltner-MVA-4-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Josh Salsburey",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "jsalsburey@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Joshua J. Owen",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "jowen@sturgillturner.com"
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Justin M. Schaefer",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "jschaefer@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kaleb J. Noblett",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Kopka Pinkus Dolin, PC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Katelyn G. Richardson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "krichardson@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Katherine M. Coleman",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "kcoleman@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Katherine Nelson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Richardson Law Group, PLLC",
+      "phone": "",
+      "email": "knelson@richardsonlawgrp.com"
+    },
+    "source_id": "Greg-Neltner-backfill",
+    "source_file": "review_Greg-Neltner-MVA-4-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Katherine T. Watts",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kaylee F. Collins",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kelley M. Rule",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kelly R. Kramer",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Kopka Pinkus Dolin, PC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "James-Kiper-backfill",
+    "source_file": "review_James-Kiper-MVA-12-5-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kevin C. Burke",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Burke Neal PLLC",
+      "phone": "(502) 709-9990",
+      "email": "kevin@burkeneal.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Founding Member, Appellate Practice"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kevin G. Henry",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "khenry@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kevin Kinney",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Ewen & Kinney, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Krista Rice",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Rice Gumm, PLLC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kristin Lomond",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kristin M. Lomond",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Kopka Pinkus Dolin",
+      "phone": "(859) 368-8999",
+      "email": "kmlomond@kopkalaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Lexington, KY office - 301 East Main Street Suite 750"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kyle L. Childress",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "kchildress@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Langdon Ryan Worley",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Larry Church",
+    "attributes": {
+      "role": "mediator",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Julmonzhae-Moore-backfill",
+    "source_file": "review_Julmonzhae-Moore-MVA-8-29-2023.md",
+    "notes": "Attorney who also serves as mediator"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Lee A. Rosenthal",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Lee E. Sitlinger",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sitlinger Law",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Lexi Graham",
+    "attributes": {
+      "role": "paralegal",
+      "firm_name": "Kamensky & Patteson, LLP",
+      "phone": "",
+      "email": "lgraham@kpattorney.com"
+    },
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md",
+    "notes": "Paralegal at Kamensky & Patteson"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Licha H. Farah, Jr.",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": "lfarah@whtlaw.com"
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Linda Bandy",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dinsmore & Shohl LLP",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Jerome-Hedinger-backfill",
+    "source_file": "review_Jerome-Hedinger-Premise-DB-10-24-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Linda Hopgood",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Douglas-Livers-backfill",
+    "source_file": "review_Douglas-Livers-MVA-1-19-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Lisa Jayne Fauth",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "M. David Thompson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "M. Todd Osterloh",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "tosterloh@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Madeleine B. Loeffler",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "mloeffler@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Maeve Weihl",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Greg-Neltner-backfill",
+    "source_file": "review_Greg-Neltner-MVA-4-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Marshall Rowland",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Martin A. Arnett",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Of Counsel, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Mary S. Johnson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Dilbeck & Myers, PLLC",
+      "phone": "(502) 595-6500",
+      "email": "mary@dilbeckandmyers.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Matthew A. Piekarski",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Matthew B. Steinberg",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Matthew I. Boggs",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Matthew R. Londergan",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "mlondergan@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Maureen C. Malles",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "mmalles@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Maxwell D. Smith",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Meghan Goins",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Michael Hawse",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Michael J. Austin",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Michael Nisbet",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Michael P. Casey",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "AV-rated"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Michael P. Neal",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Member, Workers Compensation focus"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Michael S. Jackson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(502) 589-5980",
+      "email": "mjackson@bsg-law.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Michael S. Maloney",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 625-1670",
+      "email": "mmaloney@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Nicholas R. Hart",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Nichole M. Priddy, Esq.",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "final_annotations",
+    "source_file": "batch_annotation_processing"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Paige E. Hornback",
+    "attributes": {
+      "role": "paralegal",
+      "firm_name": "Dinsmore & Shohl LLP",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Jerome-Hedinger-backfill",
+    "source_file": "review_Jerome-Hedinger-Premise-DB-10-24-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Patricia Le Meur",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Patrick A. Muldoon",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "pmuldoon@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Patrick A. Ross",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "(270) 786-2155",
+      "email": "hrh@scrtc.com"
+    },
+    "source_id": "1",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Patrick Joseph Murphy",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Paul J. Bishop",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Peter Cassidy",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Peter J. Sewell",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Retired Member"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Peter W. Dooley",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "pdooley@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "R. Sean Quigley",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Rebecca C. Price",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "rprice@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Renee Hoskins",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "502-899-5220 Main",
+      "email": "rhoskins@smith-hoskins.com",
+      "firm_name": "Smith & Hoskins"
+    },
+    "source_id": "3",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Richard \"Rick\" L. Walter",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(270) 442-4369",
+      "email": "rwalter@bsgpad.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Paducah office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Robert Ashley Jenkins",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Robert D. Bobrow",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(502) 589-5980",
+      "email": "rbobrow@bsg-law.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Robert E. Stopher",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "BSG Law",
+      "phone": "(502) 589-5980",
+      "email": "rstopher@bsg-law.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Ryan D. Nafziger",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Ryan J. McElroy",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Ryan Nafziger",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "(502) 583-9900",
+      "email": "rnafziger@ppoalaw.com"
+    },
+    "source_id": "4",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Ryan T. Wood",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "rwood@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Samantha Pridgen",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Frances-Whitis-backfill",
+    "source_file": "review_Frances-Whitis-WC-MVA-9-6-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Samuel Robert Leffert",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs",
+    "notes": "Also known as Samuel T. LEffert (directory match)"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Sarah Charles Wright",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "swright@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Sarah E. Boggs",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Sarah R. Angelucci",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "sangelucci@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Licensed in Kentucky & Tennessee"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Scott Stout",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Stout & Heuke Law Office",
+      "phone": "502-966-3347",
+      "email": ""
+    },
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Sean Ragland",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Seth Gladstein",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Sharon Archer",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Shelby Marie Harville",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Stephen C. Keller",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "skeller@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Stephen L. Barker",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "N/A"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Deceased October 15, 2025 - Certified Mediator"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Steven C. Call",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Kopka Pinkus Dolin, PC",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "James-Kiper-backfill",
+    "source_file": "review_James-Kiper-MVA-12-5-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Steven P. Stadler",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Stewart Burch",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Logan, Burch & Fox",
+      "phone": "",
+      "email": "burch@lbfattorneys.com"
+    },
+    "source_id": "Frances-Whitis-backfill",
+    "source_file": "review_Frances-Whitis-WC-MVA-9-6-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Susan D. Phillips",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Susan L. Maines",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "AV-rated"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Taylor Kellebrew",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sewell & Neal, PLLC",
+      "phone": "(502) 582-2030",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Tera M. Rehmel",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Of Counsel, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Terri E. Boroughs",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "tboroughs@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Timothy C. Wills",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Sturgill Turner",
+      "phone": "(859) 255-8581",
+      "email": "twills@sturgillturner.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Tristan Palmer",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Casey Bailey & Maines, PLLC",
+      "phone": "(859) 243-0228",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Tyler D. Olson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "tolson@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Valerie A Herbert",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Travis Herbert & Stempien, PLLC",
+      "phone": "",
+      "email": "vherbert@thattorneys.com"
+    },
+    "source_id": "Douglas-Livers-backfill",
+    "source_file": "review_Douglas-Livers-MVA-1-19-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Whitney Moore",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Greg-Neltner-backfill",
+    "source_file": "review_Greg-Neltner-MVA-4-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "William B. Orberson",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Phillips Parker Orberson & Arnett, PLC",
+      "phone": "(502) 583-9900",
+      "email": ""
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Partner, Louisville office"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "William Jones",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "Frances-Whitis-backfill",
+    "source_file": "review_Frances-Whitis-WC-MVA-9-6-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Zachary M. Sosnovich",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC (WHT Law)",
+      "phone": "(502) 625-1693",
+      "email": "zsosnovich@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Zachary Reichle, Esq.",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Stoll Keenon Ogden PLLC",
+      "phone": "317-224-2473",
+      "email": ""
+    },
+    "source_id": "Ashlee-Williams-annotations",
+    "source_file": "review_Ashlee-Williams-MVA-08-29-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Zachary Sosnovich",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "phone": "(502) 583-4777",
+      "email": "zsosnovich@sbmkylaw.com"
+    },
+    "source_id": "law_firm_scrape_2025",
+    "source_file": "attorney_deep_research",
+    "notes": "Associate"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Karen Hedgecock",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Reminger Co. LPA",
+      "email": "KHedgecock@reminger.com"
+    },
+    "source_id": "Robin-Willis-Beck-annotations",
+    "source_file": "review_Robin-Willis-Beck-Premise-09-21-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Steven B. Lowery",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Reminger Co. LPA",
+      "phone": "502-625-7306",
+      "email": "SLowery@reminger.com"
+    },
+    "source_id": "Robin-Willis-Beck-annotations",
+    "source_file": "review_Robin-Willis-Beck-Premise-09-21-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Benji Smith",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Barnes Maloney PLLC",
+      "address": "401 W. Main St. Ste 0600 Louisville, KY 40202"
+    },
+    "source_id": "Sariya-Mason-annotations",
+    "source_file": "review_Sariya-Mason-DB-08-19-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Kristy M. King",
+    "attributes": {
+      "firm_name": "Barnes Maloney PLLC",
+      "address": "401 W. Main St. Ste 0600 Louisville, KY 40202"
+    },
+    "source_id": "Sariya-Mason-annotations",
+    "source_file": "review_Sariya-Mason-DB-08-19-2022.md",
+    "notes": "Legal assistant or paralegal"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Brandon Thomas Lally",
+    "attributes": {
+      "role": "defense_counsel",
+      "firm_name": "Lochmiller Bond",
+      "phone": "270-900-1248",
+      "email": "blally@lbatty.com",
+      "address": "PO Box 826 Elizabethtown, KY 42702"
+    },
+    "source_id": "Shannon-Colvin-annotations",
+    "source_file": "review_Shannon-Colvin-MVA-10-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Lance Lucas",
+    "attributes": {
+      "firm_name": "LUCAS & DIETZ, PLLC",
+      "phone": "859-795-2830",
+      "email": "llucas@lucasdietzlaw.com",
+      "address": "1521 Cavalry Lane, Suite 103 Florence, KY 41042"
+    },
+    "source_id": "Shannon-Lankswert-annotations",
+    "source_file": "review_Shannon-Lankswert-WC-02-07-2025.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "BEN Rettig",
+    "attributes": {
+      "firm_name": "Stierle & Rettig PLLC",
+      "phone": "502-584-5223",
+      "address": "410 W. Chestnut Street #617 Louisville, KY 40202"
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "D. Jonathan Strom",
+    "attributes": {
+      "firm_name": "Anderson Communities",
+      "phone": "859-231-0099",
+      "email": "jstrom@andersoncommunities.com",
+      "fax": "859-231-3726",
+      "address": "1255 Providence Place Parkway, Lexington, KY 40511"
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jennifer Renner",
+    "attributes": {
+      "firm_name": "Phillips, Parker, Orberson & Arnett, PLC",
+      "email": "jrenner@ppoalaw.com"
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Jeremy Matthew Rettig",
+    "attributes": {
+      "firm_name": "Stierle & Rettig PLLC",
+      "phone": "502-584-5223",
+      "address": "410 W. Chestnut Street #617 Louisville, KY 40202"
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Taylor L. Marak",
+    "attributes": {
+      "firm_name": "Son Legal",
+      "phone": "502-582-2030",
+      "email": "tmarak@sonlegal.com"
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  }
+]

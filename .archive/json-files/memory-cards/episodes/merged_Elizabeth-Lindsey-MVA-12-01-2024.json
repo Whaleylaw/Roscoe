@@ -1,0 +1,1093 @@
+{
+  "case_name": "Elizabeth-Lindsey-MVA-12-01-2024",
+  "total_episodes": 45,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Aptiva Health",
+        "specialty": null
+      },
+      {
+        "name": "Radiology Associates of Northern Kentucky, PLLC",
+        "specialty": "radiology"
+      },
+      {
+        "name": "St. Elizabeth Physicians- Burlington",
+        "specialty": null
+      },
+      {
+        "name": "University of Cincinnati Medical Center",
+        "specialty": "hospital"
+      },
+      {
+        "name": "University of Cincinnati Physicians",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Auto Owners Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Jennifer Howard"
+      },
+      {
+        "name": "Emily Pernice"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Elizabeth-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Jennifer Howard"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Elizabeth-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024",
+        "insurer": "Auto Owners Insurance",
+        "adjuster": "Emily Pernice"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Elizabeth-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024",
+        "insurer": "Auto Owners Insurance",
+        "adjuster": null
+      }
+    ],
+    "liens": [
+      {
+        "name": "Elizabeth-Lindsey-MVA-12-01-2024-Rawlings Company",
+        "holder": "Rawlings Company",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2024-12-03",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nsent intake docs via vinesign",
+      "natural_language": "Elizabeth Lindsey is the client in case Elizabeth-Lindsey-MVA-12-01-2024, which concerns a motor vehicle accident. Intake documents have been sent to Elizabeth Lindsey via vinesign.",
+      "valid_at": "2024-12-03T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client; recipient of intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-04",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=56f90520-1a6f-4d8e-9197-7574cfc09309.pdf\nSigned: 2024-12-04 16:54:05\nAll signers: Elizabeth Lindsey(elindsey611@gmail.com (502) 210-8328)\nSender: Justin Chumbley",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024 concerns client Elizabeth Lindsey. The intake document for this case, named “intake,” was signed via VineSign. The signed PDF is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=56f90520-1a6f-4d8e-9197-7574cfc09309.pdf and was signed on December 4, 2024 at 16:54:05. All signers listed for the document were Elizabeth Lindsey, whose email is elindsey611@gmail.com and whose phone number is (502) 210-8328. The VineSign transmission was sent by Justin Chumbley.",
+      "valid_at": "2024-12-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "case subject / signer of intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-12-05",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__24-902741838__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8772137258@rcfax.com](mailto:8772137258@rcfax.com)\nDate: Thu Dec 05 2024 08:58:00 GMT-05:00",
+      "natural_language": "The case is labeled Elizabeth-Lindsey-MVA-12-01-2024 and concerns client Elizabeth Lindsey. The file includes the identifier 24-902741838.\n\nOn Thursday, December 5, 2024 at 8:58 a.m. GMT-05:00 (Eastern Time), Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to the RC Fax address 8772137258@rcfax.com.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RC Fax",
+            "relevance": "email/fax recipient"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-12-05",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Shawn Vo [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Thu Dec 05 2024 09:17:23 GMT-05:00\n\nHi,\n\nPlease see the attached letter of representation.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Elizabeth Lindsey is the client in the Elizabeth-Lindsey-MVA-12-01-2024 case, file number 300-793616-2024. On December 5, 2024, at 09:17:23 GMT-05:00, an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to Shawn Vo (lexington.clm@aoins.com regarding the case. The body of the message stated, “Hi, Please see the attached letter of representation,” indicating there was a letter of representation attached to the email.)\n\nThe email was signed by Jessa Galosmo with the closing “All the best,” followed by her name and affiliation: Whaley Law Firm. The signature block also included the firm’s contact numbers: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of representation / case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of letter of representation"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "representing firm (sender affiliation)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "recipient insurer (email sent to aoins.com address regarding case)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-09",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__RE: Elizabeth Lindsey__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: 'Aptiva Referrals' [referrals@aptivahealth.com](mailto:referrals@aptivahealth.com)\nCc: [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Dec 09 2024 01:45:57 GMT-05:00\n\n \n\nHello,\n\n \n\nAuto Owners Insurance\n\nPO Box 221409\n\nLouisville, KY 40252\n\n \n\nClaim # 300-793616-2024\n\n \n\nAdjuster: Chandler Wolfe Ph: 502-253-0960 x. 54628 \n\n lexington.clm@aoins.com \n\n \n\nHave a great day!\n\n \n\nJessica\n\n \n\nFrom: Aptiva Referrals \nSent: Monday, December 9, 2024 1:33 PM\nTo: jessica@whaleylawfirm.com\nCc: Aptiva Referrals \nSubject: Elizabeth Lindsey\n\n \n\n \n\nGood Afternoon,\n\nWe have scheduled Ms. Lindsey to be seen in our office on 12/01/24 at 115pm,\n\nWhen the time permits could you please send over pip information ? \n\nThank you in advance ?? \n\n \n\n \n\n \n\n \n\n \n\n \n\nShawniece Perkins \n\nPatient In-Take Representative\n\n \n\nTEL:\n\nEMAIL:\n\nWEB:\n\nADDRESS:\n\n \n\n502-909-0772\n\nsperkins@aptivahealth.com \n\naptivahealth.com\n\n12300 Plantside Drive \n\nLouisville, KY 40299",
+      "natural_language": "Case: Elizabeth-Lindsey-MVA-12-01-2024. The client is Elizabeth Lindsey.\n\nOn Monday, December 9, 2024, at 1:45:57 PM Eastern Time, Jessica from Whaley Law Firm wrote to Aptiva Referrals with the subject “RE: Elizabeth Lindsey.” In the body of the message, she provided Auto Owners Insurance information for the claim: PO Box 221409, Louisville, KY 40252; Claim number 300-793616-2024; Adjuster Chandler Wolfe, phone 502-253-0960 x. 54628, and email lexington.clm@aoins.com. The email was sent to Aptiva Referrals and CC’d to ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com. Jessica signed off with “Have a great day!”\n\nAlso on December 9, 2024, Aptiva Referrals sent a reply to Jessica (dated 1:33 PM) with the subject “Elizabeth Lindsey.” The message stated: “Good Afternoon, We have scheduled Ms. Lindsey to be seen in our office on 12/01/24 at 115pm. When the time permits could you please send over PIP information? Thank you in advance.” The reply was sent by Shawniece Perkins, identified as a Patient In-Take Representative, and it includes the following contact details: TEL 502-909-0772, email sperkins@aptivahealth.com, website aptivahealth.com, and address 12300 Plantside Drive, Louisville, KY 40299.",
+      "valid_at": "2024-12-09T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Aptiva Health",
+            "relevance": "scheduled for treatment / recipient of communication"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer for the claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim number provided in email"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Chandler Wolfe",
+            "relevance": "adjuster listed for Auto Owners claim"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email regarding the client/claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-09",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nRequest for records & bills sent to Florence EMS via ChartSwap",
+      "natural_language": "In the case Elizabeth-Lindsey-MVA-12-01-2024, Elizabeth Lindsey is the client, and the matter concerns a motor vehicle accident. \n\nA request for Elizabeth Lindsey's medical records and bills was sent to Florence EMS via ChartSwap.",
+      "valid_at": "2024-12-09T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client; subject of medical records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-09",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Elizabeth Lindsey__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [ucmc-mr-correspondence@uchealth.com](mailto:ucmc-mr-correspondence@uchealth.com)\nCc: [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Dec 09 2024 02:50:20 GMT-05:00\n\nAttached is a request for records & bills on our client, Elizabeth Lindsey.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024, involving client Elizabeth Lindsey. On December 9, 2024, The Whaley Law Firm sent an email from jessica@whaleylawfirm.com to ucmsc-mr-correspondence@uchealth.com, with a cc to ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com. The message was timestamped Mon Dec 09 2024 02:50:20 GMT-05:00. The body stated: \"Attached is a request for records & bills on our client, Elizabeth Lindsey.\" The email concluded with \"Thanks!\" and was signed by The Whaley Law Firm.",
+      "valid_at": "2024-12-09T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of records & bills request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Cincinnati Medical Center",
+            "relevance": "recipient of records & bills request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of the email/request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-03",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n@jessa Need radiology bill for ER visit",
+      "natural_language": "Initial client contact on December 1, 2024, in the Elizabeth-Lindsey-MVA-12-01-2024 case, with client Elizabeth Lindsey regarding a motor vehicle accident.\n\nThe file contains a directive to Jessa to obtain the radiology bill for the ER visit.",
+      "valid_at": "2025-01-03T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Radiology Associates of Northern Kentucky, PLLC",
+            "relevance": "radiology bill for ER visit requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-03",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Elizabeth Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8593414845@rcfax.com](mailto:8593414845@rcfax.com)\nDate: Fri Jan 03 2025 01:35:20 GMT-05:00",
+      "natural_language": "The client is Elizabeth Lindsey in the case Elizabeth-Lindsey-MVA-12-01-2024, which concerns a motor vehicle accident.\n\nCorrespondence was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to the fax address 8593414845@rcfax.com on Friday, January 3, 2025, at 01:35:20 GMT-05:00.",
+      "valid_at": "2025-01-03T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of correspondence"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "employer/sender organization"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-03",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Resending-Elizabeth Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8593414845@rcfax.com](mailto:8593414845@rcfax.com)\nDate: Fri Jan 03 2025 01:43:58 GMT-05:00\n\nHi,\n\nThis is the request that has a completed medical authorization form.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024 involves client Elizabeth Lindsey. This entry documents a resending concerning Elizabeth Lindsey.\n\nOn Friday, January 3, 2025, at 01:43:58 GMT-05:00, Jessa Galosmo of the Whaley Law Firm sent an email from jessa@whaleylawfirm.com to the fax address 8593414845@rcfax.com. The message begins with “Hi,” and states, “This is the request that has a completed medical authorization form.” It is signed with: All the best, Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.",
+      "valid_at": "2025-01-03T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of the case and the resending"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "8593414845@rcfax.com",
+            "relevance": "fax service recipient of the emailed fax"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-06",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Elizabeth Lindsey__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5135856102@rcfax.com](mailto:5135856102@rcfax.com)\nCc: [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 06 2025 11:41:19 GMT-05:00\n\nAttached is a request for bills on our client, Elizabeth Lindsey.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024 involves client Elizabeth Lindsey. On January 6, 2025 at 11:41:19 AM (GMT-05:00), an email was sent from jessica@whaleylawfirm.com at The Whaley Law Firm to 5135856102@rcfax.com, with a carbon copy to ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com.\n\nThe body of the message states, “Attached is a request for bills on our client, Elizabeth Lindsey.” The email concludes with “Thanks!” and is signed by The Whaley Law Firm.",
+      "valid_at": "2025-01-06T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of the billing request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of the email/request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-06",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nRequest for bills faxed to University of Cincinnati Physicians",
+      "natural_language": "Initial client contact on December 1, 2024 with Elizabeth Lindsey regarding a motor vehicle accident in connection with case Elizabeth-Lindsey-MVA-12-01-2024. The client requested that the bills be faxed to University of Cincinnati Physicians.",
+      "valid_at": "2025-01-06T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "initial contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Cincinnati Physicians",
+            "relevance": "requested recipient of bills (fax destination)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-07",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nA call from Jessa Galosmo was logged at 2025-01-07 20:55:35.147000+00:00 . #outboundcall\n\nCaller Info: 5022108328 \n\nCaller ID: 502-210-8328 \n\nCaller Name: Elizabeth Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Elizabeth Lindsey – Motor Vehicle Accident, file Elizabeth-Lindsey-MVA-12-01-2024. On January 7, 2025, at 20:55:35.147000+00:00, an outbound call from Jessa Galosmo to Elizabeth Lindsey was logged, regarding her motor vehicle accident.\n\nCaller information for the call lists the number 5022108328, with a caller ID of 502-210-8328. The caller name is Elizabeth Lindsey, and the caller email field is blank. A link to the Filevine contact is available here: [filevine-link].",
+      "valid_at": "2025-01-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-07",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call. No aswer, no vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: January 08 2025",
+      "natural_language": "Initial client contact on January 8, 2025 with Jessa regarding the motor vehicle accident case Elizabeth-Lindsey-MVA-12-01-2024 for client Elizabeth Lindsey. The details indicate that an attempt was made to call the client, but there was no answer and no voicemail left.",
+      "valid_at": "2025-01-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "initial client contact (attempted call, no answer/no voicemail)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-07",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Elizabeth Lindsey is the client for case Elizabeth-Lindsey-MVA-12-01-2024, regarding a motor vehicle accident.\n\nOn December 1, 2024, she was contacted to provide update #cc for the case.",
+      "valid_at": "2025-01-07T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-07",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call. No aswer, no vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: January 08 2025",
+      "natural_language": "Initial client contact on January 08 2025 with Elizabeth Lindsey regarding the Elizabeth-Lindsey-MVA-12-01-2024 case. Jessa attempted to reach the client by phone, but there was no answer and no voicemail.",
+      "valid_at": "2025-01-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "initial client contact; subject of attempted phone call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-07",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024 concerns Elizabeth Lindsey in a motor vehicle accident. On December 1, 2024, Elizabeth Lindsey contacted us to provide an update in the matter, noted as update #cc.",
+      "valid_at": "2025-01-07T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "contacted to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-08",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Fwd: JEREMY C LINDSEY - 300-0793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com), Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 06 2025 03:51:25 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Wolfe, Chandler \nDate: Mon, Jan 6, 2025 at 12:57?PM\nSubject: JEREMY C LINDSEY - 300-0793616-2024\nTo: jessa@whaleylawfirm.com \nCc: KentuckyPIP.Clm \n\nGood Afternoon Ms. Jessa\n\nMy name is Chandler Wolfe and I am the PIP adjuster on file for the\nLindsey’s.\n\nPlease see attached acknowledgement letter and blank PIP forms for your\nclients. To date, we have not received any completed forms.\n\nPlease let me know what additional documentation you are still needing for\nyour clients.\n\nThank you and have a wonderful day!\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Elizabeth-Lindsey-MVA-12-01-2024. The client on this file is Elizabeth Lindsey.\n\nThe note includes a forwarded email titled “Fwd: JEREMY C LINDSEY - 300-0793616-2024,” originally sent on January 6, 2025 at 03:51:25 GMT-05:00. The sender is Jessa Galosmo of the Whaley Law Firm, and the message was addressed to Jeremy Lindsey’s Filevine project email, Elizabeth Lindsey’s Filevine project email, Chase Lindsey’s Filevine project email, and Owen Lindsey’s Filevine project email.\n\nThe forwarded message itself contains a communication from Chandler Wolfe, dated January 6, 2025 at 12:57 PM (noted with a question mark in the original text: “12:57?PM”). The message is titled “JEREMY C LINDSEY - 300-0793616-2024” and was sent from Wolfe to jessa@whaleylawfirm.com, with KentuckyPIP.Clm CC’d. In this message, Chandler Wolfe identifies himself as the PIP adjuster on file for the Lindseys and requests that Jessa please see the attached acknowledgement letter and blank PIP forms for the clients, noting that, to date, they have not received any completed forms. He asks Jessa to let him know what additional documentation is still needed for the clients. The body of Wolfe’s message is accompanied by an embedded image placeholder: “[image: cid:image001.png@01DA0E2D.2AA737D0].”\n\nChandler Wolfe’s signature follows, identifying him as a Branch claims representative for Kentucky regional PIP. His contact details are: phone 800.346.0346 ext. 54628; fax 517.886.8754; email KentuckyPIP.clm@aoins.com; hours 8:00 a.m. to 4:30 p.m. EST.\n\nThe forwarded message ends with the closing from Jessa Galosmo of Whaley Law Firm, including her contact information: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "case client, recipient of forwarded email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender/forwarder of the email (Jessa Galosmo)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim referenced in correspondence"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Chandler Wolfe",
+            "relevance": "identified as the PIP adjuster who requested forms/documentation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-08",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Shawn Vo [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Wed Jan 08 2025 10:11:51 GMT-05:00\n\nHi,\n\nPlease see attached files.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Elizabeth-Lindsey-MVA-12-01-2024 involves client Elizabeth Lindsey. The matter carries internal reference 300-793616-2024.\n\nOn January 8, 2025, at 10:11:51 AM Eastern Time (GMT-05:00), Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to Shawn Vo at lexington.clm@aoins.com regarding this case. The body of the message stated, “Hi, Please see attached files.” The email ends with Jessa Galosmo’s signature, which reads “All the best, Jessa Galosmo,” followed by Whaley Law Firm and contact details: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender law firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-10",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Elizabeth Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [5027537064@rcfax.com](mailto:5027537064@rcfax.com)\nDate: Fri Jan 10 2025 10:25:16 GMT-05:00",
+      "natural_language": "Elizabeth Lindsey is the client in case Elizabeth-Lindsey-MVA-12-01-2024.\n\nUnder the Elizabeth Lindsey client profile, an email was sent on Friday, January 10, 2025 at 10:25:16 AM GMT-05:00 from Jessa Galosmo (jessa@whaleylawfirm.com) to the fax address 5027537064@rcfax.com regarding this case.",
+      "valid_at": "2025-01-10T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client profile referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-16",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Reference No.: 157804594__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5027537248@rcfax.com](mailto:5027537248@rcfax.com)\nCc: Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Jan 16 2025 07:45:59 GMT-05:00",
+      "natural_language": "Elizabeth Lindsey is the client in the case titled Elizabeth-Lindsey-MVA-12-01-2024, which carries the reference number 157804594. This communication activity is documented in the file on January 16, 2025.\n\nOn Thursday, January 16, 2025 at 07:45:59 GMT-05:00, Jessica Bottorff of Whaley Law Firm sent an email from jessica@whaleylawfirm.com to the fax address 5027537248@rcfax.com, with Elizabeth Lindsey - Filevine Project Email Address ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com included in the CC field.",
+      "valid_at": "2025-01-16T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "CC recipient / subject of file"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-20",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Fwd: New Text Message from (502) 424-0049 on 01/17/2025 5:59 PM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 20 2025 09:09:56 GMT-05:00\n\nInjury photos\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Fri, Jan 17, 2025 at 6:00?PM\nSubject: New Text Message from (502) 424-0049 on 01/17/2025 5:59 PM\nTo: Jessa Galosmo \n\n[image: Logo] [image: Logo]\n[image: Logo] Text Message\n------------------------------\n\nDear Jessa Galosmo,\n\nYou have a new text message:\n*From:* (502) 424-0049\n*To:* Jessa Galosmo\n*Received:* Friday, January 17, 2025 at 5:59 PM\n*Message:* Elizabeth photos\n*Attachment:* 10 images\nTo reply using the RingCentral app\n.",
+      "natural_language": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nIn this case, an email chain was noted concerning injury photos. On January 20, 2025 at 09:09:56 AM (GMT-05:00), Jessa Galosmo forwarded to Elizabeth Lindsey’s Filevine project email address an email whose subject was Injury photos. The forward originated from Jessa Galosmo, and the body content included the forward header “Fwd: New Text Message from (502) 424-0049 on 01/17/2025 5:59 PM.”\n\nThe forwarded message itself originated from RingCentral and is dated Friday, January 17, 2025, with a time listed as about 6:00 PM (shown as 6:00?PM in the record). Its subject line reads: “New Text Message from (502) 424-0049 on 01/17/2025 5:59 PM.” The message was addressed to Jessa Galosmo. The notification states that there is a new text message from the number (502) 424-0049 to Jessa Galosmo, received Friday, January 17, 2025 at 5:59 PM. The text message content is: “Elizabeth photos,” and it includes 10 image attachments. The notification also notes that replies can be sent using the RingCentral app.",
+      "valid_at": "2025-01-20T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of the photos and recipient of the forwarded email"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RingCentral",
+            "relevance": "originator of the text message notification containing the photo attachments"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "project email address that received the forwarded message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-21",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__New Insurance Note:__ 1/21 sent available r/b to BI and requested tender of limits. unsure if they are more than minimum but worth exploring\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Elizabeth Lindsey is the client in the case Elizabeth-Lindsey-MVA-12-01-2024, which concerns a motor vehicle accident. The matter involves Bodily Injury (BI) coverage, with Progressive Insurance Company as the insurer. The note was written by Justin Chumbley.\n\nNew Insurance Note: On 1/21, the firm sent the available r/b to Progressive Insurance Company, the BI insurer, and requested a tender of limits. It is unclear whether the available limits exceed the minimum, but this possibility is worth exploring.",
+      "valid_at": "2025-01-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client in the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI insurer and recipient of r/b; tender of limits requested"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Bodily injury claim for which tender of limits was requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nThis case involves Elizabeth Lindsey and her family members who were involved in a motor vehicle accident. The case is in the early stages of gathering medical records and bills, and dealing with insurance claims.\nThe most recent activity involves sending a request for bills to University of Cincinnati Physicians on January 6, 2025, and faxing a completed medical authorization form to an unspecified recipient on January 3, 2025. (See details), (See details)\nA potential red flag is that as of January 6, 2025, the PIP adjuster had not received any completed forms from the Lindsey family, which could delay the processing of their claim. (See details)\nThe next steps should include following up with the PIP adjuster to ensure all necessary forms have been submitted, and continuing to gather medical records and bills from various providers, including Radiology Associates of Northern Kentucky, PLLC. (See details), (See details)",
+      "natural_language": "Elizabeth Lindsey and her family members were involved in a motor vehicle accident, and the case is in the early stages of gathering medical records and bills while addressing insurance claims. The most recent activity included faxing a completed medical authorization form to an unspecified recipient on January 3, 2025, and sending a request for medical bills to University of Cincinnati Physicians on January 6, 2025. A potential red flag is that, as of January 6, 2025, the PIP adjuster had not received any completed forms from the Lindsey family, which could delay the processing of their claim. The next steps are to follow up with the PIP adjuster to ensure all necessary forms have been submitted, and to continue gathering medical records and bills from various providers, including Radiology Associates of Northern Kentucky, PLLC.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "injured party / client involved in the MVA"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Cincinnati Physicians",
+            "relevance": "recipient of medical bills request (Jan 6, 2025)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Radiology Associates of Northern Kentucky, PLLC",
+            "relevance": "provider from which medical records/bills are being gathered"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim with outstanding forms that may delay processing"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "PIP adjuster who had not received completed forms as of Jan 6, 2025"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-24",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Fwd: 300-0793616-2024 Elizabeth Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Justin Chumbley [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nDate: Fri Jan 24 2025 03:10:56 GMT-05:00\n\nJustin,\n\nCan you help me save this? I can't open the link even with VPN open.\n\n---------- Forwarded message ---------\nFrom: Chandler Wolfe \nDate: Fri, Jan 24, 2025 at 10:07?AM\nSubject: 300-0793616-2024 Elizabeth Lindsey\nTo: \n\nPlease see attached documentation that was received for Elizabeth Lindsey.\n\nPlease let me know how your office would like to proceed.\n\nThank you!\n\n*Download Instructions:*\nThis email or download link can only be accessed by the email address it\nwas sent to. *Please continue all correspondence with your Auto-Owners\ncontact.*\n\n 1. Click this link:\n https://securefiletransfer.aoins.com/message/ABANMdUSAGflY5ZpoOhBFk\n 2. Enter your e-mail and a Secure Token will be sent to you in a\n separate email.\n 3. Click the files to download them. If there are many files, you can\n download them all at once by clicking the \"Download All\" button.\n\nThe files are available until: *Thursday, 13 February.*\nFiles attached to this message\nFilename Size Checksum (SHA1)\nRawlings lien- Elizabeth Lindsey.pdf 27.3 KB\n335c014875ef74aaa86793e94ecb3b46034471cfd768418ac5846ccccb6e8f78\n\nMessage ID: ABANMdUSAGflY5ZpoOhBFk\n“This site contains information that may be privileged and/or confidential\nand exempt from disclosure. Such information is solely for the intended use\nof the Recipient of this email. Recipient agrees not to disclose any such\ninformation to others, except as allowed by law. Recipient will defend,\nindemnify and hold harmless Auto-Owners Insurance Company from any claim or\nsuit for damages arising out of the disclosure or misuse of any such\ninformation. Recipient further agrees to return, delete and/or destroy all\ncontents of this file after its intended use.”\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Elizabeth-Lindsey-MVA-12-01-2024. Client: Elizabeth Lindsey. On Friday, January 24, 2025, at 03:10:56 GMT-05:00, Jessa Galosmo of Whaley Law Firm forwarded an email about Elizabeth Lindsey to Justin Chumbley, noting that she could not open the link even with a VPN.\n\nWithin the thread, Chandler Wolfe sent a message dated Friday, January 24, 2025 at 10:07?AM with the subject 300-0793616-2024 Elizabeth Lindsey. He stated that attached documentation had been received for Elizabeth Lindsey and asked how the office would like to proceed. The message included download instructions for Auto-Owners’ secure file transfer: 1) Click the link provided; 2) Enter your email to receive a Secure Token in a separate email; 3) Click the files to download them, with an option to download all at once by clicking “Download All” if there are multiple files. The files are available until Thursday, 13 February. The attachment listed was a single file named “Rawlings lien- Elizabeth Lindsey.pdf,” sized at 27.3 KB, with a SHA1 checksum of 335c014875ef74aaa86793e94ecb3b46034471cfd768418ac5846ccccb6e8f78. The message ID was ABANMdUSAGflY5ZpoOhBFk.\n\nThe email also contained a confidentiality disclaimer indicating that the site may contain privileged and/or confidential information intended solely for the recipient, forbidding disclosure except as permitted by law, and requiring the recipient to defend, indemnify, and hold Auto-Owners Insurance Company harmless from any damages arising from disclosure or misuse. The recipient is also expected to return, delete, and/or destroy all contents after the intended use.\n\nThe correspondence closes with “All the best,” from Jessa Galosmo of the Whaley Law Firm, including her contact details: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of case and email correspondence"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "source of secure file transfer and confidentiality disclaimer (claim-related correspondence)"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "attachment 'Rawlings lien- Elizabeth Lindsey.pdf' referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-03",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nA call from Jessa Galosmo was logged at 2025-02-03 15:06:40.817000+00:00 . #outboundcall\n\nCaller Info: 5022108328 \n\nCaller ID: 502-210-8328 \n\nCaller Name: Elizabeth Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024: Elizabeth Lindsey. On February 3, 2025, at 15:06:40.817000+00:00, Jessa Galosmo logged an outbound call. The call's recorded details show the caller information as 5022108328, with a caller ID of 502-210-8328. The caller name is Elizabeth Lindsey, and there is no email address on file. A link to the Filevine contact is provided: [filevine-link].",
+      "valid_at": "2025-02-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-02-03",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Elizabeth Lindsey is the client for the case Elizabeth-Lindsey-MVA-12-01-2024, a motor vehicle accident matter. Today she was contacted to provide an update, designated as update #cc.",
+      "valid_at": "2025-02-03T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-10",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call client. No answer, left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: February 03 2025",
+      "natural_language": "Initial client contact on February 3, 2025, in reference to the motor vehicle accident case Elizabeth-Lindsey-MVA-12-01-2024. The outreach was conducted by Jessa, who attempted to reach the client, Elizabeth Lindsey, by phone but there was no answer and a voicemail was left.",
+      "valid_at": "2025-02-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "contact attempted / subject of outreach"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-14",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Fwd: New Voice Message from LINDSEY JEREMY (502) 424-0049 on 03/14/2025 10:59 AM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Mar 14 2025 11:10:51 GMT-04:00\n\nTreatment update for Elizabeth and Chase\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Fri, Mar 14, 2025 at 10:59?AM\nSubject: New Voice Message from LINDSEY JEREMY (502) 424-0049 on 03/14/2025\n10:59 AM\nTo: Jessa Galosmo \n\n[image: Logo] [image: Logo]\n[image: Logo] Voice Message\n------------------------------\n\nDear Jessa Galosmo,\n\nYou have a new voice message:\n*From:* LINDSEY JEREMY (502) 424-0049\n*Received:* Friday, March 14, 2025 at 10:59 AM\n*Length:* 01:12\n*To:* (502) 357-9975 Jessa Galosmo\n\n*Voicemail Preview:*\n\"Hey, good morning. This is Jeremy Lindsey returning your call. I wanted to\nprovide an update for both Chase and Elizabeth. Chase has a final x ray for\nhis broken collarbone scheduled for april the second and hopefully we get\nfinal clearance there. No more treatment is needed. But again, he is\nscheduled for a final x ray for his collar Bone on april the second.\nElizabeth has continued treatment this following Monday, hoping that is\ngoing to be her last treatment that is been ongoing for several weeks now.\nAnd then she has a final consultation meeting with that orthopedist. I\nbelieve it is in early April as well. I can get to the exact date, but\nhopefully her last treatment and then she will have 1 final assessment as\nwell. So all things considered, assuming there is no changes, we are hoping\nto have everyone cleared completely in early to mid April. So I will let\nyou know as soon as I know more, but that is the update for now. Thank you.\nAnd as always, do not hesitate to reach out to you. Appreciate it.\"\nListen to this message over your phone or log in to your RingCentral account\n with your main number, extension number,\nand password. You can also manage your voicemails in your RingCentral\naccount.",
+      "natural_language": "Case: Elizabeth-Lindsey-MVA-12-01-2024. Client: Elizabeth Lindsey. A treatment update for Elizabeth and Chase Lindsey was forwarded on March 14, 2025. The forwarding email came from Jessa Galosmo and was sent to Elizabeth Lindsey’s and Chase Lindsey’s Filevine project email addresses. The original message was dated March 14, 2025 at 11:10:51 AM (GMT-04:00).\n\nThe forwarded voicemail, which lasted 1 minute and 12 seconds, was from Jeremy Lindsey (502-424-0049) and was received at 10:59 AM on Friday, March 14, 2025. In the message, Jeremy stated that he was providing updates for both Chase and Elizabeth. For Chase, he said that a final X-ray for his broken collarbone is scheduled for April 2, with the hope of obtaining final clearance at that time, and that no more treatment is needed beyond the X-ray. He reiterated that the final X-ray for Chase’s collarbone is set for April 2. For Elizabeth, Jeremy reported that she has continued treatment the following Monday, hoping that this will be her last treatment after several weeks of ongoing care. She is also slated for a final consultation with the orthopedist, believed to be in early April, though the exact date was not specified. He noted that, if there are no further changes, they are hoping to have everyone cleared completely in early to mid-April, and he would update as soon as more information is known. The message concluded with thanks and an invitation to reach out if needed.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "treatment update / subject of voicemail"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "treatment update / subject of voicemail (final X-ray scheduled)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-03-17",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nas of 3/17 all docs downloaded and saved to Google Drive",
+      "natural_language": "Elizabeth Lindsey is the client in case Elizabeth-Lindsey-MVA-12-01-2024.\n\nAs of March 17, all documents have been downloaded and saved to Google Drive.",
+      "valid_at": "2025-03-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client identified"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-27",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__New Insurance Note:__ 03/27 Adj called in to inform us that client emailed her asking for update on the medical bills she received.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Auto Owners Insurance\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Elizabeth Lindsey is the client for the motor vehicle accident case Elizabeth-Lindsey-MVA-12-01-2024. On March 27, an adjuster called in to inform us that the client emailed her asking for an update on the medical bills she had received.\n\nThis matter concerns a Personal Injury Protection (PIP) claim with Auto Owners Insurance. The note was written by Jessa.",
+      "valid_at": "2025-03-27T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim involved in matter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer handling the PIP claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "adjuster who called regarding medical bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-31",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__Re: Claim number: 300- 0793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Elizabeth Lindsey [elindsey611@gmail.com](mailto:elindsey611@gmail.com)\nDate: Mon Mar 31 2025 03:32:54 GMT-04:00\n\nHi Elizabeth,\n\nThanks for reaching out. Your hospital bills must be paid by your health\ninsurance. If they deny, that's when we'll use your PIP.\nIf you want, you may call Justin tomorrow to go over the details. His\ndirect line is (502) 450-9495.\n\nOn Mon, Mar 31, 2025 at 2:21?PM Elizabeth Lindsey \nwrote:\n\n> Hi Jessa,\n>\n> I need help getting our claims to go against our PIP. Can you help?\n> Please let me know what the next step in the process is.\n>\n>\n> Thanks,\n> Elizabeth\n>\n> ---------- Forwarded message ---------\n> From: Wolfe, Chandler \n> Date: Mon, Mar 31, 2025 at 2:16?PM\n> Subject: Claim number: 300- 0793616-2024\n> To: Elizabeth Lindsey \n> CC: Jeremy Lindsey , Jessa Galosmo <\n> jessa@whaleylawfirm.com>, KentuckyPIP.Clm \n>\n>\n> Good Afternoon Ms. Lindsey\n>\n>\n>\n> As there is an attorney on file for your claim, you will want to address\n> any questions and concerns with them directly. I have cc’d their office.\n>\n>\n>\n> Thank you,\n>\n>\n>\n> [image: cid:image001.png@01DA0E2D.2AA737D0]\n>\n> *Chandler Wolfe*\n> Branch claims representative\n> ky/PA regional pip\n>\n> p: 800.346.0346 ext. 54628\n> f: 517.886.8754\n> e: KentuckyPIP.clm@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n> [image: cid:image002.png@01DA0E2D.2AA737D0]\n> \n>\n> [image: cid:image003.png@01DA0E2D.2AA737D0]\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Elizabeth Lindsey \n> *Sent:* Monday, March 31, 2025 1:52 PM\n> *To:* Wolfe, Chandler \n> *Cc:* Jeremy Lindsey \n> *Subject:* [EXTERNAL] Re: Claim number: 300- 0793616-2024\n>\n>\n>\n> Hello, Just wanted to follow up on this email. Can you please review and\n> respond to the questions below? Thank you, Elizabeth On Thu, Mar 27, 2025\n> at 12: 55 PM Elizabeth Lindsey wrote: Hi\n> Chandler, I am writing to\n>\n> Hello,\n>\n>\n>\n> Just wanted to follow up on this email. Can you please review and respond\n> to the questions below?\n>\n>\n>\n> Thank you,\n>\n> Elizabeth\n>\n>\n>\n> On Thu, Mar 27, 2025 at 12:55?PM Elizabeth Lindsey \n> wrote:\n>\n> Hi Chandler,\n>\n>\n>\n> I am writing to get some information related to claims submitted against\n> our case:\n>\n>\n>\n> Claim number: 300- 0793616-2024\n>\n>\n>\n>\n>\n> I am struggling to get Cincinnati children’s hospital to submit medical\n> claims against our PIP. Have you received any claims for Owen Lindsey and\n> Chase Lindsey?\n>\n>\n>\n> Additionally have you received any claims from University of Cincinnati\n> hospital for me (Elizabeth Lindsey)?\n>\n>\n>\n> Please let me know what additional information you may need.\n>\n>\n>\n> Thank you,\n>\n> Elizabeth Lindsey\n>\n> 502-210-8328\n>\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Elizabeth-Lindsey-MVA-12-01-2024\n\nElizabeth Lindsey, the client in the Elizabeth-Lindsey-MVA-12-01-2024 motor vehicle accident matter, was in communication with Whaley Law Firm on March 31, 2025. Jessa Galosmo emailed Elizabeth to explain that hospital bills must be paid by Elizabeth’s health insurance, and that PIP would only be used if the health insurer denies the claim. Jessa also offered that Elizabeth could call Justin the next day to review the details, providing Justin’s direct line: (502) 450-9495.\n\nLater that day, Elizabeth replied, asking for help in getting their claims to go against their PIP and requesting information on the next steps in the process.\n\nOn March 31, 2025, Chandler Wolfe, a Branch claims representative for ky/PA regional PIP, forwarded a message to Elizabeth noting that there is an attorney on file for her claim and that she should address any questions and concerns with that attorney directly; he also cc’d the attorney’s office. Wolfe provided his contact information: p: 800.346.0346 ext. 54628; f: 517.886.8754; e: KentuckyPIP.clm@aoins.com; hours: 8:00 a.m. to 4:30 p.m. EST. He also indicated that there is a Customer Center where the client can access her claim information anytime, anywhere.\n\nThat same day, Elizabeth sent a separate message to Chandler Lindsey with the subject line Re: Claim number: 300-0793616-2024, stating, “Hello, Just wanted to follow up on this email. Can you please review and respond to the questions below? Thank you, Elizabeth.” The thread includes an earlier message from Elizabeth dated March 27, 2025 at 12:55 p.m., in which she wrote to Chandler to obtain information about claims submitted against their case (claim number 300-0793616-2024). She asked whether Cincinnati Children’s Hospital had submitted medical claims against their PIP and whether any claims had been received for Owen Lindsey and Chase Lindsey. She also asked whether there were any claims from the University of Cincinnati Hospital for Elizabeth, and she requested guidance on any additional information that might be needed. She provided her contact number: 502-210-8328.\n\nThe exchange closed with Jessa Galosmo’s signature on the communications, listing Whaley Law Firm contact details: Ph: (502) 357-9975; Fax: (502) 364-9363.",
+      "valid_at": "2025-03-31T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client and correspondent"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "representing client and sender of communications"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sent email explaining billing and advising client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Chandler Wolfe",
+            "relevance": "PIP branch claims representative who communicated with client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP insurer handling client's PIP claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #300-0793616-2024",
+            "relevance": "claim discussed regarding medical bill submissions"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Cincinnati Medical Center",
+            "relevance": "hospital queried about submitting claims against PIP"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "hospital queried about submitting claims against PIP"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-01",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, wife and husband will put together a list of unpaid medical bills with Cincy Hospital. Patient responsibility balances after health insurance processed claims. We can then forward to PIP to pay \n__Person Making Contact:__ Justin\n__Date & Time__: April 01 2025",
+      "natural_language": "Case: Elizabeth-Lindsey-MVA-12-01-2024\n\nInitial client contact on April 1, 2025, with Elizabeth Lindsey regarding the motor vehicle accident (MVA) case Elizabeth-Lindsey-MVA-12-01-2024. Justin spoke with the client. The client's wife and husband will compile a list of unpaid medical bills with Cincy Hospital. The patient-responsibility balances will be determined after health insurance has processed the claims. Once compiled, we can forward the list to PIP for payment.",
+      "valid_at": "2025-04-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Cincinnati Medical Center",
+            "relevance": "hospital where unpaid medical bills will be compiled (referred to as Cincy Hospital)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim/payment to be forwarded once patient balances are compiled"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-04-01",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Elizabeth Lindsey is the client for the motor vehicle accident case Elizabeth-Lindsey-MVA-12-01-2024. On December 1, 2024, the client was contacted to provide an update, designated as update #cc.",
+      "valid_at": "2025-04-01T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client contacted / subject of update #cc"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-21",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__New Insurance Note:__ 4/21 Requested PIP ledgers\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Auto Owners Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Elizabeth Lindsey is the client for case Elizabeth-Lindsey-MVA-12-01-2024. A new insurance note dated April 21 indicates a request for PIP ledgers. The insurance type is Personal Injury Protection (PIP), and the insurer is Auto Owners Insurance. The note was written by Justin Chumbley, and this entry is tagged as #Inotes.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer for the PIP claim / subject of the note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim for which ledgers were requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-05-15",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n__The lindseys__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu May 15 2025 10:41:24 GMT-04:00\n\nI left a message with Elizabeth Lindsey. We need affidavits signed on\nbehalf of the minors for their settlement. Also need to update all of their\ntreatment as we will need to do comprehensive demands for UIM.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Elizabeth Lindsey is the client in the case Elizabeth-Lindsey-MVA-12-01-2024.  \n\nOn May 15, 2025 at 10:41:24 a.m. (GMT-04:00), Aaron Whaley of Whaley Law Firm sent an email in the “The lindseys” thread to Justin Chumbley and Elizabeth Lindsey’s Filevine project inbox (ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com). In the message, Whaley wrote: “I left a message with Elizabeth Lindsey. We need affidavits signed on behalf of the minors for their settlement. Also need to update all of their treatment as we will need to do comprehensive demands for UIM.” The email is signed by Aaron Whaley of Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-05-15T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client mentioned"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM claim",
+            "relevance": "claim type discussed (comprehensive UIM demands)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-15",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nA call from aaron whaley was logged at 2025-05-15 14:38:31.976000+00:00 . #outboundcall\n\nCaller Info: 5022108328 \n\nCaller ID: 502-210-8328 \n\nCaller Name: Elizabeth Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Elizabeth Lindsey is the client for Case Elizabeth-Lindsey-MVA-12-01-2024.\n\nOn May 15, 2025, at 14:38:31.976000+00:00 (UTC), an outbound call from Aaron Whaley was logged in connection with this case. The call listed the caller information as 5022108328, with a caller ID of 502-210-8328. The caller name on the record is Elizabeth Lindsey, and no email address is provided. A Filevine contact link is available: [filevine-link].",
+      "valid_at": "2025-05-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client and caller on record"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-15",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\n#vinesign-completed\nName: affidavit\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=edd8d837-37ed-4218-9e0d-52733335f8b7.pdf\nSigned: 2025-05-15 21:04:20\nAll signers: Elizabeth Lindsey(elindsey611@gmail.com (502) 210-8328)\nSender: Justin Chumbley",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024 involves client Elizabeth Lindsey.\n\nUnder VineSign, an affidavit named \"affidavit\" was completed. The signed document is accessible at https://app.vinesign.com/Jobs/Pdf?pdfKey=edd8d837-37ed-4218-9e0d-52733335f8b7.pdf. The signature was recorded on May 15, 2025 at 21:04:20. The signer listed is Elizabeth Lindsey, with email elindsey611@gmail.com and phone number (502) 210-8328. The VineSign transaction was initiated by Justin Chumbley.",
+      "valid_at": "2025-05-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "signer of affidavit / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-05-20",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nsaved authorization re Chase's guardianship - saved to Filevine docs #cc",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024 involves client Elizabeth Lindsey.\n\nA saved authorization regarding Chase's guardianship was saved to the Filevine documents, with the entry tagged as #cc.",
+      "valid_at": "2025-05-20T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nFamily coordination with Jeremy Lindsey case.",
+      "natural_language": "Elizabeth Lindsey is the client in the Elizabeth-Lindsey-MVA-12-01-2024 case, which concerns a motor vehicle accident. The file notes family coordination with Jeremy Lindsey regarding the case.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nInsurance negotiations and settlement discussions.",
+      "natural_language": "Elizabeth Lindsey is the client in case Elizabeth-Lindsey-MVA-12-01-2024. The matter concerns insurance negotiations and settlement discussions related to a motor vehicle accident.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nCase management and medical treatment coordination.",
+      "natural_language": "Elizabeth Lindsey is the client in the case Elizabeth-Lindsey-MVA-12-01-2024, which reflects a motor vehicle accident (MVA). \n\nThe case involves case management and medical treatment coordination.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nInsurance claim processing and settlement discussions.",
+      "natural_language": "Case Elizabeth-Lindsey-MVA-12-01-2024 involves client Elizabeth Lindsey and stems from a motor vehicle accident.\n\nThe matter centers on processing an insurance claim and pursuing settlement discussions with the insurer.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer involved in claim and settlement discussions"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurance claim being processed and pursued for settlement"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nMedical records review and treatment plan coordination.",
+      "natural_language": "Elizabeth Lindsey is the client in case Elizabeth-Lindsey-MVA-12-01-2024.\n\nThe documented activities for this case are medical records review and treatment plan coordination.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Elizabeth-Lindsey-MVA-12-01-2024\nClient: Elizabeth Lindsey\n\nDecember 1, 2024 motor vehicle accident case management.",
+      "natural_language": "Elizabeth Lindsey is the client in the matter Elizabeth-Lindsey-MVA-12-01-2024, which concerns a motor vehicle accident.\n\nOn December 1, 2024, motor vehicle accident case management was conducted for this matter.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client in matter"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

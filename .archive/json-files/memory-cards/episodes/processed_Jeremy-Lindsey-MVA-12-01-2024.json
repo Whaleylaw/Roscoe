@@ -1,0 +1,2254 @@
+{
+  "case_name": "Jeremy-Lindsey-MVA-12-01-2024",
+  "total_episodes": 102,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "St. Elizabeth Physicians- Burlington",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Auto Owners Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Jennifer Howard"
+      },
+      {
+        "name": "Emily Pernice"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Jeremy-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Jennifer Howard"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Jeremy-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024",
+        "insurer": "Auto Owners Insurance",
+        "adjuster": "Emily Pernice"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Jeremy-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024",
+        "insurer": "Auto Owners Insurance",
+        "adjuster": null
+      }
+    ],
+    "liens": [
+      {
+        "name": "Jeremy-Lindsey-MVA-12-01-2024-Rawlings Company",
+        "holder": "Rawlings Company",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2024-12-03",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nsent intake docs via vinesign",
+      "natural_language": "December 1, 2024 marked the creation of the Jeremy-Lindsey-MVA-12-01-2024 case for client Jeremy Lindsey in a motor vehicle accident matter. Intake documents were sent to Jeremy Lindsey via vinesign.",
+      "valid_at": "2024-12-03T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case created; recipient of intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-04",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, went over intake docs and answered questions etc. completing docs now \n__Person Making Contact:__ Justin\n__Date & Time__: December 04 2024",
+      "natural_language": "Initial client contact on December 4, 2024 with Jeremy Lindsey regarding motor vehicle accident (MVA) case Jeremy-Lindsey-MVA-12-01-2024. The contact was made by Justin. During the conversation, Justin spoke with the client, reviewed the intake documents, answered questions, and is in the process of completing the documents.",
+      "valid_at": "2024-12-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-04",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Today, in the Jeremy-Lindsey-MVA-12-01-2024 case involving a motor vehicle accident, the client Jeremy Lindsey was contacted to provide an update, with update reference #cc.",
+      "valid_at": "2024-12-04T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-04",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=698ef1d2-aecf-459e-801f-1c19a463e885.pdf\nSigned: 2024-12-04 16:53:38\nAll signers: Jeremy Lindsey(jeremylindsey1978@yahoo.com (502) 424-0049)\nSender: Justin Chumbley",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. An intake document named \"intake\" was prepared and completed via VineSign, and the signed document is accessible at https://app.vinesign.com/Jobs/Pdf?pdfKey=698ef1d2-aecf-459e-801f-1c19a463e885.pdf.\n\nThe document was signed on 2024-12-04 at 16:53:38. All signers were Jeremy Lindsey (jeremylindsey1978@yahoo.com (502) 424-0049). The sender of the document was Justin Chumbley.",
+      "valid_at": "2024-12-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client who completed and signed the intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-05",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__New Insurance Note:__ 12/05 PD adj info Rob Weyhing- ext 59498\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Auto Owners Insurance\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "The client for the case Jeremy-Lindsey-MVA-12-01-2024 is Jeremy Lindsey. \n\nOn December 5, 2024, a new insurance note was added noting PD adj info: Rob Weyhing- ext 59498. The insurance type is Personal Injury Protection (PIP) and the insurance company is Auto Owners Insurance. The note was written by Jessa and is filed under #Inotes.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Rob Weyhing",
+            "relevance": "PD adjuster listed in insurance note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP insurance company noted in the insurance note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-12-05",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__24-902741838__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8772137258@rcfax.com](mailto:8772137258@rcfax.com)\nDate: Thu Dec 05 2024 08:58:00 GMT-05:00",
+      "natural_language": "Initial client contact was established on December 5, 2024 at 08:58:00 AM (GMT-05:00). The message came via email from Jessa Galosmo (jessa@whaleylawfirm.com) at Whaley Law Firm to 8772137258@rcfax.com. It concerns the motor vehicle accident case Jeremy-Lindsey-MVA-12-01-2024 for client Jeremy Lindsey and is associated with file number 24-902741838.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm of initial contact"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of initial email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-12-05",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Shawn Vo [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Thu Dec 05 2024 09:17:23 GMT-05:00\n\nHi,\n\nPlease see the attached letter of representation.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "The case is identified as Jeremy-Lindsey-MVA-12-01-2024, an MVA matter for client Jeremy Lindsey, with internal reference number 300-793616-2024.\n\nOn December 5, 2024, at 9:17:23 AM GMT-05:00, an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to Shawn Vo at lexington.clm@aoins.com. The body of the message stated, \"Hi, Please see the attached letter of representation.\" The email was signed with \"All the best, Jessa Galosmo,\" and included Whaley Law Firm\u2019s contact details: Ph: (502)357-9975 and Fax: (502)364-9363. The message referenced an attached letter of representation.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client represented (subject of letter of representation)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email / submitted letter of representation"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "recipient insurer (claims inbox emailed)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (Adjuster: Emily Pernice)",
+            "relevance": "PIP claim related to insurer likely subject of representation"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (Adjuster: None)",
+            "relevance": "alternate PIP claim record for insurer potentially related to case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-05",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Called client. No answer, left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: December 05 2024",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. Initial client contact on December 5, 2024, was made by Jessa regarding the motor vehicle accident associated with this case. Jessa called Jeremy Lindsey, but there was no answer, and a voicemail was left.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted; voicemail left"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-05",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "On December 1, 2024, Jeremy Lindsey contacted us to provide an update on his motor vehicle accident case, Jeremy-Lindsey-MVA-12-01-2024. The update is noted as #cc.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "contacted us to provide an update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-05",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2024-12-05 15:33:13.443000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey.\n\nOn December 5, 2024, at 15:33:13.443000+00:00, an outbound call was logged for the Jeremy-Lindsey-MVA-12-01-2024 case, noting that a call from Jessa Galosmo was recorded. The log lists the caller information as 5024240049 and the caller ID as 502-424-0049. The caller name is Jeremy Lindsey, and the caller email field is blank. A link to the Filevine contact is provided: [filevine-link].",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller/subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-05",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA missed call for Jessa Galosmo was logged at 2024-12-05 15:37:02.173000+00:00 . #missedcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hey, Jess, good. This is Jeremy Lindsey. I was just returning your call. Apologies I missed you originally. Feel free to give me a call back. 502-424-0049. Thanks.",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey.\n\nOn December 5, 2024, at 15:37:02.173000+00:00 (UTC), a missed call for Jessa Galosmo was logged in the system with the tag #missedcall. A link to the Filevine contact is available at [filevine-link]. The call log identifies the caller as Jeremy Lindsey, using the phone number 502-424-0049 (Caller ID: 502-424-0049). The Caller Email field is blank.\n\nThe voicemail transcription from this call reads: \u201cHey, Jess, good. This is Jeremy Lindsey. I was just returning your call. Apologies I missed you originally. Feel free to give me a call back. 502-424-0049. Thanks.\u201d",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-05",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2024-12-05 15:38:41.117000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. An outbound call from Jessa Galosmo was logged on December 5, 2024 at 15:38:41.117000+00:00 (UTC).\n\nThe record lists the caller information as 5024240049, with a caller ID of 502-424-0049, and the caller name Jeremy Lindsey. The caller email field is blank. A link to the Filevine contact is available here: [filevine-link].",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-06",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ We need yours, Owen and Chase's health insurance card as well.\n__Date and Time:__ 2024-12-05 \n__From Number:__ +15023579975 \n__To Number:__ +15024240049\n__Direction:__ Outbound",
+      "natural_language": "In the Jeremy-Lindsey-MVA-12-01-2024 case involving client Jeremy Lindsey, an outbound text message was sent on December 5, 2024. The message was sent from +15023579975 to +15024240049, and the content read: \"We need yours, Owen and Chase's health insurance card as well.\"",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "recipient/subject of outbound text requesting health insurance information"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-06",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ I see. Thanks.\n__Date and Time:__ 2024-12-05 \n__From Number:__ +15023579975 \n__To Number:__ +15024240049\n__Direction:__ Outbound",
+      "natural_language": "This case, Jeremy-Lindsey-MVA-12-01-2024, involves client Jeremy Lindsey and concerns a motor vehicle accident that occurred on December 1, 2024. \n\nOn December 5, 2024, there was an outbound text message from +15023579975 to +15024240049 containing the content: \"I see. Thanks.\"",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-06",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ That is the family plan. Elizabeth is subscriber and all family members are also listed on this card \n__Date and Time:__ 2024-12-05 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on December 5, 2024 regarding a motor vehicle accident case for client Jeremy Lindsey (case Jeremy-Lindsey-MVA-12-01-2024).\n\nThe contact was an inbound text message from +15024240049 to +15023579975. The message read: \"That is the family plan. Elizabeth is subscriber and all family members are also listed on this card.\"",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client who initiated contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-06",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Lindsey medical insurance card\n__Date and Time:__ 2024-12-05 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Jeremy Lindsey is the client in the case Jeremy-Lindsey-MVA-12-01-2024. In this matter, on December 5, 2024, an inbound text message was received. The message was sent from +15024240049 to +15023579975 and read: \"Lindsey medical insurance card.\"",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-06",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Thanks. Got it.\n__Date and Time:__ 2024-12-05 \n__From Number:__ +15023579975 \n__To Number:__ +15024240049\n__Direction:__ Outbound",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey in a motor vehicle accident dated December 1, 2024.\n\nOn December 5, 2024, an outbound text message was sent from +15023579975 to +15024240049, containing the message: \"Thanks. Got it.\"",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client involved in MVA / subject of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2024-12-12",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Fwd: New Text Message from (502) 424-0049 on 12/12/2024 12:16 PM__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Dec 12 2024 12:19:43 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Thu, Dec 12, 2024 at 12:16?PM\nSubject: New Text Message from (502) 424-0049 on 12/12/2024 12:16 PM\nTo: aaron whaley \n\n[image: Logo] [image: Logo]\n[image: Logo] Text Message\n------------------------------\n\nDear aaron whaley,\n\nYou have a new text message:\n*From:* (502) 424-0049\n*To:* aaron whaley\n*Received:* Thursday, December 12, 2024 at 12:16 PM\n*Message:* Hey Justin it's Jeremy Lindsey. Just wanted to let you know that\nour youngest son who was also in neck brace was diagnosed with fractured\ncollarbone as well. We have appointment with Orthopedic doctor today to\ndiscuss next steps. Not sure what you need to know but wanted to keep you\ninformed.\nTo reply using the RingCentral app\n.",
+      "natural_language": "In the case Jeremy-Lindsey-MVA-12-01-2024, the client is Jeremy Lindsey. On December 12, 2024, a new text message arrived from the phone number (502) 424-0049 at 12:16 PM. The message was received and forwarded via RingCentral by Aaron Whaley to Justin Chumbley and to Jeremy Lindsey\u2019s Filevine project email address, with the forwarding timestamp recorded as 12:19:43 PM (GMT-05:00).\n\nThe content of the text message, quoted as it appeared, stated: \u201cHey Justin it's Jeremy Lindsey. Just wanted to let you know that our youngest son who was also in neck brace was diagnosed with fractured collarbone as well. We have appointment with Orthopedic doctor today to discuss next steps. Not sure what you need to know but wanted to keep you informed.\u201d The message indicates that their youngest son, who had also been wearing a neck brace, has been diagnosed with a fractured collarbone. It notes that there is an appointment with an orthopedic doctor that day to discuss next steps, and the sender adds that they are not sure what information is needed but wanted to keep Justin informed. The footer of the forwarded message includes the prompt \u201cTo reply using the RingCentral app.\u201d",
+      "valid_at": "2024-12-12T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client (sender of text / subject of episode)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2024-12-12",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Fwd: New Text Message from (502) 424-0049 on 12/12/2024 12:21 PM__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Dec 12 2024 03:20:10 GMT-05:00\n\nFrom Jeremy Lindsey\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Thu, Dec 12, 2024 at 12:21?PM\nSubject: New Text Message from (502) 424-0049 on 12/12/2024 12:21 PM\nTo: aaron whaley \n\n[image: Logo] [image: Logo]\n[image: Logo] Text Message\n------------------------------\n\nDear aaron whaley,\n\nYou have a new text message:\n*From:* (502) 424-0049\n*To:* aaron whaley\n*Received:* Thursday, December 12, 2024 at 12:21 PM\n*Message:* Also, we haven't heard a word about auto claim/appraisal. I sent\nthem an email earlier this week but haven't heard a word. Will they work\ndirectly with you since you are representing us or should we still expect\ncommunication from the insurance company regarding vehicle?\nTo reply using the RingCentral app\n.",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey.\n\nOn December 12, 2024, a new text message was received from the phone number (502) 424-0049 at 12:21 PM, and the notification was logged in RingCentral. The message was addressed to Aaron Whaley and indicated that they had not heard anything about an auto claim or appraisal. The sender noted that they had emailed earlier in the week but had not received a response, and they asked whether the insurer will work directly with Aaron since he is representing them, or if they should continue to expect communication from the insurance company regarding the vehicle. The message ends with an instruction to reply using the RingCentral app. The exact log entry reads: \u201cDear aaron whaley, You have a new text message: From: (502) 424-0049 To: aaron whaley Received: Thursday, December 12, 2024 at 12:21 PM Message: Also, we haven't heard a word about auto claim/appraisal. I sent them an email earlier this week but haven't heard a word. Will they work directly with you since you are representing us or should we still expect communication from the insurance company regarding vehicle? To reply using the RingCentral app.\u201d The notification also included placeholder images labeled as logos.\n\nThis text message was forwarded later the same day as part of an email thread from attorney Aaron Whaley to Justin Chumbley and to Jeremy Lindsey\u2019s Filevine project email address (JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com), with a timestamp of December 12, 2024 at 3:20:10 PM GMT-05:00. The forwarded email contains the original RingCentral notification, including the subject line \u201cNew Text Message from (502) 424-0049 on 12/12/2024 12:21 PM,\u201d and shows the text of the message as described above. Within the forwarded thread, the message is attributed as originating from Jeremy Lindsey, indicating that Jeremy forwarded the RingCentral notification in the chain. The body of the forwarded content reiterates the RingCentral notification details, including the greeting \u201cDear aaron whaley,\u201d the sender\u2019s number, the received time, and the exact wording of the inquiry about auto claim/appraisal and expected communications. The text concludes with the instruction to reply via the RingCentral app.",
+      "valid_at": "2024-12-12T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "sender of inquiry / client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "recipient and counsel who forwarded the message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-13",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Hey Justin it's Jeremy Lindsey. Just wanted to let you know that our youngest son who was also in neck brace was diagnosed with fractured collarbone as well. We have appointment with Orthopedic doctor today to discuss next steps. Not sure what you need to know but wanted to keep you informed.\n__Date and Time:__ 2024-12-12 \n__From Number:__ +15024240049 \n__To Number:__ +15023579939\n__Direction:__ Inbound",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. On December 12, 2024, an inbound text message was received from Jeremy Lindsey (From number: +15024240049) to Justin (To number: +15023579939).\n\nThe message reads: \"Hey Justin it's Jeremy Lindsey. Just wanted to let you know that our youngest son who was also in neck brace was diagnosed with fractured collarbone as well. We have appointment with Orthopedic doctor today to discuss next steps. Not sure what you need to know but wanted to keep you informed.\" It notes that their youngest son, who was also wearing a neck brace, was diagnosed with a fractured collarbone, and that they have an orthopedic appointment today to discuss next steps, with the sender indicating they wanted to keep Justin informed. The message direction is inbound.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "sender of inbound message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-13",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Also, we haven't heard a word about auto claim/appraisal. I sent them an email earlier this week but haven't heard a word. Will they work directly with you since you are representing us or should we still expect communication from the insurance company regarding vehicle?\n__Date and Time:__ 2024-12-12 \n__From Number:__ +15024240049 \n__To Number:__ +15023579939\n__Direction:__ Inbound",
+      "natural_language": "This case is identified as Jeremy-Lindsey-MVA-12-01-2024, with the client listed as Jeremy Lindsey. The initial client contact occurred on December 1, 2024, regarding a motor vehicle accident involving Jeremy Lindsey.\n\nOn December 12, 2024, an inbound text message was received from +1 502-424-0049 to +1 502-357-9939. The message stated: \"Also, we haven't heard a word about auto claim/appraisal. I sent them an email earlier this week but haven't heard a word. Will they work directly with you since you are representing us or should we still expect communication from the insurance company regarding vehicle?\"",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client who reported the motor vehicle accident and sent the inquiry"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer on file; client asking about auto claim/appraisal and insurer communication"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer on file; potentially relevant to client's question about insurer communication regarding the vehicle"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-20",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2024-12-20 16:26:43.994000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "In the Jeremy-Lindsey-MVA-12-01-2024 case for client Jeremy Lindsey, a log entry shows that on December 20, 2024, at 16:26:43.994000+00:00 (UTC) an outbound call was recorded from Jessa Galosmo. The call record lists the caller information as 5024240049, with the Caller ID 502-424-0049, and the Caller Name as Jeremy Lindsey. The Caller Email field is blank. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2024-12-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller/subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-20",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Called client to get update on treatment.\n\nJeremy-only went to PCP but was not referred for any additional treatment. Still healing his leg lacerations\n\nElizabeth- had xray and MRI done with ortho doctors referred to PT with Aptiva Health. Going once a week.\n\nOwen-had follow up at the hospital with trauma physicians. advised to avoid sports. Follow up on Jan 5\n\nChase- Had his neck brace removed but had pain and neck issue and found out to have broken collarbone. Follow up again on Jan 5. Possible psychological trauma. Will inform if client needs therapy. \n__Person Making Contact:__ Jessa\n__Date & Time__: December 21 2024",
+      "natural_language": "Initial client contact on December 21, 2024 with Jeremy Lindsey regarding motor vehicle accident. Jessa called the client to obtain an update on treatment. Jeremy reported that he has only seen his primary care physician and was not referred for any additional treatment; he is still healing his leg lacerations.\n\nElizabeth had an x-ray and an MRI performed. Orthopedic doctors referred her to physical therapy with Aptiva Health, with sessions scheduled once a week.\n\nOwen had a follow-up at the hospital with trauma physicians, who advised him to avoid sports. A follow-up is scheduled for January 5.\n\nChase had his neck brace removed but continues to experience pain and neck issues and was found to have a broken collarbone. A follow-up is planned for January 5. There is a possibility of psychological trauma; the team will inform if the client needs therapy.",
+      "valid_at": "2024-12-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-20",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "On December 1, 2024, in the motor vehicle accident case Jeremy-Lindsey-MVA-12-01-2024, the client Jeremy Lindsey was contacted to provide an update, with the update coded as #cc.",
+      "valid_at": "2024-12-20T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-03",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__New Insurance Note:__ 01/03/25 Called to follow up on ack letter. Spoke with adj she'll be sending the ack letter shortly. She's still investigating the coverage, she needs to speak with their insured first. She'll call back in 2 weeks to follow up on the status.\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey. New Insurance Note dated January 3, 2025: A call was placed to follow up on the ack letter. The adjuster said she would be sending the ack letter shortly. She is still investigating the coverage and needs to speak with their insured first. She will call back in two weeks to follow up on the status.\n\nThe Insurance Type is Bodily Injury (BI). Insurance Company: Progressive Insurance Company. The note was written by Jessa.",
+      "valid_at": "2025-01-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling BI claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "adjuster contacted / investigating coverage"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim: Progressive Insurance Company",
+            "relevance": "claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-06",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Fwd: JEREMY C LINDSEY - 300-0793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com), Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 06 2025 03:51:25 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Wolfe, Chandler \nDate: Mon, Jan 6, 2025 at 12:57?PM\nSubject: JEREMY C LINDSEY - 300-0793616-2024\nTo: jessa@whaleylawfirm.com \nCc: KentuckyPIP.Clm \n\nGood Afternoon Ms. Jessa\n\nMy name is Chandler Wolfe and I am the PIP adjuster on file for the\nLindsey\u2019s.\n\nPlease see attached acknowledgement letter and blank PIP forms for your\nclients. To date, we have not received any completed forms.\n\nPlease let me know what additional documentation you are still needing for\nyour clients.\n\nThank you and have a wonderful day!\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey.\n\nOn January 6, 2025, Jessa Galosmo of Whaley Law Firm forwarded an email thread titled \u201cJEREMY C LINDSEY - 300-0793616-2024\u201d to the Lindsey family filevine project addresses for Jeremy Lindsey and his relatives: Elizabeth Lindsey, Chase Lindsey, and Owen Lindsey. The forward was sent at 3:51:25 PM Eastern Time on Monday, January 6, 2025.\n\nThe forwarded thread includes a message from Chandler Wolfe, identified as the PIP adjuster on file for the Lindseys. In Chandler\u2019s message, dated January 6, 2025 at approximately 12:57 PM (the original timestamp shows \u201c12:57?PM\u201d), he addressed Ms. Jessa and stated that he is the branch claims representative for Kentucky regional PIP. He asked Jessa to see the attached acknowledgement letter and the blank PIP forms for her clients, and noted that to date they have not received any completed forms. He requested information on any additional documentation needed for the clients. The message included an image attachment referenced as \u201cimage: cid:image001.png@01DA0E2D.2AA737D0.\u201d Chandler provided his contact information: phone 800-346-0346 extension 54628, fax number 517-886-8754, and email KentuckyPIP.clm@aoins.com, with operating hours from 8:00 a.m. to 4:30 p.m. EST. The message was CC\u2019d to KentuckyPIP.Clm.\n\nThe thread closes with the sign-off from Jessa Galosmo of Whaley Law Firm, including her standard contact details: Ph: (502) 357-9975 and Fax: (502) 364-9363.",
+      "valid_at": "2025-01-06T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of the file/email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender/forwarder representing the client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Chandler Wolfe",
+            "relevance": "PIP adjuster/author of the message"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (PIP)",
+            "relevance": "PIP claim referenced (acknowledgement letter and forms)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer handling the PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Called client for an update. Only Chase and Elizabeth are still treating. Elizabeth is going to her PT twice a week and Chase is still on cast. His follow up is on Friday.\n\nJeremy and Owen are done treating.\n\nLost wages not needed. \n__Person Making Contact:__ Jessa\n__Date & Time__: January 08 2025",
+      "natural_language": "Initial client contact on January 8, 2025, with Jessa regarding the Jeremy Lindsey MVA case (reference Jeremy-Lindsey-MVA-12-01-2024). Jessa called the client for an update.\n\nAt this time, only Chase and Elizabeth remain in treatment. Elizabeth is going to PT twice a week, and Chase is still in a cast. Chase has a follow-up appointment on Friday. Jeremy and Owen are done treating. Lost wages documentation is not needed.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case subject and client referenced in contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2025-01-08 14:40:07.399000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 concerns client Jeremy Lindsey. An outbound call from Jessa Galosmo was logged on January 8, 2025, at 14:40:07.399000+00:00. The record shows the Caller Info as 5024240049 and the Caller ID as 502-424-0049. The Caller Name is listed as Jeremy Lindsey, and the Caller Email field is blank. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "In the case Jeremy-Lindsey-MVA-12-01-2024, Jeremy Lindsey is the client. The client contacted today to provide update #cc.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client who provided update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Shawn Vo [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Wed Jan 08 2025 10:11:51 GMT-05:00\n\nHi,\n\nPlease see attached files.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024, for client Jeremy Lindsey. The file reference is 300-793616-2024. On January 8, 2025, at 10:11:51 AM GMT-05:00, Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to Shawn Vo at lexington.clm@aoins.com regarding this case.\n\nThe body of the email stated, \u201cHi, Please see attached files.\u201d The message was signed with \u201cAll the best\u201d by Jessa Galosmo, Whaley Law Firm, and included the firm\u2019s contact details: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "recipient insurer (email sent to lexington.clm@aoins.com)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Fwd: Jeremy Lindsey__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Jan 08 2025 10:49:02 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Jessica Bottorff \nDate: Wed, Jan 8, 2025 at 10:48?AM\nSubject: Jeremy Lindsey\nTo: Pamela Beatsch \n\nAttached is a request for bills on our client, Jeremy Lindsey.\n\nThanks!\n\nJessica Bottorff\n\nWhaley Law Firm\n\n712 Lyndon Ln.\n\nLouisville, KY 40222\n\nFax: (502)364-9363",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey. The case concerns a motor vehicle accident that occurred on December 1, 2024, involving Jeremy Lindsey.\n\nOn January 8, 2025, there was a forwarding of an email from Jessica Bottorff of Whaley Law Firm to Jeremy Lindsey\u2019s Filevine project email address (JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com). The forwarded message was sent at 10:49:02 GMT-05:00. The content indicates that it was a continuation of an email thread, with the forwarded message originating from Jessica Bottorff on January 8, 2025 at approximately 10:48 AM, addressed to Pamela Beatsch, with the subject \u201cJeremy Lindsey,\u201d and stating, \u201cAttached is a request for bills on our client, Jeremy Lindsey.\u201d The message carried Whaley Law Firm\u2019s contact details: 712 Lyndon Ln., Louisville, KY 40222, Fax: (502) 364-9363.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client and subject of billing request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of forwarded email requesting bills for the client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Jeremy Lindsey__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [8595868233@rcfax.com](mailto:8595868233@rcfax.com)\nCc: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Jan 08 2025 11:54:35 GMT-05:00\n\nAttached is a request for records on our client, Jeremy Lindsey.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey.\n\nOn January 8, 2025, at 11:54:35 a.m. Eastern Time, Jessica Bottorff of The Whaley Law Firm sent an email regarding our client, Jeremy Lindsey. The email was from jessica@whaleylawfirm.com and was addressed to 8595868233@rcfax.com, with Jeremy Lindsey\u2019s Filevine project email address JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.comCC\u2019ed. The message states that attached is a request for records on our client, Jeremy Lindsey. The email concluded with \u201cThanks!\u201d and was signed by The Whaley Law Firm.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of records request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm sending records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nRequest for records faxed to St. Elizabeth Physicians - Burlington // Request for bills e-mailed",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey in a motor vehicle accident. A request for records was faxed to St. Elizabeth Physicians - Burlington, and a request for bills was emailed.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians- Burlington",
+            "relevance": "recipient of records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Fwd: Fax Message Transmission Result to +1 (859) 5868233 - Sent__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Jan 08 2025 11:59:02 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Wed, Jan 8, 2025 at 11:58?AM\nSubject: Fax Message Transmission Result to +1 (859) 5868233 - Sent\nTo: Fax Line \n\n[image: Logo] [image: Logo]\n[image: Logo] Fax Transmission Result\n------------------------------\n\nHere are the results of the 3-page fax you sent from your phone number *(502)\n357-9939, Ext. 111*\n\n*Name* *Phone Number* *Date and Time* *Result*\n+1 (859) 5868233 Wednesday, January 08, 2025 at 11:58 AM Sent\n*Your fax(es) included the following file(s), which were rendered into fax\nformat for transmission:*\n\n*File Name* *Result*\nJeremy Lindsey - MedReq - St. Elizabeth Physicians.pdf Success\nJeremy Lindsey - MedAuth - St. Elizabeth Physicians.pdf Success\nView this message on your RingCentral app\n.",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. The client is Jeremy Lindsey.\n\nOn January 8, 2025, Jessica Bottorff of Whaley Law Firm forwarded a fax transmission result to the Jeremy Lindsey file email address for the Jeremy Lindsey MVA file. The forwarded message, with the subject \u201cFax Message Transmission Result to +1 (859) 5868233 - Sent,\u201d was dated January 8, 2025 at 11:59:02 PM (GMT-05:00). The forward shows the original message coming from RingCentral.\n\nThe RingCentral message indicates that the fax was sent from the sender\u2019s phone number (502) 357-9939, Ext. 111, to +1 (859) 5868233 on Wednesday, January 8, 2025 at 11:58 AM, and the result was \u201cSent.\u201d The fax included three pages, and the two files attached to and rendered for transmission were: \u201cJeremy Lindsey - MedReq - St. Elizabeth Physicians.pdf\u201d (Success) and \u201cJeremy Lindsey - MedAuth - St. Elizabeth Physicians.pdf\u201d (Success). The message notes that you can view this in the RingCentral app.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client / subject of file"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "forwarder of fax transmission to the file"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm sending/forwarding the fax"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians- Burlington",
+            "relevance": "provider referenced in transmitted medical request/authorization"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RingCentral",
+            "relevance": "fax/communication service used to send the transmission"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2025-01-08 19:48:21.307000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. On January 8, 2025, at 19:48:21.307000 UTC, Jessa Galosmo logged an outbound call to the client in this case.\n\nThe call was associated with caller info 5024240049 and a caller ID of 502-424-0049. The caller name on file is Jeremy Lindsey, and no email address was provided. A Filevine contact link is available at [filevine-link].",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "recipient of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-08",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n@jessa there is an Audrey Ertel, MD listed on his St. Elizabeth Physicians bill, if you speak to client can you ask him which practice this physician is with so we can send for records?",
+      "natural_language": "This is the case Jeremy-Lindsey-MVA-12-01-2024 involving client Jeremy Lindsey and a motor vehicle accident dated December 1, 2024.\n\nA note to Jessa indicates that Audrey Ertel, MD, is listed on the client's St. Elizabeth Physicians bill. If Jessa speaks with the client, she should ask him which practice this physician is affiliated with so we can send for records.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians- Burlington",
+            "relevance": "provider listed on client's bill; records to be requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-10",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call for Jessa Galosmo was logged at 2025-01-10 14:48:59.621000+00:00 . #inboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This note concerns the case Jeremy-Lindsey-MVA-12-01-2024, involving client Jeremy Lindsey. A call for Jessa Galosmo was logged on January 10, 2025 at 14:48:59.621000+00:00 as an inbound call.\n\nThe caller information lists the phone number 5024240049 (Caller ID: 502-424-0049). The call was placed by Jeremy Lindsey, whose email was not provided. For reference, a link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-01-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-10",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Jeremy Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [5027537064@rcfax.com](mailto:5027537064@rcfax.com)\nDate: Fri Jan 10 2025 11:13:06 GMT-05:00",
+      "natural_language": "This case concerns Jeremy Lindsey in the motor vehicle accident matter titled Jeremy-Lindsey-MVA-12-01-2024. The client is Jeremy Lindsey.\n\nThe note records an email activity: on Friday, January 10, 2025, at 11:13:06 AM (GMT-05:00), Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to the fax address 5027537064@rcfax.com as part of the Jeremy Lindsey matter.",
+      "valid_at": "2025-01-10T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Called client to inform we won't be able to make a claim if this is the only bill he had for treatment. Client is okay with it since he doesn't have any additional treatment. \n__Person Making Contact:__ Jessa\n__Date & Time__: January 14 2025",
+      "natural_language": "Initial client contact on January 14 2025 with Jeremy Lindsey regarding the motor vehicle accident case Jeremy-Lindsey-MVA-12-01-2024.\n\nThe contact was made by Jessa to inform Jeremy that we wouldn't be able to submit a claim if this is the only bill he had for treatment. He is okay with it since he doesn't have any additional treatment.",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "The Jeremy-Lindsey-MVA-12-01-2024 case involves client Jeremy Lindsey in a motor vehicle accident matter. On December 1, 2024, the client was contacted to provide update #cc.",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2025-01-14 17:39:20.804000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. On January 14, 2025, at 17:39:20.804000+00:00 UTC, an outbound call from Jessa Galosmo was logged in connection with this case. The call used the phone number 502-424-0049 (Caller ID: 502-424-0049), and the log lists the Caller Name as Jeremy Lindsey, with no email address on file. For reference, the Filevine contact link is [filevine-link].",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-17",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2025-01-17 21:16:36.990000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "For the case Jeremy-Lindsey-MVA-12-01-2024, the client is Jeremy Lindsey. An outbound call was logged on January 17, 2025 at 21:16:36.990000+00:00 by Jessa Galosmo.\n\nThe call\u2019s recorded details list the caller information as 5024240049, with a caller ID of 502-424-0049, and the caller name as Jeremy Lindsey. The caller email field is empty. A link to the Filevine contact is available here: [filevine-link].",
+      "valid_at": "2025-01-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-17",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Re: Clients: Jeremy Lindsey, et al., Claim# 24-902741838__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jennifer Howard [Jennifer_Howard@progressive.com](mailto:Jennifer_Howard@progressive.com)\nDate: Fri Jan 17 2025 04:36:36 GMT-05:00\n\nHi Jennifer,\n\nSure, I have the damage photos for Mr. Lindsey's vehicle and the other\nvehicle's. See attached.\n\nJessa\n\nOn Fri, Jan 17, 2025 at 2:46?PM Jennifer Howard <\nJennifer_Howard@progressive.com> wrote:\n\n> Good afternoon Jessa.\n>\n>\n>\n> Do you have any damage photos of Mr. Lindsey\u2019s vehicle (2025 Hyundai\n> Palisade) and if so, could you email to me so that I can wrap up my\n> investigation?\n>\n>\n>\n> Thank you.\n>\n>\n>\n> Jennifer Howard-Claims Specialist-Sr.\n>\n> Progressive Direct Insurance Company\n>\n> Po Box 94670\n>\n> Cleveland, OH 44101-9919\n>\n> 859-629-4740 (W)\n>\n> 833-905-1745 (F)\n>\n>\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey in a motor vehicle accident dating from December 1, 2024, with claim number 24-902741838. On January 17, 2025, an email thread took place between Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) and Jennifer Howard, Senior Claims Specialist at Progressive Direct Insurance Company (Jennifer_Howard@progressive.com), regarding the Lindsey matter.\n\nIn a message sent at 04:36:36 GMT-05:00, Jessa wrote to Jennifer: \u201cHi Jennifer, Sure, I have the damage photos for Mr. Lindsey\u2019s vehicle and the other vehicle\u2019s. See attached.\u201d The email was signed simply by Jessa. The thread indicates that Jennifer had earlier replied on January 17, 2025 (approximately 2:46 PM) with the request: \u201cGood afternoon Jessa. Do you have any damage photos of Mr. Lindsey\u2019s vehicle (2025 Hyundai Palisade) and if so, could you email to me so that I can wrap up my investigation? Thank you.\u201d Jennifer Howard\u2019s signature block lists her as a Claims Specialist-Senior at Progressive Direct Insurance Company, with a P.O. Box of 94670, Cleveland, OH 44101-9919, and telephone and fax numbers 859-629-4740 (W) and 833-905-1745 (F).\n\nJessa closed her message with \u201cAll the best,\u201d followed by her name and contact information: Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363. The exchange confirms that damage photos for both Mr. Lindsey\u2019s 2025 Hyundai Palisade and the other involved vehicle were provided as attachments to the email.",
+      "valid_at": "2025-01-17T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "primary client/subject of the MVA and claim"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Direct Insurance Company",
+            "relevance": "insurer handling the BI investigation"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "claims adjuster who requested damage photos and corresponded by email"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim #24-902741838",
+            "relevance": "bodily injury claim referenced in the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing the client and sender of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "law firm representative who sent the damage photos to the adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Owen photos \n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "The case is Jeremy-Lindsey-MVA-12-01-2024, with client Jeremy Lindsey. On January 17, 2025, an inbound text message was received from +15024240049 to +15023579975, containing the message \"Owen photos.\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Sure, thanks\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15023579975 \n__To Number:__ +15024240049\n__Direction:__ Outbound",
+      "natural_language": "The case Jeremy-Lindsey-MVA-12-01-2024 concerns client Jeremy Lindsey.\n\nOn January 17, 2025, an outbound text message was sent from +15023579975 to +15024240049 with the message \"Sure, thanks.\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Elizabeth photos\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey.\n\nOn January 17, 2025, an inbound text message related to the case was received from +15024240049 to +15023579975. The message content was \"Elizabeth photos.\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians- Burlington",
+            "relevance": "possibly referenced by inbound message ('Elizabeth photos')"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Ok those pics are on my wife's phone. I'll send when I get home \n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "This case, Jeremy-Lindsey-MVA-12-01-2024, concerns client Jeremy Lindsey.\n\nOn January 17, 2025, an inbound text message was received from +15024240049 to +15023579975. The message read: \"Ok those pics are on my wife's phone. I'll send when I get home.\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client mentioned"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Please send any photos of the damages of your vehicle so I can forward it to Progressive and they can wrap up their investigations. Thanks.\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15023579975 \n__To Number:__ +15024240049\n__Direction:__ Outbound",
+      "natural_language": "Initial client contact on December 1, 2024 with Jeremy Lindsey regarding motor vehicle accident (Case: Jeremy-Lindsey-MVA-12-01-2024).\n\nOn January 17, 2025, an outbound text was sent from +15023579975 to +15024240049. The message read: \"Please send any photos of the damages of your vehicle so I can forward it to Progressive and they can wrap up their investigations. Thanks.\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "recipient of photos / subject of investigation"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "claim to be forwarded to Progressive"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Yes please.\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15023579975 \n__To Number:__ +15024240049\n__Direction:__ Outbound",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 concerns client Jeremy Lindsey.\n\nOn January 17, 2025, there was an outbound text message from +15023579975 to +15024240049, with the content \"Yes please.\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Do you need injury photos as well?\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "The case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey.\n\nOn January 17, 2025, an inbound text message was received from +15024240049 to +15023579975, with the content: \"Do you need injury photos as well?\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ ?https://share.icloud.com/photos/054IqLgYbLsapjX_-yId0Ta1Q\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. The initial client contact occurred by text message on January 17, 2025. The inbound message was sent from +15024240049 to +15023579975 and contained a link to an iCloud photo: ?https://share.icloud.com/photos/054IqLgYbLsapjX_-yId0Ta1Q.",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Owen photos \n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "In the case Jeremy-Lindsey-MVA-12-01-2024, involving client Jeremy Lindsey, an inbound text message was received on January 17, 2025. The message content was \"Owen photos\" and it was sent from +15024240049 to +15023579975.",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "recipient of inbound text / subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Jeremy Photos\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. On January 17, 2025, the case record shows an inbound text message. The message content was \"Jeremy Photos,\" sent from +15024240049 to +15023579975, with the direction noted as inbound.",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Chase photos\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 concerns client Jeremy Lindsey. The communication documented is a text message.\n\nOn January 17, 2025, an inbound text message was received from +15024240049 to +15023579975 containing the content \"Chase photos.\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client of case / subject of communication"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-18",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Grey SUV is our vehicle. White SUV is the other vehicle.\n__Date and Time:__ 2025-01-17 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on January 17, 2025 with Jeremy Lindsey regarding a motor vehicle accident, documented as case Jeremy-Lindsey-MVA-12-01-2024.\n\nAn inbound text message was received on January 17, 2025 from +1 (502) 424-0049 to +1 (502) 357-9975. The message stated: \"Grey SUV is our vehicle. White SUV is the other vehicle.\"",
+      "valid_at": "2025-01-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-20",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Fwd: New Text Message from (502) 424-0049 on 01/17/2025 6:00 PM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 20 2025 09:22:25 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Fri, Jan 17, 2025 at 6:00?PM\nSubject: New Text Message from (502) 424-0049 on 01/17/2025 6:00 PM\nTo: Jessa Galosmo \n\n[image: Logo] [image: Logo]\n[image: Logo] Text Message\n------------------------------\n\nDear Jessa Galosmo,\n\nYou have a new text message:\n*From:* (502) 424-0049\n*To:* Jessa Galosmo\n*Received:* Friday, January 17, 2025 at 6:00 PM\n*Message:* Jeremy Photos\n*Attachment:* 5 images\nTo reply using the RingCentral app\n.",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nOn January 17, 2025, at approximately 6:00 PM (the RingCentral notification timestamps show 6:00? PM), a new text message was received from the phone number (502) 424-0049 and delivered to Jessa Galosmo. The message content was \u201cJeremy Photos,\u201d and there were five image attachments.\n\nThis text message was forwarded by Jessa Galosmo on January 20, 2025 at 9:22:25 PM (GMT-05:00) to Jeremy Lindsey\u2019s Filevine project email address: JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com. The forwarded email carried the header \u201cForward: New Text Message from (502) 424-0049 on 01/17/2025 6:00 PM\u201d and originated from Jessa Galosmo (jessa@whaleylawfirm.com) to the Filevine project email address, with the subject and content that reflect the RingCentral notification.\n\nWithin the forwarded RingCentral message, the notification details were as follows: From: RingCentral; Date: Friday, January 17, 2025 at 6:00? PM; Subject: New Text Message from (502) 424-0049 on 01/17/2025 6:00 PM; To: Jessa Galosmo. The body stated: \u201cDear Jessa Galosmo, You have a new text message: From: (502) 424-0049 To: Jessa Galosmo Received: Friday, January 17, 2025 at 6:00 PM Message: Jeremy Photos Attachment: 5 images To reply using the RingCentral app.\u201d",
+      "valid_at": "2025-01-20T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of the message / recipient of forwarded photos"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nThis case involves Jeremy Lindsey and his family members who were involved in a motor vehicle accident. The Lindseys are seeking compensation for injuries and damages sustained in the incident.\nThe most recent activity shows that Jessa contacted the client on January 14, 2025, to inform them that a claim couldn't be made if the only treatment bill was the one they had. The client was okay with this as they didn't have any additional treatment. (See details)\nA potential red flag is that Jeremy Lindsey's treatment may be insufficient to pursue a claim. There's also a note indicating that only Chase and Elizabeth were still treating as of January 8, 2025, while Jeremy and Owen had completed treatment. (See details), (See details)\nNext steps should include confirming the status of treatment for all family members involved, particularly Chase and Elizabeth. Additionally, the team should review the medical records and bills received to determine if there's enough evidence to support a claim for each family member. (See",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024 involves Jeremy Lindsey and his family, who were involved in a motor vehicle accident. The Lindseys are seeking compensation for injuries and damages sustained in the incident.\n\nMost recent activity shows that Jessa contacted the client on January 14, 2025, to inform them that a claim couldn't be made if the only treatment bill was the one they had. The client was okay with this as they didn't have any additional treatment. (See details)\n\nA potential red flag is that Jeremy Lindsey's treatment may be insufficient to pursue a claim. There's also a note indicating that only Chase and Elizabeth were still treating as of January 8, 2025, while Jeremy and Owen had completed treatment. (See details), (See details)\n\nNext steps should include confirming the status of treatment for all family members involved, particularly Chase and Elizabeth. Additionally, the team should review the medical records and bills received to determine if there's enough evidence to support a claim for each family member. (See details) The note ends with an incomplete \"(See\" fragment.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "primary client; treatment likely insufficient to pursue a claim"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "family member; still treating as of 01/08/2025"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "family member; still treating as of 01/08/2025"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "family member; completed treatment as of 01/08/2025"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jessa",
+            "relevance": "contacted the client on 01/14/2025 regarding claimability based on available bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-30",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Chandler Wolfe [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Thu Jan 30 2025 10:08:05 GMT-05:00\n\nHi,\n\nPlease see attached request for PIP ledger.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "This case is listed as Jeremy-Lindsey-MVA-12-01-2024 and concerns client Jeremy Lindsey in a motor vehicle accident matter. The file/claim reference number is 300-793616-2024.\n\nOn Thursday, January 30, 2025 at 10:08:05 AM Eastern Time (GMT-05:00), an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to Chandler Wolfe at lexington.clm@aoins.com regarding the case. The body of the message begins with \u201cHi,\u201d and states, \u201cPlease see attached request for PIP ledger.\u201d The email is signed by Jessa Galosmo with the Whaley Law Firm, and provides the firm\u2019s contact details: Ph: (502)357-9975 and Fax: (502)364-9363, ending with the closing, \u201cAll the best.\u201d",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email/request"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "recipient insurer; PIP carrier"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (Adjuster: Emily Pernice)",
+            "relevance": "PIP claim for which ledger was requested"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "adjuster for the PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-31",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__New Insurance Note:__ 01/30/25 Adj called to confirm if Auto owners already handled PD\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey in a motor vehicle accident case dated December 1, 2024.\n\nNew Insurance Note: Dated January 30, 2025, an adjuster called to confirm whether Auto Owners had already handled the property damage (PD) claim. The insurance type is Bodily Injury (BI) with Progressive Insurance Company. The note was written by Jessa and is filed under Inotes.",
+      "valid_at": "2025-01-31T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim / insurer mentioned in note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PD claim referenced (whether Auto Owners handled property damage)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-31",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__New Insurance Note:__ 01/30 called pd adj to confirm status of PD claim. No answer, left vm.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Auto Owners Insurance\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "This entry concerns the Jeremy-Lindsey-MVA-12-01-2024 motor vehicle accident case for client Jeremy Lindsey. The insurance details indicate Personal Injury Protection (PIP) coverage with Auto Owners Insurance. The note was written by Jessa.\n\nOn 01/30, I called the property-damage (PD) adjuster to confirm the status of the PD claim. There was no answer, and I left a voicemail. This entry is categorized under #Inotes.",
+      "valid_at": "2025-01-31T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of file"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP coverage noted"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "property-damage adjuster",
+            "relevance": "called; voicemail left"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-03",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Called client to get update on companions treatment (Elizabeth and Chase). No answer, left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: February 03 2025",
+      "natural_language": "Initial client contact on February 3, 2025 with Jessa regarding motor vehicle accident (MVA) case Jeremy-Lindsey-MVA-12-01-2024 for client Jeremy Lindsey, to obtain an update on companions treatment (Elizabeth and Chase). The client did not answer, and a voicemail was left.",
+      "valid_at": "2025-02-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "called for update; voicemail left"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-02-03",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Today, December 1, 2024, the client Jeremy Lindsey was contacted to provide update #cc regarding the motor vehicle accident case Jeremy-Lindsey-MVA-12-01-2024.",
+      "valid_at": "2025-02-03T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-03",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2025-02-03 15:09:53.987000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This case file, Jeremy-Lindsey-MVA-12-01-2024, concerns client Jeremy Lindsey.\n\nOn February 3, 2025, at 15:09:53.987000+00:00, a call from Jessa Galosmo was logged as an outbound call in relation to this case. The record lists the caller information as 5024240049, with a caller ID of 502-424-0049. The Caller Name on the log is Jeremy Lindsey, and the Caller Email field is empty. A link to the Filevine contact is available here: [filevine-link].",
+      "valid_at": "2025-02-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-03",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call for Jessa Galosmo was logged at 2025-02-03 19:09:42.596000+00:00 . #inboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This note pertains to Case Jeremy-Lindsey-MVA-12-01-2024 for client Jeremy Lindsey, involving a motor vehicle accident dated December 1, 2024.\n\nAn inbound call was logged on February 3, 2025 at 19:09:42.596000+00:00, described as \u201cA call for Jessa Galosmo.\u201d The log lists Caller Info: 5024240049 and Caller ID: 502-424-0049. The Caller Name is Jeremy Lindsey, and there is no email address provided. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-02-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller / subject of note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-04",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Fwd: Progressive Claim #24-902741838__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Justin Chumbley [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nDate: Tue Feb 04 2025 04:48:25 GMT-05:00\n\nShould I forward this to Jeremy Lindsey?\n\n---------- Forwarded message ---------\nFrom: Donna Zelenika \nDate: Tue, Feb 4, 2025 at 3:32?PM\nSubject: Progressive Claim #24-902741838\nTo: JESSA@WHALEYLAWFIRM.COM \n\nHi Jessa,\n\nI spoke to Auto Owners and they told me that they have handled the damages\nfor the 2025 Hyundai Palisade. They advised that the damages will be over\nour PD limits of $25,000.00.\n\nPlease have Mr. Jeremy Lindsey sign the attached PD release letter that\nstates Progressive will pay out our limits of $25,000.00.\n\nLet me know if you have any questions\n\nThank you,\n\n*Donna Zelenika **|**Claims Adjuster*\n\nProgressive Insurance\n\nOffice: 800-776-4737 /Fax: 1-833-905-1745\n\nHours: Monday-Friday 8:00 am-5:00 pm CST\n\nDirect: 859-629-4744\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nOn February 4, 2025, an internal note was sent noting a forward of Progressive Claim #24-902741838. The message, titled \u201cFwd: Progressive Claim #24-902741838,\u201d came from Jessa Galosmo of Whaley Law Firm and was sent to Justin Chumbley, with the question: \u201cShould I forward this to Jeremy Lindsey?\u201d\n\nThe forwarded message itself contains an email from Donna Zelenika, a claims adjuster with Progressive Insurance. Dated February 4, 2025 at 3:32 PM (noted as 3:32?PM in the header), addressed to JESSA@WHALEYLAWFIRM.COM, the message begins with: \u201cHi Jessa.\u201d Donna reports that she spoke with Auto Owners and was told they have handled the damages for the 2025 Hyundai Palisade and that the damages will exceed Progressive\u2019s PD (personal damage) limits of $25,000.00. She asks that Mr. Jeremy Lindsey sign the attached PD release letter, which states that Progressive will pay out the limits of $25,000.00. She closes by inviting any questions and signs as follows:\n\nDonna Zelenika | Claims Adjuster\nProgressive Insurance\nOffice: 800-776-4737 / Fax: 1-833-905-1745\nHours: Monday\u2013Friday 8:00 am\u20135:00 pm CST\nDirect: 859-629-4744\n\nThe message was sent to JESSA@WHALEYLAWFIRM.COM, and the forwarded thread ends with Jessa Galosmo\u2019s signature block:\n\nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363\n\nThese elements reflect the case context for Jeremy Lindsey related to the 12-01-2024 motor vehicle accident. The key facts conveyed are that the 2025 Hyundai Palisade damages are expected to exceed the PD limit of $25,000, that Progressive intends to pay out its $25,000.00 limit via a PD release letter to be signed by Jeremy Lindsey, and the contact details and timeline surrounding the correspondence.",
+      "valid_at": "2025-02-04T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client asked to sign PD release / subject of correspondence"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance",
+            "relevance": "insurer offering PD limits payout and sender of claim information"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Claim #24-902741838",
+            "relevance": "claim discussed in the forwarded email (PD payout / release)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Donna Zelenika",
+            "relevance": "claims adjuster at Progressive who sent the email"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer reported to have handled the vehicle damages"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "recipient/forwarder of Progressive's email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "Whaley Law Firm contact who forwarded/asked about forwarding the email to the client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-13",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__PD Release Letter__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jeremy Lindsey [jeremylindsey1978@yahoo.com](mailto:jeremylindsey1978@yahoo.com)\nDate: Thu Feb 13 2025 03:24:35 GMT-05:00\n\nHi Jeremy,\n\nPlease sign this document and return it back to us. If you have any\nquestions feel free to contact us.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. On February 13, 2025 at 03:24:35 GMT-05:00, Jessa Galosmo of Whaley Law Firm sent a PD Release Letter via email from jessa@whaleylawfirm.com to Jeremy Lindsey at jeremylindsey1978@yahoo.com. The message instructed Jeremy to sign the document and return it, and it stated that if he had any questions he should contact them. The email was signed \u201cAll the best, Jessa Galosmo,\u201d and included Whaley Law Firm\u2019s contact information: phone 502-357-9975 and fax 502-364-9363.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "recipient of PD Release Letter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender/author of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm sending the PD Release Letter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-13",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__157804615__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [5027537248@rcfax.com](mailto:5027537248@rcfax.com)\nDate: Thu Feb 13 2025 04:02:46 GMT-05:00",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024 concerns client Jeremy Lindsey in a motor vehicle accident matter dated December 1, 2024. The file carries an internal reference number 157804615.\n\nOn February 13, 2025, at 04:02:46 GMT-05:00, an email was sent from Jessa Galosmo at jessa@whaleylawfirm.com to the fax address 5027537248@rcfax.com. This record lists only the sender, the recipient, and the timestamp of that transmission, with no additional message content included.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RCFax",
+            "relevance": "fax recipient/service"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__New Insurance Note:__ 02/14 Called adj to open UIM. Vm only, left vm.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Auto Owners Insurance\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Jeremy Lindsey is the client in the case Jeremy-Lindsey-MVA-12-01-2024, relating to a motor vehicle accident that occurred on December 1, 2024.\n\nA new insurance note dated February 14 records that the adjuster was contacted to open UIM. The communication was voicemail only, and a message was left for the adjuster.\n\nThe insurance involved is Personal Injury Protection (PIP) under Auto Owners Insurance. The note was written by Jessa.",
+      "valid_at": "2025-02-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer for PIP"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (Adjuster: Emily Pernice)",
+            "relevance": "PIP claim discussed"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "adjuster contacted; voicemail left to open UIM"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-02-20",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Lindsey Family #24-902741838__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jennifer Howard [jennifer_howard@progressive.com](mailto:jennifer_howard@progressive.com), Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Feb 20 2025 02:29:23 GMT-05:00\n\nJennifer I hope this email finds you well I understand that there is a\nlimits issue in this case because there are five total by the injury\nclaims. I understand that however, I would say that I represent four of the\nfive and they are all in the same family so it's a husband wife and their\ntwo kids. To the extent that you have to preserve one of your two policy\nlimits for some sort of distribution to Dominic he would not be entitled in\nany way to the other policy limit. If you could let me know what those\nlimits are and then we can figure out a way that you can tender one of them\nto the Lindsey's and then we can wait on Dominic to decide what to do with\nthe other one thank you\n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "This case is titled Jeremy-Lindsey-MVA-12-01-2024, with client Jeremy Lindsey, associated with the Lindsey Family #24-902741838.\n\nOn February 20, 2025, at 02:29:23 GMT-05:00, Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Jennifer Howard at Progressive and to Jeremy Lindsey\u2019s Filevine project address (JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com).\n\nIn the body of the message, Whaley wrote: \"Jennifer I hope this email finds you well I understand that there is a limits issue in this case because there are five total by the injury claims. I understand that however, I would say that I represent four of the five and they are all in the same family so it's a husband wife and their two kids. To the extent that you have to preserve one of your two policy limits for some sort of distribution to Dominic he would not be entitled in any way to the other policy limit. If you could let me know what those limits are and then we can figure out a way that you can tender one of them to the Lindsey's and then we can wait on Dominic to decide what to do with the other one thank you\" The communication ends with Whaley\u2019s signature and contact details: Aaron Whaley, Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-02-20T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client / recipient of Filevine email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender / counsel representing the Lindsey family"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "recipient insurer / involved in limits issue"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "bodily injury claim discussed (policy limits/tender)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "addressee / Progressive adjuster handling the BI claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-02-21",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Summary of the call with Jennifer Howard__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Feb 21 2025 10:29:21 GMT-05:00\n\nHi\n\nHere's the summary of the call with Jennifer Howard at 2/21 10:27 AM\n(UTC-05:00):\n\nAaron Whaley followed up with Jennifer Howard regarding claim number\n24-9002741838 for Owen Lindsay, seeking a discussion on the matter.\n\nRecap\n\n * Jennifer Howard is currently unavailable to take calls and provided her\nwork hours and contact information.\n * Aaron Whaley left a message for Jennifer, following up on an email he\nsent regarding Owen Lindsay's claim number 24-9002741838, requesting a call\nback.\n\nTasks\n\n * Jennifer needs to return Aaron's call regarding claim number\n24-9002741838.\n\nBest,\naaron whaley",
+      "natural_language": "This case note pertains to the Jeremy-Lindsey-MVA-12-01-2024 case for client Jeremy Lindsey. On February 21, 2025, at 10:27 AM local time (UTC-05:00), Aaron Whaley of Whaley Law Firm spoke with Jennifer Howard to discuss Owen Lindsay\u2019s claim 24-9002741838. The summary was prepared in an email from Aaron Whaley to the Jeremy Lindsey Filevine project email address, dated February 21, 2025 at 10:29:21 GMT-05:00.\n\nRecap: Jennifer Howard was unavailable to take calls at that time but provided her work hours and contact information. Aaron Whaley left a message for Jennifer, following up on an email he had sent regarding Owen Lindsay\u2019s claim number 24-9002741838, requesting a call back.\n\nAction item: Jennifer needs to return Aaron\u2019s call regarding claim number 24-9002741838.\n\nBest,\nAaron Whaley",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "caller and author of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "attorney's firm / sender"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "adjuster contacted / person to return call"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for the BI claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim #24-9002741838",
+            "relevance": "claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-06",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2025-03-06 18:11:18.609000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. A call from Jessa Galosmo was logged on 2025-03-06 at 18:11:18.609000+00:00 as an outbound call. The record lists Caller Info as 5024240049 and Caller ID as 502-424-0049, with the Caller Name shown as Jeremy Lindsey. The Caller Email field is blank. A link to the Filevine contact is provided: [filevine-link].",
+      "valid_at": "2025-03-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-06",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call client. No answer, left vm. Need to know the treatment status of Elizabeth and Chase. \n__Person Making Contact:__ Jessa\n__Date & Time__: March 06 2025",
+      "natural_language": "In the Jeremy-Lindsey-MVA-12-01-2024 case, the client is Jeremy Lindsey.\n\nOn March 6, 2025, Jessa attempted to contact the client by phone regarding this case. There was no answer, and a voicemail was left. The purpose of the outreach was to determine the treatment status of Elizabeth and Chase.",
+      "valid_at": "2025-03-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "recipient of outreach / attempted contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-03-10",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Re: [EXTERNAL] Lindsey Family #24-902741838__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jennifer Howard [Jennifer_Howard@progressive.com](mailto:Jennifer_Howard@progressive.com)\nCc: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Mar 10 2025 11:38:31 GMT-04:00\n\nJennifer, have you had a chance to take a look at this?\n\nOn Fri, Feb 21, 2025 at 4:19?PM Jennifer Howard <\nJennifer_Howard@progressive.com> wrote:\n\n> Mr. Whaley-\n>\n>\n>\n> Good afternoon.\n>\n>\n>\n> I have this on my calendar to review next Tuesday concerning settlement\n> proposals for all involved parties. I will reach out to you then to\n> discuss further.\n>\n>\n>\n> Jennifer Howard-Claims Specialist-Sr.\n>\n> Progressive Direct Insurance Company\n>\n> Po Box 94670\n>\n> Cleveland, OH 44101-9919\n>\n> 859-629-4740 (W)\n>\n> 833-905-1745 (F)\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Thursday, February 20, 2025 2:29 PM\n> *To:* Jennifer Howard ; Jeremy Lindsey -\n> Filevine Project Email Address <\n> JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* [EXTERNAL] Lindsey Family #24-902741838\n>\n>\n>\n> Jennifer I hope this email finds you well I understand that there is a\n> limits issue in this case because there are five total by the injury\n> claims. I understand that however, I would say that I represent four of the\n> five and they are all in the same family so it's a husband wife and their\n> two kids. To the extent that you have to preserve one of your two policy\n> limits for some sort of distribution to Dominic he would not be entitled in\n> any way to the other policy limit. If you could let me know what those\n> limits are and then we can figure out a way that you can tender one of them\n> to the Lindsey's and then we can wait on Dominic to decide what to do with\n> the other one thank you\n>\n>\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n>\n> Louisville, KY 40222\n>\n> 502-583-4022\n>\n>\n>\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "This case concerns Jeremy Lindsey, the client in the Jeremy-Lindsey-MVA-12-01-2024 matter, listed under Re: [EXTERNAL] Lindsey Family #24-902741838. The email thread shows correspondence between Aaron Whaley of Whaley Law Firm and Jennifer Howard, a Senior Claims Specialist with Progressive Direct Insurance Company, with Jeremy Lindsey\u2019s Filevine project email address cc\u2019d on the messages.\n\nOn March 10, 2025, at 11:38:31 AM Eastern Time, Aaron Whaley sent an email to Jennifer Howard asking, \u201cJennifer, have you had a chance to take a look at this?\u201d\n\nEarlier, on February 21, 2025, Jennifer Howard replied that she had the matter on her calendar to review next Tuesday concerning settlement proposals for all involved parties, and that she would reach out then to discuss further. Her message included her title and contact information for Progressive Direct Insurance Company, along with a P.O. Box address in Cleveland, Ohio, and both her work and fax numbers.\n\nPrior to that, on February 20, 2025 at 2:29 PM, Aaron Whaley wrote to Jennifer Howard and Jeremy Lindsey\u2019s Filevine project address regarding Lindsey Family #24-902741838. In that message, he explained that there is a policy limits issue in the case because there are five injury claims in total. He stated that he represents four of the five claimants, all of whom are in the same family\u2014a husband, wife, and their two kids. He indicated that if Progressive must preserve one of its two policy limits for some form of distribution to Dominic, Dominic would not be entitled to the other policy limit. Whaley asked Jennifer to tell him what the policy limits are so that they could determine a way to tender one of the limits to the Lindseys, and then wait on Dominic to decide what to do with the other one. The message included Whaley\u2019s contact information and office address:\nWhaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-03-10T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client / subject of the matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sender of emails / counsel for the Lindsey family"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "Aaron Whaley's firm / contact information provided"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Direct Insurance Company",
+            "relevance": "insurer involved in settlement discussions and policy limits issue"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "Progressive adjuster / correspondent on the claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "bodily injury claim(s) / policy limits dispute discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-03-13",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Re: [EXTERNAL] Lindsey Family #24-902741838__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jennifer Howard [Jennifer_Howard@progressive.com](mailto:Jennifer_Howard@progressive.com)\nCc: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Mar 13 2025 09:11:28 GMT-04:00\n\nCircling back on this\n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022\n\nOn Mon, Mar 10, 2025 at 11:38?AM Aaron Whaley \nwrote:\n\n> Jennifer, have you had a chance to take a look at this?\n>\n> On Fri, Feb 21, 2025 at 4:19?PM Jennifer Howard <\n> Jennifer_Howard@progressive.com> wrote:\n>\n>> Mr. Whaley-\n>>\n>>\n>>\n>> Good afternoon.\n>>\n>>\n>>\n>> I have this on my calendar to review next Tuesday concerning settlement\n>> proposals for all involved parties. I will reach out to you then to\n>> discuss further.\n>>\n>>\n>>\n>> Jennifer Howard-Claims Specialist-Sr.\n>>\n>> Progressive Direct Insurance Company\n>>\n>> Po Box 94670\n>>\n>> Cleveland, OH 44101-9919\n>>\n>> 859-629-4740 (W)\n>>\n>> 833-905-1745 (F)\n>>\n>>\n>>\n>> *From:* Aaron Whaley \n>> *Sent:* Thursday, February 20, 2025 2:29 PM\n>> *To:* Jennifer Howard ; Jeremy Lindsey\n>> - Filevine Project Email Address <\n>> JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com>\n>> *Subject:* [EXTERNAL] Lindsey Family #24-902741838\n>>\n>>\n>>\n>> Jennifer I hope this email finds you well I understand that there is a\n>> limits issue in this case because there are five total by the injury\n>> claims. I understand that however, I would say that I represent four of the\n>> five and they are all in the same family so it's a husband wife and their\n>> two kids. To the extent that you have to preserve one of your two policy\n>> limits for some sort of distribution to Dominic he would not be entitled in\n>> any way to the other policy limit. If you could let me know what those\n>> limits are and then we can figure out a way that you can tender one of them\n>> to the Lindsey's and then we can wait on Dominic to decide what to do with\n>> the other one thank you\n>>\n>>\n>>\n>> Aaron Whaley\n>>\n>> Whaley Law Firm\n>>\n>> 712 Lyndon Ln\n>>\n>> Louisville, KY 40222\n>>\n>> 502-583-4022\n>>\n>>\n>>\n>\n>\n> --\n> Aaron Whaley\n> Whaley Law Firm\n> 712 Lyndon Ln\n> Louisville, KY 40222\n> 502-583-4022\n>\n>",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey. This note summarizes an external email thread concerning the Lindsey Family case number 24-902741838, in which Jeremy Lindsey is the client in a motor vehicle accident matter dated December 1, 2024.\n\nThe thread begins with an email dated February 20, 2025, from Aaron Whaley of Whaley Law Firm (address: 712 Lyndon Ln, Louisville, KY 40222; phone 502-583-4022; agwhaley@whaleylawfirm.com) to Jennifer Howard, a Senior Claims Specialist at Progressive Direct Insurance Company (PO Box 94670, Cleveland, OH 44101-9919; phone 859-629-4740; fax 833-905-1745; Jennifer_Howard@progressive.com), with Jeremy Lindsey copied to the Filevine project email address JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com. The subject of the message is \u201c[EXTERNAL] Lindsey Family #24-902741838.\u201d In this message, Whaley explained that there is a policy limits issue in the case because there are five total injury claims. He stated that he represents four of the five, all within the same family\u2014a husband, a wife, and their two kids. He proposed preserving one of Progressive\u2019s two policy limits for some distribution to Dominic, asserting that Dominic would not be entitled to the other policy limit. He asked Jennifer to provide the limits so they could determine a way to tender one of the limits to the Lindsey family and then wait for Dominic to decide what to do with the other limit. Whaley included his contact information again at the end of the message.\n\nOn February 21, 2025, Jennifer Howard replied. She acknowledged that she had this on her calendar to review the following Tuesday regarding settlement proposals for all involved parties and said she would reach out then to discuss further. Her signature identified her as Jennifer Howard, Claims Specialist-Sr., Progressive Direct Insurance Company, with the following contact details: PO Box 94670, Cleveland, OH 44101-9919; work phone 859-629-4740; fax 833-905-1745. The message was part of the same external thread concerning Lindsey Family #24-902741838.\n\nA follow-up email from Aaron Whaley was sent on February 20, 2025 at 2:29 PM (in the thread, this is the original message that preceded Jennifer\u2019s February 21 response). In that message, Whaley reiterated the policy-limits issue, clarified that he represents four of the five injuries within the same family (husband, wife, and their two kids), and discussed preserving one of Progressive\u2019s two policy limits for distribution to Dominic. He stated that Dominic would not be entitled to the other policy limit and asked Jennifer to disclose the policy limits so they could tender one of them to the Lindseys and then await Dominic\u2019s decision regarding the other limit. Whaley provided his contact information again.\n\nThe chain continues with a note on March 10, 2025, around 11:38 AM, from Aaron Whaley to Jennifer Howard (the exact phrasing in the header shows a request: \u201cJennifer, have you had a chance to take a look at this?\u201d). This indicates a follow-up inquiry after Jennifer\u2019s February 21 response, asking whether she had reviewed the matter.\n\nFinally, on March 13, 2025, at 9:11:28 AM (GMT-04:00), Aaron Whaley sent a closing follow-up with the subject line \u201cCircling back on this.\u201d The email was again addressed to Jennifer Howard, with Jeremy Lindsey copied via the Filevine project email address. The message circulated the same firm contact details for Whaley Law Firm and reiterated the intent to follow up on the Lindsey Family matter. Whaley\u2019s signature again lists the firm\u2019s address (712 Lyndon Ln, Louisville, KY 40222) and phone number (502-583-4022).\n\nIn summary, the note documents a back-and-forth with Progressive regarding how to handle policy limits across five injury claims within the Lindsey family, with Whaley representing four of the five claimants, the family structure (husband, wife, two kids), and Dominic as a potential recipient of one policy limit. The exchange includes three main responses: Whaley\u2019s initial limits proposal on February 20, 2025; Jennifer Howard\u2019s plan to review settlement proposals the following Tuesday (February 21, 2025); and subsequent follow-ups by Whaley on March 10 and March 13, 2025, seeking updates and circling back on the matter.",
+      "valid_at": "2025-03-13T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client in the MVA matter and recipient/copy on correspondence"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer involved in the policy limits discussion for the injury claims"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "Progressive claims specialist/adjuster handling the correspondence"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney representing four of the five injured family members and sender of settlement proposal emails"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing the Lindsey family (source of the emails)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call. No answer, left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: March 14 2025",
+      "natural_language": "Initial client contact on March 14, 2025 with Jessa regarding the Jeremy-Lindsey-MVA-12-01-2024 case for client Jeremy Lindsey. The outreach involved an attempted call by Jessa; there was no answer, and a voicemail was left.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Jeremy Lindsey is the client in the motor vehicle accident case Jeremy-Lindsey-MVA-12-01-2024. Today he contacted the office to provide an update, noted as #cc.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "contacted office to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from Jessa Galosmo was logged at 2025-03-14 13:30:28.848000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey.\n\nInitial client contact on March 14, 2025, regarding the motor vehicle accident in this case with client Jeremy Lindsey. An outbound call from Jessa Galosmo was logged at 13:30:28.848000+00:00. The record lists the following details: Caller Info 5024240049, Caller ID 502-424-0049, Caller Name Jeremy Lindsey, and Caller Email not provided. A Filevine contact link is included: [filevine-link].",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client and caller; subject of the contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA missed call for Jessa Galosmo was logged at 2025-03-14 14:57:38.827000+00:00 . #missedcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hey, good morning. This is Jeremy Lindsey returning your call. I wanted to provide an update for both Chase and Elizabeth. Chase has a final x ray for his broken collarbone scheduled for april the second and hopefully we get final clearance there. No more treatment is needed. But again, he is scheduled for a final x ray for his collar Bone on april the second. Elizabeth has continued treatment this following Monday, hoping that is going to be her last treatment that is been ongoing for several weeks now. And then she has a final consultation meeting with that orthopedist. I believe it is in early April as well. I can get to the exact date, but hopefully her last treatment and then she will have 1 final assessment as well. So all things considered, assuming there is no changes, we are hoping to have everyone cleared completely in early to mid April. So I will let you know as soon as I know more, but that is the update for now. Thank you. And as always, do not hesitate to reach out to you. Appreciate it.",
+      "natural_language": "In the case Jeremy-Lindsey-MVA-12-01-2024, for client Jeremy Lindsey, a missed call intended for Jessa Galosmo was logged on March 14, 2025, at 14:57:38.827000 UTC. The call originated from the number 502-424-0049, and the caller was identified as Jeremy Lindsey. No caller email was provided, and there is a link to the Filevine contact for reference.\n\nThe voicemail left by Jeremy Lindsey provides updates regarding two patients, Chase and Elizabeth. For Chase, a final X-ray of his broken collarbone is scheduled for April 2, and it is hoped this will yield final clearance with no further treatment needed. For Elizabeth, treatment has continued into the following Monday, and it is hoped that this will be her last treatment after several weeks of care; she is also expected to have a final consultation with the orthopedist, with the date believed to be in early April but not yet specified. Overall, assuming no changes, the goal is for everyone to be cleared completely in early to mid-April, and Jeremy will provide updates as soon as more information is known. He concluded by thanking the recipient and encouraging them to reach out if needed.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller and client providing health updates"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ I'll call you back. I'm in the middle of a meeting.\n__Date and Time:__ 2025-03-14 \n__From Number:__ +15023579975 \n__To Number:__ +15024240049\n__Direction:__ Outbound",
+      "natural_language": "On March 14, 2025, in the case Jeremy-Lindsey-MVA-12-01-2024, the client Jeremy Lindsey sent an outbound text from his phone number +15023579975 to +15024240049. The message stated, \"I'll call you back. I'm in the middle of a meeting.\"",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "sender of text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ I left voicemail with status for Elizabeth and Chase but feel free to call me with any questions \n__Date and Time:__ 2025-03-14 \n__From Number:__ +15024240049 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact for the case Jeremy-Lindsey-MVA-12-01-2024 involving client Jeremy Lindsey occurred on March 14, 2025, via an inbound text message sent from +15024240049 to +15023579975. The message read, and was delivered inbound to the recipient, conveying status for Elizabeth and Chase and inviting any questions: \"I left voicemail with status for Elizabeth and Chase but feel free to call me with any questions.\"",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-20",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nAs of 03/20 all documents saved to google drive",
+      "natural_language": "The case Jeremy-Lindsey-MVA-12-01-2024 centers on client Jeremy Lindsey and concerns a motor vehicle accident that occurred on December 1, 2024. \n\nAs of March 20, all documents related to the case have been saved to Google Drive.",
+      "valid_at": "2025-03-20T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "primary subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-01",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Text Message__\n__Message:__ Hey Justin this is Jeremy Lindsey. Please give me a couple minutes to discuss outstanding claims \n__Date and Time:__ 2025-04-01 \n__From Number:__ +15024240049 \n__To Number:__ +15023579939\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on April 1, 2025 with Jeremy Lindsey regarding outstanding claims in the case Jeremy-Lindsey-MVA-12-01-2024. The contact was an inbound text message sent from +15024240049 to +15023579939. The message stated: \"Hey Justin this is Jeremy Lindsey. Please give me a couple minutes to discuss outstanding claims.\"",
+      "valid_at": "2025-04-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client initiating contact regarding outstanding claims"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-04-21",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Fwd: [EXTERNAL] Re: FW: RE: Clients: Jeremy Lindsey, et al., Claim# 24-902741838__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Apr 21 2025 11:02:10 GMT-04:00\n\nNeed to send out Coots letters on all of the Lindsay\u2019s\n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022\n\n---------- Forwarded message ---------\nFrom: Jennifer Howard \nDate: Mon, Apr 21, 2025 at 9:27?AM\nSubject: RE: [EXTERNAL] Re: FW: RE: Clients: Jeremy Lindsey, et al., Claim#\n24-902741838\nTo: Aaron Whaley \n\nGood morning Mr. Whaley.\n\nMy apologies\u2026.you are correct. $49,500 is what would be left over for your\nclients. Attached is a letter confirming this along with copies of the\nliens I received on your clients.\n\nJennifer Howard-Claims Specialist-Sr.\n\nProgressive Direct Insurance Company\n\nPo Box 94670\n\nCleveland, OH 44101-9919\n\n859-629-4740 (W)\n\n833-905-1745 (F)\n\n*From:* Aaron Whaley \n*Sent:* Thursday, April 17, 2025 7:24 PM\n*To:* Jennifer Howard \n*Subject:* [EXTERNAL] Re: FW: RE: Clients: Jeremy Lindsey, et al., Claim#\n24-902741838\n\nJennifer,\n\nThanks for the update and clarification. Yes, please send over the ERISA\nliens. We'll get the affidavits prepared and confirm the settlement\nbreakdown soon.\nDid you mean $49,500?\n\nBest,\n\nAaron\n\nAaron Whaley\n\nWhaley Law Firm\n\n712 Lyndon Ln\n\nLouisville, KY 40222\n\n502-583-4022\n\nOn Thu, Apr 17, 2025 at 5:39?PM Jennifer Howard <\nJennifer_Howard@progressive.com> wrote:\n\nMy apologies\u2026I hit \u201csend\u201d too soon.\n\nSettlements are in exchange for a full release of all claims with indemnity\nand are inclusive of liens but exclusive of PIP. I have received ERISA\nliens from Blue Cross and Blue Shield on Jeremy, Chase and Owen that we\nwill need to work through in addressing. If you would like a copy of the\nliens, I can email these to you.\n\nThe children\u2019s claims will also require an affidavit.\n\nJennifer Howard-Claims Specialist-Sr.\n\nProgressive Direct Insurance Company\n\nPo Box 94670\n\nCleveland, OH 44101-9919\n\n859-629-4740 (W)\n\n833-905-1745 (F)\n\n*From:* Jennifer Howard\n*Sent:* Thursday, April 17, 2025 5:33 PM\n*To:* Aaron Whaley \n*Subject:* RE: Clients: Jeremy Lindsey, et al., Claim# 24-902741838\n\nMr. Whaley-\n\nThe parents of the passenger in our insured\u2019s vehicle have agreed to\nresolve their son\u2019s bodily injury claim for $500 which will leave $45,500\nout of the $50,000 each accident coverage to be divided among your\nclients. If this is agreeable to the Lindsey family, please let me know\nthe breakdown for each person with not one person receiving more than the\n$25,000 each person limit.\n\nJennifer Howard-Claims Specialist-Sr.\n\nProgressive Direct Insurance Company\n\nPo Box 94670\n\nCleveland, OH 44101-9919\n\n859-629-4740 (W)\n\n833-905-1745 (F)",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nIn the case of Jeremy Lindsey, arising from a motor vehicle accident on December 1, 2024 (Claim #24-902741838), the file shows a sequence of settlement and lien discussions during mid-April 2025. Beginning with a chain dated April 17, 2025, the parents of the passenger in the insured vehicle agreed to resolve their son\u2019s bodily injury claim for $500, which would leave $45,500 of the $50,000 per-accident coverage to be divided among the Lindsey clients, with the instruction to provide a breakdown for each person so that no individual would receive more than the $25,000 per-person limit.\n\nLater that same day, Jennifer Howard, a Claims Specialist-Senior at Progressive Direct Insurance Company, followed up to clarify and apologize for the earlier message. She explained that settlements are in exchange for a full release of all claims with indemnity and are inclusive of liens but exclusive of PIP. She noted that ERISA liens from Blue Cross and Blue Shield had been received on Jeremy, Chase, and Owen, and offered to email copies of those liens if requested. Her message confirmed that these liens must be addressed as part of the settlement process, and she identified the need for an affidavit regarding the children\u2019s claims. Her contact details were Progressive Direct Insurance Company, PO Box 94670, Cleveland, OH 44101-9919, with a work phone of 859-629-4740 and a fax of 833-905-1745.\n\nEarlier in the same thread, Aaron Whaley of the Whaley Law Firm replied to Jennifer. He thanked her for the update and clarification and requested that the ERISA liens be sent so affidavits could be prepared and the settlement breakdown confirmed soon. He asked for clarification as to whether she meant $49,500.\n\nJennifer responded again on April 17, 2025, clarifying her earlier statement. She reiterated that settlements were in exchange for a full release of all claims with indemnity and included liens, but were exclusive of PIP. She informed that ERISA liens had been received from Blue Cross and Blue Shield on Jeremy, Chase, and Owen and that she could email copies of the liens if desired. She also clarified that the plaintiffs in the matter referred to as \u201cthe parents of the passenger in our insured\u2019s vehicle\u201d had agreed to resolve their son\u2019s bodily injury claim for $500, which would leave $45,500 out of the $50,000 per-accident coverage to be divided among the Lindsey clients, with the request to determine a breakdown where no one received more than the $25,000 per-person limit.\n\nA subsequent message from Jennifer, sent at 5:39 PM on April 17, 2025, included a note of apology for having sent a prior message too soon. She reiterated that settlements require a full release of all claims with indemnity and are inclusive of liens but exclusive of PIP, and again confirmed the existence of ERISA liens from Blue Cross and Blue Shield on Jeremy, Chase, and Owen, offering to email those liens if requested.\n\nThat evening, at 7:24 PM, Aaron Whaley replied, acknowledging Jennifer\u2019s notes and asking her to send the ERISA liens. He stated that affidavits would be prepared and that the settlement breakdown would be confirmed soon, and he again sought clarification on whether the amount was $49,500.\n\nIn the early hours of April 21, 2025, Jennifer replied that the amount left over for the clients was indeed $49,500, and she attached a letter confirming this figure along with copies of the liens she had received on the clients.\n\nFinally, on April 21, 2025, at 11:02 AM, Aaron Whaley forwarded the exchange to Justin Chumbley and the Jeremy Lindsey Filevine project email address with a note that COOTS letters needed to be sent out on all of the Lindseys. The forwarding included the Whaley Law Firm\u2019s contact information: 712 Lyndon Lane, Louisville, KY 40222, phone 502-583-4022. The message reflected the ongoing settlement and lien considerations surrounding Claim #24-902741838 in the Jeremy Lindsey MVA file.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "injured client / subject of the settlement discussions"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company (Claim #24-902741838)",
+            "relevance": "bodily injury claim being settled"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "Progressive adjuster communicating settlement terms and liens"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "representing the Lindsey clients and coordinating affidavits/settlement breakdown"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney corresponding with the adjuster and handling settlement matters"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "recipient of forwarded settlement correspondence / involved in the file"
+          },
+          {
+            "entity_type": "LienHolder",
+            "entity_name": "Blue Cross and Blue Shield",
+            "relevance": "ERISA lienholders with liens on the clients to be addressed in settlement"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-04-21",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. On December 1, 2024, the client was contacted to provide update #cc.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "contacted to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-21",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Updated client, everyone has officially been released from treatment. explained process etc \n__Person Making Contact:__ Justin\n__Date & Time__: April 21 2025",
+      "natural_language": "On April 21, 2025, Justin contacted the client, Jeremy Lindsey, in the motor vehicle accident case Jeremy-Lindsey-MVA-12-01-2024.\n\nThe details indicate that the client was updated, that everyone has officially been released from treatment, and that the process was explained, etc.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted/updated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-15",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from aaron whaley was logged at 2025-05-15 14:36:49.364000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This narrative covers Case Jeremy-Lindsey-MVA-12-01-2024, involving client Jeremy Lindsey.\n\nOn May 15, 2025, at 14:36:49.364000+00:00, an outbound call was logged by Aaron Whaley. The call\u2019s listed phone number is 502-424-0049, with Caller Info shown as 5024240049 and Caller ID as 502-424-0049. The caller name is Jeremy Lindsey, and no caller email address was provided. A link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-05-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-15",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA missed call for aaron whaley was logged at 2025-05-15 15:00:03.903000+00:00 . #missedcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Aaron, Chairman, Lindsey hope all is good with you, sir. My wife just text said she missed a call from you and give you a just to call back, so thought I would. I am good until 1130 to chat. If you want to give me a shout, otherwise I can call you back this afternoon or if it is more Suitable to call just and I can do that as well. So give me a call 502-424-0049. Thanks, sir.",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey. A missed call for Aaron Whaley was logged on 2025-05-15 at 15:00:03.903000+00:00, tagged as #missedcall.\n\nCaller information shows the phone number 5024240049, with a caller ID of 502-424-0049. The caller name is Jeremy Lindsey, and no caller email is provided. A Filevine contact link is available ([filevine-link]).\n\nVoicemail transcription records the message left for Aaron Whaley: \u201cAaron, Chairman, Lindsey hope all is good with you, sir. My wife just text said she missed a call from you and give you a just to call back, so thought I would. I am good until 1130 to chat. If you want to give me a shout, otherwise I can call you back this afternoon or if it is more Suitable to call just and I can do that as well. So give me a call 502-424-0049. Thanks, sir.\u201d",
+      "valid_at": "2025-05-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller and subject of contact (left voicemail)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-15",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__CLIENT CONTACT__\n__Details:__ Everyone has completed treatment. Jeremey said they currently have $2,500 in outstanding medical bills. He\u2019s going to email me what is outstanding so we can get addressed. \n__Person Making Contact:__ Justin\n__Date & Time__: May 15 2025",
+      "natural_language": "Initial client contact on May 15, 2025 with Jeremy Lindsey regarding motor vehicle accident case Jeremy-Lindsey-MVA-12-01-2024. The contact was made by Justin. The client contact details note that everyone has completed treatment. Jeremey said they currently have $2,500 in outstanding medical bills, and he will email me what is outstanding so we can address it.",
+      "valid_at": "2025-05-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted; reported $2,500 outstanding medical bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-05-15",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "The Jeremy-Lindsey-MVA-12-01-2024 case involves the client, Jeremy Lindsey, in a motor vehicle accident matter. \n\nToday, Jeremy Lindsey was contacted to provide an update on the case. The update was recorded with code #cc.",
+      "valid_at": "2025-05-15T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-09",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA call from aaron whaley was logged at 2025-07-09 18:39:43.619000+00:00 . #outboundcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case overview: Jeremy Lindsey is the client for the Jeremy-Lindsey-MVA-12-01-2024 motor vehicle accident matter.\n\nIn this note, an outbound call from Aaron Whaley was logged on July 9, 2025, at 18:39:43.619000+00:00. The call was recorded with the tag #outboundcall. The recorded caller information shows the phone number 5024240049, and the caller ID is 502-424-0049. The caller name is listed as Jeremy Lindsey, and no caller email is provided. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-07-09T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client and caller on outbound call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-09",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Bills__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jeremy Lindsey [jeremylindsey1978@yahoo.com](mailto:jeremylindsey1978@yahoo.com), Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Jul 09 2025 02:50:42 GMT-04:00\n\nJeremy, Here is what I show as outstanding bills:\n$939.10 to UC for Elizabeth.\n$1,070.27 to Cincy Childrens for Chase\n$4,080.00 to Cincy Childrens for Owen.\nIs that all? I will have Auto Owners process these asap. I just wanted to\nconfirm that there were no more outstanding.\n\nI assume everyone has gotten better and is no longer treating? I wanted to\nconfirm medical treatment for Owen. Did he have any follow up visits after\n12/11? Chase's last visit is 04/02? Thanks.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "This note pertains to Case: Jeremy-Lindsey-MVA-12-01-2024 for client Jeremy Lindsey.\n\nOn July 9, 2025, an email from Aaron Whaley of Whaley Law Firm was sent to Jeremy Lindsey and to the Filevine project email address (dated Wed Jul 09 2025 02:50:42 GMT-04:00). In the message, Aaron lists the outstanding bills as follows: $939.10 to UC for Elizabeth; $1,070.27 to Cincy Childrens for Chase; and $4,080.00 to Cincy Childrens for Owen. He asks, \u201cIs that all?\u201d and notes that Auto Owners will process these as soon as possible.\n\nHe also asks for confirmation regarding medical treatment status, writing, \u201cI assume everyone has gotten better and is no longer treating? I wanted to confirm medical treatment for Owen. Did he have any follow up visits after 12/11? Chase's last visit is 04/02?\u201d He closes with thanks.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "valid_at": "2025-07-09T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client / recipient of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email (listed outstanding bills)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer processing outstanding medical bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-09",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n__Re: Bills__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: jeremy lindsey [jeremylindsey1978@yahoo.com](mailto:jeremylindsey1978@yahoo.com)\nCc: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com), Elizabeth Lindsey [elindsey611@gmail.com](mailto:elindsey611@gmail.com)\nDate: Wed Jul 09 2025 04:54:06 GMT-04:00\n\nCan you get me a receipt on the tax bill so I can get you reimbursed for\nthat?\n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022\n\nOn Wed, Jul 9, 2025 at 4:48?PM jeremy lindsey \nwrote:\n\n> +Elizabeth for visibility\n>\n> Aaron,\n>\n> Sorry I missed your call and appreciate your help with getting the\n> hospital bills paid. The information you provided is accurate and no\n> additional medical service is being provided for any of us. In addition to\n> medical bills, we had to pay a tax bill on the totaled vehicle totaling\n> $762.87. According to county clerk, this was owed for 2025 taxes because we\n> had possession of the car in current year since it wasn\u2019t officially\n> totaled until January. Not sure if this is recoverable but wanted to bring\n> to your attention.\n>\n> Totally understand the timeframe can be lengthy to close and we just want\n> to get the medical bills paid so we quit getting calls.\n>\n> Thanks again for all the support since December and please reach out if\n> you need anything.\n>\n> Thanks\n> Jeremy\n>\n>\n> Sent from Yahoo Mail for iPhone\n> \n>\n> On Wednesday, July 9, 2025, 2:50 PM, Aaron Whaley <\n> agwhaley@whaleylawfirm.com> wrote:\n>\n> Jeremy, Here is what I show as outstanding bills:\n> $939.10 to UC for Elizabeth.\n> $1,070.27 to Cincy Childrens for Chase\n> $4,080.00 to Cincy Childrens for Owen.\n> Is that all? I will have Auto Owners process these asap. I just wanted to\n> confirm that there were no more outstanding.\n>\n> I assume everyone has gotten better and is no longer treating? I wanted to\n> confirm medical treatment for Owen. Did he have any follow up visits after\n> 12/11? Chase's last visit is 04/02? Thanks.\n>\n> --\n> Aaron Whaley\n> Whaley Law Firm\n> 712 Lyndon Ln\n> \n> Louisville, KY 40222\n> \n> 502-583-4022\n>\n>",
+      "natural_language": "In the file for the case Jeremy-Lindsey-MVA-12-01-2024, the client is Jeremy Lindsey. On July 9, 2025, an email chain about unpaid bills and reimbursements began with Aaron Whaley of Whaley Law Firm writing to Jeremy Lindsey (addressed to jeremylindsey1978@yahoo.com) and copied Elizabeth Lindsey and the Filevine project email address, plus the recipient\u2019s file note. The email, sent from Whaley Law Firm at 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022, asked, \u201cCan you get me a receipt on the tax bill so I can get you reimbursed for that?\u201d\n\nEarlier that same day, Jeremy Lindsey replied to Aaron, adding Elizabeth \u201cfor visibility.\u201d In his message, Jeremy apologized for missing Aaron\u2019s call and expressed appreciation for help with paying the hospital bills. He confirmed that the information previously provided was accurate and that no additional medical services were being provided for any of them. Jeremy also noted that in addition to the medical bills, they had to pay a tax bill on the totaled vehicle amounting to $762.87. According to the county clerk, this tax was owed for 2025 because they possessed the car in the current year and it wasn\u2019t officially totaled until January. He wasn\u2019t sure if this tax could be recovered but wanted to bring it to Aaron\u2019s attention. He acknowledged that the process could take a long time to close and that they simply wanted the medical bills paid so they would stop receiving calls. He thanked Aaron for the support since December and offered to help with anything else, signing the message, \u201cThanks, Jeremy,\u201d and noting it was sent from Yahoo Mail for iPhone.\n\nEarlier that afternoon, at 2:50 PM, Aaron Whaley had emailed Jeremy to confirm the outstanding bills he saw. He listed: $939.10 to UC for Elizabeth, $1,070.27 to Cincinnati Children\u2019s for Chase, and $4,080.00 to Cincinnati Children\u2019s for Owen. Aaron asked if these were all the outstanding bills and said he would have Auto Owners process them as soon as possible. He inquired whether there were any additional outstanding items and also asked for updates on medical treatment and follow-up visits. Specifically, he asked whether Owen had any follow-up visits after December 11, and noted that Chase\u2019s last known visit was on April 2. The email concluded with Aaron\u2019s contact information: Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-07-09T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client sending/receiving emails about unpaid medical bills and reimbursements"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer referenced to process/pay outstanding medical bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-29",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\n@jchumbley threshold can be met in two ways. $1,000 in bills or the injury or disease consists in whole or in part of permanent disfigurement, a fracture to a bone, a compound, comminuted, displaced or compressed fracture, loss of a body member, permanent injury within reasonable medical probability, permanent loss of bodily function or death. So, If client has any sort of scar from his laceration then that would qualify.",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey following a motor vehicle accident.\n\nThreshold for entitlement can be met in two ways: either the client has incurred at least $1,000 in medical bills, or the injury or disease is, in whole or in part, permanent disfigurement, a fracture to a bone (including compound, comminuted, displaced, or compressed fractures), loss of a body member, permanent injury within reasonable medical probability, permanent loss of bodily function, or death. Therefore, if the client has any scar from his laceration, that would qualify.",
+      "valid_at": "2025-07-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "primary subject"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim / entitlement threshold discussion"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nSettlement discussions and case progression monitoring.",
+      "natural_language": "Natural language version:\nJeremy Lindsey is the client in Case Jeremy-Lindsey-MVA-12-01-2024, a matter involving a motor vehicle accident. The record indicates that settlement discussions are underway and that the progression of the case is being monitored.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nMedical treatment planning and insurance claim coordination.",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024, dated December 1, 2024, concerns client Jeremy Lindsey. The engagement focuses on medical treatment planning and coordination of insurance claims related to the motor vehicle accident indicated by the MVA in the case name.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians- Burlington",
+            "relevance": "medical treatment planning and coordination"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "bodily injury claim being coordinated"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (Adjuster: Emily Pernice)",
+            "relevance": "PIP claim being coordinated"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "additional PIP claim on file being coordinated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nFamily coordination with Elizabeth Lindsey case management.",
+      "natural_language": "On December 1, 2024, the Jeremy-Lindsey-MVA case was opened for client Jeremy Lindsey in connection with a motor vehicle accident. The record notes family coordination with Elizabeth Lindsey, who provides case management for this matter.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case opened for client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nMedical treatment planning and insurance claim coordination.",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 concerns client Jeremy Lindsey. The engagement focuses on medical treatment planning and coordination of an insurance claim arising from a motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians- Burlington",
+            "relevance": "medical treatment planning/coordination"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim: Progressive Insurance Company (Adjuster: Jennifer Howard)",
+            "relevance": "insurance claim being coordinated"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "adjuster on BI claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Auto Owners Insurance (Adjuster: Emily Pernice)",
+            "relevance": "insurance claim related to medical payment coordination"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "adjuster on PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nFamily coordination with Elizabeth Lindsey related case.",
+      "natural_language": "Initial client contact on December 1, 2024 with Jeremy Lindsey regarding a motor vehicle accident.\n\nThe matter is identified as Jeremy-Lindsey-MVA-12-01-2024 and involves family coordination with Elizabeth Lindsey in connection with a related case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "family coordination / related case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nJeremy Lindsey motor vehicle accident case for December 1, 2024.",
+      "natural_language": "Jeremy Lindsey is the client in a motor vehicle accident matter identified as case Jeremy-Lindsey-MVA-12-01-2024. The issue concerns a motor vehicle accident that occurred on December 1, 2024.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Agent for Jeremy-Lindsey-MVA-12-01-2024 - 2025-09-12",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nCase overview completed on 09/12/25. Updated all core memories with current case information including client details, insurance coverage (Progressive BI and Auto Owners UIM/PIP), medical treatment status, and document inventory. Case status updated to reflect settlement completion with Progressive for $49,500 after liens. All family members completed medical treatment by April 2025. Settlement checks issued and outstanding medical bills being processed through Auto Owners PIP coverage.",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. A case overview was completed on September 12, 2025. I updated all core memories with the current case information, including the client\u2019s details, the insurance coverage (Progressive BI and Auto Owners UIM/PIP), the status of medical treatment, and the document inventory. The case status now reflects a settlement completed with Progressive for $49,500 after liens.\n\nBy April 2025, all family members had completed their medical treatment. Settlement checks have been issued, and any outstanding medical bills are being processed through Auto Owners PIP coverage.",
+      "valid_at": "2025-09-12T00:00:00",
+      "author": "Agent for Jeremy-Lindsey-MVA-12-01-2024",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for BI settlement"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer for PIP/UIM coverage"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim settled for $49,500 after liens"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (PIP)",
+            "relevance": "PIP claim processing outstanding medical bills"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "Auto Owners Insurance (UIM)",
+            "relevance": "UIM coverage listed on case"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "adjuster for Progressive BI claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "adjuster for Auto Owners PIP claim"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians- Burlington",
+            "relevance": "medical provider for client/family treatment"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "lien on file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-23",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA missed call for aaron whaley was logged at 2025-09-23 13:41:53.174000+00:00 . #missedcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Aaron, Jeremy, Lindsey, I hope all is well with you. I sent you a couple of emails, 1 including our acceptance of the settlement. And then secondly, all the bills we paid out of pocket, the balance was with the north of $6,000. Just wanted to confirm receipt there, see what next steps were in regards to timing of reimbursement. On those medical bills paid out of pocket and also see if you had any questions or timeline on getting everything closed out with the settlement. So if you could give me a call back or send me a text email whatnot whenever you get a chance and chairman 12 502-424-0049. Thanks. Sir.",
+      "natural_language": "Case: Jeremy-Lindsey-MVA-12-01-2024. Client: Jeremy Lindsey.\n\nOn September 23, 2025 at 13:41:53.174000+00:00 a missed call related to Aaron Whaley was logged in the system. The call was tagged as a #missedcall. Caller information shows the phone number 502-424-0049 (Caller ID: 502-424-0049). The caller was identified as Jeremy Lindsey, with no email address on file. A link to the corresponding Filevine contact is available as [filevine-link].\n\nVoicemail transcription:\n\" Aaron, Jeremy, Lindsey, I hope all is well with you. I sent you a couple of emails, 1 including our acceptance of the settlement. And then secondly, all the bills we paid out of pocket, the balance was with the north of $6,000. Just wanted to confirm receipt there, see what next steps were in regards to timing of reimbursement. On those medical bills paid out of pocket and also see if you had any questions or timeline on getting everything closed out with the settlement. So if you could give me a call back or send me a text email whatnot whenever you get a chance and chairman 12 502-424-0049. Thanks. Sir.\"\n\nIn summary, Jeremy Lindsey left a voicemail indicating that emails were sent\u2014one confirming acceptance of the settlement\u2014and that out-of-pocket medical expenses totaled a balance north of $6,000. He requested confirmation of receipt of those funds and asked about the next steps and timing for reimbursement, as well as any questions or timelines regarding closing out the settlement. He requested a return call, text, or email, and provided the contact number 502-424-0049.",
+      "valid_at": "2025-09-23T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller and subject of voicemail regarding settlement and reimbursement"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-26",
+      "original_body": "Case: Jeremy-Lindsey-MVA-12-01-2024\nClient: Jeremy Lindsey\n\nA missed call for aaron whaley was logged at 2025-09-26 17:44:49.351000+00:00 . #missedcall\n\nCaller Info: 5024240049 \n\nCaller ID: 502-424-0049 \n\nCaller Name: Jeremy Lindsey \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Jeremy-Lindsey-MVA-12-01-2024 involves client Jeremy Lindsey. A missed call intended for Aaron Whaley was logged on September 26, 2025 at 17:44:49.351000+00:00, tagged as #missedcall.\n\nCaller details show the phone number 502-424-0049 (Caller Info: 5024240049) and the caller ID 502-424-0049. The caller name is Jeremy Lindsey, and no email address is listed. A Filevine contact link is available: [filevine-link]. The Voicemail Transcription field is present but contains no text.",
+      "valid_at": "2025-09-26T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "caller"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

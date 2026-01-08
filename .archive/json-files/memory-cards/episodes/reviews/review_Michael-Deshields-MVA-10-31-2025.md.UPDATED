@@ -1,0 +1,51 @@
+# Relationship Review: Michael-Deshields-MVA-10-31-2025
+
+**Total Episodes:** 5
+
+**Total Proposed Relationships:** 11
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Attorney (1 consolidated)
+- [ ] Justin — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+
+### Client (1 consolidated)
+- [ ] Michael Deshields — *? NEW*
+
+### Insurer (1 consolidated)
+- [ ] State Farm — *✓ MATCHES: State Farm Insurance Company*
+
+### LawFirm (1 consolidated)
+- [ ] Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### MedicalProvider (1 consolidated)
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology – Brown Cancer Center – Medical Oncology – UofL Hospital — *✓ MATCHES: ARH McDowell Clinic - A Department Of McDowell ARH Hospital*
+
+### PIPClaim (1 consolidated)
+- [ ] PIP - State Farm — *? NEW*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

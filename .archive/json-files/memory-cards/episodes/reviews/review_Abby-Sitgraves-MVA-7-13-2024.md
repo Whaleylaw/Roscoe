@@ -1,0 +1,106 @@
+# Relationship Review: Abby-Sitgraves-MVA-7-13-2024
+
+**Total Episodes:** 93
+
+**Total Proposed Relationships:** 332
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (3)
+- Foundation Radiology (radiology)
+- UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital (hospital)
+- UofL Physicians – Orthopedics (orthopedic)
+
+### Insurance Claims (1)
+- **PIPClaim**: National Indemnity Company
+  - Adjuster: Jordan Bahr
+
+### Liens (1)
+- Key Benefit Administrators ($358.51)
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (1 consolidated)
+- [ ] Jordan Bahr — *✓ MATCHES: Jordan Bahr*
+
+### Attorney (12 consolidated)
+- [ ] Amy Scott — *✓ MATCHES: Amy Scott*
+- [ ] Bruce Anderson — *✓ MATCHES: Bruce Anderson*
+- [ ] Bryan Davenport — *✓ MATCHES: Bryan Davenport*
+- [ ] Bryce Cotton — *✓ MATCHES: Bryce Cotton*
+- [ ] Derek Anthony Harvey — *✓ MATCHES: Derek Anthony Harvey*
+- [ ] John Doyle — *✓ MATCHES: John Doyle*
+- [ ] Marshall Rowland — *✓ MATCHES: Marshall Rowland*
+- [ ] Samuel Robert Leffert — *✓ MATCHES: Samuel Robert Leffert*
+- [ ] Sarena Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Seth Gladstein — *✓ MATCHES: Seth Gladstein*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+- [ ] Whaley, Aaron Gregory — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+
+### Client (2 consolidated)
+- [ ] Abby Sitgraves — *✓ MATCHES: Abby Sitgraves*
+- [ ] Nayram Adadevoh — *✓ MATCHES: Nayram Adadevoh*
+
+### Court (1 consolidated)
+- [ ] **Jefferson County Circuit Court, Division II** — *✓ MATCHES: Jefferson County Circuit Court, Division II (Judge: Annie O'Connell)*
+      ↳ _Jefferson (25-CI-000133)_
+      ↳ _Jefferson Circuit Court_
+      ↳ _Jefferson County (25-CI-00133)_
+
+### Defendant (2 consolidated)
+- [ ] CAAL WORLDWIDE, INC. — *✓ MATCHES: CAAL WORLDWIDE, INC.*
+- [ ] Unknown Driver — *✓ MATCHES: Unknown Driver*
+
+### Insurer (3 consolidated)
+- [ ] Kentucky Farm Bureau (KFB) — *✓ MATCHES: Kentucky Farm Bureau*
+- [ ] National Indemnity Company — *✓ MATCHES: National Indemnity Company*
+- [ ] State Farm — *✓ MATCHES: State Farm Insurance Company*
+
+### LawFirm (6 consolidated)
+- [ ] BDB Law (bdblawky.com) — *✓ MATCHES: Blackburn Domene & Burchett, PLLC (alias: BDB Law)*
+- [ ] Blackburn Domene & Burchett, PLLC — *✓ MATCHES: Blackburn Domene & Burchett, PLLC*
+- [ ] Bryan Davenport — *✓ MATCHES: Bryan Davenport (→ ATTORNEY, not law firm)*
+- [ ] Carlisle Law — *✓ MATCHES: Carlisle Law*
+- [ ] Law Office of Bryan B. Davenport, P.C. — *✓ MATCHES: Law Office of Bryan B. Davenport, P.C.*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (1 consolidated)
+- [ ] Key Benefit Administrators — *✓ MATCHES: Key Benefit Administrators*
+
+### MedicalProvider (4 consolidated)
+- [ ] Foundation Radiology — *✓ MATCHES: Foundation Radiology*
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital — *✓ MATCHES: UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital*
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology - UofL Health – Brown Cancer Center – Medical Oncology – Mary & Elizabeth Hospital — *✓ MATCHES: UofL Health – Brown Cancer Center – Medical Oncology – Mary & Elizabeth Hospital*
+- [ ] UofL Physicians – Orthopedics — *✓ MATCHES: UofL Physicians – Orthopedics*
+
+### Organization (1 consolidated)
+- [ ] **Kentucky Court Of Justice** — *✓ MATCHES: Kentucky Court Of Justice*
+      ↳ _Kentucky Court of Justice_
+      ↳ _Kentucky Court of Justice (eFiling system)_
+
+### PIPClaim (1 consolidated)
+- [ ] PIP claim - National Indemnity Company — *✓ MATCHES: National Indemnity Company*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

@@ -1,0 +1,34 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "UIMClaim",
+    "name": "Lejzane-Miftari-MVA-6-18-2025-Underinsured Motorist (UIM)-250488368",
+    "attributes": {
+      "claim_number": "250488368",
+      "insurer_name": "Direct Auto Insurance",
+      "adjuster_name": "Danelle Lendsey",
+      "coverage_confirmation": "Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "UIM claim opened and assigned to Danelle Lendsey on 11/17/2025. Confirmation letter sent by adjuster.",
+      "project_name": "Lejzane-Miftari-MVA-6-18-2025"
+    },
+    "source_id": "34",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "UIMClaim",
+    "name": "Shannon-Colvin-MVA-10-1-2023-Underinsured Motorist (UIM)-Unknown",
+    "attributes": {
+      "claim_number": "Unknown",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Unknown",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "Policy effective 10/01/2021. Policy information page received showing UIM/UM coverage limits. Colleen & Colvin named insureds.",
+      "project_name": "Shannon-Colvin-MVA-10-1-2023"
+    },
+    "source_id": "136",
+    "source_file": "insurance.json"
+  }
+]

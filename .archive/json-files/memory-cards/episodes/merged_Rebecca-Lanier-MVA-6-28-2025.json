@@ -1,0 +1,144 @@
+{
+  "case_name": "Rebecca-Lanier-MVA-6-28-2025",
+  "total_episodes": 6,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Allstar Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Rebecca-Lanier-MVA-6-28-2025\nClient: Rebecca Lanier\n\nSettlement strategy development with family consultation.",
+      "natural_language": "Rebecca Lanier is the client in case Rebecca-Lanier-MVA-6-28-2025. The current focus is settlement strategy development, conducted with the client’s family through consultation.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rebecca Lanier",
+            "relevance": "subject of settlement strategy development; participant in consultation with family"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Rebecca-Lanier-MVA-6-28-2025\nClient: Rebecca Lanier\n\nMedical treatment planning and insurance coordination.",
+      "natural_language": "On June 28, 2025, a case titled Rebecca-Lanier-MVA-6-28-2025 was opened for client Rebecca Lanier.\n\nThe engagement centers on medical treatment planning and insurance coordination.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rebecca Lanier",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Allstar Chiropractic",
+            "relevance": "medical treatment planning"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Rebecca-Lanier-MVA-6-28-2025\nClient: Rebecca Lanier\n\nFamily accident coordination with other Lanier cases.",
+      "natural_language": "Case Rebecca-Lanier-MVA-6-28-2025 pertains to client Rebecca Lanier and motor vehicle accident matters. The record notes family accident coordination with other Lanier cases, reflecting ongoing coordination for these matters across related Lanier cases.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rebecca Lanier",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Rebecca-Lanier-MVA-6-28-2025\nClient: Rebecca Lanier\n\nMedical treatment planning and insurance coordination.",
+      "natural_language": "Case Rebecca-Lanier-MVA-6-28-2025 concerns client Rebecca Lanier. The case involves medical treatment planning and insurance coordination in connection with a motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rebecca Lanier",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Allstar Chiropractic",
+            "relevance": "medical treatment provider"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Rebecca-Lanier-MVA-6-28-2025\nClient: Rebecca Lanier\n\nFamily coordination with Christopher, James, and Michael Lanier cases.",
+      "natural_language": "Initial client contact on June 28, 2025 with Rebecca Lanier regarding a motor vehicle accident—case Rebecca-Lanier-MVA-6-28-2025. The client is Rebecca Lanier. The record indicates family coordination with the cases of Christopher Lanier, James Lanier, and Michael Lanier.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rebecca Lanier",
+            "relevance": "primary client contact"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Christopher Lanier",
+            "relevance": "related family case (coordination)"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "related family case (coordination)"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "related family case (coordination)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Rebecca-Lanier-MVA-6-28-2025\nClient: Rebecca Lanier\n\nRebecca Lanier motor vehicle accident case for June 28, 2025.",
+      "natural_language": "This case file concerns Rebecca Lanier’s motor vehicle accident matter, assigned case number Rebecca-Lanier-MVA-6-28-2025.\n\nThe client is Rebecca Lanier, and the motor vehicle accident occurred on June 28, 2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rebecca Lanier",
+            "relevance": "case client"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

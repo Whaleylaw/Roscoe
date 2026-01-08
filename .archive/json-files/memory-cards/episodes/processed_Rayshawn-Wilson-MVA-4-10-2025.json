@@ -1,0 +1,240 @@
+{
+  "case_name": "Rayshawn-Wilson-MVA-4-10-2025",
+  "total_episodes": 9,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Foundation Radiology Group, PC",
+        "specialty": "radiology"
+      },
+      {
+        "name": "Southeastern Emergency Services, LLC",
+        "specialty": null
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      }
+    ],
+    "adjusters": [],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Rayshawn-Wilson-MVA-4-10-2025-Personal Injury Protection (PIP)-25806894629",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": null
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-04-14",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\nsent intake docs via vinesign",
+      "natural_language": "Rayshawn Wilson is the client in the Rayshawn-Wilson-MVA-4-10-2025 case. Intake documents have been sent via vinesign.",
+      "valid_at": "2025-04-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "client in case; intake documents sent via Vinesign"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-14",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=8579d9f4-9c99-474c-88e8-88b6b225742b.pdf\nSigned: 2025-04-14 20:19:23\nAll signers: Rayshawn Wilson((502) 755-1271)\nSender: Justin Chumbley",
+      "natural_language": "Rayshawn Wilson is the client in case Rayshawn-Wilson-MVA-4-10-2025.\n\nAn intake document was completed through VineSign. The document is named \"intake,\" and the signed document is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=8579d9f4-9c99-474c-88e8-88b6b225742b.pdf. It was signed on 2025-04-14 20:19:23. The signer listed is Rayshawn Wilson, with the phone number (502) 755-1271, and the sender of the document was Justin Chumbley.",
+      "valid_at": "2025-04-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "client and signer of intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-14",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\n__CLIENT CONTACT__\n__Details:__ Rayshawn Wilson\nDOB 10/21/93\nSSN: 400-47-2011\n\nPh: 502-755-1271\n\nAddress: \n4707 Kerrick Lane\nApt 102\nLouisville, KY 40258\n\nDOA 4/10/2025\n\nApproaching an intersection when light turned from red to green, sounds like a vehicle coming opposite direction attempted to make turn. \n\nIntersection 19th and Chestnut\n\nDriver Quintez Massey\n\nWent to St. Mary\u2019s ER\n\nLeft wrist, back, neck pain \n__Person Making Contact:__ Justin\n__Date & Time__: April 14 2025",
+      "natural_language": "Initial client contact on April 14, 2025, with Justin regarding a motor vehicle accident involving Rayshawn Wilson, case Rayshawn-Wilson-MVA-4-10-2025. The client is Rayshawn Wilson, born October 21, 1993, with Social Security Number 400-47-2011, and he can be reached at 502-755-1271. He resides at 4707 Kerrick Lane, Apt 102, Louisville, KY 40258. Date of accident: April 10, 2025.\n\nOn April 10, 2025, while approaching the intersection of 19th and Chestnut, the traffic light changed from red to green, and it appeared that a vehicle coming from the opposite direction attempted to make a turn. The other driver was identified as Quintez Massey. Rayshawn Wilson went to St. Mary\u2019s ER and reported left wrist, back, and neck pain as a result of the incident.\n\nThe person making contact was Justin, on April 14, 2025, documenting these details for the case.",
+      "valid_at": "2025-04-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "client/primary party"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Quintez Massey",
+            "relevance": "other driver/defendant"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Mary's ER",
+            "relevance": "treated at after accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-04-14",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\nClient Contacted today to give update #cc",
+      "natural_language": "On April 10, 2025, in the Rayshawn-Wilson-MVA-4-10-2025 case, the client, Rayshawn Wilson, contacted the office to provide an update. This contact was logged with code #cc.",
+      "valid_at": "2025-04-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "provided update / contacted office"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-16",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\n__New Insurance Note:__ 4/16 Attempted to setup claim, unable to locate policy. setup dummy claim for denial letter\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "The case Rayshawn-Wilson-MVA-4-10-2025 involves the client Rayshawn Wilson. \n\nA new insurance note dated 4/16/2025 indicates that an attempt was made to set up a claim, but the policy could not be located; as a result, a dummy claim was created to obtain a denial letter. The note identifies the insurance type as Personal Injury Protection (PIP) and lists Progressive Insurance Company as the insurer. The entry was written by Justin Chumbley.",
+      "valid_at": "2025-04-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer identified in note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim - Progressive Insurance Company",
+            "relevance": "dummy PIP claim created to obtain denial letter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-16",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\n__New Insurance Note:__ 4/16 Attempted to setup claim, unable to locate policy. setup dummy claim for denial letter\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "The case is Rayshawn-Wilson-MVA-4-10-2025, involving client Rayshawn Wilson. On April 16, 2025, an attempt was made to set up an insurance claim, but the policy could not be located; a dummy claim was created to generate a denial letter.\n\nThe insurance involved is Personal Injury Protection (PIP), and the insurer is Progressive Insurance Company.\n\nThis note was written by Justin Chumbley and is filed under the #Inotes.",
+      "valid_at": "2025-04-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer involved"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP claim attempted/ dummy claim created"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-04-16",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\nThis is the text only number for your file with our office. Please send any photos you have here. If you have health insurance, please send a photo of the front and back of your card as well. If you have questions, my direct number here at the office is 502-357-9603. Thanks, Justin",
+      "natural_language": "Case Rayshawn-Wilson-MVA-4-10-2025 concerns Rayshawn Wilson in relation to a motor vehicle accident. In a message from the office, this is the text-only number for the client\u2019s file with our office, and you are asked to send any photos you have here. If you have health insurance, please send a photo of the front and back of your card as well. If you have questions, my direct number here at the office is 502-357-9603. Thanks, Justin.",
+      "valid_at": "2025-04-16T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "client subject of case and recipient of office message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-16",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\n__New Insurance Note:__ 4/16 denial letter in route\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Rayshawn Wilson is the client for case Rayshawn-Wilson-MVA-4-10-2025.\n\nA new insurance note indicates that a denial letter dated 4/16 is currently in route. The note specifies Personal Injury Protection (PIP) coverage with Progressive Insurance Company. The entry was written by Justin Chumbley and is filed under Inotes.",
+      "valid_at": "2025-04-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP coverage and denial letter discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-17",
+      "original_body": "Case: Rayshawn-Wilson-MVA-4-10-2025\nClient: Rayshawn Wilson\n\n__Rayshawn WIlson__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Rayshawn Wilson - Filevine Project Email Address [RayshawnWilsonMVAZ4978371@louisvilleaccidentlawyer.filevineapp.com](mailto:RayshawnWilsonMVAZ4978371@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Jul 17 2025 11:05:13 GMT-04:00\n\ndouble check and see if Rayshawn has any insurance or household insurance.\nIf not set up KAC then decline and close.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Rayshawn-Wilson-MVA-4-10-2025. Client: Rayshawn Wilson.\n\nOn April 10, 2025, the Rayshawn Wilson motor vehicle accident matter is noted under this case. An email dated July 17, 2025 at 11:05:13 GMT-04:00 was sent from Aaron Whaley of Whaley Law Firm (agwhaley@whaleylawfirm.com) to Justin Chumbley (Justin@whaleylawfirm.com) and Rayshawn Wilson\u2019s Filevine project inbox address RayshawnWilsonMVAZ4978371@louisvilleaccidentlawyer.filevineapp.com. The message directed the recipients to double check and see if Rayshawn has any insurance or household insurance. It further stated: If not, set up KAC then decline and close. The note is signed by Aaron Whaley of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Rayshawn Wilson",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "representing firm / sender of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender / attorney"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient / attorney"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

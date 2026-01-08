@@ -1,0 +1,146 @@
+{
+  "case_name": "Kimberly-Jackson-MVA-8-14-2025",
+  "total_episodes": 8,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Kimberly-Jackson-MVA-8-14-2025\nClient: Kimberly Jackson\n\nFollow-up communication protocols and client expectations discussed.",
+      "natural_language": "On August 14, 2025, in the case Kimberly-Jackson-MVA-8-14-2025, the client was Kimberly Jackson. The discussion covered follow-up communication protocols and the client's expectations.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Kimberly Jackson",
+            "relevance": "client in case; subject of discussion"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Kimberly-Jackson-MVA-8-14-2025\nClient: Kimberly Jackson\n\nInsurance claim filing assistance and documentation review.",
+      "natural_language": "Initial client contact on August 14, 2025, with Kimberly Jackson regarding a motor vehicle accident. The case is identified as Kimberly-Jackson-MVA-8-14-2025, and the client requested insurance claim filing assistance and a review of the related documentation.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Kimberly Jackson",
+            "relevance": "initial contact on 8/14/2025; requested assistance filing insurance claim and review of documentation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Kimberly-Jackson-MVA-8-14-2025\nClient: Kimberly Jackson\n\nClient consultation scheduled and case timeline establishment.",
+      "natural_language": "Case Kimberly-Jackson-MVA-8-14-2025 concerns client Kimberly Jackson. A client consultation has been scheduled, and a case timeline has been established.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Kimberly Jackson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Kimberly-Jackson-MVA-8-14-2025\nClient: Kimberly Jackson\n\nMedical records request and insurance information gathering process initiated.",
+      "natural_language": "Initial client contact on August 14, 2025 with Kimberly Jackson regarding a motor vehicle accident (case Kimberly-Jackson-MVA-8-14-2025). A medical records request and the gathering of insurance information have been initiated as part of this case.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Kimberly Jackson",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Kimberly-Jackson-MVA-8-14-2025\nClient: Kimberly Jackson\n\nInitial client contact and case assessment for motor vehicle accident from August 14, 2025.",
+      "natural_language": "Initial client contact on August 14, 2025, with Kimberly Jackson regarding a motor vehicle accident. This contact initiated the case assessment for the matter identified as Kimberly-Jackson-MVA-8-14-2025.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Kimberly Jackson",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Kimberly-Jackson-MVA-8-14-2025\nClient: Kimberly Jackson\n\nMedical records requested",
+      "natural_language": "Case Kimberly-Jackson-MVA-8-14-2025 concerns client Kimberly Jackson. The record notes that medical records have been requested in relation to this matter.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Kimberly Jackson",
+            "relevance": "client of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Kimberly-Jackson-MVA-8-14-2025\nClient: Kimberly Jackson\n\nCase details reviewed",
+      "natural_language": "Case Kimberly-Jackson-MVA-8-14-2025 concerns the client, Kimberly Jackson. The case details have been reviewed.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Kimberly Jackson",
+            "relevance": "client/subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Kimberly-Jackson-MVA-8-14-2025\nClient: Kimberly Jackson\n\nInitial contact established",
+      "natural_language": "Initial client contact on August 14, 2025 with Kimberly Jackson regarding a motor vehicle accident case identified as Kimberly-Jackson-MVA-8-14-2025.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Kimberly Jackson",
+            "relevance": "initial contact"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

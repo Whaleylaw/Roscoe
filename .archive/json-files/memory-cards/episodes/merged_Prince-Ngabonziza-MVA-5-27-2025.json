@@ -1,0 +1,191 @@
+{
+  "case_name": "Prince-Ngabonziza-MVA-5-27-2025",
+  "total_episodes": 7,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Elco Insurance"
+      }
+    ],
+    "adjusters": [],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Prince-Ngabonziza-MVA-5-27-2025-None",
+        "insurer": "Elco Insurance",
+        "adjuster": null
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-06-02",
+      "original_body": "Case: Prince-Ngabonziza-MVA-5-27-2025\nClient: Prince Ngabonziza\n\nsent intake via vinesign",
+      "natural_language": "This case, Prince-Ngabonziza-MVA-5-27-2025, concerns the client Prince Ngabonziza.\n\nThe intake packet was sent to the client via vinesign.",
+      "valid_at": "2025-06-02T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Prince Ngabonziza",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-02",
+      "original_body": "Case: Prince-Ngabonziza-MVA-5-27-2025\nClient: Prince Ngabonziza\n\n__CLIENT CONTACT__\n__Details:__ Prince Ngabonziza \nPh: 502-705-2996\nAddress: 3005 Frank lee Ave Louisville 40216\nDOB 2/9/2002\nSSn: 002-51-5738\n\nDOA 5/27/2025\nLocation: Indiana, Kokomo 2970 W. State Road\nKokomo Police \nClient was a passenger\nDriver’s name Rafiki Nsanzabandi\n\nChevy Trax (rental)\n\nComing from Michigan, 1am when they rear ended another vehicle at a red light\n\nEnterprise Insurance\n\nWent to Hospital St. Elizabeth south by taylor blvd\n\nInjuries: neck, back right side, \n__Person Making Contact:__ Justin\n__Date & Time__: June 02 2025",
+      "natural_language": "Initial client contact on May 27, 2025, with Prince Ngabonziza regarding a motor vehicle accident. The client, Prince Ngabonziza, is listed with phone number 502-705-2996. Address on file is Louisville, Kentucky (street address redacted). Date of birth on file is redacted, and Social Security Number on file is redacted.\n\nDate of accident: May 27, 2025. The incident occurred in Kokomo, Indiana, at 2970 W. State Road, with Kokomo Police Department handling the scene. The client was a passenger in a rental Chevy Trax driven by Rafiki Nsanzabandi. They were coming from Michigan, and at approximately 1:00 a.m. they rear-ended another vehicle at a red light. The rental was insured through Enterprise Insurance. The client was transported to St. Elizabeth Hospital South by Taylor Boulevard, with injuries to the neck and to the right side of the back.\n\nOn June 2, 2025, Justin made contact regarding the case.",
+      "valid_at": "2025-06-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Prince Ngabonziza",
+            "relevance": "client involved in the accident / primary subject"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Enterprise Insurance",
+            "relevance": "insurer of the rental vehicle involved in the accident"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Hospital",
+            "relevance": "hospital where client was transported/treated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-03",
+      "original_body": "Case: Prince-Ngabonziza-MVA-5-27-2025\nClient: Prince Ngabonziza\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=cf927904-43be-4ed9-9410-fa7fecc61dfc.pdf\nSigned: 2025-06-03 18:21:45\nAll signers: Prince Ngabonziza((502) 705-2996)\nSender: Justin Chumbley",
+      "natural_language": "Case Prince-Ngabonziza-MVA-5-27-2025 concerns client Prince Ngabonziza.\n\nThe intake document for this case was completed via VineSign. It is named \"intake\" and was signed on 2025-06-03 at 18:21:45. The signed document is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=cf927904-43be-4ed9-9410-fa7fecc61dfc.pdf. All signers listed include Prince Ngabonziza, whose phone number is (502) 705-2996. The sender of the VineSign invitation was Justin Chumbley.",
+      "valid_at": "2025-06-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Prince Ngabonziza",
+            "relevance": "subject of case and signer of intake"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "platform used to sign the intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-04",
+      "original_body": "Case: Prince-Ngabonziza-MVA-5-27-2025\nClient: Prince Ngabonziza\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=3131e5cd-e29c-46ba-ab6c-cc6831f9a280.pdf\nSigned: 2025-06-04 10:46:06\nAll signers: Prince Ngabonziza((502) 705-2996)\nSender: Justin Chumbley",
+      "natural_language": "Case Prince-Ngabonziza-MVA-5-27-2025 involves client Prince Ngabonziza. An intake document labeled “intake” was completed and signed via VineSign. The signing occurred on 2025-06-04 at 10:46:06. All signers listed were Prince Ngabonziza, with the contact phone number (502) 705-2996. The intake invitation was sent by Justin Chumbley.\n\nThe signed intake document is available at the following URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=3131e5cd-e29c-46ba-ab6c-cc6831f9a280.pdf.",
+      "valid_at": "2025-06-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Prince Ngabonziza",
+            "relevance": "signed intake document / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-11",
+      "original_body": "Case: Prince-Ngabonziza-MVA-5-27-2025\nClient: Prince Ngabonziza\n\n__New Insurance Note:__ 6/11 spent an hour on the phone setting up claim. no claim number provided, was told someone would reach out to our office\n__Insurance Type:__ _null_\n__Insurance Company:__ Elco Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Prince Ngabonziza is the client in case Prince-Ngabonziza-MVA-5-27-2025.\n\nThe new insurance note, dated 6/11, states that an hour was spent on the phone setting up the claim. No claim number was provided, and we were told that someone would reach out to our office. The insurance type was not provided, and the insurance company is Elco Insurance. The note was written by Justin Chumbley.",
+      "valid_at": "2025-06-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Prince Ngabonziza",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Elco Insurance",
+            "relevance": "insurance company identified in note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Elco Insurance",
+            "relevance": "claim being set up"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-06-18",
+      "original_body": "Case: Prince-Ngabonziza-MVA-5-27-2025\nClient: Prince Ngabonziza\n\nIt's Justin from the Whaley Law Firm. We just spoke. This is the text only number for your file. Please send the rental information here along with any photos you have of your injuries and vehicle damage. Feel free to call me anytime at 502-583-4022",
+      "natural_language": "Case: Prince-Ngabonziza-MVA-5-27-2025. On May 27, 2025, initial client contact was made with Prince Ngabonziza regarding a motor vehicle accident.\n\nJustin from the Whaley Law Firm spoke with Prince and noted that this is the text-only number for the file. He asked Prince to send the rental information to this number, along with any photos he has of his injuries and of the vehicle damage. He also provided his contact number, 502-583-4022, and invited Prince to call anytime.",
+      "valid_at": "2025-06-18T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Prince Ngabonziza",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "law firm/representative contacting client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Agent for Prince-Ngabonziza-MVA-5-27-2025 - 2025-09-11",
+      "original_body": "Case: Prince-Ngabonziza-MVA-5-27-2025\nClient: Prince Ngabonziza\n\nCompleted case overview update task. Updated comprehensive case summary and current status with detailed accident information, injuries, treatment providers, insurance details, and next action items needed. Case summary now includes: accident details (5/27/2025 rear-end collision in Kokomo, IN), client info, injuries (neck/back), medical providers (St. Elizabeth South ER, Starlite Chiropractic), insurance (Elco Insurance - pending adjuster assignment), and documents (intake forms, rental agreement, injury photos). Current status identifies next steps: obtain accident report, follow up with insurance, request medical records/bills, and note statute of limitations (5/27/2027).",
+      "natural_language": "Case Prince-Ngabonziza-MVA-5-27-2025 involves client Prince Ngabonziza. The case overview update has been completed, and the comprehensive case summary and current status have been revised to include detailed accident information, injuries, treatment providers, insurance details, and next action items.\n\nThe updated case summary records that on May 27, 2025, there was a rear-end collision in Kokomo, Indiana. The client sustained neck and back injuries. Medical care has been provided by St. Elizabeth South ER and Starlite Chiropractic. The claim is with Elco Insurance, with the adjuster assignment currently pending. Documents on file include intake forms, a rental agreement, and injury photos. The current status identifies the next steps as: obtain the accident report, follow up with the insurance, request medical records and bills, and note the statute of limitations as May 27, 2027.",
+      "valid_at": "2025-09-11T00:00:00",
+      "author": "Agent for Prince-Ngabonziza-MVA-5-27-2025",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Prince Ngabonziza",
+            "relevance": "case client / injured party"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "treatment provider"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Elco Insurance",
+            "relevance": "insurer handling claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Elco Insurance",
+            "relevance": "insurance claim for medical payments"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

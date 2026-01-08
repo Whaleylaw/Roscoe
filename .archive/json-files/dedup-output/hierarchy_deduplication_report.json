@@ -1,0 +1,350 @@
+{
+  "summary": {
+    "Norton": 4,
+    "Baptist Health": 3,
+    "UofL Health": 2,
+    "Jewish Hospital": 1,
+    "CHI Saint Joseph": 1,
+    "KORT": 1
+  },
+  "systems": {
+    "Norton": [
+      {
+        "canonical": {
+          "uuid": 771,
+          "email": null,
+          "phone": null,
+          "address": "4910 Chamberlain Lane, , Louisville, KY 40241",
+          "full_name": "Norton Children's Medical Center",
+          "phone_normalized": null
+        },
+        "duplicates": [
+          {
+            "uuid": 773,
+            "email": null,
+            "phone": "(502) 588-0610",
+            "address": "9702 Stonestreet Rd #100, Louisville, KY 40272",
+            "full_name": "Norton Children's Medical Group",
+            "phone_normalized": "5025880610",
+            "_merged_from": [
+              1430
+            ]
+          }
+        ],
+        "confidence": 85.71428571428572
+      },
+      {
+        "canonical": {
+          "uuid": 774,
+          "email": null,
+          "phone": "502-394-5678",
+          "address": "2933 Breckenridge Lane, Suite 103, Louisville, KY 40220",
+          "full_name": "Norton Children's Orthopedics Of Louisville",
+          "phone_normalized": "5023945678"
+        },
+        "duplicates": [
+          {
+            "uuid": 1188,
+            "email": null,
+            "phone": null,
+            "address": null,
+            "full_name": "Norton Children's Orthopedics Of Louisville - Brownsboro",
+            "phone_normalized": null
+          }
+        ],
+        "confidence": 86.86868686868688
+      },
+      {
+        "canonical": {
+          "uuid": 776,
+          "email": null,
+          "phone": "502-636-7444 Main",
+          "address": "2355 Poplar Level Road Suite 200, , Louisville, KY 40217",
+          "full_name": "Norton Community Medical Associates",
+          "phone_normalized": "5026367444"
+        },
+        "duplicates": [
+          {
+            "uuid": 777,
+            "email": null,
+            "phone": null,
+            "address": "3101 Poplar Level Road, Suite 101, Louisville, KY 40213",
+            "full_name": "Norton Community Medical Associates - Audubon",
+            "phone_normalized": null
+          },
+          {
+            "uuid": 778,
+            "email": null,
+            "phone": "502-449-6464 Main",
+            "address": "4420 Dixie Highway Suite 114, , Louisville, KY 40216",
+            "full_name": "Norton Community Medical Associates - Dixie",
+            "phone_normalized": "5024496464"
+          },
+          {
+            "uuid": 779,
+            "email": null,
+            "phone": "502-629-5400 Main",
+            "address": "210 E. Gray Street, Ste. 700, , Louisville, KY 40202",
+            "full_name": "Norton Community Medical Associates - Fincastle",
+            "phone_normalized": "5026295400",
+            "_merged_from": [
+              783
+            ]
+          },
+          {
+            "uuid": 780,
+            "email": null,
+            "phone": "(502) 966-8675",
+            "address": "7430 Jefferson Blvd #200, Louisville, KY 40219",
+            "full_name": "Norton Community Medical Associates - Preston",
+            "phone_normalized": "5029668675"
+          },
+          {
+            "uuid": 782,
+            "email": null,
+            "phone": "502-540-7200 Main",
+            "address": "825 Barret Ave., , Louisville, KY 40204",
+            "full_name": "Norton Community Medical Associates-Barret Ave.",
+            "phone_normalized": "5025407200"
+          }
+        ],
+        "confidence": 87.09505941213258
+      },
+      {
+        "canonical": {
+          "uuid": 790,
+          "email": null,
+          "phone": "502-449-6444 Main",
+          "address": "4420 Dixie Hwy Suite 116, , Louisville, KY 40216",
+          "full_name": "Norton Immediate Care",
+          "phone_normalized": "5024496444",
+          "_merged_from": [
+            789
+          ]
+        },
+        "duplicates": [
+          {
+            "uuid": 792,
+            "email": "requeststatus@nortonhealthcare.org",
+            "phone": "502-459-3991",
+            "address": "2470 Bardstown Rd, Louisville, KY 40205",
+            "full_name": "Norton Immediate Care Center",
+            "phone_normalized": "5024593991"
+          }
+        ],
+        "confidence": 85.71428571428572
+      }
+    ],
+    "Baptist Health": [
+      {
+        "canonical": {
+          "uuid": 354,
+          "email": null,
+          "phone": "(502) 897-6579",
+          "address": "4001 Kresge Way, Suite 100, Louisville, KY 40207",
+          "full_name": "Baptist Health Medical Group - Orthopedics",
+          "phone_normalized": "5028976579"
+        },
+        "duplicates": [
+          {
+            "uuid": 360,
+            "email": null,
+            "phone": "(812) 944-2663",
+            "address": "2125 State Street, Suite 5, New Albany, IN 47150",
+            "full_name": "Baptist Health Medical Group Orthopedics - Floyd",
+            "phone_normalized": "8129442663"
+          },
+          {
+            "uuid": 361,
+            "email": null,
+            "phone": "(606) 523-1565",
+            "address": "446 W. Cumberland Gap Parkway, Corbin, KY 40701",
+            "full_name": "Baptist Health Medical Group Orthopedics Corbin",
+            "phone_normalized": "6065231565"
+          }
+        ],
+        "confidence": 89.38826466916353
+      },
+      {
+        "canonical": {
+          "uuid": 356,
+          "email": null,
+          "phone": "(502) 348-5968",
+          "address": "3615 East John Rowan Blvd., Suite 104, Bardstown, KY 40004",
+          "full_name": "Baptist Health Medical Group Family Medicine",
+          "phone_normalized": "5023485968"
+        },
+        "duplicates": [
+          {
+            "uuid": 357,
+            "email": null,
+            "phone": "859-277-5771",
+            "address": "2101 Nicholasville Road, Suite 304, Lexington, KY 40503",
+            "full_name": "Baptist Health Medical Group Internal Medicine",
+            "phone_normalized": "8592775771"
+          },
+          {
+            "uuid": 1666,
+            "email": null,
+            "phone": "502-253-6699",
+            "address": "2400 Eastpoint Pkwy, Suite 110, Louisville, KY 40223",
+            "full_name": "Baptist Health Medical Group Sports Medicine",
+            "phone_normalized": "5022536699"
+          }
+        ],
+        "confidence": 87.62626262626262
+      },
+      {
+        "canonical": {
+          "uuid": 358,
+          "email": "",
+          "phone": "(502) 479-7229",
+          "address": "2312 Hikes Lane, Louisville, KY 40218",
+          "full_name": "Baptist Health Medical Group Primary Care",
+          "phone_normalized": "5024797229"
+        },
+        "duplicates": [
+          {
+            "uuid": 1209,
+            "email": "",
+            "phone": "502-893-7462",
+            "address": "4003 Kresge Way, Suite 410, Louisville, KY 40207",
+            "full_name": "Baptist Health Medical Group Primary Care St. Mathews",
+            "phone_normalized": "5028937462"
+          }
+        ],
+        "confidence": 87.2340425531915
+      }
+    ],
+    "UofL Health": [
+      {
+        "canonical": {
+          "uuid": 244,
+          "email": "patient.services@uoflhealth.org",
+          "phone": "502-217-1900 Records",
+          "address": "401 E Chestnut St., #710, Louisville, KY 40202",
+          "full_name": "University of Louisville Physicians",
+          "phone_normalized": "5022171900",
+          "_merged_from": [
+            1031
+          ]
+        },
+        "duplicates": [
+          {
+            "uuid": 1032,
+            "email": null,
+            "phone": "502-588-3650 Main",
+            "address": "401 E. Chestnut St., Suite 510, , Louisville, KY 40202",
+            "full_name": "University of Louisville Physicians Neurology",
+            "phone_normalized": "5025883650"
+          }
+        ],
+        "confidence": 87.5
+      },
+      {
+        "canonical": {
+          "uuid": 245,
+          "email": "ulhhimroi@uoflhealth.org",
+          "phone": "(502) 210-4200 Main",
+          "address": "2401 Terra Crossing Blvd, , Louisville, KY 40245-5371",
+          "full_name": "UofL Health - Medical Center Northeast",
+          "phone_normalized": "5022104200",
+          "_merged_from": [
+            1036
+          ]
+        },
+        "duplicates": [
+          {
+            "uuid": 1037,
+            "email": "ulhcustomerservice@uoflhealth.org",
+            "phone": "(502) 995-2400 Main",
+            "address": "9700 Stonestreet Rd, , Louisville, KY 40272",
+            "full_name": "UofL Health - Medical Center Southwest",
+            "phone_normalized": "5029952400"
+          }
+        ],
+        "confidence": 92.10526315789474
+      }
+    ],
+    "Jewish Hospital": [
+      {
+        "canonical": {
+          "uuid": 621,
+          "email": null,
+          "phone": "502-681-1404",
+          "address": "200 Abraham Flexner Way, , Louisville, KY 40202",
+          "full_name": "Jewish Hospital",
+          "phone_normalized": "5026811404"
+        },
+        "duplicates": [
+          {
+            "uuid": 622,
+            "email": null,
+            "phone": "502-259-6000",
+            "address": "Health Information Management  Attn: Release of Information P.O. Box 3407, 3920 Dutchmans Lane, Louisville, KY 40207",
+            "full_name": "Jewish Hospital East",
+            "phone_normalized": "5022596000"
+          }
+        ],
+        "confidence": 85.71428571428572
+      }
+    ],
+    "CHI Saint Joseph": [
+      {
+        "canonical": {
+          "uuid": 423,
+          "email": null,
+          "phone": "(502) 350-1022",
+          "address": "118 Patriot Drive #102, Bardstown, KY 40004",
+          "full_name": "CHI Saint Joseph Medical Group - Primary Care",
+          "phone_normalized": "5023501022",
+          "_merged_from": [
+            424
+          ]
+        },
+        "duplicates": [
+          {
+            "uuid": 1210,
+            "email": "",
+            "phone": "859-263-1290 Fax",
+            "address": "211 Fountain Court, Suite 340, Lexington, KY 40509",
+            "full_name": "CHI Saint Joseph Medical Group - Primary Care Lexington",
+            "phone_normalized": "8592631290"
+          }
+        ],
+        "confidence": 90.0
+      }
+    ],
+    "KORT": [
+      {
+        "canonical": {
+          "uuid": 665,
+          "email": null,
+          "phone": "(502) 257-8452",
+          "address": "160 Frankfort Road, Shelbyville, KY 40065",
+          "full_name": "KORT Physical Therapy - Shelbyville",
+          "phone_normalized": "5022578452"
+        },
+        "duplicates": [
+          {
+            "uuid": 666,
+            "email": null,
+            "phone": "502-257-8452",
+            "address": "160 Frankfort Rd, Shelbyville, KY 40065",
+            "full_name": "Kort Physical Therapy Shelbyville",
+            "phone_normalized": "5022578452"
+          },
+          {
+            "uuid": 667,
+            "email": null,
+            "phone": null,
+            "address": "10015 Main St, Whitesville, KY 42378",
+            "full_name": "KORT Physical Therapy Whitesville",
+            "phone_normalized": null
+          }
+        ],
+        "confidence": 86.76470588235294
+      }
+    ]
+  }
+}

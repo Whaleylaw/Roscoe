@@ -1,0 +1,84 @@
+{
+  "case_name": "Shawna-Broyles-MVA-08-26-2022",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Aptiva Health",
+        "specialty": null
+      },
+      {
+        "name": "Louisville Metro EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Norton Community Medical Associates - Dixie",
+        "specialty": null
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "University of Louisville School of Dentistry",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Protective Insurance"
+      },
+      {
+        "name": "Progressive Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Debra Kelso"
+      },
+      {
+        "name": "Carla Kiggins"
+      },
+      {
+        "name": "Steve Dant"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Shawna-Broyles-MVA-08-26-2022-Bodily Injury (BI)-MD4587",
+        "insurer": "Protective Insurance",
+        "adjuster": "Debra Kelso"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Shawna-Broyles-MVA-08-26-2022-Personal Injury Protection (PIP)-22-7969726",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Carla Kiggins"
+      },
+      {
+        "type": "UMClaim",
+        "name": "Shawna-Broyles-MVA-08-26-2022-Uninsured Motorist (UM)-22-7969726",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Steve Dant"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Shawna-Broyles-MVA-08-26-2022-Blue Cross Blue Shield of Michigan",
+        "holder": "Blue Cross Blue Shield of Michigan",
+        "amount": 3867.91
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

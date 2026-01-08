@@ -1,0 +1,207 @@
+{
+  "case_name": "Michael-Lanier-MVA-6-28-2025",
+  "total_episodes": 7,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Allstar Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      }
+    ],
+    "adjusters": [],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Michael-Lanier-MVA-6-28-2025-Personal Injury Protection (PIP)",
+        "insurer": null,
+        "adjuster": null
+      },
+      {
+        "type": "BIClaim",
+        "name": "Michael-Lanier-MVA-6-28-2025-Bodily Injury (BI)-25-471551085",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": null
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Michael-Lanier-MVA-6-28-2025\nClient: Michael Lanier\n\nSettlement strategy development with family consultation.",
+      "natural_language": "This note concerns the Michael-Lanier-MVA-6-28-2025 case for client Michael Lanier, arising from a motor vehicle accident. \n\nOn June 28, 2025, settlement strategy development with family consultation was conducted for this case.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Michael-Lanier-MVA-6-28-2025\nClient: Michael Lanier\n\nMedical treatment planning and insurance coordination.",
+      "natural_language": "Case Michael-Lanier-MVA-6-28-2025 identifies Michael Lanier as the client.\n\nThe matter involves medical treatment planning and insurance coordination in relation to a motor vehicle accident.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "identified client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Allstar Chiropractic",
+            "relevance": "medical treatment planning"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer involved in BI claim / insurance coordination"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI claim with Progressive Insurance Company",
+            "relevance": "claim involved in insurance coordination"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Michael-Lanier-MVA-6-28-2025\nClient: Michael Lanier\n\nFamily accident coordination with other Lanier cases.",
+      "natural_language": "Initial client contact on June 28, 2025 with Michael Lanier regarding a motor vehicle accident. The case concerns family accident coordination with other Lanier cases.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "initial contact regarding motor vehicle accident; subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Michael-Lanier-MVA-6-28-2025\nClient: Michael Lanier\n\nMedical treatment planning and insurance negotiations.",
+      "natural_language": "Initial client contact on June 28, 2025 with Michael Lanier regarding a motor vehicle accident, documented under Case Michael-Lanier-MVA-6-28-2025.\n\nThe engagement concerns medical treatment planning and insurance negotiations for the client, Michael Lanier.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "client/subject of contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Allstar Chiropractic",
+            "relevance": "medical treatment planning"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer/subject of insurance negotiations"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Michael-Lanier-MVA-6-28-2025\nClient: Michael Lanier\n\nFamily coordination with Christopher, James, and Rebecca Lanier cases.",
+      "natural_language": "Initial client contact on June 28, 2025 with Michael Lanier regarding a motor vehicle accident.\n\nThis case involves family coordination with the cases of Christopher Lanier, James Lanier, and Rebecca Lanier.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "initial client contact (6/28/2025) regarding MVA"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Christopher Lanier",
+            "relevance": "family member — case coordination"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "family member — case coordination"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Rebecca Lanier",
+            "relevance": "family member — case coordination"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Michael-Lanier-MVA-6-28-2025\nClient: Michael Lanier\n\nMichael Lanier motor vehicle accident case for June 28, 2025.",
+      "natural_language": "This case, Michael-Lanier-MVA-6-28-2025, concerns motor vehicle accident matters involving client Michael Lanier and pertains to an incident dated June 28, 2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Michael-Lanier-MVA-6-28-2025\nClient: Michael Lanier\n\nFILE REORGANIZATION COMPLETE - Michael Lanier MVA Case: Completed comprehensive 5-phase file reorganization using 8-bucket directory system. Phase 1: Generated inventory of 15 files with content-only analysis (filenames scrambled to eliminate bias). Phase 2: Single sub-agent analyzed all 6 scrambled .md files with content-based categorization. Phase 3: Quality review achieved 0.0% error rate (perfect accuracy - 0 errors out of 6 files). Phase 4: Successfully executed 7 operations (4 moves with PDF reunification, 3 deletes) with zero errors. Phase 5: Verified 100% naming convention compliance and PDF+MD companion file integrity. Results: Medical Records/Allstar Chiropractic organized into 3 subfolders - Medical Bills (1 PDF+MD pair: Account Ledger dated 7/16/2025 showing $1,635.00 total charges), Medical Records (1 PDF+MD pair: Chart Notes for multiple visits 7/16-8/13/2025), Medical Requests (2 PDF+MD pairs: Records Request Letter dated 10/24/2025 from WLF to Allstar Chiropractic, HIPAA Authorization signed 10/24/2025). Deleted 2 duplicate files (duplicate ledger and chart notes) and 1 template DOCX file. Key case information: Client Michael Lanier DOB 10/08/2005, accident date 6/28/2025, treated for cervical/lumbar complaints and headaches, 6 chiropractic visits from 7/16/2025-8/13/2025 at Allstar Chiropractic (7201 Dixie Hwy, Florence, KY), total charges $1,635.00, account #224847-PI. Insurance: State Farm PIP (Policy 17-87C986K), Progressive BI (Claim 25-471551085). Child case under parent project The-Laniers-MVA-8-28-2025. Case phase changed to Demand in Progress on 10/24/2025. All files properly organized with standardized naming conventions. Case ready for demand preparation. All reorganization reports saved to Reports/ directory.",
+      "natural_language": "Case: Michael-Lanier-MVA-6-28-2025. Client: Michael Lanier.\n\nA five-phase file reorganization for the Michael Lanier MVA case was completed using an eight-bucket directory system. Phase 1 generated an inventory of 15 files with content-only analysis, and the filenames were scrambled to eliminate bias. Phase 2 had a single sub-agent analyze all 6 scrambled .md files with content-based categorization. Phase 3 achieved a quality review with a 0.0% error rate (perfect accuracy—0 errors out of 6 files). Phase 4 successfully executed 7 operations (4 moves with PDF reunification and 3 deletes) with zero errors. Phase 5 verified 100% naming convention compliance and PDF+MD companion file integrity. All results were saved in the Reports/ directory.\n\nThe reorganization produced a structured result for Medical Records/Allstar Chiropractic organized into 3 subfolders: Medical Bills contains 1 PDF+MD pair—the Account Ledger dated 7/16/2025 showing $1,635.00 total charges; Medical Records contains 1 PDF+MD pair—the Chart Notes for multiple visits dated 7/16/2025 to 8/13/2025; Medical Requests contains 2 PDF+MD pairs—the Records Request Letter dated 10/24/2025 from WLF to Allstar Chiropractic and the HIPAA Authorization signed 10/24/2025. In the process, 2 duplicate files were deleted (the duplicate ledger and the chart notes) and 1 template DOCX file was removed.\n\nKey case information: Client Michael Lanier, DOB 10/08/2005, was in an accident on 6/28/2025 and treated for cervical/lumbar complaints and headaches, with 6 chiropractic visits from 7/16/2025 to 8/13/2025 at Allstar Chiropractic, located at 7201 Dixie Hwy, Florence, KY. Total charges were $1,635.00, account #224847-PI. Insurance coverage includes State Farm PIP (Policy 17-87C986K) and Progressive BI (Claim 25-471551085). This is a child case under the parent project The-Laniers-MVA-8-28-2025. The case phase was changed to Demand in Progress on 10/24/2025. All files are properly organized with standardized naming conventions, and the case is ready for demand preparation. All reorganization reports have been saved to the Reports/ directory.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "subject/client of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Allstar Chiropractic",
+            "relevance": "provider of treatment and medical records (chiropractic visits, bills, chart notes)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP insurer (policy 17-87C986K)"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "bodily injury claim involved in the case"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

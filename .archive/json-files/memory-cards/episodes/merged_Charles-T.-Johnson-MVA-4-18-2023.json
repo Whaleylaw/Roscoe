@@ -1,0 +1,98 @@
+{
+  "case_name": "Charles-T.-Johnson-MVA-4-18-2023",
+  "total_episodes": 5,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Charles-T.-Johnson-MVA-4-18-2023\nClient: Charles T. Johnson\n\nCase closure documentation and client satisfaction survey.",
+      "natural_language": "Charles-T.-Johnson-MVA-4-18-2023 is the case designation for a motor vehicle accident involving client Charles T. Johnson.\n\nThis document serves as case closure documentation and includes the client satisfaction survey for the matter.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Charles T Johnson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Charles-T.-Johnson-MVA-4-18-2023\nClient: Charles T. Johnson\n\nLong-term case management and final settlement coordination.",
+      "natural_language": "Charles T. Johnson is the client in case Charles-T.-Johnson-MVA-4-18-2023, a motor vehicle accident matter. The engagement focuses on long-term case management and final settlement coordination.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Charles T Johnson",
+            "relevance": "client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Charles-T.-Johnson-MVA-4-18-2023\nClient: Charles T. Johnson\n\nFinal client communication and satisfaction confirmation.",
+      "natural_language": "Charles T. Johnson is the client in the motor vehicle accident case designated Charles-T.-Johnson-MVA-4-18-2023. This entry records the final client communication and satisfaction confirmation for the case, noting that the final outreach to Mr. Johnson has been completed and that he has expressed satisfaction with the handling of his matter.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Charles T Johnson",
+            "relevance": "subject of entry; final communication and satisfaction confirmed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Charles-T.-Johnson-MVA-4-18-2023\nClient: Charles T. Johnson\n\nSettlement finalization and case closure procedures.",
+      "natural_language": "Charles T. Johnson is the client in the case Charles-T.-Johnson-MVA-4-18-2023. The matter concerns settlement finalization and the procedures for closing the case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Charles T Johnson",
+            "relevance": "client in the case; subject of settlement finalization and closing procedures"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Charles-T.-Johnson-MVA-4-18-2023\nClient: Charles T. Johnson\n\nLong-term case management for April 18, 2023 accident.",
+      "natural_language": "Charles T. Johnson is the client for a motor vehicle accident case identified as Charles-T.-Johnson-MVA-4-18-2023.\n\nThis entry documents long-term case management related to the April 18, 2023 accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Charles T Johnson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

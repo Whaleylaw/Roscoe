@@ -1,0 +1,2569 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, Lymphedema Therapy and Wound Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "One Saint Joseph Dr, 5th Floor, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_0",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Continuing Care Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "One Saint Joseph Dr, 3rd Floor, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_1",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 8,
+      "locations": [
+        {
+          "location": "Wound Care Center, Lexington",
+          "address": "One Saint Joseph Dr, 5th Floor, Lexington, KY 40504",
+          "phone": ""
+        },
+        {
+          "location": "Outpatient Diagnostic Center, Lexington",
+          "address": "1401 Harrodsburg Rd, Suite C-45, Lexington, KY 40504",
+          "phone": ""
+        },
+        {
+          "location": "Sleep Care Center, Lexington",
+          "address": "160 N. Eagle Creek Dr, Suite 302, Lexington, KY 40509",
+          "phone": ""
+        },
+        {
+          "location": "Pain Management Center, Bardstown",
+          "address": "4359 New Shepherdsville Rd, Medical Office Building A, Suite 155, Bardstown, KY 40004",
+          "phone": ""
+        },
+        {
+          "location": "Breast Care Center, Bardstown",
+          "address": "4305 New Shepherdsville Rd, Bardstown, KY 40004",
+          "phone": ""
+        },
+        {
+          "location": "Mother & Baby Care, Bardstown",
+          "address": "4305 New Shepherdsville Rd, Bardstown, KY 40004",
+          "phone": ""
+        },
+        {
+          "location": "Sleep Care Center, Bardstown",
+          "address": "4359 New Shepherdsville Rd, Medical Office Building A, Suite 225, Bardstown, KY 40004",
+          "phone": ""
+        },
+        {
+          "location": "Outpatient Rehabilitation, Bardstown",
+          "address": "4371 New Shepherdsville Road, SCN Medical Office Building B, Suite 110, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_2",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Neurology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Lexington, KY",
+          "address": "1 Saint Joseph Drive, Lexington, KY 40504",
+          "phone": ""
+        },
+        {
+          "location": "Lexington, KY (Suite 280)",
+          "address": "1401 Harrodsburg Road, Suite B-280, Lexington, KY 40504",
+          "phone": ""
+        },
+        {
+          "location": "Lexington, KY (Suite 200)",
+          "address": "1021 Majestic Drive, Suite 200, Lexington, KY 40513",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_3",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology, Harrodsburg Road",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1401 Harrodsburg Road, Suite C-100, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_4",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Gastroenterology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Lexington, KY (Suite 305)",
+          "address": "1401 Harrodsburg Road, Suite C 305, Lexington, KY 40504",
+          "phone": ""
+        },
+        {
+          "location": "Lexington, KY (Suite 202)",
+          "address": "160 N Eagle Creek Drive, Suite 202, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_5",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiovascular and Thoracic Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Lexington, KY",
+          "address": "1401 Harrodsburg Road, Suite B-275, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_6",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Park Physical Therapy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1401 Harrodsburg Rd, Suite C-55, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_7",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Office Park",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1401 Harrodsburg Rd, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_8",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cardiac Rehabilitation",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1401 Harrodsburg Rd, Suite A-480, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_9",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology/Electrophysiology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1401 Harrodsburg Road, Suite A-300, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_10",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Pulmonology and Critical Care Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1401 Harrodsburg Road, Suite C-405, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_11",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Breast Care Center, Harrodsburg Road",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1401 Harrodsburg Road, Suite C-45, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_12",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care (Suite 160)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1401 Harrodsburg Road, Suite B 160, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_13",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Lexington, KY (Suite 355) Medical Group ClinicClosed ",
+          "address": "1401 Harrodsburg Road, Suite B 355, Lexington, KY 40504",
+          "phone": ""
+        },
+        {
+          "location": "Lexington, KY (Suite 201)",
+          "address": "160 North Eagle Creek Drive, Suite 201, Lexington, KY 40509",
+          "phone": ""
+        },
+        {
+          "location": "Bardstown, KY (Suite 100)",
+          "address": "4371 New Shepherdsville Road, Suite 100, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_14",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Surgery Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1451 Harrodsburg Road, Suite D-102, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_15",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care Center - Radiation Oncology, Bob-O- Link Drive",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "701 Bob-O-Link Dr, Suite 120, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_16",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care (Suite 100)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1000 Monarch Street, Suite 100, Lexington, KY 40513",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_17",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Neurosurgery Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1021 Majestic Drive, Suite 200, Lexington, KY 40513",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_18",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health – Outpatient Rehabilitation, C.M. Gatton Beaumont YMCA",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3251 Beaumont Centre Circle, YMCA, Lexington, KY 40513",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_19",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care (Suite 350) Medical Group Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3581 Harrodsburg Road, Suite 350, Lexington, KY 40513",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_20",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Behavioral Health (Suite 350)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3581 Harrodsburg Road, Suite 350, Lexington, KY 40513",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_21",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Imaging, Harrodsburg Rd Diagnostic Imaging Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3581 Harrodsburg Rd, Suite 175, Lexington, KY 40513",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_22",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Express Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3581 Harrodsburg Road, Suite 125, Lexington, KY 40504",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_23",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Pulmonology, Fountain Court",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "211 Fountain Court, Suite 210, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_24",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Imaging, Fountain Court",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "211 Fountain Court, Suite 130, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_25",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care (Suite 120) Medical Group ClinicClosed ",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "211 Fountain Court, Suite 120, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_26",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology, Fountain Court",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "211 Fountain Court, Suite 210, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_27",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Orthopedics & Podiatry",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Lexington, KY",
+          "address": "211 Fountain Court, Suite 220, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_28",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Obstetrics & Gynecology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Lexington, KY",
+          "address": "211 Fountain Court, Suite 230, Lexington, KY 40509",
+          "phone": ""
+        },
+        {
+          "location": "Bardstown, KY",
+          "address": "4359 New Shepherdsville Road, Flaget Medical Office, Building A, Suite 255, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_29",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Lexington, KY (Suite 340)",
+          "address": "211 Fountain Court, Suite 340, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_30",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group – Orthopedics – Hand Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "211 Fountain Court, Ste 320, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_31",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, Legacy Reserve",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2700 Man O' War Blvd, Lexington, KY 40515",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_32",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group – Maternal Fetal Medicine Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "170 N. Eagle Creek Dr, Suite 110 Lexington, KY 40509, Suite 110, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_33",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Obstetrics & Gynecology, N Eagle Creek Dr",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "170 N Eagle Creek Dr, Suite 104, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_34",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Women's Hospital at Saint Joseph East",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "170 N Eagle Creek Dr, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_35",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, N. Eagle Creek Drive",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "160 N. Eagle Creek Drive, Suite 103, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_36",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Center for Weight Management",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "160 North Eagle Creek Drive, Suite 201, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_37",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Breast Care Center, N Eagle Creek Drive",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "160 N. Eagle Creek Drive, Suites 101 & 104, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_38",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Behavioral Health (Suite 302)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "160 N. Eagle Creek Drive, Suite 302, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_39",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph East",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "150 N Eagle Creek Dr, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_40",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph East - Emergency Room",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "150 N Eagle Creek Dr, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_41",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Neurology- Blazer Parkway",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3470 Blazer Parkway, Suite 150, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_42",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health – Cancer Care Center – Support Services",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3470 Blazer Parkway, Suite 230, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_43",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Lexington, KY",
+          "address": "3470 Blazer Parkway, Suite 200, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_44",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care Center - Hematology Oncology, Blazer Pkwy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3470 Blazer Parkway, Suite 300, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_45",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care Center - Radiation Oncology, Blazer Pkwy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3470 Blazer Pkwy, Suite 200, Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_46",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Imaging, Nicholasville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1250 Keene Rd, Nicholasville, KY 40356",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_47",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph Jessamine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1250 Keene Rd, Suite 102, Nicholasville, KY 40356",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_48",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Breast Care Center, Nicholasville Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1250 Keene Rd, Nicholasville, KY 40356",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_49",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - Nicholasville, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1250 Keene Rd, Suite 102, Nicholasville, KY 40356",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_50",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Diagnostics, Nicholasville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1250 Keene Rd, Nicholasville, KY 40356",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_51",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Podiatry - Nicholasville, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1250 Keene Rd, Suite 102, Nicholasville, KY 40356",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_52",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, Nicholasville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1250 Keene Rd, Suite 101, Nicholasville, KY 40356",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_53",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - Georgetown, KY Medical Group Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "150 Mount Vernon Rd, Suite 300, Georgetown, KY 40324",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_54",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - Winchester, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 Bypass Road, Winchester, KY 40391",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_55",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Podiatry - Winchester, KY Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 Bypass Road, Winchester, KY 40391",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_56",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Gastroenterology - Winchester, KY Medical Group Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 Bypass Road, Winchester, KY 40391",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_57",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Obstetrics & Gynecology - Winchester, KY Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 Bypass Road, Winchester, KY 40391",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_58",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Orthopedics - Winchester, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 Bypass Road, Winchester, KY 40391",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_59",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Imaging, Winchester",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 Bypass Road, Winchester, KY 40391",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_60",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation - Winchester, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 Bypass Road, Winchester, KY 40391",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_61",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - Winchester, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 Bypass Road, Winchester, KY 40391",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_62",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - Richmond, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1054 Center Drive, Suite 2, Richmond, KY 40475",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_63",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation - Mt. Sterling, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "624 N. Maysville Road, Mt. Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_64",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, N Maysville Rd",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "624 N. Maysville Rd, Mt. Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_65",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Orthopedics & Podiatry, Mount Sterling",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "624 North Maysville Road, Suite A, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_66",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Surgery - Berea, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2750 Battlefield Memorial Highway, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_67",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - Berea, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2750 Battlefield Memorial Highway, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_68",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - Berea, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2750 Battlefield Memorial Highway, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_69",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Mother & Baby Care, Mount Sterling",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "225 Falcon Dr, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_70",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph Mount Sterling",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "225 Falcon Dr, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_71",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph Mount Sterling - Emergency Room",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "225 Falcon Drive, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_72",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - Mount Sterling, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "227 Falcon Drive, Suite 101, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_73",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Urology - Mount Sterling, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "227 Falcon Drive, Suite G 03, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_74",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Gastroenterology - Mount Sterling, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "227 Falcon Drive, Suite 104, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_75",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - Mount Sterling, KY (Suite G 03)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "227 Falcon Drive, Suite G 03, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_76",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care - Outpatient Infusion, Mount Sterling",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "227 Falcon Dr, Mt. Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_77",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care Center - Mount Sterling, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "227 Falcon Drive, Suite 103, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_78",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, Falcon Drive",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "227 Falcon Drive, Suite 102, Mt. Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_79",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Surgery - Mount Sterling, KY (Suite 104)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "227 Falcon Drive, Suite 104, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_80",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - Mount Sterling, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "40 South Bank Street, Mount Sterling, KY 40353",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_81",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group – Cardiology Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "62 Westridge Drive, Danville, KY 40422",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_82",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - General Surgery, Berea",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, 3rd Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_83",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care, Estill St",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, 4th Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_84",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph Berea",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_85",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Surgery - Berea, KY (3rd Floor)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, 3rd Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_86",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Infusion, Berea",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill St, 1st Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_87",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph Berea - Emergency Room",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_88",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, Berea",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill St, 1st Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_89",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Gastroenterology - Berea, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_90",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Breast Care, Berea Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill St, 1st Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_91",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group – Orthopedics - Berea, KY Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, 3rd Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_92",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - Berea, KY (3rd Floor)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, 3rd Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_93",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - Berea, KY (4th Floor)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill Street, 4th Floor, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_94",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Senior Renewal Center Therapy Services",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "305 Estill St, Berea, KY 40403",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_95",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, Flemingsburg",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "101 JB Shannon Dr, Flemingsburg, KY 41041",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_96",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - Flemingsburg, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "101 JB Shannon Drive, Suite A & B, Flemingsburg, KY 41041",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_97",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Orthopedics - Lebanon, KY Medical Group Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "325 W. Walnut Street, Suite 200, Lebanon, KY 40033",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_98",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - Lebanon, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "325 W. Walnut Street, Suite 200, Lebanon, KY 40033",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_99",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Express Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Bardstown, KY",
+          "address": "110 S. Salem Drive, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_100",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Pediatric Rehabilitation",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "115 S. Salem Drive, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_101",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiovascular and Thoracic Surgery - Maysville, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "991 Medical Park Drive, Suite 107, Maysville, KY 41056",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_102",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group – Cardiology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4359 New Shepherdsville Rd, Ste 205, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_103",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health – Cancer Care Center, Radiation Oncology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4359 New Shepherdsville Road, Suite 100, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_104",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Flaget Memorial Hospital - Emergency Room",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4305 New Shepherdsville Rd, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_105",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Flaget Memorial Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4305 New Shepherdsville Rd, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_106",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group – Cardiology and Electrophysiology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4371 New Shepherdsville Road, Suite C-100, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_107",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Orthopedics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Bardstown, KY Medical Group Clinic",
+          "address": "4371 New Shepherdsville Road, First Floor, Ste 100, Bardstown, KY 40004",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_108",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care Center - Hematology Oncology, London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "165 London Mountain View Dr, Suite 2, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_109",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care Center - London, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "165 London Mountain View Drive, Suite 1, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_110",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Orthopedics - London, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "160 London Mountain View Drive, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_111",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Imaging, London Mountain View Drive",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "148 London Mountain View Drive, Suite 1, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_112",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Orthopedics - London, KY (Suite 4)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "148 London Mountain View Drive, Suite 4, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_113",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Outpatient Rehabilitation, London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "100 London Mountain View Dr, Suite 400, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_114",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Surgery - London, KY (2nd Floor)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, 2nd Floor, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_115",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - London, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, 1st floor, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_116",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Gastroenterology - London, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, 2nd Floor, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_117",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - General Surgery Medical Group Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_118",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cardiopulmonary Rehabilitation & Prevention, London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, First Floor, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_119",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiovascular and Thoracic Surgery - London, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_120",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Pulmonology - London, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, 1st Floor, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_121",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - London, KY (2nd Floor)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, 2nd Floor, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_122",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group – Orthopedics - London, KY Specialty Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 Saint Joseph Lane, 2nd Floor, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_123",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1001 Saint Joseph Lane, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_124",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Sleep Care Center, London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1001 Saint Joseph Lane, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_125",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Wound Care Center, London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1001 Saint Joseph Lane, 5th Floor, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_126",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Saint Joseph London - Emergency Room",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1001 Saint Joseph Drive, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_127",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Breast Care, London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1001 Saint Joseph Lane, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_128",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Mother & Baby Care, London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1001 Saint Joseph Lane, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_129",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Pediatrics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "378 Thompson Poynter Road, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_130",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - London, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "175 City Hill Drive, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_131",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Neurology, London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "192 Shopping Center, Suite 2, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_132",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - London, KY (Highway 192 East)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1270 Highway 192 East, London, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_133",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Health - Cancer Care Center - Hematology Oncology, Corbin",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1708 Forest Dr, Suite 101, Corbin, KY 40701",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_134",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology - Corbin, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1500 Cumberland Falls Highway, Corbin, KY 40701",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_135",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Pulmonology - Corbin, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1500 Cumberland Falls Highway, Corbin, KY 40701",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_136",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Primary Care - Corbin, KY",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2867 Cumberland Falls Highway, Corbin, KY 40701",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_137",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CHI Saint Joseph Medical Group - Cardiology, Barbourville Medical Group ClinicClosed ",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "215 Treuhaft Boulevard, Suite 4, Barbourville, KY 40906",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_138",
+    "source_file": ""
+  }
+]

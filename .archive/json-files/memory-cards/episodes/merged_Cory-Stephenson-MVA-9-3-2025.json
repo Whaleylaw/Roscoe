@@ -1,0 +1,193 @@
+{
+  "case_name": "Cory-Stephenson-MVA-9-3-2025",
+  "total_episodes": 10,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\nAaron Whaley contacted Cory Stephenson to assess the current status of his motor vehicle accident case and gather necessary details.\nRecap\nAaron Whaley called Cory Stephenson to inquire about his motor vehicle accident case and determine the current status.\nCory provided Aaron with an update on his situation and expressed willingness to proceed with legal representation.\nTasks\nAaron needs to gather more detailed information about Cory's accident and begin the formal case intake process.",
+      "natural_language": "Initial client contact occurred on September 3, 2025, with Cory Stephenson regarding a motor vehicle accident case. Attorney Aaron Whaley contacted Cory Stephenson to assess the current status of the case and to gather the necessary details.\n\nPer the recap, Whaley called Stephenson to inquire about the motor vehicle accident case and determine its current status. Stephenson provided an update on his situation and expressed willingness to proceed with legal representation. The next step is for Aaron to gather more detailed information about the accident and commence the formal case intake process.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "initial client contact / subject of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "attorney who contacted client to assess case and commence intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-18",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\n__Text Message__\n__Message:__ Hey Justin this is Cory I was just checking up on the case is everything going ok ? \n__Date and Time:__ 2025-09-18 \n__From Number:__ +15023036254 \n__To Number:__ +15023579603\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on September 18, 2025 in the Cory-Stephenson-MVA-9-3-2025 case, with Cory Stephenson regarding a motor vehicle accident. \n\nThe contact was an inbound text message from Cory Stephenson to Justin, sent from +15023036254 to +15023579603. The message read: \"Hey Justin this is Cory I was just checking up on the case is everything going ok ?\"",
+      "valid_at": "2025-09-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "sender of inbound text / client contacting firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-22",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\nA missed call for aaron whaley was logged at 2025-09-22 17:30:43.664000+00:00 . #missedcall\n\nCaller Info: 5023036254 \n\nCaller ID: 502-303-6254 \n\nCaller Name: Cory Stepheson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hey, yes, this is Cory Stephenson. Uh, if you can give me a call back at 502-303-6254. Thank you.",
+      "natural_language": "Case Cory-Stephenson-MVA-9-3-2025 involves client Cory Stephenson. On September 22, 2025, at 17:30:43.664000+00:00, a missed call for Aaron Whaley was logged in the system. The call originated from phone number 502-303-6254, with a caller ID of 502-303-6254. The caller name was recorded as Cory Stepheson, and no caller email was provided. A link to the Filevine contact is available: [filevine-link].\n\nVoicemail transcription: \"Hey, yes, this is Cory Stephenson. Uh, if you can give me a call back at 502-303-6254. Thank you.\" The transcription confirms the callback number as 502-303-6254. Note that the client is Cory Stephenson, while the logged caller name is Cory Stepheson, indicating a spelling discrepancy. No caller email was listed.",
+      "valid_at": "2025-09-22T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "caller / client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "intended recipient of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-23",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\nA missed call for aaron whaley was logged at 2025-09-23 13:07:47.772000+00:00 . #missedcall\n\nCaller Info: 5023036254 \n\nCaller ID: 502-303-6254 \n\nCaller Name: Cory Stepheson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Cory-Stephenson-MVA-9-3-2025 involves client Cory Stephenson. A missed call for aaron whaley was logged on 2025-09-23 13:07:47.772000+00:00 (UTC), with the tag #missedcall.\n\nCaller information lists the phone number 5023036254 and the Caller ID 502-303-6254. The caller name is Cory Stepheson, and the Caller Email field is empty (not provided). A Filevine contact can be accessed at [filevine-link]. There is no voicemail transcription provided.",
+      "valid_at": "2025-09-23T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "caller / subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-24",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, he agreed that the other vehicle had control of the intersection and he struck the rear quarter panel. \n__Person Making Contact:__ Justin\n__Date & Time__: September 24 2025",
+      "natural_language": "Case Cory-Stephenson-MVA-9-3-2025: Initial client contact on September 24, 2025 with Cory Stephenson regarding motor vehicle accident. The contact was conducted by Justin.\n\nDuring the conversation, the client stated that the other vehicle had control of the intersection and that he struck the rear quarter panel.",
+      "valid_at": "2025-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "initial contact regarding motor vehicle accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-24",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\nA missed call for aaron whaley was logged at 2025-09-24 16:55:55.393000+00:00 . #missedcall\n\nCaller Info: 5023036254 \n\nCaller ID: 502-303-6254 \n\nCaller Name: Cory Stepheson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Cory-Stephenson-MVA-9-3-2025 involves the client Cory Stephenson. On 2025-09-24 at 16:55:55.393000+00:00, a missed call for Aaron Whaley was logged (tagged as #missedcall). \n\nCaller information shows the phone number 5023036254, with a caller ID of 502-303-6254. The caller name is Cory Stepheson. The caller email field is empty. A link to the Filevine contact is available at [filevine-link].\n\nThe Voicemail Transcription field is present but contains no transcription.",
+      "valid_at": "2025-09-24T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "case client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-06",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\n__CLIENT CONTACT__\n__Details:__ updated client \n__Person Making Contact:__ Justin\n__Date & Time__: October 06 2025",
+      "natural_language": "Case Cory-Stephenson-MVA-9-3-2025 centers on client Cory Stephenson. The client contact record notes that the client's information was updated, and the contact was made by Justin on October 6, 2025.",
+      "valid_at": "2025-10-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "client whose contact record was updated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-15",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, he received a random call from KFB, doesn't know who it was, just from the general phone number. Not sure how they would be involved but stated if they called back try to get as much info as possible and give them our info \n__Person Making Contact:__ Justin\n__Date & Time__: October 15 2025",
+      "natural_language": "Initial client contact on October 15, 2025 with Cory Stephenson regarding the Cory-Stephenson-MVA-9-3-2025 case. The client stated that he received a random call from KFB and does not know who it was, only that the call came from a general phone number. He is not sure how they would be involved but he said that if they call back, we should try to obtain as much information as possible and give them our information.\n\nThe contact was made by Justin on October 15, 2025.",
+      "valid_at": "2025-10-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "client/contacted"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "KFB",
+            "relevance": "unknown caller; potential involved organization"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-30",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, he spoke with the responding officer and asked them to amend the PR. He will keep us updated if the officer makes any changes so we can obtain amended report. \n__Person Making Contact:__ Justin\n__Date & Time__: October 30 2025",
+      "natural_language": "Initial client contact on October 30, 2025, with Cory Stephenson regarding the Cory-Stephenson-MVA-9-3-2025 case. The client reported that he spoke with the responding officer and asked them to amend the police report. He will keep us updated if the officer makes any changes so that we can obtain the amended report. The contact was made by Justin.",
+      "valid_at": "2025-10-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "primary client; reported speaking with responding officer about amending the police report"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-30",
+      "original_body": "Case: Cory-Stephenson-MVA-9-3-2025\nClient: Cory Stephenson\n\n__CLIENT CONTACT__\n__Details:__ updated client, not sure what to do with file client is at fault and we rep the passenger \n__Person Making Contact:__ Justin\n__Date & Time__: October 30 2025",
+      "natural_language": "Initial client contact on October 30, 2025, with Justin regarding the Cory-Stephenson motor vehicle accident (MVA-9-3-2025). The client is Cory Stephenson. The contact details indicate the file has been updated, but there is uncertainty about how to proceed with the file. It also notes that the client is at fault in the incident and that we represent the passenger.",
+      "valid_at": "2025-10-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Cory Stephenson",
+            "relevance": "primary contact; at-fault party in the incident"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

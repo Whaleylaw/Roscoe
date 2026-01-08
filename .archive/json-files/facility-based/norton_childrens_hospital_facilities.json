@@ -1,0 +1,1664 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Acupuncture",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_0",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's ENT & Audiology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "NuLu",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "St. Matthews",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_1",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gastroenterology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_2",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Infectious Diseases",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_3",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Nephrology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_4",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neonatology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Bowling Green",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Paducah",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "St. Matthews",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Owensboro",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_5",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Outpatient Center",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Bowling Green",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Frankfort",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Owensboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Paducah",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_6",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Sleep Medicine",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_7",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Urology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 6,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Owensboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Bowling Green",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Shelbyville",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_8",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Novak Center for Children's Health",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_9",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Endocrinology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_10",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Children's Hospital Foundation Building",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_11",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Hospital - Emergency",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_12",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Pulmonology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Elizabethtown",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_13",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 18,
+      "locations": [
+        {
+          "location": "Crestwood",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Iroquois",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Dixie",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Fern Creek",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Frankfort",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Middletown",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "NuLu",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Preston",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Springhurst",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Clarksville",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Jeffersonville",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Shelbyville",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "West Louisville",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Bowling Green",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Clark",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_14",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Hikes Point",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_15",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Lakeview",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_16",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Okolona",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_17",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Windy Hills",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_18",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Pleasure Ridge Park",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_19",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gynecology - Dupont",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_20",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 9,
+      "locations": [
+        {
+          "location": "Bowling Green",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Shelbyville",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Frankfort",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Owensboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Paducah",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "St. Matthews",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_21",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Home of the Innocents",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_22",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 12,
+      "locations": [
+        {
+          "location": "Corydon",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Madison",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Madisonville",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "St Matthews",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Owensboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Scottsburg",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Bowling Green",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Campbellsville",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Paducah",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Frankfort",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_23",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Murray",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_24",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - New Albany",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_25",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Wendy Novak Diabetes Institute",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_26",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pharmacy",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "West Louisville Hospital",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Downtown",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "St. Matthews",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_27",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Behavioral and Mental Health - Bingham Clinic",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_28",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Behavioral and Mental Health",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "NuLu",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_29",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Center",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_30",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Specialty Pharmacy",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_31",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Allergy & Immunology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_32",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Advanced Eye Care - Hikes Point",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_33",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Advanced Eye Care",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_34",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Pediatric Protection Specialists",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_35",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Endocrinology - Westport Plaza",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_36",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Maternal - Fetal Medicine",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Bowling Green",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Paducah",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_37",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Physical Medicine & Rehabilitation",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Paducah",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_38",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Maternal - Fetal Medicine - Perinatal Center",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_39",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Broadway",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_40",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Germantown",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_41",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Poplar Level",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_42",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Prospect",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_43",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Russell",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_44",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Shepherdsville",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_45",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Orthopedics of Louisville - Hikes Point",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_46",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Infusion Center",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_47",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Corbin",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_48",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Jennifer Lawrence Cardiac Intensive Care Unit",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_49",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Germantown",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_50",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Shepherdsville",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_51",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Orthopedics of Louisville",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Elizabethtown",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_52",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Center - Pediatric Emergency",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_53",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Hospital",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_54",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's and Children's Hospital",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_55",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Anesthesiology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_56",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Autism Center",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Frankfort",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_57",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gynecology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Brownsboro",
+          "address": "",
+          "phone": ""
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_58",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Genetics Center",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_59",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Development Center",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_60",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Just for Kids Critical Care Center",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_61",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Rheumatology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_62",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Autism Center - Hikes Point",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_63",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Dermatology",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_64",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Jeffersontown",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_65",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Stonestreet",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_66",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Fairdale",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_67",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Neurosurgery",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_68",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Orthopedics of Louisville - Westport Plaza",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_69",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Cancer Institute",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_70",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Jasper",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_71",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Mount Sterling",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_72",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Shepherdsville",
+    "attributes": {
+      "parent_system": "Norton Children's Hospital",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_73",
+    "source_file": "norton_childrens_website"
+  }
+]

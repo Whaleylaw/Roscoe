@@ -1,0 +1,2511 @@
+{
+  "case_name": "Maryan-Kassim-MVA-08-06-2024",
+  "total_episodes": 108,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Diagnostic X-Ray Physicians PSC",
+        "specialty": null
+      },
+      {
+        "name": "Louisville Metro EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Norton Audubon Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville School of Dentistry",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Brandi Chappell-Haggard"
+      },
+      {
+        "name": "Keri Hall"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Maryan-Kassim-MVA-08-06-2024-Bodily Injury (BI)-24-711062492",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Brandi Chappell-Haggard"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Maryan-Kassim-MVA-08-06-2024-Personal Injury Protection (PIP)-24-711062492",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Keri Hall"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Maryan-Kassim-MVA-08-06-2024-Conduent",
+        "holder": "Conduent",
+        "amount": 3830.39
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2024-08-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Spoke to client briefly because she's on a middle of an errand. Prefer text messages. \n__Person Making Contact:__ Jessa\n__Date & Time__: August 12 2024",
+      "natural_language": "Initial client contact on August 12, 2024 with Maryan Kassim regarding motor vehicle accident Maryan-Kassim-MVA-08-06-2024.\n\nThe contact was made by Jessa. The client was spoken to briefly because she was in the middle of an errand, and she prefers text messages for communication.",
+      "valid_at": "2024-08-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "initial contact; client prefers text communication"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim is the client for case Maryan-Kassim-MVA-08-06-2024, a matter involving a motor vehicle accident. Today, the client was contacted to provide an update, designated as update #cc.",
+      "valid_at": "2024-08-12T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-08-12 13:59:21.776000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact on August 12, 2024 at 1:59:21 PM UTC for the Maryan-Kassim-MVA-08-06-2024 case, with client Maryan Kassim. The entry notes an outbound call from Jessa Galosmo to Maryan Kassim.\n\nThe recorded caller information is 5023332962, with a Caller ID of 502-333-2962. The caller name on the record is Maryan Kassim, and there is no email on file for the client. A link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2024-08-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Wage and Salary Verification Form__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [IshaHope11@gmail.com](mailto:IshaHope11@gmail.com) Maryan Kassim\nDate: Mon, 12 Aug 2024 16:29:46 -0400\n\nHi Maryan,\n\nPlease sign and send this to your employer and have them complete and sign\nit then return to us. Thanks.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "This case note concerns the matter Maryan-Kassim-MVA-08-06-2024 for client Maryan Kassim. On August 12, 2024, at 4:29:46 PM (-0400), Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to Maryan Kassim and IshaHope11@gmail.com regarding a Wage and Salary Verification Form. The subject line of the email was Wage and Salary Verification Form.\n\nIn the body of the message, Jessa addressed Maryan with “Hi Maryan,” and instructed her to sign the form, send it to her employer, have the employer complete and sign it, and then return the form to the law firm. The message concluded with “All the best,” followed by Jessa Galosmo’s name and the Whaley Law Firm signature, which included contact numbers: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2024-08-12T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "recipient of email / subject of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "author/sender of the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-08-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nAbbullahi Kassim was the vehicle driver of the 8/6/2024 MVA - I spoke with him briefly as he may want to sign up as well - but he did not have time to do intake this morning. He said he did have the PR number - but cannot locate it currently. He provided this email address to contact him abdvk8@gmail.com (FYI) #cc",
+      "natural_language": "Maryan Kassim is the client for the case Maryan-Kassim-MVA-08-06-2024. Abbullahi Kassim was the vehicle driver involved in the August 6, 2024 motor vehicle accident. I spoke with him briefly; he indicated he may want to sign up as well, but he did not have time to complete intake this morning.\n\nHe said he did have the PR number, but cannot locate it currently. He provided an email address for contact: abdvk8@gmail.com (FYI) #cc.",
+      "valid_at": "2024-08-13T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client of record for case Maryan-Kassim-MVA-08-06-2024"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nObtain PR ad saved on file.",
+      "natural_language": "Maryan Kassim is the client in the motor vehicle accident matter identified as Maryan-Kassim-MVA-08-06-2024. The file indicates that a PR ad is saved on file, and the objective is to obtain that PR ad.",
+      "valid_at": "2024-08-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nHi Maryan this is Jessa from The Whaley Law Firm. We just spoke. Please send here the police report number and the copy of your Passport health insurance.",
+      "natural_language": "Maryan Kassim is the client in case Maryan-Kassim-MVA-08-06-2024, a matter involving a motor vehicle accident. The case file notes indicate that Jessa from The Whaley Law Firm recently spoke with Maryan by phone. In the message, Jessa says: \"Hi Maryan this is Jessa from The Whaley Law Firm. We just spoke. Please send here the police report number and the copy of your Passport health insurance.\" The note records that they had just spoken and requests the police report number and a copy of Maryan's Passport health insurance.",
+      "valid_at": "2024-08-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client (subject of call)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "caller (spoke with client)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-14",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__24-711062492__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8772137258@rcfax.com](mailto:8772137258@rcfax.com)\nDate: Wed, 14 Aug 2024 08:43:10 -0400",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. The file number is 24-711062492.\n\nOn Wednesday, August 14, 2024, at 8:43:10 a.m. Eastern Time, Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to the fax address 8772137258@rcfax.com in connection with this matter.",
+      "valid_at": "2024-08-14T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm for the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-14",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__24-711062492__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8772137258@rcfax.com](mailto:8772137258@rcfax.com)\nDate: Wed, 14 Aug 2024 10:15:13 -0400",
+      "natural_language": "This case, Maryan-Kassim-MVA-08-06-2024, concerns client Maryan Kassim. The file/reference number is 24-711062492.\n\nOn Wednesday, August 14, 2024, at 10:15:13 a.m. (UTC-04:00), an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to the fax address 8772137258@rcfax.com.",
+      "valid_at": "2024-08-14T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-14",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__New Insurance Note:__ 8/14 faxed request for DEC page, possible limits issue\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Maryan Kassim is the client in the Maryan-Kassim-MVA-08-06-2024 case involving a motor vehicle accident on August 6, 2024. A new insurance note indicates that on 8/14 a faxed request was sent for the DEC page, with a possible limits issue noted. The insurance type is Personal Injury Protection (PIP), with Progressive Insurance Company as the insurer, and the note was written by Justin Chumbley.",
+      "valid_at": "2024-08-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer on file"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP claim discussed (DEC page request, possible limits issue)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-14",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nRequest for records & bills sent to Norton Audubon Hospital via EpicLink",
+      "natural_language": "Maryan Kassim is the client in the case Maryan-Kassim-MVA-08-06-2024, a motor vehicle accident matter.\n\nA request for medical records and bills related to the case was sent to Norton Audubon Hospital via EpicLink.",
+      "valid_at": "2024-08-14T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "recipient of medical records and bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-14",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryan Kassim__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [OMBMRR@Louisvilleky.gov](mailto:OMBMRR@Louisvilleky.gov)\nCc: [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed, 14 Aug 2024 11:42:34 -0400\n\nHello,\n\n \n\nAttached is a request for records & bills on our client, Maryan Kassim.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim.\n\nOn August 14, 2024, at 11:42:34 AM Eastern Time, an email was sent from jessica@whaleylawfirm.com on behalf of The Whaley Law Firm to OMBMRR@Louisvilleky.gov, with MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.comCC’d. The message concerns the client Maryan Kassim and states that an attachment contains a request for records and bills for our client. The body of the email reads: “Hello, Attached is a request for records & bills on our client, Maryan Kassim. Thanks!” The note is authored by The Whaley Law Firm.",
+      "valid_at": "2024-08-14T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the records request / client referenced"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender / author of the email"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "OMBMRR@Louisvilleky.gov",
+            "relevance": "recipient of the records & bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-14",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nRequest for records & bills e-mailed to Louisville Metro EMS",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim and relates to a motor vehicle accident.\n\nA request for records and bills was emailed to Louisville Metro EMS.",
+      "valid_at": "2024-08-14T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "recipient of records and bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-15",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Re: Progressive Claim #24-711062492__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [Emma_Hartell@progressive.com](mailto:Emma_Hartell@progressive.com) Emma Hartell\nDate: Thu, 15 Aug 2024 09:11:04 -0400\n\nHi,\n\nWe are representing client's just for PIP. You can reach out to clients\ndirectly for property damage.\n\nOn Wed, Aug 14, 2024 at 4:10?PM Emma Hartell \nwrote:\n\n> Hello Jessa,\n>\n>\n>\n> My name is Emma, I’m Personal Injury Protection (PIP) adjuster for\n> Progressive Insurance. I’m reaching out to confirm that your office is\n> representing our clients – Abdullahi Kassim & Maryan Kassim. Are you\n> representing for both PIP and Collision? Please send me a LOR detailing\n> attorney instruction.\n>\n>\n>\n> Thank you,\n>\n>\n>\n> *Emma Hartell*\n>\n> Medical Representative Associate\n>\n> Phone: 502-909-3670 | Fax: 877-213-7258\n>\n> PO Box 2930 Clinton, IA 52733\n>\n> Email: Emma_Hartell@progressive.com\n>\n> The contents of this e-mail and any attachments are confidential and may\n> be legally privileged, intended solely for the addressee. If you are not\n> the intended recipient, be advised that any use, dissemination,\n> distribution, storage (including electronic) or copying of this e-mail is\n> strictly prohibited. If you receive this e-mail in error, please notify\n> the sender immediately by reply e-mail and destroy the message and its\n> attachments.\n>\n>\n>\n>\n>\n>\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim. Re: Progressive Claim #24-711062492.\n\nOn August 15, 2024, at 09:11:04 -0400, Jessa Galosmo of Whaley Law Firm sent an email to Emma Hartell at Progressive Insurance regarding the Maryan Kassim matter. In the message, Jessa wrote: “Hi, We are representing client's just for PIP. You can reach out to clients directly for property damage.” This communication concerns Progressive Claim #24-711062492 and confirms that the firm is acting for the client only for PIP, with permission to contact the clients directly for property damage.\n\nThe note references a prior email from Emma Hartell dated Wednesday, August 14, 2024, at 4:10?PM, in which Hartell introduced herself as a Personal Injury Protection (PIP) adjuster for Progressive Insurance and sought confirmation that Jessa’s office represents their clients—Abdullahi Kassim and Maryan Kassim. Hartell asked whether the representation covers both PIP and Collision and requested a Letter of Representation (LOR) detailing attorney instruction.\n\nHartell’s email included her professional contact information: Medical Representative Associate, with phone number 502-909-3670, fax 877-213-7258, PO Box 2930 Clinton, IA 52733, and email Emma_Hartell@progressive.com. It also contained a confidentiality and privilege notice stating that the contents of the email and any attachments are confidential and may be legally privileged, intended solely for the addressee; if you are not the intended recipient, any use, dissemination, distribution, storage (including electronic) or copying is strictly prohibited. If received in error, recipients were asked to notify the sender by reply email and destroy the message and attachments.\n\nThe email thread concluded with Jessa Galosmo’s closing signature: “All the best, Jessa Galosmo, Whaley Law Firm,” followed by contact numbers: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2024-08-15T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client represented (subject of matter)"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Abdullahi Kassim",
+            "relevance": "co-client referenced in representation inquiry"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for the referenced claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "claim discussed in the email thread"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emma Hartell",
+            "relevance": "PIP adjuster who sent the inquiry"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender representing client for PIP"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm representing the client for PIP"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-19",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryan Kassim__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [8478906883@rcfax.com](mailto:8478906883@rcfax.com)\nCc: [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)",
+      "natural_language": "The case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim. The record shows an email sent from jessica@whaleylawfirm.com to 8478906883@rcfax.com, with a CC to MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case client / primary subject"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm (email domain)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "jessica@whaleylawfirm.com",
+            "relevance": "email sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-19",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nFirst Lien Letter faxed to Conduent",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 centers on client Maryan Kassim. The first lien letter was faxed to Conduent.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Conduent",
+            "relevance": "recipient of first lien letter (faxed)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-21",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Fwd: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Abdullahi Kassim - Filevine Project Email Address [AbdullahiKassimMVAZ4730635@louisvilleaccidentlawyer.filevineapp.com](mailto:AbdullahiKassimMVAZ4730635@louisvilleaccidentlawyer.filevineapp.com), Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\n\n---------- Forwarded message ---------\nFrom: Keri A Hall \nDate: Wed, Aug 21, 2024 at 9:09?AM\nSubject: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM\nTo: Jessa Galosmo \n\nJessa,\n\nI will be handling the PIP portion of the claim for your clients Abdullahi\nand Maryan Kassim for the MVA of 8/6/24. I have attached Acknowledgement\nletters of Representation, Copy of the Dec page and policy. I have also\nattached a PIP Application and Injury/treatment questionnaire form for your\nclients to complete. I received your payment directions and we will reserve\n$4,000 of the PIP benefits and only pay up to $6,000 of the PIP on bills\nthat are not Hospital related for your clients. Please let me know if there\nis anything further you may need regarding the PIP portion of the claim.\n\nSincerely,\n\nMedical Representative\n\nProgressive Direct Insurance Co\n\nKeri Hall\n\nPO BOX 2930\n\nClinton , IA 52733\n\nOffice: 502.909.3600/ Fax 877-213-7258 / Email: khall1@progressive.com\n\nMy Hours of Availability: Monday-Friday 7:00am-4:00pm EST\n\nThe contents of this e-mail and any attachments are confidential and may be\nlegally privileged, intended solely for the addressee. If you are not the\nintended recipient, be advised that any use, dissemination, distribution,\nstorage (including electronic) or copying of this e-mail is strictly\nprohibited. If you receive this e-mail in error, please notify the sender\nimmediately by reply e-mail and destroy the message and its attachments.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. The file concerns client Maryan Kassim and, in relation to the matter, also mentions Abdullahi Kassim. The note includes a forwarded correspondence titled “REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM,” which was sent from Jessa Galosmo to Abdullahi Kassim’s Filevine project email address and Maryan Kassim’s Filevine project email address.\n\nThe forwarded message originates from Keri A. Hall, dated Wednesday, August 21, 2024, at approximately 9:09 AM, with the subject again “REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM.” In her message, Keri states that she will handle the PIP portion of the claim for the clients Abdullahi and Maryan Kassim regarding the motor vehicle crash that occurred on 8/6/24. She notes that she has attached: Acknowledgement letters of Representation, a copy of the Declarations page (Dec page) and the insurance policy. She has also included a PIP Application and an Injury/Treatment Questionnaire form for the clients to complete. She mentions that she has received the payment directions and explains that Progressive Direct Insurance Co will reserve $4,000 of the PIP benefits and will pay up to $6,000 of the PIP on bills that are not hospital-related for the clients. She asks to be informed if there is anything further needed regarding the PIP portion of the claim.\n\nThe message is signed sincerely by the Medical Representative of Progressive Direct Insurance Co, Keri Hall, who provides the following contact details: PO Box 2930, Clinton, IA 52733; Office phone 502.909.3600; Fax 877-213-7258; Email khall1@progressive.com. Hours of availability are Monday through Friday, 7:00 AM to 4:00 PM EST. The email also includes a confidentiality and privilege notice stating that the contents of the message and any attachments are confidential and may be legally privileged, intended solely for the addressee; if you are not the intended recipient, you are prohibited from using, disseminating, distributing, storing (including electronic), or copying the email, and you should notify the sender and destroy the message and attachments if received in error.\n\nThe note closes with “All the best,” followed by Jessa Galosmo’s signature from Whaley Law Firm, including the firm’s phone number: (502) 357-9975 and fax: (502) 364-9363.",
+      "valid_at": "2024-08-21T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Abdullahi Kassim",
+            "relevance": "related client mentioned"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP claim discussed (handling PIP portion for clients; CLM# 24711062492)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "adjuster/medical representative handling the PIP portion"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling PIP payments (referred to as Progressive Direct Insurance Co in correspondence)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm forwarding the correspondence"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-26",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ attempted to call client. No answer, left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: August 26 2024",
+      "natural_language": "Initial client contact on August 26, 2024 with Maryan Kassim regarding the Maryan-Kassim-MVA-08-06-2024 case. Jessa attempted to call the client, but there was no answer, and a voicemail was left.",
+      "valid_at": "2024-08-26T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-26",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim, the client for case Maryan-Kassim-MVA-08-06-2024, was contacted today to provide an update. This contact is logged as update #cc.",
+      "valid_at": "2024-08-26T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-26",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-08-26 17:59:55.374000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. An outbound call was logged on August 26, 2024 at 17:59:55.374000+00:00 by Jessa Galosmo. The log lists the caller information as phone number 5023332962, with a caller ID of 502-333-2962, and the caller name Maryan Kassim; the caller email field is blank. A link to the Filevine contact is [filevine-link].",
+      "valid_at": "2024-08-26T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-27",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Fwd: Progressive Claim #24-711062492 Your Client: Maryan Kassim__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\n\n---------- Forwarded message ---------\nFrom: Brandi L Chappell-Haggard \nDate: Mon, Aug 26, 2024 at 5:21?PM\nSubject: Progressive Claim #24-711062492 Your Client: Maryan Kassim\nTo: JESSA@WHALEYLAWFIRM.COM \n\nJessa,\n\nI’m the bodily injury adjuster assigned to this claim for your client,\nMaryan Kassim. Can you please provide me with a letter of representation\nfor the bodily injury portion of this claim?\n\nThanks,\n\n*****PLEASE BE ADVISED OF MY NEW MAILING ADDRESS*******\n\n*Brandi L Chappell-Haggard* *|**Claims Specialist Intermediate – Louisville*\n\n*PAAN Board Member*\n\nProgressive Group of Insurance Companies\n\nP O BOX 94670\n\nCLEVELAND, OH 44101\n\nOffice: 502-909-3656/Fax: 833-905-1745\n\nHours: Monday-Friday 7am-3:30pm EST\n\nEmail: brandi_l_chappell-haggard@progressive.com\n\n [image: Logo Description automatically generated with low confidence]\n\nConnect with PAAN on Yammer\n\n| Join an ERG\n\n** All correspondence, including any e-mails we may receive from you, will\nbecome a part of the permanent claims file. *Please note: Any time\nsensitive requests including but not limited to demands should be sent via\nfacsimile or mail. ***\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim.\n\nOn August 26, 2024, at approximately 5:21 PM, Brandi L. Chappell-Haggard, the bodily injury adjuster assigned to Maryan Kassim’s Progressive claim (Progressive Claim #24-711062492), emailed Jessa Galosmo of Whaley Law Firm regarding the bodily injury portion of the claim. The subject line of the message was “Progressive Claim #24-711062492 Your Client: Maryan Kassim.” In the body of the email, Brandi introduced herself as the bodily injury adjuster for the claim and requested that Jessa provide a letter of representation for the bodily injury portion of the claim.\n\nBrandi also advised her new mailing address, writing: “PLEASE BE ADVISED OF MY NEW MAILING ADDRESS,” followed by her name and title: Brandi L Chappell-Haggard, Claims Specialist Intermediate – Louisville, and her designation as a PAAN Board Member for Progressive Group of Insurance Companies. The address listed was P O BOX 94670, Cleveland, OH 44101. Her office phone number was 502-909-3656, with fax 833-905-1745, and her hours from Monday to Friday were 7:00 AM to 3:30 PM EST. Her email was brandi_l_chappell-haggard@progressive.com. An image caption indicated a logo with a description described as being generated with low confidence. The message also included a note to “Connect with PAAN on Yammer” and an invitation to “Join an ERG.” A further notice stated that all correspondence, including any emails received from the recipient, would become part of the permanent claims file, and that any time-sensitive requests, including but not limited to demands, should be sent via facsimile or mail.\n\nThe email concluded with a closing from Jessa Galosmo of the Whaley Law Firm, including her contact details: “All the best, Jessa Galosmo,” Whaley Law Firm, Ph: (502) 357-9975, Fax: (502) 364-9363. The forward also referenced the sender/recipient lines surrounding the message, showing Jessa as the initial recipient and the Maryan Kassim filevine address as the To target.",
+      "valid_at": "2024-08-27T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client and subject of the claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Brandi Chappell-Haggard",
+            "relevance": "bodily injury adjuster who sent the email"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling the claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "bodily injury claim discussed in the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "recipient law firm / counsel for the client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "attorney/contact at Whaley Law Firm referenced in the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-08-27",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Re: Progressive Claim #24-711062492 Your Client: Maryan Kassim__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Brandi L Chappell-Haggard [BRANDI_L_CHAPPELL-HAGGARD@progressive.com](mailto:BRANDI_L_CHAPPELL-HAGGARD@progressive.com)\n\nHi Brandi,\n\nPlease see attached letter of representation.\n\nOn Mon, Aug 26, 2024 at 5:21?PM Brandi L Chappell-Haggard <\nBRANDI_L_CHAPPELL-HAGGARD@progressive.com> wrote:\n\n> Jessa,\n>\n>\n>\n> I’m the bodily injury adjuster assigned to this claim for your client,\n> Maryan Kassim. Can you please provide me with a letter of representation\n> for the bodily injury portion of this claim?\n>\n>\n>\n> Thanks,\n>\n>\n>\n> *****PLEASE BE ADVISED OF MY NEW MAILING ADDRESS*******\n>\n>\n>\n> *Brandi L Chappell-Haggard* *|**Claims Specialist Intermediate –\n> Louisville*\n>\n> *PAAN Board Member*\n>\n> Progressive Group of Insurance Companies\n>\n> P O BOX 94670\n>\n> CLEVELAND, OH 44101\n>\n> Office: 502-909-3656/Fax: 833-905-1745\n>\n> Hours: Monday-Friday 7am-3:30pm EST\n>\n> Email: brandi_l_chappell-haggard@progressive.com\n>\n>\n>\n> [image: Logo Description automatically generated with low confidence]\n>\n>\n> Connect with PAAN on Yammer\n> \n> | Join an ERG\n> \n>\n>\n>\n>\n>\n> ** All correspondence, including any e-mails we may receive from you, will\n> become a part of the permanent claims file. *Please note: Any time\n> sensitive requests including but not limited to demands should be sent via\n> facsimile or mail. ***\n>\n>\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim. This note concerns Progressive Claim #24-711062492 and the representation of Maryan Kassim in connection with a motor vehicle accident case.\n\nThe record shows an email thread between Jessa Galosmo of Whaley Law Firm and Brandi L. Chappell-Haggard, a bodily injury adjuster for Progressive. In Jessa’s message to Brandi, she wrote: “Hi Brandi, Please see attached letter of representation.” This email was sent in the framework of the Progressive claim for Maryan Kassim, with the subject line Re: Progressive Claim #24-711062492 Your Client: Maryan Kassim.\n\nOn Monday, August 26, 2024, at 5:21?PM, Brandi L. Chappell-Haggard replied. She identified herself as the bodily injury adjuster assigned to the Maryan Kassim claim and requested a letter of representation for the bodily injury portion of the claim: “Jessa, I’m the bodily injury adjuster assigned to this claim for your client, Maryan Kassim. Can you please provide me with a letter of representation for the bodily injury portion of this claim? Thanks.”\n\nBrandi’s reply also begins with a notice of her new mailing address, prefixed by “*****PLEASE BE ADVISED OF MY NEW MAILING ADDRESS*******.” The message lists her full title as “Brandi L Chappell-Haggard | Claims Specialist Intermediate – Louisville” and notes that she is a PAAN Board Member for the Progressive Group of Insurance Companies. Her contact details are provided: P.O. Box 94670, Cleveland, OH 44101; Office: 502-909-3656; Fax: 833-905-1745; Hours: Monday–Friday 7:00 am–3:30 pm EST; Email: brandi_l_chappell-haggard@progressive.com. The message also includes the Progressive-related branding (logo reference) and prompts to connect with PAAN on Yammer and to join an ERG. A cautionary note states that all correspondence, including any emails received, will become part of the permanent claims file, and that any time-sensitive requests (including but not limited to demands) should be sent via facsimile or mail.\n\nThe thread concludes with Jessa Galosmo’s closing: “All the best,” followed by her signature. Jessa is with Whaley Law Firm, and her contact details are Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2024-08-27T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client represented"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "claim discussed (bodily injury)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling the claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Brandi Chappell-Haggard",
+            "relevance": "bodily injury adjuster for the claim"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "attorney sending letter of representation"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing the client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-28",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call client. No answer, left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: August 28 2024",
+      "natural_language": "Initial client contact on August 28, 2024, with Maryan Kassim regarding the Maryan-Kassim-MVA-08-06-2024 case. The outreach was conducted by Jessa. The record notes that an attempt was made to call the client, there was no answer, and a voicemail was left.",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-28",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. The client contacted us today to provide an update, documented as update #cc, regarding the motor vehicle accident dated August 6, 2024.",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "contacted us / provided update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-28",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-08-28 16:00:29.599000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim. An outbound call from Jessa Galosmo was logged on August 28, 2024 at 16:00:29.599000+00:00 in relation to this case.\n\nCaller information shows the number 5023332962, with the Caller ID listed as 502-333-2962. The Caller Name is Maryan Kassim, and the Caller Email field is not provided. A link to the Filevine contact is available here: [filevine-link].",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-28",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA missed call for Jessa Galosmo was logged at 2024-08-28 16:17:59.959000+00:00 . #missedcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Initial entry for the Maryan-Kassim-MVA-08-06-2024 case shows that, on August 28, 2024 at 16:17:59.959000+00:00 (UTC), a missed call for Jessa Galosmo was logged and tagged with #missedcall. The caller information indicates the call originated from the phone number 502-333-2962, with the caller ID shown as 502-333-2962. The caller was identified as Maryan Kassim. There is no email address on file for this contact. A link to the Filevine contact is provided as [filevine-link]. Voicemail transcription is not present in the notes.",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller (missed call)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-28",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-08-28 18:37:37.587000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim in a motor vehicle accident matter. An outbound call was logged on August 28, 2024 at 18:37:37.587000+00:00, initiated by Jessa Galosmo. The record lists Caller Info as 5023332962, Caller ID as 502-333-2962, and Caller Name as Maryan Kassim. The Caller Email field is blank. A link to the Filevine contact is provided here: [filevine-link].",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller/subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-08-28",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n@jessa Give client a call. she has some questions about dental work. If it's MVA related make sure we have the provider info etc",
+      "natural_language": "The Maryan-Kassim-MVA-08-06-2024 case involves client Maryan Kassim. A note directs Jessa to call the client because she has questions about dental work. If the matter is MVA-related, we should ensure that we have the provider information on file, along with any related details.",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client to contact regarding dental questions"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-09-05",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Fwd: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Abdullahi Kassim - Filevine Project Email Address [AbdullahiKassimMVAZ4730635@louisvilleaccidentlawyer.filevineapp.com](mailto:AbdullahiKassimMVAZ4730635@louisvilleaccidentlawyer.filevineapp.com), Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Sep 05 2024 04:18:52 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: Keri A Hall \nDate: Thu, Sep 5, 2024 at 2:32?PM\nSubject: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM\nTo: Jessa Galosmo \n\nJessa,\n\nI have been handling the PIP portion of the claim for your clients\nAbdullahi and Maryan Kassim for the MVA of 8/6/24. I have not yet received\nthe completed PIP Applications or Injury/treatment questionnaire forms. I\nhave attached the forms that need to be completed by your clients as soon\nas possible. Please also provide me with an update on their treatment for\ntheir injuries sustained in the accident.\n\nSincerely,\n\nMedical Representative\n\nProgressive Direct Insurance Co\n\nKeri Hall\n\nPO BOX 2930\n\nClinton , IA 52733\n\nOffice: 502.909.3600/ Fax 877-213-7258 / Email: khall1@progressive.com\n\nMy Hours of Availability: Monday-Friday 7:00am-4:00pm EST\n\nThe contents of this e-mail and any attachments are confidential and may be\nlegally privileged, intended solely for the addressee. If you are not the\nintended recipient, be advised that any use, dissemination, distribution,\nstorage (including electronic) or copying of this e-mail is strictly\nprohibited. If you receive this e-mail in error, please notify the sender\nimmediately by reply e-mail and destroy the message and its attachments.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim. On September 5, 2024, Jessa Galosmo of Whaley Law Firm forwarded an email thread regarding CLM# 24711062492 involving Abdullahi and Maryan Kassim. The forwarded message carried the subject line “REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM” and was addressed to Abdullahi Kassim and Maryan Kassim via their Filevine Project Email Addresses.\n\nThe forwarded message originated from Keri A Hall and was dated Thursday, September 5, 2024, at 2:32 PM (time listed as 2:32?PM). In the message, Keri notes that she has been handling the Personal Injury Protection (PIP) portion of the claim for Abdullahi and Maryan Kassim for the motor vehicle accident (MVA) on 8/6/24. She states that she has not yet received the completed PIP Applications or Injury/Treatment Questionnaire forms. She attached the forms that need to be completed by the clients as soon as possible and asks for an update on their treatment for the injuries sustained in the accident. The message is signed “Sincerely, Medical Representative.” The contact details provided are Progressive Direct Insurance Co, PO BOX 2930, Clinton, IA 52733; Office: 502.909.3600; Fax: 877-213-7258; Email: khall1@progressive.com; Hours of Availability: Monday-Friday 7:00am-4:00pm EST.\n\nThe message includes a confidentiality disclaimer stating that the contents of the e-mail and any attachments are confidential and may be legally privileged, intended solely for the addressee. If you are not the intended recipient, any use, dissemination, distribution, storage (including electronic) or copying of this e-mail is strictly prohibited. If you receive this e-mail in error, you are to notify the sender immediately by reply e-mail and destroy the message and its attachments. The email ends with “All the best, Jessa Galosmo,” followed by Whaley Law Firm contact information: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2024-09-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "primary client; recipient of email and subject of the PIP claim"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Abdullahi Kassim",
+            "relevance": "co-client; recipient of email and subject of the PIP claim"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "forwarded the email (Jessa Galosmo)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling the claim (listed as Progressive Direct Insurance Co in message)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim - CLM# 24711062492 (Progressive)",
+            "relevance": "PIP claim discussed; requests for PIP applications and treatment updates"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "adjuster handling the PIP portion; originator of the message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-11",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nNorton Audubon records & bills saved to file",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves the client Maryan Kassim in a motor vehicle accident matter. Norton Audubon records and related bills have been saved to the file.",
+      "valid_at": "2024-09-11T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "records and related bills saved to file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-11",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryan Kassim__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: OMB MEDICAL RECORDS REQUESTS [OMBMRR@louisvilleky.gov](mailto:OMBMRR@louisvilleky.gov)\nCc: Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Sep 11 2024 08:28:50 GMT-04:00\n\nHello,\n\nWe received a notice of no records, but the ER records show the patient was\ntransported by Louisville Metro EMS. I have attached the first page. If\nyou could send the records and bill as soon as possible.\n\nThank you!\n\nThe Whaley Law Firm",
+      "natural_language": "Maryan Kassim, case Maryan-Kassim-MVA-08-06-2024. On September 11, 2024, at 08:28:50 GMT-04:00, Jessica Bottorff of The Whaley Law Firm sent an email from jessica@whaleylawfirm.com to OMB MEDICAL RECORDS REQUESTS at OMBMRR@louisvilleky.gov, with Maryan Kassim’s Filevine project email address CC’d (MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com). \n\nIn the body of the message, Bottorff stated that they had received a notice of no records, but that the emergency room records show the patient was transported by Louisville Metro EMS. She noted that she had attached the first page of the records and requested that the full records and the bill be sent as soon as possible. The note closed with “Thank you!” and was signed by The Whaley Law Firm.",
+      "valid_at": "2024-09-11T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject/patient"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sender of records request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm sending records request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "transporting provider referenced in ER records"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "OMB MEDICAL RECORDS REQUESTS",
+            "relevance": "recipient of records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-11",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryan Kassim__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: UofL Health - Mary & Elizabeth Hospital [ULHHIMROI@uoflhealth.org](mailto:ULHHIMROI@uoflhealth.org), University of Louisville Hospital [ulhcustomerservice@uoflhealth.org](mailto:ulhcustomerservice@uoflhealth.org)\nCc: Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Sep 11 2024 09:11:22 GMT-04:00\n\nAttached is a request for records & bills on our client, Maryan Kassim.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim. On September 11, 2024, at 9:11:22 a.m. GMT-04:00 (EDT), Jessica Bottorff of The Whaley Law Firm sent an email from jessica@whaleylawfirm.com to UofL Health - Mary & Elizabeth Hospital (ULHHIMROI@uoflhealth.org) and University of Louisville Hospital (ulhcustomerservice@uoflhealth.org), with Maryan Kassim CC'd to the Filevine project email MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com. The message states that attached is a request for records & bills on our client, Maryan Kassim. It ends with “Thanks!” and is signed The Whaley Law Firm.",
+      "valid_at": "2024-09-11T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-11",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nNorton Audubon records reviewed - LMEMS records noted (we previously got a notice of no records) - sent e-mail for the records & bills. Patient was transferred to UofL Hospital d/t facial trauma - added to provider list & e-mailed request.",
+      "natural_language": "Maryan Kassim is the client in the case Maryan-Kassim-MVA-08-06-2024. Norton Audubon records were reviewed, and LMEMS records were noted, even though we had previously received a notice indicating no LMEMS records existed. An email was sent requesting the records and the related bills.\n\nThe patient was transferred to the University of Louisville Hospital due to facial trauma. The patient was added to the provider list, and an email request for records (and bills) was sent.",
+      "valid_at": "2024-09-11T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client in the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "records reviewed and records/bills requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "LMEMS records noted and records/bills requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-11",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nLouisville Metro EMS records and bill saved to file",
+      "natural_language": "The case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim and relates to a motor vehicle accident on August 6, 2024.\n\nLouisville Metro EMS records and the EMS bill for this case have been saved to the file.",
+      "valid_at": "2024-09-11T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case client / subject of the episode"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "records and EMS bill saved to the file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-09-12 15:42:47.131000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024, with client Maryan Kassim, involves a recorded outbound contact. On September 12, 2024, at 15:42:47.131000 UTC, an outbound call was logged by Jessa Galosmo. The log lists the caller information as 5023332962, with the Caller ID shown as 502-333-2962. The Caller Name is Maryan Kassim, and the Caller Email field is blank. A link to the Filevine contact is provided: [filevine-link].",
+      "valid_at": "2024-09-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client/caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call. No answer, left vm. Send text and email. \n__Person Making Contact:__ Jessa\n__Date & Time__: September 12 2024",
+      "natural_language": "Initial client contact on September 12, 2024, regarding the motor vehicle accident case Maryan-Kassim-MVA-08-06-2024 for client Maryan Kassim. The contact attempt was made by Jessa. An attempted phone call to Maryan Kassim went unanswered, and a voicemail was left. In addition, a text message and an email were sent to the client.",
+      "valid_at": "2024-09-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted (phone voicemail left, text and email sent)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-09-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "On August 6, 2024, Maryan Kassim contacted our office to provide an update on the Maryan-Kassim-MVA-08-06-2024 case. The update is recorded as #cc.",
+      "valid_at": "2024-09-12T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "contacted office to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nHi, Maryan! We need a copy of the front of your Passport Insurance card. You can send a photo to this number and it will save directly to your file. Thank you!",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. During the contact, the message began with a greeting to Maryan: “Hi, Maryan!” and stated that a copy of the front of her Passport Insurance card was needed. She was informed that she can send a photo to this number and that it will save directly to her file. The communication closed with “Thank you!”",
+      "valid_at": "2024-09-12T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "recipient of message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-09-13 19:25:24.191000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 for client Maryan Kassim. On September 13, 2024, at 19:25:24.191000+00:00, a call from Jessa Galosmo was logged as an outbound call. The Caller Info shows the phone number 5023332962, with a Caller ID of 502-333-2962. The Caller Name is Maryan Kassim, and there is no email address on file. A Filevine contact link is available: [filevine-link].",
+      "valid_at": "2024-09-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Spoke with Maryan informed her she needs to complete the lost wage form before submitting it to her employer. Asked client to email the form once she completed it. SHe said she'll just drop it off to her office again. Confirmed Abdullahi's treatment. No ER treatment only went to chiro \n__Person Making Contact:__ Jessa\n__Date & Time__: September 13 2024",
+      "natural_language": "Initial client contact on September 13, 2024 with Maryan Kassim regarding a motor vehicle accident, contact initiated by Jessa. \n\nDuring the call, I informed Maryan that she needs to complete the lost wage form before submitting it to her employer. I asked her to email the form once she completes it, but she said she would drop it off at her office again. We confirmed Abdullahi's treatment. There was no ER treatment; she only went to a chiropractor.",
+      "valid_at": "2024-09-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "provider of treatment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-09-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim is the client in the Maryan-Kassim-MVA-08-06-2024 case regarding a motor vehicle accident. She was contacted today to provide update #cc.",
+      "valid_at": "2024-09-13T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-16",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Case ID 28238915__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [8478906883@rcfax.com](mailto:8478906883@rcfax.com)\nCc: [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Sep 16 2024 11:18:09 GMT-04:00",
+      "natural_language": "Maryan Kassim is the client in the Maryan-Kassim-MVA-08-06-2024 case, Case ID 28238915.\n\nOn September 16, 2024 at 11:18:09 GMT-04:00, an email was sent from Jessica Whaley of Whaley Law Firm (jessica@whaleylawfirm.com) to the fax address 8478906883@rcfax.com, with a CC sent to MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com.",
+      "valid_at": "2024-09-16T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client and CC recipient"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Whaley",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-16",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__New Insurance Note:__ 09/16 adjuster called in asking for client's treatment status\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. On 09/16, an adjuster from Progressive Insurance Company, handling Bodily Injury (BI) claims, called in to inquire about the client’s treatment status. The entry was written by Jessa and is filed under Inotes.",
+      "valid_at": "2024-09-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the file / treatment status inquiry"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Brandi Chappell-Haggard",
+            "relevance": "adjuster who called to inquire about treatment"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling the BI claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Bodily Injury claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-09-30",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Whaley Law Firm-Forms__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Maryan Kassim [IshaHope11@gmail.com](mailto:IshaHope11@gmail.com)\nDate: Mon Sep 30 2024 12:39:35 GMT-04:00\n\nHi Maryan,\n\nPlease complete all of the attached forms and return them to us.\n\nThank you.\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "The case is Maryan-Kassim-MVA-08-06-2024, with the client listed as Maryan Kassim.\n\nOn September 30, 2024 at 12:39:35 PM (GMT-04:00), an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to Maryan Kassim (IshaHope11@gmail.com). The message, which appears under the subject Whaley Law Firm-Forms, stated: \"Hi Maryan, Please complete all of the attached forms and return them to us. Thank you.\" It was signed, \"All the best, Jessa Galosmo,\" and included the firm's contact information: Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.",
+      "valid_at": "2024-09-30T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "recipient of email / client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-30",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-09-30 16:26:40.808000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024, involving client Maryan Kassim, has a recorded outbound communication on September 30, 2024. A call from Jessa Galosmo was logged at 16:26:40.808000+00:00, noted as an outbound call.\n\nThe log lists Caller Info as 5023332962 and Caller ID as 502-333-2962, with Caller Name recorded as Maryan Kassim. The Caller Email field is not provided. A link to the Filevine contact is included: [filevine-link].",
+      "valid_at": "2024-09-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-30",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Called client to get update on treatment. Client is still going to the chiro. Resend lost wage form and PIP app form \n__Person Making Contact:__ Jessa\n__Date & Time__: September 30 2024",
+      "natural_language": "Initial client contact on September 30, 2024, with Maryan Kassim regarding the Maryan-Kassim-MVA-08-06-2024 case.\n\nJessa called the client to obtain an update on treatment; the client is still attending chiropractic care. Jessa will resend the lost wage form and the PIP application form.",
+      "valid_at": "2024-09-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "current treatment provider"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP application form to be resent / claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-09-30",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim is the client in case Maryan-Kassim-MVA-08-06-2024, concerning a motor vehicle accident. The client was contacted today to provide an update, with reference #cc.",
+      "valid_at": "2024-09-30T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-10-10",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Package Credentials Notification__\nFrom: \"Uoflhealth Notification Service Package Resends send request to: amanda.mefford@uoflhealth.org\" [amanda.mefford@uoflhealth.org](mailto:amanda.mefford@uoflhealth.org)\nTo: [SARENA@whaleylawfirm.com](mailto:SARENA@whaleylawfirm.com)\nCC: \nDate: Thu, 10 Oct 2024 08:27:22 -0400\n\nPackage Password Notification\n\nYou will shortly be notified about a package that has been sent to you with the subject 'RID# 67586887 EMAIL EXPIRES IN 3 DAYS'.\n\nYou will be asked to click a link and then enter a username and password to access the package. The following credentials should be used:\nUsername: SARENA@WHALEYLAWFIRM.COM\nPassword: djdc7pt\nIf you need assistance, please contact Help Desk at 502.588.0411 / servicedesk@uoflhealth.org.\n\nRegards,\nUoflhealth Notification Service Package Resends send request to: amanda.mefford@uoflhealth.org\n\nUofL Health, Inc. is 501(c)(3) a nonprofit corporation is governed by an independent Board of Directors and is a related organization (as defined under 42 CFR 413.17) with the University of Louisville’s School of Medicine. UofL Health, Inc., on behalf of its teaching hospitals and providers, entered into academic affiliation agreement with the University of Louisville in which the University of Louisville agreed that its Health Sciences Center would be the academic partner with UofL Health, Inc. to maintain and enhance the University of Louisville’s affiliated graduate medical education as well as its research in medicine, dentistry, nursing and public health.\n\nConfidentiality Disclaimer: This message, including any attachments, is confidential, intended only for the named recipient(s) and may contain information that is privileged or exempt from disclosure under applicable law, including PHI (Protected Health Information) cover under the Health Insurance Portability and Accountability Act (HIPAA) of 1996. If you are not the intended recipient(s), you are notified that the dissemination, distribution, or copying of this message is strictly prohibited. If you receive this message in error or are not the named recipient(s), please notify the sender or contact the UofL Health IT Service Desk at 502-588-7003 to report an inadvertently received message.",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim.\n\nOn October 10, 2024, at 08:27:22 AM Eastern Time, an email titled “Package Credentials Notification” was sent from UofL Health’s Notification Service. The message indicates that a package resend request was sent to amanda.mefford@uoflhealth.org and that the notification was addressed to SARENA@WHALEYLAWFIRM.COM. The notice explains that a package will soon be sent to the recipient with the subject line: “RID# 67586887 EMAIL EXPIRES IN 3 DAYS.” The recipient will be asked to click a link and then enter a username and password to access the package. The credentials provided for access are: Username: SARENA@WHALEYLAWFIRM.COM; Password: djdc7pt. For assistance, the recipient is advised to contact the Help Desk at 502.588.0411 or servicedesk@uoflhealth.org. The message concludes with “Regards, Uoflhealth Notification Service Package Resends send request to: amanda.mefford@uoflhealth.org.”\n\nThe notification also included a broader context about UofL Health, Inc. It states that UofL Health, Inc. is a 501(c)(3) nonprofit corporation governed by an independent Board of Directors and is a related organization (as defined under 42 CFR 413.17) with the University of Louisville’s School of Medicine. It notes that UofL Health, Inc., on behalf of its teaching hospitals and providers, entered into an academic affiliation agreement with the University of Louisville, in which the University of Louisville agreed that its Health Sciences Center would be the academic partner with UofL Health, Inc. to maintain and enhance the University of Louisville’s affiliated graduate medical education as well as its research in medicine, dentistry, nursing and public health.\n\nConfidentiality Disclaimer: This message, including any attachments, is confidential, intended only for the named recipient(s), and may contain information that is privileged or exempt from disclosure under applicable law, including PHI (Protected Health Information) under the Health Insurance Portability and Accountability Act (HIPAA) of 1996. If you are not the intended recipient(s), you are notified that the dissemination, distribution, or copying of this message is strictly prohibited. If you receive this message in error or are not the named recipient(s), please notify the sender or contact the UofL Health IT Service Desk at 502-588-7003 to report an inadvertently received message.",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": []
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-10-10",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__New Package Notification__\nFrom: nicola greene [nicola.greene@uoflhealth.org](mailto:nicola.greene@uoflhealth.org)\nTo: [SARENA@whaleylawfirm.com](mailto:SARENA@whaleylawfirm.com)\nCC: \nDate: Thu, 10 Oct 2024 08:27:22 -0400\n\nNew Package Notification\n\nA package has been posted for you.\n\nFrom: nicola greene\nSubject: RID# 67586887 EMAIL EXPIRES IN 3 DAYS\n\nPlease use the following URL to view this package over a secure connection. After viewing this package, you may also download any associated attachments or compose a reply using your favorite web browser.\n\n( https://secureftp.uoflhealth.org/human.aspx?OrgID=7565&language=en&Username=SARENA%40WHALEYLAWFIRM.COM&Arg06=194064869&Arg12=message )\n\nYou will be required to supply a password to access this package. This password will be provided to you either by the original sender or by another email notification.\n\nIf you need assistance, please contact Help Desk at 502.588.0411 / servicedesk@uoflhealth.org.\n\nRegards,\nUoflhealth Notification Service Package Resends send request to: amanda.mefford@uoflhealth.org\n\nUofL Health, Inc. is 501(c)(3) a nonprofit corporation is governed by an independent Board of Directors and is a related organization (as defined under 42 CFR 413.17) with the University of Louisville’s School of Medicine. UofL Health, Inc., on behalf of its teaching hospitals and providers, entered into academic affiliation agreement with the University of Louisville in which the University of Louisville agreed that its Health Sciences Center would be the academic partner with UofL Health, Inc. to maintain and enhance the University of Louisville’s affiliated graduate medical education as well as its research in medicine, dentistry, nursing and public health.\n\nConfidentiality Disclaimer: This message, including any attachments, is confidential, intended only for the named recipient(s) and may contain information that is privileged or exempt from disclosure under applicable law, including PHI (Protected Health Information) cover under the Health Insurance Portability and Accountability Act (HIPAA) of 1996. If you are not the intended recipient(s), you are notified that the dissemination, distribution, or copying of this message is strictly prohibited. If you receive this message in error or are not the named recipient(s), please notify the sender or contact the UofL Health IT Service Desk at 502-588-7003 to report an inadvertently received message.",
+      "natural_language": "Maryan Kassim is the client for case Maryan-Kassim-MVA-08-06-2024. A new package notification was received on October 10, 2024 at 08:27:22 -0400. The message was sent from Nicola Greene (nicola.greene@uoflhealth.org) to SARENA@whaleylawfirm.com, with the subject RID# 67586887 EMAIL EXPIRES IN 3 DAYS. The body advised that a package has been posted for the recipient and included a URL to view the package over a secure connection, with the option to download any attached files or to compose a reply using a web browser. The URL provided was: https://secureftp.uoflhealth.org/human.aspx?OrgID=7565&language=en&Username=SARENA%40WHALEYLAWFIRM.COM&Arg06=194064869&Arg12=message. Access to the package requires a password, which will be provided either by the original sender or by another email notification. For assistance, the message directed the reader to contact the Help Desk at 502.588.0411 or servicedesk@uoflhealth.org. The message closed with regards from the Uoflhealth Notification Service and noted that the package resends send request to amanda.mefford@uoflhealth.org.\n\nAdditional context included in the notification states: UofL Health, Inc. is a 501(c)(3) nonprofit corporation governed by an independent Board of Directors and is a related organization (as defined under 42 CFR 413.17) with the University of Louisville’s School of Medicine. UofL Health, Inc., on behalf of its teaching hospitals and providers, entered into an academic affiliation agreement with the University of Louisville, in which the University of Louisville agreed that its Health Sciences Center would be the academic partner with UofL Health, Inc. to maintain and enhance the University of Louisville’s affiliated graduate medical education as well as its research in medicine, dentistry, nursing and public health.\n\nConfidentiality Disclaimer: This message, including any attachments, is confidential, intended only for the named recipient(s) and may contain information that is privileged or exempt from disclosure under applicable law, including PHI (Protected Health Information) covered under the Health Insurance Portability and Accountability Act (HIPAA) of 1996. If you are not the intended recipient(s), you are notified that the dissemination, distribution, or copying of this message is strictly prohibited. If you receive this message in error or are not the named recipient(s), please notify the sender or contact the UofL Health IT Service Desk at 502-588-7003 to report an inadvertently received message.",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "named client for the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-18",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n@jessa follow up on treatment status. companion has completed treatment. also need that LW stuff",
+      "natural_language": "Maryan Kassim is the client in a motor vehicle accident case identified as Maryan-Kassim-MVA-08-06-2024. The note directs Jessa to follow up on the treatment status. It also states that the companion has completed treatment and that there is a need for the LW stuff.",
+      "valid_at": "2024-10-18T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-18",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-10-18 16:01:31.942000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Maryan Kassim is the client for case Maryan-Kassim-MVA-08-06-2024. A call log was created on October 18, 2024 at 16:01:31.942000+00:00 (UTC), indicating an outbound call and noting that the log was entered by Jessa Galosmo. The log shows the caller information as 5023332962, with a caller ID of 502-333-2962. The caller name is Maryan Kassim, and no email address was provided. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2024-10-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller / subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-18",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Called client confirmed she's already done getting treatment with the chiro but still has upcoming appt with the dentist. Client wants the forms be sent to here via mail. \n__Person Making Contact:__ Jessa\n__Date & Time__: October 18 2024",
+      "natural_language": "Initial client contact on October 18, 2024, with Jessa regarding the Maryan-Kassim-MVA-08-06-2024 case for client Maryan Kassim in relation to a motor vehicle accident. The client confirmed that she has completed treatment with the chiropractor but still has an upcoming appointment with the dentist. She requested that the forms be mailed to her.",
+      "valid_at": "2024-10-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client who contacted intake; subject of episode"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "chiropractor who completed treatment"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville School of Dentistry",
+            "relevance": "dental provider with upcoming appointment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-10-18",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim is the client for case Maryan-Kassim-MVA-08-06-2024. Today, the client was contacted to provide an update, designated as update #cc.",
+      "valid_at": "2024-10-18T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-10-18",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryan Kassim__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: Starlight Chiropractic [starlitechiro@gmail.com](mailto:starlitechiro@gmail.com)\nCc: Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Oct 18 2024 12:50:59 GMT-04:00\n\nAttached is a request for records and bills on our client, Maryan Kassim.\n\nThanks!\n\nJessica Bottorff\n\nWhaley Law Firm\n\n712 Lyndon Ln.\n\nLouisville, KY 40222\n\nFax: (502)364-9363",
+      "natural_language": "In the Maryan-Kassim-MVA-08-06-2024 case, the client is Maryan Kassim. On October 18, 2024, at 12:50:59 PM GMT-04:00, Jessica Bottorff of Whaley Law Firm sent an email to Starlight Chiropractic (starlitechiro@gmail.com) regarding our client, Maryan Kassim. The message was addressed to Starlight Chiropractic and CC'd to Maryan Kassim’s Filevine project email address, MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com.\n\nThe body of the email stated that attached is a request for records and bills for our client, Maryan Kassim. The communication was signed by Jessica Bottorff of the Whaley Law Firm. The signature block provides the sender’s firm details: Whaley Law Firm, 712 Lyndon Ln., Louisville, KY 40222, with fax number (502) 364-9363.",
+      "valid_at": "2024-10-18T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the email / case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "recipient of records and bills request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sender of the email / attorney for the client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm sending the records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-10-18",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nRequest for records and bills emailed to Starlite Chiropractic",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim in connection with a motor vehicle accident. A request for Maryan Kassim's medical records and bills was emailed to Starlite Chiropractic.",
+      "valid_at": "2024-10-18T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "recipient of medical records and bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-22",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n@jessa Please follow up on health lien and outstanding r/b",
+      "natural_language": "Maryan Kassim is the client in the case Maryan-Kassim-MVA-08-06-2024, which concerns a motor vehicle accident that occurred on August 6, 2024.\n\nThe file directs Jessa to follow up on a health lien and on the outstanding r/b.",
+      "valid_at": "2024-10-22T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client in the case"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Conduent",
+            "relevance": "health lien to follow up (outstanding $3,830.39)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-10-30",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Fwd: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Abdullahi Kassim - Filevine Project Email Address [AbdullahiKassimMVAZ4730635@louisvilleaccidentlawyer.filevineapp.com](mailto:AbdullahiKassimMVAZ4730635@louisvilleaccidentlawyer.filevineapp.com), Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 30 2024 12:12:17 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: Keri A Hall \nDate: Wed, Oct 30, 2024 at 9:44?AM\nSubject: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM\nTo: Jessa Galosmo \n\nJessa,\n\nI wanted to follow up in regards to the PIP portion of the claim for your\nclients Abdullahi and Maryan Kassim for the MVA of 8/6/24. Are they\ncurrently both still treating for their injuries? I also have not received\nthe completed PIP Application forms for your clients. Can you please\nforward those as soon as possible. Are there currently any outstanding\nmedical bills or liens to be paid from the PIP coverage for your clients?\nWe have on file to pay up to $6,000 and reserve $4,000 of the PIP benefits.\nI look forward to an update. I have attached updated PIP payment ledgers\nfor both clients.\n\nSincerely,\n\nMedical Representative\n\nProgressive Direct Insurance Co\n\nKeri Hall\n\nPO BOX 2930\n\nClinton , IA 52733\n\nOffice: 502.909.3600/ Fax 877-213-7258 / Email: khall1@progressive.com\n\nMy Hours of Availability: Monday-Friday 7:00am-4:00pm EST\n\nThe contents of this e-mail and any attachments are confidential and may be\nlegally privileged, intended solely for the addressee. If you are not the\nintended recipient, be advised that any use, dissemination, distribution,\nstorage (including electronic) or copying of this e-mail is strictly\nprohibited. If you receive this e-mail in error, please notify the sender\nimmediately by reply e-mail and destroy the message and its attachments.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim.\n\nOn October 30, 2024, an email regarding CLM# 24711062492, involving Abdullahi Kassim and Maryan Kassim, was forwarded from Jessa Galosmo of Whaley Law Firm to the Filevine project email addresses for Abdullahi Kassim and Maryan Kassim. The forwarded message originated from Keri A. Hall of Progressive Direct Insurance Co.\n\nIn Keri Hall’s message, dated October 30, 2024 at 9:44 AM, she asked Jessa to follow up on the PIP portion of the claim for the MVA occurring on August 6, 2024. She asked whether both clients were still receiving treatment for their injuries and noted that she had not yet received the completed PIP Application forms for the clients, requesting that they be forwarded as soon as possible. She inquired whether there are any outstanding medical bills or liens to be paid from the PIP coverage for the clients. Progressive stated that they have on file authority to pay up to $6,000 and to reserve $4,000 of the PIP benefits. She also indicated that updated PIP payment ledgers for both clients were attached.\n\nThe message was sent to Jessa Galosmo, and it included the following sign-off information for Keri Hall: Medical Representative, Progressive Direct Insurance Co, PO BOX 2930, Clinton, IA 52733. Office: 502.909.3600, Fax: 877-213-7258, Email: khall1@progressive.com. Her hours of availability were listed as Monday through Friday, 7:00 AM to 4:00 PM EST. The contents of her email and attachments were confidential and may be legally privileged, intended solely for the addressee; if not the intended recipient, any use, dissemination, distribution, storage, or copying was strictly prohibited, and she requested notification and destruction of the message and attachments if received in error.\n\nThe forwarded message also included Jessa Galosmo’s closing and contact information: All the best, Jessa Galosmo, Whaley Law Firm, Ph: (502) 357-9975, Fax: (502) 364-9363.",
+      "valid_at": "2024-10-30T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client named in claim"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Abdullahi Kassim",
+            "relevance": "client named in claim"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling the PIP claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP CLM# 24711062492 (Progressive)",
+            "relevance": "PIP portion of the claim discussed"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "Progressive representative who sent the email / PIP adjuster"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm receiving the forwarded message"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "attorney/firm contact asked to follow up on PIP"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-10-30",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Re: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Keri A Hall [Keri_A_Hall@progressive.com](mailto:Keri_A_Hall@progressive.com)\nDate: Wed Oct 30 2024 09:13:26 GMT-04:00\n\nHi Keri,\n\nThanks for reaching out.\n\nPlease see attached PIP application forms for both clients. Abdullahi has\ncompleted his treatment but Maryan will need to go back to her dentist for\nher broken tooth.\n\nOn Wed, Oct 30, 2024 at 9:44?AM Keri A Hall \nwrote:\n\n> Jessa,\n>\n>\n>\n> I wanted to follow up in regards to the PIP portion of the claim for your\n> clients Abdullahi and Maryan Kassim for the MVA of 8/6/24. Are they\n> currently both still treating for their injuries? I also have not received\n> the completed PIP Application forms for your clients. Can you please\n> forward those as soon as possible. Are there currently any outstanding\n> medical bills or liens to be paid from the PIP coverage for your clients?\n> We have on file to pay up to $6,000 and reserve $4,000 of the PIP benefits.\n> I look forward to an update. I have attached updated PIP payment ledgers\n> for both clients.\n>\n>\n>\n> Sincerely,\n>\n>\n>\n> Medical Representative\n>\n> Progressive Direct Insurance Co\n>\n> Keri Hall\n>\n> PO BOX 2930\n>\n> Clinton , IA 52733\n>\n> Office: 502.909.3600/ Fax 877-213-7258 / Email: khall1@progressive.com\n>\n> My Hours of Availability: Monday-Friday 7:00am-4:00pm EST\n>\n> The contents of this e-mail and any attachments are confidential and may\n> be legally privileged, intended solely for the addressee. If you are not\n> the intended recipient, be advised that any use, dissemination,\n> distribution, storage (including electronic) or copying of this e-mail is\n> strictly prohibited. If you receive this e-mail in error, please notify\n> the sender immediately by reply e-mail and destroy the message and its\n> attachments.\n>\n>\n>\n>\n>\n>\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim and CLM# 24711062492 for Abdullahi and Maryan Kassim. On October 30, 2024, at 9:13:26 AM GMT-04:00, Jessa Galosmo of Whaley Law Firm sent an email to Keri A. Hall of Progressive Direct Insurance Co. Jessa thanked Keri for reaching out and advised that attached were the PIP application forms for both clients. She noted that Abdullahi had completed his treatment, while Maryan would need to return to her dentist because she has a broken tooth.\n\nEarlier that same day, at around 9:44 AM, Keri A. Hall followed up with a message to Jessa regarding the PIP portion of the claim for Abdullahi and Maryan Kassim related to the MVA of 8/6/24. Keri asked whether both clients were still treating for their injuries, and she stated that she had not received the completed PIP application forms for the clients and requested that they be forwarded as soon as possible. She inquired whether there were any outstanding medical bills or liens to be paid from the PIP coverage for the clients, noting that Progressive had on file up to $6,000 to pay and had reserved $4,000 of the PIP benefits. She requested an update and added that updated PIP payment ledgers for both clients were attached.\n\nKeri signed as Medical Representative for Progressive Direct Insurance Co, and her contact details were provided: Keri Hall, PO BOX 2930, Clinton, IA 52733; Office: 502.909.3600; Fax: 877-213-7258; Email: khall1@progressive.com; Hours of Availability: Monday–Friday 7:00 AM–4:00 PM EST. The email also included the confidentiality notice: the contents of the email and any attachments are confidential and may be legally privileged, intended solely for the addressee; if you are not the intended recipient, any use, dissemination, distribution, storage (including electronic), or copying is strictly prohibited, and you should notify the sender and destroy the message and attachments if received in error.\n\nAll the best, Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975; Fax: (502)364-9363.",
+      "valid_at": "2024-10-30T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client whose PIP application and ongoing treatment are discussed"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Abdullahi",
+            "relevance": "client whose PIP application and treatment status are discussed"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling the PIP benefits for the claims"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP portion of the claim discussed (applications, reserves, ledgers)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "Progressive medical representative/adjuster corresponding about the PIP claim"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "Whaley Law Firm attorney who sent the PIP application forms"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm representing the clients and sending PIP documentation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-01",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-11-01 13:18:15.047000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "The Maryan-Kassim-MVA-08-06-2024 case concerns client Maryan Kassim. On November 1, 2024, at 13:18:15.047000+00:00, an outbound call was logged, with Jessa Galosmo noted as the caller.\n\nThe call record lists the caller name as Maryan Kassim and provides the contact number 5023332962 (Caller Info) with Caller ID 502-333-2962. The caller email field is blank. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2024-11-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of call / listed caller"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "person who placed the outbound call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-01",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Called client to confirm treatment with dentist. Client said she's done with the root canal her next appointment will be to put crown on her tooth. \n__Person Making Contact:__ Jessa\n__Date & Time__: November 01 2024",
+      "natural_language": "Initial client contact on November 1, 2024, with Maryan Kassim regarding the Maryan-Kassim-MVA-08-06-2024 case. Jessa called the client to confirm treatment with the dentist. Maryan stated that she has completed the root canal, and her next appointment will be to have a crown placed on the tooth.",
+      "valid_at": "2024-11-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted / subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville School of Dentistry",
+            "relevance": "dental treatment provider (root canal / crown)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-11-01",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim is the client in the Maryan-Kassim-MVA-08-06-2024 case. The client was contacted today to provide an update, identified as update #cc.",
+      "valid_at": "2024-11-01T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "contacted to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-04",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nRequest for bills e-mailed to UofL Radiology",
+      "natural_language": "Maryan Kassim is the client in Case Maryan-Kassim-MVA-08-06-2024, which concerns a motor vehicle accident that occurred on August 6, 2024. A request for bills was emailed to UofL Radiology.",
+      "valid_at": "2024-11-04T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-04",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryan Kassim__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [patient.services@uoflhealth.org](mailto:patient.services@uoflhealth.org), [Sholanda.Wilson@uoflhealth.org](mailto:Sholanda.Wilson@uoflhealth.org)\nCc: [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Nov 04 2024 10:35:13 GMT-05:00\n\nAttached is a request for radiology physician billing on our client, Maryan\nKassim.\n\n \n\nThank you!",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim.\n\nIn an email dated Monday, November 4, 2024 at 10:35:13 AM (GMT-05:00) from jessica@whaleylawfirm.com, a message was sent regarding our client, Maryan Kassim. The email was addressed to University of Louisville Health's patient services at patient.services@uoflhealth.org and to Sholanda.Wilson@uoflhealth.org, with a CC to MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com. The body of the message states, \"Attached is a request for radiology physician billing on our client, Maryan Kassim.\"",
+      "valid_at": "2024-11-04T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of email"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Diagnostic X-Ray Physicians PSC",
+            "relevance": "radiology physician billing requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-04",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryan Kassim__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5028525593@rcfax.com](mailto:5028525593@rcfax.com)\nCc: [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Nov 04 2024 11:08:22 GMT-05:00\n\nAttached is a request records & bills on our client, Maryan Kassim.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim.\n\nAn email was sent on November 4, 2024 at 11:08:22 AM Eastern Time (GMT-05:00) from jessica@whaleylawfirm.com to 5028525593@rcfax.com, with CC to MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com. The body states: \"Attached is a request records & bills on our client, Maryan Kassim.\" The message ends with \"Thanks!\" and is signed by The Whaley Law Firm.",
+      "valid_at": "2024-11-04T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of records & bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-11-06",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n@jessa Please go ahead and request dental records/bills",
+      "natural_language": "Maryan Kassim is the client in case Maryan-Kassim-MVA-08-06-2024, which concerns a motor vehicle accident. The note directs Jessa to go ahead and request the client’s dental records and dental bills.",
+      "valid_at": "2024-11-06T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-11-07",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n@jessa radiology providers?",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 pertains to client Maryan Kassim and documents a motor vehicle accident occurring on 08-06-2024. The record includes a note addressed to Jessa regarding radiology providers.",
+      "valid_at": "2024-11-07T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Diagnostic X-Ray Physicians PSC",
+            "relevance": "radiology provider mentioned in note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-11",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nRequest for bills sent to Diagnostic X-Ray Physicians (for Norton Audubon Hospital) via ChartSwap",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves the client Maryan Kassim.\n\nA request has been made to send the bills to Diagnostic X-Ray Physicians for Norton Audubon Hospital via ChartSwap.",
+      "valid_at": "2024-11-11T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Diagnostic X-Ray Physicians PSC",
+            "relevance": "recipient of bills"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "hospital associated with billing"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-11-15",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim is the client for the case Maryan-Kassim-MVA-08-06-2024. Today, the client was contacted to provide an update, identified by code #cc.",
+      "valid_at": "2024-11-15T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-15",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Called client to get update. She said her dentist appointment was moved to next Friday. \n__Person Making Contact:__ Jessa\n__Date & Time__: November 15 2024",
+      "natural_language": "Initial client contact on November 15, 2024, with Jessa regarding the Maryan-Kassim-MVA-08-06-2024 case for client Maryan Kassim. Jessa called the client to obtain an update, and the client stated that her dentist appointment had been moved to next Friday.",
+      "valid_at": "2024-11-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted; provided appointment update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-15",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-11-15 17:47:47.273000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. On November 15, 2024, at 17:47:47.273000 UTC, an outbound call from Jessa Galosmo was logged in relation to this case. The caller information lists the phone number 5023332962 with a caller ID of 502-333-2962, and the caller name is Maryan Kassim. The caller email is not provided. A Filevine contact link is available at [filevine-link].",
+      "valid_at": "2024-11-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller (client)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-19",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nDiagnostic X-Ray Physicians bill saved to file",
+      "natural_language": "Maryan Kassim is the client in the Maryan-Kassim-MVA-08-06-2024 motor vehicle accident case.\n\nA bill from Diagnostic X-Ray Physicians has been saved to the file.",
+      "valid_at": "2024-11-19T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Diagnostic X-Ray Physicians PSC",
+            "relevance": "bill saved to file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-11-29",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim is the client in case Maryan-Kassim-MVA-08-06-2024, a motor vehicle accident matter. Today, the client contacted us to provide an update, identified as update #cc.",
+      "valid_at": "2024-11-29T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "provided update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-29",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Called client, she's still not done with her treatment. Still going to the dentist. \n__Person Making Contact:__ Jessa\n__Date & Time__: November 29 2024",
+      "natural_language": "Initial client contact on November 29, 2024 with Maryan Kassim regarding the Maryan-Kassim-MVA-08-06-2024 case. The contact was made by Jessa. The details note that the client has not yet finished her treatment and is still going to the dentist.",
+      "valid_at": "2024-11-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-29",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2024-11-29 18:27:45.247000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This note concerns Case Maryan-Kassim-MVA-08-06-2024 for client Maryan Kassim, related to a motor vehicle accident.\n\nA call from Jessa Galosmo was logged on November 29, 2024 at 18:27:45.247000+00:00, categorized as an outbound call. The log lists the caller information as follows: phone number 5023332962, Caller ID 502-333-2962, and Caller Name Maryan Kassim. The Caller Email field is blank. A link to the Filevine contact is provided: [filevine-link].",
+      "valid_at": "2024-11-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2024-12-01",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n**CASE FILE ORGANIZATION COMPLETED**\n\nCompleted comprehensive 8-bucket file organization for case folder. All documents systematically categorized, renamed per naming convention, and organized into proper directory structure.\n\n**Summary:**\n- Total files organized: 199 files\n- Medical Records: 124 files across 8 providers (Norton Audubon Hospital, UofL Health, University of Louisville School of Dentistry, Starlite Injury, Starlite Chiropractic, Louisville Metro EMS, Diagnostic X-Ray Physicians PSC, ULP Radiological Associates)\n- Insurance: 24 PIP documents with Progressive\n- Investigation: 12 files (police report + 10 injury photos)\n- Lien: 10 files (Conduent Medicaid lien $3,830.39)\n- Client: 5 files (intake package, authorizations, insurance card)\n- Duplicate provider directories merged (11 directories consolidated to 8)\n\n**Quality Metrics:**\n- 100% naming convention compliance\n- Error rate: 1.39% (1 date error caught and corrected)\n- All PDF/EML files have companion .md files\n- Overall quality: EXCELLENT\n\n**Case folder now ready for efficient document access and case management.**",
+      "natural_language": "For the Maryan-Kassim-MVA-08-06-2024 case, the case file organization for Maryan Kassim was completed. An eight-bucket, comprehensive file organization was implemented for the case folder, with all documents systematically categorized, renamed according to the naming convention, and placed into a proper directory structure.\n\nIn total, 199 files were organized. The medical records account for 124 files across eight providers: Norton Audubon Hospital, UofL Health, University of Louisville School of Dentistry, Starlite Injury, Starlite Chiropractic, Louisville Metro EMS, Diagnostic X-Ray Physicians PSC, and ULP Radiological Associates. The Insurance section comprises 24 PIP documents with Progressive. The Investigation section contains 12 files, including one police report and ten injury photos. The Lien section holds 10 files detailing a Conduent Medicaid lien in the amount of $3,830.39. The Client section includes 5 files (intake package, authorizations, insurance card). Additionally, duplicate provider directories were merged, with 11 directories consolidated to 8.\n\nQuality metrics were also established: 100% naming convention compliance, an error rate of 1.39% (one date error was caught and corrected), and all PDF/EML files have companion .md files. Overall, the work was rated EXCELLENT. The case folder is now ready for efficient document access and streamlined case management.",
+      "valid_at": "2024-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "hospital medical records organized in case file"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville School of Dentistry",
+            "relevance": "dental records included in organized medical records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "chiropractic records included in organized medical records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "EMS records included in organized medical records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Diagnostic X-Ray Physicians PSC",
+            "relevance": "radiology records included in organized medical records"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP documents (24) with Progressive organized in Insurance section"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Conduent",
+            "relevance": "Conduent Medicaid lien ($3,830.39) detailed in Lien section"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2024-12-01",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n**CASE FILE ORGANIZATION COMPLETED**\n\nCompleted comprehensive 8-bucket file organization for case folder. All documents systematically categorized, renamed per naming convention, and organized into proper directory structure.\n\n**Summary:**\n- Total files organized: 199 files\n- Medical Records: 124 files across 8 providers (Norton Audubon Hospital, UofL Health, University of Louisville School of Dentistry, Starlite Injury, Starlite Chiropractic, Louisville Metro EMS, Diagnostic X-Ray Physicians PSC, ULP Radiological Associates)\n- Insurance: 24 PIP documents with Progressive\n- Investigation: 12 files (police report + 10 injury photos)\n- Lien: 10 files (Conduent Medicaid lien $3,830.39)\n- Client: 5 files (intake package, authorizations, insurance card)\n- Duplicate provider directories merged (11 directories consolidated to 8)\n\n**Quality Metrics:**\n- 100% naming convention compliance\n- Error rate: 1.39% (1 date error caught and corrected)\n- All PDF/EML files have companion .md files\n- Overall quality: EXCELLENT\n\n**Case folder now ready for efficient document access and case management.**",
+      "natural_language": "Maryan Kassim’s motor vehicle accident case file, Maryan-Kassim-MVA-08-06-2024, has undergone complete organization. The case folder now uses an eight-bucket file system, with all documents systematically categorized, renamed according to the naming convention, and placed into a proper directory structure.\n\nIn total, 199 files were organized. The medical records consist of 124 files across eight providers: Norton Audubon Hospital, UofL Health, University of Louisville School of Dentistry, Starlite Injury, Starlite Chiropractic, Louisville Metro EMS, Diagnostic X-Ray Physicians PSC, and ULP Radiological Associates. Insurance documents include 24 PIP items with Progressive. The investigation folder contains 12 files, comprising a police report and 10 injury photos. A lien folder holds 10 files documenting a Conduent Medicaid lien in the amount of $3,830.39. The client folder contains 5 files, including an intake package, authorizations, and an insurance card. Additionally, duplicate provider directories were merged, with 11 directories consolidated into 8.\n\nQuality metrics for the organized file set are strong: 100% naming convention compliance, an error rate of 1.39% (one date error was detected and corrected), all PDF/EML files have companion .md files, and the overall quality is rated EXCELLENT. The case folder is now ready for efficient document access and streamlined case management.",
+      "valid_at": "2024-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "medical records organized"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville School of Dentistry",
+            "relevance": "medical records organized"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "medical records organized"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "medical records organized"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Diagnostic X-Ray Physicians PSC",
+            "relevance": "medical records organized"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "24 PIP items with Progressive (insurance documents)"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Conduent",
+            "relevance": "Conduent Medicaid lien documented ($3,830.39)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-05",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Fwd: Maryan Kassim *2nd Request__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Dec 05 2024 08:05:44 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Jessica Bottorff \nDate: Thu, Dec 5, 2024 at 8:05?AM\nSubject: Maryan Kassim *2nd Request\nTo: University of Louisville Physicians \nCc: UofL Health - Mary & Elizabeth Hospital \n\nAttached is a request for radiology physician billing on our client, Maryan\nKassim.\n\nThank you!",
+      "natural_language": "In the Maryan-Kassim-MVA-08-06-2024 case, the client is Maryan Kassim.\n\nThis note documents a forwarded email chain concerning a second request for radiology billing for the client, Maryan Kassim. The forward is labeled \"Fwd: Maryan Kassim *2nd Request\" and originates from Jessica Bottorff of Whaley Law Firm. It was sent on Thursday, December 5, 2024 at 08:05:44 GMT-05:00 to Maryan Kassim's Filevine project email address at MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com.\n\nThe forwarded message includes the original communication from Jessica Bottorff dated Thursday, December 5, 2024 at 8:05?AM, with the subject \"Maryan Kassim *2nd Request.\" It was addressed to the University of Louisville Physicians and CC'd to UofL Health - Mary & Elizabeth Hospital. The body of that message states: \"Attached is a request for radiology physician billing on our client, Maryan Kassim. Thank you!\"",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the forwarded email / client discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__New Insurance Note:__ 12/13 adj called asking for update on client's treatment and if we want to release reservations to the remaining bill to chiro. Advised to keep reservations\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim. On December 13, 2024, an adjuster from Progressive Insurance Company called to request an update on the client's treatment and to ask whether we should release the reservations on the remaining bill to the chiropractor. We advised keeping the reservations.\n\nThe insurance type is Personal Injury Protection (PIP), and the insurer is Progressive Insurance Company. This note was written by Jessa.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer involved / company of caller"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "adjuster who contacted for update"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP claim discussed"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "chiropractor whose remaining bill/reservations were discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-17",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Talked to Abdullahi, confirmed Mayan is still going to the dentist for some procedure. \n__Person Making Contact:__ Jessa\n__Date & Time__: December 17 2024",
+      "natural_language": "Initial client contact on December 17, 2024, with Jessa regarding the Maryan Kassim case (Maryan-Kassim-MVA-08-06-2024). Jessa spoke with Abdullahi and confirmed that Maryan is still going to the dentist for a procedure.",
+      "valid_at": "2024-12-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville School of Dentistry",
+            "relevance": "dental provider performing procedure"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-17",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves Maryan Kassim in a motor vehicle accident. The client, Maryan Kassim, was contacted today to provide update #cc.",
+      "valid_at": "2024-12-17T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Recap\nMaryan confirmed she is still receiving dental treatment related to her vehicle accident from last year.\nShe has completed the first two procedures and is currently working on the second one.\nMaria has a root canal appointment scheduled for this Friday.\nShe anticipates needing three more appointments to complete her treatment. \n__Person Making Contact:__ Jessa\n__Date & Time__: January 13 2025",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim. Initial client contact on January 13, 2025 with Jessa regarding Maryan Kassim's motor vehicle accident from last year. Maryan confirmed she is still receiving dental treatment related to her vehicle accident from last year. She has completed the first two procedures and is currently working on the second one. Maria has a root canal appointment scheduled for this Friday. She anticipates needing three more appointments to complete her treatment.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client; subject of contact and receiving dental treatment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Maryan Kassim is the client in the Maryan-Kassim-MVA-08-06-2024 motor vehicle accident case. Today, the client was contacted to provide an update, labeled #cc, on the matter.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2025-01-13 15:56:45.573000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact for case Maryan-Kassim-MVA-08-06-2024 was recorded on January 13, 2025, at 3:56:45.573 PM UTC, with the entry indicating an outbound call logged by Jessa Galosmo.\n\nThe record shows Caller Info as 5023332962 and Caller ID as 502-333-2962. The Caller Name on the log is Maryan Kassim, and no caller email was provided.\n\nA link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller/contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nThis case involves a vehicle accident from last year, where the client, Maryan Kassim, is receiving ongoing dental treatment related to injuries sustained in the accident.\nThe most recent activity was a client contact on January 13, 2025, where Maryan confirmed she is still undergoing dental procedures, has completed two, and has a root canal scheduled for the upcoming Friday. She anticipates needing three more appointments to complete her treatment. (See details)\nThere are no apparent risks or red flags mentioned in the provided activity data. However, the ongoing dental treatment indicates the case is still active and may require continued monitoring of medical progress. (See details)\nThe next recommended step is to follow up with the client after her scheduled root canal and continue monitoring her dental treatment progress. It would be advisable to schedule the next check-in with the client in about two weeks, as per the previous follow-up pattern. (See details), (See details)",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 pertains to a vehicle accident from the prior year involving the client, Maryan Kassim, who is currently receiving ongoing dental treatment for injuries sustained in the accident.\n\nThe most recent activity occurred on January 13, 2025, when Maryan confirmed she remains in dental care, has completed two procedures, and has a root canal scheduled for the upcoming Friday. She anticipates needing three additional appointments to complete the treatment.\n\nThere are no apparent risks or red flags mentioned in the activity data provided. However, the ongoing dental treatment indicates the case remains active and may require continued monitoring of medical progress.\n\nThe next recommended step is to follow up with the client after her scheduled root canal and to continue monitoring her dental treatment progress. It would be advisable to schedule the next check-in with the client in about two weeks, in line with the previous follow-up pattern.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "injured client; subject of case and ongoing dental treatment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-24",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Re: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Keri A Hall [Keri_A_Hall@progressive.com](mailto:Keri_A_Hall@progressive.com)\nDate: Fri Jan 24 2025 01:36:05 GMT-05:00\n\nHi Keri,\n\nPlease see attached request for updated PIP log.\n\nOn Wed, Oct 30, 2024 at 9:44?AM Keri A Hall \nwrote:\n\n> Jessa,\n>\n>\n>\n> I wanted to follow up in regards to the PIP portion of the claim for your\n> clients Abdullahi and Maryan Kassim for the MVA of 8/6/24. Are they\n> currently both still treating for their injuries? I also have not received\n> the completed PIP Application forms for your clients. Can you please\n> forward those as soon as possible. Are there currently any outstanding\n> medical bills or liens to be paid from the PIP coverage for your clients?\n> We have on file to pay up to $6,000 and reserve $4,000 of the PIP benefits.\n> I look forward to an update. I have attached updated PIP payment ledgers\n> for both clients.\n>\n>\n>\n> Sincerely,\n>\n>\n>\n> Medical Representative\n>\n> Progressive Direct Insurance Co\n>\n> Keri Hall\n>\n> PO BOX 2930\n>\n> Clinton , IA 52733\n>\n> Office: 502.909.3600/ Fax 877-213-7258 / Email: khall1@progressive.com\n>\n> My Hours of Availability: Monday-Friday 7:00am-4:00pm EST\n>\n> The contents of this e-mail and any attachments are confidential and may\n> be legally privileged, intended solely for the addressee. If you are not\n> the intended recipient, be advised that any use, dissemination,\n> distribution, storage (including electronic) or copying of this e-mail is\n> strictly prohibited. If you receive this e-mail in error, please notify\n> the sender immediately by reply e-mail and destroy the message and its\n> attachments.\n>\n>\n>\n>\n>\n>\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "This case, Maryan-Kassim-MVA-08-06-2024, involves clients Abdullahi and Maryan Kassim following a motor vehicle accident on August 6, 2024, with CLM# 24711062492. The file identifies Maryan Kassim as the client and references Abdullahi as a co-client in the matter.\n\nOn October 30, 2024, at 9:44?AM, Keri A Hall of Progressive Direct Insurance Co wrote to Jessa Galosmo regarding the PIP portion of the claim for Abdullahi and Maryan Kassim. She asked whether both clients were still treating for their injuries, requested the completed PIP Application forms for the clients, and inquired whether there are any outstanding medical bills or liens to be paid from the PIP coverage. She noted that Progressive has on file to pay up to $6,000 and to reserve $4,000 of the PIP benefits, and she stated that updated PIP payment ledgers for both clients were attached. The message concluded with her signature block, identifying her as a Medical Representative for Progressive Direct Insurance Co, with contact details: Keri Hall, PO BOX 2930, Clinton, IA 52733; Office: 502.909.3600; Fax: 877-213-7258; Email: khall1@progressive.com; and Hours of Availability: Monday-Friday 7:00am-4:00pm EST. The contents of the email and any attachments were described as confidential and may be legally privileged, intended solely for the addressee.\n\nOn January 24, 2025, at 01:36:05 GMT-05:00, Jessa Galosmo of Whaley Law Firm responded to Keri with a brief message: \"Hi Keri, Please see attached request for updated PIP log.\" The subject line of this correspondence was \"Re: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM.\" Jessa’s signature followed, listing Whaley Law Firm and providing her contact information: Ph: (502)357-9975; Fax: (502)364-9363.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "named client in file"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Abdullahi",
+            "relevance": "co-client in file"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling the PIP coverage"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "PIP adjuster who sent the inquiry"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #24711062492",
+            "relevance": "PIP claim discussed in the correspondence"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "responding law firm representing the clients"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-24",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2025-01-24 18:37:10.418000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim. An outbound call was logged on January 24, 2025, at 18:37:10.418000+00:00 (UTC) by Jessa Galosmo. The record shows the caller information as 5023332962, with a caller ID of 502-333-2962, and the caller name listed as Maryan Kassim. The Caller Email field is empty. A link to the Filevine contact is provided: [filevine-link].",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller / subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-24",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Initial client contact on August 6, 2024 with Maryan Kassim regarding the motor vehicle accident noted as case Maryan-Kassim-MVA-08-06-2024. The client was contacted today to give update #cc.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-24",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call for Jessa Galosmo was logged at 2025-01-24 19:07:13.322000+00:00 . #inboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. The initial client contact was an inbound call logged for Jessa Galosmo on January 24, 2025 at 19:07:13.322 UTC.\n\nFrom the call records: the caller information lists 5023332962, with the caller ID shown as 502-333-2962. The caller name is Maryan Kassim, and no email address was provided. There is a link to the Filevine contact: [filevine-link].",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller / client contact"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "logged recipient of inbound call / case handler"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-24",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Called client to get dental insurance info. Can't hear her well. She said she'll callback. \n__Person Making Contact:__ Jessa\n__Date & Time__: January 24 2025",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. On January 24, 2025, Jessa made initial contact with Maryan Kassim to obtain dental insurance information; the line was difficult to hear, and Maryan said she would call back.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-27",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Fwd: [EXTERNAL] Re: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 27 2025 08:14:36 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Keri A Hall \nDate: Mon, Jan 27, 2025 at 7:54?AM\nSubject: RE: [EXTERNAL] Re: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN\nKASSIM\nTo: Jessa Galosmo \n\nJessa,\n\nPlease find attached a copy of the PIP log for Maryan Kassim.\n\nSincerely,\n\nMedical Representative\n\nProgressive Direct Insurance Co\n\nKeri Hall\n\nPO BOX 2930\n\nClinton , IA 52733\n\nOffice: 502.909.3600/ Fax 877-213-7258 / Email: khall1@progressive.com\n\nMy Hours of Availability: Monday-Friday 7:00am-4:00pm EST\n\nThe contents of this e-mail and any attachments are confidential and may be\nlegally privileged, intended solely for the addressee. If you are not the\nintended recipient, be advised that any use, dissemination, distribution,\nstorage (including electronic) or copying of this e-mail is strictly\nprohibited. If you receive this e-mail in error, please notify the sender\nimmediately by reply e-mail and destroy the message and its attachments.\n\n*From:* Jessa Galosmo \n*Sent:* Friday, January 24, 2025 1:36 PM\n*To:* Keri A Hall \n*Subject:* [EXTERNAL] Re: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN\nKASSIM\n\nHi Keri,\n\nPlease see attached request for updated PIP log.\n\nOn Wed, Oct 30, 2024 at 9:44?AM Keri A Hall \nwrote:\n\nJessa,\n\nI wanted to follow up in regards to the PIP portion of the claim for your\nclients Abdullahi and Maryan Kassim for the MVA of 8/6/24. Are they\ncurrently both still treating for their injuries? I also have not received\nthe completed PIP Application forms for your clients. Can you please\nforward those as soon as possible. Are there currently any outstanding\nmedical bills or liens to be paid from the PIP coverage for your clients?\nWe have on file to pay up to $6,000 and reserve $4,000 of the PIP benefits.\nI look forward to an update. I have attached updated PIP payment ledgers\nfor both clients.\n\nSincerely,\n\nMedical Representative\n\nProgressive Direct Insurance Co\n\nKeri Hall\n\nPO BOX 2930\n\nClinton , IA 52733\n\nOffice: 502.909.3600/ Fax 877-213-7258 / Email: khall1@progressive.com\n\nMy Hours of Availability: Monday-Friday 7:00am-4:00pm EST\n\nThe contents of this e-mail and any attachments are confidential and may be\nlegally privileged, intended solely for the addressee. If you are not the\nintended recipient, be advised that any use, dissemination, distribution,\nstorage (including electronic) or copying of this e-mail is strictly\nprohibited. If you receive this e-mail in error, please notify the sender\nimmediately by reply e-mail and destroy the message and its attachments.\n\n-- \n\nAll the best,\n\nJessa Galosmo\n\nWhaley Law Firm\n\nPh: (502)357-9975\n\nFax: (502)364-9363\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024. Client: Maryan Kassim.\n\nIn late January 2025, Whaley Law Firm forwarded an external email thread regarding CLM# 24711062492 for Abdullahi and Maryan Kassim. The forwarded message originated from Jessa Galosmo and was sent to Maryan Kassim’s Filevine project email address on January 27, 2025 at 08:14:36 EST.\n\nThe principal note within the thread is a message from Keri A Hall of Progressive Direct Insurance Co, dated January 27, 2025 at 7:54 AM, to Jessa Galosmo. Keri wrote: “Please find attached a copy of the PIP log for Maryan Kassim.” She provided her contact information: Progressive Direct Insurance Co, PO Box 2930, Clinton, IA 52733; Office: 502.909.3600; Fax: 877-213-7258; Email: khall1@progressive.com. She also listed hours of availability (Monday–Friday, 7:00 AM–4:00 PM EST) and included a confidentiality and privilege notice stating that the contents and any attachments are confidential and intended solely for the addressee; if not the intended recipient, any use, dissemination, distribution, storage, or copying is prohibited, and to notify the sender and destroy the message and attachments if received in error. The email was signed by Keri Hall.\n\nThe thread also contains an earlier exchange: on Friday, January 24, 2025 at 1:36 PM, Jessa Galosmo wrote to Keri: “Hi Keri, Please see attached request for updated PIP log.” The chain further includes an earlier message from October 30, 2024 at 9:44 AM, in which Keri wrote to Jessa regarding the PIP portion of the claim for Abdullahi and Maryan Kassim in relation to the MVA of 8/6/24. In that message, Keri asked whether both clients were still treating for their injuries and noted that the completed PIP Application forms had not yet been received. She inquired about any outstanding medical bills or liens to be paid from PIP coverage and stated that Progressive had on file to pay up to $6,000 and reserve $4,000 of the PIP benefits. She requested an update and attached updated PIP payment ledgers for both clients.\n\nThe January 27, 2025 email from Keri was forwarded with the PIP log attached, as indicated in the thread. The forwarding and all related messages include the same confidentiality and privilege notices that accompanied the earlier communications. The correspondence closes with the sign-offs from Jessa Galosmo of Whaley Law Firm, including her contact information.",
+      "valid_at": "2025-01-27T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the PIP log / client of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer providing PIP coverage and sender's employer"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP claim discussed (CLM# 24711062492)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "adjuster who sent the PIP log and corresponded about PIP payments"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "forwarded the email thread and received the PIP log"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "Whaley Law Firm contact who communicated with the adjuster and forwarded the log"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Conduent",
+            "relevance": "potential lien referenced regarding payment from PIP coverage"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-27",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n@jessa Get an ledgers from PIP and health insurance. Make sure we have dental insurance info and request that lien",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim, in a motor vehicle accident matter. Jessa has been instructed to obtain ledgers from PIP and health insurance, to ensure we have dental insurance information on file, and to request a lien.",
+      "valid_at": "2025-01-27T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP ledger to be obtained"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Conduent",
+            "relevance": "lien to be requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-17",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__New Insurance Note:__ 02/17 Adj called asking for update and asking for new direction for the reservation. Provide update on client's treatment and advised to keep reservations.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Maryan Kassim is the client in case Maryan-Kassim-MVA-08-06-2024, a motor vehicle accident case dated August 6, 2024. On February 17, an adjuster called asking for an update and for new direction regarding the reservation. I provided an update on the client’s treatment and advised to keep reservations.\n\nThe insurance involved is Personal Injury Protection (PIP) with Progressive Insurance Company. This note was written by Jessa and is filed under Inotes.",
+      "valid_at": "2025-02-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer on PIP claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP - Progressive Insurance Company",
+            "relevance": "claim involved"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "adjuster who called requesting update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-10",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__CLIENT CONTACT__\n__Details:__ Called client to confirm treatment status. Client said she's not yet done because her appointment was moved on May 9th. \n__Person Making Contact:__ Jessa\n__Date & Time__: March 10 2025",
+      "natural_language": "Initial client contact on March 10, 2025 with Jessa, regarding Maryan Kassim's treatment status in the Maryan-Kassim-MVA-08-06-2024 case. The client stated she has not yet completed treatment because her appointment was moved on May 9.",
+      "valid_at": "2025-03-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client contacted regarding treatment status"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-10",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim in a motor vehicle accident matter. The client was contacted today to provide an update, designated as update #cc.",
+      "valid_at": "2025-03-10T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "contacted to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-10",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA call from Jessa Galosmo was logged at 2025-03-10 13:07:37.694000+00:00 . #outboundcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim.\n\nAn outbound call was logged on March 10, 2025, at 13:07:37.694000 UTC by Jessa Galosmo. The record lists the caller information as follows: Caller Info 5023332962, Caller ID 502-333-2962, and Caller Name Maryan Kassim. The Caller Email field is blank. A link to the Filevine contact is provided as [filevine-link].",
+      "valid_at": "2025-03-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-03-17",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nas of 3/17 all docs downloaded and saved to Google Drive",
+      "natural_language": "Maryan Kassim is the client in the case Maryan-Kassim-MVA-08-06-2024. \n\nAs of March 17, all documents have been downloaded and saved to Google Drive.",
+      "valid_at": "2025-03-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-26",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__New Insurance Note:__ 03/26 Adj called in asking for updated direction for the 4k reserve. Abdullahi still has one more unpaid bill due to reservations and Maryann has several bills from Starlight. Asked for an updated PIP ledger.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. In the New Insurance Note dated 03/26, an adjuster called in asking for updated direction for the $4,000 reserve. The note indicates that Abdullahi still has one more unpaid bill due to reservations, and that Maryann has several bills from Starlight. The caller requested an updated PIP ledger.\n\nInsurance type is Personal Injury Protection (PIP), and the insurance company is Progressive Insurance Company. This entry was written by Jessa.",
+      "valid_at": "2025-03-26T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of case / client with bills"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling PIP"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP claim discussed / requested PIP ledger"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "adjuster who would be contact for PIP claim (caller/requester)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "medical provider with outstanding bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-26",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Fwd: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Abdullahi Kassim - Filevine Project Email Address [AbdullahiKassimMVAZ4730635@louisvilleaccidentlawyer.filevineapp.com](mailto:AbdullahiKassimMVAZ4730635@louisvilleaccidentlawyer.filevineapp.com), Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Mar 26 2025 09:25:31 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: Keri A Hall \nDate: Wed, Mar 26, 2025 at 9:18?AM\nSubject: REGARDING CLM# 24711062492 ABDULLAHI AND MARYAN KASSIM\nTo: Jessa Galosmo \n\nJessa,\n\nPlease find attached the PIP payment ledgers you requested for your clients\nAbdullahi and Maryan Kassim.\n\nSincerely,\n\nMedical Representative\n\nProgressive Direct Insurance Co\n\nKeri Hall\n\nPO BOX 2930\n\nClinton , IA 52733\n\nOffice: 502.909.3600/ Fax 877-213-7258 / Email: khall1@progressive.com\n\nMy Hours of Availability: Monday-Friday 7:00am-4:00pm EST\n\nThe contents of this e-mail and any attachments are confidential and may be\nlegally privileged, intended solely for the addressee. If you are not the\nintended recipient, be advised that any use, dissemination, distribution,\nstorage (including electronic) or copying of this e-mail is strictly\nprohibited. If you receive this e-mail in error, please notify the sender\nimmediately by reply e-mail and destroy the message and its attachments.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nOn March 26, 2025, a forwarded email chain regarding CLM# 24711062492 involving Abdullahi and Maryan Kassim was sent. The forward originated from Jessa Galosmo of Whaley Law Firm and was addressed to Abdullahi Kassim’s Filevine project email and Maryan Kassim’s Filevine project email, with the subject line REGARDING CLM# 24711062492 ABDULLI AND MARYAN KASSIM. The forwarding timestamp shown was Wed Mar 26, 2025 09:25:31 GMT-04:00.\n\nThe forwarded message itself contained a note from Keri A Hall dated Wed, Mar 26, 2025 at 9:18?AM, addressed to Jessa Galosmo. In that message, Keri stated: “Jessa, Please find attached the PIP payment ledgers you requested for your clients Abdullahi and Maryan Kassim.” The message was signed as “Sincerely, Medical Representative,” on behalf of Progressive Direct Insurance Co, and identified the sender as Keri Hall. Her contact details followed: PO BOX 2930, Clinton, IA 52733; Office phone 502.909.3600; Fax 877-213-7258; Email khall1@progressive.com. Her hours of availability were listed as Monday through Friday, 7:00 a.m. to 4:00 p.m. EST.\n\nThe message also included a confidentiality notice stating that the contents of the email and any attachments are confidential and may be legally privileged, intended solely for the addressee, and that any use, dissemination, distribution, storage (including electronic), or copying by anyone else is strictly prohibited. If the recipient was not the intended one, the notice advised notifying the sender by reply email and destroying the message and its attachments.\n\nThe forwarded thread concluded with the line “-- All the best, Jessa Galosmo,” followed by the Whaley Law Firm signature, which included Jessa Galosmo’s contact information: Whaley Law Firm; Ph: (502)357-9975; Fax: (502)364-9363.",
+      "valid_at": "2025-03-26T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the forwarded email / client named on PIP payment ledgers"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Abdullahi Kassim",
+            "relevance": "co-client named on PIP payment ledgers"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer providing PIP payment ledgers"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP payment ledgers for the clients"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Keri Hall",
+            "relevance": "sender / Medical Representative for Progressive who provided PIP payment ledgers"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "forwarding law firm that circulated the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "Whaley Law Firm attorney who forwarded the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-10",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Text Message__\n__Message:__ Just giving you an update \n__Date and Time:__ 2025-05-10 \n__From Number:__ +15023332962 \n__To Number:__ +15023579939\n__Direction:__ Inbound",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. On May 10, 2025, an inbound text message was received from +15023332962 to +15023579939 containing the message: \"Just giving you an update.\"",
+      "valid_at": "2025-05-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the case / sender of the update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-10",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Text Message__\n__Message:__ I went to my first appointment for my second tooth yesterday. I got another appointment on Tuesday.\n__Date and Time:__ 2025-05-10 \n__From Number:__ +15023332962 \n__To Number:__ +15023579939\n__Direction:__ Inbound",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. On May 10, 2025, an inbound text message was received from the sender’s number +15023332962 to the office number +15023579939, corresponding to the case, with the date and time recorded as 2025-05-10. The message content states: \"I went to my first appointment for my second tooth yesterday. I got another appointment on Tuesday.\"",
+      "valid_at": "2025-05-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "sender of text / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-13",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA missed call for Jessa Galosmo was logged at 2025-05-13 17:24:10.342000+00:00 . #missedcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n I am, yes. Hi, it is Marine. I was trying to give you an update on my 2 situation. They worked on the last week. I got 2 I went to 2 appointments. So far you want, you can call me back at 500 233-320-9602. Thank you, bye.",
+      "natural_language": "Maryan-Kassim-MVA-08-06-2024 is a case involving client Maryan Kassim in relation to a motor vehicle accident. A missed call intended for Jessa Galosmo was logged on May 13, 2025 at 17:24:10.342000+00:00 (UTC). The call record lists Caller Info as 5023332962, with Caller ID 502-333-2962 and Caller Name Maryan Kassim; the Caller Email field is blank. A link to the Filevine contact is available: [filevine-link]. The entry is tagged with #missedcall.\n\nVoicemail transcription from the caller reads: \"I am, yes. Hi, it is Marine. I was trying to give you an update on my 2 situation. They worked on the last week. I got 2 I went to 2 appointments. So far you want, you can call me back at 500 233-320-9602. Thank you, bye.\"",
+      "valid_at": "2025-05-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-14",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nA missed call for Jessa Galosmo was logged at 2025-05-14 13:30:58.809000+00:00 . #missedcall\n\nCaller Info: 5023332962 \n\nCaller ID: 502-333-2962 \n\nCaller Name: Maryan Kassim \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Maryan-Kassim-MVA-08-06-2024 involves client Maryan Kassim. On May 14, 2025, at 13:30:58.809000+00:00 (UTC), a missed call intended for Jessa Galosmo was logged. The caller information shows the number 502-333-2962, with the caller name listed as Maryan Kassim; the caller ID is 502-333-2962. No caller email was provided. A link to the Filevine contact is available at [filevine-link].\n\nVoicemail transcription is not provided in this entry. There is no voicemail transcription attached.",
+      "valid_at": "2025-05-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "caller / subject of entry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-05-14",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nMaryan, It's Justin from the Whaley Law Firm. Have you completed treatment?",
+      "natural_language": "Initial client contact on August 6, 2024, in the Maryan-Kassim-MVA-08-06-2024 case with client Maryan Kassim.\n\nThe contact consisted of a message from Justin at the Whaley Law Firm to Maryan, reading: \"Maryan, It's Justin from the Whaley Law Firm. Have you completed treatment?\"",
+      "valid_at": "2025-05-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "recipient of initial contact / subject of message"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "person who contacted the client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-06-10",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nConduent called for status of her case -case is still open - client still having dental treatment#cc",
+      "natural_language": "Maryan Kassim is the client in the motor vehicle accident case Maryan-Kassim-MVA-08-06-2024.\n\nConduent called to inquire about the status of her case. The case remains open, and she is still undergoing dental treatment.",
+      "valid_at": "2025-06-10T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Conduent",
+            "relevance": "called to inquire about case status / lienholder"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-17",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryan Kassim__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com)\nDate: Thu Jul 17 2025 01:07:50 GMT-04:00\n\nProbably done with all her treatment. FOllow up and get records for demand.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Maryan Kassim is the client in Case Maryan-Kassim-MVA-08-06-2024, which concerns a motor vehicle accident that occurred on 08-06-2024.\n\nOn July 17, 2025 at 01:07:50 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email regarding this matter. The message was addressed to Maryan Kassim at her Filevine project email address MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com and to Justin Chumbley (Justin@whaleylawfirm.com). The email was from agwhaley@whaleylawfirm.com. The body of the message stated: \"Probably done with all her treatment. FOllow up and get records for demand.\" The signature block identified the sender as Aaron Whaley of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, with phone number 502-583-4022.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the case / message recipient"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's law firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-07-29",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nCarrie from Progressive - called and left msg to get info on Maryan Kassim treatment status - it appears client still has future treatment scheduled (dental) - left Carrie voicemail with that information #cc",
+      "natural_language": "Initial client contact on August 6, 2024, with Maryan Kassim regarding a motor vehicle accident. Carrie from Progressive called and left a message to obtain information on Maryan Kassim's treatment status. It appears the client still has future treatment scheduled, specifically dental treatment. A voicemail with this information was left for Carrie. The entry ends with '#cc'.",
+      "valid_at": "2025-07-29T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "caller/insurer contacting about treatment status"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville School of Dentistry",
+            "relevance": "dental treatment discussed/scheduled"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Agent for Maryan-Kassim-MVA-08-06-2024 - 2025-09-12",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\nCase overview completed on 09/12/2025. Updated all memory blocks with current case information including client details, insurance coverage (Progressive BI/PIP), medical providers, treatment status, and case summary. Client completed chiropractic treatment but continues dental work at UofL School of Dentistry for broken tooth. Case status updated - awaiting dental treatment completion to proceed with demand preparation.",
+      "natural_language": "Maryan Kassim is the client in the motor vehicle accident matter titled Maryan-Kassim-MVA-08-06-2024. The case overview was completed on September 12, 2025, and the file’s memory blocks were updated to reflect current case information, including client details, Progressive BI and PIP insurance coverage, medical providers, treatment status, and a case summary.\n\nThe client has completed chiropractic treatment but continues dental work at UofL School of Dentistry to address a broken tooth. The case status has been updated to awaiting dental treatment completion before moving forward with demand preparation.",
+      "valid_at": "2025-09-12T00:00:00",
+      "author": "Agent for Maryan-Kassim-MVA-08-06-2024",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "named client in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer providing BI and PIP coverage"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim coverage noted"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP claim coverage noted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "chiropractic treatment completed"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville School of Dentistry",
+            "relevance": "ongoing dental treatment for broken tooth"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Maryan-Kassim-MVA-08-06-2024\nClient: Maryan Kassim\n\n__Maryann Kassim__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Maryan Kassim - Filevine Project Email Address [MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com](mailto:MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 03:09:01 GMT-04:00\n\nPlease see records and bills that we are missing. She's probably done\ntreating at this point, and we can send the demand.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Maryan-Kassim-MVA-08-06-2024 concerns client Maryan Kassim. In the note header, the name appears as “Maryann Kassim,” a variation of the spelling.\n\nAn email from the matter’s file shows that on Wednesday, October 29, 2025 at 03:09:01 GMT-04:00, Aaron Whaley of Whaley Law Firm sent a message to Justin Chumbley and to the Maryan Kassim Filevine project email address (MaryanKassimMVAZ4729149@louisvilleaccidentlawyer.filevineapp.com). The body of the email states: “Please see records and bills that we are missing. She's probably done treating at this point, and we can send the demand.” The message is signed by Aaron Whaley.\n\nSignature details: Aaron Whaley, Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maryan Kassim",
+            "relevance": "subject of the case / patient referenced"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "email sender / attorney involved in matter"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's law firm"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

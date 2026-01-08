@@ -1,0 +1,4066 @@
+[
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "WCClaim",
+      "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Workers' Compensation (WC)-238042cs"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Hartford Mutual Insurance"
+    },
+    "attributes": {
+      "policy_number": "238042cs"
+    },
+    "context": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Mark-Smith-Sr-MVA-5-31-2025-Personal Injury Protection (PIP)-1785Q936Q"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1785Q936Q"
+    },
+    "context": "Mark-Smith-Sr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Bodily Injury (BI)-1123215-2"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "American Transit Insurance"
+    },
+    "attributes": {
+      "policy_number": "1123215-2"
+    },
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-J6L8DKY"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Root Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "J6L8DKY"
+    },
+    "context": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jeremy-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "300-793616-2024"
+    },
+    "context": "Jeremy-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-56240577"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "SafeCo Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "56240577"
+    },
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Robin-Wilder-Hamilton-MVA-6-15-2023-Bodily Injury (BI)-C0119952"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Sea Harbor Insurance"
+    },
+    "attributes": {
+      "policy_number": "C0119952"
+    },
+    "context": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-822910337"
+    },
+    "context": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "James-Kiper-MVA-12-5-2022-Uninsured Motorist (UM)-IZX7996"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Travelers Insurance"
+    },
+    "attributes": {
+      "policy_number": "IZX7996"
+    },
+    "context": "James-Kiper-MVA-12-5-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Bodily Injury (BI)-22-8451213"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "22-8451213"
+    },
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Timothy-Ruhl-Premise-09-14-2023-Bodily Injury (BI)-GL00000003555090"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Shelter Insurance"
+    },
+    "attributes": {
+      "policy_number": "GL00000003555090"
+    },
+    "context": "Timothy-Ruhl-Premise-09-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Cory-Stephenson-MVA-9-03-2025-Bodily Injury (BI)-1789V463J"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1789V463J"
+    },
+    "context": "Cory-Stephenson-MVA-9-03-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-None-060018233"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "SafeCo Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "060018233"
+    },
+    "context": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jonah-Price-MVA-8-25-2025-Bodily Injury (BI)"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Farmers Insurance"
+    },
+    "attributes": {
+      "policy_number": null
+    },
+    "context": "Jonah-Price-MVA-8-25-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jonah-Price-MVA-8-25-2025-Personal Injury Protection (PIP)-25-918731776"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Mobilitas Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-918731776"
+    },
+    "context": "Jonah-Price-MVA-8-25-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Sean-May-MVA-8-19-2025-Personal Injury Protection (PIP)-1789H664T"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1789H664T"
+    },
+    "context": "Sean-May-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "James-Crowdus-MVA-8-10-2025-Bodily Injury (BI)-1788T648L"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1788T648L"
+    },
+    "context": "James-Crowdus-MVA-8-10-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "James-Crowdus-MVA-8-10-2025-Personal Injury Protection (PIP)-1788V453C"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1788V453C"
+    },
+    "context": "James-Crowdus-MVA-8-10-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Brenda-Lang-MVA-09-03-2021-Personal Injury Protection (PIP)-1724J054B"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1724J054B"
+    },
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Michael-Crader-MVA-5-19-2023-Bodily Injury (BI)-4863358"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4863358"
+    },
+    "context": "Michael-Crader-MVA-5-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jaysha-Aponte-MVA-3-15-2025-Personal Injury Protection (PIP)-25-311813973"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-311813973"
+    },
+    "context": "Jaysha-Aponte-MVA-3-15-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-AT0000003753979"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Shelter Insurance"
+    },
+    "attributes": {
+      "policy_number": "AT0000003753979"
+    },
+    "context": "Malcom-Glass-Jones-MVA-10-2-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Morgan-Freeman-MVA-12-31-2021-Bodily Injury (BI)-3100028790"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Indiana Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "3100028790"
+    },
+    "context": "Morgan-Freeman-MVA-12-31-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Bodily Injury (BI)-4791863"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4791863"
+    },
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Shakeith-Simon-MVA-2-16-2025-Personal Injury Protection (PIP)-250151830"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "National General"
+    },
+    "attributes": {
+      "policy_number": "250151830"
+    },
+    "context": "Shakeith-Simon-MVA-2-16-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Malcom-Glass-Jones-MVA-10-2-2024-Personal Injury Protection (PIP)-3753979"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Shelter Insurance"
+    },
+    "attributes": {
+      "policy_number": "3753979"
+    },
+    "context": "Malcom-Glass-Jones-MVA-10-2-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jae-Kale-Lewis-MVA-02-24-2025-Personal Injury Protection (PIP)-1780Z939M"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1780Z939M"
+    },
+    "context": "Jae-Kale-Lewis-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Shaylynn-Keeney-MVA-02-24-2025-Personal Injury Protection (PIP)-1780Z939M"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1780Z939M"
+    },
+    "context": "Shaylynn-Keeney-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Lonnie-Stevens-MVA-2-14-2025-Personal Injury Protection (PIP)-17-Q610-2P9"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "17-Q610-2P9"
+    },
+    "context": "Lonnie-Stevens-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "William-Tucker-Premise-11-23-2024-Bodily Injury (BI)-GC20241696797"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Louisville Water Company"
+    },
+    "attributes": {
+      "policy_number": "GC20241696797"
+    },
+    "context": "William-Tucker-Premise-11-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Fina-Fatty-MVA-11-05-2024-Personal Injury Protection (PIP)-25-679103870"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-679103870"
+    },
+    "context": "Fina-Fatty-MVA-11-05-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Chase-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance - Lexington"
+    },
+    "attributes": {
+      "policy_number": "300-793616-2024"
+    },
+    "context": "Chase-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Shakeith-Simon-MVA-2-16-2025-Uninsured Motorist (UM)-250229255"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "National General"
+    },
+    "attributes": {
+      "policy_number": "250229255"
+    },
+    "context": "Shakeith-Simon-MVA-2-16-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Personal Injury Protection (PIP)-054658453-04"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Liberty Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "054658453-04"
+    },
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Justin-Bullock-MVA-6-30-2025-Bodily Injury (BI)-25631251364"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25631251364"
+    },
+    "context": "Justin-Bullock-MVA-6-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Robin-Willis-Beck-Premise-09-21-2023-Bodily Injury (BI)-SF-USTT-26089723"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Soundview Claims Solutions"
+    },
+    "attributes": {
+      "policy_number": "SF-USTT-26089723"
+    },
+    "context": "Robin-Willis-Beck-Premise-09-21-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Personal Injury Protection (PIP)-250531476"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Direct Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "250531476"
+    },
+    "context": "Faizon-Procter-Witcher-MVA-7-01-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Rayshawn-Wilson-MVA-4-10-2025-Personal Injury Protection (PIP)-25806894629"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25806894629"
+    },
+    "context": "Rayshawn-Wilson-MVA-4-10-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Justin-Bullock-MVA-6-30-2025-Personal Injury Protection (PIP)-5117901"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "5117901"
+    },
+    "context": "Justin-Bullock-MVA-6-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Cynthia-Gibson-MVA-7-9-2025-Personal Injury Protection (PIP)-1787K940X"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1787K940X"
+    },
+    "context": "Cynthia-Gibson-MVA-7-9-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Morgan-Freeman-MVA-12-31-2021-Medpay - Indiana PIP-187968220"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "187968220"
+    },
+    "context": "Morgan-Freeman-MVA-12-31-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Estate-of-Evangeline-Young-MVA-8-12-2023-Bodily Injury (BI)-305240079"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Risk Management Services Company"
+    },
+    "attributes": {
+      "policy_number": "305240079"
+    },
+    "context": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Dewayne-Ward-MVA-8-29-2023-Bodily Injury (BI)-20091551"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Elco Insurance"
+    },
+    "attributes": {
+      "policy_number": "20091551"
+    },
+    "context": "Dewayne-Ward-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Dewayne-Ward-MVA-8-29-2023-Personal Injury Protection (PIP)-054658453-07"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Liberty Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "054658453-07"
+    },
+    "context": "Dewayne-Ward-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023-Personal Injury Protection (PIP)-054658453-03"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Liberty Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "054658453-03"
+    },
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "James-Kiper-MVA-12-5-2022-Personal Injury Protection (PIP)-IZX7996"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Travelers Insurance"
+    },
+    "attributes": {
+      "policy_number": "IZX7996"
+    },
+    "context": "James-Kiper-MVA-12-5-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Personal Injury Protection (PIP)-7005284778-1-2"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Farmers Insurance"
+    },
+    "attributes": {
+      "policy_number": "7005284778-1-2"
+    },
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Shaylynn-Keeney-MVA-02-24-2025-Uninsured Motorist (UM)-1780Z939M"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1780Z939M"
+    },
+    "context": "Shaylynn-Keeney-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jaysha-Aponte-MVA-3-15-2025-Bodily Injury (BI)-250-068-9702"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Mobilitas Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "250-068-9702"
+    },
+    "context": "Jaysha-Aponte-MVA-3-15-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Jessica-Mahaney-MVA-03-09-2025-Uninsured Motorist (UM)-25-615241502"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-615241502"
+    },
+    "context": "Jessica-Mahaney-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-20091551"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Elco Insurance"
+    },
+    "attributes": {
+      "policy_number": "20091551"
+    },
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Bodily Injury (BI)-17-48L4-99K"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "17-48L4-99K"
+    },
+    "context": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jimmy-Ferguson-MVA-5-30-2024-Personal Injury Protection (PIP)-4979889"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4979889"
+    },
+    "context": "Jimmy-Ferguson-MVA-5-30-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Trasandra-Miller-MVA-5-30-2025-Personal Injury Protection (PIP)-17-86Q372Z"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "17-86Q372Z"
+    },
+    "context": "Trasandra-Miller-MVA-5-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Trasandra-Miller-MVA-5-30-2025-Bodily Injury (BI)-1785S576T"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1785S576T"
+    },
+    "context": "Trasandra-Miller-MVA-5-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Chase-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "300-793616-2024"
+    },
+    "context": "Chase-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Daniel-W-Volk-MVA-09-24-2021-Under Insured Motorist (UIM)-47060829"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "SafeCo Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "47060829"
+    },
+    "context": "Daniel-W-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Daniel-W-Volk-MVA-09-24-2021-Personal Injury Protection (PIP)-47060829"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "SafeCo Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "47060829"
+    },
+    "context": "Daniel-W-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Charles-T-Johnson-MVA-4-18-2023-Bodily Injury (BI)-1748L638H"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1748L638H"
+    },
+    "context": "Charles-T-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Daniel-W-Volk-MVA-09-24-2021-Bodily Injury (BI)-ZPA003356461"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Grange Insurance"
+    },
+    "attributes": {
+      "policy_number": "ZPA003356461"
+    },
+    "context": "Daniel-W-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Charles-T-Johnson-MVA-4-18-2023-Personal Injury Protection (PIP)-3002385272023"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "3002385272023"
+    },
+    "context": "Charles-T-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jacob-Herrle-MVA-6-17-2025-Bodily Injury (BI)-733249"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Collins & Company"
+    },
+    "attributes": {
+      "policy_number": "733249"
+    },
+    "context": "Jacob-Herrle-MVA-6-17-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Cynthia-Gibson-MVA-7-9-2025-Uninsured Motorist (UM)-1787Z112D"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1787Z112D"
+    },
+    "context": "Cynthia-Gibson-MVA-7-9-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-2077817"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Ryder National Liabilities Office"
+    },
+    "attributes": {
+      "policy_number": "2077817"
+    },
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Patrice-Harris-MVA-6-19-2025-Bodily Injury (BI)-1786S949G"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1786S949G"
+    },
+    "context": "Patrice-Harris-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Nicole-Tewes-MVA-7-5-2025-Personal Injury Protection (PIP)-A00006928311"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Erie Insurance Group"
+    },
+    "attributes": {
+      "policy_number": "A00006928311"
+    },
+    "context": "Nicole-Tewes-MVA-7-5-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jessica-Mahaney-MVA-03-09-2025-Personal Injury Protection (PIP)-25-615241502"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-615241502"
+    },
+    "context": "Jessica-Mahaney-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Dustin-Meade-MVA-03-09-2025-Uninsured Motorist (UM)-25-615241502"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-615241502"
+    },
+    "context": "Dustin-Meade-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Bryson-Brown-MVA-6-29-2025-Personal Injury Protection (PIP)-799220033"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Allstate Insurance"
+    },
+    "attributes": {
+      "policy_number": "799220033"
+    },
+    "context": "Bryson-Brown-MVA-6-29-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Forrest-Muss-MVA-07-20-2025-Bodily Injury (BI)-136751083"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "North American Risk Services"
+    },
+    "attributes": {
+      "policy_number": "136751083"
+    },
+    "context": "Forrest-Muss-MVA-07-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Mark-Smith-Jr-MVA-5-31-2025-Personal Injury Protection (PIP)-1785Q936Q"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1785Q936Q"
+    },
+    "context": "Mark-Smith-Jr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Bodily Injury (BI)-250531476"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Direct Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "250531476"
+    },
+    "context": "Faizon-Procter-Witcher-MVA-7-01-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Henrietta-Jenkins-MVA-5-20-2025-Bodily Injury (BI)-25-391686743"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-391686743"
+    },
+    "context": "Henrietta-Jenkins-MVA-5-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Bryson-Brown-MVA-6-29-2025-Bodily Injury (BI)-1787F478S"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1787F478S"
+    },
+    "context": "Bryson-Brown-MVA-6-29-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Mark-Smith-Jr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "USAA Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "001218586-803"
+    },
+    "context": "Mark-Smith-Jr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Mark-Smith-Sr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "USAA Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "001218586-803"
+    },
+    "context": "Mark-Smith-Sr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Lejzane-Miftari-MVA-6-18-2025-Personal Injury Protection (PIP)-250488368"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Direct Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "250488368"
+    },
+    "context": "Lejzane-Miftari-MVA-6-18-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UIMClaim",
+      "name": "Lejzane-Miftari-MVA-6-18-2025-Underinsured Motorist (UIM)-250488368"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Direct Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "250488368"
+    },
+    "context": "Lejzane-Miftari-MVA-6-18-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Personal Injury Protection (PIP)-2500262226"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Mobilitas Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "2500262226"
+    },
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Personal Injury Protection (PIP)-25-806916369"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-806916369"
+    },
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-2500262226"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Mobilitas Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "2500262226"
+    },
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Paxon-Woodford-MVA-6-19-2025-Uninsured Motorist (UM)-8065806"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "8065806"
+    },
+    "context": "Paxon-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "James-Woodford-MVA-6-19-2025-Uninsured Motorist (UM)-8065806"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "8065806"
+    },
+    "context": "James-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Patrice-Harris-MVA-6-19-2025-Uninsured Motorist (UM)-8065806"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "8065806"
+    },
+    "context": "Patrice-Harris-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Jae-Kale-Lewis-MVA-02-24-2025-Uninsured Motorist (UM)-1780Z939M"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1780Z939M"
+    },
+    "context": "Jae-Kale-Lewis-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Curtis-Lee-Justice-MVA-2-5-2023-Bodily Injury (BI)-23ATKY338083287"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Clearcover"
+    },
+    "attributes": {
+      "policy_number": "23ATKY338083287"
+    },
+    "context": "Curtis-Lee-Justice-MVA-2-5-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-054658453-02"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Liberty Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "054658453-02"
+    },
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Elizabeth-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "24-902741838"
+    },
+    "context": "Elizabeth-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jeremy-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "24-902741838"
+    },
+    "context": "Jeremy-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Elizabeth-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "300-793616-2024"
+    },
+    "context": "Elizabeth-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Sir-Hinkle-MVA-6-23-2025-Bodily Injury (BI)-4A2506R0N0S0002"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Sedgwick"
+    },
+    "attributes": {
+      "policy_number": "4A2506R0N0S0002"
+    },
+    "context": "Sir-Hinkle-MVA-6-23-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-25-806916369"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-806916369"
+    },
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-054658453-02"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Liberty Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "054658453-02"
+    },
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-224765245"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "224765245"
+    },
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Samuel-Clites-MVA-4-23-2024-Bodily Injury (BI)-1766M491S"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1766M491S"
+    },
+    "context": "Samuel-Clites-MVA-4-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "James-Sadler-MVA-4-07-2023-Bodily Injury (BI)-1748B202X"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1748B202X"
+    },
+    "context": "James-Sadler-MVA-4-07-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Sariya-Mason-DB-08-19-2022-Bodily Injury (BI)-4830025"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4830025"
+    },
+    "context": "Sariya-Mason-DB-08-19-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jimmy-Ferguson-MVA-5-30-2024-Bodily Injury (BI)-VA20241535681"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "KACo Claims Department"
+    },
+    "attributes": {
+      "policy_number": "VA20241535681"
+    },
+    "context": "Jimmy-Ferguson-MVA-5-30-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Brenda-Lang-MVA-09-03-2021-Bodily Injury (BI)-410220052"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "TARC Risk Management Services Company"
+    },
+    "attributes": {
+      "policy_number": "410220052"
+    },
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Douglas-Livers-MVA-1-19-2023-Uninsured Motorist (UM)-700228547"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Allstate Insurance"
+    },
+    "attributes": {
+      "policy_number": "700228547"
+    },
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Qortez-Jordan-MVA-2-14-2025-Bodily Injury (BI)-VA20251695511."
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "MGM"
+    },
+    "attributes": {
+      "policy_number": "VA20251695511."
+    },
+    "context": "Qortez-Jordan-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "James-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1786S949G"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1786S949G"
+    },
+    "context": "James-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Sir-Hinkle-MVA-6-23-2025-Personal Injury Protection (PIP)-17-86Q5-96W"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "17-86Q5-96W"
+    },
+    "context": "Sir-Hinkle-MVA-6-23-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Paxon-Woodford-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "8065806"
+    },
+    "context": "Paxon-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Patrice-Harris-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "8065806"
+    },
+    "context": "Patrice-Harris-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "James-Woodford-MVA-6-19-2025-Personal Injury Protection (PIP)-8065806"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "8065806"
+    },
+    "context": "James-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Stevie-Hawks-MVA-3-8-2024-Personal Injury Protection (PIP)-17-Q1275R5"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "17-Q1275R5"
+    },
+    "context": "Stevie-Hawks-MVA-3-8-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Shannon-Colvin-MVA-10-1-2023-Personal Injury Protection (PIP)-1756Z294R"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1756Z294R"
+    },
+    "context": "Shannon-Colvin-MVA-10-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Fina-Fatty-MVA-11-05-2024-Bodily Injury (BI)-58373025"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Liberty Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "58373025"
+    },
+    "context": "Fina-Fatty-MVA-11-05-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Lonnie-Stevens-MVA-2-14-2025-Bodily Injury (BI)-VA20251695455"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "MGM"
+    },
+    "attributes": {
+      "policy_number": "VA20251695455"
+    },
+    "context": "Lonnie-Stevens-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Nayram-Adadevoh-MVA-7-13-2024-Personal Injury Protection (PIP)-633859-N"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "National Indemnity Company"
+    },
+    "attributes": {
+      "policy_number": "633859-N"
+    },
+    "context": "Nayram-Adadevoh-MVA-7-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Owen-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "24-902741838"
+    },
+    "context": "Owen-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Kimberly-Brasher-Premise-2-25-2023-Bodily Injury (BI)-C321835845-0001-01"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Sedgwick Claims Management Services"
+    },
+    "attributes": {
+      "policy_number": "C321835845-0001-01"
+    },
+    "context": "Kimberly-Brasher-Premise-2-25-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Greg-Neltner-MVA-4-1-2023-Bodily Injury (BI)-23-6275504"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "23-6275504"
+    },
+    "context": "Greg-Neltner-MVA-4-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Under Insured Motorist (UIM)-23-4004861"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "23-4004861"
+    },
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Personal Injury Protection (PIP)-617417-GM"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Nationwide Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "617417-GM"
+    },
+    "context": "Juanita-Nicole-Downs-MVA-4-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Maryan-Kassim-MVA-08-06-2024-Bodily Injury (BI)-24-711062492"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "24-711062492"
+    },
+    "context": "Maryan-Kassim-MVA-08-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Bodily Injury (BI)-1769H472C"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1769H472C"
+    },
+    "context": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Abby-Sitgraves-MVA-7-13-2024-Personal Injury Protection (PIP)-633859-N"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "National Indemnity Company"
+    },
+    "attributes": {
+      "policy_number": "633859-N"
+    },
+    "context": "Abby-Sitgraves-MVA-7-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Bodily Injury (BI)-AP92071"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "West Bend Mutual Insurance"
+    },
+    "attributes": {
+      "policy_number": "AP92071"
+    },
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "WCClaim",
+      "name": "Shannon-Lankswert-WC-02-07-2025-Workers' Compensation (WC)-WC80D-H07503"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Liberty Mutual Workers' Compensation"
+    },
+    "attributes": {
+      "policy_number": "WC80D-H07503"
+    },
+    "context": "Shannon-Lankswert-WC-02-07-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Owen-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "300-793616-2024"
+    },
+    "context": "Owen-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "James-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1009056098"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "American Family Insurance"
+    },
+    "attributes": {
+      "policy_number": "1009056098"
+    },
+    "context": "James-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-1455R002D"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1455R002D"
+    },
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Dewayne-Ward-MVA-8-29-2023-Bodily Injury (BI)-1455R002D"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1455R002D"
+    },
+    "context": "Dewayne-Ward-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Paxon-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1786S949G"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1786S949G"
+    },
+    "context": "Paxon-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jeremy-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "300-793616-2024"
+    },
+    "context": "Jeremy-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Destiny-Adkins-MVA-04-16-2021-Bodily Injury (BI)-625854435"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Allstate Insurance"
+    },
+    "attributes": {
+      "policy_number": "625854435"
+    },
+    "context": "Destiny-Adkins-MVA-04-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Patrice-Harris-MVA-6-19-2025-Bodily Injury (BI)-1009056098"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "American Family Insurance"
+    },
+    "attributes": {
+      "policy_number": "1009056098"
+    },
+    "context": "Patrice-Harris-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Paxon-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1009056098"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "American Family Insurance"
+    },
+    "attributes": {
+      "policy_number": "1009056098"
+    },
+    "context": "Paxon-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jaysha-Aponte-MVA-3-15-2025-Bodily Injury (BI)-8838008180000001"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Geico Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "8838008180000001"
+    },
+    "context": "Jaysha-Aponte-MVA-3-15-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Roxanne-Simpson-MVA-9-27-2023-Bodily Injury (BI)-1756T368R"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1756T368R"
+    },
+    "context": "Roxanne-Simpson-MVA-9-27-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Shakeith-Simon-MVA-2-16-2025-Bodily Injury (BI)-COH-0004148"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Commonwealth Casualty Insurance"
+    },
+    "attributes": {
+      "policy_number": "COH-0004148"
+    },
+    "context": "Shakeith-Simon-MVA-2-16-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Qortez-Jordan-MVA-2-14-2025-Personal Injury Protection (PIP)-17-Q610-2P9"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "17-Q610-2P9"
+    },
+    "context": "Qortez-Jordan-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Chase-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "24-902741838"
+    },
+    "context": "Chase-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Douglas-Livers-MVA-1-19-2023-Bodily Injury (BI)-QMJF78KY"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Root Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "QMJF78KY"
+    },
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Shawna-Broyles-MVA-08-26-2022-Bodily Injury (BI)-MD4587"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Protective Insurance"
+    },
+    "attributes": {
+      "policy_number": "MD4587"
+    },
+    "context": "Shawna-Broyles-MVA-08-26-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Abigail-Whaley-MVA-10-24-2024-Personal Injury Protection (PIP)-58147807"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "SafeCo Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "58147807"
+    },
+    "context": "Abigail-Whaley-MVA-10-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Frances-Whitis-WC-MVA-9-6-2024-Personal Injury Protection (PIP)-24-727042794"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "24-727042794"
+    },
+    "context": "Frances-Whitis-WC-MVA-9-6-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jacob-Herrle-MVA-6-17-2025-Personal Injury Protection (PIP)-1786K421P"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1786K421P"
+    },
+    "context": "Jacob-Herrle-MVA-6-17-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Davis-Robinson-SF-05-02-2025-Bodily Injury (BI)-25 -109767"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Texas Roadhouse"
+    },
+    "attributes": {
+      "policy_number": "25 -109767"
+    },
+    "context": "Davis-Robinson-SF-05-02-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "WCClaim",
+      "name": "Michael-Johnston-WC-05-03-2023-Workers' Compensation (WC)-841603"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Ford Worker's Compensation"
+    },
+    "attributes": {
+      "policy_number": "841603"
+    },
+    "context": "Michael-Johnston-WC-05-03-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-243138082"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "243138082"
+    },
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Alma-Cristobal-MVA-2-15-2024-Personal Injury Protection (PIP)-4943385"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4943385"
+    },
+    "context": "Alma-Cristobal-MVA-2-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Alma-Cristobal-MVA-2-15-2024-Bodily Injury (BI)-2024346878"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Crete Carrier Corporation (Shaffer Trucking & Hunt Transportation)"
+    },
+    "attributes": {
+      "policy_number": "2024346878"
+    },
+    "context": "Alma-Cristobal-MVA-2-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Michael-Johnston-WC-05-03-2023-Short Term Disability-ST00539878"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "UniCare Life & Health Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "ST00539878"
+    },
+    "context": "Michael-Johnston-WC-05-03-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Personal Injury Protection (PIP)-4943051"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4943051"
+    },
+    "context": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "James-Sadler-MVA-4-07-2023-Personal Injury Protection (PIP)-1747X443M"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1747X443M"
+    },
+    "context": "James-Sadler-MVA-4-07-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Maryan-Kassim-MVA-08-06-2024-Personal Injury Protection (PIP)-24-711062492"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "24-711062492"
+    },
+    "context": "Maryan-Kassim-MVA-08-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Personal Injury Protection (PIP)-1769H472C"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1769H472C"
+    },
+    "context": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Owen-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "300-793616-2024"
+    },
+    "context": "Owen-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Dana-Jackson-MVA-1-24-2024-Personal Injury Protection (PIP)-1007187244"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "The General Insurance"
+    },
+    "attributes": {
+      "policy_number": "1007187244"
+    },
+    "context": "Dana-Jackson-MVA-1-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UIMClaim",
+      "name": "Shannon-Colvin-MVA-10-1-2023-Underinsured Motorist (UIM)-Unknown"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "Unknown"
+    },
+    "context": "Shannon-Colvin-MVA-10-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Shannon-Colvin-MVA-10-1-2023-Bodily Injury (BI)-4908174"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4908174"
+    },
+    "context": "Shannon-Colvin-MVA-10-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Estate-of-Evangeline-Young-MVA-8-12-2023-Personal Injury Protection (PIP)-037621490-0800-000"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "USAA Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "037621490-0800-000"
+    },
+    "context": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Douglas-Livers-MVA-1-19-2023-Personal Injury Protection (PIP)-700228547"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Allstate Insurance"
+    },
+    "attributes": {
+      "policy_number": "700228547"
+    },
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Wayne-Weber-MVA-01-01-2022-Bodily Injury (BI)-1429C180C"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1429C180C"
+    },
+    "context": "Wayne-Weber-MVA-01-01-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Wayne-Weber-MVA-01-01-2022-Personal Injury Protection (PIP)-4671023"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4671023"
+    },
+    "context": "Wayne-Weber-MVA-01-01-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Michael-Crader-MVA-5-19-2023-Under Insured Motorist (UIM)-A00005338855"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Erie Insurance Group"
+    },
+    "attributes": {
+      "policy_number": "A00005338855"
+    },
+    "context": "Michael-Crader-MVA-5-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "The-Otts-MVA-8-06-2025-Bodily Injury (BI)-25-934695754"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-934695754"
+    },
+    "context": "The-Otts-MVA-8-06-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Michael-Crader-MVA-5-19-2023-Personal Injury Protection (PIP)-12301632"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Everett Cash Mutual Insurance"
+    },
+    "attributes": {
+      "policy_number": "12301632"
+    },
+    "context": "Michael-Crader-MVA-5-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Tyler-Marzec-MVA-2-26-2024-Occupational Accident Insurance-36885"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Blue Star Claims"
+    },
+    "attributes": {
+      "policy_number": "36885"
+    },
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Tyler-Marzec-MVA-2-26-2024-Personal Injury Protection (PIP)-01-007281597"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "The General Insurance"
+    },
+    "attributes": {
+      "policy_number": "01-007281597"
+    },
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Samuel-Clites-MVA-4-23-2024-Personal Injury Protection (PIP)-1766P145F"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1766P145F"
+    },
+    "context": "Samuel-Clites-MVA-4-23-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Brooklyn-Ballard-MVA-02-28-2024-Bodily Injury (BI)-OIC256504"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Berkshire Risk Services"
+    },
+    "attributes": {
+      "policy_number": "OIC256504"
+    },
+    "context": "Brooklyn-Ballard-MVA-02-28-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Brooklyn-Ballard-MVA-02-28-2024-Personal Injury Protection (PIP)-17-63X2-00X"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "17-63X2-00X"
+    },
+    "context": "Brooklyn-Ballard-MVA-02-28-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Dana-Jackson-MVA-1-24-2024-Bodily Injury (BI)-1762X766D"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1762X766D"
+    },
+    "context": "Dana-Jackson-MVA-1-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Nicole-Tewes-MVA-7-5-2025-Bodily Injury (BI)-25-407673172"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-407673172"
+    },
+    "context": "Nicole-Tewes-MVA-7-5-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Cynthia-Gibson-MVA-7-9-2025-Bodily Injury (BI)-BTQW3MKY"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Root Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "BTQW3MKY"
+    },
+    "context": "Cynthia-Gibson-MVA-7-9-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Prince-Ngabonziza-MVA-5-27-2025-None"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Elco Insurance"
+    },
+    "attributes": {
+      "policy_number": ""
+    },
+    "context": "Prince-Ngabonziza-MVA-5-27-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-681812020000004"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Geico Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "681812020000004"
+    },
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Elizabeth-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "300-793616-2024"
+    },
+    "context": "Elizabeth-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jerome-Hedinger-Premise-DB-10-24-2023-Bodily Injury (BI)-17-N836-0G8"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Fire & Casualty Company"
+    },
+    "attributes": {
+      "policy_number": "17-N836-0G8"
+    },
+    "context": "Jerome-Hedinger-Premise-DB-10-24-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Brenda-Lang-MVA-09-03-2021-Under Insured Motorist (UIM)"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": ""
+    },
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-20091551"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Elco Insurance"
+    },
+    "attributes": {
+      "policy_number": "20091551"
+    },
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Brooklyn-Ballard-MVA-02-28-2024-Uninsured Motorist (UM)-17-63X2-00X"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "17-63X2-00X"
+    },
+    "context": "Brooklyn-Ballard-MVA-02-28-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Bodily Injury (BI)-625854435"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Allstate Insurance"
+    },
+    "attributes": {
+      "policy_number": "625854435"
+    },
+    "context": "Juanita-Nicole-Downs-MVA-4-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-1455R002D"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1455R002D"
+    },
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Henrietta-Jenkins-MVA-5-20-2025-Personal Injury Protection (PIP)-HH62DDIN"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Root Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "HH62DDIN"
+    },
+    "context": "Henrietta-Jenkins-MVA-5-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Dustin-Meade-MVA-03-09-2025-Personal Injury Protection (PIP)-25-615241502"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-615241502"
+    },
+    "context": "Dustin-Meade-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-8055562"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "8055562"
+    },
+    "context": "Malcom-Glass-Jones-MVA-10-2-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Abigail-Whaley-MVA-10-24-2024-Bodily Injury (BI)-1008251706"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "American Family Insurance"
+    },
+    "attributes": {
+      "policy_number": "1008251706"
+    },
+    "context": "Abigail-Whaley-MVA-10-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Morgan-Freeman-MVA-12-31-2021-Personal Injury Protection (PIP)-4900253"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4900253"
+    },
+    "context": "Morgan-Freeman-MVA-12-31-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Muhammad-Alif-MVA-11-08-2022-Under Insured Motorist (UIM)"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Farmers Insurance"
+    },
+    "attributes": {
+      "policy_number": ""
+    },
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Robin-Wilder-Hamilton-MVA-6-15-2023-Personal Injury Protection (PIP)-300-0377210-2023"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "300-0377210-2023"
+    },
+    "context": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Greg-Neltner-MVA-4-1-2023-Personal Injury Protection (PIP)-1747Q474T"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1747Q474T"
+    },
+    "context": "Greg-Neltner-MVA-4-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Personal Injury Protection (PIP)-a00 004-93-2728"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Erie Insurance Group"
+    },
+    "attributes": {
+      "policy_number": "a00 004-93-2728"
+    },
+    "context": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Curtis-Lee-Justice-MVA-2-5-2023-Personal Injury Protection (PIP)-755905"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Trexis Insurance Corporation"
+    },
+    "attributes": {
+      "policy_number": "755905"
+    },
+    "context": "Curtis-Lee-Justice-MVA-2-5-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Bodily Injury (BI)-23-4004861"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "23-4004861"
+    },
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023-Personal Injury Protection (PIP)-23-4004861"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "23-4004861"
+    },
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Debra-Marshall-MVA-12-3-2022-Bodily Injury (BI)-4778044"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Kentucky Farm Bureau"
+    },
+    "attributes": {
+      "policy_number": "4778044"
+    },
+    "context": "Debra-Marshall-MVA-12-3-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Shawna-Broyles-MVA-08-26-2022-Uninsured Motorist (UM)-22-7969726"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "22-7969726"
+    },
+    "context": "Shawna-Broyles-MVA-08-26-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Shawna-Broyles-MVA-08-26-2022-Personal Injury Protection (PIP)-22-7969726"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "22-7969726"
+    },
+    "context": "Shawna-Broyles-MVA-08-26-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Personal Injury Protection (PIP)-23-7942931"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "23-7942931"
+    },
+    "context": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Muhammad-Alif-MVA-11-08-2022-3rd Party Vehicle"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "USAA Insurance Company"
+    },
+    "attributes": {
+      "policy_number": ""
+    },
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "The-Otts-MVA-8-06-2025-Personal Injury Protection (PIP)-250640481"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "National General"
+    },
+    "attributes": {
+      "policy_number": "250640481"
+    },
+    "context": "The-Otts-MVA-8-06-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Personal Injury Protection (PIP)-1123215"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "American Transit Insurance"
+    },
+    "attributes": {
+      "policy_number": "1123215"
+    },
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "UMClaim",
+      "name": "Muhammad-Alif-MVA-12-09-2022-Uninsured Motorist (UM)"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Farmers Insurance"
+    },
+    "attributes": {
+      "policy_number": ""
+    },
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Lori-House-MVA-11-19-2025-Personal Injury Protection (PIP)"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Liberty Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": null
+    },
+    "context": "Lori-House-MVA-11-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Azaire-Lopez-MVA-11-14-2025-Bodily Injury (BI)-300-0701136-2025"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners"
+    },
+    "attributes": {
+      "policy_number": "300-0701136-2025"
+    },
+    "context": "Azaire-Lopez-MVA-11-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Azaire-Lopez-MVA-11-14-2025-Personal Injury Protection (PIP)-25695180369"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25695180369"
+    },
+    "context": "Azaire-Lopez-MVA-11-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Michae-Guyton-MVA-11-14-2025-Personal Injury Protection (PIP)-25695180369"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25695180369"
+    },
+    "context": "Michae-Guyton-MVA-11-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Antonio-Lopez-MVA-11-14-2025-Personal Injury Protection (PIP)-25695180369"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25695180369"
+    },
+    "context": "Antonio-Lopez-MVA-11-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Mi'Ayla-Lopez-MVA-11-14-2025-Personal Injury Protection (PIP)-25695180369"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25695180369"
+    },
+    "context": "Mi'Ayla-Lopez-MVA-11-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Mi'Ayla-Lopez-MVA-11-14-2025-Bodily Injury (BI)-300-0701136-2025"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners"
+    },
+    "attributes": {
+      "policy_number": "300-0701136-2025"
+    },
+    "context": "Mi'Ayla-Lopez-MVA-11-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Michael-Deshields-MVA-10-31-2025-Bodily Injury (BI)-1792K267F"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1792K267F"
+    },
+    "context": "Michael-Deshields-MVA-10-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Michael-Deshields-MVA-10-31-2025-Personal Injury Protection (PIP)-1792K267F"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1792K267F"
+    },
+    "context": "Michael-Deshields-MVA-10-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Renean-Fant-MVA-10-27-2025-Personal Injury Protection (PIP)-799770GQ"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Nationwide Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "799770GQ"
+    },
+    "context": "Renean-Fant-MVA-10-27-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Renean-Fant-MVA-10-27-2025-Bodily Injury (BI)-799770GQ"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Nationwide Mutual Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "799770GQ"
+    },
+    "context": "Renean-Fant-MVA-10-27-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Daquan-Locke-MVA-6-11-2024-Bodily Injury (BI)-AT3696194"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Shelter Insurance"
+    },
+    "attributes": {
+      "policy_number": "AT3696194"
+    },
+    "context": "Daquan-Locke-MVA-6-11-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Lindsey-Dunn-MVA-9-24-2025-Personal Injury Protection (PIP)-1791D291D"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1791D291D"
+    },
+    "context": "Lindsey-Dunn-MVA-9-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Lindsey-Dunn-MVA-9-24-2025-Bodily Injury (BI)-2TVV43KY"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Root Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "2TVV43KY"
+    },
+    "context": "Lindsey-Dunn-MVA-9-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Carmelita-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25663229793"
+    },
+    "context": "Carmelita-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Carmelita-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1791R083K"
+    },
+    "context": "Carmelita-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Julian-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25663229793"
+    },
+    "context": "Julian-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Julian-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1791R083K"
+    },
+    "context": "Julian-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jasmine-Wilson-MVA-10-12-2025-Personal Injury Protection (PIP)-25663229793"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25663229793"
+    },
+    "context": "Jasmine-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jasmine-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1791R083K"
+    },
+    "context": "Jasmine-Wilson-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Dakota-McCord-MVA-10-12-2025-Bodily Injury (BI)-25-423678921"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-423678921"
+    },
+    "context": "Dakota-McCord-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Dakota-McCord-MVA-10-12-2025-Personal Injury Protection (PIP)-25-743079174"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-743079174"
+    },
+    "context": "Dakota-McCord-MVA-10-12-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Taylor-Thompson-MVA-12-06-2024-Medpay - Indiana PIP-038352935-800"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "USAA Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "038352935-800"
+    },
+    "context": "Taylor-Thompson-MVA-12-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Taylor-Thompson-MVA-12-06-2024-Bodily Injury (BI)-01-008-378108"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "American Family Insurance"
+    },
+    "attributes": {
+      "policy_number": "01-008-378108"
+    },
+    "context": "Taylor-Thompson-MVA-12-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Daquan-Locke-MVA-6-11-2024-Personal Injury Protection (PIP)-AT3696194"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Shelter Insurance"
+    },
+    "attributes": {
+      "policy_number": "AT3696194"
+    },
+    "context": "Daquan-Locke-MVA-6-11-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Tonya-Dunn-MVA-9-24-2025-Bodily Injury (BI)-2TVV43KY"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Root Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "2TVV43KY"
+    },
+    "context": "Tonya-Dunn-MVA-9-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Tonya-Dunn-MVA-9-24-2025-Personal Injury Protection (PIP)-1791D291D"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1791D291D"
+    },
+    "context": "Tonya-Dunn-MVA-9-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Deanna-Jones-MVA-7-30-2025-Bodily Injury (BI)-25ATKY446076413"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Clearcover"
+    },
+    "attributes": {
+      "policy_number": "25ATKY446076413"
+    },
+    "context": "Deanna-Jones-MVA-7-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Torrey-Green-MVA-9-3-2025-Bodily Injury (BI)-23016864"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Elco Insurance"
+    },
+    "attributes": {
+      "policy_number": "23016864"
+    },
+    "context": "Torrey-Green-MVA-9-3-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Torrey-Green-MVA-9-3-2025-Personal Injury Protection (PIP)-23016864"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Elco Insurance"
+    },
+    "attributes": {
+      "policy_number": "23016864"
+    },
+    "context": "Torrey-Green-MVA-9-3-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Sean-May-MVA-8-19-2025-Bodily Injury (BI)-25F68M784958"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "CCMSI"
+    },
+    "attributes": {
+      "policy_number": "25F68M784958"
+    },
+    "context": "Sean-May-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Cory-Stephenson-MVA-9-3-2025-Personal Injury Protection (PIP)-23016864"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Elco Insurance"
+    },
+    "attributes": {
+      "policy_number": "23016864"
+    },
+    "context": "Cory-Stephenson-MVA-9-3-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Cory-Stephenson-MVA-9-3-2025-Bodily Injury (BI)-1789V463J"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1789V463J"
+    },
+    "context": "Cory-Stephenson-MVA-9-3-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jonah-Price-MVA-8-25-2025-None"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Farmers Insurance"
+    },
+    "attributes": {
+      "policy_number": null
+    },
+    "context": "Jonah-Price-MVA-8-25-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Leanora-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-822910337"
+    },
+    "context": "Leanora-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-822910337"
+    },
+    "context": "Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jordan-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-TJ6L8DKY"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Root Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "TJ6L8DKY"
+    },
+    "context": "Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Leanora-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-TJ6L8DKY"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Root Auto Insurance"
+    },
+    "attributes": {
+      "policy_number": "TJ6L8DKY"
+    },
+    "context": "Leanora-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Joseph-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-934695754"
+    },
+    "context": "Joseph-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jensen-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-934695754"
+    },
+    "context": "Jensen-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Maia-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-934695754"
+    },
+    "context": "Maia-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Maia-Ott-MVA-8-6-2025-Personal Injury Protection (PIP)-250640481"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "National General"
+    },
+    "attributes": {
+      "policy_number": "250640481"
+    },
+    "context": "Maia-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Jensen-Ott-MVA-8-6-2025-Personal Injury Protection (PIP)-250640481"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "National General"
+    },
+    "attributes": {
+      "policy_number": "250640481"
+    },
+    "context": "Jensen-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Joseph-Ott-MVA-8-6-2025-Personal Injury Protection (PIP)-250640481"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "National General"
+    },
+    "attributes": {
+      "policy_number": "250640481"
+    },
+    "context": "Joseph-Ott-MVA-8-6-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Michael-Lanier-MVA-6-28-2025-Bodily Injury (BI)-25-471551085"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Progressive Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "25-471551085"
+    },
+    "context": "Michael-Lanier-MVA-6-28-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Michael-Lanier-MVA-6-28-2025-Personal Injury Protection (PIP)"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm"
+    },
+    "attributes": {
+      "policy_number": null
+    },
+    "context": "Michael-Lanier-MVA-6-28-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Corey-Todd-MVA-WC-8-2-2025-Bodily Injury (BI)"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Allstate Insurance"
+    },
+    "attributes": {
+      "policy_number": null
+    },
+    "context": "Corey-Todd-MVA-WC-8-2-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Forrest-Muss-7-20-2025-Bodily Injury (BI)-136751083"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "North American Risk Services"
+    },
+    "attributes": {
+      "policy_number": "136751083"
+    },
+    "context": "Forrest-Muss-7-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Tina-Smith-S&F-4-2-2025-Bodily Injury (BI)-AS13802"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "West Bend Mutual Insurance"
+    },
+    "attributes": {
+      "policy_number": "AS13802"
+    },
+    "context": "Tina-Smith-S&F-4-2-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Timothy-Ruhl-A-B-9-14-2023-Bodily Injury (BI)-GL00000003555090"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Shelter Insurance"
+    },
+    "attributes": {
+      "policy_number": "GL00000003555090"
+    },
+    "context": "Timothy-Ruhl-A-B-9-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Jerome-Hedinger-Premise-(DB)-10-24-2023-Bodily Injury (BI)-17-N836-0G8"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Fire & Casualty Company"
+    },
+    "attributes": {
+      "policy_number": "17-N836-0G8"
+    },
+    "context": "Jerome-Hedinger-Premise-(DB)-10-24-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Charles-T.-Johnson-MVA-4-18-2023-Personal Injury Protection (PIP)-3002385272023"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Auto Owners Insurance"
+    },
+    "attributes": {
+      "policy_number": "3002385272023"
+    },
+    "context": "Charles-T.-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Charles-T.-Johnson-MVA-4-18-2023-Bodily Injury (BI)-1748L638H"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "State Farm Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "1748L638H"
+    },
+    "context": "Charles-T.-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Daniel-W.-Volk-MVA-09-24-2021-Under Insured Motorist (UIM)-47060829"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "SafeCo Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "47060829"
+    },
+    "context": "Daniel-W.-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "BIClaim",
+      "name": "Daniel-W.-Volk-MVA-09-24-2021-Bodily Injury (BI)-ZPA003356461"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "Grange Insurance"
+    },
+    "attributes": {
+      "policy_number": "ZPA003356461"
+    },
+    "context": "Daniel-W.-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "InsuredBy",
+    "source": {
+      "entity_type": "PIPClaim",
+      "name": "Daniel-W.-Volk-MVA-09-24-2021-Personal Injury Protection (PIP)-47060829"
+    },
+    "target": {
+      "entity_type": "Insurer",
+      "name": "SafeCo Insurance Company"
+    },
+    "attributes": {
+      "policy_number": "47060829"
+    },
+    "context": "Daniel-W.-Volk-MVA-09-24-2021"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "case_name": "Mi'Ayla-Lopez-MVA-11-14-2025",
+  "total_episodes": 1,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Mi'Ayla-Lopez-MVA-11-14-2025\nClient: Mi'Ayla Lopez\n\nFILE REORGANIZATION COMPLETE - Mi'Ayla Lopez MVA Case: Completed comprehensive 5-phase file reorganization using 8-bucket directory system. Phase 1: Generated inventory of 15 files with content-only analysis (filenames scrambled to eliminate bias). Phase 2: Analyzed all documents including 3 scrambled .md files (BI Letter of Representation to Auto Owners, PIP Letter of Representation to Progressive, County Clerk insurance information request) and 5 PNG client-provided insurance documents. Phase 3: Quality review achieved 93.3% accuracy (1 minor issue flagged - BI letter content discrepancy resolved per multi-party naming convention). Phase 4: Successfully executed 12 operations (8 moves/renames, 4 deletes) with zero errors. Phase 5: Verified 100% naming convention compliance and PDF+MD companion file integrity. Results: Client folder (5 PNG insurance cards/documents from client), Investigation folder (1 PDF+MD pair: County Clerk insurance request for plate J8Z536 dated 11/17/2025), Insurance folder (4 files: BI/Auto Owners subfolder with Letter of Representation dated 11/18/2025 claim #300-0701136-2025, PIP/Progressive subfolder with Letter of Representation dated 11/18/2025 claim #25695180369 requesting $4,000 reserve and $6,000 for bills excluding hospital/EMS). Deleted 1 duplicate DOCX template and 3 JSON backup files. Multi-party case confirmed: 4 co-plaintiffs (Mi'Ayla Lopez DOB 1/25/2025, Antonio Lopez DOB 11/09/1997, A'zaire Lopez DOB 3/22/2022, Michae Guyton DOB 8/6/1997) all rear-ended at Eaton and Dixie Highway on 11/14/2025, all treated at University of Louisville Hospital. Antonio reported mid and lower back pain, Michae reported back pain and both shoulders. Civilian police report completed. All files now properly organized with standardized naming conventions. Case ready for medical records requests and treatment monitoring. All reorganization reports saved to Reports/ directory.",
+      "natural_language": "The Mi'Ayla Lopez motor vehicle accident case underwent a complete five-phase file reorganization using an eight-bucket directory system. Phase 1 generated an inventory of 15 files with content-only analysis, and filenames were scrambled to eliminate bias. Phase 2 involved analyzing all documents, including three scrambled MD files\u2014the BI Letter of Representation to Auto Owners, the PIP Letter of Representation to Progressive, and the County Clerk insurance information request\u2014and five PNG client-provided insurance documents. Phase 3 achieved a quality review accuracy of 93.3%, with one minor issue flagged regarding BI letter content; this discrepancy was resolved in accordance with the multi-party naming convention. Phase 4 executed 12 operations (eight moves/renames and four deletes) with zero errors. Phase 5 verified 100% naming convention compliance and PDF+MD companion file integrity.\n\nResults show the client folder contains five PNG insurance cards/documents from the client. The Investigation folder includes one PDF+MD pair: the County Clerk insurance request for plate J8Z536, dated November 17, 2025. The Insurance folder holds four files: in the BI/Auto Owners subfolder, a Letter of Representation dated November 18, 2025 with claim number 300-0701136-2025; in the PIP/Progressive subfolder, a Letter of Representation dated November 18, 2025 with claim number 25695180369, requesting a $4,000 reserve and $6,000 for bills excluding hospital/EMS. One duplicate DOCX template and three JSON backup files were deleted.\n\nMulti-party case confirmation identifies four co-plaintiffs: Mi'Ayla Lopez, DOB January 25, 2025; Antonio Lopez, DOB November 9, 1997; A'zaire Lopez, DOB March 22, 2022; and Michae Guyton, DOB August 6, 1997. They were rear-ended at Eaton and Dixie Highway on November 14, 2025, and were treated at the University of Louisville Hospital. Antonio reported mid- and lower-back pain, and Michae reported back pain and pain in both shoulders. A civilian police report was completed. All files are now properly organized with standardized naming conventions. The case is ready for medical records requests and treatment monitoring. All reorganization reports have been saved to the Reports/ directory.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Mi'Ayla Lopez",
+            "relevance": "primary client / subject of case"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Antonio Lopez",
+            "relevance": "co-plaintiff"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "A'zaire Lopez",
+            "relevance": "co-plaintiff"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michae Guyton",
+            "relevance": "co-plaintiff"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "treatment facility"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners",
+            "relevance": "BI insurer (recipient of Letter of Representation)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "PIP insurer (recipient of Letter of Representation)"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI #300-0701136-2025",
+            "relevance": "bodily injury claim referenced in Letter of Representation"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25695180369",
+            "relevance": "personal injury protection claim referenced in Letter of Representation (reserve request)"
+          },
+          {
+            "entity_type": "Court",
+            "entity_name": "County Clerk",
+            "relevance": "issued insurance information request (Investigation document)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

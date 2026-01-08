@@ -1,0 +1,68 @@
+{
+  "case_name": "Qortez-Jordan-MVA-2-14-2025",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Louisville Metro EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "MGM"
+      },
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Dennis Corley"
+      },
+      {
+        "name": "Molly McAndrews"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Qortez-Jordan-MVA-2-14-2025-Bodily Injury (BI)-VA20251695511.",
+        "insurer": "MGM",
+        "adjuster": "Dennis Corley"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Qortez-Jordan-MVA-2-14-2025-Personal Injury Protection (PIP)-17-Q610-2P9",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Molly McAndrews"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Qortez-Jordan-MVA-2-14-2025-Humana",
+        "holder": "Humana",
+        "amount": null
+      },
+      {
+        "name": "Qortez-Jordan-MVA-2-14-2025-Legal Funding Partners",
+        "holder": "Legal Funding Partners",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

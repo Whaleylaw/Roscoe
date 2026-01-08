@@ -1,0 +1,138 @@
+# Relationship Review: Robin-Willis-Beck-Premise-09-21-2023
+
+**Total Episodes:** 206
+
+**Total Proposed Relationships:** 700
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (7)
+- Baptist Health Breckenridge Imaging Medical Group - Orthopedics (orthopedic)
+- Gould's Discount Medical
+- Heartland Imaging (radiology)
+- Norton Norton Norton Audubon Hospital (hospital)
+- Norton Orthopedic Institute
+- Women's Health (hospital)
+- Rosenberg Reyes, M.D.
+
+### Insurance Claims (1)
+- **BIClaim**: Soundview Claims Solutions
+  - Adjuster: Devon Clark
+
+### Liens (1)
+- The Phia Group ($1,926.79)
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (3 consolidated)
+- [ ] Devon Clark — *✓ MATCHES: Devon Clark*
+- [ ] Kevin D. Prophet — *✓ MATCHES: Kevin D. Prophet*
+- [ ] Whitney McClure — *IGNORED - need more info*
+
+### Attorney (9 consolidated)
+- [ ] Aaron Gregory Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] K. Hedgecock — *✓ MATCHES: Karen Hedgecock*
+- [ ] Karen Hedgecock — *✓ MATCHES: Karen Hedgecock*
+- [ ] Sarena — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Sarena M. Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Steven B. Lowery, Esq. — *✓ MATCHES: Steven B. Lowery*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+
+### BIClaim (3 consolidated)
+- [ ] Beck bodily injury claim — *IGNORED - claim description*
+- [ ] SF-USTT26089723 — *IGNORED - claim number*
+- [ ] Soundview Claims Solutions — *✓ MATCHES: Soundview Claims Solutions*
+
+### Client (1 consolidated)
+- [ ] Robin Willis Beck — *✓ MATCHES: Robin Willis-Beck*
+
+### Court (7 consolidated)
+- [ ] Jeff Cir Crt 24-CI-000532 — *✓ MATCHES: Jefferson County Circuit Court, Division IV*
+- [ ] Jefferson 24-CI-000532 — *✓ MATCHES: Jefferson County Circuit Court, Division IV*
+- [ ] Jefferson Circuit Clerk — *IGNORED - court clerk, not court*
+- [ ] Jefferson County (24-CI-000532) — *✓ MATCHES: Jefferson County Circuit Court, Division IV*
+- [ ] Jefferson County Circuit Court (24-CI-000532) — *✓ MATCHES: Jefferson County Circuit Court, Division IV*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Court of Justice eFiling system — *✓ MATCHES: Kentucky Court Of Justice*
+
+### Defendant (6 consolidated)
+- [ ] Danny Wimmer Presents, LLC — *✓ MATCHES: Danny Wimmer Presents, LLC*
+- [ ] KSFB — *IGNORED - abbreviation*
+- [ ] Kentucky State Fair Board (KSFB) — *✓ MATCHES: Kentucky State Fair Board*
+- [ ] Kevin McCoy — *✓ MATCHES: Kevin McCoy*
+- [ ] Louder Than Life — *IGNORED - event name, not entity*
+- [ ] Shawn Henlser — *✓ MATCHES: Shawn Henlser*
+
+### Insurer (4 consolidated)
+- [ ] ACE American Insurance Company — *✓ MATCHES: Ace American Insurance*
+- [ ] Allianz — *IGNORED - no match found*
+- [ ] Allianz Commercial — *IGNORED - no match found*
+- [ ] Soundview Claims Solutions — *✓ MATCHES: Soundview Claims Solutions*
+
+### LawFirm (5 consolidated)
+- [ ] Defense Counsel's Office — *IGNORED - generic term*
+- [ ] Reminger — *✓ MATCHES: Reminger Co. LPA*
+- [ ] Reminger & Reminger — *✓ MATCHES: Reminger Co. LPA*
+- [ ] Reminger Co., L.P.A. — *✓ MATCHES: Reminger Co. LPA*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (2 consolidated)
+- [ ] The Phia Group — *✓ MATCHES: The Phia Group*
+- [ ] The Phia Group ($1,926.79) — *✓ MATCHES: The Phia Group*
+
+### LienHolder (1 consolidated)
+- [ ] The Phia Group — *✓ MATCHES: The Phia Group*
+
+### MedicalProvider (8 consolidated)
+- [ ] Baptist Health Breckenridge Imaging Medical Group - Orthopedics — *✓ MATCHES: Baptist Health Breckenridge Imaging Medical Group - Orthopedics*
+- [ ] Gould's Discount Medical — *✓ MATCHES: Gould's Discount Medical*
+- [ ] Heartland Diagnostics LLC — *✓ MATCHES: Heartland Diagnostics LLC*
+- [ ] Heartland Imaging — *✓ MATCHES: Heartland Imaging*
+- [ ] Norton Norton Norton Audubon Hospital — *✓ MATCHES: Norton Norton Norton Audubon Hospital*
+- [ ] Norton Orthopedic Institute — *✓ MATCHES: Norton Orthopedic Institute*
+- [ ] Women's Health — *✓ MATCHES: Women's Health*
+- [ ] Rosenberg Reyes, M.D. — *✓ MATCHES: Rosenberg Reyes, M.D.*
+
+### Organization (6 consolidated)
+- [ ] Danny Wimmer Presents — *✓ MATCHES: Danny Wimmer Presents, LLC (Defendant, not Organization)*
+- [ ] H&W Risk Management — *IGNORED - insurance company*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Louder Than Life — *IGNORED - event name*
+- [ ] Louder Than Life (music festival) — *IGNORED - event name*
+- [ ] Optum Equian — *IGNORED - lien holder service*
+
+### Vendor (8 consolidated)
+- [ ] Annemarie L. Grant — *IGNORED - court reporter*
+- [ ] ChartSwap.com — *✓ MATCHES: ChartSwap (Vendor, not Vendor)*
+- [ ] Fahntoosh Enterprises Guest Services — *IGNORED - event vendor*
+- [ ] Front Gate Tickets — *IGNORED - ticketing service*
+- [ ] Magna Legal Services — *IGNORED - legal service*
+- [ ] MediCopy — *✓ MATCHES: Medicopy (Vendor, not Vendor)*
+- [ ] Mimecast — *IGNORED - email service*
+- [ ] Mimecast Ltd — *IGNORED - email service*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

@@ -1,0 +1,79 @@
+{
+  "case_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Southeastern Emergency Physician Services",
+        "specialty": null
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "VIP Imaging, PLLC",
+        "specialty": "radiology"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "State Farm Insurance Company"
+      },
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Erie Insurance Group"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Shawna Rice"
+      },
+      {
+        "name": "Melissa Drury"
+      },
+      {
+        "name": "Jonathan O'neal"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Bodily Injury (BI)-17-48L4-99K",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Shawna Rice"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Personal Injury Protection (PIP)-23-7942931",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Melissa Drury"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Personal Injury Protection (PIP)-a00 004-93-2728",
+        "insurer": "Erie Insurance Group",
+        "adjuster": "Jonathan O'neal"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Passport Health By Molina",
+        "holder": "Passport Health By Molina",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

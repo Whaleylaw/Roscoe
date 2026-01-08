@@ -1,0 +1,166 @@
+# Relationship Review: Kimberly-Brasher-Premise-2-25-2023
+
+**Total Episodes:** 298
+
+**Total Proposed Relationships:** 1038
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (10)
+- Bluegrass Home Medical
+- Commonwealth Pain And Spine (pain management)
+- Commonwealth Pain And Spine Bowling Green (pain management)
+- Deaconess Clinic - Letcher PCP
+- Deaconess Henderson Hospital (hospital)
+- Deaconess Midtown Hospital (hospital)
+- Evansville Radiology P.C (radiology)
+- KORT Physical Therapy - Madisonville (physical therapy)
+- OA Therapy
+- Orthopedic Associates - West (orthopedic)
+
+### Insurance Claims (1)
+- **BIClaim**: Sedgwick Claims Management Services
+  - Adjuster: Tatisha "Tish" Booker
+
+### Liens (1)
+- UHP Administrators ($35,169.71)
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (7 consolidated)
+- [ ] California-based adjuster — *IGNORED - generic term*
+- [ ] Jackie — *IGNORED - first name only*
+- [ ] Jackie (caller from (844) 733-4942) — *IGNORED - first name with phone*
+- [ ] Tatisha "Tish" Booker — *✓ MATCHES: Tatisha "Tish" Booker*
+- [ ] Tatisha Booker — *✓ MATCHES: Tatisha "Tish" Booker*
+- [ ] Unidentified adjuster (California) — *IGNORED - generic term*
+- [ ] adjuster (located in California) — *IGNORED - generic term*
+
+### Attorney (15 consolidated)
+- [ ] Aaron G. Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Curt Sitlinger — *✓ MATCHES: Curt Sitlinger (from attorneys)*
+- [ ] Inga A. Fonov — *IGNORED - attorney name only*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Lee E. Sitlinger — *✓ MATCHES: Lee E. Sitlinger (from attorneys)*
+- [ ] Matthew B. Steinberg, Esq. — *✓ MATCHES: Matthew B. Steinberg (from attorneys)*
+- [ ] Mr. Sitlinger — *IGNORED - generic reference*
+- [ ] Peter Cassidy — *✓ MATCHES: Peter Cassidy (from attorneys)*
+- [ ] Sarena — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Sarena M. Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Sharon Archer — *✓ MATCHES: Sharon Archer (from attorneys)*
+- [ ] Steven P. Stadler — *✓ MATCHES: Steven P. Stadler (from attorneys)*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+
+### BIClaim (3 consolidated)
+- [ ] BIClaim: Sedgwick Claims Management Services — *✓ MATCHES: Sedgwick Claims Management Services*
+- [ ] Claim C321835845 — *IGNORED - claim number*
+- [ ] Walgreens premise liability claim — *IGNORED - generic claim reference*
+
+### Client (1 consolidated)
+- [ ] Kimberly Brasher — *✓ MATCHES: Kimberly Brasher*
+
+### Court (12 consolidated)
+- [ ] Hon. Thomas J. Knopf (Ret.) — *✓ MATCHES: Hon. Thomas J. Knopf (Ret.) (from mediators)*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Court of Justice eFiling system — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] McClean Circuit Court (No. 24-CI-00012) — *✓ MATCHES: McLean County Circuit Court, Division I*
+- [ ] McLean (24-CI-00012) — *✓ MATCHES: McLean County Circuit Court, Division I*
+- [ ] McLean (Circuit) — *✓ MATCHES: McLean County Circuit Court, Division I*
+- [ ] McLean Circuit (docket 24-CI-00012) — *✓ MATCHES: McLean County Circuit Court, Division I*
+- [ ] McLean Circuit Clerk — *✓ MATCHES: McLean County Circuit Court, Division I*
+- [ ] McLean County (24-CI-00012) — *✓ MATCHES: McLean County Circuit Court, Division I*
+- [ ] McLean County (case 24-CI-00012) — *✓ MATCHES: McLean County Circuit Court, Division I*
+- [ ] McLean County Circuit Court — *✓ MATCHES: McLean County Circuit Court, Division I*
+- [ ] McLean County Court — *✓ MATCHES: McLean County Circuit Court, Division I*
+
+### Defendant (6 consolidated)
+- [ ] DC AOD sub-defendants — *IGNORED - defense counsel reference*
+- [ ] Network USA — *IGNORED - company reference*
+- [ ] Networks USA XIV, Inc. — *✓ MATCHES: Networks USA XIV, Inc. (from defendants)*
+- [ ] Reit Property Management — *✓ MATCHES: Reit Property Management (from defendants)*
+- [ ] Walgreens Co. — *✓ MATCHES: Walgreens (from defendants)*
+- [ ] property owners — *IGNORED - generic term*
+
+### Insurer (3 consolidated)
+- [ ] Sedgwick Claims Management Services — *✓ MATCHES: Sedgwick Claims Management Services*
+- [ ] UHP Administrators — *✓ MATCHES: UHP Administrators (from lienholders)*
+- [ ] Zurich American Insurance Company — *✓ MATCHES: Zurich American Insurance Company (from insurers)*
+
+### LawFirm (4 consolidated)
+- [ ] Louisville Accident Lawyer — *IGNORED - generic reference*
+- [ ] Quintairos, Prieto, Wood & Boyer, P.A. — *✓ MATCHES: Quintairos, Prieto, Wood & Boyer, P.A. (from lawfirms)*
+- [ ] SITLINGER LAW — *✓ MATCHES: Sitlinger Law*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (2 consolidated)
+- [ ] UHP Administrators — *✓ MATCHES: UHP Administrators*
+- [ ] UHP Administrators ($35,169.71) — *✓ MATCHES: UHP Administrators*
+
+### LienHolder (1 consolidated)
+- [ ] UHP Administrators — *✓ MATCHES: UHP Administrators*
+
+### MedicalProvider (13 consolidated)
+- [ ] Bluegrass Home Medical — *✓ MATCHES: Bluegrass Home Medical*
+- [ ] Commonwealth Pain And Spine — *✓ MATCHES: Commonwealth Pain And Spine*
+- [ ] Commonwealth Pain And Spine Bowling Green — *✓ MATCHES: Commonwealth Pain And Spine*
+- [ ] Deaconess Clinic - Letcher PCP — *✓ MATCHES: Deaconess Clinic - Letcher PCP*
+- [ ] Deaconess Gateway Hospital — *✓ MATCHES: Norton Audubon Hospital*
+- [ ] Deaconess Henderson Hospital — *✓ MATCHES: Deaconess Henderson Hospital*
+- [ ] Deaconess Medical Records — *IGNORED - records department*
+- [ ] Deaconess Midtown Hospital — *✓ MATCHES: Deaconess Midtown Hospital*
+- [ ] Evansville Radiology P.C — *✓ MATCHES: Evansville Radiology P.C*
+- [ ] KORT Physical Therapy - Madisonville — *✓ MATCHES: KORT Physical Therapy - Madisonville*
+- [ ] OA Therapy — *✓ MATCHES: OA Therapy*
+- [ ] Orthopaedic Associates - East Newburgh — *✓ MATCHES: Orthopaedic Associates - East Newburgh*
+- [ ] Orthopedic Associates - West — *✓ MATCHES: Orthopedic Associates - West*
+
+### Organization (17 consolidated)
+- [ ] DC Network/Reit — *IGNORED - defense counsel reference*
+- [ ] DC Walgreens Office — *IGNORED - defense counsel reference*
+- [ ] EvenUp — *✓ MATCHES: EvenUP (from vendors)*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Court of Justice eFiling system — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] McLean County Sheriff's Office — *✓ MATCHES: McLean County Sheriff's Office (from organizations)*
+- [ ] National Academy of Distinguished Neutrals (NADN) — *✓ MATCHES: National Academy of Distinguished Neutrals (from vendors)*
+- [ ] Phia Group — *✓ MATCHES: The Phia Group (from lienholders)*
+- [ ] Retired Judges Mediation & Arbitration Services, Inc. — *✓ MATCHES: Retired Judges Mediation & Arbitration Services, Inc.*
+- [ ] Sedgwick Claims Management Services, Inc. — *✓ MATCHES: Sedgwick (from lienholders)*
+- [ ] The Phia Group, LLC — *✓ MATCHES: The Phia Group (from lienholders)*
+- [ ] Walgreen Corp — *IGNORED - company reference*
+- [ ] Walgreen Corporate Office — *IGNORED - corporate office reference*
+- [ ] Walgreen Registered Agent — *IGNORED - registered agent reference*
+- [ ] Walgreens — *IGNORED - defendant (see Defendants section)*
+- [ ] Walgreens/Rite Aid, 120 Main St, Calhoun, KY 42327 — *IGNORED - location reference*
+- [ ] claim watcher LLC — *IGNORED - vendor reference*
+
+### Vendor (5 consolidated)
+- [ ] ChartSwap.com — *✓ MATCHES: ChartSwap*
+- [ ] Claim Watcher LLC — *IGNORED - vendor name only*
+- [ ] HCR Solutions — *IGNORED - vendor name only*
+- [ ] Hon. Thomas J. Knopf (Ret.) — *✓ MATCHES: Hon. Thomas J. Knopf (Ret.) (from mediators)*
+- [ ] Kentuckiana Court Reporters — *✓ MATCHES: Kentuckiana Court Reporters*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

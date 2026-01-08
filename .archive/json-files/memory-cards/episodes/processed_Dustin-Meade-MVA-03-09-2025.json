@@ -1,0 +1,644 @@
+{
+  "case_name": "Dustin-Meade-MVA-03-09-2025",
+  "total_episodes": 23,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "1st Diagnostics",
+        "specialty": null
+      },
+      {
+        "name": "Scott County Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Katie Mills"
+      },
+      {
+        "name": "Kara Hoskins"
+      }
+    ],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Dustin-Meade-MVA-03-09-2025-Personal Injury Protection (PIP)-25-615241502",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Katie Mills"
+      },
+      {
+        "type": "UMClaim",
+        "name": "Dustin-Meade-MVA-03-09-2025-Uninsured Motorist (UM)-25-615241502",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Kara Hoskins"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-03-19",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\nsent intake docs via vinesign",
+      "natural_language": "In the Dustin-Meade-MVA-03-09-2025 case, the client is Dustin Meade. Intake documents were sent to Dustin Meade via VineSign.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "recipient of intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-19",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=29a9b192-2d0f-4e76-be91-b066dce139fd.pdf\nSigned: 2025-03-19 17:47:44\nAll signers: Dustin Meade((502) 230-0975)\nSender: Justin Chumbley",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025 concerns client Dustin Meade. The intake document was signed via VineSign and is marked as vinesign-completed. The document name is intake, and the signed document can be viewed at https://app.vinesign.com/Jobs/Pdf?pdfKey=29a9b192-2d0f-4e76-be91-b066dce139fd.pdf. It was signed on 2025-03-19 17:47:44, with all signers listed as Dustin Meade (phone: (502) 230-0975). The sender of the document is Justin Chumbley.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "subject of case and signer of intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-19",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__CLIENT CONTACT__\n__Details:__ Dustin Meade\nPh 502-230-0975\nDOB 2/1/1987\nSSN: 742-48-4314\n\nAddress \n512 Mabel Lane\nScottsburg, IN 47170\n\nDOA\u201d 3/9/2025\nJeffersonville PD\nReport # 202510418.\n\nProgressive Claim # 25-615241502\n\nInjuries: lower back, right sided hip pain, right foot going numb\n\nHealth Insurance:none\n\nNo treatment thus far\n\nJessica Mahaney\nPh: 502-230-0975\nDOB 10/9/83\nSSN: 457-65-3516\n\nInjuries: lower back, left hip\n\nBoth will be treating with Scott Count Chiro \n__Person Making Contact:__ Justin\n__Date & Time__: March 19 2025",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025 concerns client Dustin Meade. The initial client contact was made on March 19, 2025 by Justin regarding Dustin Meade\u2019s motor vehicle accident. Dustin Meade\u2019s contact information is: phone 502-230-0975, date of birth February 1, 1987, SSN 742-48-4314, and address 512 Mabel Lane, Scottsburg, IN 47170. The date of the accident is March 9, 2025. Jeffersonville Police Department report number 202510418 accompanies the case, and Progressive Claim number 25-615241502 applies. Dustin reports injuries of lower back pain, right-sided hip pain, and numbness in the right foot. He has no health insurance and there has been no treatment to date.\n\nJessica Mahaney is also noted in connection with the case. Her contact details are phone 502-230-0975, date of birth October 9, 1983, SSN 457-65-3516. Her reported injuries are lower back pain and left hip pain. Both Dustin Meade and Jessica Mahaney will be treated with Scott Count Chiro. The date and time of the initial contact is March 19, 2025, and the person making contact was Justin.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jessica Mahaney",
+            "relevance": "also involved client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer on claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25-615241502",
+            "relevance": "claim number provided"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Scott County Chiropractic",
+            "relevance": "treatment provider"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Jeffersonville Police Department",
+            "relevance": "police report source (report #202510418)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-19",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025 concerns Dustin Meade in a motor vehicle accident matter.\n\nToday, the client Dustin Meade was contacted to give update #cc.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-19",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__25-615241502__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [a220779@progressive.com](mailto:a220779@progressive.com)\nDate: Wed Mar 19 2025 02:23:42 GMT-04:00\n\nHi Alicia,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025 involves client Dustin Meade. The file reference is 25-615241502. On March 19, 2025 at 02:23:42 GMT-04:00, an email was sent from Aries Penaflor (aries@whaleylawfirm.com) of Whaley Law Firm to Alicia at progressive.com (a220779@progressive.com). The message body begins with \u201cHi Alicia,\u201d and states, \u201cPlease see attached file.\u201d It ends with the signature block: \u201c-- All the best, Aries Paul Pe\u00f1aflor\u201d from Whaley Law Firm, followed by the firm\u2019s contact details: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "subject of file"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "email recipient/insurance company contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-19",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__New Insurance Note:__ 03/19 Called Progressive to open a UM claim. Adj is not available, left vm.\n__Insurance Type:__ Uninsured Motorist (UM)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025 concerns Dustin Meade and the motor vehicle accident that occurred on March 9, 2025. On March 19, 2025, Progressive Insurance Company was contacted to open a Uninsured Motorist (UM) claim for Dustin Meade. The adjuster was not available at the time, and a voicemail was left.\n\nThe insurance details recorded show the Insurance Type as Uninsured Motorist (UM) and the Insurance Company as Progressive Insurance Company. The entry was written by Jessa and is filed under #Inotes.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "subject of the case/claimant"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer contacted to open UM claim"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Uninsured Motorist claim being opened/voicemail left"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-20",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025: The client, Dustin Meade, was contacted today to provide update #cc on the motor vehicle accident matter.",
+      "valid_at": "2025-03-20T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-20",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, at first chiro visit. all is well \n__Person Making Contact:__ Justin\n__Date & Time__: March 20 2025",
+      "natural_language": "Initial client contact on March 20, 2025, with Justin regarding Dustin Meade's motor vehicle accident case Dustin-Meade-MVA-03-09-2025. The contact occurred during Dustin Meade's first chiropractic visit, and the client reported that all is well.",
+      "valid_at": "2025-03-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "client contacted / subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Scott County Chiropractic",
+            "relevance": "site of first chiropractic visit"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-20",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__Fwd: [EXTERNAL] 25-615241502__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Dustin Meade - Filevine Project Email Address [DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com](mailto:DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Mar 20 2025 02:49:24 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: Alisha Smith \nDate: Thu, Mar 20, 2025 at 2:42?PM\nSubject: RE: [EXTERNAL] 25-615241502\nTo: Aries Penaflor \n\n*From:* Aries Penaflor \n*Sent:* Wednesday, March 19, 2025 2:24 PM\n*To:* Alisha Smith \n*Subject:* [EXTERNAL] 25-615241502\n\nHi Alicia,\n\nPlease see attached file.\n\n-- \n\nAll the best,\n\nAries Paul Pe\u00f1aflor\n\nWhaley Law Firm\n\nPh: (502)365-5788\n\nFax: (502)364-9363\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Dustin-Meade-MVA-03-09-2025 involves client Dustin Meade.\n\nA forward of an external email thread was sent on March 20, 2025 at 02:49:24 GMT-04:00 from Aries Penaflor of Whaley Law Firm to Dustin Meade\u2019s Filevine project email address DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com, with the subject line [EXTERNAL] 25-615241502. The forwarded message includes a reply from Alisha Smith dated March 20, 2025 at 2:42?PM, titled RE: [EXTERNAL] 25-615241502, and addressed to Aries Penaflor.\n\nThe chain also contains the original message from Aries Penaflor, sent on Wednesday, March 19, 2025 at 2:24 PM to Alisha Smith, with the subject [EXTERNAL] 25-615241502. In that message, Aries writes: \u201cHi Alicia, Please see attached file.\u201d The signature follows: \u201cAll the best, Aries Paul Pe\u00f1aflor Whaley Law Firm Ph: (502)365-5788 Fax: (502)364-9363.\u201d The closing signature is repeated: \u201cAll the best, Aries Paul Pe\u00f1aflor Whaley Law Firm Ph: (502)365-5788 Fax: (502)364-9363.\u201d",
+      "valid_at": "2025-03-20T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "case client / recipient of project email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender/author of forwarded email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "employer/firm of the attorney sending the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-20",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__New Insurance Note:__ PIP Katie Mills Ph: 502-909-3687\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025 concerns client Dustin Meade. A new insurance note has been entered regarding Personal Injury Protection (PIP).\n\nThe PIP contact is Katie Mills, reachable by phone at 502-909-3687. The insurance company involved is Progressive Insurance Company. The note was written by Justin Chumbley and is filed under Inotes.",
+      "valid_at": "2025-03-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Katie Mills",
+            "relevance": "PIP contact"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurance company involved"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Progressive Insurance Company",
+            "relevance": "PIP claim referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-21",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__Fwd: [EXTERNAL] Re: 25-615241502__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Dustin Meade - Filevine Project Email Address [DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com](mailto:DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Mar 21 2025 09:56:32 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: Alisha Smith \nDate: Fri, Mar 21, 2025 at 9:22?AM\nSubject: RE: [EXTERNAL] Re: 25-615241502\nTo: Dustin Meade \nCc: Aries Penaflor , jessa@whaleylawfirm.com <\njessa@whaleylawfirm.com>\n\nDustin, I understand your concerns and want to assure you that I have been\nworking on your claim as efficiently & diligently as possible.\n\nI have been in contact with your attorney as well as Jessica\u2019s attorney to\nensure we address everything correctly. I have also included them in this\nemail. While I am doing so, please understand that I absolutely will not\nallow you to speak to me in such manner.\n\n*From:* Dustin Meade \n*Sent:* Friday, March 21, 2025 1:14 AM\n*To:* Alisha Smith \n*Subject:* [EXTERNAL] Re: 25-615241502\n\nAre the worst claims adjuster I've ever had your callback game is worse\nthan my pull out game and yes recorded it's terrible\n\nOn Thu, Mar 20, 2025, 2:19?PM Dustin Meade wrote:\n\nHey Alisha it's Dustin Meade could you please call me at 502-799-3729.\n\nOn Wed, Mar 12, 2025, 9:52?AM Alisha Smith \nwrote:\n\n*Alisha Smith*\n\n*Claims Generalist Associate*\n\nP.O. Box 94670 | Cleveland, OH 44101-9919\n\nPhone: (219) 649-7283 / Fax: 833.905.1742\n\nEmail: Alisha_Smith@Progressive.com\n\n*My Hours of Availabilty: Monday-Friday 9:00 AM \u2013 6:00 PM EST*\n\n*The contents of this e-mail and any attachments are confidential and may\nbe legally privileged, intended solely for the addressee. If you are not\nthe intended recipient, be advised that any use, dissemination,\ndistribution, storage (including electronic) or copying of this e-mail is\nstrictly prohibited. If you receive this e-mail in error, please notify the\nsender immediately by reply e-mail and destroy the message and its\nattachments. All correspondence (including e-mail) we receive from you may\nbecome part of your permanent claims file. If you request a reply to this\ne-mail, we may respond by e-mail or by telephone.*\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\nIn March 2025, the Dustin Meade motor vehicle accident case (MVA) was being handled under the file Dustin-Meade-MVA-03-09-2025. On March 21, 2025, at 09:56:32 GMT-04:00, Aries Penaflor of Whaley Law Firm forwarded an external email thread regarding claim number 25-615241502. The forward was sent from Aries Penaflor (aries@whaleylawfirm.com) to Dustin Meade\u2019s Filevine project email address (DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com). The subject of the forwarded message was \u201c__Fwd: [EXTERNAL] Re: 25-615241502__,\u201d and the email included Aries Penaflor and jessa@whaleylawfirm.com in the CC line.\n\nThe forwarded thread includes a message from Alisha Smith, dated March 21, 2025 at 9:22? AM, addressed to Dustin Meade with the subject \u201cRE: [EXTERNAL] Re: 25-615241502.\u201d In that message, Alisha Smith, identified as a Claims Generalist Associate, acknowledged Dustin\u2019s concerns and stated that she had been working on Dustin\u2019s claim as efficiently and diligently as possible. She reported that she had been in contact with Dustin\u2019s attorney as well as Jessica\u2019s attorney to ensure everything is addressed correctly and that she had included them in the email. She also cautioned that she would not allow Dustin to speak to her in the manner in which he had spoken.\n\nThe chain shows a reply from Dustin Meade sent on Friday, March 21, 2025 at 1:14 AM to Alisha Smith, under the subject \u201c[EXTERNAL] Re: 25-615241502.\u201d In his message, Dustin wrote, \u201cAre the worst claims adjuster I\u2019ve ever had your callback game is worse than my pull out game and yes recorded it\u2019s terrible.\u201d\n\nEarlier in the thread, Dustin had sent a message on Thursday, March 20, 2025 at 2:19 PM, stating, \u201cHey Alisha it\u2019s Dustin Meade could you please call me at 502-799-3729.\u201d\n\nThe thread also contains a prior message from Alisha Smith dated Wednesday, March 12, 2025 at 9:52 AM. In that message, Alisha identified herself as \u201cAlisha Smith,\u201d a Claims Generalist Associate, and provided her contact details: P.O. Box 94670, Cleveland, OH 44101-9919; Phone: (219) 649-7283; Fax: 833.905.1742; Email: Alisha_Smith@Progressive.com. She listed her availability hours as Monday\u2013Friday, 9:00 AM\u20136:00 PM EST. She noted the confidential and legally privileged nature of the contents of the email and any attachments, indicating they are intended solely for the addressee, and that if the recipient was not the intended recipient, any use, dissemination, distribution, storage, or copying of the email is strictly prohibited. If the email was received in error, she asked the recipient to notify the sender and to destroy the message and any attachments. She also stated that all correspondence from the recipient may become part of the permanent claims file and that the firm may respond to a reply by email or by telephone. The closing of that message included a signature block with \u201cAll the best, Aries Paul Pe\u00f1aflor\u201d and the Whaley Law Firm contact phone and fax numbers: Ph: (502)365-5788; Fax: (502)364-9363.\n\nIn addition to the content, the forwarded email header confirms that the message originated from Aries Penaflor and was sent to Dustin Meade\u2019s Filevine project email address, with the subject referencing the external Re: 25-615241502 thread. The CC line for the Alisha Smith message shows that Aries Penaflor and jessa@whaleylawfirm.com were included. The entire exchange forms part of the ongoing communications regarding claim 25-615241502 in the Dustin Meade MVA case.",
+      "valid_at": "2025-03-21T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "primary client in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling claim 25-615241502"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Alisha Smith",
+            "relevance": "claims representative corresponding with client and attorneys"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm forwarding and copied on claim communications"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "Whaley Law Firm attorney/staff who forwarded the email thread"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-24",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\nClient Contacted today to give update #cc",
+      "natural_language": "On March 9, 2025, Dustin Meade, the client in the Dustin-Meade-MVA-03-09-2025 case, was contacted to provide update #cc regarding the motor vehicle accident.",
+      "valid_at": "2025-03-24T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-24",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, sounds like his vehicle may be a total loss. Awaiting response from PD adjuster \n__Person Making Contact:__ Justin\n__Date & Time__: March 24 2025",
+      "natural_language": "Initial client contact on March 24, 2025, with Dustin Meade regarding a motor vehicle accident, case Dustin-Meade-MVA-03-09-2025. The client indicates that his vehicle may be a total loss. A response from the PD adjuster is currently awaited. The contact was made by Justin.",
+      "valid_at": "2025-03-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "PD adjuster",
+            "relevance": "response awaited"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-03-25",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\nhey Dustin, It's Justin from the Whaley Law Firm. This is a text only number for your file. Send us some photos of the damage to your car so we have them on file. Thanks",
+      "natural_language": "Initial client contact on March 9, 2025, with Dustin Meade regarding a motor vehicle accident.\n\nThe contact came via a text message from Justin at the Whaley Law Firm. The message begins with \u201cHey Dustin\u201d and identifies Justin as being from the Whaley Law Firm. It states that this is a text-only number for Dustin\u2019s file and asks Dustin to send photos of the damage to his car so they have them on file. The message ends with thanks.",
+      "valid_at": "2025-03-25T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-27",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__Fwd: New Voice Message from PROGRESSIVE (502) 909-3687 on 03/26/2025 4:36 PM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Justin Chumbley [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nDate: Thu Mar 27 2025 08:17:27 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Wed, Mar 26, 2025 at 4:36?PM\nSubject: New Voice Message from PROGRESSIVE (502) 909-3687 on 03/26/2025\n4:36 PM\nTo: Jessa Galosmo \n\n[image: Logo] [image: Logo]\n[image: Logo] Voice Message\n------------------------------\n\nDear Jessa Galosmo,\n\nYou have a new voice message:\n*From:* PROGRESSIVE (502) 909-3687\n*Received:* Wednesday, March 26, 2025 at 4:36 PM\n*Length:* 00:33\n*To:* (502) 357-9975 Jessa Galosmo\n\n*Voicemail Preview:*\n\"Hi, this is Katie calling from Progressive Claims. I am in the Personal\nInjury Protection Department and calling about Dustin Mead and Jessica\nMahaney. I am the PIP adjuster that will be on this file. We are going to\nwork on getting an email sent over to you all as well, but we did receive a\nletter from up just had a couple of follow up questions. My phone number is\n529093687 claim number is 2 561-524-1502? Thank you.\"\nListen to this message over your phone or log in to your RingCentral account\n with your main number, extension number,\nand password. You can also manage your voicemails in your RingCentral\naccount.",
+      "natural_language": "Case: Dustin-Meade-MVA-03-09-2025. Client: Dustin Meade.\n\nOn March 26, 2025 at 4:36 PM, Progressive left a new voice message related to Dustin Meade and Jessica Mahaney. The message was received as a RingCentral voicemail, and the forward showing the message was sent on March 27, 2025 at 08:17:27 PM (GMT-04:00) from Jessa Galosmo to Justin Chumbley. The original voicemail was from Progressive Claims, dialing (502) 909-3687, with the caller identified as Katie in the Personal Injury Protection Department who is the PIP adjuster assigned to this file. The voicemail was 33 seconds long and was sent to Jessa Galosmo at the number (502) 357-9975.\n\nThe voicemail preview states: \u201cHi, this is Katie calling from Progressive Claims. I am in the Personal Injury Protection Department and calling about Dustin Mead and Jessica Mahaney. I am the PIP adjuster that will be on this file. We are going to work on getting an email sent over to you all as well, but we did receive a letter from up just had a couple of follow up questions. My phone number is 529093687 claim number is 2 561-524-1502? Thank you.\u201d The message invites listening to the full voicemail via RingCentral by logging in with the main number, extension, and password, and notes that voicemails can also be managed within the RingCentral account.",
+      "valid_at": "2025-03-27T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "primary client mentioned in voicemail"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer that left the voicemail"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Katie Mills",
+            "relevance": "PIP adjuster who left the voicemail"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim - Progressive Insurance Company",
+            "relevance": "Personal Injury Protection claim discussed/assigned"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-27",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__Fwd: Progressive Claim #25-615241502__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Justin Chumbley [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nDate: Thu Mar 27 2025 08:22:40 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: Katie Mills \nDate: Wed, Mar 26, 2025 at 4:50?PM\nSubject: Progressive Claim #25-615241502\nTo: JESSA@WHALEYLAWFIRM.COM ,\naries@whaleylawfirm.com \n\nHello,\n\nYou were both listed as contacts in our claim. Please let me know if I\nshould only reach out to one of you going forward. We received your letter\nof representation for Jessica Mahaney and Dustin Meade. I will be handling\nthe Personal Injury Protection (PIP) claim being presented on behalf of\nyour client.* Per your letter, $4,000 of benefits have been reserved, and\nwe will not pay ER/EMS bills at this time. *I have attached our letter of\nAcknowledgment. I have also attached a blank PIP Application, dec page, and\npolicy.\n\nIf able, please respond to my initial treatment and injury questions:\n\n1. Have either of your client treated anywhere else in addition to Scott\nCounty Chiro?\n\n2. Did your client lose any wages? If so, please advise where they work,\nwhat their job is, what their pay rate is and how long they may be off\nwork. (We'll need off work slips and wage documentation from the employer)\n\nThank you for your time.\n\n*Katie Mills**|**KY Medical Claims Representative*\n\nPO Box 2930 | Clinton, IA 52733\n\nPhone 502-909-3687 | Fax 877-213-7258\n\nHours: Monday-Friday 8:00 am-5:00 pm EST\n\nEmail: Katherine_e_mills@progressive.com\n\n \n\nThe contents of this e-mail and any attachments are confidential and may be\nlegally privileged, intended solely for the addressee. If you are not the\nintended recipient, be advised that any use, dissemination, distribution,\nstorage (including electronic) or copying of this e-mail is strictly\nprohibited. If you receive this e-mail in error, please notify the sender\nimmediately by reply e-mail and destroy the message and its attachments.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Dustin-Meade-MVA-03-09-2025. Client: Dustin Meade. The file includes a forwarded Progressive Claim #25-615241502. On March 27, 2025, Jessa Galosmo of the Whaley Law Firm forwarded the claim to Justin Chumbley regarding the matter.\n\nThe forwarded message originated as an email from Katie Mills, a KY Medical Claims Representative for Progressive, dated Wednesday, March 26, 2025 at 4:50?PM, with the subject \u201cProgressive Claim #25-615241502.\u201d The message was sent to JESSA@WHALEYLAWFIRM.COM and aries@whaleylawfirm.com. Katie explained that both contacts were listed in the claim and asked whether she should reach out to only one going forward. She stated that the claim includes letters of representation for Jessica Mahaney and Dustin Meade and that she would be handling the Personal Injury Protection (PIP) claim on behalf of the clients. Per the letter, $4,000 of benefits have been reserved and Progressive will not pay ER/EMS bills at this time. Katie noted that she had attached a letter of Acknowledgment and also attached a blank PIP Application, a declaration page, and the policy.\n\nKatie also requested responses to two initial treatment and injury questions: (1) whether either client has been treated anywhere else besides Scott County Chiro, and (2) whether the client lost any wages. If wages were lost, she asked for details on where they work, the nature of their job, their pay rate, and how long they may be off work, noting that off-work slips and wage documentation from the employer would be required. She closed by thanking the recipients for their time.\n\nKatie Mills\u2019s contact details were listed as follows: KY Medical Claims Representative, P.O. Box 2930, Clinton, IA 52733; phone 502-909-3687, fax 877-213-7258; hours Monday through Friday, 8:00 am\u20135:00 pm EST; email Katherine_e_mills@progressive.com.\n\nThe email contained a confidentiality notice stating that the contents of the email and any attachments are confidential and may be legally privileged, intended solely for the addressee, and that any use, dissemination, distribution, storage, or copying by non-recipients is strictly prohibited. If received in error, the recipient was instructed to notify the sender by reply email and destroy the message and its attachments. The message concluded with Jessa Galosmo\u2019s sign-off: \u201cAll the best, Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.\u201d",
+      "valid_at": "2025-03-27T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "primary client in case"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jessica Mahaney",
+            "relevance": "co-client referenced in letters of representation"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25-615241502",
+            "relevance": "PIP claim referenced in forwarded email"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer handling the PIP claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Katie Mills",
+            "relevance": "Progressive adjuster handling the PIP/medical claim"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Scott County Chiropractic",
+            "relevance": "treatment provider mentioned in claim inquiry"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm representing the clients and recipient of claim"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "Whaley Law Firm attorney who forwarded the claim"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "Whaley Law Firm attorney to whom the claim was forwarded"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-10",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, having MRI completed with 1st diagnostics \n__Person Making Contact:__ Justin\n__Date & Time__: April 10 2025",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025. Client: Dustin Meade.\n\nInitial client contact on April 10, 2025 with Dustin Meade, with Justin making the contact. The notes indicate that the client was spoken with and that an MRI had been completed with 1st diagnostics.",
+      "valid_at": "2025-04-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "person contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "1st Diagnostics",
+            "relevance": "performed MRI"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-04-10",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\nClient Contacted today to give update #cc",
+      "natural_language": "On March 9, 2025, Dustin Meade, the client in the Dustin-Meade-MVA-03-09-2025 motor vehicle accident case, contacted the office to provide update #cc.",
+      "valid_at": "2025-04-10T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "contacted office to provide an update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-14",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client and companion, have about another week or so with chiro and will update us on release \n__Person Making Contact:__ Justin\n__Date & Time__: April 14 2025",
+      "natural_language": "Initial client contact on April 14, 2025, for Dustin Meade regarding a motor vehicle accident (Dustin-Meade-MVA-03-09-2025). The contact was made by Justin, who spoke with the client and their companion. They reported that they have about another week or so of chiropractic care and will update us on their release.",
+      "valid_at": "2025-04-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "subject of contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Scott County Chiropractic",
+            "relevance": "chiropractic provider in treatment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-04-14",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\nClient Contacted today to give update #cc",
+      "natural_language": "On March 9, 2025, Dustin Meade, the client in the motor vehicle accident case Dustin-Meade-MVA-03-09-2025, was contacted to provide an update, designated as update #cc.",
+      "valid_at": "2025-04-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-01",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__New Insurance Note:__ 5/1 spoke with PIP adjuster, updated ledgers in route\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025 involves client Dustin Meade in a motor vehicle accident. A new insurance note on the file states that on 5/1 the PIP adjuster was spoken with and ledgers were updated in route.\n\nThe insurance type is Personal Injury Protection (PIP), and the insurer is Progressive Insurance Company. The note was written by Justin Chumbley. This entry is filed under #Inotes.",
+      "valid_at": "2025-05-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer on file"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company (PIP)",
+            "relevance": "PIP claim referenced"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Katie Mills",
+            "relevance": "PIP adjuster spoken with"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-01",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__New Insurance Note:__ 5/1 saved PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Dustin-Meade-MVA-03-09-2025 involves client Dustin Meade. A new insurance note was added on May 1 indicating that the PIP ledger had been saved. The insurance type is Personal Injury Protection (PIP), and the insurer is Progressive Insurance Company. The note was written by Justin Chumbley.",
+      "valid_at": "2025-05-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer referenced"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Progressive Insurance Company",
+            "relevance": "PIP ledger saved / PIP claim referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-17",
+      "original_body": "Case: Dustin-Meade-MVA-03-09-2025\nClient: Dustin Meade\n\n__Meade and Maheny__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Dustin Meade - Filevine Project Email Address [DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com](mailto:DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com), Jessica Mahaney - Filevine Project Email Address [JessicaMahaneyMVAZ4957022@louisvilleaccidentlawyer.filevineapp.com](mailto:JessicaMahaneyMVAZ4957022@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Jul 17 2025 11:08:54 GMT-04:00\n\nProbably need to send updated record requests to chiro. I think they\nrecently completed treatment and request was send in April.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "The case is labeled Dustin-Meade-MVA-03-09-2025 and involves client Dustin Meade. The note is filed under the heading \u201cMeade and Maheny.\u201d\n\nOn July 17, 2025 at 11:08:54 AM (GMT-04:00), Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley at Justin@whaleylawfirm.com, Dustin Meade\u2019s Filevine project email address DustinMeadeMVAZ4957017@louisvilleaccidentlawyer.filevineapp.com, and Jessica Mahaney\u2019s Filevine project email address JessicaMahaneyMVAZ4957022@louisvilleaccidentlawyer.filevineapp.com. The message notes that it is probably necessary to send updated record requests to the chiropractor. It also states that the chiropractor (or the records) recently completed treatment and that a prior request was sent in April.\n\nSincerely,\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dustin Meade",
+            "relevance": "primary client of the case / project recipient"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jessica Mahaney",
+            "relevance": "co-client / project recipient (Filevine email)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender who requested updated records"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient at Whaley Law Firm"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Scott County Chiropractic",
+            "relevance": "chiropractor whose records/treatment are discussed; recipient of records request"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

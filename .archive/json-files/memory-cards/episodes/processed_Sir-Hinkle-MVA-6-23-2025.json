@@ -1,0 +1,60 @@
+{
+  "case_name": "Sir-Hinkle-MVA-6-23-2025",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Southeastern Emergency Physician Services",
+        "specialty": null
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "UofL Health - Medical Center Southwest",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Sedgwick"
+      },
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Meredith Spencer"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Sir-Hinkle-MVA-6-23-2025-Bodily Injury (BI)-4A2506R0N0S0002",
+        "insurer": "Sedgwick",
+        "adjuster": "Meredith Spencer"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Sir-Hinkle-MVA-6-23-2025-Personal Injury Protection (PIP)-17-86Q5-96W",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": null
+      }
+    ],
+    "liens": [
+      {
+        "name": "Sir-Hinkle-MVA-6-23-2025-Optum",
+        "holder": "Optum",
+        "amount": 1281.52
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

@@ -1,0 +1,77 @@
+# Relationship Review: James-Crowdus-MVA-8-10-2025
+
+**Total Episodes:** 12
+
+**Total Proposed Relationships:** 53
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (5)
+- Aptiva Health Health Health
+- Imaging
+- Louisville Metro EMS (emergency medical services)
+- Norton Hospital (hospital)
+- Starlite Chiropractic (chiropractic)
+
+### Insurance Claims (2)
+- **PIPClaim**: State Farm Insurance Company
+- **BIClaim**: State Farm Insurance Company
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (2 consolidated)
+- [ ] Justin — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Adjuster)*
+- [ ] Leslie Simon — *✓ MATCHES: Leslie Simon (from adjusters)*
+
+### Attorney (2 consolidated)
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] **Justin Chumbley** — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+      ↳ _Justin Whaley_
+
+### BIClaim (3 consolidated)
+- [ ] BI #17-88T6-48L — *IGNORED - claim number*
+- [ ] Claim 17-88T6-48L — *IGNORED - claim number*
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+### Client (1 consolidated)
+- [ ] James Crowdus — *✓ MATCHES: James Crowdus*
+
+### Insurer (1 consolidated)
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+### LawFirm (1 consolidated)
+- [ ] Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### MedicalProvider (5 consolidated)
+- [ ] Aptiva Health Health Health — *✓ MATCHES: Aptiva Health Health Health*
+- [ ] Diagnostic Imaging Alliance of Louisville — *✓ MATCHES: Diagnostic Imaging Alliance of Louisville*
+- [ ] Louisville Metro EMS — *✓ MATCHES: Louisville Metro EMS*
+- [ ] Norton Hospital — *✓ MATCHES: Norton Hospital*
+- [ ] Starlite Chiropractic — *✓ MATCHES: Starlite Chiropractic*
+
+### PIPClaim (1 consolidated)
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

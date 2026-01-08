@@ -1,0 +1,575 @@
+{
+  "case_name": "Jacob-Herrle-MVA-6-17-2025",
+  "total_episodes": 22,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Fort Wright Fire Department Ambulance",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Holmes Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "Radiology Associates of Northern Kentucky, PLLC",
+        "specialty": "radiology"
+      },
+      {
+        "name": "St. Elizabeth Edgewood Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "UC Gardner Neuroscience Institute",
+        "specialty": null
+      },
+      {
+        "name": "UC Health - West Chester Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Collins & Company"
+      },
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Jim Johnson"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Jacob-Herrle-MVA-6-17-2025-Bodily Injury (BI)-733249",
+        "insurer": "Collins & Company",
+        "adjuster": "Jim Johnson"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Jacob-Herrle-MVA-6-17-2025-Personal Injury Protection (PIP)-1786K421P",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": null
+      }
+    ],
+    "liens": [
+      {
+        "name": "Jacob-Herrle-MVA-6-17-2025-Anthem",
+        "holder": null,
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2025-07-02",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__CLIENT CONTACT__\n__Details:__ Jacob Hurley\nDOA 6/17/2025\nLocation Hwy 17 off Highland pike and orphanage road\n\nJherrle44@gmail.com\n\nJacob Herrle\nDOB 11/25/1992\nSSN: 403-45-0715\nAddress\n3032 Alderbrook Dr\nIndependence KY 41051\n\nPIP \nState Farm\n\nBI \nTravelers Indeminity\n\nInjuries\nHas arthritis in spine, has a cervical fusion 5 surguries in past 4 years has had previous lower back surgery, right hip\n\nSt. Elizabeth Edgewood\nEMS Edgewood EMS\n\nUC Gardner Neuroscience center \u2013 neurosurgery \n\nBus attempted an illegal uturn \n__Person Making Contact:__ Justin\n__Date & Time__: July 02 2025",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 involves Jacob Herrle. Initial client contact occurred on June 17, 2025 regarding a motor vehicle accident. Details listed include \"Details: Jacob Hurley.\" The date of accident is June 17, 2025, and the reported location is Highway 17 off Highland Pike and Orphanage Road. The client\u2019s email is jherrle44@gmail.com. His address is 3032 Alderbrook Dr, Independence, KY 41051. The client\u2019s full name is Jacob Herrle, with a date of birth of 11/25/1992 and SSN 403-45-0715.\n\nInsurance information is as follows: PIP is with State Farm, and Bodily Injury coverage is with Travelers Indemnity. Injuries include arthritis in the spine, a cervical fusion, and five surgeries in the past four years, including a prior lower back surgery and a right hip issue.\n\nMedical care and facilities involved include St. Elizabeth Edgewood, with EMS provided by Edgewood EMS, and neurosurgical care through UC Gardner Neuroscience Center. The incident is noted as a bus attempting an illegal U-turn. The person making contact was Justin, and the date/time of that contact is July 2, 2025.",
+      "valid_at": "2025-07-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Edgewood Hospital",
+            "relevance": "treatment facility"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UC Gardner Neuroscience Institute",
+            "relevance": "neurosurgical care provider"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP insurer/claim for client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-07-02",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n#vinesign-completed\nName: Intake \nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=7acc7fc9-58e4-46e1-a090-5b12c1521b93.pdf\nSigned: 2025-07-02 19:38:30\nAll signers: Jacob Herrle(jherrle44@gmail.com (859) 547-2611)\nSender: Justin Chumbley",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 involves client Jacob Herrle in a motor vehicle accident matter. An intake document titled \u201cIntake\u201d was prepared and completed through VineSign. The signed intake form is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=7acc7fc9-58e4-46e1-a090-5b12c1521b93.pdf.\n\nThe signing occurred on 2025-07-02 at 19:38:30. All signers listed were Jacob Herrle (jherrle44@gmail.com, (859) 547-2611). The document was sent by Justin Chumbley.",
+      "valid_at": "2025-07-02T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "client and signer of intake form"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-09",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nleft vm for Bob Lockman with TANK",
+      "natural_language": "The Jacob-Herrle MVA case, dated June 17, 2025, involves client Jacob Herrle in relation to a motor vehicle accident.\n\nA voicemail was left for Bob Lockman with TANK.",
+      "valid_at": "2025-07-09T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "client involved in MVA case"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "TANK",
+            "relevance": "recipient of voicemail (Bob Lockman)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-10",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nleft another vm for Bob Lockman with Tank",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 concerns client Jacob Herrle. On June 17, 2025, another voicemail was left for Bob Lockman with Tank.",
+      "valid_at": "2025-07-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-10",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__New Insurance Note:__ 7/10 saved PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 involves client Jacob Herrle in connection with a motor vehicle accident on June 17, 2025. A new insurance note was recorded: on 7/10, the PIP ledger was saved. The insurance type is Personal Injury Protection (PIP), and the insurer is State Farm Insurance Company. The entry was written by Justin Chumbley and is filed under Inotes.",
+      "valid_at": "2025-07-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "client involved in the motor vehicle accident"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP ledger saved / PIP claim referenced"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer for the PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-11",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__CLIENT CONTACT__\n__Details:__ spoke with client in process of scheduling a MRI on his hip. Will send us the info for the facility once he confirms \n__Person Making Contact:__ Justin\n__Date & Time__: July 11 2025",
+      "natural_language": "Initial client contact on July 11, 2025 with Justin regarding Jacob Herrle\u2019s MVA case (Jacob-Herrle-MVA-6-17-2025) and the scheduling of an MRI for his hip. The client is in the process of scheduling the MRI and will send us the facility information once he confirms.",
+      "valid_at": "2025-07-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "client; subject of contact regarding MRI scheduling"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-22",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nIt's Justin from the Whaley Law Firm. This is the text only number for your file. Send a photo of the front and back of your health insurance card here. Feel free to call me anytime, my direct dial is 502-357-9603",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 involves client Jacob Herrle. On June 17, 2025, Justin from the Whaley Law Firm made initial contact regarding the motor vehicle accident with Herrle. He said, \u201cThis is the text only number for your file,\u201d and he asked Herrle to \u201cSend a photo of the front and back of your health insurance card here.\u201d He closed by inviting Herrle to call anytime, providing his direct dial: 502-357-9603.",
+      "valid_at": "2025-07-22T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "client/recipient of initial contact"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin",
+            "relevance": "made initial contact"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "originating firm of the contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-22",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, is going to mail us USB with his priors records \n__Person Making Contact:__ Justin\n__Date & Time__: July 22 2025",
+      "natural_language": "Initial client contact on July 22, 2025 with Jacob Herrle regarding motor vehicle accident matter Jacob-Herrle-MVA-6-17-2025. Justin spoke with the client, who stated that he would mail us a USB containing his prior records.",
+      "valid_at": "2025-07-22T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nCase strategy development and settlement planning.",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 concerns the client Jacob Herrle. The matter, designated as an MVA (motor vehicle accident) case, is currently focused on case strategy development and settlement planning.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nInsurance communications and claim processing updates.",
+      "natural_language": "Initial client contact on June 17, 2025 with Jacob Herrle regarding a motor vehicle accident. The matter is documented as Jacob-Herrle-MVA-6-17-2025 and centers on insurance communications and updates to the claim processing for the client, Jacob Herrle.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "initial client contact; subject of matter"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Collins & Company",
+            "relevance": "insurance claim discussed; claim processing updates"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurance claim discussed; claim processing updates"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nRecent accident follow-up and medical evaluation progress.",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 involves the client Jacob Herrle.\n\nThis narrative documents the recent motor vehicle accident follow-up and the progress of his medical evaluation as of June 17, 2025.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nInsurance communication and claim initiation process.",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 concerns client Jacob Herrle and relates to a motor vehicle accident.\n\nThe record centers on insurance communication and the initiation of a claim, outlining the steps involved in coordinating with the insurer and beginning the claims process for Jacob Herrle.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer being coordinated with"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "claim being initiated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nPolice report analysis and medical documentation review.",
+      "natural_language": "Initial client contact on June 17, 2025, with Jacob Herrle regarding a motor vehicle accident (Case Jacob-Herrle-MVA-6-17-2025). The engagement centers on police report analysis and medical documentation review.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "initial client contact; subject of engagement"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nJune 17, 2025 motor vehicle accident case intake.",
+      "natural_language": "Initial client contact on June 17, 2025 with Jacob Herrle regarding a motor vehicle accident.\n\nThis intake is associated with the case Jacob-Herrle-MVA-6-17-2025 and confirms the client\u2019s name as Jacob Herrle.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "initial client contact / client confirmed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-24",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__New Insurance Note:__ 9/24 requested updated ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 involves client Jacob Herrle.\n\nA new insurance note indicates that on 9/24 an updated ledger was requested. The insurance type is Personal Injury Protection (PIP), and the insurance company is State Farm Insurance Company.\n\nThe note was written by Justin Chumbley.",
+      "valid_at": "2025-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "named client of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer for the PIP policy"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim discussed (updated ledger requested on 9/24)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-24",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, is doing PT for his hip. \n\nPT was done at ST. Elizabeth PT center in Florence/edgewood\n\nis progressing well, is going to follow up with neurosurgeon \n__Person Making Contact:__ Justin\n__Date & Time__: September 24 2025",
+      "natural_language": "Initial client contact on September 24, 2025 with Jacob Herrle regarding his motor vehicle accident and the physical therapy for his hip. The contact was made by Justin.\n\nHerrle reports that he is currently undergoing physical therapy for his hip at the St. Elizabeth PT Center in Florence/Edgewood and is progressing well; he plans to follow up with his neurosurgeon.",
+      "valid_at": "2025-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "patient and source of report"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Edgewood Hospital",
+            "relevance": "physical therapy provider (St. Elizabeth PT Center in Florence/Edgewood)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UC Gardner Neuroscience Institute",
+            "relevance": "neurosurgeon follow-up planned"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-03",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__CLIENT CONTACT__\n__Details:__ Client is wrapping up treatment, is going to gather some r/b and send to us \n__Person Making Contact:__ Justin\n__Date & Time__: October 03 2025",
+      "natural_language": "Initial client contact on October 03, 2025 with Jacob Herrle regarding motor vehicle accident (Case Jacob-Herrle-MVA-6-17-2025). The client is wrapping up treatment and is going to gather some r/b and send to us. The contact was made by Justin.",
+      "valid_at": "2025-10-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "client contacted / subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-23",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, he's going to send us a bill that he paid out of pocket recently. He's going to help put together a comprehensive list of providers to make sure we don't miss anything. he will email them to me \n__Person Making Contact:__ Justin\n__Date & Time__: October 23 2025",
+      "natural_language": "Initial client contact on October 23, 2025 with Jacob Herrle regarding a motor vehicle accident. The contact was conducted by Justin. During the conversation, Mr. Herrle advised that he recently paid a medical bill out of pocket and will send that bill to us. He also volunteered to help assemble a comprehensive list of providers to ensure we do not miss anyone, and he will email the list to me.",
+      "valid_at": "2025-10-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "subject of contact; reported paying a medical bill out of pocket and will send the bill and a list of providers"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-23",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__Fwd: New Voice Message from HERRLE JACOB (859) 547-2611 on 10/23/2025 2:07 PM__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Jacob Herrle - Filevine Project Email Address [JacobHerrleMVAZ5050359@louisvilleaccidentlawyer.filevineapp.com](mailto:JacobHerrleMVAZ5050359@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Oct 23 2025 02:36:04 GMT-04:00\n\nThis is from Jacob Herrle. Please give him a call.\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Thu, Oct 23, 2025 at 2:07?PM\nSubject: New Voice Message from HERRLE JACOB (859) 547-2611 on 10/23/2025\n2:07 PM\nTo: aaron whaley \n\n[image: Logo] [image: Logo]\n[image: Logo] Voice Message\n------------------------------\n\nDear aaron whaley,\n\nYou have a new voice message:\n*From:* HERRLE JACOB (859) 547-2611\n*Received:* Thursday, October 23, 2025 at 2:07 PM\n*Length:* 01:08\n*To:* (502) 583-4022 * 101 aaron whaley\n\n*Voicemail Preview:*\n\"Hello, Aaron. This is Jacob Herrle. I am calling because back in July I\nsigned up with your firm to help with an accent I was a part of recently I\nhave been I have been trying to reach out to Justin to try to get some sort\nof update because I am getting hounded by by Bill, I guess By by the\nhospital, apparently there is just issues going on with payments. I do not\nI do not know, I guess what is going on if we have if we have even\nsubmitted a claim I talked about with him that is made a claim like a week\nand a half ago and then I have heard nothing since then and I just I have\nno information about what is going on. I would really like someone to talk\nto me here soon otherwise I guess I do not know what re course I have\nbesides to try to find someone else to work with me on this case. So, I\nwould love if someone would contact me here very soon so that I can\ndetermine if I want to want to go with you guys or if I need to just use\nsomeone else. So give me a call back when you can at 859-547-2611 that is\n5472611. Thank you so much. Bye.\"\nListen to this message over your phone or log in to your RingCentral account\n with your main number, extension number,\nand password. You can also manage your voicemails in your RingCentral\naccount.",
+      "natural_language": "Case: Jacob-Herrle-MVA-6-17-2025. Client: Jacob Herrle.\n\nOn October 23, 2025, at 2:36 PM, Aaron Whaley of Whaley Law Firm forwarded an email to Justin Chumbley and to Jacob Herrle\u2019s Filevine project email address, with the note: \u201cThis is from Jacob Herrle. Please give him a call.\u201d The forwarded message included a RingCentral notification about a new voice message from HERRLE JACOB (859) 547-2611 dated October 23, 2025.\n\nThe RingCentral message indicates a new voice message from HERRLE JACOB at the phone number 859-547-2611, received Thursday, October 23, 2025, at 2:07 PM. The message is 1 minute and 8 seconds long, and was left for Aaron Whaley at the number 502-583-4022, extension 101. The voicemail preview transcribes the following content, including the speaker\u2019s exact wording and repetitions: \"Hello, Aaron. This is Jacob Herrle. I am calling because back in July I signed up with your firm to help with an accent I was a part of recently I have been I have been trying to reach out to Justin to try to get some sort update because I am getting hounded by by Bill, I guess By by the hospital, apparently there is just issues going on with payments. I do not I do not know, I guess what is going on if we have if we have even submitted a claim I talked about with him that is made a claim like a week and a half ago and then I have heard nothing since then and I just I have no information about what is going on. I would really like someone to talk to me here soon otherwise I guess I do not know what re course I have besides to try to find someone else to work with me on this case. So, I would love if someone would contact me here very soon so that I can determine if I want to want to go with you guys or if I need to just use someone else. So give me a call back when you can at 859-547-2611 that is 5472611. Thank you so much. Bye.\" The notification also advises: \"Listen to this message over your phone or log in to your RingCentral account with your main number, extension number, and password. You can also manage your voicemails in your RingCentral account.\"",
+      "valid_at": "2025-10-23T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "caller / client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "recipient of voicemail / attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "copied recipient on forwarded message / attorney contacted"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm handling the case / sender of forwarded email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-23",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\nA missed call for aaron whaley was logged at 10/23/25 - 14:05:12 . #missedcall\n\nCaller Info: 8595472611 \n\nCaller ID: 859-547-2611 \n\nCaller Name: Jacob Herrle \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hello, Aaron. This is Jacob Herrle. I am calling because back in July I signed up with your firm to help with an accent I was a part of recently I have been I have been trying to reach out to Justin to try to get some sort of update because I am getting hounded by by Bill, I guess By by the hospital, apparently there is just issues going on with payments. I do not I do not know, I guess what is going on if we have if we have even submitted a claim I talked about with him that is made a claim like a week and a half ago and then I have heard nothing since then and I just I have no information about what is going on. I would really like someone to talk to me here soon otherwise I guess I do not know what re course I have besides to try to find someone else to work with me on this case. So, I would love if someone would contact me here very soon so that I can determine if I want to want to go with you guys or if I need to just use someone else. So give me a call back when you can at 859-547-2611 that is 5472611. Thank you so much. Bye.",
+      "natural_language": "Case Jacob-Herrle-MVA-6-17-2025 involves client Jacob Herrle in a motor vehicle accident matter. A missed call to Aaron Whaley was logged on October 23, 2025 at 14:05:12. Caller information shows Jacob Herrle as the caller, with phone number 859-547-2611 and caller ID 859-547-2611. The caller email field is blank. A Filevine contact link is available [filevine-link].\n\nVoicemail transcription from Jacob Herrle is as follows: \"Hello, Aaron. This is Jacob Herrle. I am calling because back in July I signed up with your firm to help with an accent I was a part of recently I have been I have been trying to reach out to Justin to try to get some sort of update because I am getting hounded by by Bill, I guess By by the hospital, apparently there is just issues going on with payments. I do not I do not know, I guess what is going on if we have if we have even submitted a claim I talked about with him that is made a claim like a week and a half ago and then I have heard nothing since then and I just I have no information about what is going on. I would really like someone to talk to me here soon otherwise I guess I do not know what re course I have besides to try to find someone else to work with me on this case. So, I would love if someone would contact me here very soon so that I can determine if I want to want to go with you guys or if I need to just use someone else. So give me a call back when you can at 859-547-2611 that is 5472611. Thank you so much. Bye.\"",
+      "valid_at": "2025-10-23T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "caller / subject of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "person contacted (voicemail recipient)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin",
+            "relevance": "attorney referenced by client (no response/update)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n__Jacob Herle__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Jacob Herrle - Filevine Project Email Address [JacobHerrleMVAZ5050359@louisvilleaccidentlawyer.filevineapp.com](mailto:JacobHerrleMVAZ5050359@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 02:15:53 GMT-04:00\n\nIt's like there are several hospital bills and records that we are missing.\nPlease request.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Jacob-Herrle-MVA-6-17-2025. Client: Jacob Herrle. On October 29, 2025, at 02:15:53 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley (Justin@whaleylawfirm.com) and to Jacob Herrle\u2019s Filevine project inbox at JacobHerrleMVAZ5050359@louisvilleaccidentlawyer.filevineapp.com. The message states that there appear to be several hospital bills and medical records that are missing and requests that they be obtained.\n\nThe email was signed by Aaron Whaley of Whaley Law Firm, with the firm\u2019s contact details included: 712 Lyndon Lane, Louisville, KY 40222, and phone number 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "case client; Filevine project inbox recipient"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender requesting missing hospital bills and medical records"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient/cc"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm; contact details included in email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-11-30",
+      "original_body": "Case: Jacob-Herrle-MVA-6-17-2025\nClient: Jacob Herrle\n\n**FILE ORGANIZATION COMPLETED**\n\nCompleted comprehensive 5-phase case file organization using 8-bucket system:\n\n**Results:**\n- 19 document files successfully reorganized with standardized naming (YYYY-MM-DD format)\n- 8 duplicate sets identified and removed (10 duplicate files total)\n- 100% naming convention compliance achieved\n- All PDF/MD companion files reunified and matched\n\n**File Distribution:**\n- Client: 7 files (intake forms, fee agreement, Anthem insurance cards)\n- Investigation: 3 files (police traffic collision report)\n- Medical Records: 19 files across 3 providers (Fort Wright Fire Dept EMS, St. Elizabeth Edgewood Hospital, UC Health - West Chester Hospital)\n- Insurance: 13 files (PIP/State Farm and BI/Collins & Company correspondence)\n\n**Quality Metrics:**\n- Error rate: 0.0% (perfect categorization)\n- Quality rating: 95/100\n- All 9 bucket directories verified and operational\n\nCase folder is now fully organized and ready for attorney review and case management.",
+      "natural_language": "Case: Jacob-Herrle-MVA-6-17-2025. The client is Jacob Herrle. The file organization process was completed as a comprehensive five-phase effort using an eight-bucket system.\n\nResults from the organization were as follows: 19 document files were successfully reorganized with standardized naming in the YYYY-MM-DD format. Eight duplicate sets were identified and removed, totaling 10 duplicate files. Naming convention compliance was achieved at 100%. All PDF/MD companion files were reunified and matched.\n\nFile distribution is organized as: Client\u20147 files (intake forms, fee agreement, Anthem insurance cards); Investigation\u20143 files (police traffic collision report); Medical Records\u201419 files across three providers (Fort Wright Fire Dept EMS, St. Elizabeth Edgewood Hospital, UC Health - West Chester Hospital); Insurance\u201413 files (PIP/State Farm and BI/Collins & Company correspondence).\n\nQuality metrics indicate an error rate of 0.0% (perfect categorization) and a quality rating of 95/100. All nine bucket directories have been verified and are operational. The case folder is now fully organized and ready for attorney review and case management.",
+      "valid_at": "2025-11-30T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jacob Herrle",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Fort Wright Fire Department Ambulance",
+            "relevance": "EMS medical records provider"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Edgewood Hospital",
+            "relevance": "hospital medical records provider"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UC Health - West Chester Hospital",
+            "relevance": "hospital medical records provider"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim referenced in insurance files"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Collins & Company",
+            "relevance": "BI claim referenced in insurance files"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jim Johnson",
+            "relevance": "adjuster for BI claim (Collins & Company)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

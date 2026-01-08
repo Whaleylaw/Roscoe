@@ -1,0 +1,274 @@
+{
+  "case_name": "Julian-Wilson-MVA-10-12-2025",
+  "total_episodes": 6,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-10-14",
+      "original_body": "Case: Julian-Wilson-MVA-10-12-2025\nClient: Julian Wilson\n\nsent intake docs via vinesign",
+      "natural_language": "The case Julian-Wilson-MVA-10-12-2025 involves client Julian Wilson in a motor vehicle accident matter. Intake documents have been sent via VineSign.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Julian Wilson",
+            "relevance": "subject/client involved in MVA case"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "used to send intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-14",
+      "original_body": "Case: Julian-Wilson-MVA-10-12-2025\nClient: Julian Wilson\n\n__CLIENT CONTACT__\n__Details:__ Report Number \nDOA 10/12/25\n\nLMPD\n25121081\n\nJasmine Wilson\nDOB 5/10/1991\nSSN: 406-41-7125\nPh: 502-792-4566\n\nAddress\n9406 Doral Ct\nApt 4\nLouisville, kY 40220\n\nWilsonjasmine5101991@gmail.com\nPIP \u2013 Progressive\n\nLeaving church on outer loop near dairy queen, when someone was waived into traffic and didn\u2019t\u2019 see client in second lane\n\nInjuries, back pain, some bruising\n\nNo EMS\nAudubon Hospital \n__Person Making Contact:__ Justin\n__Date & Time__: October 14 2025",
+      "natural_language": "Initial client contact on October 14, 2025 with Justin regarding the motor vehicle accident documented as Julian-Wilson-MVA-10-12-2025. The client, Julian Wilson, reports that, while leaving church on the outer loop near Dairy Queen, another driver waived into traffic and did not see the client in the second lane. The client sustained back pain and some bruising. There was no EMS involvement. Audubon Hospital is noted in connection with the case. PIP \u2013 Progressive.\n\nDetails recorded include Report Number DOA 10/12/25 and LMPD 25121081. The note also lists Jasmine Wilson with the following identifiers and contact information: DOB 5/10/1991; SSN: 406-41-7125; Ph: 502-792-4566; Address 9406 Doral Ct Apt 4 Louisville, kY 40220; Wilsonjasmine5101991@gmail.com; PIP \u2013 Progressive. The record indicates the person making contact was Justin, Date & Time: October 14 2025.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Julian Wilson",
+            "relevance": "injured client involved in MVA"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "related contact/household member listed in file"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "insurer handling PIP coverage"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Audubon Hospital",
+            "relevance": "medical provider noted in connection with the case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP - Progressive",
+            "relevance": "personal injury protection claim for medical payments"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-30",
+      "original_body": "Case: Julian-Wilson-MVA-10-12-2025\nClient: Julian Wilson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, PD is a total loss. mom will be seeing a neuro and will likely do some PT. She's going to text us info on locations etc. will go ahead and request Julian and child's Norton r/b and move those two forward \n__Person Making Contact:__ Justin\n__Date & Time__: October 30 2025",
+      "natural_language": "Initial client contact on October 30, 2025, with Julian Wilson regarding a motor vehicle accident (case Julian-Wilson-MVA-10-12-2025). The contact was made by Justin.\n\nDuring the discussion, the client stated that PD is a total loss. The client's mother will be seeing a neurologist and will likely undergo physical therapy. She will text us information on locations, etc. We will go ahead and request Julian and child\u2019s Norton r/b and move those two forward.",
+      "valid_at": "2025-10-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Julian Wilson",
+            "relevance": "primary client/contact"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Julian's child",
+            "relevance": "related claimant whose records will be requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton r/b",
+            "relevance": "records to be requested for Julian and child"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "neurologist",
+            "relevance": "provider the client's mother will see"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Julian Wilson - 2025-11-13",
+      "original_body": "Case: Julian-Wilson-MVA-10-12-2025\nClient: Julian Wilson\n\nI signed them and sent them back to you.",
+      "natural_language": "The case Julian-Wilson-MVA-10-12-2025 concerns Julian Wilson as the client. I signed the documents and sent them back to you.",
+      "valid_at": "2025-11-13T00:00:00",
+      "author": "Julian Wilson",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Julian Wilson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Julian-Wilson-MVA-10-12-2025\nClient: Julian Wilson\n\n**COMPREHENSIVE FILE ORGANIZATION COMPLETED - 95% SUCCESS**\n\nCompleted full Case File Organization skill workflow using 8-bucket system with excellent accuracy (0% error rate on organized files).\n\n**WORKFLOW PHASES:**\n- Phase 1 (Inventory): Generated inventory of 29 files with filename scrambling for 20 .md files (8.98s)\n- Phase 2 (Analysis & Mapping): Single sub-agent mapped all files with proper categorization\n- Phase 2 Validation: Verified 38 data rows, no placeholders (0.68s)\n- Phase 3 (Quality Review): 0.0% error rate - APPROVED FOR EXECUTION\n- Phase 4 (Execution): 21 operations executed (17 moves + 4 deletions) (6.06s)\n- Phase 5 (Verification): 95% success - 2 image files flagged for manual review\n\n**RESULTS:**\n- Files organized: 46 total across all buckets\n- Files moved: 17 operations (16 PDF+MD pairs + 1 .doc file)\n- Duplicates deleted: 4 files (2 duplicate police reports, 1 duplicate settlement offer, 1 duplicate dec page)\n- Naming compliance: 100% (all organized files)\n- PDF+MD pairing: 100% (17/17 pairs)\n- Files pending review: 2 image files in root (UUIDs - need to determine if insurance cards or accident photos)\n\n**FILE DISTRIBUTION BY BUCKET:**\n- Investigation: 2 files (police report)\n- Medical Records: 11 files (Norton Audubon Hospital - bills, HIPAA authorizations, records requests)\n- Insurance: 20 files (BI/State Farm: 6, PIP/Progressive: 10, UIM/Progressive: 2)\n- Negotiation Settlement: 2 files (State Farm $50k global settlement offer)\n- Case Information: 6 files (JSON metadata)\n- Reports: 5 files (generated analysis reports)\n\n**CASE DETAILS EXTRACTED:**\n\n**Multi-Party Case:** This is one of THREE related Wilson family cases from same accident:\n- Julian Wilson (THIS CASE - minor child, DOB 10/20/2010)\n- Jasmine Wilson (mother, separate folder: Jasmine-Wilson-MVA-10-12-2025)\n- Carmelita Wilson (passenger, separate folder: Carmelita-Wilson-MVA-10-12-2025)\n\n**Accident:** 10/12/2025, Louisville Metro Police Dept Report #25121081. Leaving church on outer loop near Dairy Queen when at-fault driver was waved into traffic and didn't see client in second lane.\n\n**At-Fault Party:** Luz Vivas, insured by State Farm (Claim #17-91R0-83K, Adjuster: Katrina Mishoe, Direct: 901-384-5820)\n\n**Client's Insurance:** Progressive PIP (Claim #25-663229793, Adjuster: Yvonne P. Copas, Phone: 502-909-3610). Note: $1,000 PIP deductible to be split between Jasmine and Julian Wilson.\n\n**Injuries:** Julian - back pain, some bruising. No EMS transport. Treated at Norton Audubon Hospital ER.\n\n**Medical Treatment:** Norton Audubon Hospital (ER visit on accident date). Medical records and bills requested 10/30/2025.\n\n**Insurance Activity:**\n- 10/16/2025: Letters of representation sent to State Farm (BI) and Progressive (PIP)\n- 10/16/2025: State Farm acknowledged representation\n- 10/21/2025: Progressive acknowledged representation, sent PIP application and medical authorization\n- 11/07/2025: State Farm tendered $50k global settlement offer for all 3 Wilson family members\n- 11/07/2025: Coots letter sent to Progressive for UIM consent to settle\n- 11/07/2025: Progressive opened UIM claims (25/50 UIM coverage available)\n\n**Settlement Allocation (per attorney notes):** Client Jasmine prefers $20k to herself and $5k to minor son Julian from the $50k global offer. Note: Carmelita Wilson has $200k ER bill.\n\n**Case Phase Progression:**\n- 10/14/2025: Lead status (intake docs sent via VineSign)\n- 10/16/2025: File Setup\n- 10/16/2025: Treatment phase\n- 10/30/2025: Demand in Progress (client completed treatment, ready for demand)\n- 11/07/2025: State Farm settlement offer received\n- 12/01/2025: File organization completed\n\n**Client Contact Info:**\n- Phone: 502-792-4566\n- Email: Wilsonjasmine5101991@gmail.com (mother's email)\n- Address: 9406 Doral Ct, Apt 4, Louisville, KY 40220\n\n**Outstanding Items:**\n- 2 image files need manual review (determine if insurance cards \u2192 Client/ or accident photos \u2192 Investigation/)\n- 2 empty subdirectories can be removed (optional cleanup)\n- Medical records from Norton Audubon Hospital (requested 10/30/2025)\n- Coordination with Jasmine and Carmelita Wilson cases for global settlement\n\n**REPORTS GENERATED:** file_inventory, file_reorganization_map, pdf_md_mapping, quality_review_summary, reorganization_plan.json, reorganization_summary (all in Reports/ folder).",
+      "natural_language": "Case: Julian-Wilson-MVA-10-12-2025. Client: Julian Wilson.\n\nA comprehensive file organization effort was completed with 95% success. The work used an 8-bucket system and achieved excellent accuracy, with a 0% error rate on organized files.\n\nWorkflow phases: Phase 1 (Inventory) produced an inventory of 29 files, with filename scrambling applied to 20 Markdown (.md) files, completed in 8.98 seconds. Phase 2 (Analysis & Mapping) had a single sub-agent map all files with proper categorization. Phase 2 Validation verified 38 data rows with no placeholders, in 0.68 seconds. Phase 3 (Quality Review) showed a 0.0% error rate and the set was APPROVED FOR EXECUTION. Phase 4 (Execution) involved 21 operations: 17 moves and 4 deletions, completed in 6.06 seconds. Phase 5 (Verification) achieved 95% success, with 2 image files flagged for manual review.\n\nResults: A total of 46 files were organized across all buckets. Seventeen file moves were performed (consisting of 16 PDF+MD pairs and 1 .doc file). Four duplicates were deleted: 2 duplicate police reports, 1 duplicate settlement offer, and 1 duplicate declaration page. Naming compliance reached 100% for all organized files, and PDF+MD pairing was 100% (17/17 pairs). Two image files in the root were pending review, with UUIDs noted to determine whether they are insurance cards or accident photos.\n\nFile distribution by bucket: Investigation contained 2 files (police report). Medical Records contained 11 files (Norton Audubon Hospital \u2013 bills, HIPAA authorizations, and records requests). Insurance contained 20 files (BI/State Farm: 6; PIP/Progressive: 10; UIM/Progressive: 2). Negotiation Settlement contained 2 files (State Farm $50k global settlement offer). Case Information contained 6 files (JSON metadata). Reports contained 5 files (generated analysis reports).\n\nCase details extracted: This is one of three related Wilson family cases from the same accident. The parties are Julian Wilson (THIS CASE \u2013 minor child, DOB 10/20/2010), Jasmine Wilson (mother, in a separate folder: Jasmine-Wilson-MVA-10-12-2025), and Carmelita Wilson (passenger, in a separate folder: Carmelita-Wilson-MVA-10-12-2025).\n\nAccident details: The incident occurred on 10/12/2025, per Louisville Metro Police Dept Report #25121081. The narrative states that leaving church on the outer loop near Dairy Queen, the at-fault driver was waved into traffic and did not see the client in the second lane.\n\nAt-fault party: Luz Vivas, insured by State Farm (Claim #17-91R0-83K). Adjuster: Katrina Mishoe. Direct line: 901-384-5820.\n\nClient's insurance: Progressive PIP (Claim #25-663229793). Adjuster: Yvonne P. Copas. Phone: 502-909-3610. Note: a $1,000 PIP deductible is to be split between Jasmine and Julian Wilson.\n\nInjuries: Julian sustained back pain and some bruising. No EMS transport. The client was treated at Norton Audubon Hospital ER.\n\nMedical treatment: Norton Audubon Hospital ER visit occurred on the accident date. Medical records and bills were requested on 10/30/2025.\n\nInsurance activity: On 10/16/2025, letters of representation were sent to State Farm (BI) and Progressive (PIP). State Farm acknowledged representation on 10/16/2025. Progressive acknowledged representation on 10/21/2025 and sent the PIP application and medical authorization. On 11/07/2025, State Farm tendered a $50k global settlement offer for all three Wilson family members. Also on 11/07/2025, a Coots letter was sent to Progressive for UIM consent to settle, and Progressive opened UIM claims (25/50 UIM coverage available).\n\nSettlement allocation (per attorney notes): Jasmine prefers $20k for herself and $5k for the minor son Julian from the $50k global offer. Note: Carmelita Wilson has a $200k ER bill.\n\nCase phase progression: On 10/14/2025, lead status was updated to intake documents sent via VineSign. On 10/16/2025, file setup occurred, followed by the treatment phase the same day. On 10/30/2025, the demand was in progress as the client completed treatment and was ready for the demand. On 11/07/2025, State Farm's settlement offer was received. On 12/01/2025, file organization was completed.\n\nClient contact information: Phone number 502-792-4566. Email address Wilsonjasmine5101991@gmail.com (mother's email). Mailing address: 9406 Doral Ct, Apt 4, Louisville, KY 40220.\n\nOutstanding items: Two image files require manual review to determine whether they are insurance cards (for client) or accident photos (for investigation). Two empty subdirectories can be removed (optional cleanup). Medical records from Norton Audubon Hospital remain outstanding, with a request dated 10/30/2025. Coordination with Jasmine and Carmelita Wilson cases is needed for the global settlement.\n\nReports generated: The following reports were generated and are stored in the Reports/ folder: file_inventory, file_reorganization_map, pdf_md_mapping, quality_review_summary, reorganization_plan.json, and reorganization_summary.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Julian Wilson",
+            "relevance": "case client (minor injured)"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "related party (mother; separate related case; settlement allocation)"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "related party (passenger; separate related case; settlement allocation)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "ER treating provider; medical records/bills requested"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "insurer of at-fault driver; BI carrier; $50k global settlement offer"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "insured client's carrier for PIP and opened UIM claims"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Katrina Mishoe",
+            "relevance": "State Farm adjuster for at-fault BI claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Yvonne P. Copas",
+            "relevance": "Progressive adjuster for client's PIP claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI Claim #17-91R0-83K",
+            "relevance": "State Farm at-fault bodily injury claim tied to $50k settlement offer"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25-663229793",
+            "relevance": "Progressive personal injury protection claim for the client"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "Progressive UIM (25/50)",
+            "relevance": "UIM claim opened by Progressive; 25/50 coverage referenced"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Louisville Metro Police Department",
+            "relevance": "source of police report for the accident (Report #25121081)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Julian-Wilson-MVA-10-12-2025\nClient: Julian Wilson\n\n**COMPREHENSIVE FILE ORGANIZATION COMPLETED - 95% SUCCESS**\n\nCompleted full Case File Organization skill workflow using 8-bucket system with excellent accuracy (0% error rate on organized files).\n\n**WORKFLOW PHASES:**\n- Phase 1 (Inventory): Generated inventory of 29 files with filename scrambling for 20 .md files (8.98s)\n- Phase 2 (Analysis & Mapping): Single sub-agent mapped all files with proper categorization\n- Phase 2 Validation: Verified 38 data rows, no placeholders (0.68s)\n- Phase 3 (Quality Review): 0.0% error rate - APPROVED FOR EXECUTION\n- Phase 4 (Execution): 21 operations executed (17 moves + 4 deletions) (6.06s)\n- Phase 5 (Verification): 95% success - 2 image files flagged for manual review\n\n**RESULTS:**\n- Files organized: 46 total across all buckets\n- Files moved: 17 operations (16 PDF+MD pairs + 1 .doc file)\n- Duplicates deleted: 4 files (2 duplicate police reports, 1 duplicate settlement offer, 1 duplicate dec page)\n- Naming compliance: 100% (all organized files)\n- PDF+MD pairing: 100% (17/17 pairs)\n- Files pending review: 2 image files in root (UUIDs - need to determine if insurance cards or accident photos)\n\n**FILE DISTRIBUTION BY BUCKET:**\n- Investigation: 2 files (police report)\n- Medical Records: 11 files (Norton Audubon Hospital - bills, HIPAA authorizations, records requests)\n- Insurance: 20 files (BI/State Farm: 6, PIP/Progressive: 10, UIM/Progressive: 2)\n- Negotiation Settlement: 2 files (State Farm $50k global settlement offer)\n- Case Information: 6 files (JSON metadata)\n- Reports: 5 files (generated analysis reports)\n\n**CASE DETAILS EXTRACTED:**\n\n**Multi-Party Case:** This is one of THREE related Wilson family cases from same accident:\n- Julian Wilson (THIS CASE - minor child, DOB 10/20/2010)\n- Jasmine Wilson (mother, separate folder: Jasmine-Wilson-MVA-10-12-2025)\n- Carmelita Wilson (passenger, separate folder: Carmelita-Wilson-MVA-10-12-2025)\n\n**Accident:** 10/12/2025, Louisville Metro Police Dept Report #25121081. Leaving church on outer loop near Dairy Queen when at-fault driver was waved into traffic and didn't see client in second lane.\n\n**At-Fault Party:** Luz Vivas, insured by State Farm (Claim #17-91R0-83K, Adjuster: Katrina Mishoe, Direct: 901-384-5820)\n\n**Client's Insurance:** Progressive PIP (Claim #25-663229793, Adjuster: Yvonne P. Copas, Phone: 502-909-3610). Note: $1,000 PIP deductible to be split between Jasmine and Julian Wilson.\n\n**Injuries:** Julian - back pain, some bruising. No EMS transport. Treated at Norton Audubon Hospital ER.\n\n**Medical Treatment:** Norton Audubon Hospital (ER visit on accident date). Medical records and bills requested 10/30/2025.\n\n**Insurance Activity:**\n- 10/16/2025: Letters of representation sent to State Farm (BI) and Progressive (PIP)\n- 10/16/2025: State Farm acknowledged representation\n- 10/21/2025: Progressive acknowledged representation, sent PIP application and medical authorization\n- 11/07/2025: State Farm tendered $50k global settlement offer for all 3 Wilson family members\n- 11/07/2025: Coots letter sent to Progressive for UIM consent to settle\n- 11/07/2025: Progressive opened UIM claims (25/50 UIM coverage available)\n\n**Settlement Allocation (per attorney notes):** Client Jasmine prefers $20k to herself and $5k to minor son Julian from the $50k global offer. Note: Carmelita Wilson has $200k ER bill.\n\n**Case Phase Progression:**\n- 10/14/2025: Lead status (intake docs sent via VineSign)\n- 10/16/2025: File Setup\n- 10/16/2025: Treatment phase\n- 10/30/2025: Demand in Progress (client completed treatment, ready for demand)\n- 11/07/2025: State Farm settlement offer received\n- 12/01/2025: File organization completed\n\n**Client Contact Info:**\n- Phone: 502-792-4566\n- Email: Wilsonjasmine5101991@gmail.com (mother's email)\n- Address: 9406 Doral Ct, Apt 4, Louisville, KY 40220\n\n**Outstanding Items:**\n- 2 image files need manual review (determine if insurance cards \u2192 Client/ or accident photos \u2192 Investigation/)\n- 2 empty subdirectories can be removed (optional cleanup)\n- Medical records from Norton Audubon Hospital (requested 10/30/2025)\n- Coordination with Jasmine and Carmelita Wilson cases for global settlement\n\n**REPORTS GENERATED:** file_inventory, file_reorganization_map, pdf_md_mapping, quality_review_summary, reorganization_plan.json, reorganization_summary (all in Reports/ folder).",
+      "natural_language": "The case Julian-Wilson-MVA-10-12-2025 for client Julian Wilson has an accompanying record of comprehensive file organization, which was completed with a 95% success rate. The full Case File Organization workflow was executed using an eight-bucket system, achieving excellent accuracy and 0% error rate on the organized files.\n\nThe workflow progressed through five phases. Phase 1 (Inventory) generated an inventory of 29 files and involved scrambling filenames for 20 Markdown (.md) files, completing in 8.98 seconds. Phase 2 (Analysis & Mapping) had a single sub-agent map all files with proper categorization. Phase 2 Validation verified 38 data rows with no placeholders, in 0.68 seconds. Phase 3 (Quality Review) reported a 0.0% error rate and the file set was approved for execution. Phase 4 (Execution) completed 21 operations: 17 moves and 4 deletions, in 6.06 seconds. Phase 5 (Verification) achieved a 95% success rate, with 2 image files flagged for manual review.\n\nIn terms of results, 46 files were organized across all buckets, and 17 file move operations were carried out (comprising 16 PDF+MD pairs and 1 .doc file). Four duplicates were deleted (two duplicate police reports, one duplicate settlement offer, and one duplicate declaration page). Naming compliance reached 100% for all organized files, and PDF+MD pairing achieved 100% (17 of 17 pairs). Two image files in the root were flagged for manual review, with UUIDs noted for determining whether they are insurance cards or accident photos.\n\nFile distribution by bucket included: Investigation (2 files, police report), Medical Records (11 files, including Norton Audubon Hospital bills, HIPAA authorizations, and records requests), Insurance (20 files: BI/State Farm 6, PIP/Progressive 10, UIM/Progressive 2), Negotiation Settlement (2 files, State Farm $50k global settlement offer), Case Information (6 files, JSON metadata), and Reports (5 files, generated analysis reports).\n\nCase details extracted reveal this is one of three related Wilson family cases from the same accident. The other two in separate folders are Jasmine Wilson (Jasmine-Wilson-MVA-10-12-2025) and Carmelita Wilson (Carmelita-Wilson-MVA-10-12-2025). The accident occurred on 10/12/2025, per Louisville Metro Police Department Report #25121081, with the incident described as leaving a church on the outer loop near Dairy Queen, where the at-fault driver was waved into traffic and did not see the client in the second lane. The at-fault party is Luz Vivas, insured by State Farm (Claim #17-91R0-83K, Adjuster Katrina Mishoe, Direct line 901-384-5820).\n\nThe client\u2019s insurer for PIP is Progressive (Claim #25-663229793, Adjuster Yvonne P. Copas, Phone 502-909-3610). It is noted that a $1,000 PIP deductible is to be split between Jasmine and Julian Wilson.\n\nInjuries sustained by Julian include back pain and some bruising; there was no EMS transport, and treatment occurred at Norton Audubon Hospital ER. Medical treatment records and bills from Norton Audubon Hospital were requested on 10/30/2025.\n\nInsurance activity includes: on 10/16/2025, letters of representation were sent to State Farm (BI) and Progressive (PIP); State Farm acknowledged representation on 10/16/2025; Progressive acknowledged representation and sent the PIP application and medical authorization on 10/21/2025; on 11/07/2025 State Farm tendered a $50k global settlement offer for all three Wilson family members; also on 11/07/2025, a Coots letter was sent to Progressive for UIM consent to settle; and Progressive opened UIM claims with 25/50 UIM coverage available.\n\nSettlement allocation, per attorney notes, indicates Jasmine prefers $20k for herself and $5k for minor Julian from the $50k global offer. Carmelita Wilson has a $200k ER bill.\n\nCase phase progression is as follows: 10/14/2025 marked the lead status with intake documents sent via VineSign; 10/16/2025 as File Setup; 10/16/2025 as Treatment phase; 10/30/2025 as Demand in Progress (the client completed treatment and is ready for the demand); 11/07/2025 the State Farm settlement offer was received; and 12/01/2025 the file organization was completed.\n\nClient contact information is as follows: phone number 502-792-4566; email Wilsonjasmine5101991@gmail.com (mother\u2019s email); and address 9406 Doral Ct, Apt 4, Louisville, KY 40220.\n\nOutstanding items include two image files requiring manual review to determine whether they are insurance cards (for client) or accident photos (for investigation); two empty subdirectories can be removed (optional cleanup); medical records from Norton Audubon Hospital requested on 10/30/2025; and coordination between Jasmine and Carmelita Wilson cases for a global settlement.\n\nReports generated during this process include file_inventory, file_reorganization_map, pdf_md_mapping, quality_review_summary, reorganization_plan.json, and reorganization_summary, all stored in the Reports/ folder.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Julian Wilson",
+            "relevance": "primary client of case"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "related client (same accident, separate case)"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Carmelita Wilson",
+            "relevance": "related client (same accident, separate case)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "at-fault insurer; tendered $50k global settlement"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "client's PIP and UIM insurer"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Katrina Mishoe",
+            "relevance": "State Farm adjuster for the at-fault party"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Yvonne P. Copas",
+            "relevance": "Progressive PIP adjuster for the client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI Claim #17-91R0-83K",
+            "relevance": "bodily injury claim with State Farm (at-fault)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP Claim #25-663229793",
+            "relevance": "Personal Injury Protection claim with Progressive"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM claim (Progressive)",
+            "relevance": "under/uninsured motorist claim opened by Progressive (25/50 coverage)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "ER treatment provider; medical records and bills requested"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Luz Vivas",
+            "relevance": "identified at-fault driver"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Louisville Metro Police Department",
+            "relevance": "source of police report (Report #25121081)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Coots",
+            "relevance": "sent letter to Progressive for UIM consent to settle"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

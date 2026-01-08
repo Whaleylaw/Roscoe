@@ -1,0 +1,548 @@
+{
+  "case_name": "Nyiana-Davis-MVA-6-14-2025",
+  "total_episodes": 23,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Mobilitas Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Kim Francis"
+      },
+      {
+        "name": "Martin Trujillo"
+      },
+      {
+        "name": "Brandon Igbo-Nwoke"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-25-806916369",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Kim Francis"
+      },
+      {
+        "type": "BIClaim",
+        "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-2500262226",
+        "insurer": "Mobilitas Insurance Company",
+        "adjuster": "Martin Trujillo"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Nyiana-Davis-MVA-6-14-2025-Personal Injury Protection (PIP)-25-806916369",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Kim Francis"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Nyiana-Davis-MVA-6-14-2025-Personal Injury Protection (PIP)-2500262226",
+        "insurer": "Mobilitas Insurance Company",
+        "adjuster": "Brandon Igbo-Nwoke"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Nyiana-Davis-MVA-6-14-2025-Anthem",
+        "holder": null,
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-06-16",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nNyiana Davis\nDOA 6/14/2025\nLocation: Corner of Lexington Rd. and Payne St. Louisville\nLMPD \nReport # 25067954\nDriver: Justice Akubia\nWas a Lyft Ride\n\nDOB 1/15/2003\nSSN: 228-95-9489\nAddress: 1836 Eastern Parkway\nApt B1\nLouisville, KLY 40204\n\nPh 502-851-1119\n\nSitting in back seat behind driver, Lyft driver ran red light and t-boned another vehicle. \n\nWent to UofL Hospital downtown\n\nInjuries: right sided pain, right knee\n\nHealth Insurance: Anthem",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 concerns Nyiana Davis, who was involved in a motor vehicle accident on June 14, 2025 at the corner of Lexington Road and Payne Street in Louisville, Kentucky, while riding in a Lyft. The incident was reported to the Louisville Metro Police Department under Report Number 25067954, and the Lyft driver was Justice Akubia.\n\nNyiana Davis was born on January 15, 2003. Her Social Security number is 228-95-9489. She resides at 1836 Eastern Parkway, Apt B1, Louisville, KY 40204, and her phone number is 502-851-1119.\n\nAt the time of the crash, she was sitting in the back seat behind the driver; the Lyft driver ran a red light and t-boned another vehicle.\n\nShe went to UofL Hospital downtown for evaluation and care. Injuries noted include right-sided pain and a right knee injury.\n\nNyiana Davis has Anthem health insurance.",
+      "valid_at": "2025-06-16T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "injured party / case subject"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "treated/evaluated client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Anthem",
+            "relevance": "client's health insurer"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Justice Akubia",
+            "relevance": "Lyft driver / alleged at-fault driver"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Lyft",
+            "relevance": "rideshare company involved in crash"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-16",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__CLIENT CONTACT__\n__Details:__ Nyiana Davis\nDOA 6/14/2025\nLocation: Corner of Lexington Rd. and Payne St. Louisville\nLMPD \nReport # 25067954\nDriver: Justice Akubia\nWas a Lyft Ride\n\nDOB 1/15/2003\nSSN: 228-95-9489\nAddress: 1836 Eastern Parkway\nApt B1\nLouisville, KLY 40204\n\nPh 502-851-1119\n\nSitting in back seat behind driver, Lyft driver ran red light and t-boned another vehicle. \n\nWent to UofL Hospital downtown\n\nInjuries: right sided pain, right knee\n\nHealth Insurance: Anthem \n__Person Making Contact:__ Justin\n__Date & Time__: June 16 2025",
+      "natural_language": "Initial client contact on June 16, 2025 with Nyiana Davis regarding a motor vehicle accident that occurred on June 14, 2025. The incident happened at the corner of Lexington Rd. and Payne St. in Louisville during a Lyft ride driven by Justice Akubia. Nyiana was sitting in the back seat behind the driver when the Lyft vehicle ran a red light and t-boned another vehicle. The incident was reported to Louisville Metro Police Department (LMPD) with Report Number 25067954.\n\nNyiana Davis sustained injuries described as right-sided pain and a right knee injury. She has Anthem health insurance. She was treated at UofL Hospital downtown. Her date of birth is 1/15/2003, and her Social Security number is 228-95-9489. She resides at 1836 Eastern Parkway, Apt B1, Louisville, KY 40204, and can be reached at 502-851-1119. The case was opened as Nyiana-Davis-MVA-6-14-2025. The person making contact is Justin, and the date and time of contact is June 16, 2025.",
+      "valid_at": "2025-06-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "injured party / client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "treated at"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-06-16",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nsent intake docs via vinesign",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 concerns client Nyiana Davis. Intake documents were sent via vinesign.",
+      "valid_at": "2025-06-16T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Vinesign",
+            "relevance": "used to send intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-06-16",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=fe06f19e-8282-4bc0-9905-92bcb759743e.pdf\nSigned: 2025-06-16 15:21:09\nAll signers: Nyiana Davis((502) 851-1119)\nSender: Justin Chumbley",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 concerns client Nyiana Davis in connection with a motor vehicle accident that occurred on June 14, 2025. An intake document for the case was created, labeled as \"intake,\" and prepared for submission via VineSign.\n\nThe intake document was completed and signed through VineSign on June 16, 2025 at 15:21:09. The signed document URL is https://app.vinesign.com/Jobs/Pdf?pdfKey=fe06f19e-8282-4bc0-9905-92bcb759743e.pdf. The signer listed is Nyiana Davis, with phone number (502) 851-1119, and the document was sent by Justin Chumbley.",
+      "valid_at": "2025-06-16T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "subject of case; signer of intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-18",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, pain is improving. treatment going well \n__Person Making Contact:__ Justin\n__Date & Time__: June 18 2025",
+      "natural_language": "On June 18, 2025, Justin spoke with Nyiana Davis regarding the motor vehicle accident case Nyiana-Davis-MVA-6-14-2025. Nyiana reported that her pain is improving and that the treatment is going well.",
+      "valid_at": "2025-06-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "person spoken with / client status update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-17",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__CLIENT CONTACT__\n__Details:__ spoke with client and mother along with Moe. went over moms questions about LW and PIP etc. client is obtaining a completed wage verification to send to us currently \n__Person Making Contact:__ Justin\n__Date & Time__: July 17 2025",
+      "natural_language": "Initial client contact on July 17, 2025, with Nyiana Davis regarding motor vehicle accident Nyiana-Davis-MVA-6-14-2025. The contact was conducted by Justin and included the client, her mother, and Moe. We went over the mother’s questions about LW and PIP, etc., and the client is currently obtaining a completed wage verification to send to us.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP benefits discussed"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Mobilitas Insurance Company",
+            "relevance": "PIP benefits discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-23",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nNyiana, this is Justin from the Whaley Law Firm. This is a text only number for your file. Anything you send here will save directly to your file. Please send a photo of the front and back of your health insurance card.",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 concerns client Nyiana Davis. Initial contact was made on June 14, 2025, regarding a motor vehicle accident.\n\nJustin from the Whaley Law Firm relayed that this is a text-only number for Nyiana’s file and that anything sent here will be saved directly to her file. He also requested that Nyiana send a photo of the front and back of her health insurance card.",
+      "valid_at": "2025-07-23T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "subject of case and recipient of request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of text and requester of insurance card photos"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-23",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nA missed call for Jessa Galosmo was logged at 2025-07-23 15:30:04.324000+00:00 . #missedcall\n\nCaller Info: 5028511119 \n\nCaller ID: 502-851-1119 \n\nCaller Name: Nyiana Davis \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 involves client Nyiana Davis. On 2025-07-23 at 15:30:04.324000+00:00, a missed call intended for Jessa Galosmo was logged (tag: #missedcall).\n\nCaller information shows the call came from Nyiana Davis using the number 5028511119, with a caller ID of 502-851-1119. The caller name is Nyiana Davis, and there is no caller email on file. A Filevine contact link is available at [filevine-link]. A voicemail transcription was not provided in the record.",
+      "valid_at": "2025-07-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-23",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nA call for Jessa Galosmo was logged at 2025-07-23 15:31:14.279000+00:00 . #inboundcall\n\nCaller Info: 5028511119 \n\nCaller ID: 502-851-1119 \n\nCaller Name: Nyiana Davis \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 involves client Nyiana Davis. The initial contact was an inbound call logged on July 23, 2025 at 15:31:14.279000+00:00, concerning Jessa Galosmo. The caller was Nyiana Davis, who provided the phone number 502-851-1119 (Caller ID: 502-851-1119). No email address was provided. A Filevine contact link is available at [filevine-link].",
+      "valid_at": "2025-07-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "caller and client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-23",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__CLIENT CONTACT__\n__Details:__ spoke with client and mom at length. they are disgusted by Moe's shady situation, lack of communication etc. she wants to stop treatment and move forward \n__Person Making Contact:__ Justin\n__Date & Time__: July 23 2025",
+      "natural_language": "Initial client contact on July 23, 2025, with Nyiana Davis regarding the motor vehicle accident on June 14, 2025. The contact was made by Justin.\n\nJustin spoke with Nyiana and her mother at length. They are disgusted by Moe's shady situation, the lack of communication, and other concerns. Nyiana wants to stop treatment and move forward.",
+      "valid_at": "2025-07-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "subject of contact; expressed desire to stop treatment and move forward"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nClient consultation and case strategy development.",
+      "natural_language": "Initial client contact on June 14, 2025, with Nyiana Davis regarding the Nyiana-Davis-MVA-6-14-2025 motor vehicle accident. \n\nThis engagement involved a client consultation and the development of the case strategy for the matter.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "initial contact and consultation; case strategy development"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nInsurance claim progression and settlement discussions.",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 involves the client Nyiana Davis. The record concerns the progression of an insurance claim and the ongoing settlement discussions related to that claim.\n\nThe note identifies only the case title, the client, and the focus on insurance claim progression and settlement negotiations; no additional details about the accident, injuries, parties, or outcomes are provided.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "case client; subject of the insurance claim progression and settlement discussions"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nCase management and medical treatment coordination review.",
+      "natural_language": "Nyiana Davis is the client for the case titled Nyiana-Davis-MVA-6-14-2025. This entry documents a case management and medical treatment coordination review related to a motor vehicle accident (MVA) and dated June 14, 2025. The purpose of the review is to assess and coordinate Nyiana Davis's case management tasks and medical treatment needs. No additional specifics, such as injuries, procedures, referrals, appointments, or outcomes, are provided in this note.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "client and subject of case management/medical treatment coordination review"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nInsurance claim processing and case strategy development.",
+      "natural_language": "On June 14, 2025, Nyiana Davis was entered as the client in a motor vehicle accident matter identified as Nyiana-Davis-MVA-6-14-2025. The engagement focuses on insurance claim processing and the development of a strategy for the case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "client entered"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nClient consultation and medical treatment planning.",
+      "natural_language": "Initial client contact on June 14, 2025 with Nyiana Davis regarding a motor vehicle accident (MVA) case identified as Nyiana-Davis-MVA-6-14-2025. The meeting centered on medical treatment planning for the case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nJune 14, 2025 motor vehicle accident case management.",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 concerns motor vehicle accident case management for the client Nyiana Davis. This entry, dated June 14, 2025, records motor vehicle accident case management activities pertaining to Nyiana Davis.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Agent for Nyiana-Davis-MVA-6-14-2025 - 2025-09-12",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nCompleted comprehensive case review and memory update. Reviewed insurance, medical_items, notes, documents, and to_do tables. Updated client memory with detailed information from intake notes. Updated case summary and status to reflect current phase (Demand in Progress), treatment completion at Starlite Chiropractic, Progressive PIP denial, pending UofL Hospital records/bills, and lost wage documentation submission. Case overview to-do item from 8/29/25 addressed through this comprehensive review.",
+      "natural_language": "Nyiana Davis's motor vehicle accident case, Nyiana-Davis-MVA-6-14-2025, underwent a comprehensive case review and memory update. The review covered the insurance, medical_items, notes, documents, and to_do tables, and the client memory was updated with detailed information drawn from intake notes. The case summary and current status were updated to reflect the present phase, Demand in Progress, noting treatment completion at Starlite Chiropractic, a Progressive PIP denial, pending UofL Hospital records and bills, and the submission of lost wage documentation. The case overview to-do item from 8/29/25 was addressed through this comprehensive review.",
+      "valid_at": "2025-09-12T00:00:00",
+      "author": "Agent for Nyiana-Davis-MVA-6-14-2025",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "treatment completed at provider"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "pending records and bills"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Progressive PIP denial"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-15",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__New Insurance Note:__ 9/15 saved PIP exhaust letter with ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Mobilitas Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Nyiana Davis is the client in the motor vehicle accident case Nyiana-Davis-MVA-6-14-2025. \n\nA new insurance note was entered on September 15 indicating that a PIP exhaust letter was saved with the ledger. The insurance type is Personal Injury Protection (PIP), and the insurer is Mobilitas Insurance Company. The note was written by Justin Chumbley and is filed under Inotes.",
+      "valid_at": "2025-09-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Mobilitas Insurance Company",
+            "relevance": "insurer identified in note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Mobilitas Insurance Company",
+            "relevance": "PIP claim discussed (PIP exhaust letter saved)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-22",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, mom was extremely rude and threatened to fire us. I've had to deal with this client's hostile mom the entire case \n__Person Making Contact:__ Justin\n__Date & Time__: September 22 2025",
+      "natural_language": "Initial client contact on September 22, 2025 with Nyiana Davis regarding motor vehicle accident Nyiana-Davis-MVA-6-14-2025. The contact was made by Justin.\n\nDuring the call I spoke with the client; the client's mom was extremely rude and threatened to fire us. I’ve had to deal with this client's hostile mom the entire case.",
+      "valid_at": "2025-09-22T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-03",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client about offer. obtained authority to negotiate to LBF but to call before pulling trigger \n__Person Making Contact:__ Justin\n__Date & Time__: November 03 2025",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025. Client: Nyiana Davis.\n\nInitial client contact on November 3, 2025 with Nyiana Davis regarding an offer. Justin spoke with the client about the offer and obtained authority to negotiate to LBF, but to call before pulling trigger.",
+      "valid_at": "2025-11-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "client contacted regarding offer"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-03",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__CLIENT CONTACT__\n__Details:__ left vm for client about offer \n__Person Making Contact:__ Justin\n__Date & Time__: November 03 2025",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 involves client Nyiana Davis. In the client contact entry, Justin left a voicemail for the client about an offer. The contact was documented on November 3, 2025.",
+      "valid_at": "2025-11-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "client contacted (voicemail about offer)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-11-04",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\n__Nyianna Davis__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Nyiana Davis - Filevine Project Email Address [NyianaDavisMVAZ5032793@louisvilleaccidentlawyer.filevineapp.com](mailto:NyianaDavisMVAZ5032793@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Nov 04 2025 12:20:15 GMT-05:00\n\nI see we have an initial offer and the client has given some limited\nauthority, but we can't negotiate this until we have UofL bills. I mean, no\ntelling what they are and Pip's exhausted, so all of Pip went to Starlight\nand her plus our Pip bill is for $8,060 from Starlight, but they collected\n$9,000. So I'm not really sure where that disconnect is. So, there can be a\nsubstantial amount of out-of-pockets that needs to be added to this offer.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 involves client Nyiana Davis. The note header also shows the name as Nyianna Davis, but the client is Nyiana Davis.\n\nOn November 4, 2025, at 12:20:15 PM (Eastern Time), Aaron Whaley of Whaley Law Firm sent an email to Justin Chumbley and NyianaDavisMVAZ5032793@louisvilleaccidentlawyer.filevineapp.com regarding the motor vehicle accident case. He notes that there is an initial offer and that the client has given some limited authority, but negotiations cannot proceed until we have UofL bills. He explains that the bills are unknown at this time, and that Pip is exhausted, so all of Pip’s work went to Starlight. He adds that our Pip bill is for $8,060 from Starlight, but Starlight has collected $9,000. He expresses uncertainty about where that disconnect lies and concludes that there could be a substantial amount of out-of-pocket expenses that will need to be added to the offer.\n\nSincerely,\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "valid_at": "2025-11-04T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "case client; recipient of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "email sender / counsel handling negotiations"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "provider referenced for PIP bill and collections"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "UofL bills requested for negotiations"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-11-07",
+      "original_body": "Case: Nyiana-Davis-MVA-6-14-2025\nClient: Nyiana Davis\n\nA call from aaron whaley was logged at 11/07/25 - 12:22:33 . #outboundcall\n\nCaller Info: 4054937092 \n\nCaller ID: 405-493-7092 \n\nCaller Name: Martin Trujillo \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Nyiana-Davis-MVA-6-14-2025 involves client Nyiana Davis in a motor vehicle accident dated June 14, 2025.\n\nAn outbound call was logged on November 7, 2025 at 12:22:33, with Aaron Whaley recorded as the logger. The caller on that line was Martin Trujillo, whose contact number is 405-493-7092 (caller ID: 405-493-7092). The record shows no caller email provided. A link to the associated Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-11-07T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nyiana Davis",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Martin Trujillo",
+            "relevance": "caller/person contacted on the logged outbound call"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Mobilitas Insurance Company",
+            "relevance": "insurer represented by the adjuster contacted"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Mobilitas Insurance Company",
+            "relevance": "bodily injury claim associated with the Mobilitas adjuster/contact"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

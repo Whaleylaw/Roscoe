@@ -1,0 +1,1698 @@
+[
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Abby-Sitgraves-MVA-7-13-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Abby Sitgraves"
+    },
+    "attributes": {
+      "case_create_date": "2024-07-18"
+    },
+    "context": "Abby-Sitgraves-MVA-7-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Abigail-Whaley-MVA-10-24-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Abigail Whaley"
+    },
+    "attributes": {
+      "case_create_date": "2024-10-28"
+    },
+    "context": "Abigail-Whaley-MVA-10-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Alma-Cristobal-MVA-2-15-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Alma Socorro Cristobal Avendao"
+    },
+    "attributes": {
+      "case_create_date": "2024-02-21"
+    },
+    "context": "Alma-Cristobal-MVA-2-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Amy-Mills-Premise-04-26-2019"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Amy Mills"
+    },
+    "attributes": {
+      "case_create_date": "2022-01-05"
+    },
+    "context": "Amy-Mills-Premise-04-26-2019"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Amy-Stich-WC-01-17-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Amy Stich"
+    },
+    "attributes": {
+      "case_create_date": "2024-02-19"
+    },
+    "context": "Amy-Stich-WC-01-17-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Anella-Noble-MVA-01-03-2021"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Anella Noble"
+    },
+    "attributes": {
+      "case_create_date": "2021-12-15"
+    },
+    "context": "Anella-Noble-MVA-01-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Ashlee K. Williams"
+    },
+    "attributes": {
+      "case_create_date": "2023-08-30"
+    },
+    "context": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Brenda-Lang-MVA-09-03-2021"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Brenda D. Lang"
+    },
+    "attributes": {
+      "case_create_date": "2023-05-19"
+    },
+    "context": "Brenda-Lang-MVA-09-03-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Brooklyn-Ballard-MVA-02-28-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Brooklyn Ballard"
+    },
+    "attributes": {
+      "case_create_date": "2024-03-04"
+    },
+    "context": "Brooklyn-Ballard-MVA-02-28-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Bryson-Brown-MVA-6-29-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Bryson Brown"
+    },
+    "attributes": {
+      "case_create_date": "2025-07-07"
+    },
+    "context": "Bryson-Brown-MVA-6-29-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Caryn-McCay-MVA-7-30-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Caryn McCay"
+    },
+    "attributes": {
+      "case_create_date": "2023-09-21"
+    },
+    "context": "Caryn-McCay-MVA-7-30-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Cecelia-Neltner-MVA-4-1-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Cecelia Neltner"
+    },
+    "attributes": {
+      "case_create_date": "2023-05-01"
+    },
+    "context": "Cecelia-Neltner-MVA-4-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Cecil-Finley-MVA-1-24-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Cecil Finley"
+    },
+    "attributes": {
+      "case_create_date": "2024-02-06"
+    },
+    "context": "Cecil-Finley-MVA-1-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Charles-Godsey-MVA-6-30-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Charles Godsey"
+    },
+    "attributes": {
+      "case_create_date": "2025-07-01"
+    },
+    "context": "Charles-Godsey-MVA-6-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Charles-T-Johnson-MVA-4-18-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Charles T Johnson"
+    },
+    "attributes": {
+      "case_create_date": "2023-04-20"
+    },
+    "context": "Charles-T-Johnson-MVA-4-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Christopher-Lanier-MVA-6-28-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Christopher Lanier"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Christopher-Lanier-MVA-6-28-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Christopher Wilkerson"
+    },
+    "attributes": {
+      "case_create_date": "2024-02-22"
+    },
+    "context": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Clarence Robinson"
+    },
+    "attributes": {
+      "case_create_date": "2023-06-09"
+    },
+    "context": "Clarence-Robinson-Dual-WC-MVA-06-10-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Colleen-Colvin-MVA-10-01-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Colleen M. Colvin"
+    },
+    "attributes": {
+      "case_create_date": "2023-11-07"
+    },
+    "context": "Colleen-Colvin-MVA-10-01-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Connie-Goree-MVA-09-03-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Connie Goree"
+    },
+    "attributes": {
+      "case_create_date": "2024-12-05"
+    },
+    "context": "Connie-Goree-MVA-09-03-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Cora-Hall-WC-12-05-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Cora Hall"
+    },
+    "attributes": {
+      "case_create_date": "2023-01-09"
+    },
+    "context": "Cora-Hall-WC-12-05-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Corey-Todd-MVA-WC-8-02-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Corey Todd"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Corey-Todd-MVA-WC-8-02-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Cory-Stephenson-MVA-9-03-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Cory Stephenson"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-06"
+    },
+    "context": "Cory-Stephenson-MVA-9-03-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Cynthia-Gibson-MVA-7-9-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Cynthia Gibson"
+    },
+    "attributes": {
+      "case_create_date": "2025-07-10"
+    },
+    "context": "Cynthia-Gibson-MVA-7-9-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Dana-Jackson-MVA-1-24-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "DJ"
+    },
+    "attributes": {
+      "case_create_date": "2024-02-06"
+    },
+    "context": "Dana-Jackson-MVA-1-24-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Daniel-W-Volk-MVA-09-24-2021"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Daniel W. Volk"
+    },
+    "attributes": {
+      "case_create_date": "2021-12-15"
+    },
+    "context": "Daniel-W-Volk-MVA-09-24-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Davis-Robinson-SF-05-02-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Davis Robinson"
+    },
+    "attributes": {
+      "case_create_date": "2025-05-06"
+    },
+    "context": "Davis-Robinson-SF-05-02-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Debra-Marshall-MVA-12-3-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Debra Marshall"
+    },
+    "attributes": {
+      "case_create_date": "2022-12-30"
+    },
+    "context": "Debra-Marshall-MVA-12-3-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Destiny-Adkins-MVA-04-16-2021"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Destiny Adkins"
+    },
+    "attributes": {
+      "case_create_date": "2022-02-03"
+    },
+    "context": "Destiny-Adkins-MVA-04-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Dewayne-Ward-MVA-8-29-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Dewayne Ward"
+    },
+    "attributes": {
+      "case_create_date": "2023-08-30"
+    },
+    "context": "Dewayne-Ward-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Douglas-Livers-MVA-1-19-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Douglas G. Livers"
+    },
+    "attributes": {
+      "case_create_date": "2023-11-10"
+    },
+    "context": "Douglas-Livers-MVA-1-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Dustin-Meade-MVA-03-09-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Dustin Meade"
+    },
+    "attributes": {
+      "case_create_date": "2025-03-19"
+    },
+    "context": "Dustin-Meade-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Elizabeth-Lindsey-MVA-12-01-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Elizabeth Lindsey"
+    },
+    "attributes": {
+      "case_create_date": "2024-12-03"
+    },
+    "context": "Elizabeth-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Estate-of-Betty-Prince-Premise-7-14-2020"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Robert Prince"
+    },
+    "attributes": {
+      "case_create_date": "2021-12-15"
+    },
+    "context": "Estate-of-Betty-Prince-Premise-7-14-2020"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Evangeline Young"
+    },
+    "attributes": {
+      "case_create_date": "2023-09-12"
+    },
+    "context": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Faizon-Procter-Witcher-MVA-7-01-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Faizon Procter-Witcher"
+    },
+    "attributes": {
+      "case_create_date": "2025-07-03"
+    },
+    "context": "Faizon-Procter-Witcher-MVA-7-01-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Fidel Antonio Bueso Sandoval"
+    },
+    "attributes": {
+      "case_create_date": "2024-06-18"
+    },
+    "context": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Fina-Fatty-MVA-11-05-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Fina Fatty"
+    },
+    "attributes": {
+      "case_create_date": "2025-01-13"
+    },
+    "context": "Fina-Fatty-MVA-11-05-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Forrest-Muss-MVA-07-20-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Forrest Muss"
+    },
+    "attributes": {
+      "case_create_date": "2025-07-22"
+    },
+    "context": "Forrest-Muss-MVA-07-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Frances-Whitis-WC-MVA-9-6-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Frances Whitis"
+    },
+    "attributes": {
+      "case_create_date": "2024-09-13"
+    },
+    "context": "Frances-Whitis-WC-MVA-9-6-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Greg-Neltner-MVA-4-1-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Greg Neltner"
+    },
+    "attributes": {
+      "case_create_date": "2023-04-28"
+    },
+    "context": "Greg-Neltner-MVA-4-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Henrietta-Jenkins-MVA-5-20-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Henrietta Jenkins"
+    },
+    "attributes": {
+      "case_create_date": "2025-05-21"
+    },
+    "context": "Henrietta-Jenkins-MVA-5-20-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Hope-Renee-Padgett-MVA-1-16-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Hope Renee Padgett"
+    },
+    "attributes": {
+      "case_create_date": "2023-01-24"
+    },
+    "context": "Hope-Renee-Padgett-MVA-1-16-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jacob-Herrle-MVA-6-17-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jacob Herrle"
+    },
+    "attributes": {
+      "case_create_date": "2025-07-02"
+    },
+    "context": "Jacob-Herrle-MVA-6-17-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jae-Kale-Lewis-MVA-02-24-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jae-Kale Lewis"
+    },
+    "attributes": {
+      "case_create_date": "2025-02-25"
+    },
+    "context": "Jae-Kale-Lewis-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "James-Crowdus-MVA-8-10-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "James Crowdus"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "James-Crowdus-MVA-8-10-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "James-Kiper-MVA-12-5-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "James Kiper"
+    },
+    "attributes": {
+      "case_create_date": "2022-12-08"
+    },
+    "context": "James-Kiper-MVA-12-5-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "James-Lanier-MVA-6-28-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "James Lanier"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "James-Lanier-MVA-6-28-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "James-Sadler-MVA-4-07-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "James Sadler"
+    },
+    "attributes": {
+      "case_create_date": "2023-05-18"
+    },
+    "context": "James-Sadler-MVA-4-07-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "James-Woodford-MVA-6-19-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "James Woodford"
+    },
+    "attributes": {
+      "case_create_date": "2025-06-23"
+    },
+    "context": "James-Woodford-MVA-6-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jaysha-Aponte-MVA-3-15-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jaysha Aponte"
+    },
+    "attributes": {
+      "case_create_date": "2025-03-17"
+    },
+    "context": "Jaysha-Aponte-MVA-3-15-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jensen-Ott-MVA-8-06-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jensen Ott"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Jensen-Ott-MVA-8-06-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jeremy-Lindsey-MVA-12-01-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jeremy Lindsey"
+    },
+    "attributes": {
+      "case_create_date": "2024-12-03"
+    },
+    "context": "Jeremy-Lindsey-MVA-12-01-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jerome-Hedinger-Premise-DB-10-24-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jerome Hedinger"
+    },
+    "attributes": {
+      "case_create_date": "2023-12-28"
+    },
+    "context": "Jerome-Hedinger-Premise-DB-10-24-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jessica-Mahaney-MVA-03-09-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jessica Mahaney"
+    },
+    "attributes": {
+      "case_create_date": "2025-03-19"
+    },
+    "context": "Jessica-Mahaney-MVA-03-09-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jimmy-Ferguson-MVA-5-30-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jimmy Ferguson"
+    },
+    "attributes": {
+      "case_create_date": "2024-07-08"
+    },
+    "context": "Jimmy-Ferguson-MVA-5-30-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jonah-Price-MVA-8-25-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jonah Price"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Jonah-Price-MVA-8-25-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Jordan-Brown-MVA-8-19-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Jordan Brown"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Joseph-Ott-MVA-8-06-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Joseph Ott"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Joseph-Ott-MVA-8-06-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Juanita-Nicole-Downs-MVA-4-16-2021"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Juanita Nicole Downs"
+    },
+    "attributes": {
+      "case_create_date": "2021-12-15"
+    },
+    "context": "Juanita-Nicole-Downs-MVA-4-16-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Julmonzhae-Moore-MVA-8-29-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Julmonzhae Moore"
+    },
+    "attributes": {
+      "case_create_date": "2023-08-30"
+    },
+    "context": "Julmonzhae-Moore-MVA-8-29-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Justin-Bullock-MVA-6-30-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Justin Bullock"
+    },
+    "attributes": {
+      "case_create_date": "2025-07-01"
+    },
+    "context": "Justin-Bullock-MVA-6-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Kimberly-Brasher-Premise-2-25-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Kimberly Brasher"
+    },
+    "attributes": {
+      "case_create_date": "2023-09-18"
+    },
+    "context": "Kimberly-Brasher-Premise-2-25-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Leanora and Jordan Brown"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-07"
+    },
+    "context": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Leanora-Brown-MVA-8-19-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Leanora Brown"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Leanora-Brown-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Lejzane-Miftari-MVA-6-18-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Lejzane Miftari"
+    },
+    "attributes": {
+      "case_create_date": "2025-06-20"
+    },
+    "context": "Lejzane-Miftari-MVA-6-18-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Lonnie-Stevens-MVA-2-14-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Lonnie Stevens"
+    },
+    "attributes": {
+      "case_create_date": "2025-02-19"
+    },
+    "context": "Lonnie-Stevens-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Maia-Ott-MVA-8-06-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Maia Ott"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Maia-Ott-MVA-8-06-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Malcom-Glass-Jones-MVA-10-2-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Malcom Glass-Jones"
+    },
+    "attributes": {
+      "case_create_date": "2024-10-10"
+    },
+    "context": "Malcom-Glass-Jones-MVA-10-2-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Mark-Smith-Jr-MVA-5-31-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Mark Smith Jr"
+    },
+    "attributes": {
+      "case_create_date": "2025-06-02"
+    },
+    "context": "Mark-Smith-Jr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Mark-Smith-Sr-MVA-5-31-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Mark Smith Sr"
+    },
+    "attributes": {
+      "case_create_date": "2025-06-02"
+    },
+    "context": "Mark-Smith-Sr-MVA-5-31-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Marvynn Alexandre"
+    },
+    "attributes": {
+      "case_create_date": "2023-04-24"
+    },
+    "context": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Maryan-Kassim-MVA-08-06-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Maryan Kassim"
+    },
+    "attributes": {
+      "case_create_date": "2024-08-12"
+    },
+    "context": "Maryan-Kassim-MVA-08-06-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Michael-Crader-MVA-5-19-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Michael Crader"
+    },
+    "attributes": {
+      "case_create_date": "2023-09-06"
+    },
+    "context": "Michael-Crader-MVA-5-19-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Michael-Johnston-WC-05-03-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Michael Johnston"
+    },
+    "attributes": {
+      "case_create_date": "2023-08-22"
+    },
+    "context": "Michael-Johnston-WC-05-03-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Michael-Lanier-MVA-6-28-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Michael Lanier"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Michael-Lanier-MVA-6-28-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Morgan-Freeman-MVA-12-31-2021"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Morgan Freeman"
+    },
+    "attributes": {
+      "case_create_date": "2023-03-27"
+    },
+    "context": "Morgan-Freeman-MVA-12-31-2021"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Muhammad-Alif-MVA-11-08-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Muhammad Alif"
+    },
+    "attributes": {
+      "case_create_date": "2022-11-21"
+    },
+    "context": "Muhammad-Alif-MVA-11-08-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Muhammad-Alif-MVA-12-09-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Muhammad Alif"
+    },
+    "attributes": {
+      "case_create_date": "2022-12-30"
+    },
+    "context": "Muhammad-Alif-MVA-12-09-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Nayram-Adadevoh-MVA-7-13-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Nayram Adadevoh"
+    },
+    "attributes": {
+      "case_create_date": "2024-07-23"
+    },
+    "context": "Nayram-Adadevoh-MVA-7-13-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Nicole-Tewes-MVA-7-5-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Nicole Lynn Tewes"
+    },
+    "attributes": {
+      "case_create_date": "2025-07-23"
+    },
+    "context": "Nicole-Tewes-MVA-7-5-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Nyiana-Davis-MVA-6-14-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Nyiana Davis"
+    },
+    "attributes": {
+      "case_create_date": "2025-06-16"
+    },
+    "context": "Nyiana-Davis-MVA-6-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Prince-Ngabonziza-MVA-5-27-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Prince Ngabonziza"
+    },
+    "attributes": {
+      "case_create_date": "2025-06-02"
+    },
+    "context": "Prince-Ngabonziza-MVA-5-27-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Qortez-Jordan-MVA-2-14-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Qortez Jordan"
+    },
+    "attributes": {
+      "case_create_date": "2025-02-19"
+    },
+    "context": "Qortez-Jordan-MVA-2-14-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Rayshawn-Wilson-MVA-4-10-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Rayshawn Wilson"
+    },
+    "attributes": {
+      "case_create_date": "2025-04-14"
+    },
+    "context": "Rayshawn-Wilson-MVA-4-10-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Rebecca-Lanier-MVA-6-28-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Rebecca Lanier"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Rebecca-Lanier-MVA-6-28-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Robin Wilder-Hamilton"
+    },
+    "attributes": {
+      "case_create_date": "2023-07-27"
+    },
+    "context": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Robin-Willis-Beck-Premise-09-21-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Robin Willis-Beck"
+    },
+    "attributes": {
+      "case_create_date": "2023-11-07"
+    },
+    "context": "Robin-Willis-Beck-Premise-09-21-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Robyn-Hester-WD-MVA-02-23-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Robert Sneed"
+    },
+    "attributes": {
+      "case_create_date": "2022-12-23"
+    },
+    "context": "Robyn-Hester-WD-MVA-02-23-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Roxanne-Simpson-MVA-9-27-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Roxanne Simpson"
+    },
+    "attributes": {
+      "case_create_date": "2023-11-20"
+    },
+    "context": "Roxanne-Simpson-MVA-9-27-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Sariya-Mason-DB-08-19-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Schrice Thomas"
+    },
+    "attributes": {
+      "case_create_date": "2022-08-24"
+    },
+    "context": "Sariya-Mason-DB-08-19-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Sean-May-MVA-8-19-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Sean May"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Sean-May-MVA-8-19-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Shakeith-Simon-MVA-2-16-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Shakeith Simon"
+    },
+    "attributes": {
+      "case_create_date": "2025-02-25"
+    },
+    "context": "Shakeith-Simon-MVA-2-16-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Shannon-Colvin-MVA-10-1-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Shannon Colvin"
+    },
+    "attributes": {
+      "case_create_date": "2023-11-10"
+    },
+    "context": "Shannon-Colvin-MVA-10-1-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Shannon-Lankswert-WC-02-07-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Shannon Lankswert"
+    },
+    "attributes": {
+      "case_create_date": "2025-02-17"
+    },
+    "context": "Shannon-Lankswert-WC-02-07-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Shawna-Broyles-MVA-08-26-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Shawna Broyles"
+    },
+    "attributes": {
+      "case_create_date": "2022-08-29"
+    },
+    "context": "Shawna-Broyles-MVA-08-26-2022"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Shaylynn-Keeney-MVA-02-24-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Shaylynn Keeney"
+    },
+    "attributes": {
+      "case_create_date": "2025-02-25"
+    },
+    "context": "Shaylynn-Keeney-MVA-02-24-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Sir-Hinkle-MVA-6-23-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Sir Hinkle"
+    },
+    "attributes": {
+      "case_create_date": "2025-06-27"
+    },
+    "context": "Sir-Hinkle-MVA-6-23-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Stevie-Hawks-MVA-3-8-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Stevie Hawks"
+    },
+    "attributes": {
+      "case_create_date": "2024-09-16"
+    },
+    "context": "Stevie-Hawks-MVA-3-8-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "The-Laniers-MVA-8-28-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "The Laniers"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-07"
+    },
+    "context": "The-Laniers-MVA-8-28-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "The-Otts-MVA-8-06-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "The Otts"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-07"
+    },
+    "context": "The-Otts-MVA-8-06-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Timothy-Ruhl-Premise-09-14-2023"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Timothy Ruhl"
+    },
+    "attributes": {
+      "case_create_date": "2024-07-22"
+    },
+    "context": "Timothy-Ruhl-Premise-09-14-2023"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Torrey-Green-MVA-9-03-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Torrey Green"
+    },
+    "attributes": {
+      "case_create_date": "2025-09-05"
+    },
+    "context": "Torrey-Green-MVA-9-03-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Trasandra-Miller-MVA-5-30-2025"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Trasandra Miller"
+    },
+    "attributes": {
+      "case_create_date": "2025-06-02"
+    },
+    "context": "Trasandra-Miller-MVA-5-30-2025"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Tyler-Marzec-MVA-2-26-2024"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Tyler Marzec"
+    },
+    "attributes": {
+      "case_create_date": "2024-05-14"
+    },
+    "context": "Tyler-Marzec-MVA-2-26-2024"
+  },
+  {
+    "card_type": "relationship",
+    "edge_type": "HasClient",
+    "source": {
+      "entity_type": "Case",
+      "name": "Wayne-Weber-MVA-01-01-2022"
+    },
+    "target": {
+      "entity_type": "Client",
+      "name": "Wayne Weber"
+    },
+    "attributes": {
+      "case_create_date": "2023-11-06"
+    },
+    "context": "Wayne-Weber-MVA-01-01-2022"
+  }
+]

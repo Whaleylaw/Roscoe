@@ -1,0 +1,157 @@
+# Relationship Review: Douglas-Livers-MVA-1-19-2023
+
+**Total Episodes:** 233
+
+**Total Proposed Relationships:** 776
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (2)
+- Aptiva Health Health Health
+- Physical Therapy
+
+### Insurance Claims (3)
+- **BIClaim**: Root Auto Insurance
+  - Adjuster: Angela Casey
+- **PIPClaim**: Allstate Insurance
+  - Adjuster: Brittany Carr
+- **UMClaim**: Allstate Insurance
+  - Adjuster: Thomas Blizzard
+
+### Liens (2)
+- Kentucky Child Support Enforcement ($46,260.51)
+- None ($2,235.00)
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (7 consolidated)
+- [ ] Allstate adjuster — *IGNORED - generic term*
+- [ ] Amanda — *✓ MATCHES: Amanda Clemons*
+- [ ] Angela Casey — *✓ MATCHES: Angela Casey*
+- [ ] Brittany Carr — *✓ MATCHES: Brittany Carr*
+- [ ] Harold Dorman — *IGNORED - adjuster name only*
+- [ ] Harold Robert Dorman — *IGNORED - adjuster name only*
+- [ ] Thomas Blizzard — *✓ MATCHES: Thomas Blizzard*
+
+### Attorney (17 consolidated)
+- [ ] Bryce (BK) — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+- [ ] Defense Counsel — *IGNORED - generic term*
+- [ ] GDonnell@thattorneys.com — *IGNORED - email address*
+- [ ] Ginny Donnell — *✓ MATCHES: Ginny Donnell (from attorneys)*
+- [ ] Jennifer A. Peterson — *✓ MATCHES: Jennifer Peterson (from attorneys)*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Mory — *IGNORED - first name only*
+- [ ] Sarena — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Sarena Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Sarena Whaley — *✓ MATCHES: Sarena Whaley (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Valerie Herbert, Esq. — *✓ MATCHES: Valerie A Herbert (from attorneys)*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+- [ ] Wende Raderer — *IGNORED - attorney name only*
+- [ ] Whaley, Aaron Gregory — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] former attorney — *IGNORED - generic reference*
+- [ ] vherbert@thattorneys.com — *IGNORED - email address*
+
+### BIClaim (3 consolidated)
+- [ ] QMJF78KY — *IGNORED - claim code*
+- [ ] Root Auto Insurance — *✓ MATCHES: Root Auto Insurance*
+- [ ] Root Claim #LXCJB2KY — *✓ MATCHES: Root Auto Insurance*
+
+### Client (2 consolidated)
+- [ ] Douglas G. Livers — *✓ MATCHES: Douglas G. Livers*
+- [ ] Livers, Douglas — *✓ MATCHES: Douglas G. Livers*
+
+### Court (9 consolidated)
+- [ ] Court orders — *IGNORED - generic reference*
+- [ ] District of Columbia — *IGNORED - wrong jurisdiction*
+- [ ] Family Court — *IGNORED - generic court type*
+- [ ] Hall of Justice — *IGNORED - generic building reference*
+- [ ] Jefferson 24-CI-004424 — *✓ MATCHES: Jefferson County Circuit Court, Division V*
+- [ ] Jefferson Circuit Court — *✓ MATCHES: Jefferson County Circuit Court, Division V*
+- [ ] Jefferson County (24-CI-004424) — *✓ MATCHES: Jefferson County Circuit Court, Division V*
+- [ ] Jefferson County (Jefferson 24-CI-004424) — *✓ MATCHES: Jefferson County Circuit Court, Division V*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+
+### Defendant (6 consolidated)
+- [ ] Allstate — *✓ MATCHES: Allstate Insurance (from defendants)*
+- [ ] Allstate Insurance — *✓ MATCHES: Allstate Insurance (from defendants)*
+- [ ] Allstate Property and Casualty Insurance — *✓ MATCHES: Allstate Insurance (from defendants)*
+- [ ] Daetoia Lewis — *IGNORED - defendant name only*
+- [ ] Defendant Lewis — *IGNORED - generic defendant reference*
+- [ ] Mrs. Lewis — *IGNORED - generic defendant reference*
+
+### Insurer (4 consolidated)
+- [ ] Allstate — *✓ MATCHES: Allstate Insurance*
+- [ ] Allstate Insurance — *✓ MATCHES: Allstate Insurance*
+- [ ] Allstate Property and Casualty Insurance — *✓ MATCHES: Allstate Insurance*
+- [ ] Root Auto Insurance — *✓ MATCHES: Root Auto Insurance*
+
+### LawFirm (3 consolidated)
+- [ ] TRAVIS, HERBERT & STEMPIEN ATTORNEYS — *✓ MATCHES: Travis Herbert & Stempien, PLLC (from lawfirms)*
+- [ ] TRAVIS, HERBERT & STEMPIEN, PLLC — *✓ MATCHES: Travis Herbert & Stempien, PLLC (from lawfirms)*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (3 consolidated)
+- [ ] Kentucky Child Support Enforcement: $46260.51 — *✓ MATCHES: Kentucky Child Support Enforcement*
+- [ ] Lien from Allstate Insurance (dated Feb 15, 2023) — *IGNORED - lien description, not lienholder*
+- [ ] None — *IGNORED - invalid lien entry*
+
+### LienHolder (2 consolidated)
+- [ ] Kentucky Child Support Enforcement — *✓ MATCHES: Kentucky Child Support Enforcement*
+- [ ] Kentucky Department for Income Support, Child Support Enforcement (CSE) — *✓ MATCHES: Kentucky Child Support Enforcement*
+
+### MedicalProvider (4 consolidated)
+- [ ] Aptiva Health Health Health — *✓ MATCHES: Aptiva Health Health Health*
+- [ ] Dixie Injury And Rehab — *✓ MATCHES: Dixie Injury And Rehab*
+- [ ] Physical Therapy — *✓ MATCHES: Dixie Injury And Rehab*
+- [ ] Medical providers (wrist and knee surgeries) — *IGNORED - generic term*
+
+### Organization (5 consolidated)
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Court of Justice eFiling System — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Department for Income Support (CHFS) Administrative Enforcement Section — *✓ MATCHES: Kentucky Child Support Enforcement (from lienholders)*
+- [ ] Kentucky Department for Income Support, Child Support Enforcement (CHFS) — *✓ MATCHES: Kentucky Child Support Enforcement (from lienholders)*
+- [ ] Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### PIPClaim (5 consolidated)
+- [ ] Allstate Insurance — *✓ MATCHES: Allstate Insurance*
+- [ ] Allstate Insurance PIP claim — *✓ MATCHES: Allstate Insurance*
+- [ ] Allstate claim #0700228547 — *✓ MATCHES: Allstate Insurance*
+- [ ] PIP claim - Allstate Insurance (Adjuster: Brittany Carr) — *✓ MATCHES: Allstate Insurance*
+- [ ] PIPClaim (Allstate Insurance) — *✓ MATCHES: Allstate Insurance*
+
+### UMClaim (6 consolidated)
+- [ ] Allstate Claim 0700228547 — *✓ MATCHES: Allstate Insurance*
+- [ ] Allstate Insurance — *✓ MATCHES: Allstate Insurance*
+- [ ] Allstate Insurance (UMClaim, Adjuster: Thomas Blizzard) — *✓ MATCHES: Allstate Insurance*
+- [ ] Allstate Insurance UM claim — *✓ MATCHES: Allstate Insurance*
+- [ ] UMClaim 0700228547 — *IGNORED - claim number*
+- [ ] UMClaim: Allstate Insurance — *✓ MATCHES: Allstate Insurance*
+
+### WCClaim (2 consolidated)
+- [ ] Workers' Compensation — *IGNORED - generic WC term*
+- [ ] Workers' Compensation (Uninsured Special Fund) — *IGNORED - generic WC program*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

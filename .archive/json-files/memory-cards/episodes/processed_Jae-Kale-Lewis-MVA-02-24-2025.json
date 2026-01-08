@@ -1,0 +1,870 @@
+{
+  "case_name": "Jae-Kale-Lewis-MVA-02-24-2025",
+  "total_episodes": 39,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Southeastern Emergency Services, LLC",
+        "specialty": null
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "State Farm PIP Team"
+      },
+      {
+        "name": "Steve Campbell"
+      }
+    ],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Jae-Kale-Lewis-MVA-02-24-2025-Personal Injury Protection (PIP)-1780Z939M",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "State Farm PIP Team"
+      },
+      {
+        "type": "UMClaim",
+        "name": "Jae-Kale-Lewis-MVA-02-24-2025-Uninsured Motorist (UM)-1780Z939M",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Steve Campbell"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Jae-Kale-Lewis-MVA-02-24-2025-United Healthcare",
+        "holder": "United Healthcare",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2025-02-26",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__New Insurance Note:__ 2/26 Opened PIP claim and requested UM claim open\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "This case, Jae-Kale-Lewis-MVA-02-24-2025, concerns client Jae Kale Lewis in connection with a motor vehicle accident that occurred on February 24, 2025. On February 26, 2025, a new insurance note was entered indicating that a PIP (Personal Injury Protection) claim had been opened and that a UM claim was requested to be opened. The claim is with State Farm Insurance Company. The entry was written by Justin Chumbley and appears in the internal Inotes records.",
+      "valid_at": "2025-02-26T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client involved in MVA"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer handling the claims"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: State Farm Insurance Company",
+            "relevance": "PIP claim opened"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "UMClaim: State Farm Insurance Company",
+            "relevance": "UM claim requested to be opened"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-28",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nA call from Jessa Galosmo was logged at 2025-02-28 14:16:42.901000+00:00 . #outboundcall\n\nCaller Info: 5027551288 \n\nCaller ID: 502-755-1288 \n\nCaller Name: Jae-Kale Lewis \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 involves client Jae Kale Lewis. On February 28, 2025, at 14:16:42.901000+00:00, an outbound call from Jessa Galosmo was logged. The log lists the caller information as 5027551288, with a caller ID of 502-755-1288, and the caller name as Jae-Kale Lewis. The Caller Email field is not provided. A link to the Filevine contact is [filevine-link].",
+      "valid_at": "2025-02-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-02-28",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nClient Contacted today to give update #cc",
+      "natural_language": "On February 24, 2025, the client Jae Kale Lewis was contacted to provide an update for the case Jae-Kale-Lewis-MVA-02-24-2025. The update was designated as update #cc.",
+      "valid_at": "2025-02-28T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-28",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call client. No answer, vm not set up yet. \n__Person Making Contact:__ Jessa\n__Date & Time__: February 28 2025",
+      "natural_language": "Initial client contact on February 28, 2025 for the case Jae-Kale-Lewis-MVA-02-24-2025 with client Jae Kale Lewis regarding a motor vehicle accident. The contact attempt was made by Jessa; there was no answer, and the voicemail had not been set up yet.",
+      "valid_at": "2025-02-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client contacted (no answer; voicemail not set)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-05",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__1780Z939M__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: State Farm PIP Team [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com)\nDate: Wed Mar 05 2025 10:08:00 GMT-05:00\n\nHi,\n\nHere's a copy of the police report of our client's accident.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jae-Kale-Lewis-MVA-02-24-2025. Client: Jae Kale Lewis. Internal reference: 1780Z939M. On March 5, 2025, at 10:08 a.m. Eastern Time, Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) sent an email from Whaley Law Firm to the State Farm PIP Team (statefarmclaims@statefarm.com), providing a copy of the police report for our client's accident. The message began with \"Hi,\" and stated, \"Here's a copy of the police report of our client's accident.\" The email was signed by Jessa Galosmo of Whaley Law Firm and included contact details: Ph: (502)357-9975; Fax: (502)364-9363, with the closing line, \"All the best,\" followed by the sender's name and firm.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject of police report / client in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "recipient of email; insurer for PIP claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "State Farm PIP Team",
+            "relevance": "recipient of email; PIP adjuster contacted"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim referenced; police report provided for claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-05",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Fwd: New Text Message from (502) 755-1288 on 03/05/2025 4:01 PM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jae-Kale Lewis - Filevine Project Email Address [JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com](mailto:JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Mar 05 2025 04:04:05 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Wed, Mar 5, 2025 at 4:01?PM\nSubject: New Text Message from (502) 755-1288 on 03/05/2025 4:01 PM\nTo: Jessa Galosmo \n\n[image: Logo] [image: Logo]\n[image: Logo] Text Message\n------------------------------\n\nDear Jessa Galosmo,\n\nYou have a new text message:\n*From:* (502) 755-1288\n*To:* Jessa Galosmo\n*Received:* Wednesday, March 05, 2025 at 4:01 PM\n*Attachment:* 2 images\nTo reply using the RingCentral app\n.",
+      "natural_language": "Case: Jae-Kale-Lewis-MVA-02-24-2025. Client: Jae Kale Lewis.\n\nOn March 5, 2025, a new text message was received from the phone number (502) 755-1288 at approximately 4:01 PM. This notification was forwarded by Jessa Galosmo to the Jae Kale Lewis Filevine project email address (JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com) on March 5, 2025 at 4:04:05 PM (GMT-05:00). The forwarded message contains the original RingCentral notification, with the subject: \u201cNew Text Message from (502) 755-1288 on 03/05/2025 4:01 PM,\u201d and is addressed to Jessa Galosmo.\n\nThe body of the forwarded message reads: \u201cDear Jessa Galosmo, You have a new text message: From: (502) 755-1288 To: Jessa Galosmo Received: Wednesday, March 05, 2025 at 4:01 PM Attachment: 2 images To reply using the RingCentral app.\u201d The header also shows logos, and the content notes that there are two image attachments.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client / subject of project file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-05",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__CLIENT CONTACT__\n__Details:__ Called client to confirm treatment status. He said he also went to St. Mary and Elizabeth Hospital for ER treatment. Client needs lost wage claim. I'll email him the Wage and Salary verification form and provide instructions. \n__Person Making Contact:__ Jessa\n__Date & Time__: March 05 2025",
+      "natural_language": "In the case Jae-Kale-Lewis-MVA-02-24-2025, the client, Jae Kale Lewis, was contacted on March 5, 2025 by Jessa to confirm his treatment status following the motor vehicle accident. He reported that he also went to St. Mary and Elizabeth Hospital for ER treatment. He needs a lost wage claim, and Jessa will email him the Wage and Salary verification form along with instructions.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client contacted; reported treatment and needs lost wage claim"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+            "relevance": "ER treatment reported"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "lost wage claim needed (PIP)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-05",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nA call from Jessa Galosmo was logged at 2025-03-05 20:56:00.306000+00:00 . #outboundcall\n\nCaller Info: 5027551288 \n\nCaller ID: 502-755-1288 \n\nCaller Name: Jae-Kale Lewis \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "The Jae-Kale-Lewis-MVA-02-24-2025 motor vehicle accident case involves client Jae Kale Lewis. On March 5, 2025, at 20:56:00.306000+00:00, an outbound call was logged by Jessa Galosmo.\n\nThe call entry lists the Caller Info as 5027551288, with Caller ID 502-755-1288, and the Caller Name as Jae-Kale Lewis. The Caller Email field is blank. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-05",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nClient Contacted today to give update #cc",
+      "natural_language": "On February 24, 2025, the client, Jae Kale Lewis, was contacted to provide an update on the motor vehicle accident case Jae-Kale-Lewis-MVA-02-24-2025. The purpose of the contact was to give update #cc.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client contacted for case update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-05",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__The Whaley Law Firm-Wage and Salary Verification Form__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jae-Kale Lewis [jaekale2005@gmail.com](mailto:jaekale2005@gmail.com)\nDate: Wed Mar 05 2025 04:16:28 GMT-05:00\n\nHi Jae Kale,\n\nPlease forward this form to your employer for their completion and\nsignature. Once completed, kindly return the signed form to us via email.\n\nThank you for your assistance.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nOn March 5, 2025, at 04:16:28 GMT-05:00, an email was sent from Jessa Galosmo of The Whaley Law Firm to Jae Kale Lewis. The message was sent from jessa@whaleylawfirm.com to jaekale2005@gmail.com and referenced The Whaley Law Firm-Wage and Salary Verification Form. In the body of the email, Jessa asked Jae Kale to forward the form to their employer so the employer could complete it and provide a signature. She requested that once the form is completed, Jae Kale return the signed document to the firm via email. The email concluded with Jessa\u2019s sign-off, \u201cAll the best,\u201d followed by her name and firm details: Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "recipient of email / client of the firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "originating firm sending wage verification form"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-05",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__1780Z939M__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: State Farm PIP Team [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com)\nDate: Wed Mar 05 2025 04:40:38 GMT-05:00\n\nHi,\n\nPlease see attached file.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "This case is identified as Jae-Kale-Lewis-MVA-02-24-2025, with client Jae Kale Lewis, and it carries the internal reference 1780Z939M.\n\nAn email was sent on Wednesday, March 5, 2025 at 04:40:38 GMT-05:00 from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to the State Farm PIP Team (statefarmclaims@statefarm.com) regarding the case, with the internal file reference 1780Z939M. The body of the message reads, \u201cHi, Please see attached file.\u201d The email closes with a signature block for Jessa Galosmo of Whaley Law Firm, including the phone number (502) 357-9975 and fax number (502) 364-9363.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email/representing counsel"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "State Farm PIP Team",
+            "relevance": "email recipient/adjuster for PIP claim"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer handling PIP claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim - State Farm Insurance Company",
+            "relevance": "claim referenced by email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-06",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Text Message__\n__Message:__ How much was your daily rate?\n__Date and Time:__ 2025-03-05 \n__From Number:__ +15023579975 \n__To Number:__ +15027551288\n__Direction:__ Outbound",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 involves client Jae Kale Lewis.\n\nOn March 5, 2025, an outbound text message was sent from +15023579975 to +15027551288 containing the question, \"How much was your daily rate?\"",
+      "valid_at": "2025-03-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-06",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-03-05 \n__From Number:__ +15027551288 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 concerns client Jae Kale Lewis in connection with a motor vehicle accident that occurred on February 24, 2025. The record notes a single text-message communication: on March 5, 2025, an inbound text was received from +15027551288 directed to +15023579975. The body of the message is not provided in the record.",
+      "valid_at": "2025-03-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client involved"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-06",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Text Message__\n__Message:__ $21\n__Date and Time:__ 2025-03-05 \n__From Number:__ +15027551288 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "This note concerns case Jae-Kale-Lewis-MVA-02-24-2025 for client Jae Kale Lewis. On March 5, 2025, an inbound text message was received regarding the case. The message contained the content \"$21\" and was sent from +15027551288 to +15023579975.",
+      "valid_at": "2025-03-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-06",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-03-05 \n__From Number:__ +15027551288 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 involves client Jae Kale Lewis and concerns a motor vehicle accident dated February 24, 2025.\n\nOn March 5, 2025, an inbound text message was received from the client\u2019s number, +15027551288, to the recipient number, +15023579975. The content of the message is not provided in the record.",
+      "valid_at": "2025-03-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "sender of inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-06",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Text Message__\n__Message:__ or hourly rate\n__Date and Time:__ 2025-03-05 \n__From Number:__ +15023579975 \n__To Number:__ +15027551288\n__Direction:__ Outbound",
+      "natural_language": "The case is Jae-Kale-Lewis-MVA-02-24-2025, involving client Jae Kale Lewis in a motor vehicle accident matter.\n\nOn March 5, 2025, an outbound text message was sent from +15023579975 to +15027551288. The content of the message was \"or hourly rate.\"",
+      "valid_at": "2025-03-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client / subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-07",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nFirst Lien Letter faxed to Optum (United Healthcare)",
+      "natural_language": "On February 24, 2025, in the Jae-Kale-Lewis-MVA-02-24-2025 case, the client is Jae Kale Lewis. The First Lien Letter was faxed to Optum (United Healthcare).",
+      "valid_at": "2025-03-07T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "United Healthcare",
+            "relevance": "recipient of First Lien Letter (faxed to Optum/United Healthcare)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-07",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Jae-Kale Lewis__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [8003625077@rcfax.com](mailto:8003625077@rcfax.com)\nCc: Jae-Kale Lewis - Filevine Project Email Address [JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com](mailto:JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Mar 07 2025 11:08:46 GMT-05:00",
+      "natural_language": "Case: Jae-Kale-Lewis-MVA-02-24-2025 involves client Jae Kale Lewis.\n\nOn Friday, March 7, 2025, at 11:08:46 AM GMT-05:00, Jessica Bottorff of Whaley Law Firm sent an email from jessica@whaleylawfirm.com to the fax address 8003625077@rcfax.com regarding the case. The message was CC'd to the Jae-Kale Lewis Filevine project email address JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com.",
+      "valid_at": "2025-03-07T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email sender (Whaley Law Firm attorney)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's law firm"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RCFax",
+            "relevance": "email recipient (fax service)"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Filevine",
+            "relevance": "cc recipient (case project email)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-07",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Jae-Kale Lewis__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: 'UofL Health - Mary & Elizabeth Hospital' [ULHHIMROI@uoflhealth.org](mailto:ULHHIMROI@uoflhealth.org), 'UofL Health - Mary & Elizabeth Hospital' [ulhcustomerservice@uoflhealth.org](mailto:ulhcustomerservice@uoflhealth.org)\nCc: 'Jae-Kale Lewis - Filevine Project Email Address' [JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com](mailto:JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Mar 07 2025 03:24:45 GMT-05:00\n\nAttached is a request for records & bills on our client, Jae-Kale Lewis.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "This note concerns the Jae-Kale-Lewis-MVA-02-24-2025 case for client Jae Kale Lewis. On Friday, March 7, 2025, at 03:24:45 GMT-05:00, Jessica Bottorff of The Whaley Law Firm sent an email regarding the case. The message was from Jessica Bottorff and was addressed to UofL Health - Mary & Elizabeth Hospital at ULHHIMROI@uoflhealth.org and ulhcustomerservice@uoflhealth.org, with a cc to JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com.\n\nThe body of the email stated that attached is a request for records & bills on our client, Jae-Kale Lewis. The message ended with \"Thanks!\" and was signed by The Whaley Law Firm.",
+      "valid_at": "2025-03-07T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject of records request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+            "relevance": "recipient of records request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender/requester of records and bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-07",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nRequest for records & bills e-mailed to Mary & Elizabeth Hospital",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 involves client Jae Kale Lewis in a motor vehicle accident. A request for the client's medical records and bills was emailed to Mary & Elizabeth Hospital.",
+      "valid_at": "2025-03-07T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client involved"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+            "relevance": "recipient of records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-10",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nRequest for bills sent to Southeastern Emergency Services via ChartSwap",
+      "natural_language": "The case Jae-Kale-Lewis-MVA-02-24-2025 concerns client Jae Kale Lewis in connection with a motor vehicle accident. A request for bills was sent to Southeastern Emergency Services via ChartSwap.",
+      "valid_at": "2025-03-10T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject of case / client involved in MVA"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Southeastern Emergency Services, LLC",
+            "relevance": "recipient of bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-10",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nFrom: ULH Customer Service \nSent: Monday, March 10, 2025 3:27:46 PM\nTo: jessica@whaleylawfirm.com \nSubject: FW: Jae-Kale Lewis\n \nHello,\n\n \n\nYour request has been received. Please allow up to 30 days for processing.\n\n \n\nPlease be advised that sending multiple requests during this time can cause delays with processing and receiving your request. However, when following up on requests, please ensure that the original request is attached to your email or that patient identifying information is provided to locate your previous request.\n\n \n\n \n\n \n\nThank you,\n\n \n\nLaurie Brown\n\nAR Billing/Customer Service Specialist",
+      "natural_language": "Case: Jae-Kale-Lewis-MVA-02-24-2025 concerns client Jae Kale Lewis. On Monday, March 10, 2025 at 3:27:46 PM, ULH Customer Service sent an email from ULH Customer Service to jessica@whaleylawfirm.com with the subject \"FW: Jae-Kale Lewis.\" The message states that the request has been received and asks to allow up to 30 days for processing. It also advises that sending multiple requests during this time can cause delays with processing and receiving the request. Additionally, when following up on requests, the original request should be attached to the email or patient identifying information should be provided to locate the previous request. The message ends with \"Thank you, Laurie Brown AR Billing/Customer Service Specialist,\" indicating it was signed by Laurie Brown, AR Billing/Customer Service Specialist.",
+      "valid_at": "2025-03-10T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject/patient of the request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+            "relevance": "sender of the email (ULH Customer Service) regarding records request/processing"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call client. no answer, vm not set up yet. \n__Person Making Contact:__ Jessa\n__Date & Time__: March 14 2025",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025: The initial client contact occurred on March 14, 2025, with client Jae Kale Lewis. The contact attempt was made by Jessa to call the client, but there was no answer, and the voicemail had not been set up yet.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "initial client contact attempt"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-14",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nClient Contacted today to give update #cc",
+      "natural_language": "On February 24, 2025, the client Jae Kale Lewis was contacted to provide an update in the Jae-Kale-Lewis MVA case (case number Jae-Kale-Lewis-MVA-02-24-2025). The contact was made to deliver update #cc.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nA call from Jessa Galosmo was logged at 2025-03-14 13:04:20.308000+00:00 . #outboundcall\n\nCaller Info: 5027551288 \n\nCaller ID: 502-755-1288 \n\nCaller Name: Jae-Kale Lewis \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact for case Jae-Kale-Lewis-MVA-02-24-2025 occurred on March 14, 2025, when an outbound call was logged at 13:04:20.308000 UTC. The log indicates the call originated from Jessa Galosmo. The caller information lists the phone number 502-755-1288, with the Caller ID showing 502-755-1288. The record lists the Caller Name as Jae-Kale Lewis, and there is no email address on file. A Filevine contact link is provided: [filevine-link].",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae-Kale Lewis",
+            "relevance": "initial client contact / caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-19",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nA call from Jessa Galosmo was logged at 2025-03-19 13:06:53.820000+00:00 . #outboundcall\n\nCaller Info: 5027551288 \n\nCaller ID: 502-755-1288 \n\nCaller Name: Jae-Kale Lewis \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 involves client Jae Kale Lewis. On March 19, 2025 at 13:06:53.820000+00:00, an outbound call from Jessa Galosmo was logged. The record lists Caller Info as 5027551288 and Caller ID as 502-755-1288. The Caller Name is Jae-Kale Lewis, and there is no email on file. A link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-19",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nClient Contacted today to give update #cc",
+      "natural_language": "On February 24, 2025, the client Jae Kale Lewis was contacted to provide an update for the case Jae-Kale-Lewis-MVA-02-24-2025. The update was noted with the code #cc.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-19",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__CLIENT CONTACT__\n__Details:__ Called client to confirm treatment status. Client is still going to therapy for 3 days a week. Might still need 3 more weeks of treatment. \n__Person Making Contact:__ Jessa\n__Date & Time__: March 19 2025",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025: The client is Jae Kale Lewis. Initial client contact on March 19, 2025 regarding treatment status after the motor vehicle accident on February 24, 2025. The contact was made by Jessa. The client is still attending therapy three days per week and may require three more weeks of treatment.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-19",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nA call from Jessa Galosmo was logged at 2025-03-19 14:39:27.352000+00:00 . #outboundcall\n\nCaller Info: 5027551288 \n\nCaller ID: 502-755-1288 \n\nCaller Name: Jae-Kale Lewis \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "The motor vehicle accident (MVA) case Jae-Kale-Lewis-MVA-02-24-2025 involves client Jae Kale Lewis.\n\nOn March 19, 2025, at 14:39:27.352000+00:00 UTC, an outbound call was logged in the case by Jessa Galosmo. The call record lists the number 5027551288 as Caller Info and 502-755-1288 as the Caller ID. The Caller Name on the record is Jae-Kale Lewis, and the Caller Email field is blank. A Filevine contact link is available: [filevine-link].",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "caller / client involved in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-04-10",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n@jchumbley release $2,000 in pip to starlight",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 concerns client Jae Kale Lewis in a motor vehicle accident matter. On February 24, 2025, a directive was issued to @jchumbley to release $2,000 in pip to Starlight.",
+      "valid_at": "2025-04-10T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: State Farm Insurance Company",
+            "relevance": "PIP claim from which $2,000 was directed to be released"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "recipient of the $2,000 PIP payment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-10",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__New Insurance Note:__ 4/10 sent release of 2k to Starlite\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Jae Kale Lewis is the client for the motor vehicle accident case dated February 24, 2025. A new insurance note indicates that on 4/10 a release of $2,000 was sent to Starlite. The insurance involved is Personal Injury Protection (PIP) through State Farm Insurance Company, and the note was written by Justin Chumbley. The entry is recorded in the Inotes system.",
+      "valid_at": "2025-04-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client for the MVA case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "recipient of $2,000 release"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP carrier"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: State Farm Insurance Company",
+            "relevance": "claim referenced in insurance note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-04-21",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nJae-Kale, It's the Whaley Law Firm. Are you still receiving treament?",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 involves client Jae Kale Lewis and concerns a motor vehicle accident (MVA).\n\nA message from the Whaley Law Firm to the client reads: \"Jae-Kale, It's the Whaley Law Firm. Are you still receiving treament?\"",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "recipient/subject of message"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-21",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__New Insurance Note:__ 4/21 Requested PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "This case is Jae-Kale-Lewis-MVA-02-24-2025, involving client Jae Kale Lewis in relation to a motor vehicle accident that occurred on February 24, 2025.\n\nA new insurance note indicates that on April 21, 2025, a PIP ledger was requested.\n\nThe insurance type involved is Personal Injury Protection (PIP), and the insurance company is State Farm Insurance Company. The entry was written by Justin Chumbley and is categorized under Inotes.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer (PIP)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: State Farm Insurance Company",
+            "relevance": "PIP ledger requested / claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-21",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__CLIENT CONTACT__\n__Details:__ client still currently treating \n__Person Making Contact:__ Justin\n__Date & Time__: April 21 2025",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 concerns client Jae Kale Lewis. On April 21, 2025, Justin made contact with the client, and it was noted that the client is still currently in treatment.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "case client; subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "5029744947 - 2025-04-21",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nshaylynn and i are still in treatment",
+      "natural_language": "Case Jae-Kale-Lewis-MVA-02-24-2025 concerns client Jae Kale Lewis and relates to a motor vehicle accident.\n\nShaylynn and I are still in treatment.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "5029744947",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client in case; undergoing treatment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-04-21",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nClient Contacted today to give update #cc",
+      "natural_language": "On February 24, 2025, the client, Jae Kale Lewis, was contacted to provide an update in the motor vehicle accident matter identified by case Jae-Kale-Lewis-MVA-02-24-2025. The update was logged under reference number #cc.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "client contacted/provided update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-06-19",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nasked Moe to send us the r/b from Starlite",
+      "natural_language": "The Jae-Kale-Lewis MVA case, filed on February 24, 2025, concerns client Jae Kale Lewis. The client asked Moe to send us the r/b from Starlite.",
+      "valid_at": "2025-06-19T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "records requested from"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-06-30",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\nconfirmed with Starlite - fax is a total of 24 pages (rec'd by JC)#cc",
+      "natural_language": "Case Jae Kale Lewis \u2013 MVA \u2013 February 24, 2025. The client is Jae Kale Lewis.\n\nA confirmation with Starlite indicates that the fax submitted in this matter is 24 pages in total and was received by JC; the transmission was cc'd.",
+      "valid_at": "2025-06-30T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "confirmed receipt of fax / recipient of records"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-28",
+      "original_body": "Case: Jae-Kale-Lewis-MVA-02-24-2025\nClient: Jae Kale Lewis\n\n__Summary of the call with Steve Campbell__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jae-Kale Lewis - Filevine Project Email Address [JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com](mailto:JaeKaleLewisMVAZ4938488@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jul 28 2025 11:15:58 GMT-04:00\n\nHi\n\nHere's the summary of the call with Steve Campbell at 7/28 11:12 AM\n(UTC-04:00):\n\nAaron Whaley followed up on a client offer regarding treatment costs,\nagreeing to a settlement of $5,000.\n\nRecap\n\n* Aaron Whaley called Steve Campbell to follow up on a client offer related\nto treatment costs for back pain.\n* The initial offer was for $5,000, which Steve confirmed he could accept.\n* Aaron indicated that the offer was reasonable and agreed to proceed with\nthe settlement.\n\nTasks\n\n* Aaron needs to finalize the settlement agreement for the client at $5,000.\n\nBest,\naaron whaley\n\nPowered by RingCentral AI Assistant (visit\nhttps://www.ringcentral.com/ringex/ai-assistant for more information).",
+      "natural_language": "Case: Jae-Kale-Lewis-MVA-02-24-2025. Client: Jae Kale Lewis.\n\nOn July 28, 2025, at 11:12 AM (UTC-04:00), Aaron Whaley spoke with Steve Campbell to follow up on a client offer related to treatment costs for back pain. Whaley then sent a summary email on the same day, dated July 28, 2025 at 11:15:58 GMT-04:00, addressed to Jae Kale Lewis\u2019s Filevine project email address. The recap states that the initial offer was for $5,000, which Steve Campbell confirmed he could accept. Whaley indicated that the offer was reasonable and that they should proceed with the settlement. The task is for Aaron Whaley to finalize the settlement agreement for the client at $5,000. The message closes with \u201cBest, Aaron Whaley\u201d and notes that it is powered by RingCentral AI Assistant.",
+      "valid_at": "2025-07-28T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jae Kale Lewis",
+            "relevance": "subject of settlement"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Steve Campbell",
+            "relevance": "person contacted; confirmed $5,000 offer"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "claim being negotiated/settlement offer"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer handling the claim"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

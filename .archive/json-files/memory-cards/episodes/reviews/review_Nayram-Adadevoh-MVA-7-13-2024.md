@@ -1,0 +1,113 @@
+# Relationship Review: Nayram-Adadevoh-MVA-7-13-2024
+
+**Total Episodes:** 73
+
+**Total Proposed Relationships:** 222
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (3)
+- Advocate Medical Group Outpatient Center
+- Foundation Radiology (radiology)
+- UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital (hospital)
+
+### Insurance Claims (1)
+- **PIPClaim**: National Indemnity Company
+  - Adjuster: Jordan Bahr
+
+### Liens (1)
+- Blue Cross Blue Shield of Illinois ($877.61)
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (1 consolidated)
+- [ ] Jordan Bahr — *✓ MATCHES: Jordan Bahr*
+
+### Attorney (8 consolidated)
+- [ ] Aaron Gregory Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Bryce L. Cotton — *✓ MATCHES: Bryce Cotton*
+- [ ] Derek Anthony Harvey — *✓ MATCHES: Derek Anthony Harvey*
+- [ ] Gregory J. Simon — *✓ MATCHES: Gregory J. Simon*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Samuel Robert Leffert — *✓ MATCHES: Samuel Robert Leffert*
+- [ ] Sarena Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+
+### Client (2 consolidated)
+- [ ] Abby Sitgraves — *✓ MATCHES: Abby Sitgraves*
+- [ ] Nayram Adadevoh — *✓ MATCHES: Nayram Adadevoh*
+
+### Court (1 consolidated)
+- [ ] Jefferson County Circuit Court, Division II — *✓ MATCHES: Hardin County Circuit Court, Division III*
+
+### Defendant (2 consolidated)
+- [ ] CAAL WORLDWIDE, INC. — *✓ MATCHES: CAAL WORLDWIDE, INC.*
+- [ ] CAAL WORLDWIDE, INC. ET AL — *✓ MATCHES: CAAL WORLDWIDE, INC.*
+
+### Insurer (1 consolidated)
+- [ ] National Indemnity Company — *✓ MATCHES: National Indemnity Company*
+
+### LawFirm (4 consolidated)
+- [ ] Blackburn Domene & Burchett, PLLC — *✓ MATCHES: Blackburn Domene & Burchett, PLLC*
+- [ ] Carlisle (Carlisle law team) — *✓ MATCHES: Carlisle Law*
+- [ ] Coghlan Law LLC — *✓ MATCHES: Coghlan Law LLC*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (1 consolidated)
+- [ ] Blue Cross Blue Shield of Illinois — *✓ MATCHES: Blue Cross Blue Shield of Illinois*
+
+### LienHolder (1 consolidated)
+- [ ] Blue Cross Blue Shield of Illinois — *✓ MATCHES: Blue Cross Blue Shield of Illinois*
+
+### MedicalProvider (6 consolidated)
+- [ ] Advocate Medical Group Outpatient Center — *✓ MATCHES: Advocate Medical Group Outpatient Center*
+- [ ] Foundation Radiology — *✓ MATCHES: Foundation Radiology*
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital — *✓ MATCHES: UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital*
+- [ ] Norton Audubon Hospital — *✓ MATCHES: UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital*
+- [ ] Norton Audubon Hospital (UofL Health – Brown Cancer Center – Medical Oncology) — *✓ MATCHES: Norton Audubon Hospital*
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology – UofL Health – Brown Cancer Center – Medical Oncology – Mary & Elizabeth Hospital — *✓ MATCHES: UofL Health – Brown Cancer Center – Medical Oncology – Mary & Elizabeth Hospital*
+
+### Organization (5 consolidated)
+- [ ] Chicago Public Schools Benefit Plan — *? NEW*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Court of Justice eFiling system — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Midwest Medical Records Association (MMRA) — *? NEW*
+- [ ] **TeamCare** — *? NEW*
+      ↳ _TeamCare – A Central States Health Fund_
+
+### PIPClaim (3 consolidated)
+- [ ] National Indemnity Company — *✓ MATCHES: National Indemnity Company*
+- [ ] National Indemnity Company PIP #633859-N — *✓ MATCHES: National Indemnity Company*
+- [ ] PIPClaim - National Indemnity Company — *✓ MATCHES: National Indemnity Company*
+
+### UMClaim (1 consolidated)
+- [ ] Uninsured Motorist (UM) claim — *? NEW* Ignore
+
+### Vendor (3 consolidated)
+- [ ] Concord Fax — *? NEW* Ignore
+- [ ] Midwest Medical Records Association (MMRA) — *? NEW* Ignore
+- [ ] RC Fax — *? NEW* Ignore
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

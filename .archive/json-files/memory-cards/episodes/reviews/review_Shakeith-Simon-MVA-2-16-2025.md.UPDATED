@@ -1,0 +1,45 @@
+# Relationship Review: Shakeith-Simon-MVA-2-16-2025
+
+**Total Episodes:** 0
+
+**Total Proposed Relationships:** 0
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (2)
+- Eriksen Chiropractic Centers-Radcliff (chiropractic)
+- Kentucky Pain Associates Pain Associates PLLC Pain Associates PLLC Pain Associates PLLC (pain management)
+
+### Insurance Claims (3)
+- **BIClaim**: Commonwealth Casualty Insurance
+  - Adjuster: Kari Hand
+- **PIPClaim**: National General
+  - Adjuster: Megan Reed
+- **UMClaim**: National General
+  - Adjuster: GI
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

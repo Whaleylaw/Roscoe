@@ -1,0 +1,73 @@
+{
+  "case_name": "Tyler-Marzec-MVA-2-26-2024",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "UK Good Samaritan Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "SafeCo Insurance Company"
+      },
+      {
+        "name": "Blue Star Claims"
+      },
+      {
+        "name": "The General Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Amy Morris"
+      },
+      {
+        "name": "Douglas Hare"
+      },
+      {
+        "name": "Amy Hawks"
+      },
+      {
+        "name": "Kristen Akande"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-243138082",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Amy Morris"
+      },
+      {
+        "type": "BIClaim",
+        "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-56240577",
+        "insurer": "SafeCo Insurance Company",
+        "adjuster": "Douglas Hare"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Tyler-Marzec-MVA-2-26-2024-Occupational Accident Insurance-36885",
+        "insurer": "Blue Star Claims",
+        "adjuster": "Amy Hawks"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Tyler-Marzec-MVA-2-26-2024-Personal Injury Protection (PIP)-01-007281597",
+        "insurer": "The General Insurance",
+        "adjuster": "Kristen Akande"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

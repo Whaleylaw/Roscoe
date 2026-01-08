@@ -1,0 +1,929 @@
+{
+  "case_name": "Chase-Lindsey-MVA-12-01-2024",
+  "total_episodes": 31,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Cincinnati Children's Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "Florence Fire/EMS",
+        "specialty": "emergency medical services"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Auto Owners Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Jennifer Howard"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Chase-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Jennifer Howard"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Chase-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024",
+        "insurer": null,
+        "adjuster": null
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Chase-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024",
+        "insurer": "Auto Owners Insurance",
+        "adjuster": null
+      }
+    ],
+    "liens": [
+      {
+        "name": "Chase-Lindsey-MVA-12-01-2024-Rawlings Company",
+        "holder": "Rawlings Company",
+        "amount": 17734.84
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Jessa - 2024-12-05",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__24-902741838__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8772137258@rcfax.com](mailto:8772137258@rcfax.com)\nDate: Thu Dec 05 2024 08:58:00 GMT-05:00",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 concerns client Chase Lindsey. The internal reference number for this matter is 24-902741838. The communication log shows that on Thursday, December 5, 2024 at 08:58:00 GMT-05:00, an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to the fax recipient address 8772137258@rcfax.com.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "named client of the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-12-05",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Shawn Vo [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Thu Dec 05 2024 09:17:23 GMT-05:00\n\nHi,\n\nPlease see the attached letter of representation.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 involves client Chase Lindsey in a motor vehicle accident that occurred on December 1, 2024. The file/reference number is 300-793616-2024.\n\nOn December 5, 2024, at 9:17:23 AM GMT-05:00 (Eastern Time), Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to Shawn Vo at lexington.clm@aoins.com. The body of the message reads: “Hi, Please see the attached letter of representation.” The email’s signature identifies the sender as Jessa Galosmo of Whaley Law Firm and lists contact information: Ph: (502)357-9975 and Fax: (502)364-9363. The message indicates there is an attached letter of representation.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of case / represented client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sent letter of representation"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of letter of representation"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "recipient of letter of representation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-12",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__CLIENT CONTACT__\n__Details:__ SPoke with dad. Chase had is follow up yesterday. Chase does have a fractured collar bone. \n\nappointment was with the follow up trauma team at Cincinnatti Children's Hospital \n__Person Making Contact:__ Justin\n__Date & Time__: December 12 2024",
+      "natural_language": "Initial client contact on December 12, 2024 with Chase Lindsey's father regarding the motor vehicle accident (MVA). The contact was made by Justin. It was noted that Chase had his follow-up yesterday and that Chase does have a fractured collar bone.\n\nThe appointment was with the follow up trauma team at Cincinnatti Children's Hospital.",
+      "valid_at": "2024-12-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of contact; injured party"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "follow-up trauma appointment provider"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-12",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nClient Contacted today to give update #cc",
+      "natural_language": "Chase Lindsey is the client for case Chase-Lindsey-MVA-12-01-2024. The client was contacted today to provide update #cc.",
+      "valid_at": "2024-12-12T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-06",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Fwd: JEREMY C LINDSEY - 300-0793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com), Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 06 2025 03:51:25 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Wolfe, Chandler \nDate: Mon, Jan 6, 2025 at 12:57?PM\nSubject: JEREMY C LINDSEY - 300-0793616-2024\nTo: jessa@whaleylawfirm.com \nCc: KentuckyPIP.Clm \n\nGood Afternoon Ms. Jessa\n\nMy name is Chandler Wolfe and I am the PIP adjuster on file for the\nLindsey’s.\n\nPlease see attached acknowledgement letter and blank PIP forms for your\nclients. To date, we have not received any completed forms.\n\nPlease let me know what additional documentation you are still needing for\nyour clients.\n\nThank you and have a wonderful day!\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024. The note concerns client Chase Lindsey and is a forward of an email titled “JEREMY C LINDSEY - 300-0793616-2024.” The forward originates from Jessa Galosmo of Whaley Law Firm and was sent on Monday, January 6, 2025 at 03:51:25 GMT-05:00. In the forward, Jessa copied the following Filevine project email addresses: Jeremy Lindsey’s filevine address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com], Elizabeth Lindsey’s filevine address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com], Chase Lindsey’s filevine address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com], and Owen Lindsey’s filevine address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com]. The recipients listed under “To” reflect these four Lindsey family members, and the email chain also shows a “Cc” to KentuckyPIP.Clm.\n\nThe forwarded message inside reports that Chandler Wolfe is the PIP adjuster on file for the Lindseys. In his communication, dated Monday, January 6, 2025 at 12:57?PM, he introduces himself and states that the attached documents include an acknowledgement letter and blank PIP forms for the clients, noting that to date they have not received any completed forms. He asks to be advised of any additional documentation needed for the clients. The message contains an image attachment placeholder: [image: cid:image001.png@01DA0E2D.2AA737D0].\n\nChandler Wolfe signs his message as a Branch claims representative for the Kentucky regional PIP team. His contact details are: phone 800.346.0346 ext. 54628; fax 517.886.8754; email KentuckyPIP.clm@aoins.com; hours 8:00 a.m. to 4:30 p.m. EST.\n\nThe thread ends with Jessa Galosmo’s signature indicating she is with Whaley Law Firm, including her contact information: Ph: (502)357-9975 and Fax: (502)364-9363, as shown in the forwarding.",
+      "valid_at": "2025-01-06T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "primary client / subject of note"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "copied recipient / family member"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "copied recipient / family member"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "copied recipient / family member"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Chandler Wolfe",
+            "relevance": "PIP adjuster on file; sender of adjuster communication"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP insurer indicated by adjuster email/domain"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim/forms referenced for the Lindseys"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender/forwarding law firm representing the clients"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-08",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Shawn Vo [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Wed Jan 08 2025 10:11:51 GMT-05:00\n\nHi,\n\nPlease see attached files.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024, representing client Chase Lindsey. The file/reference number is 300-793616-2024.\n\nOn January 8, 2025, at 10:11:51 AM GMT-05:00, an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to Shawn Vo (lexington.clm@aoins.com). The message related to the Chase-Lindsey-MVA case and stated simply: “Hi, Please see attached files.” The email concluded with a signature block: “All the best, Jessa Galosmo, Whaley Law Firm,” followed by the firm’s contact information: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "client represented in case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "recipient insurer/claim contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-10",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Chase Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [5027537064@rcfax.com](mailto:5027537064@rcfax.com)\nDate: Fri Jan 10 2025 10:40:55 GMT-05:00",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 involves client Chase Lindsey.\n\nThe record shows an email header indicating that Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) sent a message to the fax number 5027537064@rcfax.com on Friday, January 10, 2025 at 10:40:55 GMT-05:00.",
+      "valid_at": "2025-01-10T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "case subject / client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm in email header"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-20",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Fwd: New Text Message from (502) 424-0049 on 01/17/2025 6:01 PM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 20 2025 09:28:24 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Fri, Jan 17, 2025 at 6:01?PM\nSubject: New Text Message from (502) 424-0049 on 01/17/2025 6:01 PM\nTo: Jessa Galosmo \n\n[image: Logo] [image: Logo]\n[image: Logo] Text Message\n------------------------------\n\nDear Jessa Galosmo,\n\nYou have a new text message:\n*From:* (502) 424-0049\n*To:* Jessa Galosmo\n*Received:* Friday, January 17, 2025 at 6:01 PM\n*Message:* Chase photos\n*Attachment:* 12 images\nTo reply using the RingCentral app\n.",
+      "natural_language": "This case concerns Chase Lindsey in the matter labeled Chase-Lindsey-MVA-12-01-2024, with the client being Chase Lindsey.\n\nOn January 20, 2025 at 09:28:24 GMT-05:00, Jessa Galosmo forwarded an email to Chase Lindsey’s Filevine project email address ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com. The forwarded message carried the subject line “Fwd: New Text Message from (502) 424-0049 on 01/17/2025 6:01 PM,” and the email was sent from Jessa Galosmo to the Chase Lindsey Filevine project address.\n\nThe forwarded message itself contains the original notification from RingCentral, dated Friday, January 17, 2025 at 6:01 PM (the Time stamp appears as 6:01?PM in the header). The subject of that notification was “New Text Message from (502) 424-0049 on 01/17/2025 6:01 PM,” and it was addressed to Jessa Galosmo. The notification includes two logos and a section labeled “Text Message.” The body reads: “Dear Jessa Galosmo, You have a new text message: From: (502) 424-0049 To: Jessa Galosmo Received: Friday, January 17, 2025 at 6:01 PM Message: Chase photos Attachment: 12 images To reply using the RingCentral app.” The notification indicates there are twelve image attachments accompanying the message.",
+      "valid_at": "2025-01-20T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "case client; recipient of the forwarded Filevine project email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nThis case appears to be about a motor vehicle accident involving the Lindsey family (Jeremy, Elizabeth, Chase, and Owen). The family is seeking legal representation from the Whaley Law Firm for their personal injury claims.\nThe most recent activity involves Chase Lindsey sending 12 photos related to the case via text message, which were forwarded to the law firm's project email address. (See details)\nA potential red flag is that as of January 6, 2025, the PIP adjuster had not received any completed PIP forms from the Lindsey family, which could delay the processing of their claim. (See details)\nThe next recommended step is to ensure that the PIP forms are completed and submitted to the insurance company as soon as possible, and to review the photos sent by Chase Lindsey for relevance to the case. (See details), (See details)",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 involves a motor vehicle accident involving the Lindsey family, which includes Jeremy Lindsey, Elizabeth Lindsey, Chase Lindsey, and Owen Lindsey. The family is seeking legal representation from the Whaley Law Firm for their personal injury claims.\n\nThe most recent activity shows Chase Lindsey sending 12 photos related to the case via text message, which were forwarded to the law firm’s project email address.\n\nA potential red flag is that as of January 6, 2025, the PIP adjuster had not received any completed PIP forms from the Lindsey family, a situation that could delay the processing of their claim.\n\nThe next recommended step is to ensure that the PIP forms are completed and submitted to the insurance company as soon as possible, and to review the photos sent by Chase Lindsey for relevance to the case.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "sent 12 photos via text; client in the MVA"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jeremy Lindsey",
+            "relevance": "client; member of Lindsey family seeking representation"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "client; member of Lindsey family seeking representation"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client; member of Lindsey family seeking representation"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm being retained/consulted for personal injury representation"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim referenced; PIP forms not received by adjuster as of 2025-01-06"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-03",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Chase Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nDate: Mon Feb 03 2025 10:56:55 GMT-05:00",
+      "natural_language": "This note concerns case Chase-Lindsey-MVA-12-01-2024, involving client Chase Lindsey.\n\nAccording to the header, the communication was sent from Jessa Galosmo at jessa@whaleylawfirm.com to the fax address 5136366729@rcfax.com on Monday, February 3, 2025 at 10:56:55 GMT-05:00.",
+      "valid_at": "2025-02-03T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of communication"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm (email domain)"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RCFax",
+            "relevance": "fax recipient/service"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-02-13",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nRequest for records & bill sent to Florence EMS via ChartSwap",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 concerns the client Chase Lindsey. A request for records and the bill was sent to Florence EMS via ChartSwap.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "client of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Florence Fire/EMS",
+            "relevance": "recipient of records request and bill"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-02-13",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Reference No. 157804626__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5027537248@rcfax.com](mailto:5027537248@rcfax.com)\nCc: Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Feb 13 2025 01:21:13 GMT-05:00",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024. Client: Chase Lindsey. Reference No. 157804626. On Thursday, February 13, 2025 at 01:21:13 GMT-05:00, Jessica Bottorff of Whaley Law Firm sent an email regarding the Chase Lindsey motor vehicle accident case (Chase-Lindsey-MVA-12-01-2024) from jesscia@whaleylawfirm.com to 5027537248@rcfax.com, with Chase Lindsey’s Filevine project email address ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com CC’d.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "case client / subject of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender law firm"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "project email host (CC'd)"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RCFax",
+            "relevance": "email-to-fax recipient"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-02-13",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Chase Lindsey__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nCc: Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Feb 13 2025 01:39:47 GMT-05:00\n\nAttached is a request for records & bills on our client, Chase Lindsey.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024 involved client Chase Lindsey.\n\nOn February 13, 2025, at 1:39:47 a.m. Eastern Time, Jessica Bottorff of The Whaley Law Firm sent an email from jessica@whaleylawfirm.com to the fax address 5136366729@rcfax.com, with a cc to Chase Lindsey’s Filevine project email address ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com. The body stated that an attachment contained a request for records and bills for our client, Chase Lindsey. The message concluded with “Thanks!” and was signed by The Whaley Law Firm.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of records request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of email/request for records"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email sender representing the law firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-02-13",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nRequest for records & bills faxed to Cincinnati Children's Hospital",
+      "natural_language": "Chase Lindsey is the client in case Chase-Lindsey-MVA-12-01-2024, a motor vehicle accident matter. A request for records & bills was faxed to Cincinnati Children's Hospital.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "recipient of records and bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-02-14",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nFlorence EMS records & bill saved to file",
+      "natural_language": "Chase Lindsey is the client for case Chase-Lindsey-MVA-12-01-2024, involving a motor vehicle accident on December 1, 2024. The Florence EMS records and the bill have been saved to the client's file.",
+      "valid_at": "2025-02-14T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "client of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Florence Fire/EMS",
+            "relevance": "records and bill saved to file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-18",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Fwd: 300-0793616-2024 Chase & Owen Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com)\nDate: Tue Feb 18 2025 10:37:08 GMT-05:00\n\nPlease advise how to proceed.\n\n---------- Forwarded message ---------\nFrom: Chandler Wolfe \nDate: Tue, Feb 18, 2025 at 10:33?AM\nSubject: 300-0793616-2024 Chase & Owen Lindsey\nTo: \n\nPlease see attached documentation received for Chase & Owen Lindsey.\n\nPlease let me know how you would like to proceed.\n\nThank you,\n\n*Download Instructions:*\nThis email or download link can only be accessed by the email address it\nwas sent to. *Please continue all correspondence with your Auto-Owners\ncontact.*\n\n 1. Click this link:\n https://securefiletransfer.aoins.com/message/VOuDkPiynf72Lqh966dO1o\n 2. Enter your e-mail and a Secure Token will be sent to you in a\n separate email.\n 3. Click the files to download them. If there are many files, you can\n download them all at once by clicking the \"Download All\" button.\n\nThe files are available until: *Monday, 10 March.*\nFiles attached to this message\nFilename Size Checksum (SHA1)\nRawlings Lien, Chase.pdf 41.1 KB\n06502693e3716d93bb991cc3f70f1cfa35c7493fdc5f771a78314422d4b17029\nRawlings Lien, Owen.pdf 21.5 KB\n78df3469609bc8955e84ff48af33b72f13732676ef7da4b78969181ee4be4bc3\n\nMessage ID: VOuDkPiynf72Lqh966dO1o\n“This site contains information that may be privileged and/or confidential\nand exempt from disclosure. Such information is solely for the intended use\nof the Recipient of this email. Recipient agrees not to disclose any such\ninformation to others, except as allowed by law. Recipient will defend,\nindemnify and hold harmless Auto-Owners Insurance Company from any claim or\nsuit for damages arising out of the disclosure or misuse of any such\ninformation. Recipient further agrees to return, delete and/or destroy all\ncontents of this file after its intended use.”\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024. Client: Chase Lindsey.\n\nOn February 18, 2025, at 10:37:08 AM (GMT-05:00), Jessa Galosmo of Whaley Law Firm forwarded an email titled “Fwd: 300-0793616-2024 Chase & Owen Lindsey” to Aaron Whaley (agwhaley@whaleylawfirm.com) and Justin Chumbley (Justin@whaleylawfirm.com), with the note “Please advise how to proceed.” The forwarded message describes the topic as 300-0793616-2024 Chase & Owen Lindsey and asks the recipients to advise on the next steps.\n\nThe forwarded message itself originated from Chandler Wolfe and was dated Tuesday, February 18, 2025, at approximately 10:33 AM, with the subject “300-0793616-2024 Chase & Owen Lindsey.” It requests that the recipients “Please see attached documentation received for Chase & Owen Lindsey. Please let me know how you would like to proceed.” The message includes download instructions for a secure file transfer portal: the email states that the site can be accessed only by the email address to which it was sent and directs the recipient to “Please continue all correspondence with your Auto-Owners contact.”\n\nThe download instructions specify:\n1) Click the provided link: https://securefiletransfer.aoins.com/message/VOuDkPiynf72Lqh966dO1o\n2) Enter your e-mail and a Secure Token will be sent to you in a separate email.\n3) Click the files to download them; if there are many files, you may download them all at once by clicking the \"Download All\" button.\n\nThe files are available until Monday, 10 March. The message includes two attachments: “Rawlings Lien, Chase.pdf” (41.1 KB) with SHA1 checksum 06502693e3716d93bb991cc3f70f1cfa35c7493fdc5f771a78314422d4b17029, and “Rawlings Lien, Owen.pdf” (21.5 KB) with SHA1 checksum 78df3469609bc8955e84ff48af33b72f13732676ef7da4b78969181ee4be4bc3. The message is identified by Message ID VOuDkPiynf72Lqh966dO1o.\n\nA standard confidentiality disclaimer follows, noting that the site contains information that may be privileged and/or confidential and exempt from disclosure, and that such information is solely for the recipient’s use. It states that the recipient agrees not to disclose the information to others except as allowed by law, and that the recipient will defend, indemnify, and hold harmless Auto-Owners Insurance Company from any claims or damages arising from disclosure or misuse of the information. It also requires the recipient to return, delete, and/or destroy all contents after its intended use.\n\nThe message concludes with a closing from Jessa Galosmo of Whaley Law Firm, including the contact information: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-02-18T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "case client; subject of attached lien documents"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "liens attached for Chase & Owen Lindsey (Rawlings Lien files)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto-Owners Insurance Company",
+            "relevance": "sender/owner of secure file transfer and referenced contact for correspondence"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "forwarded the lien documents and handling correspondence"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "Whaley Law Firm attorney who forwarded the email requesting next steps"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-18",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Re: 300-0793616-2024 Chase & Owen Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nDate: Tue Feb 18 2025 10:52:00 GMT-05:00\n\nI've downloaded the files. Here it is.\n\nOn Tue, Feb 18, 2025 at 10:47?AM wrote:\n\n> Download them and email them to me so I can review them\n>\n>\n>\n> Justin Chumbley\n>\n> Whaley Law Firm\n>\n> Ph: (502)583-4022\n>\n> Fax: (502)364-9363\n>\n>\n>\n> *From:* Jessa Galosmo \n> *Sent:* Tuesday, February 18, 2025 10:37 AM\n> *To:* Aaron Whaley ; Justin Chumbley <\n> Justin@whaleylawfirm.com>\n> *Subject:* Fwd: 300-0793616-2024 Chase & Owen Lindsey\n>\n>\n>\n> Please advise how to proceed.\n>\n> ---------- Forwarded message ---------\n> From: *Chandler Wolfe* \n> Date: Tue, Feb 18, 2025 at 10:33?AM\n> Subject: 300-0793616-2024 Chase & Owen Lindsey\n> To: \n>\n>\n>\n> Please see attached documentation received for Chase & Owen Lindsey.\n>\n>\n>\n> Please let me know how you would like to proceed.\n>\n>\n>\n> Thank you,\n>\n>\n>\n> *Download Instructions:*\n> This email or download link can only be accessed by the email address it\n> was sent to. *Please continue all correspondence with your Auto-Owners\n> contact.*\n>\n> 1. Click this link:\n> https://securefiletransfer.aoins.com/message/VOuDkPiynf72Lqh966dO1o\n> 2. Enter your e-mail and a Secure Token will be sent to you in a\n> separate email.\n> 3. Click the files to download them. If there are many files, you can\n> download them all at once by clicking the \"Download All\" button.\n>\n> The files are available until: *Monday, 10 March.*\n> Files attached to this message\n>\n> *Filename*\n>\n> *Size*\n>\n> *Checksum (SHA1)*\n>\n> Rawlings Lien, Chase.pdf\n>\n> 41.1 KB\n>\n> 06502693e3716d93bb991cc3f70f1cfa35c7493fdc5f771a78314422d4b17029\n>\n> Rawlings Lien, Owen.pdf\n>\n> 21.5 KB\n>\n> 78df3469609bc8955e84ff48af33b72f13732676ef7da4b78969181ee4be4bc3\n>\n> Message ID: VOuDkPiynf72Lqh966dO1o\n>\n> *“This site contains information that may be privileged and/or\n> confidential and exempt from disclosure. Such information is solely for the\n> intended use of the Recipient of this email. Recipient agrees not to\n> disclose any such information to others, except as allowed by law.\n> Recipient will defend, indemnify and hold harmless Auto-Owners Insurance\n> Company from any claim or suit for damages arising out of the disclosure or\n> misuse of any such information. Recipient further agrees to return, delete\n> and/or destroy all contents of this file after its intended use.” *\n>\n>\n>\n>\n> --\n>\n> All the best,\n>\n> Jessa Galosmo\n>\n> Whaley Law Firm\n>\n> Ph: (502)357-9975\n>\n> Fax: (502)364-9363\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024. The client is Chase Lindsey, and the matter concerns the file 300-0793616-2024 for Chase & Owen Lindsey.\n\nOn February 18, 2025, Jessa Galosmo of Whaley Law Firm wrote to Justin Chumbley (and others) stating that she had downloaded the files and was sending them \"here it is.\" In the same thread, there is a note from approximately 10:47 AM on the same day in which Justin Chumbley asked that the documents be downloaded and emailed to him so he could review them.\n\nEarlier that day, at 10:37 AM, Jessa Galosmo forwarded a message to Aaron Whaley and Justin Chumbley with the subject \"Fwd: 300-0793616-2024 Chase & Owen Lindsey,\" requesting: \"Please advise how to proceed.\"\n\nAlso on February 18, 2025, Chandler Wolfe sent a message at about 10:33 AM with the subject \"300-0793616-2024 Chase & Owen Lindsey.\" The message stated: \"Please see attached documentation received for Chase & Owen Lindsey. Please let me know how you would like to proceed. Thank you.\" This message included download instructions for Auto-Owners’ secure file transfer. The instructions explained that the email or download link could be accessed only by the addressed email, and that all further correspondence should continue with the Auto-Owners contact. Steps included:\n1) Click the provided link: https://securefiletransfer.aoins.com/message/VOuDkPiynf72Lqh966dO1o\n2) Enter your email to receive a Secure Token in a separate email\n3) Click the files to download them; if there are multiple files, use \"Download All\"\n\nThe files are available until Monday, 10 March. The message listed two attached files:\n- Rawlings Lien, Chase.pdf, 41.1 KB, SHA1 checksum 06502693e3716d93bb991cc3f70f1cfa35c7493fdc5f771a78314422d4b17029\n- Rawlings Lien, Owen.pdf, 21.5 KB, SHA1 checksum 78df3469609bc8955e84ff48af33b72f13732676ef7da4b78969181ee4be4bc3\n\nA reference in the message includes the Message ID VOuDkPiynf72Lqh966dO1o. The message also contained a standard confidentiality disclaimer noting that the site contains information that may be privileged or confidential and intended only for the recipient, who agrees not to disclose such information except as allowed by law, and that the recipient will defend, indemnify, and hold harmless Auto-Owners Insurance Company from any damages arising from disclosure or misuse, and will return, delete, and/or destroy all contents after its intended use.\n\nThe communication closes with Jessa Galosmo’s sign-off:\nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "valid_at": "2025-02-18T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "primary client named in file and email thread"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "co-client named in file and email thread"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "sender of secure file transfer and referenced insurer"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "lien documents attached for Chase and Owen"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-07",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Fwd: 300-0793616-2024 - JEREMY C LINDSEY__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com)\nDate: Fri Mar 07 2025 11:33:05 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Wolfe, Chandler \nDate: Fri, Mar 7, 2025 at 11:29?AM\nSubject: RE: 300-0793616-2024 - JEREMY C LINDSEY\nTo: Jessa Galosmo \n\nWould you like for me to issue payments on the liens that were received for\nOwen and Chase?\n\nThank you,\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky/PA regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DA0E2D.2AA737D0]\n\n[image: cid:image003.png@01DA0E2D.2AA737D0]\n\n*We https://itunes.apple.com/us/app/auto-owners-mobile/id1250194133?ls=1&mt=8>nytime, anywhere.*\n\n*From:* Jessa Galosmo \n*Sent:* Friday, March 7, 2025 11:25 AM\n*To:* Wolfe, Chandler \n*Subject:* [EXTERNAL] Re: 300-0793616-2024 - JEREMY C LINDSEY\n\nHi Chandler, Jeremy and Owen are already done treating. Elizabeth and Chase\nare still getting treatment. Best, Jessa Galosmo Whaley Law Firm On Fri,\nMar 7, 2025 at 11: 07 AM Wolfe, Chandler \nwrote: Good Morning\n\nHi Chandler,\n\nJeremy and Owen are already done treating. Elizabeth and Chase are still\ngetting treatment.\n\nBest,\nJessa Galosmo\nWhaley Law Firm\n\nOn Fri, Mar 7, 2025 at 11:07?AM Wolfe, Chandler \nwrote:\n\nGood Morning\n\nI am following up on direction updates for Jeremy, Owen, Chase & Elizabeth\nLindsey.\n\nThank you,\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky/PA regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DA0E2D.2AA737D0]\n\n[image: cid:image003.png@01DA0E2D.2AA737D0]\n\n*We have a **Customer Center\n*\n\n*, so you can access your claim information; anytime, anywhere.*\n\n*From:* Jessa Galosmo \n*Sent:* Tuesday, February 4, 2025 11:49 AM\n*To:* Wolfe, Chandler \n*Cc:* KentuckyPIP.Clm \n*Subject:* [EXTERNAL] Re: 300-0793616-2024 - JEREMY C LINDSEY\n\nWe are working on them. On Tue, Feb 4, 2025 at 10: 12 AM Wolfe, Chandler\n wrote: Good Morning I am following up on any\nadditional medical treatment update or updated direction for Jeremy,\nElizabeth, Chase &\n\nWe are working on them.\n\nOn Tue, Feb 4, 2025 at 10:12?AM Wolfe, Chandler \nwrote:\n\nGood Morning\n\nI am following up on any additional medical treatment update or updated\ndirection for Jeremy, Elizabeth, Chase & Owen Lindsey. To date, we have\nonly received medical bills for Ms. Elizabeth.\n\nThank you,\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky/PA regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DA0E2D.2AA737D0]\n\n[image: cid:image003.png@01DA0E2D.2AA737D0]\n\n*We have a **Customer Center\n*\n\n*, so you can access your claim information; anytime, anywhere.*\n\n-- \n\nAll the best,\n\nJessa Galosmo\n\nWhaley Law Firm\n\nPh: (502)357-9975\n\nFax: (502)364-9363\n\n-- \n\nAll the best,\n\nJessa Galosmo\n\nWhaley Law Firm\n\nPh: (502)357-9975\n\nFax: (502)364-9363\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024. Client: Chase Lindsey. The file includes an email thread concerning Jeremy, Owen, Elizabeth, Chase, and related liens, tied to the 12-01-2024 motor vehicle accident involving the Lindsey family.\n\nOn February 4, 2025, Chandler Wolfe, a branch claims representative for the Kentucky/PA regional PIP program, sent an email to Jessa Galosmo asking for any updates on medical treatment directions for Jeremy Lindsey, Elizabeth Lindsey, Chase Lindsey, and Owen Lindsey. He noted that, to date, they had only received medical bills for Ms. Elizabeth. His contact details were listed as: phone 800-346-0346 ext. 54628, fax 517-886-8754, email KentuckyPIP.clm@aoins.com, hours 8:00 a.m. to 4:30 p.m. EST. He also referenced a “Customer Center” that allows claim information access anytime, anywhere, and included the organization’s standard signature blocks.\n\nLater that same day, Jessa Galosmo replied that they were working on the updates for the Lindsey family. The thread includes prior context from Wolfe noting the request for updated medical treatment directions and reiterating that, to date, only Elizabeth’s medical bills had been received.\n\nOver the following weeks, the thread continued with Wolfe’s follow-up on direction updates for Jeremy, Owen, Chase, and Elizabeth Lindsey. On Friday, March 7, 2025, Wolfe sent another message in which he stated: “Good Morning. I am following up on direction updates for Jeremy, Owen, Chase & Elizabeth Lindsey.” His signature block again provided the Kentucky/PA regional PIP contact information and the note about the Customer Center for claim access.\n\nJessa Galosmo responded on March 7, 2025 at approximately 11:25 AM, indicating that Jeremy and Owen were already done treating, while Elizabeth and Chase were still receiving treatment. A few minutes later, at around 11:29 AM, Wolfe asked whether Jessa would like him to issue payments on the liens that were received for Owen and Chase.\n\nThe email chain was forwarded by Jessa at 11:33 AM under the subject “300-0793616-2024 - JEREMY C LINDSEY” to Aaron Whaley and Justin Chumbley of Whaley Law Firm. The forwarded message included Chandler Wolfe’s inquiry about paying the liens for Owen and Chase and contained the standard Wolfe signature and contact details, along with Jessa’s note reaffirming the status: Jeremy and Owen were done with treatment, while Elizabeth and Chase were still receiving treatment. The forwarded content also repeated the Whaley Law Firm closing and contact information.\n\nIn summary: the Lindsey family’s treatment status as of early 2025 showed Jeremy and Owen completed treatment, Elizabeth and Chase still receiving treatment, with ongoing consideration of lien payments for Owen and Chase. The correspondence originated from and circulated among Jessa Galosmo (Whaley Law Firm) and Chandler Wolfe (AO Insurance, KY/PA regional PIP), including updates requested on medical treatment directions and the possibility of issuing lien payments.",
+      "valid_at": "2025-03-07T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "primary client / subject of the case and treatment-status updates"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP insurer (Kentucky/PA regional PIP) sending emails and requesting treatment updates"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Chandler Wolfe",
+            "relevance": "branch claims representative who sent follow-up emails about treatment directions and lien payments"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "recipient/forwarder of correspondence and legal representative for the Lindsey family"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "Whaley Law Firm attorney providing treatment status updates and forwarding emails"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "Whaley Law Firm recipient of forwarded correspondence"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "Whaley Law Firm recipient of forwarded correspondence"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "lien listed for the case; lien payment for family members was discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-07",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Chase Lindsey__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nCc: [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Mar 07 2025 01:58:54 GMT-05:00\n\nAttached is a request for records & bills on our client, Chase Lindsey.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024. The client is Chase Lindsey.\n\nOn March 7, 2025, at 01:58:54 GMT-05:00, an email originated from The Whaley Law Firm, sent by jessica@whaleylawfirm.com. The message was addressed to 5136366729@rcfax.com and CC’d to ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com. The header displayed the client name, Chase Lindsey.\n\nThe body of the email stated that an attachment contained a request for records and bills on our client, Chase Lindsey. The message concluded with “Thanks!” and was signed by The Whaley Law Firm.",
+      "valid_at": "2025-03-07T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of records request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of email/request for records"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RCFax",
+            "relevance": "recipient fax service (addressed to 5136366729@rcfax.com)"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Louisville Accident Lawyer / Filevine",
+            "relevance": "CC recipient (case file address)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-07",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n#vinesign-completed\nName: Medical Authorization\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=da211121-a89a-45f7-bf66-667cfd80920f.pdf\nSigned: 2025-03-04 16:32:06\nAll signers: Chase Lindsey(jeremylindsey1978@yahoo.com (502) 424-0049)\nSender: Justin Chumbley",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 involves client Chase Lindsey. A Medical Authorization document was completed via VineSign. The document, titled Medical Authorization, was signed on 2025-03-04 16:32:06. It can be accessed at https://app.vinesign.com/Jobs/Pdf?pdfKey=da211121-a89a-45f7-bf66-667cfd80920f.pdf. All signers listed: Chase Lindsey (jeremylindsey1978@yahoo.com, (502) 424-0049). The sender of the document was Justin Chumbley.",
+      "valid_at": "2025-03-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "signer of medical authorization; subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-14",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Fwd: New Voice Message from LINDSEY JEREMY (502) 424-0049 on 03/14/2025 10:59 AM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Mar 14 2025 11:10:51 GMT-04:00\n\nTreatment update for Elizabeth and Chase\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Fri, Mar 14, 2025 at 10:59?AM\nSubject: New Voice Message from LINDSEY JEREMY (502) 424-0049 on 03/14/2025\n10:59 AM\nTo: Jessa Galosmo \n\n[image: Logo] [image: Logo]\n[image: Logo] Voice Message\n------------------------------\n\nDear Jessa Galosmo,\n\nYou have a new voice message:\n*From:* LINDSEY JEREMY (502) 424-0049\n*Received:* Friday, March 14, 2025 at 10:59 AM\n*Length:* 01:12\n*To:* (502) 357-9975 Jessa Galosmo\n\n*Voicemail Preview:*\n\"Hey, good morning. This is Jeremy Lindsey returning your call. I wanted to\nprovide an update for both Chase and Elizabeth. Chase has a final x ray for\nhis broken collarbone scheduled for april the second and hopefully we get\nfinal clearance there. No more treatment is needed. But again, he is\nscheduled for a final x ray for his collar Bone on april the second.\nElizabeth has continued treatment this following Monday, hoping that is\ngoing to be her last treatment that is been ongoing for several weeks now.\nAnd then she has a final consultation meeting with that orthopedist. I\nbelieve it is in early April as well. I can get to the exact date, but\nhopefully her last treatment and then she will have 1 final assessment as\nwell. So all things considered, assuming there is no changes, we are hoping\nto have everyone cleared completely in early to mid April. So I will let\nyou know as soon as I know more, but that is the update for now. Thank you.\nAnd as always, do not hesitate to reach out to you. Appreciate it.\"\nListen to this message over your phone or log in to your RingCentral account\n with your main number, extension number,\nand password. You can also manage your voicemails in your RingCentral\naccount.",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024. Client: Chase Lindsey. On March 14, 2025, a new voice message from Jeremy Lindsey was received and forwarded in the Chase-Lindsey file. The message was sent to Jessa Galosmo and to the Filevine emails for Elizabeth Lindsey and Chase Lindsey, with the forwarding dated March 14, 2025 at 11:10:51 AM (GMT-04:00). The subject of the forwarded item was “Treatment update for Elizabeth and Chase.”\n\nThe forwarded note contains a RingCentral voicemail recorded at 10:59 AM on March 14, 2025. In the message, Jeremy Lindsey says he’s returning the call to provide an update for both Chase and Elizabeth. For Chase, he states that a final x-ray for his broken collarbone is scheduled for April 2, and that final clearance is hoped to be obtained at that time. He notes that no more treatment is needed, but reiterates that the final x-ray for the collarbone is scheduled on April 2. For Elizabeth, Jeremy explains that she has continued treatment “this following Monday,” hoping that it will be her last treatment, which has been ongoing for several weeks. Elizabeth is also scheduled for a final consultation meeting with her orthopedist, which Jeremy believes will occur in early April as well; he can provide the exact date but currently hopes this will be her last treatment and she will have one final assessment. Overall, the message conveys that, assuming there are no changes, they are aiming to have everyone cleared completely in early to mid-April. Jeremy promises to relay any further information as soon as he knows more and adds thanks, encouraging Jessa to reach out if needed. The voicemail notes indicate the message was addressed to Jessa Galosmo at the number (502) 357-9975, and that she can manage voicemails through the RingCentral account.\n\nIn summary, the update indicates: Chase Lindsey has a final x-ray for his broken collarbone on April 2 with expected final clearance and no further treatment; Elizabeth Lindsey is continuing treatment with the expectation that her last treatment will occur in early April, followed by a final orthopedist consultation and assessment; the team anticipates clearance for all parties by early to mid-April, subject to any changes, with ongoing updates to be provided.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of treatment update; final x-ray and expected clearance"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-03-17",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nAs of 3/17 all docs downloaded and saved to Google Drive",
+      "natural_language": "Chase Lindsey is the client in case Chase-Lindsey-MVA-12-01-2024. As of March 17, all documents have been downloaded and saved to Google Drive.",
+      "valid_at": "2025-03-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-05-05",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nRequest from JC for medical records payment to Cincinnati Children's Hospital for Chase Lindsey ($50) #cc",
+      "natural_language": "On December 1, 2024, Chase Lindsey became the client in Case Chase-Lindsey-MVA-12-01-2024, a motor vehicle accident matter. A request from JC was received for payment to Cincinnati Children's Hospital for Chase Lindsey’s medical records in the amount of $50, and the request bears the tag #cc.",
+      "valid_at": "2025-05-05T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "client intake"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "recipient of medical records/payment request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-05-19",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nrequested $50 check from AGW for client's medical records from Cincinnati Children's#cc",
+      "natural_language": "In the Chase-Lindsey-MVA-12-01-2024 case, the client is Chase Lindsey.\n\nThere is a note of a request for a $50 check from AGW to cover the cost of obtaining the client's medical records from Cincinnati Children's#cc.",
+      "valid_at": "2025-05-19T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "source of medical records requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-05-28",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\nmailed request med recs for Chase Lindsey - $50 check #2081 to Cincy Children's Health Information Mgmt#cc",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 concerns client Chase Lindsey in a motor vehicle accident.\n\nA mailed request for Chase Lindsey's medical records was prepared and sent, accompanied by a $50 check (#2081) made out to Cincy Children's Health Information Mgmt#cc.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "recipient of medical records request / payment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-05-30",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n@jchumbley complete invoice for Cincy Children's Hospital r/b",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 involves the client Chase Lindsey and relates to a motor vehicle accident. The record contains a directive to \"@jchumbley complete invoice for Cincy Children's Hospital r/b.\"",
+      "valid_at": "2025-05-30T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "client involved"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "invoice to be completed / treatment provider"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-07",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Chase Lindsey__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jul 07 2025 12:58:15 GMT-04:00\n\nWe are still missing bills and probably need to confirm medical care to\nconfirm we have all providers.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Chase-Lindsey-MVA-12-01-2024. Client: Chase Lindsey. In a July 7, 2025 email from Aaron Whaley of Whaley Law Firm (agwhaley@whaleylawfirm.com) to Justin Chumbley (Justin@whaleylawfirm.com) and Chase Lindsey’s Filevine project address (ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com), the sender notes that we are still missing bills and probably need to confirm medical care to ensure we have all providers. The message was sent at 12:58:15 PM GMT-04:00 on Monday, July 7, 2025. The email is signed by Aaron Whaley of Whaley Law Firm, whose signature lists the firm’s address as 712 Lyndon Ln, Louisville, KY 40222, and phone number 502-583-4022.",
+      "valid_at": "2025-07-07T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of case / client referenced"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-09",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Chase Lindsey__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Jul 09 2025 02:52:17 GMT-04:00\n\nI see in Chase's itemized statement that he has visits with Cincy Children\nto at least 04/02/25 so we need those records and bills. Please update this\nfile and the other Lindsey's files so I can do proper UIM demands. This is\nthe third time I have asked.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "In the Chase-Lindsey-MVA-12-01-2024 case, the client is Chase Lindsey. On Wednesday, July 9, 2025, at 02:52:17 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email to Justin Chumbley and to Chase Lindsey’s Filevine project email address. The message notes that Chase’s itemized statement shows visits with Cincy Children through at least April 2, 2025, and states that those records and the corresponding bills are needed.\n\nWhaley asks that this file and the other Lindsey files be updated so he can pursue proper UIM demands, and he emphasizes that this is the third time he has made the request. The email is signed by Aaron Whaley of Whaley Law Firm, with the firm’s address at 712 Lyndon Ln, Louisville, KY 40222, and phone number 502-583-4022.",
+      "valid_at": "2025-07-09T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of the email / case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "sender of the email requesting records and UIM demands"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm of the attorney who sent the email"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "provider whose records and bills are requested"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM claim (unspecified)",
+            "relevance": "email requests updating files to pursue UIM demands"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-09",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n@jchumbley need bills still",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024 involves client Chase Lindsey and concerns a motor vehicle accident. The record includes a note reading \"@jchumbley need bills still.\"",
+      "valid_at": "2025-07-09T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "case subject / injured party"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-15",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Demands__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Jul 15 2025 12:51:54 GMT-04:00\n\nSend to Even up for UIM demands please.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Chase-Lindsey-MVA-12-01-2024, with client Chase Lindsey. In this matter, the Demands section records a communication from Aaron Whaley of Whaley Law Firm. On Tuesday, July 15, 2025, at 12:51:54 PM (GMT-04:00), Whaley sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley at Justin@whaleylawfirm.com, to Chase Lindsey’s Filevine project email ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com, and to Owen Lindsey’s Filevine project email OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. The subject matter, under Demands, instructed: “Send to Even up for UIM demands please.” The email was signed with the following contact information: Aaron Whaley, Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-07-15T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "case client; recipient of Filevine project email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender law firm of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "email sender; instructed to send UIM demands"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "copied recipient at Whaley Law Firm"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "copied recipient (Owen Lindsey Filevine project)"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM demands (Even Up)",
+            "relevance": "subject of the instruction in the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-17",
+      "original_body": "Case: Chase-Lindsey-MVA-12-01-2024\nClient: Chase Lindsey\n\n__Owen and Chase Lindsey__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Jul 17 2025 11:34:04 GMT-04:00\n\nI know I have sent you a lot today but I want you to put these two at the\ntop of your list and get this sent over to EvenUP today and demand sent to\nUIM ASAP with Elizabeth Lindsey's demand.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "This is the Chase-Lindsey-MVA-12-01-2024 case involving client Chase Lindsey (with Owen Lindsey also involved). On July 17, 2025, at 11:34:04 a.m. Eastern Time, Aaron Whaley of Whaley Law Firm sent an email to Justin Chumbley and to the Filevine project email addresses for Owen Lindsey (OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com) and Chase Lindsey (ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com). In the body of the message, Whaley wrote: \"I know I have sent you a lot today but I want you to put these two at the top of your list and get this sent over to EvenUP today and demand sent to UIM ASAP with Elizabeth Lindsey's demand.\" \n\nThe message was signed by Aaron Whaley of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, with the phone number 502-583-4022.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "primary client referenced; recipient of Filevine project email"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client referenced; recipient of Filevine project email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "sender of email; attorney handling matter"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender law firm (email signature/address)"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "EvenUP",
+            "relevance": "recipient organization to which files/demand should be sent"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "project email/platform used to receive messages"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM claim",
+            "relevance": "demand instructed to be sent to UIM ASAP"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

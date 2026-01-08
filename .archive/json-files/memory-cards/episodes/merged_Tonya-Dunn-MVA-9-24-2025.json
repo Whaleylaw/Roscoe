@@ -1,0 +1,286 @@
+{
+  "case_name": "Tonya-Dunn-MVA-9-24-2025",
+  "total_episodes": 13,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2025-09-30",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n__CLIENT CONTACT__\n__Details:__ Tonya Dunn\nPh: 502-381-0282\nDOA 9/24/2025\nDOB 2/16/1972\nSSN 402-04-0723\n\n12 Modern Way\nLouisville, KY 40206\n\nWas stopped at a flashing red light and was rear ended.\n\nOn newburg road at the light before entering 264W\n\nNO PD responded\n\nWill text \n\nBI: Root\n\nPIP State Farm \nHas not spoken with State Farm\n\n07 Chevy Impala is clients car\n\nNo health insurance\n\nWent to St. Mary and Elizabeth on Bluegrass\nNo EMS\n\nInjuries: thoracic pain, neck pain. \n__Person Making Contact:__ Justin\n__Date & Time__: September 30 2025",
+      "natural_language": "Initial client contact on September 30, 2025, with Tonya Dunn regarding a motor vehicle accident that occurred on September 24, 2025 (DOA 9/24/2025). Tonya Dunn is a 1972 birth, reachable at 502-381-0282, with Social Security Number 402-04-0723. She resides at 12 Modern Way, Louisville, KY 40206. She reports that she was stopped at a flashing red light on Newburg Road at the light before entering I-264 West when she was rear-ended. No police department (PD) responded at the scene, and she indicated she would text with updates.\n\nThe incident is noted with BI: Root and PIP through State Farm, though she has not spoken with State Farm yet. The client’s vehicle is a 2007 Chevrolet Impala. She currently has no health insurance. She went to St. Mary and Elizabeth on Bluegrass for care, and no EMS was involved. Injuries reported include thoracic pain and neck pain. The outreach was conducted by Justin on September 30, 2025.",
+      "valid_at": "2025-09-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "injured party / client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer reported for PIP"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP (State Farm)",
+            "relevance": "personal injury protection claim noted"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI - Root",
+            "relevance": "bodily injury claim noted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Health – Brown Cancer Center – Medical Oncology – Brown Cancer Center – Medical Oncology - Mary & Elizabeth UofL Health – Brown Cancer Center – Medical Oncology – Brown Cancer Center – Medical Oncology – Mary & Elizabeth Hospital",
+            "relevance": "medical facility where client received care"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-10-01",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=4f2f1cc7-fa31-4829-b742-3da2c6340b79.pdf\nSigned: 2025-10-01 20:43:24\nAll signers: Tonya Dunn((502) 381-0282)\nSender: Justin Chumbley",
+      "natural_language": "The case Tonya-Dunn-MVA-9-24-2025 involves client Tonya Dunn in connection with a motor vehicle accident. An intake document via VineSign has been completed; the document is named intake. It was signed on 2025-10-01 at 20:43:24, and the signed document can be accessed at https://app.vinesign.com/Jobs/Pdf?pdfKey=4f2f1cc7-fa31-4829-b742-3da2c6340b79.pdf. All signers on the document are Tonya Dunn, whose phone number is (502) 381-0282. The sender of the document is Justin Chumbley.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "primary client / signer of intake"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "platform used to sign intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-03",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, is going to text us the PIP claim info \n__Person Making Contact:__ Justin\n__Date & Time__: October 03 2025",
+      "natural_language": "Initial client contact on October 3, 2025 with Justin regarding the Tonya-Dunn-MVA-9-24-2025 motor vehicle accident. The client is Tonya Dunn, and during the conversation she stated she would text us the PIP claim info.",
+      "valid_at": "2025-10-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "client to provide PIP claim information"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-03",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\nA missed call for aaron whaley was logged at 2025-10-03 16:07:50.934000+00:00 . #missedcall\n\nCaller Info: 5023810282 \n\nCaller ID: 502-381-0282 \n\nCaller Name: Tonya Dunn \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Aaron, this is Tonya Dunn. My phone numbers 502-381-0282. Please return my call as soon as possible. I need to speak with you about my insurance company. Thank you.",
+      "natural_language": "On October 3, 2025 at 16:07:50.934000+00:00 (UTC), a missed call for Aaron Whaley was logged in the Tonya-Dunn-MVA-9-24-2025 case. The call originated from 502-381-0282, with the caller ID listed as 502-381-0282, and the caller was identified as Tonya Dunn. The caller email field is empty. A link to the Filevine contact is provided: [filevine-link].\n\nThe voicemail transcription states: \"Aaron, this is Tonya Dunn. My phone numbers 502-381-0282. Please return my call as soon as possible. I need to speak with you about my insurance company. Thank you.\"",
+      "valid_at": "2025-10-03T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "caller / client asking about her insurance company"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-07",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\nA missed call for aaron whaley was logged at 2025-10-07 19:24:59.288000+00:00 . #missedcall\n\nCaller Info: 5023810282 \n\nCaller ID: 502-381-0282 \n\nCaller Name: Tonya Dunn \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hi, Aaron. Tonya done. I just got an estimate on my vehicle and needed to know what my next step is and and how we are doing. I am giving me a call back at a 2. 381282, thank you.",
+      "natural_language": "This note documents the Tonya-Dunn-MVA-9-24-2025 case for client Tonya Dunn (motor vehicle accident). On October 7, 2025, at 19:24:59.288000+00:00, a missed call for Aaron Whaley was logged. The caller information lists the number 5023810282 (caller ID 502-381-0282) with the caller name Tonya Dunn. There is no caller email on file, and a Filevine contact link is available at [filevine-link].\n\nThe voicemail transcription left for Aaron reads: \"Hi, Aaron. Tonya done. I just got an estimate on my vehicle and needed to know what my next step is and and how we are doing. I am giving me a call back at a 2. 381282, thank you.\" Note that the transcription contains typos and garbled elements, including \"Tonya done\" instead of \"Tonya Dunn\" and the phrase \"a 2. 381282,\" which appears to reference the phone number 502-381-0282.",
+      "valid_at": "2025-10-07T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "caller / client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "recipient of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-08",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\nA missed call for aaron whaley was logged at 2025-10-08 16:17:05.162000+00:00 . #missedcall\n\nCaller Info: 5023810282 \n\nCaller ID: 502-381-0282 \n\nCaller Name: Tonya Dunn \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "In the Tonya-Dunn-MVA-9-24-2025 case, a missed call for aaron whaley was logged on October 8, 2025 at 16:17:05.162000+00:00 (UTC), tagged as #missedcall.\n\nCaller information shows the originating number 5023810282 and the caller ID 502-381-0282. The caller name is Tonya Dunn, and the caller email field is blank. Link to Filevine Contact [filevine-link]. Voicemail Transcription: (none provided).",
+      "valid_at": "2025-10-08T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "caller / subject of contact"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "intended recipient of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-08",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client about PD estimates and procedure\n\n1791D291D \n__Person Making Contact:__ Justin\n__Date & Time__: October 08 2025",
+      "natural_language": "Tonya Dunn is the client in the motor vehicle accident case Tonya-Dunn-MVA-9-24-2025, dated September 24, 2025.\n\nInitial client contact occurred on October 8, 2025, with Justin as the person making contact. He spoke with Tonya Dunn about PD estimates and the procedure for the case. This contact is associated with reference 1791D291D.",
+      "valid_at": "2025-10-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "client in the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-16",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n__CLIENT CONTACT__\n__Details:__ Updated client on PD status. has about \n__Person Making Contact:__ Justin\n__Date & Time__: October 16 2025",
+      "natural_language": "Case Tonya-Dunn-MVA-9-24-2025 concerns client Tonya Dunn.\n\nOn October 16, 2025, Justin made contact to update the client, Tonya Dunn, on her PD status. Details: Updated client on PD status. has about.",
+      "valid_at": "2025-10-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "recipient of PD status update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-16",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\nTonya, It's Justin from the Whaley Law Firm. This is the text only number we discussed. Please send all the information you have here. If you have any photos send those as well. My direct line is 502-357-9603. Feel free to call me anytime with questions.",
+      "natural_language": "Initial client contact on September 24, 2025, with Tonya Dunn regarding a motor vehicle accident (MVA) case, identified as Tonya-Dunn-MVA-9-24-2025. Justin from the Whaley Law Firm spoke with Tonya and advised that this is the text-only number they had discussed. He asked her to send all information she has to this number, and to include any photos if she has them. He provided his direct line, 502-357-9603, and encouraged Tonya to call anytime with questions.",
+      "valid_at": "2025-10-16T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "initial contact / client of the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "attorney who spoke with the client and provided contact info"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "law firm handling the matter / employer of Justin"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-30",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n__CLIENT CONTACT__\n__Details:__ client called looking for Moe's number, looked it up and sent it to her via text \n__Person Making Contact:__ Justin\n__Date & Time__: October 30 2025",
+      "natural_language": "Initial client contact on October 30, 2025 with Tonya Dunn regarding motor vehicle accident, file Tonya-Dunn-MVA-9-24-2025. The client called looking for Moe's number; Justin, the person making contact, looked it up and texted it to her.",
+      "valid_at": "2025-10-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "initial contact / caller regarding MVA"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-05",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n__CLIENT CONTACT__\n__Details:__ daughter is done treating. client has one more visit and will be done \n__Person Making Contact:__ Justin\n__Date & Time__: November 05 2025",
+      "natural_language": "The Tonya Dunn MVA case, opened on September 24, 2025, concerns client Tonya Dunn.\n\nInitial client contact was made on November 5, 2025, by Justin regarding the case. The contact notes that the client's daughter is done treating, and that Tonya Dunn herself has one more visit and will be done after that visit.",
+      "valid_at": "2025-11-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "primary client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-14",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n__New Insurance Note:__ 11/14 saved PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Tonya Dunn is the client in a motor vehicle accident case dated September 24, 2025.\n\nA new insurance note was created, indicating that on November 14, 2025, a PIP ledger was saved.\n\nThe note specifies Personal Injury Protection (PIP) as the insurance type and State Farm Insurance Company as the insurer, and it was written by Justin Chumbley.",
+      "valid_at": "2025-11-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "named insurer"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "PIP ledger saved / insurance type discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-21",
+      "original_body": "Case: Tonya-Dunn-MVA-9-24-2025\nClient: Tonya Dunn\n\n__CLIENT CONTACT__\n__Details:__ is going to switch chiros and let us know \n__Person Making Contact:__ Justin\n__Date & Time__: November 21 2025",
+      "natural_language": "Initial client contact on November 21, 2025, with Justin regarding the motor vehicle accident involving Tonya Dunn (Case Tonya-Dunn-MVA-9-24-2025). The client reported that she is going to switch chiropractors and will let us know when that change has been made.",
+      "valid_at": "2025-11-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "client / injured party in the MVA case"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

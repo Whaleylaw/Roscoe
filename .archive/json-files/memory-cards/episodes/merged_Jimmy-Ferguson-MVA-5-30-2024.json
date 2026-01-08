@@ -1,0 +1,2486 @@
+{
+  "case_name": "Jimmy-Ferguson-MVA-5-30-2024",
+  "total_episodes": 120,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Baptist Health Hardin",
+        "specialty": null
+      },
+      {
+        "name": "Baptist Health Medical Group Neurology & Neurosurgery",
+        "specialty": "neurology"
+      },
+      {
+        "name": "Elizabethtown Emergency Physicians",
+        "specialty": null
+      },
+      {
+        "name": "Hardin County EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "KORT Elizabethtown PT",
+        "specialty": null
+      },
+      {
+        "name": "Legacy Healthcare",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "KACo Claims Department"
+      },
+      {
+        "name": "Kentucky Farm Bureau"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Vivian Hall"
+      },
+      {
+        "name": "Ashley Mcneese"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Jimmy-Ferguson-MVA-5-30-2024-Bodily Injury (BI)-VA20241535681",
+        "insurer": "KACo Claims Department",
+        "adjuster": "Vivian Hall"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Jimmy-Ferguson-MVA-5-30-2024-Personal Injury Protection (PIP)-4979889",
+        "insurer": "Kentucky Farm Bureau",
+        "adjuster": "Ashley Mcneese"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Jimmy-Ferguson-MVA-5-30-2024-Wellcare of Kentucky",
+        "holder": "Wellcare of Kentucky",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2024-07-08",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nWill need 5 years of priors from all providers other than EMS",
+      "natural_language": "This case, Jimmy-Ferguson-MVA-5-30-2024, concerns client Jimmy Ferguson in connection with a motor vehicle accident on May 30, 2024.\n\nThe plan is to obtain 5 years of prior medical records from all providers other than EMS.",
+      "valid_at": "2024-07-08T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Hardin",
+            "relevance": "source of prior medical records to obtain"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Medical Group Neurology & Neurosurgery",
+            "relevance": "source of prior medical records to obtain"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Elizabethtown Emergency Physicians",
+            "relevance": "source of prior medical records to obtain"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "KORT Elizabethtown PT",
+            "relevance": "source of prior medical records to obtain"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Legacy Healthcare",
+            "relevance": "source of prior medical records to obtain"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Hardin County EMS",
+            "relevance": "explicitly excluded from records request (EMS)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-07-08",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Jimmy Ferguson\nDOB 9/16/74\nAddress\n122 Alumni Drive\nElizabethtown KY 42701\nSSN: 414-06-5377\n\nDOA 6/30/24\nLocation: North Dixie \nElizabethtown PD\n\nDescription: Was leaving Walmart and was t-boned in rear passenger side\n\nInjuries – Neck, and lumbar\nHardin County EMS to Baptist Health Hardin\nHas seen his PCP and is awaiting a referral to see a specialist\nPCP – Legacy Healthcare in Elizabethtown.\nSpecialist – Thad R. Jackson with Baptist Health Medical Group\n\nPIP – KFB \nClaim # 0470100 \n__Person Making Contact:__ Justin\n__Date & Time__: July 08 2024",
+      "natural_language": "Initial client contact on July 8, 2024, by Justin regarding the motor vehicle accident involving Jimmy Ferguson. The case is identified as Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson, born September 16, 1974, residing at 122 Alumni Drive, Elizabethtown, Kentucky 42701, Social Security Number 414-06-5377.\n\nThe record lists DOA as 6/30/24. Location noted as North Dixie, Elizabethtown Police Department. Description: Ferguson was leaving Walmart when he was t-boned in the rear passenger side. Injuries reported: neck and lumbar. Hardin County EMS transported him to Baptist Health Hardin. He has seen his primary care physician and is awaiting a referral to see a specialist. Primary care provider is Legacy Healthcare in Elizabethtown. The designated specialist is Thad R. Jackson with Baptist Health Medical Group. PIP coverage is through KFB, Claim number 0470100.\n\nThis contact was documented by Justin on July 8, 2024.",
+      "valid_at": "2024-07-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client/claimant"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Hardin County EMS",
+            "relevance": "transported patient to hospital"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Hardin",
+            "relevance": "hospital where patient was taken/treated"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Legacy Healthcare",
+            "relevance": "primary care provider"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Medical Group Neurology & Neurosurgery",
+            "relevance": "designated specialist practice (Thad R. Jackson)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP coverage/claim for the accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-07-08",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nsent intake docs via vinesign",
+      "natural_language": "Jimmy Ferguson is the client in a motor vehicle accident case dated May 30, 2024. Intake documents have been sent to Jimmy Ferguson via VineSign.",
+      "valid_at": "2024-07-08T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client; recipient of intake documents for MVA dated 5/30/2024"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-07-08",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "Initial client contact on May 30, 2024 with Jimmy Ferguson regarding a motor vehicle accident. The client was contacted today to provide update #cc.",
+      "valid_at": "2024-07-08T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-07-08",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nJimmy Ferguson\nDOB 9/16/74\nAddress\n122 Alumni Drive\nElizabethtown KY 42701\nSSN: 414-06-5377\nDOA 6/30/24\nLocation: North Dixie \nElizabethtown PD\nDescription: Was leaving Walmart and was t-boned in rear passenger side (client has PR) \nInjuries – Neck, and lumbar\nHardin County EMS to Baptist Health Hardin\nHas seen his PCP and is awaiting a referral to see a specialist\nPCP – Legacy Healthcare in Elizabethtown.\nSpecialist – Thad R. Jackson with Baptist Health Medical Group\nPIP – KFB \nClaim # 0470100",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Jimmy Ferguson was involved in a motor vehicle accident on May 30, 2024. He was born on September 16, 1974, and resides at 122 Alumni Drive, Elizabethtown, Kentucky 42701. His Social Security Number is 414-06-5377. The date of accident (DOA) is listed as 6/30/24. The incident occurred in the North Dixie area at the Elizabethtown Police Department. Description: He was leaving Walmart when he was t-boned on the rear passenger side; the client has PR. Injuries reported are to the neck and the lumbar region. Hardin County EMS transported him to Baptist Health Hardin.\n\nHe has seen his primary care physician and is awaiting a referral to see a specialist. The PCP is Legacy Healthcare in Elizabethtown. The designated specialist is Thad R. Jackson with Baptist Health Medical Group. PIP is listed as KFB. Claim number is 0470100.",
+      "valid_at": "2024-07-08T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "involved party/claimant"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Hardin County EMS",
+            "relevance": "transported patient to hospital"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Hardin",
+            "relevance": "received patient for emergency treatment"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Legacy Healthcare",
+            "relevance": "primary care physician/PCP"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Medical Group Neurology & Neurosurgery",
+            "relevance": "designated specialist (Thad R. Jackson)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP insurer/claim listed (Claim #0470100)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-07-08",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__0470100__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [5024937646@rcfax.com](mailto:5024937646@rcfax.com)\nDate: Mon, 8 Jul 2024 13:48:34 -0400\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "The case is labeled Jimmy-Ferguson-MVA-5-30-2024, with the client identified as Jimmy Ferguson. The internal reference for this matter is 0470100.\n\nOn July 8, 2024, at 1:48:34 PM Eastern Time, Aries Penaflor of Whaley Law Firm sent an email from aries@whaleylawfirm.com to the fax address 5024937646@rcfax.com. The message was dated Monday, July 8, 2024, at 13:48:34 -0400. The email concluded with the sign-off “All the best, Aries Paul Peñaflor” and listed the sender’s firm details as Whaley Law Firm, with a phone number of (502) 365-5788 and a fax number of (502) 364-9363.",
+      "valid_at": "2024-07-08T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-07-09",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n#vinesign-completed\nName: Intake documents\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=0c7aeb8a-bf59-4407-a3d4-2ca70b31cba8.pdf\nSigned: 2024-07-09 20:09:27\nAll signers: Jimmy Ferguson(jimmyferguson795@yahoo.com (270) 319-9516)\nSender: Justin Chumbley",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson. As part of the intake process, the intake documents were completed via VineSign. The document is named \"Intake documents\" and was signed on July 9, 2024 at 20:09:27. The signed document can be accessed here: https://app.vinesign.com/Jobs/Pdf?pdfKey=0c7aeb8a-bf59-4407-a3d4-2ca70b31cba8.pdf. All signers listed for this document include Jimmy Ferguson (jimmyferguson795@yahoo.com, (270) 319-9516). The sender of the VineSign package was Justin Chumbley.",
+      "valid_at": "2024-07-09T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client; signer of intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-07-11",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nSend photos and info here and it will save directly to your file",
+      "natural_language": "This case concerns Jimmy Ferguson in relation to a motor vehicle accident dated May 30, 2024, identified as Jimmy-Ferguson-MVA-5-30-2024.\n\nThe note specifies that photos and information should be sent here, and that these items will be saved directly to your file.",
+      "valid_at": "2024-07-11T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case subject / injured party"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-07-12",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Jimmy Ferguson__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5022534829@rcfax.com](mailto:5022534829@rcfax.com)\nCc: [JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com](mailto:JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com) Jimmy Ferguson - Filevine Project Email Address\nDate: Fri, 12 Jul 2024 08:56:10 -0400\n\nAttached is a request for records & bills on our client, Jimmy Ferguson.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Jimmy Ferguson MVA (motor vehicle accident) dated May 30, 2024. The client is Jimmy Ferguson.\n\nOn Friday, July 12, 2024, at 08:56:10 AM Eastern Time, Jessica Bottorff of The Whaley Law Firm sent an email regarding our client, Jimmy Ferguson. The message was sent from jessica@whaleylawfirm.com to 5022534829@rcfax.com, with Jimmy Ferguson’s Filevine project email address (JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com) CC’d. The body states: \"Attached is a request for records & bills on our client, Jimmy Ferguson.\" The email ends with \"Thanks!\" and is signed by The Whaley Law Firm.",
+      "valid_at": "2024-07-12T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of the records/bills request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender/firm requesting records and bills"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email sender from The Whaley Law Firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-07-12",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nRequest for records (2019 - present) & bills faxed to Baptist Health Hardin",
+      "natural_language": "Initial client contact on May 30, 2024, with Jimmy Ferguson regarding a motor vehicle accident. A records request covering 2019 to the present, and the client's medical bills, were faxed to Baptist Health Hardin.",
+      "valid_at": "2024-07-12T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Hardin",
+            "relevance": "recipient of records request and medical bills fax"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-07-12",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nRequest for records & bills sent to Hardin EMS via ChartSwap",
+      "natural_language": "The case is identified as Jimmy-Ferguson-MVA-5-30-2024, and the client is Jimmy Ferguson. It concerns a motor vehicle accident that occurred on May 30, 2024.\n\nA request for records and bills for Jimmy Ferguson has been sent to Hardin EMS via ChartSwap.",
+      "valid_at": "2024-07-12T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Hardin County EMS",
+            "relevance": "recipient of records and bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-07-15",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nCalled KY Pain Associates to confirm we are representing client. They already have the PIP claim info.",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024, involving client Jimmy Ferguson.\n\nWe called KY Pain Associates to confirm that we are representing Jimmy Ferguson in this matter, and KY Pain Associates already have the PIP claim info.",
+      "valid_at": "2024-07-15T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client represented"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP claim information referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-07-30",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nPer ChartSwap on Hardin County EMS: \nProvider Note\n7/29/2024 1:00 PM\tLocated patient, but no records for the DOS requested.",
+      "natural_language": "This case concerns Jimmy Ferguson in a motor vehicle accident that occurred on May 30, 2024. The client is Jimmy Ferguson.\n\nAccording to ChartSwap records from Hardin County EMS, a provider note dated July 29, 2024 at 1:00 PM states that the patient was located, but there were no records for the date of service that was requested.",
+      "valid_at": "2024-07-30T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case / client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Hardin County EMS",
+            "relevance": "source of ChartSwap provider note re: records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-08-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Claim Inquiry__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [april.hawes@charlestaylor.com](mailto:april.hawes@charlestaylor.com)\nDate: Thu, 1 Aug 2024 11:29:17 -0400\n\nHi April,\n\nI'm reaching out to request claim information for a motor vehicle accident\n(MVA) involving our client, Jimmy Ferguson. The date of accident (DOA) was\nJune 30, 2024, and his date of birth (DOB) is September 16, 1974. The\npolicy number associated with this claim is 0021050511.\n\nPlease provide us with any relevant information regarding the claim,\nincluding the status of the claim, any necessary documentation, and any\nother pertinent details.\n\nThank you for your prompt attention to this matter.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "This is the Jimmy-Ferguson-MVA-5-30-2024 case for client Jimmy Ferguson. On August 1, 2024 at 11:29:17 a.m. Eastern Time, Aries Penaflor of Whaley Law Firm emailed April Hawes at Charles Taylor requesting claim information related to a motor vehicle accident involving their client, Jimmy Ferguson. The date of accident was June 30, 2024. The client’s date of birth is September 16, 1974. The policy number associated with the claim is 0021050511. In the message, the sender requested any relevant information regarding the claim, including the status of the claim, any necessary documentation, and other pertinent details. The email was sent from Aries Penaflor (aries@whaleylawfirm.com) to April Hawes (april.hawes@charlestaylor.com).\n\nThe inquiry was signed by Aries Paul Peñaflor of Whaley Law Firm, with the following contact details: Ph: (502)365-5788; Fax: (502)364-9363.",
+      "valid_at": "2024-08-01T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sender/author of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Charles Taylor Insurance Adjusters",
+            "relevance": "recipient organization/claims handler"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-08-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n@aries1 What is going on here? It doesn't appear you have done anything in this file since it was added to the system. no client contact, no police report etc. Please address this today",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson.\n\nThis file concerns Jimmy Ferguson in relation to a motor vehicle accident, with the case identifier Jimmy-Ferguson-MVA-5-30-2024. The note indicates that, since the file was added to the system, no actions have been taken to date—specifically, there has been no client contact and no police report filed.\n\nAn internal message directed to @aries1 reads: \"What is going on here? It doesn't appear you have done anything in this file since it was added to the system. no client contact, no police report etc. Please address this today.\" The message highlights the absence of client contact and a police report, and urges that the matter be addressed today.",
+      "valid_at": "2024-08-01T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__New Insurance Note:__ 08/01: Tried to0 call BI but unavailable, left a VM and sent an email.\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ KACo Claims Department\n__Written by:__ Aries \n #Inotes",
+      "natural_language": "Jimmy Ferguson was involved in a motor vehicle accident on May 30, 2024. He is the client in this case, identified as Jimmy-Ferguson-MVA-5-30-2024.\n\nIn the latest insurance update, dated 08/01, the case notes a Bodily Injury (BI) claim with the KACo Claims Department. The note was written by Aries. On 08/01, attempts were made to contact the BI line, but it was unavailable; a voicemail was left and an email was sent.",
+      "valid_at": "2024-08-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy-Ferguson-MVA-5-30-2024",
+            "relevance": "client/subject of episode"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "BI claim discussed; attempts to contact BI line"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client. Asked him to send us the copy of his health insurance card. He said that he has an appointment today with his doctor and he will send us the info. \n__Person Making Contact:__ Aries\n__Date & Time__: August 01 2024",
+      "natural_language": "Initial client contact on August 1, 2024 with Jimmy Ferguson regarding the motor vehicle accident dated May 30, 2024 (case Jimmy-Ferguson-MVA-5-30-2024). Aries spoke with the client and requested that he send a copy of his health insurance card. He stated that he has an appointment today with his doctor and that he will send us the information.",
+      "valid_at": "2024-08-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "The Jimmy-Ferguson-MVA-5-30-2024 case concerns Jimmy Ferguson regarding a motor vehicle accident that occurred on May 30, 2024. The client for this matter is Jimmy Ferguson.\n\nToday, the client, Jimmy Ferguson, contacted us to provide an update, designated as update #cc.",
+      "valid_at": "2024-08-01T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client who provided update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-08-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__04979889__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [2706915722@rcfax.com](mailto:2706915722@rcfax.com)\nDate: Thu, 1 Aug 2024 13:41:17 -0400\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. The client is Jimmy Ferguson, and the file/reference number is 04979889.\n\nOn Thursday, August 1, 2024, at 13:41:17 -0400, an email was sent from Aries Penaflor (aries@whaleylawfirm.com) of Whaley Law Firm to 2706915722@rcfax.com regarding this case. The body of the message stated, \"Please see attached file.\" The email was signed \"All the best, Aries Paul Peñaflor\" and included the firm’s contact details: Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.",
+      "valid_at": "2024-08-01T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-08-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nYou can send the copy of your Health Insurance card (front and back) here.",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 concerns the client, Jimmy Ferguson, in a motor vehicle accident that occurred on May 30, 2024. A copy of the client’s health insurance card (front and back) can be sent here.",
+      "valid_at": "2024-08-01T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ Hi Jimmy, this is Aries from the Whaley Law Firm.\n__Date and Time:__ 2024-08-01 \n__From Number:__ +15023655788 \n__To Number:__ +12703199516\n__Direction:__ Outbound",
+      "natural_language": "Initial client contact for the motor vehicle accident case Jimmy-Ferguson-MVA-5-30-2024 involving client Jimmy Ferguson occurred on August 1, 2024. This contact was an outbound text message from Aries at the Whaley Law Firm to Jimmy Ferguson, sent from number +15023655788 to number +12703199516, with the message reading: \"Hi Jimmy, this is Aries from the Whaley Law Firm.\"",
+      "valid_at": "2024-08-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "recipient of initial contact"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "person who sent the outbound text"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client and asked for medical provider. Said that he will text it to us. \n__Person Making Contact:__ Aries\n__Date & Time__: August 02 2024",
+      "natural_language": "Initial client contact on August 2, 2024, with Jimmy Ferguson regarding the motor vehicle accident on May 30, 2024 (case: Jimmy-Ferguson-MVA-5-30-2024). Aries made the contact, spoke with the client, and asked for the medical provider. Ferguson said that he would text the medical provider information to us.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-02",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "This case, Jimmy-Ferguson-MVA-5-30-2024, concerns a motor vehicle accident that occurred on May 30, 2024 and lists Jimmy Ferguson as the client. Today, the client, Jimmy Ferguson, was contacted to give update #cc.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client contacted / subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-14",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Jimmy Ferguson__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5024401033@rcfax.com](mailto:5024401033@rcfax.com)\nCc: [JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com](mailto:JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed, 14 Aug 2024 13:03:34 -0400",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson. The record includes an email dated August 14, 2024 at 1:03:34 PM Eastern Time, sent from jessica@whaleylawfirm.com of Whaley Law Firm. The message was addressed to 5024401033@rcfax.com and CC’d to JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com. No subject line or body content is provided in the note.",
+      "valid_at": "2024-08-14T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client; CC'd recipient (JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "jessica@whaleylawfirm.com",
+            "relevance": "email sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-08-14",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nFirst Lien Letter faxed to The Rawlings Company (WellCare) and mailed to address on back of card",
+      "natural_language": "Jimmy Ferguson is the client in case Jimmy-Ferguson-MVA-5-30-2024, which involves a motor vehicle accident. A First Lien Letter was faxed to The Rawlings Company (WellCare) and mailed to the address on the back of the card.",
+      "valid_at": "2024-08-14T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Wellcare of Kentucky",
+            "relevance": "recipient of first lien letter / lien referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-19",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Client is still actively treating. \n__Person Making Contact:__ Aries\n__Date & Time__: August 19 2024",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson.\n\nOn August 19, 2024, Aries made contact regarding the case, and the notes indicate that the client is still actively treating for injuries from the motor vehicle accident that occurred on May 30, 2024.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client actively treating following MVA"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-19",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves Jimmy Ferguson and a motor vehicle accident. The client, Jimmy Ferguson, contacted us today—May 30, 2024—to provide an update designated as #cc on the motor vehicle accident.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "contacted to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-19",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA call from Aries Penaflor was logged at 2024-08-19 13:42:42.658000+00:00 . #outboundcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "In the case Jimmy-Ferguson-MVA-5-30-2024, the client is Jimmy Ferguson.\n\nAn outbound call from Aries Penaflor was logged on August 19, 2024 at 13:42:42.658000+00:00 UTC. The call’s recorded details show Caller Info 2703199516, Caller ID 270-319-9516, and Caller Name Jimmy Ferguson. The Caller Email field is blank, and there is a Filevine contact link available at [filevine-link].",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client and caller (subject of call)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA call for Aries Penaflor was logged at 2024-08-28 13:17:16.814000+00:00 . #inboundcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. This case concerns Jimmy Ferguson and relates to a motor vehicle accident.\n\nInitial client contact on August 28, 2024 with Jimmy Ferguson regarding motor vehicle accident. A call for Aries Penaflor was logged on August 28, 2024 at 13:17:16.814000 UTC and was categorized as an inbound call. The caller information lists the number 2703199516, with the caller ID displayed as 270-319-9516. The caller name is Jimmy Ferguson. The caller email field is blank. A Filevine contact link is provided: [filevine-link].",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Client called asking why KP Associates is asking for payment when he has an appointment. Advised him to tell them that he was involved in a motor vehicle accident, then they will ask for the claim number or his health insurance information. \n__Person Making Contact:__ Aries\n__Date & Time__: August 28 2024",
+      "natural_language": "Initial client contact on August 28, 2024 with Jimmy Ferguson regarding a motor vehicle accident (case Jimmy-Ferguson-MVA-5-30-2024). The client called asking why KP Associates is requesting payment when he has an appointment, and he was advised to tell them that he was involved in a motor vehicle accident; then they will ask for the claim number or his health insurance information. The person making contact was Aries.",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024. The client, Jimmy Ferguson, was contacted today to provide an update, reference #cc.",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ Hey Jimmy, whenever medical providers asks for upfront payment, you need to tell them that you were involved in a motor vehicle accident, then they will ask for the claim number or your health insurance information.\n__Date and Time:__ 2024-08-28 \n__From Number:__ +15023655788 \n__To Number:__ +12703199516\n__Direction:__ Outbound",
+      "natural_language": "The case is Jimmy-Ferguson-MVA-5-30-2024 for client Jimmy Ferguson.\n\nAn outbound text message was sent on 2024-08-28 from phone number +15023655788 to phone number +12703199516. The content of the message read: \"Hey Jimmy, whenever medical providers asks for upfront payment, you need to tell them that you were involved in a motor vehicle accident, then they will ask for the claim number or your health insurance information.\"",
+      "valid_at": "2024-08-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "recipient of message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-12",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Jimmy Ferguson__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5022534829@rcfax.com](mailto:5022534829@rcfax.com)\nCc: Jimmy Ferguson - Filevine Project Email Address [JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com](mailto:JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Sep 12 2024 09:24:45 GMT-04:00\n\nWe received medical records but are missing the bills. If you could send\nthose as soon as possible.\n\nThank you!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson. In this matter, on Thursday, September 12, 2024, at 9:24:45 AM GMT-04:00, Jessica Bottorff of The Whaley Law Firm sent an email regarding the Jimmy-Ferguson-MVA-5-30-2024 case. The message was sent from jessica@whaleylawfirm.com to the fax address 5022534829@rcfax.com, with a CC to Jimmy Ferguson’s Filevine project email JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com.\n\nIn the body of the email, she wrote: “We received medical records but are missing the bills. If you could send those as soon as possible. Thank you!” The note concludes with the sender, The Whaley Law Firm.",
+      "valid_at": "2024-09-12T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-30",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Client provided treatment update. Got medical bills that he thought was covered but ended up paying. Was advised to get MRI done. \n__Person Making Contact:__ Aries\n__Date & Time__: October 30 2024",
+      "natural_language": "Initial client contact on October 30, 2024 with Jimmy Ferguson regarding a motor vehicle accident that occurred on May 30, 2024 (Case Jimmy-Ferguson-MVA-5-30-2024). The client provided a treatment update, reporting that he had medical bills he believed would be covered but ended up paying out of pocket. He was advised to obtain an MRI. The contact was made by Aries.",
+      "valid_at": "2024-10-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client providing treatment update / subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-30",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA call for Aries Penaflor was logged at 2024-10-30 17:38:37.073000+00:00 . #inboundcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson. An inbound call for Aries Penaflor was logged on October 30, 2024 at 17:38:37.073000+00:00.\n\nCaller information shows the number 2703199516, with a caller ID of 270-319-9516. The caller name is Jimmy Ferguson, and no caller email is provided in the record. A Filevine contact link is available: [filevine-link].",
+      "valid_at": "2024-10-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller and client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-10-30",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "In the Jimmy-Ferguson-MVA-5-30-2024 motor vehicle accident case, the client is Jimmy Ferguson.\n\nThe client was contacted today to give update #cc.",
+      "valid_at": "2024-10-30T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client contacted / subject of update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson. Initial client contact on November 22, 2024, regarding the motor vehicle accident case Jimmy-Ferguson-MVA-5-30-2024, with client Jimmy Ferguson.\n\nA text message was received on November 22, 2024, as an inbound contact. The message came from +12703199516 to +15023655788. The content of the message is not recorded in the note.",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client and subject of initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ Thanks Jimmy. We'll add this on your file.\n__Date and Time:__ 2024-11-22 \n__From Number:__ +15023655788 \n__To Number:__ +12703199516\n__Direction:__ Outbound",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 concerns client Jimmy Ferguson in connection with a motor vehicle accident dated May 30, 2024.\n\nOn November 22, 2024, an outbound text message was sent from +15023655788 to +12703199516. The message read: \"Thanks Jimmy. We'll add this on your file.\"",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case; recipient of outbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on November 22, 2024 regarding the motor vehicle accident documented as Jimmy-Ferguson-MVA-5-30-2024, with client Jimmy Ferguson. The contact was an inbound text message received on that date from phone number +12703199516 to office number +15023655788, and the Message field contains no text (no content recorded).",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson.\n\nOn November 22, 2024, an inbound text message was received in relation to this case from +12703199516 to +15023655788.",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson in a motor vehicle accident dated May 30, 2024. \n\nAn inbound text message related to this case was received on November 22, 2024, from the number +1 (270) 319-9516 to the number +1 (502) 365-5788. The body of the message is not recorded in the note.",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "primary subject of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson in connection with a motor vehicle accident that occurred on May 30, 2024. The client for this case is Jimmy Ferguson.\n\nWithin the case record, a text message is noted. An inbound text message was received on November 22, 2024, from the phone number +12703199516 directed to the number +15023655788. The note records the direction as inbound, and there is no message content provided.",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson and concerns a motor vehicle accident that occurred on May 30, 2024.\n\nAn inbound text message related to the case was received on November 22, 2024. The message originated from +1 270 319 9516 and was sent to +1 502 365 5788. The body/content of the message is not provided in the record.",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client / subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "The case Jimmy-Ferguson-MVA-5-30-2024 concerns client Jimmy Ferguson and relates to a motor vehicle accident that occurred on May 30, 2024.\n\nOn November 22, 2024, an inbound text message was received from +12703199516 to +15023655788. The note does not include the content of the message.",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson. On November 22, 2024, an inbound text message was received in connection with this case. The message originated from +12703199516 and was sent to +15023655788, and the content of the message was not provided in the notes.",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-11-22 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This case, Jimmy-Ferguson-MVA-5-30-2024, involves client Jimmy Ferguson and a motor vehicle accident that occurred on May 30, 2024. \n\nIn the case notes, an inbound text message is recorded on November 22, 2024. The message was sent from phone number +1 270 319 9516 to +1 502 365 5788, with the direction noted as inbound. The content of the text message is not provided in the record.",
+      "valid_at": "2024-11-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-11-25",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Jimmy Ferguson__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: KACo Claims Department [kacoclaims@charlestaylor.com](mailto:kacoclaims@charlestaylor.com)\nDate: Mon Nov 25 2024 10:52:35 GMT-05:00\n\nHi,\n\nPlease see the attached letter of representation for our client, Jimmy\nFerguson, who was involved in a vehicle accident with your insured. I have\nalso attached a copy of the police report for your reference.\n\nKindly provide us with the details of the claim at your earliest\nconvenience.\n\nThank you for your attention to this matter.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. The client is Jimmy Ferguson. On November 25, 2024, at 10:52:35 AM GMT-05:00, Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to the KACo Claims Department at kacoclaims@charlestaylor.com regarding Jimmy Ferguson, who was involved in a motor vehicle accident with the insurer’s insured.\n\nIn the message, she stated that the attached letter of representation for Jimmy Ferguson was included, along with a copied police report for reference. She requested that the details of the claim be provided at their earliest convenience. The email concluded with her sign-off: All the best, Jessa Galosmo, Whaley Law Firm; Ph: (502)357-9975; Fax: (502)364-9363.",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client represented / subject of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of the letter of representation / counsel for client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "recipient of the letter of representation / claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-25",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__New Insurance Note:__ 11/25 called Kaco to get claim number or set up claim. I was asked to email Kaco the copy of PR and wait for the adjuster to reach out to us\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ KACo Claims Department\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. The client is Jimmy Ferguson, who was involved in a motor vehicle accident on May 30, 2024.\n\nOn November 25, 2024, I contacted KACo Claims Department to obtain a claim number or to set up a claim for Bodily Injury (BI) benefits related to this incident. I was instructed to email KACo a copy of the PR (police report) and to wait for the adjuster to reach out to us.\n\nThis record notes that the insurance type is Bodily Injury (BI) and that the insurance company is the KACo Claims Department. The entry was written by Jessa.",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "KACo Claims Department",
+            "relevance": "contacted to set up BI claim / obtain claim number"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "Bodily injury claim discussed / being set up"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-11-25",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Fwd: Jimmy Ferguson__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jimmy Ferguson - Filevine Project Email Address [JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com](mailto:JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Nov 25 2024 02:17:19 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: kacoclaims \nDate: Mon, Nov 25, 2024 at 12:01?PM\nSubject: RE: Jimmy Ferguson\nTo: Jessa Galosmo \n\nCLM# VA20241535681\n\nAdjuster: Vivian Hall / Contact# 502-676-7679 Email:\nVivian.hall@charlestaylor.com\n\nDOI :5/30/2024\n\nJimmy Ferguson – Injury\n\nThank you\n\nLaura Gowers\n\n*From:* Jessa Galosmo \n*Sent:* Monday, November 25, 2024 10:53 AM\n*To:* kacoclaims \n*Subject:* Jimmy Ferguson\n\n*This email originated from outside the organization. Do not click links or\nopen attachments unless you have verified this email is legitimate.*\n------------------------------\n\nHi,\n\nPlease see the attached letter of representation for our client, Jimmy\nFerguson, who was involved in a vehicle accident with your insured. I have\nalso attached a copy of the police report for your reference.\n\nKindly provide us with the details of the claim at your earliest\nconvenience.\n\nThank you for your attention to this matter.\n\n-- \n\nAll the best,\n\nJessa Galosmo\n\nWhaley Law Firm\n\nPh: (502)357-9975\n\nFax: (502)364-9363\n\nFor full details of the services the Charles Taylor group offers please\nvisit www.charlestaylor.com\n\nThis email (including all attachments) is confidential and may be protected\nby legal privilege. If you are not the intended recipient, you must not\ncopy it, re-transmit it, use it or disclose its contents to anyone else. If\nyou have received it in error, please notify the sender immediately and\ndelete your copy from your system.\n\nWe monitor the content of emails sent and received via our network for\nviruses and unauthorised use, we recommend that you should also check\nmessages for viruses in accordance with good computing practice. Emails\nsent to or from our systems are not confidential to any named individual\nand we reserve the right to read them without prior notice.\n\nOur Fair Processing Notice can be viewed by clicking on this link\n.\n\nDISD\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "This note covers communications regarding the motor vehicle accident involving Jimmy Ferguson on May 30, 2024 (Case: Jimmy-Ferguson-MVA-5-30-2024; Client: Jimmy Ferguson). On November 25, 2024, a claim related to Jimmy Ferguson’s injury was referenced in an email from kacoclaims to Jessa Galosmo, with the subject RE: Jimmy Ferguson. The claim is logged as CLM# VA20241535681, and the adjuster listed is Vivian Hall, contactable at 502-676-7679 and via email at Vivian.hall@charlestaylor.com. The date of injury (DOI) is noted as 5/30/2024. The message included a brief closing line, “Thank you,” from Laura Gowers.\n\nEarlier that same day, Jessa Galosmo of Whaley Law Firm sent an email to kacoclaims at 10:53 AM, attaching the letter of representation for Jimmy Ferguson, who was involved in a vehicle accident with the insured of Charles Taylor. She also attached a copy of the police report for reference and requested that the claim details be provided at the recipient’s earliest convenience. The email to kacoclaims carried the usual professional contact details for Jessa Galosmo: Whaley Law Firm, phone 502-357-9975 and fax 502-364-9363. The note also included a line directing readers to visit www.charlestaylor.com for full details of the services offered by the Charles Taylor group.\n\nThe forwarded correspondence included several standard notices. The message from kacoclaims indicated the email was part of an external communication, and there were cautions not to click links or open attachments unless the legitimacy of the message was verified. The email chain contained confidentiality and privilege notices stating that the email (including all attachments) is confidential and may be protected by legal privilege, and advising recipients who are not the intended ones to notify the sender and delete the message. Additional reminders highlighted email security practices, including virus checks and the right of the Charles Taylor system to monitor messages. A link to the Fair Processing Notice was provided. The header also included the tag “DISD.”\n\nIn the signature blocks, Jessa Galosmo confirmed her affiliation with Whaley Law Firm and provided her direct line and fax. The message concluded with the standard closing, “All the best,” followed by her name, firm, and contact information. The message also reiterated the Whaley Law Firm’s contact details and the confidentiality notices, alongside the reference to Charles Taylor’s website for service details.",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client/injured party (subject of MVA)"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "bodily injury claim referenced"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Vivian Hall",
+            "relevance": "adjuster listed/contact for the BI claim"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sent letter of representation"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "attorney who sent the representation letter and correspondence"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Charles Taylor Insurance Adjusters",
+            "relevance": "claims organization referenced (email domain/claims administrator)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Client has an appointment for his MRI on 12/20/2024. Physical therapist wants to know how much was the PIP range, client has 3-4 more visits left. \n__Person Making Contact:__ Aries\n__Date & Time__: November 26 2024",
+      "natural_language": "Initial client contact on November 26, 2024, with Aries regarding Jimmy Ferguson’s motor vehicle accident, case Jimmy-Ferguson-MVA-5-30-2024. The client has an appointment for an MRI on December 20, 2024, and the physical therapist wants to know how much was the PIP range; the client has three to four more visits left.",
+      "valid_at": "2024-11-26T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client/subject of episode"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "KORT Elizabethtown PT",
+            "relevance": "physical therapist requesting PIP range; treating provider"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP claim discussed; inquiry about PIP coverage range"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Ashley Mcneese",
+            "relevance": "PIP adjuster for the claim referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-11-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. The client is Jimmy Ferguson, involved in a motor vehicle accident dated May 30, 2024. The client was contacted today to provide an update, with the note #cc.",
+      "valid_at": "2024-11-26T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nRequest for bills sent to Elizabethtown Emergency Physicians via ChartSwap",
+      "natural_language": "Jimmy Ferguson's case, identified as Jimmy-Ferguson-MVA-5-30-2024, concerns a motor vehicle accident on May 30, 2024. The client is Jimmy Ferguson.\n\nA request was made to send the bills to Elizabethtown Emergency Physicians via ChartSwap.",
+      "valid_at": "2024-11-26T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Elizabethtown Emergency Physicians",
+            "relevance": "recipient of bills requested to be sent via ChartSwap"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nRequest for bills sent to Radiology Associates via ChartSwap",
+      "natural_language": "Initial client contact on May 30, 2024 with Jimmy Ferguson regarding a motor vehicle accident. The case is identified as Jimmy-Ferguson-MVA-5-30-2024. A request for bills was sent to Radiology Associates via ChartSwap.",
+      "valid_at": "2024-11-26T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA call from Aries Penaflor was logged at 2024-11-26 15:12:42.772000+00:00 . #outboundcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson. An outbound call from Aries Penaflor was logged on November 26, 2024 at 15:12:42.772000+00:00.\n\nCaller information lists the number 2703199516, with a caller ID of 270-319-9516. The caller name on the record is Jimmy Ferguson, and no caller email was provided. A link to the Filevine contact is available here: [filevine-link].",
+      "valid_at": "2024-11-26T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller / subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-11-29",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Fwd: VA20241535681 Jimmy Ferguson__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jimmy Ferguson - Filevine Project Email Address [JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com](mailto:JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Nov 29 2024 08:10:00 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Vivian Hall \nDate: Wed, Nov 27, 2024 at 11:53?PM\nSubject: VA20241535681 Jimmy Ferguson\nTo: jessa@whaleylawfirm.com \n\nPlease see attached.\n\nRegards,\n\n*Vivian Hall*\nSenior Liability Adjuster\n\nThird-Party Administration\n\n[image: A black and orange logo Description automatically generated]\n\nPO Box 436499\n\nLouisville, KY 40253\n\nUnited States\n\n*Phone*\n\n*Email *\n\n*Website *\n\nCall center 800.928.1342 | Direct 502.676-7679\n\nVivian.Hall@charlestaylor.com\nus.charlestaylor.com \n\nFor full details of the services the Charles Taylor group offers please\nvisit www.charlestaylor.com\n\nThis email (including all attachments) is confidential and may be protected\nby legal privilege. If you are not the intended recipient, you must not\ncopy it, re-transmit it, use it or disclose its contents to anyone else. If\nyou have received it in error, please notify the sender immediately and\ndelete your copy from your system.\n\nWe monitor the content of emails sent and received via our network for\nviruses and unauthorised use, we recommend that you should also check\nmessages for viruses in accordance with good computing practice. Emails\nsent to or from our systems are not confidential to any named individual\nand we reserve the right to read them without prior notice.\n\nOur Fair Processing Notice can be viewed by clicking on this link\n.\n\nDISD\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson.\n\nOn Friday, November 29, 2024 at 8:10 a.m. Eastern Time, Jessa Galosmo of Whaley Law Firm forwarded to Jimmy Ferguson’s Filevine project email address (JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com) an email with the subject Fwd: VA20241535681 Jimmy Ferguson. The forwarded message contains an original email from Vivian Hall.\n\nVivian Hall’s message was dated Wednesday, November 27, 2024 at about 11:53 PM and was addressed to jessa@whaleylawfirm.com with the subject VA20241535681 Jimmy Ferguson. The body of that message simply stated, “Please see attached.” Vivian’s signature identified her as Senior Liability Adjuster in Third-Party Administration. Her address was listed as PO Box 436499, Louisville, KY 40253, United States. The signature block included contact details: a general phone line for the center (800.928.1342) and a direct line (502.676-7679); email Vivian.Hall@charlestaylor.com and the website us.charlestaylor.com; a note that the Charles Taylor group’s services can be explored at www.charlestaylor.com. The email contained standard confidentiality language stating the message (including attachments) is confidential and may be protected by legal privilege, and that if the recipient is not the intended one, the contents should not be copied, retransmitted, used, or disclosed; if received in error, the sender should be notified and the copy deleted. It also noted that email content is monitored for viruses and misuse, and advised recipients to check messages for viruses in line with good computing practice. It stated that emails to or from their systems are not confidential to any named individual and that they reserve the right to read them without prior notice, and it referenced a Fair Processing Notice available via a link. The block ends with the text “DISD,” followed by the closing from Jessa Galosmo: “All the best, Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.”",
+      "valid_at": "2024-11-29T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client / subject of email"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Vivian Hall",
+            "relevance": "sender of original email / adjuster"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "BI claim associated with adjuster Vivian Hall"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm forwarding email / recipient project email"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Charles Taylor Insurance Adjusters",
+            "relevance": "adjuster employer / organization referenced in signature"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-11-29",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Re: VA20241535681 Jimmy Ferguson__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Vivian Hall [Vivian.Hall@charlestaylor.com](mailto:Vivian.Hall@charlestaylor.com)\nDate: Fri Nov 29 2024 08:30:19 GMT-05:00\n\nHi Vivian,\n\nThanks for the letter and form. Please see attached file.\n\nOn Wed, Nov 27, 2024 at 11:53?PM Vivian Hall \nwrote:\n\n>\n>\n> Please see attached.\n>\n>\n>\n> Regards,\n>\n>\n>\n> *Vivian Hall*\n> Senior Liability Adjuster\n>\n> Third-Party Administration\n>\n>\n>\n> [image: A black and orange logo Description automatically generated]\n>\n> PO Box 436499\n>\n> Louisville, KY 40253\n>\n> United States\n>\n> *Phone*\n>\n> *Email *\n>\n> *Website *\n>\n> Call center 800.928.1342 | Direct 502.676-7679\n>\n> Vivian.Hall@charlestaylor.com\n> us.charlestaylor.com \n>\n>\n>\n>\n>\n>\n> For full details of the services the Charles Taylor group offers please\n> visit www.charlestaylor.com\n>\n> This email (including all attachments) is confidential and may be\n> protected by legal privilege. If you are not the intended recipient, you\n> must not copy it, re-transmit it, use it or disclose its contents to anyone\n> else. If you have received it in error, please notify the sender\n> immediately and delete your copy from your system.\n>\n> We monitor the content of emails sent and received via our network for\n> viruses and unauthorised use, we recommend that you should also check\n> messages for viruses in accordance with good computing practice. Emails\n> sent to or from our systems are not confidential to any named individual\n> and we reserve the right to read them without prior notice.\n>\n> Our Fair Processing Notice can be viewed by clicking on this link\n> .\n>\n> DISD\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson. The matter is Re: VA20241535681 Jimmy Ferguson.\n\nOn Friday, November 29, 2024, at 08:30:19 GMT-05:00, Jessa Galosmo of Whaley Law Firm wrote to Vivian Hall at Charles Taylor, thanking her for the letter and form and noting that the attached file should be reviewed (“Please see attached file”).\n\nThe note references an earlier message from Wednesday, November 27, 2024, at 11:53?PM, in which Vivian Hall wrote “Please see attached.” Vivian Hall is identified as Senior Liability Adjuster for Third-Party Administration. Her contact details and signature block appear as follows: PO Box 436499, Louisville, KY 40253, United States; Call center 800.928.1342 and Direct 502.676-7679; email Vivian.Hall@charlestaylor.com; us.charlestaylor.com. Her message also includes the line: For full details of the services the Charles Taylor group offers please visit www.charlestaylor.com.\n\nThe email chain contains a confidentiality and privilege notice stating that this email (including all attachments) is confidential and may be protected by legal privilege, and that if you are not the intended recipient you must not copy, retransmit, use, or disclose its contents. If received in error, you should notify the sender immediately and delete your copy. It states that the content of emails sent to or from their systems is monitored for viruses and unauthorized use, and that recipients should also check messages for viruses. It notes that emails sent to or from their systems are not confidential to any named individual and that they reserve the right to read them without prior notice. A Fair Processing Notice can be viewed by clicking a provided link. The message ends with the initials “DISD.”\n\nThe closing of the sending party’s note reads: All the best, Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.",
+      "valid_at": "2024-11-29T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm representing client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "author of the email from Whaley Law Firm"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Vivian Hall",
+            "relevance": "recipient and Senior Liability Adjuster"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "BI claim associated with the adjuster"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Charles Taylor Insurance Adjusters",
+            "relevance": "third-party administrator / employer of the adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2024-12-01",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nCompleted comprehensive case file organization using 8-bucket system. Phase 1: Generated file inventory (99 total files, 47 scrambled .md files). Phase 2: Analyzed files across 3 parallel sub-agents, created reorganization map with 143 rows. Phase 3: Quality review showed 4.26% error rate (2 date errors corrected). Phase 4: Executed reorganization - moved 139 files into proper buckets with standardized naming (YYYY-MM-DD format). Phase 5: Verification confirmed all 8 buckets created, files properly organized by provider/type. Medical Records organized across 12 providers (Baptist Health Hardin, Baptist Health Medical Group, KORT Elizabethtown PT, Kentucky Pain Associates, etc.). Insurance organized by PIP (Kentucky Farm Bureau - 20 files) and BI (KACo/Charles Taylor - 9 files). Lien files organized by entity (WellCare, Rawlings Company). Investigation files include police reports and towing receipt. Client files include fee agreement, intake docs, and insurance cards. Deleted 4 duplicate files. Note: 14 UUID-named .jpg files remain in root requiring manual review and categorization. Overall status: SUCCESS WITH MINOR ISSUES (Grade B+). Case folder ready for active use.",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson. The case file was organized using an eight-bucket system. Phase 1 generated a file inventory of 99 total files, including 47 scrambled .md files. Phase 2 analyzed the files across three parallel sub-agents and produced a reorganization map with 143 rows. Phase 3 conducted a quality review that showed a 4.26% error rate, with two date errors corrected. Phase 4 executed the reorganization by moving 139 files into proper buckets with standardized naming in YYYY-MM-DD format. Phase 5 verification confirmed that all eight buckets were created and that files are properly organized by provider and type.\n\nMedical Records were organized across 12 providers, including Baptist Health Hardin, Baptist Health Medical Group, KORT Elizabethtown PT, Kentucky Pain Associates, and others. Insurance was organized by PIP, with Kentucky Farm Bureau accounting for 20 files, and BI, with KACo/Charles Taylor, accounting for 9 files. Lien files were organized by entity, specifically WellCare and Rawlings Company. Investigation files include police reports and a towing receipt. Client files include the fee agreement, intake documents, and insurance cards. Four duplicate files were deleted. Note that 14 UUID-named .jpg files remain in the root and require manual review and categorization. Overall status is SUCCESS WITH MINOR ISSUES (Grade B+), and the case folder is ready for active use.",
+      "valid_at": "2024-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Hardin",
+            "relevance": "medical records organized"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Medical Group Neurology & Neurosurgery",
+            "relevance": "medical records organized (listed as Baptist Health Medical Group)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "KORT Elizabethtown PT",
+            "relevance": "medical records organized"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP files organized (20 files)"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "BI files organized (9 files)"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Wellcare of Kentucky",
+            "relevance": "lien file organized"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-16",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nRadiology Associates bill saved to file",
+      "natural_language": "The case file Jimmy-Ferguson-MVA-5-30-2024 concerns the client Jimmy Ferguson and relates to a motor vehicle accident that occurred on May 30, 2024.\n\nA Radiology Associates bill has been saved to the file.",
+      "valid_at": "2024-12-16T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nSummarize the overall case in the last 30 days, for project Jimmy Ferguson MVA 5/30/2024 It looks like there is no data for me to analyze.",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson.\n\nThe matter is titled Jimmy Ferguson MVA 5/30/2024 and concerns the client Jimmy Ferguson in relation to a motor vehicle accident (MVA).\n\nSummary for the last 30 days: There is no data available to analyze for this period. No new information, updates, or documentation have been reported for the project Jimmy Ferguson MVA 5/30/2024.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-04",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA call from Aries Penaflor was logged at 2025-02-04 13:11:00.296000+00:00 . #outboundcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "The case is Jimmy-Ferguson-MVA-5-30-2024, with client Jimmy Ferguson.\n\nOn February 4, 2025, at 13:11:00.296000+00:00, Aries Penaflor logged an outbound call. The caller information lists the phone number 2703199516, with a caller ID of 270-319-9516. The caller name on file is Jimmy Ferguson, and no email address was provided. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-02-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-04",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA call from Aries Penaflor was logged at 2025-02-04 13:55:55.188000+00:00 . #outboundcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson. This case concerns a motor vehicle accident on May 30, 2024, with Jimmy Ferguson listed as the client.\n\nAn outbound call from Aries Penaflor was logged on February 4, 2025 at 13:55:55.188000+00:00 (UTC). The log lists Caller Info as 2703199516, Caller ID as 270-319-9516, and Caller Name as Jimmy Ferguson. Caller Email is not listed. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-02-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-02-04",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n@aries1 WHY NO CONTACT WITH CLIENT SINCE NOVEMBER???",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024 involves the client Jimmy Ferguson in relation to a motor vehicle accident that occurred on May 30, 2024. The record notes an internal inquiry from @aries1, asking, \"WHY NO CONTACT WITH CLIENT SINCE NOVEMBER???\"\n\nA concise summary: the case centers on Jimmy Ferguson and a motor vehicle accident dated May 30, 2024, with an explicit question logged about the lack of client contact since November.",
+      "valid_at": "2025-02-04T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case subject; lack of contact with client questioned"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-04",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Recap\n\n * Jimmy Ferguson is still undergoing physical therapy and has not stopped treatment.\n * An MRI was completed for his neck and back, but insurance only approved coverage for the neck.\n * The physical therapy team is awaiting clarification on what treatments are covered by insurance.\n * Jimmy is advised to inform his physical therapy provider about the PIP coverage of up to $10,000.\n * Pain management is experiencing issues with billing and is considering alternative payment methods.\n * Jimmy has notes from his last visit on January 2nd with Pat Jackson, a neck and back specialist, which he plans to send via text or email.\n\nTasks\n\n * Jimmy needs to inform his physical therapy provider to bill the treatment to his PIP coverage.\n * Jimmy should send his treatment notes from January 2nd to the contact provided in the call. \n__Person Making Contact:__ Aries\n__Date & Time__: February 04 2025",
+      "natural_language": "Initial client contact on February 4, 2025 with Aries regarding the Jimmy-Ferguson-MVA-5-30-2024 case for client Jimmy Ferguson. Jimmy continues to undergo physical therapy and has not stopped treatment. An MRI was completed for his neck and back, but insurance coverage was approved only for the neck. The physical therapy team is awaiting clarification on which treatments are covered by insurance. He was advised to inform his physical therapy provider about the personal injury protection (PIP) coverage of up to $10,000. Pain management is experiencing billing issues and is considering alternative payment methods. He also has notes from his January 2 visit with Pat Jackson, a neck and back specialist, which he plans to send via text or email.\n\nNext steps include Jimmy informing his physical therapy provider to bill the treatment to his PIP coverage, and he should send the January 2 treatment notes to Aries, the contact provided in this call.",
+      "valid_at": "2025-02-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "primary subject"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP coverage discussed; instructed PT to bill PIP (up to $10,000)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "KORT Elizabethtown PT",
+            "relevance": "physical therapy provider; ongoing treatment and billing issues discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-02-04",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "On May 30, 2024, the client, Jimmy Ferguson, was contacted to provide an update designated as update #cc regarding his motor vehicle accident (MVA) case Jimmy-Ferguson-MVA-5-30-2024.",
+      "valid_at": "2025-02-04T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-02-04 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "The Jimmy-Ferguson-MVA-5-30-2024 case involves client Jimmy Ferguson in a motor vehicle accident that occurred on May 30, 2024.\n\nOn February 4, 2025, an inbound text message was received from +1 270-319-9516 to +1 502-365-5788. The record notes the direction as inbound, but the content of the message is not provided.",
+      "valid_at": "2025-02-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "primary client / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-02-04 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024 concerns client Jimmy Ferguson in relation to a motor vehicle accident that occurred on May 30, 2024. A text message connected to this case was received on February 4, 2025. The inbound message came from the number +12703199516 and was sent to +15023655788. The record notes the direction as inbound, but the message content is not provided.",
+      "valid_at": "2025-02-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client involved in the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ Hi Jimmy, good morning. I am reaching out to check the status of your treatment related to your vehicle accident that happened on May 30,2024.\n__Date and Time:__ 2025-02-04 \n__From Number:__ +15023655788 \n__To Number:__ +12703199516\n__Direction:__ Outbound",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson.\n\nOn February 4, 2025, an outbound text message was sent from +15023655788 to +12703199516 regarding the status of treatment related to Jimmy Ferguson’s vehicle accident that occurred on May 30, 2024. The message content was: \"Hi Jimmy, good morning. I am reaching out to check the status of your treatment related to your vehicle accident that happened on May 30,2024.\"",
+      "valid_at": "2025-02-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "recipient of text / person contacted regarding treatment status"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-02-04 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Jimmy Ferguson is the client in the motor vehicle accident case Jimmy-Ferguson-MVA-5-30-2024, which concerns an incident that occurred on May 30, 2024.\n\nOn February 4, 2025, an inbound text message was received from +12703199516 to +15023655788. The body of the message is not provided in the record, and the direction of the message is inbound.",
+      "valid_at": "2025-02-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-02-04 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson and centers on a motor vehicle accident that occurred on May 30, 2024.\n\nOn February 4, 2025, an inbound text message was received from +1 (270) 319-9516 to +1 (500) 365-5788. The message body was not provided in the record.",
+      "valid_at": "2025-02-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-11",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-02-11 18:13:50.970000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hello. Hi, this is Jimmy Ferguson. I will just call them back on my case there, but if you can please give me call back. My number is 270-319-9516. Thank you.",
+      "natural_language": "On February 11, 2025, at 18:13:50.970000+00:00, a missed call for Aries Penaflor was logged in relation to the case Jimmy-Ferguson-MVA-5-30-2024. The note indicates a missed call rather than a completed call.\n\nThe caller information identifies the individual as Jimmy Ferguson, with the phone number 270-319-9516 (caller ID 270-319-9516). An email address was not provided. A Filevine contact link is available as [filevine-link]. The voicemail left by Jimmy Ferguson states: \"Hello. Hi, this is Jimmy Ferguson. I will just call them back on my case there, but if you can please give me call back. My number is 270-319-9516. Thank you.\"",
+      "valid_at": "2025-02-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller; left voicemail"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-11",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-02-11 21:59:25.046000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "This note concerns Case Jimmy-Ferguson-MVA-5-30-2024, for client Jimmy Ferguson, related to a motor vehicle accident on May 30, 2024.\n\nA missed call for Aries Penaflor was logged on February 11, 2025 at 21:59:25.046000+00:00 (UTC). The caller information lists the phone number 2703199516, with a caller ID of 270-319-9516, and the caller name Jimmy Ferguson. The record shows no caller email address. A link to the Filevine contact is available at [filevine-link]. Voicemail transcription: none provided.",
+      "valid_at": "2025-02-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller/client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-12",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-02-12 18:57:02.691000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hello, my name is Jimmy Ferguson. I was giving a call back on I guess last time we talked was about the PIP and I have already exceeded the $10,000, I think of limits on the on the PIP. So if you can please give me call back my numbers 270-319-9516. Thank you.",
+      "natural_language": "Case: Jimmy Ferguson MVA (Motor Vehicle Accident), filed May 30, 2024. Client: Jimmy Ferguson.\n\nOn February 12, 2025, at 18:57:02.691000+00:00, a missed call for Aries Penaflor was logged. The caller information shows the number 270-319-9516 (phone: 2703199516) and the caller name Jimmy Ferguson; there is no email on file. A Filevine contact link is available at [filevine-link]. The incident was tagged as a missed call.\n\nVoicemail transcription: \"Hello, my name is Jimmy Ferguson. I was giving a call back on I guess last time we talked was about the PIP and I have already exceeded the $10,000, I think of limits on the on the PIP. So if you can please give me call back my numbers 270-319-9516. Thank you.\"",
+      "valid_at": "2025-02-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller / client reporting PIP limits exceeded"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP claim discussed; client stated he exceeded the $10,000 limits"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "insurer referenced regarding PIP coverage/limits"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Ashley Mcneese",
+            "relevance": "adjuster assigned to the PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-02-18",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__04979889__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [Monica.Mouser@kyfb.com](mailto:Monica.Mouser@kyfb.com)\nDate: Tue Feb 18 2025 10:43:55 GMT-05:00\n\nHi,\n\nPlease see attached request for our client's updated PIP ledger.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. The client is Jimmy Ferguson, and the file/reference number is 04979889. This case concerns a motor vehicle accident dated May 30, 2024.\n\nOn February 18, 2025, at 10:43:55 AM (GMT-05:00), Aries Penaflor of Whaley Law Firm sent an email from aries@whaleylawfirm.com to Monica Mouser at Monica.Mouser@kyfb.com. The body of the message began with “Hi,” and stated, “Please see attached request for our client's updated PIP ledger.” The email indicates there is an attached request for the client’s updated PIP ledger.\n\nSignature: All the best, Aries Paul Peñaflor, Whaley Law Firm. Ph: (502)365-5788. Fax: (502)364-9363. The From line lists Aries Penaflor as the sender, while the signature block identifies the signer as Aries Paul Peñaflor.",
+      "valid_at": "2025-02-18T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of the PIP ledger request"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP claim for which updated ledger was requested"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sender of the email requesting the PIP ledger"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm represented by the email sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-21",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ Are you done with your treatment?\n__Date and Time:__ 2025-02-20 \n__From Number:__ +15023655788 \n__To Number:__ +12703199516\n__Direction:__ Outbound",
+      "natural_language": "Jimmy Ferguson is the client in the motor vehicle accident case Jimmy-Ferguson-MVA-5-30-2024, which concerns an incident that occurred on May 30, 2024.\n\nOn February 20, 2025, an outbound text message was sent from +15023655788 to +12703199516 containing the question, \"Are you done with your treatment?\"",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client in the case; subject of the episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-21",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-02-20 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This case, Jimmy-Ferguson-MVA-5-30-2024, involves client Jimmy Ferguson in relation to a motor vehicle accident that occurred on May 30, 2024.\n\nOn February 20, 2025, an inbound text message was received from +12703199516 to +15023655788. The Message field for this text was blank, and there was no content in the message.",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of the case (MVA victim)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-25",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__New Insurance Note:__ 2/25 saved PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Kentucky Farm Bureau\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "This case concerns Jimmy Ferguson and his motor vehicle accident on May 30, 2024. The client is Jimmy Ferguson.\n\nA new insurance note was recorded: on February 25, a PIP ledger was saved. The insurance type is Personal Injury Protection (PIP), provided by Kentucky Farm Bureau. The note was written by Justin Chumbley.",
+      "valid_at": "2025-02-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client / subject"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "provider of PIP insurance"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP claim referenced (PIP ledger saved)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA call for Aries Penaflor was logged at 2025-03-05 21:33:13.989000+00:00 . #inboundcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact on March 5, 2025 at 21:33:13.989000+00:00 regarding the motor vehicle accident case Jimmy-Ferguson-MVA-5-30-2024 was an inbound call for Aries Penaflor. The caller was Jimmy Ferguson, calling from phone number 270-319-9516 (Caller Info: 2703199516) and with caller ID 270-319-9516. No email address was provided for the caller. A link to the Filevine contact is [filevine-link].",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-03-05 21:33:06.243000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Initial client contact on March 5, 2025, at 21:33:06.243000 UTC was logged as a missed call for Aries Penaflor, tagged #missedcall.\n\nCaller information shows the number 2703199516, with a caller ID of 270-319-9516, and the caller name Jimmy Ferguson. The caller email field is blank. A Filevine contact link is available at [filevine-link]. The voicemail transcription section is present but contains no transcription.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller / client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Client asking what's the best option and update.\nHe can't continue his treatment because PIP is already exhausted. \n__Person Making Contact:__ Aries\n__Date & Time__: March 05 2025",
+      "natural_language": "Initial client contact on March 5, 2025, with Aries regarding Jimmy Ferguson's motor vehicle accident case, Jimmy-Ferguson-MVA-5-30-2024. The client, Jimmy Ferguson, is asking what the best option is and for an update.\n\nHe notes that he cannot continue his treatment because PIP is already exhausted.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller/client requesting update and discussing treatment options"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "PIP claim referenced as exhausted, preventing continued treatment"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "insurer of the PIP claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-05",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient Contacted today to give update #cc",
+      "natural_language": "The Jimmy-Ferguson-MVA-5-30-2024 case involves the client Jimmy Ferguson in relation to a motor vehicle accident that occurred on May 30, 2024.\n\nToday, the client was contacted to provide an update, noted as update #cc.",
+      "valid_at": "2025-03-05T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case; contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-03-18",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nas of 3/18 All docs downloaded and saved to Google Drive",
+      "natural_language": "This case, Jimmy-Ferguson-MVA-5-30-2024, concerns client Jimmy Ferguson in a motor vehicle accident dated May 30, 2024.\n\nAs of March 18, all documents have been downloaded and saved to Google Drive.",
+      "valid_at": "2025-03-18T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client involved in the motor vehicle accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-18",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Medical Records and Billing Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [2707065516@rcfax.com](mailto:2707065516@rcfax.com)\nDate: Tue Mar 18 2025 11:32:34 GMT-04:00\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson. This entry documents a Medical Records and Billing Request related to the case. On March 18, 2025, at 11:32:34 AM (GMT-04:00), Aries Penaflor of Whaley Law Firm sent an email requesting medical records and billing information for the Jimmy-Ferguson-MVA-5-30-2024 matter. The message was sent from aries@whaleylawfirm.com to the fax number 2707065516@rcfax.com.\n\nThe email concluded with “All the best,” from Aries Paul Peñaflor of Whaley Law Firm (also listed as Aries Penaflor), and included contact information: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2025-03-18T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client / subject of medical records request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sent medical records and billing request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm sending the records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-18",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Medical Records and Billing Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [2707661115@rcfax.com](mailto:2707661115@rcfax.com)\nDate: Tue Mar 18 2025 11:37:15 GMT-04:00\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "This case is titled Jimmy-Ferguson-MVA-5-30-2024 and involves client Jimmy Ferguson. It is categorized as a Medical Records and Billing Request.\n\nThe request was sent from Aries Penaflor (aries@whaleylawfirm.com) to 2707661115@rcfax.com on Tuesday, March 18, 2025 at 11:37:15 AM (GMT-04:00).\n\nThe message closes with “All the best,” and is signed by Aries Paul Peñaflor of the Whaley Law Firm, who can be reached at Ph: (502)365-5788 or Fax: (502)364-9363.",
+      "valid_at": "2025-03-18T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sender/signatory of records request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-18",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Medical Records and Billing Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Kentucky PLLC [jadams@kypainassociates.com](mailto:jadams@kypainassociates.com)\nDate: Tue Mar 18 2025 01:21:41 GMT-04:00\n\nGood day,\n\nPlease see attached files.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson.\n\nIn the Medical Records and Billing Request for this matter, on March 18, 2025, Aries Penaflor of Whaley Law Firm sent an email to Kentucky PLLC at jadams@kypainassociates.com. The message was sent from Aries Penaflor (aries@whaleylawfirm.com) and dated Tue Mar 18, 2025 01:21:41 GMT-04:00. The email contained the brief note, “Good day, Please see attached files,” and it related to a medical records and billing request with attached files. The correspondence was signed by Aries Paul Peñaflor of Whaley Law Firm, who provided the firm’s contact information: Ph: (502)365-5788 and Fax: (502)364-9363, with the closing line “All the best.”",
+      "valid_at": "2025-03-18T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of medical records and billing request email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "signed and sent the email"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Kentucky PLLC",
+            "relevance": "recipient of medical records and billing request"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of the matter / records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-19",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Fwd: Jimmy Ferguson__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Jimmy Ferguson - Filevine Project Email Address [JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com](mailto:JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Mar 19 2025 01:37:14 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: Stacey Lowe \nDate: Wed, Mar 19, 2025 at 1:34?PM\nSubject: Jimmy Ferguson\nTo: aries@whaleylawfirm.com \n\nGood afternoon,\n\nI received a medical records request for Jimmy Ferguson; however, we never\ntreated this patient. Please let me know if I can be of any further\nassistance.\n\nThank you,\n\n*Stacey Lowe /Collections Administrator*\n\n*Kentucky Pain Associates*\n\n222 South 1st Street, Suite 300\n\nLouisville, KY 40202\n\nDirect: 502-719-5131\n\nFax: 502-587-0479\n\nwww.KYPainAssociates.com \n\n*Offices in Kentucky, Tennessee, North Carolina, South Carolina*\n\n[image: A logo for a company Description automatically generated] [image:\nLogo, company name Description automatically generated] [image: A picture\ncontaining text Description automatically generated] [image: A black and\norange sign with text Description automatically generated]\n\n[image: Image result for review us on google]\n[image:\nImage result for find us on facebook logo]\n[image: Follow us on Facebook &\nInstagram! | New 2 You Upscale Retail Shop]\n\nThe contents of this message, together with any attachments, are intended\nonly for the use of the person(s) to which they are addressed and may\ncontain confidential and/or privileged information. Further, any medical\ninformation herein is confidential and protected by law. It is unlawful for\nunauthorized persons to use, review, copy, disclose, or disseminate\nconfidential medical information. If you are not the intended recipient,\nimmediately advise the sender and delete this message and any attachments.\nAny distribution, or copying of this message, or any attachment, is\nprohibited.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nOn March 19, 2025, a forwarding email was sent from Aries Penaflor of Whaley Law Firm to the Jimmy Ferguson file email address (JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com) as part of the Jimmy Ferguson-MVA file. The forwarded message is labeled “Forwarded message” and shows that the original message came from Stacey Lowe.\n\nIn Stacey Lowe’s message, dated March 19, 2025 at approximately 1:34 PM, she wrote to aries@whaleylawfirm.com with the subject “Jimmy Ferguson.” Her text stated: “Good afternoon, I received a medical records request for Jimmy Ferguson; however, we never treated this patient. Please let me know if I can be of any further assistance.” Stacey Lowe identified herself as the Collections Administrator for Kentucky Pain Associates and provided her contact information: 222 South 1st Street, Suite 300, Louisville, KY 40202; Direct: 502-719-5131; Fax: 502-587-0479; website: www.KYPainAssociates.com; offices in Kentucky, Tennessee, North Carolina, and South Carolina. The message included the confidentiality notice typical of medical communications, stating that the contents are intended only for the addressees and may contain confidential and/or privileged information, and that medical information is confidential and protected by law. It warned that unauthorized review, copying, disclosure, or dissemination is unlawful, and if you are not the intended recipient you should advise the sender and delete the message and any attachments. The message also included various logos and references to social media and branding.\n\nThe forwarded message ends with the closing signature block for Aries Paul Peñaflor of the Whaley Law Firm, which provided: “All the best, Aries Paul Peñaflor,” followed by the firm’s contact information: Whaley Law Firm, Ph: (502)365-5788; Fax: (502)364-9363.",
+      "valid_at": "2025-03-19T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of the medical records request and file recipient"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Kentucky Pain Associates",
+            "relevance": "Collections Administrator responded that they never treated the patient / source of the forwarded message"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm that forwarded the message into the case file"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "Whaley Law Firm attorney who forwarded the message into the file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-24",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Final Lien Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [5024401033@rcfax.com](mailto:5024401033@rcfax.com)\nDate: Mon Mar 24 2025 08:57:42 GMT-04:00\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "In the matter titled Jimmy-Ferguson-MVA-5-30-2024, the client is Jimmy Ferguson.\n\nOn Monday, March 24, 2025, at 08:57:42 GMT-04:00, Aries Penaflor of Whaley Law Firm sent a Final Lien Request from aries@whaleylawfirm.com to the fax number 5024401033@rcfax.com. The message concluded with the line \"All the best,\" and was signed by Aries Paul Peñaflor of Whaley Law Firm, with contact numbers Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2025-03-24T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sent final lien request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Wellcare of Kentucky",
+            "relevance": "subject of final lien request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-24",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-03-24 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This case is titled Jimmy-Ferguson-MVA-5-30-2024 and involves client Jimmy Ferguson in relation to a motor vehicle accident.\n\nText Message: On March 24, 2025, an inbound message was received from the number +12703199516 to the number +15023655788. The message content is not provided in this entry, and the record indicates the direction as inbound.",
+      "valid_at": "2025-03-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nAll documents moved to GDrive.",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 concerns client Jimmy Ferguson. All documents have been moved to GDrive.",
+      "valid_at": "2025-03-26T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-04-04",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n@aries1 Follow up on health lien",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. The client is Jimmy Ferguson, involved in a motor vehicle accident on May 30, 2024.\n\nThis entry notes a task to follow up on a health lien, with the follow-up assigned to aries1.",
+      "valid_at": "2025-04-04T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Wellcare of Kentucky",
+            "relevance": "health lien to follow up"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-18",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-04-18 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "In the Jimmy-Ferguson-MVA-5-30-2024 case, the client is Jimmy Ferguson. On April 18, 2025, an inbound text message was logged under the Text Message section; the Message field contains no content. The message was sent from +1-270-319-9516 to +1-502-365-5788.",
+      "valid_at": "2025-04-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client; recipient of inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-18",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-04-18 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "The case Jimmy-Ferguson-MVA-5-30-2024 concerns client Jimmy Ferguson and a motor vehicle accident that occurred on May 30, 2024.\n\nOn April 18, 2025, an inbound text message was received from Jimmy Ferguson’s phone number, +1 270 319 9516, to the recipient number, +1 502 365 5788. The body of the message is not provided in this note.",
+      "valid_at": "2025-04-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case; sender of inbound text"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-05-28 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 concerns client Jimmy Ferguson and relates to a motor vehicle accident that occurred on May 30, 2024.\n\nOn May 28, 2025, an inbound text message was received from +12703199516 to +15023655788. The message content is not provided in the note.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-05-28 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This case concerns Jimmy Ferguson in relation to a motor vehicle accident that occurred on May 30, 2024. The client listed for this matter is Jimmy Ferguson.\n\nWithin the Text Message section, there is an inbound message entry dated May 28, 2025. The Message field is blank, and the communication was inbound from the phone number +12703199516 to the number +15023655788.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-05-28 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Jimmy Ferguson is the client in the case Jimmy-Ferguson-MVA-5-30-2024, which concerns a motor vehicle accident dated May 30, 2024. The record shows a single inbound text message dated May 28, 2025, sent from +12703199516 to +15023655788; the message content is blank.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-05-28 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Jimmy Ferguson is the client in the case Jimmy-Ferguson-MVA-5-30-2024. On May 28, 2025, an inbound text message was recorded in connection with this case, sent from +12703199516 to +15023655788. The note contains no recorded content of the message.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client/subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-05-28 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This note concerns the case Jimmy-Ferguson-MVA-5-30-2024 for client Jimmy Ferguson.\n\nOn May 28, 2025, an inbound text message associated with this case was received. The message came from phone number +12703199516 and was sent to +15023655788. The content of the message is blank, with no text included.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-05-28 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. The client is Jimmy Ferguson, associated with a motor vehicle accident dated May 30, 2024 (MVA).\n\nThe record also includes a text message entry. On May 28, 2025, an inbound text message was received from the number +12703199516 to the number +15023655788. The content of the message is not provided in the note.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-05-28 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This case, Jimmy-Ferguson-MVA-5-30-2024, concerns client Jimmy Ferguson in relation to a motor vehicle accident that occurred on May 30, 2024.\n\nOn May 28, 2025, the record shows an inbound text message from +12703199516 to +15023655788. The message body is blank, and the direction is inbound.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-02",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-07-02 19:12:55.630000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "This case involves Jimmy Ferguson for the Jimmy-Ferguson-MVA-5-30-2024 file. On July 2, 2025, at 19:12:55.630000+00:00, a missed call for Aries Penaflor was logged, tagged as #missedcall.\n\nThe call came from the number 270-319-9516 (Caller Info: 2703199516; Caller ID: 270-319-9516). The caller was identified as Jimmy Ferguson, and no email address was provided. A link to the Filevine contact is available: [filevine-link].\n\nVoicemail transcription: not provided.",
+      "valid_at": "2025-07-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client and caller (missed call logged)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-02",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-07-02 19:13:47.465000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Jimmy Ferguson is the client for the Jimmy-Ferguson-MVA-5-30-2024 case. On July 2, 2025 at 19:13:47.465000 UTC, a missed call for Aries Penaflor was logged, labeled with the tag #missedcall. \n\nThe caller information lists the phone number 270-319-9516 ( Caller ID: 270-319-9516) and the caller name as Jimmy Ferguson. No email address is provided for the caller. A Filevine contact link is available at [filevine-link].\n\nThe Voicemail Transcription field is present but contains no transcription.",
+      "valid_at": "2025-07-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller and subject of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-02",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-07-02 19:36:28.002000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson. A missed call for Aries Penaflor was logged on 2025-07-02 19:36:28.002000+00:00 (UTC). The caller was Jimmy Ferguson, with phone number 270-319-9516 and caller ID 270-319-9516. The caller’s name is Jimmy Ferguson, and there is no email address on file. A Filevine contact link is available: [filevine-link]. Voicemail transcription is not provided in the record.",
+      "valid_at": "2025-07-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller / subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-02",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for aaron whaley was logged at 2025-07-02 19:47:33.929000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "In the case Jimmy-Ferguson-MVA-5-30-2024, the client is Jimmy Ferguson. A missed call for aron whaley was logged on 2025-07-02 at 19:47:33.929000+00:00, tagged as #missedcall.\n\nCaller information lists the number 2703199516 with a Caller ID of 270-319-9516. The Caller Name is Jimmy Ferguson, and there is no email address provided for the caller. A link to the Filevine contact is included: [filevine-link].\n\nVoicemail Transcription: [not provided].",
+      "valid_at": "2025-07-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller / client on file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-02",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Text Message__\n__Message:__ I'm trying to call but the number is no longer valid.\n__Date and Time:__ 2025-07-02 \n__From Number:__ +12703199516 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson. On July 2, 2025, an inbound text message was received from +12703199516 to +15023655788 with the message: \"I'm trying to call but the number is no longer valid.\"",
+      "valid_at": "2025-07-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "received inbound text about unreachable phone number / contact attempt"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-03",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-07-03 12:46:51.268000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Jimmy Ferguson MVA-5-30-2024. Client: Jimmy Ferguson. This case concerns Jimmy Ferguson regarding a motor vehicle accident that occurred on May 30, 2024.\n\nA missed call for Aries Penaflor was logged on July 3, 2025 at 12:46:51.268000+00:00, with the entry tagged as #missedcall. The caller information lists the phone number 270-319-9516 and the caller ID 270-319-9516. The caller name is Jimmy Ferguson, and the caller email field is blank. A link to the Filevine contact is provided: [filevine-link].\n\nVoicemail Transcription: not provided in this note.",
+      "valid_at": "2025-07-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller / subject of note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-03",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 2025-07-03 12:47:11.314000+00:00 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "This note concerns Case Jimmy-Ferguson-MVA-5-30-2024 for client Jimmy Ferguson, a motor vehicle accident matter associated with the date May 30, 2024.\n\nOn July 3, 2025 at 12:47:11.314000+00:00 (UTC), a missed call for Aries Penaflor was logged. The call originated from Jimmy Ferguson, using phone number 270-319-9516 (Caller ID: 270-319-9516; digits: 2703199516). The caller name is Jimmy Ferguson, and no caller email was provided. A Filevine contact link is available at [filevine-link]. The voicemail transcription field is present but no transcription is provided.",
+      "valid_at": "2025-07-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller / client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-03",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, has some unpaid bills he needs addressed. \n__Person Making Contact:__ Justin\n__Date & Time__: July 03 2025",
+      "natural_language": "Initial client contact on July 3, 2025, in which Justin spoke with Jimmy Ferguson regarding the motor vehicle accident case Jimmy-Ferguson-MVA-5-30-2024. Ferguson reported that he has some unpaid bills that need to be addressed.",
+      "valid_at": "2025-07-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "initial contact; reported unpaid bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-03",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n@jchumbley Give him a call. He has tried calling Aries",
+      "natural_language": "Initial client contact on May 30, 2024 with Jimmy Ferguson regarding a motor vehicle accident. The case is recorded as Jimmy-Ferguson-MVA-5-30-2024, and the client is Jimmy Ferguson. A note directs jchumbley to give him a call, as he has already tried calling Aries.",
+      "valid_at": "2025-07-03T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-03",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nSend copies of bills here",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves the client, Jimmy Ferguson, in a motor vehicle accident that occurred on May 30, 2024. The file includes the directive “Send copies of bills here.”",
+      "valid_at": "2025-07-03T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-07-07",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nclient called for case status - I spoke with Mr Ferguson - I explained the steps necessary to progress his case. Explained from intake, treatment and demand in progress to settlement#cc",
+      "natural_language": "On May 30, 2024, I spoke with Jimmy Ferguson regarding the status of his motor vehicle accident case (Jimmy-Ferguson-MVA-5-30-2024). He had called to inquire about the case status.\n\nI explained the steps necessary to progress his case, outlining the process from intake and treatment to the demand in progress toward settlement.",
+      "valid_at": "2025-07-07T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "called to inquire about case status"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-17",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\n__Jimmy Ferguson__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jimmy Ferguson - Filevine Project Email Address [JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com](mailto:JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com)\nDate: Thu Jul 17 2025 01:15:16 GMT-04:00\n\nLooks like we just need the rest of his records and we can send demand.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. Client: Jimmy Ferguson.\n\nThis note documents email correspondence related to the Jimmy Ferguson case. On July 17, 2025, at 01:15:16 GMT-04:00, an email was sent from Aaron Whaley of Whaley Law Firm (agwhaley@whaleylawfirm.com) to Jimmy Ferguson’s Filevine project email address JimmyFergusonMVAZ4655155@louisvilleaccidentlawyer.filevineapp.com and to Justin Chumbley (Justin@whaleylawfirm.com). The message indicated that “Looks like we just need the rest of his records and we can send demand.”\n\nThe email was signed by Aaron Whaley of the Whaley Law Firm, with the firm’s mailing address listed as 712 Lyndon Ln, Louisville, KY 40222, and the contact number 502-583-4022.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "email sender; attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm handling the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient; attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client of the case; recipient of correspondence via Filevine"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nClient consultation and case strategy development.",
+      "natural_language": "This case is identified as Jimmy-Ferguson-MVA-5-30-2024, with the client being Jimmy Ferguson. On May 30, 2024, a client consultation was conducted with Jimmy Ferguson regarding his motor vehicle accident matter, and the session focused on case strategy development.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client consultation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nInsurance claim progression and settlement preparation.",
+      "natural_language": "Case: Jimmy Ferguson MVA on May 30, 2024. Client: Jimmy Ferguson. This matter concerns the progression of an insurance claim arising from the motor vehicle accident involving Jimmy Ferguson and the preparation for settlement. The record is focused on tracking the claim through its development toward settlement readiness.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject/client of the case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "insurance claim associated with the MVA being tracked toward settlement"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "insurance claim associated with the MVA being tracked toward settlement"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nCase status review and medical treatment evaluation.",
+      "natural_language": "On May 30, 2024, Jimmy Ferguson was involved in a motor vehicle accident. \n\nThis case, identified as Jimmy-Ferguson-MVA-5-30-2024, is currently undergoing a status review and a medical treatment evaluation.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case / accident victim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nSettlement offer evaluation and client consultation.",
+      "natural_language": "Case: Jimmy Ferguson’s motor vehicle accident, documented as Jimmy-Ferguson-MVA-5-30-2024, involves an incident on May 30, 2024. The client in this matter is Jimmy Ferguson.\n\nThe work performed consisted of evaluating a settlement offer and conducting a client consultation.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client consulted; subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nMedical treatment monitoring and insurance claim progression.",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 concerns the client Jimmy Ferguson after a motor vehicle accident on May 30, 2024. The focus of the matter is medical treatment monitoring and the progression of the related insurance claim.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "KACo Claims Department",
+            "relevance": "insurance claim being monitored"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "insurance claim being monitored"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nMay 30, 2024 motor vehicle accident case review.",
+      "natural_language": "On May 30, 2024, a motor vehicle accident case review was conducted for the client Jimmy Ferguson.\n\nThe matter is identified by the case file Jimmy-Ferguson-MVA-5-30-2024, and the client on record is Jimmy Ferguson.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "subject of case review"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-08",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nsending follow up requests on outstanding r/b",
+      "natural_language": "Case Jimmy-Ferguson-MVA-5-30-2024 involves client Jimmy Ferguson. Initial client contact occurred on May 30, 2024, with Jimmy Ferguson regarding a motor vehicle accident. Ongoing work includes sending follow-up requests on outstanding r/b.",
+      "valid_at": "2025-10-08T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client; initial contact and subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-23",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 10/23/25 - 16:02:53 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "This note concerns the case Jimmy-Ferguson-MVA-5-30-2024 for client Jimmy Ferguson. A missed call for Aries Penaflor was logged on October 23, 2025 at 16:02:53, labeled with the tag #missedcall.\n\nCaller information lists the phone number 2703199516, with a caller ID of 270-319-9516, and the caller name Jimmy Ferguson. The caller email field is blank. A link to the Filevine contact is provided here: [filevine-link].\n\nThe Voicemail Transcription field is present, but no transcription content is provided in the notes.",
+      "valid_at": "2025-10-23T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller / subject of note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-27",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 10/27/25 - 13:45:29 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024. The client is Jimmy Ferguson, whose matter involves a motor vehicle accident that occurred on May 30, 2024.\n\nOn October 27, 2025 at 1:45:29 PM, a missed call for Aries Penaflor was logged (tagged as #missedcall). The caller information shows the contact number 2703199516, with a Caller ID of 270-319-9516, and the caller name listed as Jimmy Ferguson. The record indicates no email address on file for this contact. A link to the Filevine contact is available at [filevine-link]. The Voicemail Transcription field is blank in this record, i.e., no transcription has been provided.",
+      "valid_at": "2025-10-27T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "caller (missed call)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-28",
+      "original_body": "Case: Jimmy-Ferguson-MVA-5-30-2024\nClient: Jimmy Ferguson\n\nA missed call for Aries Penaflor was logged at 10/28/25 - 14:17:36 . #missedcall\n\nCaller Info: 2703199516 \n\nCaller ID: 270-319-9516 \n\nCaller Name: Jimmy Ferguson \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Jimmy-Ferguson-MVA-5-30-2024 concerns client Jimmy Ferguson in relation to a motor vehicle accident that occurred on May 30, 2024. A missed call for Aries Penaflor was logged on October 28, 2025 at 14:17:36. The caller information lists the phone number 2703199516, with the caller ID 270-319-9516, and the caller name Jimmy Ferguson. There is no email address on file for the caller. A link to the Filevine contact is provided here: [filevine-link]. The Voicemail Transcription field is present, but no transcription is provided.",
+      "valid_at": "2025-10-28T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jimmy Ferguson",
+            "relevance": "client and caller (missed call)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

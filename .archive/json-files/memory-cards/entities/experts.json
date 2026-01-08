@@ -1,0 +1,34 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "Expert",
+    "name": "Dr. Richard Edelson",
+    "attributes": {
+      "expert_type": "neuropsychologist",
+      "credentials": "PsyD",
+      "phone": "",
+      "email": "",
+      "firm_name": "",
+      "hourly_rate": null
+    },
+    "source_id": "Muhammad-Alif-MVA-11-08-2022",
+    "source_file": "review_Muhammad-Alif-MVA-11-08-2022.md",
+    "notes": "Neuropsychologist expert witness (not MD, so not in doctors.json)"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Expert",
+    "name": "Linda Jones",
+    "attributes": {
+      "expert_type": "economist",
+      "credentials": "",
+      "phone": "",
+      "email": "",
+      "firm_name": "Vocational Economics",
+      "hourly_rate": null
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "Vocational/economist expert witness, works at Vocational Economics"
+  }
+]

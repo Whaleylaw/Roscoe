@@ -1,0 +1,95 @@
+# Relationship Review: Samuel-Clites-MVA-4-23-2024
+
+**Total Episodes:** 75
+
+**Total Proposed Relationships:** 179
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (2 consolidated)
+- [ ] Anita (State Farm) — *✓ MATCHES: Anita Springs*
+- [ ] Calandra Turner — *✓ MATCHES: Calandra Turner*
+
+### Attorney (4 consolidated)
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Aries Paul Peñaflor — *✓ MATCHES: Aries Penaflor (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Justin Chumbley — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+
+### BIClaim (1 consolidated)
+- [ ] Claim 17-66M4-91S — *IGNORED - claim number*
+
+### Client (1 consolidated)
+- [ ] Samuel Clites — *✓ MATCHES: Samuel Clites*
+
+### Insurer (6 consolidated)
+- [ ] Anthem — *✓ MATCHES: Anthem (LienHolder, not Insurer)*
+- [ ] Health insurance — *✓ MATCHES: UniCare Life & Health Insurance Company*
+- [ ] State Farm — *✓ MATCHES: State Farm Insurance Company*
+- [ ] State Farm Claims State Team — *✓ MATCHES: State Farm Insurance Company*
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+- [ ] State Retirement Insurance Anthem BC/BS — *✓ MATCHES: Anthem (LienHolder, not Insurer)*
+
+### LawFirm (1 consolidated)
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (4 consolidated)
+- [ ] Anthem lien — *✓ MATCHES: Anthem*
+- [ ] Final Health Lien Request — *IGNORED - request document, not lien*
+- [ ] Whaley Law Firm Lien Request — *IGNORED - request document, not lien*
+- [ ] health lien — *IGNORED - generic term*
+
+### MedicalProvider (9 consolidated)
+- [ ] Baptist East Hospital ER — *✓ MATCHES: Baptist Health Breckenridge Imaging*
+- [ ] Baptist Health Breckenridge Imaging — *✓ MATCHES: Baptist Health Breckenridge Imaging*
+- [ ] Baptist Health Breckenridge Imaging Louisville — *✓ MATCHES: Baptist Health Breckenridge Imaging*
+- [ ] House Physician — *IGNORED - generic term*
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital Emergency Room — *✓ MATCHES: CHI Saint Joseph Health - Flaget Memorial Hospital - UofL Health – Brown Cancer Center – Medical Oncology – Jewish Hospital Emergency Room*
+- [ ] Louisville Emergency Medicine — *IGNORED - physician group*
+- [ ] Radiology (billing) — *IGNORED - department*
+- [ ] Samuel's treating doctor (unspecified) — *IGNORED - unspecified*
+- [ ] Xray Associates of Louisville — *IGNORED - radiology group*
+
+### Organization (4 consolidated)
+- [ ] Carelon — *✓ MATCHES: Carelon Subrogation (LienHolder, not Organization)*
+- [ ] Collection Agency — *IGNORED - generic term*
+- [ ] Credit Bureau Systems — *IGNORED - collection agency*
+- [ ] State Farm PIP Team — *✓ MATCHES: State Farm PIP Team (Adjuster, not Organization)*
+
+### PIPClaim (6 consolidated)
+- [ ] PIP — *IGNORED - generic term*
+- [ ] PIP 17-66P1-45F — *IGNORED - claim number*
+- [ ] PIP benefits — *IGNORED - coverage description*
+- [ ] PIP claim (Samuel Clites) — *IGNORED - claim description*
+- [ ] Personal Injury Protection (PIP) claim — *IGNORED - generic term*
+- [ ] State Farm PIP claim — *✓ MATCHES: State Farm PIP Team (Adjuster, not PIPClaim)*
+
+### Vendor (2 consolidated)
+- [ ] Aries1 — *IGNORED - email prefix*
+- [ ] rcfax.com — *IGNORED - fax service*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

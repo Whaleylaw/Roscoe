@@ -1,0 +1,80 @@
+{
+  "case_name": "MiAyla-Lopez-MVA-11-14-2025",
+  "total_episodes": 2,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2025-11-17",
+      "original_body": "Case: MiAyla-Lopez-MVA-11-14-2025\nClient: MiAyla Lopez\n\n__CLIENT CONTACT__\n__Details:__ DOA 11/14/2025\nLocation: Eaton and Dixie Highway was rear ended at a light\n\nAntonio Lopez\nDOB 11/09/1997\nSSn 337-94-7156\nPh: 502-701-5196\n\nAddress\n\n5056 Minette Court\nApt 3\n40258\n\nPIP Progressive\nClaim # 25695180369\n\nCivilian report was done\n\nWent to UofL downtown\n\nInjuries\nMid and lower back pain\n\nMichae Guyton (Mich-Shae)\nDOB 8/6/1997\nSSN 330-94-6903\nPh 502-701-5196\n\nUofL Hospital\nInjuries \nBack pain, both shoulders\n\nA’zaire Lopez\nDOB 3/22-2022\nSSN: 687-56-7027\n\nUofL Hospital\n\nMi’ayla Lopez\nDOB 1/25/2025\nSSN: 097-29-8972\n\nUofL \n__Person Making Contact:__ Justin\n__Date & Time__: November 17 2025",
+      "natural_language": "Initial client contact on November 17, 2025, with Justin regarding a motor vehicle accident involving MiAyla Lopez that occurred on November 14, 2025, at the intersection of Eaton and Dixie Highway, where the vehicle was rear-ended at a traffic light. The case is MiAyla-Lopez-MVA-11-14-2025, and the client is MiAyla Lopez. Details show the date of accident as 11/14/2025 and the location as Eaton and Dixie Highway.\n\nThe record lists several individuals associated with the incident. Antonio Lopez, DOB 11/09/1997, SSN 337-94-7156, and Ph 502-701-5196, resides at 5056 Minette Court, Apt 3, 40258. He is linked to PIP Progressive, Claim # 25695180369. A civilian report was completed, and he went to UofL downtown. His injuries are described as mid and lower back pain. Michae Guyton (alias Mich-Shae), DOB 8/6/1997, SSN 330-94-6903, Ph 502-701-5196, was seen at UofL Hospital with injuries including back pain and injuries to both shoulders. A’zaire Lopez, DOB 3/22/2022, SSN 687-56-7027, was treated at UofL Hospital. Mi’ayla Lopez, DOB 1/25/2025, SSN 097-29-8972, was treated at UofL Hospital.\n\nThe person making contact is Justin. Date and time of this contact: November 17, 2025.",
+      "valid_at": "2025-11-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "MiAyla Lopez",
+            "relevance": "case client / injured party"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Antonio Lopez",
+            "relevance": "injured party; linked to PIP claim"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michae Guyton",
+            "relevance": "injured party treated at UofL"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "A'zaire Lopez",
+            "relevance": "injured party treated at UofL"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for PIP claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25695180369",
+            "relevance": "PIP claim associated with Antonio Lopez"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Hospital (UofL downtown)",
+            "relevance": "treated multiple injured parties"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Mi'Ayla Lopez - 2025-11-18",
+      "original_body": "Case: MiAyla-Lopez-MVA-11-14-2025\nClient: MiAyla Lopez\n\nOk sending it in pictures it's not sending",
+      "natural_language": "The case MiAyla-Lopez-MVA-11-14-2025 was opened for client MiAyla Lopez in relation to a motor vehicle accident. \n\nWithin the case notes, the client stated, \"Ok sending it in pictures it's not sending,\" indicating that she attempted to send information in picture form, but the transmission was not successful.",
+      "valid_at": "2025-11-18T00:00:00",
+      "author": "Mi'Ayla Lopez",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "MiAyla Lopez",
+            "relevance": "case opened for client; attempted to send pictures"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

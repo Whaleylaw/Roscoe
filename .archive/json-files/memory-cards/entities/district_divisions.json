@@ -1,0 +1,1130 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Christian County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "03",
+      "court_name": "Christian County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Green County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "11",
+      "court_name": "Green County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Clay County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "41",
+      "court_name": "Clay County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Boyle County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "50",
+      "court_name": "Boyle County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Fayette County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "22",
+      "court_name": "Fayette County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Bourbon County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "14",
+      "court_name": "Bourbon County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Bath County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "21",
+      "court_name": "Bath County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Campbell County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "17",
+      "court_name": "Campbell County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Butler County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "38",
+      "court_name": "Butler County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Henderson County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "51",
+      "court_name": "Henderson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 12",
+    "attributes": {
+      "division_number": "12",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 14",
+    "attributes": {
+      "division_number": "14",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Johnson County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "24",
+      "court_name": "Johnson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Breckinridge County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "46",
+      "court_name": "Breckinridge County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Johnson County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "24",
+      "court_name": "Johnson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Carroll County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "15",
+      "court_name": "Carroll County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Knox County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "27",
+      "court_name": "Knox County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Christian County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "03",
+      "court_name": "Christian County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Greenup County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "20",
+      "court_name": "Greenup County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Breckinridge County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "46",
+      "court_name": "Breckinridge County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 04",
+    "attributes": {
+      "division_number": "04",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 13",
+    "attributes": {
+      "division_number": "13",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Anderson County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "53",
+      "court_name": "Anderson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Kenton County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "16",
+      "court_name": "Kenton County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 08",
+    "attributes": {
+      "division_number": "08",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Oldham County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "12",
+      "court_name": "Oldham County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Clark County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "25",
+      "court_name": "Clark County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Carroll County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "15",
+      "court_name": "Carroll County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 03",
+    "attributes": {
+      "division_number": "03",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Warren County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "08",
+      "court_name": "Warren County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Hopkins County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "04",
+      "court_name": "Hopkins County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Perry County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "33",
+      "court_name": "Perry County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Floyd County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "31",
+      "court_name": "Floyd County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Kenton County District Court, Division 03",
+    "attributes": {
+      "division_number": "03",
+      "district_number": "16",
+      "court_name": "Kenton County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Fayette County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "22",
+      "court_name": "Fayette County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Green County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "11",
+      "court_name": "Green County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Knox County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "27",
+      "court_name": "Knox County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Pulaski County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "28",
+      "court_name": "Pulaski County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Bourbon County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "14",
+      "court_name": "Bourbon County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 09",
+    "attributes": {
+      "division_number": "09",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "McCracken County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "02",
+      "court_name": "McCracken County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Harlan County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "26",
+      "court_name": "Harlan County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Clark County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "25",
+      "court_name": "Clark County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "McCracken County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "02",
+      "court_name": "McCracken County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 16",
+    "attributes": {
+      "division_number": "16",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Caldwell County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "56",
+      "court_name": "Caldwell County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 06",
+    "attributes": {
+      "division_number": "06",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Clinton County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "40",
+      "court_name": "Clinton County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Estill County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "23",
+      "court_name": "Estill County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 05",
+    "attributes": {
+      "division_number": "05",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Crittenden County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "05",
+      "court_name": "Crittenden County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Hopkins County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "04",
+      "court_name": "Hopkins County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Pike County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "35",
+      "court_name": "Pike County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 07",
+    "attributes": {
+      "division_number": "07",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Oldham County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "12",
+      "court_name": "Oldham County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Hart County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "10",
+      "court_name": "Hart County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Daviess County District Court, Division 03",
+    "attributes": {
+      "division_number": "03",
+      "district_number": "06",
+      "court_name": "Daviess County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Daviess County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "06",
+      "court_name": "Daviess County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 11",
+    "attributes": {
+      "division_number": "11",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Fayette County District Court, Division 04",
+    "attributes": {
+      "division_number": "04",
+      "district_number": "22",
+      "court_name": "Fayette County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Henderson County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "51",
+      "court_name": "Henderson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 10",
+    "attributes": {
+      "division_number": "10",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Franklin County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "48",
+      "court_name": "Franklin County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Barren County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "43",
+      "court_name": "Barren County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Bullitt County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "55",
+      "court_name": "Bullitt County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Warren County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "08",
+      "court_name": "Warren County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Daviess County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "06",
+      "court_name": "Daviess County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Bracken County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "19",
+      "court_name": "Bracken County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Boyd County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "32",
+      "court_name": "Boyd County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Boyd County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "32",
+      "court_name": "Boyd County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Graves County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "52",
+      "court_name": "Graves County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Clay County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "41",
+      "court_name": "Clay County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Bath County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "21",
+      "court_name": "Bath County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Kenton County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "16",
+      "court_name": "Kenton County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Breathitt County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "39",
+      "court_name": "Breathitt County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Caldwell County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "56",
+      "court_name": "Caldwell County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Hardin County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "09",
+      "court_name": "Hardin County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Campbell County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "17",
+      "court_name": "Campbell County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Pulaski County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "28",
+      "court_name": "Pulaski County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "McLean County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "45",
+      "court_name": "McLean County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Fayette County District Court, Division 05",
+    "attributes": {
+      "division_number": "05",
+      "district_number": "22",
+      "court_name": "Fayette County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Boone County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "54",
+      "court_name": "Boone County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Fayette County District Court, Division 03",
+    "attributes": {
+      "division_number": "03",
+      "district_number": "22",
+      "court_name": "Fayette County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Butler County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "38",
+      "court_name": "Butler County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Letcher County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "47",
+      "court_name": "Letcher County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "McCreary County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "34",
+      "court_name": "McCreary County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Carter County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "37",
+      "court_name": "Carter County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Logan County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "07",
+      "court_name": "Logan County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Anderson County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "53",
+      "court_name": "Anderson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 02",
+    "attributes": {
+      "division_number": "02",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Jefferson County District Court, Division 15",
+    "attributes": {
+      "division_number": "15",
+      "district_number": "30",
+      "court_name": "Jefferson County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Pike County District Court, Division 01",
+    "attributes": {
+      "division_number": "01",
+      "district_number": "35",
+      "court_name": "Pike County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "DistrictDivision",
+    "name": "Bell County District Court",
+    "attributes": {
+      "division_number": null,
+      "district_number": "44",
+      "court_name": "Bell County District Court"
+    },
+    "source_id": "extracted_from_judges",
+    "source_file": "district_judges.json"
+  }
+]

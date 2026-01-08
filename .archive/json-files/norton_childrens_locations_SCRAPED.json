@@ -1,0 +1,1822 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Acupuncture - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Suite 330, Louisville, KY 40241",
+      "phone": "(502) 588-2570",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Acupuncture"
+    },
+    "source_id": "1",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's ENT & Audiology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 6, Louisville, KY 40202",
+      "phone": "(502) 588-9587",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Ear, Nose & Throat / Audiology"
+    },
+    "source_id": "2",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's ENT & Audiology - NuLu",
+    "attributes": {
+      "address": "1050 East Market Street, Louisville, KY 40206",
+      "phone": "(502) 588-9587",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Ear, Nose & Throat / Audiology"
+    },
+    "source_id": "3",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gastroenterology - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Suite 330, Louisville, KY 40241",
+      "phone": "(502) 588-2330",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Gastroenterology"
+    },
+    "source_id": "4",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gastroenterology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 5B, Louisville, KY 40202",
+      "phone": "(502) 588-2330",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Gastroenterology"
+    },
+    "source_id": "5",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Infectious Diseases - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Suite 300A, Louisville, KY 40202",
+      "phone": "(502) 588-2348",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Infectious Diseases"
+    },
+    "source_id": "6",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Nephrology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Suite 300B, Louisville, KY 40202",
+      "phone": "(502) 588-4970",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Nephrology"
+    },
+    "source_id": "7",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neonatology - Bowling Green",
+    "attributes": {
+      "address": "720 2nd Avenue, Suite 102, Bowling Green, KY 42101",
+      "phone": "(502) 588-0982",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neonatology"
+    },
+    "source_id": "8",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neonatology - Paducah",
+    "attributes": {
+      "address": "2603 Kentucky Avenue, Suite 304, Paducah, KY 42003",
+      "phone": "(502) 588-0982",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neonatology"
+    },
+    "source_id": "9",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Outpatient Center - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Suite 330, Louisville, KY 40241",
+      "phone": "(502) 629-5437",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Outpatient Services"
+    },
+    "source_id": "10",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Sleep Medicine - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 5, Louisville, KY 40202",
+      "phone": "(502) 588-2220",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Sleep Medicine"
+    },
+    "source_id": "11",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Urology - St. Matthews",
+    "attributes": {
+      "address": "3999 Dutchmans Lane, Medical Plaza 1, Suite 6F, Louisville, KY 40207",
+      "phone": "(502) 559-1670",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Urology"
+    },
+    "source_id": "12",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Urology - Owensboro",
+    "attributes": {
+      "address": "1000 Breckenridge Street, Suite 301, Owensboro, KY 42303",
+      "phone": "(502) 559-1670",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Urology"
+    },
+    "source_id": "13",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Novak Center for Children's Health",
+    "attributes": {
+      "address": "411 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 629-5437",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Outpatient Services"
+    },
+    "source_id": "14",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Endocrinology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 7, Louisville, KY 40202",
+      "phone": "(502) 588-3400",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Endocrinology / Diabetes"
+    },
+    "source_id": "15",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Children's Hospital Foundation Building",
+    "attributes": {
+      "address": "601 South Floyd Street, Louisville, KY 40202",
+      "phone": "(502) 629-1234",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Outpatient Services"
+    },
+    "source_id": "16",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Hospital - Emergency",
+    "attributes": {
+      "address": "231 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 629-6000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Emergency Medicine"
+    },
+    "source_id": "17",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Pulmonology - Elizabethtown",
+    "attributes": {
+      "address": "2412 Ring Road, Elizabethtown, KY 42701",
+      "phone": "(502) 559-1670",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pulmonology"
+    },
+    "source_id": "18",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Crestwood",
+    "attributes": {
+      "address": "6411 Veterans Memorial Parkway, Suite 200, Crestwood, KY 40014",
+      "phone": "(502) 394-6555",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "19",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Elizabethtown",
+    "attributes": {
+      "address": "1301 Ring Road, Elizabethtown, KY 42701",
+      "phone": "(270) 765-2107",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "20",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Hikes Point",
+    "attributes": {
+      "address": "2933 Breckenridge Lane, Suite 102, Louisville, KY 40220",
+      "phone": "(502) 897-1727",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "21",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Iroquois",
+    "attributes": {
+      "address": "5109 New Cut Road, Louisville, KY 40214",
+      "phone": "(502) 361-1197",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "22",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Lakeview",
+    "attributes": {
+      "address": "100 Mallard Creek Road, Suite 395, Louisville, KY 40207",
+      "phone": "(502) 895-9421",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "23",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Okolona",
+    "attributes": {
+      "address": "5211 Commerce Crossings Drive, Louisville, KY 40229",
+      "phone": "(502) 966-3918",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "24",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Windy Hills",
+    "attributes": {
+      "address": "4884 Brownsboro Road, Louisville, KY 40207",
+      "phone": "(502) 896-4459",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "25",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Pleasure Ridge Park",
+    "attributes": {
+      "address": "6801 Dixie Highway, Suite 127, Louisville, KY 40258",
+      "phone": "(502) 569-2259",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "26",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Dixie",
+    "attributes": {
+      "address": "4420 Dixie Highway, Suite 126, Louisville, KY 40216",
+      "phone": "(502) 810-3780",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "27",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gynecology - Dupont",
+    "attributes": {
+      "address": "916 Dupont Road, Louisville, KY 40207",
+      "phone": "(502) 559-1750",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Gynecology"
+    },
+    "source_id": "28",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Bowling Green",
+    "attributes": {
+      "address": "720 2nd Avenue, Suite 102, Bowling Green, KY 42101",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "29",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Suite 330, Louisville, KY 40241",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "30",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Home of the Innocents",
+    "attributes": {
+      "address": "1100 East Market Street, Louisville, KY 40206",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "31",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Shelbyville",
+    "attributes": {
+      "address": "150 Frankfort Road, Suite 101, Shelbyville, KY 40065",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "32",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Corydon",
+    "attributes": {
+      "address": "1263 Hospital Drive Northwest, Suite 210, Corydon, IN 47112",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "33",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Madison",
+    "attributes": {
+      "address": "630 Broadway Street, Suite 1A, Madison, IN 47250",
+      "phone": "(502) 558-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "34",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Madisonville",
+    "attributes": {
+      "address": "200 Clinic Drive, Madisonville, KY 42431",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "35",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Murray",
+    "attributes": {
+      "address": "300 South 8th Street, Suite 280E, Murray, KY 42071",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "36",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - New Albany",
+    "attributes": {
+      "address": "1919 State Street, Suite 103, New Albany, IN 47150",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "37",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Wendy Novak Diabetes Institute",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 7, Louisville, KY 40202",
+      "phone": "(502) 588-3400",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Endocrinology / Diabetes"
+    },
+    "source_id": "38",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pharmacy - Audubon",
+    "attributes": {
+      "address": "2355 Poplar Level Road, Medical Plaza West, Louisville, KY 40217",
+      "phone": "(502) 636-8790",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pharmacy Services"
+    },
+    "source_id": "39",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pharmacy - West Louisville Hospital",
+    "attributes": {
+      "address": "850 South 28th Street, Louisville, KY 40211",
+      "phone": "(502) 632-8180",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pharmacy Services"
+    },
+    "source_id": "40",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pharmacy - Downtown",
+    "attributes": {
+      "address": "200 East Chestnut Street, Level 2, Louisville, KY 40202",
+      "phone": "(502) 629-3800",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pharmacy Services"
+    },
+    "source_id": "41",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pharmacy - Brownsboro",
+    "attributes": {
+      "address": "4960 Norton Healthcare Boulevard, Level 1, Louisville, KY 40241",
+      "phone": "(502) 446-8800",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pharmacy Services"
+    },
+    "source_id": "42",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pharmacy - St. Matthews",
+    "attributes": {
+      "address": "4001 Dutchmans Lane, Level 1, Louisville, KY 40207",
+      "phone": "(502) 559-1710",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pharmacy Services"
+    },
+    "source_id": "43",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Behavioral and Mental Health - Bingham Clinic",
+    "attributes": {
+      "address": "200 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 588-0800",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Behavioral & Mental Health"
+    },
+    "source_id": "44",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Behavioral and Mental Health - NuLu",
+    "attributes": {
+      "address": "1050 East Market Street, Suite 301, Louisville, KY 40206",
+      "phone": "(502) 588-0800",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Behavioral & Mental Health"
+    },
+    "source_id": "45",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Fern Creek",
+    "attributes": {
+      "address": "5721 Bardstown Road, Louisville, KY 40291",
+      "phone": "(502) 231-1144",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "46",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 1, Louisville, KY 40202",
+      "phone": "(502) 588-3440",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "47",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Center - Brownsboro",
+    "attributes": {
+      "address": "4910 Chamberlain Lane, Louisville, KY 40241",
+      "phone": "(502) 446-5000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Hospital Services"
+    },
+    "source_id": "48",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Specialty Pharmacy",
+    "attributes": {
+      "address": "2700 Stanley Gault Parkway, Suite 103, Louisville, KY 40223",
+      "phone": "(866) 616-8088",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pharmacy Services"
+    },
+    "source_id": "49",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's ENT & Audiology - St. Matthews",
+    "attributes": {
+      "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 102, Louisville, KY 40207",
+      "phone": "(502) 588-9587",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Ear, Nose & Throat / Audiology"
+    },
+    "source_id": "50",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Urology - Bowling Green",
+    "attributes": {
+      "address": "720 2nd Avenue, Suite 102, Bowling Green, KY 42101",
+      "phone": "(502) 559-1670",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Urology"
+    },
+    "source_id": "51",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Urology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Suite 300E, Louisville, KY 40202",
+      "phone": "(502) 559-1670",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Urology"
+    },
+    "source_id": "52",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Urology - Shelbyville",
+    "attributes": {
+      "address": "150 Frankfort Road, Suite 101, Shelbyville, KY 40065",
+      "phone": "(502) 559-1670",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Urology"
+    },
+    "source_id": "53",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Allergy & Immunology - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Suite 330, Louisville, KY 40241",
+      "phone": "(502) 588-2349",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Allergy & Immunology"
+    },
+    "source_id": "54",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Pulmonology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 5A-6B, Louisville, KY 40202",
+      "phone": "(502) 588-4940",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pulmonology"
+    },
+    "source_id": "55",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Advanced Eye Care - Hikes Point",
+    "attributes": {
+      "address": "2933 Breckenridge Lane, Suite 102, Louisville, KY 40220",
+      "phone": "(502) 588-9588",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Ophthalmology"
+    },
+    "source_id": "56",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Advanced Eye Care - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Suite 340, Louisville, KY 40202",
+      "phone": "(502) 588-9588",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Ophthalmology"
+    },
+    "source_id": "57",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Pediatric Protection Specialists",
+    "attributes": {
+      "address": "1050 East Market Street, Louisville, KY 40206",
+      "phone": "(502) 629-3099",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Child Protection"
+    },
+    "source_id": "58",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Endocrinology - Westport Plaza",
+    "attributes": {
+      "address": "9451 Westport Road, Louisville, KY 40241",
+      "phone": "(502) 588-3400",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Endocrinology / Diabetes"
+    },
+    "source_id": "59",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Maternal - Fetal Medicine - Downtown",
+    "attributes": {
+      "address": "601 South Floyd Street, Suite 700, Louisville, KY 40202",
+      "phone": "(502) 629-7181",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Maternal-Fetal Medicine"
+    },
+    "source_id": "60",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Maternal - Fetal Medicine - Bowling Green",
+    "attributes": {
+      "address": "523 Park Street, Bowling Green, KY 42101",
+      "phone": "(270) 796-4169",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Maternal-Fetal Medicine"
+    },
+    "source_id": "61",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Outpatient Center - Bowling Green",
+    "attributes": {
+      "address": "720 East 2nd Avenue, Commonwealth Medical Plaza, Bowling Green, KY 42101",
+      "phone": "(270) 793-9803",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Outpatient Services"
+    },
+    "source_id": "62",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Outpatient Center - Frankfort",
+    "attributes": {
+      "address": "202 Limestone Street South, Frankfort, KY 40601",
+      "phone": "(502) 629-5437",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Outpatient Services"
+    },
+    "source_id": "63",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Physical Medicine & Rehabilitation - Paducah",
+    "attributes": {
+      "address": "2603 Kentucky Avenue, Suite 304, Paducah, KY 42003",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Physical Medicine & Rehabilitation"
+    },
+    "source_id": "64",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Maternal - Fetal Medicine - Perinatal Center - St. Matthews",
+    "attributes": {
+      "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 606, Louisville, KY 40207",
+      "phone": "(502) 899-6900",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Maternal-Fetal Medicine"
+    },
+    "source_id": "65",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Broadway",
+    "attributes": {
+      "address": ", Louisville, KY 40202",
+      "phone": "(502) 629-8990",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "66",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Frankfort",
+    "attributes": {
+      "address": "202 Limestone Street South, Suite 1A, Frankfort, KY 40601",
+      "phone": "(502) 223-8400",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "67",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Germantown",
+    "attributes": {
+      "address": "1169 Eastern Parkway, Suite 100, Louisville, KY 40217",
+      "phone": "(502) 588-0700",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "68",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Middletown",
+    "attributes": {
+      "address": "12955 Shelbyville Road, Suite 1, Louisville, KY 40243",
+      "phone": "(502) 254-2223",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "69",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - NuLu",
+    "attributes": {
+      "address": "1050 East Market Street, Louisville, KY 40206",
+      "phone": "(502) 588-8900",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "70",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Poplar Level",
+    "attributes": {
+      "address": "3026 Poplar Level Road, Louisville, KY 40217",
+      "phone": "(502) 636-4929",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "71",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Preston",
+    "attributes": {
+      "address": "7926 Preston Highway, Suite 210, Louisville, KY 40219",
+      "phone": "(502) 371-0022",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "72",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Prospect",
+    "attributes": {
+      "address": "9217 US Highway 42, Suite G, Prospect, KY 40059",
+      "phone": "(502) 228-1312",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "73",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Russell",
+    "attributes": {
+      "address": ", Suite B, Louisville, KY 40211",
+      "phone": "(502) 588-1090",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "74",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Shepherdsville",
+    "attributes": {
+      "address": "115 Huston Drive, Suite 2, Shepherdsville, KY 40165",
+      "phone": "(502) 955-8979",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "75",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Springhurst",
+    "attributes": {
+      "address": "10211 Westport Road, Louisville, KY 40241",
+      "phone": "(502) 339-0444",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "76",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Orthopedics of Louisville - Hikes Point",
+    "attributes": {
+      "address": "2933 Breckenridge Lane, Suite 103, Louisville, KY 40220",
+      "phone": "(502) 394-5678",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Orthopedics"
+    },
+    "source_id": "77",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Infusion Center - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Suite 444, Louisville, KY 40202",
+      "phone": "(502) 629-6993",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Infusion Services"
+    },
+    "source_id": "78",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Corbin",
+    "attributes": {
+      "address": "1 Trillium Way, Suite 306, Corbin, KY 40701",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "79",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - St Matthews",
+    "attributes": {
+      "address": ", Suite 80, Louisville, KY 40205",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "80",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Elizabethtown",
+    "attributes": {
+      "address": "2412 Ring Road, Suite 200, Elizabethtown, KY 42701",
+      "phone": "(270) 769-1935",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "81",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 5A, Louisville, KY 40202",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "82",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Owensboro",
+    "attributes": {
+      "address": "1000 Breckenridge Street, Suite 301, Owensboro, KY 42303",
+      "phone": "(270) 686-1782",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "83",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Scottsburg",
+    "attributes": {
+      "address": "1473 North Gardner Street, Scottsburg, IN 47170",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "84",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Jennifer Lawrence Cardiac Intensive Care Unit - Downtown",
+    "attributes": {
+      "address": "231 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 629-6000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "85",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Frankfort",
+    "attributes": {
+      "address": "202 Limestone Street South, Suite 1A, Frankfort, KY 40601",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "86",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Germantown",
+    "attributes": {
+      "address": "982 Eastern Parkway, Louisville, KY 40217",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "87",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 6, Louisville, KY 40202",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "88",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Shepherdsville",
+    "attributes": {
+      "address": "1707 Cedar Grove Road, Shepherdsville, KY 40165",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "89",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Clarksville",
+    "attributes": {
+      "address": "2051 Clevidence Boulevard, Suite C, Clarksville, IN 47129",
+      "phone": "(812) 280-6623",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "90",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Suite 400, Louisville, KY 40241",
+      "phone": "(502) 394-6500",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "91",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Orthopedics of Louisville - Elizabethtown",
+    "attributes": {
+      "address": "2412 Ring Road, Suite 200, Elizabethtown, KY 42701",
+      "phone": "(502) 394-5678",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Orthopedics"
+    },
+    "source_id": "92",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Center - Pediatric Emergency",
+    "attributes": {
+      "address": "4910 Chamberlain Lane, Louisville, KY 40241",
+      "phone": "(502) 446-5300",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Emergency Medicine"
+    },
+    "source_id": "93",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Hospital",
+    "attributes": {
+      "address": "231 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 629-6000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Hospital Services"
+    },
+    "source_id": "94",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's and Children's Hospital",
+    "attributes": {
+      "address": "4001 Dutchmans Lane, Louisville, KY 40207",
+      "phone": "(502) 893-1000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Hospital Services"
+    },
+    "source_id": "95",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Anesthesiology - Downtown",
+    "attributes": {
+      "address": "231 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 629-6000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Anesthesiology"
+    },
+    "source_id": "96",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Autism Center - Frankfort",
+    "attributes": {
+      "address": "202 Limestone Street South, Suite 1A, Frankfort, KY 40601",
+      "phone": "(502) 588-0736",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Autism Services"
+    },
+    "source_id": "97",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Anesthesiology - Brownsboro",
+    "attributes": {
+      "address": "4910 Chamberlain Lane, Louisville, KY 40241",
+      "phone": "(502) 446-5300",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Anesthesiology"
+    },
+    "source_id": "98",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gynecology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Suite 300D, Louisville, KY 40202",
+      "phone": "(502) 559-1750",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Gynecology"
+    },
+    "source_id": "99",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gynecology - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Suite 330, Louisville, KY 40241",
+      "phone": "(502) 559-1750",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Gynecology"
+    },
+    "source_id": "100",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Genetics Center - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 2, Louisville, KY 40202",
+      "phone": "(502) 588-0850",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Genetics"
+    },
+    "source_id": "101",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Development Center - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 588-0850",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Developmental Pediatrics"
+    },
+    "source_id": "102",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Just for Kids Critical Care Center - Downtown",
+    "attributes": {
+      "address": "231 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 629-6000",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Critical Care"
+    },
+    "source_id": "103",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neonatology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 2, Louisville, KY 40202",
+      "phone": "(502) 588-0982",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neonatology"
+    },
+    "source_id": "104",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neonatology - St. Matthews",
+    "attributes": {
+      "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 301, Louisville, KY 40207",
+      "phone": "(502) 896-2500",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neonatology"
+    },
+    "source_id": "105",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neonatology - Owensboro",
+    "attributes": {
+      "address": "1000 Breckenridge Street, Suite 301, Owensboro, KY 42303",
+      "phone": "(502) 588-0982",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neonatology"
+    },
+    "source_id": "106",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Rheumatology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Suite 300C, Louisville, KY 40202",
+      "phone": "(502) 588-4910",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Rheumatology"
+    },
+    "source_id": "107",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Physical Medicine & Rehabilitation - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 588-2201",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Physical Medicine & Rehabilitation"
+    },
+    "source_id": "108",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Urology - Elizabethtown",
+    "attributes": {
+      "address": "2412 Ring Road, Suite 200, Elizabethtown, KY 42701",
+      "phone": "(502) 559-1670",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Urology"
+    },
+    "source_id": "109",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Sleep Medicine - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Suite 330, Louisville, KY 40241",
+      "phone": "(502) 588-2220",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Sleep Medicine"
+    },
+    "source_id": "110",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Autism Center - Hikes Point",
+    "attributes": {
+      "address": "2933 Breckenridge Lane, Suite 101, Louisville, KY 40220",
+      "phone": "(502) 588-0736",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Autism Services"
+    },
+    "source_id": "111",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Allergy & Immunology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Louisville, KY 40202",
+      "phone": "(502) 588-2349",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Allergy & Immunology"
+    },
+    "source_id": "112",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Dermatology - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Level 7, Louisville, KY 40202",
+      "phone": "(502) 588-9581",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Dermatology"
+    },
+    "source_id": "113",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Pulmonology - Brownsboro",
+    "attributes": {
+      "address": "9880 Angies Way, Medical Plaza II, Louisville, KY 40241",
+      "phone": "(502) 588-4940",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Pulmonology"
+    },
+    "source_id": "114",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Maternal - Fetal Medicine - Paducah",
+    "attributes": {
+      "address": "2603 Kentucky Avenue, Suite 304, Paducah, KY 42003",
+      "phone": "(270) 415-8965",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Maternal-Fetal Medicine"
+    },
+    "source_id": "115",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Outpatient Center - Owensboro",
+    "attributes": {
+      "address": "1000 Breckenridge Street, Suite 301, Owensboro, KY 42303",
+      "phone": "(270) 686-1782",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Outpatient Services"
+    },
+    "source_id": "116",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Outpatient Center - Paducah",
+    "attributes": {
+      "address": "2603 Kentucky Avenue, Building 2, Paducah, KY 42003",
+      "phone": "(270) 558-7688",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Outpatient Services"
+    },
+    "source_id": "117",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Gynecology - Elizabethtown",
+    "attributes": {
+      "address": "2412 Ring Road, Suite 200, Elizabethtown, KY 42701",
+      "phone": "(502) 559-1750",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Gynecology"
+    },
+    "source_id": "118",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Jeffersontown",
+    "attributes": {
+      "address": "3840 Ruckriegel Parkway, Suite 105, Louisville, KY 40299",
+      "phone": "(502) 261-7227",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "119",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Jeffersonville",
+    "attributes": {
+      "address": "3118 East 10th Street, Jeffersonville, IN 47130",
+      "phone": "(812) 285-4585",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "120",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Shelbyville",
+    "attributes": {
+      "address": "150 Frankfort Road, Shelbyville, KY 40065",
+      "phone": "(502) 647-5468",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "121",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Stonestreet",
+    "attributes": {
+      "address": "9702 Stonestreet Road, Suite 100, Louisville, KY 40272",
+      "phone": "(502) 588-0610",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "122",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - West Louisville",
+    "attributes": {
+      "address": "850 South 28th Street, Suite 103, Louisville, KY 40211",
+      "phone": "(502) 632-8310",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "123",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Bowling Green",
+    "attributes": {
+      "address": "615 7th Avenue, Bowling Green, KY 42101",
+      "phone": "(270) 846-4800",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "124",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Fairdale",
+    "attributes": {
+      "address": ", Louisville, KY 40214",
+      "phone": "(502) 379-8870",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "125",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Owensboro",
+    "attributes": {
+      "address": "1000 Breckenridge Street, Suite 301, Owensboro, KY 42303",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "126",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Paducah",
+    "attributes": {
+      "address": "2603 Kentucky Avenue, Suite 304, Paducah, KY 42003",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "127",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - St. Matthews",
+    "attributes": {
+      "address": "4123 Dutchmans Lane, Medical Plaza 3, Louisville, KY 40207",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "128",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Neurosurgery",
+    "attributes": {
+      "address": "210 East Gray Street, Suite 1105, Louisville, KY 40202",
+      "phone": "(502) 583-1697",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "129",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Orthopedics of Louisville - Westport Plaza",
+    "attributes": {
+      "address": "9451 Westport Road, Suite 122D, Louisville, KY 40241",
+      "phone": "(502) 394-5678",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Orthopedics"
+    },
+    "source_id": "130",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Cancer Institute - Novak Center",
+    "attributes": {
+      "address": "411 East Chestnut Street, Suite 445, Louisville, KY 40202",
+      "phone": "(502) 588-3600",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Oncology / Hematology"
+    },
+    "source_id": "131",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Bowling Green",
+    "attributes": {
+      "address": "720 2nd Avenue, Suite 102, Bowling Green, KY 42101",
+      "phone": "(270) 793-9803",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "132",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Campbellsville",
+    "attributes": {
+      "address": "1858 Old Lebanon Road, Campbellsville, KY 42718",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "133",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Jasper",
+    "attributes": {
+      "address": "721 West 13th Street, Suite 225, Jasper, IN 47546",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "134",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Mount Sterling",
+    "attributes": {
+      "address": "805 Alexa Drive, Suite C, Mount Sterling, KY 40353",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "135",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Paducah",
+    "attributes": {
+      "address": "2603 Kentucky Avenue, Suite 304, Paducah, KY 42003",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "136",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Frankfort",
+    "attributes": {
+      "address": "202 Limestone Street South, Suite 1A, Frankfort, KY 40601",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "137",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Neuroscience Institute - Elizabethtown",
+    "attributes": {
+      "address": "2412 Ring Road, Suite 200, Elizabethtown, KY 42701",
+      "phone": "(502) 588-3650",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Neuroscience / Neurology"
+    },
+    "source_id": "138",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Heart Institute - Shepherdsville",
+    "attributes": {
+      "address": "1707 Cedar Grove Road, Suite 15, Shepherdsville, KY 40165",
+      "phone": "(502) 588-7450",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Cardiology"
+    },
+    "source_id": "139",
+    "source_file": "norton_childrens_website"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Medical Group - Clark",
+    "attributes": {
+      "address": "207 Sparks Avenue, Norton Medical Plaza 2 -- Clark, Suite 403, Jeffersonville, IN 47130",
+      "phone": "(812) 288-9141",
+      "parent_system": "Norton Children's Hospital",
+      "specialty": "Primary Care Pediatrics"
+    },
+    "source_id": "140",
+    "source_file": "norton_childrens_website"
+  }
+]

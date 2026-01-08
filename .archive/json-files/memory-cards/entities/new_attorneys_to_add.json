@@ -1,0 +1,87 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Bruce Anderson",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Bryan Davenport",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Derek Anthony Harvey",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Marshall Rowland",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Samuel Robert Leffert",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs",
+    "notes": "Also known as Samuel T. LEffert (directory match)"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "Seth Gladstein",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Attorney",
+    "name": "John Doyle",
+    "attributes": {
+      "role": "defense_counsel",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  }
+]

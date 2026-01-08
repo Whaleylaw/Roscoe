@@ -1,0 +1,39 @@
+{
+  "case_name": "Azaire-Lopez-MVA-11-14-2025",
+  "total_episodes": 1,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Vinesign Integration - 2025-11-17",
+      "original_body": "Case: Azaire-Lopez-MVA-11-14-2025\nClient: Azaire Lopez\n\n#vinesign-completed\nName: intake A'Zaire\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=92287e26-1752-4547-97ad-8bddc9851e2e.pdf\nSigned: 2025-11-17 17:00:02\nAll signers: A'zaire Lopez((502) 701-5196)\nSender: Justin Chumbley",
+      "natural_language": "Case Azaire-Lopez-MVA-11-14-2025 involves client Azaire Lopez. The intake document for this case was named intake A'Zaire.\n\nVineSign shows the signing is complete. The document was signed on November 17, 2025 at 5:00:02 PM. Signed Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=92287e26-1752-4547-97ad-8bddc9851e2e.pdf. All signers: A'zaire Lopez, (502) 701-5196.\n\nSender: Justin Chumbley.",
+      "valid_at": "2025-11-17T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Azaire Lopez",
+            "relevance": "client and signer on intake document"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "document signing platform used"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,133 @@
+{
+  "case_name": "Lori-House-MVA-11-19-2025",
+  "total_episodes": 5,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-11-21",
+      "original_body": "Case: Lori-House-MVA-11-19-2025\nClient: Lori House\n\nPR not yet available",
+      "natural_language": "Case Lori-House-MVA-11-19-2025 concerns the client Lori House and relates to a motor vehicle accident. The client on record is Lori House. PR is not yet available.",
+      "valid_at": "2025-11-21T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Lori House",
+            "relevance": "client on record"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-11-21",
+      "original_body": "Case: Lori-House-MVA-11-19-2025\nClient: Lori House\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=0ce2f54a-555f-45cc-97c7-39a41020ac5b.pdf\nSigned: 2025-11-21 18:41:30\nAll signers: Lori House(lohouse222@gmail.com (502) 418-0557)\nSender: Justin Chumbley",
+      "natural_language": "Case Lori-House-MVA-11-19-2025 involves Lori House in connection with a motor vehicle accident that occurred on November 19, 2025. The intake document for this case was prepared and moved through VineSign for electronic signing.\n\nThe VineSign package shows the intake document was completed and signed. The signed document URL is https://app.vinesign.com/Jobs/Pdf?pdfKey=0ce2f54a-555f-45cc-97c7-39a41020ac5b.pdf, and the signing occurred on November 21, 2025 at 18:41:30 (6:41:30 PM). All signers listed are Lori House (lohouse222@gmail.com, (502) 418-0557). The sender of the VineSign package is Justin Chumbley.",
+      "valid_at": "2025-11-21T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Lori House",
+            "relevance": "client and signer; involved in motor vehicle accident on 2025-11-19"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "electronic signature platform used to complete and sign the intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-11-21",
+      "original_body": "Case: Lori-House-MVA-11-19-2025\nClient: Lori House\n\nIts Justin from the Whaley Law Firm. This is that text only number I mentioned for your file.",
+      "natural_language": "Case Lori-House-MVA-11-19-2025 pertains to client Lori House. The note identifies Justin from the Whaley Law Firm as the contact.\n\nIt also states, \"This is that text only number I mentioned for your file.\"",
+      "valid_at": "2025-11-21T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Lori House",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "contact law firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin",
+            "relevance": "contact at Whaley Law Firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-21",
+      "original_body": "Case: Lori-House-MVA-11-19-2025\nClient: Lori House\n\n__CLIENT CONTACT__\n__Details:__ 11/19/2025\n15th and Hill\n4 way stop, client was on 15th going north, defendant was on hill going west, it was her turn to go and she\u2019s in the middle of the intersection when she was t-boned in back passenger side. Hit and run\n\nLMPD\n\n7/4/1976\nSSN: 406-21-7633PH: 502-418-0557\n\nPIP libery Mutual\n\nNo treatment to date\n\nInjuries: mid and lower back. Some sciatica pain.\n\n1502 W Muhammed Ali blvd\nApt 2\n40203 \n__Person Making Contact:__ Justin\n__Date & Time__: November 21 2025",
+      "natural_language": "Initial client contact on November 19, 2025 with Lori House regarding a motor vehicle accident (MVA) at the four-way intersection of 15th Street and Hill. Lori was northbound on 15th at the four-way stop when the defendant, traveling west on Hill, was in the intersection and Lori, having the right of way, was in the middle of the intersection when she was T-boned on the back passenger side. The other vehicle then fled the scene, resulting in a hit-and-run. The incident was reported to LMPD.\n\nClient details and current status: Date of birth is July 4, 1976; SSN 406-21-7633; phone 502-418-0557. Current address: 1502 W Muhammed Ali blvd Apt 2 40203. PIP carrier is libery Mutual. The client reports no treatment to date. Injuries noted are mid and lower back with some sciatica pain. The person making contact was Justin, on November 21, 2025.",
+      "valid_at": "2025-11-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Lori House",
+            "relevance": "injured party / client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual",
+            "relevance": "PIP carrier"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Unknown hit-and-run driver",
+            "relevance": "alleged at-fault driver"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "LMPD",
+            "relevance": "police department the incident was reported to"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Lori-House-MVA-11-19-2025\nClient: Lori House\n\n**FILE ORGANIZATION COMPLETED**\n\nCompleted systematic case file organization using 8-bucket directory system with filename bias elimination protocol.\n\n**Documents Processed:**\n- Client Intake Package (12 pages) - includes Non-Solicitation Affidavit, Personal Injury Fee Agreement, and HIPAA Medical Authorization\n- Intake Verification Document (Vinesign confirmation)\n\n**Files Organized:**\n1. 2025-11-21_Client_Intake_Package_Lori_House.pdf/.md \u2192 Client/Intake_Documents/\n2. 2025-11-21_Intake_Verification_Lori_House.pdf/.md \u2192 Client/Intake_Documents/\n\n**Key Information Extracted:**\n- Fee Agreement: 33.36% pre-suit, 40% post-suit (signed 11/21/2025)\n- Client contact verified: lohouse222@gmail.com, (502) 418-0557\n- HIPAA authorization in place for medical records requests\n- All intake documents properly executed via Vinesign\n\n**File Structure:**\nAll intake documents now properly categorized in Client/Intake_Documents/ with standardized naming convention (YYYY-MM-DD_Document_Type_Client_Name format).\n\nCase file is now organized and ready for active case management.",
+      "natural_language": "On November 19, 2025, the Lori House motor vehicle accident case (Lori-House-MVA-11-19-2025) was organized and prepared for active case management. The file organization has been completed using an eight-bucket directory system with a filename bias elimination protocol to ensure consistent, neutral labeling.\n\nDocuments processed include the Client Intake Package, a 12-page packet that contains a Non-Solicitation Affidavit, a Personal Injury Fee Agreement, and a HIPAA Medical Authorization, as well as the Intake Verification Document (Vinesign confirmation). The two processed files are 2025-11-21_Client_Intake_Package_Lori_House.pdf/.md and 2025-11-21_Intake_Verification_Lori_House.pdf/.md, both of which have been placed in the Client/Intake_Documents/ folder.\n\nKey information extracted includes the fee agreement: 33.36% pre-suit and 40% post-suit, signed on November 21, 2025; client contact verified as lohouse222@gmail.com and (502) 418-0557; a HIPAA authorization is in place for medical records requests; and all intake documents were properly executed via Vinesign.\n\nThe file structure now standardizes intake documents in Client/Intake_Documents/ using the naming convention YYYY-MM-DD_Document_Type_Client_Name. Overall, the case file is organized and ready for active case management.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Lori House",
+            "relevance": "case client; subject of intake documents and fee agreement"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Vinesign",
+            "relevance": "e-signature vendor used to execute intake and verification documents"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

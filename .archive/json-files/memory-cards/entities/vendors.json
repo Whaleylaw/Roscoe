@@ -1,0 +1,644 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "502 Towing and Recovery",
+    "attributes": {
+      "vendor_type": "towing"
+    },
+    "source_id": "2",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Advanced Collision Investigation Services LLC",
+    "attributes": {
+      "vendor_type": "investigation"
+    },
+    "source_id": "2263",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Barrister Capital Group",
+    "attributes": {
+      "phone": "502-897-5001",
+      "email": "rachael@barristercapital.com",
+      "address": "8888 Keystone Crossing, Suite 1610, Indianapolis, IN 46240",
+      "vendor_type": "litigation_funding"
+    },
+    "source_id": "369",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Bluegrass Bracing, Inc.",
+    "attributes": {
+      "phone": "859-266-5523 Fax",
+      "address": "1389 West Main Street, Lexington, ky 40508",
+      "fax": "859-266-5523 Fax",
+      "vendor_type": "medical_equipment"
+    },
+    "source_id": "379",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Brian C. House Mediations",
+    "attributes": {
+      "phone": "606-864-3896",
+      "email": "bch@bchm.work",
+      "address": "310 W. Fifith Street, P.O. Box 2095, London, KY 40743-2095",
+      "vendor_type": "mediation"
+    },
+    "source_id": "42",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Brickell Key Court Reporting",
+    "attributes": {
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "392",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Buechler-Haws Reporting",
+    "attributes": {
+      "phone": "(502) 639-5239",
+      "address": "1502 Cadet Court, Louisville, KY 40222",
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "43",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Cardone Record Service",
+    "attributes": {
+      "phone": "(847) 413-9660",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "405",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "CasePacer",
+    "attributes": {
+      "address": "8888 Keystone Crossing Suite 1610, Indianapolis, IN 46240",
+      "vendor_type": "legal_software"
+    },
+    "source_id": "57",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "ChartSwap",
+    "attributes": {
+      "address": "2951 Marina Bay Drive, Suite 130-132, League City, TX 77573",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "421",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Churchill Reporting",
+    "attributes": {
+      "phone": "(312) 210-0864",
+      "address": "P.O. Box 3983, Louisville, KY 40201",
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "429",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "CJV Reporting Company, Inc.",
+    "attributes": {
+      "phone": "859-581-9794",
+      "email": "cjvreporting@fuse.net",
+      "address": "130 Dudley Road, Suite 170, Edgewood, KY 41017",
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "432",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Curtis Roadside",
+    "attributes": {
+      "phone": "502-416-7354",
+      "address": "1114 Ulrich Ave, Louisville, KY 40219",
+      "vendor_type": "towing"
+    },
+    "source_id": "71",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "DataVant",
+    "attributes": {
+      "phone": "1-800-367-1500",
+      "address": "P.O. Box 409740, Atlanta, GA 30384-9740",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "73",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Donna Heidel Reporting",
+    "attributes": {
+      "phone": "(270) 847-1459",
+      "email": "donnaheidelreporting@gmail.com",
+      "address": "247 Heidel Lane, Russellville, KY 42276",
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "84",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Dreamcatcher Moving",
+    "attributes": {
+      "vendor_type": "moving"
+    },
+    "source_id": "87",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Dynamic Claims Services",
+    "attributes": {
+      "phone": "833.264.7389",
+      "vendor_type": "claims_services"
+    },
+    "source_id": "1854",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Esquire Deposition Solutions",
+    "attributes": {
+      "phone": "(888) 486-4044",
+      "address": "1500 Centre Parkway #100, East Point, GA 30344",
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "516",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "EvenUP",
+    "attributes": {
+      "phone": "415-570-7414",
+      "email": "support@evenuplaw.com",
+      "address": "2261 Market Street #4068, San Francisco, CA 94114",
+      "vendor_type": "legal_software"
+    },
+    "source_id": "90",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Focus Investigations",
+    "attributes": {
+      "vendor_type": "investigation"
+    },
+    "source_id": "547",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "HealthMark Group",
+    "attributes": {
+      "phone": "(800) 659-4035",
+      "email": "info@healthmark-group.com",
+      "address": "P.O. Box 735443, Dallas, TX 75373-5443",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "113",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Kentuckiana Capital, LLC",
+    "attributes": {
+      "phone": "502-627-0677",
+      "email": "contact@kentuckianacapital.com",
+      "address": "2001 W. Broadway #4, Louisville, KY 40203",
+      "vendor_type": "litigation_funding"
+    },
+    "source_id": "631",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Kentuckiana Court Reporters",
+    "attributes": {
+      "phone": "502-589-2273 Main",
+      "email": "mckenzie@kentuckianareporters.com  (send notices to this email)",
+      "address": "730 W. Main Street, Ste. 101, , Louisville, KY 40202",
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "632",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "McLendon-Kogut Reporting Service",
+    "attributes": {
+      "phone": "(502) 585-5634",
+      "address": "2525 Nelson Miller Parkway #204, Louisville, KY 40223",
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "719",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "MedEquip",
+    "attributes": {
+      "phone": "270-780-2655",
+      "address": "Riverside Professional Center, 825 East 2nd Ave., Suite A2, Bowling Green, KY 42101",
+      "vendor_type": "medical_equipment"
+    },
+    "source_id": "723",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Medicopy",
+    "attributes": {
+      "phone": "(866) 587-6274",
+      "address": "P.O. Box 2005, Deptford, NJ 08096",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "152",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Metro Investigations LLC",
+    "attributes": {
+      "phone": "(502) 345-9967",
+      "email": "office@metroky.com",
+      "address": "18300 Highway 148, Fisherville, KY 40023",
+      "vendor_type": "investigation"
+    },
+    "source_id": "160",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Migliore & Associates",
+    "attributes": {
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "163",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "MRO",
+    "attributes": {
+      "phone": "(610) 994-7500 Opt 1",
+      "address": "P.O. Box 6410, Southeastern, PA 19398-6410",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "168",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "National Academy of Distinguished Neutrals",
+    "attributes": {
+      "phone": "502-721-9900",
+      "email": "retiredjudges@twc.com",
+      "address": "P.O. Box 70318, Louisville, KY 40270",
+      "vendor_type": "mediation"
+    },
+    "source_id": "171",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Orthofix US LLC",
+    "attributes": {
+      "address": "PO Box 849806, Dallas, TX 75284",
+      "vendor_type": "medical_equipment"
+    },
+    "source_id": "825",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Paul A. Klapheke, CCR, CLVS",
+    "attributes": {
+      "phone": "502-458-1755",
+      "email": "pklapheke@gmail.com",
+      "address": "3011 Whiteway Avenue, Louisville, KY 40205",
+      "vendor_type": "court_reporting"
+    },
+    "source_id": "194",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Rental Claim Services",
+    "attributes": {
+      "phone": "800-478-4707",
+      "email": "contact@rcservicesllc.com",
+      "address": "112 W. 34th Street,, 18th Floor, NY 10120",
+      "vendor_type": "claims_services"
+    },
+    "source_id": "1856",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "ScanStat Technologies",
+    "attributes": {
+      "phone": "(770) 569-2445",
+      "email": "customerservice@verisma.com",
+      "address": "P.O. Box 201327, Dallas, TX 75320-1327",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "905",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Spectrum Damage Claims Department",
+    "attributes": {
+      "phone": "877-214-8511",
+      "address": "941 Charter Commons Drive, Town and Country, MO 63017",
+      "vendor_type": "claims_services"
+    },
+    "source_id": "939",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Suburban Towing",
+    "attributes": {
+      "phone": "1502-962-4285",
+      "address": "1006 Industrial Blvd, Louisville,  40219",
+      "vendor_type": "towing"
+    },
+    "source_id": "222",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Thomas J. Knopf Mediation Services",
+    "attributes": {
+      "phone": "(502) 721-9900",
+      "address": "P.O. Box 32274, Louisville, KY 40232",
+      "vendor_type": "mediation"
+    },
+    "source_id": "988",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Verisma",
+    "attributes": {
+      "phone": "(866) 390-7404",
+      "email": "solutions@verisma.com",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "1054",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "VRC Companies dba Vital Chart",
+    "attributes": {
+      "phone": "(859) 300-8110",
+      "address": "Dept 5853 - P.O. Box 11407, Birmingham, AL 35246",
+      "vendor_type": "records_retrieval"
+    },
+    "source_id": "257",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Kentucky Court Reporters",
+    "attributes": {
+      "vendor_type": "court_reporting",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "from_directory",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Commonwealth IME",
+    "attributes": {
+      "vendor_type": "independent_medical_examination",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "Independent medical examination service"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "PMR Life Care Plans, LLC",
+    "attributes": {
+      "vendor_type": "life_care_planner",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "Life care planning expert witness service"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "BioKinetics",
+    "attributes": {
+      "vendor_type": "biomechanics_expert",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "Biomechanical expert witness service"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "David Johnson",
+    "attributes": {
+      "vendor_type": "expert_witness",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "From directory"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Vocational Economics",
+    "attributes": {
+      "vendor_type": "vocational_expert",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "Vocational expert witness service, Linda Jones works here"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Wendy McLaughlin",
+    "attributes": {
+      "vendor_type": "court_reporting",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Brenda-Lang-annotations",
+    "source_file": "review_Brenda-Lang-MVA-09-03-2021.md",
+    "notes": "Court reporter - https://www.linkedin.com/in/wendy-mclaughlin-792793a/"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Ciox Health",
+    "attributes": {
+      "vendor_type": "records_retrieval",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Curtis-Lee-Justice-backfill",
+    "source_file": "review_Curtis-Lee-Justice-MVA-2-5-2023.md",
+    "notes": "Medical records retrieval service (also in organizations.json)"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "DSJ & Associates",
+    "attributes": {
+      "vendor_type": "nursing_services",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Estate-of-Betty-Prince-backfill",
+    "source_file": "review_Estate-of-Betty-Prince-Premise-7-14-2020.md",
+    "notes": "Donna Jones, RN - nursing/case management services"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Stidham Reconstruction",
+    "attributes": {
+      "vendor_type": "accident_reconstruction",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Estate-of-Evangeline-Young-backfill",
+    "source_file": "review_Estate-of-Evangeline-Young-MVA-8-12-2023.md",
+    "notes": "Accident reconstruction expert"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Zipliens",
+    "attributes": {
+      "vendor_type": "lien_resolution",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Estate-of-Evangeline-Young-backfill",
+    "source_file": "review_Estate-of-Evangeline-Young-MVA-8-12-2023.md",
+    "notes": "Lien resolution/negotiation service"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Vendor",
+    "name": "Larry Church",
+    "attributes": {
+      "vendor_type": "mediation",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Julmonzhae-Moore-backfill",
+    "source_file": "review_Julmonzhae-Moore-MVA-8-29-2023.md",
+    "notes": "Attorney who also serves as mediator (also in attorneys.json)"
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "case_name": "Mark-Smith-Sr.-MVA-5-31-2025",
+  "total_episodes": 6,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Mark-Smith-Sr.-MVA-5-31-2025\nClient: Mark Smith Sr.\n\nSettlement negotiations and family consultation.",
+      "natural_language": "This case, Mark-Smith-Sr.-MVA-5-31-2025, involves client Mark Smith Sr. and centers on settlement negotiations and a family consultation related to the motor vehicle accident dated May 31, 2025.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Mark Smith Sr.",
+            "relevance": "primary client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Mark-Smith-Sr.-MVA-5-31-2025\nClient: Mark Smith Sr.\n\nMedical evaluation and treatment planning coordination.",
+      "natural_language": "This case is labeled Mark-Smith-Sr.-MVA-5-31-2025, and the client is Mark Smith Sr.\n\nThe engagement centers on medical evaluation and coordination of a treatment plan related to a motor vehicle accident.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Mark Smith Sr.",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Mark-Smith-Sr.-MVA-5-31-2025\nClient: Mark Smith Sr.\n\nFamily coordination with Mark Smith Jr case management.",
+      "natural_language": "This case involves Mark Smith Sr. following a motor vehicle accident on May 31, 2025.\n\nThe client is Mark Smith Sr., and there is family coordination with Mark Smith Jr case management.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Mark Smith Sr.",
+            "relevance": "primary client; involved in motor vehicle accident on 05/31/2025"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Mark Smith Jr.",
+            "relevance": "family coordination; assisting with case management"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Mark-Smith-Sr.-MVA-5-31-2025\nClient: Mark Smith Sr.\n\nMedical evaluation and treatment planning coordination.",
+      "natural_language": "This case, Mark-Smith-Sr.-MVA-5-31-2025, involves the client Mark Smith Sr. and centers on medical evaluation and treatment planning coordination in relation to a motor vehicle accident.\n\nInitial client contact occurred on May 31, 2025, with Mark Smith Sr., addressing the motor vehicle accident and the need for medical evaluation and a coordinated treatment plan.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Mark Smith Sr.",
+            "relevance": "primary client and subject of initial contact regarding MVA and medical evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Mark-Smith-Sr.-MVA-5-31-2025\nClient: Mark Smith Sr.\n\nFamily coordination with Mark Smith Jr. related case.",
+      "natural_language": "The matter is docketed as Mark-Smith-Sr.-MVA-5-31-2025 and involves client Mark Smith Sr. The case concerns a motor vehicle accident.\n\nThere is family coordination with Mark Smith Jr. in relation to a related case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Mark Smith Sr.",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Mark-Smith-Sr.-MVA-5-31-2025\nClient: Mark Smith Sr.\n\nMark Smith Sr. motor vehicle accident case for May 31, 2025.",
+      "natural_language": "Case: Mark-Smith-Sr.-MVA-5-31-2025. The client is Mark Smith Sr. This is a motor vehicle accident case arising from an incident on May 31, 2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Mark Smith Sr",
+            "relevance": "identified client"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

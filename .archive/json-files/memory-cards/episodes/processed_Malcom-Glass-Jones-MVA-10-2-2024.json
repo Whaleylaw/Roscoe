@@ -1,0 +1,1874 @@
+{
+  "case_name": "Malcom-Glass-Jones-MVA-10-2-2024",
+  "total_episodes": 86,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Kentucky Farm Bureau"
+      },
+      {
+        "name": "Shelter Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Pat Hargadon"
+      },
+      {
+        "name": "Cole Barnes"
+      },
+      {
+        "name": "Emily Friedrich"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-8055562",
+        "insurer": "Kentucky Farm Bureau",
+        "adjuster": "Pat Hargadon"
+      },
+      {
+        "type": "BIClaim",
+        "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-AT0000003753979",
+        "insurer": "Shelter Insurance",
+        "adjuster": "Cole Barnes"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Malcom-Glass-Jones-MVA-10-2-2024-Personal Injury Protection (PIP)-3753979",
+        "insurer": "Shelter Insurance",
+        "adjuster": "Emily Friedrich"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ DOA 10/2\nLocation Shelbyville, KY by Walmart\n\nClient was passenger\nDriver\u2019s name is client Gasia Huffman\n\n2006 Chrysley Sebring\n\nCounty Sheriff responded\n\nWas following a vehicle when another vehicle merged into their lane and slammed onto the brakes causing client\u2019s vehicle to rear end them\n\nDOB 3/14/2006\nSSN: 303-31-4191\n\nWife (driver) broke her ankle. \n\nStarlite\n\nInjuries: lower back pain and left knee pain. \n\nPIP Shelter Insurance. \nBI: Commonwealth of Kentucky\n\n1442 Altawood Drive\nClarksville, IN 47129\n\nHas health insurance will text us copy of card. \n__Person Making Contact:__ Justin\n__Date & Time__: October 10 2024",
+      "natural_language": "Initial client contact on October 10, 2024, with Justin regarding motor vehicle accident case Malcom-Glass-Jones-MVA-10-2-2024 involving Malcom Glass Jones. The client, Malcom Glass Jones, DOB 3/14/2006 and SSN 303-31-4191, was a passenger in a 2006 Chrysley Sebring driven by his wife, Gasia Huffman. The incident occurred in Shelbyville, Kentucky, by Walmart on October 2, and the County Sheriff responded to the scene. They were following a vehicle when another vehicle merged into their lane and slammed on the brakes, causing the client\u2019s vehicle to rear-end the other vehicle.\n\nGasia Huffman, the driver and Malcom\u2019s wife, sustained a broken ankle. Injuries reported include Malcom\u2019s lower back pain and left knee pain. Starlite. Personal Injury Protection (PIP) is through Shelter Insurance, with Bodily Injury (BI) coverage listed as through the Commonwealth of Kentucky. Correspondence can be directed to 1442 Altawood Drive, Clarksville, IN 47129. The client has health insurance and will text a copy of the card.\n\nThe person making contact was Justin, and the contact date/time was October 10, 2024.",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client/passenger injured in MVA"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "medical provider noted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "PIP insurer listed"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim Shelter Insurance",
+            "relevance": "PIP coverage identified"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Commonwealth of Kentucky",
+            "relevance": "BI coverage listed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nDOA 10/2\nLocation Shelbyville, KY by Walmart\n\nClient was passenger\nDriver\u2019s name is client Gasia Huffman\n\n2006 Chrysley Sebring\n\nCounty Sheriff responded\n\nWas following a vehicle when another vehicle merged into their lane and slammed onto the brakes causing client\u2019s vehicle to rear end them\n\nDOB 3/14/2006\nSSN: 303-31-4191\n\nWife (driver) broke her ankle. \n\nStarlite\n\nInjuries: lower back pain and left knee pain. \n\nPIP Shelter Insurance. \nBI: Commonwealth of Kentucky\n\n1442 Altawood Drive\nClarksville, IN 47129\n\nHas health insurance will text us copy of card.",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024\n\nInitial client contact on October 2, 2024 regarding a motor vehicle accident involving Malcom Glass Jones. The client, Malcom Glass Jones, born March 14, 2006 (SSN 303-31-4191), was a passenger in a 2006 Chrysley Sebring. The incident occurred in Shelbyville, Kentucky, near a Walmart. The driver was Gasia Huffman, the client\u2019s wife, and the County Sheriff responded to the scene.\n\nAccording to the report, the client was following another vehicle when a separate vehicle merged into their lane and slammed on the brakes, causing the client\u2019s vehicle to rear-end the vehicle that merged.\n\nThe driver, Gasia Huffman (the client\u2019s wife), sustained a broken ankle. Injuries reported for the client include lower back pain and left knee pain.\n\nPIP coverage is with Shelter Insurance, and the bodily injury (BI) coverage is listed as the Commonwealth of Kentucky. The corresponding address is 1442 Altawood Drive, Clarksville, IN 47129. The client has health insurance and will text a copy of the card.\n\nStarlite.",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "injured party / client contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "medical provider mentioned"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "PIP carrier"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Shelter Insurance",
+            "relevance": "PIP coverage discussed"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Commonwealth of Kentucky",
+            "relevance": "BI carrier listed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nsent intake docs via vinesign",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones in a motor vehicle accident dated October 2, 2024. Intake docs were sent to the client via vinesign.",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "recipient of intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nClient Contacted today to give update #cc",
+      "natural_language": "In the Malcom-Glass-Jones-MVA-10-2-2024 case, the client Malcom Glass Jones was contacted today to provide an update, with the contact noted as #cc.",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nMalcom, It's the Whaley Law Firm. This is the text only number for your file that we discussed. Please send all photos etc here including a photo of the front and back of your health insurance card.",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones and a motor vehicle accident. On October 2, 2024, the Whaley Law Firm informed Malcom that this is the text-only number for his file that they had discussed, and asked him to send all photos and related materials to this number, including a photo of the front and back of his health insurance card.",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sent text-only number / contacted client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2024-10-10 16:15:20.365000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024. The client is Malcom Glass Jones.\n\nA call from Aries Penaflor was logged on October 10, 2024 at 16:15:20.365000 UTC, noted as an outbound call. The caller information lists the phone number 8128328198, with the caller ID shown as 812-832-8198. The caller name is Malcom Glass-Jones. The caller email is not provided in the record. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Please call me back at your most convenient time.\n__Date and Time:__ 2024-10-10 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. Initial client contact occurred on October 10, 2024, when Jones sent an outbound text message from +15023655788 to +18128328198, stating: \"Please call me back at your most convenient time.\"",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client who initiated contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Hi Malcom, this is Aries from the Whaley Law Firm.\n__Date and Time:__ 2024-10-10 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones.\n\nInitial client contact occurred on October 10, 2024 via an outbound text message from Aries at the Whaley Law Firm to Malcom Glass Jones. The message read, \"Hi Malcom, this is Aries from the Whaley Law Firm.\" The text was sent from +15023655788 to +18128328198.",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "recipient of outbound text / subject of case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization of initial contact"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries",
+            "relevance": "individual who sent the initial outbound text"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Tried to call you but it went straight to VM.\n__Date and Time:__ 2024-10-10 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "Initial client contact on October 10, 2024, in the Malcom-Glass-Jones-MVA-10-2-2024 case with Malcom Glass Jones regarding a motor vehicle accident. An outbound text message was sent from +15023655788 to +18128328198; the message read, \"Tried to call you but it went straight to VM.\"",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Or may I please have your driver's license number so I can request for the police report online?\n__Date and Time:__ 2024-10-10 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "In the Malcom-Glass-Jones-MVA-10-2-2024 case, the client is Malcom Glass Jones. On October 10, 2024, an outbound text message was sent from +15023655788 to +18128328198 regarding the case. The message read: Or may I please have your driver's license number so I can request for the police report online?",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of the case and recipient referenced in message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Thank you\n__Date and Time:__ 2024-10-10 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "In the case Malcom-Glass-Jones-MVA-10-2-2024, the client is Malcom Glass Jones.\n\nOn October 10, 2024, an outbound text message was sent from +15023655788 to +18128328198 with the content \"Thank you.\"",
+      "valid_at": "2024-10-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client; involved in text message communication"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-11",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, will have companion send over requested docs asap. State Starlite provided him with a knee brace at yesterday's appointment \n__Person Making Contact:__ Justin\n__Date & Time__: October 11 2024",
+      "natural_language": "Initial client contact on October 11, 2024, with Malcom Glass Jones regarding a motor vehicle accident in the matter Malcom-Glass-Jones-MVA-10-2-2024. The contact was made by Justin. The client stated that a companion will send over the requested documents as soon as possible, and he noted that State Starlite provided him with a knee brace at yesterday's appointment.",
+      "valid_at": "2024-10-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client who made initial contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "provided knee brace at appointment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-10-11",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nClient Contacted today to give update #cc",
+      "natural_language": "This note concerns the case Malcom-Glass-Jones-MVA-10-2-2024 for the client Malcom Glass Jones.\n\nToday, the client was contacted to provide an update, and the contact is recorded under update code #cc.",
+      "valid_at": "2024-10-11T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client contacted / subject of update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-12",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-10-12 \n__From Number:__ +18128328198 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. The client involved is Malcom Glass Jones.\n\nOn October 12, 2024, an inbound text message was recorded in the case file. The message originated from the number +18128328198 and was sent to +15023655788. The direction of the message was inbound, and the content of the message is not provided in the note.",
+      "valid_at": "2024-10-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": []
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-10-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Fwd: New Text Message from Malcom Glass-Jones on 10/12/2024 5:13 PM__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Malcom Glass-Jones - Filevine Project Email Address [MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com](mailto:MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Oct 14 2024 08:11:20 GMT-04:00\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Sat, Oct 12, 2024 at 5:13?PM\nSubject: New Text Message from Malcom Glass-Jones on 10/12/2024 5:13 PM\nTo: Aries Penaflor \n\n[image: Logo] [image: Logo]\n[image: Logo] Text Message\n------------------------------\n\nDear Aries Penaflor,\n\nYou have a new text message:\n*From:* Malcom Glass-Jones\n*To:* Aries Penaflor\n*Received:* Saturday, October 12, 2024 at 5:13 PM\n*Attachment:* 4 images\nTo reply using the RingCentral app\n.",
+      "natural_language": "For case Malcom-Glass-Jones-MVA-10-2-2024, the client is Malcom Glass Jones. On Saturday, October 12, 2024 at 5:13 PM, Malcom Glass-Jones sent a new text message to Aries Penaflor. A RingCentral notification to Aries Penaflor indicated there was a new text message, noting that the message was from Malcom Glass-Jones to Aries Penaflor and that there were four image attachments; the notification also advised replying using the RingCentral app.\n\nOn Monday, October 14, 2024 at 08:11:20 AM GMT-04:00, Aries Penaflor forwarded the notification to Malcom Glass Jones\u2019s Filevine project email address, MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com, with the subject line \u201cForward: New Text Message from Malcom Glass-Jones on 10/12/2024 5:13 PM.\u201d The forward email was sent from Aries Penaflor (aries@whaleylawfirm.com) to the Malcom Glass-Jones Filevine project address.\n\nThe forwarded item includes the original RingCentral message content, which begins with: \u201cDear Aries Penaflor, You have a new text message: From: Malcom Glass-Jones To: Aries Penaflor Received: Saturday, October 12, 2024 at 5:13 PM Attachment: 4 images To reply using the RingCentral app.\u201d",
+      "valid_at": "2024-10-14T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "originator of text message / case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "forwarder of RingCentral notification to case project email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "employer of sender (Aries Penaflor)"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "RingCentral",
+            "relevance": "source of the text message notification"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "recipient project system (project email address)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-10-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__080554562__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [Jason.Wiseman@kyfb.com](mailto:Jason.Wiseman@kyfb.com)\nDate: Mon Oct 14 2024 08:49:10 GMT-04:00\n\nHi Jason,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024 pertains to a motor vehicle accident matter for client Malcom Glass Jones, with internal file number 080554562.\n\nOn October 14, 2024, at 08:49:10 GMT-04:00, Aries Penaflor of Whaley Law Firm sent an email from aries@whaleylawfirm.com to Jason Wiseman at Jason.Wiseman@kyfb.com. The body of the message read, \u201cHi Jason, Please see attached file.\u201d The email was signed by Aries Paul Pe\u00f1aflor with Whaley Law Firm, including contact information: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-10-14T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "email sender firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "email recipient organization (kyfb.com)"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "insurer's BI claim likely subject of correspondence"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-10-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__8055562__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Pat Hargadon [pat.hargadon@kyfb.com](mailto:pat.hargadon@kyfb.com)\nDate: Mon Oct 14 2024 09:18:39 GMT-04:00\n\nHi Pat,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones, with internal file number 8055562.\n\nOn Monday, October 14, 2024, at 9:18:39 AM GMT-04:00, an email was sent from Aries Penaflor (aries@whaleylawfirm.com) of Whaley Law Firm to Pat Hargadon (pat.hargadon@kyfb.com). The message to Pat read: \u201cHi Pat, Please see attached file.\u201d It was signed \u201cAll the best, Aries Paul Pe\u00f1aflor.\u201d The Whaley Law Firm contact details listed were Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-10-14T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Pat Hargadon",
+            "relevance": "recipient/contact at insurer"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "insurer associated with the recipient"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Kentucky Farm Bureau",
+            "relevance": "bodily injury claim associated with the adjuster/insurer"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-10-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__3753979__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Emily Friedrich [efriedrich@shelterinsurance.com](mailto:efriedrich@shelterinsurance.com)\nDate: Mon Oct 14 2024 09:21:28 GMT-04:00\n\nHi Emily,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. Client: Malcom Glass Jones. Internal file number: 3753979.\n\nOn October 14, 2024, at 09:21:28 GMT-04:00, an email was sent from Aries Penaflor of Whaley Law Firm to Emily Friedrich of Shelter Insurance. The sender\u2019s address was aries@whaleylawfirm.com and the recipient\u2019s address was efriedrich@shelterinsurance.com. The message began with \u201cHi Emily, Please see attached file.\u201d The email was signed with \u201cAll the best, Aries Paul Pe\u00f1aflor,\u201d and identified the sender as with Whaley Law Firm. Contact details included Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-10-14T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Friedrich",
+            "relevance": "email recipient / adjuster"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "recipient's employer"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP - Shelter Insurance",
+            "relevance": "claim likely referenced by recipient adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-10-16",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Open Record Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [5026334292@rcfax.com](mailto:5026334292@rcfax.com)\nDate: Wed Oct 16 2024 09:26:13 GMT-04:00\n\nGood day,\n\nWe need a copy of Body cam, 911 audio, and CAD report for this MVA.\n\nDOL: 10/2/2024\n\nAttached is the police report.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "This matter, Malcom-Glass-Jones-MVA-10-2-2024, concerns client Malcom Glass Jones in connection with a motor vehicle accident. The Date of Loss is October 2, 2024.\n\nOn October 16, 2024 at 09:26:13 AM Eastern Time, Aries Penaflor of Whaley Law Firm sent an Open Record Request from aries@whaleylawfirm.com to 5026334292@rcfax.com. The request seeks copies of the body-worn camera footage, the 911 audio, and the CAD report for this MVA, noting that the Date of Loss is 10/2/2024. The message indicates that the police report is attached and is signed by Aries Paul Pe\u00f1aflor of Whaley Law Firm, who can be reached at Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-10-16T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client involved in motor vehicle accident (Date of Loss 10/2/2024)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of Open Record Request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "author/signer of the Open Record Request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-10-16",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Fwd: Open Record Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [5026334292@rcfax.com](mailto:5026334292@rcfax.com)\nDate: Wed Oct 16 2024 09:33:11 GMT-04:00\n\nGood day,\n\nWe need a copy of Body cam, 911 audio, and CAD report for this MVA.\n\nDOL: 10/2/2024\n\nAttached is the police report.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. On Wednesday, October 16, 2024 at 09:33:11 GMT-04:00, a forwarded Open Record Request was sent from Aries Penaflor (aries@whaleylawfirm.com) of Whaley Law Firm to 5026334292@rcfax.com. The message, titled Fwd: Open Record Request, states: \u201cWe need a copy of Body cam, 911 audio, and CAD report for this MVA. DOL: 10/2/2024. Attached is the police report.\u201d The correspondence is signed with, \u201cAll the best, Aries Paul Pe\u00f1aflor, Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.\u201d",
+      "valid_at": "2024-10-16T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "named client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender of open records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-16",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ call went straight to VM. Left a message \n__Person Making Contact:__ Aries\n__Date & Time__: October 16 2024",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones.\n\nInitial client contact occurred on October 16, 2024. The call went straight to voicemail, and a message was left. The person making contact was Aries.",
+      "valid_at": "2024-10-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-10-16",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nClient Contacted today to give update #cc",
+      "natural_language": "The case Malcom-Glass-Jones-MVA-10-2-2024 concerns Malcom Glass Jones in connection with a motor vehicle accident.\n\nToday, the client Malcom Glass Jones was contacted to provide an update. The update was logged under code #cc.",
+      "valid_at": "2024-10-16T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-16",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2024-10-16 13:45:55.775000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. Client: Malcom Glass Jones.\n\nOn October 16, 2024, at 13:45:55.775000+00:00 (UTC), an outbound call was logged for this case, with Aries Penaflor noted as the person who placed the call. The record lists the caller information as follows: Caller Info 8128328198, Caller ID 812-832-8198, and Caller Name Malcom Glass-Jones. The Caller Email field is blank. A link to the Filevine contact is provided at [filevine-link].",
+      "valid_at": "2024-10-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-10-16",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Open Records Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [sheriff@shelbycoky.com](mailto:sheriff@shelbycoky.com)\nDate: Wed Oct 16 2024 10:06:03 GMT-04:00\n\nGood day,\n\nI'm Aries from the Whaley Law firm.\nWe need to get the information on how to send open records requests to\nShelbyville County Sheriff's Office.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "In the case Malcom-Glass-Jones-MVA-10-2-2024, involving client Malcom Glass Jones, an Open Records Request was logged. On October 16, 2024, at 10:06:03 AM (GMT-04:00), Aries Penaflor of the Whaley Law Firm sent an email to the Shelbyville County Sheriff\u2019s Office at sheriff@shelbycoky.com, with the message originating from aries@whaleylawfirm.com.\n\nThe email requested information on how to submit open records requests to the Shelbyville County Sheriff\u2019s Office. The body began with \u201cGood day,\u201d and stated, \u201cI\u2019m Aries from the Whaley Law firm. We need to get the information on how to send open records requests to Shelbyville County Sheriff\u2019s Office.\u201d It concluded with \u201cAll the best\u201d and was signed by Aries Paul Pe\u00f1aflor of the Whaley Law Firm. The firm\u2019s contact details are Ph: (502) 365-5788 and Fax: (502) 364-9363.",
+      "valid_at": "2024-10-16T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm for open records request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "individual who sent the email"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Shelbyville County Sheriff's Office",
+            "relevance": "recipient of open records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-11-18",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__AT0000003753979__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Emily Friedrich [EFriedrich@shelterinsurance.com](mailto:EFriedrich@shelterinsurance.com)\nDate: Mon Nov 18 2024 03:13:52 GMT-05:00\n\nHi,\n\nHere's the signed PIP application form for G'Asia Huffman and Malcom Glass.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. The client on this case is Malcom Glass Jones, and the file includes an internal reference number AT0000003753979.\n\nOn Monday, November 18, 2024, at 03:13:52 GMT-05:00, an email was sent from Aries Penaflor at Whaley Law Firm (aries@whaleylawfirm.com) to Emily Friedrich at Shelter Insurance (EFriedrich@shelterinsurance.com). The message reads: \u201cHi, Here's the signed PIP application form for G'Asia Huffman and Malcom Glass.\u201d It is signed by Aries Paul Pe\u00f1aflor, Whaley Law Firm, with contact details: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-11-18T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of the PIP application; client on the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender of the email; provided signed PIP application"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm of the email sender/attorney"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "recipient insurer of the signed PIP application"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Friedrich",
+            "relevance": "Shelter Insurance adjuster who received the PIP application"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Shelter Insurance (Adjuster: Emily Friedrich)",
+            "relevance": "PIP application/claim discussed in the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-02",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n@aries1 has the completed PIP app been submitted? client has completed treatment. Please request records/bills, updated health lien etc",
+      "natural_language": "Malcom Glass Jones is the client in the Malcom-Glass-Jones-MVA-10-2-2024 case, involving a motor vehicle accident on October 2, 2024.\n\nThe note asks whether the completed PIP application has been submitted and indicates that the client has completed treatment. It also requests records and bills and an updated health lien, along with other related documents.",
+      "valid_at": "2025-01-02T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client and subject of the case; completed treatment"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Shelter Insurance",
+            "relevance": "PIP application submission referenced"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "treatment provider; records and bills requested"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Health lien",
+            "relevance": "updated health lien requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nIt looks like there is no data for me to analyze.",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones. At present, there is no data available for analysis in this matter.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-29",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-01-29 18:34:44.071000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. Aries Penaflor logged an outbound call on January 29, 2025, at 18:34:44.071000+00:00 (UTC).\n\nThe call record lists Caller Info as 8128328198 and Caller ID as 812-832-8198. The Caller Name is Malcom Glass-Jones, and the Caller Email field is blank. A Link to Filevine Contact [filevine-link] is provided.",
+      "valid_at": "2025-01-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "caller / subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-29",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ Tried to call client and companion but both unreachable. Text message sent. \n__Person Making Contact:__ Aries\n__Date & Time__: January 29 2025",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones.\n\nOn January 29, 2025, Aries attempted to contact the client and the client's companion by phone, but both were unreachable. A text message was sent.",
+      "valid_at": "2025-01-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "attempted contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-29",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones in a motor vehicle accident matter. The client was contacted today to provide update #cc.",
+      "valid_at": "2025-01-29T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Hi Malcom, this is Aries from the Whaley Law Firm.\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "Initial client contact on January 29, 2025 regarding motor vehicle accident case Malcom-Glass-Jones-MVA-10-2-2024, for client Malcom Glass Jones.\n\nThat same day, Aries from the Whaley Law Firm sent an outbound text message to Malcom Glass Jones from phone number +15023655788 to +18128328198. The message read: \"Hi Malcom, this is Aries from the Whaley Law Firm.\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries",
+            "relevance": "person who sent outbound text"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender law firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Hey \n__Date and Time:__ 2025-01-29 \n__From Number:__ +18128328198 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones.\n\nOn January 29, 2025, an inbound text message was received from the client's number +18128328198 to the firm's number +15023655788. The message content was simply \"Hey.\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "sent inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ Called client, still went straight to VM. \n__Person Making Contact:__ Aries\n__Date & Time__: February 10 2025",
+      "natural_language": "Initial client contact on February 10, 2025 with Aries regarding the motor vehicle accident case Malcom-Glass-Jones-MVA-10-2-2024 for client Malcom Glass Jones. The contact attempt was a phone call to the client, but the call went straight to voicemail.",
+      "valid_at": "2025-02-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "contact attempt (voicemail)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-02-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns Malcom Glass Jones in connection with a motor vehicle accident.\n\nThe client, Malcom Glass Jones, was contacted today to provide an update #cc.",
+      "valid_at": "2025-02-10T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-02-10 14:54:46.212000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact for the Malcom-Glass-Jones-MVA-10-2-2024 case was recorded on February 10, 2025, at 14:54:46.212000 UTC, when Aries Penaflor logged an outbound call. The call entry lists the caller name as Malcom Glass-Jones, with the phone number 812-832-8198 (Caller Info: 8128328198; Caller ID: 812-832-8198). No email address is provided for the caller. A link to the Filevine contact is included: [filevine-link].\n\nThe client associated with this case is Malcom Glass Jones, and the case reference is Malcom-Glass-Jones-MVA-10-2-2024. The entry notes an outbound call logged by Aries Penaflor, with the same contact details and Filevine link previously mentioned.",
+      "valid_at": "2025-02-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "caller / case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-02-10 14:54:44.621000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact on February 10, 2025, at 14:54:44.621 UTC was logged as an outbound call from Aries Penaflor in the Malcom-Glass-Jones-MVA-10-2-2024 case. The record lists the caller information as the phone number 812-832-8198, with a caller ID of 812-832-8198, and the caller name Malcom Glass-Jones. The caller email is not provided. A link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-02-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass-Jones",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-02-21",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__3753979__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Bethany Neal [claimsdocuments@shelterinsurance.com](mailto:claimsdocuments@shelterinsurance.com)\nDate: Fri Feb 21 2025 11:21:44 GMT-05:00\n\nHi,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. Client: Malcom Glass Jones. The file reference is 3753979. The case label includes the date component 10-2-2024, indicating this is related to a motor vehicle accident.\n\nOn Friday, February 21, 2025, at 11:21:44 GMT-05:00, Aries Penaflor of Whaley Law Firm (aries@whaleylawfirm.com) sent an email to Bethany Neal at Shelter Insurance's claims documents inbox (claimsdocuments@shelterinsurance.com). The body of the message stated: \"Hi, Please see attached file.\" The email was signed \"All the best, Aries Paul Pe\u00f1aflor\" and included the Whaley Law Firm contact details: Ph: (502)365-5788; Fax: (502)364-9363. The message indicated there was an attachment, though no file name was provided.",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender law firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "email recipient insurer (claims inbox)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-21",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__New Insurance Note:__ 02/21 Sent request for updated paylog\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Shelter Insurance\n__Written by:__ Aries \n #Inotes",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones.\n\nIn the new insurance note dated 02/21, a request for an updated paylog was sent. The insurance type is Personal Injury Protection (PIP), administered by Shelter Insurance. The note was written by Aries and is filed under the #Inotes entry.",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Shelter Insurance",
+            "relevance": "PIP claim referenced (request for updated paylog)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "administrator of the PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-02-21",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n@aries1 Has completed PIP app been returned? if so, get an updated ledger",
+      "natural_language": "This case, Malcom-Glass-Jones-MVA-10-2-2024, involves client Malcom Glass Jones. A note addressed to @aries1 asks whether the completed PIP app has been returned; if it has, an updated ledger should be retrieved.",
+      "valid_at": "2025-02-21T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Shelter Insurance (Adjuster: Emily Friedrich)",
+            "relevance": "inquiry about completed PIP application and updated ledger"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-02-24",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Fwd: Your Client: Malcom Glass-Jones. Claim: AT3753979 (Email ID: P3933875)__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Malcom Glass-Jones - Filevine Project Email Address [MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com](mailto:MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Feb 24 2025 04:48:19 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Shelter Insurance Claims <\nShelterInsuranceDONOTREPLY@shelterinsurance.com>\nDate: Mon, Feb 24, 2025 at 4:46?PM\nSubject: Your Client: Malcom Glass-Jones. Claim: AT3753979 (Email ID:\nP3933875)\nTo: \n\n_faxID=3933875_system=STREAM_environment=null#\nTo: aries@whaleylawfirm.com\nFrom: \"Shelter Insurance Claims\"\n*Message:* Hi Aries, Attached is the current PIP payment log for Malcom\nGlass-Jones. Thank you, Emily Friedrich Medical Claims Adjuster Phone:\n(573) 214-4227 Fax: (888) 742-5671 Email: EFriedrich@shelterinsurance.com\nMailing: PO Box 6008 Columbia, MO 65205\n\nDo not reply to this email. This mailbox is not monitored.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. Client: Malcom Glass Jones.\n\nOn February 24, 2025, at 04:48:19 PM GMT-05:00, an email chain was started in which Aries Penaflor of the Whaley Law Firm forwarded to Malcom Glass-Jones\u2019s Filevine project email address MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com an item with the subject: \u201cYour Client: Malcom Glass-Jones. Claim: AT3753979 (Email ID: P3933875).\u201d This was a continuation of a message originally from Shelter Insurance Claims.\n\nThe forwarded message from Shelter Insurance Claims (addressed to aries@whaleylawfirm.com) is dated February 24, 2025, at approximately 4:46 PM (the header shows 4:46?PM). Its subject is \u201cYour Client: Malcom Glass-Jones. Claim: AT3753979 (Email ID: P3933875).\u201d The message includes a line indicating a To field with \u201c_faxID=3933875_system=STREAM_environment=null#\u201d and another To line for aries@whaleylawfirm.com. The body of the Shelter email reads: \u201cHi Aries, Attached is the current PIP payment log for Malcom Glass-Jones.\u201d The message is from Emily Friedrich, Medical Claims Adjuster, and her contact details are provided: phone (573) 214-4227; fax (888) 742-5671; email EFriedrich@shelterinsurance.com; mailing address PO Box 6008, Columbia, MO 65205. The email includes the instruction: \u201cDo not reply to this email. This mailbox is not monitored.\u201d\n\nThe chain concludes with the signature block: \u201cAll the best, Aries Paul Pe\u00f1aflor, Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.\u201d",
+      "valid_at": "2025-02-24T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass-Jones",
+            "relevance": "client named in the email / subject of the claim"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "sender of the email containing the PIP payment log"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Friedrich",
+            "relevance": "medical claims adjuster who authored the Shelter Insurance email"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP AT3753979",
+            "relevance": "PIP payment log / claim discussed in the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "Whaley Law Firm attorney who forwarded the message"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm associated with the forwarding attorney"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-27",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-02-27 20:18:19.185000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This is the Malcom-Glass-Jones-MVA-10-2-2024 case involving client Malcom Glass Jones. On February 27, 2025, at 8:18:19 PM UTC, a call from Aries Penaflor was logged as an outbound call. The log lists Caller Info as 8128328198 and Caller ID as 812-832-8198, with the Caller Name shown as Malcom Glass-Jones. The Caller Email field is blank. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-02-27T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-02-27",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nMailed contact letter",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones in relation to a motor vehicle accident on 10-2-2024. A mailed contact letter was sent to the client.",
+      "valid_at": "2025-02-27T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of case; recipient of mailed contact letter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-03-04 14:22:16.064000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns Malcom Glass Jones in a motor vehicle accident matter. A recent call related to this case was logged on March 4, 2025 at 14:22:16.064000 UTC, originating from Aries Penaflor. The log identifies the call as an outbound contact.\n\nCaller details show the number 8128328198, with a caller ID of 812-832-8198. The caller name is listed as Malcom Glass-Jones, and no email address was provided. A link to the corresponding Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass-Jones",
+            "relevance": "subject of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-03-04 14:23:41.476000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 documents the client Malcom Glass Jones. On March 4, 2025, at 14:23:41.476000+00:00 (UTC), an outbound call was logged from Aries Penaflor.\n\nThe record lists Caller Info as 8128328198 and Caller ID as 812-832-8198. The Caller Name is Malcom Glass-Jones, and the Caller Email field is empty. A link to the Filevine Contact is provided: [filevine-link].",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call client, no response. Contact letter sent. \n__Person Making Contact:__ Aries\n__Date & Time__: March 04 2025",
+      "natural_language": "Initial client contact on March 4, 2025 with Malcom Glass Jones regarding motor vehicle accident Malcom-Glass-Jones-MVA-10-2-2024. Aries attempted to contact the client by phone, but there was no response. A contact letter was subsequently sent to Malcom Glass Jones.",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "initial client contact; attempted phone contact and contact letter sent"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-04",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. The client was contacted today to provide an update for the motor vehicle accident case, with the update coded as #cc.",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for Aries Penaflor was logged at 2025-03-04 14:33:19.627000+00:00 . #missedcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Initial client contact for the Malcom-Glass-Jones-MVA-10-2-2024 case was logged as a missed call for Aries Penaflor on March 4, 2025 at 14:33:19.627000+00:00 (UTC). The entry is tagged with #missedcall. The caller was Malcom Glass-Jones, calling from phone number 812-832-8198 (Caller Info: 8128328198; Caller ID: 812-832-8198). The caller's email address is not on file. A Filevine contact link is available: [filevine-link]. There is no voicemail transcription attached to this entry.",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass-Jones",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-03-04",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n@aries1 attempt to reach out to client again, if no response send contact letter",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. The note directs @aries1 to attempt to reach out to the client again; if there is no response, a contact letter should be sent.",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-13",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-03-13 14:31:23.737000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. On March 13, 2025, at 14:31:23.737000+00:00 UTC, Aries Penaflor logged an outbound call related to this case.\n\nThe log shows the call was to Malcom Glass-Jones, with the listed phone number 812-832-8198 (Caller Info: 8128328198) and the Caller ID 812-832-8198. The Caller Name field records Malcom Glass-Jones, and the Caller Email field is empty. A Filevine contact link is available: [filevine-link].",
+      "valid_at": "2025-03-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-13",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ Client is still unreachable. \n__Person Making Contact:__ Aries\n__Date & Time__: March 13 2025",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. On March 13, 2025, Aries attempted to contact Malcom Glass Jones regarding the motor vehicle accident associated with this case; however, the client remains unreachable.",
+      "valid_at": "2025-03-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "attempted contact; unreachable"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-13",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nClient Contacted today to give update #cc",
+      "natural_language": "On October 2, 2024, the client Malcom Glass Jones was contacted to provide an update in the Malcom-Glass-Jones-MVA-10-2-2024 motor vehicle accident case, with update code #cc.",
+      "valid_at": "2025-03-13T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "contacted for case update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-13",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n2nd Contact Letter sent",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones in a motor vehicle accident matter. A second contact letter has been sent.",
+      "valid_at": "2025-03-13T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-13",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for Aries Penaflor was logged at 2025-03-13 19:05:15.940000+00:00 . #missedcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "On March 13, 2025, at 19:05:15.940000+00:00 (UTC), a missed call associated with Aries Penaflor was logged for the case Malcom-Glass-Jones-MVA-10-2-2024. The call originated from Malcom Glass-Jones, using phone number (812) 832-8198, with the caller ID also showing 812-832-8198.\n\nThe caller name on record is Malcom Glass-Jones, while the client on file is Malcom Glass Jones. No email was provided for this entry. A Filevine contact link is available here: [filevine-link]. There is no voicemail transcription attached to this entry.",
+      "valid_at": "2025-03-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "caller / subject of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-13",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for Aries Penaflor was logged at 2025-03-13 19:10:20.338000+00:00 . #missedcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "This is the Malcom-Glass-Jones-MVA-10-2-2024 case, involving client Malcom Glass Jones in a motor vehicle accident matter.\n\nOn March 13, 2025, at 19:10:20.338000+00:00 UTC, a missed call intended for Aries Penaflor was logged, labeled with the hashtag #missedcall. The call originated from the number 8128328198, with the caller ID displayed as 812-832-8198, and the caller name listed as Malcom Glass-Jones. The caller email field is empty, indicating no email address was provided. A link to the Filevine contact is available at [filevine-link].\n\nVoicemail Transcription: There is a Voicemail Transcription field present, but no transcription text is provided.",
+      "valid_at": "2025-03-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "caller / subject of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ Missed a call from client yesterday, spoke with him now. He hangs up when he heard that I'm calling about the MVA. Sees like he's no longer interested on pursuing the case. \n__Person Making Contact:__ Aries\n__Date & Time__: March 14 2025",
+      "natural_language": "Initial client contact on March 14, 2025 with Malcom Glass Jones regarding the motor vehicle accident case MVA-10-2-2024. The client had missed a call yesterday; I spoke with him today. He hung up when he heard that I was calling about the MVA, and it appears that he is no longer interested in pursuing the case. Aries was the person making contact.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of contact; indicates no longer interested in pursuing case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-03-14 13:45:35.921000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Initial client contact on March 14, 2025 at 1:45 PM UTC, when an outbound call was logged by Aries Penaflor in relation to the Malcom-Glass-Jones-MVA-10-2-2024 motor vehicle accident case (October 2, 2024).\n\nThe record shows the client as Malcom Glass Jones, with the caller name listed as Malcom Glass-Jones and the contact number 812-832-8198 (caller ID 812-832-8198). The email field is blank, i.e., no email on file. A Filevine contact link is available: [filevine-link].",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client contacted / subject of record"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. The client was contacted today to provide update #cc.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Medical Records and Billing Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Starlite Chiropractic [StarliteInjuryCare963@outlook.com](mailto:StarliteInjuryCare963@outlook.com)\nDate: Fri Mar 14 2025 11:06:21 GMT-04:00\n\nHi Starlite.\n\nMay we know if our client Malcom Glass-Jones is already done with his\ntreatment?\nDOB: 03/14/2006\nIf you need more information please let us know.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones. In a medical records and billing request, on March 14, 2025 at 11:06:21 AM (GMT-04:00), Aries Penaflor of Whaley Law Firm sent an email to Starlite Chiropractic (StarliteInjuryCare963@outlook.com) requesting information about whether their client had completed treatment. The message asks, \u201cMay we know if our client Malcom Glass-Jones is already done with his treatment?\u201d The client\u2019s date of birth is 03/14/2006. The email ends with the sign-off \u201cAll the best, Aries Paul Pe\u00f1aflor\u201d from Whaley Law Firm, and provides contact details: Ph: (502)365-5788; Fax: (502)364-9363. The sender\u2019s email address is aries@whaleylawfirm.com.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client referenced / subject of records request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "recipient of medical records and billing request; treatment provider"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "author/sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Hi Malcom, this is Aries from the Whaley Law Firm. Tried to call you yesterday and earlier today to check your treatment status with Starlite.\n__Date and Time:__ 2025-03-14 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. Client: Malcom Glass Jones.\n\nOn March 14, 2025, an outbound text message was sent from Aries at the Whaley Law Firm from phone number +15023655788 to Malcom Glass Jones at +18128328198. The message read: \"Hi Malcom, this is Aries from the Whaley Law Firm. Tried to call you yesterday and earlier today to check your treatment status with Starlite.\"",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "recipient of message"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of message"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "treatment provider mentioned"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-14",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Do you still want us to represent you in this case?\n__Date and Time:__ 2025-03-14 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "Initial client contact on March 14, 2025 with Malcom Glass Jones regarding the motor vehicle accident case Malcom-Glass-Jones-MVA-10-2-2024. This contact was an outbound text message from the firm number +15023655788 to the client number +18128328198, containing the message: \"Do you still want us to represent you in this case?\"",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "recipient of outbound text message / client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-03-17",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nas of 3/17 all docs have been downloaded and saved to Google Drive",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones in a motor vehicle accident matter.\n\nAs of March 17, all documents related to the case have been downloaded and saved to Google Drive.",
+      "valid_at": "2025-03-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-21",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for Aries Penaflor was logged at 2025-03-21 16:49:07.320000+00:00 . #missedcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "This case note concerns Malcom Glass Jones in the matter labeled Malcom-Glass-Jones-MVA-10-2-2024, involving a motor vehicle accident dated October 2, 2024.\n\nOn March 21, 2025, at 16:49:07.320000+00:00 (UTC), a missed call for Aries Penaflor was logged. The caller information lists the phone number 812-832-8198, and the caller ID matches at 812-832-8198, with the caller name recorded as Malcom Glass-Jones. The caller email field is blank. There is a link to the Filevine contact: [filevine-link]. The Voicemail Transcription field is present but contains no transcription, indicating that no voicemail text was provided. This entry is tagged #missedcall.",
+      "valid_at": "2025-03-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass-Jones",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-21",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for Aries Penaflor was logged at 2025-03-21 16:49:18.237000+00:00 . #missedcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. Client: Malcom Glass Jones.\n\nOn March 21, 2025 at 16:49:18.237000 UTC, a missed call for Aries Penaflor was logged in the records for this case. The caller was Malcom Glass-Jones, using the phone number 812-832-8198 (caller ID 812-832-8198). The Caller Email field is blank, and there is no voicemail transcription provided in the note. A link to the Filevine contact is included: [filevine-link].",
+      "valid_at": "2025-03-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-21",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from Aries Penaflor was logged at 2025-03-21 16:48:37.042000+00:00 . #outboundcall\n\nCaller Info: 8128328198 \n\nCaller ID: 812-832-8198 \n\nCaller Name: Malcom Glass-Jones \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. On March 21, 2025, at 16:48:37.042000 UTC, an outbound call from Aries Penaflor was logged in connection with this case.\n\nThe record lists the Caller Info as 8128328198 and the Caller ID as 812-832-8198. The Caller Name is listed as Malcom Glass-Jones, and the Caller Email field is blank. A Filevine contact link is provided: [filevine-link].",
+      "valid_at": "2025-03-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-21",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Do you still want us to represent you in this case?\n__Date and Time:__ 2025-03-21 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "This note concerns the case Malcom-Glass-Jones-MVA-10-2-2024, involving client Malcom Glass Jones in a motor vehicle accident matter identified by the MVA code. The client is Malcom Glass Jones, and the case is associated with a motor vehicle accident dated October 2, 2024.\n\nOn March 21, 2025, the office sent an outbound text message to the client asking, \"Do you still want us to represent you in this case?\" The message was sent from phone number +15023655788 to phone number +18128328198.",
+      "valid_at": "2025-03-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of case and recipient of outbound message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-21",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Text Message__\n__Message:__ Hi Malcom, this is Aries from the Whaley Law Firm.\n__Date and Time:__ 2025-03-21 \n__From Number:__ +15023655788 \n__To Number:__ +18128328198\n__Direction:__ Outbound",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. Client: Malcom Glass Jones. The case involves client Malcom Glass Jones in a motor vehicle accident matter.\n\nOn March 21, 2025, Aries from the Whaley Law Firm sent an outbound text message from the firm\u2019s number +15023655788 to the recipient at +18128328198, addressing Malcom Glass Jones. The message read: \"Hi Malcom, this is Aries from the Whaley Law Firm.\"",
+      "valid_at": "2025-03-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "recipient of text / subject of case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries",
+            "relevance": "sender of outbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-26",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nAll documents moved to GDrive.",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones. All documents related to the case have been moved to GDrive.",
+      "valid_at": "2025-03-26T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-04-28",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nShelter called, they have a BI claim open and sending adj contact info",
+      "natural_language": "Initial client contact on October 2, 2024 with Malcom Glass Jones regarding a motor vehicle accident (MVA). The shelter called to report that there is an open bodily injury (BI) claim and that they are sending the adjuster\u2019s contact information.",
+      "valid_at": "2025-04-28T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Shelter Insurance BI claim",
+            "relevance": "open bodily injury claim reported by Shelter"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Cole Barnes",
+            "relevance": "Shelter adjuster whose contact info was to be sent"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-06-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nShelter is accepting 100% liability against G'Asia Huffman. We can make a claim against G'Asia for Malcom",
+      "natural_language": "This case, Malcom-Glass-Jones-MVA-10-2-2024, concerns client Malcom Glass Jones in relation to a motor vehicle accident that occurred on October 2, 2024.\n\nShelter is accepting 100% liability against G'Asia Huffman. We can make a claim against G'Asia Huffman on Malcom's behalf.",
+      "valid_at": "2025-06-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "injured party / subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "accepting 100% liability"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim: Shelter Insurance",
+            "relevance": "coverage/claim related to liability"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "G'Asia Huffman",
+            "relevance": "alleged at-fault party / claim target"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-06-10",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nMalcom, It's the Whaley Law Firm. Just wanted to confirm you have received no other treatment so we can move forward with your claim",
+      "natural_language": "In the Malcom-Glass-Jones-MVA-10-2-2024 case, the client is Malcom Glass Jones. On October 2, 2024, the Whaley Law Firm contacted Malcom to confirm that he had received no other treatment, so they could move forward with his motor vehicle accident claim. The message from the firm stated: \"Malcom, It's the Whaley Law Firm. Just wanted to confirm you have received no other treatment so we can move forward with your claim.\"",
+      "valid_at": "2025-06-10T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of message / contacting client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-06-27",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__Malcolm Glass-Jones__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Starlite Chiropractic [lgsweasy@gmail.com](mailto:lgsweasy@gmail.com), Starlite Chiropractic [StarliteInjuryCare963@outlook.com](mailto:StarliteInjuryCare963@outlook.com), Muhammad Alif MVA 12/09/2022 - Filevine Project Email Address [starliteinjurycarelouisville@outlook.com](mailto:starliteinjurycarelouisville@outlook.com), Muhammad Alif MVA 12/09/2022 - Filevine Project Email Address [stimulus110@yahoo.com](mailto:stimulus110@yahoo.com)\nCc: Malcom Glass-Jones - Filevine Project Email Address [MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com](mailto:MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Jun 27 2025 01:40:30 GMT-04:00\n\nPlease forward all records and bills asap.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones.\n\nOn Friday, June 27, 2025, at 01:40:30 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email regarding this case. The message, from agwhaley@whaleylawfirm.com, was addressed to Starlite Chiropractic at lgsweasy@gmail.com and to Starlite Chiropractic at StarliteInjuryCare963@outlook.com, as well as to Muhammad Alif MVA 12/09/2022 \u2013 Filevine Project Email Address starliteinjurycarelouisville@outlook.com and stimulus110@yahoo.com. The email was CC\u2019d to Malcom Glass-Jones at Filevine Project Email Address MalcomGlassJojnesMVAZ4781693@louisvilleaccidentlawyer.filevineapp.com. The body of the message stated: \u201cPlease forward all records and bills asap.\u201d The communication was signed by Aaron Whaley of the Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, with phone number 502-583-4022.",
+      "valid_at": "2025-06-27T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client; CC'd on the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of the email requesting records and bills"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "author/sender of the email"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "recipient of records/bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-16",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\n__CLIENT CONTACT__\n__Details:__ attempted to call client about offer, goes to vm mailbox full unable to leave a vm \n__Person Making Contact:__ Justin\n__Date & Time__: July 16 2025",
+      "natural_language": "Initial client contact on July 16, 2025 in the Malcom-Glass-Jones-MVA-10-2-2024 matter, with Justin attempting to reach the client, Malcom Glass Jones, regarding an offer. The call went to voicemail because the mailbox was full, and no voicemail could be left.",
+      "valid_at": "2025-07-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of call; attempted contact regarding an offer"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nFinal case resolution and settlement distribution planning.",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 concerns client Malcom Glass Jones. This note documents the final phase of the matter, namely final case resolution and settlement distribution planning.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nInsurance negotiations and settlement discussions progress.",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones.\n\nThe matter concerns a motor vehicle accident, and the current focus is on insurance negotiations and settlement discussions, with progress in those discussions noted.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nCase progression review and medical treatment evaluation.",
+      "natural_language": "The case file Malcom-Glass-Jones-MVA-10-2-2024 concerns the client Malcom Glass Jones. This document provides a progression review of the case and an evaluation of the medical treatment that has been provided.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nSettlement negotiations and case progression monitoring.",
+      "natural_language": "This case, Malcom-Glass-Jones-MVA-10-2-2024, involves client Malcom Glass Jones in a motor vehicle accident matter dated October 2, 2024.\n\nThe work at present consists of settlement negotiations and ongoing monitoring of the case progression.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nMedical treatment evaluation and insurance claim management.",
+      "natural_language": "Malcom Glass Jones is the client in the case Malcom-Glass-Jones-MVA-10-2-2024. The engagement centers on medical treatment evaluation and insurance claim management related to a motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nOctober 2, 2024 motor vehicle accident case review.",
+      "natural_language": "On October 2, 2024, a motor vehicle accident case review was conducted for client Malcom Glass Jones.\n\nThis matter is identified by the case name Malcom-Glass-Jones-MVA-10-2-2024.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of case review"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Agent for Malcom-Glass-Jones-MVA-10-2-2024 - 2025-09-12",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nCase overview completed. Updated all memory blocks with current case information including client demographics, treatment status, insurance details, and negotiation phase status. Key findings: Settlement offer pending but client has been unresponsive since March 2025. Case status and summary updated in system.",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. The client is Malcom Glass Jones, and the case involves a motor vehicle accident. The case overview has been completed. All memory blocks have been updated with current case information, including the client\u2019s demographics, treatment status, insurance details, and the status of the negotiation phase. The key findings are that a settlement offer is pending, but the client has been unresponsive since March 2025. The case status and summary have been updated in the system to reflect these changes.",
+      "valid_at": "2025-09-12T00:00:00",
+      "author": "Agent for Malcom-Glass-Jones-MVA-10-2-2024",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "named client; subject of the case; unresponsive since March 2025; central to pending settlement negotiation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-15",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for Aries Penaflor was logged at 2025-09-15 18:44:56.822000+00:00 . #missedcall\n\nCaller Info: 8592603480 \n\nCaller ID: 859-260-3480 \n\nCaller Name: Cole Barnes \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones. A missed call intended for Aries Penaflor was logged on September 15, 2025 at 18:44:56.822000+00:00 (UTC), and the entry is tagged as #missedcall.\n\nThe call originated from phone number 8592603480, with caller ID listed as 859-260-3480, and the caller was identified as Cole Barnes. The record does not include a caller email address. A link to the Filevine contact is provided: [filevine-link]. Voicemail transcription was not provided.",
+      "valid_at": "2025-09-15T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client mentioned"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Cole Barnes",
+            "relevance": "caller / person identified on call"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "insurer associated with caller"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim - Shelter Insurance",
+            "relevance": "insurance claim likely referenced by caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-15",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for aaron whaley was logged at 2025-09-15 18:44:10.612000+00:00 . #missedcall\n\nCaller Info: 8592603480 \n\nCaller ID: 859-260-3480 \n\nCaller Name: Cole Barnes \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "In the case Malcom-Glass-Jones-MVA-10-2-2024, involving client Malcom Glass Jones, a missed call related to Aaron Whaley was logged on September 15, 2025 at 18:44:10.612000+00:00 (UTC). The call is tagged as #missedcall.\n\nThe caller was Cole Barnes, reachable at 859-260-3480 (raw digits 8592603480). The caller ID shown is 859-260-3480. The caller\u2019s email address was not provided.\n\nA link to the corresponding Filevine contact is available here: [filevine-link].\n\nVoicemail transcription: not provided.",
+      "valid_at": "2025-09-15T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "client named in case"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Cole Barnes",
+            "relevance": "caller/adjuster"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "insurer associated with caller"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Shelter Insurance BIClaim",
+            "relevance": "claim related to the missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-15",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for Aries Penaflor was logged at 2025-09-15 18:43:19.801000+00:00 . #missedcall\n\nCaller Info: 8592603480 \n\nCaller ID: 859-260-3480 \n\nCaller Name: Cole Barnes \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024. Client: Malcom Glass Jones. On September 15, 2025 at 18:43:19.801000+00:00 (UTC), a missed call for Aries Penaflor was logged.\n\nCaller information lists the phone number 859-260-3480, with the same caller ID of 859-260-3480. The caller was identified as Cole Barnes. The caller's email is not provided. A link to the Filevine contact is available at [filevine-link]. The Voicemail Transcription section is present, but no transcription content is included in this record.",
+      "valid_at": "2025-09-15T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Cole Barnes",
+            "relevance": "person who called / caller identified"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "adjuster's employer / insurer involved"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-15",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from aaron whaley was logged at 2025-09-15 18:49:30.236000+00:00 . #outboundcall\n\nCaller Info: 8592603480 \n\nCaller ID: 859-260-3480 \n\nCaller Name: Cole Barnes \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones.\n\nAn outbound call from Aaron Whaley was logged on 2025-09-15 18:49:30.236000+00:00. The caller was Cole Barnes, reachable at 8592603480 with a caller ID of 859-260-3480. The caller's email is not on file. A link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-09-15T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Cole Barnes",
+            "relevance": "person contacted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "insurer of adjuster contacted"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim: Shelter Insurance",
+            "relevance": "claim associated with insurer contacted"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-15",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA missed call for aaron whaley was logged at 2025-09-15 18:45:31.332000+00:00 . #missedcall\n\nCaller Info: 8592603480 \n\nCaller ID: 859-260-3480 \n\nCaller Name: Cole Barnes \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Aaron, this is called over at Shelter Insurance. Returning your voicemail on Malcolm Jones. Our claim number for references a as an Apple Teas and Tom 3753979. Feel free to give me a call back whenever it is convenient for you. Thanks and hope you are having a good day bye.",
+      "natural_language": "Case: Malcom-Glass-Jones-MVA-10-2-2024 for client Malcom Glass Jones. A missed call for Aaron Whaley was logged on 2025-09-15 18:45:31.332000+00:00 (UTC) with the tag #missedcall. Caller information shows the caller as Cole Barnes, with phone number 859-260-3480 (Caller Info: 8592603480; Caller ID: 859-260-3480). The caller email field is blank. A Filevine contact link is provided: [filevine-link].\n\nVoicemail Transcription: \"Aaron, this is called over at Shelter Insurance. Returning your voicemail on Malcolm Jones. Our claim number for references a as an Apple Teas and Tom 3753979. Feel free to give me a call back whenever it is convenient for you. Thanks and hope you are having a good day bye.\"",
+      "valid_at": "2025-09-15T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "subject of call"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "insurer referenced in voicemail"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Cole Barnes",
+            "relevance": "caller / adjuster contacting about claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Shelter Insurance Claim 3753979",
+            "relevance": "claim referenced in voicemail"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-09-15",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nA call from aaron whaley was logged at 2025-09-15 18:25:14.391000+00:00 . #outboundcall\n\nCaller Info: 8592603480 \n\nCaller ID: 859-260-3480 \n\nCaller Name: Cole Barnes \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones in relation to a motor vehicle accident.\n\nOn September 15, 2025, at 18:25:14.391000+00:00 (UTC), an outbound call from Aaron Whaley was logged. The phone number on file is 859-260-3480 (Caller Info: 8592603480), and the caller ID is 859-260-3480. The caller name listed is Cole Barnes, and the Caller Email field is blank. A link to the associated Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-09-15T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Cole Barnes",
+            "relevance": "caller / person contacted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "insurer associated with caller"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim: Shelter Insurance",
+            "relevance": "claim type associated with adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-09-16",
+      "original_body": "Case: Malcom-Glass-Jones-MVA-10-2-2024\nClient: Malcom Glass Jones\n\nFax to test fax (502) 357-9939 <small>Page Count:1</small>",
+      "natural_language": "Case Malcom-Glass-Jones-MVA-10-2-2024 involves client Malcom Glass Jones.\n\nA test fax was sent to the number (502) 357-9939, and the transmission consisted of one page.",
+      "valid_at": "2025-09-16T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Malcom Glass Jones",
+            "relevance": "case client"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

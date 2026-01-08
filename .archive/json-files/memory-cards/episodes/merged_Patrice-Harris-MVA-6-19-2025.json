@@ -1,0 +1,86 @@
+{
+  "case_name": "Patrice-Harris-MVA-6-19-2025",
+  "total_episodes": 3,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-06-23",
+      "original_body": "Case: Patrice-Harris-MVA-6-19-2025\nClient: Patrice Harris\n\nsent intake docs via vinesign",
+      "natural_language": "Case Patrice-Harris-MVA-6-19-2025 involves Patrice Harris in a motor vehicle accident matter. The initial client contact occurred on June 19, 2025, with Patrice Harris regarding the motor vehicle accident. Intake documents were sent via VineSign.",
+      "valid_at": "2025-06-23T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Patrice Harris",
+            "relevance": "initial client contact regarding motor vehicle accident"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "VineSign",
+            "relevance": "sent intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-23",
+      "original_body": "Case: Patrice-Harris-MVA-6-19-2025\nClient: Patrice Harris\n\n__CLIENT CONTACT__\n__Details:__ Patrice Harris\nDOB 5/21/85\nSSN: 402-27-5415\nPh: 502-337-4259\n\nNO EMS OR ER\n\nInjuries: neck pain, headaches, abdominal pain, left hip. \n\nDOA 6/19/2025\n\nDescription: Was hit on rear driver side while crossing main street. Client was on Clay St going south crossing Main St. light turned green and he was tboned\n\nLMPD\n25070128\n\nPIP KFB\n\n08065806 \n__Person Making Contact:__ Justin\n__Date & Time__: June 23 2025",
+      "natural_language": "Case Patrice-Harris-MVA-6-19-2025. Client: Patrice Harris. Initial client contact details: Patrice Harris, DOB 5/21/85, SSN 402-27-5415, Ph: 502-337-4259. There was no EMS or ER involvement. Injuries reported: neck pain, headaches, abdominal pain, and left hip. Date of accident (DOA): 6/19/2025. Description: Patrice Harris states he was hit on the rear driver-side while crossing Main Street. He was on Clay St going south, crossing Main St; the light turned green and he was t-boned.\n\nIdentifiers and contact: LMPD 25070128; PIP KFB; 08065806. Person making contact: Justin. Date & Time: June 23, 2025.",
+      "valid_at": "2025-06-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Patrice Harris",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "LMPD",
+            "relevance": "police report 25070128"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "KFB",
+            "relevance": "PIP insurer listed"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP 08065806",
+            "relevance": "PIP claim number associated with client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-06-24",
+      "original_body": "Case: Patrice-Harris-MVA-6-19-2025\nClient: Patrice Harris\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=2c46474e-4a44-4725-a214-4635dc882bb8.pdf\nSigned: 2025-06-24 18:02:09\nAll signers: Patrice Harris((502) 337-4259)\nSender: Justin Chumbley",
+      "natural_language": "This intake note documents Patrice Harris’s case Patrice-Harris-MVA-6-19-2025, relating to a motor vehicle accident. The intake document, named “intake,” was prepared and tied to VineSign as the signing process. The signed intake form is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=2c46474e-4a44-4725-a214-4635dc882bb8.pdf.\n\nThe VineSign completion timestamp is 2025-06-24 18:02:09. Patrice Harris is listed as the signer for this document, with the contact phone number (502) 337-4259. The document was sent by Justin Chumbley, and the VineSign status indicates that the process is completed.",
+      "valid_at": "2025-06-24T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Patrice Harris",
+            "relevance": "client and signer of intake"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

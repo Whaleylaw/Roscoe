@@ -1,0 +1,1874 @@
+[
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-07-18",
+    "summary": "sent intake docs via vinesign",
+    "entities": [],
+    "edges": [],
+    "author": "Justin Chumbley",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 9446
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-07-18",
+    "summary": "__CLIENT CONTACT__\n__Details:__ happened on Cane Run. no PD responded. client was told by driver that someone hit and ran, client was in back and couldn't see outside (shades were down on bus) \n\nwent ...",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "auto_copy",
+    "original_note_id": 9442
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-07-18",
+    "summary": "Client Contacted today to give update #cc",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 9441
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-07-18",
+    "summary": "__Abby Sitgraves (DOA: 07/13/2024)__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: [fred1178@gmail.com](mailto:fred1178@gmail.com), [fred@caalimo.com](mailto:fred@caal...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 9435
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-07-19",
+    "summary": "Abby, It's the Whaley Law Firm, Once you obtain the incident report you can send it here and it will save directly to your file",
+    "entities": [],
+    "edges": [],
+    "author": "Justin Chumbley",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 9445
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-07-24",
+    "summary": "ORR sent. Request for copy of civilian report.",
+    "entities": [],
+    "edges": [],
+    "author": "Jessa",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 9368
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-07-25",
+    "summary": "Enter New Client Information & Assign Case Manager",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 9447
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-07-29",
+    "summary": "#vinesign-completed\nName: Intake documents\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=29efd6a7-7434-43a1-a8d6-7cf312338a98.pdf\nSigned: 2024-07-30 02:10:11\nAll signers: Abby Sitgrave...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Justin Chumbley",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Justin Chumbley",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 9122
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-05",
+    "summary": "__CLIENT CONTACT__\n__Details:__ Appointment Orthopedic doctor tomorrow- UofL physician orthopedics (Brandy Hartley)\nAuto insurance-State Farm at the time of accident (coverage ended 21st of July) now ...",
+    "entities": [
+      {
+        "type": "Insurer",
+        "name": "State Farm",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "auto_copy",
+    "original_note_id": 8823
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-05",
+    "summary": "Two Week follow up with client initiated",
+    "entities": [],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 7504
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-05",
+    "summary": "Client Contacted today to give update #cc",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 7528
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-05",
+    "summary": "Hi Abby, this is Jessa from The Whaley Law Firm. I just spoke with you today, please send here the copy of your auto and health insurance front and back. Thanks.",
+    "entities": [],
+    "edges": [],
+    "author": "Jessa",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 7359
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-05",
+    "summary": "Contact Abby Sitgraves at 502-210-1388 and do Welcome Call and send Welcome Email(if able). \nConfirm treatment providers and enter any in system that have not been entered.",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 9380
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-19",
+    "summary": "Time to check in with client again",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 8626
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-19",
+    "summary": "__CLIENT CONTACT__\n__Details:__ Called client to confirm treatment status. Client said she's currently not treating because it looks like at fault has no insurance. She will get treatment as soon as w...",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "auto_copy",
+    "original_note_id": 8612
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-19",
+    "summary": "Two Week follow up with client initiated",
+    "entities": [],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 8610
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-19",
+    "summary": "Client Contacted today to give update #cc",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 8611
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-08-19",
+    "summary": "companion to Nayram Adadevoh",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Justin Chumbley",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 8587
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-02",
+    "summary": "Time to check in with client again",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 8202
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-02",
+    "summary": "__CLIENT CONTACT__\n__Details:__ Called client to confirm treatment status and all providers. No answer, left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: December 02 2024",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "auto_copy",
+    "original_note_id": 4430
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-02",
+    "summary": "Client Contacted today to give update #cc",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 5831
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-02",
+    "summary": "Two Week follow up with client initiated",
+    "entities": [],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 5830
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-03",
+    "summary": "__CLIENT CONTACT__\n__Details:__ Spoke with client to confirm treatment. She said there's no case since the other party did not provide insurance info. Advised client we will be filing suit.\nShe said s...",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "auto_copy",
+    "original_note_id": 5791
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-03",
+    "summary": "Client Contacted today to give update #cc",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 5790
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-04",
+    "summary": "Request for bills sent to UofL Physicians via ChartSwap",
+    "entities": [],
+    "edges": [],
+    "author": "Jessica Bottorff",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 5734
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-04",
+    "summary": "@aaronw @bryce3 Not getting a response from party bus company. No insurance info listed on Civilian report. Any suggestions?",
+    "entities": [
+      {
+        "type": "Attorney",
+        "name": "Aaronw",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Justin Chumbley",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 9166
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-06",
+    "summary": "__Injury Claims (07/13/2024)__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: [fred1178@gmail.com](mailto:fred1178@gmail.com)\nCc: Abby Sitgraves - Filevine Project Emai...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 8586
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-06",
+    "summary": "@jessa Please request health lien, make sure ER phy and radiologist is added and requested and verify with client we have all providers",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Justin Chumbley",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 5836
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-13",
+    "summary": "Per ChartSwap on UofL Physicians: \nProvider Note\n12/12/2024 12:17 PM\tCHARGES ARE NOT YET UPDATED IN THE SYSTEM FOR REQUESTED DOS",
+    "entities": [],
+    "edges": [],
+    "author": "Jessica Bottorff",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 5458
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-23",
+    "summary": "Time to check in with client again",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 5402
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-23",
+    "summary": "__CLIENT CONTACT__\n__Details:__ Called client, no answer. Left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: December 23 2024",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "auto_copy",
+    "original_note_id": 5182
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-23",
+    "summary": "Two Week follow up with client initiated",
+    "entities": [],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 5180
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-23",
+    "summary": "Client Contacted today to give update #cc",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 5181
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-26",
+    "summary": "Companion: Nayram Adadevoh (Limo Passenger)\n[filevine-link]",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 5145
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-26",
+    "summary": "Prior MVA 07/09/2023 - In Settlement - 2 Companions - Erica Sitgraves & Zieland Anderson\nInjuries: R arm, back pain\nNo ER\nTreatment: Synergy\nSettled: $9500.00",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 5140
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2024-12-26",
+    "summary": "Email from RingCentral [notify@ringcentral.com](mailto:notify. Subject: No subject",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 5173
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-06",
+    "summary": "Email from RingCentral [notify@ringcentral.com](mailto:notify. Subject: No subject",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 5100
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-06",
+    "summary": "Send Medical Record and Bill Requests for University of Louisville Physicians",
+    "entities": [
+      {
+        "type": "MedicalProvider",
+        "name": "University Of Louisville Physicians",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 5805
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-06",
+    "summary": "Phase Changed: Litigation",
+    "entities": [],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 4982
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-07",
+    "summary": "Send Medical Record and Bill Requests for Foundation Radiology",
+    "entities": [
+      {
+        "type": "MedicalProvider",
+        "name": "Foundation Radiology",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 5807
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-08",
+    "summary": "Draft & File Complaint & Disc Req PP Def",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 4984
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-08",
+    "summary": "__NEF, (for eFiler) JEFFERSON Circuit , SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9604953__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleylawfirm.com ,...",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Unknown",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 4857
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-08",
+    "summary": "Email from RingCentral [notify@ringcentral.com](mailto:notify. Subject: No subject",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 4985
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-08",
+    "summary": "Time to check in with client again",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 4943
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-08",
+    "summary": "Send Medical Record and Bill Requests for UofL Physicians Orthopedics",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 5837
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-08",
+    "summary": "Send Medical Record and Bill Requests for Jewish Hospital",
+    "entities": [
+      {
+        "type": "MedicalProvider",
+        "name": "Jewish Hospital",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 5838
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-09",
+    "summary": "__NCP (for eFiler) JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9604953__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleyla...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 4852
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-24",
+    "summary": "AI Summary:\nReviewing activity in Abby Sitgraves MVA 7/13/2024 between 12/25/2024 and 1/24/2025...\n\nThis case involves a multi-vehicle accident with Abby Sitgraves and companions as plaintiffs against...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Adjuster",
+        "name": "Unknown",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 4312
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-01-29",
+    "summary": "__NCP JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9762842__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleylawfirm.com , B...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 4198
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-05",
+    "summary": "__NEF, JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9815493__\nFrom: noreply@kycourts.net\nTo: AGWHALEY@whaleylawfirm.com , SARENA@whaleylawfirm.com , ...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 4016
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-05",
+    "summary": "__NCP JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9815493__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleylawfirm.com , B...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 4002
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-07",
+    "summary": "Check for Service - Issue Alias is not perfected\nIf Alias Issued - Reset 20 days out",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 4861
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-07",
+    "summary": "__NEF, (for eFiler) JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9847423__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleyl...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3949
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-07",
+    "summary": "__NCP (for eFiler) JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9847423__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleyla...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3948
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-10",
+    "summary": "__Certified Medical Records & Billing Request - Abby Sitgraves 12/13/1968__\nFrom: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nTo: \"UofL Health - Mary & Elizabeth Hospital...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Health",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3916
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-10",
+    "summary": "Good afternoon Abby,\n As we were reviewing your file, we noticed that we still have not received your private health insurance (PHI) cards. We need to get images of the front & back of any private hea...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3915
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-10",
+    "summary": "@stuttle Heading to Litigation - Review, Clean & Organize - Send Upd CRRs to All listed Providers",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 5143
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-10",
+    "summary": "New Lien added",
+    "entities": [],
+    "edges": [],
+    "author": "",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 3913
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-10",
+    "summary": "Fax to Key Benefits (317) 738-9540 <small>Page Count:2</small>",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3914
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-11",
+    "summary": "__Re: Certified Medical Records & Billing Request - Abby Sitgraves 12/13/1968__\nFrom: Gannon Middleton [connor.middleton@uoflhealth.org](mailto:connor.middleton@uoflhealth.org)\nTo: Sarena Tuttle [sare...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Health",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3908
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-18",
+    "summary": "__NEF, JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9911247__\nFrom: noreply@kycourts.net\nTo: AGWHALEY@whaleylawfirm.com , SARENA@whaleylawfirm.com , ...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3717
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-18",
+    "summary": "__NCP JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9911247__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleylawfirm.com , B...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3716
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-18",
+    "summary": "__NCP JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9912162__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleylawfirm.com , B...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3711
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-18",
+    "summary": "__NEF, JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 9912162__\nFrom: noreply@kycourts.net\nTo: AGWHALEY@whaleylawfirm.com , SARENA@whaleylawfirm.com , ...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 3715
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-02-18",
+    "summary": "Check for DC Answer to Complaint\nAdvise Attorney if not received",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 4201
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-12",
+    "summary": "Email from RingCentral [notify@ringcentral.com](mailto:notify. Subject: No subject",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 2887
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-13",
+    "summary": "__#SECURE# RECORDS__\nFrom: Nicola Greene [nicola.greene@uoflhealth.org](mailto:nicola.greene@uoflhealth.org)\nTo: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nCC: \nDate: Th...",
+    "entities": [
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 2841
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-25",
+    "summary": "__NEF, JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 10189385__\nFrom: noreply@kycourts.net\nTo: AGWHALEY@whaleylawfirm.com , SARENA@whaleylawfirm.com ,...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 2419
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-25",
+    "summary": "__NCP JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 10189385__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleylawfirm.com , ...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 2417
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-28",
+    "summary": "__Re: Abby Sitgraves, et al. v. Caal Worldwide, et al.__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: Sam Leffert [sleffert@bdblawky.com](mailto:sleffert@bdblawky.com...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 2263
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-28",
+    "summary": "__Re: Abby Sitgraves, et al. v. Caal Worldwide, et al.__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: Sam Leffert [sleffert@bdblawky.com](mailto:sleffert@bdblawky.com...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 2262
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-31",
+    "summary": "Followed up with Jewish re missing bills. Rep told me they were submitting a new request. If not received by 04/06/25, call and see what is up.",
+    "entities": [],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 2254
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-31",
+    "summary": "Email from [justin@whaleylawfirm.com](mailto:justin@whaleylaw. Subject: No subject",
+    "entities": [
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 2244
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-31",
+    "summary": "__Abby Sitgraves (Member ID: 891353082)__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: [bdavenport@erisasubro.com](mailto:bdavenport@erisasubro.com)\nCc: Abby Sitgrave...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 2243
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-03-31",
+    "summary": "Bryce Koon made outbound call to Key Benefit Administrators regarding case.",
+    "entities": [
+      {
+        "type": "LienHolder",
+        "name": "Key Benefit Administrators",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "outbound_call",
+    "original_note_id": 2238
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-04",
+    "summary": "Email from Sam Leffert [sleffert@bdblawky.com](mailto:sleffer. Subject: Re: Abby Sitgraves, et al. v. Caal Worldwide, et al.",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 2070
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-07",
+    "summary": "Email from Bryce Cotton [BCotton@bdblawky.com](mailto:BCotton. Subject: Re: Abby Sitgraves, et al. v. Caal Worldwide, et al.",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 2065
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-07",
+    "summary": "__Re: Abby Sitgraves (Member ID: 891353082)__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: [bdavenport@erisasubro.com](mailto:bdavenport@erisasubro.com)\nCc: Abby Sitg...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 2029
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-07",
+    "summary": "Email from [tclancy@erisasubro.com](mailto:tclancy@erisasubro. Subject: Re: Abby Sitgraves (Member ID: 891353082)",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 2018
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-08",
+    "summary": "Email from Sam Leffert [sleffert@bdblawky.com](mailto:sleffer. Subject: RE: Abby Sitgraves, et al. v. Caal Worldwide, et al.",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 2016
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-14",
+    "summary": "Email from Sam Leffert [sleffert@bdblawky.com](mailto:sleffer. Subject: RE: Abby Sitgraves, et al. v. Caal Worldwide, et al.",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 1945
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-15",
+    "summary": "__RE: Abby Sitgraves, et al. v. Caal Worldwide, et al.__\nFrom: Sam Leffert [sleffert@bdblawky.com](mailto:sleffert@bdblawky.com)\nTo: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 1917
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-15",
+    "summary": "Check for DC Resp to Disc Req PP Def",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 3698
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-21",
+    "summary": "Email from [rhardwick@erisasubro.com](mailto:rhardwick@erisas. Subject: No subject",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Health",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 1839
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-21",
+    "summary": "__Re: Abby Sitgraves matter__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: [rhardwick@erisasubro.com](mailto:rhardwick@erisasubro.com)\nCc: Abby Sitgraves - Filevine P...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Health",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 1838
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-28",
+    "summary": "Incoming Fax From (317) 738-9310 Page Count:2",
+    "entities": [],
+    "edges": [],
+    "author": "3177389310",
+    "author_type": "unknown",
+    "note_source": null,
+    "original_note_id": 1863
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-28",
+    "summary": "Send Medical Record and Bill Requests for UofL Physicians - Orthopedics",
+    "entities": [
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Physicians - Orthopedics",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 2024
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-04-28",
+    "summary": "Send Medical Record and Bill Requests for UofL Physicians - Primary Care",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "system_event",
+    "original_note_id": 2022
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-05",
+    "summary": "Bryce Koon made outbound call to UofL Physicians - Orthopedics regarding case.",
+    "entities": [
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Physicians - Orthopedics",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "outbound_call",
+    "original_note_id": 1476
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-05",
+    "summary": "Bryce Koon made outbound call to UofL Physicians - Orthopedics regarding case.",
+    "entities": [
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Physicians - Orthopedics",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "outbound_call",
+    "original_note_id": 1559
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-05",
+    "summary": "Bryce Koon made outbound call to UofL Physicians - Orthopedics regarding case.",
+    "entities": [
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Physicians - Orthopedics",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "outbound_call",
+    "original_note_id": 1558
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-05",
+    "summary": "Bryce Koon made outbound call to UofL Physicians - Orthopedics regarding case.",
+    "entities": [
+      {
+        "type": "MedicalProvider",
+        "name": "Uofl Physicians - Orthopedics",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "outbound_call",
+    "original_note_id": 1539
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-05",
+    "summary": "Email from RingCentral [notify@ringcentral.com](mailto:notify. Subject: No subject",
+    "entities": [],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 1556
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-06",
+    "summary": "__NEF, JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 10497446__\nFrom: noreply@kycourts.net\nTo: AGWHALEY@whaleylawfirm.com , SARENA@whaleylawfirm.com ,...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 1499
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-06",
+    "summary": "__NCP JEFFERSON Circuit 25-CI-000133, SITGRAVES, ABBY ET AL VS. CAAL WORLDWIDE, INC. ET AL Envelope # 10497446__\nFrom: noreply@kycourts.net\nTo: agwhaley@whaleylawfirm.com , Sarena@whaleylawfirm.com , ...",
+    "entities": [],
+    "edges": [],
+    "author": "Sarena Tuttle",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 1498
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-08",
+    "summary": "Voicemail received from Key Benefit Administrators. Message: \"Hi, Mr. Koon. My name is Amy Scott. I am calling from the law office of Bryan Davenport regarding your client Abbey sit Graves, we represent Abbey's health benefit plan through you L. And I am just tr...\"",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "LienHolder",
+        "name": "Key Benefit Administrators",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine Integration",
+    "author_type": "integration",
+    "note_source": "voicemail",
+    "original_note_id": 1413
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-09",
+    "summary": "__Sitgraves & Adadevoh v. CAAL Worldwide (Jefferson 25-CI-000133)__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: Bryce Cotton [BCotton@bdblawky.com](mailto:BCotton@bd...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Sarena Tuttle",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 1362
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-09",
+    "summary": "__Adadevoh, et al. v. CAAL Worldwide, et al. (Jefferson 25-CI-00133)__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: Sam Leffert [sleffert@bdblawky.com](mailto:sleffer...",
+    "entities": [
+      {
+        "type": "Client",
+        "name": "Abby Sitgraves",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Client",
+        "name": "Nayram Adadevoh",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 1350
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-09",
+    "summary": "Email from Bryce Cotton [BCotton@bdblawky.com](mailto:BCotton. Subject: No subject",
+    "entities": [
+      {
+        "type": "Adjuster",
+        "name": "Gi",
+        "role": null,
+        "attributes": {}
+      },
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Filevine System",
+    "author_type": "integration",
+    "note_source": "email",
+    "original_note_id": 1343
+  },
+  {
+    "card_type": "episode",
+    "case": "Abby-Sitgraves-MVA-7-13-2024",
+    "date": "2025-05-09",
+    "summary": "__Re: Adadevoh, et al. v. CAAL Worldwide, et al. (Jefferson 25-CI-00133)__\nFrom: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nTo: Bryce Cotton [BCotton@bdblawky.com](mailto:BCo...",
+    "entities": [
+      {
+        "type": "Staff",
+        "name": "Bryce Koon",
+        "role": null,
+        "attributes": {}
+      }
+    ],
+    "edges": [],
+    "author": "Bryce Koon",
+    "author_type": "staff",
+    "note_source": null,
+    "original_note_id": 1339
+  }
+]

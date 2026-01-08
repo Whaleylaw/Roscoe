@@ -1,0 +1,39 @@
+{
+  "case_name": "Jensen-Ott-MVA-8-06-2025",
+  "total_episodes": 1,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "AaronW - 2025-09-07",
+      "original_body": "Case: Jensen-Ott-MVA-8-06-2025\nClient: Jensen Ott\n\nJensen Ott\n8/11/2025 \u2022 5:02 PM\nJoseph - 403411914\nMaia - 103718488\nJensen - 710-53-3913\n4 Replies\nJO\nJensen Ott\nReceived\n8/26/2025 \u2022 3:20 PM\nJO\nJensen Ott\nReceived\n8/26/2025 \u2022 3:52 PM\nI sent a screenshot of where I sent our SSN \n on the 11th\nJO\nJensen Ott\nReceived\n8/26/2025 \u2022 3:53 PM\nJO\nJensen Ott\nReceived\n8/26/2025 \u2022 3:53 PM\nThis is my primary care dr.\nI will send any documents i get after I see him tomorrow.\nThank you",
+      "natural_language": "This note concerns the Jensen-Ott-MVA-8-06-2025 case for client Jensen Ott. The client first contacted on August 11, 2025 at 5:02 PM, providing the following identifiers: Joseph - 403411914; Maia - 103718488; Jensen - 710-53-3913. The entry records four replies in the thread.\n\nOn August 26, 2025, there are subsequent received messages at 3:20 PM, 3:52 PM, and two at 3:53 PM. In the 3:52 PM message, Jensen Ott wrote: \"I sent a screenshot of where I sent our SSN on the 11th.\" In the 3:53 PM messages, he wrote: \"This is my primary care dr.\" and, in a separate message, \"I will send any documents i get after I see him tomorrow. Thank you.\"",
+      "valid_at": "2025-09-07T00:00:00",
+      "author": "AaronW",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "subject of case and correspondent"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Primary care doctor",
+            "relevance": "identified by client as provider to be visited; documents to be sent after visit"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

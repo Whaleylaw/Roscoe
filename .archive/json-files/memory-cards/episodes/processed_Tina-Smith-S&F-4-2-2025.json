@@ -1,0 +1,70 @@
+{
+  "case_name": "Tina-Smith-S&F-4-2-2025",
+  "total_episodes": 2,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Tina Smith - 2025-10-23",
+      "original_body": "Case: Tina-Smith-S&F-4-2-2025\nClient: Tina Smith\n\nHey did you get those records from my doctor? Do you need anything else from me?",
+      "natural_language": "Case Tina-Smith-S&F-4-2-2025 involves the client Tina Smith. The client asked whether the records from her doctor have been obtained and whether anything else is needed from her.\n\nHer message to the team reads: \"Hey did you get those records from my doctor? Do you need anything else from me?\"",
+      "valid_at": "2025-10-23T00:00:00",
+      "author": "Tina Smith",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tina Smith",
+            "relevance": "client asking about records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Tina Smith's doctor",
+            "relevance": "source of medical records"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-04",
+      "original_body": "Case: Tina-Smith-S&F-4-2-2025\nClient: Tina Smith\n\n__New Insurance Note:__ 11/4 returned adj call. 262-334-6315 left vm\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ West Bend Mutual Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Tina-Smith-S&F-4-2-2025 involves client Tina Smith. A new insurance note was entered: on 11/4, the adjuster\u2019s call was returned, and a voicemail was left at 262-334-6315. The insurance type is Bodily Injury (BI), and the insurance company is West Bend Mutual Insurance. The note was written by Justin Chumbley.",
+      "valid_at": "2025-11-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Tina Smith",
+            "relevance": "client of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "West Bend Mutual Insurance",
+            "relevance": "insurance company"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "adjuster (voicemail left at 262-334-6315)",
+            "relevance": "contacted (voicemail left)"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Bodily Injury (BI) claim",
+            "relevance": "claim type discussed"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

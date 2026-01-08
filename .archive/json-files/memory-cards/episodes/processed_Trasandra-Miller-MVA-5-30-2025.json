@@ -1,0 +1,46 @@
+{
+  "case_name": "Trasandra-Miller-MVA-5-30-2025",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Kevin Ydoyaga"
+      },
+      {
+        "name": "Amy Dunbar"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Trasandra-Miller-MVA-5-30-2025-Bodily Injury (BI)-1785S576T",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Kevin Ydoyaga"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Trasandra-Miller-MVA-5-30-2025-Personal Injury Protection (PIP)-17-86Q372Z",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Amy Dunbar"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

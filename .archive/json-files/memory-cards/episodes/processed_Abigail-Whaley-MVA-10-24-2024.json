@@ -1,0 +1,523 @@
+{
+  "case_name": "Abigail-Whaley-MVA-10-24-2024",
+  "total_episodes": 21,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Baptist Health Medical Group Neurology",
+        "specialty": "neurology"
+      },
+      {
+        "name": "Norton Hospital - Brownsboro",
+        "specialty": "hospital"
+      },
+      {
+        "name": "ProRehab Prospect",
+        "specialty": "physical therapy"
+      },
+      {
+        "name": "William Haney",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "American Family Insurance"
+      },
+      {
+        "name": "SafeCo Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Laura Zahringer"
+      },
+      {
+        "name": "Lauren Smith"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Abigail-Whaley-MVA-10-24-2024-Bodily Injury (BI)-1008251706",
+        "insurer": "American Family Insurance",
+        "adjuster": "Laura Zahringer"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Abigail-Whaley-MVA-10-24-2024-Personal Injury Protection (PIP)-58147807",
+        "insurer": "SafeCo Insurance Company",
+        "adjuster": "Lauren Smith"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2024-10-28",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nWas towed by PD. Need to find where it is. St. Mathews PD responded. Officer is R. Banta 9187. Report # STM242451. My insurance is with SafeCo. Policy number is K4255732.",
+      "natural_language": "Initial client contact on October 24, 2024 with Abigail Whaley regarding a motor vehicle accident. Ms. Whaley reported that her vehicle was towed by the police department and that the location of the vehicle needed to be determined. St. Mathews PD responded to the scene, with Officer R. Banta (badge 9187) assigned to the case. The incident was recorded under report number STM242451.\n\nMs. Whaley also stated that her auto insurance is with SafeCo and provided policy number K4255732.",
+      "valid_at": "2024-10-28T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "client/contact"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "SafeCo",
+            "relevance": "insurer on policy K4255732"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "SafeCo Insurance Company (Adjuster: Lauren Smith)",
+            "relevance": "PIP claim associated with client's insurer"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-29",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nCalled Tony's Wrecker Service. Vehicle is located at tow lot at 3311 Collins Ln.",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 involves the client Abigail Whaley.\n\nA call was placed to Tony's Wrecker Service, and the vehicle is currently located at the tow lot at 3311 Collins Ln.",
+      "valid_at": "2024-10-29T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of case / client mentioned"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Tony's Wrecker Service",
+            "relevance": "tow provider where vehicle is located"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-29",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\n__New Insurance Note:__ Lauren Smith Ph: Lauren.Smith02@libertymutual.com 856-703-2503\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ SafeCo Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "In the Abigail-Whaley-MVA-10-24-2024 case, the client is Abigail Whaley. A new insurance note has been recorded: Lauren Smith is listed as the contact, with email Lauren.Smith02@libertymutual.com and phone number 856-703-2503. The insurance type is Personal Injury Protection (PIP) through SafeCo Insurance Company, and the note was written by Justin Chumbley.",
+      "valid_at": "2024-10-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Lauren Smith",
+            "relevance": "listed contact (phone/email) for insurance"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "PIP insurance on file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-31",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\n@aaronw want me to send LORs on this?",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 involves client Abigail Whaley and concerns a motor vehicle accident dated October 24, 2024. The file contains a brief note asking, \u201c@aaronw want me to send LORs on this?\u201d, indicating a question about whether to send LORs for this case and seeking Aaron W\u2019s input. No additional details are provided in the note.",
+      "valid_at": "2024-10-31T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-04",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\n__New Insurance Note:__ PD adj Lynette Duncan Ph: Lynette.duncan@libertymutual.com Ph: 630-791-6929\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ SafeCo Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Abigail Whaley is the client in the Abigail-Whaley-MVA-10-24-2024 case, arising from a motor vehicle accident on October 24, 2024. A new insurance note lists Lynette Duncan as the PD adj (PIP adjuster). She can be reached at 630-791-6929 or via email at Lynette.duncan@libertymutual.com. The insurance type is Personal Injury Protection (PIP), and the insurer is SafeCo Insurance Company. The note was written by Justin Chumbley. This entry is filed under Inotes.",
+      "valid_at": "2024-11-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "insurer on the PIP note"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Lynette Duncan",
+            "relevance": "PIP adjuster listed (contacted/person referenced)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "PIP claim referenced in the note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-04",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\n__New Insurance Note:__ 11/4 spoke with PD adjuster. confirmed vehicle was in fact picked up on 11/1. Appraiser has inspected and is currently creating his report. Adjuster is awaiting report to confirm total loss. Should have an answer by 11/5\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ SafeCo Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 involves the client Abigail Whaley.\n\nNew Insurance Note: On November 4, 2024, the PD adjuster confirmed that the vehicle was picked up on November 1, 2024. The appraiser has inspected the vehicle and is currently preparing his report. The adjuster is awaiting the appraiser\u2019s report to confirm whether the vehicle is a total loss, with an answer anticipated by November 5, 2024. The insurance type is Personal Injury Protection (PIP) under SafeCo Insurance Company. This note was written by Justin Chumbley.",
+      "valid_at": "2024-11-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "PIP insurer/claim discussed (awaiting appraiser report)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "PD adjuster",
+            "relevance": "confirmed vehicle pickup and awaiting appraiser's report on total loss status"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-12-02",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\n@aaronw Anything you would like to me to do on this? request records etc? Just don't want to over step.",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 involves client Abigail Whaley in a motor vehicle accident dated October 24, 2024.\n\nThe record includes an internal note directed to @aaronw: \"Anything you would like me to do on this? request records etc? Just don't want to over step.\" The note suggests that potential next steps could include requesting records, but no actions taken or further communications are documented in this snippet.",
+      "valid_at": "2024-12-02T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "client involved in motor vehicle accident (subject of case)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nAbigail Whaley MVA 10/24/2024 It looks like there is no data for me to analyze.",
+      "natural_language": "Abigail Whaley is the client for the case identified as Abigail-Whaley-MVA-10-24-2024. The entry notes a motor vehicle accident on October 24, 2024 involving Abigail Whaley. At this time, there is no data available for analysis.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "client involved in motor vehicle accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nMedical evaluation results review and treatment plan updates.",
+      "natural_language": "October 24, 2024, the case Abigail-Whaley-MVA-10-24-2024 involving Abigail Whaley was updated to reflect a medical evaluation results review and updates to the treatment plan following her motor vehicle accident. The client is Abigail Whaley.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of medical evaluation and treatment updates"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nSettlement discussions and case strategy refinement.",
+      "natural_language": "Initial client contact on October 24, 2024 with Abigail Whaley regarding a motor vehicle accident (MVA).\n\nThe case Abigail-Whaley-MVA-10-24-2024 involves settlement discussions and case strategy refinement.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "primary contact / client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nInsurance communications and claim progression monitoring.",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 concerns client Abigail Whaley. The engagement centers on insurance communications and claim progression monitoring for her motor vehicle accident.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "American Family Insurance",
+            "relevance": "insurer for BI claim / subject of insurance communications"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Laura Zahringer",
+            "relevance": "adjuster for BI claim / contact for claim communications"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim - American Family Insurance",
+            "relevance": "bodily injury claim being monitored"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "insurer for PIP claim / subject of insurance communications"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Lauren Smith",
+            "relevance": "adjuster for PIP claim / contact for claim communications"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim - SafeCo Insurance Company",
+            "relevance": "personal injury protection claim being monitored"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nFollow-up case management and medical treatment coordination.",
+      "natural_language": "Abigail Whaley is the client in the case titled Abigail-Whaley-MVA-10-24-2024. The case involves follow-up case management and medical treatment coordination stemming from a motor vehicle accident that occurred on October 24, 2024. Ongoing work focuses on coordinating the client's medical care and managing case management tasks to support recovery and access to necessary services.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nClient communication and case timeline establishment.",
+      "natural_language": "Initial client contact on October 24, 2024 with Abigail Whaley regarding a motor vehicle accident, initiating the Abigail-Whaley-MVA-10-24-2024 matter. This entry documents the client communication and the establishment of the case timeline for Abigail Whaley\u2019s motor vehicle accident case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "client contact and matter initiation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nMedical documentation review and insurance claim preparation.",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 pertains to client Abigail Whaley.\n\nThe engagement involves medical documentation review and insurance claim preparation.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "American Family Insurance",
+            "relevance": "insurance claim being prepared"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "insurance claim being prepared"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nCase intake and initial consultation for October 24, 2024 accident.",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 concerns client Abigail Whaley. The file documents the intake and initial consultation for the motor vehicle accident that occurred on October 24, 2024.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "case subject / client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "8882951840 - 2025-09-10",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nIncoming Fax From (888) 295-1840 Page Count:5",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 involves client Abigail Whaley. \n\nAn incoming fax was received from (888) 295-1840, and the transmission consisted of five pages.",
+      "valid_at": "2025-09-10T00:00:00",
+      "author": "8882951840",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "3153627437 - 2025-09-10",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nIncoming Fax From (315) 362-7437 Page Count:3",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 concerns client Abigail Whaley in connection with a motor vehicle accident that occurred on October 24, 2024.\n\nAn incoming fax was received from the number (315) 362-7437, and the fax consisted of 3 pages.",
+      "valid_at": "2025-09-10T00:00:00",
+      "author": "3153627437",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-10-29",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\n#vinesign-completed\nName: Medical Authorization\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=c2068822-5c0a-4edf-98a5-9ce2bf9d9869.pdf\nSigned: 2025-10-29 19:16:53\nAll signers: Abigail Whaley(mw567152@gmail.com)\nSender: Justin Chumbley",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024: The client is Abigail Whaley, who was involved in a motor vehicle accident on October 24, 2024. A medical authorization document via VineSign has been completed. The document is named Medical Authorization and was signed on October 29, 2025 at 19:16:53. The signed document is accessible at https://app.vinesign.com/Jobs/Pdf?pdfKey=c2068822-5c0a-4edf-98a5-9ce2bf9d9869.pdf. All signers on the document are Abigail Whaley (mw567152@gmail.com), and the sender was Justin Chumbley.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "e-signature vendor used to complete medical authorization"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\n__Abigail Whaley__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Abigail Whaley - Filevine Project Email Address [AbigailWhaleyMVAZ4796407@louisvilleaccidentlawyer.filevineapp.com](mailto:AbigailWhaleyMVAZ4796407@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 03:06:10 GMT-04:00\n\nPlease request all medical records and bills, and we can get this demand\nout.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Abigail-Whaley-MVA-10-24-2024. Client: Abigail Whaley. On October 29, 2025, at 3:06:10 AM GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email regarding Abigail Whaley\u2019s motor vehicle accident case. The message was from Aaron Whaley (agwhaley@whaleylawfirm.com) to Justin Chumbley (Justin@whaleylawfirm.com) and to Abigail Whaley\u2019s Filevine project email address (AbigailWhaleyMVAZ4796407@louisvilleaccidentlawyer.filevineapp.com). In the body, Aaron wrote: \u201cPlease request all medical records and bills, and we can get this demand out.\u201d The communication is signed by Aaron Whaley of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, with the phone number 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "case client / subject of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm / signer of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender / attorney handling case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "6316157453 - 2025-10-29",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nIncoming Fax From (631) 615-7453 Page Count:4",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 concerns client Abigail Whaley in a motor vehicle accident matter. The initial client contact was established via an incoming fax from the number (631) 615-7453, and the fax consisted of four pages.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "6316157453",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "subject of case; initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-15",
+      "original_body": "Case: Abigail-Whaley-MVA-10-24-2024\nClient: Abigail Whaley\n\nGenerated and saved certified medical records requests for all 4 medical providers: (1) William Haney, (2) Baptist Health Medical Group Neurology, (3) ProRehab Prospect, and (4) Norton Hospital - Brownsboro. All requests include HIPAA authorization reference, certification requirement per KRS 422.317, and request for complete itemized billing. Follow-up date set for 01/15/2026 (30 days). Case advanced to Phase 3 - Demand and Negotiation as client has completed treatment.",
+      "natural_language": "Case Abigail-Whaley-MVA-10-24-2024 involves client Abigail Whaley following a motor vehicle accident. Certified medical records requests were generated and saved for all four medical providers: (1) William Haney, (2) Baptist Health Medical Group Neurology, (3) ProRehab Prospect, and (4) Norton Hospital - Brownsboro. Each request includes a HIPAA authorization reference, the certification requirement per KRS 422.317, and a request for complete itemized billing.\n\nFollow-up date set for 01/15/2026 (30 days). The case has advanced to Phase 3 - Demand and Negotiation as the client has completed treatment.",
+      "valid_at": "2025-12-15T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Abigail Whaley",
+            "relevance": "primary subject"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "William Haney",
+            "relevance": "recipient of certified medical records request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Medical Group Neurology",
+            "relevance": "recipient of certified medical records request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "ProRehab Prospect",
+            "relevance": "recipient of certified medical records request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital - Brownsboro",
+            "relevance": "recipient of certified medical records request"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

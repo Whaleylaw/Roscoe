@@ -1,0 +1,341 @@
+{
+  "ignore": [
+    "Amy Mills",
+    "BI claim for the vehicle she was in",
+    "BIClaim #054658453-01",
+    "Bryce",
+    "ChartSwap",
+    "Claim #054717144",
+    "CoC Esq",
+    "Conduent",
+    "Court (CourtNet)",
+    "CourtNet",
+    "Courtroom HJ301",
+    "Courts",
+    "Crete Carrier Corporation",
+    "DC",
+    "Defendants",
+    "Defense Counsel (DC)",
+    "Defense attorney",
+    "Defense counsel",
+    "Dinsmore",
+    "Dropbox",
+    "Fax Legal",
+    "Filevine",
+    "KP Attorneys",
+    "KPATT",
+    "Liberty Mutual PIP log",
+    "Medical providers (unspecified)",
+    "Multiple attorneys",
+    "Naomi Richardson's attorney",
+    "NextRequest",
+    "PD adjuster",
+    "PIP #054658463",
+    "PIP #25695180369",
+    "RCFax",
+    "Tony's Wrecker Service",
+    "Transclaims",
+    "UIM coverage",
+    "UIM for Claim 054658453-01",
+    "Underinsured motorist coverage for Claim #054658453-01",
+    "VineSign",
+    "court",
+    "individual defendant"
+  ],
+  "add": {
+    "Attorney": [
+      {
+        "name": "Jessa Galosmo",
+        "attributes": {},
+        "notes": "- [ ] Jessica Bottorff \u2014 *\u2713 MATCHES: Jessica Bottorff (WHALEY STAFF \u2192 should be CaseManager, not Attorney)*"
+      },
+      {
+        "name": "Sarena",
+        "attributes": {},
+        "notes": "- [ ] Sarena M. Tuttle \u2014 *\u2713 MATCHES: Sarena Tuttle (WHALEY STAFF \u2192 should be CaseManager, not Attorney)*"
+      },
+      {
+        "name": "Sarena Whaley",
+        "attributes": {},
+        "notes": "- [ ] W. Bryce Koon, Esq. \u2014 *\u2713 MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*"
+      },
+      {
+        "name": "Aletha N. Thomas",
+        "attributes": {},
+        "notes": "See above, it's an attorney."
+      },
+      {
+        "name": "Betsy R. Catron",
+        "attributes": {
+          "firm_name": "Ward Hocker Thornton"
+        },
+        "notes": "Attorney. Works at Ward Hocker Thornton."
+      },
+      {
+        "name": "Ellis, Joshua",
+        "attributes": {},
+        "notes": "It's Josh Ellis. Needs to be added as an attorney. Not a defense attorney."
+      },
+      {
+        "name": "G. Adam Redden",
+        "attributes": {
+          "firm_name": "the law firm Decomillus & Mattingly"
+        },
+        "notes": "Added as an attorney. Works for the law firm Decomillus and Mattingly."
+      },
+      {
+        "name": "George B. Hocker",
+        "attributes": {
+          "firm_name": "Ward, Haocer, & Thornton"
+        },
+        "notes": "Add is an attorney, works with Ward, Haocer, and Thornton."
+      },
+      {
+        "name": "Kaylee F. Collins",
+        "attributes": {},
+        "notes": "Add as an attorney."
+      },
+      {
+        "name": "Langdon Worley",
+        "attributes": {},
+        "notes": "And as an attorney,"
+      },
+      {
+        "name": "Licha H. Farah, Jr.",
+        "attributes": {},
+        "notes": "Add as an attorney."
+      },
+      {
+        "name": "Maxwell D. Smith",
+        "attributes": {},
+        "notes": "Add as an attorney."
+      },
+      {
+        "name": "Ryan J. McElroy",
+        "attributes": {},
+        "notes": "Add as an attorney."
+      },
+      {
+        "name": "Sarena M. Tuttle",
+        "attributes": {},
+        "notes": "- [ ] Sarena Whaley \u2014 *\u2713 MATCHES: Sarena Whaley (WHALEY STAFF \u2192 should be CaseManager, not Attorney)*"
+      },
+      {
+        "name": "W. Bryce Koon, Esq.",
+        "attributes": {},
+        "notes": "- [ ] Whaley, Aaron Gregory \u2014 *\u2713 MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*"
+      },
+      {
+        "name": "lfarah@whtlaw.com",
+        "attributes": {},
+        "notes": "This is just the email address for the attorney that you're adding, Licha H. Farah Jr."
+      },
+      {
+        "name": "Aaron Lovato",
+        "attributes": {},
+        "notes": "- [ ] Aaron Whaley \u2014 *\u2713 MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Adjuster)*"
+      },
+      {
+        "name": "Jessa Galosmo",
+        "attributes": {},
+        "notes": "- [ ] Jessica Bottorff \u2014 *\u2713 MATCHES: Jessica Bottorff (WHALEY STAFF \u2192 should be CaseManager, not Attorney)*"
+      },
+      {
+        "name": "Sarena",
+        "attributes": {},
+        "notes": "- [ ] Sarena Tuttle \u2014 *\u2713 MATCHES: Sarena Tuttle (WHALEY STAFF \u2192 should be CaseManager, not Attorney)*"
+      }
+    ],
+    "Court": [
+      {
+        "name": "District Court",
+        "attributes": {},
+        "notes": "- [ ] Jefferson 24-CI-004728 \u2014 *\u2713 MATCHES: Jefferson County Circuit Court*"
+      },
+      {
+        "name": "Jefferson Circuit Court",
+        "attributes": {},
+        "notes": "- [ ] Jefferson County (24-CI-004728) \u2014 *\u2713 MATCHES: Jefferson County Circuit Court*"
+      },
+      {
+        "name": "Boyd Circuit Court",
+        "attributes": {},
+        "notes": "Boyd County Circuit Court add"
+      },
+      {
+        "name": "Knox Circuit Court (Knox County, Kentucky)",
+        "attributes": {},
+        "notes": "Add Knox County Circuit Court."
+      },
+      {
+        "name": "Floyd 22D03-2501-CT-000157",
+        "attributes": {},
+        "notes": "Floyd County Circuit Court"
+      },
+      {
+        "name": "Floyd Circuit Court",
+        "attributes": {},
+        "notes": "Floyd County Circuit Court"
+      },
+      {
+        "name": "Floyd County (22D03-2501-CT-000157)",
+        "attributes": {},
+        "notes": "Floyd County Circuit Court"
+      },
+      {
+        "name": "Floyd County Court",
+        "attributes": {},
+        "notes": "Floyd County Circuit Court"
+      },
+      {
+        "name": "Floyd County Indiana Circuit Court",
+        "attributes": {},
+        "notes": "- [ ] local circuit court \u2014 *? NEW* Floyd County Circuit Court"
+      }
+    ],
+    "Vendor": [
+      {
+        "name": "KY Court Reporters",
+        "attributes": {},
+        "notes": "add to vendors."
+      }
+    ],
+    "Mediator": [
+      {
+        "name": "Bob Hammonds",
+        "attributes": {},
+        "notes": "Add as a mediator."
+      },
+      {
+        "name": "Hon. Thomas J. Knopf (Ret.)",
+        "attributes": {},
+        "notes": "So it's Thomas Jane Knopf Mediator for adding."
+      },
+      {
+        "name": "Hon. Thomas J. Knopf (Ret.)",
+        "attributes": {},
+        "notes": "So it's Thomas Jane Knopf Mediator for adding."
+      },
+      {
+        "name": "Hon. Thomas J. Knopf (Ret.)",
+        "attributes": {},
+        "notes": "So it's Thomas Jane Knopf Mediator for adding."
+      }
+    ],
+    "Defendant": [
+      {
+        "name": "Defense Attorney for Forcht Bank",
+        "attributes": {},
+        "notes": "Forcht bank should be added as defendant and an organization.",
+        "also_organization": true
+      },
+      {
+        "name": "Naomi Robinson",
+        "attributes": {},
+        "notes": "Add as a defendant."
+      }
+    ],
+    "Organization": [
+      {
+        "name": "Kentucky PLLC",
+        "attributes": {},
+        "notes": "- [ ] New Albany Police Department \u2014 *? NEW* Add To organizations."
+      }
+    ]
+  },
+  "context": [
+    "Amanda Murphy (Kentucky Courts)",
+    "Andrew M. Yocum",
+    "Ashley K. Brown",
+    "Brenna Rine",
+    "Brian M. Gudalis",
+    "Carolyn Hudson",
+    "Catie Coldiron Joseph",
+    "Clay E. Thornton",
+    "Dennis Cantrell",
+    "Elizabeth Romersa",
+    "James Kamensky, Esq.",
+    "Janet Weile",
+    "Jared M. Hudson",
+    "Jillian D. House",
+    "Joshua J. Owen",
+    "Kaleb J. Noblett",
+    "Kristin Lomond",
+    "Lexi Graham",
+    "Lynette Duncan",
+    "Scott Stout",
+    "Scott Stoutheukelaw",
+    "Tori S. Wells",
+    "W. Bryce Koon, Esq."
+  ],
+  "notes": [
+    "Laura Zahringer: - [ ] Lauren Smith \u2014 *\u2713 MATCHES: Lauren Smith*",
+    "American Family Insurance: - [ ] BIClaim - American Family Insurance \u2014 *\u2713 MATCHES: American Family Insurance*",
+    "American Family Insurance: - [ ] SafeCo \u2014 *\u2713 MATCHES: SafeCo Insurance Company*",
+    "Baptist Health Medical Group Neurology: - [ ] Norton Hospital - Brownsboro \u2014 *\u2713 MATCHES: Norton Hospital - Brownsboro*",
+    "ProRehab Prospect: - [ ] William Haney \u2014 *\u2713 MATCHES: William Haney*",
+    "PIPClaim - SafeCo Insurance Company: - [ ] SafeCo Insurance Company \u2014 *\u2713 MATCHES: SafeCo Insurance Company*",
+    "Justin Chumbley: - [ ] Lauren Baker \u2014 *\u2713 MATCHES: Lauren Baker*",
+    "Crete Carrier Corporation: - [ ] Crete Carrier Corporation (BIClaim) \u2014 *? NEW* This is the same as the other BI carrier. It matches its Creek carrier.",
+    "Crete Carrier Corporation (Shaffer Trucking & Hunt Transportation): - [ ] Crete Carrier Corporation (Shaffer Trucking & Hunt Transportation) (Adjuster: Brenna Rine) \u2014 *\u2713 MATCHES: Crete Carrier Corporation (Shaffer Trucking & Hunt Transportation)*",
+    "Jefferson County - Docket 24-CI-004728: - [ ] Kentucky Court of Justice \u2014 *\u2713 MATCHES: Kentucky Court Of Justice (from directory)*",
+    "Crete Carrier: - [ ] Crete Carrier Corp. \u2014 *\u2713 MATCHES: Crete Carrier Corporation (Shaffer Trucking & Hunt Transportation) (from directory)*",
+    "Kentucky Farm Bureau: - [ ] Shaffer \u2014 *\u2713 MATCHES: Crete Carrier Corporation (Shaffer Trucking & Hunt Transportation)*",
+    "Aptiva Health: - [ ] Heartland Diagnostics LLC \u2014 *\u2713 MATCHES: Heartland Diagnostics LLC*",
+    "Pleasure Ridge Park Fire/EMS: - [ ] Starlite Chiropractic \u2014 *\u2713 MATCHES: Starlite Chiropractic*",
+    "ULP Radiological Associates: - [ ] University of Louisville Hospital \u2014 *\u2713 MATCHES: University of Louisville Hospital*",
+    "Kentucky Court of Justice: - [ ] Kentucky Court of Justice eFiling System \u2014 *\u2713 MATCHES: Kentucky Court Of Justice (from directory)*",
+    "Louisville Metro Government: - [ ] Louisville Metro Government Public Records \u2014 *\u2713 MATCHES: Louisville Metro (from directory)*",
+    "Kentucky Farm Bureau: - [ ] PIPClaim: Kentucky Farm Bureau (Adjuster: Lauren Baker) \u2014 *\u2713 MATCHES: Kentucky Farm Bureau*",
+    "Amy Mills - personal injury claim: - [ ] Amy Mills Premise 04/26/2019 \u2014 *\u2713 MATCHES: Amy Mills (from directory)*",
+    "Kentucky Court of Justice: - [ ] Kentucky Court of Justice eFiling system \u2014 *\u2713 MATCHES: Kentucky Court Of Justice (from directory)*",
+    "Forcht Bank, NA: - [ ] Forecht Bank \u2014 *\u2713 MATCHES: Forcht Bank (from directory)*",
+    "Aetna: - [ ] Medicaid \u2014 *\u2713 MATCHES: Anthem Medicaid Health Plans Of KY Inc. (from directory)*",
+    "Vine Center / WHT Law: - [ ] **WHT Law (www.whtlaw.com / Vine Center)** \u2014 *\u2713 MATCHES: Whaley Harrison & Thorne, PLLC (alias: WHT Law)*",
+    "Equian: - [ ] Equian (WellCare) \u2014 *\u2713 MATCHES: Equian*",
+    "20/20 Eye Center: - [ ] Aptiva (Dr. Lisa Manderino) \u2014 *\u2713 MATCHES: Aptiva Health*",
+    "Aptiva Health: - [ ] Baptist Health - Corbin \u2014 *\u2713 MATCHES: Baptist Health - Corbin*",
+    "Baptist Health - Corbin South Imaging: - [ ] Baptist Health - Corbin South Imaging (radiology) \u2014 *\u2713 MATCHES: Baptist Health - Corbin*",
+    "Baptist Health - Orthopedic & Sport Medicine: - [ ] Baptist Health - Orthopedic & Sport Medicine (orthopedic) \u2014 *\u2713 MATCHES: Baptist Health - Orthopedic & Sport Medicine*",
+    "Baptist Neurology - Corbin: - [ ] Baptist Neurology - Corbin (neurology) \u2014 *\u2713 MATCHES: Baptist Neurology - Corbin*",
+    "BioKinetics: - [ ] Bluegrass Health \u2014 *\u2713 MATCHES: Bluegrass Orthopaedics*",
+    "Bluegrass Orthopaedics: - [ ] Bluegrass Orthopaedics (Dr. Huff) \u2014 *\u2713 MATCHES: Bluegrass Orthopaedics*",
+    "CHI St. Joseph Medical Group - Orthopedic: - [ ] CHI St. Joseph Medical Group - Orthopedic (orthopedic) \u2014 *\u2713 MATCHES: CHI St. Joseph Medical Group - Orthopedic*",
+    "CHI St. Joseph Medical Group - Radiology: - [ ] CHI St. Joseph Medical Group - Radiology (radiology) \u2014 *\u2713 MATCHES: CHI St. Joseph Medical Group - Radiology*",
+    "Clark Clinic Neurology: - [ ] Clark Clinic Neurology (neurology) \u2014 *\u2713 MATCHES: Clark Clinic Neurology*",
+    "Commonwealth IME: - [ ] Commonwealth IME (Dr. Nazar) \u2014 *\u2713 MATCHES: Commonwealth IME (from directory)*",
+    "Corbin Imaging And Diagnostic Center: - [ ] Corbin Imaging And Diagnostic Center (radiology) \u2014 *\u2713 MATCHES: Corbin Imaging And Diagnostic Center*",
+    "Dr. Cyna Khalily: - [ ] Dr. Gregory Nazar \u2014 *\u2713 MATCHES: Dr. Gregory B. Nazar (licensed KY doctor \u2192 should be Doctor, not MedicalProvider)*",
+    "Dr. Lisa Manderino: - [ ] Dr. Lisa Manderino (Aptiva) \u2014 *\u2713 MATCHES: Aptiva Health*",
+    "Dr. Shannon Voor: - [ ] Dr. Wallace Huff \u2014 *\u2713 MATCHES: Dr. Wallace L. Huff Jr. (licensed KY doctor \u2192 should be Doctor, not MedicalProvider)*",
+    "Grace Health: - [ ] Kentucky Orthopedic Clinic - Dr. Ronald Dubin (orthopedic) \u2014 *\u2713 MATCHES: Kentucky Orthopedic Clinic - Dr. Ronald Dubin*",
+    "Marc Orlando: - [ ] Neurodiagnostic Center Of Louisville \u2014 *\u2713 MATCHES: Neurodiagnostic Center Of Louisville*",
+    "Norton Hospital Downtown: - [ ] Norton Hospital Downtown (hospital) \u2014 *\u2713 MATCHES: Norton Hospital Downtown*",
+    "Norton Neurology Services: - [ ] Norton Neuroscience Institute \u2014 *\u2713 MATCHES: Norton Neuroscience Institute - Brownsboro*",
+    "Norton Neuroscience Institute - Brownsboro: - [ ] Norton Orthopedic Institute \u2014 *\u2713 MATCHES: Norton Orthopedic Institute*",
+    "Norton Orthopedic Institute (orthopedic): - [ ] Orthopedic specialist (unspecified) \u2014 *\u2713 MATCHES: University Of Louisville Orthopedic*",
+    "PCP: - [ ] PT Pros Physical Therapy And Sports Center \u2014 *\u2713 MATCHES: PT Pros Physical Therapy And Sports Center*",
+    "PT Pros Physical Therapy And Sports Center (physical therapy): - [ ] River City Orthopedics (Norton Spine Specialist-Rouben & Casnellie) (orthopedic) \u2014 *\u2713 MATCHES: River City Orthopedics*",
+    "Trillium Center: - [ ] University Of Kentucky Neuroscience In \u2014 *\u2713 MATCHES: University Of Kentucky Neuroscience In*",
+    "Adobe Systems Incorporated: - [ ] Alexander Landfield PLLC \u2014 *\u2713 MATCHES: Alexander Landfield (from directory)*",
+    "Box: - [ ] Commonwealth IME \u2014 *\u2713 MATCHES: Commonwealth IME (from directory)*",
+    "Johnson Health and Safety: - [ ] Kentucky Court of Justice eFiling system \u2014 *\u2713 MATCHES: Kentucky Court Of Justice (from directory)*",
+    "Aptiva Health: - [ ] Biokenetics \u2014 *\u2713 MATCHES: BioKinetics (from directory)*",
+    "Commonwealth IME: - [ ] David Johnson \u2014 *\u2713 MATCHES: David Johnson (from directory)*",
+    "Kate Smith: - [ ] Linda Jones \u2014 *\u2713 MATCHES: Linda Jones (from directory)*",
+    "Aetna Life: - [ ] Anthem Medicaid \u2014 *\u2713 MATCHES: Anthem (from directory)*",
+    "Liberty Mutual: - [ ] Safeco \u2014 *\u2713 MATCHES: SafeCo Insurance Company*",
+    "UofL Hospital: - [ ] UofL downtown \u2014 *\u2713 MATCHES: Norton Hospital Downtown*",
+    "Lisa Rivera: - [ ] Robert Elliott \u2014 *\u2713 MATCHES: Robert Elliott*",
+    "BIClaim: Liberty Mutual Insurance Company: - [ ] BIClaim: State Farm Insurance Company \u2014 *\u2713 MATCHES: State Farm Insurance Company*",
+    "Elco Insurance: - [ ] Liberty Mutual Insurance Company (BIClaim / policy limits tendered) \u2014 *\u2713 MATCHES: Liberty Mutual Insurance Company*",
+    "Liberty Mutual Insurance Company (Claim #054658453-01): - [ ] Liberty Mutual Insurance Company - BI claim \u2014 *\u2713 MATCHES: Liberty Mutual Insurance Company*",
+    "Dewayne Ward: - [ ] Jessa Galosmo \u2014 *\u2713 MATCHES: Jessa Galosmo (WHALEY STAFF \u2192 should be CaseManager, not Client)*",
+    "Liberty Mutual: - [ ] Liberty Mutual Personal Insurance Company \u2014 *\u2713 MATCHES: Liberty Mutual Insurance Company*",
+    "Anthem BCBS of Tennessee: - [ ] Passport Health By Molina \u2014 *\u2713 MATCHES: Passport Health By Molina*",
+    "Aptiva Health: - [ ] Health Lift Pharmacy Service, LLC \u2014 *\u2713 MATCHES: Health Lift Pharmacy Service, LLC*",
+    "Kentucky Pain Associates: - [ ] New Chapel EMS \u2014 *\u2713 MATCHES: New Chapel EMS*",
+    "Starlite Chiropractic: - [ ] University of Louisville Hospital \u2014 *\u2713 MATCHES: University of Louisville Hospital*",
+    "University of Louisville: - [ ] UofL Health, Inc. \u2014 *\u2713 MATCHES: UofL Health  UofL Hospital (from directory)*"
+  ]
+}

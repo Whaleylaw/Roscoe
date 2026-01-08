@@ -1,0 +1,25 @@
+{
+  "total_entities": 2974,
+  "by_type": {
+    "Case": 110,
+    "Client": 105,
+    "MedicalProvider": 282,
+    "Insurer": 57,
+    "Adjuster": 151,
+    "WCClaim": 5,
+    "PIPClaim": 100,
+    "BIClaim": 119,
+    "UMClaim": 14,
+    "UIMClaim": 2,
+    "Lien": 103,
+    "LienHolder": 42,
+    "Attorney": 9,
+    "Defendant": 7,
+    "Pleading": 185,
+    "DirectoryEntry": 1683
+  },
+  "directory_match_rate": 24.4,
+  "directory_used": 532,
+  "directory_total": 2183,
+  "generated_at": "2025-12-21T10:46:50.907810"
+}

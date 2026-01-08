@@ -1,0 +1,159 @@
+# Relationship Review: Frances-Whitis-WC-MVA-9-6-2024
+
+**Total Episodes:** 184
+
+**Total Proposed Relationships:** 546
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (3)
+- Family Care Of The Bluegrass - East
+- Frankfort Fire & EMS (emergency medical services)
+- Frankfort Regional Medical Center (hospital)
+
+### Insurance Claims (1)
+- **PIPClaim**: Progressive Insurance Company
+  - Adjuster: Amanda Clemons
+
+### Liens (2)
+- Aetna Medicare
+- Medicare
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (3 consolidated)
+- [ ] Amanda L. Clemons — *✓ MATCHES: Amanda Clemons*
+- [ ] Justin — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Adjuster)*
+- [ ] adjuster — *IGNORED - generic term*
+
+### Attorney (14 consolidated)
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Amy Smith — *✓ MATCHES: Amy Smith (from attorneys)*
+- [ ] Defense counsel (DC) — *IGNORED - generic term*
+- [ ] Justin (Whaley Law Firm) — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Mr. Burch — *✓ MATCHES: Stewart Burch (from attorneys)*
+- [ ] Rose Mauser — *IGNORED - attorney name only*
+- [ ] Samantha Pridgen — *✓ MATCHES: Samantha Pridgen (from attorneys)*
+- [ ] Sarena — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] **Sarena Tuttle** — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+      ↳ _Sarena Whaley_
+- [ ] Sarena@whaleylawfirm.com — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Stewart Burch — *✓ MATCHES: Stewart Burch (from attorneys)*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+- [ ] William Jones — *✓ MATCHES: William Jones (from attorneys)*
+- [ ] burch@lbfattorneys.com — *✓ MATCHES: Stewart Burch (from attorneys)*
+
+### BIClaim (1 consolidated)
+- [ ] Motor vehicle accident claim — *IGNORED - generic claim reference*
+
+### Client (2 consolidated)
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Client)*
+- [ ] Frances A. Whitis — *✓ MATCHES: Frances Whitis*
+
+### Court (5 consolidated)
+- [ ] KY DWC — *IGNORED - abbreviation*
+- [ ] KY DWC 2024-01285 — *IGNORED - claim number*
+- [ ] Kentucky DWC — *IGNORED - abbreviation*
+- [ ] Kentucky Department of Workers' Claims (KY DWC) — *✓ MATCHES: Kentucky Department Of Workers' Claims (from organizations)*
+- [ ] Kentucky Division of Workers' Compensation — *IGNORED - variant name*
+
+### Defendant (6 consolidated)
+- [ ] Blue Gross Taxi — *✓ MATCHES: Bluegrass Taxi (from defendants)*
+- [ ] Employer — *IGNORED - generic term*
+- [ ] Mrs. Mauser — *IGNORED - person reference*
+- [ ] UEF — *IGNORED - abbreviation*
+- [ ] Uninsured Employers Fund (UEF) — *✓ MATCHES: Uninsured Employers Fund (from insurers)*
+- [ ] defendant employer — *IGNORED - generic term*
+
+### Insurer (6 consolidated)
+- [ ] Direct Insurance — *✓ MATCHES: Direct Auto Insurance*
+- [ ] Mrs. Mauser's Auto Insurance — *IGNORED - generic reference*
+- [ ] Progressive Casualty Insurance Company — *✓ MATCHES: Progressive Insurance Company*
+- [ ] Uninsured Employer Fund (UEF) — *✓ MATCHES: Uninsured Employers Fund (from insurers)*
+- [ ] United Financial Casualty Company — *IGNORED - insurer name only*
+- [ ] Workers' Compensation Carrier — *IGNORED - generic term*
+
+### LawFirm (4 consolidated)
+- [ ] LBF Attorneys — *IGNORED - abbreviation*
+- [ ] Logan, Burch & Fox — *✓ MATCHES: Logan, Burch & Fox (from lawfirms)*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+- [ ] lbfattorneys.com (opposing counsel) — *✓ MATCHES: Logan, Burch & Fox (from lawfirms)*
+
+### Lien (2 consolidated)
+- [ ] Aetna Medicare — *✓ MATCHES: Aetna Medicare*
+- [ ] Medicare — *✓ MATCHES: Aetna Medicare*
+
+### MedicalProvider (5 consolidated)
+- [ ] Family Medical Center — *✓ MATCHES: Family Medical Center*
+- [ ] Dr. Frank Farley — *✓ MATCHES: Dr. Frank D. Farley III (licensed KY doctor, valid MedicalProvider)*
+- [ ] Family Care Of The Bluegrass - East — *✓ MATCHES: Family Care Of The Bluegrass - East*
+- [ ] Frankfort Fire & EMS — *✓ MATCHES: Frankfort Fire & EMS*
+- [ ] Frankfort Regional Medical Center — *✓ MATCHES: Frankfort Regional Medical Center*
+
+### Organization (13 consolidated)
+- [ ] Bluegrass Taxi — *✓ MATCHES: Bluegrass Taxi (from defendants)*
+- [ ] CHC EMS Attorney Requests (Optum) — *IGNORED - service reference*
+- [ ] Frankfort City Police — *✓ MATCHES: Frankfort Police Department (from organizations)*
+- [ ] Frankfort Police Department — *✓ MATCHES: Frankfort Police Department (from organizations)*
+- [ ] Kentucky Department of Workers Claims (KY DWC) — *✓ MATCHES: Kentucky Department Of Workers' Claims (from organizations)*
+- [ ] Kentucky Uninsured Employer Fund (UEF) — *✓ MATCHES: Uninsured Employers Fund (from insurers)*
+- [ ] Kentucky Workers' Claims LMS (kyworkersclaims.lms.ky.gov / no-reply@ky.gov) — *✓ MATCHES: Kentucky Department Of Workers' Claims (from organizations)*
+- [ ] Kentucky Workers' Claims LMS (no-reply@ky.gov) — *✓ MATCHES: Kentucky Department Of Workers' Claims (from organizations)*
+- [ ] Kentucky Workers' Compensation LMS (kyworkersclaims.lms.ky.gov) — *✓ MATCHES: Kentucky Department Of Workers' Claims (from organizations)*
+- [ ] LMS (Kentucky Workers' Claims) — *IGNORED - abbreviation*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+- [ ] Uninsured Employer Fund — *✓ MATCHES: Uninsured Employers Fund (from insurers)*
+- [ ] kyworkersclaims.lms.ky.gov — *IGNORED - website URL*
+
+### PIPClaim (6 consolidated)
+- [ ] PIP 24-727042794 (Progressive Insurance Company) — *✓ MATCHES: Progressive Insurance Company*
+- [ ] PIP claim 24-727042794 — *IGNORED - claim number*
+- [ ] PIPClaim (Progressive Insurance) — *✓ MATCHES: Progressive Insurance Company (from insurers)*
+- [ ] PIPClaim: Progressive Insurance Company — *✓ MATCHES: Progressive Insurance Company*
+- [ ] Progressive Insurance Company (PIPClaim) — *✓ MATCHES: Progressive Insurance Company*
+- [ ] Progressive claim 24-727042794 — *✓ MATCHES: Progressive Insurance Company (from insurers)*
+
+### Vendor (3 consolidated)
+- [ ] Aptiva Health Health — *✓ MATCHES: Aptiva Health Health (from medical_providers)*
+- [ ] Datavant (SmartRequest) — *✓ MATCHES: DataVant*
+- [ ] Kentuckiana Court Reports — *✓ MATCHES: Kentuckiana Court Reporters*
+
+### WCClaim (14 consolidated)
+- [ ] 202401285 — *IGNORED - claim number*
+- [ ] Frances Whitis WC claim — *IGNORED - generic claim reference*
+- [ ] Frances Whitis workers' compensation claim — *IGNORED - generic claim reference*
+- [ ] Frances-Whitis-WC-MVA-9-6-2024 — *IGNORED - case name*
+- [ ] INJURY CLAIM (Document Id: 6910189) — *IGNORED - document reference*
+- [ ] KY DWC 2024-01285 — *IGNORED - claim number*
+- [ ] LMS Claim Filing for Uninsured Employee Fund Coverage / Application for Resolution — *IGNORED - form reference*
+- [ ] WC #202401285 — *IGNORED - claim number*
+- [ ] WC Claim #202401285 — *IGNORED - claim number*
+- [ ] WC with UEF — *IGNORED - generic reference*
+- [ ] WCClaim (24-727042794) — *IGNORED - claim number*
+- [ ] Workers' Compensation Claim (Frances-Whitis) — *IGNORED - generic claim reference*
+- [ ] Workers' Compensation claim (FROI) — *IGNORED - form reference*
+- [ ] Workers' compensation claim (UEF involvement) — *IGNORED - generic reference*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

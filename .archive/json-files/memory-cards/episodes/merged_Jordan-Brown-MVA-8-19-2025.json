@@ -1,0 +1,338 @@
+{
+  "case_name": "Jordan-Brown-MVA-8-19-2025",
+  "total_episodes": 10,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Louisville Metro EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Root Auto Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Walter Kenny"
+      },
+      {
+        "name": "Blake Pierce"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Walter Kenny"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Jordan-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-TJ6L8DKY",
+        "insurer": "Root Auto Insurance",
+        "adjuster": "Blake Pierce"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\nAaron Whaley initiated contact with Jordan Brown to discuss his motor vehicle accident case and assess the current situation.\nRecap\nAaron Whaley called Jordan Brown to establish communication regarding his motor vehicle accident from August 19, 2025.\nJordan provided initial details about the accident and expressed interest in legal representation.\nTasks\nAaron needs to schedule a comprehensive consultation with Jordan to gather detailed accident information and medical records.",
+      "natural_language": "Case: Jordan-Brown-MVA-8-19-2025. Client: Jordan Brown. The engagement began with Aaron Whaley initiating contact with Jordan Brown to discuss his motor vehicle accident case and to assess the current situation.\n\nRecap: Aaron Whaley called Jordan Brown to establish communication regarding his motor vehicle accident on August 19, 2025. During the call, Jordan provided initial details about the accident and expressed interest in obtaining legal representation.\n\nTasks: Aaron Whaley needs to schedule a comprehensive consultation with Jordan Brown to gather detailed information about the accident and to obtain Jordan’s medical records.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "client and subject of call"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "initiated contact and will schedule consultation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\nNew Insurance Note: 9/2 resent LOR and PR to adj. adj is reviewing liability and didn't have a copy of the PR. smh\nInsurance Type: Bodily Injury (BI)",
+      "natural_language": "The case Jordan-Brown-MVA-8-19-2025 involves client Jordan Brown in a motor vehicle accident that occurred on August 19, 2025.\n\nOn September 2, 2025, we resent the Letter of Representation (LOR) and the PR to the adjuster; the adjuster is reviewing liability and did not have a copy of the PR, smh.\n\nThe insurance type for this matter is Bodily Injury (BI).",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "client involved in MVA"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for the BI claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Walter Kenny",
+            "relevance": "adjuster sent the LOR/PR and reviewing liability"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Bodily Injury claim discussed (LOR/PR resent)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\nCLIENT CONTACT\nDetails: spoke with client, treatment going well\nPerson Making Contact: Justin",
+      "natural_language": "Initial client contact on August 19, 2025 with Jordan Brown regarding the motor vehicle accident case Jordan-Brown-MVA-8-19-2025. Justin spoke with the client, and the treatment is going well.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\nI meanCLIENT CONTACT\nDetails: Doa 8/19/2025\n7TH St\nSitting at a red light, when they were rear ended and pushed into a school bus\nLMPD\nReport # SHV25-001540\nJordan Brown (driver)\nPH: 502-996-2342\nDOB 6/15/1999\nSSN: 401-55-8117\nAddress\n3416 Cathe Dykstra Way\nUnit 102\nLouisville 40216\nHealth Insurance – Passport\nWent to UofL downtown via EMS\nInjuries\nNeck, back, left knee, right shoulder\nPerson Making Contact: Justin\nDate & Time: August 20 2025",
+      "natural_language": "Initial client contact on August 20, 2025 with Jordan Brown regarding a motor vehicle accident that occurred on August 19, 2025. The incident took place on 7th Street, where Jordan Brown was sitting at a red light when their vehicle was rear-ended and pushed into a school bus. The Louisville Metro Police Department (LMPD) assigned Report SHV25-001540 to the case.\n\nJordan Brown is the driver. Contact information includes phone number 502-996-2342, date of birth 6/15/1999, and Social Security Number 401-55-8117. The address is 3416 Cathe Dykstra Way, Unit 102, Louisville, KY 40216. Health insurance is listed as Passport. Jordan Brown was transported to the University of Louisville downtown campus via EMS for evaluation.\n\nInjuries reported include the neck, back, left knee, and right shoulder. The person making contact for the file is Justin, with the date and time noted as August 20, 2025.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "injured party / client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "transported client / emergency medical responder"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "treatment location / evaluated via EMS"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\nNew Insurance Note: 8/28 coverage was cancelled prior to accident. Setting up claim for a denial letter\nInsurance Type: Bodily Injury (BI)\nInsurance Company: SafeCo Insurance Company\nWritten by: Justin Chumbley yeah",
+      "natural_language": "Case Jordan-Brown-MVA-8-19-2025 concerns client Jordan Brown in a motor vehicle accident file.\n\nA New Insurance Note states that 8/28 coverage was cancelled prior to the accident and that a claim is being set up for a denial letter. The insurance type is Bodily Injury (BI) with SafeCo Insurance Company. The note was written by Justin Chumbley yeah.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Falcon Insurance Company",
+            "relevance": "insurer for BI coverage cited as cancelled"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI claim (SafeCo)",
+            "relevance": "BI claim being set up for denial letter"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Justin Chumbley",
+            "relevance": "author of insurance note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-08",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\n__New Insurance Note:__ 9/8 saved ack and updated adj info\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Root Auto Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Jordan-Brown-MVA-8-19-2025 involves client Jordan Brown regarding a motor vehicle accident that occurred on August 19, 2025.\n\nThe record notes a New Insurance Note dated September 8, indicating that the acknowledgment was saved and the adjuster information was updated. The insurance type is Personal Injury Protection (PIP), and the insurer is Root Auto Insurance. The entry was written by Justin Chumbley.",
+      "valid_at": "2025-09-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "PIP claim recorded/updated"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "insurer for PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-29",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\nA call from aaron whaley was logged at 10/29/25 - 13:46:21 . #outboundcall\n\nCaller Info: 6147210658 \n\nCaller ID: 614-721-0658 \n\nCaller Name: Blake Pierce \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This case, Jordan-Brown-MVA-8-19-2025, involves client Jordan Brown. An outbound call from Aaron Whaley was logged on October 29, 2025 at 13:46:21.\n\nCaller information lists the number 6147210658; the caller ID is 614-721-0658. The caller name is Blake Pierce. The Caller Email field is blank. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Blake Pierce",
+            "relevance": "person contacted"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\n__Jordan Brown__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Jordan Brown - Filevine Project Email Address [JordanBrownMVAZ5125528@louisvilleaccidentlawyer.filevineapp.com](mailto:JordanBrownMVAZ5125528@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 01:40:37 GMT-04:00\n\nPlease go ahead and request the ER and EMS records and bills.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Jordan-Brown-MVA-8-19-2025 concerns client Jordan Brown in a motor vehicle accident matter (MVA). \n\nOn Wednesday, October 29, 2025, at 1:40 a.m. GMT-04:00, attorney Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley (Justin@whaleylawfirm.com) and to Jordan Brown’s Filevine project address JordanBrownMVAZ5125528@louisvilleaccidentlawyer.filevineapp.com. The email requested that the ER and EMS records and bills be requested, stating, “Please go ahead and request the ER and EMS records and bills.” The message was signed by Aaron Whaley of Whaley Law Firm, with the following contact details: 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "case client/recipient of project correspondence"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "sender of email/requestor of ER and EMS records"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "employer of sender (Aaron Whaley)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "recipient of email"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "EMS records/bills requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "ER records/bills requested"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "project platform/recipient address used for email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-20",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\n__CLIENT CONTACT__\n__Details:__ updated client \n__Person Making Contact:__ Justin\n__Date & Time__: November 20 2025",
+      "natural_language": "This case, Jordan-Brown-MVA-8-19-2025, concerns client Jordan Brown and the motor vehicle accident that occurred on August 19, 2025.\n\nInitial client contact on November 20, 2025, was made by Justin to update the client's information for the Jordan-Brown-MVA-8-19-2025 case.",
+      "valid_at": "2025-11-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "client and subject of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Jordan-Brown-MVA-8-19-2025\nClient: Jordan Brown\n\nFILE REORGANIZATION COMPLETE - Jordan Brown MVA Case: Completed comprehensive 5-phase file reorganization using 8-bucket directory system. Phase 1: Generated inventory of 51 files. Phase 2: Analyzed all documents with content-based categorization (filenames scrambled to eliminate bias). Phase 3: Quality review identified and corrected 5 errors (16.7% error rate, below 20% threshold) - critical corrections included properly identifying police report vs insurance policy, preventing data loss. Phase 4: Successfully executed 28 operations (20 moves, 8 deletes). Phase 5: Verified 100% naming convention compliance and companion file integrity. Results: Client folder (4 PDF+MD pairs: fee agreements, intake documents), Investigation folder (2 PDF+MD pairs: police report Master File #73221680, Betty Antle's Progressive Insurance policy as evidence), Medical Records (9 PDF+MD pairs across 3 providers: UofL Hospital ER visit, Louisville Metro EMS transport/bill, Starlite Injury comprehensive treatment records), Insurance (5 PDF+MD pairs: Root PIP with $10,000 exhausted payment ledger, SafeCo BI denial letter). Deleted 4 duplicates and 4 template files. Key case information confirmed: Accident 8/19/2025, rear-end collision pushing client into school bus, SafeCo denied coverage (policy cancelled), Progressive accepted property damage liability, Root PIP fully paid to Starlite. 13 UUID-named .jpg images remain in root for manual review (likely accident scene photos, vehicle damage, insurance cards). Case now properly organized and ready for demand preparation. All reports saved to Reports/ directory.",
+      "natural_language": "The Jordan Brown motor vehicle accident case (Jordan-Brown-MVA-8-19-2025) has been fully reorganized into a coherent, flowing file structure. A comprehensive five-phase process was completed using an eight-bucket directory system. Phase 1 produced an inventory of 51 files. Phase 2 analyzed all documents with content-based categorization, and filenames were scrambled to eliminate bias. In Phase 3, a quality review identified and corrected five errors, a 16.7% error rate which is below the 20% threshold; critical corrections included properly distinguishing the police report from the insurance policy to prevent data loss. Phase 4 executed 28 operations, consisting of 20 moves and 8 deletes. Phase 5 confirmed 100% naming convention compliance and the integrity of companion files.\n\nResults of the reorganization include clearly organized folders and files. The Client folder contains four PDF+MD pairs (fee agreements and intake documents). The Investigation folder holds two PDF+MD pairs: the police report Master File #73221680 and Betty Antle’s Progressive Insurance policy as evidence. The Medical Records folder includes nine PDF+MD pairs across three providers: UofL Hospital ER visit, Louisville Metro EMS transport/bill, and Starlite Injury comprehensive treatment records. The Insurance folder contains five PDF+MD pairs: a Root PIP ledger showing $10,000 exhausted, and a SafeCo BI denial letter. In total, four duplicates and four template files were deleted during the cleanup.\n\nKey case information has been confirmed: an accident occurred on 8/19/2025, involving a rear-end collision that pushed the client into a school bus. SafeCo denied coverage due to policy cancellation, Progressive accepted property damage liability, and Root PIP was fully paid to Starlite. Additionally, 13 UUID-named .jpg images remain in the root directory for manual review, likely representing accident scene photos, vehicle damage, and insurance cards. The case is now properly organized and ready for demand preparation, with all reports saved to the Reports/ directory.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "subject of the case; client whose file was reorganized"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "ER visit medical records included in file"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "EMS transport and bill included in medical records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "comprehensive treatment records; recipient of PIP payment"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "property damage liability accepted (policy found in investigation folder)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "PIP ledger showing $10,000 exhausted / fully paid to provider"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

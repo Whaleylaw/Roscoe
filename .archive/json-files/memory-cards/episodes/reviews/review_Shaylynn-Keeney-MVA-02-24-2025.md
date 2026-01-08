@@ -1,0 +1,49 @@
+# Relationship Review: Shaylynn-Keeney-MVA-02-24-2025
+
+**Total Episodes:** 0
+
+**Total Proposed Relationships:** 0
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (5)
+- Pleasure Ridge Park Fire/EMS (emergency medical services)
+- Southeastern Emergency Services, LLC
+- Starlite Chiropractic (chiropractic)
+- UofL Health – Brown Cancer Center – Medical Oncology - Mary & Elizabeth UofL Health – Brown Cancer Center – Medical Oncology – Mary & Elizabeth Hospital (hospital)
+- Imaging, PLLC (radiology)
+
+### Insurance Claims (2)
+- **PIPClaim**: State Farm Insurance Company
+  - Adjuster: State Farm PIP Team
+- **UMClaim**: State Farm Insurance Company
+  - Adjuster: Steve Campbell
+
+### Liens (1)
+- None
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

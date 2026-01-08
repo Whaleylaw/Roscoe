@@ -1,0 +1,172 @@
+{
+  "case_name": "Michae-Guyton-MVA-11-14-2025",
+  "total_episodes": 4,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-11-17",
+      "original_body": "Case: Michae-Guyton-MVA-11-14-2025\nClient: Michae Guyton\n\nsent intake via vinesign",
+      "natural_language": "Case Michae-Guyton-MVA-11-14-2025 concerns client Michae Guyton. An intake was sent to Michae Guyton via Vinesign.",
+      "valid_at": "2025-11-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michae Guyton",
+            "relevance": "case client; intake recipient"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Vinesign",
+            "relevance": "platform used to send intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-11-17",
+      "original_body": "Case: Michae-Guyton-MVA-11-14-2025\nClient: Michae Guyton\n\n#vinesign-completed\nName: intake Michae\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=b450acc4-27de-4788-b9df-bd9cdf6264cf.pdf\nSigned: 2025-11-17 16:56:02\nAll signers: Michae Guyton((502) 701-5196)\nSender: Justin Chumbley",
+      "natural_language": "Case Michae-Guyton-MVA-11-14-2025 concerns client Michae Guyton. The intake form, named \u201cintake Michae,\u201d was completed via VineSign. The signed document is accessible at https://app.vinesign.com/Jobs/Pdf?pdfKey=b450acc4-27de-4788-b9df-bd9cdf6264cf.pdf and was signed on November 17, 2025 at 16:56:02. The signers on the document were Michae Guyton, whose phone number is (502) 701-5196, and the VineSign invitation was sent by Justin Chumbley.",
+      "valid_at": "2025-11-17T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michae Guyton",
+            "relevance": "case client and document signer"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "e-signature platform used to complete intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-17",
+      "original_body": "Case: Michae-Guyton-MVA-11-14-2025\nClient: Michae Guyton\n\n__CLIENT CONTACT__\n__Details:__ DOA 11/14/2025\nLocation: Eaton and Dixie Highway was rear ended at a light\n\nAntonio Lopez\nDOB 11/09/1997\nSSn 337-94-7156\nPh: 502-701-5196\n\nAddress\n\n5056 Minette Court\nApt 3\n40258\n\nPIP Progressive\nClaim # 25695180369\n\nCivilian report was done\n\nWent to UofL downtown\n\nInjuries\nMid and lower back pain\n\nMichae Guyton (Mich-Shae)\nDOB 8/6/1997\nSSN 330-94-6903\nPh 502-701-5196\n\nUofL Hospital\nInjuries \nBack pain, both shoulders\n\nA\u2019zaire Lopez\nDOB 3/22-2022\nSSN: 687-56-7027\n\nUofL Hospital\n\nMi\u2019ayla Lopez\nDOB 1/25/2025\nSSN: 097-29-8972\n\nUofL \n__Person Making Contact:__ Justin\n__Date & Time__: November 17 2025",
+      "natural_language": "Case: Michae-Guyton-MVA-11-14-2025\n\nInitial client contact on November 17, 2025, with Antonio Lopez regarding a motor vehicle accident that occurred on November 14, 2025, at the intersection of Eaton and Dixie Highway, where Michae Guyton\u2019s vehicle was rear-ended at a traffic light. The other driver is identified as Antonio Lopez (DOB 11/09/1997). His SSN and phone number are on file but redacted here, and his address is listed but redacted. Progressive Personal Injury Protection (PIP) claim number 25695180369 is associated with this matter, and a civilian report was filed.\n\nThe record indicates Michae Guyton (also spelled Mich-Shae), born 08/06/1997, was involved in the accident. The note lists injuries as mid- and lower-back pain, and indicates that Michae went to UofL Downtown for evaluation. At UofL Hospital, injuries documented for Michae include back pain and pain in both shoulders. The record also lists A\u2019zaire Lopez (DOB 03/22/2022; SSN redacted) and Mi\u2019ayla Lopez (DOB 01/25/2025; SSN redacted) with entries indicating they have been seen at UofL Hospital in connection with the case.\n\nThe person making contact is identified as Justin, with the date and time recorded as November 17, 2025.",
+      "valid_at": "2025-11-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michae Guyton",
+            "relevance": "injured party / primary client of case"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Antonio Lopez",
+            "relevance": "other driver involved in collision"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "insurer for PIP claim"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25695180369",
+            "relevance": "personal injury protection claim associated with case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Downtown",
+            "relevance": "treatment / evaluation location"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Hospital",
+            "relevance": "treatment / evaluation location"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "A'zaire Lopez",
+            "relevance": "related person seen at UofL Hospital in connection with case"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Mi'ayla Lopez",
+            "relevance": "related person seen at UofL Hospital in connection with case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Michae-Guyton-MVA-11-14-2025\nClient: Michae Guyton\n\nFILE REORGANIZATION COMPLETE - Michae Guyton MVA Case: Completed comprehensive 5-phase file reorganization using 8-bucket directory system. Phase 1: Generated inventory of 11 files (5 scrambled .md files for content-only analysis). Phase 2: Analyzed all documents with content-based categorization (filenames scrambled to eliminate bias). Phase 3: Quality review achieved 0.0% error rate (perfect accuracy - 0 errors out of 5 files). Phase 4: Successfully executed 5 move operations, reunited all PDF companions. Phase 5: Verified 100% naming convention compliance and companion file integrity. Results: Client folder (4 files: 2 PDF+MD pairs - Intake Documents signed 11/17/2025 via Vinesign, Intake Verification Certificate), Investigation folder (2 files: 1 PDF+MD pair - Jefferson County Clerk Insurance Information Request for plate J8Z536), Insurance folder organized by type and carrier (4 files: BI/Auto Owners with Letter of Representation dated 11/18/2025 claim #300-0701136-2025, PIP/Progressive with Letter of Representation dated 11/18/2025 claim #25695180369 with special instructions to reserve $4,000 and use $6,000 for bills, DO NOT pay hospital bills). Key case information: Multi-party case with 4 clients (Mi'Ayla Lopez, Antonio Lopez, A'zaire Lopez, and Michae Guyton), accident date 11/14/2025, rear-end collision at Eaton and Dixie Highway, client transported to UofL Hospital downtown with injuries to back pain and both shoulders. Fee Agreement: 33.36% pre-suit, 40% post-suit. All files now properly organized with zero errors and ready for treatment phase. Complete documentation saved to Reports/ directory.",
+      "natural_language": "Case Michae-Guyton-MVA-11-14-2025 involves four clients\u2014Mi'Ayla Lopez, Antonio Lopez, A'zaire Lopez, and Michae Guyton\u2014related to a motor vehicle accident that occurred on November 14, 2025. The incident was a rear-end collision at the intersection of Eaton and Dixie Highway. The clients were transported to UofL Hospital downtown, with injuries including back pain and injuries to both shoulders.\n\nFILE REORGANIZATION COMPLETE - The Michae Guyton MVA case underwent a comprehensive five-phase file reorganization using an eight-bucket directory system. Phase 1 generated an inventory of 11 files, including 5 scrambled .md files used for content-only analysis. Phase 2 analyzed all documents with content-based categorization, with filenames scrambled to eliminate bias. Phase 3 achieved a 0.0% error rate (perfect accuracy\u20140 errors out of 5 files). Phase 4 successfully executed five move operations to reunite all PDF companions. Phase 5 verified 100% naming convention compliance and companion file integrity.\n\nResults: The Client folder contains four files: two PDF+MD pairs\u2014Intake Documents signed 11/17/2025 via Vinesign and the Intake Verification Certificate. The Investigation folder contains two files: one PDF+MD pair\u2014the Jefferson County Clerk Insurance Information Request for plate J8Z536. The Insurance folder is organized by type and carrier and contains four files: BI/Auto Owners with a Letter of Representation dated 11/18/2025, claim #300-0701136-2025; PIP/Progressive with a Letter of Representation dated 11/18/2025, claim #25695180369, with special instructions to reserve $4,000 and use $6,000 for bills, and DO NOT pay hospital bills.\n\nKey case information: This is a multi-party case with four clients (Mi'Ayla Lopez, Antonio Lopez, A'zaire Lopez, and Michae Guyton). The accident date is 11/14/2025, a rear-end collision at Eaton and Dixie Highway. The client group was transported to UofL Hospital downtown with injuries including back pain and injuries to both shoulders. The Fee Agreement is 33.36% pre-suit and 40% post-suit. All files are now properly organized with zero errors and are ready for the treatment phase. Complete documentation has been saved to the Reports/ directory.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Mi'Ayla Lopez",
+            "relevance": "named client involved in MVA"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Antonio Lopez",
+            "relevance": "named client involved in MVA"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "A'zaire Lopez",
+            "relevance": "named client involved in MVA"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michae Guyton",
+            "relevance": "named client and case namesake"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Hospital",
+            "relevance": "treatment/transport destination for clients"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners",
+            "relevance": "insurer listed under BI/Auto Owners"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI #300-0701136-2025",
+            "relevance": "bodily injury claim with Auto Owners (letter of representation)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "insurer listed under PIP/Progressive"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25695180369",
+            "relevance": "personal injury protection claim with Progressive (letter of representation and reserve instructions)"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Jefferson County Clerk",
+            "relevance": "source of Insurance Information Request for plate J8Z536"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

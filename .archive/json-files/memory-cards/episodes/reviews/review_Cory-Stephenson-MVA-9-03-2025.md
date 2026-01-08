@@ -1,0 +1,54 @@
+# Relationship Review: Cory-Stephenson-MVA-9-03-2025
+
+**Total Episodes:** 2
+
+**Total Proposed Relationships:** 6
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (2)
+- Starlite Chiropractic (chiropractic)
+- Norton Audubon Hospital (hospital)
+
+### Insurance Claims (1)
+- **BIClaim**: State Farm Insurance Company
+  - Adjuster: Cheryl Washington
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### BIClaim (1 consolidated)
+- [ ] BIClaim - State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+### Client (1 consolidated)
+- [ ] Cory Stephenson — *✓ MATCHES: Cory Stephenson*
+
+### Insurer (2 consolidated)
+- [ ] Humana Medicaid — *? NEW*
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+### MedicalProvider (1 consolidated)
+- [ ] Norton Audubon Hospital — *✓ MATCHES: Norton Audubon Hospital*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

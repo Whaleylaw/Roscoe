@@ -1,0 +1,128 @@
+{
+  "case_name": "Michael-Deshields-MVA-10-31-2025",
+  "total_episodes": 5,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2025-11-03",
+      "original_body": "Case: Michael-Deshields-MVA-10-31-2025\nClient: Michael Deshields\n\n__CLIENT CONTACT__\n__Details:__ DOA 10/31/25\nLocation: Algonquin pkwy\nDetails: doesn\u2019t remember, was asleep, another car sideswiped them and they hit a tree\n\nDriver: Angelina Summers\n\nMichael Deshields\nPH: 502-416-9040\nDOB: 5/8/2002\nSSN: 404-59-4906\n5502 Branston Dr\nLouisville, 40216\n\nEMS to UofL Hospital\n\nInjuries:\nLeft arm, shoulder, neck, chest, ribs, had a chest contusion from airbags. \n\nPIP: State Farm \n__Person Making Contact:__ Justin\n__Date & Time__: November 03 2025",
+      "natural_language": "Case: Michael-Deshields-MVA-10-31-2025. Initial client contact on November 3, 2025 with Justin regarding a motor vehicle accident involving Michael Deshields. The incident occurred on October 31, 2025, on Algonquin pkwy. The notes indicate the client doesn\u2019t remember the event and was asleep at the time; another car sideswiped them and they hit a tree. The other driver involved was Angelina Summers. EMS transported the client to UofL Hospital.\n\nMichael Deshields is the client in this case. They can be reached at 502-416-9040. Their date of birth is May 8, 2002, and their SSN is 404-59-4906. They reside at 5502 Branston Dr, Louisville, KY 40216. The accident details note injuries to the left arm, left shoulder, neck, chest, and ribs, including a chest contusion from the airbags. Personal Injury Protection (PIP) coverage is through State Farm. The person making contact is Justin, and the date/time of contact is November 3, 2025.",
+      "valid_at": "2025-11-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Deshields",
+            "relevance": "client / injured party"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Hospital",
+            "relevance": "treatment facility / transport destination"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "insurer providing PIP coverage"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP - State Farm",
+            "relevance": "personal injury protection coverage for medical bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-11-04",
+      "original_body": "Case: Michael-Deshields-MVA-10-31-2025\nClient: Michael Deshields\n\nPR not yet available",
+      "natural_language": "Case Michael-Deshields-MVA-10-31-2025 concerns client Michael Deshields in relation to a motor vehicle accident.\n\nThe police report (PR) is not yet available.",
+      "valid_at": "2025-11-04T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Deshields",
+            "relevance": "primary client involved in MVA"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-11-04",
+      "original_body": "Case: Michael-Deshields-MVA-10-31-2025\nClient: Michael Deshields\n\nMichael, It' s Justin from the Whaley Law Firm. This is the text only number I mentioned for your file. Send any photos of injuries here along with the police report number. If you need to call me my direct line is 502-357-9603",
+      "natural_language": "Initial client contact on October 31, 2025 with Michael Deshields regarding a motor vehicle accident. The caller identified himself as Justin from the Whaley Law Firm and stated that this is the text-only number he mentioned for the file.\n\nHe asked Michael to send any photos of injuries to that text-only number along with the police report number. He also provided his direct line, 502-357-9603, for any needed calls.",
+      "valid_at": "2025-11-04T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Deshields",
+            "relevance": "subject of contact"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin",
+            "relevance": "caller / attorney contact"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm represented by caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-11-05",
+      "original_body": "Case: Michael-Deshields-MVA-10-31-2025\nClient: Michael Deshields\n\nPR still not available",
+      "natural_language": "Case Michael-Deshields-MVA-10-31-2025 concerns the client Michael Deshields. PR is still not available.",
+      "valid_at": "2025-11-05T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Deshields",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-11-05",
+      "original_body": "Case: Michael-Deshields-MVA-10-31-2025\nClient: Michael Deshields\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=b8a3ccd7-6807-4e49-9cd8-d8cb57e06860.pdf\nSigned: 2025-11-05 09:34:32\nAll signers: Michael Deshields((502) 416-9040)\nSender: Justin Chumbley",
+      "natural_language": "Case Michael-Deshields-MVA-10-31-2025 involves client Michael Deshields in a motor vehicle accident dated October 31, 2025. An intake document was prepared for this case and has been completed via VineSign (status vinesign-completed). The document is named intake.\n\nThe signed intake document can be accessed at https://app.vinesign.com/Jobs/Pdf?pdfKey=b8a3ccd7-6807-4e49-9cd8-d8cb57e06860.pdf. It was signed on 2025-11-05 09:34:32. All signers: Michael Deshields((502) 416-9040). The sender of the VineSign package was Justin Chumbley.",
+      "valid_at": "2025-11-05T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Deshields",
+            "relevance": "case client and signer of intake"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "e-signature vendor used to complete intake"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

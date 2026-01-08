@@ -1,0 +1,99 @@
+{
+  "case_name": "Anella-Noble-MVA-01-03-2021",
+  "total_episodes": 1,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-11-30",
+      "original_body": "Case: Anella-Noble-MVA-01-03-2021\nClient: Anella Noble\n\n**FILE ORGANIZATION COMPLETED**\n\nCompleted comprehensive file organization using Case File Organization skill with 8-bucket system and content-based naming:\n\n**Phase 1 - Inventory (Complete):**\n- Generated file inventory of 395+ files across entire case folder\n- Scrambled all .md filenames to eliminate naming bias\n- Created PDF-MD mapping for reunification\n- Moved PDFs to temporary _pdf_originals/ folder\n- Split inventory into 37 chunks for parallel processing\n\n**Phase 2 - Analysis & Mapping (Complete):**\n- Parallel workflow: 37 sub-agents analyzed files simultaneously\n- Each sub-agent analyzed 10-20 files based purely on content (no filename bias)\n- Created 36 partial reorganization maps (chunks 1-36, chunk 0 empty)\n- Applied proper naming convention: YYYY-MM-DD - Client Name - Category - Originator - Description\n- Identified duplicates across chunks\n- Flagged files requiring manual review\n\n**Phase 3 - Consolidation (Complete):**\n- Merged all 36 partial mapping files into master reorganization map\n- Detected and removed 8 duplicate mapping entries\n- Final master map contains 21 files requiring special handling\n- Consolidated findings from all sub-agents\n\n**Phase 4 - Execution (Complete):**\n- Successfully moved 8 files to proper 8-bucket structure:\n * Litigation: 7 files (court filing confirmations, deposition scheduling emails)\n * Insurance/PIP/Liberty Mutual: 1 file (PIP log)\n- Skipped 4 system files (correctly identified as non-case documents)\n- Flagged 8 files for manual analysis (require human review to determine content)\n- Reunified PDFs with .md companions using proper names\n- Zero errors during execution\n\n**Phase 5 - Verification (Complete):**\n- All 8 bucket directories verified\n- 100% success rate - all planned moves executed without errors\n- 0 data loss or file corruption\n- Generated comprehensive completion reports\n\n**Critical Case Information Confirmed:**\n- Case: Anella Noble v. Virginia Sewell et al. (Jefferson Circuit 21-CI-004985)\n- Accident Date: January 3, 2021 (hit-and-run, client was pregnant passenger)\n- Parties: Virginia Sewell (vehicle owner) and Estate of DeShawn Ford (deceased driver/boyfriend)\n- Litigation Status: Third Amended Complaint filed 9/12/2023, depositions completed\n- State Farm dismissed from case (12/4/2023)\n- Defense Counsel: Renee Hoskins (Smith & Hoskins) for Sewell; David Klapheke (Dinsmore) for Estate\n- Insurance: Safeco (PIP), Anthem Medicaid, Aetna Life (Medicaid)\n- Medical Bills: $10,407.39 total\n- Body cam footage obtained from Officers Lovewell and Pond (2/10/2025)\n\n**Files Requiring Manual Review (8 files):**\n1. nobleanellavsewellvirginiaetaljeffersoncircuit.eml\n2. nobleunknowndriverfacebook.eml\n3. reanellanobel3.eml\n4. noblevsewelletal-sdt-tmobiledbametropcs.eml\n5. noblevsewellunkdriver-motiontosubunkdriver.eml\n6. reanellanoblevvirginiasewell-depositionschedulingo.eml\n7. redepositionschedulingfordefsewell-noblevsewells.eml\n8. reconfirmationfor-323202380288.eml\n\n**Result:** Case file now organized with proper 8-bucket structure and standardized naming convention. Files are properly categorized and easily retrievable. Quality metrics: 100% execution success rate, 0% error rate, 8 files flagged for manual review to complete organization.",
+      "natural_language": "The case file Anella-Noble-MVA-01-03-2021 centers on client Anella Noble. A comprehensive file organization effort was completed using a Case File Organization approach that employed an 8-bucket structure and content-based naming to ensure consistent, retrievable records.\n\nPhase 1 focused on inventory. A file inventory of over 395 documents was generated across the entire case folder. To reduce naming bias, all markdown filenames (.md) were scrambled. A PDF-to-MD mapping was created for reunification, and the PDFs were moved into a temporary _pdf_originals/ folder. The overall inventory was divided into 37 chunks to enable parallel processing.\n\nPhase 2 moved into analysis and mapping. The workflow was parallelized with 37 sub-agents analyzing files simultaneously, with each sub-agent handling 10–20 files based solely on content rather than filename. This phase produced 36 partial reorganization maps (chunks 1–36, with chunk 0 empty). A proper naming convention was applied: YYYY-MM-DD - Client Name - Category - Originator - Description. Duplicates across chunks were identified, and files requiring manual review were flagged for further attention.\n\nPhase 3 covered consolidation. All 36 partial mapping files were merged into a master reorganization map. Eight duplicate mapping entries were detected and removed. The final master map contained 21 files requiring special handling, and findings from all sub-agents were consolidated.\n\nPhase 4 dealt with execution. Eight files were moved into the proper 8-bucket structure: seven in the Litigation bucket (including court filing confirmations and deposition scheduling emails) and one in Insurance/PIP/Liberty Mutual (a PIP log). Four system files were skipped because they were correctly identified as non-case documents. Eight files were flagged for manual analysis, requiring human review to determine content. PDFs were reunified with their corresponding .md companions using proper names, and there were zero errors during execution.\n\nPhase 5 was verification. All eight bucket directories were verified with a 100% success rate; all planned moves were completed without errors, and there was 0 data loss or file corruption. Comprehensive completion reports were generated.\n\nCritical case information was confirmed: the case is Anella Noble v. Virginia Sewell et al., Jefferson Circuit Court 21-CI-004985. The accident occurred on January 3, 2021, as a hit-and-run in which the client was a pregnant passenger. The parties are Virginia Sewell (vehicle owner) and the Estate of DeShawn Ford (deceased driver/boyfriend). Litigation status shows a Third Amended Complaint filed on September 12, 2023, with depositions completed. State Farm was dismissed from the case on December 4, 2023. Defense counsel is Renee Hoskins of Smith & Hoskins for Sewell, and David Klapheke of Dinsmore for the Estate. Insurance involved includes Safeco (PIP), Anthem Medicaid, and Aetna Life (Medicaid). Medical bills total $10,407.39. Body cam footage was obtained from Officers Lovewell and Pond on February 10, 2025.\n\nEight files were identified for manual review. They are: nobleanellavsewellvirginiaetaljeffersoncircuit.eml; nobleunknowndriverfacebook.eml; reanellanobel3.eml; noblevsewelletal-sdt-tmobiledbametropcs.eml; noblevsewellunkdriver-motiontosubunkdriver.eml; reanellanoblevvirginiasewell-depositionschedulingo.eml; redepositionschedulingfordefsewell-noblevsewells.eml; reconfirmationfor-323202380288.eml.\n\nResult: The case file is now organized with the proper 8-bucket structure and a standardized naming convention. Files are properly categorized and easily retrievable. Quality metrics show a 100% execution success rate, 0% error rate, and 8 files flagged for manual review to complete organization.",
+      "valid_at": "2025-11-30T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Anella Noble",
+            "relevance": "client/plaintiff"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Virginia Sewell",
+            "relevance": "vehicle owner/defendant"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Estate of DeShawn Ford",
+            "relevance": "defendant (estate of deceased driver)"
+          },
+          {
+            "entity_type": "Court",
+            "entity_name": "Jefferson County Circuit Court, Division V",
+            "relevance": "forum/case number"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Renee Hoskins",
+            "relevance": "defense counsel for Sewell"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Smith & Hoskins PLLC",
+            "relevance": "defense firm for Sewell"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "David Klapheke",
+            "relevance": "defense counsel for the Estate"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Dinsmore",
+            "relevance": "defense firm for the Estate"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "PIP insurer mentioned"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer referenced by PIP log"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Liberty Mutual PIP log",
+            "relevance": "PIP log document identified in Insurance/PIP bucket"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Anthem",
+            "relevance": "medical payer/insurer"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Aetna Life Insurance Company",
+            "relevance": "medical payer/insurer (Medicaid)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer dismissed from the case"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

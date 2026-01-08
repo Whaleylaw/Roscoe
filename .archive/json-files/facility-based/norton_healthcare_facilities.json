@@ -1,0 +1,4520 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Associates in Obstetrics & Gynecology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 300, Louisville, KY 40207",
+          "phone": "(502) 899-6700"
+        }
+      ]
+    },
+    "source_id": "facility_0",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "First Seizure Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 301, Louisville, KY 40241",
+          "phone": "(502) 394-6460"
+        }
+      ]
+    },
+    "source_id": "facility_1",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Gray Street Medical Building",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "210 East Gray Street, Louisville, KY 40202",
+          "phone": "(502) 629-1234"
+        }
+      ]
+    },
+    "source_id": "facility_2",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Diagnostic Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 7,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4046 Dutchmans Lane, Louisville, KY 40207",
+          "phone": "(502) 893-7145"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "157 Towne Drive, Suite 101, Elizabethtown, KY 42701",
+          "phone": "(270) 740-5201"
+        },
+        {
+          "location": "Jeffersonville Commons",
+          "address": "2021 Mercy Way, Suite 104, Jeffersonville, IN 47130",
+          "phone": "(812) 283-2405"
+        },
+        {
+          "location": "Sellersburg",
+          "address": "130 Hunter Station Way, Suite 102, Sellersburg, IN 47172",
+          "phone": "(812) 246-4801"
+        },
+        {
+          "location": "Dixie",
+          "address": "4420 Dixie Highway, Suite 108, Louisville, KY 40216",
+          "phone": "(502) 485-4700"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 101, Louisville, KY 40241",
+          "phone": "(502) 446-6611"
+        },
+        {
+          "location": "Fern Creek",
+          "address": "9344 Cedar Center Way, Cedar Springs Shopping Center, Louisville, KY 40291",
+          "phone": "(502) 753-3390"
+        }
+      ]
+    },
+    "source_id": "facility_3",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute - Neurosurgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 301, Louisville, KY 40241",
+          "phone": "(502) 394-6390"
+        },
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 1105, Louisville, KY 40202",
+          "phone": "(502) 583-1697"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 446-4664"
+        }
+      ]
+    },
+    "source_id": "facility_4",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Leatherman Spine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 6,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 101, Louisville, KY 40207",
+          "phone": "(502) 584-7525"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "150 Frankfort Road, Shelbyville, KY 40065",
+          "phone": "(502) 584-7525"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "157 Towne Drive, Suite 103, Elizabethtown, KY 42701",
+          "phone": "(502) 584-7525"
+        },
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Louisville, KY 40202",
+          "phone": "(502) 584-7525"
+        },
+        {
+          "location": "Clarksville",
+          "address": "2051 Clevidence Boulevard, Clarksville, IN 47129",
+          "phone": "(502) 584-7525"
+        },
+        {
+          "location": "Frankfort",
+          "address": "202 Limestone Street South, Suite 1B, Frankfort, KY 40601",
+          "phone": "(502) 629-2225"
+        }
+      ]
+    },
+    "source_id": "facility_5",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Leatherman Spine - Angies Way",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9880 Angies Way, Medical Plaza II, Suite 300, Louisville, KY 40241",
+          "phone": "(502) 584-7525"
+        }
+      ]
+    },
+    "source_id": "facility_6",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 7,
+      "locations": [
+        {
+          "location": "Frankfort",
+          "address": "202 Limestone Street South, Suite 1B, Frankfort, KY 40601",
+          "phone": "(502) 394-6460"
+        },
+        {
+          "location": "Bardstown",
+          "address": "106 West John Rowan Boulevard, Suite E2, Bardstown, KY 40004",
+          "phone": "(502) 454-5044"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 394-6460"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "150 Frankfort Road, Suite 104B, Shelbyville, KY 40065",
+          "phone": "(502) 899-6782"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "157 Towne Drive, Suite 102, Elizabethtown, KY 42701",
+          "phone": "(502) 583-1697"
+        },
+        {
+          "location": "Clark",
+          "address": "207 Sparks Avenue, Suite 300, Jeffersonville, IN 47130",
+          "phone": "(812) 218-7978"
+        },
+        {
+          "location": "Audubon",
+          "address": "3 Audubon Plaza Drive, Medical Plaza East, Suite LL2, Louisville, KY 40217",
+          "phone": "(502) 454-5044"
+        }
+      ]
+    },
+    "source_id": "facility_7",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute - Neurology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 310, Louisville, KY 40207",
+          "phone": "(502) 583-1697"
+        },
+        {
+          "location": "Main",
+          "address": "202 Limestone Street South, Suite 1B, Frankfort, KY 40601",
+          "phone": "(502) 629-2602"
+        },
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 1003, Louisville, KY 40202",
+          "phone": "(502) 899-6782"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 301, Louisville, KY 40241",
+          "phone": "(502) 394-6460"
+        }
+      ]
+    },
+    "source_id": "facility_8",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton OB/GYN Associates",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "601 South Floyd Street, Suite 500, Louisville, KY 40202",
+          "phone": "(502) 629-1515"
+        },
+        {
+          "location": "Iroquois",
+          "address": "5601 South 3rd Street, Level 2, Louisville, KY 40214",
+          "phone": "(502) 629-1515"
+        },
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Suite 304, Louisville, KY 40217",
+          "phone": "(502) 636-4946"
+        }
+      ]
+    },
+    "source_id": "facility_9",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute Cressman Neurological Rehabilitation",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 401, Louisville, KY 40241",
+          "phone": "(502) 446-8520"
+        }
+      ]
+    },
+    "source_id": "facility_10",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute - Neurosurgery - Carrollton",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "309 11th Street, Carrollton, KY 41008",
+          "phone": "(502) 583-1697"
+        }
+      ]
+    },
+    "source_id": "facility_11",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Urogynecology Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 307, Louisville, KY 40207",
+          "phone": "(502) 409-5600"
+        },
+        {
+          "location": "Downtown",
+          "address": "601 South Floyd Street, Suite 350, Louisville, KY 40202",
+          "phone": "(502) 409-5600"
+        },
+        {
+          "location": "Clarksville",
+          "address": "2051 Clevidence Boulevard, Suite B, Clarksville, IN 47129",
+          "phone": "(502) 409-5600"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 515, Louisville, KY 40207",
+          "phone": "(502) 409-5600"
+        }
+      ]
+    },
+    "source_id": "facility_12",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Surgical Specialists",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 8,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 900, Louisville, KY 40202",
+          "phone": "(502) 569-2220"
+        },
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Suite 2C, Madison, IN 47250",
+          "phone": "(812) 801-0840"
+        },
+        {
+          "location": "Clark",
+          "address": "301 Gordon Gutmann Boulevard, Suite 401, Jeffersonville, IN 47130",
+          "phone": "(812) 282-0637"
+        },
+        {
+          "location": "Audubon",
+          "address": "3 Audubon Plaza Drive, Medical Plaza East - Audubon, Suite LL2, Louisville, KY 40217",
+          "phone": "(502) 637-3311"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 637-3311"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 607, Louisville, KY 40207",
+          "phone": "(502) 899-6150"
+        },
+        {
+          "location": "Scottsburg",
+          "address": "1461 North Gardner Street, Scottsburg, IN 47170",
+          "phone": "(812) 752-8592"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4950 Norton Healthcare Boulevard, Medical Plaza I, Suite 300, Louisville, KY 40241",
+          "phone": "(502) 394-6395"
+        }
+      ]
+    },
+    "source_id": "facility_13",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Women's Care Physicians of Louisville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4130 Dutchmans Lane, Suite 400, Louisville, KY 40207",
+          "phone": "(502) 897-0697"
+        }
+      ]
+    },
+    "source_id": "facility_14",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women’s & Children’s Labor & Delivery – St. Matthews",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Level 2, Louisville, KY 40207",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_15",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute Memory Center Dementia Prevention Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 301, Louisville, KY 40241",
+          "phone": "(502) 394-6390"
+        }
+      ]
+    },
+    "source_id": "facility_16",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Hospital - Emergency",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 East Chestnut Street, Louisville, KY 40202",
+          "phone": "(502) 629-8000"
+        }
+      ]
+    },
+    "source_id": "facility_17",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Behavioral Health",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 446-5610"
+        },
+        {
+          "location": "Crestwood",
+          "address": "6411 Veterans Memorial Parkway, Suite 100, Crestwood, KY 40014",
+          "phone": "(502) 241-8611"
+        },
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Suite 200, Louisville, KY 40217",
+          "phone": "(502) 636-7444"
+        }
+      ]
+    },
+    "source_id": "facility_18",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Healthcare Medical Plaza I",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4950 Norton Healthcare Boulevard, Louisville, KY 40241",
+          "phone": "(502) 583-1697"
+        }
+      ]
+    },
+    "source_id": "facility_19",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CPA Lab",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3999 Dutchmans Lane, Suite 1G, Louisville, KY 40207",
+          "phone": "(502) 899-6527"
+        },
+        {
+          "location": "Jeffersonville",
+          "address": "1220 Missouri Avenue, Norton Clark Hospital, Suite 1600, Jeffersonville, IN 47130",
+          "phone": "(812) 283-2377"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "157 Towne Drive, Suite 104, Elizabethtown, KY 42701",
+          "phone": "(270) 769-2273"
+        },
+        {
+          "location": "Audubon",
+          "address": "3101 Poplar Level Road, Louisville, KY 40213",
+          "phone": "(502) 636-6008"
+        }
+      ]
+    },
+    "source_id": "facility_20",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton St. Matthews Medical Plaza 3",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4123 Dutchmans Lane, Saint Matthews, KY 40207",
+          "phone": "(502) 629-1234"
+        }
+      ]
+    },
+    "source_id": "facility_21",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Children's Genetics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Novak Center",
+          "address": "411 East Chestnut Street, Level 2, Louisville, KY 40202",
+          "phone": "(502) 588-0850"
+        }
+      ]
+    },
+    "source_id": "facility_22",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's Specialists - Mt. Washington",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "300 High Point Court, Suite B, Mount Washington, KY 40047",
+          "phone": "(502) 629-2030"
+        }
+      ]
+    },
+    "source_id": "facility_23",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute - Mt. Washington",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "300 High Point Court, Suite B, Mount Washington, KY 40047",
+          "phone": "(502) 394-6390"
+        }
+      ]
+    },
+    "source_id": "facility_24",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's Care - Versailles",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "206 West Tyson Street, Suite 1A, Versailles, IN 47042",
+          "phone": "(812) 801-0856"
+        }
+      ]
+    },
+    "source_id": "facility_25",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Healthcare Medical Plaza III",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Louisville, KY 40241",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_26",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Cressman Parkinson’s and Movement Disorders Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 301, Louisville, KY 40241",
+          "phone": "(502) 394-6460"
+        }
+      ]
+    },
+    "source_id": "facility_27",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pulmonary Specialists - West Market",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "100 West Market Street, Suite 2, Louisville, KY 40202",
+          "phone": "(502) 587-8000"
+        }
+      ]
+    },
+    "source_id": "facility_28",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Clark",
+          "address": "207 Sparks Avenue, Suite 301, Jeffersonville, IN 47130",
+          "phone": "(812) 280-5325"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 629-1515"
+        },
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Suite 2F, Madison, IN 47250",
+          "phone": "(812) 801-0856"
+        },
+        {
+          "location": "Scottsburg",
+          "address": "1465 North Gardner Street, Scottsburg, IN 47170",
+          "phone": "(812) 280-5325"
+        }
+      ]
+    },
+    "source_id": "facility_29",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Infectious Diseases Specialists",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4950 Norton Healthcare Boulevard, Medical Plaza I, Suite 303, Louisville, KY 40241",
+          "phone": "(502) 446-6434"
+        },
+        {
+          "location": "Downtown",
+          "address": "234 East Gray Street, Suite 768, Louisville, KY 40202",
+          "phone": "(502) 446-6434"
+        }
+      ]
+    },
+    "source_id": "facility_30",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Neurology Multidisciplinary Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 402, Louisville, KY 40241",
+          "phone": "(502) 559-3230"
+        }
+      ]
+    },
+    "source_id": "facility_31",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Wound Healing Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Clark",
+          "address": "1220 Missouri Avenue, Norton Clark Hospital, Jeffersonville, IN 47130",
+          "phone": "(812) 283-2850"
+        }
+      ]
+    },
+    "source_id": "facility_32",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pulmonary Specialists",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Clark",
+          "address": "207 Sparks Avenue, Suite 402, Jeffersonville, IN 47130",
+          "phone": "(502) 559-5864"
+        },
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Suite 1D, Madison, IN 47250",
+          "phone": "(812) 801-0830"
+        },
+        {
+          "location": "Newburg Rd",
+          "address": "3430 Newburg Road, Suite 150, Louisville, KY 40218",
+          "phone": "(502) 587-8000"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4950 Norton Healthcare Boulevard, Medical Plaza I, Suite 208, Louisville, KY 40241",
+          "phone": "(502) 587-8000"
+        }
+      ]
+    },
+    "source_id": "facility_33",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Clark Hospital Outpatient Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "209 Sparks Avenue, Norton Medical Plaza 1, Jeffersonville, IN 47130",
+          "phone": "(812) 283-2560"
+        }
+      ]
+    },
+    "source_id": "facility_34",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Gastroenterology Consultants of Louisville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 602, Louisville, KY 40202",
+          "phone": "(502) 585-1557"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "3999 Dutchmans Lane, Medical Plaza 1, Suite 7B, Louisville, KY 40207",
+          "phone": "(502) 896-4711"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4950 Norton Healthcare Boulevard, Medical Plaza I, Suite 205, Louisville, KY 40241",
+          "phone": "(502) 896-4711"
+        },
+        {
+          "location": "Audubon",
+          "address": "3 Audubon Plaza Drive, Medical Plaza East, Suite 530, Louisville, KY 40217",
+          "phone": "(502) 638-3700"
+        }
+      ]
+    },
+    "source_id": "facility_35",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Multispecialty Clinic Gastroenterology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 310, Louisville, KY 40207",
+          "phone": "(502) 896-4711"
+        }
+      ]
+    },
+    "source_id": "facility_36",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 23,
+      "locations": [
+        {
+          "location": "Bullitt County",
+          "address": "438 Adam Shepherd Parkway, Suite 1, Shepherdsville, KY 40165",
+          "phone": "(502) 543-1055"
+        },
+        {
+          "location": "Clarksville",
+          "address": "2051 Clevidence Boulevard, Suite B, Clarksville, IN 47129",
+          "phone": "(812) 280-9145"
+        },
+        {
+          "location": "Highlands",
+          "address": "2470 Bardstown Road, Suite A, Louisville, KY 40205",
+          "phone": "(502) 454-9151"
+        },
+        {
+          "location": "Middletown",
+          "address": "12955 Shelbyville Road, Suite 2, Louisville, KY 40243",
+          "phone": "(502) 245-4301"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 102, Louisville, KY 40211",
+          "phone": "(502) 632-8300"
+        },
+        {
+          "location": "Bowling Green",
+          "address": "615 7th Avenue, Bowling Green, KY 42101",
+          "phone": "(270) 846-4800"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 205, Louisville, KY 40207",
+          "phone": "(502) 899-6170"
+        },
+        {
+          "location": "Downtown Madison Level 1",
+          "address": "630 Broadway Street, Madison, IN 47250",
+          "phone": "(812) 801-0995"
+        },
+        {
+          "location": "Fern Creek",
+          "address": "9342 Cedar Center Way, Louisville, KY 40291",
+          "phone": "(502) 239-3228"
+        },
+        {
+          "location": "La Clinica Preston",
+          "address": "7926 Preston Highway, Suite 103, Louisville, KY 40219",
+          "phone": "(502) 861-4655"
+        },
+        {
+          "location": "Preston",
+          "address": "7430 Jefferson Boulevard, Suite 200, Louisville, KY 40219",
+          "phone": "(502) 966-8675"
+        },
+        {
+          "location": "Audubon",
+          "address": "3101 Poplar Level Road, The Villages of Audubon, Suite 101, Louisville, KY 40213",
+          "phone": "(502) 636-7444"
+        },
+        {
+          "location": "Bardstown KY",
+          "address": "106 West John Rowan Boulevard, Suite E, Bardstown, KY 40004",
+          "phone": "(502) 350-4799"
+        },
+        {
+          "location": "Clark",
+          "address": "301 Gordon Gutmann Boulevard, Suite 101, Jeffersonville, IN 47130",
+          "phone": "(812) 282-4844"
+        },
+        {
+          "location": "Crestwood",
+          "address": "6411 Veterans Memorial Parkway, Suite 100, Crestwood, KY 40014",
+          "phone": "(502) 241-8611"
+        },
+        {
+          "location": "Springhurst",
+          "address": "3594 Springhurst Boulevard, Louisville, KY 40241",
+          "phone": "(502) 456-3030"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "150 Frankfort Road, Suite 103, Shelbyville, KY 40065",
+          "phone": "(502) 844-2888"
+        },
+        {
+          "location": "Downtown Madison Level 2",
+          "address": "630 Broadway Street, Level 2, Madison, IN 47250",
+          "phone": "(812) 801-0995"
+        },
+        {
+          "location": "Frankfort",
+          "address": "202 Limestone Street South, Suite 1B, Frankfort, KY 40601",
+          "phone": "(502) 665-8375"
+        },
+        {
+          "location": "LaGrange",
+          "address": "1230 Market Street, Lagrange, KY 40031",
+          "phone": "(502) 225-6900"
+        },
+        {
+          "location": "Dixie",
+          "address": "4420 Dixie Highway, Suite 114, Louisville, KY 40216",
+          "phone": "(502) 449-6464"
+        },
+        {
+          "location": "Jeffersonville Commons",
+          "address": "2021 Mercy Way, Suite 102, Jeffersonville, IN 47130",
+          "phone": "(812) 218-6430"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "9880 Angies Way, Medical Plaza II, Suite 420, Louisville, KY 40241",
+          "phone": "(502) 394-6200"
+        }
+      ]
+    },
+    "source_id": "facility_37",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Hilltop Level 2",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1373 East State Road 62, Level 2, Madison, IN 47250",
+          "phone": "(812) 801-0828"
+        }
+      ]
+    },
+    "source_id": "facility_38",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Pleasure Ridge Park",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "8033 Dixie Highway, Louisville, KY 40258",
+          "phone": "(502) 937-3155"
+        }
+      ]
+    },
+    "source_id": "facility_39",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Tyler Retail Village",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "12615 Taylorsville Road, Suite A, Louisville, KY 40299",
+          "phone": "(502) 261-1595"
+        }
+      ]
+    },
+    "source_id": "facility_40",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Versailles",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "206 West Tyson Street, Versailles, IN 47042",
+          "phone": "(812) 689-5101"
+        }
+      ]
+    },
+    "source_id": "facility_41",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Carrollton",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "309 11th Street, Carrollton, KY 41008",
+          "phone": "(502) 634-3805"
+        }
+      ]
+    },
+    "source_id": "facility_42",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 12,
+      "locations": [
+        {
+          "location": "Madison",
+          "address": "630 Broadway Street, Suite 1C, Madison, IN 47250",
+          "phone": "(812) 280-1419"
+        },
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 1002, Louisville, KY 40202",
+          "phone": "(502) 584-2029"
+        },
+        {
+          "location": "Scottsburg",
+          "address": "1473 North Gardner Street, Scottsburg, IN 47170",
+          "phone": "(812) 752-8592"
+        },
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Level 1, Louisville, KY 40217",
+          "phone": "(502) 891-8300"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "3999 Dutchmans Lane, Medical Plaza 1, Suite 1H, Louisville, KY 40207",
+          "phone": "(502) 891-8300"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 446-6484"
+        },
+        {
+          "location": "Dixie",
+          "address": "4420 Dixie Highway, Suite 118, Louisville, KY 40216",
+          "phone": "(502) 447-3448"
+        },
+        {
+          "location": "Corydon",
+          "address": "1263 Hospital Drive Northwest, Suite 210, Corydon, IN 47112",
+          "phone": "(502) 891-8300"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 202, Louisville, KY 40241",
+          "phone": "(502) 891-8300"
+        },
+        {
+          "location": "Clark",
+          "address": "207 Sparks Avenue, Suite 101, Jeffersonville, IN 47130",
+          "phone": "(812) 288-4288"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "2410 Ring Road, Suite 500, Elizabethtown, KY 42701",
+          "phone": "(502) 891-8300"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "150 Frankfort Road, Suite 102C, Shelbyville, KY 40065",
+          "phone": "(502) 891-8300"
+        }
+      ]
+    },
+    "source_id": "facility_43",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Women's Heart Program",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 301, Louisville, KY 40207",
+          "phone": "(502) 891-8300"
+        }
+      ]
+    },
+    "source_id": "facility_44",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's Specialists",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Dixie",
+          "address": "4420 Dixie Highway, Suite 128, Louisville, KY 40216",
+          "phone": "(502) 449-6400"
+        },
+        {
+          "location": "Downtown",
+          "address": "601 South Floyd Street, Suite 500, Louisville, KY 40202",
+          "phone": "(502) 629-2030"
+        }
+      ]
+    },
+    "source_id": "facility_45",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Thoracic Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3999 Dutchmans Lane, Norton St. Matthews Medical Plaza 1, Suite 1H, Louisville, KY 40207",
+          "phone": "(502) 636-8004"
+        }
+      ]
+    },
+    "source_id": "facility_46",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Vascular Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 10,
+      "locations": [
+        {
+          "location": "Clark",
+          "address": "207 Sparks Avenue, Suite 201, Jeffersonville, IN 47130",
+          "phone": "(812) 280-1419"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "150 Frankfort Road, Shelbyville, KY 40065",
+          "phone": "(502) 891-8300"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 202, Louisville, KY 40241",
+          "phone": "(502) 636-7242"
+        },
+        {
+          "location": "Clarksville",
+          "address": "2051 Clevidence Boulevard, Suite B, Clarksville, IN 47129",
+          "phone": "(502) 636-7242"
+        },
+        {
+          "location": "Corydon",
+          "address": "1263 Hospital Drive Northwest, Suite 210, Corydon, IN 47112",
+          "phone": "(502) 636-7242"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "2410 Ring Road, Suite 500, Elizabethtown, KY 42701",
+          "phone": "(502) 446-6484"
+        },
+        {
+          "location": "Dixie",
+          "address": "4420 Dixie Highway, Suite 118, Louisville, KY 40216",
+          "phone": "(502) 636-7242"
+        },
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Suite G1, Louisville, KY 40217",
+          "phone": "(502) 636-7242"
+        },
+        {
+          "location": "Campbellsville",
+          "address": "1858 Old Lebanon Road, Campbellsville, KY 42718",
+          "phone": "(502) 636-7242"
+        },
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 1002, Louisville, KY 40202",
+          "phone": "(502) 636-7242"
+        }
+      ]
+    },
+    "source_id": "facility_47",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cardiothoracic Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "3 Audubon Plaza Drive, Medical Plaza East, Louisville, KY 40217",
+          "phone": "(502) 636-8004"
+        }
+      ]
+    },
+    "source_id": "facility_48",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Greentree",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2205 Greentree North, Clarksville, IN 47129",
+          "phone": "(812) 283-4441"
+        }
+      ]
+    },
+    "source_id": "facility_49",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cardiac & Pulmonary Rehabilitation Center - Springs",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6420 Dutchmans Parkway, Louisville, KY 40205",
+          "phone": "(502) 891-8500"
+        }
+      ]
+    },
+    "source_id": "facility_50",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Heart Rhythm Center - Springs",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6420 Dutchmans Parkway, The Springs Medical Center, Suite 200, Louisville, KY 40205",
+          "phone": "(502) 891-8400"
+        }
+      ]
+    },
+    "source_id": "facility_51",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Dutchmans",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6400 Dutchmans Parkway, Suite 300, Louisville, KY 40205",
+          "phone": "(502) 894-2444"
+        }
+      ]
+    },
+    "source_id": "facility_52",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Springs",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6420 Dutchmans Parkway, The Springs Medical Center, Suite 200, Louisville, KY 40205",
+          "phone": "(502) 891-8300"
+        }
+      ]
+    },
+    "source_id": "facility_53",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 10,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "676 South Floyd Street, Louisville, KY 40202",
+          "phone": "(502) 629-2500"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 405, Louisville, KY 40207",
+          "phone": "(502) 899-3366"
+        },
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Suite 405, Louisville, KY 40217",
+          "phone": "(502) 636-7845"
+        },
+        {
+          "location": "Clark",
+          "address": "301 Gordon Gutmann Boulevard, Suite 301, Jeffersonville, IN 47130",
+          "phone": "(812) 288-9969"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "157 Towne Drive, Suite 103, Elizabethtown, KY 42701",
+          "phone": "(502) 629-2500"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4955 Norton Healthcare Boulevard, Suite 300, Louisville, KY 40241",
+          "phone": "(502) 394-6350"
+        },
+        {
+          "location": "Corydon",
+          "address": "1263 Hospital Drive Northwest, Suite 110, Corydon, IN 47112",
+          "phone": "(812) 734-0912"
+        },
+        {
+          "location": "Jeffersonville",
+          "address": "101 Hospital Boulevard, Jeffersonville, IN 47130",
+          "phone": "(812) 288-9969"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 629-2500"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "131 Stonecrest Road, Suite 100, Shelbyville, KY 40065",
+          "phone": "(502) 633-7093"
+        }
+      ]
+    },
+    "source_id": "facility_54",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Resource Center – St. Matthews",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2 - St. Matthews, Suite 111, Louisville, KY 40207",
+          "phone": "(502) 899-6888"
+        }
+      ]
+    },
+    "source_id": "facility_55",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Healthcare Brain Tumor Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 301, Louisville, KY 40241",
+          "phone": "(502) 394-6390"
+        }
+      ]
+    },
+    "source_id": "facility_56",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton King's Daughters' Health - Cancer Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1373 East State Road 62, Madison, IN 47250",
+          "phone": "(812) 801-0603"
+        }
+      ]
+    },
+    "source_id": "facility_57",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Endocrinology - Fincastle",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 605, Louisville, KY 40202",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_58",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Orthopedic Institute",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 14,
+      "locations": [
+        {
+          "location": "Jeffersonville",
+          "address": "1220 Spring Street, Jeffersonville, IN 47130",
+          "phone": "(812) 282-8494"
+        },
+        {
+          "location": "Audubon",
+          "address": "3 Audubon Plaza Drive, Medical Plaza East, Suite 430, Louisville, KY 40217",
+          "phone": "(502) 636-4900"
+        },
+        {
+          "location": "Bullitt County",
+          "address": "170 Dr Arla Way, Suite 101, Louisville, KY 40229",
+          "phone": "(502) 636-4900"
+        },
+        {
+          "location": "Sellersburg",
+          "address": "130 Hunter Station Way, Suite 230, Sellersburg, IN 47172",
+          "phone": "(812) 246-4808"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 629-5633"
+        },
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 604, Louisville, KY 40202",
+          "phone": "(502) 629-5633"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "2412 Ring Road, Suite 100, Elizabethtown, KY 42701",
+          "phone": "(270) 737-1803"
+        },
+        {
+          "location": "LaGrange",
+          "address": "1230 Market Street, La Grange, KY 40031",
+          "phone": "(502) 394-6341"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 401, Louisville, KY 40207",
+          "phone": "(502) 559-1400"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "9880 Angies Way, Medical Plaza II, Suite 250, Louisville, KY 40241",
+          "phone": "(502) 394-6341"
+        },
+        {
+          "location": "Scottsburg",
+          "address": "1461 North Gardner Street, Scottsburg, IN 47170",
+          "phone": "(812) 752-2200"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "150 Frankfort Road, Suite 102B, Shelbyville, KY 40065",
+          "phone": "(502) 633-9030"
+        },
+        {
+          "location": "Clarksville",
+          "address": "2051 Clevidence Boulevard, Clarksville, IN 47129",
+          "phone": "(812) 280-9145"
+        },
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Madison, IN 47250",
+          "phone": "(812) 801-0848"
+        }
+      ]
+    },
+    "source_id": "facility_59",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Orthopedic Institute - Carrollton",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "309 11th Street, Carrollton, KY 41008",
+          "phone": "(502) 732-3204"
+        }
+      ]
+    },
+    "source_id": "facility_60",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Arm and Hand Institute",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "St Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 415, Louisville, KY 40207",
+          "phone": "(502) 629-4263"
+        },
+        {
+          "location": "Audubon",
+          "address": "3 Audubon Plaza Drive, Medical Plaza East, Suite 430, Louisville, KY 40217",
+          "phone": "(502) 629-4263"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "9880 Angies Way, Medical Plaza II, Suite 350, Louisville, KY 40241",
+          "phone": "(502) 629-4263"
+        },
+        {
+          "location": "Downtown",
+          "address": "315 East Broadway, Norton Healthcare Pavilion, Suite 195, Louisville, KY 40202",
+          "phone": "(502) 629-4263"
+        }
+      ]
+    },
+    "source_id": "facility_61",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Surgical Specialists - Breast Health",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "315 East Broadway, Healthcare Pavilion, Suite 111, Louisville, KY 40202",
+          "phone": "(502) 629-4500"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "3999 Dutchmans Lane, Suite 2F, Louisville, KY 40207",
+          "phone": "(502) 899-6470"
+        }
+      ]
+    },
+    "source_id": "facility_62",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pain Management Associates",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 403, Louisville, KY 40241",
+          "phone": "(502) 629-5455"
+        },
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Suite 304, Louisville, KY 40217",
+          "phone": "(502) 629-5455"
+        },
+        {
+          "location": "Sellersburg",
+          "address": "130 Hunter Station Way, Suite 101, Sellersburg, IN 47172",
+          "phone": "(812) 283-2369"
+        },
+        {
+          "location": "Downtown",
+          "address": "315 East Broadway, Norton Healthcare Pavilion, Suite 415, Louisville, KY 40202",
+          "phone": "(502) 629-5455"
+        }
+      ]
+    },
+    "source_id": "facility_63",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Louisville, KY 40217",
+          "phone": "(502) 636-8790"
+        },
+        {
+          "location": "West Louisville Hospital",
+          "address": "850 South 28th Street, Louisville, KY 40211",
+          "phone": "(502) 632-8180"
+        },
+        {
+          "location": "Downtown",
+          "address": "200 East Chestnut Street, Norton Hospital Gift Shop, Level 2, Louisville, KY 40202",
+          "phone": "(502) 629-3800"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4960 Norton Healthcare Boulevard, Level 1, Louisville, KY 40241",
+          "phone": "(502) 446-8800"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "4001 Dutchmans Lane, Across from Main Elevators, Level 1, Louisville, KY 40207",
+          "phone": "(502) 559-1710"
+        }
+      ]
+    },
+    "source_id": "facility_64",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Associates in Obstetrics & Gynecology, a part of Norton Women's Care – Stonestreet",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9300 Stonestreet Road, Suite 200, Louisville, KY 40272",
+          "phone": "(502) 899-6700"
+        }
+      ]
+    },
+    "source_id": "facility_65",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Kentucky Infection Prevention Training Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "224 East Broadway, Suite 300, Louisville, KY 40202",
+          "phone": "(502) 861-4545"
+        }
+      ]
+    },
+    "source_id": "facility_66",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Spine Specialists",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Suite 2A, Madison, IN 47250",
+          "phone": "(812) 801-0848"
+        },
+        {
+          "location": "Jeffersonville",
+          "address": "3118 East 10th Street, Suite A, Jeffersonville, IN 47130",
+          "phone": "(812) 282-8494"
+        }
+      ]
+    },
+    "source_id": "facility_67",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Audubon Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Audubon Plaza Drive, Louisville, KY 40217",
+          "phone": "(502) 636-7111"
+        }
+      ]
+    },
+    "source_id": "facility_68",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Clark Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1220 Missouri Avenue, Jeffersonville, IN 47130",
+          "phone": "(812) 282-6631"
+        }
+      ]
+    },
+    "source_id": "facility_69",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Brownsboro Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4960 Norton Healthcare Boulevard, Louisville, KY 40241",
+          "phone": "(502) 446-8000"
+        }
+      ]
+    },
+    "source_id": "facility_70",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Scott Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1451 North Gardner Street, Scottsburg, IN 47170",
+          "phone": "(812) 752-3456"
+        }
+      ]
+    },
+    "source_id": "facility_71",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Specialty Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2700 Stanley Gault Parkway, Suite 103, Louisville, KY 40223",
+          "phone": "(866) 616-8088"
+        }
+      ]
+    },
+    "source_id": "facility_72",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Immediate Care Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 13,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "3101 Poplar Level Road, The Villages of Audubon, Suite 102, Louisville, KY 40213",
+          "phone": ""
+        },
+        {
+          "location": "Fern Creek",
+          "address": "9340 Cedar Center Way, Louisville, KY 40291",
+          "phone": ""
+        },
+        {
+          "location": "Frankfort",
+          "address": "202 Limestone Street South, Suite 1C, Frankfort, KY 40601",
+          "phone": ""
+        },
+        {
+          "location": "Highlands",
+          "address": "2470 Bardstown Road, Louisville, KY 40205",
+          "phone": ""
+        },
+        {
+          "location": "Preston",
+          "address": "7926 Preston Highway, Suite 106, Louisville, KY 40219",
+          "phone": ""
+        },
+        {
+          "location": "Shelbyville",
+          "address": "150 Frankfort Road, Suite 104, Shelbyville, KY 40065",
+          "phone": ""
+        },
+        {
+          "location": "Clarksville",
+          "address": "2051 Clevidence Boulevard, Suite A, Clarksville, IN 47129",
+          "phone": ""
+        },
+        {
+          "location": "Jeffersonville",
+          "address": "3118 East 10th Street, Jeffersonville, IN 47130",
+          "phone": ""
+        },
+        {
+          "location": "LaGrange",
+          "address": "1230 Market Street, Suite B, La Grange, KY 40031",
+          "phone": ""
+        },
+        {
+          "location": "Lyndon",
+          "address": "1321 Herr Lane, Suite 195, Louisville, KY 40222",
+          "phone": ""
+        },
+        {
+          "location": "Middletown",
+          "address": "12903 Shelbyville Road, Louisville, KY 40243",
+          "phone": ""
+        },
+        {
+          "location": "Brownsboro",
+          "address": "9880 Angies Way, Medical Plaza II, Suite 160, Louisville, KY 40241",
+          "phone": ""
+        },
+        {
+          "location": "Dixie",
+          "address": "4420 Dixie Highway, Suite 116, Louisville, KY 40216",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_73",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Immediate Care Center - Heartland",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "157 Towne Drive, Suite 104, Elizabethtown, KY 42701",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_74",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Immediate Care Center - Mt. Washington",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "300 High Point Court, Suite 195, Mt Washington, KY 40047",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_75",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Prompt Care - Breckenridge",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2949 Breckenridge Lane, Suite 1, Louisville, KY 40220",
+          "phone": "(502) 446-5555"
+        }
+      ]
+    },
+    "source_id": "facility_76",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Prompt Care at Walgreens - Stony Brook",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2360 Stony Brook Drive, Louisville, KY 40220",
+          "phone": "(502) 446-5555"
+        }
+      ]
+    },
+    "source_id": "facility_77",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Prompt Care at Walgreens",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Middletown",
+          "address": "12101 Shelbyville Road, Middletown, KY 40243",
+          "phone": "(502) 446-5555"
+        },
+        {
+          "location": "Corydon",
+          "address": "1716 Highway 337 Northwest, Corydon, IN 47112",
+          "phone": "(502) 446-5555"
+        },
+        {
+          "location": "Clarksville",
+          "address": "220 East Lewis and Clark Parkway, Clarksville, IN 47129",
+          "phone": "(502) 446-5555"
+        },
+        {
+          "location": "Dixie",
+          "address": "5100 Dixie Highway, Louisville, KY 40216",
+          "phone": "(502) 446-5555"
+        },
+        {
+          "location": "Jeffersonville",
+          "address": "2811 Holmans Lane, Jeffersonville, IN 47130",
+          "phone": "(502) 446-5555"
+        }
+      ]
+    },
+    "source_id": "facility_78",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Prompt Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Scottsburg",
+          "address": "1461 North Gardner Street, Scottsburg, IN 47170",
+          "phone": "(502) 446-5555"
+        }
+      ]
+    },
+    "source_id": "facility_79",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Brownsboro Hospital - Neurodiagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Louisville, KY 40241",
+          "phone": "(502) 446-8000"
+        }
+      ]
+    },
+    "source_id": "facility_80",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Orthopedic Specialists - Foot & Ankle",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 401, Louisville, KY 40207",
+          "phone": "(502) 449-6448"
+        }
+      ]
+    },
+    "source_id": "facility_81",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Specialty Rehabilitation Services",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3999 Dutchmans Lane, Medical Plaza 1, Suite 1D, Louisville, KY 40207",
+          "phone": "(502) 559-1860"
+        }
+      ]
+    },
+    "source_id": "facility_82",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Rheumatology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 208, Louisville, KY 40207",
+          "phone": "(502) 899-6061"
+        }
+      ]
+    },
+    "source_id": "facility_83",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's Mental Health Services",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 503, Louisville, KY 40207",
+          "phone": "(502) 899-6220"
+        }
+      ]
+    },
+    "source_id": "facility_84",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Urogynecology Center - Dupont",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3924 South Dupont Square, Louisville, KY 40207",
+          "phone": "(502) 893-3510"
+        }
+      ]
+    },
+    "source_id": "facility_85",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Intensive Outpatient Therapy Program",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Clark",
+          "address": "1319 Missouri Avenue, Jeffersonville, IN 47130",
+          "phone": "(812) 283-2600"
+        }
+      ]
+    },
+    "source_id": "facility_86",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pulmonology Specialists",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 587-8000"
+        }
+      ]
+    },
+    "source_id": "facility_87",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton St. Matthews Medical Plaza 2",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3991 Dutchmans Lane, Saint Matthews, KY 40207",
+          "phone": "(502) 899-6782"
+        }
+      ]
+    },
+    "source_id": "facility_88",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Brownsboro Hospital - Emergency",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4960 Norton Healthcare Boulevard, Louisville, KY 40241",
+          "phone": "(502) 446-8125"
+        }
+      ]
+    },
+    "source_id": "facility_89",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Audubon Hospital - Emergency",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Audubon Plaza Drive, Louisville, KY 40217",
+          "phone": "(502) 636-7111"
+        }
+      ]
+    },
+    "source_id": "facility_90",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's and Children's Hospital - Emergency",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4001 Dutchmans Lane, Louisville, KY 40207",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_91",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Surgical Specialists - ENT & Audiology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Suite 2E, Madison, IN 47250",
+          "phone": "(812) 801-0820"
+        }
+      ]
+    },
+    "source_id": "facility_92",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's Care - Vevay",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1190 West Main Street, Suite 200, Vevay, IN 47043",
+          "phone": "(812) 801-0856"
+        }
+      ]
+    },
+    "source_id": "facility_93",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Surgical Specialists - Urology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Suite 2G, Madison, IN 47250",
+          "phone": "(812) 801-0894"
+        }
+      ]
+    },
+    "source_id": "facility_94",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pulmonary Specialists - Mt. Washington",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "300 High Point Court, Mount Washington, KY 40047",
+          "phone": "(502) 587-8000"
+        }
+      ]
+    },
+    "source_id": "facility_95",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Medical Towers South",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "234 East Gray Street, Louisville, KY 40202",
+          "phone": "(502) 629-1234"
+        }
+      ]
+    },
+    "source_id": "facility_96",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton King's Daughters' Health",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Madison Rehabilitation Center",
+          "address": "2670 Michigan Road, Madison, IN 47250",
+          "phone": "(812) 801-0545"
+        },
+        {
+          "location": "Main",
+          "address": "1373 East State Road 62, Madison, IN 47250",
+          "phone": "(812) 801-0800"
+        }
+      ]
+    },
+    "source_id": "facility_97",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Healthcare Pavilion",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "315 East Broadway, Norton Healthcare Pavilion, Louisville, KY 40202",
+          "phone": "(502) 629-2000"
+        }
+      ]
+    },
+    "source_id": "facility_98",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Heart Rhythm Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Level 1, Louisville, KY 40217",
+          "phone": "(502) 891-8400"
+        }
+      ]
+    },
+    "source_id": "facility_99",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Sports Health Performance & Wellness Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9451 Westport Road, Westport Plaza, Louisville, KY 40241",
+          "phone": "(502) 409-8888"
+        }
+      ]
+    },
+    "source_id": "facility_100",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Maternal - Fetal Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "601 South Floyd Street, Suite 700, Louisville, KY 40202",
+          "phone": "(502) 629-7181"
+        },
+        {
+          "location": "Bowling Green",
+          "address": "523 Park Street, Bowling Green, KY 42101",
+          "phone": "(270) 796-4169"
+        },
+        {
+          "location": "Paducah",
+          "address": "2603 Kentucky Avenue, Suite 304, Paducah, KY 42003",
+          "phone": "(270) 415-8965"
+        }
+      ]
+    },
+    "source_id": "facility_101",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Children's Maternal - Fetal Medicine - Perinatal Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 606, Louisville, KY 40207",
+          "phone": "(502) 899-6900"
+        }
+      ]
+    },
+    "source_id": "facility_102",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Floyds Knobs",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4801 Paoli Pike, Floyds Knobs, IN 47119",
+          "phone": "(812) 923-4700"
+        }
+      ]
+    },
+    "source_id": "facility_103",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Heartland",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "157 Towne Drive, Suite 103, Elizabethtown, KY 42701",
+          "phone": "(270) 765-5926"
+        }
+      ]
+    },
+    "source_id": "facility_104",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Hurstbourne",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "213 North Hurstbourne Parkway, Louisville, KY 40222",
+          "phone": "(502) 327-5135"
+        }
+      ]
+    },
+    "source_id": "facility_105",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Lakeview",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "100 Mallard Creek Road, Suite 320, Louisville, KY 40207",
+          "phone": "(502) 855-6125"
+        }
+      ]
+    },
+    "source_id": "facility_106",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Mid City Mall",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1250 Bardstown Road, Suite 8, Louisville, KY 40204",
+          "phone": "(502) 456-7047"
+        }
+      ]
+    },
+    "source_id": "facility_107",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Mt. Washington",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "300 High Point Court, Mount Washington, KY 40047",
+          "phone": "(502) 955-6129"
+        }
+      ]
+    },
+    "source_id": "facility_108",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Okolona",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "7430 Jefferson Boulevard, Suite 100, Louisville, KY 40219",
+          "phone": "(502) 969-0975"
+        }
+      ]
+    },
+    "source_id": "facility_109",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Shepherdsville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "115 Huston Drive, Shepherdsville, KY 40165",
+          "phone": "(502) 955-7311"
+        }
+      ]
+    },
+    "source_id": "facility_110",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Valley Station",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "10798 Dixie Highway, Suite 102, Louisville, KY 40272",
+          "phone": "(502) 935-8725"
+        }
+      ]
+    },
+    "source_id": "facility_111",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Westport Plaza",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9451 Westport Road, Suite 122B, Louisville, KY 40241",
+          "phone": "(502) 855-7320"
+        }
+      ]
+    },
+    "source_id": "facility_112",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Charlestown",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "11500 Highway 62, Charlestown, IN 47111",
+          "phone": "(812) 256-0700"
+        }
+      ]
+    },
+    "source_id": "facility_113",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Structural Heart Program",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Level 1, Louisville, KY 40217",
+          "phone": "(502) 636-8330"
+        }
+      ]
+    },
+    "source_id": "facility_114",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Advanced Heart Failure & Recovery Program",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 202, Louisville, KY 40241",
+          "phone": "(502) 636-8266"
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 104, Louisville, KY 40211",
+          "phone": "(502) 446-6484"
+        },
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 1002, Louisville, KY 40202",
+          "phone": "(502) 636-8266"
+        },
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Level 1, Louisville, KY 40217",
+          "phone": "(502) 636-8266"
+        },
+        {
+          "location": "Jeffersonville",
+          "address": "207 Sparks Avenue, Norton Medical Plaza 2, Suite 101, Jeffersonville, IN 47130",
+          "phone": "(502) 636-8266"
+        }
+      ]
+    },
+    "source_id": "facility_115",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - AFIB Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6420 Dutchmans Parkway, The Springs Medical Center, Suite 200, Louisville, KY 40205",
+          "phone": "(502) 891-8400"
+        }
+      ]
+    },
+    "source_id": "facility_116",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cardiovascular Diagnostic Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Dixie",
+          "address": "4420 Dixie Highway, Louisville, KY 40216",
+          "phone": "(502) 810-3700"
+        }
+      ]
+    },
+    "source_id": "facility_117",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cardiac & Pulmonary Rehabilitation Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "3 Audubon Plaza Drive, Medical Plaza East, Louisville, KY 40217",
+          "phone": "(502) 635-2121"
+        }
+      ]
+    },
+    "source_id": "facility_118",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Hardinsburg",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "207 Fairgrounds Road, Hardinsburg, KY 40143",
+          "phone": "(502) 891-8300"
+        }
+      ]
+    },
+    "source_id": "facility_119",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Urogynecology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Shelbyville",
+          "address": "150 Frankfort Road, Suite 104B, Shelbyville, KY 40065",
+          "phone": "(502) 409-5600"
+        }
+      ]
+    },
+    "source_id": "facility_120",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Vascular Diagnostic Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2355 Poplar Level Road, Suite G1-9, Louisville, KY 40217",
+          "phone": "(502) 636-8109"
+        }
+      ]
+    },
+    "source_id": "facility_121",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Behavioral Oncology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 300, Louisville, KY 40207",
+          "phone": "(502) 899-2673"
+        },
+        {
+          "location": "Downtown",
+          "address": "234 East Gray Street, Suite 154, Louisville, KY 40202",
+          "phone": "(502) 899-2673"
+        }
+      ]
+    },
+    "source_id": "facility_122",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Evaluation and Diagnostic Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Louisville, KY 40207",
+          "phone": "(502) 559-1970"
+        }
+      ]
+    },
+    "source_id": "facility_123",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Radiation Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4955 Norton Healthcare Boulevard, Louisville, KY 40241",
+          "phone": "(502) 394-6410"
+        },
+        {
+          "location": "Downtown",
+          "address": "676 South Floyd Street, Louisville, KY 40202",
+          "phone": "(502) 629-4555"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Louisville, KY 40207",
+          "phone": "(502) 899-6601"
+        }
+      ]
+    },
+    "source_id": "facility_124",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Resource Center – Audubon",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Suite 300, Louisville, KY 40217",
+          "phone": "(502) 636-8308"
+        }
+      ]
+    },
+    "source_id": "facility_125",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Healthcare Express Services - Hikes Point",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2949 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "(502) 861-4500"
+        }
+      ]
+    },
+    "source_id": "facility_126",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Breast Health",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 103, Louisville, KY 40241",
+          "phone": "(502) 446-6640"
+        }
+      ]
+    },
+    "source_id": "facility_127",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Medical Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Jeffersonville Commons",
+          "address": "2023 Mercy Way, Jeffersonville, IN 47130",
+          "phone": "(812) 282-6631"
+        }
+      ]
+    },
+    "source_id": "facility_128",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Medical Center - Emergency",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Jeffersonville Commons",
+          "address": "2023 Mercy Way, Jeffersonville, IN 47130",
+          "phone": "(812) 282-6631"
+        }
+      ]
+    },
+    "source_id": "facility_129",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Vevay",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1190 West Main Street, Vevay, IN 47043",
+          "phone": "(812) 427-9564"
+        }
+      ]
+    },
+    "source_id": "facility_130",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Sleep Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Newburg",
+          "address": "3430 Newburg Road, Suite 151, Louisville, KY 40218",
+          "phone": "(502) 559-5559"
+        },
+        {
+          "location": "Audubon",
+          "address": "1 Audubon Plaza Drive, Norton Audubon Hospital, Lower Level 1, Louisville, KY 40217",
+          "phone": "(502) 559-5559"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4950 Norton Healthcare Boulevard, Norton Medical Plaza I - Brownsboro, Suite 210, Louisville, KY 40241",
+          "phone": "(502) 559-5559"
+        },
+        {
+          "location": "Scottsburg",
+          "address": "1473 North Gardner Street, Scottsburg, IN 47170",
+          "phone": "(812) 427-9564"
+        }
+      ]
+    },
+    "source_id": "facility_131",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Sleep Center - Pleasure Ridge Park",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4606 Greenwood Road, Louisville, KY 40258",
+          "phone": "(502) 559-5559"
+        }
+      ]
+    },
+    "source_id": "facility_132",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Endocrinology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Suite 301, Louisville, KY 40217",
+          "phone": ""
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "157 Towne Drive, Suite 102, Elizabethtown, KY 42701",
+          "phone": ""
+        },
+        {
+          "location": "Sellersburg",
+          "address": "130 Hunter Station Way, Suite 101, Sellersburg, IN 47172",
+          "phone": "(812) 218-6560"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 201, Louisville, KY 40241",
+          "phone": ""
+        },
+        {
+          "location": "West Louisville",
+          "address": "850 South 28th Street, Suite 102, Louisville, KY 40211",
+          "phone": "(502) 629-5400"
+        }
+      ]
+    },
+    "source_id": "facility_133",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Endocrinology - Westport Plaza",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9451 Westport Road, Suite 122B, Louisville, KY 40241",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_134",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Milton",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "10235 Highway 421 North, Suite 1A, Milton, KY 40045",
+          "phone": "(502) 268-5500"
+        }
+      ]
+    },
+    "source_id": "facility_135",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Rural Health Clinic, a Part of Norton Scott Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1465 North Gardner Street, Scottsburg, IN 47170",
+          "phone": "(812) 752-0001"
+        }
+      ]
+    },
+    "source_id": "facility_136",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Orthopedic Institute - Westport Plaza",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9451 Westport Road, Suite 122C, Louisville, KY 40241",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_137",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Evaluation and Diagnostic Clinic - Hill Street",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "720 West Hill Street, Louisville, KY 40208",
+          "phone": "(502) 559-1970"
+        }
+      ]
+    },
+    "source_id": "facility_138",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute Resource Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 302, Louisville, KY 40207",
+          "phone": "(502) 559-3230"
+        },
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Norton Medical Plaza III - Brownsboro, Suite 405, Louisville, KY 40241",
+          "phone": "(502) 559-3221"
+        }
+      ]
+    },
+    "source_id": "facility_139",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Clark Sleep Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "207 Sparks Avenue, Norton Medical Plaza 2 -- Clark, Suite 307, Jeffersonville, IN 47130",
+          "phone": "(502) 559-5559"
+        }
+      ]
+    },
+    "source_id": "facility_140",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Chest Pain Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Level 1, Louisville, KY 40217",
+          "phone": "(502) 446-6484"
+        }
+      ]
+    },
+    "source_id": "facility_141",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Hussung Family Multiple Sclerosis Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 310, Louisville, KY 40207",
+          "phone": "(502) 899-6782"
+        }
+      ]
+    },
+    "source_id": "facility_142",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton West Louisville Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "850 South 28th Street, Louisville, KY 40211",
+          "phone": "(502) 632-8100"
+        }
+      ]
+    },
+    "source_id": "facility_143",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 East Chestnut Street, Louisville, KY 40202",
+          "phone": "(502) 629-8000"
+        }
+      ]
+    },
+    "source_id": "facility_144",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's and Children's Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4001 Dutchmans Lane, Louisville, KY 40207",
+          "phone": "(502) 893-1000"
+        }
+      ]
+    },
+    "source_id": "facility_145",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Immediate Care Center - Dupont",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "901 Dupont Road, Louisville, KY 40207",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_146",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Orthopedic Oncology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 604, Louisville, KY 40202",
+          "phone": "(502) 629-5633"
+        }
+      ]
+    },
+    "source_id": "facility_147",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Advocates for Women's Health, a Part of Norton Women's Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 203, Louisville, KY 40241",
+          "phone": "(502) 423-9595"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 601, Louisville, KY 40207",
+          "phone": "(502) 423-9595"
+        }
+      ]
+    },
+    "source_id": "facility_148",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Behavioral Health - Hill Street",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "720 West Hill Street, Louisville, KY 40208",
+          "phone": "(502) 636-3164"
+        }
+      ]
+    },
+    "source_id": "facility_149",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Audubon Hospital - Neurodiagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Audubon Plaza Drive, Louisville, KY 40217",
+          "phone": "(502) 636-7278"
+        }
+      ]
+    },
+    "source_id": "facility_150",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Diagnostic Center - Dupont",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3901 Dutchmans Lane, Suite 101, Louisville, KY 40207",
+          "phone": "(502) 896-2120"
+        }
+      ]
+    },
+    "source_id": "facility_151",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Leatherman Spine - Stonestreet",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9300 Stonestreet Road, Suite 200, Louisville, KY 40272",
+          "phone": "(502) 935-8061"
+        }
+      ]
+    },
+    "source_id": "facility_152",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Multispecialty Clinic Rheumatology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3991 Dutchmans Lane, Medical Plaza 2, Suite 310, Louisville, KY 40207",
+          "phone": "(502) 899-6061"
+        }
+      ]
+    },
+    "source_id": "facility_153",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute Headache Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3999 Dutchmans Lane, Medical Plaza 1, Suite 5D, Louisville, KY 40207",
+          "phone": "(502) 394-6460"
+        }
+      ]
+    },
+    "source_id": "facility_154",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Total Woman, a Part of Norton Women's Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Bardstown",
+          "address": "106 West John Rowan Boulevard, Suite E, Bardstown, KY 40004",
+          "phone": "(502) 894-9494"
+        },
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 515, Louisville, KY 40207",
+          "phone": "(502) 894-9494"
+        }
+      ]
+    },
+    "source_id": "facility_155",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Weight Management Services - Dupont",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1000 Dupont Road, Louisville, KY 40207",
+          "phone": "(502) 899-6405"
+        }
+      ]
+    },
+    "source_id": "facility_156",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Associates in Obstetrics & Gynecology, a part of Norton Women's Care – Crestwood",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6400 Westwind Way, Suite D, Crestwood, KY 40014",
+          "phone": "(502) 899-6700"
+        }
+      ]
+    },
+    "source_id": "facility_157",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute Memory Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4915 Norton Healthcare Boulevard, Medical Plaza III, Suite 301, Louisville, KY 40241",
+          "phone": "(502) 394-6390"
+        }
+      ]
+    },
+    "source_id": "facility_158",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton St. Matthews Medical Plaza 1",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3999 Dutchmans Lane, Saint Matthews, KY 40207",
+          "phone": "(502) 629-1234"
+        }
+      ]
+    },
+    "source_id": "facility_159",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "CPA Lab - Hikes Point",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2935 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "(502) 736-4370"
+        }
+      ]
+    },
+    "source_id": "facility_160",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton West Louisville Hospital - Emergency",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "850 South 28th Street, Louisville, KY 40211",
+          "phone": "(502) 632-8100"
+        }
+      ]
+    },
+    "source_id": "facility_161",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Healthcare Medical Plaza II",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Brownsboro",
+          "address": "9880 Angies Way, Louisville, KY 40241",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_162",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Plastic and Reconstructive Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "210 East Gray Street, Louisville, KY 40202",
+          "phone": "(502) 290-7575"
+        }
+      ]
+    },
+    "source_id": "facility_163",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neursocience Institute - Neurology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Suite 1D, Madison, IN 47250",
+          "phone": "(812) 801-0806"
+        }
+      ]
+    },
+    "source_id": "facility_164",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Hospital Labor & Delivery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 East Chestnut Street, Level 3, Louisville, KY 40202",
+          "phone": "(502) 629-8000"
+        }
+      ]
+    },
+    "source_id": "facility_165",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neurosciences and Spine Rehabilitation Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "315 East Broadway, Norton Healthcare Pavilion, Suite 90, Louisville, KY 40202",
+          "phone": "(502) 629-2501"
+        }
+      ]
+    },
+    "source_id": "facility_166",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pulmonary Specialists - Greenwood Rd",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4606 Greenwood Road, Louisville, KY 40258",
+          "phone": "(502) 559-5864"
+        }
+      ]
+    },
+    "source_id": "facility_167",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Healthcare Palliative Care Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3 Audubon Plaza Drive, Medical Plaza East, Suite 610, Louisville, KY 40217",
+          "phone": "(502) 629-2804"
+        }
+      ]
+    },
+    "source_id": "facility_168",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Louisville Primary Care Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "720 West Hill Street, Louisville, KY 40208",
+          "phone": "(502) 636-3164"
+        }
+      ]
+    },
+    "source_id": "facility_169",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Gastroenterology Specialists",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Madison",
+          "address": "1373 East State Road 62, Suite 1C, Madison, IN 47250",
+          "phone": "(812) 801-0832"
+        }
+      ]
+    },
+    "source_id": "facility_170",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Surgical Specialists - Colorectal Health",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "3999 Dutchmans Lane, Medical Plaza 1, Suite 2E, Louisville, KY 40207",
+          "phone": "(502) 559-6560"
+        }
+      ]
+    },
+    "source_id": "facility_171",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Women's Specialists - Tyler Retail Village",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "12615 Taylorsville Road, Suite A, Louisville, KY 40299",
+          "phone": "(502) 629-2030"
+        }
+      ]
+    },
+    "source_id": "facility_172",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Barret",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "825 Barret Avenue, Louisville, KY 40204",
+          "phone": "(502) 540-7200"
+        }
+      ]
+    },
+    "source_id": "facility_173",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Fincastle",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "210 East Gray Street, Gray Street Medical Building, Suite 700, Louisville, KY 40202",
+          "phone": "(502) 629-5400"
+        }
+      ]
+    },
+    "source_id": "facility_174",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Hanover",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "36 Medical Plaza, Hanover, IN 47243",
+          "phone": "(812) 866-3301"
+        }
+      ]
+    },
+    "source_id": "facility_175",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Hilltop Level 1",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1373 East State Road 62, Level 1, Madison, IN 47250",
+          "phone": "(812) 801-0828"
+        }
+      ]
+    },
+    "source_id": "facility_176",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Mallard Creek",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "100 Mallard Creek Road, Suite 300, Louisville, KY 40207",
+          "phone": "(502) 855-6130"
+        }
+      ]
+    },
+    "source_id": "facility_177",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - West Broadway",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1720 West Broadway, Suite 107, Louisville, KY 40203",
+          "phone": "(502) 340-5900"
+        }
+      ]
+    },
+    "source_id": "facility_178",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Vein & Vascular Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "901 Dupont Road, Suite 200, Louisville, KY 40207",
+          "phone": "(502) 636-7242"
+        }
+      ]
+    },
+    "source_id": "facility_179",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Cardiac Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Audubon",
+          "address": "2355 Poplar Level Road, Medical Plaza West, Suite G1, Louisville, KY 40217",
+          "phone": "(502) 636-8004"
+        }
+      ]
+    },
+    "source_id": "facility_180",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Leitchfield",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "912 Wallace Avenue, Suite 104, Leitchfield, KY 42754",
+          "phone": "(502) 891-8300"
+        }
+      ]
+    },
+    "source_id": "facility_181",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Lebanon",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "312 West High Street, Lebanon, KY 40033",
+          "phone": "(502) 891-8300"
+        }
+      ]
+    },
+    "source_id": "facility_182",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Heart & Vascular Institute - Vascular Surgery - Leitchfield",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "912 Wallace Avenue, Suite 104, Leitchfield, KY 42754",
+          "phone": "(502) 636-7242"
+        }
+      ]
+    },
+    "source_id": "facility_183",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cardiovascular Diagnostic Center - Springs",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6420 Dutchmans Parkway, Lower Level, Louisville, KY 40205",
+          "phone": "(502) 891-8577"
+        }
+      ]
+    },
+    "source_id": "facility_184",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Palliative Care Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "234 East Gray Street, Medical Towers South, Suite 154, Louisville, KY 40202",
+          "phone": "(502) 629-2804"
+        }
+      ]
+    },
+    "source_id": "facility_185",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Pat Harrison Resource Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1206 Spring Street, Jeffersonville, IN 47130",
+          "phone": "(812) 288-1156"
+        }
+      ]
+    },
+    "source_id": "facility_186",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Resource Center – Brownsboro",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4955 Norton Healthcare Boulevard, Floor 1, Louisville, KY 40241",
+          "phone": "(502) 394-6415"
+        }
+      ]
+    },
+    "source_id": "facility_187",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Resource Center – Downtown",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "234 East Gray Street, Medical Towers South, Suite 164, Louisville, KY 40202",
+          "phone": "(502) 629-5500"
+        }
+      ]
+    },
+    "source_id": "facility_188",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Cancer Institute Women's Cancer Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "234 East Gray Street, Louisville, KY 40202",
+          "phone": "(502) 629-2500"
+        }
+      ]
+    },
+    "source_id": "facility_189",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Community Medical Associates - Carrollton",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "205 Marwill Drive, Carrollton, KY 41008",
+          "phone": "(502) 732-6956"
+        }
+      ]
+    },
+    "source_id": "facility_190",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Clark Hospital - Emergency",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1220 Missouri Avenue, Jeffersonville, IN 47130",
+          "phone": "(812) 283-2521"
+        }
+      ]
+    },
+    "source_id": "facility_191",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Orthopedic Institute - Stonestreet",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9300 Stonestreet Road, Suite 200, Louisville, KY 40272",
+          "phone": "(502) 449-6448"
+        }
+      ]
+    },
+    "source_id": "facility_192",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Orthopedic Institute - New Albany",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3707 Charlestown Road, Suite C1, New Albany, IN 47150",
+          "phone": "(812) 944-4720"
+        }
+      ]
+    },
+    "source_id": "facility_193",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Orthopedic Institute - Valley Station",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "10798 Dixie Highway, Suite 103, Louisville, KY 40272",
+          "phone": "(502) 935-2593"
+        }
+      ]
+    },
+    "source_id": "facility_194",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute - Sports Neurology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "St. Matthews",
+          "address": "4123 Dutchmans Lane, Medical Plaza 3, Suite 101, Louisville, KY 40207",
+          "phone": "(502) 899-6782"
+        }
+      ]
+    },
+    "source_id": "facility_195",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Hospital - Neurodiagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 East Chestnut Street, Louisville, KY 40202",
+          "phone": "(502) 629-7740"
+        }
+      ]
+    },
+    "source_id": "facility_196",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Neuroscience Institute - Adult Neurodevelopmental Program",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Downtown",
+          "address": "210 East Gray Street, Suite 1003, Louisville, KY 40202",
+          "phone": "(502) 899-6782"
+        }
+      ]
+    },
+    "source_id": "facility_197",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Lois A. Kratz Wellness Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1319 Missouri Avenue, Jeffersonville, IN 47130",
+          "phone": "(812) 283-2786"
+        }
+      ]
+    },
+    "source_id": "facility_198",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Behavioral Health – Clark",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1220 Missouri Avenue, Jeffersonville, IN 47130",
+          "phone": "(812) 283-2161"
+        }
+      ]
+    },
+    "source_id": "facility_199",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Pharmacy Home Infusion Services",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2700 Stanley Gault Parkway, Suite 101, Louisville, KY 40223",
+          "phone": "(502) 559-1373"
+        }
+      ]
+    },
+    "source_id": "facility_200",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Immediate Care Center - Shepherdsville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "438 Adam Shepherd Parkway, Suite 2, Shepherdsville, KY 40165",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_201",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Immediate Care Center - Tyler Retail Village",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "12615 Taylorsville Road, Suite A, Louisville, KY 40299",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_202",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Prompt Care - Arena Plaza",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Arena Plaza, Louisville, KY 40202",
+          "phone": "(502) 446-5555"
+        }
+      ]
+    },
+    "source_id": "facility_203",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Immediate Care Center - Hilltop",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "445 Clifty Drive, Madison, IN 47250",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_204",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Norton Immediate Care Center - Valley Station",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "10798 Dixie Highway, Suite 101, Louisville, KY 40272",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_205",
+    "source_file": ""
+  }
+]

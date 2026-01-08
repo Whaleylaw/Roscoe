@@ -1,0 +1,396 @@
+{
+  "case_name": "Nicole-Tewes-MVA-7-5-2025",
+  "total_episodes": 15,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Compass Emergency Physicians",
+        "specialty": null
+      },
+      {
+        "name": "Kroger Pharmacy",
+        "specialty": null
+      },
+      {
+        "name": "Radiology Associates of Northern Kentucky, PLLC",
+        "specialty": "radiology"
+      },
+      {
+        "name": "St. Elizabeth Florence Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "The Christ Hospital Physicians - Primary Care",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Erie Insurance Group"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Nachand Downs"
+      },
+      {
+        "name": "Leigh King"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Nicole-Tewes-MVA-7-5-2025-Bodily Injury (BI)-25-407673172",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Nachand Downs"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Nicole-Tewes-MVA-7-5-2025-Personal Injury Protection (PIP)-A00006928311",
+        "insurer": "Erie Insurance Group",
+        "adjuster": "Leigh King"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-07-24",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\nsent intake via vinesign",
+      "natural_language": "Initial client contact on July 5, 2025 with Nicole Tewes regarding motor vehicle accident. \n\nThe intake was sent via VineSign.",
+      "valid_at": "2025-07-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "initial contact regarding motor vehicle accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-25",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\n__CLIENT CONTACT__\n__Details:__ attempted to call. no answer \n__Person Making Contact:__ Justin\n__Date & Time__: July 25 2025",
+      "natural_language": "Initial client contact on July 25, 2025, in the Nicole-Tewes-MVA-7-5-2025 case, with client Nicole Tewes regarding a motor vehicle accident. Justin attempted to call Nicole Tewes, but there was no answer.",
+      "valid_at": "2025-07-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "initial client contact / subject of attempted call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-07-27",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=0f76f879-8a0d-4f97-b700-6688c5241def.pdf\nSigned: 2025-07-28 03:42:48\nAll signers: Nicole Tewes(noeticnikki@gmail.com (859) 652-1483)\nSender: Justin Chumbley",
+      "natural_language": "Case Nicole-Tewes-MVA-7-5-2025 concerns client Nicole Tewes. A VineSign intake document has been completed for this case. The document is named “intake,” and its signed version is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=0f76f879-8a0d-4f97-b700-6688c5241def.pdf.\n\nSigned on July 28, 2025 at 03:42:48, the intake document lists Nicole Tewes as the signer, with email noeticnikki@gmail.com and phone number (859) 652-1483. All signers: Nicole Tewes. The VineSign invitation was sent by Justin Chumbley.",
+      "valid_at": "2025-07-27T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "case subject; signer of VineSign intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-28",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\n__CLIENT CONTACT__\n__Details:__ Playing phone tag with client and husband currently \n__Person Making Contact:__ Justin\n__Date & Time__: July 28 2025",
+      "natural_language": "Case Nicole-Tewes-MVA-7-5-2025: Initial client contact on July 28, 2025 with Justin regarding the motor vehicle accident involving Nicole Tewes. The client is Nicole Tewes. Details indicate that Justin is currently playing phone tag with both the client and her husband.",
+      "valid_at": "2025-07-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-28",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\n__CLIENT CONTACT__\n__Details:__ neck and back of head pain. \n__Person Making Contact:__ Justin\n__Date & Time__: July 28 2025",
+      "natural_language": "Initial client contact on July 28, 2025, with Justin regarding the motor vehicle accident case Nicole-Tewes-MVA-7-5-2025. The client, Nicole Tewes, reports neck pain and pain at the back of the head.",
+      "valid_at": "2025-07-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "client contact reporting neck and head pain"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-28",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\n__CLIENT CONTACT__\n__Details:__ Spoke with husband. total loss of vehicle being wrapped up currently. \n__Person Making Contact:__ Justin\n__Date & Time__: July 28 2025",
+      "natural_language": "Case Nicole-Tewes-MVA-7-5-2025. Client: Nicole Tewes.\n\nInitial client contact on July 28, 2025 regarding a motor vehicle accident involving Nicole Tewes. The person making contact was Justin, and the conversation was with the client’s husband, who reported that the vehicle involved is a total loss and that it is currently being wrapped up.",
+      "valid_at": "2025-07-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\nCase strategy development and settlement planning.",
+      "natural_language": "Nicole Tewes is the client in the motor vehicle accident case identified as Nicole-Tewes-MVA-7-5-2025. The matter is focused on case strategy development and settlement planning.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "client/subject of matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\nInsurance communications and claim processing updates.",
+      "natural_language": "Nicole Tewes is the client in case Nicole-Tewes-MVA-7-5-2025. The record concerns insurance communications and updates on the processing of her motor vehicle accident claim (MVA).",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\nRecent accident follow-up and medical evaluation progress.",
+      "natural_language": "This note concerns the case Nicole-Tewes-MVA-7-5-2025 and its client, Nicole Tewes, regarding a motor vehicle accident. \n\nIt documents the recent follow-up related to the accident and the current progress of the medical evaluations.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "client; subject of the case and medical follow-up"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\nInsurance communication and claim initiation process.",
+      "natural_language": "The case is titled Nicole-Tewes-MVA-7-5-2025 and involves client Nicole Tewes, focusing on insurance communication and the initiation of a claim related to a motor vehicle accident on 7-5-2025. The note documents the insurance-related aspects of the matter and the steps taken to begin the claims process for the client.\n\nIn summary, this record centers on coordinating with the insurance carrier and commencing the claim process on behalf of Nicole Tewes in connection with the motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "client and subject of claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\nInitial client consultation and medical evaluation coordination.",
+      "natural_language": "Case Nicole-Tewes-MVA-7-5-2025 involves client Nicole Tewes. On July 5, 2025, the intake documented an initial client consultation for Nicole Tewes and the coordination of a medical evaluation as part of the motor vehicle accident matter.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "subject of intake and initial consultation; coordination of medical evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\nJuly 5, 2025 motor vehicle accident case intake.",
+      "natural_language": "On July 5, 2025, we conducted intake for a motor vehicle accident case involving Nicole Tewes, establishing case Nicole-Tewes-MVA-7-5-2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "subject of intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\n__Nicole Tewes__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Nicole Lynn Tewes - Filevine Project Email Address [NicoleTewesMVAZ5101115@louisvilleaccidentlawyer.filevineapp.com](mailto:NicoleTewesMVAZ5101115@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 02:16:57 GMT-04:00\n\nLooks like there's been no activity on this since the middle of August.\nCheck in with the client, see if she's still treating.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Nicole-Tewes-MVA-7-5-2025 involves client Nicole Tewes. On October 29, 2025 at 2:16:57 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email to Justin Chumbley and to Nicole Lynn Tewes—the Filevine project email address NicoleTewesMVAZ5101115@louisvilleaccidentlawyer.filevineapp.com—regarding the matter. The message notes that there has been no activity on the case since the middle of August and directs the recipients to check in with the client to determine whether she is still undergoing medical treatment.\n\nThe email was signed by Aaron Whaley of Whaley Law Firm, with the firm’s contact information: 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Lynn Tewes",
+            "relevance": "case client; recipient of email and subject of check-in about ongoing medical treatment"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-11-14",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\nNicole, It's Justin from the Whaley Law firm. I just wanted to confirm you're no longer receiving treatment for your injuries from the accident. If so, please confirm the medical providers you have seen to make sure we don't miss anything",
+      "natural_language": "Case Nicole-Tewes-MVA-7-5-2025. Client: Nicole Tewes. Justin from the Whaley Law Firm contacted Nicole to confirm whether she is no longer receiving treatment for injuries from the accident. If she has stopped treatment, he asked her to confirm the medical providers she has seen to ensure nothing is missed.",
+      "valid_at": "2025-11-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm contacting client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Compass Emergency Physicians",
+            "relevance": "provider to confirm"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Kroger Pharmacy",
+            "relevance": "provider to confirm"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Radiology Associates of Northern Kentucky, PLLC",
+            "relevance": "provider to confirm"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Florence Hospital",
+            "relevance": "provider to confirm"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "The Christ Hospital Physicians - Primary Care",
+            "relevance": "provider to confirm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Nicole-Tewes-MVA-7-5-2025\nClient: Nicole Tewes\n\n**CASE FILE ORGANIZATION COMPLETED**\n\nCompleted comprehensive 5-phase file reorganization for Nicole Tewes MVA case using systematic 8-bucket categorization system.\n\n**Results:**\n- Total files processed: 46 original files\n- Files organized: 40 (after removing 6 duplicates)\n- Final file count: 68 (including reports and system files)\n- Quality score: A+ (100% compliance)\n\n**Organization Summary:**\n- Client bucket: 7 files (intake documents, health insurance cards)\n- Investigation bucket: 4 files (accident scene photos)\n- Medical Records: 24 files across 4 providers (St Elizabeth Florence, The Christ Hospital Physicians, Kroger Pharmacy, Radiology Associates of Northern Kentucky)\n- Insurance: 17 files (Erie PIP and Progressive BI correspondence, policy documents)\n- Case Information: 10 files (JSON databases and backups)\n\n**Medical Providers Organized:**\n1. St Elizabeth Florence - ER visit 7/5/2025, medical bills ($412.89 + $1,000 collection notice)\n2. The Christ Hospital Physicians - Office visit 7/29/2025 with Mary Mann NP\n3. Kroger Pharmacy - Cyclobenzaprine prescription 7/6/2025\n4. Radiology Associates of Northern Kentucky - CT scan professional fee ($183.00)\n\n**Insurance Documentation:**\n- Erie Insurance (PIP): Claim A00006928311, adjuster Leigh King - 11 files organized\n- Progressive Insurance (BI): Claim 25-407673172, adjuster Nachand Downs - 5 files organized\n\n**Key Findings:**\n- Total identified medical bills: $1,595.89\n- All PDFs have companion .md files (100% coverage)\n- All files follow standardized naming convention\n- Medical providers organized with 3-subfolder structure (Medical Records/Medical Bills/Medical Requests)\n- 6 duplicate files identified and removed\n\n**File Organization Standards Applied:**\n- Naming convention: YYYY-MM-DD - Nicole Tewes - {Category} - {Originator} - {Description}\n- Medical records dated by service date\n- Medical bills dated by statement date\n- Insurance letters dated by letter date\n- Photos dated by accident date (7/5/2025)\n\n**Reports Generated:**\n- File inventory with scrambled filenames\n- Comprehensive reorganization mapping\n- Quality review summary (2.6% error rate, 1 date correction made)\n- PDF-MD mapping for reunification\n- Final verification and reorganization summary\n\n**Case Status:** Files fully organized and ready for active case work. All documents properly categorized, named, and accessible for demand preparation and settlement negotiations.\n\n**Work performed by:** Roscoe (AI Paralegal) using systematic case file organization skill with 5-phase pipeline (Inventory → Analysis → Quality Review → Execution → Verification)",
+      "natural_language": "Case: Nicole-Tewes-MVA-7-5-2025. Client: Nicole Tewes. I completed a comprehensive five-phase file reorganization for Nicole Tewes’ motor vehicle accident case, employing an eight-bucket categorization system. In total, 46 original files were processed, 40 were organized after removing six duplicates, and the final file count reached 68, including reports and system files. The work achieved a quality score of A+ (100% compliance).\n\nThe organization resulted in a clear bucket structure: the Client bucket contained seven files such as intake documents and health insurance cards; the Investigation bucket held four files comprising accident scene photos; Medical Records comprised 24 files across four providers (St Elizabeth Florence, The Christ Hospital Physicians, Kroger Pharmacy, and Radiology Associates of Northern Kentucky); Insurance encompassed 17 files (Erie PIP and Progressive BI correspondence and policy documents); and Case Information consisted of ten files (JSON databases and backups).\n\nMedical Providers Organized include: St Elizabeth Florence—ER visit on 7/5/2025 with medical bills totaling $412.89 plus a $1,000 collection notice; The Christ Hospital Physicians—office visit on 7/29/2025 with Mary Mann NP; Kroger Pharmacy—Cyclobenzaprine prescription dated 7/6/2025; and Radiology Associates of Northern Kentucky—CT scan professional fee of $183.00.\n\nInsurance Documentation comprises Erie Insurance (PIP), Claim A00006928311 with adjuster Leigh King, for which 11 files were organized; and Progressive Insurance (BI), Claim 25-407673172 with adjuster Nachand Downs, for which 5 files were organized.\n\nKey findings include a total identified medical bills amounting to $1,595.89. All PDFs have companion .md files (100% coverage), and all files follow a standardized naming convention. Medical providers were organized within a consistent three-subfolder structure: Medical Records, Medical Bills, and Medical Requests. Six duplicate files were identified and removed in the process.\n\nFile Organization Standards Applied encompassed a naming convention of: YYYY-MM-DD - Nicole Tewes - {Category} - {Originator} - {Description}; medical records dated by service date; medical bills dated by statement date; insurance letters dated by letter date; photos dated by accident date (7/5/2025).\n\nReports Generated included a file inventory with scrambled filenames, a comprehensive reorganization mapping, a quality review summary showing a 2.6% error rate with one date correction made, a PDF-MD mapping for reunification, and a final verification and reorganization summary.\n\nCase Status: The files are fully organized and ready for active case work. All documents are properly categorized, named, and accessible for demand preparation and settlement negotiations.\n\nWork performed by: Roscoe (AI Paralegal) using a systematic case file organization skill with a five-phase pipeline: Inventory → Analysis → Quality Review → Execution → Verification.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nicole Tewes",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Florence Hospital",
+            "relevance": "ER provider with billed services (7/5/2025)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "The Christ Hospital Physicians - Primary Care",
+            "relevance": "office visit provider (7/29/2025)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Kroger Pharmacy",
+            "relevance": "pharmacy with prescription (7/6/2025)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Radiology Associates of Northern Kentucky, PLLC",
+            "relevance": "radiology provider (CT professional fee)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Erie Insurance Group",
+            "relevance": "PIP insurer for the case"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Erie Insurance Group",
+            "relevance": "PIP claim organized (adjuster assigned)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Leigh King",
+            "relevance": "Erie Insurance PIP adjuster"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI insurer for the case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim organized (adjuster assigned)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Nachand Downs",
+            "relevance": "Progressive BI adjuster"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

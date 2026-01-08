@@ -1,0 +1,174 @@
+{
+  "case_name": "Dakota-McCord-MVA-10-12-2025",
+  "total_episodes": 6,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-10-13",
+      "original_body": "Case: Dakota-McCord-MVA-10-12-2025\nClient: Dakota McCord\n\nsent intake docs via vinesign",
+      "natural_language": "This case, Dakota-McCord-MVA-10-12-2025, involves client Dakota McCord.\n\nIntake documents were sent to Dakota McCord via VineSign.",
+      "valid_at": "2025-10-13T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dakota McCord",
+            "relevance": "case client; recipient of intake documents via VineSign"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-10-13",
+      "original_body": "Case: Dakota-McCord-MVA-10-12-2025\nClient: Dakota McCord\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=7a5ce01e-d662-4e13-be02-f18d9f7e1668.pdf\nSigned: 2025-10-13 16:37:30\nAll signers: Dakota McCord((502) 442-8128)\nSender: Justin Chumbley",
+      "natural_language": "Case Dakota-McCord-MVA-10-12-2025 concerns client Dakota McCord following a motor vehicle accident on October 12, 2025.\n\nAn intake document named \u201cintake\u201d was transmitted via VineSign and has been completed. The signed document URL is https://app.vinesign.com/Jobs/Pdf?pdfKey=7a5ce01e-d662-4e13-be02-f18d9f7e1668.pdf. The document was signed on 2025-10-13 16:37:30. All signers listed for this document are Dakota McCord, with phone number (502) 442-8128. The sender of the VineSign transmission was Justin Chumbley.",
+      "valid_at": "2025-10-13T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dakota McCord",
+            "relevance": "client who signed and completed intake document"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "platform used to transmit the signed intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-13",
+      "original_body": "Case: Dakota-McCord-MVA-10-12-2025\nClient: Dakota McCord\n\n__CLIENT CONTACT__\n__Details:__ Dakota McCord\nDOB 10/20/89\nSSN: 400-39-1108\nPh: 502-442-8128\n\n4106 St. Francis Lane\nLouisville, KY 40218\n\nDOA: 10/12/2025\n\nIn Indiana on eastern blvd, on the on ramp to 65. Was tboned at the intersection \n\nClarksville PD\n\nReport # 202560643\nWaters is the officers name\n\nPIP \u2013 Progressive\nClaim # 25-743079174\n\nUofL Hospital downtown via EMS \nHeartland EMS\n\nInjuries\nPossible concussion, lower back, hip pain \n__Person Making Contact:__ Justin\n__Date & Time__: October 13 2025",
+      "natural_language": "Initial client contact on October 13, 2025, with Justin regarding a motor vehicle accident involving Dakota McCord (DOB 10/20/1989, SSN 400-39-1108). The client resides at 4106 St. Francis Lane, Louisville, KY 40218, and can be reached at 502-442-8128. Case: Dakota-McCord-MVA-10-12-2025. Date of accident: October 12, 2025. The crash occurred in Indiana on Eastern Boulevard, on the on-ramp to I-65, and the client was T-boned at an intersection. Clarksville Police Department responded; Report number 202560643; Officer Waters. PIP insurance is Progressive; Claim number 25-743079174. The client was transported to University of Louisville Hospital downtown by Heartland EMS.\n\nInjuries reported include a possible concussion, lower back pain, and hip pain. The details above were conveyed by Justin in the initial contact.",
+      "valid_at": "2025-10-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dakota McCord",
+            "relevance": "primary client involved in MVA"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "PIP insurer"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #25-743079174",
+            "relevance": "PIP claim for the client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "transport/treatment destination"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Heartland EMS",
+            "relevance": "transport provider"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Clarksville Police Department",
+            "relevance": "responding agency (Report #202560643)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-13",
+      "original_body": "Case: Dakota-McCord-MVA-10-12-2025\nClient: Dakota McCord\n\nDakota, It's Justin from the Whaley Law Firm. This is the text only number for your file. If you need to call me, my direct line is502-357-9603",
+      "natural_language": "Case Dakota-McCord-MVA-10-12-2025 involves client Dakota McCord. The file records a text message from Justin of the Whaley Law Firm to Dakota. The message reads: \"Dakota, It's Justin from the Whaley Law Firm. This is the text only number for your file. If you need to call me, my direct line is502-357-9603\".",
+      "valid_at": "2025-10-13T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dakota McCord",
+            "relevance": "named client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-17",
+      "original_body": "Case: Dakota-McCord-MVA-10-12-2025\nClient: Dakota McCord\n\n__New Insurance Note:__ Supervisor Patrick Mangano Ph 317-567-8224\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Dakota-McCord-MVA-10-12-2025 involves client Dakota McCord. This is a new insurance note documenting that Supervisor Patrick Mangano, reachable at 317-567-8224, is handling the matter. The insurance coverage is Personal Injury Protection (PIP) through Progressive Insurance Company, and the entry was authored by Justin Chumbley.",
+      "valid_at": "2025-10-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dakota McCord",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer providing PIP coverage"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Patrick Mangano",
+            "relevance": "supervisor/adjuster handling the matter"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP (Progressive)",
+            "relevance": "personal injury protection coverage on file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-17",
+      "original_body": "Case: Dakota-McCord-MVA-10-12-2025\nClient: Dakota McCord\n\n@aaronw BI is denying liability, placing 100% on our client. denial letter in route",
+      "natural_language": "Case Dakota-McCord-MVA-10-12-2025 involves client Dakota McCord in a motor vehicle accident.\n\nThe Bodily Injury (BI) insurer, identified by the handle @aaronw, is denying liability and has placed 100% liability on our client. A denial letter is in route.",
+      "valid_at": "2025-10-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Dakota McCord",
+            "relevance": "client involved in motor vehicle accident"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "@aaronw",
+            "relevance": "Bodily Injury insurer denying liability"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Bodily Injury claim",
+            "relevance": "claim being denied by insurer"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

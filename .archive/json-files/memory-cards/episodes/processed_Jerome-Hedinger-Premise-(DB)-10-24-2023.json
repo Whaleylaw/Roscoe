@@ -1,0 +1,119 @@
+{
+  "case_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023",
+  "total_episodes": 6,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jerome-Hedinger-Premise-(DB)-10-24-2023\nClient: Jerome Hedinger\n\nSettlement negotiations and case resolution planning.",
+      "natural_language": "On October 24, 2023, the Jerome-Hedinger-Premise-(DB) matter was established for client Jerome Hedinger. \n\nThe engagement centers on settlement negotiations and planning for case resolution.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jerome Hedinger",
+            "relevance": "client for matter established"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jerome-Hedinger-Premise-(DB)-10-24-2023\nClient: Jerome Hedinger\n\nProperty inspection and liability determination process.",
+      "natural_language": "Case Jerome-Hedinger-Premise-(DB)-10-24-2023 pertains to client Jerome Hedinger. The matter centers on a property inspection and the liability determination process related to the premises identified in the case file.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jerome Hedinger",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Jerome-Hedinger-Premise-(DB)-10-24-2023\nClient: Jerome Hedinger\n\nPremises liability case review and evidence analysis.",
+      "natural_language": "On October 24, 2023, the case file Jerome-Hedinger-Premise-(DB) was opened for client Jerome Hedinger. The client\u2019s matter is a premises liability claim.\n\nThis entry reflects a premises liability case review and an analysis of the evidence related to that claim.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jerome Hedinger",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Jerome-Hedinger-Premise-(DB)",
+            "relevance": "premises liability claim in file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jerome-Hedinger-Premise-(DB)-10-24-2023\nClient: Jerome Hedinger\n\nSettlement negotiations and liability determination.",
+      "natural_language": "This matter, identified as Jerome-Hedinger-Premise-(DB)-10-24-2023, concerns the client Jerome Hedinger.\n\nThe issues addressed are settlement negotiations and liability determination.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jerome Hedinger",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jerome-Hedinger-Premise-(DB)-10-24-2023\nClient: Jerome Hedinger\n\nProperty owner liability investigation and documentation.",
+      "natural_language": "Case Jerome-Hedinger-Premise-(DB)-10-24-2023 was opened for client Jerome Hedinger. \n\nThe engagement involves a property owner liability investigation and documentation.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jerome Hedinger",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Jerome-Hedinger-Premise-(DB)-10-24-2023\nClient: Jerome Hedinger\n\nPremises liability case from October 24, 2023.",
+      "natural_language": "This is a premises liability case identified in the file as Jerome-Hedinger-Premise-(DB)-10-24-2023, and the client is Jerome Hedinger. \n\nThe matter concerns a premises liability issue arising from an incident that occurred on October 24, 2023.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jerome Hedinger",
+            "relevance": "named client/subject of case"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

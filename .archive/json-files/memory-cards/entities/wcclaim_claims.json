@@ -1,0 +1,77 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "WCClaim",
+    "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Workers' Compensation (WC)-238042cs",
+    "attributes": {
+      "claim_number": "238042cs",
+      "insurer_name": "Hartford Mutual Insurance",
+      "adjuster_name": "Debbie Smith",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": true,
+      "project_name": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+    },
+    "source_id": "120",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "WCClaim",
+    "name": "Estate-of-Keith-Graser-WC-12-07-2020-Workers' Compensation (WC)",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Estate-of-Keith-Graser-WC-12-07-2020"
+    },
+    "source_id": "108",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "WCClaim",
+    "name": "Frances-Whitis-WC-MVA-9-6-2024-Workers' Compensation (WC)",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Frances-Whitis-WC-MVA-9-6-2024"
+    },
+    "source_id": "92",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "WCClaim",
+    "name": "Michael-Johnston-WC-05-03-2023-Workers' Compensation (WC)-841603",
+    "attributes": {
+      "claim_number": "841603",
+      "insurer_name": "Ford Worker's Compensation",
+      "adjuster_name": "Dana Ballinger",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Michael-Johnston-WC-05-03-2023"
+    },
+    "source_id": "103",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "WCClaim",
+    "name": "Shannon-Lankswert-WC-02-07-2025-Workers' Compensation (WC)-WC80D-H07503",
+    "attributes": {
+      "claim_number": "WC80D-H07503",
+      "insurer_name": "Liberty Mutual Workers' Compensation",
+      "adjuster_name": "George Stewart",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Shannon-Lankswert-WC-02-07-2025"
+    },
+    "source_id": "44",
+    "source_file": "insurance.json"
+  }
+]

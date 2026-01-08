@@ -1,0 +1,63 @@
+{
+  "case_name": "Mark-Smith-Jr-MVA-5-31-2025",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Fern Creek Fire & EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "USAA Insurance Company"
+      },
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Taline Clestine"
+      },
+      {
+        "name": "Joseph Dedeyn"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Mark-Smith-Jr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803",
+        "insurer": "USAA Insurance Company",
+        "adjuster": "Taline Clestine"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Mark-Smith-Jr-MVA-5-31-2025-Personal Injury Protection (PIP)-1785Q936Q",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Joseph Dedeyn"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Mark-Smith-Jr-MVA-5-31-2025-United Healthcare",
+        "holder": "United Healthcare",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

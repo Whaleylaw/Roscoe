@@ -1,0 +1,825 @@
+{
+  "case_name": "Michael-Ditto-Jr-Med-Mal-04-11-2023",
+  "total_episodes": 22,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Intake__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Cameal Stafford [reddcameal@gmail.com](mailto:reddcameal@gmail.com), Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com), Sarena Tuttle [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)m)\nCC: \nDate: Fri, 13 Dec 2024 10:20:13 -0500\n\nSarena, please forward intake documents for a potential medical malpractice\nclaim with Cameal Stafford's son. She is on this email. Thanks.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023. Client: Michael Ditto.\n\nIntake occurred via email on Friday, December 13, 2024 at 10:20:13 AM (Eastern Time). The message was sent from Aaron Whaley of Whaley Law Firm (agwhaley@whaleylawfirm.com) and addressed to Cameal Stafford (reddcameal@gmail.com), Bryce Koon (bryce@whaleylawfirm.com), and Sarena Tuttle (bryce@whaleylawfirm.com). No one was listed in CC.\n\nIn the body of the email, Aaron wrote: \u201cSarena, please forward intake documents for a potential medical malpractice claim with Cameal Stafford's son. She is on this email. Thanks.\u201d\n\nSignature:\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender / originating attorney"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Intake__\nFrom: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nTo: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nCC: Cameal Stafford [reddcameal@gmail.com](mailto:reddcameal@gmail.com), Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nDate: Fri, 13 Dec 2024 10:27:32 -0500\n\nAbsolutely,\n Good morning Cameal. I will be sending the documents via DocuSign\nmomentarily to the email you provided. The DocuSign application will allow\nyou to complete & execute the required documents from any electronic device\nsuch as your cell phone, laptop, chromebook, etc. If you have any\nquestions, please do not hesitate to contact me directly to discuss them in\nfurther detail.\n\nSarena M. Tuttle\nLitigation Paralegal &\nWorkers' Compensation Case Manager\nThe Whaley Law Firm\n712 Lyndon Lane\nLouisville, KY 40222\nD: (502) 357-9971\nO: (502) 583-4022 ext 104\nE: Sarena@WhaleyLawFirm.com\n(PLEASE NOTE NEW EMAIL ADDRESS)\n\nOn Fri, Dec 13, 2024 at 10:20?AM Aaron Whaley \nwrote:\n\n> Sarena, please forward intake documents for a potential medical\n> malpractice claim with Cameal Stafford's son. She is on this email. Thanks.\n>\n> --\n> Aaron Whaley\n> Whaley Law Firm\n> 712 Lyndon Ln\n> Louisville, KY 40222\n> 502-583-4022\n>\n>",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023. Client: Michael Ditto.\n\nIntake communications were documented in a December 13, 2024 email thread. In a message dated 10:27:32 AM Eastern Time, Sarena M. Tuttle, a Litigation Paralegal and Workers' Compensation Case Manager at The Whaley Law Firm (712 Lyndon Lane, Louisville, KY 40222) notified Aaron Whaley that she would be sending the intake documents via DocuSign to the email address provided. She explained that the DocuSign application would allow the required documents to be completed and executed from any electronic device, such as a cell phone, laptop, Chromebook, etc. She invited any questions and offered to discuss them in further detail, signing as Sarena M. Tuttle with her contact information: D: (502) 357-9971; O: (502) 583-4022 ext 104; E: Sarena@WhaleyLawFirm.com, noting in parentheses that this is a new email address.\n\nThe message thread also shows an earlier message from Aaron Whaley, dated around 10:20 AM, in which he wrote: \u201cSarena, please forward intake documents for a potential medical malpractice claim with Cameal Stafford's son. She is on this email. Thanks.\u201d Aaron provided his contact details: Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.\n\nThe CC line inSarena\u2019s reply includes Cameal Stafford (reddcameal@gmail.com) and Bryce Koon (bryce@whaleylawfirm.com).",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "identified client of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm handling intake and sending documents"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "requested intake documents / contact at the firm"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Cameal Stafford",
+            "relevance": "CC'd on intake email; potential claimant referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Intake__\nFrom: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nTo: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com), Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nCC: \nDate: Fri, 13 Dec 2024 10:29:56 -0500\n\nSent :)\n\nSarena M. Tuttle\nLitigation Paralegal &\nWorkers' Compensation Case Manager\nThe Whaley Law Firm\n712 Lyndon Lane\nLouisville, KY 40222\nD: (502) 357-9971\nO: (502) 583-4022 ext 104\nE: Sarena@WhaleyLawFirm.com\n(PLEASE NOTE NEW EMAIL ADDRESS)\n\nOn Fri, Dec 13, 2024 at 10:27?AM Sarena Tuttle \nwrote:\n\n> Absolutely,\n> Good morning Cameal. I will be sending the documents via DocuSign\n> momentarily to the email you provided. The DocuSign application will allow\n> you to complete & execute the required documents from any electronic device\n> such as your cell phone, laptop, chromebook, etc. If you have any\n> questions, please do not hesitate to contact me directly to discuss them in\n> further detail.\n>\n> Sarena M. Tuttle\n> Litigation Paralegal &\n> Workers' Compensation Case Manager\n> The Whaley Law Firm\n> 712 Lyndon Lane\n> Louisville, KY 40222\n> D: (502) 357-9971\n> O: (502) 583-4022 ext 104\n> E: Sarena@WhaleyLawFirm.com\n> (PLEASE NOTE NEW EMAIL ADDRESS)\n>\n>\n> On Fri, Dec 13, 2024 at 10:20?AM Aaron Whaley \n> wrote:\n>\n>> Sarena, please forward intake documents for a potential medical\n>> malpractice claim with Cameal Stafford's son. She is on this email. Thanks.\n>>\n>> --\n>> Aaron Whaley\n>> Whaley Law Firm\n>> 712 Lyndon Ln\n>> Louisville, KY 40222\n>> 502-583-4022\n>>\n>>",
+      "natural_language": "This intake pertains to the case Michael-Ditto-Jr-Med-Mal-04-11-2023 and involves the client Michael Ditto. On December 13, 2024, Sarena M. Tuttle, a litigation paralegal and workers\u2019 compensation case manager for The Whaley Law Firm, initiated and coordinated intake communications from the firm\u2019s Louisville, Kentucky office. Her contact details are The Whaley Law Firm, 712 Lyndon Lane, Louisville, KY 40222; direct line (D) 502-357-9971; office line (O) 502-583-4022 ext. 104; email Sarena@WhaleyLawFirm.com, noted as the new address.\n\nIn the email thread dated December 13, 2024 at 10:29:56 AM with the subject Re: Intake, Sarena sent to Aaron Whaley and Bryce Koon. The message begins with a simple \u201cSent :)\u201d and includes her full signature. She stated that she would be sending the intake documents via DocuSign momentarily to the email provided by the recipient. She explained that the DocuSign application would enable the recipient to complete and execute the required documents from any electronic device, such as a cell phone, laptop, or Chromebook. She added that if there were any questions, the recipient should contact her directly to discuss them in further detail. The signature block identifies Sarena M. Tuttle as a Litigation Paralegal and Workers\u2019 Compensation Case Manager, with the firm\u2019s contact information and the note to use the new email address.\n\nEarlier on the same day, at approximately 10:20 AM, Aaron Whaley sent a message stating: \u201cSarena, please forward intake documents for a potential medical malpractice claim with Cameal Stafford's son. She is on this email. Thanks.\u201d His message included his firm\u2019s signature and contact details: The Whaley Law Firm, 712 Lyndon Lane, Louisville, KY 40222; 502-583-4022.\n\nThe thread also contains the standard sign-offs from Sarena, including the firm\u2019s address and the directive to note her new email address. Overall, the intake communications were focused on forwarding intake documents for a potential medical malpractice claim involving Cameal Stafford\u2019s son and using DocuSign to execute the documents.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm handling intake"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "initiated intake request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Bryce Koon",
+            "relevance": "recipient of intake documents"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "DocuSign",
+            "relevance": "tool to execute intake documents electronically"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "potential medical malpractice claim (Cameal Stafford's son)",
+            "relevance": "claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__CAMEAL STAFFORD viewed Thank you for choosing The Whaley Law Firm!__\nFrom: Docusign via Docusign [dse_NA4@docusign.net](mailto:dse_NA4@docusign.net)\nTo: Aaron Whaley [STuttle.wlf@gmail.com](mailto:STuttle.wlf@gmail.com)\nCC: \nDate: Fri, 13 Dec 2024 07:37:00 -0800\n\nHello CAMEAL STAFFORD, \n\nAt 12/13/2024 10:37:00 AM EST, CAMEAL STAFFORD opened and viewed your documents, 2021 Whaley MVA Client Intake Packet - Minor.pdf.\n \n\nNo Content \n\nhttps://na4.docusign.net/Signing/EmailStart.aspx?etti=66&m=5ba98f18-d87e-4974-95f8-dd6a28700812\n\nIf clicking the link does not work, you can highlight and copy the entire line above and paste it into your browser to get started.\n\nThis message was sent to you by Aaron Whaley who is using the Docusign Electronic Signature Service. If you would rather not receive email from this sender you may contact the sender with your request.\n\nDo Not Share This Email\nThis email contains a secure link to Docusign. Please do not share this email, link, or access code with others.\n\nQuestions about the Document?\nIf you need to modify the document or have questions about the details in the document, please reach out to the sender by emailing them directly.\n\nStop receiving this email\nReport this email https://protect.docusign.net/report-abuse?e=AUtomjpFak9GlbPL0zFFi10PYRJHy5cXtyzPo4DAtPscUzK652Fb38k06IVsIkCZ_rLFd4MHOOUyDdmrDeZq3uHu4UhTNK5K5u1dJMlQ8d7oCFfX5JrRanIWvPQuC7tfvdgxrl6xZR_ruI2lb39k9HGCUrN0akcQrRLOmXYB4S5lxJOksSNbsbbmd9YeJwZlHxxcYqc2K5vwGJ_Ohzq7yzUV5Q8voQQzsu31Hs9zxwS1ZuRBCKefreGAg_kKIzYlyx2QQdUtlBIouj07-NU2WNwTywDLv58bbNwse_aYEO6zbXNrUnbAPPbYLdEmSDyVY5pFeZtIBg4Ehho_apy_PgAosfcm3xizISHeknfZmZvfbZUm3Ap6__YubspcuR5DCuuK0IOxPETBkPC8lkzVNBquId3JeGkRY06EpbN9ZFtFbF7mjckSsyQD-8e3s_17MUJz-zUXysGJTpqZMZ5P208&lang=en\nDeclining to sign \nManaging notifications \n\nIf you have trouble signing, visit \"How to Sign a Document\" on our Docusign Support Center, or browse our Docusign Community for more information.\nhttps://support.docusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?language=en_US&utm_campaign=GBL_XX_DBU_UPS_2211_SignNotificationEmailFooter&utm_medium=product&utm_source=postsend",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023. Client: Michael Ditto.\n\nThis note documents a DocuSign notification related to the matter. On December 13, 2024, at 10:37:00 AM Eastern Standard Time, CAMEAL STAFFORD opened and viewed the documents titled \u201c2021 Whaley MVA Client Intake Packet - Minor.pdf,\u201d which were sent via DocuSign in connection with the case. The email that triggered this activity was sent on December 13, 2024 at 7:37:00 AM Pacific Time from Docusign via Docusign (dse_NA4@docusign.net) to Aaron Whaley (STuttle.wlf@gmail.com), with the message beginning, \u201cHello CAMEAL STAFFORD,\u201d and indicating that CAMEAL STAFFORD opened and viewed the documents. The envelope included a link to start signing: https://na4.docusign.net/Signing/EmailStart.aspx?etti=66&m=5ba98f18-d87e-4974-95f8-dd6a28700812. The email also noted that if clicking the link did not work, the recipient could highlight and copy the entire line and paste it into the browser to get started. The body of this message contained no additional content beyond that line.\n\nThe message was sent to Aaron Whaley using the DocuSign Electronic Signature Service, and it advised that if the recipient preferred not to receive email from this sender, they could contact the sender with that request. It included a caution: \u201cDo Not Share This Email,\u201d and stated that the email contains a secure link to DocuSign, asking not to share the email, the link, or the access code with others. It provided guidance for questions about the document, encouraging contact with the sender via email if modifications or questions about the document were needed. It also included options to stop receiving this email or to report it, along with references to \u201cDeclining to sign\u201d and \u201cManaging notifications.\u201d\n\nFor signing support, the message directed the recipient to the DocuSign resources: if there was trouble signing, visit the How to Sign a Document page on the DocuSign Support Center, or consult the DocuSign Community for more information. The support article linked is titled \u201cHow-do-I-sign-a-DocuSign-document-Basic-Signing,\u201d with the relevant language and campaign tags included in the footer links.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "DocuSign",
+            "relevance": "e-signature service / sender of DocuSign email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Completed: Thank you for choosing The Whaley Law Firm!__\nFrom: Docusign via Docusign [dse_NA4@docusign.net](mailto:dse_NA4@docusign.net)\nTo: Aaron Whaley [STuttle.wlf@gmail.com](mailto:STuttle.wlf@gmail.com)\nCC: \nDate: Fri, 13 Dec 2024 09:58:46 -0800\n\nHello Aaron Whaley, \n\nAll signers completed Thank you for choosing The Whaley Law Firm!\n\nReview the document your recipients have signed, and the following payment(s)\n\nhttps://na4.docusign.net/Signing/EmailStart.aspx?etti=46&m=5ba98f18-d87e-4974-95f8-dd6a28700812\n\nIf clicking the link does not work, you can highlight and copy the entire line above and paste it into your browser to get started.\n\nThis message was sent to you by Aaron Whaley who is using the Docusign Electronic Signature Service. If you would rather not receive email from this sender you may contact the sender with your request.\n\nDo Not Share This Email\nThis email contains a secure link to Docusign. Please do not share this email, link, or access code with others.\n\nQuestions about the Document?\nIf you need to modify the document or have questions about the details in the document, please reach out to the sender by emailing them directly.\n\nStop receiving this email\nReport this email https://protect.docusign.net/report-abuse?e=AUtomjpFak9GlbPL0zFFi13xQUX55YAr85hQGW04qKRUqOwQTof2VFhq2YgmiTG8vc7yTMB2SkRlz46-3giQEvLfSjhs3IDtcIQedpL1ansukuk7W-qRwv9nQgNVUjpI6f-Vms0FpCj0c3Adv84InVoGfP73CO-9blQMQ6IZFLXYmpD-ks863OoQ93teskb2peHQhoQ_WfSp_eFdi3te1N2aMFDNHevfqFEdMssAd838jbYJNjp1szYJyNJyojTlCdoV71m4NeuAz2Zw0B8pN2DzbPQNo6sZUDu9vD9jRhXRLAPXH0YwJU-04TLywrLwyIgPkQoYn7WZkG73r4pdaBv_5d3SfKRJvZAYkmfNVp1M&lang=en\nDeclining to sign \nManaging notifications \n\nIf you have trouble signing, visit \"How to Sign a Document\" on our Docusign Support Center, or browse our Docusign Community for more information.\nhttps://support.docusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?language=en_US&utm_campaign=GBL_XX_DBU_UPS_2211_SignNotificationEmailFooter&utm_medium=product&utm_source=postsend",
+      "natural_language": "Case Michael-Ditto-Jr-Med-Mal-04-11-2023 pertains to client Michael Ditto. On Friday, December 13, 2024, at 09:58:46 -0800, an email was sent from Docusign via Docusign (dse_NA4@docusign.net) to Aaron Whaley at STuttle.wlf@gmail.com. The message began with \"Hello Aaron Whaley\" and stated that all signers had completed the signing, and it thanked The Whaley Law Firm for choosing the firm. It directed Aaron to review the document the recipients had signed and the following payments via the link: https://na4.docusign.net/Signing/EmailStart.aspx?etti=46&m=5ba98f18-d87e-4974-95f8-dd6a28700812. If the link did not work, the instruction was to highlight and copy the entire line above and paste it into the browser to get started.\n\nThe email noted that it was sent to Aaron Whaley, who is using the DocuSign Electronic Signature Service. It included a warning not to share this email, the link, or the access code with others, under the heading \"Do Not Share This Email.\" It stated that if there were questions about the document or if the document needed modification, the sender should be contacted directly via email. The footer also offered options to stop receiving this email and to report it as abuse at https://protect.docusign.net/report-abuse?e=AUtomjpFak9GlbPL0zFFi13xQUX55YAr85hQGW04qKRUqOwQTof2VFhq2YgmiTG8vc7yTMB2SkRlz46-3giQEvLfSjhs3IDtcIQedpL1ansukuk7W-qRwv9nQgNVUjpI6f-Vms0FpCj0c3Adv84InVoGfP73CO-9blQMQ6IZFLXYmpD-ks863OoQ93teskb2peHQhoQ_WfSp_eFdi3te1N2aMFDNHevfqFEdMssAd838jbYJNjp1szYJyNJyojTlCdoV71m4NeuAz2Zw0B8pN2DzbPQNo6sZUDu9vD9jRhXRLAPXH0YwJU-04TLywrLwyIgPkQoYn7WZkG73r4pdaBv_5d3SfKRJvZAYkmfNVp1M&lang=en. It also included brief labels for \"Declining to sign\" and \"Managing notifications.\" For signing help, the message directed the recipient to the DocuSign Support Center article \"How to Sign a Document\" and its Basic Signing guidance at https://support.docusign.com/s/articles/How-do-I-sign-a-DocuSign-document-Basic-Signing?language=en_US&utm_campaign=GBL_XX_DBU_UPS_2211_SignNotificationEmailFooter&utm_medium=product&utm_source=postsend.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "recipient/signer attorney"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "attorney's law firm"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "DocuSign",
+            "relevance": "electronic signature/email service sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\nRecvd Minor Intake Packet - Updated File with Listed Information - Sent Contact Email to Guardian Mother to confirm Custody and description of Incident - Also Requested Medical Providers & Any records of her complaint against Norton HealthCare - Awaiting Guardian Reply",
+      "natural_language": "Case Michael-Ditto-Jr-Med-Mal-04-11-2023 involves client Michael Ditto. A Minor Intake Packet was received, and the file was updated with the information listed in the packet.\n\nA contact email was sent to the guardian mother to confirm custody and to obtain a description of the incident. The email also requested medical providers and any records of her complaint against Norton HealthCare. We are awaiting the guardian's reply.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "subject of the case / minor client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton HealthCare",
+            "relevance": "medical provider involved in complaint; records requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nTo: Cameal Stafford [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nCC: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com), Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com)\nDate: Fri, 13 Dec 2024 13:27:10 -0500\n\nGood afternoon Cameal,\n Thank you so much for completing the Minor Intake for Michael Jr. Can\nyou please clarify your relationship with Michael Ditto Sr? Are you\nmarried? If not, has custody been decided by a Family Court? Is Michael Sr\nactively involved in Michael Jr's life? I do not mean to be intrusive,\nhowever, custody is a relevant issue for minor claims.\n I see on the Intake that Michael was born on 04/07/2023 and was in\nICU at Norton Hospital. Was this the Downtown location?\n Then on 04/11/2023 Michael was to have a routine circumcision but\nthere was an issue found at his 1st primary care check up. Correct? Who is\nthe Primary Care Physician?\n Micheal was then referred for a revision surgery, looks like in\nDecember of 2023, is that the correct date? Who completed this revision\nsurgery?\n I see you noted that you made a complaint to Norton Hospital, do you\nhave any records of these complaints for your file?\n Has Micheal received any other treatment such additional surgeries,\ntherapy or any follow up visits? If so, please provide us with a complete\nlist of any and all doctors Michael has seen.\n As soon as we receive the requested information, we will get medical\nrecord requests out to get copies of all Michael's medical records and\nplace Norton Healthcare on Notice of Michael's claim. Please keep in mind\nthis part of the process can take 30-45 days to get the records & a proper\nresponse from Norton Healthcare. We ask for your patience during this time,\nhowever, please feel free to contact us directly with any questions that\nmay arise. We look forward to assisting Michael and working with you &\nMichael Sr as things progress.\n\nSarena M. Tuttle\nLitigation Paralegal &\nWorkers' Compensation Case Manager\nThe Whaley Law Firm\n712 Lyndon Lane\nLouisville, KY 40222\nD: (502) 357-9971\nO: (502) 583-4022 ext 104\nE: Sarena@WhaleyLawFirm.com\n(PLEASE NOTE NEW EMAIL ADDRESS)",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\nIn the note titled Michael Ditto Jr - Medical Malpractice 04/11/2023, the communications trace a specific email regarding the Michael Ditto Jr. matter. The email is from Sarena Tuttle of The Whaley Law Firm to Cameal Stafford, with Aaron Whaley and Bryce Koon cc\u2019d, dated Friday, December 13, 2024 at 13:27:10 Eastern Time. The purpose of the message is to follow up on the Minor Intake for Michael Jr. and to request clarifications and additional information necessary for advancing the minor\u2019s claim.\n\nIn the body of the email, Sarena thanks Cameal for completing the Minor Intake for Michael Jr. and asks several clarifying questions. She asks for details about Cameal\u2019s relationship with Michael Ditto Sr., specifically whether they are married, whether custody has been decided by a Family Court if not married, and whether Michael Sr. is actively involved in Michael Jr.\u2019s life, noting that custody is a relevant issue for minor claims. She references information in the intake indicating that Michael was born on 04/07/2023 and was in the ICU at Norton Hospital, asking whether this was the Downtown location. She then notes that on 04/11/2023 Michael was to have a routine circumcision, but there was an issue found at his first primary care check-up, and asks who the Primary Care Physician (PCP) is.\n\nThe email also asks for confirmation regarding a revision surgery, questioning whether it occurred in December 2023 and who completed that revision surgery. Sarena mentions a complaint that had been made to Norton Hospital and asks whether there are records of those complaints for the file. She inquires whether Michael has received any other treatments, such as additional surgeries, therapy, or any follow-up visits, and asks for a complete list of all doctors Michael has seen.\n\nRegarding next steps, Sarena states that once the requested information is received, the firm will initiate medical record requests to obtain copies of all of Michael\u2019s medical records and will place Norton Healthcare on Notice of Michael\u2019s claim. She cautions that this part of the process can take 30\u201345 days to obtain the records and a proper response from Norton Healthcare. She asks for patience during this period and invites direct contact with any questions that may arise. The email concludes with a note of looking forward to assisting Michael and working with Michael Sr. as the matter progresses.\n\nSignature information follows:\nSarena M. Tuttle\nLitigation Paralegal & Workers' Compensation Case Manager\nThe Whaley Law Firm\n712 Lyndon Lane\nLouisville, KY 40222\nDirect: (502) 357-9971\nOffice: (502) 583-4022 ext 104\nEmail: Sarena@WhaleyLawFirm.com\n(PLEASE NOTE NEW EMAIL ADDRESS)\n\nThis narrative reflects all facts and details contained in the structured note, including the case title, client, the full header of the email, the date and time, the parties involved, the questions posed, the procedural steps outlined, and the contact information of the sender.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr.",
+            "relevance": "minor claimant / client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital",
+            "relevance": "treatment location referenced"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Healthcare",
+            "relevance": "medical organization to be placed on notice and records requested from"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm handling the matter; sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: KillA StyleS [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nTo: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nCC: \nDate: Fri, 13 Dec 2024 13:50:34 -0500\n\nYes Me & Micheal Sr are Married he does live in the home with us\nMicheal was born at Norton Durchman ln location\nI immediately complained the initial circumcision date 4/11/23 the\n((Heather Gusic APRN )) did not record there was Any problems or complaints\nin her notes in Micheal jr\nFiles\nI mad a complaint to 502 559 4490 Nortons Dutchman hospital they are\noffering to Pay for Micheal re-circumcision and repair Surgery 12/12/23\nI complained to the primary care at Michael\u2019s six weeks check up\nThat he was in pain and the Circumcision was not doing ok and Agreed\nThey referred me to his urologist @ Norton dutchman location\n\nwho has extensive notes on everything\n\nOn Fri, Dec 13, 2024 at 1:27?PM Sarena Tuttle \nwrote:\n\n> Good afternoon Cameal,\n> Thank you so much for completing the Minor Intake for Michael Jr.\n> Can you please clarify your relationship with Michael Ditto Sr? Are you\n> married? If not, has custody been decided by a Family Court? Is Michael Sr\n> actively involved in Michael Jr's life? I do not mean to be intrusive,\n> however, custody is a relevant issue for minor claims.\n> I see on the Intake that Michael was born on 04/07/2023 and was in\n> ICU at Norton Hospital. Was this the Downtown location?\n> Then on 04/11/2023 Michael was to have a routine circumcision but\n> there was an issue found at his 1st primary care check up. Correct? Who is\n> the Primary Care Physician?\n> Micheal was then referred for a revision surgery, looks like in\n> December of 2023, is that the correct date? Who completed this revision\n> surgery?\n> I see you noted that you made a complaint to Norton Hospital, do\n> you have any records of these complaints for your file?\n> Has Micheal received any other treatment such additional surgeries,\n> therapy or any follow up visits? If so, please provide us with a complete\n> list of any and all doctors Michael has seen.\n> As soon as we receive the requested information, we will get\n> medical record requests out to get copies of all Michael's medical records\n> and place Norton Healthcare on Notice of Michael's claim. Please keep in\n> mind this part of the process can take 30-45 days to get the records & a\n> proper response from Norton Healthcare. We ask for your patience during\n> this time, however, please feel free to contact us directly with any\n> questions that may arise. We look forward to assisting Michael and working\n> with you & Michael Sr as things progress.\n>\n> Sarena M. Tuttle\n> Litigation Paralegal &\n> Workers' Compensation Case Manager\n> The Whaley Law Firm\n> 712 Lyndon Lane\n> \n> Louisville, KY 40222\n> \n> D: (502) 357-9971\n> O: (502) 583-4022 ext 104\n> E: Sarena@WhaleyLawFirm.com\n> (PLEASE NOTE NEW EMAIL ADDRESS)\n>",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023 concerns Michael Ditto Jr.\u2019s medical malpractice matter. In an email dated December 13, 2024, KillA StyleS (reddcameal@gmail.com) wrote to Sarena Tuttle of The Whaley Law Firm. She states that she and Michael Ditto Sr. are married and live in the same home. Michael Jr. was born at Norton Durchman Ln location. She says she immediately complained about the initial circumcision performed on 04/11/23, noting that Heather Gusic APRN did not record any problems or complaints in her notes for Michael Jr. She reports filing a complaint with Norton\u2019s Dutchman hospital at the phone number 502-559-4490; Norton\u2019s Dutchman hospital is offering to pay for Michael\u2019s re-circumcision and repair surgery on 12/12/23. She also says that at Michael\u2019s six-week primary care check-up she told them that he was in pain and that the circumcision was not going well; the primary care provider agreed and referred them to his urologist at the Norton Dutchman location, who she says has extensive notes on everything.\n\nIn response, on December 13, 2024 at approximately 1:27 PM, Sarena M. Tuttle, a Litigation Paralegal and Workers\u2019 Compensation Case Manager at The Whaley Law Firm, wrote back with clarifying questions. She asked to confirm Michael Ditto Sr.\u2019s relationship to the client\u2014whether they are married, and if not, whether custody has been decided by a Family Court, and whether Michael Sr. is actively involved in Michael Jr.\u2019s life. She noted that the intake lists Michael\u2019s birth date as 04/07/2023 and that he was in ICU at Norton Hospital, asking whether this was the Downtown location. She asked for confirmation that on 04/11/2023 Michael was to have a routine circumcision but there was an issue found at his first primary care check-up, and asked who the Primary Care Physician was. She inquired whether the revision surgery occurred in December 2023, who completed the revision, and whether there are any records of complaints to Norton Hospital for the file. She requested a complete list of any other treatments, including additional surgeries, therapy, or follow-up visits, and all doctors Michael has seen. She explained that once the requested information is received, the firm would issue medical record requests to obtain copies of all of Michael\u2019s medical records and place Norton Healthcare on notice of Michael\u2019s claim. She noted this part of the process can take 30\u201345 days to obtain the records and a proper response from Norton Healthcare and encouraged contacting the firm with any questions. The message is signed by Sarena M. Tuttle, Litigation Paralegal & Workers\u2019 Compensation Case Manager, The Whaley Law Firm, 712 Lyndon Lane, Louisville, KY 40222; D: (502) 357-9971; O: (502) 583-4022 ext 104; E: Sarena@WhaleyLawFirm.com (PLEASE NOTE NEW EMAIL ADDRESS).",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr.",
+            "relevance": "subject of the medical malpractice case / patient"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Dutchman Hospital",
+            "relevance": "birth and treating hospital; site of initial circumcision, revision surgery offer, and complaints/records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Healthcare",
+            "relevance": "healthcare system to be placed on notice and source of medical records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic APRN",
+            "relevance": "provider noted for the initial circumcision and charting (no problems recorded)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "law firm handling intake, communications, and records requests"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__CLIENT CONTACT__\n__Details:__ Recvd Client Intake Packet - Reviewed - Missing Info - Sent Guardian Email:\nGood afternoon Cameal,\n Thank you so much for completing the Minor Intake for Michael Jr. Can you please clarify your relationship with Michael Ditto Sr? Are you married? If not, has custody been decided by a Family Court? Is Michael Sr actively involved in Michael Jr's life? I do not mean to be intrusive, however, custody is a relevant issue for minor claims.\n I see on the Intake that Michael was born on 04/07/2023 and was in ICU at Norton Hospital. Was this the Downtown location?\n Then on 04/11/2023 Michael was to have a routine circumcision but there was an issue found at his 1st primary care check up. Correct? Who is the Primary Care Physician?\n Micheal was then referred for a revision surgery, looks like in December of 2023, is that the correct date? Who completed this revision surgery? \n I see you noted that you made a complaint to Norton Hospital, do you have any records of these complaints for your file? \n Has Micheal received any other treatment such additional surgeries, therapy or any follow up visits? If so, please provide us with a complete list of any and all doctors Michael has seen. \n As soon as we receive the requested information, we will get medical record requests out to get copies of all Michael's medical records and place Norton Healthcare on Notice of Michael's claim. Please keep in mind this part of the process can take 30-45 days to get the records & a proper response from Norton Healthcare. We ask for your patience during this time, however, please feel free to contact us directly with any questions that may arise. We look forward to assisting Michael and working with you & Michael Sr as things progress. \n__Person Making Contact:__ Sarena\n__Date & Time__: December 13 2024",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023. Client: Michael Ditto.\n\nInitial client contact occurred on December 13, 2024, with Sarena regarding the Michael Ditto Jr. medical-malpractice case. The firm had received the Client Intake Packet, reviewed it, and found information missing, so a Guardian Email was sent.\n\nThe Guardian Email explains that Cameal completed the Minor Intake and asks for clarifications regarding the relationship with Michael Ditto Sr., including whether they are married and, if not, whether custody has been decided by a Family Court, and whether Michael Sr. is actively involved in Michael Jr.\u2019s life, noting that custody is a relevant issue for minor claims. It also notes that Michael was born on 04/07/2023 and was in ICU at Norton Hospital, asking if that was at the Downtown location. It states that on 04/11/2023 Michael was to have a routine circumcision but there was an issue found at his first primary care check up, and asks who the Primary Care Physician is. It mentions that Micheal was then referred for a revision surgery, looks like in December of 2023, and asks who completed this revision surgery. It notes that you noted a complaint to Norton Hospital and asks whether there are any records of these complaints for the file. It asks whether Micheal has received any other treatment, such as additional surgeries, therapy, or any follow-up visits, and requests a complete list of any and all doctors Michael has seen. The email explains that once the requested information is received, medical record requests will be issued to obtain copies of all Michael\u2019s medical records and to place Norton Healthcare on Notice of Michael\u2019s claim. It cautions that this part of the process can take 30-45 days to obtain the records and receive a proper response from Norton Healthcare, asks for patience, and invites any questions as they progress. It concludes with, \u201cWe look forward to assisting Michael and working with you & Michael Sr as things progress.\u201d\n\nPerson Making Contact: Sarena. Date & Time: December 13, 2024.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr.",
+            "relevance": "client/minor claimant"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital",
+            "relevance": "medical provider mentioned/records and complaint referenced"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Healthcare",
+            "relevance": "medical organization to be placed on notice/records requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\nClient Contacted today to give update #cc",
+      "natural_language": "This is the Michael Ditto Jr. Medical Malpractice case, filed on April 11, 2023 (04-11-2023). The client is Michael Ditto Jr. Today, the client was contacted to provide an update, noted as update #cc.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr.",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__CLIENT CONTACT__\n__Details:__ Recvd Guardian Reply:\n\nParents are married & live together w/client\n\nYes Me & Micheal Sr are Married he does live in the home with us \nMicheal was born at Norton Durchman ln location \nI immediately complained the initial circumcision date 4/11/23 the ((Heather Gusic APRN )) did not record there was Any problems or complaints in her notes in Micheal jr \nFiles\nI mad a complaint to 502 559 4490 Nortons Dutchman hospital they are offering to Pay for Micheal re-circumcision and repair Surgery 12/12/23\nI complained to the primary care at Michael\u2019s six weeks check up \nThat he was in pain and the Circumcision was not doing ok and Agreed \nThey referred me to his urologist @ Norton dutchman location \n\nwho has extensive notes on everything \n\nReply to Client:\nAwesome, thank you so much for this information. \nI will update the file & get the record requests out to Norton Hospital Dutchman & Norton Urologist as soon as possible. \nIs Micheal's Primary Care Physician also with Norton Dutchman? \n__Person Making Contact:__ Sarena\n__Date & Time__: December 13 2024",
+      "natural_language": "Guardian contact was received regarding the Michael-Ditto-Jr-Med-Mal case. The guardian reports that the parents are married and live together with the client. The mother states that she and Michael Sr. are married and that he lives in the home with them. Michael was born at Norton Durchman Ln location. The guardian notes that at the initial circumcision on 4/11/23, Heather Gusic APRN did not record any problems or complaints in Michael Jr.\u2019s notes.\n\nI immediately complained about the initial circumcision date of 4/11/23, and I stated that Heather Gusic APRN did not document any problems or complaints in Michael Jr.\u2019s notes. In the files, I filed a complaint with Norton Dutchman Hospital at the phone number 502 559 4490; they are offering to pay for Michael\u2019s re-circumcision and repair surgery on 12/12/23. I also complained at Michael\u2019s six-week primary care visit that he was in pain and the circumcision was not doing okay, and the primary care provider agreed. They referred me to his urologist at the Norton Dutchman location, who has extensive notes on everything.\n\nReply to Client: \u201cAwesome, thank you so much for this information. I will update the file & get the record requests out to Norton Hospital Dutchman & Norton Urologist as soon as possible. Is Micheal's Primary Care Physician also with Norton Dutchman?\u201d\n\nThe person making contact was Sarena, on December 13, 2024.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr",
+            "relevance": "subject/patient of the medical malpractice matter"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Dutchman Hospital",
+            "relevance": "birthplace and hospital offering to pay for re-circumcision; recipient of record requests"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Urologist",
+            "relevance": "referred specialist with extensive notes; recipient of record requests"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic APRN",
+            "relevance": "provider who performed the initial circumcision and whose notes reportedly lacked documentation of problems"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Michael-Ditto-Jr-Med-Mal-04-11-2023 involves client Michael Ditto. The client was contacted today to provide update #cc.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: KillA StyleS [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nTo: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nCC: \nDate: Fri, 13 Dec 2024 14:05:20 -0500\n\nPrimary care Stonestreet 40272\nIm trying to Access Micheal Norton My chart to get exact Names & dates of\nDrs for your\n\nOn Fri, Dec 13, 2024 at 1:59?PM Sarena Tuttle \nwrote:\n\n> Awesome, thank you so much for this information.\n> I will update the file & get the record requests out to Norton Hospital\n> Dutchman & Norton Urologist as soon as possible.\n> Is Micheal's Primary Care Physician also with Norton Dutchman?\n>\n> Sarena M. Tuttle\n> Litigation Paralegal &\n> Workers' Compensation Case Manager\n> The Whaley Law Firm\n> 712 Lyndon Lane\n> \n> Louisville, KY 40222\n> \n> D: (502) 357-9971\n> O: (502) 583-4022 ext 104\n> E: Sarena@WhaleyLawFirm.com\n> (PLEASE NOTE NEW EMAIL ADDRESS)\n>\n>\n> On Fri, Dec 13, 2024 at 1:50?PM KillA StyleS wrote:\n>\n>> Yes Me & Micheal Sr are Married he does live in the home with us\n>> Micheal was born at Norton Durchman ln location\n>> I immediately complained the initial circumcision date 4/11/23 the\n>> ((Heather Gusic APRN )) did not record there was Any problems or complaints\n>> in her notes in Micheal jr\n>> Files\n>> I mad a complaint to 502 559 4490 Nortons Dutchman hospital they are\n>> offering to Pay for Micheal re-circumcision and repair Surgery 12/12/23\n>> I complained to the primary care at Michael\u2019s six weeks check up\n>> That he was in pain and the Circumcision was not doing ok and Agreed\n>> They referred me to his urologist @ Norton dutchman location\n>>\n>> who has extensive notes on everything\n>>\n>>\n>> On Fri, Dec 13, 2024 at 1:27?PM Sarena Tuttle \n>> wrote:\n>>\n>>> Good afternoon Cameal,\n>>> Thank you so much for completing the Minor Intake for Michael Jr.\n>>> Can you please clarify your relationship with Michael Ditto Sr? Are you\n>>> married? If not, has custody been decided by a Family Court? Is Michael Sr\n>>> actively involved in Michael Jr's life? I do not mean to be intrusive,\n>>> however, custody is a relevant issue for minor claims.\n>>> I see on the Intake that Michael was born on 04/07/2023 and was in\n>>> ICU at Norton Hospital. Was this the Downtown location?\n>>> Then on 04/11/2023 Michael was to have a routine circumcision but\n>>> there was an issue found at his 1st primary care check up. Correct? Who is\n>>> the Primary Care Physician?\n>>> Micheal was then referred for a revision surgery, looks like in\n>>> December of 2023, is that the correct date? Who completed this revision\n>>> surgery?\n>>> I see you noted that you made a complaint to Norton Hospital, do\n>>> you have any records of these complaints for your file?\n>>> Has Micheal received any other treatment such\n>>> additional surgeries, therapy or any follow up visits? If so, please\n>>> provide us with a complete list of any and all doctors Michael has seen.\n>>> As soon as we receive the requested information, we will get\n>>> medical record requests out to get copies of all Michael's medical records\n>>> and place Norton Healthcare on Notice of Michael's claim. Please keep in\n>>> mind this part of the process can take 30-45 days to get the records & a\n>>> proper response from Norton Healthcare. We ask for your patience during\n>>> this time, however, please feel free to contact us directly with any\n>>> questions that may arise. We look forward to assisting Michael and working\n>>> with you & Michael Sr as things progress.\n>>>\n>>> Sarena M. Tuttle\n>>> Litigation Paralegal &\n>>> Workers' Compensation Case Manager\n>>> The Whaley Law Firm\n>>> 712 Lyndon Lane\n>>> \n>>> Louisville, KY 40222\n>>> \n>>> D: (502) 357-9971\n>>> O: (502) 583-4022 ext 104\n>>> E: Sarena@WhaleyLawFirm.com\n>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>\n>>",
+      "natural_language": "This file documents a medical malpractice matter for Michael Ditto Jr., labeled as Case Michael-Ditto-Jr-Med-Mal-04-11-2023, with the client listed as Michael Ditto. The communication trail begins with an email from KillA StyleS, sent from reddcameal@gmail.com on December 13, 2024, stated as part of the case file notes. In that email, KillA StyleS indicates an attempt to access Michael Ditto\u2019s Norton MyChart to obtain exact names and dates of the treating doctors for the record. The email notes the primary care location as Stonestreet, ZIP code 40272.\n\nOn the same day, December 13, 2024, at 1:59 PM (approximate), Sarena M. Tuttle, a litigation paralegal and workers\u2019 compensation case manager at The Whaley Law Firm, responded. She thanked KillA StyleS for the information, said she would update the file, and would issue record requests to Norton Hospital Dutchman and Norton Urology as soon as possible. She also asked whether Michael\u2019s primary care physician is affiliated with Norton Dutchman, and provided her contact information and new email address.\n\nIn a reply later that day, KillA StyleS confirmed that she and Michael Ditto Sr. are married and that Michael Jr. lives at home with them. She stated that Michael was born at Norton Dutchman Lane location. She reported that she immediately complained about the initial circumcision date of 4/11/23, noting that Heather Gusic, APRN, did not record that there were any problems or complaints in her notes regarding Michael Jr.\u2019s case files. She also said she filed a complaint with Norton Dutchman Hospital at the phone number 502-559-4490. Norton Dutchman Hospital offered to pay for Michael Jr.\u2019s re-circumcision and repair surgery scheduled for 12/12/23. She stated that she complained to Michael\u2019s primary care provider at the six-week check-up that he was in pain and that the circumcision was not going well, and she was referred to his urologist at the Norton Dutchman location, who she said has extensive notes on everything.\n\nLater on December 13, 2024, at 1:27 PM, Sarena Tuttle sent another email to Cameal (the sender\u2019s name in KillA StyleS\u2019s messages) acknowledging the completion of the Minor Intake for Michael Jr. She requested clarification of Cameal\u2019s relationship with Michael Ditto Sr., asking whether they are married and, if not, whether custody has been decided by a Family Court and whether Michael Sr. is actively involved in Michael Jr.\u2019s life, noting that custody is a relevant issue for minor claims. She stated she saw in the intake that Michael was born on 04/07/2023 and was in ICU at Norton Hospital, asking whether this was the Downtown location. She asked for confirmation that on 04/11/2023 Michael was to undergo a routine circumcision but that an issue was found at the first primary care check-up, and she asked who the Primary Care Physician was. She inquired whether Michael\u2019s revision surgery occurred in December 2023 and who completed that revision. She asked if there were any records of the complaints to Norton Hospital and requested copies of those records. She asked whether Michael had any other treatments, such as additional surgeries, therapy, or follow-up visits, and requested a complete list of all doctors Michael has seen. She stated that once the requested information is received, medical record requests would be issued to obtain copies of all of Michael\u2019s medical records and to place Norton Healthcare on notice of Michael\u2019s claim. She noted that the process can take 30\u201345 days to obtain the records and a proper response from Norton Healthcare, asked for patience, and invited direct contact with any questions. The email concluded with Sarena\u2019s signature, including her title and contact details at The Whaley Law Firm.\n\nIn summary, the communications center around securing and consolidating Michael Ditto Jr.\u2019s medical records related to a potential medical malpractice claim, confirming family relationships and custody considerations for a minor claimant, clarifying the treatment timeline (including the 04/11/2023 circumcision and the December 2023 revision), and coordinating record requests to Norton Healthcare facilities (Norton Dutchman Hospital and Norton Urology) with attention to dates, locations, and involved providers.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "patient / client whose medical records and potential malpractice claim are central"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "law firm handling the minor intake and coordinating record requests"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Dutchman Hospital",
+            "relevance": "hospital where birth and initial treatment occurred and to which records/complaints were directed"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Urology",
+            "relevance": "urology provider with extensive notes and follow-up care"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Healthcare",
+            "relevance": "health system to be placed on notice and from which records are being requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic, APRN",
+            "relevance": "named clinician whose notes and actions are discussed in the file"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital (Downtown)",
+            "relevance": "possible ICU/birth location referenced for clarification of records"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nTo: KillA StyleS [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nCC: \nDate: Fri, 13 Dec 2024 14:09:16 -0500\n\nOk. I will get a request over to them as well.\nJust send the information to us, whenever you can. We have enough to get\nstarted and will request any and all records for any and all\ndepartments/physicians.\n\nSarena M. Tuttle\nLitigation Paralegal &\nWorkers' Compensation Case Manager\nThe Whaley Law Firm\n712 Lyndon Lane\nLouisville, KY 40222\nD: (502) 357-9971\nO: (502) 583-4022 ext 104\nE: Sarena@WhaleyLawFirm.com\n(PLEASE NOTE NEW EMAIL ADDRESS)\n\nOn Fri, Dec 13, 2024 at 2:05?PM KillA StyleS wrote:\n\n> Primary care Stonestreet 40272\n> Im trying to Access Micheal Norton My chart to get exact Names & dates of\n> Drs for your\n>\n> On Fri, Dec 13, 2024 at 1:59?PM Sarena Tuttle \n> wrote:\n>\n>> Awesome, thank you so much for this information.\n>> I will update the file & get the record requests out to Norton Hospital\n>> Dutchman & Norton Urologist as soon as possible.\n>> Is Micheal's Primary Care Physician also with Norton Dutchman?\n>>\n>> Sarena M. Tuttle\n>> Litigation Paralegal &\n>> Workers' Compensation Case Manager\n>> The Whaley Law Firm\n>> 712 Lyndon Lane\n>> \n>> Louisville, KY 40222\n>> \n>> D: (502) 357-9971\n>> O: (502) 583-4022 ext 104\n>> E: Sarena@WhaleyLawFirm.com\n>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>\n>>\n>> On Fri, Dec 13, 2024 at 1:50?PM KillA StyleS \n>> wrote:\n>>\n>>> Yes Me & Micheal Sr are Married he does live in the home with us\n>>> Micheal was born at Norton Durchman ln location\n>>> I immediately complained the initial circumcision date 4/11/23 the\n>>> ((Heather Gusic APRN )) did not record there was Any problems or complaints\n>>> in her notes in Micheal jr\n>>> Files\n>>> I mad a complaint to 502 559 4490 Nortons Dutchman hospital they are\n>>> offering to Pay for Micheal re-circumcision and repair Surgery 12/12/23\n>>> I complained to the primary care at Michael\u2019s six weeks check up\n>>> That he was in pain and the Circumcision was not doing ok and Agreed\n>>> They referred me to his urologist @ Norton dutchman location\n>>>\n>>> who has extensive notes on everything\n>>>\n>>>\n>>> On Fri, Dec 13, 2024 at 1:27?PM Sarena Tuttle \n>>> wrote:\n>>>\n>>>> Good afternoon Cameal,\n>>>> Thank you so much for completing the Minor Intake for Michael Jr.\n>>>> Can you please clarify your relationship with Michael Ditto Sr? Are you\n>>>> married? If not, has custody been decided by a Family Court? Is Michael Sr\n>>>> actively involved in Michael Jr's life? I do not mean to be intrusive,\n>>>> however, custody is a relevant issue for minor claims.\n>>>> I see on the Intake that Michael was born on 04/07/2023 and was\n>>>> in ICU at Norton Hospital. Was this the Downtown location?\n>>>> Then on 04/11/2023 Michael was to have a routine\n>>>> circumcision but there was an issue found at his 1st primary care check up.\n>>>> Correct? Who is the Primary Care Physician?\n>>>> Micheal was then referred for a revision surgery, looks like in\n>>>> December of 2023, is that the correct date? Who completed this revision\n>>>> surgery?\n>>>> I see you noted that you made a complaint to Norton Hospital, do\n>>>> you have any records of these complaints for your file?\n>>>> Has Micheal received any other treatment such\n>>>> additional surgeries, therapy or any follow up visits? If so, please\n>>>> provide us with a complete list of any and all doctors Michael has seen.\n>>>> As soon as we receive the requested information, we will get\n>>>> medical record requests out to get copies of all Michael's medical records\n>>>> and place Norton Healthcare on Notice of Michael's claim. Please keep in\n>>>> mind this part of the process can take 30-45 days to get the records & a\n>>>> proper response from Norton Healthcare. We ask for your patience during\n>>>> this time, however, please feel free to contact us directly with any\n>>>> questions that may arise. We look forward to assisting Michael and working\n>>>> with you & Michael Sr as things progress.\n>>>>\n>>>> Sarena M. Tuttle\n>>>> Litigation Paralegal &\n>>>> Workers' Compensation Case Manager\n>>>> The Whaley Law Firm\n>>>> 712 Lyndon Lane\n>>>> \n>>>> Louisville, KY 40222\n>>>> \n>>>> D: (502) 357-9971\n>>>> O: (502) 583-4022 ext 104\n>>>> E: Sarena@WhaleyLawFirm.com\n>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>\n>>>",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\nIn the matter of Michael Ditto Jr., a medical malpractice case dated 04-11-2023, the following exchange occurred on December 13, 2024 between The Whaley Law Firm and the client\u2019s associates. Sarena M. Tuttle, a litigation paralegal and workers\u2019 compensation case manager at The Whaley Law Firm, began by noting that she would send a records request to the appropriate parties and asked for any information the client could provide. She stated that there was enough information to get started and that she would request records from all departments and physicians involved in Michael Jr.\u2019s care.\n\nLater that same day, KillA StyleS indicated that their primary care is at Stonestreet (zip code 40272) and that they were attempting to access Michael Norton\u2019s MyChart to obtain exact names and dates of the doctors for the file.\n\nSarena Tuttle replied that she appreciated the information, would update the client file, and would issue record requests to Norton Hospital Dutchman and a Norton urologist as soon as possible. She also asked whether Michael Jr.\u2019s primary care physician is with Norton Dutchman.\n\nIn response, KillA StyleS provided additional context. She stated that she and Michael Sr. are married and live together. Michael Jr. was born at Norton Dutchman Lane location. She reported that she immediately complained about the initial circumcision date of 04-11-2023, noting that Heather Gusic, APRN, did not record any problems or complaints in her notes for Michael Jr.\u2019s files. She also said she filed a complaint with Norton Dutchman Hospital at the phone number 502-559-4490, and that Norton Dutchman Hospital offered to pay for Michael\u2019s re-circumcision and repair surgery on 12-12-2023. She reported that at Michael Jr.\u2019s six-week primary care check-up, she told the provider that he was in pain and that the circumcision was not healing properly; the primary care provider agreed and referred her to Michael Jr.\u2019s urologist at the Norton Dutchman location, who she said has extensive notes on everything.\n\nFollowing this, Sarena Tuttle sent a detailed inquiry seeking clarification for the Minor Intake. She asked Cameal to confirm the relationship with Michael Ditto Sr., asking whether Cameal is married, whether custody has been decided by a Family Court if they are not married, and whether Michael Sr. is actively involved in Michael Jr.\u2019s life, noting that custody is a relevant issue for minor claims. She observed that Michael was born on 04/07/2023 and was in the ICU at Norton Hospital, asking whether that was at the Downtown location. She confirmed that on 04/11/2023 Michael Jr. was to undergo a routine circumcision but that an issue had been found at the first primary care check-up and asked who the Primary Care Physician was. She asked whether the revision surgery appeared to have occurred in December 2023 and who completed it. She requested records of any complaints to Norton Hospital and asked for a complete list of any and all other treatments, surgeries, therapy, or follow-up visits and all doctors Michael Jr. has seen. She reiterated that once the requested information is received, medical record requests would be issued to obtain copies of all Michael\u2019s medical records and to place Norton Healthcare on notice of Michael\u2019s claim. She cautioned that the process to obtain records and a proper response from Norton Healthcare could take 30-45 days and encouraged patience, while inviting direct questions. She closed by expressing the firm\u2019s commitment to assisting Michael and working with him and Michael Sr. as the matter progresses.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "retained client / parent on file"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr.",
+            "relevance": "minor patient / subject of the medical malpractice claim"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm handling the matter / sender of records requests and intake communications"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Dutchman Hospital",
+            "relevance": "birth and initial treatment location; recipient of complaint and proposed surgery"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Healthcare",
+            "relevance": "health system to be placed on notice of the claim and source of medical records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital (Downtown location)",
+            "relevance": "location referenced regarding ICU stay and records requests"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Stonestreet",
+            "relevance": "listed as primary care for the patient"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic, APRN",
+            "relevance": "provider noted in the medical record related to the initial procedure"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton urologist",
+            "relevance": "specialist who evaluated and treated the minor; has extensive notes"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: KillA StyleS [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nTo: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nCC: \nDate: Fri, 13 Dec 2024 14:36:18 -0500\n\nElisha McAmont urologist\n 3999 Dutchman Ln\nPlz 1 suite 6F\nLou ky 40207\n\nHad alot of documentation on Micheal jr\nOn Fri, Dec 13, 2024 at 2:33?PM KillA StyleS wrote:\n\n>\n>\n> On Fri, Dec 13, 2024 at 2:09?PM Sarena Tuttle \n> wrote:\n>\n>> Ok. I will get a request over to them as well.\n>> Just send the information to us, whenever you can. We have enough to get\n>> started and will request any and all records for any and all\n>> departments/physicians.\n>>\n>> Sarena M. Tuttle\n>> Litigation Paralegal &\n>> Workers' Compensation Case Manager\n>> The Whaley Law Firm\n>> 712 Lyndon Lane\n>> \n>> Louisville, KY 40222\n>> \n>> D: (502) 357-9971\n>> O: (502) 583-4022 ext 104\n>> E: Sarena@WhaleyLawFirm.com\n>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>\n>>\n>> On Fri, Dec 13, 2024 at 2:05?PM KillA StyleS \n>> wrote:\n>>\n>>> Primary care Stonestreet 40272\n>>> Im trying to Access Micheal Norton My chart to get exact Names & dates\n>>> of Drs for your\n>>>\n>>> On Fri, Dec 13, 2024 at 1:59?PM Sarena Tuttle \n>>> wrote:\n>>>\n>>>> Awesome, thank you so much for this information.\n>>>> I will update the file & get the record requests out to Norton Hospital\n>>>> Dutchman & Norton Urologist as soon as possible.\n>>>> Is Micheal's Primary Care Physician also with Norton Dutchman?\n>>>>\n>>>> Sarena M. Tuttle\n>>>> Litigation Paralegal &\n>>>> Workers' Compensation Case Manager\n>>>> The Whaley Law Firm\n>>>> 712 Lyndon Lane\n>>>> \n>>>> Louisville, KY 40222\n>>>> \n>>>> D: (502) 357-9971\n>>>> O: (502) 583-4022 ext 104\n>>>> E: Sarena@WhaleyLawFirm.com\n>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>\n>>>>\n>>>> On Fri, Dec 13, 2024 at 1:50?PM KillA StyleS \n>>>> wrote:\n>>>>\n>>>>> Yes Me & Micheal Sr are Married he does live in the home with us\n>>>>> Micheal was born at Norton Durchman ln location\n>>>>> I immediately complained the initial circumcision date 4/11/23 the\n>>>>> ((Heather Gusic APRN )) did not record there was Any problems or complaints\n>>>>> in her notes in Micheal jr\n>>>>> Files\n>>>>> I mad a complaint to 502 559 4490 Nortons Dutchman hospital they are\n>>>>> offering to Pay for Micheal re-circumcision and repair Surgery 12/12/23\n>>>>> I complained to the primary care at Michael\u2019s six weeks check up\n>>>>> That he was in pain and the Circumcision was not doing ok and Agreed\n>>>>> They referred me to his urologist @ Norton dutchman location\n>>>>>\n>>>>> who has extensive notes on everything\n>>>>>\n>>>>>\n>>>>> On Fri, Dec 13, 2024 at 1:27?PM Sarena Tuttle <\n>>>>> sarena@whaleylawfirm.com> wrote:\n>>>>>\n>>>>>> Good afternoon Cameal,\n>>>>>> Thank you so much for completing the Minor Intake for Michael\n>>>>>> Jr. Can you please clarify your relationship with Michael Ditto Sr? Are you\n>>>>>> married? If not, has custody been decided by a Family Court? Is Michael Sr\n>>>>>> actively involved in Michael Jr's life? I do not mean to be intrusive,\n>>>>>> however, custody is a relevant issue for minor claims.\n>>>>>> I see on the Intake that Michael was born on 04/07/2023 and was\n>>>>>> in ICU at Norton Hospital. Was this the Downtown location?\n>>>>>> Then on 04/11/2023 Michael was to have a routine\n>>>>>> circumcision but there was an issue found at his 1st primary care check up.\n>>>>>> Correct? Who is the Primary Care Physician?\n>>>>>> Micheal was then referred for a revision surgery, looks like\n>>>>>> in December of 2023, is that the correct date? Who completed this revision\n>>>>>> surgery?\n>>>>>> I see you noted that you made a complaint to Norton Hospital,\n>>>>>> do you have any records of these complaints for your file?\n>>>>>> Has Micheal received any other treatment such\n>>>>>> additional surgeries, therapy or any follow up visits? If so, please\n>>>>>> provide us with a complete list of any and all doctors Michael has seen.\n>>>>>> As soon as we receive the requested information, we will get\n>>>>>> medical record requests out to get copies of all Michael's medical records\n>>>>>> and place Norton Healthcare on Notice of Michael's claim. Please keep in\n>>>>>> mind this part of the process can take 30-45 days to get the records & a\n>>>>>> proper response from Norton Healthcare. We ask for your patience during\n>>>>>> this time, however, please feel free to contact us directly with any\n>>>>>> questions that may arise. We look forward to assisting Michael and working\n>>>>>> with you & Michael Sr as things progress.\n>>>>>>\n>>>>>> Sarena M. Tuttle\n>>>>>> Litigation Paralegal &\n>>>>>> Workers' Compensation Case Manager\n>>>>>> The Whaley Law Firm\n>>>>>> 712 Lyndon Lane\n>>>>>> \n>>>>>> Louisville, KY 40222\n>>>>>> \n>>>>>> D: (502) 357-9971\n>>>>>> O: (502) 583-4022 ext 104\n>>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>>\n>>>>>",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023. Client: Michael Ditto.\n\nIn the matter titled \u201cRe: Michael Ditto Jr - Medical Malpractice 04/11/2023,\u201d a communication was sent on December 13, 2024 from KillA StyleS (reddcameal@gmail.com) to Sarena M. Tuttle at Whaley Law Firm (sarena@whaleylawfirm.com). The message references Elisha McAmont, a urologist, located at 3999 Dutchman Ln, Plaza 1, Suite 6F, Louisville, KY 40207, and notes that there is a substantial amount of documentation on Michael Jr.\n\nThe thread shows that KillA StyleS indicated on December 13, 2024 at 2:33 PM that there had been substantial documentation. In response, on December 13, 2024 at 2:09 PM Sarena Tuttle wrote that she would also obtain a request for records and that she would send information as soon as possible. She stated that there is enough information to get started and that she would request records for all departments and physicians.\n\nSarena Tuttle\u2019s message provided her contact details and emphasized that they would request records from Norton Hospital Dutchman, Norton Hospital, and Norton Urologist, and asked for any information to be sent. The note appears to be part of a workflow to gather medical records and begin processing the claim.\n\nEarlier messages show that on December 13, 2024 at 2:05 PM KillA StyleS mentioned the primary care location as Stonestreet 40272 and that they were trying to access Michael Norton MyChart to obtain the exact names and dates of doctors for the file.\n\nAt 1:59 PM on December 13, 2024, Sarena Tuttle responded: she would update the file and issue record requests to Norton Hospital Dutchman and Norton Urologist as soon as possible, and she asked whether Michael\u2019s Primary Care Physician was also with Norton Dutchman.\n\nAt 1:50 PM, KillA StyleS clarified that he and Michael Sr. are married, that Michael Jr. lives at their home, and that Michael was born at Norton Dutchman Ln location. He stated that he immediately complained about the initial circumcision date of 4/11/23 because Heather Gusic, APRN, did not record any problems or complaints in her notes regarding Michael Jr. He reported filing a complaint with Norton\u2019s Dutchman Hospital at the number 502-559-4490, and that Norton Dutchman Hospital offered to pay for Michael\u2019s re-circumcision and repair surgery on 12/12/23. He also noted that at Michael\u2019s six-week check-up with his primary care provider, Michael Jr. was in pain and the circumcision was not progressing well; he was referred to the urologist at the Norton Dutchman location, who, according to him, has extensive notes on everything.\n\nAt 1:27 PM, Sarena Tuttle sent a detailed inquiry requesting clarifications regarding Michael Ditto Sr.\u2019s relationship to Michael Jr. (whether they are married, and if not, whether custody has been decided in Family Court and whether Michael Sr. is actively involved in Michael Jr.\u2019s life). She explained that custody is a relevant issue for minor claims. She confirmed that the intake indicated Michael was born on 04/07/2023 and was in the ICU at Norton Hospital, and she asked whether this was the Downtown location. She asked for confirmation that on 04/11/2023 Michael was scheduled for a routine circumcision but an issue was found at the first primary care check-up, and she inquired about the Primary Care Physician. She asked whether there was a revision surgery in December 2023 and who completed that revision. She requested any records of complaints filed with Norton Hospital and asked for a complete list of all treatments, additional surgeries, therapy, or follow-up visits, including every doctor Michael has seen. She stated that once the information is received, they would issue medical record requests to obtain copies of all of Michael\u2019s medical records and place Norton Healthcare on notice of the claim; she noted that this process can take 30\u201345 days and asked for patience, inviting direct questions. She concluded with her Whaley Law Firm contact details: Sarena M. Tuttle, Litigation Paralegal & Workers\u2019 Compensation Case Manager, The Whaley Law Firm, 712 Lyndon Lane, Louisville, KY 40222; D: (502) 357-9971; O: (502) 583-4022 ext 104; E: Sarena@WhaleyLawFirm.com.\n\nOverall, the exchange centers on gathering complete medical and custodial information related to Michael Ditto Jr.\u2019s birth in 2023, the circumcision performed on 04/11/2023 and subsequent treatment including a proposed revision surgery in December 2023, complaints filed with Norton Hospital (including a specific complaint to Norton Dutchman Hospital and a request regarding payment for re-circumcision/repair), and the team\u2019s efforts to obtain comprehensive records from Norton Health systems, with the aim of advancing a medical malpractice claim. Further detail and confirmation from the involved parties were requested to assemble a full medical history and determine custodial involvement for purposes of the minor claim.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "client/claimant (father/guardian for minor medical malpractice claim)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Elisha McAmont",
+            "relevance": "urologist/treating physician with substantial documentation"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Dutchman Hospital",
+            "relevance": "hospital where birth/circumcision occurred, recipient of complaint and proposed payer for revision surgery"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital",
+            "relevance": "hospital/ICU location referenced for birth and records requests"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Urologist",
+            "relevance": "urology department/provider at Norton with records and follow-up care"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic, APRN",
+            "relevance": "provider noted for initial circumcision notes (no problems recorded)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Stonestreet (primary care location)",
+            "relevance": "primary care location referenced for six-week check-up and PCP information"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Norton Healthcare",
+            "relevance": "health system to be placed on notice and source of medical records"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm handling the intake and record requests for the medical malpractice claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: KillA StyleS [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nTo: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nCC: \nDate: Fri, 13 Dec 2024 14:33:28 -0500\n\nOn Fri, Dec 13, 2024 at 2:09?PM Sarena Tuttle \nwrote:\n\n> Ok. I will get a request over to them as well.\n> Just send the information to us, whenever you can. We have enough to get\n> started and will request any and all records for any and all\n> departments/physicians.\n>\n> Sarena M. Tuttle\n> Litigation Paralegal &\n> Workers' Compensation Case Manager\n> The Whaley Law Firm\n> 712 Lyndon Lane\n> \n> Louisville, KY 40222\n> \n> D: (502) 357-9971\n> O: (502) 583-4022 ext 104\n> E: Sarena@WhaleyLawFirm.com\n> (PLEASE NOTE NEW EMAIL ADDRESS)\n>\n>\n> On Fri, Dec 13, 2024 at 2:05?PM KillA StyleS wrote:\n>\n>> Primary care Stonestreet 40272\n>> Im trying to Access Micheal Norton My chart to get exact Names & dates\n>> of Drs for your\n>>\n>> On Fri, Dec 13, 2024 at 1:59?PM Sarena Tuttle \n>> wrote:\n>>\n>>> Awesome, thank you so much for this information.\n>>> I will update the file & get the record requests out to Norton Hospital\n>>> Dutchman & Norton Urologist as soon as possible.\n>>> Is Micheal's Primary Care Physician also with Norton Dutchman?\n>>>\n>>> Sarena M. Tuttle\n>>> Litigation Paralegal &\n>>> Workers' Compensation Case Manager\n>>> The Whaley Law Firm\n>>> 712 Lyndon Lane\n>>> \n>>> Louisville, KY 40222\n>>> \n>>> D: (502) 357-9971\n>>> O: (502) 583-4022 ext 104\n>>> E: Sarena@WhaleyLawFirm.com\n>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>\n>>>\n>>> On Fri, Dec 13, 2024 at 1:50?PM KillA StyleS \n>>> wrote:\n>>>\n>>>> Yes Me & Micheal Sr are Married he does live in the home with us\n>>>> Micheal was born at Norton Durchman ln location\n>>>> I immediately complained the initial circumcision date 4/11/23 the\n>>>> ((Heather Gusic APRN )) did not record there was Any problems or complaints\n>>>> in her notes in Micheal jr\n>>>> Files\n>>>> I mad a complaint to 502 559 4490 Nortons Dutchman hospital they are\n>>>> offering to Pay for Micheal re-circumcision and repair Surgery 12/12/23\n>>>> I complained to the primary care at Michael\u2019s six weeks check up\n>>>> That he was in pain and the Circumcision was not doing ok and Agreed\n>>>> They referred me to his urologist @ Norton dutchman location\n>>>>\n>>>> who has extensive notes on everything\n>>>>\n>>>>\n>>>> On Fri, Dec 13, 2024 at 1:27?PM Sarena Tuttle \n>>>> wrote:\n>>>>\n>>>>> Good afternoon Cameal,\n>>>>> Thank you so much for completing the Minor Intake for Michael\n>>>>> Jr. Can you please clarify your relationship with Michael Ditto Sr? Are you\n>>>>> married? If not, has custody been decided by a Family Court? Is Michael Sr\n>>>>> actively involved in Michael Jr's life? I do not mean to be intrusive,\n>>>>> however, custody is a relevant issue for minor claims.\n>>>>> I see on the Intake that Michael was born on 04/07/2023 and was\n>>>>> in ICU at Norton Hospital. Was this the Downtown location?\n>>>>> Then on 04/11/2023 Michael was to have a routine\n>>>>> circumcision but there was an issue found at his 1st primary care check up.\n>>>>> Correct? Who is the Primary Care Physician?\n>>>>> Micheal was then referred for a revision surgery, looks like in\n>>>>> December of 2023, is that the correct date? Who completed this revision\n>>>>> surgery?\n>>>>> I see you noted that you made a complaint to Norton Hospital,\n>>>>> do you have any records of these complaints for your file?\n>>>>> Has Micheal received any other treatment such\n>>>>> additional surgeries, therapy or any follow up visits? If so, please\n>>>>> provide us with a complete list of any and all doctors Michael has seen.\n>>>>> As soon as we receive the requested information, we will get\n>>>>> medical record requests out to get copies of all Michael's medical records\n>>>>> and place Norton Healthcare on Notice of Michael's claim. Please keep in\n>>>>> mind this part of the process can take 30-45 days to get the records & a\n>>>>> proper response from Norton Healthcare. We ask for your patience during\n>>>>> this time, however, please feel free to contact us directly with any\n>>>>> questions that may arise. We look forward to assisting Michael and working\n>>>>> with you & Michael Sr as things progress.\n>>>>>\n>>>>> Sarena M. Tuttle\n>>>>> Litigation Paralegal &\n>>>>> Workers' Compensation Case Manager\n>>>>> The Whaley Law Firm\n>>>>> 712 Lyndon Lane\n>>>>> \n>>>>> Louisville, KY 40222\n>>>>> \n>>>>> D: (502) 357-9971\n>>>>> O: (502) 583-4022 ext 104\n>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>\n>>>>",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023. Client: Michael Ditto. The matter concerns Michael Ditto Jr. and a medical malpractice claim associated with events around 04-11-2023.\n\nOn Friday, December 13, 2024, KillA StyleS, using the email reddcameal@gmail.com, sent a message to Sarena M. Tuttle at The Whaley Law Firm regarding the Michael Ditto Jr. matter (re: Michael Ditto Jr - Medical Malpractice 04/11/2023). In that initial outreach, KillA StyleS stated that Sarena should receive information as soon as possible, noting that there is enough information to get started and that records would be requested from all departments and physicians.\n\nSarena Tuttle replied that she would get a record request over to Norton Hospital as well, and she asked KillA to send the information whenever available. She noted that they have enough information to begin and would request any and all records from any and all departments and physicians. She also provided her contact details and new email address for future communications, including her role as a Litigation Paralegal and Workers\u2019 Compensation Case Manager at The Whaley Law Firm, located at 712 Lyndon Lane, Louisville, KY 40222, with direct line and office line information.\n\nEarlier in the thread, KillA StyleS indicated that the primary care location was Stonestreet, ZIP 40272, and that they were attempting to access Michael Norton\u2019s MyChart to obtain exact names and dates of doctors involved.\n\nSarena followed up, thanking KillA StyleS for the information, and stated that she would update the file and send record requests to Norton Hospital Dutchman and Norton Urologist as soon as possible. She asked whether Michael\u2019s Primary Care Physician is also with Norton Dutchman.\n\nIn response, KillA StyleS clarified several details: Michael Ditto Sr. and KillA StyleS are married, and Michael Jr. lives in their home with them. Michael Jr. was born at Norton Dutchman location. The initial circumcision occurred on 04/11/23, and Heather Gusic, APRN, did not record any problems or complaints in Michael Jr.\u2019s notes. The speaker claimed to have filed a complaint with Norton\u2019s Dutchman hospital at the phone number 502-559-4490, and that Norton Hospital offered to pay for Michael\u2019s re-circumcision and repair surgery on 12/12/23. They also stated that at Michael\u2019s six-week check-up, he was in pain and the circumcision was not healing properly, and they were referred to a urologist at the Norton Dutchman location, who has extensive notes on the matter.\n\nSarena then sent a more detailed inquiry on 1:27 PM, requesting crucial information to proceed. She asked Cameal to clarify her relationship with Michael Ditto Sr, specifically whether they are married and whether custody has been decided by a Family Court, and whether Michael Sr is actively involved in Michael Jr.\u2019s life, noting that custody is a relevant issue for minor claims. She observed that the intake lists Michael\u2019s birth date as 04/07/2023 and that he was in ICU at Norton Hospital, querying whether this was the Downtown location. She confirmed that on 04/11/2023 Michael was to have a routine circumcision but there was an issue found at his first primary care check-up, and she asked for the identity of the Primary Care Physician. She inquired whether Michael was referred for a revision surgery, seemingly in December 2023, and who completed that revision surgery. She asked whether there are records of the complaints made to Norton Hospital for the file and whether Michael has received any other treatments, such as additional surgeries, therapy, or follow-up visits, requesting a complete list of all doctors Michael has seen.\n\nSarena explained that once the requested information is received, they would issue medical record requests to obtain copies of all of Michael\u2019s medical records and place Norton Healthcare on Notice of Michael\u2019s claim. She warned that the process to obtain records and a proper response from Norton Healthcare could take 30\u201345 days and urged patience, inviting direct contact with any questions as the team progresses. Her signature block included her title, the firm\u2019s name and address, and her contact details: Sarena M. Tuttle, Litigation Paralegal & Workers\u2019 Compensation Case Manager, The Whaley Law Firm, 712 Lyndon Lane, Louisville, KY 40222; D: (502) 357-9971; O: (502) 583-4022 ext 104; E: Sarena@WhaleyLawFirm.com (PLEASE NOTE NEW EMAIL ADDRESS).",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "named client and subject of the medical malpractice matter (Michael Ditto Jr.)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm representing the client / handling the claim"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Dutchman (Norton Hospital Dutchman / Norton Healthcare)",
+            "relevance": "hospital where the birth, circumcision, follow-up care and complaints occurred; recipient of records requests and target of notice"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Urologist",
+            "relevance": "specialist who treated Michael Jr. and has extensive notes"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital (Downtown)",
+            "relevance": "possible ICU location referenced in intake"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Stonestreet",
+            "relevance": "listed primary care location for the family"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic, APRN",
+            "relevance": "provider listed in notes who recorded no problems at initial visit"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nTo: KillA StyleS [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nCC: \nDate: Fri, 13 Dec 2024 14:40:42 -0500\n\nGreat. Hopefully her records will contain everything we need.\nI see you noted United Insurance and a reference number, is this Michael's\nHealth Insurance? Can you please send me a copy of any health insurance\ncoverage he has?\nI have sent the request to Norton and we will keep you posted as things\nprogress.\n\nSarena M. Tuttle\nLitigation Paralegal &\nWorkers' Compensation Case Manager\nThe Whaley Law Firm\n712 Lyndon Lane\nLouisville, KY 40222\nD: (502) 357-9971\nO: (502) 583-4022 ext 104\nE: Sarena@WhaleyLawFirm.com\n(PLEASE NOTE NEW EMAIL ADDRESS)\n\nOn Fri, Dec 13, 2024 at 2:36?PM KillA StyleS wrote:\n\n> Elisha McAmont urologist\n> 3999 Dutchman Ln\n> Plz 1 suite 6F\n> Lou ky 40207\n>\n> Had alot of documentation on Micheal jr\n> On Fri, Dec 13, 2024 at 2:33?PM KillA StyleS wrote:\n>\n>>\n>>\n>> On Fri, Dec 13, 2024 at 2:09?PM Sarena Tuttle \n>> wrote:\n>>\n>>> Ok. I will get a request over to them as well.\n>>> Just send the information to us, whenever you can. We have enough to get\n>>> started and will request any and all records for any and all\n>>> departments/physicians.\n>>>\n>>> Sarena M. Tuttle\n>>> Litigation Paralegal &\n>>> Workers' Compensation Case Manager\n>>> The Whaley Law Firm\n>>> 712 Lyndon Lane\n>>> \n>>> Louisville, KY 40222\n>>> \n>>> D: (502) 357-9971\n>>> O: (502) 583-4022 ext 104\n>>> E: Sarena@WhaleyLawFirm.com\n>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>\n>>>\n>>> On Fri, Dec 13, 2024 at 2:05?PM KillA StyleS \n>>> wrote:\n>>>\n>>>> Primary care Stonestreet 40272\n>>>> Im trying to Access Micheal Norton My chart to get exact Names & dates\n>>>> of Drs for your\n>>>>\n>>>> On Fri, Dec 13, 2024 at 1:59?PM Sarena Tuttle \n>>>> wrote:\n>>>>\n>>>>> Awesome, thank you so much for this information.\n>>>>> I will update the file & get the record requests out to Norton\n>>>>> Hospital Dutchman & Norton Urologist as soon as possible.\n>>>>> Is Micheal's Primary Care Physician also with Norton Dutchman?\n>>>>>\n>>>>> Sarena M. Tuttle\n>>>>> Litigation Paralegal &\n>>>>> Workers' Compensation Case Manager\n>>>>> The Whaley Law Firm\n>>>>> 712 Lyndon Lane\n>>>>> \n>>>>> Louisville, KY 40222\n>>>>> \n>>>>> D: (502) 357-9971\n>>>>> O: (502) 583-4022 ext 104\n>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>\n>>>>>\n>>>>> On Fri, Dec 13, 2024 at 1:50?PM KillA StyleS \n>>>>> wrote:\n>>>>>\n>>>>>> Yes Me & Micheal Sr are Married he does live in the home with us\n>>>>>> Micheal was born at Norton Durchman ln location\n>>>>>> I immediately complained the initial circumcision date 4/11/23 the\n>>>>>> ((Heather Gusic APRN )) did not record there was Any problems or complaints\n>>>>>> in her notes in Micheal jr\n>>>>>> Files\n>>>>>> I mad a complaint to 502 559 4490 Nortons Dutchman hospital they are\n>>>>>> offering to Pay for Micheal re-circumcision and repair Surgery 12/12/23\n>>>>>> I complained to the primary care at Michael\u2019s six weeks check up\n>>>>>> That he was in pain and the Circumcision was not doing ok and Agreed\n>>>>>> They referred me to his urologist @ Norton dutchman location\n>>>>>>\n>>>>>> who has extensive notes on everything\n>>>>>>\n>>>>>>\n>>>>>> On Fri, Dec 13, 2024 at 1:27?PM Sarena Tuttle <\n>>>>>> sarena@whaleylawfirm.com> wrote:\n>>>>>>\n>>>>>>> Good afternoon Cameal,\n>>>>>>> Thank you so much for completing the Minor Intake for Michael\n>>>>>>> Jr. Can you please clarify your relationship with Michael Ditto Sr? Are you\n>>>>>>> married? If not, has custody been decided by a Family Court? Is Michael Sr\n>>>>>>> actively involved in Michael Jr's life? I do not mean to be intrusive,\n>>>>>>> however, custody is a relevant issue for minor claims.\n>>>>>>> I see on the Intake that Michael was born on 04/07/2023 and\n>>>>>>> was in ICU at Norton Hospital. Was this the Downtown location?\n>>>>>>> Then on 04/11/2023 Michael was to have a routine\n>>>>>>> circumcision but there was an issue found at his 1st primary care check up.\n>>>>>>> Correct? Who is the Primary Care Physician?\n>>>>>>> Micheal was then referred for a revision surgery, looks like\n>>>>>>> in December of 2023, is that the correct date? Who completed this revision\n>>>>>>> surgery?\n>>>>>>> I see you noted that you made a complaint to Norton Hospital,\n>>>>>>> do you have any records of these complaints for your file?\n>>>>>>> Has Micheal received any other treatment such\n>>>>>>> additional surgeries, therapy or any follow up visits? If so, please\n>>>>>>> provide us with a complete list of any and all doctors Michael has seen.\n>>>>>>> As soon as we receive the requested information, we will get\n>>>>>>> medical record requests out to get copies of all Michael's medical records\n>>>>>>> and place Norton Healthcare on Notice of Michael's claim. Please keep in\n>>>>>>> mind this part of the process can take 30-45 days to get the records & a\n>>>>>>> proper response from Norton Healthcare. We ask for your patience during\n>>>>>>> this time, however, please feel free to contact us directly with any\n>>>>>>> questions that may arise. We look forward to assisting Michael and working\n>>>>>>> with you & Michael Sr as things progress.\n>>>>>>>\n>>>>>>> Sarena M. Tuttle\n>>>>>>> Litigation Paralegal &\n>>>>>>> Workers' Compensation Case Manager\n>>>>>>> The Whaley Law Firm\n>>>>>>> 712 Lyndon Lane\n>>>>>>> \n>>>>>>> Louisville, KY 40222\n>>>>>>> \n>>>>>>> D: (502) 357-9971\n>>>>>>> O: (502) 583-4022 ext 104\n>>>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>>>\n>>>>>>",
+      "natural_language": "The case is titled Michael-Ditto-Jr-Med-Mal-04-11-2023, with client Michael Ditto. On December 13, 2024, Sarena Tuttle, a litigation paralegal and Workers\u2019 Compensation Case Manager at The Whaley Law Firm, sent an email to KillA StyleS regarding the Michael Ditto Jr. medical malpractice matter. In her message, she noted that she hoped the records would contain everything needed and asked if United Insurance and a reference number referred to Michael\u2019s health insurance, requesting a copy of any health insurance coverage he has. She also reported that she had sent a record request to Norton and would keep KillA StyleS posted as things progressed. The email concluded with Sarena\u2019s signature and her note to please use her new email address.\n\nEarlier that day, KillA StyleS referenced Elisha McAmont, a urologist, located at 3999 Dutchman Lane, Place 1, Suite 6F, Louisville, KY 40207, stating that there was a lot of documentation on Michael Jr. The thread shows additional replies from KillA StyleS at 2:33 p.m. and 2:36 p.m., though the 2:33 p.m. message content is not shown in the excerpt.\n\nAt 2:09 p.m., Sarena replied that she would get a request over to Norton as well and encouraged sending information as soon as possible. She noted that there was enough information to start and that they would request records from all departments and physicians.\n\nEarlier, at 2:05 p.m., KillA StyleS had written about a Primary Care physician at Stonestreet (ZIP 40272) and indicated an attempt to access Michael Norton MyChart to obtain exact names and dates of the doctors involved.\n\nIn a follow-up at 1:59 p.m., Sarena thanked KillA StyleS for the information and said she would update the file and send record requests to Norton Hospital Dutchman and Norton Urologist as soon as possible. She asked whether Michael\u2019s Primary Care Physician was also with Norton Dutchman.\n\nAt 1:50 p.m., KillA StyleS confirmed that she and Michael Sr. were married, and that Michael Jr. lives at home with them. She stated that Michael was born at Norton Dutchman Lane and described an issue with the initial circumcision dated 04/11/2023, noting that Heather Gusic, APRN, did not document any problems or complaints in Michael Jr.\u2019s notes. She said she filed a complaint with Norton\u2019s Dutchman Hospital via the number 502-559-4490. Norton was reportedly offering to pay for Michael\u2019s re-circumcision and repair surgery on 12/12/23. She also stated that she complained at Michael\u2019s six-week primary care checkup that he was in pain and that the circumcision was not healing well, and that he was referred to his urologist at the Norton Dutchman location, who has extensive notes on everything.\n\nEarlier still, at 1:27 p.m., Sarena sent a detailed inquiry to Cameal (Cameal\u2019s role was described as completing the Minor Intake for Michael Jr.). She asked Cameal to clarify the relationship with Michael Ditto Sr., whether they were married, whether custody had been decided by a Family Court, and whether Michael Sr. was actively involved in Michael Jr.\u2019s life, noting that custody can be relevant for minor claims. She also asked for confirmation that Michael was born on 04/07/2023 and was in ICU at Norton Hospital, asking whether this was the Downtown location. She sought confirmation that on 04/11/2023 Michael was scheduled for a routine circumcision but an issue was found at his first primary care checkup, and she asked who the Primary Care Physician was. She inquired whether Michael was referred for a revision surgery around December 2023, who completed that revision, and whether there were any records of the complaints at Norton Hospital. She requested a complete list of every doctor Michael had seen and asked for all records to be obtained so Norton Healthcare could be placed on notice of Michael\u2019s claim. She warned that the records request process could take 30\u201345 days and invited Cameal to contact the firm with any questions, expressing their readiness to assist Michael and work with Michael Sr. as the matter progressed. The message was signed by Sarena M. Tuttle, with her Whaley Law Firm contact details and a note reiterating the new email address.\n\nTogether, the exchanges establish that the team is coordinating to gather comprehensive records from Norton Hospital (including the Dutchman location), Norton Urology, and any primary care sources, to verify details of Michael Ditto Jr.\u2019s birth in 2023, the circumscription episode on 04/11/2023, subsequent complaints and revision surgery anticipated around December 2023, and any additional treatments or follow-up care. They are also seeking confirmation of health insurance coverage and the primary care physician\u2019s affiliation, with an emphasis on obtaining a complete list of all doctors seen and their records, while Norton Healthcare is to be placed on notice of the claim. The process, as described, anticipates a 30\u201345 day window to obtain records and a proper response from Norton Healthcare.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr.",
+            "relevance": "client/minor patient whose birth and circumcision episode are the subject of the matter"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "representing firm coordinating record requests and placing Norton on notice"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital (Dutchman)",
+            "relevance": "treating hospital and primary recipient of records requests"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Norton Healthcare",
+            "relevance": "health system to be placed on notice of the claim"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Urology",
+            "relevance": "treating specialty provider with extensive notes on the patient"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Elisha McAmont, MD",
+            "relevance": "urologist referenced as having documentation on Michael Jr."
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic, APRN",
+            "relevance": "provider involved in the initial circumcision whose notes were discussed"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Stonestreet Primary Care",
+            "relevance": "primary care practice referenced for the six-week checkup and follow-up"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "United Insurance",
+            "relevance": "possible health insurer for the client being queried for coverage confirmation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nTo: KillA StyleS [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nCC: \nDate: Fri, 13 Dec 2024 15:07:39 -0500\n\nPrefect. Thank you so much.\n\nSarena M. Tuttle\nLitigation Paralegal &\nWorkers' Compensation Case Manager\nThe Whaley Law Firm\n712 Lyndon Lane\nLouisville, KY 40222\nD: (502) 357-9971\nO: (502) 583-4022 ext 104\nE: Sarena@WhaleyLawFirm.com\n(PLEASE NOTE NEW EMAIL ADDRESS)\n\nOn Fri, Dec 13, 2024 at 2:56?PM KillA StyleS wrote:\n\n>\n>\n> On Fri, Dec 13, 2024 at 2:40?PM Sarena Tuttle \n> wrote:\n>\n>> Great. Hopefully her records will contain everything we need.\n>> I see you noted United Insurance and a reference number, is this\n>> Michael's Health Insurance? Can you please send me a copy of any health\n>> insurance coverage he has?\n>> I have sent the request to Norton and we will keep you posted as things\n>> progress.\n>>\n>> Sarena M. Tuttle\n>> Litigation Paralegal &\n>> Workers' Compensation Case Manager\n>> The Whaley Law Firm\n>> 712 Lyndon Lane\n>> \n>> Louisville, KY 40222\n>> \n>> D: (502) 357-9971\n>> O: (502) 583-4022 ext 104\n>> E: Sarena@WhaleyLawFirm.com\n>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>\n>>\n>> On Fri, Dec 13, 2024 at 2:36?PM KillA StyleS \n>> wrote:\n>>\n>>> Elisha McAmont urologist\n>>> 3999 Dutchman Ln\n>>> Plz 1 suite 6F\n>>> Lou ky 40207\n>>>\n>>> Had alot of documentation on Micheal jr\n>>> On Fri, Dec 13, 2024 at 2:33?PM KillA StyleS \n>>> wrote:\n>>>\n>>>>\n>>>>\n>>>> On Fri, Dec 13, 2024 at 2:09?PM Sarena Tuttle \n>>>> wrote:\n>>>>\n>>>>> Ok. I will get a request over to them as well.\n>>>>> Just send the information to us, whenever you can. We have enough to\n>>>>> get started and will request any and all records for any and all\n>>>>> departments/physicians.\n>>>>>\n>>>>> Sarena M. Tuttle\n>>>>> Litigation Paralegal &\n>>>>> Workers' Compensation Case Manager\n>>>>> The Whaley Law Firm\n>>>>> 712 Lyndon Lane\n>>>>> \n>>>>> Louisville, KY 40222\n>>>>> \n>>>>> D: (502) 357-9971\n>>>>> O: (502) 583-4022 ext 104\n>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>\n>>>>>\n>>>>> On Fri, Dec 13, 2024 at 2:05?PM KillA StyleS \n>>>>> wrote:\n>>>>>\n>>>>>> Primary care Stonestreet 40272\n>>>>>> Im trying to Access Micheal Norton My chart to get exact Names &\n>>>>>> dates of Drs for your\n>>>>>>\n>>>>>> On Fri, Dec 13, 2024 at 1:59?PM Sarena Tuttle <\n>>>>>> sarena@whaleylawfirm.com> wrote:\n>>>>>>\n>>>>>>> Awesome, thank you so much for this information.\n>>>>>>> I will update the file & get the record requests out to Norton\n>>>>>>> Hospital Dutchman & Norton Urologist as soon as possible.\n>>>>>>> Is Micheal's Primary Care Physician also with Norton Dutchman?\n>>>>>>>\n>>>>>>> Sarena M. Tuttle\n>>>>>>> Litigation Paralegal &\n>>>>>>> Workers' Compensation Case Manager\n>>>>>>> The Whaley Law Firm\n>>>>>>> 712 Lyndon Lane\n>>>>>>> \n>>>>>>> Louisville, KY 40222\n>>>>>>> \n>>>>>>> D: (502) 357-9971\n>>>>>>> O: (502) 583-4022 ext 104\n>>>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>>>\n>>>>>>>\n>>>>>>> On Fri, Dec 13, 2024 at 1:50?PM KillA StyleS \n>>>>>>> wrote:\n>>>>>>>\n>>>>>>>> Yes Me & Micheal Sr are Married he does live in the home with us\n>>>>>>>> Micheal was born at Norton Durchman ln location\n>>>>>>>> I immediately complained the initial circumcision date 4/11/23 the\n>>>>>>>> ((Heather Gusic APRN )) did not record there was Any problems or complaints\n>>>>>>>> in her notes in Micheal jr\n>>>>>>>> Files\n>>>>>>>> I mad a complaint to 502 559 4490 Nortons Dutchman hospital thttps://www.google.com/maps/search/712Micheal re-circumcision and repair Surgery 12/12/23\n>>>>>>>> I complained to the primary care at Michael\u2019s six weeks check up\n>>>>>>>> That he was in pain and the Circumcision was not doing ok and\n>>>>>>>> Agreed\n>>>>>>>> They referred me to his urologist @ Norton dutchman location\n>>>>>>>>\n>>>>>>>> who has extensive notes on everything\n>>>>>>>>\n>>>>>>>>\n>>>>>>>> On Fri, Dec 13, 2024 at 1:27?PM Sarena Tuttle <\n>>>>>>>> sarena@whaleylawfirm.com> wrote:\n>>>>>>>>\n>>>>>>>>> Good afternoon Cameal,\n>>>>>>>>> Thank you so much for completing the Minor Intake for\n>>>>>>>>> Michael Jr. Can you please clarify your relationship with Michael Ditto Sr?\n>>>>>>>>> Are you married? If not, has custody been decided by a Family Court? Is\n>>>>>>>>> Michael Sr actively involved in Michael Jr's life? I do not mean to be\n>>>>>>>>> intrusive, however, custody is a relevant issue for minor claims.\n>>>>>>>>> I see on the Intake that Michael was born on 04/07/2023 and\n>>>>>>>>> was in ICU at Norton Hospital. Was this the Downtown location?\n>>>>>>>>> Then on 04/11/2023 Michael was to have a routine\n>>>>>>>>> circumcision but there was an issue found at his 1st primary care check up.\n>>>>>>>>> Correct? Who is the Primary Care Physician?\n>>>>>>>>> Micheal was then referred for a revision surgery, looks\n>>>>>>>>> like in December of 2023, is that the correct date? Who completed this\n>>>>>>>>> revision surgery?\n>>>>>>>>> I see you noted that you made a complaint to Norton\n>>>>>>>>> Hospital, do you have any records of these complaints for your file?\n>>>>>>>>> Has Micheal received any other treatment such\n>>>>>>>>> additional surgeries, therapy or any follow up visits? If so, please\n>>>>>>>>> provide us with a complete list of any and all doctors Michael has seen.\n>>>>>>>>> As soon as we receive the requested information, we will\n>>>>>>>>> get medical record requests out to get copies of all Michael's medical\n>>>>>>>>> records and place Norton Healthcare on Notice of Michael's claim. Please\n>>>>>>>>> keep in mind this part of the process can take 30-45 days to get the\n>>>>>>>>> records & a proper response from Norton Healthcare. We ask for your\n>>>>>>>>> patience during this time, however, please feel free to contact us directly\n>>>>>>>>> with any questions that may arise. We look forward to assisting Michael and\n>>>>>>>>> working with you & Michael Sr as things progress.\n>>>>>>>>>\n>>>>>>>>> Sarena M. Tuttle\n>>>>>>>>> Litigation Paralegal &\n>>>>>>>>> Workers' Compensation Case Manager\n>>>>>>>>> The Whaley Law Firm\n>>>>>>>>> 712 Lyndon Lane\n>>>>>>>>> \n>>>>>>>>> Louisville, KY 40222\n>>>>>>>>> \n>>>>>>>>> D: (502) 357-9971\n>>>>>>>>> O: (502) 583-4022 ext 104\n>>>>>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>>>>>\n>>>>>>>>",
+      "natural_language": "On December 13, 2024, The Whaley Law Firm began consolidating records for the Michael Ditto Jr. medical malpractice case, noted as case Michael-Ditto-Jr-Med-Mal-04-11-2023, with client Michael Ditto. The discussion centers on events around his birth and early circumcision in 2023. Michael Ditto Jr. was born on 04/07/2023 and was in the ICU at Norton Hospital; the hospital location is referenced as Norton (Downtown location is questioned in intake notes). The initial circumcision was scheduled for 04/11/2023, but the family alleges there were problems that Heather Gusic, APRN, did not record in her notes. The family reported filing a complaint about this to Norton Hospital, using the phone number 502-559-4490 and noting a Google Maps reference to \u201c712 Michael re-circumcision and repair Surgery 12/12/23.\u201d The family also complained to Michael\u2019s primary care at his six-week check-up, stating that he was in pain and that the circumcision was not resolving properly, after which they were referred to a Norton Dutchman location urologist who has extensive notes on the case.\n\nIn the email thread, Sarena M. Tuttle asked KillA StyleS to confirm whether United Insurance was Michael\u2019s health insurance and to provide a copy of any health insurance coverage. She stated that a record request had been sent to Norton and that Norton Healthcare would be placed on Notice once records were obtained, noting that the process to secure records from Norton Healthcare could take 30\u201345 days. She also indicated that she had sent record requests to Norton Hospital Dutchman and to Norton Urologist and that they would request records from all departments and physicians as needed.\n\nThe communications show an effort to assemble doctor and facility details through Michael Ditto Jr.\u2019s MyChart (to obtain exact names and dates of doctors) and to determine whether the primary care physician is affiliated with Norton Dutchman. The team planned to proceed with record requests to Norton Hospital Dutchman and Norton Urologist as soon as possible and to obtain copies of records from all involved departments and physicians.\n\nCameal (the individual who completed the Minor Intake) provided key biographical and factual details. She confirmed that she and Michael Ditto Sr. are married, that Michael Jr. lives in their home, and that he was born at Norton Dutchman Ln. She stated the initial circumcision occurred on 04/11/2023 and that Heather Gusic, APRN, did not record any problems or complaints in her notes regarding Michael Jr. She reported filing a complaint with Norton Dutchman Hospital (with reference to the complaint and a contact number) and a complaint to Michael\u2019s primary care at six weeks, stating that Michael was in pain and that the circumcision was not progressing well, and that they were referred to a urologist at Norton Dutchman location who has extensive notes.\n\nCameal also noted that she and Michael Sr are married, that Michael Jr. was born 04/07/2023 and was in ICU at Norton Hospital, and that the Downtown location was a question in the intake. She indicated that the family\u2019s intent is to have Norton Hospital and Norton Urology\u2019s records obtained and to place Norton Healthcare on Notice, with the understanding that this process may take 30\u201345 days to secure records and a proper response.\n\nThe record of the exchange includes the exchange of contact details for Norton-related providers, including Elisha McAmont, a urologist located at 3999 Dutchman Ln, Suite 6F, Louisville, KY 40207, noted in the thread as having substantial documentation on Michael Jr. The thread also references Norton Urology and Norton Hospital Dutchman as primary targets for record requests, the need to obtain copies of all of Michael Jr.\u2019s medical records, and the intention to pursue notices with Norton Healthcare while documentation is gathered. In sum, the team is actively requesting comprehensive records from Norton Hospital Dutchman, Norton Urology, and associated departments and physicians, seeking health insurance information (noting United Insurance) and using MyChart to identify treating clinicians, with custody and guardianship considerations acknowledged as part of the minor\u2019s case.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "case client / guardian initiating malpractice claim"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr.",
+            "relevance": "minor patient / alleged injured party"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm consolidating records and handling the matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Sarena M. Tuttle",
+            "relevance": "attorney/correspondent sending record requests and coordinating notices"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Healthcare",
+            "relevance": "hospital system targeted for records requests and notice"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital",
+            "relevance": "birth / ICU location referenced in the timeline"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital Dutchman",
+            "relevance": "facility targeted for records requests and where treatment occurred"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Urology",
+            "relevance": "urology provider with extensive notes and records to obtain"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic, APRN",
+            "relevance": "clinician whose notes are alleged to have omitted reported problems"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Elisha McAmont",
+            "relevance": "urologist noted as having substantial documentation on the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "United Insurance",
+            "relevance": "health insurer being confirmed/for which coverage copy was requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__Re: Michael Ditto Jr - Medical Malpractice 04/11/2023__\nFrom: KillA StyleS [reddcameal@gmail.com](mailto:reddcameal@gmail.com)\nTo: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nCC: \nDate: Fri, 13 Dec 2024 14:56:33 -0500\n\nOn Fri, Dec 13, 2024 at 2:40?PM Sarena Tuttle \nwrote:\n\n> Great. Hopefully her records will contain everything we need.\n> I see you noted United Insurance and a reference number, is this Michael's\n> Health Insurance? Can you please send me a copy of any health insurance\n> coverage he has?\n> I have sent the request to Norton and we will keep you posted as things\n> progress.\n>\n> Sarena M. Tuttle\n> Litigation Paralegal &\n> Workers' Compensation Case Manager\n> The Whaley Law Firm\n> 712 Lyndon Lane\n> \n> Louisville, KY 40222\n> \n> D: (502) 357-9971\n> O: (502) 583-4022 ext 104\n> E: Sarena@WhaleyLawFirm.com\n> (PLEASE NOTE NEW EMAIL ADDRESS)\n>\n>\n> On Fri, Dec 13, 2024 at 2:36?PM KillA StyleS wrote:\n>\n>> Elisha McAmont urologist\n>> 3999 Dutchman Ln\n>> Plz 1 suite 6F\n>> Lou ky 40207\n>>\n>> Had alot of documentation on Micheal jr\n>> On Fri, Dec 13, 2024 at 2:33?PM KillA StyleS \n>> wrote:\n>>\n>>>\n>>>\n>>> On Fri, Dec 13, 2024 at 2:09?PM Sarena Tuttle \n>>> wrote:\n>>>\n>>>> Ok. I will get a request over to them as well.\n>>>> Just send the information to us, whenever you can. We have enough to\n>>>> get started and will request any and all records for any and all\n>>>> departments/physicians.\n>>>>\n>>>> Sarena M. Tuttle\n>>>> Litigation Paralegal &\n>>>> Workers' Compensation Case Manager\n>>>> The Whaley Law Firm\n>>>> 712 Lyndon Lane\n>>>> \n>>>> Louisville, KY 40222\n>>>> \n>>>> D: (502) 357-9971\n>>>> O: (502) 583-4022 ext 104\n>>>> E: Sarena@WhaleyLawFirm.com\n>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>\n>>>>\n>>>> On Fri, Dec 13, 2024 at 2:05?PM KillA StyleS \n>>>> wrote:\n>>>>\n>>>>> Primary care Stonestreet 40272\n>>>>> Im trying to Access Micheal Norton My chart to get exact Names &\n>>>>> dates of Drs for your\n>>>>>\n>>>>> On Fri, Dec 13, 2024 at 1:59?PM Sarena Tuttle <\n>>>>> sarena@whaleylawfirm.com> wrote:\n>>>>>\n>>>>>> Awesome, thank you so much for this information.\n>>>>>> I will update the file & get the record requests out to Norton\n>>>>>> Hospital Dutchman & Norton Urologist as soon as possible.\n>>>>>> Is Micheal's Primary Care Physician also with Norton Dutchman?\n>>>>>>\n>>>>>> Sarena M. Tuttle\n>>>>>> Litigation Paralegal &\n>>>>>> Workers' Compensation Case Manager\n>>>>>> The Whaley Law Firm\n>>>>>> 712 Lyndon Lane\n>>>>>> \n>>>>>> Louisville, KY 40222\n>>>>>> \n>>>>>> D: (502) 357-9971\n>>>>>> O: (502) 583-4022 ext 104\n>>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>>\n>>>>>>\n>>>>>> On Fri, Dec 13, 2024 at 1:50?PM KillA StyleS \n>>>>>> wrote:\n>>>>>>\n>>>>>>> Yes Me & Micheal Sr are Married he does live in the home with us\n>>>>>>> Micheal was born at Norton Durchman ln location\n>>>>>>> I immediately complained the initial circumcision date 4/11/23 the\n>>>>>>> ((Heather Gusic APRN )) did not record there was Any problems or complaints\n>>>>>>> in her notes in Micheal jr\n>>>>>>> Files\n>>>>>>> I mad a complaint to 502 559 4490 Nortons Dutchman hospital they are\n>>>>>>> offering to Pay for Micheal re-circumcision and repair Surgery 12/12/23\n>>>>>>> I complained to the primary care at Michael\u2019s six weeks check up\n>>>>>>> That he was in pain and the Circumcision was not doing ok and\n>>>>>>> Agreed\n>>>>>>> They referred me to his urologist @ Norton dutchman location\n>>>>>>>\n>>>>>>> who has extensive notes on everything\n>>>>>>>\n>>>>>>>\n>>>>>>> On Fri, Dec 13, 2024 at 1:27?PM Sarena Tuttle <\n>>>>>>> sarena@whaleylawfirm.com> wrote:\n>>>>>>>\n>>>>>>>> Good afternoon Cameal,\n>>>>>>>> Thank you so much for completing the Minor Intake for Michael\n>>>>>>>> Jr. Can you please clarify your relationship with Michael Ditto Sr? Are you\n>>>>>>>> married? If not, has custody been decided by a Family Court? Is Michael Sr\n>>>>>>>> actively involved in Michael Jr's life? I do not mean to be intrusive,\n>>>>>>>> however, custody is a relevant issue for minor claims.\n>>>>>>>> I see on the Intake that Michael was born on 04/07/2023 and\n>>>>>>>> was in ICU at Norton Hospital. Was this the Downtown location?\n>>>>>>>> Then on 04/11/2023 Michael was to have a routine\n>>>>>>>> circumcision but there was an issue found at his 1st primary care check up.\n>>>>>>>> Correct? Who is the Primary Care Physician?\n>>>>>>>> Micheal was then referred for a revision surgery, looks like\n>>>>>>>> in December of 2023, is that the correct date? Who completed this revision\n>>>>>>>> surgery?\n>>>>>>>> I see you noted that you made a complaint to Norton\n>>>>>>>> Hospital, do you have any records of these complaints for your file?\n>>>>>>>> Has Micheal received any other treatment such\n>>>>>>>> additional surgeries, therapy or any follow up visits? If so, please\n>>>>>>>> provide us with a complete list of any and all doctors Michael has seen.\n>>>>>>>> As soon as we receive the requested information, we will get\n>>>>>>>> medical record requests out to get copies of all Michael's medical records\n>>>>>>>> and place Norton Healthcare on Notice of Michael's claim. Please keep in\n>>>>>>>> mind this part of the process can take 30-45 days to get the records & a\n>>>>>>>> proper response from Norton Healthcare. We ask for your patience during\n>>>>>>>> this time, however, please feel free to contact us directly with any\n>>>>>>>> questions that may arise. We look forward to assisting Michael and working\n>>>>>>>> with you & Michael Sr as things progress.\n>>>>>>>>\n>>>>>>>> Sarena M. Tuttle\n>>>>>>>> Litigation Paralegal &\n>>>>>>>> Workers' Compensation Case Manager\n>>>>>>>> The Whaley Law Firm\n>>>>>>>> 712 Lyndon Lane\n>>>>>>>> \n>>>>>>>> Louisville, KY 40222\n>>>>>>>> \n>>>>>>>> D: (502) 357-9971\n>>>>>>>> O: (502) 583-4022 ext 104\n>>>>>>>> E: Sarena@WhaleyLawFirm.com\n>>>>>>>> (PLEASE NOTE NEW EMAIL ADDRESS)\n>>>>>>>>\n>>>>>>>",
+      "natural_language": "This note documents the email exchanges on December 13, 2024, concerning Michael Ditto Jr., a minor whose case is listed as Michael-Ditto-Jr-Med-Mal-04-11-2023. The client is Michael Ditto. The discussions involve KillA StyleS (reddcameal@gmail.com) and Sarena M. Tuttle, a Litigation Paralegal and Workers\u2019 Compensation Case Manager at The Whaley Law Firm.\n\nEarly in the thread, an email from KillA StyleS to Sarena Tuttle references that Elisha McAmont, a urologist, is located at 3999 Dutchman Lane, Suite 6F, Louisville, KY 40207, and notes that there was a substantial amount of documentation regarding Michael Jr. The message also records that the primary care was at Stonestreet (ZIP 40272), and that there was an effort to access Michael Norton\u2019s MyChart to obtain exact names and dates of doctors. In addition, KillA mentions that Michael Sr. and Michael Jr. have a connection to Norton Dutchman and Norton Hospital, and that a complaint had been filed with Norton regarding the circumcision issue.\n\nSarena Tuttle\u2019s response, sent on December 13, 2024 around 2:40 PM, expresses the hope that Michael Jr.\u2019s records will contain everything needed. She asks whether United Insurance is Michael\u2019s health insurance and requests a copy of any health insurance coverage he has. She also notes that she has sent a request to Norton and that they will keep KillA posted as things progress. She identifies herself with her full title and contact information at The Whaley Law Firm and notes her new email address.\n\nEarlier in the same day, KillA provides continuing details about the case. There is a line about \u201cElisha McAmont urologist\u201d and the address cited earlier, and KillA reiterates that there is a lot of documentation on Michael Jr. She indicates she is providing or has provided information about the urologist and associated records.\n\nAround 2:09 PM, Sarena replies again to confirm that she will also send a record request to Norton Hospital and Norton Urologist. She requests that any information be sent as it becomes available, since they already have enough to begin work and will request records from all departments and physicians as needed. She reiterates the role and contact details for herself at The Whaley Law Firm.\n\nAt about 2:05 PM, KillA notes the primary care is at Stonestreet and that she is attempting to access Michael Norton\u2019s MyChart to obtain exact names and dates of doctors for the file.\n\nAt approximately 1:59 PM, Sarena replies with appreciation for the information and explains that she will update the file and issue record requests to Norton Hospital Dutchman and Norton Urologist as soon as possible. She asks whether Michael\u2019s Primary Care Physician is also with Norton Dutchman.\n\nAt around 1:50 PM, KillA confirms a marital relationship: she and Michael Ditto Sr. are married, reside together, and that Michael Jr. was born at Norton Dutchman Lane location. She states that she immediately complained about the initial circumcision date of 4/11/23, noting that Heather Gusic, APRN, did not record any problems or complaints in her notes for Michael Jr.\u2019s file. She reports filing a complaint with Norton\u2019s Dutchman Hospital (the number 502-559-4490 is listed) and says Norton Dutchman Hospital offered to pay for Michael Jr.\u2019s re-circumcision and repair surgery on 12/12/23. She mentions that she complained at Michael\u2019s six-week check-up with his primary care about pain and that the circumcision was not going well, and that they referred her to his urologist at the Norton Dutchman location who has extensive notes on everything.\n\nEarlier still, at 1:27 PM, Sarena had written to Cameal (KillA) with several substantive questions. She asked for confirmation of Michael Ditto Sr.\u2019s relationship to Michael Jr. (whether they are married, and if not, whether custody has been decided by a family court and whether Michael Sr. is actively involved in Michael Jr.\u2019s life). She noted that custody is relevant for a minor claim. She asked for clarification that Michael was born on 04/07/2023 and was in the ICU at Norton Hospital, asking whether this was the Downtown location. She inquired whether 04/11/2023 was the date Michael was to have a routine circumcision but that an issue was found at the first primary care check-up, and asked who the primary care physician was. She also asked whether Michael was then referred for a revision surgery (appearing to be in December 2023), who completed the revision surgery, and whether there were records of complaints filed with Norton. She requested a complete list of all other treatments, surgeries, therapy, or follow-up visits and all doctors Michael has seen. She explained that once the requested information is received, the firm would issue medical record requests to obtain copies of all Michael\u2019s medical records and place Norton Healthcare on notice of the claim. She cautioned that the process can take 30-45 days to obtain records and a proper response from Norton Healthcare, and invited further questions as progress continued. She signed off with her title and contact information for The Whaley Law Firm.\n\nIn sum, the December 13, 2024 exchanges reflect ongoing steps to gather Michael Ditto Jr.\u2019s medical records and health insurance information, confirm care providers and locations (including Norton Dutchman Hospital and the Norton Urologist, with a referenced involvement of Heather Gusic APRN and observer notes from an urologist), and to determine custody and familial involvement in Michael Jr.\u2019s case. The law firm intends to place Norton Healthcare on notice of the claim and to obtain all relevant records, acknowledging that the record collection process may take 30-45 days and requesting patience while the process unfolds.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "retained client / parent involved in the matter"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto Jr.",
+            "relevance": "minor patient / subject of the medical claim"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "law firm handling the claim and requesting records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Dutchman Hospital",
+            "relevance": "hospital where care occurred and records being requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital (Downtown location)",
+            "relevance": "possible ICU/birth location referenced in inquiry"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Urologist",
+            "relevance": "urology care and records referenced for the child"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Elisha McAmont",
+            "relevance": "identified urologist with address and associated records"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Heather Gusic, APRN",
+            "relevance": "APRN referenced in notes related to the child's care"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Stonestreet",
+            "relevance": "primary care location for the child"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Norton Healthcare",
+            "relevance": "health system to be placed on notice of the claim"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "United Insurance",
+            "relevance": "potential health insurer queried in the correspondence"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2024-12-13",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n__3rd Party Liability Claim Subrogation Request__\nFrom: Sarena Tuttle [sarena@whaleylawfirm.com](mailto:sarena@whaleylawfirm.com)\nTo: United Healthcare [subrogationreferrals@optum.com](mailto:subrogationreferrals@optum.com)\nCC: \nDate: Fri, 13 Dec 2024 15:52:35 -0500\n\nGood afternoon,\n Please find attached our office's request for a 3rd Party Liability\nSubrogation Lien for Michael V. Ditto Jr. We have included a HIPAA\nAuthorization & a copy of Michael's United Healthcare Insurance cards for\nyour reference.\n Please do not hesitate to contact us directly if you have any questions\nor need additional information.\n\nSarena M. Tuttle\nLitigation Paralegal &\nWorkers' Compensation Case Manager\nThe Whaley Law Firm\n712 Lyndon Lane\nLouisville, KY 40222\nD: (502) 357-9971\nO: (502) 583-4022 ext 104\nE: Sarena@WhaleyLawFirm.com\n(PLEASE NOTE NEW EMAIL ADDRESS)",
+      "natural_language": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023. The client is Michael Ditto.\n\nOn Friday, December 13, 2024, at 3:52:35 p.m. Eastern Time, Sarena Tuttle, a litigation paralegal and workers\u2019 compensation case manager at The Whaley Law Firm, sent an email to UnitedHealthcare\u2019s subrogation referrals address (subrogationreferrals@optum.com) regarding a 3rd Party Liability Subrogation Request. The message states, in effect, that the office\u2019s request for a 3rd Party Liability Subrogation Lien for Michael V. Ditto Jr. is attached, and that a HIPAA Authorization and a copy of Michael\u2019s UnitedHealthcare insurance cards are included for reference. It also invites the recipient to contact the sender directly with any questions or for additional information.\n\nThe email is signed by Sarena M. Tuttle, noting her roles as a Litigation Paralegal and a Workers\u2019 Compensation Case Manager at The Whaley Law Firm. The firm\u2019s contact details are listed as 712 Lyndon Lane, Louisville, KY 40222. Direct and office phone numbers are D: (502) 357-9971 and O: (502) 583-4022 ext 104, with the email address Sarena@WhaleyLawFirm.com, and a note indicating this is a new email address.",
+      "valid_at": "2024-12-13T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael V. Ditto Jr.",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "UnitedHealthcare",
+            "relevance": "recipient of subrogation email; insurer on attached insurance cards"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "3rd Party Liability Subrogation Lien for Michael V. Ditto Jr.",
+            "relevance": "subrogation lien requested"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of the email; law firm representing client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\nThis case appears to be a personal injury claim that has been set up in Filevine. The claim involves medical records and potential liens, suggesting it may be related to a medical incident or accident.\nThe most recent activity involves receiving certified medical records (CMR/CMB) from multiple sources, including imaging from Norton W&C Hospital. (See details)\nNo significant risks or red flags are apparent from the provided data. However, there was a slight delay in receiving a CD with medical records, which required follow-up. (See details)\nThe next step is to review all the gathered records. Aaron Whaley has instructed Sarena Tuttle to notify him once all records have been collected so he can proceed with the review. (See details)",
+      "natural_language": "Case Michael-Ditto-Jr-Med-Mal-04-11-2023 involves client Michael Ditto and appears to be a personal injury claim set up in Filevine. The claim involves medical records and potential liens, suggesting it relates to a medical incident or accident.\n\nThe most recent activity has been the receipt of certified medical records (CMR/CMB) from multiple sources, including imaging from Norton W&C Hospital.\n\nThere are no significant risks or red flags evident from the data provided; however, there was a slight delay in receiving a CD containing medical records, which required follow-up.\n\nThe next step is to review all gathered records. Aaron Whaley has instructed Sarena Tuttle to notify him once all records have been collected so he can proceed with the review.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton W&C Hospital",
+            "relevance": "source of imaging/medical records"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Filevine",
+            "relevance": "case management system where claim was set up"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Potential liens",
+            "relevance": "possible liens mentioned in the claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Sarena Tuttle - 2025-03-24",
+      "original_body": "Case: Michael-Ditto-Jr-Med-Mal-04-11-2023\nClient: Michael Ditto\n\n@aaronw Claim is set up in Filevine - All CRRs Sent - PHI Liens Requested - Please advise how to proceed",
+      "natural_language": "On April 11, 2023, the case Michael-Ditto-Jr-Med-Mal-04-11-2023 was opened for client Michael Ditto. \n\nThe claim is set up in Filevine. All CRRs have been sent, and PHI liens have been requested. Please advise how to proceed.",
+      "valid_at": "2025-03-24T00:00:00",
+      "author": "Sarena Tuttle",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Ditto",
+            "relevance": "case opened for client"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Filevine",
+            "relevance": "case management platform where claim is set up"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "PHI lien(s)",
+            "relevance": "PHI liens requested"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

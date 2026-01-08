@@ -1,0 +1,453 @@
+{
+  "case_name": "James-Crowdus-MVA-8-10-2025",
+  "total_episodes": 12,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Aptiva Health",
+        "specialty": null
+      },
+      {
+        "name": "Diagnostic Imaging Alliance of Louisville",
+        "specialty": "radiology"
+      },
+      {
+        "name": "Louisville Metro EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Norton Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "James-Crowdus-MVA-8-10-2025-Personal Injury Protection (PIP)-1788V453C",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": null
+      },
+      {
+        "type": "BIClaim",
+        "name": "James-Crowdus-MVA-8-10-2025-Bodily Injury (BI)-1788T648L",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": null
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\nAaron discussed medical treatment options and insurance claim procedures with James Crowdus.\nRecap\nAaron Whaley provided James Crowdus with guidance on medical treatment protocols and insurance claim filing procedures.\nJames expressed understanding of the process and agreed to follow the recommended treatment plan.\nTasks\nAaron needs to monitor James's medical treatment and assist with insurance claim documentation.",
+      "natural_language": "On 8-10-2025, in the James Crowdus motor vehicle accident case, Aaron Whaley discussed medical treatment options and the procedures for filing an insurance claim with James Crowdus. He provided guidance on medical treatment protocols and insurance claim filing procedures. James Crowdus expressed understanding of the process and agreed to follow the recommended treatment plan.\n\nGoing forward, Aaron Whaley will monitor James Crowdus's medical treatment and assist with the documentation for the insurance claim.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "client receiving guidance on treatment and claim filing"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurance claim filing procedures discussed"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurance claim filing procedures discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\nAaron Whaley contacted James Crowdus to review the details of his motor vehicle accident and discuss legal options.\nRecap\nAaron Whaley reached out to James Crowdus regarding his motor vehicle accident from August 10, 2025, to assess potential legal claims.\nJames confirmed the accident details and requested Aaron's assistance with the case.\nTasks\nAaron needs to obtain accident reports and medical documentation for James's case evaluation.",
+      "natural_language": "Initial client contact on August 10, 2025 with James Crowdus regarding his motor vehicle accident, initiated by Aaron Whaley to review the details and discuss legal options. James Crowdus confirmed the accident details and requested Aaron Whaley's assistance with the case. For the case evaluation, Aaron will obtain the accident reports and medical documentation.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "client who contacted firm about MVA"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "initiated contact and will evaluate the case/obtain records"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\nFrom: justin@whaleylawfirm.com\nTo: 'HOME CLMS-STATEFARMCLAIMS' statefarmclaims@statefarm.com\nDate: Wed Aug 27 2025 12:39:57 GMT-04:00\nPlease forward an updated ledger for our client, James Crowdus.\nThanks,\nJustin Chumbley\nWhaley Law Firm\nPh: (502)583-4022\nFax: (502)364-9363",
+      "natural_language": "Case James-Crowdus-MVA-8-10-2025 involves client James Crowdus. On August 27, 2025, at 12:39:57 PM GMT-04:00, Justin Chumbley of the Whaley Law Firm emailed HOME CLMS-STATEFARMCLAIMS (statefarmclaims@statefarm.com), from justin@whaleylawfirm.com, requesting that an updated ledger be forwarded for our client, James Crowdus. The message was sent with the Whaley Law Firm\u2019s contact details: Ph: (502) 583-4022 and Fax: (502) 364-9363.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "subject of the case / client for whom ledger requested"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's law firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "recipient insurer (statefarmclaims@statefarm.com) \u2014 ledger requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\nFrom: justin@whaleylawfirm.com\nTo: 'April Mullins' amullins@aptivahealth.com\nDate: Thu Aug 21 2025 09:20:14 GMT-04:00\nState Farm\nClaim # 1788V453C\nFrom: April Mullins\nSent: Thursday, August 21, 2025 9:19 AM\nTo: Justin Chumbley\nCc: Aaron Whaley\nSubject: James Crowdus MVA 8/10/25\nGood Morning\nI just wanted to reach out and see if your office represents him for this\ncase and if you have his PIP information.\nApril Mullins\nExecutive Attorney Liaison\n502-909-0772",
+      "natural_language": "The case file James-Crowdus-MVA-8-10-2025 concerns client James Crowdus, following a motor vehicle accident that occurred on August 10, 2025. The matter is associated with State Farm, and the claim number is 1788V453C.\n\nOn August 21, 2025, a correspondence thread related to this case occurred. At 9:19 AM that day, April Mullins, Executive Attorney Liaison at Aptiva Health, sent an email to Justin Chumbley at Whaley Law Firm (cc: Aaron Whaley) with the subject James Crowdus MVA 8/10/25. In the body of that message, Mullins wrote: Good Morning, I just wanted to reach out and see if your office represents him for this case and if you have his PIP information. The signature line identifies her as April Mullins, Executive Attorney Liaison, and provides the contact number 502-909-0772.\n\nAccording to the email header, a reply followed at 9:20:14 AM on the same date, sent from justin@whaleylawfirm.com to amullins@aptivahealth.com, with the same subject line, James Crowdus MVA 8/10/25.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Aptiva Health",
+            "relevance": "sender of email requesting representation and PIP info"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "recipient firm queried about representation"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient/point of contact at Whaley Law Firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "cc'd attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer associated with the matter"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #1788V453C",
+            "relevance": "PIP information requested in email (associated with State Farm)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\nCLIENT CONTACT\nDetails: called client, state farm is attempting to reach vehicle owner to address PD. owner is client's grandmother\nPerson Making Contact: Justin\nDate & Time: August 15 2025",
+      "natural_language": "Initial client contact on August 15, 2025 with James Crowdus regarding a motor vehicle accident on August 10, 2025 (case James-Crowdus-MVA-8-10-2025). State Farm is attempting to reach the vehicle owner to address property damage (PD); the vehicle owner is the client\u2019s grandmother. The contact was made by Justin.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "subject of contact"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "attempting to contact vehicle owner about property damage"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Justin",
+            "relevance": "made the contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\nFrom: justin@whaleylawfirm.com\nTo: JamesCrowdusMVAZ5120159@louisvilleaccidentlawyer.filevineapp.com\nDate: Fri Aug 15 2025 11:32:26 GMT-04:00\nFrom: HOME CLMS-STATEFARMCLAIMS\nSent: Friday, August 15, 2025 11:30 AM\nTo: justin@whaleylawfirm.com\nSubject: state farm 17-88T6-48L James Crowdus\nHey Justin\nSee our LOA attached.\nCouple things.\nI spoke to Jimmy Kaufman, they are not representing Mr. Crowdus and not\nasserting a lien.\nAlso, I show Vicky Henley is the owner of the vehicle Mr. Crowdus was\ndriving.\nShe has State Farm, too (17-88V4-53C) but we are willing to pay for her\ndamages under the at fault driver's liability coverage under claim\n17-88T6-48L.\nI can't reach her to address property damage. Would you ask your client to\nrelay a message to her to call us back.\nThank you,\nLeslie Simon, Claim Specialist\nState FarmR",
+      "natural_language": "Case: James-Crowdus-MVA-8-10-2025. The client is James Crowdus.\n\nOn Friday, August 15, 2025, an email from State Farm Claims (HOME CLMS-STATEFARMCLAIMS) was sent to Justin Whaley at the Whaley Law Firm regarding James Crowdus. The message, which included subject line \u201cstate farm 17-88T6-48L James Crowdus,\u201d begins with \u201cHey Justin. See our LOA attached.\u201d The email confirms that their Letter of Authorization is attached.\n\nIn the body of the message, Leslie Simon, a State Farm Claims Specialist, writes: \u201cCouple things.\u201d She states that she spoke to Jimmy Kaufman, and that they are not representing Mr. Crowdus and are not asserting a lien. She further notes that Vicky Henley is the owner of the vehicle Mr. Crowdus was driving. Henley also has State Farm coverage (policy 17-88V4-53C). However, State Farm is willing to pay for Henley\u2019s damages under the at-fault driver\u2019s liability coverage under claim 17-88T6-48L. Simon adds that she cannot reach Henley to address property damage and asks that Justin\u2019s client relay a message to Henley to call State Farm back. The message closes with \u201cThank you, Leslie Simon, Claim Specialist\u201d and the designation \u201cState Farm.\u201d",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "subject/client of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "sender of email / insurer handling the claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Leslie Simon",
+            "relevance": "State Farm claim specialist who sent the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Whaley",
+            "relevance": "recipient at Whaley Law Firm / attorney for the client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm receiving the State Farm communication"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Claim 17-88T6-48L",
+            "relevance": "at-fault liability claim discussed in the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\nCLIENT CONTACT\nDetails: James Crowdus\nDOA: 8/10/2025\n25th and Hill\nLMPD\nReport # 25093424\nDOB 06/02/2005\nSSN: 407-63-6721\nADDRESS\n2909 Narragansett Dr\nLouisville, KY 40210\nPh: 502-322-7896\nInjuries\nNeck, left shoulder and lower back\nEMS to Norton Downtown\nPIP State Farm\nClaim # 1788V453C\nBI\nState Farm\n1788T648L\nPerson Making Contact: Justin\nDate & Time: August 14 2025",
+      "natural_language": "Initial client contact on August 14, 2025, with Justin regarding a motor vehicle accident involving James Crowdus, which occurred on August 10, 2025 at the intersection of 25th Street and Hill Street in Louisville, Kentucky. The incident was reported to the Louisville Metro Police Department under Report No. 25093424. The client is James Crowdus, born June 2, 2005, who resides at 2909 Narragansett Drive, Louisville, KY 40210, and can be reached at 502-322-7896. The SSN has been redacted for privacy. Date of accident: August 10, 2025.\n\nInjuries noted include the neck, left shoulder, and lower back. EMS transported James Crowdus to Norton Downtown. The case involves PIP coverage through State Farm, Claim No. 1788V453C, and Bodily Injury coverage through State Farm, Claim No. 1788T648L. The contact was made by Justin on August 14, 2025.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "injured party / client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "transported client from scene"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital",
+            "relevance": "hospital destination for EMS transport"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer for PIP and BI claims"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #1788V453C",
+            "relevance": "personal injury protection claim for client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI #1788T648L",
+            "relevance": "bodily injury claim for client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-08",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, still treating \n__Person Making Contact:__ Justin\n__Date & Time__: September 08 2025",
+      "natural_language": "Initial client contact on September 8, 2025, with Justin regarding the James-Crowdus-MVA-8-10-2025 motor vehicle accident case for client James Crowdus. The details indicate that Justin spoke with the client and that the client is still in treatment.",
+      "valid_at": "2025-09-08T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "initial contact; client still in treatment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\n__james crowdus__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), James Crowdus - Filevine Project Email Address [JamesCrowdusMVAZ5120159@louisvilleaccidentlawyer.filevineapp.com](mailto:JamesCrowdusMVAZ5120159@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 01:53:15 GMT-04:00\n\nPlease request all the medical records. Looks like he's done treating.\nThere's ER, EMS, Starlight, and Aptiva.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: James-Crowdus-MVA-8-10-2025. Client: James Crowdus.\n\nThis note originates from an email sent by Aaron Whaley of Whaley Law Firm. On Wednesday, October 29, 2025 at 01:53:15 GMT-04:00, Whaley sent the message to Justin Chumbley and to James Crowdus\u2019s Filevine project email address (JamesCrowdusMVAZ5120159@louisvilleaccidentlawyer.filevineapp.com). In the email body, Whaley wrote: \u201cPlease request all the medical records. Looks like he's done treating. There\u2019s ER, EMS, Starlight, and Aptiva.\u201d The message is signed by Aaron Whaley of Whaley Law Firm, with the firm\u2019s contact information: 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "subject of the case / client referenced"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sender of the email requesting records"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm (signed the email)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Aptiva Health",
+            "relevance": "named as a provider for which records should be requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "named as a provider for which records should be requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "EMS mentioned as a provider for which records should be requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital",
+            "relevance": "ER mentioned (hospital/ER records to be requested)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-10",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\n__CLIENT CONTACT__\n__Details:__ updated client. \n__Person Making Contact:__ Justin\n__Date & Time__: November 10 2025",
+      "natural_language": "Initial client contact on November 10, 2025, with Justin regarding the James-Crowdus-MVA-8-10-2025 case and an update to the client file for James Crowdus. Details indicate that the client was updated.",
+      "valid_at": "2025-11-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "client file updated; subject of initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-19",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\n__New Insurance Note:__ 11/19 saved updated PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case: James Crowdus \u2013 MVA on August 10, 2025. Client: James Crowdus. On November 19, 2025, a new insurance note was saved updating the PIP ledger. Insurance type: Personal Injury Protection (PIP). Insurance company: State Farm Insurance Company. Written by: Justin Chumbley. This entry is categorized as Inotes.",
+      "valid_at": "2025-11-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurance company on file"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP ledger updated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-11-30",
+      "original_body": "Case: James-Crowdus-MVA-8-10-2025\nClient: James Crowdus\n\n**FILE ORGANIZATION COMPLETED**\n\nCompleted comprehensive file organization using Case File Organization skill with 8-bucket system and content-based naming:\n\n**Phase 1 - Inventory (Complete):**\n- Generated file inventory of 56 files\n- Scrambled 29 .md filenames to eliminate naming bias\n- Created PDF-MD mapping for reunification\n- Moved PDFs to temporary _pdf_originals/ folder\n\n**Phase 2 - Analysis & Mapping (Complete):**\n- Single sub-agent workflow (56 files > 40 threshold but manageable)\n- Analyzed scrambled files based purely on content (no filename bias)\n- Created comprehensive reorganization map for all 56 files\n- Applied proper naming convention: YYYY-MM-DD - Client Name - Category - Originator - Description\n- Identified 4 duplicate files for deletion (2 Starlite records, 2 billing statements)\n- Organized medical records by 5 providers with subfolders\n- Organized insurance by claim type (PIP/BI) with carrier subfolders\n\n**Phase 3 - Quality Review (Complete):**\n- Error rate: 0.0% (0 errors out of 52 files checked)\n- All 52 files correctly categorized into appropriate buckets\n- All dates follow dating protocol (visit dates for medical, letter dates for correspondence)\n- All originators correctly identified (facilities, insurance carriers)\n- All descriptions accurately match content\n- Verified 4 duplicates safe to delete\n- No files flagged for review - excellent quality\n\n**Phase 4 - Execution (Complete):**\n- Executed 42 file operations\n- Moved 39 files (22 PDF+MD pairs, 4 standalone files, 11 images, 3 template files) to proper 8-bucket structure:\n * Client: 8 files (intake, fee agreement, disengagement letter + image)\n * Investigation: 14 files (police report + 11 accident scene photos)\n * Medical Records: 30 files across 5 providers (Louisville Metro EMS, Norton Hospital, Aptiva Health, Starlite Chiropractic, Diagnostic Imaging Alliance)\n * Insurance: 15 files (PIP and BI claims with State Farm)\n- Deleted 3 duplicate files (1 PIP ledger, 1 Starlite record, 1 Starlite bill)\n- Reunified PDFs with .md companions using proper names\n- Cleaned up temporary _pdf_originals/ folder\n\n**Phase 5 - Verification (Complete):**\n- All 8 bucket directories verified with proper sub-structure\n- 100% naming convention compliance\n- 100% PDF+MD companion matching (19 of 19 PDFs have .md companions)\n- Only 1 system file remains in root (pdf_md_mapping.json)\n- Total files organized: 83 files across all buckets\n\n**Medical Providers Identified:**\n1. Louisville Metro EMS - Emergency transport (8/10/2025)\n2. Norton Hospital - Emergency room treatment (8/10/2025)\n3. Aptiva Health - Follow-up care (office visits)\n4. Starlite Chiropractic - Chiropractic treatment\n5. Diagnostic Imaging Alliance of Louisville - Diagnostic imaging\n\n**Insurance Coverage Confirmed:**\n- PIP: State Farm (Claim #17-88V4-53C)\n- BI: State Farm (Claim #17-88T6-48L)\n- Adjuster: Leslie Simon\n- Letters of representation sent 8/14/2025\n\n**Case Status Observations:**\n- Client completed treatment (phase changed to \"Demand in Progress\" on 10/23/2025)\n- Medical records requested from all 4 providers on 10/29-10/30/2025\n- Most recent PIP ledger dated 11/19/2025\n- Disengagement letter image found in files (may indicate case status change)\n- Vehicle owner: Vicky Henley (client's grandmother) - has separate State Farm claim for property damage\n\n**Result:** Case file now organized with proper 8-bucket structure and standardized naming convention. Files are properly categorized by provider and claim type, making them easily retrievable for demand preparation. Quality metrics: 100% initial accuracy, 100% duplicate detection accuracy, 0% error rate.",
+      "natural_language": "Case: James-Crowdus-MVA-8-10-2025 involved client James Crowdus following a motor vehicle accident on August 10, 2025. A comprehensive file organization effort was undertaken using an eight-bucket system and content-based naming to bring order to the case materials. Phase 1, Inventory, was completed: a file inventory of 56 documents was generated, 29 Markdown (.md) filenames were scrambled to remove naming bias, a PDF-MD mapping was created for reunification, and all PDFs were relocated to a temporary _pdf_originals/ folder.\n\nPhase 2, Analysis & Mapping, followed and is now complete. A single sub-agent workflow was adopted since the workload of 56 files exceeded a 40-file threshold but remained manageable. The scrambled files were analyzed based solely on content, with no reference to filenames, and a comprehensive reorganization map for all 56 files was produced. The team applied a consistent naming convention: YYYY-MM-DD - Client Name - Category - Originator - Description. Four duplicates were identified for deletion (two Starlite records and two billing statements). Medical records were organized by five providers with subfolders, and insurance files were organized by claim type (PIP/BI) with carrier subfolders.\n\nPhase 3, Quality Review, is complete with a flawless track record: an error rate of 0.0% (0 errors out of 52 files checked). All 52 files were correctly categorized into their respective buckets, and dates followed the dating protocol (visit dates for medical records and letter dates for correspondence). Originators were correctly identified (facilities and insurance carriers), descriptions accurately matched content, and the four duplicates were verified safe to delete. No files were flagged for review, indicating excellent overall quality.\n\nPhase 4, Execution, involved 42 file operations. A total of 39 files were moved into the proper eight-bucket structure (22 PDF+MD pairs, 4 standalone files, 11 images, and 3 template files). The distribution across buckets was as follows: Client contained 8 files (intake, fee agreement, disengagement letter plus image); Investigation contained 14 files (police report plus 11 accident scene photos); Medical Records contained 30 files across five providers\u2014Louisville Metro EMS, Norton Hospital, Aptiva Health, Starlite Chiropractic, and Diagnostic Imaging Alliance; and Insurance contained 15 files (PIP and BI claims with State Farm). Three duplicate files were deleted (one PIP ledger, one Starlite record, and one Starlite bill). PDFs were reunified with their corresponding .md companions using proper names, and the temporary _pdf_originals/ folder was cleaned up.\n\nPhase 5, Verification, is complete as well. All eight bucket directories were verified to have the proper sub-structure, with 100% naming convention compliance. All PDFs had their .md companions, yielding 100% PDF+MD companion matching (19 of 19 PDFs have companions). Only one system file remains in the root directory (pdf_md_mapping.json). In total, 83 files are now organized across all buckets.\n\nMedical providers identified for the case include five entities: Louisville Metro EMS for emergency transport on 8/10/2025; Norton Hospital for emergency room treatment on 8/10/2025; Aptiva Health for follow-up office visits; Starlite Chiropractic for chiropractic treatment; and Diagnostic Imaging Alliance of Louisville for diagnostic imaging.\n\nInsurance coverage has been confirmed as well. PIP is with State Farm (Claim #17-88V4-53C) and BI is with State Farm (Claim #17-88T6-48L). The adjuster is Leslie Simon, and letters of representation were sent on 8/14/2025.\n\nCase status observations note that the client completed treatment, and the phase was updated to \u201cDemand in Progress\u201d on 10/23/2025. Medical records were requested from all four providers on 10/29\u201310/30/2025. The most recent PIP ledger is dated 11/19/2025. A disengagement letter image was found in the files, which may indicate a change in case status. Vehicle ownership is attributed to Vicky Henley, the client\u2019s grandmother, who has a separate State Farm claim for property damage.\n\nResult: The case file is now organized using the proper eight-bucket structure and standardized naming conventions, with files categorized by provider and claim type for easy retrieval in support of demand preparation. Quality metrics are strong: 100% initial accuracy, 100% duplicate detection accuracy, and 0% error rate.",
+      "valid_at": "2025-11-30T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Crowdus",
+            "relevance": "client and subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "emergency transport on 2025-08-10"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Hospital",
+            "relevance": "emergency room treatment on 2025-08-10"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Aptiva Health",
+            "relevance": "follow-up office visits / outpatient care"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "chiropractic treatment provider"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Diagnostic Imaging Alliance of Louisville",
+            "relevance": "diagnostic imaging provider"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer for both PIP and BI claims"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #17-88V4-53C",
+            "relevance": "personal injury protection claim for the client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI #17-88T6-48L",
+            "relevance": "bodily injury claim for the client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Leslie Simon",
+            "relevance": "assigned State Farm adjuster"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

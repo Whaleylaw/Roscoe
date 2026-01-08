@@ -1,0 +1,244 @@
+{
+  "case_name": "Daquan-Locke-MVA-6-11-2024",
+  "total_episodes": 11,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-10-01",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\nsent intake docs via vinesign",
+      "natural_language": "On June 11, 2024, the case Daquan-Locke-MVA-6-11-2024 was opened for client Daquan Locke. Intake documents were sent via VineSign.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "client for case"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "platform used to send intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-01",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\nA missed call for aaron whaley was logged at 2025-10-01 15:52:03.964000+00:00 . #missedcall\n\nCaller Info: 5025005824 \n\nCaller ID: 502-500-5824 \n\nCaller Name: Daquan Locke \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "This case, Daquan-Locke-MVA-6-11-2024, involves client Daquan Locke. A missed call for Aaron Whaley was logged on 2025-10-01 at 15:52:03.964000+00:00, tagged as #missedcall.\n\nCaller information lists the phone number 502-500-5824 (5025005824) and the caller name Daquan Locke; no email address is on file. A link to the corresponding Filevine contact is available here: [filevine-link]. The Voicemail Transcription field is empty, with no transcription provided.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "case client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-10-01",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=68d3ea80-e01f-46ec-af87-1921a8417001.pdf\nSigned: 2025-10-01 18:53:39\nAll signers: Daquan Locke((502) 500-5824)\nSender: Justin Chumbley",
+      "natural_language": "Case: Daquan-Locke-MVA-6-11-2024 involves client Daquan Locke in a motor vehicle accident matter. An intake document labeled \"intake\" was completed via VineSign.\n\nThe signed intake document is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=68d3ea80-e01f-46ec-af87-1921a8417001.pdf and was signed on 2025-10-01 18:53:39. The signers listed for this document include Daquan Locke, whose contact phone number is (502) 500-5824. The document was sent by Justin Chumbley.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "client and signatory on intake"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "e-signature platform used to complete intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-01",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\n__CLIENT CONTACT__\n__Details:__ spoke with client synergy is only treatment, sent contract. companion to Teja Key \n__Person Making Contact:__ Justin\n__Date & Time__: October 01 2025",
+      "natural_language": "Initial client contact for case Daquan-Locke-MVA-6-11-2024 on October 1, 2025, with Daquan Locke. The contact was made by Justin. Details: spoke with client synergy is only treatment, sent contract. companion to Teja Key.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "client contacted (initial intake)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Synergy",
+            "relevance": "treatment provider (only treatment mentioned)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-13",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\nA missed call for aaron whaley was logged at 2025-10-13 16:04:11.697000+00:00 . #missedcall\n\nCaller Info: 5025005824 \n\nCaller ID: 502-500-5824 \n\nCaller Name: Daquan Locke \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Yes, my name is Aaron. I was calling to see if I can get it updated on on on my K is doing on you going to call back at 5 0250 0582 4500 5824.",
+      "natural_language": "In the Daquan-Locke-MVA-6-11-2024 case file for client Daquan Locke, a missed call for aaron whaley was logged on October 13, 2025 at 16:04:11.697000+00:00 (UTC). The event is tagged with #missedcall.\n\nCaller information shows the call originated from 5025005824, with a caller ID of 502-500-5824. The caller name is listed as Daquan Locke, and no caller email is on file. A link to the Filevine contact is [filevine-link].\n\nVoicemail transcription: “Yes, my name is Aaron. I was calling to see if I can get it updated on on on my K is doing on you going to call back at 5 0250 0582 4500 5824.”",
+      "valid_at": "2025-10-13T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "case client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Fuel Digital RingCentral Integration Service Account - 2025-10-14",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\nA missed call for aaron whaley was logged at 2025-10-14 17:09:04.169000+00:00 . #missedcall\n\nCaller Info: 5025005824 \n\nCaller ID: 502-500-5824 \n\nCaller Name: Daquan Locke \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Yes, my name is Aaron Walk. I was calling to try to get it update because I have reached out multiple times and no 1 has called me back or give me any update. The last call I got a guy told me that he would give me an update, but I still get to get a phone call back. Please give me a phone call back at 502-500-5824, thank you very much.",
+      "natural_language": "Case Daquan-Locke-MVA-6-11-2024 involves client Daquan Locke. A missed call for Aaron Whaley was logged on 2025-10-14 17:09:04.169000+00:00, tagged as #missedcall. The caller information shows the number 502-500-5824, with the caller name listed as Daquan Locke and no email address on file. A Filevine contact link is available here: [filevine-link].\n\nVoicemail transcription reads: \"Yes, my name is Aaron Walk. I was calling to try to get it update because I have reached out multiple times and no 1 has called me back or give me any update. The last call I got a guy told me that he would give me an update, but I still get to get a phone call back. Please give me a phone call back at 502-500-5824, thank you very much.\" This indicates the caller identified as Aaron Walk and requested an update after multiple attempts, noting that a prior caller promised an update but no callback was received, and requesting a return call at the same number.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Fuel Digital RingCentral Integration Service Account",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "case client and named caller in call log"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-15",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\n__CLIENT CONTACT__\n__Details:__ updated client \n__Person Making Contact:__ Justin\n__Date & Time__: October 15 2025",
+      "natural_language": "Case Daquan-Locke-MVA-6-11-2024 involves client Daquan Locke. On October 15 2025, Justin made a client contact, and the Details field reads \"updated client.\"",
+      "valid_at": "2025-10-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "client contacted / subject of entry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-23",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\n__Daquan Locke__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Daquan Locke - Filevine Project Email Address [DaquanLockeMVAZ5161382@louisvilleaccidentlawyer.filevineapp.com](mailto:DaquanLockeMVAZ5161382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Oct 23 2025 02:34:56 GMT-04:00\n\nYou sent the demand to Progressive, Dayquan was in the car with Tasia Key,\nbut Tasia Key was at fault. So we got settlements for everybody else\nagainst Shelter, which is Tasia Key's coverage. So you need to add the\nclaim information for Shelter that's in the other ones, and then send the\ndemand to Shelter, because that's the real B.I.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Daquan-Locke-MVA-6-11-2024. Client: Daquan Locke.\n\nIn an email corresponding to this case, dated October 23, 2025 at 02:34:56 GMT-04:00, from Aaron Whaley of Whaley Law Firm, the message was sent to Justin Chumbley and the Daquan Locke Filevine project email address. The email states that the demand had been sent to Progressive, and that Daquan Locke was in the car with Tasia Key, but Tasia Key was at fault. As a result, settlements were obtained for everybody else against Shelter, which is Tasia Key’s insurance coverage. The writer instructs that the claim information for Shelter, which is present in the other files, needs to be added, and then the demand should be sent to Shelter because that is the real B.I.\n\nThe signature block identifies the sender as Aaron Whaley of the Whaley Law Firm, including the firm’s address at 712 Lyndon Ln, Louisville, KY 40222, and the contact number 502-583-4022.",
+      "valid_at": "2025-10-23T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "client/claimant"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "sender of email/attorney for client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "demand was sent to this insurer"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Shelter Insurance",
+            "relevance": "at-fault driver's insurer; settlements obtained against Shelter; target for demand"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Tasia Key",
+            "relevance": "at-fault driver"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "B.I. claim against Shelter",
+            "relevance": "primary bodily injury claim to be sent to Shelter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-27",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\n__CLIENT CONTACT__\n__Details:__ updated client. \n__Person Making Contact:__ Justin\n__Date & Time__: October 27 2025",
+      "natural_language": "Case Daquan-Locke-MVA-6-11-2024 involves client Daquan Locke. The initial client contact occurred on October 27, 2025. The contact record indicates that the client information was updated, and the person making contact was Justin.",
+      "valid_at": "2025-10-27T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-14",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\n__CLIENT CONTACT__\n__Details:__ updated client on offer, obtained authority to negotiate to LBF \n__Person Making Contact:__ Justin\n__Date & Time__: November 14 2025",
+      "natural_language": "Case Daquan-Locke-MVA-6-11-2024 involves client Daquan Locke. On November 14, 2025, Justin contacted Daquan Locke to update him on the offer and to obtain his authority to negotiate to LBF.",
+      "valid_at": "2025-11-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "client subject of contact"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "LBF",
+            "relevance": "negotiation target; authority requested to negotiate to LBF"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-19",
+      "original_body": "Case: Daquan-Locke-MVA-6-11-2024\nClient: Daquan Locke\n\n__CLIENT CONTACT__\n__Details:__ 502-445-5006 is the updated number to call client at. \n__Person Making Contact:__ Justin\n__Date & Time__: November 19 2025",
+      "natural_language": "Initial client contact on November 19, 2025, by Justin, regarding the motor vehicle accident case Daquan-Locke-MVA-6-11-2024 for Daquan Locke.\n\nThe updated contact number to call the client at is 502-445-5006.",
+      "valid_at": "2025-11-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Daquan Locke",
+            "relevance": "client contacted; updated phone number provided (502-445-5006)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

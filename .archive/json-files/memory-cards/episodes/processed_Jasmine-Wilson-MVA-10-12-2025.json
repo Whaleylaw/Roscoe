@@ -1,0 +1,206 @@
+{
+  "case_name": "Jasmine-Wilson-MVA-10-12-2025",
+  "total_episodes": 8,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-10-14",
+      "original_body": "Case: Jasmine-Wilson-MVA-10-12-2025\nClient: Jasmine Wilson\n\nsent intake docs via vinesign",
+      "natural_language": "Jasmine Wilson is the client in the Jasmine-Wilson-MVA-10-12-2025 case, which pertains to a motor vehicle accident. Intake documents were sent to her via vinesign.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Vinesign",
+            "relevance": "platform used to send intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-14",
+      "original_body": "Case: Jasmine-Wilson-MVA-10-12-2025\nClient: Jasmine Wilson\n\n__CLIENT CONTACT__\n__Details:__ Report Number \nDOA 10/12/25\n\nLMPD\n25121081\n\nJasmine Wilson\nDOB 5/10/1991\nSSN: 406-41-7125\nPh: 502-792-4566\n\nAddress\n9406 Doral Ct\nApt 4\nLouisville, kY 40220\n\nWilsonjasmine5101991@gmail.com\nPIP \u2013 Progressive\n\nLeaving church on outer loop near dairy queen, when someone was waived into traffic and didn\u2019t\u2019 see client in second lane\n\nInjuries, back pain, some bruising\n\nNo EMS\nAudubon Hospital \n__Person Making Contact:__ Justin\n__Date & Time__: October 14 2025",
+      "natural_language": "Initial client contact on October 14, 2025 with Justin regarding a motor vehicle accident involving Jasmine Wilson. Client details: Jasmine Wilson, DOB 5/10/1991, SSN 406-41-7125, phone 502-792-4566, address 9406 Doral Ct, Apt 4, Louisville, kY 40220, email Wilsonjasmine5101991@gmail.com, PIP \u2013 Progressive. Case: Jasmine-Wilson-MVA-10-12-2025; LMPD 25121081; DOA 10/12/25.\n\nThe incident occurred on 10/12/25 when Jasmine Wilson was leaving church on the outer loop near a Dairy Queen; someone was waived into traffic and didn\u2019t\u2019 see client in second lane. Injuries reported include back pain and some bruising. There was no EMS involvement. Audubon Hospital is noted in the record as the facility. This contact was made by Justin on October 14, 2025.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive",
+            "relevance": "PIP insurer listed"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP - Progressive",
+            "relevance": "insurance coverage type noted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Audubon Hospital",
+            "relevance": "facility noted in record"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-14",
+      "original_body": "Case: Jasmine-Wilson-MVA-10-12-2025\nClient: Jasmine Wilson\n\nIt's Justin from the Whaley Law Firm. This is the text only number for your file. My direct line is 502-357-9603. Call me anytime",
+      "natural_language": "Case Jasmine-Wilson-MVA-10-12-2025 involves the client Jasmine Wilson. The initial client contact occurred on 10-12-2025 regarding a motor vehicle accident.\n\nJustin from the Whaley Law Firm introduced himself and stated, \"This is the text-only number for your file.\" He provided his direct line, 502-357-9603, and invited Jasmine to call him anytime.",
+      "valid_at": "2025-10-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "client; subject of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin",
+            "relevance": "introduced himself and provided direct contact number for the file"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm associated with attorney on the file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-16",
+      "original_body": "Case: Jasmine-Wilson-MVA-10-12-2025\nClient: Jasmine Wilson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, she returned her intake docs and will be making an apt with her PCP. Will send us info once scheduled. will be completing her mothers intake docs today as well \n__Person Making Contact:__ Justin\n__Date & Time__: October 16 2025",
+      "natural_language": "Initial client contact on October 16, 2025 with Jasmine Wilson regarding a motor vehicle accident. The contact was made by Justin.\n\nJasmine reported that she has returned her intake documents and will be scheduling an appointment with her primary care physician. She will send us the information once the appointment is scheduled, and she will be completing her mother's intake documents today as well.",
+      "valid_at": "2025-10-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-10-16",
+      "original_body": "Case: Jasmine-Wilson-MVA-10-12-2025\nClient: Jasmine Wilson\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=064bb76b-643a-416b-a48c-425e5ca67521.pdf\nSigned: 2025-10-16 12:10:48\nAll signers: Jasmine Wilson(wilsonjasmine5101991@gmail.com (502) 792-4566)\nSender: Justin Chumbley",
+      "natural_language": "Case Jasmine-Wilson-MVA-10-12-2025 involves client Jasmine Wilson.\n\nThe intake document for this case was completed via VineSign. The signed intake form can be accessed at https://app.vinesign.com/Jobs/Pdf?pdfKey=064bb76b-643a-416b-a48c-425e5ca67521.pdf. The document was signed on October 16, 2025 at 12:10:48. All signers on the document were Jasmine Wilson, whose contact details are wilsonjasmine5101991@gmail.com and (502) 792-4566. The sender of the document was Justin Chumbley.",
+      "valid_at": "2025-10-16T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "case client; signer of intake form"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "platform used to sign and host intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-16",
+      "original_body": "Case: Jasmine-Wilson-MVA-10-12-2025\nClient: Jasmine Wilson\n\nGood morning, It's Justin from the Whaley Law Firm. Following up on intake packet that was text to you. I'll need those back in order to move forward with your claims. If you need me to resend them, just let me know",
+      "natural_language": "Initial client contact on October 12, 2025, with Jasmine Wilson regarding a motor vehicle accident. This morning, Justin from the Whaley Law Firm followed up with Jasmine about the intake packet that had been texted to her; he stated that he would need those documents returned in order to move forward with her claims and offered to resend them if she needed.",
+      "valid_at": "2025-10-16T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "follow-up and sender of intake packet"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-07",
+      "original_body": "Case: Jasmine-Wilson-MVA-10-12-2025\nClient: Jasmine Wilson\n\n__New Insurance Note:__ UIM coverage is available. 25/50.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Jasmine-Wilson-MVA-10-12-2025 involves client Jasmine Wilson. A new insurance note indicates that UIM coverage is available, with limits of 25/50.\n\nThe insurance type is Personal Injury Protection (PIP), and the insurer is Progressive Insurance Company. The note was written by Justin Chumbley.",
+      "valid_at": "2025-11-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer on file"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "insurance type (Personal Injury Protection)"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM coverage (25/50)",
+            "relevance": "coverage available"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-20",
+      "original_body": "Case: Jasmine-Wilson-MVA-10-12-2025\nClient: Jasmine Wilson\n\n__Text Message__\n__Message:__ Jessica Giesel she is a PA that's who she seen today.\n__Date and Time:__ 2025-11-20 \n__From Number:__ +15027924566 \n__To Number:__ +15023579939\n__Direction:__ Inbound",
+      "natural_language": "Case Jasmine-Wilson-MVA-10-12-2025 involves client Jasmine Wilson. The initial client contact occurred on November 20, 2025 in relation to her motor vehicle accident case.\n\nThe contact was an inbound text message sent from +15027924566 to +15023579939. The message states that Jessica Giesel, who is a physician assistant, is the person who was seen today.",
+      "valid_at": "2025-11-20T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Jasmine Wilson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Jessica Giesel",
+            "relevance": "provider seen (physician assistant)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1738 @@
+{
+  "case_name": "Samuel-Clites-MVA-4-23-2024",
+  "total_episodes": 75,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__CLIENT CONTACT__\n__Details:__ PIP State Farm Claim # 1766P145F\n\nBI State Farm\n\n4/23/24\nLyndon PD\n\nDOB 9/15/1967\nSSN 400-17-4032\nHealth insurance - State Retirement Insurance Anthem BC/BS\n\nHas rib pain left side of sternum. Some on right side as well. \n__Person Making Contact:__ Justin\n__Date & Time__: April 25 2024",
+      "natural_language": "Initial client contact on April 25, 2024, with Justin regarding Samuel Clites\u2019 motor vehicle accident case (Samuel-Clites-MVA-4-23-2024). The inquiry concerns the PIP State Farm Claim #1766P145F and the BI State Farm claim with State Farm. The incident occurred on April 23, 2024, and Lyndon Police Department (Lyndon PD) was involved.\n\nClient details include Samuel Clites, born September 15, 1967, with SSN 400-17-4032. Health insurance is listed as State Retirement Insurance Anthem BC/BS. \n\nThe client reports rib pain located on the left side near the sternum, with some pain also on the right side. The person making contact was Justin, and the contact date and time was April 25, 2024.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "injured party / client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "insurer for PIP and BI claims"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP #1766P145F",
+            "relevance": "PIP claim discussed"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI claim (State Farm)",
+            "relevance": "bodily injury claim discussed"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Retirement Insurance Anthem BC/BS",
+            "relevance": "client's health insurer"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites. On April 23, 2024, Samuel Clites was contacted to provide an update on the matter related to the motor vehicle accident. The contact was documented as an update and tagged with the reference #cc.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "person contacted/subject of update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n#vinesign-completed\nName: Intake documents\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=ebfa7268-051c-42df-bfb6-a6e80abe4434.pdf\nSigned: 2024-04-25 19:18:22\nAll signers: Samuel Clites ((502) 416-4006)\nSender: Justin Chumbley",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites. The intake documents, titled \u201cIntake documents,\u201d were completed and signed through VineSign. The signed document can be viewed at https://app.vinesign.com/Jobs/Pdf?pdfKey=ebfa7268-051c-42df-bfb6-a6e80abe4434.pdf and the signing occurred on April 25, 2024 at 19:18:22. The signer was Samuel Clites, with telephone number (502) 416-4006. The sender of the document for signature was Justin Chumbley.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client; signer of intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nSend photos of health insurance cards and damage to vehicle here",
+      "natural_language": "This case file, Samuel-Clites-MVA-4-23-2024, concerns client Samuel Clites in a motor vehicle accident that occurred on April 23, 2024. The client is Samuel Clites.\n\nAs part of the intake process, please send photos of the client's health insurance cards and photos showing the damage to the vehicle here.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case / injured party"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__1766P145F__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com) State Team\nDate: Thu, 25 Apr 2024 15:50:50 -0400\n\nGood day,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites. The note includes the file reference 1766P145F.\n\nOn Thursday, April 25, 2024, at 15:50:50 Eastern Daylight Time (UTC-4), an email was sent from Aries Penaflor at Whaley Law Firm (aries@whaleylawfirm.com) to the State Farm Claims team (statefarmclaims@statefarm.com), specifically the State Team. The message content began with \u201cGood day, Please see attached file.\u201d The email was signed by Aries Paul Pe\u00f1aflor of Whaley Law Firm, listing a phone number of (502)365-5788 and a fax number of (502)364-9363.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "email recipient (claims team)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__1766M491S__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com) State Team\nDate: Thu, 25 Apr 2024 15:51:54 -0400\n\nGood day,\n\nPlease see attached file.\n\n--\nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "In Case Samuel-Clites-MVA-4-23-2024, the client is Samuel Clites. An email was sent on April 25, 2024, at 3:51:54 PM Eastern Daylight Time (UTC-4) from Aries Penaflor of Whaley Law Firm to the State Farm Claims State Team at statefarmclaims@statefarm.com. The message carries the internal reference 1766M491S and begins with, \u201cGood day, Please see attached file.\u201d\n\nThe email was signed by Aries Paul Pe\u00f1aflor of Whaley Law Firm, whose contact details are Ph: (502) 365-5788 and Fax: (502) 364-9363, and the message originates from aries@whaleylawfirm.com. The header lists the sender as Aries Penaflor, while the signature block identifies the sender as Aries Paul Pe\u00f1aflor.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client named in case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "employer/firm of the sender"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Claims State Team",
+            "relevance": "recipient of email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nA call from Aries Penaflor was logged at 2024-04-25 19:55:02.336000+00:00 . #outboundcall\n\nCaller Info: 5024164006 \n\nCaller ID: 502-416-4006 \n\nCaller Name: Samuel Clites \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites. On April 25, 2024, at 19:55:02.336000+00:00, Aries Penaflor logged an outbound call. The record lists the caller information as 5024164006, with a caller ID of 502-416-4006, and the caller name Samuel Clites. The Caller Email field is blank. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__CLIENT CONTACT__\n__Details:__ Spoke to client. Was able to get the health insurance info and email. He said that he's waiting for the doctors advise if he needs visit ER first. \n__Person Making Contact:__ Aries\n__Date & Time__: April 25 2024",
+      "natural_language": "Initial client contact on April 25, 2024, with Samuel Clites regarding motor vehicle accident in reference to case Samuel-Clites-MVA-4-23-2024. The contact was made by Aries. During the call, the client reported that we were able to obtain his health insurance info and email. He indicated that he is waiting for the doctor's advice on whether he should visit the ER first.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client who was contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nClient Contacted today to give update #cc",
+      "natural_language": "Samuel Clites is the client in the motor vehicle accident case identified as Samuel-Clites-MVA-4-23-2024.\n\nToday, the client contacted us to give update #cc.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client; contacted us"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ saminal@twc.com\n__Date and Time:__ 2024-04-25 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on April 25, 2024 with Samuel Clites regarding a motor vehicle accident associated with case Samuel-Clites-MVA-4-23-2024.\n\nA text message was received as part of this contact. The inbound message was sent on April 25, 2024 from +15024164006 to +15023655788 and contained the email address saminal@twc.com.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-25",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-04-25 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites. The initial client contact occurred on April 25, 2024, via a text message and is recorded as inbound. The message was sent from +15024164006 to +15023655788, and the body of the text message is not provided in the note.",
+      "valid_at": "2024-04-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case / inbound contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-04-26",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Fwd: 17-66P1-45F__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com](mailto:SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com) Samuel Clites - Filevine Project Email Address\nDate: Fri, 26 Apr 2024 08:36:39 -0400\n\n---------- Forwarded message ---------\nFrom: AutoMedicalClaims@StateFarm.com \nDate: Fri, Apr 26, 2024 at 8:19?AM\nSubject: 17-66P1-45F\nTo: aries@whaleylawfirm.com \n\nPlease be advised of your client\u2019s PIP limit and advise if you want to\nchange your PIP payment directions.\n\nPIP MPC A2 T1\n\nstatefarm.com\u00ae\n\n------------------------------\n\nPlease open the attachment(s) for more claim information or next steps.\n\nFor your protection, please do not include sensitive personal information\nsuch as Social Security Number, credit/debit card number (financial account\nnumber), driver\u2019s license number, or health/medical information in an\nemail. If you must send this type of information to State Farm, please\ncontact your claim associate to request a secure email channel.\n\n------------------------------\n\nDon't miss a call about your Auto claim from State Farm\u00ae!\nText AUTO to 62789 for your claim contact card or download\n it from your mobile device.\n\nDon't miss a call about your Homeowners claim from State Farm\u00ae!\n\nText HOME to 62789 for your claim contact card or download\n it from your mobile device.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024. Client: Samuel Clites.\n\nOn April 26, 2024, a forwarding email was sent from Aries Penaflor of Whaley Law Firm (aries@whaleylawfirm.com) to Samuel Clites at his Filevine project email address, with the forward subject line Fwd: 17-66P1-45F and timestamped 08:36:39 -0400. The forwarded message itself originated from AutoMedicalClaims@StateFarm.com and was sent on Friday, April 26, 2024, at approximately 8:19 AM, with the subject 17-66P1-45F, addressed to aries@whaleylawfirm.com.\n\nThe State Farm email advised to be aware of the client\u2019s PIP limit and asked whether the recipient wished to change the PIP payment directions. It included the line \u201cPIP MPC A2 T1\u201d and the note \u201cstatefarm.com.\u201d The message instructed the recipient to \u201cPlease open the attachment(s) for more claim information or next steps.\u201d It also provided a protective instruction: \u201cFor your protection, please do not include sensitive personal information such as Social Security Number, credit/debit card number (financial account number), driver\u2019s license number, or health/medical information in an email. If you must send this type of information to State Farm, please contact your claim associate to request a secure email channel.\u201d\n\nAdditionally, the email contained reminders about contact methods: \u201cDon\u2019t miss a call about your Auto claim from State Farm\u00ae! Text AUTO to 62789 for your claim contact card or download it from your mobile device,\u201d and, similarly, \u201cDon\u2019t miss a call about your Homeowners claim from State Farm\u00ae! Text HOME to 62789 for your claim contact card or download it from your mobile device.\u201d The message was signed, \u201cAll the best, Aries Paul Pe\u00f1aflor, Whaley Law Firm,\u201d with the firm\u2019s contact details: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-04-26T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client and recipient of forwarded email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm handling the client's matter; sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "Whaley Law Firm contact who forwarded the State Farm message"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "originator of the emailed claim information"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP 17-66P1-45F",
+            "relevance": "claim referenced regarding PIP limit and payment directions"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-04-26",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Fwd: 17-66M4-91S__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com](mailto:SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com) Samuel Clites - Filevine Project Email Address\nDate: Fri, 26 Apr 2024 10:14:09 -0400\n\n---------- Forwarded message ---------\nFrom: HOME CLMS-STATEFARMCLAIMS \nDate: Fri, Apr 26, 2024 at 9:18?AM\nSubject: 17-66M4-91S\nTo: aries@whaleylawfirm.com \n\nstatefarm.com\u00ae\n\n________________________________\n\nPlease open the attachment(s) for more claim information or next steps.\n\nFor your protection, please do not include sensitive personal\ninformation such as Social Security Number, credit/debit card number\n(financial account number), driver\u2019s license number, or health/medical\ninformation in an email. If you must send this type of information to\nState Farm, please contact your claim associate to request a secure\nemail channel.\n\n________________________________\n\nDon't miss a call about your Auto claim from State Farm\u00ae!\nText AUTO to 62789 for your claim contact card or download it from\nyour mobile device.\n\nDon't miss a call about your Homeowners claim from State Farm\u00ae!\n\nText HOME to 62789 for your claim contact card or download it from\nyour mobile device.\n\nCalandra Turner\n\nState Farm Injury A2\n\nClaims Specialist\n\n615-692-3880\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024. Client: Samuel Clites.\n\nOn Friday, April 26, 2024, at 10:14:09 a.m. Eastern Time, I forwarded an email to Samuel Clites at his Filevine project email address (SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com) with the subject line Fwd: 17-66M4-91S. The forwarded message originated from HOME CLMS-STATEFARMCLAIMS.\n\nThe original message from State Farm (statefarm.com\u00ae) was dated Friday, April 26, 2024, at approximately 9:18 a.m. and carried the subject 17-66M4-91S. It advised the recipient to open the attachments for more claim information or next steps. For protection, it cautioned not to include sensitive personal information\u2014such as Social Security numbers, credit/debit card numbers (financial account numbers), driver\u2019s license numbers, or health/medical information\u2014in email messages. If such information must be sent to State Farm, it recommended contacting the claim associate to request a secure email channel.\n\nThe State Farm message also provided contact options: don\u2019t miss a call about your auto claim from State Farm by texting AUTO to 62789 to obtain your claim contact card or by downloading it on a mobile device; and don\u2019t miss a call about your homeowners claim by texting HOME to 62789 for the claim contact card or to download it on a mobile device.\n\nThe message was signed by Calandra Turner, State Farm Injury A2 Claims Specialist, 615-692-3880. It was followed by a closing from Aries Paul Pe\u00f1aflor of the Whaley Law Firm, including the firm\u2019s contact information: Ph: (502) 365-5788 and Fax: (502) 364-9363.",
+      "valid_at": "2024-04-26T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "recipient of forwarded email / subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "originator of claim email"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Calandra Turner",
+            "relevance": "State Farm Injury A2 Claims Specialist who signed the message"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Claim 17-66M4-91S",
+            "relevance": "claim referenced in the State Farm email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "closing/sender information (Aries Paul Pe\u00f1aflor)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-26",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ I was treated at Baptist East Hospital ER tonight.\n__Date and Time:__ 2024-04-26 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 \u2013 Initial client contact on April 26, 2024, with Samuel Clites regarding a motor vehicle accident that occurred on April 23, 2024.\n\nAn inbound text message was received on April 26, 2024, from the phone number +1 502-416-4006 to +1 502-365-5788. The message stated: \"I was treated at Baptist East Hospital ER tonight.\"",
+      "valid_at": "2024-04-26T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist East Hospital ER",
+            "relevance": "treatment location mentioned by client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Records and Billing Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [5022534829@rcfax.com](mailto:5022534829@rcfax.com)\nDate: Mon, 29 Apr 2024 09:53:30 -0400\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nOn Monday, April 29, 2024, at 9:53:30 AM Eastern Time, a Records and Billing Request was sent regarding client Samuel Clites in the case Samuel-Clites-MVA-4-23-2024. The message was sent from Aries Penaflor of Whaley Law Firm (aries@whaleylawfirm.com) to the fax address 5022534829@rcfax.com. The transmission pertains to a records and billing request for the client Samuel Clites. The message closed with the signature block: All the best, Aries Paul Pe\u00f1aflor, Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of records and billing request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender of records and billing request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm associated with sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__CLIENT CONTACT__\n__Details:__ Client was checked at Baptist East Hospital ER and is trying to setup an appointment with his personal Dr. \n__Person Making Contact:__ Aries\n__Date & Time__: April 29 2024",
+      "natural_language": "Initial client contact on April 29, 2024 with Aries regarding Samuel Clites in connection with a motor vehicle accident dated April 23, 2024. The case identifier is Samuel-Clites-MVA-4-23-2024. The client was checked at Baptist East Hospital ER and is trying to set up an appointment with his personal doctor.",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client involved in motor vehicle accident"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist East Hospital ER",
+            "relevance": "ER where client was checked"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nClient Contacted today to give update #cc",
+      "natural_language": "On April 23, 2024, Samuel Clites was contacted to provide an update in the Samuel-Clites-MVA-4-23-2024 motor vehicle accident case. This update is noted as #cc.",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "person contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ I tried to get ahold of my Dr but was unsuccessful. The office worker told me that they usually ask car accident patients to go to the er first. My Dr called me the next morning and said the same thing. The ER said that I should have a follow up with my doctor later. I have not scheduled an appointment yet though.\n__Date and Time:__ 2024-04-29 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on April 29, 2024 with Samuel Clites regarding a motor vehicle accident.\n\nAn inbound text message was received on April 29, 2024 from +15024164006 ( Samuel Clites) to +15023655788. In the message, Samuel says, \"I tried to get ahold of my Dr but was unsuccessful. The office worker told me that they usually ask car accident patients to go to the er first. My Dr called me the next morning and said the same thing. The ER said that I should have a follow up with my doctor later. I have not scheduled an appointment yet though.\" He notes that the doctor and the ER both advised follow-up with his doctor later, and that he has not scheduled an appointment yet.",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client / subject of contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Emergency Room",
+            "relevance": "advised follow-up with treating doctor"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Samuel's treating doctor (unspecified)",
+            "relevance": "advised follow-up; patient has not scheduled appointment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ No more scheduled check up or anything? We\n__Date and Time:__ 2024-04-29 \n__From Number:__ +15023655788 \n__To Number:__ +15024164006\n__Direction:__ Outbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites. On April 29, 2024, an outbound text message was sent from the number +15023655788 to the number +15024164006, with the content: \"No more scheduled check up or anything? We.\"",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ I was treated at the emergency room on Thursday\n__Date and Time:__ 2024-04-29 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on April 29, 2024, with Samuel Clites regarding a motor vehicle accident (Case: Samuel-Clites-MVA-4-23-2024).\n\nAn inbound text message was received on 2024-04-29 from +15024164006 to +15023655788. The message read: \"I was treated at the emergency room on Thursday.\"",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "initial contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Emergency room",
+            "relevance": "treatment received"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Someone from State Farm contacted me this morning and said that they had been in contact with you all. She was checking on the condition of the vehicle\n__Date and Time:__ 2024-04-29 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024. Initial client contact on April 29, 2024 with Samuel Clites regarding a motor vehicle accident (MVA). The client reports receiving an inbound text message on that date from State Farm, sent from +15024164006 to +15023655788, indicating that someone from State Farm had been in contact with \u201cyou all\u201d and was checking on the condition of the vehicle.\n\nThe message content, as reported by the client, states: \u201cSomeone from State Farm contacted me this morning and said that they had been in contact with you all. She was checking on the condition of the vehicle.\u201d",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "reporting party / initial client contact"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "insurer that sent text checking on vehicle"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ We're you referred to a different clinic?\n__Date and Time:__ 2024-04-29 \n__From Number:__ +15023655788 \n__To Number:__ +15024164006\n__Direction:__ Outbound",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024. Client: Samuel Clites. Initial client contact on April 29, 2024 with Samuel Clites regarding a text message inquiry. An outbound text was sent from +15023655788 to +15024164006, and the message read: \"We're you referred to a different clinic?\"",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Yes, I talked to them earlier. They will communicate with you directly about the property damage claim.\n__Date and Time:__ 2024-04-29 \n__From Number:__ +15023655788 \n__To Number:__ +15024164006\n__Direction:__ Outbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites. On April 29, 2024, an outbound text message was sent from +15023655788 to +15024164006. The message stated: \"Yes, I talked to them earlier. They will communicate with you directly about the property damage claim.\"",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Aight, thank you for the update.\n__Date and Time:__ 2024-04-29 \n__From Number:__ +15023655788 \n__To Number:__ +15024164006\n__Direction:__ Outbound",
+      "natural_language": "This note pertains to the Samuel-Clites-MVA-4-23-2024 matter involving client Samuel Clites, in the motor vehicle accident context. It records an outbound text message exchange: on April 29, 2024, a text message was sent from phone number +15023655788 to phone number +15024164006, with the content: \"Aight, thank you for the update.\"",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client in matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Good morning Samuel, just want to ask if you still have an appointment scheduled with Baptist East Hospital.\n__Date and Time:__ 2024-04-29 \n__From Number:__ +15023655788 \n__To Number:__ +15024164006\n__Direction:__ Outbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024: Initial client contact on April 29, 2024 with Samuel Clites regarding a motor vehicle accident. An outbound text message was sent on April 29, 2024 from +15023655788 to +15024164006 containing the message: \"Good morning Samuel, just want to ask if you still have an appointment scheduled with Baptist East Hospital.\"",
+      "valid_at": "2024-04-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist East Hospital",
+            "relevance": "mentioned appointment location"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-04-30",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__New Insurance Note:__ Anita from Statefarm called asking for update.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Aries \n #Inotes",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites.\n\nA new insurance note was recorded: Anita from Statefarm called asking for an update. The insurance type is Personal Injury Protection (PIP), and the insurance company is State Farm Insurance Company. The note was written by Aries and is filed under #Inotes.",
+      "valid_at": "2024-04-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer on PIP claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Anita (State Farm)",
+            "relevance": "caller/State Farm representative"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "insurance claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-05-07",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Fwd: 17-66P1-45F__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com](mailto:SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com) Samuel Clites - Filevine Project Email Address\nDate: Tue, 7 May 2024 13:02:22 -0400\n\n---------- Forwarded message ---------\nFrom: HOME CLMS-STATEFARMCLAIMS \nDate: Mon, May 6, 2024 at 5:53?PM\nSubject: 17-66P1-45F\nTo: ARIES@WHALEYLAWFIRM.COM \n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024. Client: Samuel Clites.\n\nOn May 7, 2024, at 13:02:22 -0400, Aries Penaflor of Whaley Law Firm forwarded an email titled \u201cFwd: 17-66P1-45F\u201d to Samuel Clites\u2019s Filevine project email address, SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com. The forwarded message originated from HOME CLMS-STATEFARMCLAIMS and was dated May 6, 2024, at 5:53 PM (the record shows \u201c5:53?PM\u201d). The original message was addressed to ARIES@WHALEYLAWFIRM.COM and carried the subject line 17-66P1-45F.\n\nThe forwarded email concludes with \u201cAll the best, Aries Paul Pe\u00f1aflor\u201d and provides Whaley Law Firm contact details: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-05-07T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client; recipient of forwarded email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender/forwarder of the email from Whaley Law Firm"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm of the sender; appears on email signature"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "originator of the original message (HOME CLMS-STATEFARMCLAIMS)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-05-14",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nmailed Bapt Health Recs to JCfor Mr Clites #cc",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 for client Samuel Clites, a motor vehicle accident matter. On April 23, 2024, Bapt Health Recs were mailed to JCfor Mr Clites, #cc.",
+      "valid_at": "2024-05-14T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health",
+            "relevance": "provider of medical records mailed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-05-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Well they are totaling my vehicle. This sucks. My anxiety is through the roof.\n__Date and Time:__ 2024-05-29 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nInitial client contact on May 29, 2024 with Samuel Clites regarding a motor vehicle accident. The contact was an inbound text from +15024164006 to +15023655788. In the message, the client wrote, \"Well they are totaling my vehicle. This sucks. My anxiety is through the roof.\"",
+      "valid_at": "2024-05-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-06-16",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ I just received a bill for my Emergency Room visit on 4/25/2024. It says they billed my health insurance too. I gave the intake person my claim number.\n__Date and Time:__ 2024-06-16 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on June 16, 2024 with Samuel Clites regarding the motor vehicle accident case Samuel-Clites-MVA-4-23-2024. The contact was an inbound text message sent from +15024164006 to +15023655788.\n\nIn the message, Samuel Clites stated: \"I just received a bill for my Emergency Room visit on 4/25/2024. It says they billed my health insurance too. I gave the intake person my claim number.\"",
+      "valid_at": "2024-06-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client who contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Emergency Room",
+            "relevance": "provider that billed for the visit"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Health insurance",
+            "relevance": "was billed for the ER visit"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-06-16",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-06-16 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This case, Samuel-Clites-MVA-4-23-2024, involves client Samuel Clites and relates to a motor vehicle accident dated April 23, 2024, as indicated by the case title.\n\nOn June 16, 2024, an inbound text message was recorded in the Text Message section. The message was sent from +15024164006 to +15023655788, and the Message field contains no content.",
+      "valid_at": "2024-06-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client involved in the motor vehicle accident / case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-06-17",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nMr Clites asked for a return call - regarding he rec'd his ER bill in the mail - wanted to speak with someone regarding procedure for paying ER bill. Please give him a call.\n502-416-4006#cc",
+      "natural_language": "Initial client contact on April 23, 2024, with Samuel Clites regarding a motor vehicle accident. Mr. Clites asked for a return call to discuss the procedure for paying the ER bill he recently received in the mail and to speak with someone about payment options. He can be reached at 502-416-4006#cc; please return his call to discuss the ER billing process.",
+      "valid_at": "2024-06-17T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-06-18",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Thank you for letting us know. That will be taken cared of.\n__Date and Time:__ 2024-06-18 \n__From Number:__ +15023655788 \n__To Number:__ +15024164006\n__Direction:__ Outbound",
+      "natural_language": "This narrative concerns case Samuel-Clites-MVA-4-23-2024 for client Samuel Clites, pertaining to a motor vehicle accident matter. On June 18, 2024, an outbound text message was sent from +15023655788 to +15024164006, directed to Samuel Clites.\n\nThe content of the message read: \"Thank you for letting us know. That will be taken cared of.\"",
+      "valid_at": "2024-06-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "recipient of outbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-06-24",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-06-24 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites. The note documents a text message as the initial contact regarding a motor vehicle accident, with the content of the message not provided in the record.\n\nOn June 24, 2024, an inbound text message was received from the number +15024164006 to the number +15023655788. The record lists the direction as inbound and does not include the message content.",
+      "valid_at": "2024-06-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case; initial contact regarding MVA"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-07-08",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Whaley Law Firm Lien Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [8446342520@rcfax.com](mailto:8446342520@rcfax.com)\nDate: Mon, 8 Jul 2024 04:12:37 -0400\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "This is the Samuel-Clites-MVA-4-23-2024 case for client Samuel Clites. A Whaley Law Firm lien request was prepared and sent on Monday, July 8, 2024, at 04:12:37 -0400. The message originated from Aries Penaflor (aries@whaleylawfirm.com) and was addressed to 8446342520@rcfax.com. The email subject was Whaley Law Firm Lien Request. It closed with \u201cAll the best,\u201d and was signed by Aries Paul Pe\u00f1aflor of the Whaley Law Firm, who can be reached at Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-07-08T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "prepared and sent lien request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender/signer of lien request"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Whaley Law Firm Lien Request",
+            "relevance": "lien request prepared and sent on 07/08/2024"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-07-08",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__1766P145F__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com) State Team\nDate: Mon, 8 Jul 2024 04:15:02 -0400\n\nGood day,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites in a motor vehicle accident that occurred on April 23, 2024. The case file includes an internal tag or identifier reading __1766P145F__.\n\nAn email relevant to the case was sent on Monday, July 8, 2024 at 04:15:02 -0400 from Aries Penaflor of Whaley Law Firm (aries@whaleylawfirm.com) to State Farm Claims State Team (statefarmclaims@statefarm.com). The body of the message simply states, \u201cGood day, Please see attached file.\u201d The email is signed by Aries Paul Pe\u00f1aflor of Whaley Law Firm, with the firm\u2019s contact details listed as Ph: (502)365-5788 and Fax: (502)364-9363, and it closes with \u201cAll the best.\u201d",
+      "valid_at": "2024-07-08T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client involved in MVA case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender of email / attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "email recipient (State Farm Claims State Team)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-07-19",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__New Insurance Note:__ 07/19: No payments made yet. PIP log unavailable.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Aries \n #Inotes",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites following a motor vehicle accident on April 23, 2024. A new insurance note dated July 19 reports that no payments have been made yet and that the PIP log is unavailable. The insurance type for this claim is Personal Injury Protection (PIP), and the insurer is State Farm Insurance Company. The note was written by Aries and entered in Inotes.",
+      "valid_at": "2024-07-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client involved"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer on file"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Personal Injury Protection (PIP) claim",
+            "relevance": "claim discussed in note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-07-24",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-07-24 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "In the case Samuel-Clites-MVA-4-23-2024, the client is Samuel Clites. An inbound text message was logged in this matter on July 24, 2024. \n\nThe message originated from the number +1 502 416 4006 and was sent to +1 502 365 5788. The Message field contains no content, so no text from the sender was recorded in this note.",
+      "valid_at": "2024-07-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Bryce Koon - 2024-07-29",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n@aries1 Need PIP log",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites and relates to a motor vehicle accident. The note directs Aries1 to obtain the PIP log.",
+      "valid_at": "2024-07-29T00:00:00",
+      "author": "Bryce Koon",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "PIP log requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-08-02",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Final Health Lien Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [8446342520@rcfax.com](mailto:8446342520@rcfax.com)\nDate: Fri, 2 Aug 2024 11:05:05 -0400\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "In the case Samuel-Clites-MVA-4-23-2024, involving client Samuel Clites, a Final Health Lien Request was prepared. The message was sent from Aries Penaflor (aries@whaleylawfirm.com) to the fax address 8446342520@rcfax.com on Friday, August 2, 2024 at 11:05:05 a.m. (-0400). The communication was labeled as a Final Health Lien Request.\n\nThe line following the message indicates a closing: All the best, Aries Paul Pe\u00f1aflor, Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "sender of communication"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Final Health Lien Request",
+            "relevance": "document prepared/sent"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-02",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, confirming that he never went to any other hospitals. \n__Person Making Contact:__ Aries\n__Date & Time__: August 02 2024",
+      "natural_language": "Initial client contact on August 2, 2024 with Samuel Clites regarding the Samuel-Clites-MVA-4-23-2024 case. The contact was conducted by Aries, and during the conversation, Clites confirmed that he never went to any other hospitals.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client contacted; confirmed no treatment at other hospitals"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-02",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nClient Contacted today to give update #cc",
+      "natural_language": "On April 23, 2024, initial client contact was made with Samuel Clites regarding a motor vehicle accident in the Samuel-Clites-MVA-4-23-2024 case. The client was contacted today to provide an update, and the update was logged with the tag #cc.",
+      "valid_at": "2024-08-02T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-09",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__New Insurance Note:__ 08/09 No payments made yet.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Aries \n #Inotes",
+      "natural_language": "This case, Samuel-Clites-MVA-4-23-2024, concerns client Samuel Clites in relation to a motor vehicle accident. A new insurance note dated 08/09 indicates that no payments have been made yet. The insurance type is Personal Injury Protection (PIP), provided by State Farm Insurance Company. The note was written by Aries and is categorized under #Inotes.",
+      "valid_at": "2024-08-09T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP carrier"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "insurance claim discussed (no payments made)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-09-10",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nMr Clites came into the office - he was concerned that he was getting a bill for Baptist Hospital - and it was going to collctions. I let him speak with JC - and he is diecting PIP to pay the bill - client was happy to hear#cc",
+      "natural_language": "Initial client contact on April 23, 2024 with Samuel Clites regarding a motor vehicle accident. Mr. Clites came into the office concerned that he was receiving a bill from Baptist Hospital and that the bill was headed to collections. I arranged for him to speak with JC, who is directing Personal Injury Protection (PIP) benefits to pay the Baptist Hospital bill. The client was happy to hear that PIP would pay the bill. The entry ends with the tag \u201c#cc.\u201d",
+      "valid_at": "2024-09-10T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "person contacting office about MVA and bill"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Hospital",
+            "relevance": "billed provider sending collection notice"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP benefits",
+            "relevance": "source of payment arranged for the hospital bill"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-09-10",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Samuel Clites__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5022534829@rcfax.com](mailto:5022534829@rcfax.com)\nCc: Samuel Clites - Filevine Project Email Address [SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com](mailto:SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Sep 10 2024 02:44:09 GMT-04:00\n\nNeed records and bills for 05/16/2024 date of service.\n\nThanks! The Whaley Law Firm",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024. The client in this matter is Samuel Clites.\n\nOn September 10, 2024, at 02:44:09 GMT-04:00, Jessica Bottorff of The Whaley Law Firm sent an email to 5022534829@rcfax.com, with a cc to Samuel Clites - Filevine Project Email Address SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com. The body of the message states: \"Need records and bills for 05/16/2024 date of service.\" The email ends with \"Thanks! The Whaley Law Firm.\"",
+      "valid_at": "2024-09-10T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client; cc recipient"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender firm"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "rcfax.com",
+            "relevance": "email/fax recipient"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-09-17",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n@aries1 Radiology billing has a 2nd date of service on 5/16. need records matching. If this was a second ER visit we will need r/b",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 regarding client Samuel Clites.\n\nAs noted by @aries1, radiology billing shows a second date of service on 5/16, and we need matching records.\n\nIf this was a second ER visit, we will need r/b.",
+      "valid_at": "2024-09-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Radiology (billing)",
+            "relevance": "billing/records discussed (second date of service 5/16)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-24",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nA call from Aries Penaflor was logged at 2024-09-24 14:58:05.569000+00:00 . #outboundcall\n\nCaller Info: 4808699993 \n\nCaller ID: Main:844-292-8615, Main:844-292-8615 \n\nCaller Name: Rebecca Riehl \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites. An outbound call was logged on September 24, 2024 at 14:58:05.569000+00:00, initiated by Aries Penaflor.\n\nThe log lists Rebecca Riehl as the caller, with phone number 480-869-9993. The Caller ID displayed was Main:844-292-8615, Main:844-292-8615. The record shows no caller email. A link to the corresponding Filevine contact is [filevine-link].",
+      "valid_at": "2024-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-24",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Ok, thank you. I appreciate it.\n__Date and Time:__ 2024-09-24 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites in a motor vehicle accident matter. On September 24, 2024, an inbound text message was received from the client\u2019s phone number +1 502 416 4006 to the office number +1 502 365 5788. The content of the message was: \"Ok, thank you. I appreciate it.\"",
+      "valid_at": "2024-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "sender of text message / case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-24",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Is there any update on my case? Thanks for any info you could provide.\n__Date and Time:__ 2024-09-24 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites. On 2024-09-24, an inbound text message was received from +15024164006 addressed to +15023655788. The sender asked, \"Is there any update on my case? Thanks for any info you could provide.\"",
+      "valid_at": "2024-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client and sender of inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-24",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ We are still waiting for the offer.\n__Date and Time:__ 2024-09-24 \n__From Number:__ +15023655788 \n__To Number:__ +15024164006\n__Direction:__ Outbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites.\n\nOn September 24, 2024, an outbound text message was sent from +15023655788 to +15024164006 with the content: \"We are still waiting for the offer.\"",
+      "valid_at": "2024-09-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-07",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n@aries1 Please follow up on health lien",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites in relation to a motor vehicle accident. The note directs @aries1 to follow up on a health lien.",
+      "valid_at": "2024-10-07T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "health lien",
+            "relevance": "follow-up requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-16",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n@aries1 we need the Baptist Health Louisville r/b for DOS 5/16. Same thing for X-ray Associates. we need the 5/16 DOS bill",
+      "natural_language": "Samuel Clites is the client in the motor vehicle accident case Samuel-Clites-MVA-4-23-2024. The record indicates a request to obtain Baptist Health Louisville r/b for DOS 5/16, with the same request extended to X-ray Associates. The file also requires the 5/16 DOS bill.",
+      "valid_at": "2024-10-16T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Louisville",
+            "relevance": "records and bill requested for DOS 5/16"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "X-ray Associates",
+            "relevance": "records requested for DOS 5/16"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-21",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Should I drop this document by the office ?\n__Date and Time:__ 2024-10-21 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on October 21, 2024 for the Samuel-Clites-MVA-4-23-2024 case with Samuel Clites. The contact was an inbound text message from +15024164006 to +15023655788, in which the client asked, \"Should I drop this document by the office ?\" This note records this text-message communication as the initial client contact.",
+      "valid_at": "2024-10-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-21",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2024-10-21 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites. On October 21, 2024, an inbound text message was recorded, sent from +15024164006 to +15023655788. The body of the message is not recorded in this note.",
+      "valid_at": "2024-10-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-21",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Baptist Hospital has turned me over to a debt collection agency.\n__Date and Time:__ 2024-10-21 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "This record concerns the Samuel-Clites-MVA-4-23-2024 case, involving client Samuel Clites.\n\nOn October 21, 2024, an inbound text message was received from +15024164006 to +15023655788. The message stated: \"Baptist Hospital has turned me over to a debt collection agency.\"",
+      "valid_at": "2024-10-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Hospital",
+            "relevance": "mentioned in text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-22",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nA missed call for Aries Penaflor was logged at 2024-10-22 14:39:58.455000+00:00 . #missedcall\n\nCaller Info: 5024164006 \n\nCaller ID: 502-416-4006 \n\nCaller Name: Samuel Clites \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nA missed call for Aries Penaflor was logged on 2024-10-22 at 14:39:58.455000+00:00 (UTC). The call originated from the number 502-416-4006, with caller ID 502-416-4006, and the caller name listed as Samuel Clites. The caller's email address is not provided. A Filevine contact link is available here: [filevine-link]. The Voicemail Transcription field is empty, and no transcription is attached. The entry is tagged #missedcall.",
+      "valid_at": "2024-10-22T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "caller / subject of missed call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-10-22",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nMr Clites said he has received a collection notice from Baptist for his balance of his bill ($1,000+) - he is going to bring a copy of the collection notice to the office today -said he spoke with Aries regarding same issue. #cc",
+      "natural_language": "Initial client contact on April 23, 2024, with Samuel Clites regarding a motor vehicle accident.\n\nMr. Clites stated that he has received a collection notice from Baptist for the balance of his bill, more than $1,000. He said he would bring a copy of the collection notice to the office today. He also reported that he spoke with Aries regarding the same issue.",
+      "valid_at": "2024-10-22T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client/contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist",
+            "relevance": "sent collection notice for medical bill"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-31",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n@aries1 add ER phy and request",
+      "natural_language": "This case, Samuel-Clites-MVA-4-23-2024, involves client Samuel Clites and concerns a motor vehicle accident. The file is dated April 23, 2024.\n\nThe note includes a directive to @aries1: \"add ER phy and request.\" No additional information is present in this entry.",
+      "valid_at": "2024-10-31T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of file"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "ER physician",
+            "relevance": "referenced to be added/requested in note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-11-01",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n@aries1 Please send the Baptist Health Hospital bill to PIP with direction to pay",
+      "natural_language": "The Samuel-Clites-MVA-4-23-2024 case concerns client Samuel Clites.\n\nA directive was issued to @aries1 to send the Baptist Health Hospital bill to PIP with direction to pay.",
+      "valid_at": "2024-11-01T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Hospital",
+            "relevance": "medical provider / sender of bill"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "claim directed to receive and pay the bill"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-11-01",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__1766P145F__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: State Farm PIP Team [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com)\nDate: Fri Nov 01 2024 05:23:25 GMT-04:00\n\nHi,\n\nPlease see attached files.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites. The case file includes the internal reference/line item 1766P145F.\n\nOn Friday, November 1, 2024, at 05:23:25 GMT-04:00, Aries Penaflor (aries@whaleylawfirm.com) sent an email from Whaley Law Firm to the State Farm PIP Team (statefarmclaims@statefarm.com) regarding the Samuel-Clites matter. The body of the message was brief: \u201cHi, Please see attached files.\u201d The email was signed by Aries Paul Pe\u00f1aflor of Whaley Law Firm, with the firm\u2019s contact details: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-11-01T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sent email regarding the matter"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm",
+            "relevance": "recipient insurer"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "State Farm PIP Team",
+            "relevance": "recipient team handling PIP-related correspondence"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm PIP claim",
+            "relevance": "claim area referenced by recipient team"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-06",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Text Message__\n__Message:__ Hi, has the situation with the Collection Agency been resolved? \n__Date and Time:__ 2024-11-05 \n__From Number:__ +15024164006 \n__To Number:__ +15023655788\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on November 5, 2024 in the Samuel-Clites-MVA-4-23-2024 case with Samuel Clites, regarding a text message about a collection agency. The inbound message was sent from +15024164006 to +15023655788 and read: \"Hi, has the situation with the Collection Agency been resolved?\"",
+      "valid_at": "2024-11-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client contact"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Collection Agency",
+            "relevance": "subject referenced in message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-11-06",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__File#: 150632836__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [randy.bass@carelon.com](mailto:randy.bass@carelon.com)\nDate: Wed Nov 06 2024 08:54:17 GMT-05:00\n\nHi Randy,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Pe\u00f1aflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites, with the file identified as 150632836.\n\nOn November 6, 2024, at 08:54:17 GMT-05:00, Aries Penaflor of Whaley Law Firm sent an email from aries@whaleylawfirm.com to Randy Bass at carelon.com. The email stated, \u201cHi Randy, Please see attached file,\u201d and was signed by Aries Paul Pe\u00f1aflor of Whaley Law Firm, who provided the firm\u2019s contact information: Ph: (502) 365-5788 and Fax: (502) 364-9363.",
+      "valid_at": "2024-11-06T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject/client of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Paul Pe\u00f1aflor",
+            "relevance": "email sender/attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Carelon",
+            "relevance": "recipient organization (randy bass@carelon.com)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-13",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client. obtained authority to negotiate to LBF \n__Person Making Contact:__ Justin\n__Date & Time__: November 13 2024",
+      "natural_language": "Initial client contact on November 13, 2024, with Samuel Clites regarding a motor vehicle accident in the Samuel-Clites-MVA-4-23-2024 case. During the contact, Justin spoke with the client and obtained authority to negotiate to LBF.",
+      "valid_at": "2024-11-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-11-13",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns Samuel Clites in a motor vehicle accident matter. The client, Samuel Clites, was contacted today to provide an update, noted as update #cc.",
+      "valid_at": "2024-11-13T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2024-12-04",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Samuel Clites__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Aries Penaflor [Aries@whaleylawfirm.com](mailto:Aries@whaleylawfirm.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com), Samuel Clites - Filevine Project Email Address [SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com](mailto:SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Dec 04 2024 01:56:11 GMT-05:00\n\nWe need a record and was sent to get this a month ago with no action. No\npoint in negotiating if there is another record and bill.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites. On December 4, 2024, at 01:56:11 GMT-05:00, an email was sent from Aaron Whaley of Whaley Law Firm (agwhaley@whaleylawfirm.com) regarding the Samuel Clites matter. The message was addressed to Aries Penaflor (Aries@whaleylawfirm.com), Justin Chumbley (Justin@whaleylawfirm.com), Jessica Bottorff (jessica@whaleylawfirm.com), and Samuel Clites\u2019 Filevine project email address SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com.\n\nThe body of the email reads: \u201cWe need a record and was sent to get this a month ago with no action. No point in negotiating if there is another record and bill.\u201d The email is signed by Aaron Whaley of the Whaley Law Firm, whose contact details are: 712 Lyndon Ln, Louisville, KY 40222; 502-583-4022.",
+      "valid_at": "2024-12-04T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm / firm handling matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender / signatory"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email recipient"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email recipient"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2024-12-04",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Re: Samuel Clites__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nCc: Aries Penaflor [Aries@whaleylawfirm.com](mailto:Aries@whaleylawfirm.com), Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com), Samuel Clites - Filevine Project Email Address [SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com](mailto:SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Dec 04 2024 02:29:03 GMT-05:00\n\nThen we need these removed from the Anthem lien\n\nOn Wed, Dec 4, 2024 at 2:25?PM wrote:\n\n> I\u2019m confused here. Is it the prior records from cardiologist that you\u2019re\n> seeking? I\u2019ve attached the 5/16/24 DOS from Baptist Hospital where client\n> had angiogram that was scheduled on 4/10/24, prior to the accident.\n>\n>\n>\n> Justin Chumbley\n>\n> Whaley Law Firm\n>\n> Ph: (502)583-4022\n>\n> Fax: (502)364-9363\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Wednesday, December 4, 2024 1:56 PM\n> *To:* Aries Penaflor ; Justin Chumbley <\n> Justin@whaleylawfirm.com>; Jessica Bottorff ;\n> Samuel Clites - Filevine Project Email Address <\n> SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* Samuel Clites\n>\n>\n>\n> We need a record and was sent to get this a month ago with no action. No\n> point in negotiating if there is another record and bill.\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n>\n> Louisville, KY 40222\n>\n> 502-583-4022\n>\n>\n>\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024. Client: Samuel Clites. On December 4, 2024, at 2:29:03 PM Eastern Time, Aaron Whaley of Whaley Law Firm sent an email regarding Samuel Clites to Justin Chumbley, with Aries Penaflor, Jessica Bottorff, and Samuel Clites\u2019 Filevine project email address cc\u2019d. The message carried the subject \u201cRe: Samuel Clites\u201d and set in motion a note indicating that certain items should be removed from the Anthem lien.\n\nThe thread begins with a directive to remove items from the Anthem lien, followed by a message sent \u201cOn Wed, Dec 4, 2024 at 2:25?PM,\u201d which asks: \u201cI\u2019m confused here. Is it the prior records from cardiologist that you\u2019re seeking? I\u2019ve attached the 5/16/24 DOS from Baptist Hospital where client had angiogram that was scheduled on 4/10/24, prior to the accident.\u201d The message was sent by Justin Chumbley of the Whaley Law Firm, and his signature included the firm\u2019s contact details: Whaley Law Firm, Ph: (502)583-4022, Fax: (502)364-9363.\n\nEarlier in the day, there was a message from Aaron Whaley dated Wednesday, December 4, 2024 at 1:56 PM, addressed to Aries Penaflor, Justin Chumbley, Jessica Bottorff, and Samuel Clites \u2013 Filevine Project Email Address, with the subject \u201cSamuel Clites.\u201d In that note, Aaron wrote: \u201cWe need a record and was sent to get this a month ago with no action. No point in negotiating if there is another record and bill.\u201d The message was signed with the typical closing information for Aaron Whaley, Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022. The file thread and signatures end with the sign-off line: \u201c-- Aaron Whaley Whaley Law Firm 712 Lyndon Ln Louisville, KY 40222 502-583-4022.\u201d",
+      "valid_at": "2024-12-04T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client and email recipient/subject"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm handling the matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender and attorney handling the file"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email sender/recipient and attorney on the file"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "cc'd recipient on the email thread"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "recipient on the email thread"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Hospital",
+            "relevance": "medical provider referenced (5/16/24 DOS, angiogram)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Anthem",
+            "relevance": "insurer referenced in relation to a lien"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Anthem lien",
+            "relevance": "lien from which items were requested to be removed"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "project email system referenced (Filevine project email address)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-05",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nA call from aaron whaley was logged at 2024-12-05 16:33:25.242000+00:00 . #outboundcall\n\nCaller Info: 6156923880 \n\nCaller ID: 615-692-3880 \n\nCaller Name: Calandra Turner \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024. Client: Samuel Clites. A log entry shows an outbound call on December 5, 2024 at 16:33:25.242000+00:00, identified as #outboundcall, and it was logged by Aaron Whaley.\n\nThe log lists the caller information as follows: Caller Name is Calandra Turner, with Caller Info 6156923880 and Caller ID 615-692-3880. The Caller Email field is blank. A link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-12-11",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nMr Clites brought in a bill he rec'd (twice) from Credit Bureau Systems - he is concerned because he does not want that to impact his credit - as he needs a replacement vehicle. Gave the bill to AGW - he needs to know if this is the hospital bill (does not note on collection notice).\nI called credit bureau - she confirmed it is on behalf of Baptist Health#cc",
+      "natural_language": "Initial client contact on April 23, 2024 with Samuel Clites regarding a billing issue. Mr. Clites brought in a bill he received twice from Credit Bureau Systems and expressed concern that it could impact his credit, as he needs a replacement vehicle. He handed the bill to AGW for review to determine whether it represents a hospital bill, noting that the collection notice did not specify the hospital. I called the credit bureau, and the representative confirmed that the bill is being reported on behalf of Baptist Health, with reference code #cc.",
+      "valid_at": "2024-12-11T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "person who contacted firm about the billing/collection issue"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "AGW",
+            "relevance": "received the bill from the client for review"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Credit Bureau Systems",
+            "relevance": "sent/reported the collection notice and was contacted about the account"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health",
+            "relevance": "identified by credit bureau as the provider on whose behalf the bill is reported"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2024-12-16",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Baptist health bill__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Aries Penaflor [Aries@whaleylawfirm.com](mailto:Aries@whaleylawfirm.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Samuel Clites - Filevine Project Email Address [SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com](mailto:SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Dec 16 2024 12:06:57 GMT-05:00\n\nSee attached bill from Baptist Health. health insurance paid some but the\nbalance needs to go to PIP to pay. Please forward to PIP with a direction\nof payment.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Samuel-Clites-MVA-4-23-2024. The client is Samuel Clites.\n\nOn December 16, 2024, at 12:06:57 PM Eastern, Aaron Whaley of Whaley Law Firm sent an email regarding a Baptist Health bill for the Samuel Clites motor vehicle accident matter. The message was addressed to Aries Penaflor, Justin Chumbley, and Samuel Clites\u2019 Filevine project email address.\n\nIn the body of the email, Whaley wrote: \u201cSee attached bill from Baptist Health. health insurance paid some but the balance needs to go to PIP to pay. Please forward to PIP with a direction of payment.\u201d The email is signed by Aaron Whaley, with the following contact details: Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2024-12-16T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject/client of the matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender/representing client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health",
+            "relevance": "billing provider whose bill is discussed"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "claim requested to pay remaining balance"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2024-12-16",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n__Re: Baptist health bill__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nCc: Aries Penaflor [Aries@whaleylawfirm.com](mailto:Aries@whaleylawfirm.com), Samuel Clites - Filevine Project Email Address [SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com](mailto:SamuelClitesMVAZ4575560@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Dec 16 2024 12:10:22 GMT-05:00\n\nNeed a log showing paid to forward to collections.\n\nOn Mon, Dec 16, 2024 at 12:09?PM wrote:\n\n> Looks like it was previously sent on 11/1/24.\n>\n>\n>\n> Aries,\n>\n>\n>\n> Resend, then call PIP and ask what the issue is, if any.\n>\n>\n>\n> Justin Chumbley\n>\n> Whaley Law Firm\n>\n> Ph: (502)583-4022\n>\n> Fax: (502)364-9363\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Monday, December 16, 2024 12:07 PM\n> *To:* Aries Penaflor ; Justin Chumbley <\n> Justin@whaleylawfirm.com>; Samuel Clites - Filevine Project Email Address\n> \n> *Subject:* Baptist health bill\n>\n>\n>\n> See attached bill from Baptist Health. health insurance paid some but the\n> balance needs to go to PIP to pay. Please forward to PIP with a direction\n> of payment.\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n>\n> Louisville, KY 40222\n>\n> 502-583-4022\n>\n>\n>\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "In the Samuel-Clites-MVA-4-23-2024 case for client Samuel Clites, the team was addressing the Baptist Health bill. On December 16, 2024, at 12:10 PM, Aaron Whaley of Whaley Law Firm sent an email to Justin Chumbley and copied Aries Penaflor and Samuel Clites\u2019 Filevine project address. The message requested a log showing payments made so far so the balance could be forwarded to collections.\n\nEarlier that same day, around 12:09 PM, a reply noted that the Baptist Health bill had apparently been previously sent on November 1, 2024. In that thread, Aries Penaflor was instructed to resend the bill and then call PIP to ask what the issue was, if any.\n\nIn the body of Aaron Whaley\u2019s December 16 message (sent at 12:07 PM to Aries Penaflor, Justin Chumbley, and the Samuel Clites Filevine address), he referenced the attached Baptist Health bill and stated that health insurance had paid some of it but the remaining balance needed to be paid by PIP. He asked that the bill be forwarded to PIP with a direction of payment. The message included contact details for Aaron Whaley at the Whaley Law Firm, including the firm\u2019s address (712 Lyndon Ln, Louisville, KY 40222) and phone number (502-583-4022).",
+      "valid_at": "2024-12-16T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health",
+            "relevance": "medical provider whose bill is discussed"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney who sent emails requesting payment and forwarding to PIP"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm of the sending attorney"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "claim that is being asked to pay the remaining balance"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-12-31",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nNO PAYMENTS MADE TO DATE BY PIP",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 involves client Samuel Clites in connection with a motor vehicle accident that occurred on April 23, 2024. To date, no payments have been made by PIP.",
+      "valid_at": "2024-12-31T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "client involved in motor vehicle accident"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "no payments have been made by PIP"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-01-24",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nPrompt Builder: Summarize the overall case in the last 30 days, for project Samuel Clites MVA 4/23/2024\nThis case appears to involve a Personal Injury Protection (PIP) claim where payments have not been made to date. The specific details of the accident or injuries are not provided in the available data.The most recent activity indicates that no payments have been made by PIP as of the last update. (See details)The lack of PIP payments is a significant red flag that could potentially impact the client's ability to cover medical expenses or other costs related to the incident. (See details)The next recommended step would be to follow up with the PIP provider to determine the reason for the delay in payments and to take appropriate action to expedite the process. (See details)#Summary",
+      "natural_language": "The Samuel-Clites-MVA-4-23-2024 case involves client Samuel Clites in a Personal Injury Protection (PIP) claim, with payments not issued to date. The available data do not include the specific details of the accident or injuries. The most recent activity indicates that no PIP payments have been made as of the last update.\n\nThe lack of PIP payments is a significant red flag that could impact the client's ability to cover medical expenses or other costs related to the incident. The next recommended step is to follow up with the PIP provider to determine the reason for the delay in payments and to take appropriate action to expedite the process.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim (Samuel Clites)",
+            "relevance": "claim discussed; no PIP payments issued"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-26",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nAll documents moved to GDrive.",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites. All documents for the case have been moved to Google Drive (GDrive).",
+      "valid_at": "2025-03-26T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-04-21",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\n@aries1 Send health lien to PIP to process. If Louisville Emergency Medicine is NOT on the health lien, direct PIP to process that bill as well. Thanks",
+      "natural_language": "Case Samuel-Clites-MVA-4-23-2024 concerns client Samuel Clites. A directive is issued to Aries1 to send the health lien to PIP for processing. If Louisville Emergency Medicine is not listed on the health lien, direct PIP to process that bill as well. Thanks.",
+      "valid_at": "2025-04-21T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Aries1",
+            "relevance": "directed to send the health lien"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP",
+            "relevance": "claim/processor to receive and process the health lien and bill"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Emergency Medicine",
+            "relevance": "provider whose bill may need processing"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "health lien",
+            "relevance": "document to be sent to PIP for processing"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2025-07-08",
+      "original_body": "Case: Samuel-Clites-MVA-4-23-2024\nClient: Samuel Clites\n\nMr Clites came in to ask what status his case is - I told him it was in the negotiation phase and should not be muck longer for settlement - #cc",
+      "natural_language": "On April 23, 2024, Samuel Clites visited regarding his motor vehicle accident case. He came in to ask for the current status of the matter, and I informed him that the case is in the negotiation phase and should not be muck longer for settlement \u2014 #cc.",
+      "valid_at": "2025-07-08T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Samuel Clites",
+            "relevance": "visited to inquire about case status"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

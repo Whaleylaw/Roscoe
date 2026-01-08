@@ -1,0 +1,122 @@
+{
+  "attorneys": [
+    {
+      "card_type": "entity",
+      "entity_type": "Attorney",
+      "name": "Aletha N. Thomas, Esq.",
+      "attributes": {
+        "role": "defense_counsel",
+        "phone": "",
+        "email": ""
+      },
+      "source_id": "review_annotations",
+      "source_file": "Alma-Cristobal-MVA-2-15-2024"
+    },
+    {
+      "card_type": "entity",
+      "entity_type": "Attorney",
+      "name": "Aaron Lovato",
+      "attributes": {
+        "role": "defense_counsel",
+        "phone": "",
+        "email": ""
+      },
+      "source_id": "review_annotations",
+      "source_file": "Ashlee-Williams-MVA-08-29-2023"
+    }
+  ],
+  "organizations": [
+    {
+      "card_type": "entity",
+      "entity_type": "Organization",
+      "name": "Forcht Bank, N.A.",
+      "attributes": {
+        "phone": "",
+        "email": "",
+        "address": ""
+      },
+      "source_id": "review_annotations",
+      "source_file": "Amy-Mills-Premise-04-26-2019",
+      "notes": "Also defendant in Amy Mills case"
+    },
+    {
+      "card_type": "entity",
+      "entity_type": "Organization",
+      "name": "New Albany Police Department",
+      "attributes": {
+        "phone": "",
+        "email": "",
+        "address": ""
+      },
+      "source_id": "review_annotations",
+      "source_file": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    {
+      "card_type": "entity",
+      "entity_type": "Organization",
+      "name": "MetroSafe",
+      "attributes": {
+        "organization_type": "emergency_dispatch",
+        "phone": "",
+        "email": "",
+        "address": "Louisville, KY"
+      },
+      "source_id": "review_annotations",
+      "source_file": "Alma-Cristobal-MVA-2-15-2024"
+    },
+    {
+      "card_type": "entity",
+      "entity_type": "Organization",
+      "name": "Franklin County, Ohio Sheriff's Office",
+      "attributes": {
+        "phone": "",
+        "email": "",
+        "address": "Franklin County, Ohio"
+      },
+      "source_id": "review_annotations",
+      "source_file": "Alma-Cristobal-MVA-2-15-2024"
+    }
+  ],
+  "law_firms": [
+    {
+      "card_type": "entity",
+      "entity_type": "LawFirm",
+      "name": "Kopka Pinkus Dolin, PC",
+      "attributes": {
+        "phone": "",
+        "fax": "",
+        "address": ""
+      },
+      "source_id": "review_annotations",
+      "source_file": "Alma-Cristobal-MVA-2-15-2024",
+      "aliases": ["Kopka Law"]
+    }
+  ],
+  "defendants": [
+    {
+      "card_type": "entity",
+      "entity_type": "Defendant",
+      "name": "Naomi Robinson",
+      "attributes": {
+        "phone": "",
+        "email": "",
+        "address": ""
+      },
+      "source_id": "review_annotations",
+      "source_file": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    {
+      "card_type": "entity",
+      "entity_type": "Defendant",
+      "name": "Roy Hamilton",
+      "attributes": {
+        "phone": "",
+        "email": "",
+        "address": ""
+      },
+      "source_id": "review_annotations",
+      "source_file": "Alma-Cristobal-MVA-2-15-2024",
+      "notes": "Works with Crete Carrier"
+    }
+  ]
+}

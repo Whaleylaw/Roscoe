@@ -1,0 +1,50 @@
+{
+  "case_name": "Jessica-Mahaney-MVA-03-09-2025",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "1st Diagnostics",
+        "specialty": null
+      },
+      {
+        "name": "Scott County Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Katie Mills"
+      },
+      {
+        "name": "Kara Hoskins"
+      }
+    ],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Jessica-Mahaney-MVA-03-09-2025-Personal Injury Protection (PIP)-25-615241502",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Katie Mills"
+      },
+      {
+        "type": "UMClaim",
+        "name": "Jessica-Mahaney-MVA-03-09-2025-Uninsured Motorist (UM)-25-615241502",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Kara Hoskins"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

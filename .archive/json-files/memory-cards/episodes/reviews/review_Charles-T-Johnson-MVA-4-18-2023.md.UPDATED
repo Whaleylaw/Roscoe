@@ -1,0 +1,131 @@
+# Relationship Review: Charles-T-Johnson-MVA-4-18-2023
+
+**Total Episodes:** 190
+
+**Total Proposed Relationships:** 659
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (6)
+- Family Health Centers - Portland
+- Integra Medical Imaging (radiology)
+- UofL Health – Brown Cancer Center – Medical Oncology – Brown Cancer Center – Medical Oncology – Jewish Hospital (hospital)
+- Louisville Metro EMS (emergency medical services)
+- Starlite Chiropractic (chiropractic)
+- University Of Louisville Hospital Radiology (hospital)
+
+### Insurance Claims (2)
+- **BIClaim**: State Farm Insurance Company
+  - Adjuster: Benjamine Groce
+- **PIPClaim**: Auto Owners Insurance
+  - Adjuster: Amy Cox
+
+### Liens (1)
+- Medicare
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (3 consolidated)
+- [ ] Amy Cox — *✓ MATCHES: Amy Cox*
+- [ ] Benjamine Groce — *✓ MATCHES: Benjamine Groce*
+- [ ] Thomas Rivera — *✓ ADDED to adjusters.json*
+
+### Attorney (12 consolidated)
+- [ ] @jchumbley — *IGNORED - email/handle reference*
+- [ ] Aaron Gregory Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY)*
+- [ ] Amy Romine — *✓ ADDED to attorneys.json*
+- [ ] Charles T. Johnson — *✓ MATCHES: Charles T Johnson (CLIENT, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager)*
+- [ ] Justin Chumbley — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager)*
+- [ ] Lowe — *✓ CONSOLIDATED → Robert Lowe*
+- [ ] Mary S. Johnson — *✓ MATCHES: Mary S. Johnson (attorney at Dilbeck & Myers)*
+- [ ] Mary [last name] — *IGNORED - incomplete name*
+- [ ] Sarena M. Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager)*
+- [ ] Sarena Whaley — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager)*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY)*
+
+### BIClaim (2 consolidated)
+- [ ] BIClaim: State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+- [ ] State Farm Insurance Company (Adjuster: Benjamine Groce) — *✓ MATCHES: State Farm Insurance Company*
+
+### Client (3 consolidated)
+- [ ] Charles T. Johnson — *✓ MATCHES: Charles T Johnson*
+- [ ] Client — *IGNORED - generic reference*
+- [ ] Justin — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Client)*
+
+### Court (11 consolidated)
+- [ ] Charles Johnson v. Robert Lowe (24-CI-002475) — *IGNORED - case caption*
+- [ ] Court Net — *IGNORED - software reference*
+- [ ] District Court — *✓ MATCHES: Christian County District Court*
+- [ ] Jeff Cir 24-CI-002475 — *✓ CONSOLIDATED → Jefferson County Circuit Court*
+- [ ] Jefferson 24-CI-002475 — *✓ MATCHES: Jefferson County Circuit Court, Division VII*
+- [ ] Jefferson Circuit (Kentucky Court of Justice) — *✓ MATCHES: Kentucky Court Of Justice (court system org)*
+- [ ] Jefferson Circuit Court (24-CI-002475) — *✓ MATCHES: Jefferson County Circuit Court*
+- [ ] Jefferson Circuit Court (Jeff Cir) — *✓ CONSOLIDATED → Jefferson County Circuit Court*
+- [ ] Jefferson Circuit Court (Kentucky) — *✓ CONSOLIDATED → Jefferson County Circuit Court*
+- [ ] Jefferson County (24-CI-002475) — *✓ MATCHES: Jefferson County Circuit Court, Division VII*
+- [ ] Jefferson County (Docket 24-CI-002475) — *✓ CONSOLIDATED → Jefferson County Circuit Court*
+
+### Defendant (3 consolidated)
+- [ ] Charles T. Johnson — *✓ MATCHES: Charles T Johnson (CLIENT, not Defendant)*
+- [ ] Lowe — *✓ CONSOLIDATED → Robert Lowe*
+- [ ] Robert Lowe — *✓ ADDED to defendants.json*
+
+### Insurer (2 consolidated)
+- [ ] Auto Owners Insurance — *✓ MATCHES: Auto Owners Insurance*
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+### LawFirm (2 consolidated)
+- [ ] Dilbeck & Myers, PLLC — *✓ MATCHES: Dilbeck & Myers*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (2 consolidated)
+- [ ] Medicare — *✓ MATCHES: Medicare*
+- [ ] final lien — *IGNORED - generic reference*
+
+### MedicalProvider (6 consolidated)
+- [ ] Family Health Centers - Portland — *✓ MATCHES: Family Health Centers - Portland*
+- [ ] Integra Medical Imaging — *✓ MATCHES: Integra Medical Imaging*
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology – Brown Cancer Center – Medical Oncology – Jewish Hospital — *✓ MATCHES: UofL Health – Brown Cancer Center – Medical Oncology – Brown Cancer Center – Medical Oncology – Jewish Hospital*
+- [ ] Louisville Metro EMS — *✓ MATCHES: Louisville Metro EMS*
+- [ ] Starlite Chiropractic — *✓ MATCHES: Starlite Chiropractic*
+- [ ] University Of Louisville Hospital Radiology — *✓ MATCHES: University Of Louisville Hospital Radiology*
+
+### Organization (6 consolidated)
+- [ ] Arenas Logistics, LLC — *✓ ADDED to organizations.json*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Court of Justice eFiling System — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Louisville Metro Government — *✓ MATCHES: Louisville Metro Government*
+- [ ] OMB Medical Records Requests (Louisville office) — *IGNORED - document processing service*
+- [ ] OMBMRR@Louisvilleky.gov — *IGNORED - email address*
+
+### PIPClaim (2 consolidated)
+- [ ] Auto Owners Insurance PIP claim — *✓ MATCHES: Auto Owners Insurance*
+- [ ] PIPClaim: Auto Owners Insurance — *✓ MATCHES: Auto Owners Insurance*
+
+### Vendor (1 consolidated)
+- [ ] Kentuckiana Court Reporters — *✓ MATCHES: Kentuckiana Court Reporters*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

@@ -1,0 +1,62 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "AppellateDistrict",
+    "name": "Kentucky Court of Appeals, Lexington Office",
+    "attributes": {
+      "district_number": "Lexington",
+      "region": "Central KY",
+      "counties": "Lexington area"
+    },
+    "source_id": "ky_appeals_court_structure",
+    "source_file": "appellate_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "AppellateDistrict",
+    "name": "Kentucky Court of Appeals, Louisville Office",
+    "attributes": {
+      "district_number": "Louisville",
+      "region": "Louisville Metro",
+      "counties": "Jefferson"
+    },
+    "source_id": "ky_appeals_court_structure",
+    "source_file": "appellate_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "AppellateDistrict",
+    "name": "Kentucky Court of Appeals, Covington Office",
+    "attributes": {
+      "district_number": "Covington",
+      "region": "Northern KY",
+      "counties": "Kenton/Campbell"
+    },
+    "source_id": "ky_appeals_court_structure",
+    "source_file": "appellate_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "AppellateDistrict",
+    "name": "Kentucky Court of Appeals, Frankfort Office",
+    "attributes": {
+      "district_number": "Frankfort",
+      "region": "Capital",
+      "counties": "Franklin"
+    },
+    "source_id": "ky_appeals_court_structure",
+    "source_file": "appellate_judges.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "AppellateDistrict",
+    "name": "Kentucky Court of Appeals, Paducah Office",
+    "attributes": {
+      "district_number": "Paducah",
+      "region": "Western KY",
+      "counties": "McCracken"
+    },
+    "source_id": "ky_appeals_court_structure",
+    "source_file": "appellate_judges.json"
+  }
+]

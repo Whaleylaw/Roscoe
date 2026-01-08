@@ -1,0 +1,142 @@
+{
+  "case_name": "Joseph-Ott-MVA-8-06-2025",
+  "total_episodes": 4,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      }
+    ],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "AaronW - 2025-09-07",
+      "original_body": "Case: Joseph-Ott-MVA-8-06-2025\nClient: Joseph Ott\n\nFrom: justin@whaleylawfirm.com\nTo: 'Gail Sweasy' lgsweasy@gmail.com\nDate: Wed Aug 27 2025 10:42:27 GMT-04:00\nJust confirmed both Maia and Jensen have open and active PIP claims.\nFrom: Gail Sweasy\nSent: Wednesday, August 27, 2025 10:38 AM\nTo: justin@whaleylawfirm.com\nSubject: Joseph ott\nAdjuster is Brittany young\n908 842 1643",
+      "natural_language": "Case Joseph-Ott-MVA-8-06-2025 involves client Joseph Ott following a motor vehicle accident.\n\nOn August 27, 2025, two email exchanges occurred between Justin Whaley of Whaley Law Firm (justin@whaleylawfirm.com) and Gail Sweasy (lgsweasy@gmail.com). At 10:38 AM, Gail sent a message to Justin with the subject \u201cJoseph ott,\u201d noting that the adjuster for the matter is Brittany Young and providing the contact number 908-842-1643. Four minutes later, at 10:42:27 AM GMT-04:00, Justin replied to confirm that Maia and Jensen have open and active PIP claims.",
+      "valid_at": "2025-09-07T00:00:00",
+      "author": "AaronW",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Whaley",
+            "relevance": "sent reply email confirming PIP claims"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "employer/firm of Justin Whaley"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Brittany Young",
+            "relevance": "adjuster for the matter (contact provided)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim - Maia",
+            "relevance": "confirmed open and active"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim - Jensen",
+            "relevance": "confirmed open and active"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "AaronW - 2025-09-07",
+      "original_body": "Case: Joseph-Ott-MVA-8-06-2025\nClient: Joseph Ott\n\nNew Insurance Note: 8/25 new adjuster assigned. coverage still under investigation\nInsurance Type: Bodily Injury (BI)\nInsurance Company: Progressive Insurance Company\nWritten by: Justin Chumbley",
+      "natural_language": "In the case Joseph-Ott-MVA-8-06-2025, the client is Joseph Ott involved in a motor vehicle accident.\n\nA new insurance note dated August 25, 2025 indicates that a new adjuster has been assigned and that coverage is still under investigation.\n\nThe claim concerns Bodily Injury (BI) with Progressive Insurance Company, and the note was written by Justin Chumbley.",
+      "valid_at": "2025-09-07T00:00:00",
+      "author": "AaronW",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "client involved in motor vehicle accident"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for the Bodily Injury claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Justin Chumbley",
+            "relevance": "new adjuster assigned and author of note"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Bodily Injury claim - Progressive",
+            "relevance": "claim under investigation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "AaronW - 2025-09-07",
+      "original_body": "Case: Joseph-Ott-MVA-8-06-2025\nClient: Joseph Ott\n\nCLIENT CONTACT\nDetails: Spoke with client, no response on PD claim yet. Is going to attempt to see a specialist, is making an appointment with his PCP. Will send us that info\nPerson Making Contact: Justin\nDate & Time: August 26 2025",
+      "natural_language": "Initial client contact on August 26, 2025 with Joseph Ott regarding the motor vehicle accident case Joseph-Ott-MVA-8-06-2025. The contact was made by Justin.\n\nJustin spoke with the client, and there has been no response yet on the PD claim. The client intends to pursue a specialist evaluation and is making an appointment with his primary care physician. He will send us that information when it becomes available.",
+      "valid_at": "2025-09-07T00:00:00",
+      "author": "AaronW",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "subject of initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "AaronW - 2025-09-07",
+      "original_body": "Case: Joseph-Ott-MVA-8-06-2025\nClient: Joseph Ott\n\nCLIENT CONTACT\nDetails: Joseph OTT\nDOA: 8/6/2025\nLocation: Okalona blue rick rod and south park road\nLMPD\nReport # 25091782\nDOB 4/11/1988\nPh: 502-616-6505\n3820 Leland Rd\nApt 1\nLouisville, KY 40207\nDirect Insurance\nClaim \nWent to ER \u2013 UofL Health west hebron lane in shephardsville\nInjuries: concussion, neck and back pain, glass in his arm, left shoulder.\nPerson Making Contact: Justin\nDate & Time: August 11 2025",
+      "natural_language": "Case: Joseph-Ott-MVA-8-06-2025. Initial client contact on August 11, 2025 with Joseph Ott regarding a motor vehicle accident.\n\nClient information: The client is Joseph Ott. Date of accident: August 6, 2025. Date of birth: April 11, 1988. Phone: 502-616-6505. Address: 3820 Leland Rd, Apt 1, Louisville, KY 40207.\n\nIncident details: The incident occurred at the intersection of Okalona blue rick rod and South Park Road. The case is associated with Louisville Metro Police Department (LMPD) and Report # 25091782. Direct Insurance is involved with a claim filed.\n\nMedical and disposition: The client went to the ER at UofL Health West Hebron Lane in Shepherdsville.\n\nInjuries: Concussion, neck and back pain, glass in his arm, and left shoulder.\n\nContacts: The person making contact was Justin. Date & Time of contact: August 11, 2025.",
+      "valid_at": "2025-09-07T00:00:00",
+      "author": "AaronW",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Direct Insurance",
+            "relevance": "insurer on claim filed"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "UofL Health West Hebron Lane",
+            "relevance": "treatment facility (ER visited)"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Louisville Metro Police Department (LMPD)",
+            "relevance": "agency that filed police report (#25091782)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

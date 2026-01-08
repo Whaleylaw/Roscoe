@@ -1,0 +1,93 @@
+# Relationship Review: Elizabeth-Lindsey-MVA-12-01-2024
+
+**Total Episodes:** 45
+
+**Total Proposed Relationships:** 104
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (5)
+- Aptiva Health Health Health
+- Radiology Associates of Northern Kentucky, PLLC (radiology)
+- St. Elizabeth Physicians- Burlington
+- University of Cincinnati Medical Center (hospital)
+- University of Cincinnati Physicians
+
+### Insurance Claims (3)
+- **BIClaim**: Progressive Insurance Company
+  - Adjuster: Jennifer Howard
+- **PIPClaim**: Auto Owners Insurance
+  - Adjuster: Emily Pernice
+- **PIPClaim**: Auto Owners Insurance
+
+### Liens (1)
+- Rawlings Company
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (2 consolidated)
+- [ ] Chandler Wolfe — *✓ MATCHES: Chandler Wolfe*
+- [ ] Emily Pernice — *✓ MATCHES: Emily Pernice*
+
+### Attorney (4 consolidated)
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Justin Chumbley — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+
+### BIClaim (1 consolidated)
+- [ ] BIClaim: Progressive Insurance Company — *✓ MATCHES: Progressive Insurance Company*
+
+### Client (2 consolidated)
+- [ ] Chase Lindsey — *✓ MATCHES: Chase Lindsey*
+- [ ] Elizabeth Lindsey — *✓ MATCHES: Elizabeth Lindsey*
+
+### Insurer (2 consolidated)
+- [ ] Auto Owners Insurance — *✓ MATCHES: Auto Owners Insurance*
+- [ ] Progressive Insurance Company — *✓ MATCHES: Progressive Insurance Company*
+
+### LawFirm (1 consolidated)
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (1 consolidated)
+- [ ] Rawlings Company — *✓ MATCHES: Rawlings Company*
+
+### MedicalProvider (5 consolidated)
+- [ ] Aptiva Health Health Health — *✓ MATCHES: Aptiva Health Health Health*
+- [ ] Cincinnati Children’s Hospital — *✓ MATCHES: Cincinnati Children's Hospital*
+- [ ] Radiology Associates of Northern Kentucky, PLLC — *✓ MATCHES: Radiology Associates of Northern Kentucky, PLLC*
+- [ ] University of Cincinnati Medical Center — *✓ MATCHES: University of Cincinnati Medical Center*
+- [ ] University of Cincinnati Physicians — *✓ MATCHES: University of Cincinnati Physicians*
+
+### PIPClaim (3 consolidated)
+- [ ] Auto Owners Insurance — *✓ MATCHES: Auto Owners Insurance*
+- [ ] Auto Owners Insurance (Adjuster: Emily Pernice) — *✓ MATCHES: Auto Owners Insurance*
+- [ ] Auto Owners Insurance Claim 300-793616-2024 — *✓ MATCHES: Auto Owners Insurance*
+
+### Vendor (2 consolidated)
+- [ ] 8593414845@rcfax.com — *IGNORED - fax service*
+- [ ] RC Fax — *IGNORED - fax service*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

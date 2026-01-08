@@ -1,0 +1,86 @@
+{
+  "case_name": "Lindsey-Dunn-MVA-9-24-2025",
+  "total_episodes": 3,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Vinesign Integration - 2025-10-16",
+      "original_body": "Case: Lindsey-Dunn-MVA-9-24-2025\nClient: Lindsey Dunn\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=eb704809-1d05-48e1-bfdc-1befdf8dc6cc.pdf\nSigned: 2025-10-16 17:34:37\nAll signers: Lindsey Dunn((502) 381-0282)\nSender: Justin Chumbley",
+      "natural_language": "Case Lindsey-Dunn-MVA-9-24-2025 involves client Lindsey Dunn. The intake document, named intake, has been completed via VineSign, as indicated by the vinesign-completed status. The signed document URL is https://app.vinesign.com/Jobs/Pdf?pdfKey=eb704809-1d05-48e1-bfdc-1befdf8dc6cc.pdf, and it was signed on 2025-10-16 at 17:34:37. The signer listed is Lindsey Dunn, with contact phone number (502) 381-0282. The VineSign package was sent by Justin Chumbley.",
+      "valid_at": "2025-10-16T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Lindsey Dunn",
+            "relevance": "client and signer of intake"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "e-signature platform used to complete intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-16",
+      "original_body": "Case: Lindsey-Dunn-MVA-9-24-2025\nClient: Lindsey Dunn\n\n__CLIENT CONTACT__\n__Details:__ see companion file (mother) Tonya Dunn \n__Person Making Contact:__ Justin\n__Date & Time__: October 16 2025",
+      "natural_language": "Case Lindsey-Dunn-MVA-9-24-2025 involves client Lindsey Dunn. The initial client contact occurred on October 16, 2025, and was made by Justin. The details of the contact are documented in a companion file for Tonya Dunn, the mother.",
+      "valid_at": "2025-10-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Lindsey Dunn",
+            "relevance": "primary client / subject of case"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Tonya Dunn",
+            "relevance": "related party (mother) / companion file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-14",
+      "original_body": "Case: Lindsey-Dunn-MVA-9-24-2025\nClient: Lindsey Dunn\n\n__New Insurance Note:__ 11/14 saved PIP ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ State Farm Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Lindsey-Dunn-MVA-9-24-2025 involves client Lindsey Dunn.\n\nOn November 14, 2025, a new insurance note was saved, documenting a PIP ledger. The insurance type is Personal Injury Protection (PIP), and the insurance company is State Farm Insurance Company. The note was written by Justin Chumbley.",
+      "valid_at": "2025-11-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Lindsey Dunn",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer on PIP ledger"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP ledger",
+            "relevance": "PIP claim/ledger documented in insurance note"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

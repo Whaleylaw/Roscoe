@@ -1,0 +1,382 @@
+{
+  "case_name": "Bryson-Brown-MVA-6-29-2025",
+  "total_episodes": 16,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Synergy Injury Care & Rehab Diagnostics",
+        "specialty": "physical therapy"
+      },
+      {
+        "name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Allstate Insurance"
+      },
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Guillermo Callejas"
+      }
+    ],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Bryson-Brown-MVA-6-29-2025-Personal Injury Protection (PIP)-799220033",
+        "insurer": "Allstate Insurance",
+        "adjuster": "Guillermo Callejas"
+      },
+      {
+        "type": "BIClaim",
+        "name": "Bryson-Brown-MVA-6-29-2025-Bodily Injury (BI)-1787F478S",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": null
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-07-07",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nVoicemail Preview:\n\"Hi, my name is Johnny Kulin. I was wondering if you could please give me a call back. My son was involved in an auto accident. His father has used you before and he recommended we get in touch with you. My phone number 527122765. Thank you so much.\" \nListen to this message over your phone or log in to your RingCentral account with your main number, extension number, and password. You can also manage your voicemails in your RingCentral account.",
+      "natural_language": "Case Bryson-Brown-MVA-6-29-2025 involves client Bryson Brown. A voicemail was left by Johnny Kulin requesting a callback. In the message, Kulin states that his son was involved in an auto accident and that the son\u2019s father has used the firm before and recommended contacting us. He provides the phone number 527122765.\n\nThe note also includes instructions for accessing the voicemail: listen to this message over your phone or log in to your RingCentral account with your main number, extension number, and password. You can also manage your voicemails in your RingCentral account.",
+      "valid_at": "2025-07-07T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-07",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\n__CLIENT CONTACT__\n__Details:__ LMEMS to Hospital St. Mary on Bluegrass\nNeck and back pain, right knee pain, was placed in knee brace\n\nBryson Brown\nReport SHV25-001156\n1/27/07 DOB\nSSN 403-67-3587\nPh: 502-500-3521\n2002 Nelson\nShively KY 40216\n\n6/29/25 DOA\n\nPIP Allstate\nClaim #\n\nState Farm\nClaim # 1787F478S \n__Person Making Contact:__ Justin\n__Date & Time__: July 07 2025",
+      "natural_language": "Initial client contact on July 7, 2025, with Bryson Brown regarding a motor vehicle accident that occurred on June 29, 2025. The client reported neck and back pain and right knee pain and was placed in a knee brace after EMS transport from LMEMS to St. Mary Hospital on Bluegrass.\n\nClient identification and case details: Bryson Brown, file SHV25-001156, date of birth January 27, 2007. Social Security Number on file: [redacted]. Phone: 502-500-3521. Address on file: 2002 Nelson, Shively, KY 40216. Date of accident: June 29, 2025. Insurance information includes PIP coverage with Allstate, and State Farm claims with Claim Number 1787F478S.\n\nThis report was prepared by Justin, with the contact date and time recorded as July 7, 2025.",
+      "valid_at": "2025-07-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "party injured / client of record"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Mary Hospital",
+            "relevance": "hospital transport destination after accident"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Allstate Insurance",
+            "relevance": "insurer providing PIP coverage"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Allstate Insurance (PIP)",
+            "relevance": "PIP coverage mentioned for medical payments"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer involved in BI claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "State Farm Insurance Company (Claim #1787F478S)",
+            "relevance": "bodily injury claim referenced with claim number"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-09",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nresent intake docs via vinesign",
+      "natural_language": "This case, Bryson-Brown-MVA-6-29-2025, involves client Bryson Brown and concerns a motor vehicle accident.\n\nIntake documents have been resent to Bryson Brown via vinesign.",
+      "valid_at": "2025-07-09T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "subject of case; recipient of resent intake documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-11",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\n__CLIENT CONTACT__\n__Details:__ Spoke with mom, client should have intake docs completed today for us \n__Person Making Contact:__ Justin\n__Date & Time__: July 11 2025",
+      "natural_language": "Initial client contact on July 11, 2025, in the Bryson-Brown-MVA-6-29-2025 case. Justin spoke with Bryson Brown's mother, who indicated that the client should have the intake documents completed today for us.",
+      "valid_at": "2025-07-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "initial client contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-07-11",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=09620630-63fa-47a5-bfdf-ae53d5599032.pdf\nSigned: 2025-07-11 18:42:01\nAll signers: Bryson Brown((502) 500-3521)\nSender: Justin Chumbley",
+      "natural_language": "Case Bryson-Brown-MVA-6-29-2025 concerns client Bryson Brown. The intake document, named \u201cintake,\u201d was processed through VineSign and is shown as completed.\n\nThe signed intake document can be accessed at the following URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=09620630-63fa-47a5-bfdf-ae53d5599032.pdf\n\nThe signing was completed on 2025-07-11 18:42:01. All signers listed include Bryson Brown, whose contact number is (502) 500-3521. The document was sent by Justin Chumbley.",
+      "valid_at": "2025-07-11T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "subject of case; signer of intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-11",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, will be going to Synergy. His father is Tymon Brown a previous client \n__Person Making Contact:__ Justin\n__Date & Time__: July 11 2025",
+      "natural_language": "Initial client contact on July 11, 2025 with Bryson Brown regarding a motor vehicle accident, Bryson-Brown-MVA-6-29-2025. Spoke with the client; he will be going to Synergy. His father is Tymon Brown, a previous client. The contact was made by Justin.",
+      "valid_at": "2025-07-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Synergy Injury Care & Rehab Diagnostics",
+            "relevance": "medical provider the client will attend"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Tymon Brown",
+            "relevance": "related previous client (father)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-14",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\n__CLIENT CONTACT__\n__Details:__ spoke with clients mom. client is going to his first appointment with Synergy today \n__Person Making Contact:__ Justin\n__Date & Time__: July 14 2025",
+      "natural_language": "Initial client contact on July 14, 2025 regarding the Bryson-Brown-MVA-6-29-2025 motor vehicle accident case involving Bryson Brown. The contact was made with the client's mother, and Justin was the staff member making the contact. The client is going to his first appointment with Synergy today.",
+      "valid_at": "2025-07-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "subject of contact / injured party"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Synergy Injury Care & Rehab Diagnostics",
+            "relevance": "treatment provider / first appointment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-14",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nThe Allstate claim number is 0799220033",
+      "natural_language": "On June 29, 2025, the Bryson-Brown-MVA-6-29-2025 case was opened for client Bryson Brown in connection with a motor vehicle accident. The Allstate claim number for this matter is 0799220033.",
+      "valid_at": "2025-07-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "case opened for client"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Allstate PIP #0799220033",
+            "relevance": "Allstate claim number referenced for the matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-15",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\n__New Insurance Note:__ 7/15 DEC page in route\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Allstate Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Bryson-Brown-MVA-6-29-2025 involves client Bryson Brown. A new insurance note has been added to the record: \"7/15 DEC page in route.\" The note identifies the insurance type as Personal Injury Protection (PIP) and lists Allstate Insurance as the insurer. The entry was written by Justin Chumbley. This note is filed under #Inotes.",
+      "valid_at": "2025-07-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Allstate Insurance",
+            "relevance": "insurer named in note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Allstate Insurance",
+            "relevance": "PIP claim referenced in note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-29",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\n__New Insurance Note:__ 7/29 saved ack\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Allstate Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Bryson-Brown-MVA-6-29-2025 involves client Bryson Brown. A new insurance note was saved on July 29, marked as an acknowledgment (7/29 saved ack). The insurance type is Personal Injury Protection (PIP), and the insurer is Allstate Insurance. The note was written by Justin Chumbley, and this entry is categorized under #Inotes.",
+      "valid_at": "2025-07-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Allstate Insurance",
+            "relevance": "insurer on PIP note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Allstate Insurance PIPClaim",
+            "relevance": "PIP claim referenced in note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nClient consultation and case strategy discussion completed.",
+      "natural_language": "On June 29, 2025, Bryson Brown was the client in the Bryson-Brown-MVA-6-29-2025 matter. A client consultation was conducted and a case strategy discussion was completed.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "client in matter; subject of consultation and case strategy discussion"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nInsurance adjuster communications and claim processing updates.",
+      "natural_language": "This case, Bryson-Brown-MVA-6-29-2025, concerns client Bryson Brown and the motor vehicle accident referenced in the case name.\n\nThe notes focus on communications with the insurance adjuster and updates related to the processing of the claim.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Guillermo Callejas",
+            "relevance": "adjuster contacted / communications"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Allstate Insurance",
+            "relevance": "claim being processed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nRecent accident follow-up and ongoing medical treatment monitoring.",
+      "natural_language": "This case, Bryson-Brown-MVA-6-29-2025, concerns client Bryson Brown.\n\nThe entry documents recent accident follow-up and ongoing medical treatment monitoring.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "subject of case and ongoing medical treatment monitoring"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nMedical treatment coordination and insurance claim initiation.",
+      "natural_language": "Case Bryson-Brown-MVA-6-29-2025 concerns client Bryson Brown.\n\nThe engagement focuses on coordinating medical treatment and initiating an insurance claim in relation to a motor vehicle accident on June 29, 2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "subject of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nPolice report review and accident reconstruction analysis.",
+      "natural_language": "Case Bryson-Brown-MVA-6-29-2025 involves client Bryson Brown and concerns a motor vehicle accident. The date in the case title indicates June 29, 2025. The scope of work for this case comprises a review of the police report and an accident reconstruction analysis.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Bryson-Brown-MVA-6-29-2025\nClient: Bryson Brown\n\nRecent accident case intake and initial client assessment.",
+      "natural_language": "On June 29, 2025, Bryson Brown became the client in case Bryson-Brown-MVA-6-29-2025.\n\nThis note documents a recent intake for a motor vehicle accident case and the initial client assessment.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Bryson Brown",
+            "relevance": "new client intake / became the client on 2025-06-29"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

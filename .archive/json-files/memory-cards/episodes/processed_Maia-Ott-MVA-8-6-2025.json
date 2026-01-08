@@ -1,0 +1,134 @@
+{
+  "case_name": "Maia-Ott-MVA-8-6-2025",
+  "total_episodes": 6,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Maia-Ott-MVA-8-6-2025\nClient: Maia Ott\n\nSettlement strategy development and family consultation.",
+      "natural_language": "Maia Ott is the client in case Maia-Ott-MVA-8-6-2025, which concerns a motor vehicle accident. \n\nSettlement-strategy development and family consultation have been the primary activities documented.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "client of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Maia-Ott-MVA-8-6-2025\nClient: Maia Ott\n\nMedical evaluation and treatment planning coordination.",
+      "natural_language": "Case Maia-Ott-MVA-8-6-2025 concerns the client Maia Ott. This note documents medical evaluation and treatment planning coordination in relation to the motor vehicle accident on August 6, 2025.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Maia-Ott-MVA-8-6-2025\nClient: Maia Ott\n\nFamily accident coordination with Jensen and Joseph Ott cases.",
+      "natural_language": "Maia Ott is the client for case Maia-Ott-MVA-8-6-2025, a motor vehicle accident matter. The work centers on coordinating the family\u2019s accident-related matters across Jensen Ott\u2019s case and Joseph Ott\u2019s case.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "primary client for case Maia-Ott-MVA-8-6-2025"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "related client \u2014 coordinating Jensen Ott\u2019s accident-related case"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "related client \u2014 coordinating Joseph Ott\u2019s accident-related case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Maia-Ott-MVA-8-6-2025\nClient: Maia Ott\n\nMedical evaluation and treatment planning coordination.",
+      "natural_language": "Case Maia-Ott-MVA-8-6-2025 centers on Maia Ott and relates to a motor vehicle accident.\n\nThe primary focus of the case is medical evaluation and the coordination of a treatment plan.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "primary subject of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Maia-Ott-MVA-8-6-2025\nClient: Maia Ott\n\nFamily coordination with Jensen and Joseph Ott related cases.",
+      "natural_language": "Maia Ott is the client in the case Maia-Ott-MVA-8-6-2025. \n\nThe matter involves family coordination with Jensen Ott and Joseph Ott in related cases.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "related client - family coordination"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "related client - family coordination"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Maia-Ott-MVA-8-6-2025\nClient: Maia Ott\n\nMaia Ott motor vehicle accident case for August 6, 2025.",
+      "natural_language": "Maia Ott is the client in case Maia-Ott-MVA-8-6-2025, a motor vehicle accident matter.\n\nThe motor vehicle accident occurred on August 6, 2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

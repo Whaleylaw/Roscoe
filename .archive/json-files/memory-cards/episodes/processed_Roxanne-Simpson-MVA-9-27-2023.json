@@ -1,0 +1,49 @@
+{
+  "case_name": "Roxanne-Simpson-MVA-9-27-2023",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Baptist Health Hardin",
+        "specialty": null
+      },
+      {
+        "name": "Elizabethtown Emergency Physicians",
+        "specialty": null
+      },
+      {
+        "name": "Hardin County EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Radiology Associates Inc",
+        "specialty": "radiology"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Kip Gunnells"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Roxanne-Simpson-MVA-9-27-2023-Bodily Injury (BI)-1756T368R",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Kip Gunnells"
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

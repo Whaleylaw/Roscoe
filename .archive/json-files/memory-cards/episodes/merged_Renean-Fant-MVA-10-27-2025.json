@@ -1,0 +1,124 @@
+{
+  "case_name": "Renean-Fant-MVA-10-27-2025",
+  "total_episodes": 6,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-10-29",
+      "original_body": "Case: Renean-Fant-MVA-10-27-2025\nClient: Renean Fant\n\nSend a photo of the front and back of your health insurance card",
+      "natural_language": "Initial client contact on October 27, 2025 with Renean Fant regarding a motor vehicle accident. The case is documented as Renean-Fant-MVA-10-27-2025. The client was instructed to send a photo of the front and back of their health insurance card.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Renean Fant",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-29",
+      "original_body": "Case: Renean-Fant-MVA-10-27-2025\nClient: Renean Fant\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, was transported by EMS to Norton Suburban Hospital. right side pain, ankle, hip, pelvic area, right arm \n__Person Making Contact:__ Justin\n__Date & Time__: October 29 2025",
+      "natural_language": "Initial client contact on October 29, 2025, was made by Justin regarding the motor vehicle accident involving client Renean Fant (Case: Renean-Fant-MVA-10-27-2025). The client was transported by EMS to Norton Suburban Hospital and reported pain on the right side, including the right ankle, hip, pelvic area, and right arm.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Renean Fant",
+            "relevance": "injured party / subject of contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton",
+            "relevance": "hospital where client was transported"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-10-29",
+      "original_body": "Case: Renean-Fant-MVA-10-27-2025\nClient: Renean Fant\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=8a88f615-be43-44c8-8027-27f1f89218ab.pdf\nSigned: 2025-10-29 15:08:45\nAll signers: Renean Fant(rfant@bxkentucky.com (502) 472-6855)\nSender: Justin Chumbley",
+      "natural_language": "This case, titled Renean-Fant-MVA-10-27-2025, involves client Renean Fant. The intake document has been completed via VineSign, and the document is named \"intake.\"\n\nThe signed intake document is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=8a88f615-be43-44c8-8027-27f1f89218ab.pdf and was signed on 2025-10-29 15:08:45. All signers listed are Renean Fant (rfant@bxkentucky.com, (502) 472-6855). The VineSign sender was Justin Chumbley.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Renean Fant",
+            "relevance": "case client / signer of intake"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "electronic signing platform used for intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-29",
+      "original_body": "Case: Renean-Fant-MVA-10-27-2025\nClient: Renean Fant\n\n__CLIENT CONTACT__\n__Details:__ attempted to reach lead. no answer \n__Person Making Contact:__ Justin\n__Date & Time__: October 29 2025",
+      "natural_language": "Initial client contact on October 29, 2025, with Justin regarding the case Renean-Fant-MVA-10-27-2025 for client Renean Fant. The contact note indicates Justin attempted to reach the lead, but there was no answer.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Renean Fant",
+            "relevance": "client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-31",
+      "original_body": "Case: Renean-Fant-MVA-10-27-2025\nClient: Renean Fant\n\n__CLIENT CONTACT__\n__Details:__ client called. doesn't think she needs additional care. r/b have been requested \n__Person Making Contact:__ Justin\n__Date & Time__: October 31 2025",
+      "natural_language": "Initial client contact on October 31, 2025 with client Renean Fant regarding motor vehicle accident in case Renean-Fant-MVA-10-27-2025.  \n\nThe contact was made by Justin. During the call, the client stated that she does not think she needs additional care, and r/b have been requested.",
+      "valid_at": "2025-10-31T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Renean Fant",
+            "relevance": "subject of initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-10",
+      "original_body": "Case: Renean-Fant-MVA-10-27-2025\nClient: Renean Fant\n\n__CLIENT CONTACT__\n__Details:__ updated client, emailed her a copy of the PR for her records \n__Person Making Contact:__ Justin\n__Date & Time__: November 10 2025",
+      "natural_language": "Case Renean-Fant-MVA-10-27-2025 involves client Renean Fant. The initial client contact occurred on November 10, 2025, and was conducted by Justin. During this contact, the client was updated and a copy of the PR was emailed to her for her records.",
+      "valid_at": "2025-11-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Renean Fant",
+            "relevance": "client contacted and updated; recipient of PR"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,265 @@
+{
+  "case_name": "Joseph-Ott-MVA-8-6-2025",
+  "total_episodes": 12,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\nSettlement strategy development and family consultation.",
+      "natural_language": "Case Joseph-Ott-MVA-8-6-2025 involves client Joseph Ott in a motor vehicle accident matter. The engagement centers on settlement strategy development and family consultation.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "primary client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\nMedical treatment planning and insurance coordination.",
+      "natural_language": "Case Joseph-Ott-MVA-8-6-2025 involves client Joseph Ott and centers on medical treatment planning and insurance coordination.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\nFamily accident coordination with Jensen and Maia Ott cases.",
+      "natural_language": "Case Joseph-Ott-MVA-8-6-2025 concerns client Joseph Ott in a motor vehicle accident that occurred on August 6, 2025. The matter centers on coordinating the Ott family\u2019s accident-related issues.\n\nSpecifically, the case involves family accident coordination with the cases of Jensen Ott and Maia Ott.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "primary client / subject of MVA case"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "family member / related case for coordination"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "family member / related case for coordination"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\nMedical evaluation and treatment planning coordination.",
+      "natural_language": "Case Joseph-Ott-MVA-8-6-2025 concerns client Joseph Ott in relation to a motor vehicle accident, with the case title indicating an MVA and the date August 6, 2025. \n\nThe note records medical evaluation and treatment planning coordination as the engagement\u2019s objective.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\nFamily coordination with Jensen and Maia Ott related cases.",
+      "natural_language": "Case Joseph-Ott-MVA-8-6-2025 involves client Joseph Ott. The record notes family coordination with Jensen Ott and Maia Ott in related cases.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "primary client for case Joseph-Ott-MVA-8-6-2025"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jensen Ott",
+            "relevance": "family coordination noted in related cases"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Maia Ott",
+            "relevance": "family coordination noted in related cases"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\nJoseph Ott motor vehicle accident case for August 6, 2025.",
+      "natural_language": "Case Joseph-Ott-MVA-8-6-2025 concerns client Joseph Ott in a motor vehicle accident that occurred on August 6, 2025. Initial client contact on August 6, 2025 was made with Joseph Ott regarding the motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "primary client involved in MVA"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-17",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\n__New Insurance Note:__ a208438@progressive.com\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Joseph-Ott-MVA-8-6-2025 involves client Joseph Ott. A new insurance note has been added to the file, listing the contact email a208438@progressive.com for Progressive Insurance Company. The note identifies Bodily Injury (BI) as the insurance type and confirms Progressive Insurance Company as the insurer. The entry was written by Justin Chumbley, and the record includes a section labeled \u201c#Inotes.\u201d",
+      "valid_at": "2025-09-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "primary client of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer listed with contact email a208438@progressive.com"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Bodily Injury (BI) claim - Progressive",
+            "relevance": "insurance claim type identified as Bodily Injury"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-30",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\n__New Insurance Note:__ 9/30 requested ledger\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ National General\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Joseph-Ott-MVA-8-6-2025 pertains to client Joseph Ott in relation to a motor vehicle accident. On 9/30, a new insurance note was entered indicating a ledger request. The insurance type identified is Personal Injury Protection (PIP), and the insurer is National General. The note was written by Justin Chumbley. This entry is filed under #Inotes.",
+      "valid_at": "2025-09-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "National General",
+            "relevance": "insurer identified"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIP claim",
+            "relevance": "insurance type discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-01",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, is going to schedule an appt with PCP to get a MRI on his neck that has not resolved \n__Person Making Contact:__ Justin\n__Date & Time__: October 01 2025",
+      "natural_language": "Initial client contact on October 1, 2025, with Justin regarding the Joseph Ott motor vehicle accident (Case: Joseph-Ott-MVA-8-6-2025). Justin spoke with the client, Joseph Ott, who stated that he is going to schedule an appointment with his PCP to get a MRI on his neck that has not resolved.",
+      "valid_at": "2025-10-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "person contacted / reported ongoing neck issue"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Primary Care Provider (PCP)",
+            "relevance": "to be scheduled for MRI appointment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-03",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\n__CLIENT CONTACT__\n__Details:__ Client has a MRI at Norton. had some cervical findings will be seeing a specialist and will keep us in the loop \n__Person Making Contact:__ Justin\n__Date & Time__: November 03 2025",
+      "natural_language": "Initial client contact on November 3, 2025 with Justin regarding the MVA case Joseph Ott (Case Joseph-Ott-MVA-8-6-2025). The client has an MRI at Norton and has cervical findings; he will be seeing a specialist and will keep us in the loop.",
+      "valid_at": "2025-11-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Justin",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "subject of MVA case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton",
+            "relevance": "MRI provider"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-07",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, was recommended for 3 steroid injections. \n__Person Making Contact:__ Justin\n__Date & Time__: November 07 2025",
+      "natural_language": "Initial client contact on November 7, 2025 with Joseph Ott regarding the motor vehicle accident case Joseph-Ott-MVA-8-6-2025. The contact was made by Justin, who spoke with the client and noted that the client was recommended for three steroid injections.",
+      "valid_at": "2025-11-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-12",
+      "original_body": "Case: Joseph-Ott-MVA-8-6-2025\nClient: Joseph Ott\n\n__CLIENT CONTACT__\n__Details:__ client has first injection scheduled for the 19th \n__Person Making Contact:__ Justin\n__Date & Time__: November 12 2025",
+      "natural_language": "Initial client contact on November 12, 2025, conducted by Justin, with client Joseph Ott regarding case Joseph-Ott-MVA-8-6-2025. The client has the first injection scheduled for November 19, 2025.",
+      "valid_at": "2025-11-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Joseph Ott",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

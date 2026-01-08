@@ -1,0 +1,361 @@
+{
+  "case_name": "Leanora-Brown-MVA-8-19-2025",
+  "total_episodes": 11,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Louisville Metro EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "University of Louisville Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Root Auto Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Brandi Chappell-Haggard"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Leanora-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Brandi Chappell-Haggard"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Leanora-Brown-MVA-8-19-2025-Personal Injury Protection (PIP)-TJ6L8DKY",
+        "insurer": "Root Auto Insurance",
+        "adjuster": null
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nSettlement strategy and family consultation planning.",
+      "natural_language": "Leanora Brown is the client for Case Leanora-Brown-MVA-8-19-2025, which concerns a motor vehicle accident that occurred on August 19, 2025. The case focuses on settlement strategy development and planning for family consultations.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nMedical treatment planning and insurance coordination.",
+      "natural_language": "Leanora Brown is the client in case Leanora-Brown-MVA-8-19-2025.\n\nThis case centers on medical treatment planning and insurance coordination in relation to a motor vehicle accident.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "initial medical treatment / emergency services"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "ongoing treatment planning"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "hospital care / treatment planning"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "bodily injury claim / insurance coordination"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Brandi Chappell-Haggard",
+            "relevance": "Progressive BI claim adjuster"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "PIP claim / insurance coordination"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nFamily coordination with Jordan Brown case management.",
+      "natural_language": "Leanora Brown is the client in the case Leanora-Brown-MVA-8-19-2025.\n\nThe note indicates there is family coordination with Jordan Brown case management.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "primary client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nMedical treatment planning and insurance coordination.",
+      "natural_language": "Leanora Brown was the client in a motor vehicle accident on August 19, 2025. This case, designated Leanora-Brown-MVA-8-19-2025, focuses on medical treatment planning and insurance coordination for her post-accident care.\n\nThe record indicates that the work centers on medical treatment planning and coordinating insurance coverage. No further clinical details, injury specifics, treatment recommendations, or insurer information are included in the note.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "case client; subject of medical treatment planning and insurance coordination"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nFamily coordination with Jordan Brown related case.",
+      "natural_language": "On August 19, 2025, the initial client contact was with Leanora Brown regarding a motor vehicle accident. The case is titled Leanora-Brown-MVA-8-19-2025, with Leanora Brown identified as the client, and it involves family coordination with Jordan Brown in a related case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "initial client contact / primary client"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Jordan Brown",
+            "relevance": "family coordination / related case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nLeanora Brown motor vehicle accident case for August 19, 2025.",
+      "natural_language": "Case Leanora-Brown-MVA-8-19-2025 involves the client Leanora Brown.\n\nThis matter concerns a motor vehicle accident that occurred on August 19, 2025.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nCLIENT CONTACT\nDetails: Leanora Brown\nDOB: 12/6/1974\nSSN: 407-98-9861\nEMS to UofL\nPh: 502-631-5745\nInjuries:\nNeck, back of head, right shoulder, right hip and right leg, back, had a seizure in the car and had to be extracted\nHas Passport\nPIP: Root Insurance\nPerson Making Contact: Justin\nDate & Time: August 20 2025",
+      "natural_language": "Initial client contact on August 20, 2025 with Leanora Brown regarding the motor vehicle accident Leanora-Brown-MVA-8-19-2025. The client is Leanora Brown, born December 6, 1974. SSN on file: [redacted]. Phone: (502) 631-5745. EMS transported her to the University of Louisville (UofL).\n\nInjuries noted include neck, back of head, right shoulder, right hip and right leg, back; she had a seizure in the car and had to be extracted. She has a passport. PIP coverage is with Root Insurance. The person making contact was Justin. Date & Time: August 20, 2025.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "subject of initial contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "transported client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "hospital where client was taken"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "client's PIP coverage carrier"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nCLIENT CONTACT\nDetails: Leanora Brown\nDOB: 12/6/1974\nSSN: 407-98-9861\nEMS to UofL\nPh: 502-631-5745\nInjuries:\nNeck, back of head, right shoulder, right hip and right leg, back, had a seizure in the car and had to be extracted\nHas Passport\nPIP: Root Insurance\nPerson Making Contact: Justin\nDate & Time: August 20 2025",
+      "natural_language": "Initial client contact on August 20, 2025, regarding a motor vehicle accident involving Leanora Brown (case Leanora-Brown-MVA-8-19-2025). The contact was made by Justin.\n\nClient details: Leanora Brown, date of birth December 6, 1974; Social Security Number [redacted]. She was transported by EMS to the University of Louisville (UofL). Phone contact for the client is 502-631-5745. She has a passport. The PIP carrier is Root Insurance. Date and time of contact: August 20, 2025.\n\nInjury and incident details: Reported injuries include the neck, back of the head, right shoulder, right hip and right leg, and the back. She also had a seizure in the car and had to be extracted.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "transporting EMS"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "transport destination/hospital"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "PIP carrier for client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-29",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\n__Leanora Brown__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Leanora Brown - Filevine Project Email Address [LeanoraBrownMVAZ5125534@louisvilleaccidentlawyer.filevineapp.com](mailto:LeanoraBrownMVAZ5125534@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 29 2025 01:45:16 GMT-04:00\n\nPlease request ER and EMS records and bills.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Leanora Brown’s motor vehicle accident case, Leanora-Brown-MVA-8-19-2025, includes an email dated October 29, 2025. The message was sent from Aaron Whaley of Whaley Law Firm (agwhaley@whaleylawfirm.com) to Justin Chumbley (Justin@whaleylawfirm.com) and Leanora Brown’s Filevine project email address LeanoraBrownMVAZ5125534@louisvilleaccidentlawyer.filevineapp.com, at 01:45:16 GMT-04:00. The body of the email reads: “Please request ER and EMS records and bills.” The signature block identifies Aaron Whaley and provides the firm’s contact information: Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "author of email/requesting records"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient instructed to request records"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "case client/subject of records request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "EMS records and bills requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "ER records and bills requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-13",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\n__CLIENT CONTACT__\n__Details:__ updated client. done treating. emailed Starlite for r/b \n__Person Making Contact:__ Justin\n__Date & Time__: November 13 2025",
+      "natural_language": "Case Leanora-Brown-MVA-8-19-2025 involves client Leanora Brown.\n\nInitial client contact on November 13, 2025, with Justin regarding the Leanora Brown motor vehicle accident case Leanora-Brown-MVA-8-19-2025. Details indicate the client was updated, has completed treatment, and an email was sent to Starlite for r/b.",
+      "valid_at": "2025-11-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "client contacted/updated"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "email recipient for r/b (records/billing)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-01",
+      "original_body": "Case: Leanora-Brown-MVA-8-19-2025\nClient: Leanora Brown\n\nFILE ORGANIZATION COMPLETE - Comprehensive case file reorganization completed using 8-bucket system. Successfully reorganized 31 files with 0 errors. Results: 18 files moved to proper locations with standardized naming conventions (YYYY-MM-DD - Client Name - Category - Originator - Description), 3 duplicate files deleted (2 duplicate police reports, 1 duplicate DOCX template), all PDF+MD companion pairs reunified. Directory structure created: Client folder (3 files: Fee Agreement, Intake Form, Health Insurance Card), Investigation folder (1 file: Traffic Collision Report), Insurance folder organized by type and carrier (5 files across Root Insurance PIP, SafeCo BI, Progressive BI), Medical Records organized by provider with subfolders (9 files: Louisville Metro EMS with Medical Records/Bills/Requests subfolders, University of Louisville Hospital with Medical Records/Requests subfolders). Quality metrics: 100% naming compliance, 100% categorization accuracy, 100% execution success. Key information confirmed: Accident date 08/19/2025, rear-end collision by Betty J Antle (at-fault driver insured by SafeCo policy K3389808), client transported by Louisville Metro EMS (Incident #EMS25-00039727) to UofL Hospital (MRN T00549026), injuries include right shoulder, right hip, low back pain, seizure in vehicle requiring extraction. Insurance: Root PIP claim TJ6L8DKY ($10,000 limit, fully paid to Starlite Injury per 11/17/2025 ledger), SafeCo BI claim 060018233, Progressive BI claim 25-822910337. Medical records requests sent 10/29/2025 to both EMS and UofL Hospital. EMS bill $667.40. All files now properly organized and ready for demand preparation phase. Reorganization report saved to Reports folder.",
+      "natural_language": "Case Leanora-Brown-MVA-8-19-2025 for client Leanora Brown underwent a comprehensive file reorganization using an 8-bucket system. A total of 31 files were reorganized with zero errors. Of these, 18 files were moved to their proper locations with standardized naming conventions in the format: YYYY-MM-DD - Client Name - Category - Originator - Description. Three duplicate files were removed (two duplicate police reports and one duplicate DOCX template), and all PDF+MD companion pairs were reunified. A new directory structure was created: a Client folder containing three files (Fee Agreement, Intake Form, Health Insurance Card); an Investigation folder containing one file (Traffic Collision Report); an Insurance folder organized by type and carrier with five files across Root Insurance PIP, SafeCo BI, and Progressive BI; and Medical Records organized by provider with subfolders, including Louisville Metro EMS (Medical Records/Bills/Requests subfolders) and University of Louisville Hospital (Medical Records/Requests subfolders). Quality metrics achieved were 100% naming compliance, 100% categorization accuracy, and 100% execution success.\n\nKey information confirmed includes the accident date of 08/19/2025, a rear-end collision caused by Betty J Antle, the at-fault driver insured by SafeCo policy K3389808. The client was transported by Louisville Metro EMS (Incident #EMS25-00039727) to University of Louisville Hospital (MRN T00549026). Injuries documented include right shoulder pain, right hip pain, low back pain, and a seizure in the vehicle requiring extraction.\n\nInsurance details include Root PIP claim TJ6L8DKY with a $10,000 limit, which was fully paid to Starlite Injury per the ledger dated 11/17/2025; SafeCo BI claim 060018233; and Progressive BI claim 25-822910337. Medical records requests were sent on 10/29/2025 to both EMS and UofL Hospital. The EMS bill amount is $667.40.\n\nAll files are now properly organized and ready for the demand preparation phase. The reorganization report has been saved to the Reports folder.",
+      "valid_at": "2025-12-01T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Leanora Brown",
+            "relevance": "primary client/subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Louisville Metro EMS",
+            "relevance": "transporting EMS provider; records requested and bill ($667.40) (Incident #EMS25-00039727)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "University of Louisville Hospital",
+            "relevance": "hospital where client was treated; medical records requested (MRN T00549026)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Starlite Chiropractic",
+            "relevance": "medical provider/recipient of PIP payment (paid per ledger)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "PIP claim ($10,000 limit) — fully paid"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "bodily injury claim with Progressive on file"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "bodily injury claim for the at-fault driver insured by SafeCo"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "SafeCo Insurance Company",
+            "relevance": "insurer of at-fault driver (policy K3389808)"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

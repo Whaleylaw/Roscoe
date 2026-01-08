@@ -1,0 +1,44 @@
+{
+  "case_name": "Nadine-Robinson-Premise-12-19-2020",
+  "total_episodes": 1,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Nadine-Robinson-Premise-12-19-2020\nClient: Nadine Robinson\n\nAaron Whaley confirmed the communication with Nadine Robinson regarding her pending premises liability case and the current status of her claim.\nRecap\nAaron Whaley contacted Nadine Robinson to discuss her premises liability case from December 19, 2020, and assess the current progress.\nNadine provided Aaron with updates on her case and expressed her continued interest in pursuing the matter.\nTasks\nAaron needs to review the case file and determine the next steps for Nadine's premises liability claim.",
+      "natural_language": "On December 19, 2020, Aaron Whaley contacted Nadine Robinson to discuss her pending premises liability case and to assess the current progress of her claim. He also confirmed the communication with Nadine regarding the case and the current status of her claim.\n\nDuring the conversation, Nadine provided updates on her case and expressed her continued interest in pursuing the matter.\n\nThe tasks identified are for Aaron to review the case file and determine the next steps for Nadine\u2019s premises liability claim.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Nadine Robinson",
+            "relevance": "subject/client of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "contacted client and to review case file"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Nadine Robinson premises liability claim",
+            "relevance": "case discussed"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

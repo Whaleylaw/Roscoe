@@ -1,0 +1,2152 @@
+{
+  "statistics": {
+    "total_entries": 2253,
+    "duplicate_groups_found": 75,
+    "auto_merge_groups": 52,
+    "needs_review_groups": 23,
+    "entries_to_merge": 87,
+    "entries_after_dedup": 2166
+  },
+  "auto_merge_groups": [
+    {
+      "canonical": {
+        "uuid": 338,
+        "email": null,
+        "phone": "(502) 253-4829 Fax",
+        "address": "1 Trilium Way, Corbin, KY 40701",
+        "full_name": "Baptist Health - Corbin",
+        "phone_normalized": "5022534829"
+      },
+      "duplicates": [
+        {
+          "uuid": 342,
+          "email": null,
+          "phone": "606-528-1212",
+          "address": "1 Trillium Way, Corbin, KY 40701",
+          "full_name": "Baptist Health Corbin",
+          "phone_normalized": "6065281212"
+        }
+      ],
+      "confidence": 95.5,
+      "action": "merge",
+      "matched_names": [
+        "Baptist Health - Corbin",
+        "Baptist Health Corbin"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 30,
+        "email": null,
+        "phone": "(270) 651-3763",
+        "address": "100 Court House Square, Glasgow, KY 42141",
+        "full_name": "Barren County Circuit Court",
+        "phone_normalized": "2706513763"
+      },
+      "duplicates": [
+        {
+          "uuid": 261,
+          "email": null,
+          "phone": "(270) 746-7400",
+          "address": "1001 Center Street #102, Bowling Green, KY 42101",
+          "full_name": "Warren County Circuit Court",
+          "phone_normalized": "2707467400"
+        }
+      ],
+      "confidence": 96.3,
+      "action": "skip",
+      "matched_names": [
+        "Barren County Circuit Court",
+        "Warren County Circuit Court"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1596,
+        "email": "blane.kusterle@kyfb.com",
+        "phone": "270-886-8123",
+        "address": null,
+        "full_name": "Blane Kusterle",
+        "phone_normalized": "2708868123"
+      },
+      "duplicates": [
+        {
+          "uuid": 1595,
+          "email": null,
+          "phone": "270-886-8123",
+          "address": null,
+          "full_name": "Blaine Kusterle",
+          "phone_normalized": "2708868123"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Blaine Kusterle",
+        "Blane Kusterle"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 423,
+        "email": null,
+        "phone": "(502) 350-1022",
+        "address": "118 Patriot Drive #102, Bardstown, KY 40004",
+        "full_name": "CHI Saint Joseph Medical Group - Primary Care",
+        "phone_normalized": "5023501022"
+      },
+      "duplicates": [
+        {
+          "uuid": 424,
+          "email": null,
+          "phone": "859-276-4486",
+          "address": "1401 Harrodsburg Road, Suite B 160, Lexington, KY 40504",
+          "full_name": "CHI Saint Joseph Medical Group  Primary Care",
+          "phone_normalized": "8592764486"
+        }
+      ],
+      "confidence": 98.9,
+      "action": "skip",
+      "matched_names": [
+        "CHI Saint Joseph Medical Group  Primary Care",
+        "CHI Saint Joseph Medical Group - Primary Care"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 2185,
+        "email": "wolfe.chandler@aoins.com, lexington.clm@aoins.com",
+        "phone": "800.346.0346 ext. 54628, ext 54628",
+        "address": "Auto Owners Ins",
+        "full_name": "Chandler Wolfe",
+        "phone_normalized": "80034603465462854628"
+      },
+      "duplicates": [
+        {
+          "uuid": 2247,
+          "email": null,
+          "phone": "469-727-1315",
+          "address": null,
+          "full_name": "Chandler Wolfe",
+          "phone_normalized": "4697271315"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Chandler Wolfe",
+        "Chandler Wolfe"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 2244,
+        "email": "deborah@dilbeckandmyers.com",
+        "phone": "502-595-6500",
+        "address": "8005 Lyndon Centre, Way Suite 201 Louisville, KY 40222",
+        "full_name": "Deborah Campbell-Myers",
+        "phone_normalized": "5025956500"
+      },
+      "duplicates": [
+        {
+          "uuid": 2245,
+          "email": "deborah@dilbeckandmyers.com",
+          "phone": "502-595-6500",
+          "address": "8005 Lyndon Centre, Way Suite 201 Louisville, KY 40222",
+          "full_name": "Deborah Campbell-Myers",
+          "phone_normalized": "5025956500"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Deborah Campbell-Myers",
+        "Deborah Campbell-Myers"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 503,
+        "email": "",
+        "phone": "855-691-9890 Main",
+        "address": "P.O. Box 6658, , Louisville, KY 40206",
+        "full_name": "Emergency Medical Associates",
+        "phone_normalized": "8556919890"
+      },
+      "duplicates": [
+        {
+          "uuid": 502,
+          "email": "",
+          "phone": "855-691-9890 Main",
+          "address": "29478 Network Place, , Chicago, IL 60673",
+          "full_name": "Emergency Medical Associates Main",
+          "phone_normalized": "8556919890"
+        }
+      ],
+      "confidence": 95.2,
+      "action": "merge",
+      "matched_names": [
+        "Emergency Medical Associates",
+        "Emergency Medical Associates Main"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 530,
+        "email": null,
+        "phone": "502-774-8631 Main",
+        "address": "2215 Portland Ave., , Louisville, KY 40212",
+        "full_name": "Family Health Centers - Portland",
+        "phone_normalized": "5027748631"
+      },
+      "duplicates": [
+        {
+          "uuid": 1242,
+          "email": null,
+          "phone": "502-774-8631",
+          "address": "2215 Portland Ave., Louisville, KY 40212",
+          "full_name": "Family Health Centers-Portland",
+          "phone_normalized": "5027748631"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Family Health Centers - Portland",
+        "Family Health Centers-Portland"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 533,
+        "email": "myclaim@farmersinsurance.com",
+        "phone": "1-800-435-7764",
+        "address": "P.O. Box 6040, Scranton, PA 18505",
+        "full_name": "Farmers Insurance",
+        "phone_normalized": "8004357764"
+      },
+      "duplicates": [
+        {
+          "uuid": 1525,
+          "email": null,
+          "phone": "800-854-6011",
+          "address": "PO Box 410300, Charlotte, NC 24281",
+          "full_name": "Farmer Insurance",
+          "phone_normalized": "8008546011"
+        }
+      ],
+      "confidence": 97.0,
+      "action": "merge",
+      "matched_names": [
+        "Farmer Insurance",
+        "Farmers Insurance"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 594,
+        "email": null,
+        "phone": "(888) 362-4635",
+        "address": "250 Park Street, , Bowling Green, KY 42101",
+        "full_name": "Imaging Consultants of Kentucky",
+        "phone_normalized": "8883624635"
+      },
+      "duplicates": [
+        {
+          "uuid": 595,
+          "email": null,
+          "phone": null,
+          "address": "703 20th Street, Columbus, GA 31902",
+          "full_name": "Imaging Consultants Of Kentucky",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 96.8,
+      "action": "merge",
+      "matched_names": [
+        "Imaging Consultants of Kentucky",
+        "Imaging Consultants Of Kentucky"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 131,
+        "email": "jadams@kypainassociates.com",
+        "phone": "(502) 855-3919",
+        "address": "222 S. 1st Street Suite 300, Louisville, KY 40202",
+        "full_name": "Kentucky Pain Associates",
+        "phone_normalized": "5028553919"
+      },
+      "duplicates": [
+        {
+          "uuid": 648,
+          "email": null,
+          "phone": "502-855-3919 Main",
+          "address": "222 S. 1st Street, , Louisville, KY 40202",
+          "full_name": "Kentucky Pain Associates PLLC",
+          "phone_normalized": "5028553919"
+        },
+        {
+          "uuid": 1764,
+          "email": "jadams@kypainassociates.com",
+          "phone": null,
+          "address": null,
+          "full_name": "Kentucky Pain Associates PLLC",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 95.3,
+      "action": "merge",
+      "matched_names": [
+        "Kentucky Pain Associates",
+        "Kentucky Pain Associates PLLC",
+        "Kentucky Pain Associates PLLC"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1441,
+        "email": "keri_a_hall@progressive.com",
+        "phone": "1-502-909-3600 Main",
+        "address": "9520 Ormbsy Station Rd. Ste 200, , Louisville, KY 40223",
+        "full_name": "Keri Hall",
+        "phone_normalized": "5029093600"
+      },
+      "duplicates": [
+        {
+          "uuid": 1442,
+          "email": "keri_a_hall@progressive.com",
+          "phone": "5029093600",
+          "address": null,
+          "full_name": "Keri Hall",
+          "phone_normalized": "5029093600"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Keri Hall",
+        "Keri Hall"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 133,
+        "email": null,
+        "phone": "(800) 331-4757",
+        "address": "P.O. Box 3252, Milwaukee, WI 53201",
+        "full_name": "Key Benefit Administrators",
+        "phone_normalized": "8003314757"
+      },
+      "duplicates": [
+        {
+          "uuid": 132,
+          "email": null,
+          "phone": null,
+          "address": "P.O. Box 3252, Milwaukee, WI 53201-3252",
+          "full_name": "Key Benefit Administrators",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Key Benefit Administrators",
+        "Key Benefit Administrators"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 135,
+        "email": "medicalrecords@kdmc.kdhs.us",
+        "phone": "(606) 408-6797 Fax",
+        "address": "2201 Lexington Ave., , Ashland, KY 41101",
+        "full_name": "King's Daughters Medical Center",
+        "phone_normalized": "6064086797"
+      },
+      "duplicates": [
+        {
+          "uuid": 654,
+          "email": "medicalrecords@kdmc.kdhs.us",
+          "phone": "606-408-8999 Main",
+          "address": "2201 Lexington Ave, , Ashland, KY 41101",
+          "full_name": "King's Daughters Medical Center",
+          "phone_normalized": "6064088999"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "King's Daughters Medical Center",
+        "King's Daughters Medical Center"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 657,
+        "email": null,
+        "phone": "(502) 447-2750  Main",
+        "address": "4420 DIXIE HIGHWAY SUITE 122, , Louisville, KY 40216",
+        "full_name": "KORT Physical Therapy",
+        "phone_normalized": "5024472750"
+      },
+      "duplicates": [
+        {
+          "uuid": 658,
+          "email": null,
+          "phone": "502-267-1480",
+          "address": "12613 Taylorsville Rd, Ste 118, Louisville, KY 40299",
+          "full_name": "KORT Physical Therapy",
+          "phone_normalized": "5022671480"
+        },
+        {
+          "uuid": 659,
+          "email": null,
+          "phone": "502-636-1200 Main",
+          "address": "1227 Goss Ave, , Louisville, KY 40214",
+          "full_name": "KORT Physical Therapy",
+          "phone_normalized": "5026361200"
+        },
+        {
+          "uuid": 660,
+          "email": null,
+          "phone": "502-587-9350 Main",
+          "address": "210 E Gray St. Suite 807, , Louisville, KY 40202",
+          "full_name": "KORT Physical Therapy",
+          "phone_normalized": "5025879350"
+        },
+        {
+          "uuid": 661,
+          "email": null,
+          "phone": "502-955-7724",
+          "address": "1868 West Hebron Lane, Suite 101, Shepherdsville, KY 40165",
+          "full_name": "KORT Physical Therapy",
+          "phone_normalized": "5029557724"
+        },
+        {
+          "uuid": 662,
+          "email": null,
+          "phone": "859-245-3323 Fax",
+          "address": "169 East Brannon Road, , Nicholasville, KY 40356",
+          "full_name": "KORT Physical Therapy",
+          "phone_normalized": "8592453323"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "KORT Physical Therapy",
+        "KORT Physical Therapy",
+        "KORT Physical Therapy",
+        "KORT Physical Therapy",
+        "KORT Physical Therapy",
+        "KORT Physical Therapy"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 671,
+        "email": null,
+        "phone": "502-633-2225 Main",
+        "address": "89 Mt Eden Rd, , Shelbyville, KY 40065",
+        "full_name": "Lee Family Chiropractic",
+        "phone_normalized": "5026332225"
+      },
+      "duplicates": [
+        {
+          "uuid": 672,
+          "email": null,
+          "phone": "502-845-2225",
+          "address": "4667 N Main Street, Eminence, KY 40019",
+          "full_name": "Lee Family Chiropractic",
+          "phone_normalized": "5028452225"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Lee Family Chiropractic",
+        "Lee Family Chiropractic"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1551,
+        "email": "lindaj@vocecon.com",
+        "phone": "502-262-3728",
+        "address": null,
+        "full_name": "Linda Jones",
+        "phone_normalized": "5022623728"
+      },
+      "duplicates": [
+        {
+          "uuid": 1552,
+          "email": null,
+          "phone": "502-589-0995 xt. 319",
+          "address": "220 W. Main Street, Suite 2150, Louisville, KY 40202",
+          "full_name": "Linda Jones",
+          "phone_normalized": "5025890995319"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Linda Jones",
+        "Linda Jones"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1895,
+        "email": "maria.smith01@libertymutual.com",
+        "phone": "847-551-2850",
+        "address": null,
+        "full_name": "Maria Smith",
+        "phone_normalized": "8475512850"
+      },
+      "duplicates": [
+        {
+          "uuid": 1894,
+          "email": null,
+          "phone": null,
+          "address": "2231 Lower Hunters Trace, Louisville, KY 40216",
+          "full_name": "Maria Smith",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Maria Smith",
+        "Maria Smith"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 2105,
+        "email": "",
+        "phone": "502-295-6568",
+        "address": "6027 Barley Ave, Louisville, KY 40218",
+        "full_name": "Mark Smith",
+        "phone_normalized": "5022956568"
+      },
+      "duplicates": [
+        {
+          "uuid": 2106,
+          "email": "",
+          "phone": "502-424-6743",
+          "address": "6027 Barley Ave, Louisville, KY 40218",
+          "full_name": "Mark Smith",
+          "phone_normalized": "5024246743"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Mark Smith",
+        "Mark Smith"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 168,
+        "email": null,
+        "phone": "(610) 994-7500 Opt 1",
+        "address": "P.O. Box 6410, Southeastern, PA 19398-6410",
+        "full_name": "MRO",
+        "phone_normalized": "61099475001"
+      },
+      "duplicates": [
+        {
+          "uuid": 167,
+          "email": null,
+          "phone": null,
+          "address": "1000 Madison Ave, Audubon,, PA 19403",
+          "full_name": "MRO",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "MRO",
+        "MRO"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 767,
+        "email": "requeststatus@nortonhealthcare.org",
+        "phone": "(502) 629-0000",
+        "address": "231 E Chestnut St, , Louisville, KY 40202",
+        "full_name": "Norton Children's Hospital",
+        "phone_normalized": "5026290000"
+      },
+      "duplicates": [
+        {
+          "uuid": 768,
+          "email": null,
+          "phone": "(502) 629-8766",
+          "address": "PO Box 35070, , Louisville, KY 40232-5070",
+          "full_name": "Norton Children's Hospital",
+          "phone_normalized": "5026298766"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Norton Children's Hospital",
+        "Norton Children's Hospital"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 773,
+        "email": null,
+        "phone": "(502) 588-0610",
+        "address": "9702 Stonestreet Rd #100, Louisville, KY 40272",
+        "full_name": "Norton Children's Medical Group",
+        "phone_normalized": "5025880610"
+      },
+      "duplicates": [
+        {
+          "uuid": 1430,
+          "email": null,
+          "phone": "5023710022",
+          "address": "7926 Preston Hwy, Suite 210, Louisville, KY 40219",
+          "full_name": "Norton Children's Medical Group",
+          "phone_normalized": "5023710022"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Norton Children's Medical Group",
+        "Norton Children's Medical Group"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 790,
+        "email": null,
+        "phone": "502-449-6444 Main",
+        "address": "4420 Dixie Hwy Suite 116, , Louisville, KY 40216",
+        "full_name": "Norton Immediate Care",
+        "phone_normalized": "5024496444"
+      },
+      "duplicates": [
+        {
+          "uuid": 789,
+          "email": null,
+          "phone": null,
+          "address": "7926 Preston Highway #106, , Louisville, KY 40219",
+          "full_name": "Norton Immediate Care",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Norton Immediate Care",
+        "Norton Immediate Care"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 797,
+        "email": null,
+        "phone": "502-583-1697 Main",
+        "address": "210 East Gray Street Suite 1105, , Louisville, KY 40202",
+        "full_name": "Norton Neuroscience Institute",
+        "phone_normalized": "5025831697"
+      },
+      "duplicates": [
+        {
+          "uuid": 798,
+          "email": null,
+          "phone": "502-394-6390",
+          "address": "4915 Norton Healthcare Blvd., Ste. 301, Louisville, KY 40241",
+          "full_name": "Norton Neuroscience Institute",
+          "phone_normalized": "5023946390"
+        },
+        {
+          "uuid": 1519,
+          "email": null,
+          "phone": null,
+          "address": "210 E Gray St Ste 1105, Louisville, KY 40202",
+          "full_name": "Norton Neuroscience Institute",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Norton Neuroscience Institute",
+        "Norton Neuroscience Institute",
+        "Norton Neuroscience Institute"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 802,
+        "email": null,
+        "phone": "(502) 394-6341",
+        "address": "9880 Angies Way #250, Louisville, KY 40241",
+        "full_name": "Norton Orthopedic Institute",
+        "phone_normalized": "5023946341"
+      },
+      "duplicates": [
+        {
+          "uuid": 801,
+          "email": null,
+          "phone": null,
+          "address": "210 E. Gray Street, Louisville, KY 40202",
+          "full_name": "Norton Orthopedic Institute",
+          "phone_normalized": null
+        },
+        {
+          "uuid": 1520,
+          "email": null,
+          "phone": "502-449-6448",
+          "address": "9300 Stonestreet Road, Suite 200, Louisville, KY 40272",
+          "full_name": "Norton Orthopedic Institute",
+          "phone_normalized": "5024496448"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Norton Orthopedic Institute",
+        "Norton Orthopedic Institute",
+        "Norton Orthopedic Institute"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 803,
+        "email": null,
+        "phone": "502-629-5633",
+        "address": "1930 Bishop Lane #1200, Louisville, KY 40218",
+        "full_name": "Norton Orthopedic Institute - Audubon",
+        "phone_normalized": "5026295633"
+      },
+      "duplicates": [
+        {
+          "uuid": 804,
+          "email": null,
+          "phone": "502-636-4900",
+          "address": "3 Audubon Plaza Drive, Suite 430, Louisville, KY 40217",
+          "full_name": "Norton Orthopedic Institute - Audubon",
+          "phone_normalized": "5026364900"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Norton Orthopedic Institute - Audubon",
+        "Norton Orthopedic Institute - Audubon"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 183,
+        "email": "requeststatus@nortonhealthcare.org",
+        "phone": "(502) 893-1000",
+        "address": "4001 Dutchmans Ln, , Louisville, KY 40207",
+        "full_name": "Norton Women's and Children's Hospital",
+        "phone_normalized": "5028931000"
+      },
+      "duplicates": [
+        {
+          "uuid": 808,
+          "email": null,
+          "phone": "502-893-1000",
+          "address": "4001 Dutchmans Lane, Louisville, KY 40207",
+          "full_name": "Norton Women's & Children's Hospital",
+          "phone_normalized": "5028931000"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Norton Women's & Children's Hospital",
+        "Norton Women's and Children's Hospital"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 189,
+        "email": null,
+        "phone": "877-200-0207 Fax",
+        "address": "P.O. Box 32710, Louisville, KY 40232-2710",
+        "full_name": "Optum",
+        "phone_normalized": "8772000207"
+      },
+      "duplicates": [
+        {
+          "uuid": 188,
+          "email": null,
+          "phone": null,
+          "address": "P.O. Box 182643, Columbus, OH 43218",
+          "full_name": "Optum",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Optum",
+        "Optum"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 822,
+        "email": "kjones@medernix.com",
+        "phone": null,
+        "address": "801 Barret Ave, Suite 104, , Louisville, KY 40204",
+        "full_name": "Ortho Sport and Spine Physicians",
+        "phone_normalized": null
+      },
+      "duplicates": [
+        {
+          "uuid": 190,
+          "email": null,
+          "phone": "(770) 234-5786 Fax",
+          "address": "5788 Roswell Road, Atlanta, GA 30328",
+          "full_name": "Ortho Sport & Spine Physicians",
+          "phone_normalized": "7702345786"
+        },
+        {
+          "uuid": 821,
+          "email": null,
+          "phone": "502-663-9327",
+          "address": "801 Barrett Ave, Suite 104, Louisville, KY 40204",
+          "full_name": "Ortho Sport & Spine Physicians",
+          "phone_normalized": "5026639327"
+        }
+      ],
+      "confidence": 96.8,
+      "action": "merge",
+      "matched_names": [
+        "Ortho Sport & Spine Physicians",
+        "Ortho Sport & Spine Physicians",
+        "Ortho Sport and Spine Physicians"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 823,
+        "email": null,
+        "phone": "859-301-2663 Main",
+        "address": "8726 US 42, , Florence, KY 41042",
+        "full_name": "OrthoCincy",
+        "phone_normalized": "8593012663"
+      },
+      "duplicates": [
+        {
+          "uuid": 824,
+          "email": null,
+          "phone": "859-301-2663",
+          "address": "560 South Loop, Edgewood, KY 41017",
+          "full_name": "OrthoCincy",
+          "phone_normalized": "8593012663"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "OrthoCincy",
+        "OrthoCincy"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 831,
+        "email": null,
+        "phone": "270-745-1272 Fax",
+        "address": "57796 Nashville Rd, Bowling Green, KY 42101",
+        "full_name": "Orthopedics Plus Physical Therapy",
+        "phone_normalized": "2707451272"
+      },
+      "duplicates": [
+        {
+          "uuid": 830,
+          "email": null,
+          "phone": "(270) 239-6640",
+          "address": "102 W Maple Street, Scottsville, KY 42164",
+          "full_name": "Orthopedic Plus Physical Therapy",
+          "phone_normalized": "2702396640"
+        }
+      ],
+      "confidence": 98.5,
+      "action": "merge",
+      "matched_names": [
+        "Orthopedic Plus Physical Therapy",
+        "Orthopedics Plus Physical Therapy"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1104,
+        "email": "info@pmcoa.us",
+        "phone": "270-554-8373",
+        "address": "67 Lakeview Drive, Paducah, KY 42001",
+        "full_name": "Pain Management Centers Of America",
+        "phone_normalized": "2705548373"
+      },
+      "duplicates": [
+        {
+          "uuid": 838,
+          "email": null,
+          "phone": "(812) 949-1223",
+          "address": "2201 Green Valley Road, New Albany, IN 47150",
+          "full_name": "Pain Management Centers Of America",
+          "phone_normalized": "8129491223"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Pain Management Centers Of America",
+        "Pain Management Centers Of America"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 840,
+        "email": null,
+        "phone": "502-774-4401 Main",
+        "address": "3015 Wilson Ave, , Louisville, KY 40211",
+        "full_name": "Park Duvalle Community Health Center-Wilson Ave.",
+        "phone_normalized": "5027744401"
+      },
+      "duplicates": [
+        {
+          "uuid": 841,
+          "email": null,
+          "phone": "(502) 479-8930",
+          "address": "3828 Bardstown Rd, Louisville, KY 40218",
+          "full_name": "Park DuValle Community Health Center-Bardstown Rd.",
+          "phone_normalized": "5024798930"
+        }
+      ],
+      "confidence": 97.2,
+      "action": "skip",
+      "matched_names": [
+        "Park Duvalle Community Health Center-Wilson Ave.",
+        "Park DuValle Community Health Center-Bardstown Rd."
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 843,
+        "email": "para.hcarecordsrequestnash@hcahealthcare.com",
+        "phone": "(423) 698-6061",
+        "address": "2333 McCallie Ave, Chattanooga, TN 37404",
+        "full_name": "Parkridge Medical Center",
+        "phone_normalized": "4236986061"
+      },
+      "duplicates": [
+        {
+          "uuid": 842,
+          "email": null,
+          "phone": "(423) 698-6061",
+          "address": "2333 McCallie Ave, Chattanooga, TN 37404",
+          "full_name": "Park Ridge Medical Center",
+          "phone_normalized": "4236986061"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Park Ridge Medical Center",
+        "Parkridge Medical Center"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1270,
+        "email": "p950a@erieinsurance.com",
+        "phone": "859-219-4961 Main",
+        "address": "P.O.BOX 9031, , CANTON, OH 44711",
+        "full_name": "Patrice Coffey",
+        "phone_normalized": "8592194961"
+      },
+      "duplicates": [
+        {
+          "uuid": 1272,
+          "email": null,
+          "phone": null,
+          "address": null,
+          "full_name": "Patrice Coffey",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Patrice Coffey",
+        "Patrice Coffey"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 859,
+        "email": "camaren@caterrahealth.com",
+        "phone": "614-7403 Main",
+        "address": "811 South 2nd Street, Suite 200, , Louisville, KY 40203",
+        "full_name": "Preston Medical Center",
+        "phone_normalized": "6147403"
+      },
+      "duplicates": [
+        {
+          "uuid": 860,
+          "email": null,
+          "phone": "614-7403 Main",
+          "address": "5703B Preston Highway, , Louisville, KY 40219",
+          "full_name": "Preston Medical Center",
+          "phone_normalized": "6147403"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Preston Medical Center",
+        "Preston Medical Center"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 201,
+        "email": null,
+        "phone": "(502) 537-7710",
+        "address": "3942 Taylorsville Rd, Louisville, KY 40220",
+        "full_name": "ProRehab",
+        "phone_normalized": "5025377710"
+      },
+      "duplicates": [
+        {
+          "uuid": 202,
+          "email": null,
+          "phone": "(502) 200-6970",
+          "address": "8019 Dixie Highway Unit 106, Louisville, KY 40258",
+          "full_name": "ProRehab",
+          "phone_normalized": "5022006970"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "ProRehab",
+        "ProRehab"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 870,
+        "email": "londonpt@ptpros.com",
+        "phone": "(606) 877-3231",
+        "address": "1690 W. Highway 192, London, KY 40741",
+        "full_name": "PT Pros Physical Therapy And Sports Center",
+        "phone_normalized": "6068773231"
+      },
+      "duplicates": [
+        {
+          "uuid": 869,
+          "email": null,
+          "phone": "606-523-2522",
+          "address": "383 Corbin Center DR., Corbin, KY 40701",
+          "full_name": "PT Pros Physical Therapy and Sports Center",
+          "phone_normalized": "6065232522"
+        }
+      ],
+      "confidence": 97.6,
+      "action": "merge",
+      "matched_names": [
+        "PT Pros Physical Therapy and Sports Center",
+        "PT Pros Physical Therapy And Sports Center"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 881,
+        "email": null,
+        "phone": "2707591805",
+        "address": "803 Poplar St., Murray, KY 42071",
+        "full_name": "Radiology Associates Of Murray",
+        "phone_normalized": "2707591805"
+      },
+      "duplicates": [
+        {
+          "uuid": 882,
+          "email": null,
+          "phone": "270-762-1100",
+          "address": "803 Poplar St, Murray, KY 42071",
+          "full_name": "Radiology Associates Of Murray",
+          "phone_normalized": "2707621100"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Radiology Associates Of Murray",
+        "Radiology Associates Of Murray"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 889,
+        "email": null,
+        "phone": "615-220-0086",
+        "address": "741 President PL, Suite 130, Smynra, TN 37167",
+        "full_name": "Results Physiotherapy",
+        "phone_normalized": "6152200086"
+      },
+      "duplicates": [
+        {
+          "uuid": 890,
+          "email": null,
+          "phone": "502-813-8080 Main",
+          "address": "7943 Bardstown Road, , Louisville, KY 40291",
+          "full_name": "Results Physiotherapy",
+          "phone_normalized": "5028138080"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Results Physiotherapy",
+        "Results Physiotherapy"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 894,
+        "email": null,
+        "phone": "(859) 219-9090",
+        "address": "771 Corporate Drive #900, Lexington, KY 40503",
+        "full_name": "Richardson Law Group, PLLC",
+        "phone_normalized": "8592199090"
+      },
+      "duplicates": [
+        {
+          "uuid": 893,
+          "email": null,
+          "phone": "(859) 444-4949",
+          "address": "334 Beechwood Road #304, Ft. Mitchell, KY 41017",
+          "full_name": "Richardson Law Group PLLC",
+          "phone_normalized": "8594444949"
+        }
+      ],
+      "confidence": 98.0,
+      "action": "merge",
+      "matched_names": [
+        "Richardson Law Group PLLC",
+        "Richardson Law Group, PLLC"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1406,
+        "email": "roneasha@gmail.com",
+        "phone": "502 436-6508 Main",
+        "address": "7008 Mathews Rd, , Louisville, KY 40258",
+        "full_name": "Roneasha Gidron",
+        "phone_normalized": "5024366508"
+      },
+      "duplicates": [
+        {
+          "uuid": 1407,
+          "email": null,
+          "phone": null,
+          "address": "7008 Matthews Rd, Louisville, Ky 40258",
+          "full_name": "Roneasha Gidron",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Roneasha Gidron",
+        "Roneasha Gidron"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 996,
+        "email": "email requests to cheryl granger at msn.....cgranger@msnllc.com-see notes for how to",
+        "phone": "Cheryl Granger 706-653-9091 Main",
+        "address": "200 Abraham Flexner Way, , Louisville, KY 40202",
+        "full_name": "Tyson, Schwab, Short & Weiss",
+        "phone_normalized": "7066539091"
+      },
+      "duplicates": [
+        {
+          "uuid": 997,
+          "email": null,
+          "phone": "706-653-9091 Main",
+          "address": "703 20th St, , COLUMBUS, GA 31902",
+          "full_name": "Tyson, Schwab, Short & Weiss",
+          "phone_normalized": "7066539091"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Tyson, Schwab, Short & Weiss",
+        "Tyson, Schwab, Short & Weiss"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 239,
+        "email": "subrogationreferrals@optum.com",
+        "phone": "888-870-8842",
+        "address": "P.O. Box 5270, Kingston, NY 12402",
+        "full_name": "United Healthcare",
+        "phone_normalized": "8888708842"
+      },
+      "duplicates": [
+        {
+          "uuid": 1020,
+          "email": null,
+          "phone": "877-842-3210",
+          "address": "P.O Box 31362, Salt Lake City, UT 84131",
+          "full_name": "United Healthcare",
+          "phone_normalized": "8778423210"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "United Healthcare",
+        "United Healthcare"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 244,
+        "email": "patient.services@uoflhealth.org",
+        "phone": "502-217-1900 Records",
+        "address": "401 E Chestnut St., #710, Louisville, KY 40202",
+        "full_name": "University of Louisville Physicians",
+        "phone_normalized": "5022171900"
+      },
+      "duplicates": [
+        {
+          "uuid": 1031,
+          "email": null,
+          "phone": null,
+          "address": "19 Mollison Way, Lewiston, ME 04240",
+          "full_name": "University Of Louisville Physicians",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 97.1,
+      "action": "merge",
+      "matched_names": [
+        "University of Louisville Physicians",
+        "University Of Louisville Physicians"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1041,
+        "email": null,
+        "phone": "502-588-3630",
+        "address": "Children's Hospital Foundation Building, 601 South Floyd Street, Suite 403, Louisville, KY 40202",
+        "full_name": "UofL Physicians - Orthopedics",
+        "phone_normalized": "5025883630"
+      },
+      "duplicates": [
+        {
+          "uuid": 1730,
+          "email": null,
+          "phone": "502-363-0588",
+          "address": "4402 Churchman Avenue, Suite 300, Louisville, KY 40215",
+          "full_name": "UofL Physicians  Orthopedics",
+          "phone_normalized": "5023630588"
+        },
+        {
+          "uuid": 1731,
+          "email": null,
+          "phone": null,
+          "address": "225 Abraham Flexner Way, Suite 650, Louisville, KY 40202",
+          "full_name": "UofL Physicians Orthopedics",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 98.2,
+      "action": "skip",
+      "matched_names": [
+        "UofL Physicians  Orthopedics",
+        "UofL Physicians - Orthopedics",
+        "UofL Physicians Orthopedics"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 250,
+        "email": null,
+        "phone": "502-359-1877",
+        "address": "8203 National Turnpike, Louisville, KY 40214",
+        "full_name": "UPS",
+        "phone_normalized": "5023591877"
+      },
+      "duplicates": [
+        {
+          "uuid": 249,
+          "email": null,
+          "phone": null,
+          "address": "1800 Mercer Rd, , Lexington, KY 40511-1013",
+          "full_name": "UPS",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "UPS",
+        "UPS"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1059,
+        "email": null,
+        "phone": "270-599-0958 Main",
+        "address": "1048 Ashley St.  #103a, , Bowling Green, KY 42103",
+        "full_name": "Vitality Pain Center",
+        "phone_normalized": "2705990958"
+      },
+      "duplicates": [
+        {
+          "uuid": 1060,
+          "email": null,
+          "phone": "812-476-6166",
+          "address": "7145 E Virginia St, Suite 5000, Evansville, IN 47715",
+          "full_name": "Vitality Pain Center",
+          "phone_normalized": "8124766166"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "skip",
+      "matched_names": [
+        "Vitality Pain Center",
+        "Vitality Pain Center"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 262,
+        "email": null,
+        "phone": "877-389-9457",
+        "address": "P.O. Box 31224, Tampa, FL 33631-3224",
+        "full_name": "Wellcare of Kentucky",
+        "phone_normalized": "8773899457"
+      },
+      "duplicates": [
+        {
+          "uuid": 1574,
+          "email": null,
+          "phone": null,
+          "address": "Wellcare Health Plans, PO Box 31224, Tampa, FL 33631-3224",
+          "full_name": "Wellcare Of Kentucky",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 95.0,
+      "action": "merge",
+      "matched_names": [
+        "Wellcare of Kentucky",
+        "Wellcare Of Kentucky"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1143,
+        "email": null,
+        "phone": "740-364-3006 Main",
+        "address": null,
+        "full_name": "William Beaver",
+        "phone_normalized": "7403643006"
+      },
+      "duplicates": [
+        {
+          "uuid": 1144,
+          "email": null,
+          "phone": "740-364-3006",
+          "address": null,
+          "full_name": "William Beaver",
+          "phone_normalized": "7403643006"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "William Beaver",
+        "William Beaver"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1080,
+        "email": null,
+        "phone": "502-895-5404 Main",
+        "address": "P.O. Box 7159, Louisville, KY 40257",
+        "full_name": "X-ray Associates of Louisville",
+        "phone_normalized": "5028955404"
+      },
+      "duplicates": [
+        {
+          "uuid": 1079,
+          "email": null,
+          "phone": "502-894-9544 Fax",
+          "address": "PO Box 7159, , Louisville, KY 40257-0159",
+          "full_name": "Xray Associates of Louisville",
+          "phone_normalized": "5028949544"
+        }
+      ],
+      "confidence": 98.3,
+      "action": "merge",
+      "matched_names": [
+        "X-ray Associates of Louisville",
+        "Xray Associates of Louisville"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1425,
+        "email": "zgrizzl1@progressive.com",
+        "phone": "502-909-3598",
+        "address": null,
+        "full_name": "Zachary Grizzle",
+        "phone_normalized": "5029093598"
+      },
+      "duplicates": [
+        {
+          "uuid": 1426,
+          "email": "zachary_grizzle@progressive.com",
+          "phone": "502-909-3598",
+          "address": null,
+          "full_name": "Zachary Grizzle",
+          "phone_normalized": "5029093598"
+        }
+      ],
+      "confidence": 100.0,
+      "action": "merge",
+      "matched_names": [
+        "Zachary Grizzle",
+        "Zachary Grizzle"
+      ]
+    }
+  ],
+  "needs_review_groups": [
+    {
+      "canonical": {
+        "uuid": 282,
+        "email": null,
+        "phone": "270-384-2777",
+        "address": "937 Campbellsville Road, Columbia, KY 42728",
+        "full_name": "Adair Family Medical Center",
+        "phone_normalized": "2703842777"
+      },
+      "duplicates": [
+        {
+          "uuid": 310,
+          "email": null,
+          "phone": "502-635-0046 Fax",
+          "address": "1505 S 7th St, , Louisville, KY 40208",
+          "full_name": "Amin Family Medical Center",
+          "phone_normalized": "5026350046"
+        }
+      ],
+      "confidence": 90.6,
+      "action": "skipw",
+      "matched_names": [
+        "Adair Family Medical Center",
+        "Amin Family Medical Center"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 341,
+        "email": null,
+        "phone": "(502) 253-4829 Fax",
+        "address": "446 W. Cumberland Gap Parkway, Corbin, KY 40701",
+        "full_name": "Baptist Health - Orthopedic & Sport Medicine",
+        "phone_normalized": "5022534829"
+      },
+      "duplicates": [
+        {
+          "uuid": 340,
+          "email": null,
+          "phone": "(859) 899-7950",
+          "address": "1760 Nicholasville Rd #101, Lexington, KY 40503",
+          "full_name": "Baptist Health - Ortho & Sports Medicine",
+          "phone_normalized": "8598997950"
+        }
+      ],
+      "confidence": 92.9,
+      "action": "skip",
+      "matched_names": [
+        "Baptist Health - Ortho & Sports Medicine",
+        "Baptist Health - Orthopedic & Sport Medicine"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 344,
+        "email": null,
+        "phone": "(812) 542-4642",
+        "address": "3516 E. 10th Street, Jeffersonville, IN 47130",
+        "full_name": "Baptist Health ER & Urgent Care",
+        "phone_normalized": "8125424642"
+      },
+      "duplicates": [
+        {
+          "uuid": 363,
+          "email": null,
+          "phone": "(502) 253-4828 Other",
+          "address": "10216 Taylorsville Road #150, Louisville, KY 40299",
+          "full_name": "Baptist Health Urgent Care",
+          "phone_normalized": "5022534828"
+        }
+      ],
+      "confidence": 91.2,
+      "action": "skip",
+      "matched_names": [
+        "Baptist Health ER & Urgent Care",
+        "Baptist Health Urgent Care"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 355,
+        "email": null,
+        "phone": "502-893-7710",
+        "address": "2400 Eastpoint Parkway, Suite 580, Louisville, KY 40223",
+        "full_name": "Baptist Health Medical Group Cardiology",
+        "phone_normalized": "5028937710"
+      },
+      "duplicates": [
+        {
+          "uuid": 359,
+          "email": null,
+          "phone": "859-260-4330",
+          "address": "2101 Nicholasville Rd, Ste 204, Lexington, KY 40503",
+          "full_name": "Baptist Health Medical Group Neurology",
+          "phone_normalized": "8592604330"
+        }
+      ],
+      "confidence": 90.9,
+      "action": "skip",
+      "matched_names": [
+        "Baptist Health Medical Group Cardiology",
+        "Baptist Health Medical Group Neurology"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 40,
+        "email": null,
+        "phone": "859-448-2900",
+        "address": "6025 Rogers Lane, Burlington, KY 41005",
+        "full_name": "Boone County Circuit Court",
+        "phone_normalized": "8594482900"
+      },
+      "duplicates": [
+        {
+          "uuid": 41,
+          "email": null,
+          "phone": "(606) 739-4131",
+          "address": "2805 Louisa Street, P.O. Box 688, Cattlesburg, KY 41129",
+          "full_name": "Boyd County Circuit Court",
+          "phone_normalized": "6067394131"
+        }
+      ],
+      "confidence": 90.2,
+      "action": "skip",
+      "matched_names": [
+        "Boone County Circuit Court",
+        "Boyd County Circuit Court"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 399,
+        "email": null,
+        "phone": "321-434-1877 Fax",
+        "address": "701 W Cocoa Beach Causeway, Cocoa Beach, FL 32931",
+        "full_name": "Cape Canaveral Hospital",
+        "phone_normalized": "3214341877"
+      },
+      "duplicates": [
+        {
+          "uuid": 1206,
+          "email": null,
+          "phone": null,
+          "address": null,
+          "full_name": "cape canaveral Hospital",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 91.3,
+      "action": "mergew",
+      "matched_names": [
+        "Cape Canaveral Hospital",
+        "cape canaveral Hospital"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 65,
+        "email": null,
+        "phone": "(270) 506-3300 Work",
+        "address": "1107 Crowne Pointe Dr, STE 107, Elizabethtown, KY 42701-7123",
+        "full_name": "Commonwealth Pain and Spine",
+        "phone_normalized": "2705063300"
+      },
+      "duplicates": [
+        {
+          "uuid": 451,
+          "email": null,
+          "phone": "502-855-7200  Main",
+          "address": "120 Executive Park, Suite 165, , Louisville, KY 40207",
+          "full_name": "Commonwealth Pain & Spine",
+          "phone_normalized": "5028557200"
+        },
+        {
+          "uuid": 1908,
+          "email": null,
+          "phone": null,
+          "address": "2609 New Hartford Rd, Owensboro, KY 42303",
+          "full_name": "Commonwealth Pain And Spine",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 92.3,
+      "action": "skip",
+      "matched_names": [
+        "Commonwealth Pain & Spine",
+        "Commonwealth Pain and Spine",
+        "Commonwealth Pain And Spine"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 69,
+        "email": null,
+        "phone": "(315) 634-5200",
+        "address": "12580 W Creek Parkway, Richmond, VA 23238",
+        "full_name": "Country Way Insurance",
+        "phone_normalized": "3156345200"
+      },
+      "duplicates": [
+        {
+          "uuid": 458,
+          "email": "claims@countryway.com",
+          "phone": "315-634-5286",
+          "address": null,
+          "full_name": "Countryway Insurance",
+          "phone_normalized": "3156345286"
+        }
+      ],
+      "confidence": 92.7,
+      "action": "merge",
+      "matched_names": [
+        "Country Way Insurance",
+        "Countryway Insurance"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 714,
+        "email": null,
+        "phone": "(606) 759-3130",
+        "address": "989 Medical Park Dr, Maysville, KY 41056",
+        "full_name": "Maysville Radiology Associates",
+        "phone_normalized": "6067593130"
+      },
+      "duplicates": [
+        {
+          "uuid": 469,
+          "email": null,
+          "phone": "(859) 239-1235 Main",
+          "address": "1689 Gose Pike, , Danville, KY 40422",
+          "full_name": "Danville Radiology Associates",
+          "phone_normalized": "8592391235"
+        }
+      ],
+      "confidence": 91.5,
+      "action": "skip",
+      "matched_names": [
+        "Danville Radiology Associates",
+        "Maysville Radiology Associates"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 479,
+        "email": null,
+        "phone": "502-585-1735",
+        "address": "234 E Gray St #850, Louisville, KY 40202",
+        "full_name": "Diagnostic Imaging Alliance Of Louisville, PSC",
+        "phone_normalized": "5025851735"
+      },
+      "duplicates": [
+        {
+          "uuid": 477,
+          "email": null,
+          "phone": "(502) 629-7601 Main",
+          "address": "200 E. Chestnut Street, , Louisville, KY 40202",
+          "full_name": "Diagnostic Imaging Alliance of Louisville",
+          "phone_normalized": "5026297601"
+        }
+      ],
+      "confidence": 92.0,
+      "action": "merge",
+      "matched_names": [
+        "Diagnostic Imaging Alliance of Louisville",
+        "Diagnostic Imaging Alliance Of Louisville, PSC"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 1089,
+        "email": "fakeuimadjuster@fakeuimcom.com",
+        "phone": null,
+        "address": "123 Fake UIM Street, Fakeville, KY 12345",
+        "full_name": "Fake UIM Adjuster",
+        "phone_normalized": null
+      },
+      "duplicates": [
+        {
+          "uuid": 1088,
+          "email": "fakebiadjuster@fakebicompany.com",
+          "phone": null,
+          "address": "123 Fake Bi Street, Fakeville, KY 4020412323",
+          "full_name": "Fake BI Adjuster",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 90.9,
+      "action": "delete",
+      "matched_names": [
+        "Fake BI Adjuster",
+        "Fake UIM Adjuster"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 527,
+        "email": null,
+        "phone": "(502) 223-0308",
+        "address": "593 E. Main Street, Frankfort, KY 40601",
+        "full_name": "Family Care Of The Bluegrass - East",
+        "phone_normalized": "5022230308"
+      },
+      "duplicates": [
+        {
+          "uuid": 528,
+          "email": null,
+          "phone": "(502) 783-2304",
+          "address": "89 Michael Davenport Blvd, Frankfort, KY 40601",
+          "full_name": "Family Care Of The Bluegrass - West",
+          "phone_normalized": "5027832304"
+        }
+      ],
+      "confidence": 94.3,
+      "action": "skip",
+      "matched_names": [
+        "Family Care Of The Bluegrass - East",
+        "Family Care Of The Bluegrass - West"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 619,
+        "email": "medicalrecords@medrecsmanagement.com",
+        "phone": "270-887-0425 billing Fax",
+        "address": "320 W. 18th Street, Hopkinsville, KY 42240",
+        "full_name": "Jennie Stuart Medical Center",
+        "phone_normalized": "2708870425"
+      },
+      "duplicates": [
+        {
+          "uuid": 126,
+          "email": null,
+          "phone": "(270) 887-0100 Work",
+          "address": "320 W 18th St, , Hopkinsville, KY 42240",
+          "full_name": "Jennie Stewart Medical Center",
+          "phone_normalized": "2708870100"
+        }
+      ],
+      "confidence": 94.7,
+      "action": "merge",
+      "matched_names": [
+        "Jennie Stewart Medical Center",
+        "Jennie Stuart Medical Center"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 632,
+        "email": "mckenzie@kentuckianareporters.com  (send notices to this email)",
+        "phone": "502-589-2273 Main",
+        "address": "730 W. Main Street, Ste. 101, , Louisville, KY 40202",
+        "full_name": "Kentuckiana Court Reporters",
+        "phone_normalized": "5025892273"
+      },
+      "duplicates": [
+        {
+          "uuid": 637,
+          "email": null,
+          "phone": "(859) 410-2415",
+          "address": "P.O. Box 3983, Louisville, KY 40201",
+          "full_name": "Kentucky Court Reporters",
+          "phone_normalized": "8594102415"
+        }
+      ],
+      "confidence": 90.2,
+      "action": "merge",
+      "matched_names": [
+        "Kentuckiana Court Reporters",
+        "Kentucky Court Reporters"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 692,
+        "email": "records@louisvillecitychiropracticky.com",
+        "phone": "502-961-0007 Main",
+        "address": "7702 Preston Hwy Suite A, , Heritage Creek, KY 40219",
+        "full_name": "Louisville City Chiropractic",
+        "phone_normalized": "5029610007"
+      },
+      "duplicates": [
+        {
+          "uuid": 690,
+          "email": "records@kyinjurycenters.com",
+          "phone": "502-449-5955 Main",
+          "address": "5105 Dixie Hwy, , Louiisville, KY 402",
+          "full_name": "Louisville Chiropractic",
+          "phone_normalized": "5024495955"
+        },
+        {
+          "uuid": 693,
+          "email": "records@louisvillecitychiropracticky.com",
+          "phone": "502-681-6800 Main",
+          "address": "220 West Broadway, , Louisville, KY 40202",
+          "full_name": "Louisville City Chiropractic",
+          "phone_normalized": "5026816800"
+        }
+      ],
+      "confidence": 90.2,
+      "action": "skip",
+      "matched_names": [
+        "Louisville Chiropractic",
+        "Louisville City Chiropractic",
+        "Louisville City Chiropractic"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 761,
+        "email": null,
+        "phone": null,
+        "address": null,
+        "full_name": "No EMS - Client Confirmed",
+        "phone_normalized": null
+      },
+      "duplicates": [
+        {
+          "uuid": 762,
+          "email": null,
+          "phone": null,
+          "address": null,
+          "full_name": "No ER - Client Confirmed",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 93.9,
+      "action": "delete",
+      "matched_names": [
+        "No EMS - Client Confirmed",
+        "No ER - Client Confirmed"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 779,
+        "email": null,
+        "phone": "502-629-5400 Main",
+        "address": "210 E. Gray Street, Ste. 700, , Louisville, KY 40202",
+        "full_name": "Norton Community Medical Associates - Fincastle",
+        "phone_normalized": "5026295400"
+      },
+      "duplicates": [
+        {
+          "uuid": 783,
+          "email": null,
+          "phone": "502-363-1731 Main",
+          "address": "189 Outer Loop, , Louisville, KY 40214",
+          "full_name": "Norton Community Medical Associates-Fairdale",
+          "phone_normalized": "5023631731"
+        }
+      ],
+      "confidence": 90.1,
+      "action": "review",
+      "matched_names": [
+        "Norton Community Medical Associates - Fincastle",
+        "Norton Community Medical Associates-Fairdale"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 879,
+        "email": "info@avoca-med.com",
+        "phone": "812-283-5950 Main",
+        "address": "1214 Spring Street, Suite 2, , Jeffersonville, IN 47130",
+        "full_name": "Radiology Associates",
+        "phone_normalized": "8122835950"
+      },
+      "duplicates": [
+        {
+          "uuid": 880,
+          "email": null,
+          "phone": "(270) 706-1645",
+          "address": "913 N Dixie Ave, Elizabethtown, KY 42701",
+          "full_name": "Radiology Associates Inc",
+          "phone_normalized": "2707061645"
+        }
+      ],
+      "confidence": 90.9,
+      "action": "review",
+      "matched_names": [
+        "Radiology Associates",
+        "Radiology Associates Inc"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 896,
+        "email": null,
+        "phone": "502-708-3100",
+        "address": "P.O. Box 22989, Louisville, KY 40252",
+        "full_name": "Risk Management Services Company",
+        "phone_normalized": "5027083100"
+      },
+      "duplicates": [
+        {
+          "uuid": 973,
+          "email": null,
+          "phone": null,
+          "address": "PO Box 22989, Louisville, KY 40252",
+          "full_name": "TARC Risk Management Services Company",
+          "phone_normalized": null
+        }
+      ],
+      "confidence": 92.8,
+      "action": "review",
+      "matched_names": [
+        "Risk Management Services Company",
+        "TARC Risk Management Services Company"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 206,
+        "email": "claims@safeauto.com",
+        "phone": "614-384-4757 Fax",
+        "address": null,
+        "full_name": "Safe Auto Insurance Company",
+        "phone_normalized": "6143844757"
+      },
+      "duplicates": [
+        {
+          "uuid": 1283,
+          "email": null,
+          "phone": "(888) 268-8840 Fax",
+          "address": null,
+          "full_name": "SafeCo Insurance Company",
+          "phone_normalized": "8882688840"
+        }
+      ],
+      "confidence": 90.2,
+      "action": "review",
+      "matched_names": [
+        "Safe Auto Insurance Company",
+        "SafeCo Insurance Company"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 919,
+        "email": "shelly.hellwege@joinroot.com",
+        "phone": "614-699-6024",
+        "address": "80 E Rich St Ste 500, Columbus, OH 43215",
+        "full_name": "Shelly",
+        "phone_normalized": "6146996024"
+      },
+      "duplicates": [
+        {
+          "uuid": 214,
+          "email": null,
+          "phone": "502-384-3232",
+          "address": "2912 Brownsboro Rd, Louisville, KY 40206",
+          "full_name": "Shell",
+          "phone_normalized": "5023843232"
+        }
+      ],
+      "confidence": 90.9,
+      "action": "review",
+      "matched_names": [
+        "Shell",
+        "Shelly"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 964,
+        "email": "statefarmclaims@statefarm.com",
+        "phone": "844-292-8615 xt 506 Main",
+        "address": null,
+        "full_name": "State Farm PIP Team",
+        "phone_normalized": "8442928615506"
+      },
+      "duplicates": [
+        {
+          "uuid": 1938,
+          "email": "statefarmclaims@statefarm.com",
+          "phone": "844-292-8615 ext 307",
+          "address": null,
+          "full_name": "State Farm BI Team",
+          "phone_normalized": "8442928615307"
+        }
+      ],
+      "confidence": 91.9,
+      "action": "skip",
+      "matched_names": [
+        "State Farm BI Team",
+        "State Farm PIP Team"
+      ]
+    },
+    {
+      "canonical": {
+        "uuid": 245,
+        "email": "ulhhimroi@uoflhealth.org",
+        "phone": "(502) 210-4200 Main",
+        "address": "2401 Terra Crossing Blvd, , Louisville, KY 40245-5371",
+        "full_name": "UofL Health - Medical Center Northeast",
+        "phone_normalized": "5022104200"
+      },
+      "duplicates": [
+        {
+          "uuid": 1036,
+          "email": null,
+          "phone": "(502) 259-6000",
+          "address": "3920 Dutchmans Ln, Louisville, Ky 40207",
+          "full_name": "UofL Health - Medical Center East",
+          "phone_normalized": "5022596000"
+        }
+      ],
+      "confidence": 90.1,
+      "action": "skip",
+      "matched_names": [
+        "UofL Health - Medical Center East",
+        "UofL Health - Medical Center Northeast"
+      ]
+    }
+  ],
+  "merge_map": {
+    "310": 282,
+    "342": 338,
+    "340": 341,
+    "363": 344,
+    "359": 355,
+    "261": 30,
+    "1595": 1596,
+    "41": 40,
+    "1206": 399,
+    "424": 423,
+    "451": 65,
+    "1908": 65,
+    "458": 69,
+    "2247": 2185,
+    "469": 714,
+    "2245": 2244,
+    "477": 479,
+    "503": 544,
+    "502": 544,
+    "1088": 1089,
+    "528": 527,
+    "1242": 530,
+    "1525": 533,
+    "595": 594,
+    "126": 619,
+    "637": 632,
+    "648": 131,
+    "1764": 131,
+    "1442": 1441,
+    "132": 133,
+    "654": 135,
+    "658": 657,
+    "659": 657,
+    "660": 657,
+    "661": 657,
+    "662": 657,
+    "672": 671,
+    "1552": 1551,
+    "690": 692,
+    "693": 692,
+    "1894": 1895,
+    "2106": 2105,
+    "167": 168,
+    "762": 761,
+    "768": 767,
+    "1430": 773,
+    "783": 779,
+    "789": 790,
+    "798": 797,
+    "1519": 797,
+    "801": 802,
+    "1520": 802,
+    "804": 803,
+    "808": 183,
+    "188": 189,
+    "190": 822,
+    "821": 822,
+    "824": 823,
+    "830": 831,
+    "838": 1104,
+    "841": 840,
+    "842": 843,
+    "1272": 1270,
+    "860": 859,
+    "202": 201,
+    "869": 870,
+    "880": 879,
+    "882": 881,
+    "890": 889,
+    "893": 894,
+    "973": 896,
+    "1407": 1406,
+    "1283": 206,
+    "214": 919,
+    "1938": 964,
+    "997": 996,
+    "1020": 239,
+    "1031": 244,
+    "1036": 245,
+    "1730": 1041,
+    "1731": 1041,
+    "249": 250,
+    "1060": 1059,
+    "1574": 262,
+    "1144": 1143,
+    "1079": 1080,
+    "1426": 1425
+  }
+}

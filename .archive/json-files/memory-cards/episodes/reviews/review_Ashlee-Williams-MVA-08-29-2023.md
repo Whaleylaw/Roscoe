@@ -1,0 +1,151 @@
+# Relationship Review: Ashlee-Williams-MVA-08-29-2023
+
+**Total Episodes:** 273
+
+**Total Proposed Relationships:** 883
+
+**⚠️ MULTI-CLIENT ACCIDENT:** Ashlee K. Williams, Dewayne Ward, and Julmonzhae Moore were all in the same accident on 08-29-2023. Cases need RELATED_ACCIDENT relationships.
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (4)
+- Health Lift Pharmacy Service, LLC
+- New Chapel EMS (emergency medical services)
+- Starlite Chiropractic (chiropractic)
+- Norton Audubon Hospital (hospital)
+
+### Insurance Claims (4)
+- **BIClaim**: Liberty Mutual Insurance Company
+  - Adjuster: Robert Elliott
+- **BIClaim**: State Farm Insurance Company
+  - Adjuster: Aaron Lovato
+- **PIPClaim**: Liberty Mutual Insurance Company
+  - Adjuster: Lisa Rivera
+- **BIClaim**: Elco Insurance
+
+### Liens (3)
+- Anthem BCBS of Tennessee
+- Passport Health By Molina ($172.73)
+- None
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (6 consolidated)
+- [ ] Aaron Lovato — *✓ MATCHES: Aaron Lovato (State Farm adjuster)*
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Adjuster)*
+- [ ] Carolyn Hudson — *✓ ADDED to adjusters.json (Liberty Mutual PIP, Ph: 317-975-6696)*
+- [ ] Ebon I. Moore — *✓ MATCHES: Ebon Moore (Liberty Mutual adjuster, from directory)*
+- [ ] Lisa Rivera — *✓ MATCHES: Lisa Rivera (Liberty Mutual adjuster)*
+- [ ] Robert Elliott — *✓ MATCHES: Robert Elliott*
+
+### Attorney (18 consolidated)
+- [ ] Aaron G. Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY)*
+- [ ] Atty. Whaley — *✓ CONSOLIDATED → Aaron G. Whaley*
+- [ ] Dennis Cantrell — *✓ ADDED to attorneys.json (Stoll Keenon Ogden PLLC, 334 N Senate Ave, Indianapolis IN 46204, P: 317-464-1100, Dennis.cantrell@skofirm.com)*
+- [ ] James Kamensky, Esq. — *✓ ADDED to attorneys.json (Kamensky & Patteson, contact info from https://kpattorney.com/)*
+- [ ] Janet Weile — *✓ ADDED as CaseManager (Paralegal at Stoll Keenon Ogden PLLC)*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Jessica Bottorff — *✓ MATCHES: Jessica Bottorff (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Justin Chumbley — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] L. Graham — *✓ CONSOLIDATED → Lexi Graham*
+      ↳ _Lexi Graham_
+- [ ] Larry Church — *✓ ADDED to mediators.json (https://www.nadn.org/larry-church)*
+- [ ] Lexi Graham — *✓ ADDED as CaseManager (Paralegal, lgraham@kpattorney.com)*
+- [ ] Naomi Richardson's attorney — *IGNORED - generic reference*
+- [ ] Sarena — *✓ CONSOLIDATED → Sarena Tuttle*
+- [ ] Sarena Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Scott Stout — *✓ ADDED to attorneys.json (Stout & Heuke Law Office, 300 High Rise Dr Ste 292, Louisville KY 40213, P: 502-966-3347, F: 502-966-9394)*
+      ↳ _Scott Stoutheukelaw_
+- [ ] Scott Stoutheukelaw — *✓ CONSOLIDATED → Scott Stout*
+- [ ] W. Bryce Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY)*
+- [ ] Zachary Reichle, Esq. — *✓ ADDED to attorneys.json (Stoll Keenon Ogden PLLC, 334 N Senate Ave, Indianapolis IN 46204, P: 317-224-2473)*
+
+### BIClaim (7 consolidated)
+- [ ] BI Claim #054658453-01 (Liberty Mutual) — *IGNORED - generic claim reference*
+- [ ] BIClaim: Liberty Mutual Insurance Company — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] BIClaim: State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+- [ ] Elco Insurance — *✓ MATCHES: Elco Insurance*
+- [ ] Liberty Mutual Insurance Company (BIClaim / policy limits tendered) — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] Liberty Mutual Insurance Company (Claim #054658453-01) — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] Liberty Mutual Insurance Company - BI claim — *✓ MATCHES: Liberty Mutual Insurance Company*
+
+### Client (6 consolidated)
+- [ ] Ashlee K. Williams — *✓ MATCHES: Ashlee K. Williams*
+- [ ] Daquan Graham — *✓ ADDED to clients.json (Co-plaintiff, Ph: 502-909-5533)*
+- [ ] Dewayne Ward — *✓ MATCHES: Dewayne Ward (RELATED_ACCIDENT link needed - same accident 08-29-2023)*
+- [ ] Jessa Galosmo — *✓ MATCHES: Jessa Galosmo (WHALEY STAFF → should be CaseManager, not Client)*
+- [ ] Julmonzhae Moore — *✓ MATCHES: Julmonzhae Moore (RELATED_ACCIDENT link needed - same accident 08-29-2023)*
+- [ ] Naomi Robinson — *✓ MATCHES: Naomi Robinson (defendant, not client)*
+
+### Court (6 consolidated)
+- [ ] Floyd 22D03-2501-CT-000157 — *✓ CONSOLIDATED → Floyd County Circuit Court*
+- [ ] Floyd Circuit Court — *✓ CONSOLIDATED → Floyd County Circuit Court*
+- [ ] Floyd County (22D03-2501-CT-000157) — *✓ CONSOLIDATED → Floyd County Circuit Court*
+- [ ] Floyd County Court — *✓ CONSOLIDATED → Floyd County Circuit Court*
+- [ ] Floyd County Indiana Circuit Court — *✓ MATCHES: Floyd County Circuit Court*
+- [ ] local circuit court — *✓ CONSOLIDATED → Floyd County Circuit Court*
+
+### Defendant (2 consolidated)
+- [ ] Naomi Robinson — *✓ MATCHES: Naomi Robinson*
+- [ ] Robinson — *✓ CONSOLIDATED → Naomi Robinson*
+
+### Insurer (3 consolidated)
+- [ ] Liberty Mutual — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] Liberty Mutual Personal Insurance Company — *✓ MATCHES: Liberty Mutual Insurance Company*
+- [ ] State Farm Insurance Company — *✓ MATCHES: State Farm Insurance Company*
+
+### LawFirm (7 consolidated)
+- [ ] Kamensky & Patteson, LLP — *✓ ADDED to lawfirms.json*
+- [ ] Louisville Accident Law Firm — *IGNORED - generic reference*
+- [ ] Skofirm — *✓ CONSOLIDATED → Stoll Keenon Ogden PLLC*
+- [ ] Stoll Keenon Ogden PLLC — *✓ ADDED to lawfirms.json (334 N Senate Ave, Indianapolis IN 46204)*
+- [ ] Stout & Heuke — *✓ CONSOLIDATED → Stout & Heuke Law Office*
+- [ ] Stout & Heuke Law Office — *✓ ADDED to lawfirms.json (300 High Rise Dr Ste 292, Louisville KY 40213)*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (2 consolidated)
+- [ ] Anthem BCBS of Tennessee — *✓ MATCHES: Anthem BCBS of Tennessee*
+- [ ] Passport Health By Molina — *✓ MATCHES: Passport Health By Molina*
+
+### MedicalProvider (6 consolidated)
+- [ ] Aptiva Health Health — *✓ MATCHES: Aptiva Health Health*
+- [ ] Health Lift Pharmacy Service, LLC — *✓ MATCHES: Health Lift Pharmacy Service, LLC*
+- [ ] Kentucky Pain Associates Pain Associates PLLC — *✓ MATCHES: Kentucky Pain Associates Pain Associates PLLC Pain Associates PLLC*
+- [ ] New Chapel EMS — *✓ MATCHES: New Chapel EMS*
+- [ ] Starlite Chiropractic — *✓ MATCHES: Starlite Chiropractic*
+- [ ] Norton Audubon Hospital — *✓ MATCHES: Norton Audubon Hospital*
+
+### Organization (4 consolidated)
+- [ ] Kentucky PLLC — *IGNORED - generic reference*
+- [ ] New Albany Police Department — *✓ MATCHES: New Albany Police Department (from directory)*
+- [ ] University of Louisville — *IGNORED - too generic*
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology, Inc. — *IGNORED - parent org reference*
+
+### PIPClaim (1 consolidated)
+- [ ] PIPClaim: Liberty Mutual Insurance Company — *✓ MATCHES: Liberty Mutual Insurance Company*
+
+### UIMClaim (1 consolidated)
+- [ ] Underinsured motorist coverage for Claim #054658453-01 — *IGNORED - generic claim reference*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

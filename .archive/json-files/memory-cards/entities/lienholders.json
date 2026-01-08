@@ -1,0 +1,614 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Aetna Better Health of Kentucky",
+    "attributes": {
+      "lien_type": "ERISA",
+      "phone": "248-443-4804 Fax",
+      "fax": "248-443-4804 Fax",
+      "address": "P.O. Box 982969, El Paso, TX 79998-2969"
+    },
+    "source_id": "Aetna Better Health of Kentucky",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Aetna Life Insurance Company",
+    "attributes": {
+      "lien_type": "ERISA",
+      "phone": "1-888-772-9682",
+      "address": "P.O. Box 14079, Lexington, KY 40512"
+    },
+    "source_id": "Aetna Life Insurance Company",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Aetna Medicare",
+    "attributes": {
+      "lien_type": "Medicare",
+      "phone": "502-753-7064 Fax",
+      "fax": "502-753-7064 Fax",
+      "address": "P.O Box 981106, El Paso, TX 79998"
+    },
+    "source_id": "Aetna Medicare",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Anthem BCBS of Tennessee",
+    "attributes": {
+      "lien_type": "ERISA",
+      "phone": "855-499-3154 Fax",
+      "fax": "855-499-3154 Fax",
+      "address": "P.O. Box 105187, Atlanta, GA 30348"
+    },
+    "source_id": "Anthem BCBS of Tennessee",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Anthem Blue Cross Blue Shield",
+    "attributes": {
+      "lien_type": "ERISA",
+      "phone": "(866) 891-7397",
+      "address": "700 Broadway, Denver, CO 80273"
+    },
+    "source_id": "Anthem Blue Cross Blue Shield",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Anthem Medicaid Health Plans Of KY Inc.",
+    "attributes": {
+      "phone": "(844) 364-2521 Fax",
+      "address": "P.O. Box 61010, Virginia Beach, VA 23466-1010",
+      "fax": "(844) 364-2521 Fax"
+    },
+    "source_id": "1515",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Anthem Medicare Advantage",
+    "attributes": {
+      "phone": "(855) 558-1439",
+      "address": "P.O. Box 105187, Atlanta, GA 30348"
+    },
+    "source_id": "21",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "ASP Cares",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "(214) 919-2534",
+      "address": "13988 Diplomat Drive #100A-1, Farmers Branch, TX 75234"
+    },
+    "source_id": "ASP Cares",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Blue Cross Blue Shield of Illinois",
+    "attributes": {
+      "lien_type": "ERISA",
+      "address": "P.O. Box 5116, Des Plaines, IL 60017-5116"
+    },
+    "source_id": "Blue Cross Blue Shield of Illinois",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Blue Cross Blue Shield Of Kentucky",
+    "attributes": {
+      "phone": "(800) 451-7602",
+      "address": "P.O. Box 105187, Atlanta, GA 30348"
+    },
+    "source_id": "378",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Blue Cross Blue Shield of Michigan",
+    "attributes": {
+      "lien_type": "ERISA",
+      "phone": "1-866-296-3975",
+      "address": "232 S. Capitol Ave., L09A, Lansing, MI 48933-1504"
+    },
+    "source_id": "Blue Cross Blue Shield of Michigan",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "BlueCross BlueShield of Alabama",
+    "attributes": {
+      "phone": "205-220-6354 Fax",
+      "address": "P.O. Box 361647, Hoover, AL 35236-1647",
+      "fax": "205-220-6354 Fax"
+    },
+    "source_id": "35",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Bluecross Blueshield of North Carolina",
+    "attributes": {
+      "phone": "888-234-2416",
+      "email": "subrogationunit@bcbsm.com",
+      "address": "PO Box 30087, Durham, NC 27702-0035"
+    },
+    "source_id": "36",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Blueshield of California",
+    "attributes": {
+      "phone": "(510) 607-2000",
+      "address": "601 12th Street, Oakland,, CA 94607"
+    },
+    "source_id": "39",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Capital Strategies",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "800-691-9156",
+      "address": "3301 Trinity Road, Louisville, KY 40206"
+    },
+    "source_id": "Capital Strategies",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Carelon Subrogation",
+    "attributes": {
+      "phone": "(262) 523-2579 Main",
+      "address": "P.O. Box 659940, San Antonio, TX 78265"
+    },
+    "source_id": "54",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "CareSource KY",
+    "attributes": {
+      "phone": "937-224-3300 Main",
+      "address": "P.O. Box 8738, Dayton, OH 45401"
+    },
+    "source_id": "55",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "CareSource Ohio",
+    "attributes": {
+      "phone": "(800) 488-0134",
+      "address": "P.O. Box 8730, Dayton, OH 45401-8738"
+    },
+    "source_id": "56",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Cigna",
+    "attributes": {
+      "phone": "800-442-2070",
+      "address": "PO Box 188061, Chattanooga, TN 37422"
+    },
+    "source_id": "60",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Conduent",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "866-675-2478",
+      "address": "PO BOX 30114, , Salt Lake City, UT 84130-9993"
+    },
+    "source_id": "Conduent",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Delta Dental of Kentucky",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "800-955-2030",
+      "address": "10100 Linn Station Rd., Louisville, KY 40223"
+    },
+    "source_id": "Delta Dental of Kentucky",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Equian (WellCare)",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "(877) 200-0207 Fax",
+      "fax": "(877) 200-0207 Fax",
+      "address": "P.O. Box 32100, Louisville, KY 40232"
+    },
+    "source_id": "Equian (WellCare)",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "G.L.A. Collection Company, Inc.",
+    "attributes": {
+      "phone": "502-261-1015",
+      "address": "2630 Gleeson Lane, Louisville, KY 40299"
+    },
+    "source_id": "101",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Hillcrest Credit Agency",
+    "attributes": {
+      "phone": "(270) 745-1470",
+      "email": "hca@mchealth.net",
+      "address": "1953 Scottsville Road #100, Bowling Green, KY 42104"
+    },
+    "source_id": "115",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Humana",
+    "attributes": {
+      "lien_type": "ERISA",
+      "phone": "800-765-5247, 920-632-5221 Fax",
+      "fax": "800-765-5247, 920-632-5221 Fax",
+      "address": "P.O. Box 14601, Louisville, KY 40201; P.O. Box 14601, Lexington, KY 40512-4601"
+    },
+    "source_id": "Humana",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Humana Healthy Horizons In Kentucky",
+    "attributes": {
+      "phone": "(800) 444-9137",
+      "address": "P.O. Box 14601, Lexington, KY 40512"
+    },
+    "source_id": "121",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Indiana Medicaid",
+    "attributes": {
+      "lien_type": "Medicaid",
+      "address": "MHS Claims PO Box 3002, Farmington, MO 63640"
+    },
+    "source_id": "Indiana Medicaid",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Kentucky Child Support Enforcement",
+    "attributes": {
+      "lien_type": "child_support",
+      "address": "PO Box 14059, Lexington, ky 40512"
+    },
+    "source_id": "Kentucky Child Support Enforcement",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Key Benefit Administrators",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "(800) 331-4757",
+      "address": "P.O. Box 3252, Milwaukee, WI 53201"
+    },
+    "source_id": "Key Benefit Administrators",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Legal Funding Partners",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "502-376-3100",
+      "address": "309 Evergreen Road, Louisville, KY 40243"
+    },
+    "source_id": "Legal Funding Partners",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Medicare",
+    "attributes": {
+      "lien_type": "Medicare",
+      "phone": "1-855-798-2627 (BCRC) Main",
+      "address": "NGHP P.O. Box 138832, , Oklahoma City, OK 73113"
+    },
+    "source_id": "Medicare",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Optum",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "877-200-0207 Fax",
+      "fax": "877-200-0207 Fax",
+      "address": "P.O. Box 32710, Louisville, KY 40232-2710"
+    },
+    "source_id": "Optum",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Oscar",
+    "attributes": {
+      "address": "P.O. Box 52146, Phoenix, AZ 85072"
+    },
+    "source_id": "191",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Passport Health By Molina",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "844-847-9951",
+      "address": "5100 Commerce Crossings Drvie, Louisville, KY 40229"
+    },
+    "source_id": "Passport Health By Molina",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Passport Medicare Advantage",
+    "attributes": {},
+    "source_id": "845",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Plano Surgical Hospital Funding LLC",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "(772) 546-9591"
+    },
+    "source_id": "Plano Surgical Hospital Funding LLC",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Premera Blue Cross",
+    "attributes": {
+      "address": "P.O. Box 91059, Seattle, WA 98111"
+    },
+    "source_id": "197",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Rawlings Company",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "855-967-6614",
+      "address": "PO Box 2000, , LaGrange, KY 40031"
+    },
+    "source_id": "Rawlings Company",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Southern Guaranty Insurance Company - Medicare Supplement",
+    "attributes": {
+      "lien_type": "Medicare",
+      "phone": "800-264-4000",
+      "address": "P.O. Box 14770, Lexington, KY 40512"
+    },
+    "source_id": "Southern Guaranty Insurance Company - Medicare Supplement",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "TeamCare",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "847-518-9718 Fax",
+      "fax": "847-518-9718 Fax",
+      "address": "8647 W. Higgins Road, Chicago, IL 60631"
+    },
+    "source_id": "TeamCare",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "The Phia Group",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "502-213-5746",
+      "address": "40 Pequot Way, Canton, MA 02021"
+    },
+    "source_id": "The Phia Group",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "The State Pharmacy, Inc.",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "502-583-5636 Main",
+      "address": "P.O. Box 847, , Louisville, KY 40201"
+    },
+    "source_id": "The State Pharmacy, Inc.",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Thrivest Link",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "888-697-7352",
+      "address": "1100 E. Hector St., STE 210, Conshohocken, PA 19428"
+    },
+    "source_id": "Thrivest Link",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "U.S Department of Veterans Affairs",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "877-222-8387",
+      "address": "Health Eligibility Center, 2957 Clairmont Rd Ste 200, Atlanta, GA 30329"
+    },
+    "source_id": "U.S Department of Veterans Affairs",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "UHP Administrators",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "855-375-7125",
+      "address": "PO Box 190394, Brooklyn, NY 11219"
+    },
+    "source_id": "UHP Administrators",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "United Healthcare",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "888-870-8842",
+      "address": "P.O. Box 5270, Kingston, NY 12402"
+    },
+    "source_id": "United Healthcare",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "VA CCN - Optum",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "(202) 495-5856 Fax",
+      "fax": "(202) 495-5856 Fax",
+      "address": "P.O. Box 202118, Florence, SC 29502"
+    },
+    "source_id": "VA CCN - Optum",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "WellCare Health Plans",
+    "attributes": {},
+    "source_id": "1069",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Wellcare of Kentucky",
+    "attributes": {
+      "lien_type": "medical",
+      "phone": "877-389-9457",
+      "address": "P.O. Box 31224, Tampa, FL 33631-3224"
+    },
+    "source_id": "Wellcare of Kentucky",
+    "source_file": "liens.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Zipliens",
+    "attributes": {
+      "email": "celeste@zipliens.com",
+      "address": "P.O. Box 701239, Louisville, KY 40270"
+    },
+    "source_id": "269",
+    "source_file": "directory.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Aetna",
+    "attributes": {
+      "lien_type": "ERISA",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Amy-Mills-annotations",
+    "source_file": "review_Amy-Mills-Premise-04-26-2019.md",
+    "notes": "Also exists as Insurer"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LienHolder",
+    "name": "Anthem",
+    "attributes": {
+      "lien_type": "ERISA",
+      "phone": "",
+      "email": "",
+      "fax": "",
+      "address": ""
+    },
+    "source_id": "Samuel-Clites-annotations",
+    "source_file": "review_Samuel-Clites-MVA-4-23-2024.md",
+    "notes": "General Anthem lienholder, also exists as Insurer"
+  }
+]

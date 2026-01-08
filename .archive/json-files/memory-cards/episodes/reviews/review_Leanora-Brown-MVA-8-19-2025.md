@@ -1,0 +1,74 @@
+# Relationship Review: Leanora-Brown-MVA-8-19-2025
+
+**Total Episodes:** 11
+
+**Total Proposed Relationships:** 37
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (3)
+- Louisville Metro EMS (emergency medical services)
+- Starlite Chiropractic (chiropractic)
+- Norton Audubon Hospital (hospital)
+
+### Insurance Claims (2)
+- **BIClaim**: Progressive Insurance Company
+  - Adjuster: Brandi Chappell-Haggard
+- **PIPClaim**: Root Auto Insurance
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Adjuster (1 consolidated)
+- [ ] Brandi Chappell-Haggard — *✓ MATCHES: Brandi Chappell-Haggard*
+
+### Attorney (2 consolidated)
+- [ ] Aaron Whaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Justin Chumbley — *✓ MATCHES: Justin Chumbley (WHALEY STAFF → should be CaseManager, not Attorney)*
+
+### BIClaim (3 consolidated)
+- [ ] Progressive BI 25-822910337 — *✓ MATCHES: Progressive Insurance Company*
+- [ ] Progressive Insurance Company — *✓ MATCHES: Progressive Insurance Company*
+- [ ] SafeCo BI 060018233 — *✓ MATCHES: SafeCo Insurance Company*
+
+### Client (2 consolidated)
+- [ ] Jordan Brown — *✓ MATCHES: Jordan Brown*
+- [ ] Leanora Brown — *✓ MATCHES: Leanora Brown*
+
+### Insurer (1 consolidated)
+- [ ] SafeCo — *✓ MATCHES: SafeCo Insurance Company*
+
+### LawFirm (1 consolidated)
+- [ ] Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### MedicalProvider (3 consolidated)
+- [ ] Louisville Metro EMS — *✓ MATCHES: Louisville Metro EMS*
+- [ ] Starlite Chiropractic — *✓ MATCHES: Starlite Chiropractic*
+- [ ] Norton Audubon Hospital — *✓ MATCHES: Norton Audubon Hospital*
+
+### PIPClaim (2 consolidated)
+- [ ] Root Auto Insurance — *✓ MATCHES: Root Auto Insurance*
+- [ ] Root PIP TJ6L8DKY — *✓ MATCHES: Root Auto Insurance*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

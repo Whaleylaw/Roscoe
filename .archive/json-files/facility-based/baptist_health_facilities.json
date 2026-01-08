@@ -1,0 +1,5600 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Deaconess",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Madisonville, KY 42431",
+          "phone": "270-825-5100"
+        }
+      ]
+    },
+    "source_id": "facility_0",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Corbin",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Corbin, KY 40701",
+          "phone": "(606) 528-1212"
+        }
+      ]
+    },
+    "source_id": "facility_1",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Floyd",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 State Street, New Albany, IN 47150",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_2",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health ER & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3516 East 10th Street, Jeffersonville, IN 47130",
+          "phone": "(812) 542-4642"
+        },
+        {
+          "location": "Main",
+          "address": "11701 Bluegrass Parkway, Louisville, KY 40299",
+          "phone": "502-928-4100"
+        }
+      ]
+    },
+    "source_id": "facility_3",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Lexington",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1740 Nicholasville Road, Lexington, KY 40503",
+          "phone": "(859) 260-6100"
+        }
+      ]
+    },
+    "source_id": "facility_4",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4000 Kresge Way, Louisville, KY 40207",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_5",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health ER & Urgent Care - Glenmary",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "7702 Bardstown Road, Louisville, KY 40291",
+          "phone": "(502) 928-4700"
+        }
+      ]
+    },
+    "source_id": "facility_6",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Rehabilitation Hospital",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "11800 Bluegrass Parkway, Louisville, KY 40299",
+          "phone": "502-579-5000"
+        }
+      ]
+    },
+    "source_id": "facility_7",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Richmond",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "801 Eastern Bypass, Richmond, KY 40475",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_8",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Paducah",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2501 Kentucky Avenue, Paducah, KY 42003",
+          "phone": "(270) 575-2100"
+        }
+      ]
+    },
+    "source_id": "facility_9",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "(502) 222-5388"
+        }
+      ]
+    },
+    "source_id": "facility_10",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hardin CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Elizabethtown, KY 42701",
+          "phone": "(270) 737-1212"
+        }
+      ]
+    },
+    "source_id": "facility_11",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Breckenridge Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "502-928-0030"
+        }
+      ]
+    },
+    "source_id": "facility_12",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Breckenridge",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "502-928-0040"
+        }
+      ]
+    },
+    "source_id": "facility_13",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "7725 Highway 62, Suite 100, Charlestown, IN 47111",
+          "phone": "(812) 542-4670"
+        },
+        {
+          "location": "Main",
+          "address": "1051 Newtown Pike, Suite 130, Lexington, KY 40511",
+          "phone": "(859) 253-0076"
+        },
+        {
+          "location": "Main",
+          "address": "1850 State Street, New Albany, IN 47150",
+          "phone": "(812) 944-7701"
+        }
+      ]
+    },
+    "source_id": "facility_14",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Occupational Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 7,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "646 University Shopping, Richmond, KY 40475",
+          "phone": "(859) 623-0535"
+        },
+        {
+          "location": "Main",
+          "address": "632 Lone Oak Road, Paducah, KY 42003",
+          "phone": "(270) 575-3001"
+        },
+        {
+          "location": "Main",
+          "address": "3605 Fern Valley Road, Suite, Louisville, KY 40219",
+          "phone": "(502) 964-4889"
+        },
+        {
+          "location": "Main",
+          "address": "400 Ring Road, Suite 148, Elizabethtown, KY 42701",
+          "phone": "(270) 706-5621"
+        },
+        {
+          "location": "Main",
+          "address": "1006 New Moody Lane, Suite, La Grange, KY 40031",
+          "phone": "(502) 222-3302"
+        },
+        {
+          "location": "Main",
+          "address": "11630 Commonwealth Drive, Louisville, KY 40299",
+          "phone": "(502) 267-6292"
+        },
+        {
+          "location": "Main",
+          "address": "101 Stonecrest Road, Suite 2, Shelbyville, KY 40065",
+          "phone": "(502) 805-4800"
+        }
+      ]
+    },
+    "source_id": "facility_15",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 6,
+      "locations": [
+        {
+          "location": "Paducah",
+          "address": "115 Kiana Court, Paducah, KY 42001",
+          "phone": "(270) 534-1200"
+        },
+        {
+          "location": "Lexington",
+          "address": "1051 Newtown Pike, Suite 130, Lexington, KY 40511",
+          "phone": "(859) 253-0758"
+        },
+        {
+          "location": "Corydon",
+          "address": "313 Federal Drive Northwest, Corydon, IN 47112",
+          "phone": "(812) 738-3616"
+        },
+        {
+          "location": "La Grange",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "(502) 222-3303"
+        },
+        {
+          "location": "Elizabethtown",
+          "address": "1111 Ring Road, Elizabethtown, KY 42701",
+          "phone": "(270) 706-5010"
+        },
+        {
+          "location": "Crestwood",
+          "address": "6580 Kenwood Crossing, Crestwood, KY 40014",
+          "phone": "(502) 241-1660"
+        }
+      ]
+    },
+    "source_id": "facility_16",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Charlestown Road",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "5130 Charlestown Road, Suite, New Albany, IN 47150",
+          "phone": "(812) 949-1577"
+        }
+      ]
+    },
+    "source_id": "facility_17",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "201, Bardstown, KY 40004",
+          "phone": "502-331-4778"
+        },
+        {
+          "location": "Main",
+          "address": "724 Highlander Point Drive, Floyds Knobs, IN 47119",
+          "phone": "(812) 923-0630"
+        },
+        {
+          "location": "Main",
+          "address": "Charlestown, IN 47111",
+          "phone": "(812) 256-2147"
+        },
+        {
+          "location": "Main",
+          "address": "100, Clarksville, IN 47129",
+          "phone": "(812) 288-8817"
+        },
+        {
+          "location": "Main",
+          "address": "3900 Kresge Way, Louisville, KY 40207",
+          "phone": "(502) 897-8137"
+        }
+      ]
+    },
+    "source_id": "facility_18",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Beaumont",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3101 Beaumont Centre Circle, Lexington, KY 40513",
+          "phone": "(859) 639-1200"
+        }
+      ]
+    },
+    "source_id": "facility_19",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Eastpoint",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "(502) 253-6689"
+        }
+      ]
+    },
+    "source_id": "facility_20",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Outpatient Therapy Services, a",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "610 East Brannon Road, Suite, Nicholasville, KY 40356",
+          "phone": "(859) 260-5555"
+        }
+      ]
+    },
+    "source_id": "facility_21",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hamburg Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-422-8040"
+        }
+      ]
+    },
+    "source_id": "facility_22",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Elizabethtown, KY 42701",
+          "phone": "(270) 979-7109"
+        }
+      ]
+    },
+    "source_id": "facility_23",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Radcliff",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1360 Rogersville Road, Radcliff, KY 40160",
+          "phone": "(270) 351-1150"
+        }
+      ]
+    },
+    "source_id": "facility_24",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Highlander Point",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "800 Highlander Point Drive, Floyds Knobs, IN 47119",
+          "phone": "(812) 923-6336"
+        }
+      ]
+    },
+    "source_id": "facility_25",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Richmond",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "644 University Shopping, Richmond, KY 40475",
+          "phone": "(859) 624-5684"
+        }
+      ]
+    },
+    "source_id": "facility_26",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - State Street",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2125 State Street, Suite 2, New Albany, IN 47150",
+          "phone": "(812) 949-6360"
+        }
+      ]
+    },
+    "source_id": "facility_27",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4000 Kresge Way, Louisville, KY 40207",
+          "phone": "502-928-6930"
+        }
+      ]
+    },
+    "source_id": "facility_28",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "La Grange",
+          "address": "1006 New Moody Lane, La Grange, KY 40031",
+          "phone": "(502) 222-0028"
+        },
+        {
+          "location": "Taylorsville Road",
+          "address": "10216 Taylorsville Road, Suite, Louisville, KY 40299",
+          "phone": "(502) 297-0363"
+        },
+        {
+          "location": "Middletown",
+          "address": "12010 Shelbyville Road, Suite, Louisville, KY 40243",
+          "phone": "(502) 238-2800"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "101 Stonecrest Road, Suite 1, Shelbyville, KY 40065",
+          "phone": "(502) 633-2233"
+        },
+        {
+          "location": "Paducah",
+          "address": "2601 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "(270) 415-4860"
+        }
+      ]
+    },
+    "source_id": "facility_29",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Westport Road",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3215 Westport Green Place, Louisville, KY 40241",
+          "phone": "(502) 412-1112"
+        }
+      ]
+    },
+    "source_id": "facility_30",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Richmond",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "648 University Shopping, Richmond, KY 40475",
+          "phone": "(859) 623-1950"
+        }
+      ]
+    },
+    "source_id": "facility_31",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Richmond Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "793 Eastern Bypass, Richmond, KY 40475",
+          "phone": "859-626-0076"
+        }
+      ]
+    },
+    "source_id": "facility_32",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Jeffersontown",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "10216 Taylorsville Road, Suite, Louisville, KY 40299",
+          "phone": "(502) 267-1799"
+        }
+      ]
+    },
+    "source_id": "facility_33",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Blakenbaker",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "11630 Commonwealth Drive, Louisville, KY 40299",
+          "phone": "(502) 261-8333"
+        }
+      ]
+    },
+    "source_id": "facility_34",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Nicholasville Road",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2108 Nicholasville Road, Lexington, KY 40503",
+          "phone": "(859) 260-5200"
+        }
+      ]
+    },
+    "source_id": "facility_35",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Holiday Manor",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2232 Holiday Manor Center, Louisville, KY 40222",
+          "phone": "(502) 339-6565"
+        }
+      ]
+    },
+    "source_id": "facility_36",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hardin Pavilion Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite, Elizabethtown, KY 42701",
+          "phone": "270-979-2362"
+        }
+      ]
+    },
+    "source_id": "facility_37",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Dutchmans",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4130 Dutchmans Lane, Suite, Louisville, KY 40207",
+          "phone": "(502) 897-1790 (Phone"
+        }
+      ]
+    },
+    "source_id": "facility_38",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - New Albany",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1425 State Street, Suite 201, New Albany, IN 47150",
+          "phone": "(812) 920-0408"
+        }
+      ]
+    },
+    "source_id": "facility_39",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Floyd",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 State Street, New Albany, IN 47150",
+          "phone": "(812) 948-6725"
+        }
+      ]
+    },
+    "source_id": "facility_40",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Fern Valley",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3605 Fern Valley Road, Suite, Louisville, KY 40219",
+          "phone": "(502) 928-0915"
+        }
+      ]
+    },
+    "source_id": "facility_41",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Eastpoint",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "(502) 210-4800"
+        }
+      ]
+    },
+    "source_id": "facility_42",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Tates Creek",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1099 Duval Street, Suite 120, Lexington, KY 40515",
+          "phone": "(859) 639-0090"
+        }
+      ]
+    },
+    "source_id": "facility_43",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Radcliff",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "75 Nature Trail, Suite 1, Radcliff, KY 40160",
+          "phone": "(270) 351-0098"
+        }
+      ]
+    },
+    "source_id": "facility_44",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Milestone",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "750 Cypress Station Drive, Louisville, KY 40207",
+          "phone": "(502) 896-7083"
+        }
+      ]
+    },
+    "source_id": "facility_45",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "3000 Baptist Health Blvd, CONNECT & LEARN",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Lexington, KY 40509",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_46",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Fern Valley",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3605 Fern Valley Road, Suite, Louisville, KY 40219",
+          "phone": "(502) 962-5242"
+        }
+      ]
+    },
+    "source_id": "facility_47",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy - Corbin",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1400 Cumberland Falls, Corbin, KY 40701",
+          "phone": "(606) 528-2149"
+        }
+      ]
+    },
+    "source_id": "facility_48",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "La Grange, KY 40031",
+          "phone": "502-225-5500"
+        }
+      ]
+    },
+    "source_id": "facility_49",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hardin Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "913 North Dixie Avenue, Elizabethtown, KY 42701",
+          "phone": "270-706-1256"
+        }
+      ]
+    },
+    "source_id": "facility_50",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Paducah Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2601 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-575-5870"
+        }
+      ]
+    },
+    "source_id": "facility_51",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Floyd Pharmacy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 State Street, New Albany, IN 47150",
+          "phone": "812-941-4446"
+        }
+      ]
+    },
+    "source_id": "facility_52",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Pharmacy Bardstown",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3615 East John Rowan Blvd, Bardstown, KY 40004",
+          "phone": "502-331-4740"
+        }
+      ]
+    },
+    "source_id": "facility_53",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Physical Therapy Neuro",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4002 Kresge Way, Floor 4, Louisville, KY 40207",
+          "phone": "502-896-7447"
+        }
+      ]
+    },
+    "source_id": "facility_54",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Urgent Care - Breckenridge",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "(502) 928-0200"
+        }
+      ]
+    },
+    "source_id": "facility_55",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Lexington Sleep Lab",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1720 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-260-4300"
+        }
+      ]
+    },
+    "source_id": "facility_56",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Lexington Cardiovascular Lab",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1720 Nicholasville Road, Floor, Lexington, KY 40503",
+          "phone": "859-260-6402"
+        }
+      ]
+    },
+    "source_id": "facility_57",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Cath Lab",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4000 Kresge Way, Louisville, KY 40207",
+          "phone": "502-897-8008"
+        }
+      ]
+    },
+    "source_id": "facility_58",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Cardiovascular Lab",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-422-9600"
+        }
+      ]
+    },
+    "source_id": "facility_59",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "3000 Baptist Health Blvd, Suite 210",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Lexington, KY 40509",
+          "phone": "859-422-9600"
+        }
+      ]
+    },
+    "source_id": "facility_60",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hardin Cath Lab",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Elizabethtown, KY 42701",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_61",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hardin Outpatient Lab",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite 208, Elizabethtown, KY 42701",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_62",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Diagnostic Center - Hardin",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "913 North Dixie Avenue, Elizabethtown, KY 42701",
+          "phone": "270-706-5444"
+        }
+      ]
+    },
+    "source_id": "facility_63",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Outpatient Therapy Services –",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "913 North Dixie Avenue, Elizabethtown, KY 42701",
+          "phone": "(270) 706-1657"
+        },
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite 200, Elizabethtown, KY 42701",
+          "phone": "(270) 979-2346"
+        },
+        {
+          "location": "Main",
+          "address": "1800 Nicholasville Road, Lexington, KY 40503",
+          "phone": "(859) 260-6673"
+        }
+      ]
+    },
+    "source_id": "facility_64",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Speech & Language Services",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 State Street, New Albany, IN 47150",
+          "phone": "812-948-6725"
+        }
+      ]
+    },
+    "source_id": "facility_65",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Occupational Therapy",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 State Street, New Albany, IN 47150",
+          "phone": "(812) 948-6725"
+        }
+      ]
+    },
+    "source_id": "facility_66",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Multi-Disciplinary Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Louisville, KY 40207",
+          "phone": "502-896-3009"
+        }
+      ]
+    },
+    "source_id": "facility_67",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Diagnostics Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "108 Financial Place, Elizabethtown, KY 42701",
+          "phone": "270-360-5925"
+        }
+      ]
+    },
+    "source_id": "facility_68",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Hospitalists",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1740 Nicholasville Road, Floor, Lexington, KY 40503",
+          "phone": "859-260-6348"
+        }
+      ]
+    },
+    "source_id": "facility_69",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 22,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "300, Louisville, KY 40219",
+          "phone": "502-893-7710"
+        },
+        {
+          "location": "Main",
+          "address": "313 Federal Drive Northwest, Corydon, IN 47112",
+          "phone": "812-734-3952"
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-897-0269"
+        },
+        {
+          "location": "Main",
+          "address": "New Albany, IN 47150",
+          "phone": "812-945-1429"
+        },
+        {
+          "location": "Main",
+          "address": "850, Louisville, KY 40299",
+          "phone": "502-897-6579"
+        },
+        {
+          "location": "Main",
+          "address": "789 Eastern Bypass, Suite 5, Richmond, KY 40475",
+          "phone": "859-624-4110"
+        },
+        {
+          "location": "Main",
+          "address": "Frankfort, KY 40601",
+          "phone": "859-277-6143"
+        },
+        {
+          "location": "Main",
+          "address": "403, Paducah, KY 42003",
+          "phone": "270-415-4800"
+        },
+        {
+          "location": "Main",
+          "address": "Georgetown, KY 40324",
+          "phone": "502-868-0338"
+        },
+        {
+          "location": "Main",
+          "address": "95 Bryan Boulevard, Suite 202, Corbin, KY 40701",
+          "phone": "606-258-2160"
+        },
+        {
+          "location": "Main",
+          "address": "Louisville, KY 40207",
+          "phone": "502-893-1333"
+        },
+        {
+          "location": "Main",
+          "address": "3615 East John Rowan, Bardstown, KY 40004",
+          "phone": "(270) 706-5787"
+        },
+        {
+          "location": "Main",
+          "address": "Bardstown, KY 40004",
+          "phone": "(270) 979-2583"
+        },
+        {
+          "location": "Main",
+          "address": "Charlestown, IN 47111",
+          "phone": "(812) 282-1617"
+        },
+        {
+          "location": "Main",
+          "address": "Shelbyville, KY 40065",
+          "phone": "502-732-1877"
+        },
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 500, Louisville, KY 40207",
+          "phone": "502-897-1166"
+        },
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Suite 204, Corbin, KY 40701",
+          "phone": "606-523-1934"
+        },
+        {
+          "location": "Main",
+          "address": "601, Paducah, KY 42003",
+          "phone": "270-408-4368"
+        },
+        {
+          "location": "Main",
+          "address": "1700 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-278-5671"
+        },
+        {
+          "location": "Main",
+          "address": "Mount Vernon, KY 40456",
+          "phone": "859-623-3576"
+        },
+        {
+          "location": "Main",
+          "address": "Scottsburg, IN 47170",
+          "phone": "812-752-3424"
+        },
+        {
+          "location": "Main",
+          "address": "Corbin, KY 40701",
+          "phone": "606-528-5531"
+        }
+      ]
+    },
+    "source_id": "facility_70",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Palliative Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2605 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-575-2174"
+        },
+        {
+          "location": "Main",
+          "address": "1700 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-260-6856"
+        }
+      ]
+    },
+    "source_id": "facility_71",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Cardiology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 31,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "24 Clinic Drive, Paris, KY 40361",
+          "phone": "859-987-0302"
+        },
+        {
+          "location": "Main",
+          "address": "1919 State Street, Suite 248, New Albany, IN 47150",
+          "phone": "502-928-0900"
+        },
+        {
+          "location": "Main",
+          "address": "1919 State Street, Suite 104, New Albany, IN 47150",
+          "phone": "812-945-7972"
+        },
+        {
+          "location": "Main",
+          "address": "2109 Green Valley Road, New Albany, IN 47150",
+          "phone": "812-948-2232"
+        },
+        {
+          "location": "Main",
+          "address": "41 Quartermaster Court, Jeffersonville, IN 47130",
+          "phone": "812-282-1617"
+        },
+        {
+          "location": "Main",
+          "address": "3900 Kresge Way, Suite 51, Louisville, KY 40207",
+          "phone": "(502) 893-7710"
+        },
+        {
+          "location": "Main",
+          "address": "7600 Indiana 60, #100, Sellersburg, IN 47172",
+          "phone": "(502) 928-0900"
+        },
+        {
+          "location": "Main",
+          "address": "45 Moonbow Plaza, Corbin, KY 40701",
+          "phone": "606-523-9010"
+        },
+        {
+          "location": "Main",
+          "address": "1406 West 5th Street, Suite, London, KY 40741",
+          "phone": "(606) 523-9010"
+        },
+        {
+          "location": "Main",
+          "address": "4754 US Highway 62, Calvert City, KY 42029",
+          "phone": "270-759-4098"
+        },
+        {
+          "location": "Main",
+          "address": "329 Floyd Drive, Suite C, Carrollton, KY 41008",
+          "phone": "502-452-1677"
+        },
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 400, Louisville, KY 40207",
+          "phone": "502-452-1677"
+        },
+        {
+          "location": "Main",
+          "address": "4002 Kresge Way, Suite 110, Louisville, KY 40207",
+          "phone": "502-893-7710"
+        },
+        {
+          "location": "Main",
+          "address": "3900 Kresge Way, Suite 60, Louisville, KY 40207",
+          "phone": "502-893-7710"
+        },
+        {
+          "location": "Main",
+          "address": "3793 Poplar Level Road, Louisville, KY 40213",
+          "phone": "502-452-1677"
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-893-7710"
+        },
+        {
+          "location": "Main",
+          "address": "10216 Taylorsville Road, Suite, Louisville, KY 40299",
+          "phone": "502-893-7710"
+        },
+        {
+          "location": "Main",
+          "address": "789 Eastern Bypass, Suite 12, Richmond, KY 40475",
+          "phone": "859-624-1826"
+        },
+        {
+          "location": "Main",
+          "address": "1720 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-277-5887"
+        },
+        {
+          "location": "Main",
+          "address": "101 Winston Way, Suite 100, Campbellsville, KY 42718",
+          "phone": "270-789-9640"
+        },
+        {
+          "location": "Main",
+          "address": "55 Thannoli Drive, Somerset, KY 42503",
+          "phone": "606-677-0854"
+        },
+        {
+          "location": "Main",
+          "address": "2 Trillium Way, Suite 210, Corbin, KY 40701",
+          "phone": "606-523-3038"
+        },
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite 308, Elizabethtown, KY 42701",
+          "phone": "270-765-5921"
+        },
+        {
+          "location": "Main",
+          "address": "1031 New Moody Lane, Suite, La Grange, KY 40031",
+          "phone": "502-893-7710"
+        },
+        {
+          "location": "Main",
+          "address": "1208 Johnson Boulevard, Murray, KY 42071",
+          "phone": "270-759-4098"
+        },
+        {
+          "location": "Main",
+          "address": "100 Commerce Drive, Brandenburg, KY 40108",
+          "phone": "270-765-5921"
+        },
+        {
+          "location": "Main",
+          "address": "911 North Shelby Street, Salem, IN 47167",
+          "phone": "812-723-7454"
+        },
+        {
+          "location": "Main",
+          "address": "642 West Hospital Road, Paoli, IN 47454",
+          "phone": "812-282-1617"
+        },
+        {
+          "location": "Main",
+          "address": "313 Federal Drive Northwest, Corydon, IN 47112",
+          "phone": "812-734-3954"
+        },
+        {
+          "location": "Main",
+          "address": "2601 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-575-3113"
+        },
+        {
+          "location": "Main",
+          "address": "325 West Walnut Street, Suite, Lebanon, KY 40033",
+          "phone": "270-765-5921"
+        }
+      ]
+    },
+    "source_id": "facility_72",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Occupational Medicine & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4 Hmb Circle, Frankfort, KY 40601",
+          "phone": "502-695-9990"
+        },
+        {
+          "location": "Main",
+          "address": "118 Patriot Drive, Bardstown, KY 40004",
+          "phone": "(502) 233-4474"
+        },
+        {
+          "location": "Main",
+          "address": "95 Bryan Boulevard, Suite 201, Corbin, KY 40701",
+          "phone": "606-526-4590"
+        },
+        {
+          "location": "Main",
+          "address": "610 East Brannon Road, Suite, Nicholasville, KY 40356",
+          "phone": "(859) 260-5540"
+        }
+      ]
+    },
+    "source_id": "facility_73",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Breckenridge III",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "502-928-5000"
+        }
+      ]
+    },
+    "source_id": "facility_74",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Infectious",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1903 Broadway Street, Paducah, KY 42001",
+          "phone": "270-444-9889"
+        }
+      ]
+    },
+    "source_id": "facility_75",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group OB/GYN",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 15,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "140 Stonecrest Road, Suite 201, Shelbyville, KY 40065",
+          "phone": "502-633-0094"
+        },
+        {
+          "location": "Main",
+          "address": "551 Westport Road, Suite D, Elizabethtown, KY 42701",
+          "phone": "270-765-3301"
+        },
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "502-895-1111"
+        },
+        {
+          "location": "Main",
+          "address": "1115 Woodland Drive, Elizabethtown, KY 42701",
+          "phone": "270-769-5963"
+        },
+        {
+          "location": "Main",
+          "address": "950 Breckenridge Lane, Suite, Louisville, KY 40207",
+          "phone": "502-893-6777"
+        },
+        {
+          "location": "Main",
+          "address": "6208 Preston Highway, Louisville, KY 40219",
+          "phone": "502-968-6979"
+        },
+        {
+          "location": "Main",
+          "address": "4001 Kresge Way, Suite 134, Louisville, KY 40207",
+          "phone": "502-893-6777"
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-222-5558"
+        },
+        {
+          "location": "Main",
+          "address": "1780 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": ""
+        },
+        {
+          "location": "Main",
+          "address": "1700 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-278-0363"
+        },
+        {
+          "location": "Main",
+          "address": "1023 New Moody Lane, Suite, La Grange, KY 40031",
+          "phone": "502-222-5558"
+        },
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "(859) 278-0363"
+        },
+        {
+          "location": "Main",
+          "address": "2605 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "(270) 444-9199"
+        },
+        {
+          "location": "Main",
+          "address": "506 North 12th Street, Suite A, Murray, KY 42071",
+          "phone": "270-415-7055"
+        },
+        {
+          "location": "Main",
+          "address": "1324 Woodland Drive, Suite A, Elizabethtown, KY 42701",
+          "phone": "270-765-3301"
+        }
+      ]
+    },
+    "source_id": "facility_76",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Mount",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "211 High Point Court, Suite 700, Mount Washington, KY 40047",
+          "phone": "502-928-1050"
+        }
+      ]
+    },
+    "source_id": "facility_77",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Eastpoint Cardiology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Louisville, KY 40223",
+          "phone": "502-210-4733"
+        }
+      ]
+    },
+    "source_id": "facility_78",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Richmond I",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "107 Meridian Way, Suite 200, Richmond, KY 40475",
+          "phone": "859-624-6366"
+        }
+      ]
+    },
+    "source_id": "facility_79",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Corbin Radiation Oncology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Corbin, KY 40701",
+          "phone": "606-526-4770"
+        }
+      ]
+    },
+    "source_id": "facility_80",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Lancaster",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "187 Farra Drive, Lancaster, KY 40444",
+          "phone": "859-792-1766"
+        }
+      ]
+    },
+    "source_id": "facility_81",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Hematology & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 10,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "705 Fairground Road, Scottsburg, IN 47170",
+          "phone": "812-752-4771"
+        },
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "(859) 276-0414"
+        },
+        {
+          "location": "Main",
+          "address": "793 Eastern Bypass, Suite 106, Richmond, KY 40475",
+          "phone": "859-276-0414"
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-897-1166"
+        },
+        {
+          "location": "Main",
+          "address": "1700 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-276-0414"
+        },
+        {
+          "location": "Main",
+          "address": "107 Diagnostic Drive, Frankfort, KY 40601",
+          "phone": "859-276-0414"
+        },
+        {
+          "location": "Main",
+          "address": "1031 New Moody Lane, Suite, La Grange, KY 40031",
+          "phone": "502-897-1166"
+        },
+        {
+          "location": "Main",
+          "address": "2210 Green Valley Road, New Albany, IN 47150",
+          "phone": "812-945-4000"
+        },
+        {
+          "location": "Main",
+          "address": "2501 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-554-0011"
+        },
+        {
+          "location": "Main",
+          "address": "610 East Brannon Road, Suite, Nicholasville, KY 40356",
+          "phone": "859-276-0414"
+        }
+      ]
+    },
+    "source_id": "facility_82",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Radiation",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2210 Green Valley Road, New Albany, IN 47150",
+          "phone": "812-945-4000"
+        },
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite 201, Elizabethtown, KY 42701",
+          "phone": "270-706-5065"
+        }
+      ]
+    },
+    "source_id": "facility_83",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Emergency Department",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "913 North Dixie Avenue, Elizabethtown, KY 42701",
+          "phone": ""
+        },
+        {
+          "location": "Main",
+          "address": "2501 Kentucky Avenue, Paducah, KY 42003",
+          "phone": "(270) 575-2100"
+        }
+      ]
+    },
+    "source_id": "facility_84",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Richmond Emergency Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "801 Eastern Bypass, Richmond, KY 40475",
+          "phone": "(859) 623-3131"
+        }
+      ]
+    },
+    "source_id": "facility_85",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Richmond II",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "103 Alycia Drive, Richmond, KY 40475",
+          "phone": "859-624-6515"
+        }
+      ]
+    },
+    "source_id": "facility_86",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Orthopedic & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-899-7950"
+        }
+      ]
+    },
+    "source_id": "facility_87",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "3000 Baptist Health Blvd, Suite 310",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Lexington, KY 40509",
+          "phone": "859-899-7950"
+        }
+      ]
+    },
+    "source_id": "facility_88",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Facial Plastic & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2605 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "(270) 408-3230"
+        }
+      ]
+    },
+    "source_id": "facility_89",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Corbin",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "96 Future Drive, Corbin, KY 40701",
+          "phone": "606-528-0305"
+        }
+      ]
+    },
+    "source_id": "facility_90",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Benton",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "543 Powell Lane, Benton, KY 42025",
+          "phone": "270-415-7070"
+        }
+      ]
+    },
+    "source_id": "facility_91",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Internal Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "West Dixie",
+          "address": "325 West Dixie Avenue, Elizabethtown, KY 42701",
+          "phone": "270-979-2395"
+        },
+        {
+          "location": "Paducah I",
+          "address": "2605 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-575-5990"
+        }
+      ]
+    },
+    "source_id": "facility_92",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Palmyra",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "691 Main Street Northeast, Palmyra, IN 47164",
+          "phone": "812-364-4669"
+        }
+      ]
+    },
+    "source_id": "facility_93",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Breast Imaging",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1760 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-260-6050"
+        }
+      ]
+    },
+    "source_id": "facility_94",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 6,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "250, Lexington, KY 40509",
+          "phone": "(859) 639-0030"
+        },
+        {
+          "location": "Main",
+          "address": "Louisville, KY 40220",
+          "phone": "502-893-7462"
+        },
+        {
+          "location": "Main",
+          "address": "Louisville, KY 40245",
+          "phone": "502-243-9044"
+        },
+        {
+          "location": "Main",
+          "address": "2108 Nicholasville Road, Lexington, KY 40503",
+          "phone": "859-278-9413"
+        },
+        {
+          "location": "Main",
+          "address": "102, Louisville, KY 40219",
+          "phone": "502-459-4900"
+        },
+        {
+          "location": "Main",
+          "address": "500, Louisville, KY 40299",
+          "phone": "502-928-1050"
+        }
+      ]
+    },
+    "source_id": "facility_95",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Breckenridge II",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "502-259-3341"
+        }
+      ]
+    },
+    "source_id": "facility_96",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Endocrinology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 6,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "502-895-4263"
+        },
+        {
+          "location": "Main",
+          "address": "1775 Alysheba Way, Suite 50, Lexington, KY 40509",
+          "phone": "859-639-1210"
+        },
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Suite 209, Corbin, KY 40701",
+          "phone": "859-639-1210"
+        },
+        {
+          "location": "Main",
+          "address": "3084 Lakecrest Circle, Suite, Lexington, KY 40513",
+          "phone": "859-639-1210"
+        },
+        {
+          "location": "Main",
+          "address": "754 South Highway 27, Somerset, KY 42501",
+          "phone": "859-639-1210"
+        },
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 400, Louisville, KY 40207",
+          "phone": "502-895-4263"
+        }
+      ]
+    },
+    "source_id": "facility_97",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Floyd Radiation Oncology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2210 Green Valley Road, New Albany, IN 47150",
+          "phone": "812-981-6246"
+        }
+      ]
+    },
+    "source_id": "facility_98",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Floyd Pulmonary Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 State Street, New Albany, IN 47150",
+          "phone": "812-941-4705"
+        }
+      ]
+    },
+    "source_id": "facility_99",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Cardiac Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3900 Kresge Way, Suite 42, Louisville, KY 40207",
+          "phone": "502-899-3858"
+        },
+        {
+          "location": "Main",
+          "address": "1919 State Street, Suite 360, New Albany, IN 47150",
+          "phone": "502-899-3858"
+        }
+      ]
+    },
+    "source_id": "facility_100",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Behavioral Health",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 12,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "789 Eastern Bypass, Suite 23, Richmond, KY 40475",
+          "phone": "859-544-8171"
+        },
+        {
+          "location": "Main",
+          "address": "118 Patriot Drive, Suite 106, Bardstown, KY 40004",
+          "phone": "(502) 233-4496"
+        },
+        {
+          "location": "Main",
+          "address": "2413 Ring Road, Suite 106, Elizabethtown, KY 42701",
+          "phone": "270-979-2389"
+        },
+        {
+          "location": "Main",
+          "address": "6420 Dutchmans Parkway, Louisville, KY 40205",
+          "phone": "(502) 928-1260"
+        },
+        {
+          "location": "Main",
+          "address": "534 Hillcrest Drive, Brandenburg, KY 40108",
+          "phone": ""
+        },
+        {
+          "location": "Main",
+          "address": "1006 New Moody Lane, Studio, Lagrange, KY 40031",
+          "phone": "(502) 222-6730"
+        },
+        {
+          "location": "Main",
+          "address": "2101 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "(859) 277-5771"
+        },
+        {
+          "location": "Main",
+          "address": "1406 West 5th Street, Suite, London, KY 40741",
+          "phone": "(606) 526-4970"
+        },
+        {
+          "location": "Main",
+          "address": "120 Helmwood Plaza Drive, Elizabethtown, KY 42701",
+          "phone": ""
+        },
+        {
+          "location": "Main",
+          "address": "1919 State Street, Suite 248, New Albany, IN 47150",
+          "phone": "812-949-5767"
+        },
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Corbin, KY 40701",
+          "phone": "606-523-8521"
+        },
+        {
+          "location": "Main",
+          "address": "1840 Cumberland Falls, Corbin, KY 40701",
+          "phone": "606-526-4429"
+        }
+      ]
+    },
+    "source_id": "facility_101",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Bariatric Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "950 Breckenridge Lane, Suite, Louisville, KY 40207",
+          "phone": "502-894-9499"
+        },
+        {
+          "location": "Main",
+          "address": "2716 Old Rosebud Road, Suite, Lexington, KY 40509",
+          "phone": "859-543-1577"
+        },
+        {
+          "location": "Main",
+          "address": "2125 State Street, Suite 1, New Albany, IN 47150",
+          "phone": "812-949-7151"
+        }
+      ]
+    },
+    "source_id": "facility_102",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Neurology & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "101 Financial Drive, Suite 210, Elizabethtown, KY 42701",
+          "phone": "270-706-5515"
+        }
+      ]
+    },
+    "source_id": "facility_103",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Orthopedics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 10,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "446 West Cumberland Gap, Corbin, KY 40701",
+          "phone": "606-523-1565"
+        },
+        {
+          "location": "Main",
+          "address": "2125 State Street, Suite 5, New Albany, IN 47150",
+          "phone": "812-944-2663"
+        },
+        {
+          "location": "Main",
+          "address": "1111 Ring Road, Elizabethtown, KY 42701",
+          "phone": "270-737-4343"
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-897-6579"
+        },
+        {
+          "location": "Main",
+          "address": "101 Stonecrest Road, Suite 2, Shelbyville, KY 40065",
+          "phone": "502-222-0598"
+        },
+        {
+          "location": "Main",
+          "address": "1023 New Moody Lane, Suite, La Grange, KY 40031",
+          "phone": "502-222-0598"
+        },
+        {
+          "location": "Main",
+          "address": "2407 Ring Road, Suite 114, Elizabethtown, KY 42701",
+          "phone": "(270) 737-4343"
+        },
+        {
+          "location": "Main",
+          "address": "4001 Kresge Way, Suite 100, Louisville, KY 40207",
+          "phone": "502-897-6579"
+        },
+        {
+          "location": "Main",
+          "address": "4001 Kresge Way, Suite 240, Louisville, KY 40207",
+          "phone": "502-897-6579"
+        },
+        {
+          "location": "Main",
+          "address": "118 Patriot Drive, Suite 204, Bardstown, KY 40004",
+          "phone": "(502) 233-4045"
+        }
+      ]
+    },
+    "source_id": "facility_104",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Neurology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 6,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1720 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-639-0905"
+        },
+        {
+          "location": "Main",
+          "address": "2101 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-260-4330"
+        },
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 400, Louisville, KY 40207",
+          "phone": ""
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-253-6615"
+        },
+        {
+          "location": "Main",
+          "address": "789 Eastern Bypass, Suite 10, Richmond, KY 40475",
+          "phone": "859-624-6501"
+        },
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Suite 111, Corbin, KY 40701",
+          "phone": "859-639-0905"
+        }
+      ]
+    },
+    "source_id": "facility_105",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Podiatry",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2605 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "(270) 415-4820"
+        },
+        {
+          "location": "Main",
+          "address": "2125 State Street, Suite 5, New Albany, IN 47150",
+          "phone": "(812) 944-2663"
+        },
+        {
+          "location": "Main",
+          "address": "551 Westport Road, Suite A, Elizabethtown, KY 42701",
+          "phone": "270-769-1303"
+        }
+      ]
+    },
+    "source_id": "facility_106",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - New Albany I",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1919 State Street, Suite 446, New Albany, IN 47150",
+          "phone": "812-981-6511"
+        }
+      ]
+    },
+    "source_id": "facility_107",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Maternal Fetal",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3900 Kresge Way, Suite 43, Louisville, KY 40207",
+          "phone": "502-897-8245"
+        },
+        {
+          "location": "Main",
+          "address": "1700 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-260-6970"
+        }
+      ]
+    },
+    "source_id": "facility_108",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Lexington Breast Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1760 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-260-6050"
+        }
+      ]
+    },
+    "source_id": "facility_109",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Amb Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4000 Kresge Way, Louisville, KY 40207",
+          "phone": "502-897-8188"
+        }
+      ]
+    },
+    "source_id": "facility_110",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Lexington Xray",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1740 Nicholasville Road, Lexington, KY 40503",
+          "phone": "859-260-6100"
+        }
+      ]
+    },
+    "source_id": "facility_111",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Neurosurgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 8,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "789 Eastern Bypass, Building 1, Richmond, KY 40475",
+          "phone": "859-277-6143"
+        },
+        {
+          "location": "Main",
+          "address": "2603 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-443-6472"
+        },
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 400, Louisville, KY 40207",
+          "phone": "502-259-5955"
+        },
+        {
+          "location": "Main",
+          "address": "1760 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-277-6143"
+        },
+        {
+          "location": "Main",
+          "address": "1919 State Street, Suite 440, New Albany, IN 47150",
+          "phone": "812-949-5933"
+        },
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Corbin, KY 40701",
+          "phone": "859-277-6143"
+        },
+        {
+          "location": "Main",
+          "address": "3900 Kresge Way, Suite 41, Louisville, KY 40207",
+          "phone": "502-259-5955"
+        },
+        {
+          "location": "Main",
+          "address": "400 Lincoln Drive, Herrin, IL 62948",
+          "phone": "270-443-6472"
+        }
+      ]
+    },
+    "source_id": "facility_112",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Neurology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "610 East Brannon Road, Suite, Nicholasville, KY 40356",
+          "phone": "859-260-3330"
+        }
+      ]
+    },
+    "source_id": "facility_113",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Emergency Department-",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-422-9600"
+        }
+      ]
+    },
+    "source_id": "facility_114",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "3000 Baptist Health Blvd, Suite 170",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Lexington, KY 40509",
+          "phone": "859-422-9600"
+        }
+      ]
+    },
+    "source_id": "facility_115",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Midtown",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "548 Lone Oak Road, Paducah, KY 42003",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_116",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Rheumatology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "330 Waller Avenue, Suite 100, Lexington, KY 40504",
+          "phone": "859-254-7000"
+        }
+      ]
+    },
+    "source_id": "facility_117",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Pulmonary & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2400 Harrodsburg Road, Lexington, KY 40503",
+          "phone": "859-278-0319"
+        },
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "(859) 278-0319"
+        },
+        {
+          "location": "Main",
+          "address": "546 Lone Oak Road, Paducah, KY 42003",
+          "phone": "270-442-3647"
+        },
+        {
+          "location": "Main",
+          "address": "101 Winston Way, Suite 100, Campbellsville, KY 42718",
+          "phone": "(270) 706-5787"
+        },
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite 413, Elizabethtown, KY 42701",
+          "phone": "270-706-5787"
+        }
+      ]
+    },
+    "source_id": "facility_118",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Urology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 5,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1230 Woodland Drive, Elizabethtown, KY 42701",
+          "phone": ""
+        },
+        {
+          "location": "Main",
+          "address": "1001 Leawood Drive, Suite A, Frankfort, KY 40601",
+          "phone": "859-639-0920"
+        },
+        {
+          "location": "Main",
+          "address": "793 Eastern Bypass, Suite 101, Richmond, KY 40475",
+          "phone": "859-626-8645"
+        },
+        {
+          "location": "Main",
+          "address": "1760 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-639-0920"
+        },
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd., Lexington, KY 40509",
+          "phone": "(859) 639-0920"
+        }
+      ]
+    },
+    "source_id": "facility_119",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Sleep Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 8,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4004 Dupont Circle, Suite 210, Louisville, KY 40207",
+          "phone": "502-896-7612"
+        },
+        {
+          "location": "Main",
+          "address": "4001 Kresge Way, Suite 324, Louisville, KY 40207",
+          "phone": "(502) 896-7612"
+        },
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd., Lexington, KY 40509",
+          "phone": "(859) 260-4300"
+        },
+        {
+          "location": "Main",
+          "address": "793 Eastern Bypass, Suite 213, Richmond, KY 40475",
+          "phone": "859-625-3933"
+        },
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-278-0319"
+        },
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "502-222-8687"
+        },
+        {
+          "location": "Main",
+          "address": "1002 Leawood Drive, Frankfort, KY 40601",
+          "phone": "844-622-7847"
+        },
+        {
+          "location": "Main",
+          "address": "1850 State Street, New Albany, IN 47150",
+          "phone": "812-949-5550"
+        }
+      ]
+    },
+    "source_id": "facility_120",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Paducah EKG X-Ray",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2501 Kentucky Avenue, Paducah, KY 42003",
+          "phone": "270-575-2774"
+        }
+      ]
+    },
+    "source_id": "facility_121",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Stonybrook",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2831 South Hurstbourne, Louisville, KY 40220",
+          "phone": "(502) 491-6963"
+        }
+      ]
+    },
+    "source_id": "facility_122",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Thoracic Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3950 Kresge Way, Suite 402, Louisville, KY 40207",
+          "phone": "502-895-2295"
+        },
+        {
+          "location": "Main",
+          "address": "1919 State Street, Suite 310, New Albany, IN 47150",
+          "phone": "812-949-5575"
+        },
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 224, Saint Matthews, KY 40207",
+          "phone": "(502) 897-8131"
+        }
+      ]
+    },
+    "source_id": "facility_123",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group General Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 10,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1760 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-277-5711"
+        },
+        {
+          "location": "Main",
+          "address": "2601 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "(270) 538-9555"
+        },
+        {
+          "location": "Main",
+          "address": "3615 East John Rowan, Bardstown, KY 40004",
+          "phone": "(502) 348-0393"
+        },
+        {
+          "location": "Main",
+          "address": "1110 Lancaster Road, Suite 3, Richmond, KY 40475",
+          "phone": "859-623-3576"
+        },
+        {
+          "location": "Main",
+          "address": "4001 Kresge Way, Suite 200, Louisville, KY 40207",
+          "phone": "502-895-1995"
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-897-7411"
+        },
+        {
+          "location": "Main",
+          "address": "313 Federal Drive Northwest, Corydon, IN 47112",
+          "phone": "812-949-5575"
+        },
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Suite 303, Corbin, KY 40701",
+          "phone": "606-526-7363"
+        },
+        {
+          "location": "Main",
+          "address": "1031 New Moody Lane, Suite, La Grange, KY 40031",
+          "phone": "502-225-9877 (Hart)"
+        },
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite 210, Elizabethtown, KY 42701",
+          "phone": "270-769-5551"
+        }
+      ]
+    },
+    "source_id": "facility_124",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Plastic & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3950 Kresge Way, Suite 302, Louisville, KY 40207",
+          "phone": "(502) 928-4020"
+        },
+        {
+          "location": "Main",
+          "address": "511 Robinbrooke Boulevard, Elizabethtown, KY 42701",
+          "phone": "270-706-1945"
+        }
+      ]
+    },
+    "source_id": "facility_125",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hamburg",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-422-9600"
+        }
+      ]
+    },
+    "source_id": "facility_126",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Pain & Spine - New Albany",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1425 State Street, Suite 100, New Albany, IN 47150",
+          "phone": "(812) 920-0408"
+        }
+      ]
+    },
+    "source_id": "facility_127",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Pain & Spine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Louisville",
+          "address": "4130 Dutchmans Lane, Suite, Louisville, KY 40207",
+          "phone": "(502) 897-1794"
+        }
+      ]
+    },
+    "source_id": "facility_128",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health London Imaging and Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1406 West 5th Street, Suite 100, London, KY 40741",
+          "phone": "(606) 526-4990 (Primary)"
+        }
+      ]
+    },
+    "source_id": "facility_129",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Breckenridge",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "(502) 928-0211"
+        }
+      ]
+    },
+    "source_id": "facility_130",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "3000 Baptist Health Blvd, Suite 240",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Lexington, KY 40509",
+          "phone": "(859) 278-0319"
+        }
+      ]
+    },
+    "source_id": "facility_131",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Corbin Emergency Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Corbin, KY 40701",
+          "phone": "(606) 528-1212"
+        }
+      ]
+    },
+    "source_id": "facility_132",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Vascular Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 3,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2603 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-415-4802"
+        },
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 300, Louisville, KY 40207",
+          "phone": "502-897-5139"
+        },
+        {
+          "location": "Main",
+          "address": "1919 State Street, Suite 200, New Albany, IN 47150",
+          "phone": "812-981-8703"
+        }
+      ]
+    },
+    "source_id": "facility_133",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Inpatient Behavioral",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "(502) 225-5630"
+        }
+      ]
+    },
+    "source_id": "facility_134",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Radiology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Corbin, KY 40701",
+          "phone": "606-523-8542"
+        }
+      ]
+    },
+    "source_id": "facility_135",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Surgery Center in Hamburg",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-278-1460"
+        }
+      ]
+    },
+    "source_id": "facility_136",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 11,
+      "locations": [
+        {
+          "location": "Bardstown II",
+          "address": "118 Patriot Drive, Suite 103, Bardstown, KY 40004",
+          "phone": "502-331-4727"
+        },
+        {
+          "location": "Jeffersonville",
+          "address": "3558 East 10th Street, Jeffersonville, IN 47130",
+          "phone": "(812) 542-4699"
+        },
+        {
+          "location": "Scottsburg",
+          "address": "705 Fairground Road, Scottsburg, IN 47170",
+          "phone": "812-752-0165"
+        },
+        {
+          "location": "Frankfort West",
+          "address": "1001 Leawood Drive, Suite C, Frankfort, KY 40601",
+          "phone": "502-223-0231"
+        },
+        {
+          "location": "La Grange I",
+          "address": "1023 New Moody Lane, Suite, La Grange, KY 40031",
+          "phone": "502-225-5520"
+        },
+        {
+          "location": "Sellersburg",
+          "address": "7600 Highway 60, Suite 100, Sellersburg, IN 47172",
+          "phone": "812-246-8193"
+        },
+        {
+          "location": "St Matthews I",
+          "address": "3950 Kresge Way, Suite 104, Louisville, KY 40207",
+          "phone": "502-896-8028"
+        },
+        {
+          "location": "Shelbyville",
+          "address": "140 Stonecrest Road, Suite 101, Shelbyville, KY 40065",
+          "phone": "502-928-1060"
+        },
+        {
+          "location": "Middletown",
+          "address": "12010 Shelbyville Road, Suite, Louisville, KY 40243",
+          "phone": "502-897-9191"
+        },
+        {
+          "location": "Frankfort East",
+          "address": "4 Hmb Circle, Frankfort, KY 40601",
+          "phone": "502-695-7725"
+        },
+        {
+          "location": "Taylorsville",
+          "address": "870 Taylorsville Road, Taylorsville, KY 40071",
+          "phone": "502-477-8888"
+        }
+      ]
+    },
+    "source_id": "facility_137",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Imaging South",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "60 Bryan Boulevard, Corbin, KY 40701",
+          "phone": "606-523-8602"
+        }
+      ]
+    },
+    "source_id": "facility_138",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Crestwood Imaging and Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6580 Kenwood Crossing, Crestwood, KY 40014",
+          "phone": "502-241-1660"
+        }
+      ]
+    },
+    "source_id": "facility_139",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Richmond Imaging & Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "801 Eastern Bypass, Richmond, KY 40475",
+          "phone": "859-625-3187"
+        }
+      ]
+    },
+    "source_id": "facility_140",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Imaging Center (BIC)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2705 Kentucky Avenue, Paducah, KY 42003",
+          "phone": "270-415-7242"
+        }
+      ]
+    },
+    "source_id": "facility_141",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Breast Imaging - Hamburg",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-422-9600"
+        }
+      ]
+    },
+    "source_id": "facility_142",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group High Risk Breast",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2601 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "(270) 538-9555"
+        }
+      ]
+    },
+    "source_id": "facility_143",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Pediatrics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2670 New Holt Road, Suite, Paducah, KY 42001",
+          "phone": "270-575-2875"
+        }
+      ]
+    },
+    "source_id": "facility_144",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Ray & Kay Eckstein Regional Cancer Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2501 Kentucky Avenue, Paducah, KY 42003",
+          "phone": "270-575-2780"
+        }
+      ]
+    },
+    "source_id": "facility_145",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Center at Baptist Health Richmond",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "793 Eastern Bypass, Suite G2, Richmond, KY 40475",
+          "phone": "859-625-3444"
+        }
+      ]
+    },
+    "source_id": "facility_146",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Colorectal Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2125 State Street, Suite 3, New Albany, IN 47150",
+          "phone": "(812) 949-5575"
+        }
+      ]
+    },
+    "source_id": "facility_147",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Floyd Cardiac Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "31 Quartermaster Court, Jeffersonville, IN 47130",
+          "phone": "(812) 542-4900"
+        }
+      ]
+    },
+    "source_id": "facility_148",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Cardiology Outpatient",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3900 Kresge Way, Suite 60, Louisville, KY 40207",
+          "phone": "(502) 893-7710"
+        }
+      ]
+    },
+    "source_id": "facility_149",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Orthopedics & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2603 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "(270) 415-4825"
+        },
+        {
+          "location": "Main",
+          "address": "1760 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-899-7950"
+        }
+      ]
+    },
+    "source_id": "facility_150",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Medical Weight",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "627 Comanche Trail, Frankfort, KY 40601",
+          "phone": "(502) 661-6772"
+        }
+      ]
+    },
+    "source_id": "facility_151",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Lexington Women's Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1740 Nicholasville Road, Lexington, KY 40503",
+          "phone": "(859) 260-6100"
+        }
+      ]
+    },
+    "source_id": "facility_152",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Heart Failure Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Suite 110, Corbin, KY 40701",
+          "phone": "(606) 523-8770"
+        },
+        {
+          "location": "Main",
+          "address": "2501 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-415-4627"
+        }
+      ]
+    },
+    "source_id": "facility_153",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Primary Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "60 Stonecrest Court, Suite 140, Shelbyville, KY 40065",
+          "phone": "(502) 928-1060"
+        },
+        {
+          "location": "Main",
+          "address": "543 Powell Lane, Benton, KY 42025",
+          "phone": "(270) 415-7070"
+        }
+      ]
+    },
+    "source_id": "facility_154",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Corbin Orthopedic Care and",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Corbin, KY 40701",
+          "phone": "(606) 528-1212"
+        }
+      ]
+    },
+    "source_id": "facility_155",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Pulmonary and",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "100 Commerce Drive, Brandenburg, KY 40108",
+          "phone": "(270) 706-5787"
+        }
+      ]
+    },
+    "source_id": "facility_156",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Weight",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Suite 111, Corbin, KY 40701",
+          "phone": "606-523-8770"
+        },
+        {
+          "location": "Main",
+          "address": "2716 Old Rosebud Road, Suite, Lexington, KY 40509",
+          "phone": "859-639-2060"
+        }
+      ]
+    },
+    "source_id": "facility_157",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hardin Cardiac Imaging & Urgent Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite 410, Elizabethtown, KY 42701",
+          "phone": "270-979-2340"
+        }
+      ]
+    },
+    "source_id": "facility_158",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Paris",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6 Linville Drive, Paris, KY 40361",
+          "phone": "(859) 987-3710"
+        }
+      ]
+    },
+    "source_id": "facility_159",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Neurology and Stroke",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "(502) 222-8503"
+        }
+      ]
+    },
+    "source_id": "facility_160",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Richmond Women's Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "801 Eastern Bypass, Richmond, KY 40475",
+          "phone": "(859) 623-3131"
+        }
+      ]
+    },
+    "source_id": "facility_161",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Orthopedic Clinic - New",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1425 State Street, Suite 100, New Albany, IN 47150",
+          "phone": "(812) 920-0408"
+        }
+      ]
+    },
+    "source_id": "facility_162",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Orthopedic Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4130 Dutchmans Lane, Suite, Louisville, KY 40207",
+          "phone": "(502) 897-1794"
+        }
+      ]
+    },
+    "source_id": "facility_163",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "3000 Baptist Health Blvd, Suite 155",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Lexington, KY 40509",
+          "phone": "(859) 276-0414"
+        }
+      ]
+    },
+    "source_id": "facility_164",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Vein Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 228, Louisville, KY 40207",
+          "phone": "502-649-9400"
+        }
+      ]
+    },
+    "source_id": "facility_165",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1406 West 5th Street, CARE AND SLEoRVnIdCoESn, KY 40741",
+          "phone": ""
+        }
+      ]
+    },
+    "source_id": "facility_166",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Physical Therapy – Radcliff",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "75 Nature Trail, Suite 2, Radcliff, KY 40160",
+          "phone": "(270) 979-3534"
+        }
+      ]
+    },
+    "source_id": "facility_167",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Lymphedema Clinic –",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1111 Ring Road, Suite B116, Elizabethtown, KY 42701",
+          "phone": "(270) 979-8029"
+        }
+      ]
+    },
+    "source_id": "facility_168",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "BLOG 3000 Baptist Health Boulevard, Suite 220 A",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Lexington, KY 40509",
+          "phone": "(859) 226-0031"
+        }
+      ]
+    },
+    "source_id": "facility_169",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Gastroenterology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 7,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1700 Ring Road, Elizabethtown, KY 42701",
+          "phone": "270-979-2583"
+        },
+        {
+          "location": "Main",
+          "address": "1031 New Moody Lane, Suite, La Grange, KY 40031",
+          "phone": "502-222-6008"
+        },
+        {
+          "location": "Main",
+          "address": "1419 Cumberland Falls, Corbin, KY 40701",
+          "phone": "606-528-1172"
+        },
+        {
+          "location": "Main",
+          "address": "2605 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "270-415-4690"
+        },
+        {
+          "location": "Main",
+          "address": "3950 Kresge Way, Floor 2, Louisville, KY 40207",
+          "phone": "502-893-0220"
+        },
+        {
+          "location": "Main",
+          "address": "1780 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-260-5051"
+        },
+        {
+          "location": "Main",
+          "address": "1720 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-276-4382"
+        }
+      ]
+    },
+    "source_id": "facility_170",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Cardiothoracic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2601 Kentucky Avenue, Suite, Paducah, KY 42003",
+          "phone": "(270) 443-5564"
+        },
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Suite 204, Corbin, KY 40701",
+          "phone": "606-526-4960"
+        }
+      ]
+    },
+    "source_id": "facility_171",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "3000 Baptist Health Blvd, ABOUT",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Lexington, KY 40509",
+          "phone": "859-278-0363"
+        }
+      ]
+    },
+    "source_id": "facility_172",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Breast Surgery",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2125 State Street, Suite 3, New Albany, IN 47150",
+          "phone": "(812) 949-5575"
+        }
+      ]
+    },
+    "source_id": "facility_173",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - London",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1406 West 5th Street, Suite, London, KY 40741",
+          "phone": "(606) 526-4970"
+        }
+      ]
+    },
+    "source_id": "facility_174",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Mayfield",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "318 South 7th Street, Mayfield, KY 42066",
+          "phone": "270-356-4115"
+        }
+      ]
+    },
+    "source_id": "facility_175",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Pulmonology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "502-222-5388"
+        }
+      ]
+    },
+    "source_id": "facility_176",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Sleep Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1026 New Moody Lane, Floor 3, La Grange, KY 40031",
+          "phone": "502-222-8687"
+        }
+      ]
+    },
+    "source_id": "facility_177",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Outpatient Wound Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "502-222-5388"
+        }
+      ]
+    },
+    "source_id": "facility_178",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Multi-Disciplinary Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "502-222-5388"
+        }
+      ]
+    },
+    "source_id": "facility_179",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "Louisville, KY 40207",
+          "phone": "502-897-8100"
+        }
+      ]
+    },
+    "source_id": "facility_180",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Sleep Center",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2409 Ring Road, Suite 106, Elizabethtown, KY 42701",
+          "phone": "270-706-5691"
+        }
+      ]
+    },
+    "source_id": "facility_181",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Wound Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3900 Kresge Way, Louisville, KY 40207",
+          "phone": "502-259-4470"
+        }
+      ]
+    },
+    "source_id": "facility_182",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Floyd CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "New Albany, IN 47150",
+          "phone": "812-949-7964"
+        }
+      ]
+    },
+    "source_id": "facility_183",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Radiation Oncology",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4003 Kresge Way, Suite 115, Louisville, KY 40207",
+          "phone": "502-897-8163"
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Louisville, KY 40223",
+          "phone": "502-210-4900"
+        }
+      ]
+    },
+    "source_id": "facility_184",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Pain Management",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2125 State Street, Suite 6, New Albany, IN 47150",
+          "phone": "812-949-5790"
+        },
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-253-6625"
+        },
+        {
+          "location": "Main",
+          "address": "1760 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-260-2766"
+        },
+        {
+          "location": "Main",
+          "address": "705 Fairground Road, Scottsburg, IN 47170",
+          "phone": "812-949-5790"
+        }
+      ]
+    },
+    "source_id": "facility_185",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Kenwood Crossing",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6580 Kenwood Crossing, Crestwood, KY 40014",
+          "phone": "502-243-3161"
+        }
+      ]
+    },
+    "source_id": "facility_186",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family CAREERS",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "502, Paducah, KY 42003",
+          "phone": "270-415-7015"
+        },
+        {
+          "location": "Main",
+          "address": "Georgetown, KY 40324",
+          "phone": "502-868-0622"
+        },
+        {
+          "location": "Main",
+          "address": "Corydon, IN 47112",
+          "phone": "812-734-3952"
+        },
+        {
+          "location": "Main",
+          "address": "Eddyville, KY 42038",
+          "phone": "270-388-5454"
+        }
+      ]
+    },
+    "source_id": "facility_187",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Metropolis",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1203 West 10th Street, Metropolis, IL 62960",
+          "phone": "618-524-3795"
+        }
+      ]
+    },
+    "source_id": "facility_188",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Nicholasville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1760 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-277-2211"
+        }
+      ]
+    },
+    "source_id": "facility_189",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Tates Creek",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1099 Duval Street, Suite 100, Lexington, KY 40515",
+          "phone": "859-273-3888"
+        }
+      ]
+    },
+    "source_id": "facility_190",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Brandenburg",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "534 Hillcrest Drive, Brandenburg, KY 40108",
+          "phone": "270-422-5000"
+        }
+      ]
+    },
+    "source_id": "facility_191",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Ring Road II",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2413 Ring Road, Suite 100, Elizabethtown, KY 42701",
+          "phone": "270-737-0077"
+        }
+      ]
+    },
+    "source_id": "facility_192",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Fort Knox",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1679 North Wilson Road, Suite, Radcliff, KY 40160",
+          "phone": "270-272-0000"
+        }
+      ]
+    },
+    "source_id": "facility_193",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Hodgenville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "145 Lincoln Drive, Suite 101, Hodgenville, KY 42748",
+          "phone": "270-979-3241"
+        }
+      ]
+    },
+    "source_id": "facility_194",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Sonora",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "11969 South Dixie Highway, Sonora, KY 42776",
+          "phone": "270-369-9706"
+        }
+      ]
+    },
+    "source_id": "facility_195",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Northgate",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3605 Northgate Court, Suite, New Albany, IN 47150",
+          "phone": "812-941-9355"
+        }
+      ]
+    },
+    "source_id": "facility_196",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Corydon I",
+          "address": "313 Federal Drive Northwest, Corydon, IN 47112",
+          "phone": "812-738-4155"
+        },
+        {
+          "location": "Bardstown I",
+          "address": "3615 E. John Rowan Blvd, Suite, Bardstown, KY 40004",
+          "phone": "502-348-5968"
+        }
+      ]
+    },
+    "source_id": "facility_197",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - New Albany II",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2315 Green Valley Road, Suite, New Albany, IN 47150",
+          "phone": "812-945-2100"
+        }
+      ]
+    },
+    "source_id": "facility_198",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Ring Road I",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2411 Ring Road, Suite 114, Elizabethtown, KY 42701",
+          "phone": "270-706-1925"
+        }
+      ]
+    },
+    "source_id": "facility_199",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Williamsburg",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "990 South Highway 25 West, Williamsburg, KY 40769",
+          "phone": "606-549-8244"
+        }
+      ]
+    },
+    "source_id": "facility_200",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Helmwood",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "100 Helmwood Plaza Drive, Elizabethtown, KY 42701",
+          "phone": "270-769-5579"
+        }
+      ]
+    },
+    "source_id": "facility_201",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Charlestown",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "7725 Highway 62, Suite 100, Charlestown, IN 47111",
+          "phone": "812-280-0413"
+        }
+      ]
+    },
+    "source_id": "facility_202",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Floyd Knobs",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "800 Highlander Point Drive, Floyds Knobs, IN 47119",
+          "phone": "812-923-2273"
+        }
+      ]
+    },
+    "source_id": "facility_203",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Surgery Center Breckenridge",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "502-928-0050"
+        }
+      ]
+    },
+    "source_id": "facility_204",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Diagnostic Center (Bardstown 101)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3615 East John Rowan, Bardstown, KY 40004",
+          "phone": "502-350-3889"
+        }
+      ]
+    },
+    "source_id": "facility_205",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Diagnostic Center (Brandenburg)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "100 Commerce Drive, Brandenburg, KY 40108",
+          "phone": "(270) 422-1222"
+        }
+      ]
+    },
+    "source_id": "facility_206",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Imaging and Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4000 Kresge Way, Louisville, KY 40207",
+          "phone": "502-897-8888"
+        }
+      ]
+    },
+    "source_id": "facility_207",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Imaging and Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "502-222-3620"
+        }
+      ]
+    },
+    "source_id": "facility_208",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Surgery Center Eastpoint",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Louisville, KY 40223",
+          "phone": "502-210-4850"
+        }
+      ]
+    },
+    "source_id": "facility_209",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "145 Lincoln Drive, Suite 102, Hodgenville, KY 42748",
+          "phone": "270-979-3981"
+        }
+      ]
+    },
+    "source_id": "facility_210",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Diagnostic (Elizabethtown)",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2409 Ring Road, Suite 114, Elizabethtown, KY 42701",
+          "phone": "270-982-3344"
+        }
+      ]
+    },
+    "source_id": "facility_211",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Floyd Imaging & Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1850 State Street, Floor 1, New Albany, IN 47150",
+          "phone": "812-949-5904"
+        }
+      ]
+    },
+    "source_id": "facility_212",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Floyd Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Corydon",
+          "address": "313 Federal Drive Northwest, Corydon, IN 47112",
+          "phone": "812-734-3920"
+        }
+      ]
+    },
+    "source_id": "facility_213",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Imaging North",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "446 West Cumberland Gap, Corbin, KY 40701",
+          "phone": "606-523-1565"
+        }
+      ]
+    },
+    "source_id": "facility_214",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Diagnostic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1001 Leawood Drive, Suite A, Frankfort, KY 40601",
+          "phone": "502.875.0872"
+        }
+      ]
+    },
+    "source_id": "facility_215",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Center at Baptist Health Lexington",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1700 Nicholasville Road, Lexington, KY 40503",
+          "phone": "(859) 260-6460"
+        }
+      ]
+    },
+    "source_id": "facility_216",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Infectious Disease",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3950 Kresge Way, Suite 405, Louisville, KY 40207",
+          "phone": "502-928-6960"
+        },
+        {
+          "location": "Main",
+          "address": "1 Trillium Way, Suite 111, Corbin, KY 40701",
+          "phone": "606-523-8770"
+        }
+      ]
+    },
+    "source_id": "facility_217",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Internal Medicine - Beaumont",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3101 Wall Street, Lexington, KY 40513",
+          "phone": "859-219-6440"
+        }
+      ]
+    },
+    "source_id": "facility_218",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Internal Medicine - Nicholasville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2101 Nicholasville Road, Suite, Lexington, KY 40503",
+          "phone": "859-277-5771"
+        }
+      ]
+    },
+    "source_id": "facility_219",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Salem",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1101 North Jim Day Road, Suite, Salem, IN 47167",
+          "phone": "812-883-5501"
+        }
+      ]
+    },
+    "source_id": "facility_220",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Internal Medicine & Pediatrics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 4,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "75 Nature Trail, Suite 3, Radcliff, KY 40160",
+          "phone": "270-351-2323"
+        },
+        {
+          "location": "Main",
+          "address": "596 Westport Road, Suite 101, Elizabethtown, KY 42701",
+          "phone": "270-769-6888"
+        },
+        {
+          "location": "Main",
+          "address": "7101 West Highway 22, Crestwood, KY 40014",
+          "phone": "502-241-6567"
+        },
+        {
+          "location": "Main",
+          "address": "100 Providence Way, Suite, Nicholasville, KY 40356",
+          "phone": "859-260-5370"
+        }
+      ]
+    },
+    "source_id": "facility_221",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Princeton",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "605 South Jefferson Street, Princeton, KY 42445",
+          "phone": "270-365-5502"
+        }
+      ]
+    },
+    "source_id": "facility_222",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Family Medicine - Calvert City",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4754 US Highway 62, Calvert City, KY 42029",
+          "phone": "270-415-7780"
+        }
+      ]
+    },
+    "source_id": "facility_223",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Hospital Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "913 North Dixie Avenue, Elizabethtown, KY 42701",
+          "phone": "270-706-5612"
+        }
+      ]
+    },
+    "source_id": "facility_224",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Breckenridge Imaging",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2800 Breckenridge Lane, Louisville, KY 40220",
+          "phone": "502-897-8888"
+        }
+      ]
+    },
+    "source_id": "facility_225",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Louisville Non-Invasive Vascular",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "136 E Cotton Ave, Jeffersonville, IN 47130",
+          "phone": "812-981-8701"
+        }
+      ]
+    },
+    "source_id": "facility_226",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Lexington Emergency Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1740 Nicholasville Road, Lexington, KY 40503",
+          "phone": "(859) 260-6100"
+        }
+      ]
+    },
+    "source_id": "facility_227",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Emergency Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1025 New Moody Lane, La Grange, KY 40031",
+          "phone": "502-222-3255"
+        }
+      ]
+    },
+    "source_id": "facility_228",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Ear, Nose & Throat",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 2,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2411 Ring Road, Suite 105, Elizabethtown, KY 42701",
+          "phone": "270-706-5265"
+        },
+        {
+          "location": "Main",
+          "address": "100 Commerce Drive, Brandenburg, KY 40108",
+          "phone": "270-706-5265"
+        }
+      ]
+    },
+    "source_id": "facility_229",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health La Grange Rehabilitation Services",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1031 New Moody Lane, La Grange, KY 40031",
+          "phone": "(502) 222-3303"
+        }
+      ]
+    },
+    "source_id": "facility_230",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hamburg Imaging and Diagnostics",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "3000 Baptist Health Blvd, Lexington, KY 40509",
+          "phone": "859-422-9600"
+        }
+      ]
+    },
+    "source_id": "facility_231",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Outpatient Center at Georgetown",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "206 Bevins Lane, Georgetown, KY 40324",
+          "phone": "502-570-5525"
+        }
+      ]
+    },
+    "source_id": "facility_232",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Colon & Rectal",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4001 Kresge Way, Suite 210, Louisville, KY 40207",
+          "phone": "502-895-3633"
+        }
+      ]
+    },
+    "source_id": "facility_233",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Harrodsburg Road",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2040 Harrodsburg Road, Suite, Lexington, KY 40503",
+          "phone": "(859) 899-7990"
+        }
+      ]
+    },
+    "source_id": "facility_234",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Sports Medicine",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1101 North Jim Day Road, Suite, Salem, IN 47167",
+          "phone": "(812) 733-4444"
+        }
+      ]
+    },
+    "source_id": "facility_235",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Internal Medicine - Memorial",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "908 Memorial Court, Suite, Elizabethtown, KY 42701",
+          "phone": "270-769-1049"
+        }
+      ]
+    },
+    "source_id": "facility_236",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Eastpoint II",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-253-6630"
+        }
+      ]
+    },
+    "source_id": "facility_237",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Eastpoint I",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2400 Eastpoint Parkway, Suite, Louisville, KY 40223",
+          "phone": "502-244-6899"
+        }
+      ]
+    },
+    "source_id": "facility_238",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Buechel",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2312 Hikes Lane, Louisville, KY 40218",
+          "phone": "502-479-7229"
+        }
+      ]
+    },
+    "source_id": "facility_239",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Blakenbaker",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "11701 Bluegrass Parkway, Suite, Louisville, KY 40299",
+          "phone": "502-245-4168"
+        }
+      ]
+    },
+    "source_id": "facility_240",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Jeffersontown I",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "10216 Taylorsville Road, Suite, Louisville, KY 40299",
+          "phone": "502-267-5456"
+        }
+      ]
+    },
+    "source_id": "facility_241",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Richmond Road",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "120 Prosperous Place, Suite, Lexington, KY 40509",
+          "phone": "859-543-4340"
+        }
+      ]
+    },
+    "source_id": "facility_242",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Shepherdsville",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "1578 Highway 44 East, Unit 2, Shepherdsville, KY 40165",
+          "phone": "502-921-4161"
+        }
+      ]
+    },
+    "source_id": "facility_243",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Prospect",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "6041 Timber Ridge Drive, Prospect, KY 40059",
+          "phone": "502-928-0910"
+        }
+      ]
+    },
+    "source_id": "facility_244",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Murray",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "506 North 12th Street, Murray, KY 42071",
+          "phone": "270-415-7055"
+        }
+      ]
+    },
+    "source_id": "facility_245",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Village Square",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "4620 Village Square Drive, Paducah, KY 42001",
+          "phone": "270-442-8575"
+        }
+      ]
+    },
+    "source_id": "facility_246",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Strawberry Hills",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "2670 New Holt Road, Suite 120, Paducah, KY 42001",
+          "phone": "(270) 575-1010"
+        }
+      ]
+    },
+    "source_id": "facility_247",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Primary Care - Northeast",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "9815 Brownsboro Road, Louisville, KY 40241",
+          "phone": "502-426-4264"
+        }
+      ]
+    },
+    "source_id": "facility_248",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Hardin Diabetes Care",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "521 Robinbrooke Boulevard, Elizabethtown, KY 42701",
+          "phone": "270-706-6944"
+        }
+      ]
+    },
+    "source_id": "facility_249",
+    "source_file": ""
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "MedicalProvider",
+    "name": "Baptist Health Medical Group Heart Failure Clinic",
+    "attributes": {
+      "parent_system": "",
+      "location_count": 1,
+      "locations": [
+        {
+          "location": "Main",
+          "address": "200 Cardinal Drive, Suite 409, Elizabethtown, KY 42701",
+          "phone": "270-979-7325"
+        }
+      ]
+    },
+    "source_id": "facility_250",
+    "source_file": ""
+  }
+]

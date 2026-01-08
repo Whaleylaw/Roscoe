@@ -1,0 +1,289 @@
+{
+  "case_name": "Taylor-Thompson-MVA-12-06-2024",
+  "total_episodes": 11,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-09-22",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\njacob lashley is the case manager at Morgan and Morgan\nph: 502-630-4013\njlashley@forthepeople.com",
+      "natural_language": "Case Taylor-Thompson-MVA-12-06-2024 involves client Taylor Thompson.\n\nJacob Lashley is the case manager at Morgan and Morgan. He can be reached at 502-630-4013 or jlashley@forthepeople.com.",
+      "valid_at": "2025-09-22T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Morgan and Morgan",
+            "relevance": "firm handling case / employer of case manager"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-09-22",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\ncalled morgan and morgan, left vm for atty. need copy of file",
+      "natural_language": "Initial client contact on December 6, 2024, with Taylor Thompson regarding a motor vehicle accident.\n\nThe client called Morgan & Morgan, left a voicemail for the attorney, and requested a copy of the file.",
+      "valid_at": "2025-09-22T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "client who contacted the firm about a motor vehicle accident"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Morgan & Morgan",
+            "relevance": "firm contacted by the client and recipient of the file request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Morgan & Morgan attorney",
+            "relevance": "attorney for whom the client left a voicemail"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-09-22",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\nsent mom intake docs via vinesign",
+      "natural_language": "Initial client contact on December 6, 2024 with Taylor Thompson regarding a motor vehicle accident. Mom intake documents were sent via vinesign.",
+      "valid_at": "2025-09-22T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Vinesign",
+            "relevance": "sent intake documents via e-signature"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-09-22",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=a0a40a99-754d-4e71-b0d1-34a871fbde5a.pdf\nSigned: 2025-09-22 17:51:51\nAll signers: Taylor Thompson((502) 640-2363)\nSender: Justin Chumbley",
+      "natural_language": "Case Taylor-Thompson-MVA-12-06-2024 involves client Taylor Thompson in a motor vehicle accident matter. The intake document, titled \u201cintake,\u201d was sent for signature via VineSign and has now been completed. The signed intake document is available at the following URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=a0a40a99-754d-4e71-b0d1-34a871fbde5a.pdf. It was signed on September 22, 2025 at 17:51:51. The signers listed for this document include Taylor Thompson, with contact phone number (502) 640-2363. The sender of the VineSign package was Justin Chumbley.",
+      "valid_at": "2025-09-22T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "client and signer of intake document"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "e-signature platform used to send and sign the intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-22",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\n__CLIENT CONTACT__\n__Details:__ Taylor Thompson\nDOA November or december of 2024.\nSon was the driver\nWent to Aptiva\nWent to hospital\nClient has a loan from a legal lender\nHas an 18k offer, turned it down and then client went to jail ( was repped by Morgan and Morgan)\n\nAttorney John smith with Morgan and Morgan\n502-741-6431\n\nMom\u2019s number: 502-640-2363\n\nDOB 7/8/1992\n\nHad Medicaid \n__Person Making Contact:__ Justin\n__Date & Time__: September 22 2025",
+      "natural_language": "Initial client contact on September 22, 2025, with Justin regarding the motor vehicle accident case Taylor-Thompson-MVA-12-06-2024. The client is Taylor Thompson, born July 8, 1992, and the DOA is listed as November or December 2024. The client reports that her son was the driver in the incident. Following the crash, they went to Aptiva and then to a hospital. The client also notes that she has a loan from a legal lender. There was an $18,000 offer in the matter, which Taylor Thompson declined, after which she subsequently went to jail.\n\nThe client is represented by Attorney John Smith of Morgan & Morgan, who can be reached at 502-741-6431. The mother\u2019s contact number is 502-640-2363. The record notes that Taylor Thompson had Medicaid at the time. The person making contact was Justin, and the contact date/time is September 22, 2025.",
+      "valid_at": "2025-09-22T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "client/victim"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "John Smith",
+            "relevance": "representing client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Morgan & Morgan",
+            "relevance": "law firm representing client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Aptiva",
+            "relevance": "treated at after crash"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Medicaid",
+            "relevance": "client's insurer at time of incident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-09-29",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\nKelsey Browning Ph: 812-850-6856\nkbrowning@forthepeople.com",
+      "natural_language": "Case Taylor-Thompson-MVA-12-06-2024 was opened on December 6, 2024 for client Taylor Thompson in connection with a motor vehicle accident. The assigned contact for the matter is Kelsey Browning, who can be reached by phone at 812-850-6856 or by email at kbrowning@forthepeople.com.",
+      "valid_at": "2025-09-29T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "client of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Kelsey Browning",
+            "relevance": "assigned contact for the matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-09-30",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\ni've called Morgan and Morgan daily with no luck. have sent emails as well",
+      "natural_language": "Initial client contact on December 6, 2024, in the Taylor-Thompson-MVA matter with client Taylor Thompson regarding a motor vehicle accident. Daily calls to Morgan and Morgan have been made with no luck, and emails have also been sent.",
+      "valid_at": "2025-09-30T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Morgan and Morgan",
+            "relevance": "attempted contact (daily calls and emails)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-03",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\nAptiva has agreed to accept ($5,397.50) a 50% reduction on bill\nClient has \"loans\" from a company named \"Claims Angel\" in the amount of $6,537.05\nCurrent and what appears to be LBF is 18k\nIndiana MVA so no PIP",
+      "natural_language": "Initial client contact on December 6, 2024, with Taylor Thompson regarding a motor vehicle accident in Indiana. Aptiva has agreed to accept a $5,397.50 reduction on the bill, representing a 50% reduction. The client has \"loans\" from a company named \"Claims Angel\" in the amount of $6,537.05. The current and what appears to be LBF is $18,000. This is an Indiana motor vehicle accident, so there is no PIP (Personal Injury Protection).",
+      "valid_at": "2025-10-03T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "initial client contact (involved in motor vehicle accident)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Aptiva",
+            "relevance": "agreed to accept a $5,397.50 bill reduction (50%)"
+          },
+          {
+            "entity_type": "LienHolder",
+            "entity_name": "Claims Angel",
+            "relevance": "loan provider to client ($6,537.05)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-03",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\n__CLIENT CONTACT__\n__Details:__ Spoke with mom. basically just wants us to squeeze everything we can out of it for client \n__Person Making Contact:__ Justin\n__Date & Time__: October 03 2025",
+      "natural_language": "Initial client contact on October 3, 2025, regarding the Taylor-Thompson-MVA-12-06-2024 motor vehicle accident. The contact was made by Justin and involved speaking with the client's mother, who stated that she wants us to maximize every possible benefit for the client, Taylor Thompson.",
+      "valid_at": "2025-10-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-10-03",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\nKathy, It's Justin from the Whaley Law Firm. I have had zero luck obtaining a copy of Taylor's file from Morgan and Morgan. Any assistance you can provide would be appreciated",
+      "natural_language": "Case Taylor-Thompson-MVA-12-06-2024 centers on client Taylor Thompson.\n\nThe record contains a message from Justin, of the Whaley Law Firm, addressed to Kathy: \"Kathy, It's Justin from the Whaley Law Firm. I have had zero luck obtaining a copy of Taylor's file from Morgan and Morgan. Any assistance you can provide would be appreciated.\" He is requesting any assistance Kathy can provide in obtaining the file from Morgan and Morgan.",
+      "valid_at": "2025-10-03T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "subject/client whose file is being requested"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin (Whaley Law Firm)",
+            "relevance": "sender requesting assistance to obtain the client's file"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Morgan and Morgan",
+            "relevance": "firm holding the client's file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-10-22",
+      "original_body": "Case: Taylor-Thompson-MVA-12-06-2024\nClient: Taylor Thompson\n\n__Taylor Thompson__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Taylor Thompson - Filevine Project Email Address [TaylorThompsonMVAZ5153426@louisvilleaccidentlawyer.filevineapp.com](mailto:TaylorThompsonMVAZ5153426@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 22 2025 11:44:51 GMT-04:00\n\nIt is in negotiation but I don't see a demand.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Taylor-Thompson-MVA-12-06-2024. Client: Taylor Thompson.\n\nOn October 22, 2025, at 11:44:51 AM (GMT-04:00), an email was sent regarding the Taylor-Thompson-MVA-12-06-2024 matter from Aaron Whaley of Whaley Law Firm. The message came from agwhaley@whaleylawfirm.com and was addressed to Justin Chumbley at Justin@whaleylawfirm.com and to the Taylor Thompson Filevine project email TaylorThompsonMVAZ5153426@louisvilleaccidentlawyer.filevineapp.com. In the body of the email, Whaley wrote: \u201cIt is in negotiation but I don't see a demand.\u201d The message is signed by Aaron Whaley of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, with phone number 502-583-4022.",
+      "valid_at": "2025-10-22T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Taylor Thompson",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender / attorney at Whaley Law Firm"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient / attorney at Whaley Law Firm"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

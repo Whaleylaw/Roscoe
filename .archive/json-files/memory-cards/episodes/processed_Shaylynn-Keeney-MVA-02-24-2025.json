@@ -1,0 +1,68 @@
+{
+  "case_name": "Shaylynn-Keeney-MVA-02-24-2025",
+  "total_episodes": 0,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Pleasure Ridge Park Fire/EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Southeastern Emergency Services, LLC",
+        "specialty": null
+      },
+      {
+        "name": "Starlite Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "UofL Health - Mary & Elizabeth Mary & Elizabeth Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "VIP Imaging, PLLC",
+        "specialty": "radiology"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "State Farm PIP Team"
+      },
+      {
+        "name": "Steve Campbell"
+      }
+    ],
+    "claims": [
+      {
+        "type": "PIPClaim",
+        "name": "Shaylynn-Keeney-MVA-02-24-2025-Personal Injury Protection (PIP)-1780Z939M",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "State Farm PIP Team"
+      },
+      {
+        "type": "UMClaim",
+        "name": "Shaylynn-Keeney-MVA-02-24-2025-Uninsured Motorist (UM)-1780Z939M",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Steve Campbell"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Shaylynn-Keeney-MVA-02-24-2025-No Private Health Insurance",
+        "holder": null,
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [],
+  "errors": []
+}

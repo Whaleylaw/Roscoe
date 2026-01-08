@@ -1,0 +1,155 @@
+{
+  "case_name": "Forrest-Muss-MVA-07-20-2025",
+  "total_episodes": 6,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Little Clinic",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "North American Risk Services"
+      }
+    ],
+    "adjusters": [],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Forrest-Muss-MVA-07-20-2025-Bodily Injury (BI)-136751083",
+        "insurer": "North American Risk Services",
+        "adjuster": null
+      }
+    ],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-07-22",
+      "original_body": "Case: Forrest-Muss-MVA-07-20-2025\nClient: Forrest Muss\n\nsent intake docs via vinesign",
+      "natural_language": "Case Forrest-Muss-MVA-07-20-2025 concerns client Forrest Muss. Intake documents were sent via vinesign.",
+      "valid_at": "2025-07-22T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Forrest Muss",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-22",
+      "original_body": "Case: Forrest-Muss-MVA-07-20-2025\nClient: Forrest Muss\n\nMcDonald's Store # 12096\nGm:? Estefania Rios\nlast name of person who spilled coffee: Odett\naddres of incident: 2107 State St. New Albany 47150",
+      "natural_language": "Case Forrest-Muss-MVA-07-20-2025 involves client Forrest Muss. Initial client contact occurred on July 20, 2025 regarding a motor vehicle accident. The incident occurred at McDonald's Store #12096, located at 2107 State St., New Albany 47150, where the General Manager was Estefania Rios. The record notes that the person who spilled coffee had the last name Odett.",
+      "valid_at": "2025-07-22T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Forrest Muss",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "McDonald's",
+            "relevance": "location of incident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Vinesign Integration - 2025-07-22",
+      "original_body": "Case: Forrest-Muss-MVA-07-20-2025\nClient: Forrest Muss\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=489a7f02-8874-4282-b2bd-6931e7a0aa7c.pdf\nSigned: 2025-07-22 13:05:15\nAll signers: Forrest Muss((502) 432-9130)\nSender: Justin Chumbley",
+      "natural_language": "This note concerns the case Forrest-Muss-MVA-07-20-2025 for client Forrest Muss. The intake form was completed via VineSign, and the signed intake document is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=489a7f02-8874-4282-b2bd-6931e7a0aa7c.pdf. The VineSign record shows the document was signed on July 22, 2025 at 13:05:15.\n\nThe signer was Forrest Muss, with phone number (502) 432-9130. All signers: Forrest Muss ((502) 432-9130). The intake package was sent by Justin Chumbley.",
+      "valid_at": "2025-07-22T00:00:00",
+      "author": "Vinesign Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Forrest Muss",
+            "relevance": "subject of case/intake"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-27",
+      "original_body": "Case: Forrest-Muss-MVA-07-20-2025\nClient: Forrest Muss\n\nForrest, It's Justin. This is a text only number for your file. Anything you send here will save directly to your file. Please send me your DOB, SSN so I can send a formal request for records to the Little Clinic. Also, if possible send all those photos here as well.",
+      "natural_language": "Case Forrest-Muss-MVA-07-20-2025. Client: Forrest Muss.\n\nInitial client contact on July 20, 2025, regarding a motor vehicle accident. The communication came from Justin, who wrote to Forrest Muss: \"Forrest, It's Justin. This is a text only number for your file. Anything you send here will save directly to your file.\" \n\nJustin stated that he would use this text-only number for the file and asked Forrest to provide his date of birth and Social Security number so he could send a formal request for records to the Little Clinic. He wrote, \"Please send me your DOB, SSN so I can send a formal request for records to the Little Clinic.\" He also requested that, if possible, Forrest send all of the photos related to the case to this channel: \"Also, if possible send all those photos here as well.\"",
+      "valid_at": "2025-07-27T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Forrest Muss",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Little Clinic",
+            "relevance": "records requested from"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "North American Risk Services",
+            "relevance": "insurer for BI claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-28",
+      "original_body": "Case: Forrest-Muss-MVA-07-20-2025\nClient: Forrest Muss\n\nMcDonald's Corporation Address\nMcDonald’s Corporation\n110 N. Carpenter St.\nChicago, IL 60607",
+      "natural_language": "The case Forrest-Muss-MVA-07-20-2025 concerns the client Forrest Muss.\n\nThe McDonald’s Corporation is located at 110 N. Carpenter St., Chicago, IL 60607.",
+      "valid_at": "2025-07-28T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Forrest Muss",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "McDonald's",
+            "relevance": "location mentioned"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-11-30",
+      "original_body": "Case: Forrest-Muss-MVA-07-20-2025\nClient: Forrest Muss\n\nCompleted comprehensive 5-phase file organization for case. Reorganized 18 files from root directory into 8-bucket system: 4 files to Client folder (fee agreement + intake verification with PDF+MD companions), 14 files to Investigation folder (7 burn injury photos + 7 evidence photos including McDonald's grill slip, Little Clinic receipt, illegible visit note, and 3 additional evidence photos), 5 files to Medical Records/Little Clinic (PA Tejah Strickland visit note, payment receipt, and medical billing request template). Deleted 2 empty text files. All files renamed following YYYY-MM-DD naming convention with proper categorization. Created subfolder structure for Little Clinic medical records (Medical Records, Medical Bills, Medical Requests). Quality review completed with 11.1% error rate (2 corrections applied). Verification confirmed 100% compliance with naming conventions and companion .md files. Case folder now fully organized and ready for active case management. Reports generated: file inventory, reorganization map, quality review summary, and final verification report saved to Reports folder.",
+      "natural_language": "In the Forrest-Muss-MVA-07-20-2025 case file for client Forrest Muss, I completed a comprehensive five-phase file organization. I reorganized 18 files from the root directory into an eight-bucket system: four files were moved to the Client folder (fee agreement and intake verification with PDF and Markdown companion files), and fourteen files were moved to the Investigation folder (seven burn injury photos and seven evidence photos, including a McDonald’s grill slip, a Little Clinic receipt, an illegible visit note, and three additional evidence photos).\n\nAdditionally, five files were placed in Medical Records/Little Clinic (including the PA Tejah Strickland visit note, a payment receipt, and a medical billing request template). I deleted two empty text files, and all remaining files were renamed according to the YYYY-MM-DD naming convention with proper categorization. I also created a subfolder structure for Little Clinic medical records, including Medical Records, Medical Bills, and Medical Requests.\n\nA quality review was completed, revealing an 11.1% error rate with two corrections applied. Verification confirmed 100% compliance with naming conventions and companion Markdown (.md) files. The case folder is now fully organized and ready for active case management. Reports were generated, including a file inventory, a reorganization map, a quality review summary, and a final verification report, all saved to the Reports folder.",
+      "valid_at": "2025-11-30T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Forrest Muss",
+            "relevance": "subject of the case whose files were reorganized"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Little Clinic",
+            "relevance": "source of medical records and visit notes; files placed in Medical Records/Little Clinic"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

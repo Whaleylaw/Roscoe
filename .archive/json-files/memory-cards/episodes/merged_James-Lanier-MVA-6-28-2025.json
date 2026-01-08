@@ -1,0 +1,437 @@
+{
+  "case_name": "James-Lanier-MVA-6-28-2025",
+  "total_episodes": 17,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Allstar Chiropractic",
+        "specialty": "chiropractic"
+      },
+      {
+        "name": "OrthoCincy",
+        "specialty": "orthopedic"
+      },
+      {
+        "name": "OrthoCIncy-NKU",
+        "specialty": "orthopedic"
+      },
+      {
+        "name": "St. Elizabeth Florence Hospital",
+        "specialty": "hospital"
+      }
+    ],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nSettlement strategy development with family coordination.",
+      "natural_language": "On June 28, 2025, a case titled James-Lanier-MVA-6-28-2025 was opened for client James Lanier following a motor vehicle accident. The current focus is the development of a settlement strategy with coordination from the client’s family.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "client for whom case was opened"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nMedical treatment planning and insurance coordination.",
+      "natural_language": "On June 28, 2025, a case titled James-Lanier-MVA-6-28-2025 was established for client James Lanier. The scope of the case is medical treatment planning and insurance coordination.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "subject of case / case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nFamily accident coordination and case management.",
+      "natural_language": "Case James-Lanier-MVA-6-28-2025 involves client James Lanier and centers on family accident coordination and case management.\n\nInitial client contact occurred on June 28, 2025 with James Lanier regarding a motor vehicle accident, with the engagement focused on coordinating family-related aspects of the incident and providing ongoing case management.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "primary client / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nMedical treatment planning and insurance negotiations.",
+      "natural_language": "On June 28, 2025, the James-Lanier-MVA-6-28-2025 case was opened for client James Lanier. The engagement focuses on medical treatment planning and negotiations with insurers related to a motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "case opened for client / subject of matter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "insurers",
+            "relevance": "parties involved in negotiations regarding the MVA"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nFamily coordination with other related accident claims.",
+      "natural_language": "Case James-Lanier-MVA-6-28-2025 involves client James Lanier.\n\nThe note indicates family coordination with other related accident claims.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nJames Lanier motor vehicle accident case for June 28, 2025.",
+      "natural_language": "James Lanier is the client in a motor vehicle accident case concerning an incident that occurred on June 28, 2025. This matter has been assigned the case designation James-Lanier-MVA-6-28-2025, and the client’s full name in the case file is James Lanier.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "subject/client of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nFrom: Jim Lanier\nSent: Tuesday, September 2, 2025 7:16 PM\nTo: Justin (Attorney)\nSubject: RE: Medical Information Summary of today's visit with Dr Valasquez\nHello Justin,\nAttached is the Medical Information Summary of today's visit (9/2/25) with\nDr Valasquez from OrthoCincy. Visit details show Good Faith Estimate of\ncosts for treatment options with PRP and Stem Cell injections.\nNext appointment is with Dr Greiwe (shoulder specialist) on 10/7/25 to\ndiscuss needs/ options/ costs regarding shoulder surgery.\nBest Regards,\nJim Lanier",
+      "natural_language": "Case: James-Lanier-MVA-6-28-2025 involves client James Lanier following a motor vehicle accident on June 28, 2025. On September 2, 2025, Jim Lanier emailed his attorney Justin with the subject RE: Medical Information Summary of today's visit with Dr Valasquez. He noted that the Medical Information Summary from today’s visit (9/2/25) with Dr Valasquez of OrthoCincy was attached to the message.\n\nThe summary indicates a Good Faith Estimate of costs for treatment options, including PRP and Stem Cell injections. The next appointment is with Dr Greiwe, a shoulder specialist, on 10/7/25 to discuss needs, options, and costs regarding shoulder surgery. The email closes with Best Regards, Jim Lanier.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "subject of case and sender of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "recipient attorney"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "OrthoCincy",
+            "relevance": "medical provider (Dr Valasquez visit and medical summary; treatment planning)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nDetails: had a 45 min call with client about status/treatment case progression\nPerson Making Contact: Justin\nDate & Time: August 22 2025",
+      "natural_language": "On August 22, 2025, Justin contacted James Lanier regarding the James-Lanier-MVA-6-28-2025 case, and they had a 45-minute call to discuss the status and progression of the client’s treatment.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "subject of call and client whose treatment was discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nFrom: Jim Lanier\nSent: Wednesday, August 27, 2025 7:34 AM\nTo: Justin\nSubject: RE: Quick Update as of 8/27\nGood morning Justin,\nQuick update:\n• Dr Schertzinger (OrthoCincy) put me\non tramadol for the pain.\n• Dr told me no upper body exercises\nuntil inflammation and pain reduces\nsignificantly. Will revisit on 9/10 at\nfollow up appointment\n• I have a scheduled appointment with\nan OrthoCincy shoulder specialist, Dr\nVelasquez on Tuesday, 9/2 to receive\na PRP shot in my shoulder. I will be\nrequesting a Good Faith Estimate for\nwhat costs to expect with PRP\nshot treatments moving forward.\n• Consultation scheduled for 10/7 with\nOrthoCincy shoulder surgeon, Dr\nGreiwe to discuss options\nfor surgery and receive Good Faith\nEstimate for all surgery options.\n• Consultation scheduled with\nCincinnati Reds Ortho Specialist on\n10/15 to discuss Stem Cell Therapy\ntreatment and receive Good Faith\nEstimate.\nPlease let me know if you have any questions. Once I receive the Good Faith Estimates and any additional bills, I will send to you ASAP and we can discuss any additional updates and/ or next steps.\nBest Regards,\nJim Lanier\n513-288-8834",
+      "natural_language": "Case: James-Lanier-MVA-6-28-2025. Client: James Lanier. On August 27, 2025, Jim Lanier sent an update to Justin regarding his motor vehicle accident recovery. He reported that Dr. Schertzinger at OrthoCincy has started him on tramadol for pain. The doctor advised that he should avoid any upper-body exercises until inflammation and pain decrease significantly, with a follow-up appointment to revisit his progress on September 10.\n\nLanier also noted several upcoming visits. He has a scheduled appointment with OrthoCincy shoulder specialist Dr. Velasquez on Tuesday, September 2, to receive a PRP shot in his shoulder, and he will request a Good Faith Estimate to outline anticipated costs for PRP treatments moving forward. A consultation is planned for October 7 with OrthoCincy shoulder surgeon Dr. Greiwe to discuss surgical options and obtain a Good Faith Estimate for all surgery options.\n\nAdditionally, there is a consultation scheduled with the Cincinnati Reds orthopedic specialist on October 15 to discuss Stem Cell Therapy treatment and to receive a Good Faith Estimate. Lanier concluded by asking Justin to let him know if there are any questions. He stated that once he receives the Good Faith Estimates and any additional bills, he will send them ASAP and will discuss any further updates or next steps. Best regards, Jim Lanier, 513-288-8834.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "provided update about motor vehicle accident recovery"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "OrthoCincy",
+            "relevance": "treatment provider — prescribed tramadol and scheduled PRP/consultation appointments"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nFrom: justin@whaleylawfirm.com\nTo: 'Aaron Whaley' agwhaley@whaleylawfirm.com\nDate: Wed Aug 20 2025 09:54:51 GMT-04:00\nSee below. Sounds like the Ortho is willing to do a narrative report for client, who has 2 labral tears, but appears he wants to charge for them. Think it’s worth it or should I just send a normal request for records?\nAlabama accident, unsure of BI limits at this point.\nFrom: Jim Lanier\nSent: Wednesday, August 20, 2025 8:56 AM\nTo: Justin\nSubject: RE: Letter of request for medical bills, treatment, diagnosis, & recommendations\nGood morning Justin,\nPlease see Dr Schertzinger’s response to my letter of request for medical bills, treatment, diagnosis and recommendations.\nDr Schertzinger's response:\n“Yes during office hours at a time convenient for you is best for documentation. Our treatment plan is the same as I outlined with you several days ago HIPPA allows you access to all your medical records. Ask your attorney to send a letter to me outlining his/her requests to which I will send the medical narrative after receipt of my compensation. Been working for 34 years and you’re not the first to make this request.”\nPlease send your letter of request to Dr Schertzinger outlining everything he mentioned above along with all of the details you need and he will provide everything to you. You can send the letter addressed to:\nHOWARD J. SCHERTZINGER, JR, MD\n2626 Alexandria Pike\nHighland Heights, KY 41076\nPlease confirm receipt of this email. I want to avoid any potential delays.\nBest regards,\nJim Lanier\n513-288-8834",
+      "natural_language": "Case: James-Lanier-MVA-6-28-2025. Client: James Lanier.\n\nOn June 28, 2025, James Lanier was involved in a motor vehicle accident in Alabama. At this stage, the bodily injury (BI) limits of the other party are unknown.\n\nOn August 20, 2025, Justin from the Whaley law firm emailed Aaron Whaley with a note about the orthopedist. He observed that the orthopedic doctor is apparently willing to prepare a narrative report for the client, who has two labral tears, but that the doctor appears to want to charge for the report. Justin asked whether it is worth pursuing the narrative report or if a normal request for medical records should be sent instead. He also noted the Alabama accident and that BI limits were still unclear.\n\nEarlier that same day, at 8:56 AM, Jim Lanier replied to Justin with Dr. Schertzinger’s response to Lanier’s prior letter requesting medical bills, treatment, diagnosis, and recommendations. Lanier relayed Dr. Schertzinger’s reply: “Yes during office hours at a time convenient for you is best for documentation. Our treatment plan is the same as I outlined with you several days ago HIPPA allows you access to all your medical records. Ask your attorney to send a letter to me outlining his/her requests to which I will send the medical narrative after receipt of my compensation. Been working for 34 years and you’re not the first to make this request.”\n\nLanier then instructed Justin to send a letter of request to Dr. Schertzinger that outlines everything mentioned above along with all of the details needed, and that Dr. Schertzinger would provide everything after receipt of compensation. He provided the recipient address as: HOWARD J. SCHERTZINGER, JR, MD, 2626 Alexandria Pike, Highland Heights, KY 41076. Lanier also asked Justin to confirm receipt of the email to avoid potential delays and signed off with his contact number: 513-288-8834.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "injured party / client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "law firm handling the matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email author; discussed orthopedist report"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "recipient at Whaley law firm"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Dr. Howard J. Schertzinger, Jr.",
+            "relevance": "orthopedic physician; source of narrative report and medical records"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Other Party BI limits",
+            "relevance": "bodily injury limits unknown / coverage discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nFrom: Jim Lanier\nSent: Tuesday, August 19, 2025 5:19 PM\nTo: Justin (Attorney)\nSubject: RE: Progressive knows that in Alabama it’s all or nothing…\nJustin,\nOf course Progressive is trying to argue that their client was 100% not at fault. I'm sure that you are aware that in Alabama, the scene of the accident, “shared fault” in rear-end collision claims are governed by the legal doctrine of contributory negligence, meaning that if you are even 1% at fault for the accident, you are barred from recovering any damages whatsoever, even if the other driver was primarily responsible, according to legal resources. This strict standard makes proving fault in rear-end collisions crucial for obtaining compensation in Alabama.\nI can prove that I provided enough time and space to responsibly stop in a manner to remain safe and not collide with the car in front of me. The car behind me cannot say the same nor can they prove that they were prudent in providing the same level of care as I did to provide enough time and space to successfully avoid hitting me. Hence, they were clearly negligent.\nWe were traveling at about 50 mph. If the driver had provided 5 car lengths of distance between my car and theirs, then they could have successfully avoided hitting me and my family from behind.\nThe indisputable fact is that the driver’s speed, lack of distance between their car and mine, and lack of good judgement left the driver negligent from doing everything possible to successfully avoid hitting me and my family from behind.\nThe other indisputable fact is that if the driver did use good judgement, and the driver did leave enough time and space, and the driver did do everything possible to avoid a collision, then there would have been zero chance of the driver ever hitting me.\nBest Regards,\nJim Lanier\n513-288-8834",
+      "natural_language": "Case: James-Lanier-MVA-6-28-2025. Client: James Lanier.\n\nIn an email dated Tuesday, August 19, 2025 at 5:19 PM, from Jim Lanier to Justin (Attorney), the subject line RE: Progressive knows that in Alabama it’s all or nothing…, Lanier discusses Progressive’s position in a motor vehicle accident case. He notes that Progressive is arguing that their client was 100% not at fault. He reminds that in Alabama, the scene of the accident, “shared fault” in rear-end collision claims is governed by the doctrine of contributory negligence, meaning that if you are even 1% at fault, you are barred from recovering any damages whatsoever, even if the other driver was primarily responsible, according to legal resources. He explains that this strict standard makes proving fault in rear-end collisions crucial for obtaining compensation in Alabama.\n\nLanier states that he can prove he provided enough time and space to responsibly stop in a manner to remain safe and not collide with the car in front of him. He asserts that the car behind him cannot say the same nor can they prove that they were prudent in providing the same level of care as he did to provide enough time and space to successfully avoid hitting him. Hence, he contends, they were clearly negligent. They were traveling at about 50 mph. If the driver behind had provided five car lengths of distance between his car and theirs, then they could have successfully avoided hitting Lanier and his family from behind.\n\nLanier presents what he calls indisputable facts: the driver’s speed, lack of distance between their car and his, and lack of good judgement left the driver negligent for not doing everything possible to successfully avoid hitting him and his family from behind. He also states another indisputable fact: if the driver had used good judgement, left enough time and space, and done everything possible to avoid a collision, there would have been zero chance of the driver ever hitting him.\n\nBest regards,\nJim Lanier\n513-288-8834",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "author of email / injured party"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "recipient attorney"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer taking position that their client was not at fault"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "driver behind / other driver",
+            "relevance": "alleged negligent party in rear-end collision"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nNew Insurance Note: Collision adjuster Ashley Phillips Ph 251-406-8056 Brandon Swan is supervisor Ph 251-406-8028\nInsurance Type: Bodily Injury (BI)\nInsurance Company: Progressive Insurance Company\nWritten by: Justin Chumbley",
+      "natural_language": "Case James-Lanier-MVA-6-28-2025 involves client James Lanier. A new insurance note for this case lists the collision adjuster as Ashley Phillips, reachable at 251-406-8056, with Brandon Swan serving as supervisor at 251-406-8028.\n\nThe note identifies Bodily Injury (BI) as the insurance type and Progressive Insurance Company as the insurer. It was written by Justin Chumbley.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Ashley Phillips",
+            "relevance": "collision adjuster listed"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Brandon Swan",
+            "relevance": "supervisor listed"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for the claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Bodily Injury",
+            "relevance": "insurance type identified"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nDetails: Spoke with client, has a torn rotator. getting a MRI to confirm.\nOrtho Cincy - NKU\nwill also see same orth via Ortho Cincy at Florence\nPerson Making Contact: Justin\nDate & Time: August 11 2025",
+      "natural_language": "Initial client contact on August 11, 2025 with Justin regarding James-Lanier-MVA-6-28-2025 for client James Lanier. The client reports a torn rotator and is getting a MRI to confirm.\n\nThe plan is to pursue Orth Cincy - NKU, and the client will also see the same orth via Ortho Cincy at Florence.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "client / patient"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "OrthoCincy",
+            "relevance": "planned orthopedic provider (NKU)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "OrthoCincy",
+            "relevance": "planned orthopedic provider (Florence)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-09-06",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nCLIENT CONTACT\nDetails: DOA 6/28/2025\nLocation:\nHe will email PR to me\nJames (Jim) Lanier\n513-288-8834\nDOB 3/28/1977\nSSN: 025-66-8145\n1962 Hirsch Court\nUnion, KY 41091\nInjuries: neck, back, left shoulder\nChiro\nAllstar Chiropractic\nWill schedule an appointment with OrthoCincy\nState Farm\nClaim #\nRebecca Lanier\nPh:\nDOB 2/5/1974\nSSN\n859-905-9096\nNeck and back pain\nAllstar Chiropractic\nChristopher Lanier\nDob 10/14/2003\nPh: 859-391-3435\nNeck pain\nAllstar Chiropractic\nMichael Lanier\nDOB 10/8/2005\nPh: 859-818-2804\nAllstar Chiropractic\nPerson Making Contact: Justin\nDate & Time: August 07 2025",
+      "natural_language": "Initial client contact on August 7, 2025 with James Lanier regarding a motor vehicle accident that occurred on June 28, 2025. The client, James “Jim” Lanier, can be reached at 513-288-8834. He was born on March 28, 1977, and his Social Security Number is 025-66-8145. His address is 1962 Hirsch Court, Union, KY 41091. He reports injuries to the neck, back, and left shoulder. He is currently seeing a chiropractor at Allstar Chiropractic and will schedule an appointment with OrthoCincy. State Farm is listed as the insurer, with no claim number provided. He indicated that he will email PR to me. The person making contact was Justin. Location of contact is not specified.\n\nThe file also lists other involved individuals. Rebecca Lanier, born February 5, 1974, with phone number 859-905-9096, is noted with neck and back pain and is associated with Allstar Chiropractic; no SSN is provided. Christopher Lanier, born October 14, 2003, phone 859-391-3435, has neck pain and is associated with Allstar Chiropractic. Michael Lanier, born October 8, 2005, phone 859-818-2804, is also listed with Allstar Chiropractic. All three appear to be connected to Allstar Chiropractic. The contact regarding these matters was made by Justin, and the date and time of the contact were August 7, 2025.",
+      "valid_at": "2025-09-06T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "primary client, injured in motor vehicle accident"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Rebecca Lanier",
+            "relevance": "additional involved individual, reporting neck/back pain"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Christopher Lanier",
+            "relevance": "additional involved individual, reporting neck pain"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Michael Lanier",
+            "relevance": "additional involved individual, associated with treatment"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Allstar Chiropractic",
+            "relevance": "current treating provider for client and other involved individuals"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "OrthoCincy",
+            "relevance": "orthopedic provider client will schedule appointment with"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer listed for the accident (no claim number provided)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "James Lanier - 2025-10-21",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\nHello Justin,\n\nI have been informed by my orthopedic surgeon that I require shoulder surgery due to the significant damage from my auto accident. Given my age, the success rate for repairable surgery is under 40%. Therefore, my doctor recommends debridement surgery to remove dead tissue from the torn labrum, which will aid in the growth of healthy tissue and improve shoulder function. My doctor is also concerned about my ongoing severe neck muscle spasms and has scheduled an MRI to assess my neck. The MRI results will dictate the timing of my shoulder surgery. The cost estimate provided by my doctor shows that this type of surgery will cost approximately $17,000 and will provide you with that documentation.\n\nI would like to set up a brief call with you to discuss further.",
+      "natural_language": "Case: James-Lanier-MVA-6-28-2025. Client: James Lanier.\n\nInitial client contact on June 28, 2025, with James Lanier regarding a motor vehicle accident. In a message addressed to Justin, Lanier begins with “Hello Justin” and explains that he has been informed by his orthopedic surgeon that he requires shoulder surgery due to significant damage from the auto accident.\n\nLanier states that, given his age, the success rate for repairable shoulder surgery is under 40%. Consequently, his doctor recommends debridement surgery to remove dead tissue from the torn labrum, which is intended to aid in the growth of healthy tissue and improve shoulder function.\n\nHe adds that his doctor is also concerned about ongoing severe neck muscle spasms and has scheduled an MRI to assess his neck. The MRI results will dictate the timing of the shoulder surgery.\n\nThe cost estimate from his doctor indicates that this type of surgery will cost approximately $17,000, and the doctor will provide that documentation.\n\nLanier concludes by stating his desire to set up a brief call to discuss further.",
+      "valid_at": "2025-10-21T00:00:00",
+      "author": "James Lanier",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "primary subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-12",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, has been recommended for shoulder surgery, has two tears. Had a 2nd MRI on his cervical spine and has a bulge at C5. \n\nhad MRI with OrthoCincy in Florence \n\nOrtho\n\nDr. Greiwe is the surgeon and Dr. Valasquez is who ordered the MRI. \n\nhas a follow up in January on cervical spine issues.\n\nhas gone back to allstar since we received r/b so need to request updated r/b from them \n__Person Making Contact:__ Justin\n__Date & Time__: November 12 2025",
+      "natural_language": "Initial client contact on November 12, 2025 with Justin regarding James Lanier in the James-Lanier-MVA-6-28-2025 motor vehicle accident case. The client has been recommended for shoulder surgery due to two tears. He also had a second MRI of the cervical spine, which shows a bulge at C5. The MRI was performed with OrthoCincy in Florence. The orthopedic surgeon is Dr. Greiwe, and the MRI was ordered by Dr. Valasquez. There is a follow-up scheduled in January to address the cervical spine issues.\n\nThe client has returned to Allstar since we received r/b, so we need to request an updated r/b from Allstar.",
+      "valid_at": "2025-11-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "subject of contact/case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "OrthoCincy",
+            "relevance": "performed cervical MRI/orthopedic provider"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Allstar Chiropractic",
+            "relevance": "provider client returned to; r/b update requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-11-30",
+      "original_body": "Case: James-Lanier-MVA-6-28-2025\nClient: James Lanier\n\n**FILE ORGANIZATION COMPLETED - James Lanier Case**\n\nCompleted comprehensive 5-phase file organization using Case File Organization skill with 8-bucket system and content-based naming:\n\n**Phase 1 - Inventory:** Generated inventory of 65 files, scrambled 16 .md filenames to eliminate naming bias, created PDF-MD mapping.\n\n**Phase 2 - Analysis & Mapping:** Parallel processing with 6 sub-agents (43 files > 40 threshold), created reorganization map for 47 files, identified 1 duplicate.\n\n**Phase 3 - Quality Review:** Error rate 18.75% (3 errors/16 files), identified 2 additional missed duplicates, main agent approved corrections.\n\n**Phase 4 - Execution:** Moved 23 files (11 PDF+MD pairs, 1 image) to 8-bucket structure, deleted 3 duplicates, reunified PDFs with .md companions.\n\n**Phase 5 - Verification:** 100% naming convention compliance, 100% PDF+MD companion matching, 35 files organized (54% of total), 27 files remain in root for manual review.\n\n**Result:** Case file 54% organized with core documents properly categorized. Quality metrics: 81.25% initial accuracy, 100% after corrections.",
+      "natural_language": "The James-Lanier-MVA-6-28-2025 case, involving client James Lanier, completed a comprehensive five-phase file organization using Case File Organization skills, an eight-bucket structure, and content-based naming.\n\nIn Phase 1, an inventory of 65 files was generated. To eliminate naming bias, 16 Markdown (.md) filenames were scrambled, and a PDF-to-MD mapping was created.\n\nPhase 2 involved analysis and mapping with parallel processing by six sub-agents handling 43 files that exceeded the 40-file threshold. A reorganization map was created for 47 files, and one duplicate was identified.\n\nPhase 3 carried out a quality review with an error rate of 18.75% (3 errors in 16 files). Two additional missed duplicates were identified, and the main agent approved the corrections.\n\nDuring Phase 4, 23 files were moved into the eight-bucket structure (comprising 11 PDF+MD pairs and 1 image). Three duplicates were deleted, and PDFs were reunified with their MD companions.\n\nPhase 5 verified 100% naming convention compliance and 100% PDF+MD companion matching. A total of 35 files were organized, representing 54% of the total, while 27 files remained in the root directory for manual review.\n\nResulting from these efforts, the case file is 54% organized with core documents properly categorized. Quality metrics were 81.25% initial accuracy and 100% accuracy after corrections.",
+      "valid_at": "2025-11-30T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "James Lanier",
+            "relevance": "case client / subject of file organization"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

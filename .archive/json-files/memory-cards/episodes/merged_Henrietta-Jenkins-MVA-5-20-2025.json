@@ -1,0 +1,1068 @@
+{
+  "case_name": "Henrietta-Jenkins-MVA-5-20-2025",
+  "total_episodes": 48,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Norton Audubon Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "Synergy Injury Care & Rehab Diagnostics",
+        "specialty": "physical therapy"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Root Auto Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Colin Karsnitz"
+      },
+      {
+        "name": "Aaron Ross"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Henrietta-Jenkins-MVA-5-20-2025-Bodily Injury (BI)-25-391686743",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Colin Karsnitz"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Henrietta-Jenkins-MVA-5-20-2025-Personal Injury Protection (PIP)-HH62DDIN",
+        "insurer": "Root Auto Insurance",
+        "adjuster": "Aaron Ross"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Henrietta-Jenkins-MVA-5-20-2025-Legal Funding Partners",
+        "holder": "Legal Funding Partners",
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-01-15",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nCompleted comprehensive case folder reorganization. Moved 49 files from incorrectly numbered folders (1_Client, 2_Insurance, 3_Medical_Records, 5_Investigation, 7_Negotiation_Settlement) to correct 8-bucket structure. All files properly sorted by document type and provider. Medical records organized into Norton Audubon Hospital and Synergy Injury Care & Rehab Diagnostics subfolders with appropriate Medical Bills, Medical Records, and Medical Requests categorization. All numbered folders deleted after successful file migration.",
+      "natural_language": "Case: Henrietta-Jenkins-MVA-5-20-2025. Client: Henrietta Jenkins.\n\nOn May 20, 2025, a comprehensive reorganization of the Henrietta Jenkins case folder was completed. Forty-nine files were moved from incorrectly numbered folders—1_Client, 2_Insurance, 3_Medical_Records, 5_Investigation, and 7_Negotiation_Settlement—into the correct eight-bucket structure. All files were sorted by document type and provider.\n\nIn the medical records portion, files were organized into subfolders for Norton Audubon Hospital and Synergy Injury Care & Rehab Diagnostics, with each provider’s folder further categorized as Medical Bills, Medical Records, and Medical Requests.\n\nFollowing successful migration, all of the numbered folders were deleted.",
+      "valid_at": "2025-01-15T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "case owner"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "medical records organized"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Synergy Injury Care & Rehab Diagnostics",
+            "relevance": "medical records organized"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-21",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ LMPD 25057018\nBadge 4693\n\nWas rear ended and pushed into the vehicle in front of her after leaving our office \n\nWent to Norton Audubon Hospital \n\nconcussion, left side pain near ribs. \n\nPIP \nRoot\n\nBI\nProgressive\nClaim # 25-391686743 \n__Person Making Contact:__ Justin\n__Date & Time__: May 21 2025",
+      "natural_language": "Initial client contact on May 21, 2025 with Justin regarding a motor vehicle accident involving client Henrietta Jenkins, case Henrietta-Jenkins-MVA-5-20-2025. The client is Henrietta Jenkins. On file are the following contact details: LMPD number 25057018 and badge 4693.\n\nThe incident occurred after she left our office when she was rear-ended and pushed into the vehicle in front of her. She subsequently went to Norton Audubon Hospital, reporting a concussion and left-sided pain near the ribs. The file indicates PIP coverage with Root and BI coverage with Progressive. The claim number is 25-391686743. The contact was made by Justin on May 21, 2025.",
+      "valid_at": "2025-05-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client involved in the motor vehicle accident"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Norton Audubon Hospital",
+            "relevance": "treated client for concussion and left-sided rib pain"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "PIP coverage on file"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI coverage on file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-05-21",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nClient Contacted today to give update #cc",
+      "natural_language": "On May 20, 2025, the client, Henrietta Jenkins, contacted us to provide an update on her motor vehicle accident case, Henrietta-Jenkins-MVA-5-20-2025. The update was conveyed today and is recorded with the reference code #cc.",
+      "valid_at": "2025-05-21T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "contacted to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-05-21",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nsent intake docs via vinesign. PR not yet available via buycrash",
+      "natural_language": "The case Henrietta-Jenkins-MVA-5-20-2025 involves client Henrietta Jenkins and a motor vehicle accident that occurred on May 20, 2025.\n\nIntake documents have been sent via Vinesign, and the PR is not yet available via BuyCrash.",
+      "valid_at": "2025-05-21T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client involved"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-05-21",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nSend Root claim # here",
+      "natural_language": "Initial client contact on May 20, 2025, regarding a motor vehicle accident in the case Henrietta-Jenkins-MVA-5-20-2025. The client is Henrietta Jenkins. The root claim number should be provided here.",
+      "valid_at": "2025-05-21T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-21",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=b912cc94-7c6c-4e4d-9544-ee48a4624b51.pdf\nSigned: 2025-05-21 14:18:02\nAll signers: Henrietta Jenkins(henriettaj23@gmail.com (502) 804-8022)\nSender: Justin Chumbley",
+      "natural_language": "This case, Henrietta-Jenkins-MVA-5-20-2025, concerns client Henrietta Jenkins in relation to a motor vehicle accident dated May 20, 2025.\n\nA VineSign intake document was completed and signed. The signed document URL is https://app.vinesign.com/Jobs/Pdf?pdfKey=b912cc94-7c6c-4e4d-9544-ee48a4624b51.pdf, and the intake was signed on 2025-05-21 at 14:18:02. All signers listed are Henrietta Jenkins, with email henriettaj23@gmail.com and phone number (502) 804-8022. The sender of the document was Justin Chumbley.\n\nThe VineSign record is marked as completed.",
+      "valid_at": "2025-05-21T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of the case; signer of intake"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "VineSign",
+            "relevance": "platform used to execute and store signed intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-05-22",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nPR still not available via buycrash",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins in a motor vehicle accident matter. The police report (PR) is still not available via BuyCrash.",
+      "valid_at": "2025-05-22T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client in MVA case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-23",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Insurance Note:__ Salena Kelly Ph 502-909-3694 email Salena_Kelly@progressive.com\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 involves client Henrietta Jenkins in connection with a motor vehicle accident that occurred on May 20, 2025.\n\nA new insurance contact has been assigned for this matter: Salena Kelly, reachable by phone at 502-909-3694 or by email at Salena_Kelly@progressive.com. The coverage type is Bodily Injury (BI) with Progressive Insurance Company. The note was written by Justin Chumbley, and this entry is categorized as an Inotes note.",
+      "valid_at": "2025-05-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client involved in motor vehicle accident"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Selena Kelly",
+            "relevance": "new insurance contact assigned for the matter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer providing Bodily Injury (BI) coverage"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim/coverage referenced in the entry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-23",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ have spoken with client multiple times this morning, emailed her a copy of the police report etc. \n__Person Making Contact:__ Justin\n__Date & Time__: May 23 2025",
+      "natural_language": "Initial client contact on May 23, 2025 with Henrietta Jenkins regarding a motor vehicle accident that occurred on May 20, 2025 (Case: Henrietta-Jenkins-MVA-5-20-2025). The contact was made by Justin. He reports that he has spoken with the client multiple times this morning and has emailed her a copy of the police report.",
+      "valid_at": "2025-05-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-05-23",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nClient Contacted today to give update #cc",
+      "natural_language": "Initial client contact on May 20, 2025 with Henrietta Jenkins regarding the motor vehicle accident (MVA) case Henrietta-Jenkins-MVA-5-20-2025. The client was contacted today to provide an update; the contact is recorded as #cc.",
+      "valid_at": "2025-05-23T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-05-28",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns Henrietta Jenkins in relation to a motor vehicle accident. On May 20, 2025, the client, Henrietta Jenkins, was contacted to provide update #cc regarding the motor vehicle accident.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-28",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, the vehicle she was in was just purchased and the financing fell through so the dealership has taken possesion of the vehicle. client treating with Synergy \n__Person Making Contact:__ Justin\n__Date & Time__: May 28 2025",
+      "natural_language": "Initial client contact on May 28, 2025, with Justin regarding the Henrietta-Jenkins-MVA-5-20-2025 motor vehicle accident case for client Henrietta Jenkins. The client reported that the vehicle she was in had been just purchased, but the financing fell through, and the dealership has taken possession of the vehicle. The client is currently treating with Synergy.",
+      "valid_at": "2025-05-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Synergy Injury Care & Rehab Diagnostics",
+            "relevance": "current treating provider"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-02",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Insurance Note:__ 6/2 saved ack\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "This case, Henrietta-Jenkins-MVA-5-20-2025, concerns client Henrietta Jenkins following a motor vehicle accident on May 20, 2025.\n\nA new insurance note was entered on June 2, with the status “saved ack.” The note identifies Bodily Injury (BI) as the insurance type and lists Progressive Insurance Company as the insurer. The entry was written by Justin Chumbley and is filed under #Inotes.",
+      "valid_at": "2025-06-02T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client involved in case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "listed insurer in insurance note"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Bodily Injury claim identified in note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-06-03",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nI just emailed you a copy of the police report. I have sent it to Progressive as well and they should be reaching out to you in the next few days about your vehicle.",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins following a motor vehicle accident. The attorney reports that a copy of the police report has been emailed to the client and that the police report has also been forwarded to Progressive. Progressive should be reaching out to the client in the next few days about her vehicle.",
+      "valid_at": "2025-06-03T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "recipient of police report; expected to contact client about vehicle"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-11",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ Client called. following up on liability status. defendant has obtained an attorney and BI is awaiting a RS \n__Person Making Contact:__ Justin\n__Date & Time__: June 11 2025",
+      "natural_language": "Initial client contact on June 11, 2025, with Henrietta Jenkins regarding the motor vehicle accident Henrietta-Jenkins-MVA-5-20-2025. The client called to follow up on liability status. The defendant has obtained an attorney, and BI is awaiting a RS. The contact was logged by Justin, the person making contact.",
+      "valid_at": "2025-06-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "caller; subject of contact regarding MVA"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim awaiting RS"
+          },
+          {
+            "entity_type": "Defendant",
+            "entity_name": "Defendant",
+            "relevance": "has obtained an attorney"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-12",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ client called for a loan, sent AW an email \n__Person Making Contact:__ Justin\n__Date & Time__: June 12 2025",
+      "natural_language": "Initial client contact on June 12, 2025 with Henrietta Jenkins regarding motor vehicle accident Henrietta-Jenkins-MVA-5-20-2025. \n\nThe client called for a loan and sent AW an email. The contact was made by Justin.",
+      "valid_at": "2025-06-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "initial client contact; requested a loan and sent an email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-16",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Insurance Note:__ 6/16 went over initial details. Indiana policy.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Root Auto Insurance\n__Written by:__ Justin Chumbley\n #Inotes",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins in a motor vehicle accident. On June 16, 2025, a new insurance note was created after going over the initial details of an Indiana policy. The policy is an Indiana Personal Injury Protection (PIP) policy issued by Root Auto Insurance, and the note was written by Justin Chumbley.",
+      "valid_at": "2025-06-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "issuer of the Indiana PIP policy discussed"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "PIP claim/policy discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-16",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ Spoke with client, lives in Indiana with her mom now which is why Root policy was an indiana policy \n__Person Making Contact:__ Justin\n__Date & Time__: June 16 2025",
+      "natural_language": "Initial client contact on June 16, 2025 with Henrietta Jenkins regarding motor vehicle accident in case Henrietta-Jenkins-MVA-5-20-2025.\n\nThe contact was made by Justin. The client reports she currently lives in Indiana with her mother, which is why the Root policy was an Indiana policy.",
+      "valid_at": "2025-06-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client contacted"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "policy referenced (Indiana policy)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-06-27",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nHenrietta, Our office will have a $500 loan check available for pickup on Monday",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins. As of May 20, 2025, the office will have a $500 loan check available for pickup on Monday.",
+      "valid_at": "2025-06-27T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client referenced / case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-27",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, she's working on getting us a copy of the bill of sale \n__Person Making Contact:__ Justin\n__Date & Time__: June 27 2025",
+      "natural_language": "Initial client contact on June 27, 2025 with Justin regarding the motor vehicle accident in the Henrietta-Jenkins-MVA-5-20-2025 case. The client, Henrietta Jenkins, stated that she is working on obtaining a copy of the bill of sale.",
+      "valid_at": "2025-06-27T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "contacted; stated she is obtaining a copy of the bill of sale"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-07",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ Client called wants another 1k loan \n__Person Making Contact:__ Justin\n__Date & Time__: July 07 2025",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 involves client Henrietta Jenkins. On July 7, 2025, Justin made the initial client contact by taking a call from Henrietta Jenkins, who requested an additional $1,000 loan related to the motor vehicle accident case.",
+      "valid_at": "2025-07-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "caller; requested additional $1,000 loan"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-10",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ client called about another loan. wants 1k \n__Person Making Contact:__ Justin\n__Date & Time__: July 10 2025",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025: Initial client contact on July 10, 2025, with Justin regarding Henrietta Jenkins, who called about another loan and is requesting $1,000.",
+      "valid_at": "2025-07-10T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "caller requesting $1,000"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-17",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nHenrietta, It's Justin. Mr. Whaley was able to obtain a $1,000 loan for you. He should be in the office after 10 today for pickup if you would like to come in",
+      "natural_language": "On May 20, 2025, I contacted Henrietta Jenkins regarding her motor vehicle accident case. Henrietta, it's Justin.\n\nMr. Whaley was able to obtain a $1,000 loan for you. He should be in the office after 10 a.m. today for pickup if you would like to come in.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-17",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nMs. Jenkins I have the check now.",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 involves client Henrietta Jenkins.\n\nThe note records the statement: \"Ms. Jenkins I have the check now.\"",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nClient consultation and case strategy refinement.",
+      "natural_language": "On May 20, 2025, in the Henrietta-Jenkins-MVA-5-20-2025 matter, the client Henrietta Jenkins participated in a consultation focused on refining the case strategy for her motor vehicle accident.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "participant in consultation / subject of case strategy"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nInsurance claim updates and settlement preparation.",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins and centers on updates to an insurance claim arising from a motor vehicle accident, as well as the preparation of a settlement. Dated May 20, 2025, the file documents the ongoing management of the claim and the steps toward settlement, including communications with the insurer and the collection and organization of information necessary to support settlement discussions.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of the case and claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurance claim discussed and subject of settlement preparation"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Colin Karsnitz",
+            "relevance": "adjuster for the BI claim / insurer contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nCase progression review and medical treatment coordination.",
+      "natural_language": "On May 20, 2025, the case Henrietta-Jenkins-MVA-5-20-2025 involving client Henrietta Jenkins underwent a case progression review and medical treatment coordination.\n\nThe matter concerns a motor vehicle accident (MVA).",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nInsurance claim processing and case progression monitoring.",
+      "natural_language": "This case, Henrietta-Jenkins-MVA-5-20-2025, involves client Henrietta Jenkins in a motor vehicle accident matter. \n\nThe engagement is focused on insurance claim processing and monitoring the progression of the case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "primary client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "claim being processed/monitored"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "claim being processed/monitored"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer associated with BI claim"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Root Auto Insurance",
+            "relevance": "insurer associated with PIP claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nClient consultation and medical treatment planning.",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins in relation to a motor vehicle accident on May 20, 2025.\n\nThe record documents a client consultation and medical treatment planning conducted for this case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of case and consultation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nMay 20, 2025 motor vehicle accident case management.",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins in a motor vehicle accident matter. On May 20, 2025, motor vehicle accident case management activities were conducted for Henrietta Jenkins as part of the ongoing case.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-09-12",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ spoke with client, is going to conclude treatment \n__Person Making Contact:__ Justin\n__Date & Time__: September 12 2025",
+      "natural_language": "Initial client contact on September 12, 2025 regarding the motor vehicle accident case Henrietta-Jenkins-MVA-5-20-2025 was conducted with the client, Henrietta Jenkins. The contact was made by Justin, who spoke with the client, and she indicated that she intends to conclude treatment.",
+      "valid_at": "2025-09-12T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "person contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-07",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 10/7 Demand sent\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Justin Chumbley\n #negotiations",
+      "natural_language": "Henrietta Jenkins is the client in the Henrietta-Jenkins-MVA-5-20-2025 case, stemming from a motor vehicle accident on May 20, 2025. In the current negotiations note, a new Bodily Injury (BI) demand was sent on 10/7 to Progressive Insurance Company, and the demand letter was written by Justin Chumbley.",
+      "valid_at": "2025-10-07T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "recipient of BI demand"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-09",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ updated client. awaiting offer \n__Person Making Contact:__ Justin\n__Date & Time__: October 09 2025",
+      "natural_language": "Initial client contact on October 9, 2025 concerning the motor vehicle accident case Henrietta-Jenkins-MVA-5-20-2025 for client Henrietta Jenkins. The contact was made by Justin. Details indicate the client has been updated and is awaiting an offer.",
+      "valid_at": "2025-10-09T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client contacted; updated and awaiting offer"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-17",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ updated client, awaiting offer \n__Person Making Contact:__ Justin\n__Date & Time__: October 17 2025",
+      "natural_language": "Initial client contact on October 17, 2025, with Justin regarding the Henrietta Jenkins motor vehicle accident case (Henrietta-Jenkins-MVA-5-20-2025). The client, Henrietta Jenkins, was updated during this contact and is currently awaiting an offer.",
+      "valid_at": "2025-10-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client contacted and updated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-23",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 10/7 Demand sent\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Henrietta Jenkins is the client in the motor vehicle accident case labeled Henrietta-Jenkins-MVA-5-20-2025, arising from a motor vehicle accident on May 20, 2025. This entry pertains to negotiations and notes that a new demand was sent on October 7, 2025. The claim concerns Bodily Injury (BI) with Progressive Insurance Company as the insurer. The demand note was written by Aaron Whaley.",
+      "valid_at": "2025-10-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim discussed"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer on BI claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-24",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ updated client \n__Person Making Contact:__ Justin\n__Date & Time__: October 24 2025",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins.\n\nA client-contact entry dated October 24, 2025 shows that Justin was the person making contact and that the Details field reads “updated client.”",
+      "valid_at": "2025-10-24T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client record updated"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-29",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 10/29 spoke to the adjuster he is actively reviewing it will call when done\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Henrietta Jenkins is the client in the Henrietta-Jenkins-MVA case, arising from a motor vehicle accident on May 20, 2025. In the new demand negotiations update, on 10/29 I spoke with the adjuster; he is actively reviewing the demand and will call when finished. The claim concerns Bodily Injury (BI) coverage with Progressive Insurance Company. This note was written by Aaron Whaley.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for the BI claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim discussed"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Colin Karsnitz",
+            "relevance": "adjuster contacted/reviewing demand"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-29",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 10/7 Demand sent\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "This is the Henrietta-Jenkins-MVA-5-20-2025 case involving client Henrietta Jenkins, related to a motor vehicle accident on May 20, 2025.\n\nIn the New Demand Negotiation Note, a demand was sent on 10/7. The demand concerns Bodily Injury (BI) coverage with Progressive Insurance Company and was written by Aaron Whaley. This entry is filed under negotiations.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client involved"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim subject of demand sent 10/7"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-29",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 10/7 Demand sent\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins. In the new demand negotiations, a Bodily Injury (BI) demand was sent on October 7, 2025. The claim involves Progressive Insurance Company, and the demand was written by Aaron Whaley. This entry is categorized under negotiations.",
+      "valid_at": "2025-10-29T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "named client of the case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Bodily Injury demand sent (Oct 7, 2025)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer involved in the BI claim/negotiations"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-10-30",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 10/29 spoke to the adjuster he is actively reviewing it will call when done\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Henrietta Jenkins is the client in a motor vehicle accident case dated May 20, 2025, labeled Henrietta-Jenkins-MVA-5-20-2025. This matter involves a Bodily Injury (BI) claim with Progressive Insurance Company.\n\nIn the New Demand Negotiation note, dated 10/29, it states that the adjuster was spoken to and that he is actively reviewing the demand and will call when finished. The note was written by Aaron Whaley and is filed under negotiations.",
+      "valid_at": "2025-10-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client in the case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim involved in the matter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for the BI claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Colin Karsnitz",
+            "relevance": "adjuster spoken to and reviewing the demand"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-11-04",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nClient has herniated disc in her lumbar spine, and we have two prior MRI's, one only a few months prior that show no herniated disc. All the MRI's were done by Synergy and read by the same doctor. I'm sending that to the insurance company.",
+      "natural_language": "Initial client contact on May 20, 2025, with Henrietta Jenkins regarding a motor vehicle accident. The client has a herniated disc in the lumbar spine.\n\nThere are two prior MRI studies; one was performed only a few months prior and showed no herniated disc. All MRIs were performed by Synergy and read by the same doctor. I am sending these MRI records to the insurance company.",
+      "valid_at": "2025-11-04T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "initial client contact; injured party"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Synergy Injury Care & Rehab Diagnostics",
+            "relevance": "performed MRIs and provider of diagnostic records sent to insurer"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-04",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 10/29 first offer $16000. Has more than minimum limits.\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Henrietta Jenkins is the client in the motor vehicle accident case Henrietta-Jenkins-MVA-5-20-2025. The matter involves Bodily Injury (BI) coverage with Progressive Insurance Company, and the negotiation notes indicate that the entry was written by Aaron Whaley and categorized under negotiations.\n\nIn the New Demand Negotiation Note dated 10/29, the first offer recorded was $16,000, and the file notes that the policy has more than minimum limits. The note identifies Bodily Injury (BI) coverage and Progressive Insurance Company as the insurer, and it was authored by Aaron Whaley.",
+      "valid_at": "2025-11-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of the matter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for BI coverage discussed in negotiation"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Bodily Injury claim discussed (first offer $16,000)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-04",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 10/29 first offer $16000. Has more than minimum limits.\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins in a motor vehicle accident matter.\n\nThe Bodily Injury (BI) claim is with Progressive Insurance Company, and the negotiation note documenting negotiations was written by Aaron Whaley.\n\nIn the New Demand Negotiation Note, dated 10/29, the first offer was $16,000, and the policy has more than minimum liability limits.",
+      "valid_at": "2025-11-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Bodily Injury claim and subject of settlement negotiations"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-06",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 11/3 call the adjuster's left message. Called client, no answer.\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Case Henrietta-Jenkins MVA, dated May 20, 2025, involves client Henrietta Jenkins. In the New Demand Negotiation Note, during a call on November 3, the adjuster left a message; a separate call to the client was made but went unanswered. The case concerns Bodily Injury (BI) with Progressive Insurance Company. The note was written by Aaron Whaley and is filed under negotiations (#negotiations).",
+      "valid_at": "2025-11-06T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim discussed"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "carrier on BI claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Colin Karsnitz",
+            "relevance": "adjuster who left a message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-11-07",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\nThe conversation was an update regarding Henrietta Jenkins' case, specifically about a first offer of $16,000 related to her injuries, including discussions about her medical records and potential future claims.\nRecap\nAaron Whaley informed Henrietta Jenkins that the first offer for her case is $16,000, which includes $10,000 for medical bills.\nAaron discussed the findings from Henrietta's MRIs, noting that the most recent MRI showed significant changes, including herniated discs, which could impact her claim positively.\nAaron has sent the MRI records from previous accidents to the adjuster for review, hoping for a revised offer based on the new findings.\nHenrietta mentioned that she returned to work a month ago but is still experiencing back pain, which she reported to Aaron during the call.\nTasks\nAaron Whaley will follow up with the adjuster regarding the review of Henrietta's MRI records and hopes to receive a new offer soon.\nHenrietta will be available for further discussions after Wednesday, the 12th.",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 involves client Henrietta Jenkins. The session was an update on Henrietta Jenkins' motor vehicle accident case, focusing on the first offer of $16,000 related to her injuries and including discussions about her medical records and potential future claims.\n\nIn the recap, Aaron Whaley informed Henrietta Jenkins that the initial offer for her case is $16,000, which includes $10,000 for medical bills. He discussed the findings from Henrietta's MRIs, noting that the most recent MRI showed significant changes, including herniated discs, which could positively impact her claim. He has sent the MRI records from previous accidents to the adjuster for review, hoping for a revised offer based on the new findings. Henrietta mentioned that she returned to work a month ago but is still experiencing back pain, which she reported to Aaron during the call.\n\nFor next steps, Aaron Whaley will follow up with the adjuster regarding the review of Henrietta's MRI records and hopes to receive a new offer soon. Henrietta will be available for further discussions after Wednesday, the 12th.",
+      "valid_at": "2025-11-07T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of the case/update"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "communicated offer and will follow up with adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-13",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ client called for update. \n__Person Making Contact:__ Justin\n__Date & Time__: November 13 2025",
+      "natural_language": "Initial client contact on November 13, 2025, with Henrietta Jenkins regarding an update on her motor vehicle accident (MVA) case dated May 20, 2025. The client had called for the update, and the contact was handled by Justin.",
+      "valid_at": "2025-11-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "caller / subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-14",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__New Demand Negotiation Note:__ 11/6 sure. Went over the MRI results and the herniated disc as well as the prior results, and then emailed the adjuster copies of the Synergy records from her 2023 and her 2025 January 2025 rec so he can evaluate.\n__Insurance Type:__ Bodily Injury (BI)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Aaron Whaley\n #negotiations",
+      "natural_language": "Case: Henrietta Jenkins – motor vehicle accident on May 20, 2025. Client: Henrietta Jenkins. New Demand Negotiation Note: 11/6 sure. In this note, the MRI results and the herniated disc, as well as the prior results, were reviewed, and copies of the Synergy records from her 2023 file and from the January 2025 records were emailed to the adjuster so he could evaluate.\n\nInsurance Type: Bodily Injury (BI). Insurance Company: Progressive Insurance Company. Written by: Aaron Whaley. This entry is categorized under negotiations.",
+      "valid_at": "2025-11-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI insurer for the case"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "Bodily injury claim being negotiated"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Colin Karsnitz",
+            "relevance": "adjuster who received medical records to evaluate"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Synergy Injury Care & Rehab Diagnostics",
+            "relevance": "provider whose records (2023 and Jan 2025) were sent"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-11-17",
+      "original_body": "Case: Henrietta-Jenkins-MVA-5-20-2025\nClient: Henrietta Jenkins\n\n__CLIENT CONTACT__\n__Details:__ updated client. \n__Person Making Contact:__ Justin\n__Date & Time__: November 17 2025",
+      "natural_language": "Case Henrietta-Jenkins-MVA-5-20-2025 concerns client Henrietta Jenkins in a motor vehicle accident matter. Initial client contact on November 17, 2025 was made by Justin to update the client file for Henrietta Jenkins; the contact details note that the client was updated.",
+      "valid_at": "2025-11-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Henrietta Jenkins",
+            "relevance": "client updated / subject of case"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

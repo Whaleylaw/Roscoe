@@ -1,0 +1,1883 @@
+{
+  "case_name": "Brooklyn-Ballard-MVA-02-28-2024",
+  "total_episodes": 81,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Bellevue-Dayton Fire/EMS",
+        "specialty": "emergency medical services"
+      },
+      {
+        "name": "Cincinnati Children's Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "MEBS Counseling",
+        "specialty": null
+      },
+      {
+        "name": "St. Elizabeth Physicians - Crittenden",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Berkshire Risk Services"
+      },
+      {
+        "name": "State Farm Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Scott Frayer"
+      },
+      {
+        "name": "Thomas Nie"
+      },
+      {
+        "name": "Stephanie Thomas"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Brooklyn-Ballard-MVA-02-28-2024-Bodily Injury (BI)-OIC256504",
+        "insurer": "Berkshire Risk Services",
+        "adjuster": "Scott Frayer"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Brooklyn-Ballard-MVA-02-28-2024-Personal Injury Protection (PIP)-17-63X2-00X",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Thomas Nie"
+      },
+      {
+        "type": "UMClaim",
+        "name": "Brooklyn-Ballard-MVA-02-28-2024-Uninsured Motorist (UM)-17-63X2-00X",
+        "insurer": "State Farm Insurance Company",
+        "adjuster": "Stephanie Thomas"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Brooklyn-Ballard-MVA-02-28-2024-Anthem Medicaid",
+        "holder": null,
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Filevine Integration - 2024-03-04",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ Brooklyn Ballard\nDOB 11/7/2013\nHas KY Medicaid - Anthem \nSSN: 706-35-9715 \n__Person Making Contact:__ Justin\n__Date & Time__: March 04 2024",
+      "natural_language": "Initial client contact on March 4, 2024 with Brooklyn Ballard regarding a motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024. The client is Brooklyn Ballard, born on November 7, 2013, and the record indicates she has Kentucky Medicaid through Anthem. The Social Security Number on file is 706-35-9715.\n\nThe person making contact was Justin, and the date and time of contact is March 04, 2024.",
+      "valid_at": "2024-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client (initial contact)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-03-04",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "On February 28, 2024, in the Brooklyn-Ballard motor vehicle accident (MVA) case, the client Brooklyn Ballard was contacted today to provide update #cc.",
+      "valid_at": "2024-03-04T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-03-15",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: FW: 17-63X2-00X__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com) Brooklyn Ballard - Filevine Project Email Address, [ballardelizabeth250@gmail.com](mailto:ballardelizabeth250@gmail.com) Elizabeth Ballard, [DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com](mailto:DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com) Deena Gilliam - Filevine Project Email Address\nDate: Fri, 15 Mar 2024 13:20:09 -0400\n\n---------- Forwarded message ---------\nFrom: \nDate: Fri, Mar 15, 2024 at 1:17?PM\nSubject: FW: 17-63X2-00X\nTo: Aries Penaflor \n\nJustin Chumbley\n\nWhaley Law Firm\n\nPh: (502)583-4022\n\nFax: (502)364-9363\n\n*From:* HOME CLMS-STATEFARMCLAIMS \n*Sent:* Friday, March 15, 2024 1:13 PM\n*To:* justin@whaleylawfirm.com\n*Subject:* 17-63X2-00X\n\nstatefarm.com®\n\n------------------------------\n\nPlease open the attachment(s) for more claim information or next steps.\n\nFor your protection, please do not include sensitive personal information\nsuch as Social Security Number, credit/debit card number (financial account\nnumber), driver’s license number, or health/medical information in an\nemail. If you must send this type of information to State Farm, please\ncontact your claim associate to request a secure email channel.\n\n*______________________________*\n\n*Stephanie Thomas | *\n\nState Farm Claims Specialist – A2 Injury\n\nDirect dial: 615-692-3635\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nOn March 15, 2024, at 13:20:09 -0400, Aries Penaflor of Whaley Law Firm forwarded an email titled “FW: 17-63X2-00X” to Brooklyn Ballard’s Filevine project email address, to Elizabeth Ballard (ballardelizabeth250@gmail.com), and to Deena Gilliam (DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com). The forward metadata shows the subject line of the original message as “FW: 17-63X2-00X.”\n\nThe forwarded message includes an earlier email with the subject “FW: 17-63X2-00X,” dated Friday, March 15, 2024 at 1:17?PM, and addressed to Justin Chumbley of Whaley Law Firm. Whaley Law Firm’s contact information is listed as Ph: (502) 583-4022 and Fax: (502) 364-9363. The message being forwarded appears to originate from State Farm’s claims system, labeled “HOME CLMS-STATEFARMCLAIMS,” and is dated Friday, March 15, 2024 at 1:13 PM. It was sent to justin@whaleylawfirm.com with the subject “17-63X2-00X.” The body of that State Farm message includes the line “statefarm.com®.”\n\nThe State Farm message asks the recipient to open the attachment(s) for more claim information or next steps. It includes a security reminder: do not include sensitive personal information (such as Social Security numbers, credit/debit card numbers, financial account numbers, driver’s license numbers, or health/medical information) in an email, and if such information must be transmitted to State Farm, to contact the claim associate to request a secure email channel.\n\nThe message is signed with: “Stephanie Thomas | State Farm Claims Specialist – A2 Injury | Direct dial: 615-692-3635.”\n\nThe chain closes with a message from Aries Paul Peñaflor of Whaley Law Firm, including his contact information: Ph: (502) 365-5788 and Fax: (502) 364-9363, and the closing line “All the best.”",
+      "valid_at": "2024-03-15T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "recipient of forwarded filevine/email; subject of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender/forwarder of the email chain handling the matter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "originator of the claims-system message"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Stephanie Thomas",
+            "relevance": "State Farm claims specialist who signed the message"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "UM claim referenced via State Farm message (signed by Stephanie Thomas)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-03-19",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: FW: 17-63X2-00X__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com) Brooklyn Ballard - Filevine Project Email Address, [ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com) Elizabeth Ballard - Filevine Project Email Address\nDate: Tue, 19 Mar 2024 08:01:14 -0400\n\n---------- Forwarded message ---------\nFrom: \nDate: Mon, Mar 18, 2024 at 5:59?PM\nSubject: FW: 17-63X2-00X\nTo: Aries Penaflor \n\nJustin Chumbley\nWhaley Law Firm\nPh: (502)583-4022\nFax: (502)364-9363\n\n-----Original Message-----\nFrom: HOME CLMS-STATEFARMCLAIMS \nSent: Monday, March 18, 2024 4:39 PM\nTo: justin@whaleylawfirm.com\nSubject: 17-63X2-00X\n\nGood Afternoon,\n\nPlease find attached household coverage information for your clients\nElizabeth Ballard and Deena Gilliam. DOL 2/28/24.\n\nPlease review and notify us in the event this information is incorrect or if\nanyone residing in your clients' households have other vehicles or insurance\nthat may provide additional coverage for this loss.\n\nThank you,\n\n______________________________\nStephanie Thomas |\nState Farm Claims Specialist - A2 Injury Direct dial: 615-692-3635\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard in a motor vehicle accident.\n\nOn March 19, 2024, an email thread was forwarded by Aries Penaflor of Whaley Law Firm to Brooklyn Ballard’s Filevine project email address and to Elizabeth Ballard’s Filevine project email address. The forwarding carried the subject line FW: 17-63X2-00X and appears to circulate the same matter within the law firm and the clients’ file.\n\nThe forwarded chain includes an original message dated March 18, 2024 at 4:39 PM from HOME CLMS-STATEFARMCLAIMS to Justin Chumbley at Whaley Law Firm with the subject 17-63X2-00X. In that message, State Farm Claims Specialist Stephanie Thomas (A2 Injury) advised that household coverage information for Elizabeth Ballard and Deena Gilliam was attached, noting the date of loss (DOL) as 2/28/24. She requested that the recipient review the information and notify State Farm if anything was incorrect or if anyone residing in the clients’ households has other vehicles or insurance that may provide additional coverage for this loss. The message provided Stephanie Thomas’s direct dial: 615-692-3635.\n\nThe chain ends with a signature block from Aries Paul Peñaflor of Whaley Law Firm, including his contact details: Ph: 502-365-5788 and Fax: 502-364-9363.",
+      "valid_at": "2024-03-19T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client whose Filevine project received the forwarded email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "originator/handler of the forwarded email and firm handling the matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "Whaley Law Firm attorney/staff who forwarded the email"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer sending household coverage information regarding the loss"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Stephanie Thomas",
+            "relevance": "State Farm claims specialist who provided household coverage details"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "claim referenced by State Farm regarding household coverage and date of loss"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-03-25",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__OIC256504__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [5138632265@rcfax.com](mailto:5138632265@rcfax.com)\nDate: Mon, 25 Mar 2024 14:01:27 -0400\n\nGood day,\n\nPlease see attached file\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. The file includes an internal reference labeled OIC256504.\n\nOn Monday, March 25, 2024, at 14:01:27 -0400, an email was sent from Aries Penaflor of Whaley Law Firm (aries@whaleylawfirm.com) to the fax gateway address 5138632265@rcfax.com. The message began with “Good day,” and stated, “Please see attached file.” It was signed by Aries Paul Peñaflor of Whaley Law Firm, with the following contact details: Ph: (502)365-5788; Fax: (502)364-9363, and the closing line “All the best.”",
+      "valid_at": "2024-03-25T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-03-26",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: FW: 17-63X2-00X__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com) Brooklyn Ballard - Filevine Project Email Address, [ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com) Elizabeth Ballard - Filevine Project Email Address, [DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com](mailto:DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com) Deena Gilliam - Filevine Project Email Address\nDate: Tue, 26 Mar 2024 15:28:20 -0400\n\n---------- Forwarded message ---------\nFrom: \nDate: Tue, Mar 26, 2024 at 3:14?PM\nSubject: FW: 17-63X2-00X\nTo: Aries Penaflor \n\nJustin Chumbley\n\nWhaley Law Firm\n\nPh: (502)583-4022\n\nFax: (502)364-9363\n\n*From:* automedicalclaims@statefarm.com \n*Sent:* Tuesday, March 26, 2024 3:13 PM\n*To:* justin@whaleylawfirm.com\n*Subject:* 17-63X2-00X\n\nstatefarm.com®\n\n------------------------------\n\nPlease open the attachment(s) for more claim information or next steps.\n\nFor your protection, please do not include sensitive personal information\nsuch as Social Security Number, credit/debit card number (financial account\nnumber), driver’s license number, or health/medical information in an\nemail. If you must send this type of information to State Farm, please\ncontact your claim associate to request a secure email channel.\n\n------------------------------\n\nDon't miss a call about your Auto claim from State Farm®!\nText AUTO to 62789 for your claim contact card or download\n it from your mobile device.\n\nDon't miss a call about your Homeowners claim from State Farm®!\n\nText HOME to 62789 for your claim contact card or download\n it from your mobile device.\n\n*Anne Perez | VAE65C*\n\n(She/Her)\n\nClaim Associate PIP/MPC\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. Client: Brooklyn Ballard.\n\nOn March 26, 2024, a forwarded email chain pertaining to the Brooklyn-Ballard matter was sent from Aries Penaflor of Whaley Law Firm to multiple Filevine addresses for Brooklyn Ballard and related parties, including Elizabeth Ballard and Deena Gilliam. The email carried the subject FW: 17-63X2-00X and was dated 15:28:20 on March 26, 2024, with a -0400 time offset.\n\nThe forwarded message shows a subsequent exchange beginning with a note indicating a message from Justin Chumbley of Whaley Law Firm, including his contact information: Whaley Law Firm, Ph: (502) 583-4022, Fax: (502) 364-9363. The header lines display: From: (blank in the forwarded excerpt), Date: Tue, Mar 26, 2024 at 3:14 PM, Subject: FW: 17-63X2-00X, To: Aries Penaflor, followed by the sender’s identifying block for Justin Chumbley.\n\nThe body of the original message that was forwarded originates from automedicalclaims@statefarm.com, sent Tuesday, March 26, 2024 at 3:13 PM to justin@whaleylawfirm.com, with the subject 17-63X2-00X. The message requests that the recipient open the attached documents for more claim information or next steps. It warns not to include sensitive personal information in an email—such as Social Security numbers, credit/debit card numbers (financial account numbers), driver’s license numbers, or health/medical information—and notes that if such information must be transmitted to State Farm, a claim associate should be contacted to request a secure email channel.\n\nAdditionally, the message encourages receiving a contact card for claims by texting AUTO to 62789 for Auto claims or HOME to 62789 for Homeowners claims, or by downloading the card to a mobile device. The State Farm notice includes the line “statefarm.com®” and is signed by Anne Perez | VAE65C (She/Her), Claim Associate PIP/MPC, followed by a closing from Aries Paul Peñaflor of Whaley Law Firm: “All the best, Aries Paul Peñaflor,” with Whaley Law Firm contact details: Ph: (502) 365-5788, Fax: (502) 364-9363.",
+      "valid_at": "2024-03-26T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of the case/email chain"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender/recipient law firm handling the matter (Aries Penaflor, Justin Chumbley)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "originator of the automated claim email"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "PIP claim referenced in the email (claim # 17-63X2-00X)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-05-02",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: 17-63X2-00X__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com](mailto:DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com) Deena Gilliam - Filevine Project Email Address, [ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com) Elizabeth Ballard - Filevine Project Email Address, [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com) Brooklyn Ballard - Filevine Project Email Address\nDate: Thu, 2 May 2024 14:51:58 -0400\n\n---------- Forwarded message ---------\nFrom: HOME CLMS-STATEFARMCLAIMS \nDate: Thu, May 2, 2024 at 2:48?PM\nSubject: 17-63X2-00X\nTo: aries@whaleylawfirm.com \n\nPlease find attached sent on 3/15/24\n\nThank you,\n\n*______________________________*\n\n*Stephanie Thomas | *\n\nState Farm Claims Specialist – KY, NM, RI UM/UIM Adjuster\n\nDirect dial: 615-692-3635\n\n*From:* HOME CLMS-STATEFARMCLAIMS\n*Sent:* Friday, March 15, 2024 12:13 PM\n*To:* justin@whaleylawfirm.com\n*Subject:* 17-63X2-00X\n\nstatefarm.com®\n\n------------------------------\n\nPlease open the attachment(s) for more claim information or next steps.\n\nFor your protection, please do not include sensitive personal information\nsuch as Social Security Number, credit/debit card number (financial account\nnumber), driver’s license number, or health/medical information in an\nemail. If you must send this type of information to State Farm, please\ncontact your claim associate to request a secure email channel.\n\n*______________________________*\n\n*Stephanie Thomas | *\n\nState Farm Claims Specialist – A2 Injury\n\nDirect dial: 615-692-3635\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. Client: Brooklyn Ballard.\n\nOn May 2, 2024, at 14:51:58 Eastern Time, Aries Penaflor of Whaley Law Firm forwarded an email thread titled “17-63X2-00X” to Deena Gilliam, Elizabeth Ballard, and Brooklyn Ballard at their respective Filevine project email addresses. The forwarded message originated from State Farm Claims (HOME CLMS-STATEFARMCLAIMS) and was dated May 2, 2024, at approximately 2:48 PM, with the subject line 17-63X2-00X. The body of that message instructs: “Please find attached sent on 3/15/24.” It is signed by Stephanie Thomas, State Farm Claims Specialist – KY, NM, RI UM/UIM Adjuster, with direct dial 615-692-3635.\n\nThe May 2 forwarding includes the prior State Farm communication dated March 15, 2024, at 12:13 PM, sent from HOME CLMS-STATEFARMCLAIMS to Justin at justin@whaleylawfirm.com, with the subject 17-63X2-00X and the line “statefarm.com®.” The March 15 email states: “Please open the attachment(s) for more claim information or next steps.” It also includes a caution to avoid sending sensitive personal information via email and to contact the claim associate to request a secure email channel if such information must be transmitted. The message is signed by Stephanie Thomas, State Farm Claims Specialist – A2 Injury, with direct dial 615-692-3635. The correspondence closes with the signature block of Aries Paul Peñaflor from Whaley Law Firm, including his phone number, 502-365-5788, and fax number, 502-364-9363.",
+      "valid_at": "2024-05-02T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client/recipient of forwarded emails"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "originator/sender of the claim-related emails"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Stephanie Thomas",
+            "relevance": "State Farm adjuster who authored the emails"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "UM/UIM claim referenced in the correspondence"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm forwarding State Farm correspondence"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "Whaley Law Firm attorney who forwarded the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-05-02",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__17-63X2-00X__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [statefarmclaims@statefarm.com](mailto:statefarmclaims@statefarm.com) State Team\nDate: Thu, 2 May 2024 15:53:57 -0400\n\nGood day,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard. An internal reference for this matter is 17-63X2-00X. On May 2, 2024, at 15:53:57 -0400, Aries Penaflor of Whaley Law Firm sent an email from aries@whaleylawfirm.com to the State Farm Claims State Team at statefarmclaims@statefarm.com. The message began with a greeting, “Good day,” and stated, “Please see attached file.” It concluded with the sign-off “All the best,” followed by the sender’s name and firm details: Aries Paul Peñaflor, Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.",
+      "valid_at": "2024-05-02T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "email recipient (State Farm Claims team)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-06-07",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard-Lien Request__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [8446342520@rcfax.com](mailto:8446342520@rcfax.com)\nDate: Fri, 7 Jun 2024 16:06:10 -0400\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "The case Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard in a motor vehicle accident matter dated February 28, 2024. A lien request for Brooklyn Ballard was transmitted under the header Brooklyn Ballard-Lien Request.\n\nThe message was sent on Friday, June 7, 2024, at 16:06:10 (4:06 PM) with a -0400 time offset, from Aries Penaflor (aries@whaleylawfirm.com) to the fax address 8446342520@rcfax.com. The message is titled Brooklyn Ballard-Lien Request, and the body ends with the closing signature block. The closing reads “All the best,” followed by the sender’s signature: Aries Paul Peñaflor, Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.",
+      "valid_at": "2024-06-07T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Brooklyn Ballard-Lien Request",
+            "relevance": "document transmitted"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sender of lien request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-06-18",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nRequest for records & bills faxed to St. Elizabeth Physicians - Crittenden",
+      "natural_language": "On February 28, 2024, the case Brooklyn-Ballard-MVA-02-28-2024 involved client Brooklyn Ballard in a motor vehicle accident. A request for medical records and bills was faxed to St. Elizabeth Physicians - Crittenden.",
+      "valid_at": "2024-06-18T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client involved in motor vehicle accident"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians - Crittenden",
+            "relevance": "recipient of faxed request for medical records and bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-06-18",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [8594283923@rcfax.com](mailto:8594283923@rcfax.com), [8593445550@rcfax.com](mailto:8593445550@rcfax.com)\nCc: [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com) Brooklyn Ballard - Filevine Project Email Address\nDate: Tue, 18 Jun 2024 08:36:21 -0400",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. The client is Brooklyn Ballard.\n\nOn June 18, 2024, at 08:36:21 AM Eastern Time, an email was sent from Jessica Bottorff of Whaley Law Firm (jessica@whaleylawfirm.com). The message was addressed to 8594283923@rcfax.com and 8593445550@rcfax.com, and it was CC’d to BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com, noted as Brooklyn Ballard - Filevine Project Email Address.",
+      "valid_at": "2024-06-18T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "primary client/recipient of email copy"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "project email recipient / case management vendor"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-06-18",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nRequest for records sent to St. Elizabeth Physicians - Crittenden via ChartSwap",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. Initial client contact on February 28, 2024, with Brooklyn Ballard regarding a motor vehicle accident. A request for records has been sent to St. Elizabeth Physicians - Crittenden via ChartSwap.",
+      "valid_at": "2024-06-18T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "person contacted"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians - Crittenden",
+            "relevance": "recipient of records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-06-20",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__OIC256504__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [claims@berkshirerisk.com](mailto:claims@berkshirerisk.com) Berkshire Risk Services\nDate: Thu, 20 Jun 2024 14:38:49 -0400\n\nHi,\n\nPlease see attached file.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "The Brooklyn-Ballard-MVA-02-28-2024 case involves client Brooklyn Ballard and is associated with internal reference OIC256504. On June 20, 2024, at 14:38:49 -0400, an email was sent from Aries Penaflor (aries@whaleylawfirm.com) of Whaley Law Firm to Berkshire Risk Services at claims@berkshirerisk.com.\n\n The message content is brief: it begins with \"Hi,\" and states, \"Please see attached file.\" It is signed, \"All the best, Aries Paul Peñaflor,\" with the Whaley Law Firm contact details listed as Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-06-20T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Berkshire Risk Services",
+            "relevance": "email recipient / insurer on file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Bryce Koon - 2024-06-21",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n@aries1 Please save to file",
+      "natural_language": "The case Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard. The matter pertains to a motor vehicle accident (MVA) associated with this case, which occurred on February 28, 2024.",
+      "valid_at": "2024-06-21T00:00:00",
+      "author": "Bryce Koon",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client in case / subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-06-26",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: 17-63X2-00X__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com) Elizabeth Ballard - Filevine Project Email Address, [DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com](mailto:DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com) Deena Gilliam - Filevine Project Email Address, [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com) Brooklyn Ballard - Filevine Project Email Address\nDate: Wed, 26 Jun 2024 15:00:10 -0400\n\n---------- Forwarded message ---------\nFrom: HOME CLMS-STATEFARMCLAIMS \nDate: Wed, Jun 26, 2024 at 2:54?PM\nSubject: 17-63X2-00X\nTo: aries@whaleylawfirm.com \n\nPlease find attached previously sent 3/18/24 regarding your clients\nDeena Gilliam, Brooklyn Ballard and Elizabeth Ballard, DOL 2/28/24.\n\nThank you,\n\n______________________________\nStephanie Thomas |\nState Farm Claims Specialist – KY, NM, RI UM/UIM Adjuster\nDirect dial: 615-692-3635\n\n-----Original Message-----\nFrom: HOME CLMS-STATEFARMCLAIMS\nSent: Monday, March 18, 2024 3:39 PM\nTo: justin@whaleylawfirm.com\nSubject: 17-63X2-00X\n\nGood Afternoon,\n\nPlease find attached household coverage information for your clients\nElizabeth Ballard and Deena Gilliam. DOL 2/28/24.\n\nPlease review and notify us in the event this information is incorrect\nor if anyone residing in your clients' households have other vehicles\nor insurance that may provide additional coverage for this loss.\n\nThank you,\n\n______________________________\nStephanie Thomas |\nState Farm Claims Specialist – A2 Injury\nDirect dial: 615-692-3635\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. Client: Brooklyn Ballard.\n\nOn June 26, 2024, a forward of a file marked 17-63X2-00X was sent within the Brooklyn Ballard motor vehicle accident matter. The forward was from Aries Penaflor of Whaley Law Firm and was addressed to Elizabeth Ballard’s Filevine project email address, Deena Gilliam’s Filevine project email address, and Brooklyn Ballard’s Filevine project email address. The transmission occurred on Wednesday, June 26, 2024, at 15:00:10 −0400.\n\nThe forwarded message came from HOME CLMS-STATEFARMCLAIMS and stated that a State Farm email dated June 26, 2024, at approximately 2:54 PM contained an attachment of documents previously sent on March 18, 2024, regarding the clients Deena Gilliam, Brooklyn Ballard, and Elizabeth Ballard, with DOL (Date of Loss) 2/28/24. The note advised the recipient to review the attached materials and indicated that the information had been sent again. The message was signed by Stephanie Thomas, State Farm Claims Specialist – KY, NM, RI UM/UIM Adjuster, and included her direct dial number: 615-692-3635.\n\nThe original March 18, 2024 email from State Farm was addressed to Justin at Whaley Law Firm, subject 17-63X2-00X. It began with “Good Afternoon” and advised that the attachment contained household coverage information for Elizabeth Ballard and Deena Gilliam, noting DOL 2/28/24. The message requested that the recipient review the information and notify State Farm if anything was incorrect, or if anyone residing in the clients’ households has other vehicles or insurance that may provide additional coverage for this loss. The closing thanked the recipient and was signed by Stephanie Thomas, State Farm Claims Specialist – A2 Injury, with direct dial 615-692-3635.\n\nThe note concluded with the sign-off from Aries Paul Peñaflor of Whaley Law Firm: “All the best,” followed by the firm’s contact information: Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.",
+      "valid_at": "2024-06-26T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client and recipient of forwarded file"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Ballard",
+            "relevance": "household member referenced in State Farm coverage information"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Deena Gilliam",
+            "relevance": "household member referenced in State Farm coverage information"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "insurer that sent household coverage information"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Stephanie Thomas",
+            "relevance": "State Farm adjuster who signed and sent the emails"
+          },
+          {
+            "entity_type": "UMClaim",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "UM claim/coverage information discussed in the emails"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm forwarding the file and corresponding with State Farm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sender/forwarder from Whaley Law Firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-06-28",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: 17-63X2-00X__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com](mailto:DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com) Deena Gilliam - Filevine Project Email Address, [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com) Brooklyn Ballard - Filevine Project Email Address, [ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com) Elizabeth Ballard - Filevine Project Email Address\nDate: Fri, 28 Jun 2024 10:47:18 -0400\n\nReceived, thank you.\n\nOn Fri, Jun 28, 2024 at 10:41?AM wrote:\n>\n> Please find important information from State Farm Claims attached.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. The note shows a forwarded email (subject: Fwd: 17-63X2-00X) from Aries Penaflor of the Whaley Law Firm, sent on Friday, June 28, 2024 at 10:47:18 AM -0400, to three Filevine project email addresses: Deena Gilliam (DeenaGilliamMVAZ4485878@louisvilleaccidentlawyer.filevineapp.com), Brooklyn Ballard (BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com), and Elizabeth Ballard (ElizabethBallardMVAZ4485160@louisvilleaccidentlawyer.filevineapp.com).\n\nThe body of the forwarded message begins with the line “Received, thank you.” It references a prior message sent on Friday, June 28, 2024 at 10:41?AM, which stated, “Please find important information from State Farm Claims attached.” The message is signed by Aries Paul Peñaflor of Whaley Law Firm.\n\nThe forwarding email is concluded with a standard sign-off from Aries Paul Peñaflor, including the firm’s contact information: Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.",
+      "valid_at": "2024-06-28T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client; recipient of forwarded email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm of the forwarded email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender/forwarder"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "State Farm Insurance Company",
+            "relevance": "referenced as source of attached claims information"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-07-22",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [dawn.probst@stelizabeth.com](mailto:dawn.probst@stelizabeth.com)\nCc: [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon, 22 Jul 2024 09:58:35 -0400\n\nHi, Dawn!\n\n \n\nDo you handle billing for St. Elizabeth Physicians? If not, where do I need\nto send this request?\n\n \n\nThank you!\n\n \n\nJessica Bottorff \n\nWhaley Law Firm\n\n712 Lyndon Ln.\n\nLouisville, KY 40222\n\nPh: (502)583-4022\n\nFax: (502)364-9363",
+      "natural_language": "Initial client correspondence in the Brooklyn-Ballard-MVA case (Brooklyn-Ballard-MVA-02-28-2024) occurred on July 22, 2024, when Jessica Bottorff of Whaley Law Firm emailed Dawn Probst at St. Elizabeth Physicians. The message, sent from jessica@whaleylawfirm.com to dawn.probst@stelizabeth.com and cc'd to BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com, opened with “Hi, Dawn!” Bottorff asked whether St. Elizabeth Physicians handles billing; if not, where she should send the billing request. She closed with thanks and provided her contact details: Jessica Bottorff, Whaley Law Firm, 712 Lyndon Ln., Louisville, KY 40222, Ph: (502)583-4022, Fax: (502)364-9363.",
+      "valid_at": "2024-07-22T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sender of the initial correspondence"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm / origin of the billing inquiry"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians - Crittenden",
+            "relevance": "recipient of the billing inquiry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-07-22",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Roxanne Channels__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [pamela.beatsch@stelizabeth.com](mailto:pamela.beatsch@stelizabeth.com)\nCc: [RoxanneChannelsMVAZ4657715@louisvilleaccidentlawyer.filevineapp.com](mailto:RoxanneChannelsMVAZ4657715@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon, 22 Jul 2024 11:29:53 -0400\n\nAttached is a request for bills on our client, Brooklyn Ballard.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "This note concerns the case Brooklyn-Ballard-MVA-02-28-2024, with client Brooklyn Ballard.\n\nRoxanne Channels: On Monday, July 22, 2024, at 11:29:53 a.m. (EDT), an email was sent from The Whaley Law Firm. From: jessica@whaleylawfirm.com. To: pamela.beatsch@stelizabeth.com. CC: RoxanneChannelsMVAZ4657715@louisvilleaccidentlawyer.filevineapp.com. The message read, \"Attached is a request for bills on our client, Brooklyn Ballard.\" It concluded with \"Thanks!\" and was signed by The Whaley Law Firm.",
+      "valid_at": "2024-07-22T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client referenced in request for bills"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of email requesting bills"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians - Crittenden",
+            "relevance": "recipient of request for bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-07-22",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "On February 28, 2024, the client, Brooklyn Ballard, was contacted to provide an update, designated as update #cc, for the motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024.",
+      "valid_at": "2024-07-22T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-19",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ Called Elizabeth's phone and left a vm. Need treatment info on Brooklyn asap \n__Person Making Contact:__ Justin\n__Date & Time__: August 19 2024",
+      "natural_language": "Initial client contact on August 19, 2024, for the Brooklyn-Ballard-MVA-02-28-2024 case involving client Brooklyn Ballard. The contact was made by Justin. According to the client contact details, Justin called Elizabeth’s phone and left a voicemail, stating a need for treatment information on Brooklyn as soon as possible.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-08-19",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "On February 28, 2024, Brooklyn Ballard was the client in the motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024. The client contacted our office to provide an update on the matter, with the update recorded under reference code #cc.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client who contacted office / provided update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-08-19",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ Spoke with Elizabeth related to Brooklyn's treatment. Brooklyn had couple of visits with Primary care because of her headaches after the accident.\nBrooklyn is also getting PTSD therapy but Elizabeth can't remember the name of provider. Brooklyn has a session on Thursday. Elizabeth will provide info on Thursday.\n\nElizabeth is also waiting for approval from her health insurance to cover her neck injection from Pain specialist. \n__Person Making Contact:__ Aries\n__Date & Time__: July 22 2024",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. Client: Brooklyn Ballard.\n\nInitial client contact on July 22, 2024, with Aries regarding Brooklyn Ballard’s treatment following a motor vehicle accident. The contact was with Elizabeth, who spoke about Brooklyn’s care.\n\nElizabeth reported that Brooklyn had a couple of visits with her primary care physician for headaches after the accident. Brooklyn is also receiving PTSD therapy, though Elizabeth cannot recall the name of the provider. Brooklyn has a session on Thursday, and Elizabeth will provide the information on Thursday.\n\nElizabeth is waiting for approval from her health insurance to cover a neck injection from a pain specialist.",
+      "valid_at": "2024-08-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-09-05",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ updated client on status \n__Person Making Contact:__ Justin\n__Date & Time__: September 05 2024",
+      "natural_language": "Initial client contact on September 5, 2024 with Justin regarding updating Brooklyn Ballard on the status of the motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024.",
+      "valid_at": "2024-09-05T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted / subject of update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-09-05",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "Brooklyn-Ballard-MVA-02-28-2024 concerns the motor vehicle accident matter for client Brooklyn Ballard. On February 28, 2024, the client was contacted to provide an update, designated as update #cc.",
+      "valid_at": "2024-09-05T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-09-16",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nDate: Mon Sep 16 2024 03:59:26 GMT-04:00\n\nHi,\n\nAttached is request for records and bills of Brooklyn Ballard.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "The case Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard.\n\nOn September 16, 2024, at 3:59:26 a.m. (GMT-04:00), Aries Penaflor of the Whaley Law Firm sent an email from aries@whaleylawfirm.com to the fax address 5136366729@rcfax.com regarding Brooklyn Ballard.\n\nThe body of the message stated: \"Hi, Attached is request for records and bills of Brooklyn Ballard.\"\n\nThe message was signed by Aries Paul Peñaflor of the Whaley Law Firm, with contact details: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2024-09-16T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of the records and bills request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "sender of the email requesting records"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-10-01",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nMs Ballard called to see if mrdical records for her daughter Brooklyn were received - she said Brooklyn only had the ER visit at hospital. She asked that someone call her back regarding same. I can see they were requested - but not sure if rec'd yet...she asked for a return call re: records (email to Aries) #cc",
+      "natural_language": "Initial client contact on February 28, 2024 (Case Brooklyn-Ballard-MVA-02-28-2024) with Brooklyn Ballard regarding a motor vehicle accident. Ms. Ballard stated that medical records for her daughter Brooklyn had not yet been confirmed as received, noting that Brooklyn’s only hospital involvement related to the incident was an ER visit. She requested that someone call her back to discuss the status of the records. The records had been requested, but it was not clear whether they had been received yet. She asked for a return call regarding the records, and there was an email to Aries with cc.",
+      "valid_at": "2024-10-01T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "caller; discussed status of medical records"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-10-15",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nRec'd a call from Ms Ballard (Brookly's mom) - said she had not gotten a return call....told her I would send Aries an email to give her a call on update for Brooklyn#cc",
+      "natural_language": "Initial client contact on February 28, 2024 with Brooklyn Ballard regarding a motor vehicle accident (MVA). I received a call from Ms Ballard (Brookly's mom), who said she had not gotten a return call. I told her I would send Aries an email to give her a call on update for Brooklyn#cc.",
+      "valid_at": "2024-10-15T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "initial contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-15",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ Gave client an update about this case. Wants to talk about settlement amount. Transferred to Atty. Whaley. \n__Person Making Contact:__ Aries\n__Date & Time__: October 15 2024",
+      "natural_language": "Initial client contact on October 15, 2024, with Brooklyn Ballard regarding the Brooklyn-Ballard-MVA-02-28-2024 case. The contact was made by Aries. Aries provided Brooklyn Ballard with an update on the case and noted that Brooklyn Ballard wants to discuss the settlement amount. The case was transferred to Attorney Whaley.",
+      "valid_at": "2024-10-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client who was contacted and wants to discuss settlement"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Whaley",
+            "relevance": "attorney the case was transferred to"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-10-15",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "Brooklyn Ballard is the client in the motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024. The client was contacted today to provide update #cc.",
+      "valid_at": "2024-10-15T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2024-10-15",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: New Voice Message from (859) 479-5298 on 10/15/2024 2:43 PM__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Bryce Koon [bryce@whaleylawfirm.com](mailto:bryce@whaleylawfirm.com), Brooklyn Ballard - Filevine Project Email Address [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Oct 15 2024 03:14:59 GMT-04:00\n\nWe don't have an offer. We have not sent a demand because I to see records\nregarding the migraines and seizures. That would make a pretty significant\ndifference in offer and settlement.\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Tue, Oct 15, 2024 at 2:43?PM\nSubject: New Voice Message from (859) 479-5298 on 10/15/2024 2:43 PM\nTo: aaron whaley \n\n[image: Logo] [image: Logo]\n[image: Logo] Voice Message\n------------------------------\n\nDear aaron whaley,\n\nYou have a new voice message:\n*From:* (859) 479-5298\n*Received:* Tuesday, October 15, 2024 at 2:43 PM\n*Length:* 01:01\n*To:* (502) 365-5788 * 101 aaron whaley\n\n*Voicemail Preview:* (Partial)\n\"Hi, Aaron. My name is Elizabeth Ballard. I am trying to get an update on a\nsettlement offer for my daughter, Brooklyn Ballard. In regards to the wreck\nthat happened in February, I was told that they are requesting records from\nCincinnati Children's Hospital. However, she was not treated at Cincinnati\nChildren's in regards to the wreck at All so I am not sure what that is\nabout. She does have seizures now because of the migraines that has started\nbecause of the wreck and she has gone to children's for a seizure by\nambulance. But I was trying to see what the current settlement offer stands\nat at this point. If you could please give me a call back as I have had a\nlot of trouble getting returned calls. My number is 859-479-5298. Thank you\nand have a great day. ...\"\nListen to this message over your phone or log in to your RingCentral account\n with your main number, extension number,\nand password. You can also manage your voicemails in your RingCentral\naccount.",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. On October 15, 2024, a forwarded email titled “Fwd: New Voice Message from (859) 479-5298 on 10/15/2024 2:43 PM” was sent from Aaron Whaley to Bryce Koon and Brooklyn Ballard’s Filevine project email address. In the body of that forwarded note, Whaley stated: “We don't have an offer. We have not sent a demand because I to see records regarding the migraines and seizures. That would make a pretty significant difference in offer and settlement.” The message is timestamped Tue Oct 15, 2024 03:14:59 GMT-04:00.\n\nEarlier that same day, a separate RingCentral message was received, dated Tue, Oct 15, 2024 at approximately 2:43 PM, with the subject “New Voice Message from (859) 479-5298 on 10/15/2024 2:43 PM.” The message details show it was sent to Aaron Whaley, with the notification indicating: From (859) 479-5298; Received Tuesday, October 15, 2024 at 2:43 PM; Length 01:01; To (502) 365-5788, 101 Aaron Whaley. The voicemail preview contains the following partial transcript: “Hi, Aaron. My name is Elizabeth Ballard. I am trying to get an update on a settlement offer for my daughter, Brooklyn Ballard. In regards to the wreck that happened in February, I was told that they are requesting records from Cincinnati Children's Hospital. However, she was not treated at Cincinnati Children's in regards to the wreck at All so I am not sure what that is about. She does have seizures now because of the migraines that has started because of the wreck and she has gone to children's for a seizure by ambulance. But I was trying to see what the current settlement offer stands at at this point. If you could please give me a call back as I have had a lot of trouble getting returned calls. My number is 859-479-5298. Thank you and have a great day. …” The system note also includes standard RingCentral prompts to listen to the message via phone or log in to the RingCentral account to manage voicemails.",
+      "valid_at": "2024-10-15T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "primary client; subject of voicemail and settlement discussion"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "medical provider mentioned; source of records and treatment for seizures"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-10-15",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: Brooklyn Ballard__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nDate: Tue Oct 15 2024 03:57:17 GMT-04:00\n\nHi,\n\nAttached is request for records and bills of Brooklyn Ballard.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. The client is Brooklyn Ballard, in a motor vehicle accident case dated February 28, 2024.\n\nThis note is a forward of an email regarding Brooklyn Ballard. On October 15, 2024, at 03:57:17 GMT-04:00, Aries Penaflor of Whaley Law Firm forwarded a message to the fax address 5136366729@rcfax.com with the subject line Fwd: Brooklyn Ballard. The From field shows Aries Penaflor (aries@whaleylawfirm.com) and the To field shows 5136366729@rcfax.com. The body of the forward begins with \"Hi,\" and states, \"Attached is request for records and bills of Brooklyn Ballard.\"\n\nThe message ends with two identical signature blocks from Aries Paul Peñaflor of Whaley Law Firm, each listing the phone number (502)365-5788 and the fax number (502)364-9363, with the closing line \"All the best,\".",
+      "valid_at": "2024-10-15T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of records and bills request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of forwarded email/request for records"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "person who forwarded the records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-10-15",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ Spoke to client's mother (Elizabeth). Explained that we are still waiting on Cinci Children's records/bills to make appropriate demand. Also got two new providers - EMS and therapist. Client has been having some PTSD-like issues of late and has been seeing a therapist. Records/bills for both to be requested. \n__Person Making Contact:__ Bryce\n__Date & Time__: October 15 2024",
+      "natural_language": "Initial client contact on October 15, 2024 regarding the Brooklyn-Ballard MVA case (Brooklyn-Ballard-MVA-02-28-2024) was made by Bryce. The caller spoke with Elizabeth, the client’s mother.\n\nDuring the conversation, we explained that we are still waiting on Cinci Children's records/bills to make the appropriate demand. We also learned of two new providers—EMS and a therapist—and records and bills for both will be requested. The client has been having some PTSD-like issues of late and has been seeing a therapist.",
+      "valid_at": "2024-10-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "records/bills awaited to prepare demand"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Bellevue-Dayton Fire/EMS",
+            "relevance": "new provider (EMS) — records/bills to be requested"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "MEBS Counseling",
+            "relevance": "therapist treating client — records/bills to be requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-10-15",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "Brooklyn Ballard is the client in the motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024. The client was contacted today to provide update #cc.",
+      "valid_at": "2024-10-15T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-10-16",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [8597276327@rcfax.com](mailto:8597276327@rcfax.com)\nCc: Brooklyn Ballard - Filevine Project Email Address [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 16 2024 09:39:49 GMT-04:00\n\nAttached is a request for records & bills on our client, Brooklyn Ballard.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. On Wednesday, October 16, 2024, at 9:39:49 AM GMT-04:00, Jessica Bottorff of The Whaley Law Firm sent an email from jessica@whaleylawfirm.com to 8597276327@rcfax.com, with Brooklyn Ballard CC'd to BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com. The message states that attached is a request for records & bills on our client, Brooklyn Ballard. The email ends with “Thanks!” and is signed by The Whaley Law Firm.",
+      "valid_at": "2024-10-16T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of records & bills request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "firm sending the records & bills request"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email sender/attorney initiating the request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-10-17",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nPer ChartSwap on Bellevue/Dayton EMS: \nProvider Note\n10/17/2024 7:11 AM\tWe do not have records for this patient in our database. If you have any questions about why this was rejected, please put a note within this request. DO NOT PUT IN A NEW REQUEST FOR THIS PATIENT. Also, if you have any documents that may help us locate the patient for you please upload them. We look forward to your response.",
+      "natural_language": "This case is Brooklyn-Ballard-MVA-02-28-2024, involving client Brooklyn Ballard.\n\nAccording to ChartSwap information for the Bellevue/Dayton EMS region, the provider note dated October 17, 2024 at 7:11 AM states that there are no records for this patient in their database. The note reads: “We do not have records for this patient in our database. If you have any questions about why this was rejected, please put a note within this request. DO NOT PUT IN A NEW REQUEST FOR THIS PATIENT. Also, if you have any documents that may help us locate the patient for you please upload them. We look forward to your response.”\n\nIn summary, the record indicates no matches on their end, with instructions to add any questions as a note on the current request, not to submit a new request, and to upload any documents that might assist in locating the patient, as they await a response.",
+      "valid_at": "2024-10-17T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client / patient referenced"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Bellevue-Dayton Fire/EMS",
+            "relevance": "provider referenced — ChartSwap notes no records found"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-10-21",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nRequest for records & bills faxed to MEBS Counseling",
+      "natural_language": "Brooklyn Ballard is the client in the Brooklyn-Ballard-MVA-02-28-2024 case. A request for the client's records and bills was faxed to MEBS Counseling.",
+      "valid_at": "2024-10-21T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "MEBS Counseling",
+            "relevance": "recipient of records and bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-10-23",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [8446342520@rcfax.com](mailto:8446342520@rcfax.com)\nCc: Brooklyn Ballard - Filevine Project Email Address [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Oct 23 2024 10:32:00 GMT-04:00",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. The initial client contact is documented as an email on October 23, 2024, from Jessica Bottorff of Whaley Law Firm (jessica@whaleylawfirm.com) to 8446342520@rcfax.com, with Brooklyn Ballard CC’d via the Filevine project email address BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com. The email is timestamped Wednesday, October 23, 2024 at 10:32:00 GMT-04:00.",
+      "valid_at": "2024-10-23T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject/client of the case; CC'd on initial contact email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sender of the initial contact email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "organization of the sender of the initial contact email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-10-23",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nFirst Lien Letter faxed to Anthem Medicaid",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 centers on client Brooklyn Ballard. On February 28, 2024, the first lien letter was faxed to Anthem Medicaid.",
+      "valid_at": "2024-10-23T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-10-23",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n@jbottorff will you request an updated health lien",
+      "natural_language": "Brooklyn Ballard is the client in a motor vehicle accident case dated February 28, 2024, labeled Brooklyn-Ballard-MVA-02-28-2024. The motor vehicle accident occurred on February 28, 2024.\n\nA directive in the file is addressed to @jbottorff, requesting that an updated health lien be obtained: \"@jbottorff will you request an updated health lien.\"",
+      "valid_at": "2024-10-23T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client involved in the motor vehicle accident case"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Health lien",
+            "relevance": "directive to request an updated health lien"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-11-07",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nBrooklyn's mom called for update on Brooklyn's settlement check -she is frustrated it has takenmuch longer than her settlement check. Please advise#cc",
+      "natural_language": "Initial client contact on February 28, 2024, in the Brooklyn-Ballard MVA matter with client Brooklyn Ballard. Brooklyn's mother called to request an update on Brooklyn's settlement check and expressed frustration that it has taken much longer than her settlement check. Please advise.",
+      "valid_at": "2024-11-07T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of contact; settlement check inquiry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2024-11-11",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: authorization form__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Brooklyn Ballard - Filevine Project Email Address [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Nov 11 2024 12:00:05 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Raper, Theresa \nDate: Mon, Nov 11, 2024 at 11:57?AM\nSubject: authorization form\nTo: aries@whaleylawfirm.com \n\nHello,\n\nHere is the form you requested. Once completed please email it back to\nROI@cchmc.org or fax back to 513-636-6729. If you have any questions please\ncall us at 513-636-4217.\n\n*Theresa Raper, *RHIT\n\nTech II\n\nHealth Information Management\n\nOffice: 513-636-4217/ Fax: 513-636-6729\n\n3333 Burnet Avenue MLC 5015,Cincinnati, OH 45229\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. Client: Brooklyn Ballard.\n\nOn November 11, 2024, at 12:00:05 PM Eastern Time, Aries Penaflor of Whaley Law Firm forwarded an email titled “authorization form” to Brooklyn Ballard’s Filevine project email address BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com. The forward was sent from Aries Penaflor to the Filevine project email, and the original message being forwarded was from Theresa Raper.\n\nThe forwarded message originated from Theresa Raper, dated November 11, 2024, at 11:57 AM (time shown as 11:57?AM). The subject of the email was “authorization form.” In the body, Theresa wrote: “Hello, Here is the form you requested. Once completed please email it back to ROI@cchmc.org or fax back to 513-636-6729. If you have any questions please call us at 513-636-4217.” The message was signed with Theresa Raper’s details: *Theresa Raper, *RHIT, Tech II, Health Information Management, Office: 513-636-4217/ Fax: 513-636-6729, 3333 Burnet Avenue MLC 5015, Cincinnati, OH 45229.\n\nThe forwarded message concluded with a closing line: “All the best, Aries Paul Peñaflor, Whaley Law Firm, Ph: (502)365-5788, Fax: (502)364-9363.”",
+      "valid_at": "2024-11-11T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client and recipient of forwarded authorization"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "sender of the authorization form / records provider"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm forwarding the authorization to the case project"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-11",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ Called Brooklyn's mom, asking for update on case. Advised we are still waiting for the records from Cincinnati Children's Hospital.\nShe said Brooklyn was not seen from Cincinnati Children's Hosp and was not taken by ambulance. Only seen by PCP at St. Elizabeth's\nand also has therapy for PTSD. Mom wants to settle the case already. \n__Person Making Contact:__ Aries\n__Date & Time__: November 11 2024",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. Initial client contact on November 11, 2024 was made by Aries to Brooklyn Ballard's mother to request an update on the case.\n\nThe mother advised that we are still waiting for records from Cincinnati Children's Hospital. She stated that Brooklyn was not seen by Cincinnati Children's Hospital and was not taken by ambulance. Brooklyn has only been seen by a primary care physician at St. Elizabeth's, and she also has therapy for PTSD. The mother expressed a desire to settle the case now.",
+      "valid_at": "2024-11-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of case; primary person discussed"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "records requested / pending"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Elizabeth Physicians - Crittenden",
+            "relevance": "primary care provider mentioned"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "MEBS Counseling",
+            "relevance": "therapy provider for PTSD mentioned"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-11-11",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "Brooklyn Ballard is the client on case Brooklyn-Ballard-MVA-02-28-2024, a motor vehicle accident case dated February 28, 2024. The client was contacted today to provide an update, with update code #cc.",
+      "valid_at": "2024-11-11T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "contacted; subject of update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-11-11",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nMs Ballard called re: her minor's case (Brooklyn)#cc",
+      "natural_language": "Initial client contact on February 28, 2024, with Ms. Brooklyn Ballard regarding her minor child, Brooklyn, and a motor vehicle accident case. \n\nThe case is documented as Brooklyn-Ballard-MVA-02-28-2024, and the contact note is marked with the tag \"#cc.\"",
+      "valid_at": "2024-11-11T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "initial client contact"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn (minor child)",
+            "relevance": "subject of case / minor injured party"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-11",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nA call from Aries Penaflor was logged at 2024-11-11 18:55:31.371000+00:00 . #outboundcall\n\nCaller Info: 8598352573 \n\nCaller ID: 859-835-2573 \n\nCaller Name: MEBS Counseling \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "An outbound call associated with the Brooklyn-Ballard-MVA-02-28-2024 case was logged on November 11, 2024 at 18:55:31.371000+00:00 UTC. The call originated from Aries Penaflor, with the caller name listed as MEBS Counseling and the phone number 859-835-2573 (Caller Info: 8598352573; Caller ID: 859-835-2573). No email address was provided for the caller. A link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2024-11-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "MEBS Counseling",
+            "relevance": "caller/origin of call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-11-19",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [8597276327@rcfax.com](mailto:8597276327@rcfax.com)\nCc: Brooklyn Ballard - Filevine Project Email Address [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Nov 19 2024 12:13:32 GMT-05:00\n\nWe received medical records for our client, Brooklyn Ballard, but we also\nneed her bills. If you could send this as soon as possible.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. Client: Brooklyn Ballard.\n\nOn Tuesday, November 19, 2024, at 12:13:32 PM GMT-05:00, Jessica Bottorff from The Whaley Law Firm sent an email regarding Brooklyn Ballard. The message was addressed from Jessica Bottorff to 8597276327@rcfax.com, with Brooklyn Ballard cc’d at the Filevine project email BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com.\n\nIn the body of the email, Bottorff noted that medical records for our client, Brooklyn Ballard, had been received, but that her medical bills were still needed. She requested that the bills be sent as soon as possible and closed with thanks.",
+      "valid_at": "2024-11-19T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of the email / client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-19",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nA call from Aries Penaflor was logged at 2024-11-19 18:22:00.071000+00:00 . #outboundcall\n\nCaller Info: 8598352573 \n\nCaller ID: 859-835-2573 \n\nCaller Name: MEBS Counseling \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. An outbound call from Aries Penaflor was logged on November 19, 2024, at 18:22:00.071000 UTC.\n\nCaller information lists the phone number 8598352573 and the caller ID 859-835-2573. The caller is MEBS Counseling. No email address is provided. A link to the Filevine contact is available as [filevine-link].",
+      "valid_at": "2024-11-19T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "MEBS Counseling",
+            "relevance": "caller / contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-11-20",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n@bryce3 we only have one date of service that is related to the MVA and it's a $213 bill. Doesn't meet threshold. Thoughts?",
+      "natural_language": "The case is Brooklyn-Ballard MVA, dated February 28, 2024, involving client Brooklyn Ballard.\n\nIn a note addressed to @bryce3, the writer states that there is only one date of service related to the motor vehicle accident and that the bill for that service is $213. This amount does not meet the threshold, and the writer asks for Bryce’s thoughts.",
+      "valid_at": "2024-11-20T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of the note / client involved in the MVA"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-11-25",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nBrooklyn's mom called for update on Brooklynn's case - transferred to Aries. Please give her a return call. Thanks#cc",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involving client Brooklyn Ballard. Brooklyn's mom called for an update on Brooklynn's case—the case has been transferred to Aries. Please give her a return call. Thanks#cc",
+      "valid_at": "2024-11-25T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case subject and person whose guardian called for an update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-26",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nA call from Aries Penaflor was logged at 2024-11-26 21:03:43.732000+00:00 . #outboundcall\n\nCaller Info: 8598352573 \n\nCaller ID: 859-835-2573 \n\nCaller Name: MEBS Counseling \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This note concerns the Brooklyn-Ballard-MVA-02-28-2024 case for client Brooklyn Ballard.\n\nAn outbound call from Aries Penaflor was logged on November 26, 2024 at 21:03:43.732000 UTC. The call used Caller Info 8598352573 and Caller ID 859-835-2573. The Caller Name is MEBS Counseling, with no email address on file. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2024-11-26T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "MEBS Counseling",
+            "relevance": "caller/contact on outbound call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-11-27",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n@aries1 follow up on ER records. Let me know when we get them. Need to review to locate the EMS provider. Also get updated health lien asap",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard. On February 28, 2024, Brooklyn Ballard was involved in a motor vehicle accident.\n\nThe notes direct Aries1 to follow up on emergency room records and to inform when they are received. The records should be reviewed to locate the EMS provider, and an updated health lien should be obtained as soon as possible.",
+      "valid_at": "2024-11-27T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of case and involved in motor vehicle accident"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Bellevue-Dayton Fire/EMS",
+            "relevance": "EMS provider to locate in emergency room records / follow-up"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-11-27",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nA call from Aries Penaflor was logged at 2024-11-27 20:37:11.866000+00:00 . #outboundcall\n\nCaller Info: 8598352573 \n\nCaller ID: 859-835-2573 \n\nCaller Name: MEBS Counseling \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024, for client Brooklyn Ballard.\n\nAn outbound call from Aries Penaflor was logged on November 27, 2024 at 20:37:11.866000+00:00. Caller Info: 8598352573; Caller ID: 859-835-2573. Caller Name: MEBS Counseling. Caller Email: (not provided). Link to Filevine Contact: [filevine-link].",
+      "valid_at": "2024-11-27T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "MEBS Counseling",
+            "relevance": "caller/contact"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-12-02",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n@aries1 Please follow up on the bills from MEBS Counseling",
+      "natural_language": "Brooklyn Ballard is the client in the motor vehicle accident matter Brooklyn-Ballard-MVA-02-28-2024, dated February 28, 2024. \n\nThe case file includes a directive to follow up on the bills from MEBS Counseling, assigned to aries1.",
+      "valid_at": "2024-12-02T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "MEBS Counseling",
+            "relevance": "billing follow-up"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-11",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ Spoke with Elizabeth and provide update. \n__Person Making Contact:__ Aries\n__Date & Time__: December 11 2024",
+      "natural_language": "Initial client contact on December 11, 2024 for the Brooklyn-Ballard-MVA-02-28-2024 case involving client Brooklyn Ballard. Aries, the person making contact, spoke with Elizabeth and provided an update.",
+      "valid_at": "2024-12-11T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted / subject of update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2024-12-11",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "Today, the client Brooklyn Ballard was contacted to provide update #cc on the motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024.",
+      "valid_at": "2024-12-11T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "contacted to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-12-19",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nMs Ballard called today - re: her daughter Brooklyn's case - spoke with JC - said Demand to go out soon. I am calling client back #cc",
+      "natural_language": "Initial client contact on February 28, 2024, with Brooklyn Ballard regarding her daughter Brooklyn's motor vehicle accident case. Ms. Ballard stated that she spoke today with JC and that a demand to go out soon. I am calling the client back.",
+      "valid_at": "2024-12-19T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "contacted regarding her daughter's motor vehicle accident case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Faye Gaither - 2024-12-19",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nMs Ballard called today - re: her daughter Brooklyn's case - spoke with JC - said Demand to go out soon. I am calling client back #cc",
+      "natural_language": "Initial client contact on February 28, 2024, with Brooklyn Ballard regarding her daughter Brooklyn's motor vehicle accident case. Ms. Ballard spoke with JC and indicated that a demand would be sent out soon. I am calling the client back.",
+      "valid_at": "2024-12-19T00:00:00",
+      "author": "Faye Gaither",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "initial contact; discussed upcoming demand"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-13",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "Brooklyn Ballard is the client in case Brooklyn-Ballard-MVA-02-28-2024, a motor vehicle accident matter. The client was contacted today to provide update #cc.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-13",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ Spoke with mom who confirmed Brooklyn has been to the cincy children's hospital. We need those records/bills from them asap to send demand \n__Person Making Contact:__ Justin\n__Date & Time__: January 13 2025",
+      "natural_language": "Initial client contact on January 13, 2025 regarding the motor vehicle accident Brooklyn-Ballard-MVA-02-28-2024 with Brooklyn Ballard. The contact was made by Justin. He spoke with Brooklyn Ballard’s mother, who confirmed that Brooklyn has been to the cincy children's hospital. We need the records and bills from the cincy children's hospital as soon as possible so we can send a demand.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client/subject of contact"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "treatment provider; records and bills requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-01-20",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: Authorization Form__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Justin Chumbley [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nDate: Mon Jan 20 2025 09:02:35 GMT-05:00\n\nThe follow up for Cincinnati Hospital.\n\n---------- Forwarded message ---------\nFrom: Houston, Betty \nDate: Tue, Jan 14, 2025 at 6:24?AM\nSubject: RE: Authorization Form\nTo: Williams, Sasha , ROI \nCc: Aries Penaflor \n\nHello,\n\nThis notification is confirmation that your request for records has been\nreceived and will now be submitted for processing. Please note that your\nrequest will be processed in a timely manner. For questions visit our\nwebsite, Obtain Medical Records | Patient Resources\n,\nor call us at 513-636-4217, Option 1. We do not respond to questions or\ngive status checks through email.\n\n*Did you know you can now request medical records via Docusign?*\n\n*The patient/parent/legal guardian can complete the Authorization Form and\nsubmit directly to us by using the link below.*\n\nCCHMC Medical Records Request\n\n**Under the HIPAA Privacy Rule, a covered entity must act on an\nindividual's request for access no later than 30 calendar days after\nreceipt of the request. If additional time is needed to complete an\nindividual’s request, an extension notice will be provided per HIPAA\nPrivacy Rule requirements and timeframe allotted. *\n\nThank you,\n\nRelease of Information- Health Information Management Department\n\nCincinnati Children's Hospital Medical Center\n\n3333 Burnet Avenue, MLC 5015, Cincinnati, OH 45229\n\nOffice: 513.636.4217 Fax: 513.636.6729\n\n*From:* Williams, Sasha \n*Sent:* Monday, January 13, 2025 4:18 PM\n*To:* ROI \n*Cc:* Aries Penaflor \n*Subject:* Authorization Form\n\nSasha Williams\n\nTech III Chart Completion\n\nHealth Information Management\n\nOffice: 513-636-4217 / Fax 513-636-6729\n\n3333 Burnet Ave MLC 5015, Cincinnati, OH 45229\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard. On January 20, 2025, at 09:02:35 AM (GMT-05:00), Aries Penaflor of Whaley Law Firm forwarded an Authorization Form to Justin Chumbley at Whaley Law Firm, noting this was the follow-up for Cincinnati Hospital.\n\nThe forwarded thread includes an earlier exchange. On January 13, 2025 at 4:18 PM, Sasha Williams, Tech III Chart Completion in Health Information Management, Cincinnati Children’s Hospital Medical Center (CCHMC), sent an email to ROI regarding the Authorization Form. The message listed Sasha Williams’s contact details: Office 513-636-4217 / Fax 513-636-6729, 3333 Burnet Ave MLC 5015, Cincinnati, OH 45229. The email concluded with a closing line signed “All the best, Aries Paul Peñaflor, Whaley Law Firm” and included Aries Penaflor’s office contact information: Ph: (502)365-5788, Fax: (502)364-9363.\n\nBetty Houston replied on January 14, 2025 at 6:24?AM to Sasha Williams and ROI (cc: Aries Penaflor), confirming that the request for records had been received and would be submitted for processing. The message stated that the request would be processed in a timely manner and provided directions for questions: visit the hospital’s website at Obtain Medical Records | Patient Resources or call 513-636-4217, Option 1. The reply noted that the hospital does not respond to questions or status checks via email. It added that patients, parents, or legal guardians can now request medical records via DocuSign, and that the Authorization Form can be completed and submitted directly to the hospital using the link labeled “CCHMC Medical Records Request.”\n\nA HIPAA Privacy Rule reminder was included: under the Privacy Rule, a covered entity must act on an individual’s request for access no later than 30 calendar days after receipt of the request, and if additional time is needed to complete the request, an extension notice will be provided per HIPAA requirements and the timeframe allotted. The message concluded with thanks and the hospital’s Release of Information contact details: Cincinnati Children’s Hospital Medical Center, Health Information Management Department, Release of Information, 3333 Burnet Avenue, MLC 5015, Cincinnati, OH 45229; Office: 513.636.4217; Fax: 513.636.6729.\n\nThe thread also shows the original sender as Sasha Williams, and the communications include the ongoing involvement of Aries Penaflor of the Whaley Law Firm, whose contact information is listed as above.",
+      "valid_at": "2025-01-20T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "respondent to medical records request / source of ROI communication"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sent/forwarded Authorization Form and handled follow-up"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "Whaley Law Firm attorney who forwarded the Authorization Form and managed follow-up"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-20",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n@aries1 Follow up on Cincy hospital records asap. Let me know",
+      "natural_language": "The Brooklyn-Ballard-MVA-02-28-2024 case concerns client Brooklyn Ballard and relates to a motor vehicle accident.\n\nAn internal note directs @aries1 to follow up on Cincy hospital records ASAP and to let me know the results.",
+      "valid_at": "2025-01-20T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "source of hospital records to follow up"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-22",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: Brooklyn Ballard #137350927__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Brooklyn Ballard - Filevine Project Email Address [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Jan 22 2025 02:45:42 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Gant, Greg \nDate: Wed, Jan 22, 2025 at 2:18?PM\nSubject: Brooklyn Ballard #137350927\nTo: jessa@whaleylawfirm.com \n\nFile closed 0 paid\n\n*Greg Gant*\n\nSubrogation Analyst, Carelon\n\nP.O. Box 659940, San Antonio, TX 78265-9939\n\nO: 502-889-3254 | F: 884-634-2520\n\nGreg.Gant@carelon.com\n\n*CONFIDENTIALITY NOTICE:* This e-mail message, including any attachments, is\nfor the sole use of the intended recipient(s) and may contain confidential\nand privileged information or may otherwise be protected by law. Any\nunauthorized review, use, disclosure or distribution is prohibited. If you\nare not the intended recipient, please contact the sender by reply e-mail\nand destroy all copies of the original message and any attachment thereto.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. Client: Brooklyn Ballard.\n\nOn January 22, 2025, at 02:45:42 GMT-05:00, Jessa Galosmo of Whaley Law Firm forwarded to Brooklyn Ballard’s Filevine project email address a message labeled “Fwd: Brooklyn Ballard #137350927.” The forwarded item was a message from Greg Gant, the Subrogation Analyst for Carelon, with the subject “Brooklyn Ballard #137350927.” The body of the forwarded email indicated “File closed 0 paid.” The message was sent to Jessa at jessa@whaleylawfirm.com, in care of Brooklyn Ballard’s Filevine project email address BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com, and it carried Greg Gant’s contact information: Carelon, P.O. Box 659940, San Antonio, TX 78265-9939; Office: 502-889-3254; Fax: 884-634-2520; Greg.Gant@carelon.com. The message also included a confidentiality notice stating that the e-mail message, including any attachments, is for the sole use of the intended recipient(s) and may contain confidential and privileged information or may otherwise be protected by law; any unauthorized review, use, disclosure or distribution is prohibited; if you are not the intended recipient, you should contact the sender by reply e-mail and destroy all copies of the original message and any attachments.\n\nThe forwarding message is part of the chain from Greg Gant to Jessa, and it is followed by Jessa’s signature and firm contact details: “All the best, Jessa Galosmo,” Whaley Law Firm, with Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-01-22T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client/recipient of forwarded message"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "forwarder/attorney who sent the message to client's Filevine project"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "employer of attorney who forwarded the message"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Greg Gant",
+            "relevance": "sender of original message (Subrogation Analyst)"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Carelon Subrogation",
+            "relevance": "organization for which Greg Gant works and sender of the original message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nThis case appears to be about Brooklyn Ballard, who was involved in a motor vehicle accident and received medical treatment, including care at Cincinnati Children's Hospital. The law firm is working on gathering medical records and handling potential health liens.\nThe most recent activity involves receiving confirmation that a file was closed with $0 paid from Carelon, a subrogation analyst, on January 22, 2025. (See details)\nA potential risk is the delay in obtaining medical records from Cincinnati Children's Hospital, which could slow down the process of sending a demand. The firm has been following up on this since at least January 13, 2025. (See details), (See details)\nThe next steps should include following up on the medical records request from Cincinnati Children's Hospital and reviewing the invoice for medical records that was received on January 22, 2025.",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024 relates to client Brooklyn Ballard, who was involved in a motor vehicle accident and received medical treatment, including care at Cincinnati Children’s Hospital. The law firm is actively gathering medical records and handling potential health liens.\n\nThe most recent activity shows that a file was closed with $0 paid from Carelon, a subrogation analyst, on January 22, 2025. (See details)\n\nA potential risk is a delay in obtaining medical records from Cincinnati Children’s Hospital, which could slow down the process of sending a demand. The firm has been following up on this since at least January 13, 2025. (See details), (See details)\n\nThe next steps should include following up on the medical records request from Cincinnati Children’s Hospital and reviewing the invoice for medical records that was received on January 22, 2025.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "primary client involved in MVA"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "provider with outstanding medical records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-01-27",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: Medical records request-Brooklyn Ballard__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Brooklyn Ballard - Filevine Project Email Address [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Jan 22 2025 12:46:45 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Clark, Heather (She/Her/Hers) \nDate: Wed, Jan 22, 2025 at 12:05?PM\nSubject: Medical records request-Brooklyn Ballard\nTo: aries@whaleylawfirm.com \n\nPlease see attached invoice for medical records regarding Brooklyn Ballard.\n\n*Heather Clark*\n\nHealth Information Management\n\nOffice: 513-636-4217 / Fax 513-636-6729\n\n3333 Burnet Ave MLC 5015, Cincinnati, OH 45229\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard, who was involved in a motor vehicle accident on February 28, 2024.\n\nOn January 22, 2025, at 12:46:45 PM (GMT-05:00), a forward was sent from Aries Penaflor of Whaley Law Firm to Brooklyn Ballard’s Filevine project email address, BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com, with the subject line “Fwd: Medical records request-Brooklyn Ballard.” The forwarded message contains an email from Heather Clark of Health Information Management, dated January 22, 2025 at approximately 12:05 PM, addressed to aries@whaleylawfirm.com, with the subject “Medical records request-Brooklyn Ballard.” Heather Clark writes, “Please see attached invoice for medical records regarding Brooklyn Ballard.” Her signature includes her title and contact information: Health Information Management, Office: 513-636-4217, Fax: 513-636-6729, located at 3333 Burnet Ave MLC 5015, Cincinnati, OH 45229.\n\nThe forwarded message is signed off by Heather Clark. The forwarding email from Aries Paul Peñaflor at Whaley Law Firm concludes with a standard closing, “All the best,” followed by Aries’s own contact details: Whaley Law Firm, Ph: (502) 365-5788, Fax: (502) 364-9363.",
+      "valid_at": "2025-01-27T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client involved in the MVA and recipient of forwarded records email"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "source of medical records request/invoice (Health Information Management at 3333 Burnet Ave)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "originator of the forwarded email to the client's Filevine project"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "forwarded the medical records request to the client's Filevine project email"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "department that sent the medical records request and invoice (Heather Clark)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-27",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Invoice__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nCc: [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 27 2025 08:55:58 GMT-05:00\n\nPlease process the attached invoice.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "The case is Brooklyn-Ballard-MVA-02-28-2024, with client Brooklyn Ballard.\n\nAn invoice was sent from jessica@whaleylawfirm.com on behalf of The Whaley Law Firm to 5136366729@rcfax.com, with a cc to BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com, on Monday, January 27, 2025 at 08:55:58 GMT-05:00.\n\nThe body of the message requests, “Please process the attached invoice,” and it ends with “Thanks!” along with the signature of The Whaley Law Firm.",
+      "valid_at": "2025-01-27T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client and cc recipient"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of invoice / signed message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-11",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Fwd: Brooklyn Ballard #137350927__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Aries Penaflor [Aries@whaleylawfirm.com](mailto:Aries@whaleylawfirm.com)\nCc: Justin Chumbley [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nDate: Thu Jan 30 2025 02:41:38 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Gant, Greg \nDate: Wed, Jan 22, 2025 at 2:18?PM\nSubject: Brooklyn Ballard #137350927\nTo: jessa@whaleylawfirm.com \n\nFile closed 0 paid\n\n*Greg Gant*\n\nSubrogation Analyst, Carelon\n\nP.O. Box 659940, San Antonio, TX 78265-9939\n\nO: 502-889-3254 | F: 884-634-2520\n\nGreg.Gant@carelon.com\n\n*CONFIDENTIALITY NOTICE:* This e-mail message, including any attachments, is\nfor the sole use of the intended recipient(s) and may contain confidential\nand privileged information or may otherwise be protected by law. Any\nunauthorized review, use, disclosure or distribution is prohibited. If you\nare not the intended recipient, please contact the sender by reply e-mail\nand destroy all copies of the original message and any attachment thereto.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Brooklyn-Ballard-MVA-02-28-2024. The client is Brooklyn Ballard.\n\nThe case file includes a forwarded email thread labeled “Fwd: Brooklyn Ballard #137350927.” On January 30, 2025 at 02:41:38 GMT-05:00, Jessa Galosmo of Whaley Law Firm forwarded this message to Aries Penaflor (cc’ing Justin Chumbley). The forwarded subject line was “Forward: Brooklyn Ballard #137350927.”\n\nThe forwarded content contains the original message from Greg Gant, dated Wednesday, January 22, 2025 at 2:18?PM, with the subject “Brooklyn Ballard #137350927” and sent to jessa@whaleylawfirm.com. The body of Greg’s email states “File closed 0 paid.” Greg Gant is identified as a Subrogation Analyst for Carelon, located at P.O. Box 659940, San Antonio, TX 78265-9939. His office phone number is 502-889-3254, and his fax number is 884-634-2520; his email address is Greg.Gant@carelon.com.\n\nThe message includes a confidentiality notice indicating that it is for the sole use of the intended recipient(s) and may contain confidential or privileged information; unauthorized review, use, disclosure, or distribution is prohibited. If you are not the intended recipient, you are instructed to contact the sender by reply e-mail and destroy all copies of the original message and any attachments.\n\nThe forwarded correspondence concludes with Jessa Galosmo’s signature from Whaley Law Firm, including the contact details: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-02-11T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "forwarding law firm / sender of forwarded message"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Carelon Subrogation",
+            "relevance": "originator of original email (subrogation correspondence)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-02-18",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard #137350927__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Gant, Greg [Greg.Gant@carelon.com](mailto:Greg.Gant@carelon.com)\nDate: Tue Feb 18 2025 03:51:55 GMT-05:00\n\nDear Greg,\n\nI understand that no claim has been paid under this claim number and that\nthe file is closed. Would you please provide written confirmation of this\ninformation?\n\nThank you for your time.\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Brooklyn Ballard, client #137350927, is associated with the motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024. On February 18, 2025, at 3:51:55 a.m. (GMT-05:00), Aries Penaflor of the Whaley Law Firm emailed Greg Gant of Carelon regarding this claim. The message states that no claim has been paid under this claim number and that the file is closed, and it requests written confirmation of this information.\n\nThe email was sent from Aries Penaflor (aries@whaleylawfirm.com) to Greg Gant (greg.gant@carelon.com). It began with “Dear Greg” and asked for written confirmation that no payment had been made on the claim and that the file is indeed closed. It is signed “All the best, Aries Paul Peñaflor” from the Whaley Law Firm, and includes the firm’s contact details: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2025-02-18T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of the case/email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "author/sender of the email"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Carelon Subrogation",
+            "relevance": "recipient organization contacted about the claim"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aries - 2025-03-14",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard #137350927__\nFrom: Aries Penaflor [aries@whaleylawfirm.com](mailto:aries@whaleylawfirm.com)\nTo: Gant, Greg [Greg.Gant@carelon.com](mailto:Greg.Gant@carelon.com)\nDate: Fri Mar 14 2025 08:39:16 GMT-04:00\n\nHi Greg.\n\nDo you have an update about the written confirmation for this claim?\n\n-- \nAll the best,\nAries Paul Peñaflor\nWhaley Law Firm\nPh: (502)365-5788\nFax: (502)364-9363",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard, identified in the record as Brooklyn Ballard #137350927.\n\nOn Friday, March 14, 2025 at 08:39:16 GMT-04:00, an email was sent from Aries Penaflor of Whaley Law Firm (aries@whaleylawfirm.com) to Greg Gant at Carelon (Greg.Gant@carelon.com) regarding this claim. The message begins with “Hi Greg.” and asks, “Do you have an update about the written confirmation for this claim?” The email is signed “All the best, Aries Paul Peñaflor,” with Whaley Law Firm contact details provided: Ph: (502)365-5788 and Fax: (502)364-9363.",
+      "valid_at": "2025-03-14T00:00:00",
+      "author": "Aries",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of the case/claim"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aries Penaflor",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Carelon Subrogation",
+            "relevance": "email recipient's organization"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-03-21",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n@aries1 @jbottorff Please follow up on this health lien as soon as possible",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard and is associated with a motor vehicle accident, dated February 28, 2024.\n\nThere is an instruction to follow up on this health lien as soon as possible, directed to @aries1 and @jbottorff.",
+      "valid_at": "2025-03-21T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-23",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nA missed call for Fax was logged at 2025-04-23 17:17:05.330000+00:00 . #missedcall\n\nCaller Info: 8594795298 \n\nCaller ID: (859) 479-5298 \n\nCaller Name: Brooklyn Ballard \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:",
+      "natural_language": "The case Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard. On April 23, 2025, at 17:17:05.330000+00:00, a missed fax call was logged. The caller was identified with the number 859-479-5298, and the caller ID displayed as (859) 479-5298. The caller name is Brooklyn Ballard, and no email address is recorded in the file. A Filevine contact link is available: [filevine-link]. The Voicemail Transcription field is present, but no transcription text is provided in the record.",
+      "valid_at": "2025-04-23T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client and caller"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-14",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__CLIENT CONTACT__\n__Details:__ updated client, she just called Cincy Hospital and provided a verbal release of records to our office. will need to resend request \n__Person Making Contact:__ Justin\n__Date & Time__: May 14 2025",
+      "natural_language": "Initial client contact on May 14, 2025, regarding the motor vehicle accident case Brooklyn-Ballard-MVA-02-28-2024 with client Brooklyn Ballard. The client updated that she had just called Cincy Hospital and provided a verbal release of records to our office, and we will need to resend the request. The contact was made by Justin.",
+      "valid_at": "2025-05-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client who contacted office / subject of the case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "provider contacted by client; records release given; recipient of records request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-05-14",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard. The client was contacted today to provide an update, noted as update #cc.",
+      "valid_at": "2025-05-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-05-14",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nSpoke with Cincy hospital confirmed invoice has been paid, r/b should be emailed to me soon",
+      "natural_language": "On February 28, 2024, in the Brooklyn-Ballard-MVA case, the client is Brooklyn Ballard. I spoke with Cincy hospital, which confirmed that the invoice has been paid, and the r/b should be emailed to me soon.",
+      "valid_at": "2025-05-14T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "confirmed invoice paid and will email r/b"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-05-14",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nClient Contacted today to give update #cc",
+      "natural_language": "In the Brooklyn-Ballard-MVA-02-28-2024 case, the client Brooklyn Ballard was contacted today to provide an update, designated as update #cc.",
+      "valid_at": "2025-05-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "contacted to provide update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-17",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\n__Brooklyn Ballard__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Brooklyn Ballard - Filevine Project Email Address [BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com](mailto:BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Jul 17 2025 02:24:42 GMT-04:00\n\nLooks like this is ready for demand\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard. On Thursday, July 17, 2025, at 2:24:42 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley (Justin@whaleylawfirm.com) and to Brooklyn Ballard’s Filevine project email address BrooklynBallardMVAZ4485893@louisvilleaccidentlawyer.filevineapp.com. The body of the email stated, “Looks like this is ready for demand.” The message was signed by Aaron Whaley of the Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, and contactable at 502-583-4022.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case client/recipient of project email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron G. Whaley",
+            "relevance": "sender and signer of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "recipient of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm of the sender/representing firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nFinal negotiations and case closure documentation.",
+      "natural_language": "The Brooklyn-Ballard-MVA-02-28-2024 case involves client Brooklyn Ballard and stems from a motor vehicle accident dated February 28, 2024.\n\nThis entry documents that the matter has reached final negotiations and that the case is closed, with all case-closure documentation prepared.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of case; client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nInsurance claim documentation and settlement preparation.",
+      "natural_language": "This case, Brooklyn-Ballard-MVA-02-28-2024, involves client Brooklyn Ballard.\n\nThe matter concerns insurance claim documentation and settlement preparation related to a motor vehicle accident.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case subject / client involved"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nCase status update and medical treatment progress evaluation.",
+      "natural_language": "Brooklyn-Ballard-MVA-02-28-2024 concerns the motor vehicle accident involving the client, Brooklyn Ballard. This note provides a case status update and an evaluation of the progress of medical treatment to date.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of case / injured party"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nInsurance negotiations and liability determination progress.",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard and concerns a motor vehicle accident.\n\nThe current status notes that insurance negotiations are in progress and that liability determination is underway.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "client involved in motor vehicle accident / subject of the case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nMedical records compilation and treatment plan assessment.",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 concerns client Brooklyn Ballard.\n\nThe documented scope of work includes medical records compilation and a treatment plan assessment.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Brooklyn-Ballard-MVA-02-28-2024\nClient: Brooklyn Ballard\n\nMotor vehicle accident case analysis for February 28, 2024 incident.",
+      "natural_language": "Case Brooklyn-Ballard-MVA-02-28-2024 involves client Brooklyn Ballard and concerns a motor vehicle accident that occurred on February 28, 2024.\n\nThis note presents a concise motor vehicle accident case analysis of that incident as it relates to Brooklyn Ballard.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Brooklyn Ballard",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

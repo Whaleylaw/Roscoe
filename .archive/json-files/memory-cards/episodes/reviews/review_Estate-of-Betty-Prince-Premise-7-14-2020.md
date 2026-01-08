@@ -1,0 +1,163 @@
+# Relationship Review: Estate-of-Betty-Prince-Premise-7-14-2020
+
+**Total Episodes:** 355
+
+**Total Proposed Relationships:** 1353
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+### Medical Providers (5)
+- Diagnostic Imaging Alliance of London (radiology)
+- Imaging
+- Kindred at Home
+- Norton Hospital (hospital)
+- Southern Emergency Medical Specialists
+
+### Insurance Claims (1)
+- **PIPClaim**: None
+
+### Liens (1)
+- Humana ($5,887.97)
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### Attorney (25 consolidated)
+- [ ] Aaron Whaley, Esquire — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] Andrea Higgins, Esq. — *✓ MATCHES: Andrea Higgins (from attorneys)*
+- [ ] Betsy R. Catron — *✓ MATCHES: Betsy R. Catron*
+- [ ] Blake Anthony Gerstner — *✓ MATCHES: Blake Anthony Gerstner (from attorneys)*
+- [ ] Bobby L. Whitmer — *✓ MATCHES: Bobby L. Whitmer (from attorneys)*
+- [ ] Bryce (Whaley Law Firm) — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+- [ ] Bryce W. Koon, Esq. — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Attorney)*
+- [ ] Celia Hibben — *IGNORED - attorney name only*
+- [ ] Chibben — *IGNORED - name fragment*
+- [ ] Donna Jones — *IGNORED - nurse, not attorney*
+- [ ] Joel Franklin — *✓ MATCHES: Joel A. Franklin (from attorneys)*
+- [ ] Joseph M. Effinger, Esq. — *✓ MATCHES: Joseph M. Effinger*
+- [ ] Matthew A. Piekarski — *✓ MATCHES: Matthew A. Piekarski*
+- [ ] Michael J. Austin — *✓ MATCHES: Michael J. Austin*
+- [ ] Mr. Effinger — *✓ MATCHES: Joseph M. Effinger*
+- [ ] Mr. Nafziger — *✓ MATCHES: Ryan Nafziger*
+- [ ] Mr. Nafziger (rnafziger@ppoalaw.com) — *✓ MATCHES: Ryan Nafziger*
+- [ ] Ryan D. Nafziger, Esq. — *✓ MATCHES: Ryan Nafziger*
+- [ ] Sarena — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Sarena M. Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Sarena Whaley — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] Stuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Attorney)*
+- [ ] agwhaley — *✓ MATCHES: Aaron G. Whaley (WHALEY ATTORNEY, not Attorney)*
+- [ ] jeffinger@ppoalaw.com — *IGNORED - email address*
+- [ ] unspecified lawyer — *IGNORED - generic term*
+
+### BIClaim (3 consolidated)
+- [ ] 21-CI-003798 — *IGNORED - case number*
+- [ ] Bodily injury claim — *IGNORED - generic term*
+- [ ] Estate-of-Betty-Prince-Premise-7-14-2020 — *IGNORED - case name*
+
+### Client (9 consolidated)
+- [ ] Betty Prince — *✓ MATCHES: Betty Prince (from clients)*
+- [ ] Betty Prince (Estate of Betty Prince) — *✓ MATCHES: Betty Prince (from clients)*
+- [ ] Bryce Koon — *✓ MATCHES: Bryce Koon (WHALEY ATTORNEY, not Client)*
+- [ ] Estate of Betty Prince — *✓ MATCHES: Betty Prince (from clients)*
+- [ ] Estate of Betty Prince - client — *✓ MATCHES: Betty Prince (from clients)*
+- [ ] LVM — *IGNORED - abbreviation only*
+- [ ] Robert Finance — *✓ MATCHES: Robert Prince*
+- [ ] Robert Prince — *✓ MATCHES: Robert Prince*
+- [ ] Sarena — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not Client)*
+
+### Court (13 consolidated)
+- [ ] Court — *IGNORED - generic term*
+- [ ] Docket 21-CI-003798 — *IGNORED - case number*
+- [ ] Jefferson (21-CI-003798) — *✓ MATCHES: Jefferson County Circuit Court, Division I*
+- [ ] Jefferson Circuit (CIRCUIT) — *✓ MATCHES: Jefferson County Circuit Court, Division I*
+- [ ] Jefferson County — *✓ MATCHES: Jefferson County Circuit Court, Division I*
+- [ ] Jefferson County (Jefferson 21-CI-003798) — *✓ MATCHES: Jefferson County Circuit Court, Division I*
+- [ ] Jefferson County Circuit Court — *✓ MATCHES: Jefferson County Circuit Court, Division I*
+- [ ] Judge Haner — *✓ MATCHES: Hon. Eric Haner (from circuit_judges)*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Court of Justice (eFiling system) — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Trimble District Court — *IGNORED - different court*
+- [ ] Unspecified court — *IGNORED - generic term*
+- [ ] motion hour on the MTC — *IGNORED - hearing reference*
+
+### Defendant (5 consolidated)
+- [ ] Donna Jones — *IGNORED - nurse, not defendant*
+- [ ] NORTON HOSPITALS, INC. — *✓ MATCHES: Norton Hospital (from defendants)*
+- [ ] Norton — *✓ MATCHES: Norton Hospital (from defendants)*
+- [ ] Norton Healthcare Brain Tumor Center — *✓ MATCHES: Norton Hospital (from defendants)*
+- [ ] Norton Hospital — *✓ MATCHES: Norton Hospital (from defendants)*
+
+### Insurer (1 consolidated)
+- [ ] Humana — *✓ MATCHES: Humana (from lienholders)*
+
+### LawFirm (8 consolidated)
+- [ ] AGW — *IGNORED - abbreviation only*
+- [ ] PPOA — *✓ MATCHES: Phillips, Parker, Orberson & Arnett, PLC*
+- [ ] PPOA Law — *✓ MATCHES: Phillips, Parker, Orberson & Arnett, PLC*
+- [ ] PPOA law offices — *✓ MATCHES: Phillips, Parker, Orberson & Arnett, PLC*
+- [ ] Philip, Parker & Orberson — *✓ MATCHES: Phillips, Parker, Orberson & Arnett, PLC*
+- [ ] Phillips Parker Orberson & Arnett (PPOA) — *✓ MATCHES: Phillips, Parker, Orberson & Arnett, PLC*
+- [ ] Sarena Tuttle — *✓ MATCHES: Sarena Tuttle (WHALEY STAFF → should be CaseManager, not LawFirm)*
+- [ ] The Whaley Law Firm — *✓ MATCHES: The Whaley Law Firm*
+
+### Lien (1 consolidated)
+- [ ] Humana — *✓ MATCHES: Humana*
+
+### LienHolder (1 consolidated)
+- [ ] Humana — *✓ MATCHES: Humana*
+
+### MedicalProvider (13 consolidated)
+- [ ] Arriva Medical — *IGNORED - medical supply company*
+- [ ] CVS Pharmacy — *✓ MATCHES: CVS Pharmacy (from medical_providers)*
+- [ ] Imaging — *✓ MATCHES: Diagnostic Imaging Alliance of Louisville*
+- [ ] Donna Jones, RN — *IGNORED - nurse name*
+- [ ] Donna Jones, RN (DSJ & Associates) — *✓ MATCHES: DSJ & Associates (from vendors)*
+- [ ] Kidney Care Consultants — *IGNORED - provider name only*
+- [ ] Kindred at Home — *✓ MATCHES: Kindred at Home*
+- [ ] Norton Healthcare Brain Tumor Center — *✓ MATCHES: Norton*
+- [ ] Norton Hospital — *✓ MATCHES: Norton Hospital*
+- [ ] Norton Hospital (hospital) — *✓ MATCHES: Norton Hospital*
+- [ ] Nurse Donna Jones — *IGNORED - nurse name*
+- [ ] Southern Emergency Medical Specialists — *✓ MATCHES: Southern Emergency Medical Specialists*
+- [ ] UL Rudd Heart & Lung Center — *✓ MATCHES: UL Rudd Heart & Lung Center (from medical_providers)*
+
+### Organization (7 consolidated)
+- [ ] DSJ & Associates — *✓ MATCHES: DSJ & Associates (from vendors)*
+- [ ] Equian — *✓ MATCHES: Equian (WellCare) (from lienholders)*
+- [ ] Kentucky Court of Justice — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Kentucky Court of Justice eFiling system — *✓ MATCHES: Kentucky Court Of Justice*
+- [ ] Optum — *✓ MATCHES: Optum (from lienholders)*
+- [ ] Ruby Mail — *IGNORED - phone service*
+- [ ] Vonage Business — *IGNORED - phone service*
+
+### Vendor (7 consolidated)
+- [ ] DSJ & Associates — *✓ MATCHES: DSJ & Associates (from vendors)*
+- [ ] Donna Jones — *IGNORED - nurse name*
+- [ ] Donna Jones, RN (DSJ & Associates) — *✓ MATCHES: DSJ & Associates (from vendors)*
+- [ ] Equian — *✓ MATCHES: Equian (WellCare) (from lienholders)*
+- [ ] Kentuckiana Court Reporters — *✓ MATCHES: Kentuckiana Court Reporters*
+- [ ] Kentuckiana Court Reporters | Kentucky Court Reporters — *✓ MATCHES: Kentuckiana Court Reporters*
+- [ ] Ruby Receptionist — *IGNORED - phone service*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

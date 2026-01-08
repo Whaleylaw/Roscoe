@@ -1,0 +1,582 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "AW",
+    "attributes": {
+      "project_name": "Timothy-Ruhl-Premise-09-14-2023"
+    },
+    "source_id": "16",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Allstate Insurance",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Douglas-Livers-backfill",
+    "source_file": "review_Douglas-Livers-MVA-1-19-2023.md",
+    "notes": "Insurance company as defendant in UM/UIM case"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Bluegrass Taxi",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Frances-Whitis-backfill",
+    "source_file": "review_Frances-Whitis-WC-MVA-9-6-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "CAAL WORLDWIDE, INC.",
+    "attributes": {
+      "phone": "502-775-1074",
+      "address": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs",
+    "notes": "Limousine/bus company - defendant in Abby Sitgraves case"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "CAALWINC",
+    "attributes": {
+      "project_name": "Abby-Sitgraves-MVA-7-13-2024"
+    },
+    "source_id": "19",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "DCGLLC",
+    "attributes": {
+      "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+    },
+    "source_id": "5",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Demetrius E. Turner",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Derby City Gaming",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Estate-of-Evangeline-Young-backfill",
+    "source_file": "review_Estate-of-Evangeline-Young-MVA-8-12-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Estate of DeShawn Ford",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Anella-Noble-annotations",
+    "source_file": "review_Anella-Noble-MVA-01-03-2021.md",
+    "notes": "Estate defendant in Anella Noble case"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Eyob Tafesse",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "James-Sadler-backfill",
+    "source_file": "review_James-Sadler-MVA-4-07-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "FM",
+    "attributes": {
+      "project_name": "Abby-Sitgraves-MVA-7-13-2024"
+    },
+    "source_id": "20",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Harbor House Of Louisville",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Muhammad-Alif-MVA-11-08-2022",
+    "source_file": "review_Muhammad-Alif-MVA-11-08-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "JR",
+    "attributes": {
+      "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+    },
+    "source_id": "7",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Jacob Ray",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Estate-of-Evangeline-Young-backfill",
+    "source_file": "review_Estate-of-Evangeline-Young-MVA-8-12-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Jacquelyn B. Wickcliffe",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Muhammad-Alif-MVA-11-08-2022",
+    "source_file": "review_Muhammad-Alif-MVA-11-08-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Jasmine Reed",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Debra-Marshall-backfill",
+    "source_file": "review_Debra-Marshall-MVA-12-3-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Justin Kiebler",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Dana-Jackson-backfill",
+    "source_file": "review_Dana-Jackson-MVA-1-24-2024.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "LMG",
+    "attributes": {
+      "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+    },
+    "source_id": "6",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Louisville Metro Government",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Estate-of-Evangeline-Young-backfill",
+    "source_file": "review_Estate-of-Evangeline-Young-MVA-8-12-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Marcus Hamlet",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Brenda-Lang-annotations",
+    "source_file": "review_Brenda-Lang-MVA-09-03-2021.md",
+    "notes": "From directory, defendant in Brenda Lang case"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Musimbi Amani",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "James-Kiper-backfill",
+    "source_file": "review_James-Kiper-MVA-12-5-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Naomi Robinson",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "review_annotations",
+    "source_file": "Ashlee-Williams-MVA-08-29-2023"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Networks USA XIV, Inc.",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Norton Hospital Downtown",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Estate-of-Betty-Prince-backfill",
+    "source_file": "review_Estate-of-Betty-Prince-Premise-7-14-2020.md",
+    "notes": "Hospital as defendant in medical malpractice/premise case"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Reit Property Management",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Robert Lowe",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Charles-T-Johnson-annotations",
+    "source_file": "review_Charles-T-Johnson-MVA-4-18-2023.md",
+    "notes": "Defendant in Charles T Johnson case"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Roy Hamilton",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "review_annotations",
+    "source_file": "Alma-Cristobal-MVA-2-15-2024",
+    "notes": "Works with Crete Carrier"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Stephanie Nail",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Destiny-Adkins-backfill",
+    "source_file": "review_Destiny-Adkins-MVA-04-16-2021.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "TC",
+    "attributes": {
+      "project_name": "Timothy-Ruhl-Premise-09-14-2023"
+    },
+    "source_id": "15",
+    "source_file": "litigation_contacts.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Travelers Insurance",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "James-Kiper-backfill",
+    "source_file": "review_James-Kiper-MVA-12-5-2022.md",
+    "notes": "Insurance company as defendant"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Trinity Cohara",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Greg-Neltner-backfill",
+    "source_file": "review_Greg-Neltner-MVA-4-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Unknown Driver",
+    "attributes": {},
+    "source_id": "inline_annotation_processing",
+    "source_file": "Abby-Sitgraves-MVA-7-13-2024"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Virginia Sewell",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Anella-Noble-annotations",
+    "source_file": "review_Anella-Noble-MVA-01-03-2021.md",
+    "notes": "From directory, defendant in Anella Noble case"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Walgreens",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Kimberly-Brasher-backfill",
+    "source_file": "review_Kimberly-Brasher-Premise-2-25-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Yusneiry Cruz Torres",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Jaysha-Aponte-backfill",
+    "source_file": "review_Jaysha-Aponte-MVA-3-15-2025.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Danny Wimmer Presents, LLC",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Robin-Willis-Beck-annotations",
+    "source_file": "review_Robin-Willis-Beck-Premise-09-21-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Kentucky State Fair Board",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Robin-Willis-Beck-annotations",
+    "source_file": "review_Robin-Willis-Beck-Premise-09-21-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Kevin McCoy",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Robin-Willis-Beck-annotations",
+    "source_file": "review_Robin-Willis-Beck-Premise-09-21-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Shawn Henlser",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Robin-Willis-Beck-annotations",
+    "source_file": "review_Robin-Willis-Beck-Premise-09-21-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Yanelys Castillo",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Sariya-Mason-annotations",
+    "source_file": "review_Sariya-Mason-DB-08-19-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Ricardo Vilches",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Sariya-Mason-annotations",
+    "source_file": "review_Sariya-Mason-DB-08-19-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Surelis Castillo",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Sariya-Mason-annotations",
+    "source_file": "review_Sariya-Mason-DB-08-19-2022.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Paul Rafferty",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Shannon-Colvin-annotations",
+    "source_file": "review_Shannon-Colvin-MVA-10-1-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "UPS",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Shannon-Lankswert-annotations",
+    "source_file": "review_Shannon-Lankswert-WC-02-07-2025.md",
+    "notes": "United Parcel Service - defendant in workers comp case"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Austin Michael Whitman",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Hoosier Cargo Express LLC",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Robert C. Cobb",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "Trey Anthony Cooper",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Timothy-Ruhl-annotations",
+    "source_file": "review_Timothy-Ruhl-Premise-09-14-2023.md"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "Defendant",
+    "name": "James R. Fenwick",
+    "attributes": {
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "source_id": "Wayne-Weber-annotations",
+    "source_file": "review_Wayne-Weber-MVA-01-01-2022.md"
+  }
+]

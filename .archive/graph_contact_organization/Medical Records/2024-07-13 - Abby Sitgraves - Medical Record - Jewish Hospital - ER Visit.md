@@ -1,0 +1,805 @@
+---
+source: 2024-07-13 - Abby Sitgraves - Medical Record - Jewish Hospital - ER Visit.pdf
+extraction_method: pdfplumber
+quality_score: 100
+overall_quality: excellent
+pages: 2
+extracted: 2025-11-23 22:30:17
+---
+
+================================================================================
+PDF: 2024-07-13 - Abby Sitgraves - Medical Record - Jewish Hospital - ER Visit.pdf
+Total Pages: 2
+Extraction Method: PDFPlumber (Tier 1)
+================================================================================
+
+
+================================================================================
+PAGE 1 of 2
+================================================================================
+Report No. 201975854
+COMMONWEALTH OF KENTUCKY
+CIVILIAN TRAFFIC COLLISION REPORT
+DATE OF COLLISION TIME OF COLLISION COLLISION INVOLVED
+M M D D Y Y Y Y HOUR MINUTES NON-VEHICLE PROPERTY DAMAGE
+AM HIT & RUN TOTAL # TOTAL #
+07 13 2024 6 0 2 0
+PM PARKING LOT UNITS PEDESTRIANS
+COLLISION OCCURRED FACTORS
+COUNTY JEFFERSON WEATHER RAINING
+ROADWAY CONDITION WET
+CITY LOUISVILLE
+ROADWAY SURFACE
+CITY LIMITS
+ROADWAY CHARACTER
+MILES OUTSIDE CITY LIMITS 0
+TRAFFIC CONTROL
+DIRECTION FROM CITY LIMITS
+ADVISORY SPEED SIGN OFFICER OR FLAGMAN STOP SIGN
+OCCURED IN ROADWAY INTERSECTION CENTER LINE RR GATES WARNING SIGNS
+FLASHING LIGHT RR SIGNS OR SIGNALS YIELD SIGNAL
+ROADWAY TYPE LOCAL STREET
+MEDIAN SCHOOL ZONE SIGNS OTHER
+NO PASSING LANE STOP & GO SIGNAL NONE
+COLLISION ROADWAY
+ROADWAY # BETWEEN STREET 1
+ROADWAY #
+ROADWAY NAME
+ROADWAY NAME
+ROADWAY SUFFIX ROADWAY SUFFIX
+DIRECTION DIRECTION
+INTERSECTING ROADWAY BETWEEN STREET 2
+ROADWAY # ROADWAY #
+ROADWAY NAME ROADWAY NAME
+ROADWAY SUFFIX ROADWAY SUFFIX
+DIRECTION DIRECTION
+RAMP FROM RAMP TO
+ROADWAY # ROADWAY #
+ROADWAY NAME ROADWAY NAME
+ROADWAY SUFFIX ROADWAY SUFFIX
+DIRECTION DIRECTION
+REPORTED BY
+LAST NAME Sitgraves FIRST NAME Abby
+MIDDLE Renee FILIAL
+NARRATIVE DIAGRAM
+I was a passenger on a party bus when we stopped
+suddenly and slid causing people on the bus to
+suddenly come out of their seat and some falling to
+the floor. I was one of the people that fell on the floor
+with 2 people landing on my leg. My foot and knee is
+hurting and extremely swollen. When I went to the
+ER and had X rays it showed that I have a fracture in
+my knee and I was told to go to a orthopedic doctor.
+Page 1 of 2
+ULSS
+TTTTIILL
+))SSIISSIILL
+TTTTIILL OOTTSS
+
+[TABLE 1 on Page 1]
+DATE OF COLLISION
+M M D D Y Y Y Y
+07 13 2024 | TIME OF COLLISION ULSS
+HOUR MINUTES
+AM
+6 0
+PM | SSIILL
+COLLISION INVOLVED
+NON-VEHICLE PROPERTY DAMAGE
+HIT & RUN TOTAL # TOTAL #
+2 0
+PARKING LOT UNITS PEDESTRIANS
+COLLISION OCCURRED
+COUNTY JEFFERSON
+CITY LOUISVILLE
+CITY LIMITS
+MILES OUTSIDE CITY LIMITS 0
+DIRECTION FROM CITY LIMITS
+OCCURED IN ROADWAY INTERSECTION
+ROADWAY TYPE LOCAL STREET |  | FACTORS
+WEATHER RAINING
+ROADWAY CONDITION WET
+TTTTII TTTTII OOTT
+ROADWAY SURFACE
+ROADWAY CHARACTER
+ |  | TRAFFIC CONTROL LL LL SS
+ADVISORY SPEED SIGN OFFICER OR FLAGMAN STOP SIGN
+CENTER LINE RR GATES WARNING SIGNS
+FLASHING LIGHT RR SIGNS OR SIGNALS YIELD SIGNAL
+MEDIAN SCHOOL ZONE SIGNS OTHER
+NO PASSING LANE STOP & GO SIGNAL NONE
+COLLISION ROADWAY
+ROADWAY #
+ROADWAY NAME
+ROADWAY SUFFIX
+DIRECTION |  | 
+ |  | BETWEEN STREET 1
+ROADWAY #
+ROADWAY NAME
+ROADWAY SUFFIX
+DIRECTION
+INTERSECTING ROADWAY
+ROADWAY #
+ROADWAY NAME
+ROADWAY SUFFIX
+DIRECTION |  | BETWEEN STREET 2
+ROADWAY #
+ROADWAY NAME
+ROADWAY SUFFIX
+DIRECTION
+RAMP FROM RAMP TO
+ROADWAY # ROADWAY #
+ROADWAY NAME ROADWAY NAME
+ROADWAY SUFFIX ROADWAY SUFFIX
+DIRECTION DIRECTION |  | 
+REPORTED BY
+LAST NAME Sitgraves FIRST NAME Abby
+MIDDLE Renee FILIAL |  | 
+NARRATIVE
+I was a passenger on a party bus when we stopped
+suddenly and slid causing people on the bus to
+suddenly come out of their seat and some falling to
+the floor. I was one of the people that fell on the floor
+with 2 people landing on my leg. My foot and knee is
+hurting and extremely swollen. When I went to the
+ER and had X rays it showed that I have a fracture in
+my knee and I was told to go to a orthopedic doctor. |  | DIAGRAM
+
+[TABLE 2 on Page 1]
+
+
+
+
+[TABLE 3 on Page 1]
+
+
+
+[TABLE 4 on Page 1]
+TOTAL #
+UNITS | 2 | TOTAL #
+PEDESTRIANS | 0
+
+[TABLE 5 on Page 1]
+COUNTY | JEFFERSON
+CITY | LOUISVILLE
+
+[TABLE 6 on Page 1]
+WEATHER | RAINING
+ROADWAY CONDITION | WET
+TT
+ROADWAY SURFACE | TT OO
+TT
+ROADWAY CHARACTER | TT
+TT
+
+[TABLE 7 on Page 1]
+MILES OUTSIDE CITY LIMITS |  |  |  |  | 0
+DIRECTION FROM CITY LIMITS |  |  |  |  | 
+OCCURED |  | IN ROADWAY INTERSECTION |  |  | 
+ROADWAY TYPE |  |  |  | LOCAL STREET | 
+
+[TABLE 8 on Page 1]
+
+
+
+
+
+
+[TABLE 9 on Page 1]
+
+
+
+
+
+
+[TABLE 10 on Page 1]
+
+
+
+
+
+
+[TABLE 11 on Page 1]
+ROADWAY # | 
+ROADWAY NAME | 
+
+[TABLE 12 on Page 1]
+ROADWAY #
+ROADWAY NAME
+
+[TABLE 13 on Page 1]
+
+
+
+
+
+[TABLE 14 on Page 1]
+
+
+
+[TABLE 15 on Page 1]
+ROADWAY SUFFIX
+DIRECTION
+
+[TABLE 16 on Page 1]
+ROADWAY # | 
+ROADWAY NAME | 
+
+[TABLE 17 on Page 1]
+ROADWAY #
+ROADWAY NAME
+
+[TABLE 18 on Page 1]
+
+
+
+[TABLE 19 on Page 1]
+
+
+
+[TABLE 20 on Page 1]
+ROADWAY SUFFIX
+DIRECTION
+
+[TABLE 21 on Page 1]
+
+
+
+[TABLE 22 on Page 1]
+ROADWAY #
+ROADWAY NAME
+
+[TABLE 23 on Page 1]
+
+
+
+
+
+[TABLE 24 on Page 1]
+ROADWAY #
+ROADWAY NAME
+
+[TABLE 25 on Page 1]
+
+
+
+
+
+[TABLE 26 on Page 1]
+ROADWAY SUFFIX
+DIRECTION
+
+[TABLE 27 on Page 1]
+LAST NAME | Sitgraves |  | FIRST NAME |  | Abby
+MIDDLE | Renee | FILIAL |  |  | 
+
+================================================================================
+PAGE 2 of 2
+================================================================================
+Report No. 201975854
+COMMONWEALTH OF KENTUCKY
+CIVILIAN TRAFFIC COLLISION REPORT
+NON-VEHICLE PROPERY DAMAGE
+Property Type PRIVATE PROPERTY CHECK IF PROPERTY OWNER IS BUSINESS
+DESCRIBE PROPERTY DAMAGE OTHER THAN VEHICLES
+Dent
+BUSINESS NAME
+Caal world wide limousine service
+DIRECTION STREET # STREET SUFFIX STREET NAME
+APT # CITY COUNTY
+LOUISVILLE JEFFERSON
+ZIP
+40216 -
+UNIT # 1
+UNIT TYPE PRE-COLLISION VEHICLE ACTION ESTIMATED COST TO REPAIR
+MOTOR VEHICLE GOING STRAIGHT AHEAD 0
+DESCRIBE DAMAGE TO VEHICLE
+Front
+LICENSE PLATE STATE LICENSE NUMBER
+111111
+VEHICLE TYPE VEHICLE YEAR VEHICLE COLOR
+BUS 1111
+VEHICLE MAKE VEHICLE MODEL
+VEHICLE INSURED INSURANCE COMPANY INSURANCE POLICY NUMBER
+YES NO Not sure 11111111
+INSURANCE PHONE NUMBER
+(111)111-1111
+UNIT # 2
+UNIT TYPE PRE-COLLISION VEHICLE ACTION ESTIMATED COST TO REPAIR
+DESCRIBE DAMAGE TO VEHICLE
+LICENSE PLATE STATE LICENSE NUMBER
+VEHICLE TYPE VEHICLE YEAR VEHICLE COLOR
+VEHICLE MAKE VEHICLE MODEL
+VEHICLE INSURED INSURANCE COMPANY INSURANCE POLICY NUMBER
+YES NO
+INSURANCE PHONE NUMBER
+Page 2 of 2
+
+[TABLE 1 on Page 2]
+NON-VEHICLE PROPERY DAMAGE
+Property Type PRIVATE PROPERTY CHECK IF PROPERTY OWNER IS BUSINESS
+DESCRIBE PROPERTY DAMAGE OTHER THAN VEHICLES
+Dent
+BUSINESS NAME
+Caal world wide limousine service
+DIRECTION STREET # STREET SUFFIX STREET NAME
+APT # CITY COUNTY
+LOUISVILLE JEFFERSON
+ZIP
+40216 -
+UNIT # 1
+UNIT TYPE PRE-COLLISION VEHICLE ACTION ESTIMATED COST TO REPAIR
+MOTOR VEHICLE GOING STRAIGHT AHEAD 0
+DESCRIBE DAMAGE TO VEHICLE
+Front
+LICENSE PLATE STATE LICENSE NUMBER
+111111
+VEHICLE TYPE VEHICLE YEAR VEHICLE COLOR
+BUS 1111
+VEHICLE MAKE VEHICLE MODEL
+VEHICLE INSURED INSURANCE COMPANY INSURANCE POLICY NUMBER
+YES NO Not sure 11111111
+INSURANCE PHONE NUMBER
+(111)111-1111
+UNIT # 2
+UNIT TYPE PRE-COLLISION VEHICLE ACTION ESTIMATED COST TO REPAIR
+DESCRIBE DAMAGE TO VEHICLE
+LICENSE PLATE STATE LICENSE NUMBER
+VEHICLE TYPE VEHICLE YEAR VEHICLE COLOR
+VEHICLE MAKE VEHICLE MODEL
+VEHICLE INSURED INSURANCE COMPANY INSURANCE POLICY NUMBER
+YES NO
+INSURANCE PHONE NUMBER
+
+[TABLE 2 on Page 2]
+ | Property Type | PRIVATE PROPERTY |  |  | CHECK IF PROPERTY OWNER IS BUSINESS
+DESCRIBE PROPERTY DAMAGE OTHER THAN VEHICLES |  |  |  |  | 
+ | Dent |  |  |  | 
+
+[TABLE 3 on Page 2]
+BUSINESS NAME |  | 
+Caal world wide limousine service |  | 
+DIRECTION |  | 
+ |  | 
+APT # |  | 
+ |  | 
+ZIP |  | 
+40216 | - | 
+
+[TABLE 4 on Page 2]
+STREET # | 
+ | 
+CITY | COUNTY
+LOUISVILLE | JEFFERSON
+
+[TABLE 5 on Page 2]
+STREET SUFFIX
+
+
+[TABLE 6 on Page 2]
+STREET NAME
+
+
+[TABLE 7 on Page 2]
+UNIT TYPE | 
+MOTOR VEHICLE | 0
+DESCRIBE DAMAGE TO VEHICLE | 
+Front | 
+
+[TABLE 8 on Page 2]
+
+VEHICLE TYPE
+BUS
+VEHICLE MAKE
+
+
+[TABLE 9 on Page 2]
+ | YES
+
+[TABLE 10 on Page 2]
+ | NO
+
+[TABLE 11 on Page 2]
+UNIT TYPE | 
+ | 
+DESCRIBE DAMAGE TO VEHICLE | 
+ | 
+
+[TABLE 12 on Page 2]
+
+VEHICLE TYPE
+
+VEHICLE MAKE
+
+
+[TABLE 13 on Page 2]
+ | YES
+
+[TABLE 14 on Page 2]
+ | NO
+
+---
+
+# Extracted Tables
+
+## Table 1 (Page 1)
+
+| DATE OF COLLISION
+M M D D Y Y Y Y
+07 13 2024 | TIME OF COLLISION ULSS
+HOUR MINUTES
+AM
+6 0
+PM | SSIILL
+COLLISION INVOLVED
+NON-VEHICLE PROPERTY DAMAGE
+HIT & RUN TOTAL # TOTAL #
+2 0
+PARKING LOT UNITS PEDESTRIANS |
+|---|---|---|
+| COLLISION OCCURRED
+COUNTY JEFFERSON
+CITY LOUISVILLE
+CITY LIMITS
+MILES OUTSIDE CITY LIMITS 0
+DIRECTION FROM CITY LIMITS
+OCCURED IN ROADWAY INTERSECTION
+ROADWAY TYPE LOCAL STREET |  | FACTORS
+WEATHER RAINING
+ROADWAY CONDITION WET
+TTTTII TTTTII OOTT
+ROADWAY SURFACE
+ROADWAY CHARACTER |
+|  |  | TRAFFIC CONTROL LL LL SS
+ADVISORY SPEED SIGN OFFICER OR FLAGMAN STOP SIGN
+CENTER LINE RR GATES WARNING SIGNS
+FLASHING LIGHT RR SIGNS OR SIGNALS YIELD SIGNAL
+MEDIAN SCHOOL ZONE SIGNS OTHER
+NO PASSING LANE STOP & GO SIGNAL NONE |
+| COLLISION ROADWAY
+ROADWAY #
+ROADWAY NAME
+ROADWAY SUFFIX
+DIRECTION |  |  |
+|  |  | BETWEEN STREET 1
+ROADWAY #
+ROADWAY NAME
+ROADWAY SUFFIX
+DIRECTION |
+| INTERSECTING ROADWAY
+ROADWAY #
+ROADWAY NAME
+ROADWAY SUFFIX
+DIRECTION |  | BETWEEN STREET 2
+ROADWAY #
+ROADWAY NAME
+ROADWAY SUFFIX
+DIRECTION |
+| RAMP FROM RAMP TO
+ROADWAY # ROADWAY #
+ROADWAY NAME ROADWAY NAME
+ROADWAY SUFFIX ROADWAY SUFFIX
+DIRECTION DIRECTION |  |  |
+| REPORTED BY
+LAST NAME Sitgraves FIRST NAME Abby
+MIDDLE Renee FILIAL |  |  |
+| NARRATIVE
+I was a passenger on a party bus when we stopped
+suddenly and slid causing people on the bus to
+suddenly come out of their seat and some falling to
+the floor. I was one of the people that fell on the floor
+with 2 people landing on my leg. My foot and knee is
+hurting and extremely swollen. When I went to the
+ER and had X rays it showed that I have a fracture in
+my knee and I was told to go to a orthopedic doctor. |  | DIAGRAM |
+
+## Table 2 (Page 1)
+
+|  |
+|---|
+|  |
+|  |
+
+## Table 3 (Page 1)
+
+|  |
+|---|
+|  |
+
+## Table 4 (Page 1)
+
+| TOTAL #
+UNITS | 2 | TOTAL #
+PEDESTRIANS | 0 |
+|---|---|---|---|
+
+## Table 5 (Page 1)
+
+| COUNTY | JEFFERSON |
+|---|---|
+| CITY | LOUISVILLE |
+
+## Table 6 (Page 1)
+
+| WEATHER | RAINING |
+|---|---|
+| ROADWAY CONDITION | WET |
+| TT
+ROADWAY SURFACE | TT OO |
+| TT
+ROADWAY CHARACTER | TT
+TT |
+
+## Table 7 (Page 1)
+
+| MILES OUTSIDE CITY LIMITS |  |  |  |  | 0 |
+|---|---|---|---|---|---|
+| DIRECTION FROM CITY LIMITS |  |  |  |  |  |
+| OCCURED |  | IN ROADWAY INTERSECTION |  |  |  |
+| ROADWAY TYPE |  |  |  | LOCAL STREET |  |
+
+## Table 8 (Page 1)
+
+|  |
+|---|
+|  |
+|  |
+|  |
+|  |
+
+## Table 9 (Page 1)
+
+|  |
+|---|
+|  |
+|  |
+|  |
+|  |
+
+## Table 10 (Page 1)
+
+|  |
+|---|
+|  |
+|  |
+|  |
+|  |
+
+## Table 11 (Page 1)
+
+| ROADWAY # |  |
+|---|---|
+| ROADWAY NAME |  |
+
+## Table 12 (Page 1)
+
+| ROADWAY # |
+|---|
+| ROADWAY NAME |
+
+## Table 13 (Page 1)
+
+|  |
+|---|
+|  |
+|  |
+|  |
+
+## Table 14 (Page 1)
+
+|  |
+|---|
+|  |
+
+## Table 15 (Page 1)
+
+| ROADWAY SUFFIX |
+|---|
+| DIRECTION |
+
+## Table 16 (Page 1)
+
+| ROADWAY # |  |
+|---|---|
+| ROADWAY NAME |  |
+
+## Table 17 (Page 1)
+
+| ROADWAY # |
+|---|
+| ROADWAY NAME |
+
+## Table 18 (Page 1)
+
+|  |
+|---|
+|  |
+
+## Table 19 (Page 1)
+
+|  |
+|---|
+|  |
+
+## Table 20 (Page 1)
+
+| ROADWAY SUFFIX |
+|---|
+| DIRECTION |
+
+## Table 21 (Page 1)
+
+|  |
+|---|
+|  |
+
+## Table 22 (Page 1)
+
+| ROADWAY # |
+|---|
+| ROADWAY NAME |
+
+## Table 23 (Page 1)
+
+|  |
+|---|
+|  |
+|  |
+|  |
+
+## Table 24 (Page 1)
+
+| ROADWAY # |
+|---|
+| ROADWAY NAME |
+
+## Table 25 (Page 1)
+
+|  |
+|---|
+|  |
+|  |
+|  |
+
+## Table 26 (Page 1)
+
+| ROADWAY SUFFIX |
+|---|
+| DIRECTION |
+
+## Table 27 (Page 1)
+
+| LAST NAME | Sitgraves |  | FIRST NAME |  | Abby |
+|---|---|---|---|---|---|
+| MIDDLE | Renee | FILIAL |  |  |  |
+
+## Table 1 (Page 2)
+
+| NON-VEHICLE PROPERY DAMAGE |
+|---|
+| Property Type PRIVATE PROPERTY CHECK IF PROPERTY OWNER IS BUSINESS
+DESCRIBE PROPERTY DAMAGE OTHER THAN VEHICLES
+Dent
+BUSINESS NAME
+Caal world wide limousine service
+DIRECTION STREET # STREET SUFFIX STREET NAME
+APT # CITY COUNTY
+LOUISVILLE JEFFERSON
+ZIP
+40216 - |
+| UNIT # 1 |
+| UNIT TYPE PRE-COLLISION VEHICLE ACTION ESTIMATED COST TO REPAIR
+MOTOR VEHICLE GOING STRAIGHT AHEAD 0
+DESCRIBE DAMAGE TO VEHICLE
+Front
+LICENSE PLATE STATE LICENSE NUMBER
+111111
+VEHICLE TYPE VEHICLE YEAR VEHICLE COLOR
+BUS 1111
+VEHICLE MAKE VEHICLE MODEL
+VEHICLE INSURED INSURANCE COMPANY INSURANCE POLICY NUMBER
+YES NO Not sure 11111111
+INSURANCE PHONE NUMBER
+(111)111-1111 |
+| UNIT # 2 |
+| UNIT TYPE PRE-COLLISION VEHICLE ACTION ESTIMATED COST TO REPAIR
+DESCRIBE DAMAGE TO VEHICLE
+LICENSE PLATE STATE LICENSE NUMBER
+VEHICLE TYPE VEHICLE YEAR VEHICLE COLOR
+VEHICLE MAKE VEHICLE MODEL
+VEHICLE INSURED INSURANCE COMPANY INSURANCE POLICY NUMBER
+YES NO
+INSURANCE PHONE NUMBER |
+
+## Table 2 (Page 2)
+
+|  | Property Type | PRIVATE PROPERTY |  |  | CHECK IF PROPERTY OWNER IS BUSINESS |
+|---|---|---|---|---|---|
+| DESCRIBE PROPERTY DAMAGE OTHER THAN VEHICLES |  |  |  |  |  |
+|  | Dent |  |  |  |  |
+
+## Table 3 (Page 2)
+
+| BUSINESS NAME |  |  |
+|---|---|---|
+| Caal world wide limousine service |  |  |
+| DIRECTION |  |  |
+|  |  |  |
+| APT # |  |  |
+|  |  |  |
+| ZIP |  |  |
+| 40216 | - |  |
+
+## Table 4 (Page 2)
+
+| STREET # |  |
+|---|---|
+|  |  |
+| CITY | COUNTY |
+| LOUISVILLE | JEFFERSON |
+
+## Table 5 (Page 2)
+
+| STREET SUFFIX |
+|---|
+|  |
+
+## Table 6 (Page 2)
+
+| STREET NAME |
+|---|
+|  |
+
+## Table 7 (Page 2)
+
+| UNIT TYPE |  |
+|---|---|
+| MOTOR VEHICLE | 0 |
+| DESCRIBE DAMAGE TO VEHICLE |  |
+| Front |  |
+
+## Table 8 (Page 2)
+
+|  |
+|---|
+| VEHICLE TYPE |
+| BUS |
+| VEHICLE MAKE |
+|  |
+
+## Table 9 (Page 2)
+
+|  | YES |
+|---|---|
+
+## Table 10 (Page 2)
+
+|  | NO |
+|---|---|
+
+## Table 11 (Page 2)
+
+| UNIT TYPE |  |
+|---|---|
+|  |  |
+| DESCRIBE DAMAGE TO VEHICLE |  |
+|  |  |
+
+## Table 12 (Page 2)
+
+|  |
+|---|
+| VEHICLE TYPE |
+|  |
+| VEHICLE MAKE |
+|  |
+
+## Table 13 (Page 2)
+
+|  | YES |
+|---|---|
+
+## Table 14 (Page 2)
+
+|  | NO |
+|---|---|

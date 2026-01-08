@@ -1,0 +1,162 @@
+{
+  "case_name": "Donna-Burns-MVA-7-5-2025",
+  "total_episodes": 9,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nCase resolution and client satisfaction confirmation.",
+      "natural_language": "Case Donna-Burns-MVA-7-5-2025 concerns client Donna Burns in a motor vehicle accident matter.\n\nThe case has been resolved, and there is a confirmation of the client's satisfaction with the outcome.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "client in the motor vehicle accident case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nInsurance negotiations and settlement discussions initiated.",
+      "natural_language": "Donna Burns is the client in the case labeled Donna-Burns-MVA-7-5-2025. This matter concerns a motor vehicle accident, and insurance negotiations and settlement discussions have been initiated.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nMedical records compilation and treatment plan evaluation.",
+      "natural_language": "Case Donna-Burns-MVA-7-5-2025 involves the client Donna Burns in a motor vehicle accident matter. The assignment centers on compiling medical records and evaluating the treatment plan.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nPolice report analysis and accident reconstruction review.",
+      "natural_language": "In the case Donna-Burns-MVA-7-5-2025, the client is Donna Burns. \n\nThe record notes a police report analysis and an accident reconstruction review.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nInitial case intake and client consultation for July 5, 2025 motor vehicle accident.",
+      "natural_language": "On July 5, 2025, the initial case intake and client consultation were conducted for Donna Burns regarding a motor vehicle accident. This case is identified as Donna-Burns-MVA-7-5-2025.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "subject of initial case intake and consultation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nMedical records analysis completed",
+      "natural_language": "This case, Donna-Burns-MVA-7-5-2025, concerns client Donna Burns in a motor vehicle accident matter.\n\nA medical records analysis has been completed.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nSettlement negotiations initiated",
+      "natural_language": "Donna Burns is the client in the motor vehicle accident case Donna-Burns-MVA-7-5-2025.\n\nSettlement negotiations have been initiated.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "client in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nPolice report obtained",
+      "natural_language": "Case Donna-Burns-MVA-7-5-2025 involves client Donna Burns in connection with a motor vehicle accident.\n\nA police report has been obtained for this matter.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "client involved in motor vehicle accident case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-28",
+      "original_body": "Case: Donna-Burns-MVA-7-5-2025\nClient: Donna Burns\n\nCase intake completed",
+      "natural_language": "Donna Burns is the client in the motor vehicle accident case Donna-Burns-MVA-7-5-2025. The case intake has been completed.",
+      "valid_at": "2025-08-28T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Donna Burns",
+            "relevance": "identified as client"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

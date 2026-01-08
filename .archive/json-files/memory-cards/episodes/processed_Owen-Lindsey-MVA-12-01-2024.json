@@ -1,0 +1,1185 @@
+{
+  "case_name": "Owen-Lindsey-MVA-12-01-2024",
+  "total_episodes": 39,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Cincinnati Children's Hospital",
+        "specialty": "hospital"
+      },
+      {
+        "name": "Florence Fire/EMS",
+        "specialty": "emergency medical services"
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Progressive Insurance Company"
+      },
+      {
+        "name": "Auto Owners Insurance"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Jennifer Howard"
+      },
+      {
+        "name": "Emily Pernice"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Owen-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Jennifer Howard"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Owen-Lindsey-MVA-12-01-2024-Under Insured Motorist (UIM)-300-793616-2024",
+        "insurer": "Auto Owners Insurance",
+        "adjuster": "Emily Pernice"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Owen-Lindsey-MVA-12-01-2024-Personal Injury Protection (PIP)-300-793616-2024",
+        "insurer": "Auto Owners Insurance",
+        "adjuster": null
+      }
+    ],
+    "liens": [
+      {
+        "name": "Owen-Lindsey-MVA-12-01-2024-Rawlings Company",
+        "holder": "Rawlings Company",
+        "amount": 18606.51
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-05",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Owen Lindsey__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nCc: Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Dec 05 2024 08:32:01 GMT-05:00\n\nAttached is a request for records & bills on our client, Owen Lindsey.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey.\n\nOn December 5, 2024, at 08:32:01 GMT-05:00, an email was sent regarding the Owen Lindsey case from The Whaley Law Firm. The message was sent by Jessica Bottorff (jessica@whaleylawfirm.com) and addressed to the fax recipient 5136366729@rcfax.com, with a cc to Owen Lindsey\u2019s Filevine project email address OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. The body of the email stated: \u201cAttached is a request for records & bills on our client, Owen Lindsey.\u201d The note concluded with \u201cThanks!\u201d and was signed by The Whaley Law Firm.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of records request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of email/request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-05",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nRequest for records & bills faxed to Cincinnati Children's Hospital",
+      "natural_language": "In the case Owen-Lindsey-MVA-12-01-2024, the client is Owen Lindsey. A request for records and bills was faxed to Cincinnati Children's Hospital.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "recipient of records and bills request (faxed)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-12-05",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__24-902741838__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8772137258@rcfax.com](mailto:8772137258@rcfax.com)\nDate: Thu Dec 05 2024 08:58:00 GMT-05:00",
+      "natural_language": "The case is Owen-Lindsey-MVA-12-01-2024, with the client listed as Owen Lindsey. The file reference number appears as 24-902741838. On December 5, 2024, at 8:58 a.m. Eastern Time, Jessa Galosmo of Whaley Law Firm sent a transmission from jessa@whaleylawfirm.com to the fax address 8772137258@rcfax.com regarding this case.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of transmission"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm / origin of transmission"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2024-12-05",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Shawn Vo [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Thu Dec 05 2024 09:17:23 GMT-05:00\n\nHi,\n\nPlease see the attached letter of representation.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "On Thursday, December 5, 2024, at 09:17:23 GMT-05:00, Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to Shawn Vo at lexington.clm@aoins.com regarding the case Owen-Lindsey-MVA-12-01-2024, for client Owen Lindsey. The email referenced the attached letter of representation. The internal reference number 300-793616-2024 is associated with this matter. The message was signed by Jessa Galosmo with the Whaley Law Firm\u2019s contact details: Ph: (502) 357-9975 and Fax: (502) 364-9363.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of representation / case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of letter of representation"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "representing law firm"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "recipient insurer (lexington.clm@aoins.com)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Shawn Vo",
+            "relevance": "recipient contact at insurer"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-05",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nRequest for records & bills sent to Florence EMS via ChartSwap",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey. On December 1, 2024, a request for records and bills related to the motor vehicle accident was sent to Florence EMS via ChartSwap.",
+      "valid_at": "2024-12-05T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Florence Fire/EMS",
+            "relevance": "recipient of records and bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-06",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nFlorence EMS records saved to file (awaiting bill)",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involving client Owen Lindsey. Florence EMS records have been saved to the file (awaiting bill).",
+      "valid_at": "2024-12-06T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Florence Fire/EMS",
+            "relevance": "records saved to file (awaiting bill)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-11",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nFlorence EMS bill saved to file",
+      "natural_language": "The case Owen-Lindsey-MVA-12-01-2024 concerns client Owen Lindsey and a motor vehicle accident on 12-01-2024. The Florence EMS bill has been saved to the file.",
+      "valid_at": "2024-12-11T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Florence Fire/EMS",
+            "relevance": "bill saved to file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2024-12-16",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nsent Cincy med auth to dad via vinesign",
+      "natural_language": "On December 1, 2024, the Owen-Lindsey-MVA-12-01-2024 motor vehicle accident case was opened for client Owen Lindsey.\n\nA Cincinnati medical authorization was sent to dad via vinesign.",
+      "valid_at": "2024-12-16T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "recipient of medical authorization"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2024-12-17",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n#vinesign-completed\nName: Cincinnati Children's Hospital Release\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=010ea386-0413-41bd-895f-3681158e9a48.pdf\nSigned: 2024-12-18 02:44:19\nAll signers: Owen Lindsey((502) 424-0049)\nSender: Justin Chumbley",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 concerns client Owen Lindsey.\n\nA VineSign-completed release document, titled Cincinnati Children\u2019s Hospital Release, was signed. The signed document is available at https://app.vinesign.com/Jobs/Pdf?pdfKey=010ea386-0413-41bd-895f-3681158e9a48.pdf. The signing occurred on December 18, 2024 at 02:44:19. The signer listed for this document is Owen Lindsey, with the contact phone number (502) 424-0049. The sender of the document was Justin Chumbley.",
+      "valid_at": "2024-12-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "signer of release document / case client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "medical provider named in the signed release document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2024-12-30",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Owen Lindsey__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nCc: [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Dec 30 2024 09:28:50 GMT-05:00\n\nAttached is a request for records & bills on our client, Owen Lindsey.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey.\n\nIn this matter, Owen Lindsey is the client.\n\nOn December 30, 2024, at 9:28:50 AM Eastern Time (GMT-05:00), an email was sent from jessica@whaleylawfirm.com on behalf of The Whaley Law Firm. The message was addressed to 5136366729@rcfax.com and CC\u2019d to OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. The body of the email stated: \"Attached is a request for records & bills on our client, Owen Lindsey.\" The email ends with \"Thanks!\" and is signed by The Whaley Law Firm.",
+      "valid_at": "2024-12-30T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of records request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of email requesting records and bills on client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-06",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Fwd: JEREMY C LINDSEY - 300-0793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Jeremy Lindsey - Filevine Project Email Address [JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com](mailto:JeremyLindseyMVAZ4830966@louisvilleaccidentlawyer.filevineapp.com), Elizabeth Lindsey - Filevine Project Email Address [ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com](mailto:ElizabethLindseyMVAZ4830969@louisvilleaccidentlawyer.filevineapp.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 06 2025 03:51:25 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Wolfe, Chandler \nDate: Mon, Jan 6, 2025 at 12:57?PM\nSubject: JEREMY C LINDSEY - 300-0793616-2024\nTo: jessa@whaleylawfirm.com \nCc: KentuckyPIP.Clm \n\nGood Afternoon Ms. Jessa\n\nMy name is Chandler Wolfe and I am the PIP adjuster on file for the\nLindsey\u2019s.\n\nPlease see attached acknowledgement letter and blank PIP forms for your\nclients. To date, we have not received any completed forms.\n\nPlease let me know what additional documentation you are still needing for\nyour clients.\n\nThank you and have a wonderful day!\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey. A forwarded email chain titled \u201cJEREMY C LINDSEY - 300-0793616-2024\u201d was included, originally sent by Jessa Galosmo of Whaley Law Firm. The message was addressed to Jeremy Lindsey\u2019s Filevine project email, Elizabeth Lindsey\u2019s Filevine project email, Chase Lindsey\u2019s Filevine project email, and Owen Lindsey\u2019s Filevine project email.\n\nThe forwarding occurred on Monday, January 6, 2025. The header shows the forward was sent at 03:51:25 GMT-05:00. The subject of the forwarded thread is JEREMY C LINDSEY - 300-0793616-2024, and the chain was directed to the Lindsey family\u2019s Filevine addresses, with Jessa\u2019s email as the sender and KentuckyPIP.Clm as a CC.\n\nIn the forwarded content, Chandler Wolfe introduced himself as the PIP adjuster on file for the Lindseys. The message was dated Monday, January 6, 2025, at approximately 12:57 PM. He stated: Good Afternoon Ms. Jessa. My name is Chandler Wolfe and I am the PIP adjuster on file for the Lindsey\u2019s. Please see attached acknowledgement letter and blank PIP forms for your clients. To date, we have not received any completed forms. Please let me know what additional documentation you are still needing for your clients. Thank you and have a wonderful day! The message references an attached acknowledgement letter and blank PIP forms, and notes that no forms have been completed to date. There is an image attachment indicated in the message.\n\nChandler Wolfe\u2019s signature block identified him as a Branch claims representative for KY regional PIP. His contact details were: phone 800.346.0346 ext. 54628; fax 517.886.8754; email KentuckyPIP.clm@aoins.com. His hours were listed as 8:00 a.m. to 4:30 p.m. EST.\n\nThe email thread concluded with Jessa Galosmo\u2019s reply, signed \u201cAll the best,\u201d from Whaley Law Firm, including her contact information: Ph: (502)357-9975 and Fax: (502)364-9363. The forward also included the recipient addresses for Jeremy Lindsey, Elizabeth Lindsey, Chase Lindsey, and Owen Lindsey within the Filevine project system, and noted the CC to KentuckyPIP.Clm.",
+      "valid_at": "2025-01-06T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client / recipient of forwarded thread"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm (Jessa Galosmo) who forwarded the email"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Chandler Wolfe",
+            "relevance": "PIP adjuster on file who sent the acknowledgement and PIP forms"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP insurer (Kentucky PIP email aoins.com) referenced in thread"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance PIP claim",
+            "relevance": "PIP claim discussed (acknowledgement letter and blank PIP forms requested)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-08",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Shawn Vo [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Wed Jan 08 2025 10:11:51 GMT-05:00\n\nHi,\n\nPlease see attached files.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "This case, Owen-Lindsey-MVA-12-01-2024, involves client Owen Lindsey. The internal file reference is 300-793616-2024.\n\nOn January 8, 2025, at 10:11:51 AM (GMT-05:00), Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to Shawn Vo at lexington.clm@aoins.com regarding this case. The body of the message read, \u201cHi, Please see attached files,\u201d and it included attachments. The email closed with the signature block: \u201cAll the best, Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.\u201d",
+      "valid_at": "2025-01-08T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-10",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Owen Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [5027537064@rcfax.com](mailto:5027537064@rcfax.com)\nDate: Fri Jan 10 2025 10:57:52 GMT-05:00",
+      "natural_language": "This case, Owen-Lindsey-MVA-12-01-2024, involves client Owen Lindsey in connection with a motor vehicle accident. The record shows an email communication from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to 5027537064@rcfax.com, sent on Friday, January 10, 2025 at 10:57:52 GMT-05:00.",
+      "valid_at": "2025-01-10T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client involved"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-16",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Fwd: Medical records request-Owen Lindsey__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Jan 16 2025 03:10:13 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Clark, Heather (She/Her/Hers) \nDate: Thu, Jan 16, 2025 at 2:33?PM\nSubject: Medical records request-Owen Lindsey\nTo: jessica@whaleylawfirm.com \n\nPlease see attached invoice for medical records regarding Owen Lindsey\n\n*Heather Clark*\n\nHealth Information Management\n\nOffice: 513-636-4217 / Fax 513-636-6729\n\n3333 Burnet Ave MLC 5015, Cincinnati, OH 45229",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey. On January 16, 2025, Jessica Bottorff of Whaley Law Firm forwarded a medical records request for Owen Lindsey to his Filevine project email address, OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com.\n\nThe forwarded message originated from Heather Clark (She/Her/Hers), Health Information Management. It was dated January 16, 2025 at 2:33 PM, with the subject \u201cMedical records request-Owen Lindsey,\u201d and was sent to jessica@whaleylawfirm.com. In the body, Heather Clark wrote: \u201cPlease see attached invoice for medical records regarding Owen Lindsey.\u201d Heather Clark\u2019s contact details are: Health Information Management, Office: 513-636-4217, Fax: 513-636-6729, 3333 Burnet Ave MLC 5015, Cincinnati, OH 45229.",
+      "valid_at": "2025-01-16T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of medical records request"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "originator/sender of medical records request/invoice"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-20",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Invoice__\nFrom: [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5136366729@rcfax.com](mailto:5136366729@rcfax.com)\nCc: [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 20 2025 09:20:42 GMT-05:00\n\nPlease process attached invoice.\n\n \n\nThanks!\n\n \n\nThe Whaley Law Firm",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey. On Monday, January 20, 2025, at 09:20:42 GMT-05:00, an email was sent from jessica@whaleylawfirm.com to 5136366729@rcfax.com, with a cc to OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. The message requested, \u201cPlease process attached invoice,\u201d and was signed by The Whaley Law Firm, ending with \u201cThanks!\u201d",
+      "valid_at": "2025-01-20T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client (cc'd on email)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender/signer of email requesting invoice processing"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-20",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Fwd: New Text Message from (502) 424-0049 on 01/17/2025 6:05 PM__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 20 2025 09:32:19 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: RingCentral \nDate: Fri, Jan 17, 2025 at 6:05?PM\nSubject: New Text Message from (502) 424-0049 on 01/17/2025 6:05 PM\nTo: Jessa Galosmo \n\n[image: Logo] [image: Logo]\n[image: Logo] Text Message\n------------------------------\n\nDear Jessa Galosmo,\n\nYou have a new text message:\n*From:* (502) 424-0049\n*To:* Jessa Galosmo\n*Received:* Friday, January 17, 2025 at 6:05 PM\n*Message:* Owen photos\n*Attachment:* 3 images\nTo reply using the RingCentral app\n.",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nIn the Owen-Lindsey-MVA-12-01-2024 case file for client Owen Lindsey, there was a new text message received on January 17, 2025 from the phone number (502) 424-0049. The message was first noted in RingCentral with a timestamp of 6:05 PM (the exact formatting shows 6:05?PM). The message was addressed to Jessa Galosmo, and it read simply \u201cOwen photos,\u201d with three image attachments included.\n\nOn January 20, 2025 at 09:32:19 GMT-05:00, Jessa Galosmo forwarded the RingCentral note to Owen Lindsey\u2019s Filevine project email address, OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. The forwarded communication originated as a RingCentral notification to Jessa Galosmo, detailing a new text message from (502) 424-0049 that had the subject line \u201cNew Text Message from (502) 424-0049 on 01/17/2025 6:05 PM.\u201d The content of the forwarded message confirmed the text from (502) 424-0049 to Jessa Galosmo, stating the message \u201cOwen photos\u201d with three attachments, and advised replying using the RingCentral app.",
+      "valid_at": "2025-01-20T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of text/recipient of forwarded message in case file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-22",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nCincinnati Children's Hospital records and bill saved to file",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey. Cincinnati Children's Hospital records and the accompanying bill have been saved to the file.",
+      "valid_at": "2025-01-22T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "medical records and bill saved to file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nThis case involves Owen Lindsey, who appears to have been in a motor vehicle accident. The case is currently in the \"Demand in Progress\" phase, suggesting that treatment has been completed and the legal team is preparing to make a demand to the insurance company.\nThe most recent activity involves requesting and receiving medical records and bills from Cincinnati Children's Hospital. An invoice for these records was received and processed on January 20, 2025. (See details), (See details)\nA potential red flag is that as of January 6, 2025, the PIP adjuster noted that they had not received any completed PIP forms for the Lindsey family. This delay in paperwork could potentially impact the case. (See details)\nThe next recommended step is to prepare and send the demand package to the insurance company, as the case has moved to the \"Demand in Progress\" phase and treatment has been completed. (See details)",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey and concerns a motor vehicle accident. The matter is currently in the Demand in Progress phase, indicating that treatment has been completed and the legal team is preparing to submit a demand to the insurance company.\n\nMost recent activity includes requesting and receiving medical records and bills from Cincinnati Children's Hospital, with an invoice for these records issued and processed on January 20, 2025.\n\nA potential red flag is that, as of January 6, 2025, the PIP adjuster noted that they had not received any completed PIP forms for the Lindsey family, a delay that could potentially impact the case.\n\nThe next recommended step is to prepare and send the demand package to the insurance company, in line with the Demand in Progress status and the completion of treatment.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client / subject of matter"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Cincinnati Children's Hospital",
+            "relevance": "source of medical records and bills; invoice processed 01/20/2025"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (Adjuster: Emily Pernice)",
+            "relevance": "PIP claim with missing completed PIP forms noted"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "PIP adjuster who reported not receiving completed PIP forms"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-13",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__300-793616-2024__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Gabe Rivera [lexington.clm@aoins.com](mailto:lexington.clm@aoins.com)\nDate: Thu Feb 13 2025 09:11:37 GMT-05:00\n\nHi,\n\nPlease see attached request for updated PIP log.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "In the case Owen-Lindsey-MVA-12-01-2024, involving client Owen Lindsey, reference file 300-793616-2024 is noted. \n\nOn February 13, 2025 at 9:11:37 AM EST, Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to Gabe Rivera at lexington.clm@aoins.com regarding the case. The body of the email stated, \u201cHi, Please see attached request for updated PIP log.\u201d The message was signed by Jessa Galosmo and included the Whaley Law Firm\u2019s contact information: Phoneline (502) 357-9975 and Fax (502) 364-9363.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client in case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "request for updated PIP log / claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-13",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__157801066__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [DM15@rawlingscompany.com](mailto:DM15@rawlingscompany.com)\nDate: Thu Feb 13 2025 09:24:51 GMT-05:00\n\nHi,\n\nPlease see attached files.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 concerns client Owen Lindsey. The internal file/reference number is 157801066. On February 13, 2025 at 9:24:51 AM GMT-05:00, Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to DM15@rawlingscompany.com regarding the Owen Lindsey motor vehicle accident case. The body of the message read, \"Hi, Please see attached files.\" The email was signed by Jessa Galosmo of Whaley Law Firm, with the following contact information: Ph: (502)357-9975; Fax: (502)364-9363.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender/contact at Whaley Law Firm"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "email recipient (rawlingscompany.com) / lienholder on file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-13",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Re: 15 7801066__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Lee Meredith [DM15@rawlingscompany.com](mailto:DM15@rawlingscompany.com)\nDate: Thu Feb 13 2025 09:42:30 GMT-05:00\n\nThanks. Please send a copy of the lien ledger.\n\nOn Thu, Feb 13, 2025 at 9:28?AM Lee Meredith \nwrote:\n\n> Thanks, there appears to be $18,606.51 in paid claims. I will confirm\n> that amount ASAP.\n>\n>\n>\n>\n>\n> *Lee Meredith*\n> Subrogation Recovery Analyst\n> Phone: 502-530-4605 | Fax: 502-753-7248\n>\n> The Rawlings Company LLC\n> PO Box 2000 | La Grange, KY 40031\n> DM15@rawlingscompany.com\n>\n> \n> \n> \n>\n> *IMPORTANT WARNING*: This message is intended only for the use of the\n> person or entity to which it is addressed and may contain information that\n> is privileged, confidential, and/or constitutes protected health\n> information (\u201cPHI\u201d) which is subject to protection under state and federal\n> law. If the reader of this message is not the intended recipient, or the\n> employee or agent responsible to deliver it to the intended recipient, you\n> are hereby notified that any review, dissemination, distribution, printing\n> or copying of this information is* STRICTLY PROHIBITED*. If you have\n> received this message in error, please notify us (DM15@rawlingscompany.com) immediately\n> and delete the related message.\n>\n> *From:* Jessa Galosmo \n> *Sent:* Thursday, February 13, 2025 9:25 AM\n> *To:* Lee Meredith \n> *Subject:* 15 7801066\n>\n>\n>\n> *WARNING: This email originated outside of The Rawlings Group. DO NOT\n> CLICK links or attachments unless you recognize the sender and know the\n> content is safe. Please contact the Helpdesk if you have any questions.*\n>\n>\n>\n> Hi,\n>\n>\n>\n> Please see attached files.\n>\n>\n>\n> --\n>\n> All the best,\n>\n> Jessa Galosmo\n>\n> Whaley Law Firm\n>\n> Ph: (502)357-9975\n>\n> Fax: (502)364-9363\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "In the Owen-Lindsey-MVA-12-01-2024 case, the client is Owen Lindsey. The matter reference is 15 7801066.\n\nOn February 13, 2025, at 09:42:30 GMT-05:00, Jessa Galosmo of Whaley Law Firm sent an email to Lee Meredith of The Rawlings Company regarding the case. The message stated, \u201cThanks. Please send a copy of the lien ledger.\u201d\n\nEarlier that morning, at approximately 9:28? AM, Lee Meredith, a Subrogation Recovery Analyst with The Rawlings Company, replied: \u201cThanks, there appears to be $18,606.51 in paid claims. I will confirm that amount ASAP.\u201d Meredith\u2019s message included his contact details: Phone 502-530-4605, Fax 502-753-7248, and the organization\u2019s address: The Rawlings Company LLC, PO Box 2000, La Grange, KY 40031, with the DM15 email address DM15@rawlingscompany.com. The email also carried an important confidentiality notice: \u201cIMPORTANT WARNING: This message is intended only for the use of the person or entity to which it is addressed and may contain information that may be privileged, confidential, and/or constitutes protected health information ('PHI') which is subject to protection under state and federal law. If the reader of this message is not the intended recipient, or the employee or agent responsible to deliver it to the intended recipient, you are hereby notified that any review, dissemination, distribution, printing or copying of this information is STRICTLY PROHIBITED. If you have received this message in error, please notify us (DM15@rawlingscompany.com) immediately and delete the related message.\u201d\n\nFrom Jessa Galosmo, the message continued with: \u201cFrom: Jessa Galosmo\u201d \u201cSent: Thursday, February 13, 2025 9:25 AM\u201d \u201cTo: Lee Meredith\u201d \u201cSubject: 15 7801066\u201d and included the external-origin warning: \u201cWARNING: This email originated outside of The Rawlings Group. DO NOT CLICK links or attachments unless you recognize the sender and know the content is safe. Please contact the Helpdesk if you have any questions.\u201d The body of that message read: \u201cHi, Please see attached files.\u201d It concluded with Jessa\u2019s signature: \u201cAll the best, Jessa Galosmo Whaley Law Firm Ph: (502)357-9975 Fax: (502)364-9363,\u201d and appears again with the same sign-off and contact details.\n\nIn summary, the case file involves Owen Lindsey in the 12-01-2024 MVA, with case reference 15 7801066. On February 13, 2025, Jessa Galosmo requested a lien ledger from Lee Meredith, who replied that there were $18,606.51 in paid claims and would confirm the amount. The email exchanges included confidentiality and external-origin warnings, and Jessa followed up with attachments, signing off as indicated.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "lien referenced ($18,606.51 paid claims)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sent request for lien ledger"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender/representative from Whaley Law Firm"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "The Rawlings Company",
+            "relevance": "respondent/lien holder who replied about paid claims"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-02-13",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n@jessa Need this health lien asap. @jbottorff",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 concerns client Owen Lindsey in a motor vehicle accident.\n\nThe record includes an instruction: \"Need this health lien asap,\" directed to Jessa, with @jbottorff tagged.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case subject"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "health lien requested"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-13",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__157801066__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [5027537248@rcfax.com](mailto:5027537248@rcfax.com)\nDate: Thu Feb 13 2025 02:06:34 GMT-05:00",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey. The matter is assigned file number 157801066 and pertains to a motor vehicle accident dated December 1, 2024.\n\nOn February 13, 2025, at 2:06:34 a.m. GMT-05:00 (Eastern Time), an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to the fax address 5027537248@rcfax.com.",
+      "valid_at": "2025-02-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-18",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Fwd: 300-0793616-2024 Chase & Owen Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com)\nDate: Tue Feb 18 2025 10:37:08 GMT-05:00\n\nPlease advise how to proceed.\n\n---------- Forwarded message ---------\nFrom: Chandler Wolfe \nDate: Tue, Feb 18, 2025 at 10:33?AM\nSubject: 300-0793616-2024 Chase & Owen Lindsey\nTo: \n\nPlease see attached documentation received for Chase & Owen Lindsey.\n\nPlease let me know how you would like to proceed.\n\nThank you,\n\n*Download Instructions:*\nThis email or download link can only be accessed by the email address it\nwas sent to. *Please continue all correspondence with your Auto-Owners\ncontact.*\n\n 1. Click this link:\n https://securefiletransfer.aoins.com/message/VOuDkPiynf72Lqh966dO1o\n 2. Enter your e-mail and a Secure Token will be sent to you in a\n separate email.\n 3. Click the files to download them. If there are many files, you can\n download them all at once by clicking the \"Download All\" button.\n\nThe files are available until: *Monday, 10 March.*\nFiles attached to this message\nFilename Size Checksum (SHA1)\nRawlings Lien, Chase.pdf 41.1 KB\n06502693e3716d93bb991cc3f70f1cfa35c7493fdc5f771a78314422d4b17029\nRawlings Lien, Owen.pdf 21.5 KB\n78df3469609bc8955e84ff48af33b72f13732676ef7da4b78969181ee4be4bc3\n\nMessage ID: VOuDkPiynf72Lqh966dO1o\n\u201cThis site contains information that may be privileged and/or confidential\nand exempt from disclosure. Such information is solely for the intended use\nof the Recipient of this email. Recipient agrees not to disclose any such\ninformation to others, except as allowed by law. Recipient will defend,\nindemnify and hold harmless Auto-Owners Insurance Company from any claim or\nsuit for damages arising out of the disclosure or misuse of any such\ninformation. Recipient further agrees to return, delete and/or destroy all\ncontents of this file after its intended use.\u201d\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey.\n\nOn February 18, 2025, Jessa Galosmo of Whaley Law Firm forwarded an email titled \u201cFwd: 300-0793616-2024 Chase & Owen Lindsey\u201d to Aaron Whaley and Justin Chumbley, asking them to advise how to proceed. The forwarded message includes a note from Jessa requesting guidance on the next steps.\n\nThe forwarded message, from Chandler Wolfe, is dated February 18, 2025 and states around 10:33 AM: \u201cPlease see attached documentation received for Chase & Owen Lindsey. Please let me know how you would like to proceed. Thank you.\u201d It includes download instructions for a secure file transfer: click the provided link, enter your email to receive a Secure Token in a separate email, then click the files to download them (with an option to download all at once by selecting \u201cDownload All\u201d). The files are available until Monday, March 10, 2025. The attachments consist of two PDFs: \u201cRawlings Lien, Chase.pdf\u201d (41.1 KB) with SHA1 checksum 06502693e3716d93bb991cc3f70f1cfa35c7493fdc5f771a78314422d4b17029, and \u201cRawlings Lien, Owen.pdf\u201d (21.5 KB) with SHA1 checksum 78df3469609bc8955e84ff48af33b72f13732676ef7da4b78969181ee4be4bc3. The message carries the identifier \u201cMessage ID: VOuDkPiynf72Lqh966dO1o.\u201d\n\nThe email chain also includes a standard confidentiality/privilege notice stating that the site contains information that may be privileged and/or confidential and exempt from disclosure, intended only for the recipient, with a prohibition on disclosure except as allowed by law. The recipient is required to defend, indemnify, and hold harmless Auto-Owners Insurance Company from any claim or damages arising from disclosure or misuse, and to return, delete, and/or destroy all contents of the file after its intended use.\n\nThe correspondence closes with \u201cAll the best, Jessa Galosmo, Whaley Law Firm,\u201d including the firm\u2019s contact information: Ph: (502)357-9975, Fax: (502)364-9363. The initial forward from Jessa to Aaron Whaley and Justin Chumbley includes Jessa\u2019s email address, jessa@whaleylawfirm.com, and the forwarding date of February 18, 2025 at 10:37:08 PM GMT-05:00.",
+      "valid_at": "2025-02-18T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client; named in email and attachment filenames"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "carrier referenced in confidentiality/privilege notice (PIP carrier for the case)"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "Rawlings lien documents attached (Rawlings Lien for Chase & Owen)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-18",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Re: 300-0793616-2024 Chase & Owen Lindsey__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [justin@whaleylawfirm.com](mailto:justin@whaleylawfirm.com)\nDate: Tue Feb 18 2025 10:52:00 GMT-05:00\n\nI've downloaded the files. Here it is.\n\nOn Tue, Feb 18, 2025 at 10:47?AM wrote:\n\n> Download them and email them to me so I can review them\n>\n>\n>\n> Justin Chumbley\n>\n> Whaley Law Firm\n>\n> Ph: (502)583-4022\n>\n> Fax: (502)364-9363\n>\n>\n>\n> *From:* Jessa Galosmo \n> *Sent:* Tuesday, February 18, 2025 10:37 AM\n> *To:* Aaron Whaley ; Justin Chumbley <\n> Justin@whaleylawfirm.com>\n> *Subject:* Fwd: 300-0793616-2024 Chase & Owen Lindsey\n>\n>\n>\n> Please advise how to proceed.\n>\n> ---------- Forwarded message ---------\n> From: *Chandler Wolfe* \n> Date: Tue, Feb 18, 2025 at 10:33?AM\n> Subject: 300-0793616-2024 Chase & Owen Lindsey\n> To: \n>\n>\n>\n> Please see attached documentation received for Chase & Owen Lindsey.\n>\n>\n>\n> Please let me know how you would like to proceed.\n>\n>\n>\n> Thank you,\n>\n>\n>\n> *Download Instructions:*\n> This email or download link can only be accessed by the email address it\n> was sent to. *Please continue all correspondence with your Auto-Owners\n> contact.*\n>\n> 1. Click this link:\n> https://securefiletransfer.aoins.com/message/VOuDkPiynf72Lqh966dO1o\n> 2. Enter your e-mail and a Secure Token will be sent to you in a\n> separate email.\n> 3. Click the files to download them. If there are many files, you can\n> download them all at once by clicking the \"Download All\" button.\n>\n> The files are available until: *Monday, 10 March.*\n> Files attached to this message\n>\n> *Filename*\n>\n> *Size*\n>\n> *Checksum (SHA1)*\n>\n> Rawlings Lien, Chase.pdf\n>\n> 41.1 KB\n>\n> 06502693e3716d93bb991cc3f70f1cfa35c7493fdc5f771a78314422d4b17029\n>\n> Rawlings Lien, Owen.pdf\n>\n> 21.5 KB\n>\n> 78df3469609bc8955e84ff48af33b72f13732676ef7da4b78969181ee4be4bc3\n>\n> Message ID: VOuDkPiynf72Lqh966dO1o\n>\n> *\u201cThis site contains information that may be privileged and/or\n> confidential and exempt from disclosure. Such information is solely for the\n> intended use of the Recipient of this email. Recipient agrees not to\n> disclose any such information to others, except as allowed by law.\n> Recipient will defend, indemnify and hold harmless Auto-Owners Insurance\n> Company from any claim or suit for damages arising out of the disclosure or\n> misuse of any such information. Recipient further agrees to return, delete\n> and/or destroy all contents of this file after its intended use.\u201d *\n>\n>\n>\n>\n> --\n>\n> All the best,\n>\n> Jessa Galosmo\n>\n> Whaley Law Firm\n>\n> Ph: (502)357-9975\n>\n> Fax: (502)364-9363\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey. In the matter titled \u201c300-0793616-2024 Chase & Owen Lindsey,\u201d an email thread regarding the transmission and review of documents occurred on February 18, 2025.\n\nAt 10:52 AM on February 18, 2025, Jessa Galosmo informed her colleagues that she had downloaded the files and that they were being provided. The message began simply with, \u201cI\u2019ve downloaded the files. Here it is.\u201d Earlier, at approximately 10:47 AM, Justin Chumbley had written, \u201cDownload them and email them to me so I can review them.\u201d\n\nEarlier that morning, at 10:37 AM, Jessa Galosmo forwarded an email titled \u201cFwd: 300-0793616-2024 Chase & Owen Lindsey\u201d to Aaron Whaley and Justin Chumbley, asking, \u201cPlease advise how to proceed.\u201d The forwarded content included a message from Chandler Wolfe sent at about 10:33 AM, which read: \u201cPlease see attached documentation received for Chase & Owen Lindsey. Please let me know how you would like to proceed. Thank you.\u201d\n\nThe forwarded message from Chandler Wolfe included download instructions for accessing the documents via a secure file transfer site. It directed the recipients to click a link (https://securefiletransfer.aoins.com/message/VOuDkPiynf72Lqh966dO1o), enter their email to receive a Secure Token in a separate email, and then click the files to download them (with an option to download all at once). The files would be available until Monday, March 10.\n\nThe message listing the attachments showed two files: \u201cRawlings Lien, Chase.pdf,\u201d size 41.1 KB, checksum (SHA1) 06502693e3716d93bb991cc3f70f1cfa35c7493fdc5f771a78314422d4b17029; and \u201cRawlings Lien, Owen.pdf,\u201d size 21.5 KB, checksum (SHA1) 78df3469609bc8955e84ff48af33b72f13732676ef7da4b78969181ee4be4bc3. The email was identified by the Message ID VOuDkPiynf72Lqh966dO1o.\n\nThe message also contained a standard confidentiality and privilege disclaimer stating that the site may contain information that is privileged and/or confidential and exempt from disclosure, and that such information is for the intended recipient\u2019s use. It stated that the Recipient agrees not to disclose any such information to others, except as allowed by law, and that the Recipient will defend, indemnify, and hold harmless Auto-Owners Insurance Company from any claim or suit for damages arising from the disclosure or misuse of the information, and that the Recipient will return, delete, and/or destroy all contents after its intended use.\n\nThe thread concluded with the sign-off: \u201cAll the best, Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.\u201d",
+      "valid_at": "2025-02-18T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client named in matter"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of email (Jessa Galosmo) handling the matter"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "named in secure file transfer/disclaimer (Auto-Owners Insurance Company)"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company",
+            "relevance": "lien attachments ('Rawlings Lien, Chase.pdf' and 'Rawlings Lien, Owen.pdf')"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-07",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Fwd: 300-0793616-2024 - JEREMY C LINDSEY__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com)\nDate: Fri Mar 07 2025 11:33:05 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Wolfe, Chandler \nDate: Fri, Mar 7, 2025 at 11:29?AM\nSubject: RE: 300-0793616-2024 - JEREMY C LINDSEY\nTo: Jessa Galosmo \n\nWould you like for me to issue payments on the liens that were received for\nOwen and Chase?\n\nThank you,\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky/PA regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DA0E2D.2AA737D0]\n\n[image: cid:image003.png@01DA0E2D.2AA737D0]\n\n*We https://itunes.apple.com/us/app/auto-owners-mobile/id1250194133?ls=1&mt=8>nytime, anywhere.*\n\n*From:* Jessa Galosmo \n*Sent:* Friday, March 7, 2025 11:25 AM\n*To:* Wolfe, Chandler \n*Subject:* [EXTERNAL] Re: 300-0793616-2024 - JEREMY C LINDSEY\n\nHi Chandler, Jeremy and Owen are already done treating. Elizabeth and Chase\nare still getting treatment. Best, Jessa Galosmo Whaley Law Firm On Fri,\nMar 7, 2025 at 11: 07 AM Wolfe, Chandler \nwrote: Good Morning\n\nHi Chandler,\n\nJeremy and Owen are already done treating. Elizabeth and Chase are still\ngetting treatment.\n\nBest,\nJessa Galosmo\nWhaley Law Firm\n\nOn Fri, Mar 7, 2025 at 11:07?AM Wolfe, Chandler \nwrote:\n\nGood Morning\n\nI am following up on direction updates for Jeremy, Owen, Chase & Elizabeth\nLindsey.\n\nThank you,\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky/PA regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DA0E2D.2AA737D0]\n\n[image: cid:image003.png@01DA0E2D.2AA737D0]\n\n*We have a **Customer Center\n*\n\n*, so you can access your claim information; anytime, anywhere.*\n\n*From:* Jessa Galosmo \n*Sent:* Tuesday, February 4, 2025 11:49 AM\n*To:* Wolfe, Chandler \n*Cc:* KentuckyPIP.Clm \n*Subject:* [EXTERNAL] Re: 300-0793616-2024 - JEREMY C LINDSEY\n\nWe are working on them. On Tue, Feb 4, 2025 at 10: 12 AM Wolfe, Chandler\n wrote: Good Morning I am following up on any\nadditional medical treatment update or updated direction for Jeremy,\nElizabeth, Chase &\n\nWe are working on them.\n\nOn Tue, Feb 4, 2025 at 10:12?AM Wolfe, Chandler \nwrote:\n\nGood Morning\n\nI am following up on any additional medical treatment update or updated\ndirection for Jeremy, Elizabeth, Chase & Owen Lindsey. To date, we have\nonly received medical bills for Ms. Elizabeth.\n\nThank you,\n\n[image: cid:image001.png@01DA0E2D.2AA737D0]\n\n*Chandler Wolfe*\nBranch claims representative\nky/PA regional pip\n\np: 800.346.0346 ext. 54628\nf: 517.886.8754\ne: KentuckyPIP.clm@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DA0E2D.2AA737D0]\n\n[image: cid:image003.png@01DA0E2D.2AA737D0]\n\n*We have a **Customer Center\n*\n\n*, so you can access your claim information; anytime, anywhere.*\n\n-- \n\nAll the best,\n\nJessa Galosmo\n\nWhaley Law Firm\n\nPh: (502)357-9975\n\nFax: (502)364-9363\n\n-- \n\nAll the best,\n\nJessa Galosmo\n\nWhaley Law Firm\n\nPh: (502)357-9975\n\nFax: (502)364-9363\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey.\n\nIn this matter involving the Lindsey family and a motor vehicle accident dated December 1, 2024, communications circulated in early February and March of 2025 regarding medical treatment status and lien payments. On February 4, 2025, Chandler Wolfe, a branch claims representative for the Kentucky/Pennsylvania regional PIP office, sent an email asking for updates on any additional medical treatment or directions for Jeremy Lindsey, Elizabeth Lindsey, Chase Lindsey, and Owen Lindsey. He noted that, to date, the only medical bills received were for Ms. Elizabeth Lindsey. Jessa Galosmo of Whaley Law Firm replied later that morning, indicating that they were working on the matter.\n\nLater in February, Jessa\u2019s communication reiterated the ongoing effort to obtain updates on the Lindsey family\u2019s medical treatment and directions, with Jessa signing off as all the best from the Whaley Law Firm. Chandler Wolfe followed up again in this period, and his message referenced the firm\u2019s Customer Center, which would allow access to claim information anytime, anywhere.\n\nOn March 7, 2025, a forward was sent from Jessa Galosmo to attorneys Aaron Whaley and Justin Chumbley regarding file 300-0793616-2024 for Jeremy C. Lindsey. The forwarded message, from Chandler Wolfe, asked whether he should issue payments on the liens that had been received for Owen Lindsey and Chase Lindsey. Wolfe\u2019s contact details were provided: he is with the Kentucky/PIP team, with a phone number 800.346.0346 ext. 54628, fax 517.886.8754, and email KentuckyPIP.clm@aoins.com, operating from 8:00 a.m. to 4:30 p.m. EST. The message also included Wolfe\u2019s professional signature and standard firm branding.\n\nIn response, Jessa informed Chandler that \u201cJeremy and Owen are already done treating,\u201d while \u201cElizabeth and Chase are still getting treatment.\u201d This status update was part of the March 7 exchange, following Chandler\u2019s inquiry about lien payments and the prior February email thread in which only Elizabeth\u2019s medical bills had been received.\n\nThroughout the correspondence, the firm noted the existence of a Customer Center to enable claim information access at any time, and Jessa\u2019s communications consistently closed with courteous regards and the Whaley Law Firm contact information, including phone and fax numbers.",
+      "valid_at": "2025-03-07T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "primary client (subject of treatment and lien/payment discussion)"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (Adjuster: None)",
+            "relevance": "PIP claim/insurer referenced in emails regarding treatment status and lien payments"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company: $18606.51",
+            "relevance": "lien discussed for potential payment"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-04-23",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__300-793616-2024__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: [Pernice.Emily@aoins.com](mailto:Pernice.Emily@aoins.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed Apr 23 2025 09:30:37 GMT-04:00\n\nEmily, I hope this email finds you well. I know that we sent you Coots on\nthis case and I just wanted to follow up and see what are the limits? Can\nyou forward the Dec page? Thanks.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. The client is Owen Lindsey, with internal file reference 300-793616-2024.\n\nOn April 23, 2025, at 09:30:37 GMT-04:00, an email was sent from Aaron Whaley of Whaley Law Firm (agwhaley@whaleylawfirm.com). The message was addressed to Emily Pernice at aoins.com and to the Owen Lindsey Filevine project inbox at OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. In the body, Whaley wrote: \u201cEmily, I hope this email finds you well. I know that we sent you Coots on this case and I just wanted to follow up and see what are the limits? Can you forward the Dec page? Thanks.\u201d The communication closes with the signature block for Aaron Whaley of Whaley Law Firm, including the firm\u2019s address at 712 Lyndon Ln, Louisville, KY 40222, and phone number 502-583-4022.",
+      "valid_at": "2025-04-23T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client (project inbox recipient)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "email sender following up on insurance limits"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "email recipient at Auto Owners contacted about limits/Dec page"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer being asked about policy limits/Dec page"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim - Auto Owners Insurance",
+            "relevance": "claim referenced (adjuster on file: Emily Pernice)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-04-29",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__#300-793616-2024__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Emily Pernice [Pernice.Emily@aoins.com](mailto:Pernice.Emily@aoins.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Apr 29 2025 10:38:31 GMT-04:00\n\nEmily I hope this email finds you well. I am following up to see if Auto\nOwners had made a decision on whether to permit settlement with the at\nfault party. Thanks.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey. The internal file reference is 300-793616-2024.\n\nOn Tuesday, April 29, 2025, at 10:38:31 AM GMT-04:00, an email was sent from Aaron Whaley of the Whaley Law Firm to Emily Pernice (Pernice.Emily@aoins.com) and to Owen Lindsey\u2019s Filevine project email address OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. The message originated from Aaron Whaley and was addressed to these two recipients.\n\nIn the body of the email, Whaley wrote: \u201cEmily I hope this email finds you well. I am following up to see if Auto Owners had made a decision on whether to permit settlement with the at fault party. Thanks.\u201d\n\nThe email signature identifies Aaron Whaley of Whaley Law Firm, with the firm\u2019s address at 712 Lyndon Ln, Louisville, KY 40222, and a contact phone number of 502-583-4022.",
+      "valid_at": "2025-04-29T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client and recipient via Filevine email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm (identified in email signature)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "recipient and Auto Owners adjuster referenced in email"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer whose decision on permitting settlement is being requested"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Auto Owners Insurance (Adjuster: Emily Pernice)",
+            "relevance": "claim referenced regarding settlement permission"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-05-06",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Re: #300-793616-2024__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Pernice, Emily [Pernice.Emily@aoins.com](mailto:Pernice.Emily@aoins.com)\nCc: Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com), SouthCentralBodilyInjury.clm [SouthCentralBodilyInjury.clm@aoins.com](mailto:SouthCentralBodilyInjury.clm@aoins.com)\nDate: Tue May 06 2025 10:58:15 GMT-04:00\n\nEmily, I hope you are well. Just checking in on this. Thanks!\n\nOn Tue, Apr 29, 2025 at 10:46?AM Pernice, Emily \nwrote:\n\n> Good morning,\n>\n>\n>\n> This is still under review for subrogation potential. Once we have\n> completed that review, we will update you immediately. Please note that\n> full Coots Notice was received on 04/22/2025 by email. Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> [image: cid:image001.png@01DAAB69.43186940]\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n> [image: cid:image002.png@01DAAB69.43186940]\n> \n>\n> [image: cid:image003.png@01DAAB69.43186940]\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Tuesday, April 29, 2025 10:39 AM\n> *To:* Pernice, Emily ; Owen Lindsey - Filevine\n> Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* [EXTERNAL] #300-793616-2024\n>\n>\n>\n> Emily I hope this email finds you well. I am following up to see if Auto\n> Owners had made a decision on whether to permit settlement with the at\n> fault party. Thanks. -- Aaron Whaley Whaley Law Firm 712 Lyndon Ln\n> Louisville, KY 40222 502-583-4022\n>\n> Emily I hope this email finds you well. I am following up to see if Auto\n> Owners had made a decision on whether to permit settlement with the at\n> fault party. Thanks.\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n>\n> Louisville, KY 40222\n>\n> 502-583-4022\n>\n>\n>\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "In the case Owen-Lindsey-MVA-12-01-2024, involving client Owen Lindsey, the matter referenced as #300-793616-2024 was the subject of email communications between Aaron Whaley of Whaley Law Firm and Emily Pernice of Auto Owners Insurance, with copies to Owen Lindsey\u2019s Filevine project email address and to SouthCentralBodilyInjury.clm. On May 6, 2025 at 10:58:15 GMT-04:00, Aaron Whaley sent Emily a message stating, \u201cEmily, I hope you are well. Just checking in on this. Thanks!\u201d and CC\u2019d Owen Lindsey\u2019s Filevine address and the SouthCentralBodilyInjury.clm inbox.\n\nEarlier, on April 29, 2025, at approximately 10:39 AM, Aaron Whaley sent an external email to Emily Pernice and Owen Lindsey\u2019s Filevine project address with the subject \u201c#300-793616-2024.\u201d He asked whether Auto Owners had decided on permitting settlement with the at-fault party, and he provided his contact information: Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022. Emily Pernice responded later that day, on April 29, 2025 at about 10:46 AM, writing, \u201cGood morning, This is still under review for subrogation potential. Once we have completed that review, we will update you immediately. Please note that full Coots Notice was received on 04/22/2025 by email. Thank you.\u201d Her signature block followed, identifying her as Emily Pernice, AIC, AIC-M, AINS; Bodily injury claims specialist, south central bodily injury, with contact details: p: 800.346.0346 ext. 55169; f: 517.327.2391; e: pernice.emily@aoins.com; hours: 8:00 a.m. to 4:30 p.m. EST; and a note about a Customer Center for claim information accessibility.\n\nThe email chain shows that on April 29, 2025 Aaron Whaley sought a decision from Auto Owners on settling with the at-fault party, followed by Emily\u2019s acknowledgment that the case was under subrogation review and would be updated upon completion, including the detail that Auto Owners had received the full Coots Notice by email on 04/22/2025. The May 6, 2025 follow-up from Aaron reiterated his check-in on the status of the matter, continuing the notification and correspondence among the parties.",
+      "valid_at": "2025-05-06T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client involved in the matter and CC'd on correspondence"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "insurer handling the claim and performing subrogation review"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "adjuster who responded and noted the subrogation review and Coots Notice receipt"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Auto Owners Insurance",
+            "relevance": "claim discussed regarding subrogation potential and settlement with at-fault party"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney who corresponded with the insurer and followed up on settlement status"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-05-07",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Re: #300-793616-2024__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Pernice, Emily [Pernice.Emily@aoins.com](mailto:Pernice.Emily@aoins.com)\nCc: Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com), SouthCentralBodilyInjury.clm [SouthCentralBodilyInjury.clm@aoins.com](mailto:SouthCentralBodilyInjury.clm@aoins.com)\nDate: Wed May 07 2025 11:52:30 GMT-04:00\n\nJeremy: $2,000\nOwen: $16,000\nChase: $16,000\nElizabeth: $16,000\n\nOn Tue, May 6, 2025 at 2:13?PM Pernice, Emily \nwrote:\n\n> Good afternoon,\n>\n>\n>\n> Could you please confirm the amounts allocated to each person (Jeremy,\n> Elizabeth, Owen, Chase)? Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> [image: cid:image001.png@01DAAB69.43186940]\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n> [image: cid:image002.png@01DAAB69.43186940]\n> \n>\n> [image: cid:image003.png@01DAAB69.43186940]\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Tuesday, May 6, 2025 10:58 AM\n> *To:* Pernice, Emily \n> *Cc:* Owen Lindsey - Filevine Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>;\n> SouthCentralBodilyInjury.clm \n> *Subject:* [EXTERNAL] Re: #300-793616-2024\n>\n>\n>\n> Emily, I hope you are well. Just checking in on this. Thanks! On Tue, Apr\n> 29, 2025 at 10: 46 AM Pernice, Emily wrote:\n> Good morning, This is still under review for subrogation potential. Once we\n> have completed that\n>\n> Emily, I hope you are well. Just checking in on this. Thanks!\n>\n>\n>\n> On Tue, Apr 29, 2025 at 10:46?AM Pernice, Emily \n> wrote:\n>\n> Good morning,\n>\n>\n>\n> This is still under review for subrogation potential. Once we have\n> completed that review, we will update you immediately. Please note that\n> full Coots Notice was received on 04/22/2025 by email. Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> [image: cid:image001.png@01DAAB69.43186940]\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n> [image: cid:image002.png@01DAAB69.43186940]\n> \n>\n> [image: cid:image003.png@01DAAB69.43186940]\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Tuesday, April 29, 2025 10:39 AM\n> *To:* Pernice, Emily ; Owen Lindsey - Filevine\n> Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* [EXTERNAL] #300-793616-2024\n>\n>\n>\n> Emily I hope this email finds you well. I am following up to see if Auto\n> Owners had made a decision on whether to permit settlement with the at\n> fault party. Thanks. -- Aaron Whaley Whaley Law Firm 712 Lyndon Ln\n> Louisville, KY 40222 502-583-4022\n>\n> Emily I hope this email finds you well. I am following up to see if Auto\n> Owners had made a decision on whether to permit settlement with the at\n> fault party. Thanks.\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n>\n> Louisville, KY 40222\n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n>\n> Louisville, KY 40222\n>\n> 502-583-4022\n>\n>\n>\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey.\n\nIn the matter titled Re: #300-793616-2024, communications between Whaley Law Firm and Emily Pernice of AO Insurance were recorded in May 2025 regarding subrogation and settlement allocations. On May 7, 2025 at 11:52:30 AM (Eastern Time), Aaron Whaley emailed Emily Pernice, with Owen Lindsey\u2019s Filevine project address and the SouthCentralBodilyInjury.clm inbox CC\u2019d, to summarize the settlement allocations: Jeremy would receive $2,000; Owen Lindsey would receive $16,000; Chase would receive $16,000; and Elizabeth would receive $16,000. The message was titled Re: #300-793616-2024.\n\nEarlier in the thread, on May 6, 2025 at 2:13 PM, Emily Pernice asked Aaron to confirm the amounts allocated to each person\u2014Jeremy, Elizabeth, Owen, and Chase\u2014so the allocations could be finalized.\n\nThe thread also shows prior back-and-forth in late April 2025. On April 29, 2025, Aaron Whaley sent a message to Emily Pernice asking whether Auto Owners had made a decision about permitting settlement with the at-fault party. Later that day, at 10:46 AM, Emily Pernice replied that the matter was still under review for subrogation potential and that a full Coots Notice had been received by email on April 22, 2025. The thread includes subsequent May 6 emails in which Aaron and Emily continued to correspond about the same issue, with Aaron sending a follow-up on May 6 and Emily reiterating the need to confirm the allocation details.\n\nAcross the exchanges, the case involves a motor vehicle accident (MVA) related matter for Owen Lindsey, with subrogation considerations and a potential settlement with the at-fault party being explored in relation to Auto Owners, and a final allocation of the settlements among four individuals\u2014Jeremy, Elizabeth, Owen, and Chase\u2014being established as described above.",
+      "valid_at": "2025-05-07T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client in the matter"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim discussed regarding subrogation and settlement allocations"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "Auto Owners adjuster corresponding about subrogation and allocations"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-05-07",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Fwd: #300-0793616-2024__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jennifer Howard [jennifer_howard@progressive.com](mailto:jennifer_howard@progressive.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Wed May 07 2025 12:09:41 GMT-04:00\n\nJennifer, see below. UIOM is waiving subrogation. What else do you need to\nget the checks cut? THanks.\n\n---------- Forwarded message ---------\nFrom: Pernice, Emily \nDate: Wed, May 7, 2025 at 12:07?PM\nSubject: RE: #300-0793616-2024\nTo: Aaron Whaley \nCc: SouthCentralBodilyInjury.clm \n\nThank you confirming.\n\nWe are waiving subrogation.\n\nWarmest regards,\n\n[image: cid:image001.png@01DAAB69.43186940]\n\n*Emily Pernice *AIC, AIC-M, AINS\nBodily injury claims specialist\nsouth central bodily injury\n\np: 800.346.0346 ext. 55169\nf: 517.327.2391\ne: pernice.emily@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DAAB69.43186940]\n\n[image: cid:image003.png@01DAAB69.43186940]\n\n*We have a **Customer Center\n*\n\n*, so you can access your claim information; anytime, anywhere.*\n\n*From:* Aaron Whaley \n*Sent:* Wednesday, May 7, 2025 11:59 AM\n*To:* Pernice, Emily \n*Subject:* [EXTERNAL] Re: #300-793616-2024\n\nit is sorry I forgot. Do $1500 for Jeremy. On Wed, May 7, 2025 at 11: 56 AM\nPernice, Emily wrote: I thought the total\nunderlying was $49,500 for the Lindsey\u2019s. Please reconfirm. Thank you.\nWarmest regards, Emily\n\nit is sorry I forgot. Do $1500 for Jeremy.\n\nOn Wed, May 7, 2025 at 11:56?AM Pernice, Emily \nwrote:\n\nI thought the total underlying was $49,500 for the Lindsey\u2019s. Please\nreconfirm. Thank you.\n\nWarmest regards,\n\n[image: cid:image001.png@01DAAB69.43186940]\n\n*Emily Pernice *AIC, AIC-M, AINS\nBodily injury claims specialist\nsouth central bodily injury\n\np: 800.346.0346 ext. 55169\nf: 517.327.2391\ne: pernice.emily@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DAAB69.43186940]\n\n[image: cid:image003.png@01DAAB69.43186940]\n\n*We have a **Customer Center\n*\n\n*, so you can access your claim information; anytime, anywhere.*\n\n*From:* Aaron Whaley \n*Sent:* Wednesday, May 7, 2025 11:53 AM\n*To:* Pernice, Emily \n*Cc:* Owen Lindsey - Filevine Project Email Address <\nOwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>;\nSouthCentralBodilyInjury.clm \n*Subject:* [EXTERNAL] Re: #300-793616-2024\n\nJeremy: $2,000 Owen: $16,000 Chase: $16,000 Elizabeth: $16,000 On Tue, May\n6, 2025 at 2: 13 PM Pernice, Emily wrote: Good\nafternoon, Could you please confirm the amounts allocated to each person\n(Jeremy, Elizabeth,\n\nJeremy: $2,000\n\nOwen: $16,000\n\nChase: $16,000\n\nElizabeth: $16,000\n\nOn Tue, May 6, 2025 at 2:13?PM Pernice, Emily \nwrote:\n\nGood afternoon,\n\nCould you please confirm the amounts allocated to each person (Jeremy,\nElizabeth, Owen, Chase)? Thank you.\n\nWarmest regards,\n\n[image: cid:image001.png@01DAAB69.43186940]\n\n*Emily Pernice *AIC, AIC-M, AINS\nBodily injury claims specialist\nsouth central bodily injury\n\np: 800.346.0346 ext. 55169\nf: 517.327.2391\ne: pernice.emily@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DAAB69.43186940]\n\n[image: cid:image003.png@01DAAB69.43186940]\n\n*We have a **Customer Center\n*\n\n*, so you can access your claim information; anytime, anywhere.*\n\n*From:* Aaron Whaley \n*Sent:* Tuesday, May 6, 2025 10:58 AM\n*To:* Pernice, Emily \n*Cc:* Owen Lindsey - Filevine Project Email Address <\nOwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>;\nSouthCentralBodilyInjury.clm \n*Subject:* [EXTERNAL] Re: #300-793616-2024\n\nEmily, I hope you are well. Just checking in on this. Thanks! On Tue, Apr\n29, 2025 at 10: 46 AM Pernice, Emily wrote:\nGood morning, This is still under review for subrogation potential. Once we\nhave completed that\n\nEmily, I hope you are well. Just checking in on this. Thanks!\n\nOn Tue, Apr 29, 2025 at 10:46?AM Pernice, Emily \nwrote:\n\nGood morning,\n\nThis is still under review for subrogation potential. Once we have\ncompleted that review, we will update you immediately. Please note that\nfull Coots Notice was received on 04/22/2025 by email. Thank you.\n\nWarmest regards,\n\n[image: cid:image001.png@01DAAB69.43186940]\n\n*Emily Pernice *AIC, AIC-M, AINS\nBodily injury claims specialist\nsouth central bodily injury\n\np: 800.346.0346 ext. 55169\nf: 517.327.2391\ne: pernice.emily@aoins.com\n\nhours: 8:00 a.m. to 4:30 p.m. EST\n\n[image: cid:image002.png@01DAAB69.43186940]\n\n[image: cid:image003.png@01DAAB69.43186940]\n\n*We have a **Customer Center\n*\n\n*, so you can access your claim information; anytime, anywhere.*\n\n*From:* Aaron Whaley \n*Sent:* Tuesday, April 29, 2025 10:39 AM\n*To:* Pernice, Emily ; Owen Lindsey - Filevine\nProject Email Address <\nOwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>\n*Subject:* [EXTERNAL] #300-793616-2024\n\nEmily I hope this email finds you well. I am following up to see if Auto\nOwners had made a decision on whether to permit settlement with the at\nfault party. Thanks. -- Aaron Whaley Whaley Law Firm 712 Lyndon Ln\nLouisville, KY 40222 502-583-4022\n\nEmily I hope this email finds you well. I am following up to see if Auto\nOwners had made a decision on whether to permit settlement with the at\nfault party. Thanks.\n\n-- \n\nAaron Whaley\n\nWhaley Law Firm\n\n712 Lyndon Ln\n\nLouisville, KY 40222\n\n502-583-4022\n\n-- \n\nAaron Whaley\n\nWhaley Law Firm\n\n712 Lyndon Ln\n\nLouisville, KY 40222\n\n502-583-4022\n\n-- \n\nAaron Whaley\n\nWhaley Law Firm\n\n712 Lyndon Ln\n\nLouisville, KY 40222\n\n502-583-4022\n\n-- \n\nAaron Whaley\n\nWhaley Law Firm\n\n712 Lyndon Ln\n\nLouisville, KY 40222\n\n502-583-4022\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024. Client: Owen Lindsey.\n\nOn May 7, 2025, an internal email forward was sent regarding the Owen Lindsey motor vehicle accident case. The message to Jennifer Howard at Progressive and to Owen Lindsey\u2019s Filevine project address noted that UIOM is waiving subrogation, and asked what else was needed to cut the checks. This forward was part of the thread labeled \u201cFwd: #300-0793616-2024.\u201d\n\nIn the forwarded chain, Emily Pernice, a Bodily Injury claims specialist with South Central Bodily Injury, replied that subrogation would be waived. Her reply stated simply, \u201cWe are waiving subrogation,\u201d and included her professional signature with contact information. This exchange followed a prior series of messages beginning several days earlier.\n\nEarlier in the thread, on April 29, 2025, Aaron Whaley asked Emily Pernice whether Auto Owners had decided to permit settlement with the at-fault party. Emily had responded that the matter was still under review for subrogation potential, and she noted that a full Coats (Coots) Notice had been received on April 22, 2025 by email, promising an immediate update once the review was complete.\n\nOver the course of the first week of May 2025, allocation details were discussed. On May 6, 2025 at 10:58 AM, Aaron Whaley wrote to Emily, copying Owen Lindsey and others, asking for confirmation of the amounts allocated to each person: Jeremy, Elizabeth, Owen, and Chase. The proposed allocations at that time were Jeremy: $2,000; Owen: $16,000; Chase: $16,000; Elizabeth: $16,000. Emily followed up later that day at 2:13 PM with a request to confirm the amounts allocated to each person (Jeremy, Elizabeth, Owen, Chase).\n\nOn May 7, 2025, a separate exchange reiterated the allocations, with Aaron listing: Jeremy: $2,000; Owen: $16,000; Chase: $16,000; Elizabeth: $16,000. At 11:56 AM, Emily wrote that she had thought the total underlying amount for the Lindsays was $49,500 and requested reconfirmation. In a subsequent note, she added, \u201cit is sorry I forgot. Do $1500 for Jeremy.\u201d This indicated a proposed adjustment to Jeremy\u2019s allocation from $2,000 to $1,500, while the other three allocations remained at $16,000 each, though the thread also shows the competing total of $49,500 versus the sum of the line-item allocations.\n\nThroughout these exchanges, the thread consistently reflects the ongoing process of subrogation review, the status of a settlement with the at-fault party, and the allocations among involved parties (Jeremy, Elizabeth, Owen, and Chase). The May 7, 2025 correspondence confirms that UIOM was to waive subrogation and seeks to finalize the necessary details to proceed with issuing checks. The Filevine and email records also include the relevant contact details and references to claim centers and notices, as described in the messages.",
+      "valid_at": "2025-05-07T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI claim involved; Progressive adjuster copied on settlement emails"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim under subrogation review and allocation discussions"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "Progressive adjuster copied on forwarded email"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "handled subrogation review, confirmed waiver, and communicated allocation amounts"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-05-09",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Re: [EXTERNAL] Fwd: #300-0793616-2024__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jennifer Howard [Jennifer_Howard@progressive.com](mailto:Jennifer_Howard@progressive.com)\nCc: Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri May 09 2025 11:45:38 GMT-04:00\n\nI will handle and hold harmless\n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022\n\nOn Fri, May 9, 2025 at 11:16?AM Jennifer Howard <\nJennifer_Howard@progressive.com> wrote:\n\n> Good morning.\n>\n>\n>\n> Thank you for the email.\n>\n>\n>\n> Just wanting to make sure the breakdown below is correct for your clients\u2019\n> BI settlements.\n>\n>\n>\n> *Jeremy Lindsey: $1,500\n>\n> *Elizabeth Lindsey: $16,000\n>\n> *Chase Lindsey: $16,000\n>\n> *Owen Lindsey: $16,000\n>\n>\n>\n> Since I have been placed on notice of health insurance liens on the\n> Lindsey family, we will need to make sure these will be addressed. Do you\n> prefer to handle or do you want me to out of the settlement proceeds?\n>\n>\n>\n> Jennifer Howard-Claims Specialist-Sr.\n>\n> Progressive Direct Insurance Company\n>\n> Po Box 94670\n>\n> Cleveland, OH 44101-9919\n>\n> 859-629-4740 (W)\n>\n> 833-905-1745 (F)\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Wednesday, May 7, 2025 12:10 PM\n> *To:* Jennifer Howard ; Owen Lindsey -\n> Filevine Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* [EXTERNAL] Fwd: #300-0793616-2024\n>\n>\n>\n> Jennifer, see below. UIOM is waiving subrogation. What else do you need to\n> get the checks cut? THanks.\n>\n> ---------- Forwarded message ---------\n> From: *Pernice, Emily* \n> Date: Wed, May 7, 2025 at 12:07?PM\n> Subject: RE: #300-0793616-2024\n> To: Aaron Whaley \n> Cc: SouthCentralBodilyInjury.clm \n>\n>\n>\n> Thank you confirming.\n>\n>\n>\n> We are waiving subrogation.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n> \n>\n>\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Wednesday, May 7, 2025 11:59 AM\n> *To:* Pernice, Emily \n> *Subject:* [EXTERNAL] Re: #300-793616-2024\n>\n>\n>\n> it is sorry I forgot. Do $1500 for Jeremy. On Wed, May 7, 2025 at 11: 56\n> AM Pernice, Emily wrote: I thought the total\n> underlying was $49,500 for the Lindsey\u2019s. Please reconfirm. Thank you.\n> Warmest regards, Emily\n>\n> it is sorry I forgot. Do $1500 for Jeremy.\n>\n>\n>\n> On Wed, May 7, 2025 at 11:56?AM Pernice, Emily \n> wrote:\n>\n> I thought the total underlying was $49,500 for the Lindsey\u2019s. Please\n> reconfirm. Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n>\n> \n>\n>\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Wednesday, May 7, 2025 11:53 AM\n> *To:* Pernice, Emily \n> *Cc:* Owen Lindsey - Filevine Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>;\n> SouthCentralBodilyInjury.clm \n> *Subject:* [EXTERNAL] Re: #300-793616-2024\n>\n>\n>\n> Jeremy: $2,000 Owen: $16,000 Chase: $16,000 Elizabeth: $16,000 On Tue, May\n> 6, 2025 at 2: 13 PM Pernice, Emily wrote:\n> Good afternoon, Could you please confirm the amounts allocated to each\n> person (Jeremy, Elizabeth,\n>\n> Jeremy: $2,000\n>\n> Owen: $16,000\n>\n> Chase: $16,000\n>\n> Elizabeth: $16,000\n>\n>\n>\n> On Tue, May 6, 2025 at 2:13?PM Pernice, Emily \n> wrote:\n>\n> Good afternoon,\n>\n>\n>\n> Could you please confirm the amounts allocated to each person (Jeremy,\n> Elizabeth, Owen, Chase)? Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n>\n> \n>\n>\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Tuesday, May 6, 2025 10:58 AM\n> *To:* Pernice, Emily \n> *Cc:* Owen Lindsey - Filevine Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>;\n> SouthCentralBodilyInjury.clm \n> *Subject:* [EXTERNAL] Re: #300-793616-2024\n>\n>\n>\n> Emily, I hope you are well. Just checking in on this. Thanks! On Tue, Apr\n> 29, 2025 at 10: 46 AM Pernice, Emily wrote:\n> Good morning, This is still under review for subrogation potential. Once we\n> have completed that\n>\n> Emily, I hope you are well. Just checking in on this. Thanks!\n>\n>\n>\n> On Tue, Apr 29, 2025 at 10:46?AM Pernice, Emily \n> wrote:\n>\n> Good morning,\n>\n>\n>\n> This is still under review for subrogation potential. Once we have\n> completed that review, we will update you immediately. Please note that\n> full Coots Notice was received on 04/22/2025 by email. Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n>\n> \n>\n>\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Tuesday, April 29, 2025 10:39 AM\n> *To:* Pernice, Emily ; Owen Lindsey - Filevine\n> Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* [EXTERNAL] #300-793616-2024\n>\n>\n>\n> Emily I hope this email finds you well. I am following up to see if Auto\n> Owners had made a decision on whether to permit settlement with the at\n> fault party. Thanks. -- Aaron Whaley Whaley Law Firm 712 Lyndon Ln\n> Louisville, KY 40222\n> \n> 502-583-4022\n>\n> Emily I hope this email finds you well. I am following up to see if Auto\n> Owners had made a decision on whether to permit settlement with the at\n> fault party. Thanks.\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> \n>\n> Whaley Law Firm\n>\n> \n>\n> \n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> \n>\n> Whaley Law Firm\n>\n> \n>\n> \n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> \n>\n> Whaley Law Firm\n>\n> \n>\n> \n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> \n>\n> Whaley Law Firm\n>\n> \n>\n> \n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> \n>\n> Whaley Law Firm\n>\n> \n>\n> \n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>",
+      "natural_language": "Case information: This record concerns the Owen-Lindsey-MVA-12-01-2024 case, with client Owen Lindsey.\n\nOn May 9, 2025, at 11:45:38 AM Eastern Time, Aaron Whaley of Whaley Law Firm sent an email about handling and hold-harmless matters, addressed to Jennifer Howard of Progressive Direct Insurance and cc\u2019d to the Owen Lindsey Filevine project email address. In that message, Whaley stated, \u201cI will handle and hold harmless.\u201d His firm\u2019s contact details were included: Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, 502-583-4022.\n\nEarlier, on May 9, 2025, at 11:16 AM, Jennifer Howard replied to the external thread. She confirmed receipt of the email and then asked to confirm the proposed breakdown of the client\u2019s bodily injury (BI) settlements: Jeremy Lindsey $1,500; Elizabeth Lindsey $16,000; Chase Lindsey $16,000; Owen Lindsey $16,000. She noted that she had been placed on notice of health insurance liens on the Lindsey family and asked whether these liens should be addressed by Progressive or deducted from the settlement proceeds. Howard provided her title as Claims Specialist-Sr. for Progressive Direct Insurance Company and supplied her contact information: P.O. Box 94670, Cleveland, OH 44101-9919, 859-629-4740 (W) and 833-905-1745 (F).\n\nThe email chain also shows the prior progression of communication about subrogation and settlement, beginning with a May 7, 2025 exchange. On May 7, 2025 at 12:10 PM, Aaron Whaley forwarded to Jennifer Howard and the Owen Lindsey Filevine address a message from himself to Jennifer, noting, \u201cJennifer, see below. UIOM is waiving subrogation. What else do you need to get the checks cut? Thanks.\u201d That same day, Emily Pernice of South Central Bodily Injury (AIC) replied at 12:07 PM, confirming, \u201cWe are waiving subrogation.\u201d Pernice\u2019s signature block identified her as AIC, AIC-M, AINS, and included her contact details: p: 800.346.0346 ext. 55169; f: 517.327.2391; e: pernice.emily@aoins.com, with hours 8:00 a.m. to 4:30 p.m. EST, plus a note about a Customer Center for claim access.\n\nThe thread shows earlier May 7 communications detailing allocation amounts. At 11:53 AM on May 7, Aaron Whaley wrote to Pernice and CC\u2019d Owen Lindsey and the SouthCentralBodilyInjury.clm address with a proposed distribution: Jeremy $2,000; Owen $16,000; Chase $16,000; Elizabeth $16,000, in response to an earlier inquiry about the allocations for the Lindsey parties. At 11:56 AM, Emily Pernice replied that she thought the total underlying amount for the Lindseys was $49,500 and asked for reconfirmation. Whaley replied, \u201cit is sorry I forgot. Do $1,500 for Jeremy.\u201d Pernice then reiterated her request to reconfirm the total, and Whaley again referenced the allocations: Jeremy $1,500, Owen $16,000, Chase $16,000, Elizabeth $16,000.\n\nBetween May 6 and May 7, Pernice sent multiple requests for confirmation of allocations. On May 6, 2025 at 2:13 PM, Pernice asked for confirmation of the amounts allocated to each person (Jeremy, Elizabeth, Owen, Chase), with a proposed distribution that initially listed: Jeremy $2,000, Owen $16,000, Chase $16,000, Elizabeth $16,000. Earlier that day, she had sent a similar inquiry, and at 10:58 AM Whaley had written to Pernice with a courtesy check-in about the matter. The chain shows ongoing discussion about subrogation potential and references to a \u201cfull Coots Notice\u201d that was received on April 22, 2025 by email.\n\nThe record notes that, on April 29, 2025, Whaley emailed Pernice to inquire whether Auto Owners had decided whether to permit settlement with the at-fault party. Pernice replied on April 29 that the matter was still under review for subrogation potential and that, once the review was complete, they would update, noting that the full Coots Notice had been received.\n\nIn sum, the communications reflect a process from late April through early May 2025 in which the subrogation potential was reviewed, UIOM indicated it would waive subrogation, and a proposed BI settlement breakdown for the Lindsey family was discussed and revised multiple times. By May 9, 2025, the parties had arrived at a proposed BI distribution of Jeremy Lindsey $1,500 and Elizabeth Lindsey, Chase Lindsey, and Owen Lindsey each at $16,000, with a direct acknowledgment from Progressive about the need to address health insurance liens. Jennifer Howard\u2019s May 9 response confirmed the breakdown and reiterated the lien concern, asking whether the liens should be addressed by Progressive or deducted from settlement proceeds. The May 9 exchange also confirms the ongoing involvement of Aaron Whaley on behalf of the Lindsey family and underscores that the matter remains coordinated among Whaley Law Firm, Progressive Direct Insurance Company, Emily Pernice of South Central Bodily Injury, and Owen Lindsey\u2019s file.",
+      "valid_at": "2025-05-09T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "primary client named in the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sent emails handling settlement and hold-harmless on behalf of client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing the Lindsey family (sender of settlement communications)"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "BI settlement allocation and lien handling discussed with Progressive"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Direct Insurance Company",
+            "relevance": "insurer correspondent confirming BI allocation and querying lien handling"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "Progressive adjuster who confirmed allocation and raised lien question"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance",
+            "relevance": "PIP claim under review for subrogation; waiver discussed"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "Auto Owners adjuster who confirmed waiver of subrogation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-05-15",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Re: [EXTERNAL] Fwd: #300-0793616-2024__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Jennifer Howard [Jennifer_Howard@progressive.com](mailto:Jennifer_Howard@progressive.com)\nCc: Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com), Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com)\nDate: Thu May 15 2025 11:40:37 GMT-04:00\n\nNo medicare. Elizabeth will sign the affidavits.\n\nOn Mon, May 12, 2025 at 10:32?AM Jennifer Howard <\nJennifer_Howard@progressive.com> wrote:\n\n> Good morning Mr. Whaley.\n>\n>\n>\n> A couple of things. First, attached are the settlement releases for the\n> Lindsey family. Since Chase and Owen\u2019s settlements will require a\n> notarized affidavit, which parent should I name on their affidavit? I keep\n> forgetting to ask this but is any of the Lindsey family eligible to receive\n> Medicare benefits?\n>\n>\n>\n> Jennifer Howard-Claims Specialist-Sr.\n>\n> Progressive Direct Insurance Company\n>\n> Po Box 94670\n>\n> Cleveland, OH 44101-9919\n>\n> 859-629-4740 (W)\n>\n> 833-905-1745 (F)\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Friday, May 9, 2025 11:46 AM\n> *To:* Jennifer Howard \n> *Cc:* Owen Lindsey - Filevine Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* Re: [EXTERNAL] Fwd: #300-0793616-2024\n>\n>\n>\n> I will handle and hold harmless\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n>\n> Louisville, KY 40222\n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n>\n> On Fri, May 9, 2025 at 11:16?AM Jennifer Howard <\n> Jennifer_Howard@progressive.com> wrote:\n>\n> Good morning.\n>\n>\n>\n> Thank you for the email.\n>\n>\n>\n> Just wanting to make sure the breakdown below is correct for your clients\u2019\n> BI settlements.\n>\n>\n>\n> *Jeremy Lindsey: $1,500\n>\n> *Elizabeth Lindsey: $16,000\n>\n> *Chase Lindsey: $16,000\n>\n> *Owen Lindsey: $16,000\n>\n>\n>\n> Since I have been placed on notice of health insurance liens on the\n> Lindsey family, we will need to make sure these will be addressed. Do you\n> prefer to handle or do you want me to out of the settlement proceeds?\n>\n>\n>\n> Jennifer Howard-Claims Specialist-Sr.\n>\n> Progressive Direct Insurance Company\n>\n> Po Box 94670\n>\n> Cleveland, OH 44101-9919\n>\n> 859-629-4740 (W)\n>\n> 833-905-1745 (F)\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Wednesday, May 7, 2025 12:10 PM\n> *To:* Jennifer Howard ; Owen Lindsey -\n> Filevine Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* [EXTERNAL] Fwd: #300-0793616-2024\n>\n>\n>\n> Jennifer, see below. UIOM is waiving subrogation. What else do you need to\n> get the checks cut? THanks.\n>\n> ---------- Forwarded message ---------\n> From: *Pernice, Emily* \n> Date: Wed, May 7, 2025 at 12:07?PM\n> Subject: RE: #300-0793616-2024\n> To: Aaron Whaley \n> Cc: SouthCentralBodilyInjury.clm \n>\n>\n>\n> Thank you confirming.\n>\n>\n>\n> We are waiving subrogation.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n> \n>\n>\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Wednesday, May 7, 2025 11:59 AM\n> *To:* Pernice, Emily \n> *Subject:* [EXTERNAL] Re: #300-793616-2024\n>\n>\n>\n> it is sorry I forgot. Do $1500 for Jeremy. On Wed, May 7, 2025 at 11: 56\n> AM Pernice, Emily wrote: I thought the total\n> underlying was $49,500 for the Lindsey\u2019s. Please reconfirm. Thank you.\n> Warmest regards, Emily\n>\n> it is sorry I forgot. Do $1500 for Jeremy.\n>\n>\n>\n> On Wed, May 7, 2025 at 11:56?AM Pernice, Emily \n> wrote:\n>\n> I thought the total underlying was $49,500 for the Lindsey\u2019s. Please\n> reconfirm. Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n>\n> \n>\n>\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Wednesday, May 7, 2025 11:53 AM\n> *To:* Pernice, Emily \n> *Cc:* Owen Lindsey - Filevine Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>;\n> SouthCentralBodilyInjury.clm \n> *Subject:* [EXTERNAL] Re: #300-793616-2024\n>\n>\n>\n> Jeremy: $2,000 Owen: $16,000 Chase: $16,000 Elizabeth: $16,000 On Tue, May\n> 6, 2025 at 2: 13 PM Pernice, Emily wrote:\n> Good afternoon, Could you please confirm thttps://urldefense.com/v3/__https:/itunes.apple.com/us/app/auto-owners-mobile/id1250194133?ls=1&mt=8__;!!L3za_GlHDpo7CQ!SuFaexIwQAm-QKbRINJddYDZvaVddSSw6C8zKIfJM8GR9rV9ohcB9XJbuYK14EzYlPF3uVYQlOHkga2Fw6jrntWErA$>ternoon,\n>\n>\n>\n> Could you please confirm the amounts allocated to each person (Jeremy,\n> Elizabeth, Owen, Chase)? Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n>\n> \n>\n>\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Tuesday, May 6, 2025 10:58 AM\n> *To:* Pernice, Emily \n> *Cc:* Owen Lindsey - Filevine Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>;\n> SouthCentralBodilyInjury.clm \n> *Subject:* [EXTERNAL] Re: #300-793616-2024\n>\n>\n>\n> Emily, I hope you are well. Just checking in on this. Thanks! On Tue, Apr\n> 29, 2025 at 10: 46 AM Pernice, Emily wrote:\n> Good morning, This is still under review for subrogation potential. Once we\n> have completed that\n>\n> Emily, I hope you are well. Just checking in on this. Thanks!\n>\n>\n>\n> On Tue, Apr 29, 2025 at 10:46?AM Pernice, Emily \n> wrote:\n>\n> Good morning,\n>\n>\n>\n> This is still under review for subrogation potential. Once we have\n> completed that review, we will update you immediately. Please note that\n> full Coots Notice was received on 04/22/2025 by email. Thank you.\n>\n>\n>\n> Warmest regards,\n>\n>\n>\n> *Emily Pernice *AIC, AIC-M, AINS\n> Bodily injury claims specialist\n> south central bodily injury\n>\n> p: 800.346.0346 ext. 55169\n> f: 517.327.2391\n> e: pernice.emily@aoins.com\n>\n> hours: 8:00 a.m. to 4:30 p.m. EST\n>\n>\n> \n>\n>\n> \n>\n> *We have a **Customer Center\n> *\n>\n> *, so you can access your claim information; anytime, anywhere.*\n>\n>\n>\n>\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Tuesday, April 29, 2025 10:39 AM\n> *To:* Pernice, Emily ; Owen Lindsey - Filevine\n> Project Email Address <\n> OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* [EXTERNAL] #300-793616-2024\n>\n>\n>\n> Emily I hope this email finds you well. I am following up to see if Auto\n> Owners had made a decision on whether to permit settlement with the at\n> fault party. Thanks. -- Aaron Whaley Whaley Law Firm 712 Lyndon Ln\n> Louisville, KY 40222\n> \n> 502-583-4022\n>\n> Emily I hope this email finds you well. I am following up to see if Auto\n> Owners had made a decision on whether to permit settlement with the at\n> fault party. Thanks.\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> Aaron Whaley\n>\n> Whaley Law Fir",
+      "natural_language": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nIn the Owen Lindsey motor vehicle accident matter, a series of communications occurred between late April and mid-May 2025 concerning settlement amounts, subrogation, affidavits, and Medicare eligibility. On May 15, 2025, Aaron Whaley of Whaley Law Firm sent a forwarding note noting \u201cNo medicare\u201d and that Elizabeth Lindsey would sign the affidavits. This message accompanied the external thread regarding settlement with the Lindsey family related to file #300-0793616-2024.\n\nEarlier, on May 12, 2025 at 10:32 a.m., Jennifer Howard, a claims specialist for Progressive Direct Insurance, asked via email which parent should be named on the notarized affidavits for Chase and Owen, since their settlements would require affidavits. She also inquired whether any member of the Lindsey family might be eligible to receive Medicare benefits, and she attached the settlement releases for the Lindsey family.\n\nIn the days prior, communications circulated about subrogation and settlement structure. On May 9, 2025 at 11:46 a.m., Aaron Whaley replied that he would handle and hold harmless. His message included his contact information and indicated that he would take responsibility for that aspect of the matter. Earlier that same day, Jennifer Howard had engaged in a back-and-forth about the settlements\u2019 composition and the handling of health insurance liens. On May 9 at 11:16 a.m., she confirmed the need to verify the breakdown for the Lindsey clients\u2019 bodily injury settlements and asked for confirmation of the following allocations: Jeremy Lindsey, $1,500; Elizabeth Lindsey, $16,000; Chase Lindsey, $16,000; Owen Lindsey, $16,000. She also noted that health insurance liens had been placed on the Lindsey family and asked whether she should address them from settlement proceeds or handle them another way. She signed off with her Progressive contact information.\n\nThe discussion continued on May 7 and May 6, with multiple updates about subrogation and settlement allocations. On May 7 at 12:10 p.m., Aaron Whaley told Jennifer, \u201cJennifer, see below. UIOM is waiving subrogation. What else do you need to get the checks cut? Thanks.\u201d The same day, Emily Pernice of South Central Bodily Injury (AIC) replied, \u201cWe are waiving subrogation.\u201d Emily provided her contact information and noted standard business hours. Earlier that morning, at 11:59 a.m., Aaron advised, \u201cit is sorry I forgot. Do $1500 for Jeremy.\u201d At 11:56 a.m., Emily asked for reconfirmation, stating she believed the total underlying amount for the Lindsey family was $49,500 and requested confirmation. At 11:53 a.m., Aaron had provided a proposed allocation: Jeremy $2,000; Owen $16,000; Chase $16,000; Elizabeth $16,000. Emily reaffirmed with a follow-up later in the day about the total underlying amount and the need to reconfirm.\n\nOn May 6, 2025, Emily asked Aaron to confirm the amounts allocated to each person (Jeremy, Elizabeth, Owen, Chase). Aaron replied at 10:58 a.m. with a brief check-in, and later that afternoon at 2:13 p.m. Emily requested confirmation of the allocations again, consistent with the prior discussion.\n\nThe thread traces further back to April 29, 2025. At 10:46 a.m., Emily indicated that the matter was still under review for subrogation potential and advised that full Coots Notice had been received by email on 04/22/2025. She promised updates once the review was complete. Prior to that, at 10:39 a.m., Aaron had followed up with Emily to see whether Auto Owners (insurer) had decided whether to permit settlement with the at-fault party.\n\nSummary of key points preserved in the correspondence:\n- The Lindsey family\u2019s settlement structure was under negotiation, with proposals for Jeremy Lindsey, Elizabeth Lindsey, Chase Lindsey, and Owen Lindsey.\n- The preliminary allocations circulated included Jeremy receiving amounts in the range of $1,500 to $2,000, and Elizabeth, Chase, and Owen each receiving approximately $16,000, with totals discussed around $49,500 as the underlying settlement pool.\n- Subrogation was a central issue: UIOM was noted as waiving subrogation, and Emily Pernice confirmed the waiver from the subrogation perspective.\n- Health insurance liens were identified as needing addressal, with questions about whether Progressive should handle them or deduct from settlement proceeds.\n- Notarized affidavits were required for Chase and Owen, and it was necessary to decide which Lindsey parent should be named on those affidavits.\n- Medicare eligibility was considered for the Lindsey family, with Jennifer asking who, if anyone, might qualify.\n- Elizabeth Lindsey was identified as the person who would sign affidavits, and a directive noted \u201cNo medicare\u201d in the May 15, 2025 message.\n\nOverall, the communications reflect a coordinated effort among counsel and the insurer to finalize the Lindsey settlements, confirm subrogation waivers, allocate settlement amounts among family members, prepare the necessary affidavits, and address health insurance liens and Medicare considerations, with the intent to issue settlement checks once all conditions, including notarization and lien resolution, were satisfied.",
+      "valid_at": "2025-05-15T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client whose settlement and affidavits are being negotiated"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Progressive Insurance Company (Adjuster: Jennifer Howard)",
+            "relevance": "insurer handling the bodily injury settlement and corresponding releases"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jennifer Howard",
+            "relevance": "Progressive claims specialist who asked about affidavits, Medicare eligibility, and settlement allocations"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Auto Owners Insurance (Adjuster: Emily Pernice)",
+            "relevance": "insurer involved in subrogation review and settlement approval (waived subrogation)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Emily Pernice",
+            "relevance": "Auto Owners adjuster who confirmed waiver of subrogation and reviewed allocations"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Rawlings Company: $18606.51",
+            "relevance": "health insurance lien category discussed as needing resolution from settlement proceeds"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-07",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Owen Lindsey__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jul 07 2025 12:57:28 GMT-04:00\n\nHas he seen any medical provider since 12/11? Surely he saw someone after\nhis broken clavicle healed.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey. On Monday, July 7, 2025 at 12:57:28 GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley at Justin@whaleylawfirm.com and to Owen Lindsey\u2019s Filevine project inbox OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. In the body of the message, Whaley wrote: \u201cHas he seen any medical provider since 12/11? Surely he saw someone after his broken clavicle healed.\u201d The message is signed with:\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "valid_at": "2025-07-07T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sender"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "recipient"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-15",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n@jchumbley Has owen seen any doctor since 12/11?",
+      "natural_language": "The case Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey.\n\nA note to @jchumbley asks, \"Has owen seen any doctor since 12/11?\"",
+      "valid_at": "2025-07-15T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of inquiry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-15",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Demands__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Jul 15 2025 12:51:54 GMT-04:00\n\nSend to Even up for UIM demands please.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "This is the Owen-Lindsey-MVA-12-01-2024 case, with client Owen Lindsey.\n\nOn July 15, 2025, at 12:51:54 PM (GMT-04:00), Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley (Justin@whaleylawfirm.com), Chase Lindsey at ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com, and Owen Lindsey at OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com. The message requests: \u201cSend to Even up for UIM demands please.\u201d\n\nThe email concluded with the sender\u2019s signature block:\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "valid_at": "2025-07-15T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "case client and recipient of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sender of the email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm (signature block)"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM claim (UIM demands)",
+            "relevance": "subject of the request to send UIM demands"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-17",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Owen and Chase Lindsey__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com), Chase Lindsey - Filevine Project Email Address [ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com](mailto:ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com)\nDate: Thu Jul 17 2025 11:34:04 GMT-04:00\n\nI know I have sent you a lot today but I want you to put these two at the\ntop of your list and get this sent over to EvenUP today and demand sent to\nUIM ASAP with Elizabeth Lindsey's demand.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves clients Owen Lindsey and Chase Lindsey. On July 17, 2025, at 11:34:04 AM (GMT-04:00), Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Justin Chumbley (Justin@whaleylawfirm.com) and to the Filevine project email addresses for Owen Lindsey (OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com) and Chase Lindsey (ChaseLindseyMVAZ4831384@louisvilleaccidentlawyer.filevineapp.com). The message stated: \"I know I have sent you a lot today but I want you to put these two at the top of your list and get this sent over to EvenUP today and demand sent to UIM ASAP with Elizabeth Lindsey's demand.\" The note is signed by Aaron Whaley of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, with phone number 502-583-4022.",
+      "valid_at": "2025-07-17T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "email recipient / subject of case"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "email recipient / subject of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "email recipient"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "EvenUP",
+            "relevance": "recipient named to receive materials"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM claim",
+            "relevance": "demand to be sent to UIM"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Elizabeth Lindsey",
+            "relevance": "demand referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-07-18",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\nsubmitted UIM demand to Evenup",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves client Owen Lindsey in a motor vehicle accident matter.\n\nA UIM demand (uninsured/underinsured motorist) was submitted to Evenup on behalf of the client.",
+      "valid_at": "2025-07-18T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "client involved in the MVA case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Evenup",
+            "relevance": "recipient of the UIM demand"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM demand to Evenup",
+            "relevance": "demand submitted on client's behalf"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-28",
+      "original_body": "Case: Owen-Lindsey-MVA-12-01-2024\nClient: Owen Lindsey\n\n__Owen and Chase Lindsey__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Justin Chumbley [Justin@whaleylawfirm.com](mailto:Justin@whaleylawfirm.com), Owen Lindsey - Filevine Project Email Address [OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com](mailto:OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jul 28 2025 11:01:38 GMT-04:00\n\nTheir EvenUp demands are done. Please send the UIM demands today.\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case Owen-Lindsey-MVA-12-01-2024 involves clients Owen Lindsey and Chase Lindsey in a motor vehicle accident matter. On July 28, 2025, at 11:01:38 AM (GMT-04:00), Aaron Whaley of Whaley Law Firm sent an email regarding Owen Lindsey and Chase Lindsey to Justin Chumbley and to Owen Lindsey\u2019s Filevine project inbox (OwenLindseyMVAZ4831382@louisvilleaccidentlawyer.filevineapp.com). The body of the email states that their EvenUp demands are done and requests that the UIM demands be sent today. The message is signed by Aaron Whaley of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222, with the phone number 502-583-4022.",
+      "valid_at": "2025-07-28T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Owen Lindsey",
+            "relevance": "subject of email"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Chase Lindsey",
+            "relevance": "subject of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "UIMClaim",
+            "entity_name": "UIM claim",
+            "relevance": "UIM demands requested"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "recipient project inbox"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

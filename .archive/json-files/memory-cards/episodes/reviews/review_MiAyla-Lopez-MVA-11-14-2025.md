@@ -1,0 +1,52 @@
+# Relationship Review: MiAyla-Lopez-MVA-11-14-2025
+
+**Total Episodes:** 3
+
+**Total Proposed Relationships:** 18
+
+
+---
+
+## 1. Existing Entities in Graph
+
+*(These are already in the graph for this case)*
+
+
+---
+
+## 2. Proposed Entity Mentions (from LLM extraction)
+
+*(Consolidated duplicates, showing matches to existing entities)*
+
+
+### BIClaim (1 consolidated)
+- [ ] BI #300-0701136-2025 — *IGNORED - claim number only*
+
+### Client (4 consolidated)
+- [ ] A'zaire Lopez — *✓ MATCHES: A'zaire Lopez (from clients)*
+- [ ] Antonio Lopez — *✓ MATCHES: Antonio Lopez (from clients)*
+- [ ] MiAyla Lopez — *✓ MATCHES: MiAyla Lopez (from clients)*
+- [ ] Michae Guyton (aka Mich-Shae) — *✓ MATCHES: Michae Guyton (from clients)*
+
+### Court (1 consolidated)
+- [ ] County Clerk — *IGNORED - government office*
+
+### Insurer (2 consolidated)
+- [ ] Auto Owners — *✓ MATCHES: Auto Owners Insurance*
+- [ ] Progressive — *✓ MATCHES: Progressive Insurance Company*
+
+### MedicalProvider (1 consolidated)
+- [ ] UofL Health – Brown Cancer Center – Medical Oncology – UofL Hospital (Norton Cancer Institute Resource Center – Downtown) — *✓ MATCHES: Norton Audubon Hospital*
+
+---
+
+## 3. Review Actions
+
+
+**For each proposed entity marked '? NEW':**
+- [ ] **Map to existing** (name mismatch - e.g., 'State Farm' vs 'State Farm Insurance')
+- [ ] **Ignore** (not relevant - e.g., mentions of staff, general terms)
+- [ ] **Create new** (valid entity not yet in graph)
+
+**After review:**
+- Run ingestion script to create Episode nodes and ABOUT relationships

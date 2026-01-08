@@ -1,0 +1,114 @@
+{
+  "case_name": "Clarence-Robinson-Dual-WC-MVA-06-10-2021",
+  "total_episodes": 1,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [],
+    "insurers": [],
+    "adjusters": [],
+    "claims": [],
+    "liens": [],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Roscoe (AI Paralegal) - 2025-12-03",
+      "original_body": "Case: Clarence-Robinson-Dual-WC-MVA-06-10-2021\nClient: Clarence Robinson\n\n**DEFENSE ATTORNEY EMAIL CORRESPONDENCE COMPREHENSIVE REVIEW COMPLETED** - Completed systematic review of all defense attorney email correspondence from 2023-2025 using correct Gmail account. New search yielded 50+ emails providing complete case timeline. Defense attorneys identified: Morgan Salisbury (Lewis Brisbois - Lead), Mindy Stallmeyer, Denise Lonneman, Todd Gray, Jackie Snell, Mark Caloyer (Lewis Brisbois); Dan Scott, Aris Rogers (Morgan Akins - Tech Insurance Co.); Robin Joyce, Sarah Tussey (TN WC). CRITICAL DEVELOPMENTS: March 2025 - Dr. Nazar IME concluded plaintiff CANNOT RETURN TO WORK. August 2025 - WC lien RESOLVED AND PAID $17,000 to Tech Insurance Co. December 2, 2025 - Defense pressing for settlement response, trial January 2026. SETTLEMENT STATUS: Defense last offered $25,000 (February 2025), WC lien obstacle removed, strong medical evidence from Dr. Nazar. IMMEDIATE ACTION REQUIRED: Client consultation on settlement offer, consider revised demand based on permanent disability finding. All correspondence documented in Defense-Attorney-Email-Summary.md file in case folder with complete timeline, attorney contacts, strategic analysis, and next steps.",
+      "natural_language": "Case: Clarence-Robinson-Dual-WC-MVA-06-10-2021. The client is Clarence Robinson. A comprehensive review of defense attorney email correspondence from 2023 through 2025 was completed using the correct Gmail account. A new search yielded 50+ emails, providing a complete timeline of the case. The defense attorneys identified include Morgan Salisbury (Lewis Brisbois – Lead), Mindy Stallmeyer, Denise Lonneman, Todd Gray, Jackie Snell, and Mark Caloyer (Lewis Brisbois); Dan Scott and Aris Rogers (Morgan Akins – Tech Insurance Co.); Robin Joyce and Sarah Tussey (TN WC).\n\nCritical developments during this period include: in March 2025, Dr. Nazar, the independent medical examiner, concluded that the plaintiff cannot return to work. In August 2025, the workers’ compensation lien was resolved, with $17,000 paid to Tech Insurance Co. On December 2, 2025, defense counsel pressed for a settlement response, with trial anticipated for January 2026.\n\nSettlement status shows that the last defense offer was $25,000 in February 2025. The WC lien obstacle has been removed, and there is strong medical evidence from Dr. Nazar supporting the claimant. Immediate action required is a client consultation regarding the settlement offer and consideration of a revised demand based on the permanent disability finding.\n\nAll correspondence is documented in the Defense-Attorney-Email-Summary.md file in the case folder, including a complete timeline, attorney contacts, strategic analysis, and next steps.",
+      "valid_at": "2025-12-03T00:00:00",
+      "author": "Roscoe (AI Paralegal)",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Clarence Robinson",
+            "relevance": "plaintiff / client of the case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "R. Morgan Salisbury",
+            "relevance": "lead defense counsel (Lewis Brisbois)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Mindy Stallmeyer",
+            "relevance": "defense counsel (Lewis Brisbois)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Denise Lonneman",
+            "relevance": "defense counsel (Lewis Brisbois)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Todd Gray",
+            "relevance": "defense counsel (Lewis Brisbois)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jackie Snell",
+            "relevance": "defense counsel (Lewis Brisbois)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Mark Caloyer",
+            "relevance": "defense counsel (Lewis Brisbois)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Lewis, Brisbois, Bisgaard & Smith, LLP",
+            "relevance": "defense law firm representing respondent"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Dan Scott",
+            "relevance": "defense counsel (Morgan Akins / Tech Insurance Co.)"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aris Rogers",
+            "relevance": "defense counsel (Morgan Akins / Tech Insurance Co.)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Morgan Akins",
+            "relevance": "defense firm associated with Tech Insurance Co."
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Robin Joyce",
+            "relevance": "TN WC counsel"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Sarah Tussey",
+            "relevance": "TN WC counsel"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Tech Insurance Co.",
+            "relevance": "insurer and recipient of WC lien payment"
+          },
+          {
+            "entity_type": "Lien",
+            "entity_name": "Workers' compensation lien",
+            "relevance": "lien resolved in August 2025 with payment"
+          },
+          {
+            "entity_type": "LienHolder",
+            "entity_name": "Tech Insurance Co.",
+            "relevance": "holder/recipient of the workers' compensation lien payment"
+          },
+          {
+            "entity_type": "WCClaim",
+            "entity_name": "Workers' compensation claim",
+            "relevance": "WC matter underlying the lien and medical findings"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Blackburn Domene & Burchett, PLLC",
+    "attributes": {
+      "address": "614 West Main Street, Suite 3000, Louisville, Kentucky 40202",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs",
+    "notes": "Also known as BDB Law"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Carlisle Law",
+    "attributes": {
+      "address": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "LawFirm",
+    "name": "Law Office of Bryan B. Davenport, P.C.",
+    "attributes": {
+      "address": "",
+      "phone": "",
+      "email": ""
+    },
+    "source_id": "episode_extraction",
+    "source_file": "review_docs",
+    "notes": "Bryan Davenport is the attorney, this is his law firm"
+  }
+]

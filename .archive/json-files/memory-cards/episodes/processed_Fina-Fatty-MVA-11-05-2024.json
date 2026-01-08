@@ -1,0 +1,1957 @@
+{
+  "case_name": "Fina-Fatty-MVA-11-05-2024",
+  "total_episodes": 83,
+  "total_errors": 0,
+  "case_entities": {
+    "providers": [
+      {
+        "name": "Baptist Health Lexington",
+        "specialty": null
+      },
+      {
+        "name": "Sound Physicians",
+        "specialty": null
+      },
+      {
+        "name": "St. Joseph East",
+        "specialty": null
+      }
+    ],
+    "insurers": [
+      {
+        "name": "Liberty Mutual Insurance Company"
+      },
+      {
+        "name": "Progressive Insurance Company"
+      }
+    ],
+    "adjusters": [
+      {
+        "name": "Sarah Mackay"
+      },
+      {
+        "name": "Terry Woodring"
+      }
+    ],
+    "claims": [
+      {
+        "type": "BIClaim",
+        "name": "Fina-Fatty-MVA-11-05-2024-Bodily Injury (BI)-58373025",
+        "insurer": "Liberty Mutual Insurance Company",
+        "adjuster": "Sarah Mackay"
+      },
+      {
+        "type": "PIPClaim",
+        "name": "Fina-Fatty-MVA-11-05-2024-Personal Injury Protection (PIP)-25-679103870",
+        "insurer": "Progressive Insurance Company",
+        "adjuster": "Terry Woodring"
+      }
+    ],
+    "liens": [
+      {
+        "name": "Fina-Fatty-MVA-11-05-2024-No Private Health Insurance",
+        "holder": null,
+        "amount": null
+      }
+    ],
+    "attorneys": [],
+    "courts": [],
+    "defendants": []
+  },
+  "episodes": [
+    {
+      "episode_name": "Justin Chumbley - 2025-01-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nsent intake via vinesign",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty. An intake was sent to Fina Fatty via VineSign.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case; recipient of intake via VineSign"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nSharonville PD\nWent to Baptist Hospital in Lexington\nBack and shoulder pain\nHas not been seen since ER visit\n\nClient has Progressive\n\nDOB 2/26/1970\nUnited Health Insurance\n\nWas on a run in his Semi Truck transporting a vehicle\nHe said he is self employed \n\nPolice Report # 242594\n\nJustin Chumbley\nWhaley Law Firm\nPh: (502)583-4022\nFax: (502)364-9363\n\nFrom: Aaron Whaley \nSent: Monday, January 13, 2025 10:52 AM\nTo: Bryce Koon ; Justin Chumbley \nSubject: Fwd: The Whaley Law Firm - MVA Intake Completed - Fina Fatty\n\nGive this guy a call and let\u2019s sign him up. We can refer him out if we need to. \n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022\n\n---------- Forwarded message ---------\nFrom: \nDate: Mon, Jan 13, 2025 at 10:26?AM\nSubject: The Whaley Law Firm - MVA Intake Completed - Fina Fatty\nTo: \n\nPlease see the below Intake for Fina Fatty : \n\nHow may I assist you today? New Client - Auto Accident \n\nPhone Number: +18592027110 \nWould you like to provide an email address? Yes\n\nEmail: fattypa249@gmail.com\n\nAre you calling on behalf of yourself or a loved one? Myself\n\nAre you currently represented or have you previously had legal representation for this matter? No\n\nACCIDENT DETAILS: \n\nDate of Incident: 11/05/2024\n\nWhere did the incident happen? Sharonville, Ohio \n\nWhat county is this located in? Hamilton County \n\nPlease describe how the incident happened: Caller (Fina) stated that he is a truck driver and he was driving down Highway 275 (Vehicle 1), heading towards Kentucky. He stated that there was a four lane highway and he wa in labne #2; then the traffic came to a stop in front of him. He then stated that the vehicle behind him (Vehicle 2), was hit from behind by a FedEx truck (Vehicle 3)....which caused Vehicle 2, to hit Vehicle 1 from the back. He also stated that vehicle 2 was totaled from the impact. \n\nWere you injured? Yes\n\nPlease describe your injuries: Back pain Shoulder pain (both shoulders) \n\nHave you had or do you plan to have medical treatment? Yes\n\nPlease describe your medical treatment: Caller went to the ER and gave him a pain medication; X-Ray; & MRI\n\nINVOLVED PARTY DETAILS: \n\nHow many vehicles were involved in the accident? 3\n\nVehicle 1 Name: Fina Fatty (The Caller)\n\nWere you the driver or a passenger? Driver\n\nDo you have insurance on your vehicle? Yes\n\nWho is your insurance through? Progressive \n\nWere there any passengers in your vehicle? Yes\n\nPlease provide the name(s) of any passengers along with their relationship to you: Salem (does not know his last name)-this was the caller's trainee.\n\nVehicle 2 Name: UNKNOWN DRIVER \n\nDid the other driver have insurance? Unknown\n\nADDITIONAL INFORMATION: \n\nWhy was the retainer not offered? The caller did not meet all the criteria: the accident did NOT occur in Kentucky nor Indiana.\n\nNotes/Additional Information: 1/13th @ 10:05 am- Caller (Fina) stated that he would like to speak with an attorney, regarding an auto accident. \n\nCall Center Agent Name: Delilah \n\nThank you, \n\nBlazeo Voice Team \nsupport@blazeo.com \nPhone: (925) 505-4505",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. The client is Fina Fatty, whose date of birth is February 26, 1970. He is insured for health care by United Health Insurance and for auto by Progressive. The incident was a motor vehicle accident that occurred on November 5, 2024, in Sharonville, Ohio (Hamilton County). Sharonville Police Department issued Police Report #242594.\n\nAccording to the notes, Fina Fatty was driving Vehicle 1, his own vehicle, as part of a run in his semi truck transporting a vehicle; he stated that he is self-employed. He was traveling on Highway 275 in a four-lane corridor, in lane number 2, heading toward Kentucky. Traffic in front of him slowed and stopped; the vehicle behind him (Vehicle 2) was struck from behind by a FedEx truck (Vehicle 3). The impact caused Vehicle 2 to strike Vehicle 1 from the rear, and Vehicle 2 was totaled. There were three vehicles involved altogether. Fina Fatty was the driver of Vehicle 1; a passenger in his vehicle named Salem (the caller notes that Salem is his trainee) was also present. The other driver involved (Vehicle 2) is identified only as an unknown driver, with unknown insurance for that vehicle. Vehicle 3 was a FedEx truck.\n\nFina Fatty reported injuries of back pain and shoulder pain (both shoulders). He sought medical treatment at the ER, where he received pain medication and underwent X-ray and MRI testing. He had gone to Baptist Hospital in Lexington following the incident for the pain, and has not been seen since the ER visit.\n\nInsurance details note that the caller\u2019s auto insurance is through Progressive, while his health coverage is through United Health Insurance. In the \u201cAdditional Information\u201d section, it states that the retainer was not offered because the caller did not meet all criteria: the accident did not occur in Kentucky or Indiana.\n\nThe case was referenced in a correspondence from the Whaley Law Firm: Justin Chumbley, Whaley Law Firm, with phone and fax numbers (Ph: 502-583-4022; Fax: 502-364-9363). On January 13, 2025, Aaron Whaley (of Whaley Law Firm, located at 712 Lyndon Ln, Louisville, KY 40222) sent a message encouraging the firm to call the client and sign him up, with the option to refer him out if needed. The forwarded message relates to intake completed for Fina Fatty, tagged \u201cThe Whaley Law Firm - MVA Intake Completed - Fina Fatty.\u201d The intake indicates:\n\n- New Client - Auto Accident\n- Phone Number: +1 859-202-7110\n- Email: fattypa249@gmail.com\n- Representing party: Myself (Fina Fatty), with no prior legal representation for this matter\n- Accident Details: Date of Incident 11/05/2024; Location Sharonville, Ohio (Hamilton County)\n- Description: Fina Fatty, a driver, traveling on Highway 275 in lane #2 of a four-lane road when traffic stopped ahead; Vehicle 2 behind him was struck by a FedEx truck (Vehicle 3), causing Vehicle 2 to rear-end Vehicle 1. Vehicle 2 was totaled.\n- Involved Parties: Vehicle 1 \u2013 Fina Fatty (Driver), insured by Progressive; Passenger \u2013 Salem (trainee). Vehicle 2 \u2013 Unknown Driver (unknown insurance). Vehicle 3 \u2013 FedEx truck.\n- Additional Information: The retainer was not offered because the accident did not occur in Kentucky or Indiana. The intake note from January 13, 2025, at 10:05 a.m. indicates the caller wanted to speak with an attorney regarding the auto accident.\n- Call Center Notes: Delilah (Call Center Agent). The message was logged by Blazeo Voice Team (support@blazeo.com; Phone: (925) 505-4505).\n\nA subsequent internal communication from January 13, 2025, at 10:52 a.m. from Aaron Whaley urged signing up the client and stated that they could refer him out if necessary. The Whaley Law Firm contact details included Justin Chumbley and the firm\u2019s phone and fax numbers, along with the reiteration of the intake information described above.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "primary client/claimant"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Lexington",
+            "relevance": "treated at ER for reported injuries"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "client's auto insurer"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "United Health Insurance",
+            "relevance": "client's health insurer"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "listed PIP carrier/auto claim type for client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "firm handling intake and communications about representation"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "Whaley Law Firm contact listed on correspondence"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "Whaley attorney who sent message urging sign-up"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "FedEx",
+            "relevance": "third vehicle (Vehicle 3) involved in the collision"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Sharonville Police Department",
+            "relevance": "issued police report #242594 for the incident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__CLIENT CONTACT__\n__Details:__ Sharonville PD\nWent to Baptist Hospital in Lexington\nBack and shoulder pain\nHas not been seen since ER visit\n\nClient has Progressive\n\nDOB 2/26/1970\nUnited Health Insurance\n\nWas on a run in his Semi Truck transporting a vehicle\nHe said he is self employed \n\nPolice Report # 242594\n\nJustin Chumbley\nWhaley Law Firm\nPh: (502)583-4022\nFax: (502)364-9363\n\nFrom: Aaron Whaley \nSent: Monday, January 13, 2025 10:52 AM\nTo: Bryce Koon ; Justin Chumbley \nSubject: Fwd: The Whaley Law Firm - MVA Intake Completed - Fina Fatty\n\nGive this guy a call and let\u2019s sign him up. We can refer him out if we need to. \n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022\n\n---------- Forwarded message ---------\nFrom: \nDate: Mon, Jan 13, 2025 at 10:26?AM\nSubject: The Whaley Law Firm - MVA Intake Completed - Fina Fatty\nTo: \n\nPlease see the below Intake for Fina Fatty : \n\nHow may I assist you today? New Client - Auto Accident \n\nPhone Number: +18592027110 \nWould you like to provide an email address? Yes\n\nEmail: fattypa249@gmail.com\n\nAre you calling on behalf of yourself or a loved one? Myself\n\nAre you currently represented or have you previously had legal representation for this matter? No\n\nACCIDENT DETAILS: \n\nDate of Incident: 11/05/2024\n\nWhere did the incident happen? Sharonville, Ohio \n\nWhat county is this located in? Hamilton County \n\nPlease describe how the incident happened: Caller (Fina) stated that he is a truck driver and he was driving down Highway 275 (Vehicle 1), heading towards Kentucky. He stated that there was a four lane highway and he wa in labne #2; then the traffic came to a stop in front of him. He then stated that the vehicle behind him (Vehicle 2), was hit from behind by a FedEx truck (Vehicle 3)....which caused Vehicle 2, to hit Vehicle 1 from the back. He also stated that vehicle 2 was totaled from the impact. \n\nWere you injured? Yes\n\nPlease describe your injuries: Back pain Shoulder pain (both shoulders) \n\nHave you had or do you plan to have medical treatment? Yes\n\nPlease describe your medical treatment: Caller went to the ER and gave him a pain medication; X-Ray; & MRI\n\nINVOLVED PARTY DETAILS: \n\nHow many vehicles were involved in the accident? 3\n\nVehicle 1 Name: Fina Fatty (The Caller)\n\nWere you the driver or a passenger? Driver\n\nDo you have insurance on your vehicle? Yes\n\nWho is your insurance through? Progressive \n\nWere there any passengers in your vehicle? Yes\n\nPlease provide the name(s) of any passengers along with their relationship to you: Salem (does not know his last name)-this was the caller's trainee.\n\nVehicle 2 Name: UNKNOWN DRIVER \n\nDid the other driver have insurance? Unknown\n\nADDITIONAL INFORMATION: \n\nWhy was the retainer not offered? The caller did not meet all the criteria: the accident did NOT occur in Kentucky nor Indiana.\n\nNotes/Additional Information: 1/13th @ 10:05 am- Caller (Fina) stated that he would like to speak with an attorney, regarding an auto accident. \n\nCall Center Agent Name: Delilah \n\nThank you, \n\nBlazeo Voice Team \nsupport@blazeo.com \nPhone: (925) 505-4505 \n__Person Making Contact:__ Justin\n__Date & Time__: January 13 2025",
+      "natural_language": "Initial client contact on January 13, 2025, regarding a motor vehicle accident intake for Fina Fatty. The intake originated through Blazeo\u2019s voice team, with Delilah listed as the call center agent. The client reports contact with Sharonville Police Department and states he previously went to Baptist Hospital in Lexington for back and shoulder pain, and has not been seen since the emergency room visit. He is described as self-employed, operating a semi-truck on a run transporting a vehicle, with Progressive as his auto insurer and United Health Insurance for medical coverage. The client\u2019s date of birth is February 26, 1970. A police report number associated with the matter is 242594.\n\nThe Whaley Law Firm was identified as the potential attorney of record, with Justin Chumbley listed as the attorney and contact details including Whaley Law Firm, 712 Lyndon Lane, Louisville, KY 40222; phone 502-583-4022; fax 502-364-9363. An internal email from Aaron Whaley dated January 13, 2025 at 10:52 AM urged reaching out to the client to sign him up, with the option to refer him out if necessary.\n\nIntake details filed on January 13, 2025 indicate the caller is seeking representation as a new auto-accident client. The contact phone number provided is +1 (859) 202-7110, and the email address given is fattypa249@gmail.com. The caller reports he is representing himself (not acting on behalf of a loved one) and has not had legal representation for this matter before. The accident occurred on November 5, 2024, in Sharonville, Ohio, Hamilton County. The caller states he is a truck driver traveling on Highway 275 toward Kentucky in four-lane traffic; he was in lane #2 when traffic slowed in front of him. The vehicle behind him (Vehicle 2) was rear-ended by a FedEx truck (Vehicle 3), which caused Vehicle 2 to strike Vehicle 1 (Fina Fatty) from behind, with Vehicle 2 ultimately totaled. Three vehicles were involved in the incident, and Fina Fatty was the driver of Vehicle 1. He had insurance on his vehicle through Progressive. There were passengers in his vehicle identified as Salem, described as the caller\u2019s trainee; Salem\u2019s last name was not provided. Vehicle 2 is identified as an unknown driver with unknown insurance, and Vehicle 3 is a FedEx truck. \n\nInjuries reported by the caller include back pain and shoulder pain (both shoulders). Medical treatment was sought; the caller reports going to the ER where pain medication was administered and imaging including X-ray and MRI were performed. The intake notes that the retainer was not offered because the accident did not occur in Kentucky or Indiana, noting that the incident location is in Ohio. An entry dated January 13 at 10:05 AM states that the caller would like to speak with an attorney regarding the auto accident.\n\nAdditional information from the intake includes that the call center agent was Delilah, and the contact originated from Blazeo\u2019s system (Blazeo Voice Team, support@blazeo.com, phone 925-505-4505). The material also contains internal communications indicating the client\u2019s file was to be reviewed by Justin Chumbley, with a forwarded message from Aaron Whaley encouraging signing up the client and offering to refer out if needed. The embedded contact information for the Whaley Law Firm is included, along with a forward date timestamp of January 13, 2025, and a date/time reference for the intake completion.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "injured party / caller"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Lexington",
+            "relevance": "ER treatment for reported back and shoulder pain"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company (PIP)",
+            "relevance": "client's auto insurer / PIP carrier referenced for the claim"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "client's auto insurer"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "potential attorney of record"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin Chumbley",
+            "relevance": "attorney indicated to review the file / potential counsel"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "FedEx",
+            "relevance": "third-party vehicle involved in the collision"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Blazeo Voice Team",
+            "relevance": "origin of the intake call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nClient Contacted today to give update #cc",
+      "natural_language": "The case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty in a motor vehicle accident matter. \n\nOn November 5, 2024, the client, Fina Fatty, contacted us to provide an update, noted as update #cc.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "contacted us to provide an update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n#vinesign-completed\nName: intake\nSigned Document URL: https://app.vinesign.com/Jobs/Pdf?pdfKey=2d70c8aa-f4a3-434b-afc7-5bd0e9053293.pdf\nSigned: 2025-01-13 17:01:29\nAll signers: Fina Fatty(fattypa249@gmail.com (859) 202-7110)\nSender: Justin Chumbley",
+      "natural_language": "In the case labeled Fina-Fatty-MVA-11-05-2024, the client is Fina Fatty. The intake document was processed via VineSign and has been completed; the document was named intake.\n\nThe signing was completed on 2025-01-13 17:01:29, and the signed document can be viewed at https://app.vinesign.com/Jobs/Pdf?pdfKey=2d70c8aa-f4a3-434b-afc7-5bd0e9053293.pdf. All signers listed are Fina Fatty, with email fattypa249@gmail.com and phone (859) 202-7110. The VineSign sender was Justin Chumbley.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "signer and subject of the intake document"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nCalled to request PR because the link on their website for crash report is not working. PR will be sent to my email.",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Initial client contact on November 5, 2024 with Fina Fatty regarding a motor vehicle accident. The client called to request PR because the link on their website for the crash report is not working, and PR will be sent to my email.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "initial client contact; requested crash report (PR)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Fwd: PUBLIC RECORD REQUEST__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: fina fatty - Filevine Project Email Address [FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com](mailto:FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jan 13 2025 04:27:57 GMT-05:00\n\n---------- Forwarded message ---------\nFrom: Healey, Amanda \nDate: Mon, Jan 13, 2025 at 3:46?PM\nSubject: PUBLIC RECORD REQUEST\nTo: jessa@whaleylawfirm.com \n\nPlease see attached crash report.\n\nAmanda Healey\n\n2nd Shift Clerk / Dispatcher\n\nSharonville Police Department\n\n3639 E. Kemper Road\n\nCincinnati, OH 45241\n\nP: 513.563.1147\n\nF: 513.563.7321\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty.\n\nOn January 13, 2025, at 04:27:57 GMT-05:00, a forward titled \u201cPUBLIC RECORD REQUEST\u201d was sent from Jessa Galosmo of Whaley Law Firm to the Fina Fatty Filevine project email address for the matter, FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com. The message body shows this was a forwarded email.\n\nThe forwarded message originated from Amanda Healey and was dated Monday, January 13, 2025, at 3:46?PM. Its subject was PUBLIC RECORD REQUEST and it was addressed to jessa@whaleylawfirm.com. In the body, Healey wrote: \u201cPlease see attached crash report.\u201d The message identifies the sender as Amanda Healey, 2nd Shift Clerk / Dispatcher, Sharonville Police Department, 3639 E. Kemper Road, Cincinnati, OH 45241, with a phone number of 513.563.1147 and a fax number of 513.563.7321.\n\nThe forwarded email concludes with the signature block from Jessa Galosmo of the Whaley Law Firm, which includes her contact information: Ph: (502)357-9975; Fax: (502)364-9363, followed by the closing line \u201cAll the best,\u201d.",
+      "valid_at": "2025-01-13T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "recipient/forwarder of the public records email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "forwarded the email / signature block present"
+          },
+          {
+            "entity_type": "Organization",
+            "entity_name": "Sharonville Police Department",
+            "relevance": "originator of the crash report (Amanda Healey)"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "Filevine",
+            "relevance": "project email host (FinaFattyMVA...@louisvilleaccidentlawyer.filevineapp.com)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__058373025__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Sarah Mackay [sarah.mackay@libertymutual.com](mailto:sarah.mackay@libertymutual.com)\nDate: Tue Jan 14 2025 08:55:41 GMT-05:00\n\nHi,\n\nSee attached letter of representation for our client, Fina Fatty.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty in a motor vehicle accident dated 11-05-2024. The file carries internal reference number 058373025.\n\nOn January 14, 2025, at 08:55:41 GMT-05:00, Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to Sarah Mackay at Liberty Mutual (sarah.mackay@libertymutual.com). The message begins with \"Hi,\" and states, \"See attached letter of representation for our client, Fina Fatty.\" The email closes with the sign-off: \"All the best, Jessa Galosmo,\" followed by the Whaley Law Firm contact details: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of letter of representation"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of letter of representation"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "author/sender of the email/letter of representation"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "recipient at Liberty Mutual (adjuster contacted)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "recipient insurer"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "bodily injury claim associated with Liberty Mutual (claim referenced by insurer/adjuster)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__New Insurance Note:__ 01/14/25 No adjuster assigned yet. Adjuster will reach out in 2-3 business days. Needs to wait for adj to reach out before sending LOR\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On January 14, 2025, a new insurance note was added indicating that no adjuster has been assigned yet for the Personal Injury Protection (PIP) claim with Progressive Insurance Company. The note states the adjuster will reach out within two to three business days, and that the Letter of Representation (LOR) should not be sent until the adjuster initiates contact. This entry is labeled with the internal tag #Inotes and was written by Jessa.\n\nInsurance type: Personal Injury Protection (PIP). Insurance company: Progressive Insurance Company.",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer for the PIP claim mentioned in the note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "PIPClaim: Progressive Insurance Company",
+            "relevance": "PIP claim discussed (no adjuster assigned yet; adjuster will reach out)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__CLIENT CONTACT__\n__Details:__ Attempted to call to get missing info on file. No answer, left vm. \n__Person Making Contact:__ Jessa\n__Date & Time__: January 14 2025",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty.\n\nOn January 14, 2025, Jessa attempted to contact Fina Fatty by phone to obtain missing information on file. There was no answer, and a voicemail was left.",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "attempted phone contact; voicemail left to obtain missing information"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nClient Contacted today to give update #cc",
+      "natural_language": "On November 5, 2024, the client, Fina Fatty, contacted us to provide an update on the motor vehicle accident case Fina-Fatty-MVA-11-05-2024. This update was recorded under reference code #cc.",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "contacted to provide case update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__25-679103870__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Deborah [deborah_andrews@progressive.com](mailto:deborah_andrews@progressive.com)\nDate: Tue Jan 14 2025 01:33:56 GMT-05:00\n\nHi Deborah,\n\nPlease see attached letter of representation and copy of police report.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty. Reference number: 25-679103870.\n\nOn January 14, 2025, at 01:33:56 GMT-05:00, Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) sent an email to Deborah Andrews at Progressive (deborah_andrews@progressive.com). The message began with \u201cHi Deborah,\u201d and stated, \u201cPlease see attached letter of representation and copy of police report.\u201d The email indicated that it included attachments: a letter of representation and a copy of the police report related to the Fina Fatty motor vehicle accident on 11-05-2024. The note was signed, \u201cAll the best, Jessa Galosmo,\u201d and provided the Whaley Law Firm contact information: Ph: (502)357-9975; Fax: (502)364-9363.",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm of the letter of representation"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender/representative"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "recipient insurer of the letter and police report"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company (Adjuster: Terry Woodring)",
+            "relevance": "claim related to the motor vehicle accident referenced in the correspondence"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nA call for Jessa Galosmo was logged at 2025-01-14 18:26:54.055000+00:00 . #inboundcall\n\nCaller Info: 4404596343 \n\nCaller ID: 4404596343 \n\nCaller Name: Deborah Andrews \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty in connection with a motor vehicle accident dated November 5, 2024.\n\nAn inbound call related to this case for Jessa Galosmo was logged on January 14, 2025, at 18:26:54.055000 UTC. The caller was Deborah Andrews, dialing 440-459-6343 (caller ID 440-459-6343); no email address was provided. A link to the Filevine contact is available at [filevine-link].",
+      "valid_at": "2025-01-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-15",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__CLIENT CONTACT__\n__Details:__ Called client to obtain SSN. Added SSN on file. Client does not have health insurance he said he paid out of pocket for treatment. Only went to Baptist Health but if PIP is available he'll go back to treatment. He said he doesn't have Progressive. Their company insurance is United Financial policy number is 974708859. Client was working as a contractor for the company but did not file WC. \n__Person Making Contact:__ Jessa\n__Date & Time__: January 15 2025",
+      "natural_language": "Initial client contact on January 15, 2025 with Jessa regarding the motor vehicle accident case Fina-Fatty-MVA-11-05-2024 for client Fina Fatty. During the contact, the Social Security Number was obtained and added to the file. The client reports he does not have health insurance and paid out of pocket for treatment; he has only been to Baptist Health and would resume treatment if PIP benefits are available. He states he does not have Progressive. The client\u2019s company insurance is United Financial, policy number 974708859. The client was working as a contractor for the company but did not file workers' compensation.",
+      "valid_at": "2025-01-15T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Baptist Health Lexington",
+            "relevance": "treatment provider"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "potential PIP coverage discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-01-15",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nClient Contacted today to give update #cc",
+      "natural_language": "On November 5, 2024, the client Fina Fatty, associated with the motor vehicle accident case Fina-Fatty-MVA-11-05-2024, was contacted to provide an update. The outreach was conducted to obtain the update, which was recorded under the tag #cc.",
+      "valid_at": "2025-01-15T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "person contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-17",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Fina Fatty__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [5022534829@rcfax.com](mailto:5022534829@rcfax.com)\nCc: fina fatty - Filevine Project Email Address [FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com](mailto:FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Jan 17 2025 11:16:42 GMT-05:00\n\nAttached is a request for records & bills on our client, Fina Fatty.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty.\n\nOn January 17, 2025, at 11:16:42 GMT-05:00, Jessica Bottorff of The Whaley Law Firm sent an email from jessica@whaleylawfirm.com to 5022534829@rcfax.com, with a cc to FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com, in reference to the Fina Fatty motor vehicle accident case. The message stated that the attachment contained a request for records & bills on our client, Fina Fatty, and it ended with \u201cThanks!\u201d followed by the signature \u201cThe Whaley Law Firm.\u201d",
+      "valid_at": "2025-01-17T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of records request / client in case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of email requesting records and bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-01-17",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nRequest for bills sent to Central Emergency Physicians via ChartSwap",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty in relation to a motor vehicle accident that occurred on November 5, 2024. A request was made to send the medical bills to Central Emergency Physicians via ChartSwap.",
+      "valid_at": "2025-01-17T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of the case (MVA on 11/05/2024)"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "Central Emergency Physicians",
+            "relevance": "recipient of medical bills"
+          },
+          {
+            "entity_type": "Vendor",
+            "entity_name": "ChartSwap",
+            "relevance": "method used to send medical bills"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-24",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Re: 058373025 Claim#:058373025-06__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Mackay, Sarah [sarah.mackay@libertymutual.com](mailto:sarah.mackay@libertymutual.com)\nDate: Fri Jan 24 2025 09:08:07 GMT-05:00\n\nHi Sarah,\n\nThanks for the update.\n\nFina is still undergoing treatment for her injuries. She's not eligible for\nMedicare or Medicaid.\n\nBest,\nJessa\n\nOn Thu, Jan 23, 2025 at 11:15?AM Mackay, Sarah <\nsarah.mackay@libertymutual.com> wrote:\n\n>\n>\n>\n>\n>\n>\n> Hello *Jessa,*\n>\n>\n>\n> I am the bodily injury adjuster assigned to the claim for your client Fina\n> Fatty. I have mailed an acknowledgement letter to your office, it\u2019s also\n> listed at the bottom of this email. We have accepted liability on this.\n> We do not have permission from our Insured to disclose limits. Can you\n> please provide me with an update on injury and treatment for your client?\n> Is your client eligible for Medicare or Medicaid?\n>\n>\n>\n>\n>\n> Thank you,\n>\n>\n>\n>\n>\n>\n>\n> Sincerely,\n>\n> *Sarah Mackay*\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> [metadata: {Claim-Number : 058373025},{Exposure-Number : 06},{Category :\n> Manual Outbound E-Mail},{Description : undefined},{Template-Id :\n> BIFREEFORM}]\n>\n>\n>\n> Policy underwritten by *Liberty Mutual Personal Insurance Company*\n>\n> \u00a9 2025 Liberty Mutual Insurance Company, 175 Berkeley Street, Boston, MA\n> 02116\n>\n>\n>\n>\n>\n> Sarah Mackay\n> Casualty Claims Resolution Specialist II\n>\n> Direct Phone: 469-997-3807\n>\n> Fax: 603-334-8181\n>\n> Business Hours: Monday to Friday (8:00 AM to 5:30 PM, Friday 8:00 AM to\n> 12:00 PM, CST)\n>\n> *USPS Mail Only*\n>\n> *FedEX/UPS*\n> *(including Overnight, Next Day, and other non-USPS deliveries)*\n>\n> *Liberty Mutual or Safeco Claims*\n> P.O. Box 5014\n> Scranton, PA 18505-5014\n>\n> *Liberty Mutual or Safeco Claims*\n> 19 Bert Collins Drive\n> Throop, PA 18512\n>\n> This e-mail, and any attachments hereto, is intended only for the use of\n> the addressee(s) named herein and may contain legally privileged and/or\n> confidential information. If you are not the intended recipient of this\n> e-mail, you are hereby notified that any dissemination, distribution or\n> copying of this e-mail, and any attachments hereto, is strictly\n> prohibited. If you have received this e-mail in error, please notify me\n> via return e-mail and via telephone at 469-997-3807 and permanently delete\n> the original and any attachment and any copy/printout thereof. Thank you.\n>\n>\n>\n> *From:* Jessa Galosmo \n> *Sent:* Tuesday, January 14, 2025 7:56 AM\n> *To:* Mackay, Sarah \n> *Subject:* {EXTERNAL} 058373025\n>\n>\n>\n> Hi,\n>\n>\n>\n> See attached letter of representation for our client, Fina Fatty.\n>\n>\n>\n> --\n>\n> All the best,\n>\n> Jessa Galosmo\n>\n> Whaley Law Firm\n>\n> Ph: (502)357-9975\n>\n> Fax: (502)364-9363\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty in a motor vehicle accident that occurred on November 5, 2024. The related claim is 058373025-06 (claim number 058373025). The file shows communications between Jessa Galosmo of Whaley Law Firm and Sarah Mackay, a Bodily Injury Claims Adjuster for Liberty Mutual Personal Insurance Company. On January 14, 2025, Jessa sent an email to Sarah with a letter of representation for Fina Fatty attached, regarding claim 058373025.\n\nIn a January 23, 2025 email, Sarah Mackay identified herself as the bodily injury adjuster assigned to the Fina Fatty claim. She advised that an acknowledgement letter had been mailed to Jessa\u2019s office and noted that liability had been accepted. She also stated that there is no permission from the insured to disclose policy limits and requested an update on Fina\u2019s injuries and treatment, including whether the client is eligible for Medicare or Medicaid.\n\nOn January 24, 2025, Jessa Galosmo replied, confirming that Fina is still undergoing treatment for her injuries and that Fina is not eligible for Medicare or Medicaid.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "represented client and subject of the motor vehicle accident claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim 058373025",
+            "relevance": "bodily injury claim discussed (liability accepted)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Personal Insurance Company",
+            "relevance": "insurer handling the BI claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "bodily injury claims adjuster who communicated about the claim"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sent letter of representation and corresponded with the adjuster"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing the client and sender/recipient of correspondence"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-01-24",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nThis case involves Fina Fatty, who was injured in a multi-vehicle accident on November 5, 2024, in Sharonville, Ohio. Fina was driving a semi-truck when a FedEx truck hit the vehicle behind him, causing that vehicle to collide with Fina's truck.\nThe most recent activity shows that medical record and bill requests were sent to Central Emergency Physicians and Radiology Associates via ChartSwap on January 17, 2025. There were some issues with the request for Central Emergency Physicians, which required resubmission with additional information. (See details)\nA potential red flag is that the accident occurred in Ohio, which may complicate jurisdiction issues as the law firm appears to be based in Kentucky. Additionally, Fina was working as a contractor at the time of the accident but did not file a workers' compensation claim. (See details)\nNext steps should include following up on the medical record requests, particularly for Central Emergency Physicians, and obtaining a complete list of all medical providers Fina has seen since the accident. It's also important to clarify Fina's insurance situation, as there seems to be confusion about whether he has Progressive or United Financial insurance. (See details), (See details)",
+      "natural_language": "This case involves client Fina Fatty, who sustained injuries in a multi-vehicle motor vehicle accident on November 5, 2024, in Sharonville, Ohio. At the time, Fina was driving a semi-truck when a FedEx truck struck the vehicle behind him, causing that vehicle to collide with Fina's truck.\n\nAs of January 17, 2025, medical records and bills were requested for Central Emergency Physicians and Radiology Associates via ChartSwap. The request for Central Emergency Physicians encountered issues and required resubmission with additional information.\n\nA potential red flag is that the accident occurred in Ohio, which may complicate jurisdiction issues since the law firm appears to be based in Kentucky. Additionally, Fina was working as a contractor at the time of the accident but did not file a workers' compensation claim.\n\nNext steps include following up on the medical record requests, particularly for Central Emergency Physicians, and obtaining a complete list of all medical providers Fina has seen since the accident. It is also important to clarify Fina's insurance situation, as there seems to be confusion about whether he has Progressive or United Financial insurance.",
+      "valid_at": "2025-01-24T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "injured party in the accident"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurance under discussion/possible PIP coverage"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Terry Woodring",
+            "relevance": "Progressive PIP adjuster referenced regarding coverage"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-28",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Hi Fina, may I know your mailing address please?\n__Date and Time:__ 2025-01-27 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty in connection with a motor vehicle accident.\n\nOn January 27, 2025, an outbound text message was sent regarding the case from the number +15023579975 to the number +18592027110. The message read, \"Hi Fina, may I know your mailing address please?\"",
+      "valid_at": "2025-01-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "recipient of text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-28",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ 235 Wayne Dr Richmond KY \n__Date and Time:__ 2025-01-27 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty.\n\nOn January 27, 2025, there was an inbound text message from +18592027110 to +15023579975. The message content read \"235 Wayne Dr Richmond KY.\"",
+      "valid_at": "2025-01-28T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-29",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Wage and Salary Verification Form__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Fina Fatty [fattypa249@gmail.com](mailto:fattypa249@gmail.com)\nDate: Wed Jan 29 2025 01:20:18 GMT-05:00\n\nHi,\n\nPlease complete the form and return to us once done.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty. A Wage and Salary Verification Form is part of this case.\n\nOn January 29, 2025, at 01:20:18 GMT-05:00, Jessa Galosmo of Whaley Law Firm sent a Wage and Salary Verification Form to the client, Fina Fatty, at fattypa249@gmail.com, from jessa@whaleylawfirm.com.\n\nThe body of the email began with a greeting and instructed the client to complete the form and return it once done. It read: \"Hi, Please complete the form and return to us once done.\"\n\nThe message closed with \"All the best,\" followed by the sender\u2019s name, \"Jessa Galosmo,\" and the firm, \"Whaley Law Firm.\" The email also listed contact numbers: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-01-29T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client and recipient of Wage and Salary Verification Form"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sent the Wage and Salary Verification Form (email sender)"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender firm of the email"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ You may select any chiropractor that works best for you.\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On January 29, 2025, an outbound text message was sent from +15023579975 to +18592027110. The message stated, \"You may select any chiropractor that works best for you.\" This communication is part of the motor vehicle accident record dated November 5, 2024.",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case and recipient of communication"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ I've emailed you the form. Please confirm if you received it. Your employer needs to sign on the form. I'll need a copy of your off-work note from your doctor.\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty.\n\nOn January 29, 2025, an outbound text message was sent from +15023579975 to +18592027110. The content of the message states: \"I've emailed you the form. Please confirm if you received it. Your employer needs to sign on the form. I'll need a copy of your off-work note from your doctor.\" This message indicates that the form was emailed, requests receipt confirmation, notes that the employer must sign the form, and asks for a copy of the off-work note from the recipient's doctor.",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "recipient of message/requested to provide documents"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ You're welcome \n__Date and Time:__ 2025-01-29 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "In the case Fina-Fatty-MVA-11-05-2024, the client is Fina Fatty. On January 29, 2025, an inbound text message was received from +18592027110 to +15023579975, with the content \"You're welcome.\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ I'll be sending you a wage and salary verification form. Is this your email fattypa249@gmail.com?\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "In the Fina-Fatty-MVA-11-05-2024 case, the client is Fina Fatty. On January 29, 2025, an outbound text message was sent from +15023579975 to +18592027110. The message read: \"I'll be sending you a wage and salary verification form. Is this your email fattypa249@gmail.com?\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "recipient of text / subject of email verification"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ I see. You can start a treatment now. You already have a PIP claim set up.\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "In the case Fina-Fatty-MVA-11-05-2024, the client is Fina Fatty.\n\nOn January 29, 2025, an outbound text message was sent from +15023579975 to +18592027110. The message read: \"I see. You can start a treatment now. You already have a PIP claim set up.\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "recipient of text message"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "claim referenced in text"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Thanks.\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On January 29, 2025, an outbound text message was sent from +15023579975 to +18592027110, and the message content was \u201cThanks.\u201d",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case; sender of outbound text"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ No and I need to go to chiropractor\n__Date and Time:__ 2025-01-29 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty in a motor vehicle accident matter.\n\nOn January 29, 2025, an inbound text message was received from +18592027110 to +15023579975, containing the text: \"No and I need to go to chiropractor.\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client sent text stating need to see a chiropractor"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Yes \n__Date and Time:__ 2025-01-29 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "On January 29, 2025, initial client contact was established in the motor vehicle accident case Fina-Fatty-MVA-11-05-2024 with client Fina Fatty. An inbound text message was received from +18592027110 to +15023579975 containing the content \"Yes.\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Are you getting treatment right now?\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "This case, Fina-Fatty-MVA-11-05-2024, concerns the client Fina Fatty in relation to a motor vehicle accident that occurred on November 5, 2024.\n\nOn January 29, 2025, an outbound text message was sent from phone number +15023579975 to phone number +18592027110 containing the inquiry: \"Are you getting treatment right now?\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case; recipient of text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Yes \n__Date and Time:__ 2025-01-29 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On January 29, 2025, an inbound text message was received from +18592027110 to +15023579975, containing the message \"Yes.\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case subject; recipient of communication"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Fina, which ER location did you get treatment related to accident?\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves the client Fina Fatty.\n\nOn January 29, 2025, an outbound text message was sent from the phone number +15023579975 to +18592027110. The message content was: \"Fina, which ER location did you get treatment related to accident?\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "recipient of outbound text / subject of inquiry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Did you lose time from work?\n__Date and Time:__ 2025-01-29 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Initial contact for case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On January 29, 2025, an outbound text message was sent from +15023579975 to +18592027110 containing the question, \"Did you lose time from work?\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client contacted"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ \n__Date and Time:__ 2025-01-29 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "This case is titled Fina-Fatty-MVA-11-05-2024 and concerns client Fina Fatty in a motor vehicle accident matter.\n\nOn January 29, 2025, an inbound text message was received from the client\u2019s number, +18592027110, to the office number, +15023579975. The message body was not recorded in the note.",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "sender of inbound text message to office"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ You got referral in Richmond Kentucky\n__Date and Time:__ 2025-01-29 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 for client Fina Fatty.\n\nOn January 29, 2025, an inbound text message was received from +18592027110 to +15023579975. The message stated: \"You got referral in Richmond Kentucky.\"",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client; subject of episode"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Fina Fatty__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [7149373332@rcfax.com](mailto:7149373332@rcfax.com)\nDate: Thu Jan 30 2025 08:25:39 GMT-05:00",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. The matter concerns client Fina Fatty, in a motor vehicle accident case referenced as Fina-Fatty-MVA-11-05-2024.\n\nThe record shows an electronic transmission associated with this matter on Thursday, January 30, 2025 at 08:25:39 GMT-05:00. The message was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to the fax address 7149373332@rcfax.com.",
+      "valid_at": "2025-01-30T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender of electronic transmission"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-01-31",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__25-679103870__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8772137258@rcfax.com](mailto:8772137258@rcfax.com)\nDate: Fri Jan 31 2025 12:28:29 GMT-05:00\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. The client is Fina Fatty, with an internal file/reference number of 25-679103870.\n\nOn Friday, January 31, 2025, at 12:28:29 PM Eastern Time, an email was sent from Jessa Galosmo of Whaley Law Firm (jessa@whaleylawfirm.com) to the fax address 8772137258@rcfax.com regarding this matter. The message closes with the signature: All the best, Jessa Galosmo, Whaley Law Firm, Ph: (502)357-9975, Fax: (502)364-9363.",
+      "valid_at": "2025-01-31T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of email"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-01",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Fina, what's the name and address of your employer?\n__Date and Time:__ 2025-01-31 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. The client is Fina Fatty.\n\nOn January 31, 2025, an outbound text message was sent from the number +15023579975 to the number +18592027110 as part of the Fina-Fatty-MVA-11-05-2024 case. The message read: \"Fina, what's the name and address of your employer?\"",
+      "valid_at": "2025-02-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "recipient of text / subject of inquiry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-01",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ No \n__Date and Time:__ 2025-01-31 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On January 31, 2025, an inbound text message was received from the number +18592027110 to the number +15023579975, with the message content \"No.\"",
+      "valid_at": "2025-02-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client; involved in inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-01",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ name of your employer?\n__Date and Time:__ 2025-01-31 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Initial client contact on January 31, 2025 for the case Fina-Fatty-MVA-11-05-2024 with client Fina Fatty occurred via an outbound text message from +15023579975 to +18592027110, asking \"name of your employer?\"",
+      "valid_at": "2025-02-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "initial contact (outbound text)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-01",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Lexington KY \n__Date and Time:__ 2025-01-31 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty. This matter involves the client Fina Fatty and is identified by the case name Fina-Fatty-MVA-11-05-2024, related to a motor vehicle accident.\n\nOn January 31, 2025, an inbound text message was received in relation to this case. The message was sent from +18592027110 to +15023579975, and the content of the message was Lexington KY.",
+      "valid_at": "2025-02-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client named in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-02-01",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Are you enrolled in Medicare?\n__Date and Time:__ 2025-01-31 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Fina-Fatty-MVA-11-05-2024 is the case involving client Fina Fatty. On January 31, 2025, an outbound text message was sent from +15023579975 to +18592027110 containing the inquiry, \"Are you enrolled in Medicare?\"",
+      "valid_at": "2025-02-01T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "recipient of text inquiry"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-02-05",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nRequest for bills sent to Radiology Associates via ChartSwap",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty in a motor vehicle accident matter.\n\nA request for the bills has been sent to Radiology Associates via ChartSwap.",
+      "valid_at": "2025-02-05T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-02-06",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__058373025-06__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Sarah Mackay [sarah.mackay@libertymutual.com](mailto:sarah.mackay@libertymutual.com)\nDate: Thu Feb 06 2025 05:19:16 GMT-05:00\n\nHi,\n\nPlease see the attached file and let me know your schedule for the recorded\nstatement of our client.\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. The client is Fina Fatty, with internal reference file number 058373025-06.\n\nOn February 6, 2025 at 05:19:16 GMT-05:00, Jessa Galosmo, whose email is jessa@whaleylawfirm.com, sent a message to Sarah Mackay at sarah.mackay@libertymutual.com. The email began with \u201cHi,\u201d and stated, \u201cPlease see the attached file and let me know your schedule for the recorded statement of our client.\u201d The note was signed, \u201cAll the best, Jessa Galosmo, Whaley Law Firm,\u201d followed by the contact details: Ph: (502)357-9975 and Fax: (502)364-9363.",
+      "valid_at": "2025-02-06T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case / client referenced"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "sender of email / counsel for client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender's firm"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "recipient of email / adjuster contacted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "recipient insurer"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "bodily injury claim associated with recipient adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-01",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nSt. Joseph East records saved to file",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty. The St. Joseph East records have been saved to file.",
+      "valid_at": "2025-03-01T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Joseph East",
+            "relevance": "records saved to file"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-03",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__CLIENT CONTACT__\n__Details:__ Client wants to move case for demand. He is done with his treatment. \n__Person Making Contact:__ Jessa\n__Date & Time__: March 03 2025",
+      "natural_language": "Initial client contact on March 3, 2025 for the case Fina-Fatty-MVA-11-05-2024 was made by Jessa with client Fina Fatty. The client wants to move the case for demand, and he is done with his treatment.",
+      "valid_at": "2025-03-03T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "contacted; requests case be moved to demand"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": " - 2025-03-03",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nClient Contacted today to give update #cc",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024: On November 5, 2024, the client, Fina Fatty, was contacted to provide an update. The update was logged as update #cc.",
+      "valid_at": "2025-03-03T00:00:00",
+      "author": "",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "contacted for update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-03",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__25-679103870__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: [8772137258@rcfax.com](mailto:8772137258@rcfax.com)\nDate: Mon Mar 03 2025 04:13:07 GMT-05:00",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty. The matter is associated with file/reference number 25-679103870.\n\nOn March 3, 2025, at 4:13:07 a.m. GMT-05:00, Jessa Galosmo of Whaley Law Firm sent an email from jessa@whaleylawfirm.com to the fax address 8772137258@rcfax.com in connection with this matter.",
+      "valid_at": "2025-03-03T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client in matter"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "sender organization of email"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "email sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ We are still waiting for your records and bills. Just to confirm, are you already done with all of your treatment?\n__Date and Time:__ 2025-03-03 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty in a motor vehicle accident (MVA) matter.\n\nOn March 3, 2025, an outbound text message was sent from +15023579975 to +18592027110 in relation to the Fina-Fatty MVA case. The message asked for records and bills and asked for confirmation about completion of treatment. The exact wording of the message was: \"We are still waiting for your records and bills. Just to confirm, are you already done with all of your treatment?\"",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client in case and recipient of text message about records/bills and treatment status"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Well I guess I'm done now. Go ahead with the case \n__Date and Time:__ 2025-03-03 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Initial client contact on March 3, 2025 with Fina Fatty regarding motor vehicle accident case Fina-Fatty-MVA-11-05-2024. The client sent an inbound text message from +18592027110 to +15023579975, reading: \"Well I guess I'm done now. Go ahead with the case.\" The message direction was inbound.",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "initial contact; sender of inbound text message"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Hey how's everything going so far \n__Date and Time:__ 2025-03-03 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On March 3, 2025, an inbound text message was received from +18592027110 to +15023579975, containing the message: \"Hey how's everything going so far.\"",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "primary subject / recipient of inbound text"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ I see. Have you found a chiropractor? I suggest you already start your therapy. We cannot move forward with your case if you're not yet done treating.\n__Date and Time:__ 2025-03-03 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "This case note concerns case Fina-Fatty-MVA-11-05-2024 for client Fina Fatty.\n\nOn March 3, 2025, an outbound text message was sent from +15023579975 to +18592027110. The message read: \"I see. Have you found a chiropractor? I suggest you already start your therapy. We cannot move forward with your case if you're not yet done treating.\"",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "recipient of text message / subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Okay. Understood.\n__Date and Time:__ 2025-03-03 \n__From Number:__ +15023579975 \n__To Number:__ +18592027110\n__Direction:__ Outbound",
+      "natural_language": "This case, Fina-Fatty-MVA-11-05-2024, concerns client Fina Fatty.\n\nOn March 3, 2025, an outbound text message was sent from +15023579975 to +18592027110 containing the message: \"Okay. Understood.\"",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Thank you \n__Date and Time:__ 2025-03-03 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "The case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty.\n\nOn March 3, 2025, an inbound text message was received in this matter from +18592027110 to +15023579975, containing the message \"Thank you.\"",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client in matter"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ I haven't been to chiropractor and that's all I need to do a chiropractor because my back is not right\n__Date and Time:__ 2025-03-03 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024, for client Fina Fatty, includes an inbound text message received on March 3, 2025. The message was sent from +1 859-202-7110 to +1 502-357-9975, and reads: \"I haven't been to chiropractor and that's all I need to do a chiropractor because my back is not right.\"",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "author of inbound text reporting need for chiropractic care"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Fina Fatty__\nFrom: Jessica Bottorff [jessica@whaleylawfirm.com](mailto:jessica@whaleylawfirm.com)\nTo: [7149373332@rcfax.com](mailto:7149373332@rcfax.com)\nCc: fina fatty - Filevine Project Email Address [FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com](mailto:FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com)\nDate: Tue Mar 04 2025 07:37:17 GMT-05:00\n\nAttached is a request for bills on our client, Fina Fatty.\n\nThanks!\n\nThe Whaley Law Firm",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. The client is Fina Fatty.\n\nOn Tuesday, March 4, 2025, at 07:37:17 GMT-05:00, Jessica Bottorff of The Whaley Law Firm sent an email from jessica@whaleylawfirm.com to 7149373332@rcfax.com. The message was CC\u2019d to the Filevine project email address FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com. The email attached a request for bills on our client, Fina Fatty, and it concluded with \u201cThanks!\u201d from The Whaley Law Firm.",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of bills request"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "The Whaley Law Firm",
+            "relevance": "sender of email requesting bills"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessica Bottorff",
+            "relevance": "email sender"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__New Insurance Note:__ 03/04/25 Adj confirmed there are no bills paid yet. Asking if there's any provider they need to reach out to ask for the bills.\n__Insurance Type:__ Personal Injury Protection (PIP)\n__Insurance Company:__ Progressive Insurance Company\n__Written by:__ Jessa \n #Inotes",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On March 4, 2025, an adjuster noted in a New Insurance Note that there are no bills paid yet and that they are asking if there is a provider the client needs to reach out to in order to obtain the bills. The insurance type is Personal Injury Protection (PIP), and the insurer is Progressive Insurance Company. The note was written by Jessa.",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "insurer referenced in note"
+          },
+          {
+            "entity_type": "PIPClaim",
+            "entity_name": "Progressive Insurance Company",
+            "relevance": "PIP claim discussed (no bills paid)"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Jessa",
+            "relevance": "author of the insurance note"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessica Bottorff - 2025-03-04",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nRequest for bills sent to St. Joseph Hospital via ChartSwap",
+      "natural_language": "On November 5, 2024, the case Fina-Fatty-MVA-11-05-2024 was opened for client Fina Fatty in relation to a motor vehicle accident. A request for medical bills was sent to St. Joseph Hospital via ChartSwap.",
+      "valid_at": "2025-03-04T00:00:00",
+      "author": "Jessica Bottorff",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case opened for client"
+          },
+          {
+            "entity_type": "MedicalProvider",
+            "entity_name": "St. Joseph East",
+            "relevance": "recipient of medical bills request"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-03-17",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nA missed call for Jessa Galosmo was logged at 2025-03-17 19:59:37.535000+00:00 . #missedcall\n\nCaller Info: 4699973807 \n\nCaller ID: 4699973807 \n\nCaller Name: Sarah Mackay \n\nCaller Email \n\nLink to Filevine Contact [filevine-link] \n\nVoicemail Transcription:\n\n Hi, my name is Sarah Mackey. I am calling of Liberty Mutual Insurance. I am calling in regards to can number 058373025. This is going to be in reference to your client Cena. And that is f a last name fatty f t y just calling to get an update on injury. And treatment, if you can please give me a call back my numbers 4699973807I would appreciate it. I will go ahead and follow the via email as well in case that is easier. Thank you and have a wonderful day. Bye bye.",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. This is a motor vehicle accident matter for client Fina Fatty, opened November 5, 2024.\n\nA missed call for Jessa Galosmo was logged on 2025-03-17 at 19:59:37.535000+00:00 (UTC), tagged as #missedcall.\n\nCaller information shows the caller phone number as 4699973807 with Caller ID the same. The caller name is listed as Sarah Mackay, and there is no caller email provided. A link to the Filevine contact is available as [filevine-link].\n\nVoicemail transcription: \u201cHi, my name is Sarah Mackey. I am calling of Liberty Mutual Insurance. I am calling in regards to can number 058373025. This is going to be in reference to your client Cena. And that is f a last name fatty f t y just calling to get an update on injury. And treatment, if you can please give me a call back my numbers 4699973807I would appreciate it. I will go ahead and follow the via email as well in case that is easier. Thank you and have a wonderful day. Bye bye.\u201d",
+      "valid_at": "2025-03-17T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "person contacting"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer contacting about injury/treatment"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Liberty Mutual Insurance Company - CAN 058373025",
+            "relevance": "claim referenced"
+          },
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client referenced"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Jessa - 2025-03-17",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Re: Re: 058373025 Claim#:058373025-06__\nFrom: Jessa Galosmo [jessa@whaleylawfirm.com](mailto:jessa@whaleylawfirm.com)\nTo: Mackay, Sarah [sarah.mackay@libertymutual.com](mailto:sarah.mackay@libertymutual.com)\nDate: Mon Mar 17 2025 04:16:46 GMT-04:00\n\nHi Sarah,\n\nMy apologies for the delayed response. Fina is already done with her\ntreatment.\n\nBest,\nJessa\n\nOn Mon, Mar 17, 2025 at 4:04?PM Mackay, Sarah <\nsarah.mackay@libertymutual.com> wrote:\n\n>\n>\n>\n>\n>\n>\n> Hello *Jessa,*\n>\n>\n>\n> Good Afternoon! I just tried giving you a call but was unable to get in\n> touch. This is in reference to your client Fina Fatty. Looking to get an\n> update on injury and treatment. Please advise.\n>\n>\n>\n>\n>\n> Have a great day!\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> Sincerely,\n>\n> *Sarah Mackay*\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> [metadata: {Claim-Number : 058373025},{Exposure-Number : 06},{Category :\n> Manual Outbound E-Mail},{Description : undefined},{Template-Id :\n> BIFREEFORM}]\n>\n>\n>\n> Policy underwritten by *Liberty Mutual Personal Insurance Company*\n>\n> \u00a9 2025 Liberty Mutual Insurance Company, 175 Berkeley Street, Boston, MA\n> 02116\n>\n>\n>\n>\n>\n> Sarah Mackay\n> Casualty Claims Resolution Specialist II\n>\n> Direct Phone: 469-997-3807\n>\n> Fax: 603-334-8181\n>\n> Business Hours: Monday to Friday (8:00 AM to 5:30 PM, Friday 8:00 AM to\n> 12:00 PM, CST)\n>\n> *USPS Mail Only*\n>\n> *FedEX/UPS*\n> *(including Overnight, Next Day, and other non-USPS deliveries)*\n>\n> *Liberty Mutual or Safeco Claims*\n> P.O. Box 5014\n> Scranton, PA 18505-5014\n>\n> *Liberty Mutual or Safeco Claims*\n> 19 Bert Collins Drive\n> Throop, PA 18512\n>\n> This e-mail, and any attachments hereto, is intended only for the use of\n> the addressee(s) named herein and may contain legally privileged and/or\n> confidential information. If you are not the intended recipient of this\n> e-mail, you are hereby notified that any dissemination, distribution or\n> copying of this e-mail, and any attachments hereto, is strictly\n> prohibited. If you have received this e-mail in error, please notify me\n> via return e-mail and via telephone at 469-997-3807 and permanently delete\n> the original and any attachment and any copy/printout thereof. Thank you.\n>\n>\n>\n> *From:* Jessa Galosmo \n> *Sent:* Friday, January 24, 2025 8:08 AM\n> *To:* Mackay, Sarah \n> *Subject:* {EXTERNAL} Re: 058373025 Claim#:058373025-06\n>\n>\n>\n> Hi Sarah,\n>\n> Thanks for the update.\n>\n> Fina is still undergoing treatment for her injuries. She's not eligible\n> for Medicare or Medicaid.\n>\n> Best,\n> Jessa\n>\n>\n>\n> On Thu, Jan 23, 2025 at 11:15?AM Mackay, Sarah <\n> sarah.mackay@libertymutual.com> wrote:\n>\n>\n>\n>\n>\n>\n>\n> Hello *Jessa,*\n>\n>\n>\n> I am the bodily injury adjuster assigned to the claim for your client Fina\n> Fatty. I have mailed an acknowledgement letter to your office, it\u2019s also\n> listed at the bottom of this email. We have accepted liability on this.\n> We do not have permission from our Insured to disclose limits. Can you\n> please provide me with an update on injury and treatment for your client?\n> Is your client eligible for Medicare or Medicaid?\n>\n>\n>\n>\n>\n> Thank you,\n>\n>\n>\n>\n>\n>\n>\n> Sincerely,\n>\n> *Sarah Mackay*\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> [metadata: {Claim-Number : 058373025},{Exposure-Number : 06},{Category :\n> Manual Outbound E-Mail},{Description : undefined},{Template-Id :\n> BIFREEFORM}]\n>\n>\n>\n> Policy underwritten by *Liberty Mutual Personal Insurance Company*\n>\n> \u00a9 2025 Liberty Mutual Insurance Company, 175 Berkeley Street, Boston, MA\n> 02116\n>\n>\n>\n>\n>\n> Sarah Mackay\n> Casualty Claims Resolution Specialist II\n>\n> Direct Phone: 469-997-3807\n>\n> Fax: 603-334-8181\n>\n> Business Hours: Monday to Friday (8:00 AM to 5:30 PM, Friday 8:00 AM to\n> 12:00 PM, CST)\n>\n> *USPS Mail Only*\n>\n> *FedEX/UPS*\n> *(including Overnight, Next Day, and other non-USPS deliveries)*\n>\n> *Liberty Mutual or Safeco Claims*\n> P.O. Box 5014\n> Scranton, PA 18505-5014\n>\n> *Liberty Mutual or Safeco Claims*\n> 19 Bert Collins Drive\n> Throop, PA 18512\n>\n> This e-mail, and any attachments hereto, is intended only for the use of\n> the addressee(s) named herein and may contain legally privileged and/or\n> confidential information. If you are not the intended recipient of this\n> e-mail, you are hereby notified that any dissemination, distribution or\n> copying of this e-mail, and any attachments hereto, is strictly\n> prohibited. If you have received this e-mail in error, please notify me\n> via return e-mail and via telephone at 469-997-3807 and permanently delete\n> the original and any attachment and any copy/printout thereof. Thank you.\n>\n>\n>\n> *From:* Jessa Galosmo \n> *Sent:* Tuesday, January 14, 2025 7:56 AM\n> *To:* Mackay, Sarah \n> *Subject:* {EXTERNAL} 058373025\n>\n>\n>\n> Hi,\n>\n>\n>\n> See attached letter of representation for our client, Fina Fatty.\n>\n>\n>\n> --\n>\n> All the best,\n>\n> Jessa Galosmo\n>\n> Whaley Law Firm\n>\n> Ph: (502)357-9975\n>\n> Fax: (502)364-9363\n>\n>\n>\n>\n> --\n>\n> All the best,\n>\n> Jessa Galosmo\n>\n> Whaley Law Firm\n>\n> Ph: (502)357-9975\n>\n> Fax: (502)364-9363\n>\n\n-- \nAll the best,\nJessa Galosmo\nWhaley Law Firm\nPh: (502)357-9975\nFax: (502)364-9363",
+      "natural_language": "This note documents the Liberty Mutual motor-vehicle accident case for client Fina Fatty, filed as Fina-Fatty-MVA-11-05-2024, with claim number 058373025-06 (exposure 06). The policy is underwritten by Liberty Mutual Personal Insurance Company. The communications involved Jessa Galosmo of Whaley Law Firm and Sarah Mackay, a Casualty Claims Resolution Specialist II at Liberty Mutual. The email traffic includes standard policy and confidentiality language, along with the typical Liberty Mutual contact details and mailing addresses.\n\nOn January 14, 2025, Jessa Galosmo sent an external email to Sarah Mackay, attaching a letter of representation for Fina Fatty in response to the claim referenced as 058373025. The note shows Jessa\u2019s signature block with Whaley Law Firm\u2019s contact information. The message\u2019s subject line indicated it was an external communication regarding claim 058373025-06.\n\nOn January 23, 2025, Sarah Mackay replied as the assigned bodily injury adjuster. She stated that she had mailed an acknowledgement letter to Jessa\u2019s office and that the claim had liability accepted by Liberty Mutual. She noted that Liberty Mutual did not have permission from their insured to disclose the policy limits and requested an update on Fina\u2019s injury and treatment, as well as whether Fina is eligible for Medicare or Medicaid. This message also contained Liberty Mutual\u2019s standard confidentiality notice and contact details.\n\nOn January 24, 2025, Jessa Galosmo responded to Sarah, thanking her for the update and stating that Fina was still undergoing treatment for her injuries. Jessa also noted that Fina was not eligible for Medicare or Medicaid. This email likewise carried the typical confidentiality language and Jessa\u2019s contact information.\n\nOn March 17, 2025, there was additional correspondence. At 4:04 PM, Sarah Mackay attempted to reach Jessa by phone to obtain an update on Fina\u2019s injury and treatment. Later that same day, at 4:16:46 PM, Jessa replied: \u201cMy apologies for the delayed response. Fina is already done with her treatment.\u201d\n\nThroughout the email thread, the communications include standard policy warnings, such as the confidentiality notice stating that the message and attachments are intended only for the named addressees and may contain privileged information; instructions to notify the sender and delete the message if received in error; and the various Liberty Mutual mailing addresses and contact numbers (Direct Phone: 469-997-3807; Fax: 603-334-8181; business hours; USPS and FedEx/UPS mailing options) and the disclaimer about not disclosing insured limits without authorization. The metadata embedded in the messages identifies the claim number (058373025), exposure number (06), category (Manual Outbound E-Mail), and template (BIFREEFORM).",
+      "valid_at": "2025-03-17T00:00:00",
+      "author": "Jessa",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "claimant/client"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim 058373025-06",
+            "relevance": "claim discussed"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Personal Insurance Company",
+            "relevance": "insurer/underwriter handling the claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "assigned bodily injury adjuster and correspondent"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Jessa Galosmo",
+            "relevance": "claimant's attorney / sender of letter of representation"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing the client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Hey how's the case status now \n__Date and Time:__ 2025-04-14 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On April 14, 2025, an inbound text message was received from +18592027110 to +15023579975, containing the content: \"Hey how's the case status now.\"",
+      "valid_at": "2025-04-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "sent inbound text / inquiring about case status"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-04-16",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Anyone available for update \n__Date and Time:__ 2025-04-16 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty. On April 16, 2025, an inbound text message was received from +18592027110 to +15023579975, with the content: \"Anyone available for update.\"",
+      "valid_at": "2025-04-16T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-05-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Text Message__\n__Message:__ Hey anyone available to update me because I didn't get no calls \n__Date and Time:__ 2025-05-14 \n__From Number:__ +18592027110 \n__To Number:__ +15023579975\n__Direction:__ Inbound",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty and pertains to a motor vehicle accident (MVA). An inbound text message related to this case was received on May 14, 2025, from the number +18592027110 to the number +15023579975. The message read: \"Hey anyone available to update me because I didn't get no calls.\"",
+      "valid_at": "2025-05-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "sender of text message requesting an update"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Justin Chumbley - 2025-06-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nFina, It's Justin from the Whaley Law Firm. It appears we are just awaiting one more bill to arrive to move your case forward towards settlement. I'll give you a call in the next couple weeks with an update on the progress",
+      "natural_language": "On November 5, 2024, in the motor vehicle accident matter labeled Fina-Fatty-MVA-11-05-2024, the client is Fina Fatty. Justin from the Whaley Law Firm spoke with Fina and indicated that we are awaiting one more bill to arrive before the case can move forward toward settlement. He also said he would call in the next couple of weeks with an update on the progress.",
+      "valid_at": "2025-06-13T00:00:00",
+      "author": "Justin Chumbley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client / subject of matter"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Justin",
+            "relevance": "spoke with client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "attorney's firm involved in case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-13",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__CLIENT CONTACT__\n__Details:__ Obtained authority from client to negotiate to LBF \n__Person Making Contact:__ Justin\n__Date & Time__: June 13 2025",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty.\n\nInitial client contact occurred on June 13, 2025, and was conducted by Justin. The notes indicate that authority was obtained from the client to negotiate with LBF.",
+      "valid_at": "2025-06-13T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "initial client contact; provided authority to negotiate"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer authorized for negotiation (referred to as LBF)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-06-27",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nA call from aaron whaley was logged at 2025-06-27 17:12:15.972000+00:00 . #outboundcall\n\nCaller Info: 4699973807 \n\nCaller ID: 469-997-3807 \n\nCaller Name: Sarah Mackay \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "For case Fina-Fatty-MVA-11-05-2024 involving client Fina Fatty, an outbound call was logged on June 27, 2025 at 17:12:15.972000+00:00. The entry indicates the call was logged by Aaron Whaley.\n\nThe caller information lists Sarah Mackay as the caller, with phone number 469-997-3807 and caller ID 469-997-3807. The Caller Email field is not provided. A link to the Filevine contact is available: [filevine-link].",
+      "valid_at": "2025-06-27T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client / subject of record"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "caller / person contacted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer represented by the adjuster"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "bodily injury claim associated with the insurer/adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-06-27",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Summary of the call with Sarah Mackay__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: fina fatty - Filevine Project Email Address [finafattyZ4880851@louisvilleaccidentlawyer.filevineapp.com](mailto:finafattyZ4880851@louisvilleaccidentlawyer.filevineapp.com), fina fatty - Filevine Project Email Address [FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com](mailto:FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Jun 27 2025 01:20:31 GMT-04:00\n\nHi\n\nHere's the summary of the call with Sarah Mackay at 6/27 01:12 PM\n(UTC-04:00):\n\nAaron Whaley discussed a claim with Sarah Mackay, focusing on the need for\nupdated evaluation based on the Bates figure for a client involved in an\naccident with a FedEx truck.\n\nRecap\n\n* Aaron Whaley called Sarah Mackay regarding a claim (058 373 025) for a\nclient who was rear-ended by a FedEx truck.\n* Sarah confirmed that a general damages offer had been extended but needed\nthe Bates figure to update the evaluation.\n* Aaron will review the Bates figure and follow up with Sarah, who is the\ndesignated adjuster for this claim.\n* Sarah mentioned she would be available for further discussion on Monday\nafter getting off work at noon on Friday.\n\nTasks\n\n* Aaron needs to review the Bates figure for the claim and follow up with\nSarah on Monday.\n\nBest,\naaron whaley\n\nPowered by RingCentral AI Assistant (visit\nhttps://www.ringcentral.com/ringex/ai-assistant for more information).",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty. On June 27, 2025, at 1:12 PM (UTC-04:00), Aaron Whaley spoke with Sarah Mackay to discuss a claim involving a client who was rear-ended by a FedEx truck. The claim is identified as 058 373 025, and the purpose of the call was to request an updated evaluation based on the Bates figure.\n\nSarah Mackay confirmed that a general damages offer had already been extended but that the Bates figure was needed to update the evaluation. Aaron will review the Bates figure for the claim and follow up with Sarah, who is the designated adjuster for this claim. Sarah noted she would be available for further discussion on Monday after finishing work at noon on Friday. The email containing this summary was sent from Aaron Whaley (agwhaley@whaleylawfirm.com) to two Filevine project addresses: finafattyZ4880851@louisvilleaccidentlawyer.filevineapp.com and FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com, on Friday, June 27, 2025 at 01:20:31 GMT-04:00. Best, Aaron Whaley. Powered by RingCentral AI Assistant.",
+      "valid_at": "2025-06-27T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client / injured party"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "caller and email sender"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "adjuster contacted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer handling the BI claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim #058 373 025",
+            "relevance": "claim discussed"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Claim # 058373025__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Sarah Mackay [sarah.mackay@libertymutual.com](mailto:sarah.mackay@libertymutual.com), fina fatty - Filevine Project Email Address [FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com](mailto:FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jul 14 2025 12:58:07 GMT-04:00\n\nHey Sarah I hope this email finds you well I just left you a voicemail but\nI wanted to follow up with this email. When last we spoke you mentioned\nthat this was an accident in Ohio and yes I am aware. The current medical\nbills total $7,135.00 and I do not know if any set-offs or discounts given\nby the provider. So I would like to provide you with a counter offer of\n$12,000.This would be inclusive of the total medical bills and pain and\nsuffering let me know if we can get it done thanks.\n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty, with Claim Number 058373025. On Monday, July 14, 2025, at 12:58:07 PM GMT-04:00, Aaron Whaley of Whaley Law Firm sent an email from agwhaley@whaleylawfirm.com to Sarah Mackay of Liberty Mutual (sarah.mackay@libertymutual.com) and to the Fina Fatty Filevine project address FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com. In the message, he notes that he had just left a voicemail and wanted to follow up. He recalls that, during their last conversation, the accident was described as occurring in Ohio, and he acknowledges this. He states that the current medical bills total $7,135.00 and that he does not know whether any set-offs or discounts have been provided by the medical provider. He then presents a counteroffer of $12,000, clarifying that this amount would be inclusive of the total medical bills and pain and suffering, and asks to know if they can get this done.\n\nThe email is signed by Aaron Whaley of Whaley Law Firm, with the firm\u2019s contact details listed as 712 Lyndon Ln, Louisville, KY 40222, and phone number 502-583-4022. Recipients included Sarah Mackay at Liberty Mutual and the Fina Fatty Filevine project email address.",
+      "valid_at": "2025-07-14T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client whose case and settlement demand are being discussed"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "sender of the email/representing the client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm sending the correspondence"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer/recipient of the settlement demand"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "Liberty Mutual adjuster who received the email"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BI Claim 058373025 (Liberty Mutual Insurance Company)",
+            "relevance": "bodily injury claim being negotiated (counteroffer discussed)"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nA call from aaron whaley was logged at 2025-07-14 16:49:36.079000+00:00 . #outboundcall\n\nCaller Info: 4699973807 \n\nCaller ID: 469-997-3807 \n\nCaller Name: Sarah Mackay \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty. A call from Aaron Whaley was logged on July 14, 2025 at 16:49:36.079000+00:00, labeled as an outbound call (#outboundcall).\n\nCaller information lists the number 4699973807, with Caller ID 469-997-3807. The Caller Name is Sarah Mackay, and the Caller Email field is empty.\n\nLink to Filevine Contact: [filevine-link].",
+      "valid_at": "2025-07-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject/client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "caller / person contacted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer associated with the BI claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "BI claim related to the call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-14",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nA call from aaron whaley was logged at 2025-07-14 16:51:08.722000+00:00 . #outboundcall\n\nCaller Info: 4699973807 \n\nCaller ID: 469-997-3807 \n\nCaller Name: Sarah Mackay \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024, for client Fina Fatty, shows an outbound call from Aaron Whaley that was logged on July 14, 2025 at 16:51:08.722000+00:00. The call is recorded as an outbound contact in the case.\n\nThe caller information indicates the telephone number 469-997-3807, with a caller ID of 469-997-3807. The caller name is Sarah Mackay. The caller email field is not provided. A Filevine contact link is available: [filevine-link].",
+      "valid_at": "2025-07-14T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "person contacted"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer associated with caller"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim (Liberty Mutual Insurance Company)",
+            "relevance": "claim associated with adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-18",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nA call from aaron whaley was logged at 2025-07-18 17:44:52.153000+00:00 . #outboundcall\n\nCaller Info: 4699973807 \n\nCaller ID: 469-997-3807 \n\nCaller Name: Sarah Mackay \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "This case is Fina-Fatty-MVA-11-05-2024 for client Fina Fatty.\n\nOn July 18, 2025, at 17:44:52.153000+00:00 (UTC), a call from Aaron Whaley was logged as an outbound call. The caller information lists the phone number 4699973807, and the caller ID 469-997-3807. The caller name is Sarah Mackay. The Caller Email field is blank (not provided). A link to the Filevine contact is provided as [filevine-link].",
+      "valid_at": "2025-07-18T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "adjuster (caller)"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer for BI claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim - Liberty Mutual Insurance Company",
+            "relevance": "claim associated with the adjuster contact"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-21",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Re: Claim # 058373025 Claim#:058373025-06__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Mackay, Sarah [sarah.mackay@libertymutual.com](mailto:sarah.mackay@libertymutual.com), fina fatty - Filevine Project Email Address [FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com](mailto:FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com)\nDate: Mon Jul 21 2025 02:53:47 GMT-04:00\n\nThanks for the counter. Can you explain your reasoning for offering less\nthan the medical bills?\n\nOn Mon, Jul 21, 2025 at 2:34?PM Mackay, Sarah <\nsarah.mackay@libertymutual.com> wrote:\n\n>\n>\n>\n>\n>\n>\n> Hello *Aaron,*\n>\n>\n>\n> Thank you for your email and counter demand of $12,000. I just called and\n> left you a voicemail but also wanted to follow up with you via email, too!\n> As advised on voicemail, we are unable to meet you at that amount. We can\n> extend an offer of $3195 to get this resolved. Please review our offer\n> with your client and advise of their position.\n>\n>\n>\n>\n>\n> Have a great day!\n>\n>\n>\n>\n>\n>\n>\n> Sincerely,\n>\n> *Sarah Mackay*\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> [metadata: {Claim-Number : 058373025},{Exposure-Number : 06},{Category :\n> Manual Outbound E-Mail},{Description : undefined},{Template-Id :\n> BIFREEFORM}]\n>\n>\n>\n> Policy underwritten by *Liberty Mutual Personal Insurance Company*\n>\n> \u00a9 2025 Liberty Mutual Insurance Company, 175 Berkeley Street, Boston, MA\n> 02116\n>\n>\n>\n>\n>\n> Sarah Mackay\n> Casualty Claims Resolution Specialist II\n>\n> Direct Phone: 469-997-3807\n>\n> Fax: 603-334-8181\n>\n> Business Hours: Monday to Friday (8:00 AM to 5:30 PM, Friday 8:00 AM to\n> 12:00 PM, CST)\n>\n> *USPS Mail Only*\n>\n> *FedEX/UPS*\n> *(including Overnight, Next Day, and other non-USPS deliveries)*\n>\n> *Liberty Mutual or Safeco Claims*\n> P.O. Box 5014\n> Scranton, PA 18505-5014\n>\n> *Liberty Mutual or Safeco Claims*\n> 19 Bert Collins Drive\n> Throop, PA 18512\n>\n> This e-mail, and any attachments hereto, is intended only for the use of\n> the addressee(s) named herein and may contain legally privileged and/or\n> confidential information. If you are not the intended recipient of this\n> e-mail, you are hereby notified that any dissemination, distribution or\n> copying of this e-mail, and any attachments hereto, is strictly\n> prohibited. If you have received this e-mail in error, please notify me\n> via return e-mail and via telephone at 469-997-3807 and permanently delete\n> the original and any attachment and any copy/printout thereof. Thank you.\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Monday, July 14, 2025 11:58 AM\n> *To:* Mackay, Sarah ; fina fatty -\n> Filevine Project Email Address <\n> FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* {EXTERNAL} Claim # 058373025\n>\n>\n>\n>\n>\n> Hey Sarah I hope this email finds you well I just left you a voicemail but\n> I wanted to follow up with this email. When last we spoke you mentioned\n> that this was an accident in Ohio and yes I am aware. The current medical\n> bills total $7,135.00 and I do not know if any set-offs or discounts given\n> by the provider. So I would like to provide you with a counter offer of\n> $12,000.This would be inclusive of the total medical bills and pain and\n> suffering let me know if we can get it done thanks.\n>\n>\n>\n>\n>\n> Aaron Whaley\n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n>\n> Louisville, KY 40222\n>\n> 502-583-4022\n>\n>\n>\n\n-- \nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. The matter concerns client Fina Fatty in a motor vehicle accident case, with Claim #058373025 (claim number 058373025-06).\n\nThe chronology begins with an external email dated July 14, 2025, from Aaron Whaley of Whaley Law Firm (712 Lyndon Lane, Louisville, KY 40222; phone 502-583-4022) to Sarah Mackay of Liberty Mutual and to Fina Fatty\u2019s Filevine project address. In that message, Aaron acknowledged the Ohio accident and stated that the current medical bills totaled $7,135, noting he did not know whether any set-offs or discounts had been applied by the provider. He proposed a counteroffer of $12,000, stating that this amount would be inclusive of the total medical bills and pain and suffering, and asked whether they could get this resolved.\n\nOn July 21, 2025, Sarah Mackay replied to Aaron (and to the Filevine recipient). She thanked him for the email and for the counter demand of $12,000, noting that she had also left a voicemail and was following up by email. She stated that Liberty Mutual is unable to meet that amount but could extend an offer of $3,195 to resolve the matter. She asked Aaron to review the offer with his client and to advise Liberty Mutual of the client\u2019s position.\n\nLater on July 21, 2025, at 2:53:47 PM (GMT-04:00), Aaron Whaley sent a follow-up reply thanking Liberty Mutual for the counter and requesting an explanation of the reasoning behind offering less than the medical bills.\n\nNotes accompanying the messages indicate the case metadata: Claim-Number 058373025, Exposure-Number 06, and that the correspondence was categorized as a Manual Outbound E-Mail with a template ID of BIFREEFORM. Liberty Mutual\u2019s policy is underwritten by Liberty Mutual Personal Insurance Company. The reply from Sarah Mackay includes her title (Casualty Claims Resolution Specialist II) and direct contact information, along with standard Liberty Mutual mailing addresses, and a confidentiality notice stating that the e-mail and any attachments are intended only for the named addressees and may contain legally privileged or confidential information; recipients who are not the intended recipients are prohibited from dissemination and should notify the sender and delete the message.",
+      "valid_at": "2025-07-21T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "injured party / claim holder"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "plaintiff's counsel / sent demand"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "Liberty Mutual adjuster corresponding on claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim #058373025",
+            "relevance": "bodily injury claim at issue"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Personal Insurance Company",
+            "relevance": "insurer/underwriter responding to demand"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-25",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Re: Claim # 058373025 Claim#:058373025-06__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Mackay, Sarah [sarah.mackay@libertymutual.com](mailto:sarah.mackay@libertymutual.com), fina fatty - Filevine Project Email Address [FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com](mailto:FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Jul 25 2025 11:16:47 GMT-04:00\n\nFollowing up. Thanks.\n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022\n\nOn Mon, Jul 21, 2025 at 2:53?PM Aaron Whaley \nwrote:\n\n> Thanks for the counter. Can you explain your reasoning for offering less\n> than the medical bills?\n>\n> On Mon, Jul 21, 2025 at 2:34?PM Mackay, Sarah <\n> sarah.mackay@libertymutual.com> wrote:\n>\n>>\n>>\n>>\n>>\n>>\n>>\n>> Hello *Aaron,*\n>>\n>>\n>>\n>> Thank you for your email and counter demand of $12,000. I just called\n>> and left you a voicemail but also wanted to follow up with you via email,\n>> too! As advised on voicemail, we are unable to meet you at that amount. We\n>> can extend an offer of $3195 to get this resolved. Please review our offer\n>> with your client and advise of their position.\n>>\n>>\n>>\n>>\n>>\n>> Have a great day!\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>> Sincerely,\n>>\n>> *Sarah Mackay*\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>>\n>> [metadata: {Claim-Number : 058373025},{Exposure-Number : 06},{Category :\n>> Manual Outbound E-Mail},{Description : undefined},{Template-Id :\n>> BIFREEFORM}]\n>>\n>>\n>>\n>> Policy underwritten by *Liberty Mutual Personal Insurance Company*\n>>\n>> \u00a9 2025 Liberty Mutual Insurance Company, 175 Berkeley Street, Boston, MA\n>> 02116\n>>\n>>\n>>\n>>\n>>\n>> Sarah Mackay\n>> Casualty Claims Resolution Specialist II\n>>\n>> Direct Phone: 469-997-3807\n>>\n>> Fax: 603-334-8181\n>>\n>> Business Hours: Monday to Friday (8:00 AM to 5:30 PM, Friday 8:00 AM to\n>> 12:00 PM, CST)\n>>\n>> *USPS Mail Only*\n>>\n>> *FedEX/UPS*\n>> *(including Overnight, Next Day, and other non-USPS deliveries)*\n>>\n>> *Liberty Mutual or Safeco Claims*\n>> P.O. Box 5014\n>> Scranton, PA 18505-5014\n>>\n>> *Liberty Mutual or Safeco Claims*\n>> 19 Bert Collins Drive\n>> Throop, PA 18512\n>>\n>> This e-mail, and any attachments hereto, is intended only for the use of\n>> the addressee(s) named herein and may contain legally privileged and/or\n>> confidential information. If you are not the intended recipient of this\n>> e-mail, you are hereby notified that any dissemination, distribution or\n>> copying of this e-mail, and any attachments hereto, is strictly\n>> prohibited. If you have received this e-mail in error, please notify me\n>> via return e-mail and via telephone at 469-997-3807 and permanently delete\n>> the original and any attachment and any copy/printout thereof. Thank you.\n>>\n>>\n>>\n>> *From:* Aaron Whaley \n>> *Sent:* Monday, July 14, 2025 11:58 AM\n>> *To:* Mackay, Sarah ; fina fatty -\n>> Filevine Project Email Address <\n>> FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com>\n>> *Subject:* {EXTERNAL} Claim # 058373025\n>>\n>>\n>>\n>>\n>>\n>> Hey Sarah I hope this email finds you well I just left you a voicemail\n>> but I wanted to follow up with this email. When last we spoke you mentioned\n>> that this was an accident in Ohio and yes I am aware. The current medical\n>> bills total $7,135.00 and I do not know if any set-offs or discounts given\n>> by the provider. So I would like to provide you with a counter offer of\n>> $12,000.This would be inclusive of the total medical bills and pain and\n>> suffering let me know if we can get it done thanks.\n>>\n>>\n>>\n>>\n>>\n>> Aaron Whaley\n>>\n>> Whaley Law Firm\n>>\n>> 712 Lyndon Ln\n>>\n>> Louisville, KY 40222\n>>\n>> 502-583-4022\n>>\n>>\n>>\n>\n>\n> --\n> Aaron Whaley\n> Whaley Law Firm\n> 712 Lyndon Ln\n> Louisville, KY 40222\n> 502-583-4022\n>\n>",
+      "natural_language": "The case identified as Fina-Fatty-MVA-11-05-2024 concerns client Fina Fatty in a motor vehicle accident claim, with Liberty Mutual as the insurer. The associated claim is 058373025-06 (Claim number 058373025, Exposure number 06) and it is described in the record as a manual outbound e-mail under the template ID BIFREEFORM. The policy is underwritten by Liberty Mutual Personal Insurance Company. The communications include standard contact details for the parties: Aaron Whaley of Whaley Law Firm, representing Fina Fatty, and Sarah Mackay, Casualty Claims Resolution Specialist II at Liberty Mutual.\n\nOn July 14, 2025 at 11:58 AM, Aaron Whaley wrote to Sarah Mackay and the Fina Fatty Filevine project address, noting that the accident occurred in Ohio and that the current medical bills totaled $7,135.00, with no information about set-offs or discounts from the provider. He proposed a counteroffer of $12,000, stating that this amount would be inclusive of the total medical bills and pain and suffering, and he asked to know if a resolution could be achieved.\n\nIn a reply dated July 21, 2025 at 2:34 PM, Sarah Mackay informed Aaron that Liberty Mutual could not meet the $12,000 figure. She stated that the company could extend an offer of $3,195 to resolve the claim and asked Aaron to review the offer with his client and advise Liberty Mutual of Fina Fatty\u2019s position.\n\nShortly thereafter, on July 21, 2025 at 2:53 PM, Aaron Whaley responded asking for an explanation of Liberty Mutual\u2019s reasoning for offering less than the medical bills.\n\nOn July 25, 2025 at 11:16:47 AM, Aaron sent a follow-up message with a brief, \u201cFollowing up. Thanks.\u201d\n\nFor reference, Aaron Whaley\u2019s contact details are Whaley Law Firm, 712 Lyndon Ln, Louisville, KY 40222, and his phone number is 502-583-4022. Sarah Mackay\u2019s signature in the correspondence lists direct phone number 469-997-3807, fax 603-334-8181, and Liberty Mutual\u2019s mailing and delivery addresses for claims, including P.O. Box 5014, Scranton, PA 18505-5014 and 19 Bert Collins Drive, Throop, PA 18512. The record also notes that the messages were directed to the Liberty Mutual and Safeco Claims channels.",
+      "valid_at": "2025-07-25T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "claimant/client in MVA claim"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer handling the claim"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "Liberty Mutual adjuster corresponding about settlement"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim 058373025-06",
+            "relevance": "bodily injury claim referenced and subject of settlement offers"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney representing the client and negotiating settlement"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing the client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-25",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nA call from aaron whaley was logged at 2025-07-25 16:46:59.625000+00:00 . #outboundcall\n\nCaller Info: 4699973807 \n\nCaller ID: 469-997-3807 \n\nCaller Name: Sarah Mackay \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty.\n\nA call from Aaron Whaley was logged on July 25, 2025 at 16:46:59.625000+00:00, classified as an outbound call. The log lists the caller information as phone number 4699973807, with the formatted caller ID 469-997-3807, and the caller name Sarah Mackay. The Caller Email field is blank. A link to the Filevine Contact is provided: [filevine-link].",
+      "valid_at": "2025-07-25T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "person contacted / caller listed"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer associated with the call"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "bodily injury claim associated with the adjuster/call"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron Whaley - 2025-07-25",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\n__Re: Re: Claim # 058373025 Claim#:058373025-06__\nFrom: Aaron Whaley [agwhaley@whaleylawfirm.com](mailto:agwhaley@whaleylawfirm.com)\nTo: Mackay, Sarah [sarah.mackay@libertymutual.com](mailto:sarah.mackay@libertymutual.com)\nCc: fina fatty - Filevine Project Email Address [FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com](mailto:FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com)\nDate: Fri Jul 25 2025 11:11:28 GMT-04:00\n\nCare to share that review?\n\nAaron Whaley\nWhaley Law Firm\n712 Lyndon Ln\nLouisville, KY 40222\n502-583-4022\n\nOn Fri, Jul 25, 2025 at 8:16?PM Mackay, Sarah <\nsarah.mackay@libertymutual.com> wrote:\n\n>\n>\n>\n>\n>\n>\n> Hello *Aaron,*\n>\n>\n>\n> Good afternoon! Medical bills are inflated and we do have them reviewed\n> for what\u2019s usual and customary.\n>\n>\n>\n>\n>\n> Thank you,\n>\n>\n>\n>\n>\n> Sincerely,\n>\n> *Sarah Mackay*\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> [metadata: {Claim-Number : 058373025},{Exposure-Number : 06},{Category :\n> Manual Outbound E-Mail},{Description : undefined},{Template-Id :\n> BIFREEFORM}]\n>\n>\n>\n> Policy underwritten by *Liberty Mutual Personal Insurance Company*\n>\n> \u00a9 2025 Liberty Mutual Insurance Company, 175 Berkeley Street, Boston, MA\n> 02116\n> \n>\n>\n>\n>\n>\n> Sarah Mackay\n> Casualty Claims Resolution Specialist II\n>\n> Direct Phone: 469-997-3807\n>\n> Fax: 603-334-8181\n>\n> Business Hours: Monday to Friday (8:00 AM to 5:30 PM, Friday 8:00 AM to\n> 12:00 PM, CST)\n>\n> *USPS Mail Only*\n>\n> *FedEX/UPS*\n> *(including Overnight, Next Day, and other non-USPS deliveries)*\n>\n> \n>\n> *Liberty Mutual or Safeco Claims*\n> P.O. Box 5014\n> Scranton, PA 18505-5014\n>\n> *Liberty Mutual or Safeco Claims*\n> 19 Bert Collins Drive\n> \n> Throop, PA 18512\n> \n>\n> This e-mail, and any attachments hereto, is intended only for the use of\n> the addressee(s) named herein and may contain legally privileged and/or\n> confidential information. If you are not the intended recipient of this\n> e-mail, you are hereby notified that any dissemination, distribution or\n> copying of this e-mail, and any attachments hereto, is strictly\n> prohibited. If you have received this e-mail in error, please notify me\n> via return e-mail and via telephone at 469-997-3807 and permanently delete\n> the original and any attachment and any copy/printout thereof. Thank you.\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Monday, July 21, 2025 1:54 PM\n> *To:* Mackay, Sarah ; fina fatty -\n> Filevine Project Email Address <\n> FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* {EXTERNAL} Re: Claim # 058373025 Claim#:058373025-06\n>\n>\n>\n> Thanks for the counter. Can you explain your reasoning for offering less\n> than the medical bills?\n>\n>\n>\n> On Mon, Jul 21, 2025 at 2:34?PM Mackay, Sarah <\n> sarah.mackay@libertymutual.com> wrote:\n>\n>\n>\n>\n>\n>\n>\n> Hello *Aaron,*\n>\n>\n>\n> Thank you for your email and counter demand of $12,000. I just called and\n> left you a voicemail but also wanted to follow up with you via email, too!\n> As advised on voicemail, we are unable to meet you at that amount. We can\n> extend an offer of $3195 to get this resolved. Please review our offer\n> with your client and advise of their position.\n>\n>\n>\n>\n>\n> Have a great day!\n>\n>\n>\n>\n>\n>\n>\n> Sincerely,\n>\n> *Sarah Mackay*\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n>\n> [metadata: {Claim-Number : 058373025},{Exposure-Number : 06},{Category :\n> Manual Outbound E-Mail},{Description : undefined},{Template-Id :\n> BIFREEFORM}]\n>\n>\n>\n> Policy underwritten by *Liberty Mutual Personal Insurance Company*\n>\n> \u00a9 2025 Liberty Mutual Insurance Company, 175 Berkeley Street, Boston, MA\n> 02116\n> \n>\n>\n>\n>\n>\n> Sarah Mackay\n> Casualty Claims Resolution Specialist II\n>\n> Direct Phone: 469-997-3807\n>\n> Fax: 603-334-8181\n>\n> Business Hours: Monday to Friday (8:00 AM to 5:30 PM, Friday 8:00 AM to\n> 12:00 PM, CST)\n>\n> *USPS Mail Only*\n>\n> *FedEX/UPS*\n> *(including Overnight, Next Day, and other non-USPS deliveries)*\n>\n> \n>\n> *Liberty Mutual or Safeco Claims*\n> P.O. Box 5014\n> Scranton, PA 18505-5014\n>\n> *Liberty Mutual or Safeco Claims*\n> 19 Bert Collins Drive\n> \n> Throop, PA 18512\n> \n>\n> This e-mail, and any attachments hereto, is intended only for the use of\n> the addressee(s) named herein and may contain legally privileged and/or\n> confidential information. If you are not the intended recipient of this\n> e-mail, you are hereby notified that any dissemination, distribution or\n> copying of this e-mail, and any attachments hereto, is strictly\n> prohibited. If you have received this e-mail in error, please notify me\n> via return e-mail and via telephone at 469-997-3807 and permanently delete\n> the original and any attachment and any copy/printout thereof. Thank you.\n>\n>\n>\n> *From:* Aaron Whaley \n> *Sent:* Monday, July 14, 2025 11:58 AM\n> *To:* Mackay, Sarah ; fina fatty -\n> Filevine Project Email Address <\n> FinaFattyMVAZ4881140@louisvilleaccidentlawyer.filevineapp.com>\n> *Subject:* {EXTERNAL} Claim # 058373025\n>\n>\n>\n>\n>\n> Hey Sarah I hope this email finds you well I just left you a voicemail but\n> I wanted to follow up with this email. When last we spoke you mentioned\n> that this was an accident in Ohio and yes I am aware. The current medical\n> bills total $7,135.00 and I do not know if any set-offs or discounts given\n> by the provider. So I would like to provide you with a counter offer of\n> $12,000.This would be inclusive of the total medical bills and pain and\n> suffering let me know if we can get it done thanks.\n>\n>\n>\n>\n>\n> \n>\n> \n>\n> Aaron Whaley\n>\n> \n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>\n>\n>\n>\n> --\n>\n> \n>\n> \n>\n> Aaron Whaley\n>\n> \n>\n> Whaley Law Firm\n>\n> 712 Lyndon Ln\n> \n>\n> Louisville, KY 40222\n> \n>\n> 502-583-4022\n>\n>\n>",
+      "natural_language": "Case: Fina-Fatty-MVA-11-05-2024. Client: Fina Fatty. The matter concerns Claim #058373025 (Exposure #06) under Liberty Mutual Personal Insurance Company, with the case being handled by Aaron Whaley of Whaley Law Firm for the client, Fina Fatty. The communications were exchanged with Sarah Mackay, Casualty Claims Resolution Specialist II at Liberty Mutual, and included the Filevine project address for the client.\n\nThe negotiation began in mid-July 2025. On July 14, 2025, Aaron Whaley sent an external email to Sarah Mackay and the Fina Fatty Filevine address regarding Claim #058373025. He reminded that the accident was in Ohio and stated that the current medical bills totaled $7,135.00, though he did not know whether providers had applied any set-offs or discounts. He proposed a counteroffer of $12,000, describing it as inclusive of the total medical bills and pain and suffering, and asked whether the amount could be approved. He signed as the attorney for Whaley Law Firm, listing his Louisville, Kentucky contact information.\n\nOn July 21, 2025, at 1:54 PM, Whaley followed up with Mackay and the Filevine address, asking for an explanation of Liberty Mutual\u2019s reasoning for offering less than the medical bills. Mackay replied later that day, at 2:34 PM, stating that Liberty Mutual could not meet the $12,000 figure. She advised an offer of $3,195 to resolve the matter and asked Whaley to review the offer with his client and convey their position.\n\nAnother exchange occurred later on July 25, 2025. At 8:16 PM, Mackay wrote that medical bills were inflated and that Liberty Mutual had reviewed them to determining what is usual and customary. She asked Aaron to review and respond. A short follow-up from Aaron occurred later that day: he sent a brief message, \u201cCare to share that review?\u201d and reaffirmed his firm\u2019s contact details.\n\nThroughout these communications, the Liberty Mutual communications included standard policy and contact information for Liberty Mutual or Safeco Claims, including mailing addresses for claim submissions and a confidentiality notice typical of such emails. The email thread reflects ongoing settlement discussions regarding Claim #058373025, with initial demand of $12,000 from the petitioner\u2019s side, a counteroffer of $3,195 from Liberty Mutual, and subsequent scrutiny of the medical bills\u2019 reasonableness by Liberty Mutual.",
+      "valid_at": "2025-07-25T00:00:00",
+      "author": "Aaron Whaley",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "client involved in the case"
+          },
+          {
+            "entity_type": "Insurer",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "insurer handling the claim"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "BIClaim #058373025",
+            "relevance": "claim discussed in settlement negotiations"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "adjuster/contact at Liberty Mutual"
+          },
+          {
+            "entity_type": "Attorney",
+            "entity_name": "Aaron Whaley",
+            "relevance": "attorney representing the client"
+          },
+          {
+            "entity_type": "LawFirm",
+            "entity_name": "Whaley Law Firm",
+            "relevance": "law firm representing the client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Filevine Integration - 2025-07-30",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nA call from aaron whaley was logged at 2025-07-30 17:34:10.249000+00:00 . #outboundcall\n\nCaller Info: 4699973807 \n\nCaller ID: 469-997-3807 \n\nCaller Name: Sarah Mackay \n\nCaller Email \n\nLink to Filevine Contact [filevine-link]",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 pertains to client Fina Fatty. An outbound call was logged on July 30, 2025 at 17:34:10.249000+00:00, initiated by Aaron Whaley. The call\u2019s recorded details show Caller Info 4699973807, Caller ID 469-997-3807, and Caller Name Sarah Mackay; the Caller Email field is empty. A Filevine contact link is available at [filevine-link].",
+      "valid_at": "2025-07-30T00:00:00",
+      "author": "Filevine Integration",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client"
+          },
+          {
+            "entity_type": "Adjuster",
+            "entity_name": "Sarah Mackay",
+            "relevance": "caller/contact on call"
+          },
+          {
+            "entity_type": "BIClaim",
+            "entity_name": "Liberty Mutual Insurance Company",
+            "relevance": "BI claim associated with adjuster"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nSettlement negotiations and case resolution planning.",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves the client, Fina Fatty.\n\nThe engagement is focused on settlement negotiations and case resolution planning.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "primary client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nInsurance communications and claim progression monitoring.",
+      "natural_language": "Initial client contact on November 5, 2024 with Fina Fatty regarding a motor vehicle accident. The case Fina-Fatty-MVA-11-05-2024 centers on insurance communications and monitoring the progression of the claim.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "initial contact regarding motor vehicle accident"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-26",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nCase status review and medical treatment evaluation.",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns the client Fina Fatty. The purpose of this note is a case-status review and a medical-treatment evaluation, conducted on November 5, 2024, to assess the current status of the case and review the medical treatment plan for this client.",
+      "valid_at": "2025-08-26T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case-status review and medical-treatment evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nSettlement negotiations and liability assessment progress.",
+      "natural_language": "The case labeled Fina-Fatty-MVA-11-05-2024 concerns the client Fina Fatty in connection with a motor vehicle accident. \n\nThe file indicates that settlement negotiations are ongoing and that liability assessment is progressing.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "subject of case"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nMedical treatment coordination and insurance claim management.",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 involves client Fina Fatty.\n\nThe engagement centers on medical treatment coordination and insurance claim management in relation to a motor vehicle accident.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case client"
+          }
+        ]
+      }
+    },
+    {
+      "episode_name": "Aaron - 2025-08-27",
+      "original_body": "Case: Fina-Fatty-MVA-11-05-2024\nClient: Fina Fatty\n\nNovember 5, 2024 motor vehicle accident case review.",
+      "natural_language": "Case Fina-Fatty-MVA-11-05-2024 concerns the client Fina Fatty. \n\nOn November 5, 2024, a motor vehicle accident case review was conducted for this matter.",
+      "valid_at": "2025-08-27T00:00:00",
+      "author": "Aaron",
+      "proposed_relationships": {
+        "about": [
+          {
+            "entity_type": "Client",
+            "entity_name": "Fina Fatty",
+            "relevance": "case subject"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

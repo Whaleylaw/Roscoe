@@ -1,0 +1,86 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "SupremeCourtDistrict",
+    "name": "Kentucky Supreme Court, District 1",
+    "attributes": {
+      "district_number": "1",
+      "region": "Western KY",
+      "counties": "Paducah area"
+    },
+    "source_id": "ky_supreme_court_structure",
+    "source_file": "supreme_court_justices.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "SupremeCourtDistrict",
+    "name": "Kentucky Supreme Court, District 2",
+    "attributes": {
+      "district_number": "2",
+      "region": "North Central KY",
+      "counties": "Louisville/Jefferson"
+    },
+    "source_id": "ky_supreme_court_structure",
+    "source_file": "supreme_court_justices.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "SupremeCourtDistrict",
+    "name": "Kentucky Supreme Court, District 3",
+    "attributes": {
+      "district_number": "3",
+      "region": "Northern KY",
+      "counties": "Kenton/Campbell/Boone"
+    },
+    "source_id": "ky_supreme_court_structure",
+    "source_file": "supreme_court_justices.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "SupremeCourtDistrict",
+    "name": "Kentucky Supreme Court, District 4",
+    "attributes": {
+      "district_number": "4",
+      "region": "Bluegrass",
+      "counties": "Fayette/Lexington"
+    },
+    "source_id": "ky_supreme_court_structure",
+    "source_file": "supreme_court_justices.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "SupremeCourtDistrict",
+    "name": "Kentucky Supreme Court, District 5",
+    "attributes": {
+      "district_number": "5",
+      "region": "Eastern KY",
+      "counties": "Boyd/Greenup area"
+    },
+    "source_id": "ky_supreme_court_structure",
+    "source_file": "supreme_court_justices.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "SupremeCourtDistrict",
+    "name": "Kentucky Supreme Court, District 6",
+    "attributes": {
+      "district_number": "6",
+      "region": "South Central KY",
+      "counties": "Bowling Green area"
+    },
+    "source_id": "ky_supreme_court_structure",
+    "source_file": "supreme_court_justices.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "SupremeCourtDistrict",
+    "name": "Kentucky Supreme Court, District 7",
+    "attributes": {
+      "district_number": "7",
+      "region": "Capital",
+      "counties": "Franklin/Frankfort"
+    },
+    "source_id": "ky_supreme_court_structure",
+    "source_file": "supreme_court_justices.json"
+  }
+]

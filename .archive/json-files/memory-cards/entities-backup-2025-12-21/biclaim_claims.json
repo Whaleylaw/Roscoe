@@ -1,0 +1,1970 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Abigail-Whaley-MVA-10-24-2024-Bodily Injury (BI)-1008251706",
+    "attributes": {
+      "claim_number": "1008251706",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Laura Zahringer",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Abigail-Whaley-MVA-10-24-2024"
+    },
+    "source_id": "88",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Alma-Cristobal-MVA-2-15-2024-Bodily Injury (BI)-2024346878",
+    "attributes": {
+      "claim_number": "2024346878",
+      "insurer_name": "Crete Carrier Corporation (Shaffer Trucking & Hunt Transportation)",
+      "adjuster_name": "Brenna Rine",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "03/29 tried contacting adj. No answer. Send email instead, 04/04 received denial letter",
+      "project_name": "Alma-Cristobal-MVA-2-15-2024"
+    },
+    "source_id": "113",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-054658453-02",
+    "attributes": {
+      "claim_number": "054658453-02",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Robert Elliott",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 18000,
+      "settlement_date": "2024-09-12",
+      "date_demand_sent": "2024-01-10",
+      "is_active_negotiation": false,
+      "insurance_notes": "1/10/24 calm, 01/10 returned call of adjuster. Has update on the demand sent. They will complete evaluation of demand for all injured parties probably by the end of this week., 06/04 called adj to get update. No answer, left vm",
+      "project_name": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    "source_id": "129",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-1455R002D",
+    "attributes": {
+      "claim_number": "1455R002D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Aaron Lovato",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 18000.0,
+      "settlement_date": "45547.0",
+      "date_demand_sent": "2024-01-10",
+      "is_active_negotiation": false,
+      "insurance_notes": "1/10/24 calm, 01/10 returned call of adjuster. Has update on the demand sent. They will complete evaluation of demand for all injured parties probably by the end of this week., 06/04 called adj to get update. No answer, left vm",
+      "project_name": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    "source_id": "153",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-20091551",
+    "attributes": {
+      "claim_number": "20091551",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    "source_id": "157",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Azaire-Lopez-MVA-11-14-2025-Bodily Injury (BI)-300-0701136-2025",
+    "attributes": {
+      "claim_number": "300-0701136-2025",
+      "insurer_name": "Auto Owners",
+      "is_active_negotiation": false,
+      "project_name": "Azaire-Lopez-MVA-11-14-2025"
+    },
+    "source_id": "244",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Brenda-Lang-MVA-09-03-2021-Bodily Injury (BI)-410220052",
+    "attributes": {
+      "claim_number": "410220052",
+      "insurer_name": "TARC Risk Management Services Company",
+      "adjuster_name": "J. Clarke McCulloch",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 15000,
+      "settlement_amount": 15000,
+      "is_active_negotiation": false,
+      "insurance_notes": "BI denying liability",
+      "project_name": "Brenda-Lang-MVA-09-03-2021"
+    },
+    "source_id": "154",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Brooklyn-Ballard-MVA-02-28-2024-Bodily Injury (BI)-OIC256504",
+    "attributes": {
+      "claim_number": "OIC256504",
+      "insurer_name": "Berkshire Risk Services",
+      "adjuster_name": "Scott Frayer",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Brooklyn-Ballard-MVA-02-28-2024"
+    },
+    "source_id": "115",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Bryson-Brown-MVA-6-29-2025-Bodily Injury (BI)-1787F478S",
+    "attributes": {
+      "claim_number": "1787F478S",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Bryson-Brown-MVA-6-29-2025"
+    },
+    "source_id": "19",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Carmelita-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K",
+    "attributes": {
+      "claim_number": "1791R083K",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Katrina Mishoe",
+      "settlement_amount": 25000.0,
+      "settlement_date": "45968.0",
+      "date_demand_sent": "45968.0",
+      "is_active_negotiation": false,
+      "project_name": "Carmelita-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "258",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Charles-T-Johnson-MVA-4-18-2023-Bodily Injury (BI)-1748L638H",
+    "attributes": {
+      "claim_number": "1748L638H",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Benjamine Groce",
+      "coverage_confirmation": "Coverage Confirmed",
+      "date_demand_sent": "2023-12-11",
+      "is_active_negotiation": false,
+      "insurance_notes": "Benjamin Groce 480-239-6417, 2023.04.24 Recvd SF Denial - Insured had Green Light, 2023.12.11 Demand Package Sent to Adj, 2023.12.11 SF Denial - No Rebuttal Evidence Submitted",
+      "project_name": "Charles-T-Johnson-MVA-4-18-2023"
+    },
+    "source_id": "179",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Charles-T.-Johnson-MVA-4-18-2023-Bodily Injury (BI)-1748L638H",
+    "attributes": {
+      "claim_number": "1748L638H",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Benjamine Groce",
+      "coverage_confirmation": "Coverage Confirmed",
+      "date_demand_sent": "45271.0",
+      "is_active_negotiation": false,
+      "insurance_notes": "Benjamin Groce 480-239-6417, 2023.04.24 Recvd SF Denial - Insured had Green Light, 2023.12.11 Demand Package Sent to Adj, 2023.12.11 SF Denial - No Rebuttal Evidence Submitted",
+      "project_name": "Charles-T.-Johnson-MVA-4-18-2023"
+    },
+    "source_id": "300",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Chase-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+    "attributes": {
+      "claim_number": "24-902741838",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jennifer Howard",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Chase-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "80",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Bodily Injury (BI)",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "2024.03.05 Non-Collision MVA - No BI Information Available - Client placed at fault by witness statements - Road Rage",
+      "project_name": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+    },
+    "source_id": "119",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Corey-Todd-MVA-WC-8-2-2025-Bodily Injury (BI)",
+    "attributes": {
+      "insurer_name": "Allstate Insurance",
+      "is_active_negotiation": false,
+      "insurance_notes": "8/7 Allstate unable to locate a policy and refusing to establish a claim for a formal denial",
+      "project_name": "Corey-Todd-MVA-WC-8-2-2025"
+    },
+    "source_id": "294",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Cory-Stephenson-MVA-9-03-2025-Bodily Injury (BI)-1789V463J",
+    "attributes": {
+      "claim_number": "1789V463J",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Cheryl Washington",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "Liability Denied",
+      "project_name": "Cory-Stephenson-MVA-9-03-2025"
+    },
+    "source_id": "216",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Cory-Stephenson-MVA-9-3-2025-Bodily Injury (BI)-1789V463J",
+    "attributes": {
+      "claim_number": "1789V463J",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Cherrel Washington",
+      "is_active_negotiation": false,
+      "insurance_notes": "9/5 State Farm denied liability, stated their insured had control of the intersection and made the turn on a yellow light, our client disregarded traffic light",
+      "project_name": "Cory-Stephenson-MVA-9-3-2025"
+    },
+    "source_id": "275",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Curtis-Lee-Justice-MVA-2-5-2023-Bodily Injury (BI)-23ATKY338083287",
+    "attributes": {
+      "claim_number": "23ATKY338083287",
+      "insurer_name": "Clearcover",
+      "adjuster_name": "Peter Longo",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 15000,
+      "settlement_amount": 15000,
+      "settlement_date": "2024-05-22",
+      "date_demand_sent": "2024-04-11",
+      "is_active_negotiation": false,
+      "insurance_notes": "2023.07.05 sent email to give updates/information on client's injuries and treatment, 11/2 Saved new assigned BI adjuster, 11/22 updated adj info, 03/12 Spoke to adjuster, gave an update about clients treatment status, 9/11 Spoke with BI adjuster about PD claim. was a total loss. PD adj is Emmy Tran Ph: 312-809-8795. Dialed number and it's no longer in service. Tried to call BI adjuster back immediately and he didn't answer. very odd, 9/11 Spoke with a random person in PD department, Emmy Tran is no longer with the company and PD claim is closed with a note indicating they never received proof of salvage title. call was disconnected randomly",
+      "project_name": "Curtis-Lee-Justice-MVA-2-5-2023"
+    },
+    "source_id": "182",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Cynthia-Gibson-MVA-7-9-2025-Bodily Injury (BI)-BTQW3MKY",
+    "attributes": {
+      "claim_number": "BTQW3MKY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Courtney Heinnickel",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "7/29 saved ack under coverage investigation",
+      "project_name": "Cynthia-Gibson-MVA-7-9-2025"
+    },
+    "source_id": "12",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Dakota-McCord-MVA-10-12-2025-Bodily Injury (BI)-25-423678921",
+    "attributes": {
+      "claim_number": "25-423678921",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Robert Alexander",
+      "is_active_negotiation": false,
+      "project_name": "Dakota-McCord-MVA-10-12-2025"
+    },
+    "source_id": "263",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Dana-Jackson-MVA-1-24-2024-Bodily Injury (BI)-1762X766D",
+    "attributes": {
+      "claim_number": "1762X766D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Sharika Moses",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Dana-Jackson-MVA-1-24-2024"
+    },
+    "source_id": "123",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Daniel-W-Volk-MVA-09-24-2021-Bodily Injury (BI)-ZPA003356461",
+    "attributes": {
+      "claim_number": "ZPA003356461",
+      "insurer_name": "Grange Insurance",
+      "adjuster_name": "Kayla Kinzel",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Daniel-W-Volk-MVA-09-24-2021"
+    },
+    "source_id": "210",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Daniel-W.-Volk-MVA-09-24-2021-Bodily Injury (BI)-ZPA003356461",
+    "attributes": {
+      "claim_number": "ZPA003356461",
+      "insurer_name": "Grange Insurance",
+      "adjuster_name": "Kayla Kinzel",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Daniel-W.-Volk-MVA-09-24-2021"
+    },
+    "source_id": "302",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Daquan-Locke-MVA-6-11-2024-Bodily Injury (BI)-AT3696194",
+    "attributes": {
+      "claim_number": "AT3696194",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Kelly Sisco",
+      "demand_amount": 25000.0,
+      "current_offer": 2400.0,
+      "date_demand_sent": "45953.0",
+      "is_active_negotiation": true,
+      "project_name": "Daquan-Locke-MVA-6-11-2024"
+    },
+    "source_id": "254",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Davis-Robinson-SF-05-02-2025-Bodily Injury (BI)-25 -109767",
+    "attributes": {
+      "claim_number": "25 -109767",
+      "insurer_name": "Texas Roadhouse",
+      "adjuster_name": "Angela Milliner",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "11/17 saved BI denial letter",
+      "project_name": "Davis-Robinson-SF-05-02-2025"
+    },
+    "source_id": "49",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Deanna-Jones-MVA-7-30-2025-Bodily Injury (BI)-25ATKY446076413",
+    "attributes": {
+      "claim_number": "25ATKY446076413",
+      "insurer_name": "Clearcover",
+      "adjuster_name": "Kimberlyn Holden",
+      "is_active_negotiation": false,
+      "insurance_notes": "9/16 unable to locate policy or owner, Glenda - Julian is the supervisor Ph:, Warren's atty office has claim number as 25ATKY446076413 for Warren but they have yet to receive a response and doesnt have adj info, 25ATKY446076413, Kimberlyn Holden Ph: 312-967-6396, corrected claim info and added adjuster. confirmed she has our LOT from 9/19",
+      "project_name": "Deanna-Jones-MVA-7-30-2025"
+    },
+    "source_id": "270",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Debra-Marshall-MVA-12-3-2022-Bodily Injury (BI)-4778044",
+    "attributes": {
+      "claim_number": "4778044",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Jason Osboe",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "9/27 calm want to have liability discussion and go over limits., 10/09  called to check liability status. No answer left vm., 10/12 BI is denying liability due to client pulling out onto the roadway., needs to know size of moped, 10/27 called adjuster to get update. No answer, left vm., 11/03 called adjuster to follow up on denial letter. No answer, left vm, 11/03 adjuster called in advising client is not qualified for pedestrian PIP since the moped size is 50cc. Denial letter is in route",
+      "project_name": "Debra-Marshall-MVA-12-3-2022"
+    },
+    "source_id": "192",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Destiny-Adkins-MVA-04-16-2021-Bodily Injury (BI)-625854435",
+    "attributes": {
+      "claim_number": "625854435",
+      "insurer_name": "Allstate Insurance",
+      "adjuster_name": "Patrice Gaines",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Destiny-Adkins-MVA-04-16-2021"
+    },
+    "source_id": "209",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Dewayne-Ward-MVA-8-29-2023-Bodily Injury (BI)-1455R002D",
+    "attributes": {
+      "claim_number": "1455R002D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Aaron Lovato",
+      "coverage_confirmation": "Coverage Confirmed",
+      "date_demand_sent": "2023-12-01",
+      "is_active_negotiation": false,
+      "insurance_notes": "09/12 called to asked for PD claim. Was advised liability was denied due to failure to yield right of way. Asked for copy of denial letter., 11/02 called to follow up on the denial letter. No answer, left vm, 11/10 spoke to adjuster about 50/50 said he would re evaluate and get back to me.",
+      "project_name": "Dewayne-Ward-MVA-8-29-2023"
+    },
+    "source_id": "156",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Dewayne-Ward-MVA-8-29-2023-Bodily Injury (BI)-20091551",
+    "attributes": {
+      "claim_number": "20091551",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "09/01 Called Elco to set up claim. Claim will be set up in 5-7 business days. They will give me a call back to provide claim number and adjuster info., 09/07 tried to call no answer, having high volume of calls and advised to call again later. Call got disconnected., 09/08 EHI called in to inform that their renter Noami Robinson did not add insurance on her rental instead  provided her own auto insurance info w/c is StateFarm. Policy number :6917832S0614001",
+      "project_name": "Dewayne-Ward-MVA-8-29-2023"
+    },
+    "source_id": "159",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Douglas-Livers-MVA-1-19-2023-Bodily Injury (BI)-QMJF78KY",
+    "attributes": {
+      "claim_number": "QMJF78KY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Angela Casey",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "11/21 saved denial letter, 2024.08.12 Called BI Adj listed on Denial - Wrong Policy # On Denial - Adj reviewed File - Another Claim open under Proper Policy - C6LJQR, 2024.08.12 Claims Client had Prior Attorney - Prior Attorney Recvd Denial Letter under Proper Policy - Adj sending Copy over",
+      "project_name": "Douglas-Livers-MVA-1-19-2023"
+    },
+    "source_id": "137",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Elizabeth-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+    "attributes": {
+      "claim_number": "24-902741838",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jennifer Howard",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "1/21 sent available r/b to BI and requested tender of limits. unsure if they are more than minimum but worth exploring",
+      "project_name": "Elizabeth-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "82",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Estate-of-Evangeline-Young-MVA-8-12-2023-Bodily Injury (BI)-305240079",
+    "attributes": {
+      "claim_number": "305240079",
+      "insurer_name": "Risk Management Services Company",
+      "adjuster_name": "J. Clarke McCulloch",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "9/13 sent email to attempt to get claim open, 09/15 called to get claim number or open a claim. Got transferred to Hanna Valen. No answer, left vm, 09/26 called to follow up on claim. No answer, left vm. No response to email as well., 09/27 received call from Clarke Mccollough he advised me that the claim for our client should be filed directly to Metro Risk Dept., 09/27 LOR sent, 10/03 called adjuster to get status of liability. No answer, left vm.",
+      "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+    },
+    "source_id": "150",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Bodily Injury (BI)-250531476",
+    "attributes": {
+      "claim_number": "250531476",
+      "insurer_name": "Direct Auto Insurance",
+      "adjuster_name": "Carolynn Harris",
+      "coverage_confirmation": "Coverage Pending",
+      "date_demand_sent": "45938.0",
+      "is_active_negotiation": true,
+      "insurance_notes": "",
+      "project_name": "Faizon-Procter-Witcher-MVA-7-01-2025"
+    },
+    "source_id": "21",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Bodily Injury (BI)-1769H472C",
+    "attributes": {
+      "claim_number": "1769H472C",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Abigail Jett",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 12000,
+      "date_demand_sent": "2025-02-19",
+      "is_active_negotiation": true,
+      "insurance_notes": "7/10 \"We have liability limits of 25/50 and there are 10 people who were injured during this accident.\"",
+      "project_name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+    },
+    "source_id": "100",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Fina-Fatty-MVA-11-05-2024-Bodily Injury (BI)-58373025",
+    "attributes": {
+      "claim_number": "58373025",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Sarah Mackay",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "current_offer": 1000,
+      "date_demand_sent": "2025-05-19",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Fina-Fatty-MVA-11-05-2024"
+    },
+    "source_id": "76",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Forrest-Muss-7-20-2025-Bodily Injury (BI)-136751083",
+    "attributes": {
+      "claim_number": "136751083",
+      "insurer_name": "North American Risk Services",
+      "is_active_negotiation": false,
+      "project_name": "Forrest-Muss-7-20-2025"
+    },
+    "source_id": "295",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Forrest-Muss-MVA-07-20-2025-Bodily Injury (BI)-136751083",
+    "attributes": {
+      "claim_number": "136751083",
+      "insurer_name": "North American Risk Services",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Forrest-Muss-MVA-07-20-2025"
+    },
+    "source_id": "3",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Greg-Neltner-MVA-4-1-2023-Bodily Injury (BI)-23-6275504",
+    "attributes": {
+      "claim_number": "23-6275504",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Amy Morris",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "date_demand_sent": "2023-10-03",
+      "is_active_negotiation": false,
+      "insurance_notes": "11/01 attempted to call adjuster. No answer,left vm, 2024.03.29 Demand Denied - Companion Intake was delayed - No Demand on Companion - MVA Complaint Filed due to SOL, 04/23 Adj called in for client's injuries info and treatment status. Provide info. Adj also wants to know reasons for filing suit. Transferred to Sarena, 2024.04.23 Spoke with Adjuster - Confirmed they have not received Demand on Cecelia - Advised Filed Suit as PR very clear that Insured 'STATED' she caused the collision attempting to cross 3 lanes of traffic & turned in front of Client - Adjuster will review & discuss w/DC",
+      "project_name": "Greg-Neltner-MVA-4-1-2023"
+    },
+    "source_id": "174",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Henrietta-Jenkins-MVA-5-20-2025-Bodily Injury (BI)-25-391686743",
+    "attributes": {
+      "claim_number": "25-391686743",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Colin Karsnitz",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 50000.0,
+      "current_offer": 16000.0,
+      "date_demand_sent": "45937.0",
+      "is_active_negotiation": true,
+      "insurance_notes": "Salena Kelly Ph 502-909-3694 email Salena_Kelly@progressive.com, 6/2 saved ack",
+      "project_name": "Henrietta-Jenkins-MVA-5-20-2025"
+    },
+    "source_id": "48",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Hope-Renee-Padgett-MVA-1-16-2023-Bodily Injury (BI)-23-4004861",
+    "attributes": {
+      "claim_number": "23-4004861",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Alyssa Howland",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 25000.0,
+      "settlement_amount": 25000.0,
+      "settlement_date": "45267.0",
+      "date_demand_sent": "45244.0",
+      "is_active_negotiation": false,
+      "insurance_notes": "5/17 calm re client being sued in small claims court, 5/18 Alex Lux 502-909-3684 is supervisor. Alyssa is out until May 30. Alex Lux is to call me re small claims court., 6/1 Progressive called and left message re small claims ct. I calm",
+      "project_name": "Hope-Renee-Padgett-MVA-1-16-2023"
+    },
+    "source_id": "188",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Hope-Renee-Padgett-MVA-1-16-2023-Bodily Injury (BI)-4791863",
+    "attributes": {
+      "claim_number": "4791863",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Deborah Kitchen",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 25000,
+      "settlement_amount": 25000,
+      "settlement_date": "2023-12-07",
+      "date_demand_sent": "2023-11-14",
+      "is_active_negotiation": false,
+      "insurance_notes": "5/17 calm want to know if their insured had collision coverage, 5/18 calm re coverage, 6/5 calm I want to know limits, 1/2/24 Saved tender letter and release",
+      "project_name": "Hope-Renee-Padgett-MVA-1-16-2023"
+    },
+    "source_id": "187",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jacob-Herrle-MVA-6-17-2025-Bodily Injury (BI)-733249",
+    "attributes": {
+      "claim_number": "733249",
+      "insurer_name": "Collins & Company",
+      "adjuster_name": "Jim Johnson",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Jacob-Herrle-MVA-6-17-2025"
+    },
+    "source_id": "18",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "James-Crowdus-MVA-8-10-2025-Bodily Injury (BI)-1788T648L",
+    "attributes": {
+      "claim_number": "1788T648L",
+      "insurer_name": "State Farm Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "James-Crowdus-MVA-8-10-2025"
+    },
+    "source_id": "223",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "James-Sadler-MVA-4-07-2023-Bodily Injury (BI)-1748B202X",
+    "attributes": {
+      "claim_number": "1748B202X",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "William Beaver",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 50000,
+      "current_offer": 7688,
+      "settlement_amount": 7688,
+      "date_demand_sent": "2024-09-17",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "James-Sadler-MVA-4-07-2023"
+    },
+    "source_id": "171",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "James-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1009056098",
+    "attributes": {
+      "claim_number": "1009056098",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Wendy Gavinski",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "James-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "15",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "James-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1786S949G",
+    "attributes": {
+      "claim_number": "1786S949G",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Jessica Fones",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "James-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "6",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jasmine-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K",
+    "attributes": {
+      "claim_number": "1791R083K",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Katrina Mishoe",
+      "settlement_amount": 20000.0,
+      "settlement_date": "45968.0",
+      "is_active_negotiation": false,
+      "project_name": "Jasmine-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "262",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jaysha-Aponte-MVA-3-15-2025-Bodily Injury (BI)-250-068-9702",
+    "attributes": {
+      "claim_number": "250-068-9702",
+      "insurer_name": "Mobilitas Insurance Company",
+      "adjuster_name": "Hannah Snow",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "03/27 returned adj's vm. Asking for a copy of PR. Emailed PR.",
+      "project_name": "Jaysha-Aponte-MVA-3-15-2025"
+    },
+    "source_id": "58",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jaysha-Aponte-MVA-3-15-2025-Bodily Injury (BI)-8838008180000001",
+    "attributes": {
+      "claim_number": "8838008180000001",
+      "insurer_name": "Geico Insurance Company",
+      "adjuster_name": "Myderia Pittman",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "3/26 resent LOR with PR, 8838008180000001, 6/2 saved denial letter",
+      "project_name": "Jaysha-Aponte-MVA-3-15-2025"
+    },
+    "source_id": "63",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jensen-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754",
+    "attributes": {
+      "claim_number": "25-934695754",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Josh White",
+      "demand_amount": 25000.0,
+      "date_demand_sent": "45972.0",
+      "is_active_negotiation": true,
+      "project_name": "Jensen-Ott-MVA-8-6-2025"
+    },
+    "source_id": "283",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jeremy-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+    "attributes": {
+      "claim_number": "24-902741838",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jennifer Howard",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "01/03/25 Called to follow up on ack letter. Spoke with adj she'll be sending the ack letter shortly. She's still investigating the coverage, she needs to speak with their insured first. She'll call back in 2 weeks to follow up on the status., 01/30/25 Adj called to confirm if Auto owners already handled PD",
+      "project_name": "Jeremy-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "86",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jerome-Hedinger-Premise-(DB)-10-24-2023-Bodily Injury (BI)-17-N836-0G8",
+    "attributes": {
+      "claim_number": "17-N836-0G8",
+      "insurer_name": "State Farm Fire & Casualty Company",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000.0,
+      "date_demand_sent": "45496.0",
+      "is_active_negotiation": false,
+      "insurance_notes": "2024.04.08 Recvd LOR Ack - Update Tab - Called Adjuster - LVM provided Treatment Info & we will send Policy Limit Demand upon receipt of the MR/MBs, 2024.09.27 Still no response to Demand - BK Filed Premise Liability Complaint - Sent Copy to BI Adj, 2024.10.10 Recvd State Farm Notice Claim Reassigned to Adj David Ryan - Called - LVM - Advised Claim filed into litigation - Please forward to Legal Depart",
+      "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023"
+    },
+    "source_id": "298",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jerome-Hedinger-Premise-DB-10-24-2023-Bodily Injury (BI)-17-N836-0G8",
+    "attributes": {
+      "claim_number": "17-N836-0G8",
+      "insurer_name": "State Farm Fire & Casualty Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "date_demand_sent": "2024-07-23",
+      "is_active_negotiation": false,
+      "insurance_notes": "2024.04.08 Recvd LOR Ack - Update Tab - Called Adjuster - LVM provided Treatment Info & we will send Policy Limit Demand upon receipt of the MR/MBs, 2024.09.27 Still no response to Demand - BK Filed Premise Liability Complaint - Sent Copy to BI Adj, 2024.10.10 Recvd State Farm Notice Claim Reassigned to Adj David Ryan - Called - LVM - Advised Claim filed into litigation - Please forward to Legal Depart",
+      "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023"
+    },
+    "source_id": "111",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jimmy-Ferguson-MVA-5-30-2024-Bodily Injury (BI)-VA20241535681",
+    "attributes": {
+      "claim_number": "VA20241535681",
+      "insurer_name": "KACo Claims Department",
+      "adjuster_name": "Vivian Hall",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "08/01: Tried to0 call BI but unavailable, left a VM and sent an email., 11/25 called Kaco to get claim number or set up claim. I was asked to email Kaco the copy of PR and wait for the adjuster to reach out to us",
+      "project_name": "Jimmy-Ferguson-MVA-5-30-2024"
+    },
+    "source_id": "98",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jonah-Price-MVA-8-25-2025-Bodily Injury (BI)",
+    "attributes": {
+      "insurer_name": "Farmers Insurance",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Jonah-Price-MVA-8-25-2025"
+    },
+    "source_id": "217",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337",
+    "attributes": {
+      "claim_number": "25-822910337",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Walter Kenny",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "9/2 resent LOR and PR to adj. adj is reviewing liability and didn't have a copy of the PR. smh",
+      "project_name": "Jordan-Brown-MVA-8-19-2025"
+    },
+    "source_id": "278",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Joseph-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754",
+    "attributes": {
+      "claim_number": "25-934695754",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Josh White",
+      "is_active_negotiation": false,
+      "insurance_notes": "8/25 new adjuster assigned. coverage still under investigation, a208438@progressive.com",
+      "project_name": "Joseph-Ott-MVA-8-6-2025"
+    },
+    "source_id": "282",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Bodily Injury (BI)-625854435",
+    "attributes": {
+      "claim_number": "625854435",
+      "insurer_name": "Allstate Insurance",
+      "adjuster_name": "Patrice Gaines",
+      "coverage_confirmation": "Coverage Under Investigation",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021"
+    },
+    "source_id": "212",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Julian-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K",
+    "attributes": {
+      "claim_number": "1791R083K",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Katrina Mishoe",
+      "settlement_amount": 5000.0,
+      "settlement_date": "45968.0",
+      "is_active_negotiation": false,
+      "project_name": "Julian-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "260",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-054658453-02",
+    "attributes": {
+      "claim_number": "054658453-02",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Robert Elliott",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 14734.08,
+      "settlement_date": "2024-09-12",
+      "date_demand_sent": "2023-12-15",
+      "is_active_negotiation": false,
+      "insurance_notes": "01/10 returned call of adjuster. Has update on the demand sent. They will complete evaluation of demand for all injured parties probably by the end of this week., 03/20 called to get update. no answer, left vm.",
+      "project_name": "Julmonzhae-Moore-MVA-8-29-2023"
+    },
+    "source_id": "126",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-1455R002D",
+    "attributes": {
+      "claim_number": "1455R002D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Aaron Lovato",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 14734.08,
+      "settlement_date": "45547.0",
+      "date_demand_sent": "2023-12-15",
+      "is_active_negotiation": false,
+      "insurance_notes": "01/10 returned call of adjuster. Has update on the demand sent. They will complete evaluation of demand for all injured parties probably by the end of this week., 03/20 called to get update. no answer, left vm.",
+      "project_name": "Julmonzhae-Moore-MVA-8-29-2023"
+    },
+    "source_id": "152",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-20091551",
+    "attributes": {
+      "claim_number": "20091551",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Julmonzhae-Moore-MVA-8-29-2023"
+    },
+    "source_id": "158",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Justin-Bullock-MVA-6-30-2025-Bodily Injury (BI)-25631251364",
+    "attributes": {
+      "claim_number": "25631251364",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Joshua White",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000.0,
+      "current_offer": 4000.0,
+      "settlement_amount": 7000.0,
+      "date_demand_sent": "45938.0",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Justin-Bullock-MVA-6-30-2025"
+    },
+    "source_id": "24",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Kimberly-Brasher-Premise-2-25-2023-Bodily Injury (BI)-C321835845-0001-01",
+    "attributes": {
+      "claim_number": "C321835845-0001-01",
+      "insurer_name": "Sedgwick Claims Management Services",
+      "adjuster_name": "Tatisha \"Tish\" Booker",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 750000,
+      "date_demand_sent": "2024-07-09",
+      "is_active_negotiation": false,
+      "insurance_notes": "2023.10.09 Recvd LOR Ack from Tish Booker - Fwd to JG for further handling, 10/09 called adjuster to provide info needed and get date for recorded statement. No answer, left vm., 10/10 RS done, 2024.03.07 Recvd New Adj VM - Jackie - (945) 221-4452 - Returned Call - LVM",
+      "project_name": "Kimberly-Brasher-Premise-2-25-2023"
+    },
+    "source_id": "143",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337",
+    "attributes": {
+      "claim_number": "25-822910337",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Walter Kenny",
+      "is_active_negotiation": false,
+      "project_name": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+    },
+    "source_id": "238",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Leanora-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337",
+    "attributes": {
+      "claim_number": "25-822910337",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Brandi Chappell-Haggard",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Leanora-Brown-MVA-8-19-2025"
+    },
+    "source_id": "277",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Lindsey-Dunn-MVA-9-24-2025-Bodily Injury (BI)-2TVV43KY",
+    "attributes": {
+      "claim_number": "2TVV43KY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Valerie Marlatt",
+      "demand_amount": 17500.0,
+      "date_demand_sent": "45968.0",
+      "is_active_negotiation": true,
+      "project_name": "Lindsey-Dunn-MVA-9-24-2025"
+    },
+    "source_id": "256",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Lonnie-Stevens-MVA-2-14-2025-Bodily Injury (BI)-VA20251695455",
+    "attributes": {
+      "claim_number": "VA20251695455",
+      "insurer_name": "MGM",
+      "adjuster_name": "Dennis Corley",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 50000,
+      "date_demand_sent": "2025-06-30",
+      "is_active_negotiation": false,
+      "insurance_notes": "02/19/25 set up claim. No adj assigned yet, 02/21/25 Claim was already forwarded to third party claim handler of Travelers. Added info on file. Confirmed they got our LOR, 03/03  called adj to sched RS. Not available at the moment. Left vm.",
+      "project_name": "Lonnie-Stevens-MVA-2-14-2025"
+    },
+    "source_id": "73",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Maia-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754",
+    "attributes": {
+      "claim_number": "25-934695754",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Josh White",
+      "demand_amount": 25000.0,
+      "date_demand_sent": "45972.0",
+      "is_active_negotiation": true,
+      "project_name": "Maia-Ott-MVA-8-6-2025"
+    },
+    "source_id": "284",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-8055562",
+    "attributes": {
+      "claim_number": "8055562",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Pat Hargadon",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 10000.0,
+      "settlement_amount": 2000.0,
+      "settlement_date": "45915.0",
+      "date_demand_sent": "45845.0",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Malcom-Glass-Jones-MVA-10-2-2024"
+    },
+    "source_id": "90",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-AT0000003753979",
+    "attributes": {
+      "claim_number": "AT0000003753979",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Cole Barnes",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 10000,
+      "date_demand_sent": "2025-07-07",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Malcom-Glass-Jones-MVA-10-2-2024"
+    },
+    "source_id": "51",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Mark-Smith-Jr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803",
+    "attributes": {
+      "claim_number": "001218586-803",
+      "insurer_name": "USAA Insurance Company",
+      "adjuster_name": "Taline Clestine",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "Email: 3j7z9m3b3p7wh@claims.usaa.com, 6/4 adj left vm. called back and left vm... phone tag Peyton ext 32143",
+      "project_name": "Mark-Smith-Jr-MVA-5-31-2025"
+    },
+    "source_id": "40",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Mark-Smith-Sr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803",
+    "attributes": {
+      "claim_number": "001218586-803",
+      "insurer_name": "USAA Insurance Company",
+      "adjuster_name": "Taline Clestine",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "Claims email 3j7z9m3b3p7wh@claims.usaa.com, 6/4 liability has been accepted. more than minimum policy ack letter in route",
+      "project_name": "Mark-Smith-Sr-MVA-5-31-2025"
+    },
+    "source_id": "43",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Bodily Injury (BI)-17-48L4-99K",
+    "attributes": {
+      "claim_number": "17-48L4-99K",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Shawna Rice",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 39000,
+      "date_demand_sent": "2023-11-09",
+      "is_active_negotiation": false,
+      "insurance_notes": "Attempted to contact adjuster, to ask if they have determined liability, no answer, left vm. Will try again later., 4/26 State Farm has denied liability. I've asked they review again and take a RS from our client. It's been passed back to liability adjuster to reach out, 6/19 Received a letter from State Farm, requesting for a recorded statement with client to review for liability, 6/23 Returned a call to Katharine Davis, spoke with her assistant, informed her that we're trying to contact client for his availability for a recorded statement, and will give an update once received a response from client., 11/9 Received a vm from Patrick of Wilber on behalf of State Farm, he stated he wanted to talk to Atty. Whaley about subrogation demand. His phone number is (800) 313-5169 ext. 3189",
+      "project_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+    },
+    "source_id": "177",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Maryan-Kassim-MVA-08-06-2024-Bodily Injury (BI)-24-711062492",
+    "attributes": {
+      "claim_number": "24-711062492",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Brandi Chappell-Haggard",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "09/16 adjuster called in asking for client's treatment status",
+      "project_name": "Maryan-Kassim-MVA-08-06-2024"
+    },
+    "source_id": "95",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Mi'Ayla-Lopez-MVA-11-14-2025-Bodily Injury (BI)-300-0701136-2025",
+    "attributes": {
+      "claim_number": "300-0701136-2025",
+      "insurer_name": "Auto Owners",
+      "is_active_negotiation": false,
+      "insurance_notes": "Letter of Representation sent 11/18/2025 to at-fault party's insurance carrier. Requested policy limits, coverage information, and Med Pay coverage details. Multi-party claim covering all 4 co-plaintiffs: Mi'Ayla Lopez, Antonio Lopez, A'zaire Lopez, and Michae Guyton. Date of loss: 11/14/2025.",
+      "project_name": "Mi'Ayla-Lopez-MVA-11-14-2025"
+    },
+    "source_id": "249",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Michael-Crader-MVA-5-19-2023-Bodily Injury (BI)-4863358",
+    "attributes": {
+      "claim_number": "4863358",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Holly Highley",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "9/12 Obtained claim info. Sent LOR to BI via email and fax., 9/15 Saved BI ack letter, 9/28 Sent initial ER r/b to adjuster and requested tender, 9/28 minimum limits multiple people involved, 1/9 left vm for adjuster, 2/2 left vm and sent email to adjuster to check status, 2/19 sent another email to adjuster checking status, 2/19 spoke with adjuster, 2 people in at fault vehicle hurt. one air evac per adjuster, still treating, 5/10 left vm for adjuster for status, 5/10 calm agw, 5/10 adj indicated no one in the other vehicle is atty represented. KFB has not been able to reach them at all., 2024.06.04 Reviewed Ins Coverage w/BK - PIP being paid by BI Insurance - Client on 'non-vehicle' farm equipment - No PIP Coverage - Being treated as Ped v MV, 2024.07.31 Recvd Def Comb Answer to Complaint - Called BI Adjuster for Proper Counsel to be appointed - LVM, 2024.07.31 Sent Email to Adj Highley - Recvd Vacation Auto Resp - Called Office - S/w Assist - Emailed Docs to Hailey",
+      "project_name": "Michael-Crader-MVA-5-19-2023"
+    },
+    "source_id": "149",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Michael-Deshields-MVA-10-31-2025-Bodily Injury (BI)-1792K267F",
+    "attributes": {
+      "claim_number": "1792K267F",
+      "insurer_name": "State Farm Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Michael-Deshields-MVA-10-31-2025"
+    },
+    "source_id": "250",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Michael-Lanier-MVA-6-28-2025-Bodily Injury (BI)-25-471551085",
+    "attributes": {
+      "claim_number": "25-471551085",
+      "insurer_name": "Progressive Insurance Company",
+      "is_active_negotiation": false,
+      "insurance_notes": "Adverse carrier - defendant's insurance. Case moved to Demand in Progress phase on 10/24/2025.",
+      "project_name": "Michael-Lanier-MVA-6-28-2025"
+    },
+    "source_id": "289",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Morgan-Freeman-MVA-12-31-2021-Bodily Injury (BI)-3100028790",
+    "attributes": {
+      "claim_number": "3100028790",
+      "insurer_name": "Indiana Farm Bureau",
+      "adjuster_name": "Courtny Wolfe",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 38000,
+      "current_offer": 4000,
+      "settlement_amount": 7500,
+      "settlement_date": "2023-12-13",
+      "date_demand_sent": "2023-11-08",
+      "is_active_negotiation": false,
+      "insurance_notes": "called to check liability advised they don't accept 100%liability. They will wait wait for the demand to decide.",
+      "project_name": "Morgan-Freeman-MVA-12-31-2021"
+    },
+    "source_id": "184",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Muhammad-Alif-MVA-11-08-2022-Bodily Injury (BI)-AP92071",
+    "attributes": {
+      "claim_number": "AP92071",
+      "insurer_name": "West Bend Mutual Insurance",
+      "adjuster_name": "Ashley Becerra",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 13000,
+      "date_demand_sent": "2023-07-05",
+      "is_active_negotiation": false,
+      "insurance_notes": "2022.11.22 S/w Adj Becerra - Million Dollar Policy Limit, 2022.11.29 Recvd LOR Ack - Ack does not provide liability decision - Sent Request for decision & LVM, 2023.05.09 Recvd West Bend Request for Status & Initial ER Records - Sending to JC & AW, 2023.06.05 Recvd several correspondence from Adj - Still awaiting Initial ER Records - Sent email to JC, JB & AW to see if records ever received - Awaiting Response, 2023.06.21 Recvd Email from Adj - No Response recvd to 06.05 Email - Checked File - ER Records in 05.26 - Forwarded to Adj, 2023.08.18 Recvd VM from Adj - Has minimal Nego Room - Would like a copy of complaint, 2023.08.18 Returned Adj Call - Advised Complaint is in Drafting & Confirmed we will send a courtesy copy to her",
+      "project_name": "Muhammad-Alif-MVA-11-08-2022"
+    },
+    "source_id": "199",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Muhammad-Alif-MVA-12-09-2022-Bodily Injury (BI)-1123215-2",
+    "attributes": {
+      "claim_number": "1123215-2",
+      "insurer_name": "American Transit Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "2023-01-04 - Muhammad Alif - Insurance - American Transit Insurance - BI Coverage Denied | 2023.01.04 Recvd Claim Info from Client - Passenger in Cab - Has PIP & BI Claim with this Insurer, 2023.01.12 Called for PIP Info & to Setup BI - Advised Send BI LOR for Claim Setup - Emailed, 2023.01.23 Recvd BI LOR Ack - Adj Sonia Lowe - PL $25/$50, 2023.04.10 Recvd Several PIP EOBs - All noted as Denied - Entire Claim Denied - Policy not in force at the time of accident",
+      "project_name": "Muhammad-Alif-MVA-12-09-2022"
+    },
+    "source_id": "194",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Muhammad-Alif-MVA-12-09-2022-Bodily Injury (BI)-22-8451213",
+    "attributes": {
+      "claim_number": "22-8451213",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Natasha Fortune",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 3500,
+      "date_demand_sent": "2023-10-09",
+      "is_active_negotiation": true,
+      "insurance_notes": "2023-10-09 - Muhammad Alif - Insurance - Progressive Insurance - BI Claim negotiation | 2023.01.04 Recvd Accident Info Exchange Sheet from Client - At Fault Driver, 2023.01.04 Called Progressive - Unable to Locate Policy with Info on Exchange Sheet, 2023.02.01 AW Sent LOR, 2023.02.14 LOR Ack Recvd - Adj Larasso - 50/100, 09/20/23 received transfer call adjuster called in to get treatment status. provide update. Advised we are still waiting for some records and bills, 2023.11.15 Recvd VM from Adj looking to discuss Settlement - Attempted to Return her call - LVM, 2023.12.04 Recvd call from Progressive Adj - Wants to discuss settlement but did not seem to have new offer - Sending to AW, 2023.12.11 Recvd call from Progressive Adj - New offer $2500.00 - She prior MRs showing prior TBI & Backinjury, 2023.12.18 Recvd call from Progressive Adj - Looking to get this wrapped up - States she has photos of MVA & prior MVA - Stands on the fact injuries are pre-existing from 1st MVA - Would like to discuss further - Sending to AW, 2024.03.26 BI Adj continues to Check in - Understands we are awaiting Settlement of 11/08/2022 MVA, 2024.05.21 BI Adj continues to Check in - Advised 11/08 MVA Depositions Thursday - Mediation anticipated 120 days out approximately - She expressed understanding, 2025.01 Adjuster changed from Mark Tesoriero to Natasha Fortune",
+      "project_name": "Muhammad-Alif-MVA-12-09-2022"
+    },
+    "source_id": "193",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Nicole-Tewes-MVA-7-5-2025-Bodily Injury (BI)-25-407673172",
+    "attributes": {
+      "claim_number": "25-407673172",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Nachand Downs",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "8/1 ack in route. went over injuries etc",
+      "project_name": "Nicole-Tewes-MVA-7-5-2025"
+    },
+    "source_id": "7",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-25-806916369",
+    "attributes": {
+      "claim_number": "25-806916369",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Kim Francis",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 35000.0,
+      "current_offer": 8632.47,
+      "date_demand_sent": "45947.0",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Nyiana-Davis-MVA-6-14-2025"
+    },
+    "source_id": "36",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-2500262226",
+    "attributes": {
+      "claim_number": "2500262226",
+      "insurer_name": "Mobilitas Insurance Company",
+      "adjuster_name": "Martin Trujillo",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": true,
+      "insurance_notes": "",
+      "project_name": "Nyiana-Davis-MVA-6-14-2025"
+    },
+    "source_id": "35",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Owen-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+    "attributes": {
+      "claim_number": "24-902741838",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jennifer Howard",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 75000,
+      "date_demand_sent": "2025-01-27",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Owen-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "84",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Patrice-Harris-MVA-6-19-2025-Bodily Injury (BI)-1009056098",
+    "attributes": {
+      "claim_number": "1009056098",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Wendy Gavinski",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Patrice-Harris-MVA-6-19-2025"
+    },
+    "source_id": "16",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Patrice-Harris-MVA-6-19-2025-Bodily Injury (BI)-1786S949G",
+    "attributes": {
+      "claim_number": "1786S949G",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Jessica Fones",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Patrice-Harris-MVA-6-19-2025"
+    },
+    "source_id": "5",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Paxon-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1009056098",
+    "attributes": {
+      "claim_number": "1009056098",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Wendy Gavinski",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Paxon-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "17",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Paxon-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1786S949G",
+    "attributes": {
+      "claim_number": "1786S949G",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Jessica Fones",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Paxon-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "4",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Qortez-Jordan-MVA-2-14-2025-Bodily Injury (BI)-VA20251695511.",
+    "attributes": {
+      "claim_number": "VA20251695511.",
+      "insurer_name": "MGM",
+      "adjuster_name": "Dennis Corley",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 50000,
+      "current_offer": 4000,
+      "date_demand_sent": "2025-05-01",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Qortez-Jordan-MVA-2-14-2025"
+    },
+    "source_id": "74",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Renean-Fant-MVA-10-27-2025-Bodily Injury (BI)-799770GQ",
+    "attributes": {
+      "claim_number": "799770GQ",
+      "insurer_name": "Nationwide Mutual Insurance Company",
+      "adjuster_name": "Tonya Kearney",
+      "is_active_negotiation": false,
+      "project_name": "Renean-Fant-MVA-10-27-2025"
+    },
+    "source_id": "253",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robin-Wilder-Hamilton-MVA-6-15-2023-Bodily Injury (BI)-C0119952",
+    "attributes": {
+      "claim_number": "C0119952",
+      "insurer_name": "Sea Harbor Insurance",
+      "adjuster_name": "CW",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 35000,
+      "current_offer": 4000,
+      "date_demand_sent": "2024-06-06",
+      "is_active_negotiation": false,
+      "insurance_notes": "Called to follow up on claim and advise that our client's car was towed. Claim is still pending as they are still trying to get statement from their insured. Provide tow yard info, 8/15 saved ack, 09/11 called to check liability status. No answer, left vm, 09/28 tried to call adjuster. Out of the office until Oct 2. Can't leave vm., 10/12 liability status. Still being reviewed. Will be sending the copy of police report, 10/23 called to check liability status. No answer, left vm., 11/13 Has been sent to management. Shay Banks is Supervisor, they would not provide her phone number. Transferred to her. Not able to reach their insured. Need to file to force issue, 12/13 called adjuster to provide treatment status of client. No answer, left vm., 01/09/24 adjuster called in about PD status. I provided client's contact info., 03/12/24 called to follow up on PD status. Spoke with operator provide adj info PD adj-La Monica White-469-676-6677. Called no answer, left vm., 04/18 attempted to call pd adj to follow up claim. No answer, left vm., 04/26 already spoke with Sea Harbor rep. I was advised they can't reach the owner of the vehicle to process pd claim., 7/3 spoke with the adjuster - is asking for an extension gave til the 15th, 08/20/24 PD adj confirmed that they can't reach the owner of the vehicle (wilburn Silas) to make payment for the damages., 08/28 Called PD adj back to inform that client can't contact the owner of the vehicle as well. She has everything except for the tittle. I was advised by adj that we can't move forward with the pd claim unless Robin change the name on the title or they speak with the owner., 02/05/25 Called adj to confirm if updated VA bill was received. Adj was changed, added new adj info. Confirmed VA bill was received. Still reviewing.",
+      "project_name": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+    },
+    "source_id": "165",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robin-Willis-Beck-Premise-09-21-2023-Bodily Injury (BI)-SF-USTT-26089723",
+    "attributes": {
+      "claim_number": "SF-USTT-26089723",
+      "insurer_name": "Soundview Claims Solutions",
+      "adjuster_name": "Devon Clark",
+      "coverage_confirmation": "Coverage Pending",
+      "current_offer": 15000,
+      "is_active_negotiation": true,
+      "insurance_notes": "2024.09.04 Recvd Soundview Letter from AW - No BI listed - Added Soundview",
+      "project_name": "Robin-Willis-Beck-Premise-09-21-2023"
+    },
+    "source_id": "94",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-2077817",
+    "attributes": {
+      "claim_number": "2077817",
+      "insurer_name": "Ryder National Liabilities Office",
+      "adjuster_name": "Heath Doran",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "Supervisor Rose Mandigo Ph: 800-753-8808 ext 5351 Rose_Mandingo@ryder.com",
+      "project_name": "Robyn-Hester-WD-MVA-02-23-2022"
+    },
+    "source_id": "45",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-224765245",
+    "attributes": {
+      "claim_number": "224765245",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Christine Renner",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 962500,
+      "settlement_date": "2024-10-22",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Robyn-Hester-WD-MVA-02-23-2022"
+    },
+    "source_id": "181",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-681812020000004",
+    "attributes": {
+      "claim_number": "681812020000004",
+      "insurer_name": "Geico Insurance Company",
+      "adjuster_name": "Andrew Shoultz",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 30000,
+      "settlement_date": "2024-10-22",
+      "is_active_negotiation": false,
+      "insurance_notes": "Unit 3, 1/6 Limit is $30,000. North Carolina Policy.  No one else has opened a claim on Robyn's behalf.",
+      "project_name": "Robyn-Hester-WD-MVA-02-23-2022"
+    },
+    "source_id": "128",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Roxanne-Simpson-MVA-9-27-2023-Bodily Injury (BI)-1756T368R",
+    "attributes": {
+      "claim_number": "1756T368R",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Kip Gunnells",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "11/21 obtain claim number and was advised client was 100% at fault, 12/01 called to follow up on BI denial letter. Adjuster was just reassigned. I was advised he needs to review first and will let us know if he has a different opinion for it., 2/12 calm. Client was drunk but the other car turned in front of client and has human factors on PR",
+      "project_name": "Roxanne-Simpson-MVA-9-27-2023"
+    },
+    "source_id": "132",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Samuel-Clites-MVA-4-23-2024-Bodily Injury (BI)-1766M491S",
+    "attributes": {
+      "claim_number": "1766M491S",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Calandra Turner",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "current_offer": 2000,
+      "settlement_amount": 4500,
+      "settlement_date": "2024-12-05",
+      "date_demand_sent": "2024-09-17",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Samuel-Clites-MVA-4-23-2024"
+    },
+    "source_id": "109",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Sariya-Mason-DB-08-19-2022-Bodily Injury (BI)-4830025",
+    "attributes": {
+      "claim_number": "4830025",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Nichole Smith",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 50000,
+      "current_offer": 11000,
+      "settlement_amount": 15000,
+      "date_demand_sent": "2023-07-18",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Sariya-Mason-DB-08-19-2022"
+    },
+    "source_id": "203",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Sean-May-MVA-8-19-2025-Bodily Injury (BI)-25F68M784958",
+    "attributes": {
+      "claim_number": "25F68M784958",
+      "insurer_name": "CCMSI",
+      "adjuster_name": "Dominique McCraney",
+      "is_active_negotiation": false,
+      "insurance_notes": "Was told to setup claim via CCMSI - Cannon Cochran Management Service Inc. 217-446-1089, 517-347-2331 Michigan office - wasnt able to reach anyone by phone, called Louisville office and was directed back to Michigan office was also given 517-347-2334, ended up leaving a vm for Michigan office, Chicago office  # 312-455-1612",
+      "project_name": "Sean-May-MVA-8-19-2025"
+    },
+    "source_id": "273",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Shakeith-Simon-MVA-2-16-2025-Bodily Injury (BI)-COH-0004148",
+    "attributes": {
+      "claim_number": "COH-0004148",
+      "insurer_name": "Commonwealth Casualty Insurance",
+      "adjuster_name": "Kari Hand",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "03/04/25 PD adj called outside business hours. He wants to verify the driver. He said there's a coverage issue. Returned call, vm only. Left vm., 03/04/25 Adj called to explain that there's a coverage issue. They'll still do discovery and will send denial letter if there's no coverage. He also mentioned that this vehicle is also insured by Progressive. they'll share this info if coverage is denied., 03/05/25 Adj called informing coverge is denied since they're insured was not the driver of the vehicle. Denial letter in route. Possible coverage with Progressive",
+      "project_name": "Shakeith-Simon-MVA-2-16-2025"
+    },
+    "source_id": "68",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Shannon-Colvin-MVA-10-1-2023-Bodily Injury (BI)-4908174",
+    "attributes": {
+      "claim_number": "4908174",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Ben Taylor",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "11/27 attempted to call adjuster to follow up on denial letter, No answer, left vm., 11/27 saved denial letter",
+      "project_name": "Shannon-Colvin-MVA-10-1-2023"
+    },
+    "source_id": "135",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Shawna-Broyles-MVA-08-26-2022-Bodily Injury (BI)-MD4587",
+    "attributes": {
+      "claim_number": "MD4587",
+      "insurer_name": "Protective Insurance",
+      "adjuster_name": "Debra Kelso",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "Shawna-Broyles-MVA-08-26-2022"
+    },
+    "source_id": "202",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Sir-Hinkle-MVA-6-23-2025-Bodily Injury (BI)-4A2506R0N0S0002",
+    "attributes": {
+      "claim_number": "4A2506R0N0S0002",
+      "insurer_name": "Sedgwick",
+      "adjuster_name": "Meredith Spencer",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 50000.0,
+      "current_offer": 18500.0,
+      "settlement_amount": 25000.0,
+      "settlement_date": "45965.0",
+      "date_demand_sent": "45931.0",
+      "is_active_negotiation": false,
+      "insurance_notes": "Sedgwick Ph: 800-932-4464, 6/27 unable to reach anyone. had to leave a vm, email meredith.spencer@sedgwick.com Claim # 4A2506R0N0S0002  Ph: 225-368-3472, 7/7 saved ack letter and updated adj info",
+      "project_name": "Sir-Hinkle-MVA-6-23-2025"
+    },
+    "source_id": "28",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Taylor-Thompson-MVA-12-06-2024-Bodily Injury (BI)-01-008-378108",
+    "attributes": {
+      "claim_number": "01-008-378108",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Kristen Carlson",
+      "is_active_negotiation": false,
+      "project_name": "Taylor-Thompson-MVA-12-06-2024"
+    },
+    "source_id": "266",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "The-Otts-MVA-8-06-2025-Bodily Injury (BI)-25-934695754",
+    "attributes": {
+      "claim_number": "25-934695754",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Joshua White",
+      "is_active_negotiation": false,
+      "project_name": "The-Otts-MVA-8-06-2025"
+    },
+    "source_id": "235",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Timothy-Ruhl-A-B-9-14-2023-Bodily Injury (BI)-GL00000003555090",
+    "attributes": {
+      "claim_number": "GL00000003555090",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Sharon Wills",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "Prior Attorney Located Delivery Service Invoice - Insurance Carrier Listed on Document",
+      "project_name": "Timothy-Ruhl-A-B-9-14-2023"
+    },
+    "source_id": "297",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Timothy-Ruhl-Premise-09-14-2023-Bodily Injury (BI)-GL00000003555090",
+    "attributes": {
+      "claim_number": "GL00000003555090",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Sharon Wills",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "Prior Attorney Located Delivery Service Invoice - Insurance Carrier Listed on Document",
+      "project_name": "Timothy-Ruhl-Premise-09-14-2023"
+    },
+    "source_id": "97",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Tina-Smith-S&F-4-2-2025-Bodily Injury (BI)-AS13802",
+    "attributes": {
+      "claim_number": "AS13802",
+      "insurer_name": "West Bend Mutual Insurance",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "11/4 returned adj call. 262-334-6315 left vm",
+      "project_name": "Tina-Smith-S&F-4-2-2025"
+    },
+    "source_id": "296",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Tonya-Dunn-MVA-9-24-2025-Bodily Injury (BI)-2TVV43KY",
+    "attributes": {
+      "claim_number": "2TVV43KY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Valerie Marlatt",
+      "is_active_negotiation": false,
+      "project_name": "Tonya-Dunn-MVA-9-24-2025"
+    },
+    "source_id": "268",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Torrey-Green-MVA-9-3-2025-Bodily Injury (BI)-23016864",
+    "attributes": {
+      "claim_number": "23016864",
+      "insurer_name": "Elco Insurance",
+      "is_active_negotiation": false,
+      "project_name": "Torrey-Green-MVA-9-3-2025"
+    },
+    "source_id": "271",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Trasandra-Miller-MVA-5-30-2025-Bodily Injury (BI)-1785S576T",
+    "attributes": {
+      "claim_number": "1785S576T",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Kevin Ydoyaga",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "insurance_notes": "6/5 Spoke with adj. liability still pending contact with their insured.",
+      "project_name": "Trasandra-Miller-MVA-5-30-2025"
+    },
+    "source_id": "39",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-243138082",
+    "attributes": {
+      "claim_number": "243138082",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Amy Morris",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "insurance_notes": "5/16 no adjuster assigned yet, 05/22 added BI adjuster info. PD was taken care by client's insurance",
+      "project_name": "Tyler-Marzec-MVA-2-26-2024"
+    },
+    "source_id": "107",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-56240577",
+    "attributes": {
+      "claim_number": "56240577",
+      "insurer_name": "SafeCo Insurance Company",
+      "adjuster_name": "Douglas Hare",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 25000,
+      "date_demand_sent": "2025-07-25",
+      "is_active_negotiation": false,
+      "insurance_notes": "06/13 adj called in informing client is represented by Morgan and Morgan. Asked for a drop letter, 06/18 pD adj 630.393.7741, 08/13 adj asking for update. Advised unable to contact client., 09/26 advised adj we are still unable to contact client, 02/14/25 Adj called asking for treatment update of client. Called adj back. No answer, left vm, 5/27 updated adjuster info",
+      "project_name": "Tyler-Marzec-MVA-2-26-2024"
+    },
+    "source_id": "104",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Wayne-Weber-MVA-01-01-2022-Bodily Injury (BI)-1429C180C",
+    "attributes": {
+      "claim_number": "1429C180C",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Lyn Zangmeister",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "insurance_notes": "11/6 Liability has been accepted. Previous offer made of $800., 11/14 adjuster called in to inform they have 50k limits",
+      "project_name": "Wayne-Weber-MVA-01-01-2022"
+    },
+    "source_id": "140",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "William-Tucker-Premise-11-23-2024-Bodily Injury (BI)-GC20241696797",
+    "attributes": {
+      "claim_number": "GC20241696797",
+      "insurer_name": "Louisville Water Company",
+      "adjuster_name": "Greg Thielmeier",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 25000,
+      "date_demand_sent": "2025-05-30",
+      "is_active_negotiation": false,
+      "insurance_notes": "",
+      "project_name": "William-Tucker-Premise-11-23-2024"
+    },
+    "source_id": "50",
+    "source_file": "insurance.json"
+  }
+]

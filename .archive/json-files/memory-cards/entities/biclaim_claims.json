@@ -1,0 +1,1872 @@
+[
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Abigail-Whaley-MVA-10-24-2024-Bodily Injury (BI)-1008251706",
+    "attributes": {
+      "claim_number": "1008251706",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Laura Zahringer",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Abigail-Whaley-MVA-10-24-2024"
+    },
+    "source_id": "88",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Alma-Cristobal-MVA-2-15-2024-Bodily Injury (BI)-2024346878",
+    "attributes": {
+      "claim_number": "2024346878",
+      "insurer_name": "Crete Carrier Corporation (Shaffer Trucking & Hunt Transportation)",
+      "adjuster_name": "Brenna Rine",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Alma-Cristobal-MVA-2-15-2024"
+    },
+    "source_id": "113",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-054658453-02",
+    "attributes": {
+      "claim_number": "054658453-02",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Robert Elliott",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 18000,
+      "settlement_date": "2024-09-12",
+      "date_demand_sent": "2024-01-10",
+      "is_active_negotiation": false,
+      "project_name": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    "source_id": "129",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-1455R002D",
+    "attributes": {
+      "claim_number": "1455R002D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Aaron Lovato",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 18000.0,
+      "settlement_date": "45547.0",
+      "date_demand_sent": "2024-01-10",
+      "is_active_negotiation": false,
+      "project_name": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    "source_id": "153",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Ashlee-Williams-MVA-08-29-2023-Bodily Injury (BI)-20091551",
+    "attributes": {
+      "claim_number": "20091551",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Ashlee-Williams-MVA-08-29-2023"
+    },
+    "source_id": "157",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Azaire-Lopez-MVA-11-14-2025-Bodily Injury (BI)-300-0701136-2025",
+    "attributes": {
+      "claim_number": "300-0701136-2025",
+      "insurer_name": "Auto Owners",
+      "is_active_negotiation": false,
+      "project_name": "Azaire-Lopez-MVA-11-14-2025"
+    },
+    "source_id": "244",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Brenda-Lang-MVA-09-03-2021-Bodily Injury (BI)-410220052",
+    "attributes": {
+      "claim_number": "410220052",
+      "insurer_name": "TARC Risk Management Services Company",
+      "adjuster_name": "J. Clarke McCulloch",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 15000,
+      "settlement_amount": 15000,
+      "is_active_negotiation": false,
+      "project_name": "Brenda-Lang-MVA-09-03-2021"
+    },
+    "source_id": "154",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Brooklyn-Ballard-MVA-02-28-2024-Bodily Injury (BI)-OIC256504",
+    "attributes": {
+      "claim_number": "OIC256504",
+      "insurer_name": "Berkshire Risk Services",
+      "adjuster_name": "Scott Frayer",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Brooklyn-Ballard-MVA-02-28-2024"
+    },
+    "source_id": "115",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Bryson-Brown-MVA-6-29-2025-Bodily Injury (BI)-1787F478S",
+    "attributes": {
+      "claim_number": "1787F478S",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Bryson-Brown-MVA-6-29-2025"
+    },
+    "source_id": "19",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Carmelita-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K",
+    "attributes": {
+      "claim_number": "1791R083K",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Katrina Mishoe",
+      "settlement_amount": 25000.0,
+      "settlement_date": "45968.0",
+      "date_demand_sent": "45968.0",
+      "is_active_negotiation": false,
+      "project_name": "Carmelita-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "258",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Charles-T-Johnson-MVA-4-18-2023-Bodily Injury (BI)-1748L638H",
+    "attributes": {
+      "claim_number": "1748L638H",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Benjamine Groce",
+      "coverage_confirmation": "Coverage Confirmed",
+      "date_demand_sent": "2023-12-11",
+      "is_active_negotiation": false,
+      "project_name": "Charles-T-Johnson-MVA-4-18-2023"
+    },
+    "source_id": "179",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Charles-T.-Johnson-MVA-4-18-2023-Bodily Injury (BI)-1748L638H",
+    "attributes": {
+      "claim_number": "1748L638H",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Benjamine Groce",
+      "coverage_confirmation": "Coverage Confirmed",
+      "date_demand_sent": "45271.0",
+      "is_active_negotiation": false,
+      "project_name": "Charles-T.-Johnson-MVA-4-18-2023"
+    },
+    "source_id": "300",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Chase-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+    "attributes": {
+      "claim_number": "24-902741838",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jennifer Howard",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Chase-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "80",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Christopher-Wilkerson-WC-MVA-02-15-2024-Bodily Injury (BI)",
+    "attributes": {
+      "claim_number": "",
+      "insurer_name": "",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Christopher-Wilkerson-WC-MVA-02-15-2024"
+    },
+    "source_id": "119",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Corey-Todd-MVA-WC-8-2-2025-Bodily Injury (BI)",
+    "attributes": {
+      "insurer_name": "Allstate Insurance",
+      "is_active_negotiation": false,
+      "project_name": "Corey-Todd-MVA-WC-8-2-2025"
+    },
+    "source_id": "294",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Cory-Stephenson-MVA-9-03-2025-Bodily Injury (BI)-1789V463J",
+    "attributes": {
+      "claim_number": "1789V463J",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Cheryl Washington",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Cory-Stephenson-MVA-9-03-2025"
+    },
+    "source_id": "216",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Cory-Stephenson-MVA-9-3-2025-Bodily Injury (BI)-1789V463J",
+    "attributes": {
+      "claim_number": "1789V463J",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Cherrel Washington",
+      "is_active_negotiation": false,
+      "project_name": "Cory-Stephenson-MVA-9-3-2025"
+    },
+    "source_id": "275",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Curtis-Lee-Justice-MVA-2-5-2023-Bodily Injury (BI)-23ATKY338083287",
+    "attributes": {
+      "claim_number": "23ATKY338083287",
+      "insurer_name": "Clearcover",
+      "adjuster_name": "Peter Longo",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 15000,
+      "settlement_amount": 15000,
+      "settlement_date": "2024-05-22",
+      "date_demand_sent": "2024-04-11",
+      "is_active_negotiation": false,
+      "project_name": "Curtis-Lee-Justice-MVA-2-5-2023"
+    },
+    "source_id": "182",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Cynthia-Gibson-MVA-7-9-2025-Bodily Injury (BI)-BTQW3MKY",
+    "attributes": {
+      "claim_number": "BTQW3MKY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Courtney Heinnickel",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Cynthia-Gibson-MVA-7-9-2025"
+    },
+    "source_id": "12",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Dakota-McCord-MVA-10-12-2025-Bodily Injury (BI)-25-423678921",
+    "attributes": {
+      "claim_number": "25-423678921",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Robert Alexander",
+      "is_active_negotiation": false,
+      "project_name": "Dakota-McCord-MVA-10-12-2025"
+    },
+    "source_id": "263",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Dana-Jackson-MVA-1-24-2024-Bodily Injury (BI)-1762X766D",
+    "attributes": {
+      "claim_number": "1762X766D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Sharika Moses",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Dana-Jackson-MVA-1-24-2024"
+    },
+    "source_id": "123",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Daniel-W-Volk-MVA-09-24-2021-Bodily Injury (BI)-ZPA003356461",
+    "attributes": {
+      "claim_number": "ZPA003356461",
+      "insurer_name": "Grange Insurance",
+      "adjuster_name": "Kayla Kinzel",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Daniel-W-Volk-MVA-09-24-2021"
+    },
+    "source_id": "210",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Daniel-W.-Volk-MVA-09-24-2021-Bodily Injury (BI)-ZPA003356461",
+    "attributes": {
+      "claim_number": "ZPA003356461",
+      "insurer_name": "Grange Insurance",
+      "adjuster_name": "Kayla Kinzel",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Daniel-W.-Volk-MVA-09-24-2021"
+    },
+    "source_id": "302",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Daquan-Locke-MVA-6-11-2024-Bodily Injury (BI)-AT3696194",
+    "attributes": {
+      "claim_number": "AT3696194",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Kelly Sisco",
+      "demand_amount": 25000.0,
+      "current_offer": 2400.0,
+      "date_demand_sent": "45953.0",
+      "is_active_negotiation": true,
+      "project_name": "Daquan-Locke-MVA-6-11-2024"
+    },
+    "source_id": "254",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Davis-Robinson-SF-05-02-2025-Bodily Injury (BI)-25 -109767",
+    "attributes": {
+      "claim_number": "25 -109767",
+      "insurer_name": "Texas Roadhouse",
+      "adjuster_name": "Angela Milliner",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Davis-Robinson-SF-05-02-2025"
+    },
+    "source_id": "49",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Deanna-Jones-MVA-7-30-2025-Bodily Injury (BI)-25ATKY446076413",
+    "attributes": {
+      "claim_number": "25ATKY446076413",
+      "insurer_name": "Clearcover",
+      "adjuster_name": "Kimberlyn Holden",
+      "is_active_negotiation": false,
+      "project_name": "Deanna-Jones-MVA-7-30-2025"
+    },
+    "source_id": "270",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Debra-Marshall-MVA-12-3-2022-Bodily Injury (BI)-4778044",
+    "attributes": {
+      "claim_number": "4778044",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Jason Osboe",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Debra-Marshall-MVA-12-3-2022"
+    },
+    "source_id": "192",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Destiny-Adkins-MVA-04-16-2021-Bodily Injury (BI)-625854435",
+    "attributes": {
+      "claim_number": "625854435",
+      "insurer_name": "Allstate Insurance",
+      "adjuster_name": "Patrice Gaines",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Destiny-Adkins-MVA-04-16-2021"
+    },
+    "source_id": "209",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Dewayne-Ward-MVA-8-29-2023-Bodily Injury (BI)-1455R002D",
+    "attributes": {
+      "claim_number": "1455R002D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Aaron Lovato",
+      "coverage_confirmation": "Coverage Confirmed",
+      "date_demand_sent": "2023-12-01",
+      "is_active_negotiation": false,
+      "project_name": "Dewayne-Ward-MVA-8-29-2023"
+    },
+    "source_id": "156",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Dewayne-Ward-MVA-8-29-2023-Bodily Injury (BI)-20091551",
+    "attributes": {
+      "claim_number": "20091551",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Dewayne-Ward-MVA-8-29-2023"
+    },
+    "source_id": "159",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Douglas-Livers-MVA-1-19-2023-Bodily Injury (BI)-QMJF78KY",
+    "attributes": {
+      "claim_number": "QMJF78KY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Angela Casey",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Douglas-Livers-MVA-1-19-2023"
+    },
+    "source_id": "137",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Elizabeth-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+    "attributes": {
+      "claim_number": "24-902741838",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jennifer Howard",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Elizabeth-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "82",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Estate-of-Evangeline-Young-MVA-8-12-2023-Bodily Injury (BI)-305240079",
+    "attributes": {
+      "claim_number": "305240079",
+      "insurer_name": "Risk Management Services Company",
+      "adjuster_name": "J. Clarke McCulloch",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Estate-of-Evangeline-Young-MVA-8-12-2023"
+    },
+    "source_id": "150",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Faizon-Procter-Witcher-MVA-7-01-2025-Bodily Injury (BI)-250531476",
+    "attributes": {
+      "claim_number": "250531476",
+      "insurer_name": "Direct Auto Insurance",
+      "adjuster_name": "Carolynn Harris",
+      "coverage_confirmation": "Coverage Pending",
+      "date_demand_sent": "45938.0",
+      "is_active_negotiation": true,
+      "project_name": "Faizon-Procter-Witcher-MVA-7-01-2025"
+    },
+    "source_id": "21",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024-Bodily Injury (BI)-1769H472C",
+    "attributes": {
+      "claim_number": "1769H472C",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Abigail Jett",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 12000,
+      "date_demand_sent": "2025-02-19",
+      "is_active_negotiation": true,
+      "project_name": "Fidel-Antonio-Bueso-Sandoval-MVA-06-13-2024"
+    },
+    "source_id": "100",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Fina-Fatty-MVA-11-05-2024-Bodily Injury (BI)-58373025",
+    "attributes": {
+      "claim_number": "58373025",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Sarah Mackay",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "current_offer": 1000,
+      "date_demand_sent": "2025-05-19",
+      "is_active_negotiation": false,
+      "project_name": "Fina-Fatty-MVA-11-05-2024"
+    },
+    "source_id": "76",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Forrest-Muss-7-20-2025-Bodily Injury (BI)-136751083",
+    "attributes": {
+      "claim_number": "136751083",
+      "insurer_name": "North American Risk Services",
+      "is_active_negotiation": false,
+      "project_name": "Forrest-Muss-7-20-2025"
+    },
+    "source_id": "295",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Forrest-Muss-MVA-07-20-2025-Bodily Injury (BI)-136751083",
+    "attributes": {
+      "claim_number": "136751083",
+      "insurer_name": "North American Risk Services",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Forrest-Muss-MVA-07-20-2025"
+    },
+    "source_id": "3",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Greg-Neltner-MVA-4-1-2023-Bodily Injury (BI)-23-6275504",
+    "attributes": {
+      "claim_number": "23-6275504",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Amy Morris",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "date_demand_sent": "2023-10-03",
+      "is_active_negotiation": false,
+      "project_name": "Greg-Neltner-MVA-4-1-2023"
+    },
+    "source_id": "174",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Henrietta-Jenkins-MVA-5-20-2025-Bodily Injury (BI)-25-391686743",
+    "attributes": {
+      "claim_number": "25-391686743",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Colin Karsnitz",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 50000.0,
+      "current_offer": 16000.0,
+      "date_demand_sent": "45937.0",
+      "is_active_negotiation": true,
+      "project_name": "Henrietta-Jenkins-MVA-5-20-2025"
+    },
+    "source_id": "48",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Hope-Renee-Padgett-MVA-1-16-2023-Bodily Injury (BI)-23-4004861",
+    "attributes": {
+      "claim_number": "23-4004861",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Alyssa Howland",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 25000.0,
+      "settlement_amount": 25000.0,
+      "settlement_date": "45267.0",
+      "date_demand_sent": "45244.0",
+      "is_active_negotiation": false,
+      "project_name": "Hope-Renee-Padgett-MVA-1-16-2023"
+    },
+    "source_id": "188",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Hope-Renee-Padgett-MVA-1-16-2023-Bodily Injury (BI)-4791863",
+    "attributes": {
+      "claim_number": "4791863",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Deborah Kitchen",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 25000,
+      "settlement_amount": 25000,
+      "settlement_date": "2023-12-07",
+      "date_demand_sent": "2023-11-14",
+      "is_active_negotiation": false,
+      "project_name": "Hope-Renee-Padgett-MVA-1-16-2023"
+    },
+    "source_id": "187",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jacob-Herrle-MVA-6-17-2025-Bodily Injury (BI)-733249",
+    "attributes": {
+      "claim_number": "733249",
+      "insurer_name": "Collins & Company",
+      "adjuster_name": "Jim Johnson",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jacob-Herrle-MVA-6-17-2025"
+    },
+    "source_id": "18",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "James-Crowdus-MVA-8-10-2025-Bodily Injury (BI)-1788T648L",
+    "attributes": {
+      "claim_number": "1788T648L",
+      "insurer_name": "State Farm Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "James-Crowdus-MVA-8-10-2025"
+    },
+    "source_id": "223",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "James-Sadler-MVA-4-07-2023-Bodily Injury (BI)-1748B202X",
+    "attributes": {
+      "claim_number": "1748B202X",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "William Beaver",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 50000,
+      "current_offer": 7688,
+      "settlement_amount": 7688,
+      "date_demand_sent": "2024-09-17",
+      "is_active_negotiation": false,
+      "project_name": "James-Sadler-MVA-4-07-2023"
+    },
+    "source_id": "171",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "James-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1009056098",
+    "attributes": {
+      "claim_number": "1009056098",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Wendy Gavinski",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "James-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "15",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "James-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1786S949G",
+    "attributes": {
+      "claim_number": "1786S949G",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Jessica Fones",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "James-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "6",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jasmine-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K",
+    "attributes": {
+      "claim_number": "1791R083K",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Katrina Mishoe",
+      "settlement_amount": 20000.0,
+      "settlement_date": "45968.0",
+      "is_active_negotiation": false,
+      "project_name": "Jasmine-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "262",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jaysha-Aponte-MVA-3-15-2025-Bodily Injury (BI)-250-068-9702",
+    "attributes": {
+      "claim_number": "250-068-9702",
+      "insurer_name": "Mobilitas Insurance Company",
+      "adjuster_name": "Hannah Snow",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jaysha-Aponte-MVA-3-15-2025"
+    },
+    "source_id": "58",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jaysha-Aponte-MVA-3-15-2025-Bodily Injury (BI)-8838008180000001",
+    "attributes": {
+      "claim_number": "8838008180000001",
+      "insurer_name": "Geico Insurance Company",
+      "adjuster_name": "Myderia Pittman",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Jaysha-Aponte-MVA-3-15-2025"
+    },
+    "source_id": "63",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jensen-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754",
+    "attributes": {
+      "claim_number": "25-934695754",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Josh White",
+      "demand_amount": 25000.0,
+      "date_demand_sent": "45972.0",
+      "is_active_negotiation": true,
+      "project_name": "Jensen-Ott-MVA-8-6-2025"
+    },
+    "source_id": "283",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jeremy-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+    "attributes": {
+      "claim_number": "24-902741838",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jennifer Howard",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jeremy-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "86",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jerome-Hedinger-Premise-(DB)-10-24-2023-Bodily Injury (BI)-17-N836-0G8",
+    "attributes": {
+      "claim_number": "17-N836-0G8",
+      "insurer_name": "State Farm Fire & Casualty Company",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000.0,
+      "date_demand_sent": "45496.0",
+      "is_active_negotiation": false,
+      "project_name": "Jerome-Hedinger-Premise-(DB)-10-24-2023"
+    },
+    "source_id": "298",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jerome-Hedinger-Premise-DB-10-24-2023-Bodily Injury (BI)-17-N836-0G8",
+    "attributes": {
+      "claim_number": "17-N836-0G8",
+      "insurer_name": "State Farm Fire & Casualty Company",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "date_demand_sent": "2024-07-23",
+      "is_active_negotiation": false,
+      "project_name": "Jerome-Hedinger-Premise-DB-10-24-2023"
+    },
+    "source_id": "111",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jimmy-Ferguson-MVA-5-30-2024-Bodily Injury (BI)-VA20241535681",
+    "attributes": {
+      "claim_number": "VA20241535681",
+      "insurer_name": "KACo Claims Department",
+      "adjuster_name": "Vivian Hall",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Jimmy-Ferguson-MVA-5-30-2024"
+    },
+    "source_id": "98",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jonah-Price-MVA-8-25-2025-Bodily Injury (BI)",
+    "attributes": {
+      "insurer_name": "Farmers Insurance",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Jonah-Price-MVA-8-25-2025"
+    },
+    "source_id": "217",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337",
+    "attributes": {
+      "claim_number": "25-822910337",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Walter Kenny",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Jordan-Brown-MVA-8-19-2025"
+    },
+    "source_id": "278",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Joseph-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754",
+    "attributes": {
+      "claim_number": "25-934695754",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Josh White",
+      "is_active_negotiation": false,
+      "project_name": "Joseph-Ott-MVA-8-6-2025"
+    },
+    "source_id": "282",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Juanita-Nicole-Downs-MVA-4-16-2021-Bodily Injury (BI)-625854435",
+    "attributes": {
+      "claim_number": "625854435",
+      "insurer_name": "Allstate Insurance",
+      "adjuster_name": "Patrice Gaines",
+      "coverage_confirmation": "Coverage Under Investigation",
+      "is_active_negotiation": false,
+      "project_name": "Juanita-Nicole-Downs-MVA-4-16-2021"
+    },
+    "source_id": "212",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Julian-Wilson-MVA-10-12-2025-Bodily Injury (BI)-1791R083K",
+    "attributes": {
+      "claim_number": "1791R083K",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Katrina Mishoe",
+      "settlement_amount": 5000.0,
+      "settlement_date": "45968.0",
+      "is_active_negotiation": false,
+      "project_name": "Julian-Wilson-MVA-10-12-2025"
+    },
+    "source_id": "260",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-054658453-02",
+    "attributes": {
+      "claim_number": "054658453-02",
+      "insurer_name": "Liberty Mutual Insurance Company",
+      "adjuster_name": "Robert Elliott",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 14734.08,
+      "settlement_date": "2024-09-12",
+      "date_demand_sent": "2023-12-15",
+      "is_active_negotiation": false,
+      "project_name": "Julmonzhae-Moore-MVA-8-29-2023"
+    },
+    "source_id": "126",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-1455R002D",
+    "attributes": {
+      "claim_number": "1455R002D",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Aaron Lovato",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 14734.08,
+      "settlement_date": "45547.0",
+      "date_demand_sent": "2023-12-15",
+      "is_active_negotiation": false,
+      "project_name": "Julmonzhae-Moore-MVA-8-29-2023"
+    },
+    "source_id": "152",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Julmonzhae-Moore-MVA-8-29-2023-Bodily Injury (BI)-20091551",
+    "attributes": {
+      "claim_number": "20091551",
+      "insurer_name": "Elco Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Julmonzhae-Moore-MVA-8-29-2023"
+    },
+    "source_id": "158",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Justin-Bullock-MVA-6-30-2025-Bodily Injury (BI)-25631251364",
+    "attributes": {
+      "claim_number": "25631251364",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Joshua White",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000.0,
+      "current_offer": 4000.0,
+      "settlement_amount": 7000.0,
+      "date_demand_sent": "45938.0",
+      "is_active_negotiation": false,
+      "project_name": "Justin-Bullock-MVA-6-30-2025"
+    },
+    "source_id": "24",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Kimberly-Brasher-Premise-2-25-2023-Bodily Injury (BI)-C321835845-0001-01",
+    "attributes": {
+      "claim_number": "C321835845-0001-01",
+      "insurer_name": "Sedgwick Claims Management Services",
+      "adjuster_name": "Tatisha \"Tish\" Booker",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 750000,
+      "date_demand_sent": "2024-07-09",
+      "is_active_negotiation": false,
+      "project_name": "Kimberly-Brasher-Premise-2-25-2023"
+    },
+    "source_id": "143",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Leanora-and-Jordan-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337",
+    "attributes": {
+      "claim_number": "25-822910337",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Walter Kenny",
+      "is_active_negotiation": false,
+      "project_name": "Leanora-and-Jordan-Brown-MVA-8-19-2025"
+    },
+    "source_id": "238",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Leanora-Brown-MVA-8-19-2025-Bodily Injury (BI)-25-822910337",
+    "attributes": {
+      "claim_number": "25-822910337",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Brandi Chappell-Haggard",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Leanora-Brown-MVA-8-19-2025"
+    },
+    "source_id": "277",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Lindsey-Dunn-MVA-9-24-2025-Bodily Injury (BI)-2TVV43KY",
+    "attributes": {
+      "claim_number": "2TVV43KY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Valerie Marlatt",
+      "demand_amount": 17500.0,
+      "date_demand_sent": "45968.0",
+      "is_active_negotiation": true,
+      "project_name": "Lindsey-Dunn-MVA-9-24-2025"
+    },
+    "source_id": "256",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Lonnie-Stevens-MVA-2-14-2025-Bodily Injury (BI)-VA20251695455",
+    "attributes": {
+      "claim_number": "VA20251695455",
+      "insurer_name": "MGM",
+      "adjuster_name": "Dennis Corley",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 50000,
+      "date_demand_sent": "2025-06-30",
+      "is_active_negotiation": false,
+      "project_name": "Lonnie-Stevens-MVA-2-14-2025"
+    },
+    "source_id": "73",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Maia-Ott-MVA-8-6-2025-Bodily Injury (BI)-25-934695754",
+    "attributes": {
+      "claim_number": "25-934695754",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Josh White",
+      "demand_amount": 25000.0,
+      "date_demand_sent": "45972.0",
+      "is_active_negotiation": true,
+      "project_name": "Maia-Ott-MVA-8-6-2025"
+    },
+    "source_id": "284",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-8055562",
+    "attributes": {
+      "claim_number": "8055562",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Pat Hargadon",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 10000.0,
+      "settlement_amount": 2000.0,
+      "settlement_date": "45915.0",
+      "date_demand_sent": "45845.0",
+      "is_active_negotiation": false,
+      "project_name": "Malcom-Glass-Jones-MVA-10-2-2024"
+    },
+    "source_id": "90",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Malcom-Glass-Jones-MVA-10-2-2024-Bodily Injury (BI)-AT0000003753979",
+    "attributes": {
+      "claim_number": "AT0000003753979",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Cole Barnes",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 10000,
+      "date_demand_sent": "2025-07-07",
+      "is_active_negotiation": false,
+      "project_name": "Malcom-Glass-Jones-MVA-10-2-2024"
+    },
+    "source_id": "51",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Mark-Smith-Jr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803",
+    "attributes": {
+      "claim_number": "001218586-803",
+      "insurer_name": "USAA Insurance Company",
+      "adjuster_name": "Taline Clestine",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Mark-Smith-Jr-MVA-5-31-2025"
+    },
+    "source_id": "40",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Mark-Smith-Sr-MVA-5-31-2025-Bodily Injury (BI)-001218586-803",
+    "attributes": {
+      "claim_number": "001218586-803",
+      "insurer_name": "USAA Insurance Company",
+      "adjuster_name": "Taline Clestine",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Mark-Smith-Sr-MVA-5-31-2025"
+    },
+    "source_id": "43",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023-Bodily Injury (BI)-17-48L4-99K",
+    "attributes": {
+      "claim_number": "17-48L4-99K",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Shawna Rice",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 39000,
+      "date_demand_sent": "2023-11-09",
+      "is_active_negotiation": false,
+      "project_name": "Marvynn-Alexandre-Leandre-MVA-04-18-2023"
+    },
+    "source_id": "177",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Maryan-Kassim-MVA-08-06-2024-Bodily Injury (BI)-24-711062492",
+    "attributes": {
+      "claim_number": "24-711062492",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Brandi Chappell-Haggard",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Maryan-Kassim-MVA-08-06-2024"
+    },
+    "source_id": "95",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Mi'Ayla-Lopez-MVA-11-14-2025-Bodily Injury (BI)-300-0701136-2025",
+    "attributes": {
+      "claim_number": "300-0701136-2025",
+      "insurer_name": "Auto Owners",
+      "is_active_negotiation": false,
+      "project_name": "Mi'Ayla-Lopez-MVA-11-14-2025"
+    },
+    "source_id": "249",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Michael-Crader-MVA-5-19-2023-Bodily Injury (BI)-4863358",
+    "attributes": {
+      "claim_number": "4863358",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Holly Highley",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Michael-Crader-MVA-5-19-2023"
+    },
+    "source_id": "149",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Michael-Deshields-MVA-10-31-2025-Bodily Injury (BI)-1792K267F",
+    "attributes": {
+      "claim_number": "1792K267F",
+      "insurer_name": "State Farm Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Michael-Deshields-MVA-10-31-2025"
+    },
+    "source_id": "250",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Michael-Lanier-MVA-6-28-2025-Bodily Injury (BI)-25-471551085",
+    "attributes": {
+      "claim_number": "25-471551085",
+      "insurer_name": "Progressive Insurance Company",
+      "is_active_negotiation": false,
+      "project_name": "Michael-Lanier-MVA-6-28-2025"
+    },
+    "source_id": "289",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Morgan-Freeman-MVA-12-31-2021-Bodily Injury (BI)-3100028790",
+    "attributes": {
+      "claim_number": "3100028790",
+      "insurer_name": "Indiana Farm Bureau",
+      "adjuster_name": "Courtny Wolfe",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 38000,
+      "current_offer": 4000,
+      "settlement_amount": 7500,
+      "settlement_date": "2023-12-13",
+      "date_demand_sent": "2023-11-08",
+      "is_active_negotiation": false,
+      "project_name": "Morgan-Freeman-MVA-12-31-2021"
+    },
+    "source_id": "184",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Muhammad-Alif-MVA-11-08-2022-Bodily Injury (BI)-AP92071",
+    "attributes": {
+      "claim_number": "AP92071",
+      "insurer_name": "West Bend Mutual Insurance",
+      "adjuster_name": "Ashley Becerra",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 13000,
+      "date_demand_sent": "2023-07-05",
+      "is_active_negotiation": false,
+      "project_name": "Muhammad-Alif-MVA-11-08-2022"
+    },
+    "source_id": "199",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Muhammad-Alif-MVA-12-09-2022-Bodily Injury (BI)-1123215-2",
+    "attributes": {
+      "claim_number": "1123215-2",
+      "insurer_name": "American Transit Insurance",
+      "adjuster_name": "",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Muhammad-Alif-MVA-12-09-2022"
+    },
+    "source_id": "194",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Muhammad-Alif-MVA-12-09-2022-Bodily Injury (BI)-22-8451213",
+    "attributes": {
+      "claim_number": "22-8451213",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Natasha Fortune",
+      "coverage_confirmation": "Coverage Confirmed",
+      "current_offer": 3500,
+      "date_demand_sent": "2023-10-09",
+      "is_active_negotiation": true,
+      "project_name": "Muhammad-Alif-MVA-12-09-2022"
+    },
+    "source_id": "193",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Nicole-Tewes-MVA-7-5-2025-Bodily Injury (BI)-25-407673172",
+    "attributes": {
+      "claim_number": "25-407673172",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Nachand Downs",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Nicole-Tewes-MVA-7-5-2025"
+    },
+    "source_id": "7",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-25-806916369",
+    "attributes": {
+      "claim_number": "25-806916369",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Kim Francis",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 35000.0,
+      "current_offer": 8632.47,
+      "date_demand_sent": "45947.0",
+      "is_active_negotiation": false,
+      "project_name": "Nyiana-Davis-MVA-6-14-2025"
+    },
+    "source_id": "36",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Nyiana-Davis-MVA-6-14-2025-Bodily Injury (BI)-2500262226",
+    "attributes": {
+      "claim_number": "2500262226",
+      "insurer_name": "Mobilitas Insurance Company",
+      "adjuster_name": "Martin Trujillo",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": true,
+      "project_name": "Nyiana-Davis-MVA-6-14-2025"
+    },
+    "source_id": "35",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Owen-Lindsey-MVA-12-01-2024-Bodily Injury (BI)-24-902741838",
+    "attributes": {
+      "claim_number": "24-902741838",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Jennifer Howard",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 75000,
+      "date_demand_sent": "2025-01-27",
+      "is_active_negotiation": false,
+      "project_name": "Owen-Lindsey-MVA-12-01-2024"
+    },
+    "source_id": "84",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Patrice-Harris-MVA-6-19-2025-Bodily Injury (BI)-1009056098",
+    "attributes": {
+      "claim_number": "1009056098",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Wendy Gavinski",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Patrice-Harris-MVA-6-19-2025"
+    },
+    "source_id": "16",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Patrice-Harris-MVA-6-19-2025-Bodily Injury (BI)-1786S949G",
+    "attributes": {
+      "claim_number": "1786S949G",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Jessica Fones",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Patrice-Harris-MVA-6-19-2025"
+    },
+    "source_id": "5",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Paxon-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1009056098",
+    "attributes": {
+      "claim_number": "1009056098",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Wendy Gavinski",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Paxon-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "17",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Paxon-Woodford-MVA-6-19-2025-Bodily Injury (BI)-1786S949G",
+    "attributes": {
+      "claim_number": "1786S949G",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Jessica Fones",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Paxon-Woodford-MVA-6-19-2025"
+    },
+    "source_id": "4",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Qortez-Jordan-MVA-2-14-2025-Bodily Injury (BI)-VA20251695511.",
+    "attributes": {
+      "claim_number": "VA20251695511.",
+      "insurer_name": "MGM",
+      "adjuster_name": "Dennis Corley",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 50000,
+      "current_offer": 4000,
+      "date_demand_sent": "2025-05-01",
+      "is_active_negotiation": false,
+      "project_name": "Qortez-Jordan-MVA-2-14-2025"
+    },
+    "source_id": "74",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Renean-Fant-MVA-10-27-2025-Bodily Injury (BI)-799770GQ",
+    "attributes": {
+      "claim_number": "799770GQ",
+      "insurer_name": "Nationwide Mutual Insurance Company",
+      "adjuster_name": "Tonya Kearney",
+      "is_active_negotiation": false,
+      "project_name": "Renean-Fant-MVA-10-27-2025"
+    },
+    "source_id": "253",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robin-Wilder-Hamilton-MVA-6-15-2023-Bodily Injury (BI)-C0119952",
+    "attributes": {
+      "claim_number": "C0119952",
+      "insurer_name": "Sea Harbor Insurance",
+      "adjuster_name": "CW",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 35000,
+      "current_offer": 4000,
+      "date_demand_sent": "2024-06-06",
+      "is_active_negotiation": false,
+      "project_name": "Robin-Wilder-Hamilton-MVA-6-15-2023"
+    },
+    "source_id": "165",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robin-Willis-Beck-Premise-09-21-2023-Bodily Injury (BI)-SF-USTT-26089723",
+    "attributes": {
+      "claim_number": "SF-USTT-26089723",
+      "insurer_name": "Soundview Claims Solutions",
+      "adjuster_name": "Devon Clark",
+      "coverage_confirmation": "Coverage Pending",
+      "current_offer": 15000,
+      "is_active_negotiation": true,
+      "project_name": "Robin-Willis-Beck-Premise-09-21-2023"
+    },
+    "source_id": "94",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-2077817",
+    "attributes": {
+      "claim_number": "2077817",
+      "insurer_name": "Ryder National Liabilities Office",
+      "adjuster_name": "Heath Doran",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Robyn-Hester-WD-MVA-02-23-2022"
+    },
+    "source_id": "45",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-224765245",
+    "attributes": {
+      "claim_number": "224765245",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Christine Renner",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 962500,
+      "settlement_date": "2024-10-22",
+      "is_active_negotiation": false,
+      "project_name": "Robyn-Hester-WD-MVA-02-23-2022"
+    },
+    "source_id": "181",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Robyn-Hester-WD-MVA-02-23-2022-Bodily Injury (BI)-681812020000004",
+    "attributes": {
+      "claim_number": "681812020000004",
+      "insurer_name": "Geico Insurance Company",
+      "adjuster_name": "Andrew Shoultz",
+      "coverage_confirmation": "Coverage Confirmed",
+      "settlement_amount": 30000,
+      "settlement_date": "2024-10-22",
+      "is_active_negotiation": false,
+      "project_name": "Robyn-Hester-WD-MVA-02-23-2022"
+    },
+    "source_id": "128",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Roxanne-Simpson-MVA-9-27-2023-Bodily Injury (BI)-1756T368R",
+    "attributes": {
+      "claim_number": "1756T368R",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Kip Gunnells",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Roxanne-Simpson-MVA-9-27-2023"
+    },
+    "source_id": "132",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Samuel-Clites-MVA-4-23-2024-Bodily Injury (BI)-1766M491S",
+    "attributes": {
+      "claim_number": "1766M491S",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Calandra Turner",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 25000,
+      "current_offer": 2000,
+      "settlement_amount": 4500,
+      "settlement_date": "2024-12-05",
+      "date_demand_sent": "2024-09-17",
+      "is_active_negotiation": false,
+      "project_name": "Samuel-Clites-MVA-4-23-2024"
+    },
+    "source_id": "109",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Sariya-Mason-DB-08-19-2022-Bodily Injury (BI)-4830025",
+    "attributes": {
+      "claim_number": "4830025",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Nichole Smith",
+      "coverage_confirmation": "Coverage Confirmed",
+      "demand_amount": 50000,
+      "current_offer": 11000,
+      "settlement_amount": 15000,
+      "date_demand_sent": "2023-07-18",
+      "is_active_negotiation": false,
+      "project_name": "Sariya-Mason-DB-08-19-2022"
+    },
+    "source_id": "203",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Sean-May-MVA-8-19-2025-Bodily Injury (BI)-25F68M784958",
+    "attributes": {
+      "claim_number": "25F68M784958",
+      "insurer_name": "CCMSI",
+      "adjuster_name": "Dominique McCraney",
+      "is_active_negotiation": false,
+      "project_name": "Sean-May-MVA-8-19-2025"
+    },
+    "source_id": "273",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Shakeith-Simon-MVA-2-16-2025-Bodily Injury (BI)-COH-0004148",
+    "attributes": {
+      "claim_number": "COH-0004148",
+      "insurer_name": "Commonwealth Casualty Insurance",
+      "adjuster_name": "Kari Hand",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Shakeith-Simon-MVA-2-16-2025"
+    },
+    "source_id": "68",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Shannon-Colvin-MVA-10-1-2023-Bodily Injury (BI)-4908174",
+    "attributes": {
+      "claim_number": "4908174",
+      "insurer_name": "Kentucky Farm Bureau",
+      "adjuster_name": "Ben Taylor",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Shannon-Colvin-MVA-10-1-2023"
+    },
+    "source_id": "135",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Shawna-Broyles-MVA-08-26-2022-Bodily Injury (BI)-MD4587",
+    "attributes": {
+      "claim_number": "MD4587",
+      "insurer_name": "Protective Insurance",
+      "adjuster_name": "Debra Kelso",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Shawna-Broyles-MVA-08-26-2022"
+    },
+    "source_id": "202",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Sir-Hinkle-MVA-6-23-2025-Bodily Injury (BI)-4A2506R0N0S0002",
+    "attributes": {
+      "claim_number": "4A2506R0N0S0002",
+      "insurer_name": "Sedgwick",
+      "adjuster_name": "Meredith Spencer",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 50000.0,
+      "current_offer": 18500.0,
+      "settlement_amount": 25000.0,
+      "settlement_date": "45965.0",
+      "date_demand_sent": "45931.0",
+      "is_active_negotiation": false,
+      "project_name": "Sir-Hinkle-MVA-6-23-2025"
+    },
+    "source_id": "28",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Taylor-Thompson-MVA-12-06-2024-Bodily Injury (BI)-01-008-378108",
+    "attributes": {
+      "claim_number": "01-008-378108",
+      "insurer_name": "American Family Insurance",
+      "adjuster_name": "Kristen Carlson",
+      "is_active_negotiation": false,
+      "project_name": "Taylor-Thompson-MVA-12-06-2024"
+    },
+    "source_id": "266",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "The-Otts-MVA-8-06-2025-Bodily Injury (BI)-25-934695754",
+    "attributes": {
+      "claim_number": "25-934695754",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Joshua White",
+      "is_active_negotiation": false,
+      "project_name": "The-Otts-MVA-8-06-2025"
+    },
+    "source_id": "235",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Timothy-Ruhl-A-B-9-14-2023-Bodily Injury (BI)-GL00000003555090",
+    "attributes": {
+      "claim_number": "GL00000003555090",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Sharon Wills",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Timothy-Ruhl-A-B-9-14-2023"
+    },
+    "source_id": "297",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Timothy-Ruhl-Premise-09-14-2023-Bodily Injury (BI)-GL00000003555090",
+    "attributes": {
+      "claim_number": "GL00000003555090",
+      "insurer_name": "Shelter Insurance",
+      "adjuster_name": "Sharon Wills",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Timothy-Ruhl-Premise-09-14-2023"
+    },
+    "source_id": "97",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Tina-Smith-S&F-4-2-2025-Bodily Injury (BI)-AS13802",
+    "attributes": {
+      "claim_number": "AS13802",
+      "insurer_name": "West Bend Mutual Insurance",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Tina-Smith-S&F-4-2-2025"
+    },
+    "source_id": "296",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Tonya-Dunn-MVA-9-24-2025-Bodily Injury (BI)-2TVV43KY",
+    "attributes": {
+      "claim_number": "2TVV43KY",
+      "insurer_name": "Root Auto Insurance",
+      "adjuster_name": "Valerie Marlatt",
+      "is_active_negotiation": false,
+      "project_name": "Tonya-Dunn-MVA-9-24-2025"
+    },
+    "source_id": "268",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Torrey-Green-MVA-9-3-2025-Bodily Injury (BI)-23016864",
+    "attributes": {
+      "claim_number": "23016864",
+      "insurer_name": "Elco Insurance",
+      "is_active_negotiation": false,
+      "project_name": "Torrey-Green-MVA-9-3-2025"
+    },
+    "source_id": "271",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Trasandra-Miller-MVA-5-30-2025-Bodily Injury (BI)-1785S576T",
+    "attributes": {
+      "claim_number": "1785S576T",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Kevin Ydoyaga",
+      "coverage_confirmation": "Coverage Pending",
+      "is_active_negotiation": false,
+      "project_name": "Trasandra-Miller-MVA-5-30-2025"
+    },
+    "source_id": "39",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-243138082",
+    "attributes": {
+      "claim_number": "243138082",
+      "insurer_name": "Progressive Insurance Company",
+      "adjuster_name": "Amy Morris",
+      "coverage_confirmation": "Coverage Denied",
+      "is_active_negotiation": false,
+      "project_name": "Tyler-Marzec-MVA-2-26-2024"
+    },
+    "source_id": "107",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Tyler-Marzec-MVA-2-26-2024-Bodily Injury (BI)-56240577",
+    "attributes": {
+      "claim_number": "56240577",
+      "insurer_name": "SafeCo Insurance Company",
+      "adjuster_name": "Douglas Hare",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 25000,
+      "date_demand_sent": "2025-07-25",
+      "is_active_negotiation": false,
+      "project_name": "Tyler-Marzec-MVA-2-26-2024"
+    },
+    "source_id": "104",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "Wayne-Weber-MVA-01-01-2022-Bodily Injury (BI)-1429C180C",
+    "attributes": {
+      "claim_number": "1429C180C",
+      "insurer_name": "State Farm Insurance Company",
+      "adjuster_name": "Lyn Zangmeister",
+      "coverage_confirmation": "Coverage Confirmed",
+      "is_active_negotiation": false,
+      "project_name": "Wayne-Weber-MVA-01-01-2022"
+    },
+    "source_id": "140",
+    "source_file": "insurance.json"
+  },
+  {
+    "card_type": "entity",
+    "entity_type": "BIClaim",
+    "name": "William-Tucker-Premise-11-23-2024-Bodily Injury (BI)-GC20241696797",
+    "attributes": {
+      "claim_number": "GC20241696797",
+      "insurer_name": "Louisville Water Company",
+      "adjuster_name": "Greg Thielmeier",
+      "coverage_confirmation": "Coverage Pending",
+      "demand_amount": 25000,
+      "date_demand_sent": "2025-05-30",
+      "is_active_negotiation": false,
+      "project_name": "William-Tucker-Premise-11-23-2024"
+    },
+    "source_id": "50",
+    "source_file": "insurance.json"
+  }
+]
