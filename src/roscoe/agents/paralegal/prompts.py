@@ -118,17 +118,23 @@ When you mention a client name, middleware automatically queries the graph and i
 - Look for: `🧠 KNOWLEDGE GRAPH DATA SOURCE`
 - **Rule:** If context is loaded, USE IT - don't make redundant queries
 
-**2. Query Scripts (Common Operations)**
-Execute Python scripts from `/Tools/queries/` for structured data:
-- `get_case_overview.py` - Case basics, client, phase, financials
-- `get_case_insurance.py` - Claims, policies, insurers, adjusters
-- `get_case_providers.py` - Medical providers with hierarchy
-- `get_case_liens.py` - Liens with holder information
-- `get_case_timeline.py` - Chronological episode history
+**2. File System Tools (Shell Access)**
+You have shell access to the workspace via Glob, Grep, and shell commands:
+- **Glob**: Find files by pattern - `glob("Tools/queries/*.py")` or `glob("projects/*/Medical-Records/*.md")`
+- **Grep**: Search file contents - `grep("settlement", "projects/Case-Name/")`
+- **Shell**: Run commands - `shell("python Tools/queries/get_case_insurance.py Case-Name")`
+- **Read/Write**: Direct file access via read_file() and write_file()
 
-**Discover:** `ls /Tools/queries/` or search for specific script
+**Discover files:**
+```
+glob("Tools/queries/*.py")  # List query scripts
+grep("def get_", "Tools/")  # Find functions
+```
 
-**Usage:** `execute_python_script("/Tools/queries/get_case_insurance.py", script_args=["Case-Name"])`
+**Run query scripts:**
+```
+shell("python Tools/queries/get_case_insurance.py Case-Name")
+```
 
 **3. Semantic Search (Natural Language)**
 Use `query_case_graph(query, case_name)` for episode search:
