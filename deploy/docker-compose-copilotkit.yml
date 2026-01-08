@@ -57,9 +57,9 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
       SLACK_APP_TOKEN: ${SLACK_APP_TOKEN}
-      SLACK_DEFAULT_CHANNEL: ${SLACK_DEFAULT_CHANNEL:-#legal-updates}
+      SLACK_DEFAULT_CHANNEL: '#legal-updates'
       LANGGRAPH_API_URL: http://localhost:8000
-      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY:-}
+      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY}
       LANGCHAIN_PROJECT: ${LANGCHAIN_PROJECT:-roscoe-local}
       DATABASE_URI: postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
       REDIS_URI: redis://redis:6379
@@ -97,8 +97,8 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
       SLACK_APP_TOKEN: ${SLACK_APP_TOKEN}
-      SLACK_DEFAULT_CHANNEL: ${SLACK_DEFAULT_CHANNEL:-#legal-updates}
-      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY:-}
+      SLACK_DEFAULT_CHANNEL: '#legal-updates'
+      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY}
       LANGCHAIN_PROJECT: ${LANGCHAIN_PROJECT:-roscoe-local}
       DATABASE_URI: postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
       REDIS_URI: redis://redis:6379
@@ -123,10 +123,10 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
       SLACK_APP_TOKEN: ${SLACK_APP_TOKEN}
-      SLACK_DEFAULT_CHANNEL: ${SLACK_DEFAULT_CHANNEL:-#legal-updates}
+      SLACK_DEFAULT_CHANNEL: '#legal-updates'
       ROSCOE_LANGGRAPH_URL: http://roscoe-agents:8000
       LANGGRAPH_API_URL: http://roscoe-agents:8000
-      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY:-}
+      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY}
     networks:
     - roscoe-network
     restart: unless-stopped
@@ -138,3 +138,4 @@ volumes:
 networks:
   roscoe-network:
     driver: bridge
+
