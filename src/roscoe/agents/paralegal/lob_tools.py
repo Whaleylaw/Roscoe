@@ -21,8 +21,11 @@ from typing import Optional, Dict, Any, Literal
 from pathlib import Path
 from datetime import datetime, timedelta
 
-# Get workspace root for file operations
-workspace_root = Path(os.environ.get("WORKSPACE_DIR", "/mnt/workspace"))
+# Import workspace resolver for hybrid local/GCS file operations
+from roscoe.core.workspace_resolver import resolve_path, sync_file_to_gcs
+
+# Get workspace root for file operations (uses resolver for local/GCS routing)
+# JSON files (firm_settings.json, mail_log.json) will be routed to local workspace
 
 
 def _get_lob_client():
@@ -55,7 +58,8 @@ def _get_lob_client():
 
 def _get_firm_address() -> Optional[Dict[str, str]]:
     """Load firm return address from settings."""
-    settings_path = workspace_root / "Database" / "firm_settings.json"
+    # Use workspace resolver to get path (JSON files route to local workspace)
+    settings_path = resolve_path("/Database/firm_settings.json", 'read')
     try:
         if settings_path.exists():
             with open(settings_path) as f:
@@ -82,7 +86,8 @@ def _format_address(address: Dict[str, str]) -> Dict[str, str]:
 
 def _log_mail(mail_type: str, mail_id: str, case_name: Optional[str], recipient: str, details: Dict):
     """Log sent mail to Database/mail_log.json for tracking."""
-    log_path = workspace_root / "Database" / "mail_log.json"
+    # Use workspace resolver to get path (JSON files route to local workspace)
+    log_path = resolve_path("/Database/mail_log.json", 'write')
 
     entry = {
         "id": mail_id,
@@ -105,8 +110,14 @@ def _log_mail(mail_type: str, mail_id: str, case_name: Optional[str], recipient:
         # Keep last 1000 entries
         log["mail_entries"] = log["mail_entries"][:1000]
 
+        # Ensure parent directory exists
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+
         with open(log_path, "w") as f:
             json.dump(log, f, indent=2)
+
+        # Sync to GCS for backup
+        sync_file_to_gcs("Database/mail_log.json")
     except Exception as e:
         print(f"Warning: Could not log mail: {e}")
 

@@ -36,7 +36,10 @@ except ImportError:
     logger.info("Docker SDK not installed, will use native execution")
 
 # Configuration - can be overridden via environment variables
+# WORKSPACE_ROOT: GCS Fuse mount (for binary files, persistent storage)
+# LOCAL_WORKSPACE: Fast local disk (for text files)
 WORKSPACE_ROOT = Path(os.environ.get("WORKSPACE_ROOT", "/mnt/workspace"))
+LOCAL_WORKSPACE = Path(os.environ.get("LOCAL_WORKSPACE", "/home/aaronwhaley/workspace_local"))
 DOCKER_IMAGE = os.environ.get("DOCKER_IMAGE", "roscoe-python-runner:latest")
 DOCKER_IMAGE_PLAYWRIGHT = os.environ.get("DOCKER_IMAGE_PLAYWRIGHT", "roscoe-python-runner:playwright")
 EXECUTION_LOGS_DIR = WORKSPACE_ROOT / "Database" / "script_execution_logs"
@@ -151,6 +154,7 @@ def _execute_native(
         "SCRIPT_PATH": script_path,
         "WORKSPACE_ROOT": str(WORKSPACE_ROOT),
         "WORKSPACE_DIR": str(WORKSPACE_ROOT),  # Alternative name used by some scripts
+        "LOCAL_WORKSPACE": str(LOCAL_WORKSPACE),  # Fast local disk for text files
     })
     
     # Build command

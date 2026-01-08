@@ -27,15 +27,40 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Get workspace root from environment
-WORKSPACE_ROOT = Path(os.getenv("WORKSPACE_ROOT", "/mnt/workspace"))
+# Get workspace roots from environment
+# GCS_WORKSPACE: GCS Fuse mount (for binary files like PDFs, images)
+# LOCAL_WORKSPACE: Fast local disk (for text files like JSON, markdown)
+GCS_WORKSPACE = Path(os.getenv("WORKSPACE_ROOT", "/mnt/workspace"))
+LOCAL_WORKSPACE = Path(os.getenv("LOCAL_WORKSPACE", "/home/aaronwhaley/workspace_local"))
+
 UPLOADS_BASE_DIR = os.getenv("UPLOADS_BASE_DIR", "uploads/inbox")
 MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", "50"))
 UPLOAD_TOKEN = os.getenv("UPLOAD_TOKEN", "")  # Optional auth token
 
-# Ensure uploads directory exists
-UPLOADS_DIR = WORKSPACE_ROOT / UPLOADS_BASE_DIR
-UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
+# Text file extensions that should be stored locally (faster access)
+TEXT_EXTENSIONS = {
+    '.md', '.txt', '.json', '.py', '.html', '.css', '.js',
+    '.yaml', '.yml', '.csv', '.xml', '.rst', '.ini', '.cfg',
+    '.sh', '.bash', '.toml', '.env', '.log'
+}
+
+def is_text_file(filename: str) -> bool:
+    """Check if file should be stored locally based on extension."""
+    ext = Path(filename).suffix.lower()
+    return ext in TEXT_EXTENSIONS
+
+def get_workspace_for_file(filename: str) -> Path:
+    """Get the appropriate workspace root based on file type."""
+    if is_text_file(filename):
+        return LOCAL_WORKSPACE
+    return GCS_WORKSPACE
+
+# Ensure uploads directories exist in both workspaces
+(GCS_WORKSPACE / UPLOADS_BASE_DIR).mkdir(parents=True, exist_ok=True)
+(LOCAL_WORKSPACE / UPLOADS_BASE_DIR).mkdir(parents=True, exist_ok=True)
+
+# Default uploads dir (uses GCS for backward compatibility)
+UPLOADS_DIR = GCS_WORKSPACE / UPLOADS_BASE_DIR
 
 
 @app.get("/health")
@@ -85,14 +110,19 @@ async def upload_file(
     safe_filename = "".join(c for c in original_filename if c.isalnum() or c in ".-_ ")
     unique_filename = f"{timestamp}_{safe_filename}"
 
-    # Determine upload path
+    # Determine upload path based on file type and case
+    # Text files go to local workspace (fast), binary files go to GCS (persistent storage)
+    workspace = get_workspace_for_file(safe_filename)
+    storage_type = "local" if is_text_file(safe_filename) else "gcs"
+
     if case_name:
         # Upload to case folder if specified
-        upload_path = WORKSPACE_ROOT / "projects" / case_name / "uploads" / unique_filename
+        upload_path = workspace / "projects" / case_name / "uploads" / unique_filename
         upload_path.parent.mkdir(parents=True, exist_ok=True)
     else:
         # Upload to general inbox
-        upload_path = UPLOADS_DIR / unique_filename
+        upload_path = workspace / UPLOADS_BASE_DIR / unique_filename
+        upload_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Save file
     try:
@@ -101,8 +131,8 @@ async def upload_file(
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to save file: {str(e)}")
 
-    # Build relative path for agent
-    relative_path = str(upload_path.relative_to(WORKSPACE_ROOT))
+    # Build relative path for agent (relative to the workspace it was saved to)
+    relative_path = str(upload_path.relative_to(workspace))
 
     return JSONResponse({
         "success": True,
@@ -114,7 +144,8 @@ async def upload_file(
         "case_name": case_name,
         "description": description,
         "uploaded_at": timestamp,
-        "message": f"File uploaded successfully. Agent can access at: {relative_path}"
+        "storage_type": storage_type,  # "local" for text files, "gcs" for binary
+        "message": f"File uploaded successfully ({storage_type}). Agent can access at: /{relative_path}"
     })
 
 
@@ -122,6 +153,7 @@ async def upload_file(
 async def list_uploads(case_name: Optional[str] = None):
     """
     List uploaded files in inbox or for a specific case.
+    Checks both local and GCS workspaces.
 
     Args:
         case_name: Optional case folder name to filter uploads
@@ -129,25 +161,29 @@ async def list_uploads(case_name: Optional[str] = None):
     Returns:
         JSON with list of uploaded files
     """
-    if case_name:
-        upload_dir = WORKSPACE_ROOT / "projects" / case_name / "uploads"
-    else:
-        upload_dir = UPLOADS_DIR
-
-    if not upload_dir.exists():
-        return {"uploads": [], "count": 0}
-
     uploads = []
-    for file_path in upload_dir.iterdir():
-        if file_path.is_file():
-            stat = file_path.stat()
-            relative_path = str(file_path.relative_to(WORKSPACE_ROOT))
-            uploads.append({
-                "filename": file_path.name,
-                "path": f"/{relative_path}",
-                "size_mb": stat.st_size / (1024 * 1024),
-                "uploaded_at": datetime.fromtimestamp(stat.st_mtime).isoformat(),
-            })
+
+    # Check both local and GCS workspaces
+    for workspace, storage_type in [(LOCAL_WORKSPACE, "local"), (GCS_WORKSPACE, "gcs")]:
+        if case_name:
+            upload_dir = workspace / "projects" / case_name / "uploads"
+        else:
+            upload_dir = workspace / UPLOADS_BASE_DIR
+
+        if not upload_dir.exists():
+            continue
+
+        for file_path in upload_dir.iterdir():
+            if file_path.is_file():
+                stat = file_path.stat()
+                relative_path = str(file_path.relative_to(workspace))
+                uploads.append({
+                    "filename": file_path.name,
+                    "path": f"/{relative_path}",
+                    "size_mb": stat.st_size / (1024 * 1024),
+                    "uploaded_at": datetime.fromtimestamp(stat.st_mtime).isoformat(),
+                    "storage_type": storage_type,
+                })
 
     # Sort by upload time (newest first)
     uploads.sort(key=lambda x: x["uploaded_at"], reverse=True)
@@ -158,7 +194,7 @@ async def list_uploads(case_name: Optional[str] = None):
 @app.delete("/upload/{filename}")
 async def delete_upload(filename: str, case_name: Optional[str] = None, token: Optional[str] = None):
     """
-    Delete an uploaded file.
+    Delete an uploaded file. Checks both local and GCS workspaces.
 
     Args:
         filename: Name of file to delete
@@ -172,12 +208,19 @@ async def delete_upload(filename: str, case_name: Optional[str] = None, token: O
     if UPLOAD_TOKEN and token != UPLOAD_TOKEN:
         raise HTTPException(status_code=401, detail="Invalid upload token")
 
-    if case_name:
-        file_path = WORKSPACE_ROOT / "projects" / case_name / "uploads" / filename
-    else:
-        file_path = UPLOADS_DIR / filename
+    # Check both workspaces for the file
+    file_path = None
+    for workspace in [LOCAL_WORKSPACE, GCS_WORKSPACE]:
+        if case_name:
+            candidate_path = workspace / "projects" / case_name / "uploads" / filename
+        else:
+            candidate_path = workspace / UPLOADS_BASE_DIR / filename
 
-    if not file_path.exists():
+        if candidate_path.exists():
+            file_path = candidate_path
+            break
+
+    if file_path is None:
         raise HTTPException(status_code=404, detail="File not found")
 
     try:

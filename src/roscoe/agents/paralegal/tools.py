@@ -89,8 +89,18 @@ def _get_slack_client():
         print("Warning: slack-sdk not installed. Slack integration disabled.")
         return None
 
+# Import workspace resolver for hybrid local/GCS file operations
+from roscoe.core.workspace_resolver import (
+    resolve_path,
+    is_text_file,
+    sync_file_to_gcs,
+    LOCAL_WORKSPACE,
+    GCS_WORKSPACE,
+)
+
 # Get workspace root for file operations (paralegal agent workspace)
 # Use WORKSPACE_DIR env var (set in production), fallback to relative path for local dev
+# NOTE: This is kept for backward compatibility but file operations should use resolve_path()
 workspace_root = Path(os.environ.get("WORKSPACE_DIR", str(Path(__file__).parent.parent.parent.parent.parent / "workspace_paralegal")))
 
 
@@ -507,14 +517,13 @@ def move_file(
     import shutil
 
     try:
-        # Convert workspace-relative paths to absolute paths
-        if source_path.startswith('/'):
-            source_path = source_path[1:]  # Remove leading slash
-        if destination_path.startswith('/'):
-            destination_path = destination_path[1:]
+        # Normalize paths (keep original for messages)
+        clean_source = source_path.lstrip('/')
+        clean_dest = destination_path.lstrip('/')
 
-        abs_source = workspace_root / source_path
-        abs_dest = workspace_root / destination_path
+        # Use workspace resolver for path resolution (routes to local or GCS based on file type)
+        abs_source = resolve_path(source_path, 'read')
+        abs_dest = resolve_path(destination_path, 'write')
 
         # Validate source exists
         if not abs_source.exists():
@@ -532,6 +541,10 @@ def move_file(
 
         # Move the file
         shutil.move(str(abs_source), str(abs_dest))
+
+        # Sync to GCS if destination is a text file in local workspace
+        if is_text_file(clean_dest):
+            sync_file_to_gcs(clean_dest)
 
         return f"""✅ File moved successfully
 
@@ -583,14 +596,13 @@ def copy_file(
     import shutil
 
     try:
-        # Convert workspace-relative paths to absolute paths
-        if source_path.startswith('/'):
-            source_path = source_path[1:]
-        if destination_path.startswith('/'):
-            destination_path = destination_path[1:]
+        # Normalize paths (keep original for messages)
+        clean_source = source_path.lstrip('/')
+        clean_dest = destination_path.lstrip('/')
 
-        abs_source = workspace_root / source_path
-        abs_dest = workspace_root / destination_path
+        # Use workspace resolver for path resolution (routes to local or GCS based on file type)
+        abs_source = resolve_path(source_path, 'read')
+        abs_dest = resolve_path(destination_path, 'write')
 
         # Validate source exists
         if not abs_source.exists():
@@ -608,6 +620,10 @@ def copy_file(
 
         # Copy the file (preserve metadata with copy2)
         shutil.copy2(str(abs_source), str(abs_dest))
+
+        # Sync to GCS if destination is a text file in local workspace
+        if is_text_file(clean_dest):
+            sync_file_to_gcs(clean_dest)
 
         return f"""✅ File copied successfully
 
@@ -770,6 +786,218 @@ def upload_file_to_slack(
 
     except Exception as e:
         return f"Failed to upload file to Slack: {str(e)}"
+
+
+# =============================================================================
+# GCS (Google Cloud Storage) Tools
+# For uploading files to cloud storage and getting signed URLs
+# =============================================================================
+
+def save_to_gcs(
+    local_path: str,
+    gcs_path: Optional[str] = None,
+    content_type: Optional[str] = None,
+) -> str:
+    """
+    Upload a file from the workspace to Google Cloud Storage.
+
+    Use this when:
+    - You've generated a large file (PDF, image) that needs cloud storage
+    - You want to ensure a file is backed up to cloud storage
+    - You need to make a file available via a shareable URL
+    - You're saving binary files that shouldn't be stored locally
+
+    Args:
+        local_path: Workspace-relative path to the file to upload.
+            Example: "/Reports/case_timeline.html"
+        gcs_path: Optional destination path in GCS. If not provided, uses the same
+            path as local_path. Example: "/projects/Wilson/reports/timeline.html"
+        content_type: Optional MIME type (auto-detected if not provided).
+            Example: "application/pdf", "text/html"
+
+    Returns:
+        Confirmation with GCS path, or error message.
+
+    Note: This tool only uploads - it does NOT delete files from GCS.
+
+    Examples:
+        # Upload a generated PDF report
+        save_to_gcs("/Reports/medical_summary.pdf")
+
+        # Upload with custom destination
+        save_to_gcs(
+            local_path="/Reports/timeline.html",
+            gcs_path="/projects/Wilson-MVA-2024/Reports/final_timeline.html"
+        )
+    """
+    try:
+        # Get GCS client lazily
+        client, bucket = _get_gcs_client()
+        if not bucket:
+            return "Error: GCS client not available. Check GCS credentials."
+
+        # Resolve local path using workspace resolver
+        abs_local = resolve_path(local_path, 'read')
+
+        if not abs_local.exists():
+            return f"Error: Local file not found: {local_path}"
+
+        if not abs_local.is_file():
+            return f"Error: Path is not a file: {local_path}"
+
+        # Determine GCS destination path
+        if gcs_path is None:
+            gcs_path = local_path
+        clean_gcs_path = gcs_path.lstrip('/')
+
+        # Auto-detect content type if not provided
+        if content_type is None:
+            import mimetypes
+            content_type, _ = mimetypes.guess_type(str(abs_local))
+
+        # Upload to GCS
+        blob = bucket.blob(clean_gcs_path)
+        blob.upload_from_filename(str(abs_local), content_type=content_type)
+
+        return f"""✅ File uploaded to GCS successfully
+
+**Local**: {local_path}
+**GCS**: gs://{GCS_BUCKET_NAME}/{clean_gcs_path}
+**Size**: {abs_local.stat().st_size:,} bytes"""
+
+    except Exception as e:
+        return f"Error uploading to GCS: {str(e)}"
+
+
+def get_gcs_url(
+    gcs_path: str,
+    expiration_minutes: int = 60,
+) -> str:
+    """
+    Get a signed URL for a file stored in Google Cloud Storage.
+
+    Use this when:
+    - You need to share a PDF or large file with the user via URL
+    - The UI needs to display a file stored in GCS
+    - You want to provide temporary access to a binary file
+    - You're sharing evidence or documents externally
+
+    Args:
+        gcs_path: Path to the file in GCS bucket.
+            Example: "/projects/Wilson-MVA-2024/Medical Records/spine_mri.pdf"
+        expiration_minutes: How long the URL should be valid (default: 60 minutes).
+            Maximum: 7 days (10080 minutes)
+
+    Returns:
+        Signed URL that can be used to access the file directly.
+
+    Note: This tool only reads - it does NOT delete files from GCS.
+
+    Examples:
+        # Get URL for a PDF
+        get_gcs_url("/projects/Wilson-MVA-2024/Medical Records/mri_report.pdf")
+
+        # Get longer-lived URL (24 hours)
+        get_gcs_url("/Reports/final_analysis.pdf", expiration_minutes=1440)
+    """
+    from datetime import timedelta
+
+    try:
+        # Get GCS client lazily
+        client, bucket = _get_gcs_client()
+        if not bucket:
+            return "Error: GCS client not available. Check GCS credentials."
+
+        clean_path = gcs_path.lstrip('/')
+
+        # Get the blob
+        blob = bucket.blob(clean_path)
+
+        # Check if file exists
+        if not blob.exists():
+            return f"Error: File not found in GCS: {gcs_path}"
+
+        # Cap expiration at 7 days
+        expiration_minutes = min(expiration_minutes, 10080)
+
+        # Generate signed URL
+        url = blob.generate_signed_url(
+            version="v4",
+            expiration=timedelta(minutes=expiration_minutes),
+            method="GET",
+        )
+
+        return f"""✅ Signed URL generated (valid for {expiration_minutes} minutes)
+
+**GCS Path**: gs://{GCS_BUCKET_NAME}/{clean_path}
+**URL**: {url}"""
+
+    except Exception as e:
+        return f"Error generating GCS URL: {str(e)}"
+
+
+def list_gcs_files(
+    prefix: str = "",
+    max_results: int = 100,
+) -> str:
+    """
+    List files in Google Cloud Storage under a given prefix/path.
+
+    Use this when:
+    - You need to see what files exist in GCS for a case
+    - You're looking for binary files (PDFs, images) that aren't stored locally
+    - You want to browse the cloud storage contents
+
+    Args:
+        prefix: Path prefix to filter files. Example: "/projects/Wilson-MVA-2024/"
+        max_results: Maximum number of files to return (default: 100)
+
+    Returns:
+        List of files with their sizes and paths.
+
+    Examples:
+        # List all files in a case folder
+        list_gcs_files("/projects/Wilson-MVA-2024/")
+
+        # List only Medical Records
+        list_gcs_files("/projects/Wilson-MVA-2024/Medical Records/")
+
+        # List root directories
+        list_gcs_files("/", max_results=50)
+    """
+    try:
+        # Get GCS client lazily
+        client, bucket = _get_gcs_client()
+        if not bucket:
+            return "Error: GCS client not available. Check GCS credentials."
+
+        clean_prefix = prefix.lstrip('/')
+
+        # List blobs
+        blobs = list(bucket.list_blobs(prefix=clean_prefix, max_results=max_results))
+
+        if not blobs:
+            return f"No files found under: {prefix}"
+
+        # Format results
+        result_lines = [f"**Files in GCS** (prefix: `{prefix}`)\n"]
+
+        total_size = 0
+        for blob in blobs:
+            size = blob.size or 0
+            total_size += size
+            size_str = f"{size:,}" if size < 1024*1024 else f"{size/(1024*1024):.1f}MB"
+            result_lines.append(f"- `{blob.name}` ({size_str})")
+
+        result_lines.append(f"\n**Total**: {len(blobs)} files, {total_size/(1024*1024):.1f}MB")
+
+        if len(blobs) == max_results:
+            result_lines.append(f"\n*Results limited to {max_results} files*")
+
+        return "\n".join(result_lines)
+
+    except Exception as e:
+        return f"Error listing GCS files: {str(e)}"
 
 
 # =============================================================================

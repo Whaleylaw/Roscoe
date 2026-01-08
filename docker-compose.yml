@@ -91,6 +91,7 @@ services:
       REDIS_URI: redis://redis:6379
       WORKSPACE_DIR: /app/workspace_paralegal
       WORKSPACE_ROOT: /mnt/workspace
+      LOCAL_WORKSPACE: /app/workspace_local
       GOOGLE_CREDENTIALS_FILE: /deps/roscoe/credentials.json
       GOOGLE_TOKEN_FILE: /deps/roscoe/token.json
       KYECOURTS_USERNAME: ${KYECOURTS_USERNAME:-}
@@ -103,6 +104,7 @@ services:
     volumes:
       - /mnt/workspace:/app/workspace_paralegal
       - /mnt/workspace:/mnt/workspace
+      - /home/aaronwhaley/workspace_local:/app/workspace_local
       - /var/run/docker.sock:/var/run/docker.sock
       - /home/aaronwhaley/roscoe/src/roscoe:/deps/roscoe/src/roscoe
       - /home/aaronwhaley/roscoe/credentials.json:/deps/roscoe/credentials.json
@@ -119,12 +121,14 @@ services:
       - 8125:8125
     environment:
       WORKSPACE_ROOT: /mnt/workspace
+      LOCAL_WORKSPACE: /app/workspace_local
       UPLOADS_BASE_DIR: uploads/inbox
       MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-50}
       UPLOAD_TOKEN: ${UPLOAD_TOKEN:-}
       PYTHONPATH: /deps/roscoe/src
     volumes:
       - /mnt/workspace:/mnt/workspace
+      - /home/aaronwhaley/workspace_local:/app/workspace_local
       - /home/aaronwhaley/roscoe/src/roscoe:/deps/roscoe/src/roscoe
     networks:
       - roscoe-network
