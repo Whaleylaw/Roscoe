@@ -21,6 +21,7 @@ dependencies = [
     "sentence-transformers",
     "pdfplumber",
     "PyPDF2",
+    "pypdf",  # Modern PDF library for skills
     "pandas",
     "numpy",
     "slack-sdk",
@@ -28,11 +29,33 @@ dependencies = [
     "python-dotenv",
     "docker>=7.0.0",
     "rapidfuzz",  # Fuzzy string matching for case context middleware
+    "fastapi",     # Web framework for upload service
+    "uvicorn",     # ASGI server
+    "python-multipart",  # Required for FastAPI file uploads
+    "openai",      # OpenAI SDK (used for Thesys C1 API)
+    "google-cloud-storage",  # GCS SDK for signed URL generation
+    "langchain-google-community[gmail]",  # Gmail toolkit for LangChain
+    "google-auth-oauthlib>=1.2.0",  # OAuth2 authentication for Google APIs
+    "google-api-python-client>=2.100.0",  # Google API client for Calendar
+    # Skills dependencies (PDF, DOCX, XLSX, PPTX, Canvas)
+    "reportlab",  # PDF creation
+    "pdf2image",  # PDF to images for OCR
+    "pytesseract",  # OCR for scanned PDFs
+    "openpyxl",  # Excel file handling
+    "python-docx",  # Word document handling
+    "defusedxml",  # Secure XML parsing for OOXML
+    "pillow",  # Image processing
+    "pyyaml",  # YAML parsing for skill frontmatter
+    "markitdown",  # Markdown conversion for presentations
+    # Graphiti Knowledge Graph
+    "graphiti-core[falkordb,google-genai]>=0.24.0",
+    # Physical mail API (Lob.com)
+    "lob>=4.5.0",
 ]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["roscoe", "roscoe.core", "roscoe.agents", "roscoe.agents.paralegal", "roscoe.agents.coding"]
+packages = ["roscoe", "roscoe.core", "roscoe.agents", "roscoe.agents.paralegal", "roscoe.workflow_engine", "roscoe.workflow_engine.orchestrator", "roscoe.scripts"]
 
 [tool.setuptools.package-data]
 "*" = ["*.md", "*.txt", "*.json"]

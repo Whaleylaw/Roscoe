@@ -382,6 +382,93 @@
         "Execute legal research scripts",
         "Run medical research scripts"
       ]
+    },
+    {
+      "name": "email-management",
+      "description": "Use when managing case-related email communications - searching inbox, reading emails, sending messages, creating drafts for attorney review, and tracking email threads with clients, adjusters, and opposing counsel",
+      "file": "email-management/skill.md",
+      "triggers": [
+        "email",
+        "send email",
+        "check email",
+        "search email",
+        "email thread",
+        "inbox",
+        "gmail",
+        "correspondence",
+        "send message",
+        "draft email",
+        "email client",
+        "email adjuster",
+        "find emails",
+        "email history",
+        "email communications"
+      ],
+      "model_required": "sonnet",
+      "tools_required": [
+        "search_emails",
+        "get_email",
+        "send_email",
+        "create_draft",
+        "get_thread",
+        "list_labels"
+      ],
+      "use_cases": [
+        "Search for case-related emails by sender, subject, or date",
+        "Read full email content and attachments list",
+        "Send case status updates to clients",
+        "Create draft emails for attorney review before sending",
+        "Get complete email thread for context",
+        "Track correspondence with insurance adjusters",
+        "Find demand letter responses"
+      ],
+      "security_notes": "Requires Google OAuth credentials (GOOGLE_CREDENTIALS_FILE). First-time use opens browser for authentication."
+    },
+    {
+      "name": "calendar-scheduling",
+      "description": "Use when managing case deadlines, scheduling depositions, hearings, client meetings, or tracking important dates - view calendar, create events, find available time slots, and manage appointments",
+      "file": "calendar-scheduling/skill.md",
+      "triggers": [
+        "calendar",
+        "schedule",
+        "deadline",
+        "appointment",
+        "meeting",
+        "hearing",
+        "deposition",
+        "statute of limitations",
+        "SOL",
+        "due date",
+        "court date",
+        "discovery deadline",
+        "schedule meeting",
+        "find time",
+        "availability",
+        "book",
+        "reschedule",
+        "upcoming events",
+        "what's on calendar"
+      ],
+      "model_required": "sonnet",
+      "tools_required": [
+        "list_events",
+        "create_event",
+        "update_event",
+        "delete_event",
+        "find_free_time",
+        "get_event"
+      ],
+      "use_cases": [
+        "View upcoming deadlines and appointments",
+        "Create statute of limitations deadline events",
+        "Schedule depositions with proper duration",
+        "Book client meetings at available times",
+        "Track court hearing dates",
+        "Set discovery response deadlines",
+        "Find available time slots for scheduling",
+        "Create reminder events for follow-ups"
+      ],
+      "security_notes": "Requires Google OAuth credentials (GOOGLE_CREDENTIALS_FILE). Default timezone: America/New_York (set DEFAULT_TIMEZONE to change)."
     }
   ]
 }

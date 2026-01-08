@@ -1,0 +1,148 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: roscoe-postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - roscoe-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: roscoe-redis
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - roscoe-network
+
+  falkordb:
+    image: falkordb/falkordb:latest
+    container_name: roscoe-graphdb
+    ports:
+      - 6380:6379
+      - 3001:3000
+    volumes:
+      - graphdb_data:/data
+    environment:
+      # Redis persistence: save every 60s if 1+ keys changed, save on shutdown
+      # Use /data (mounted volume) for RDB file
+      - FALKORDB_ARGS=--save 60 1 --dir /data --dbfilename dump.rdb --appendonly yes --appendfsync everysec
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+          cpus: '4.0'
+        reservations:
+          memory: 4G
+          cpus: '2.0'
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - roscoe-network
+    restart: unless-stopped
+
+  roscoe:
+    image: roscoe-agents:local
+    container_name: roscoe-agents
+    ports:
+      - 8123:8000
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+      TAVILY_API_KEY: ${TAVILY_API_KEY:-}
+      THESYS_API_KEY: ${THESYS_API_KEY}
+      LANGCHAIN_TRACING_V2: 'true'
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN:-}
+      SLACK_APP_TOKEN: ${SLACK_APP_TOKEN:-}
+      SLACK_DEFAULT_CHANNEL: '#legal-updates'
+      LANGGRAPH_API_URL: http://localhost:8000
+      RUNLOOP_API_KEY: ${RUNLOOP_API_KEY:-}
+      LANGCHAIN_PROJECT: ${LANGCHAIN_PROJECT:-roscoe-local}
+      DATABASE_URI: postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
+      REDIS_URI: redis://redis:6379
+      WORKSPACE_DIR: /app/workspace_paralegal
+      WORKSPACE_ROOT: /mnt/workspace
+      LOCAL_WORKSPACE: /app/workspace_local
+      GOOGLE_CREDENTIALS_FILE: /deps/roscoe/credentials.json
+      GOOGLE_TOKEN_FILE: /deps/roscoe/token.json
+      KYECOURTS_USERNAME: ${KYECOURTS_USERNAME:-}
+      KYECOURTS_PASSWORD: ${KYECOURTS_PASSWORD:-}
+      LANGGRAPH_DEPLOYMENT: 'true'
+      LANGGRAPH_RECURSION_LIMIT: '500'
+      PYTHONUNBUFFERED: 1
+      FALKORDB_HOST: roscoe-graphdb
+      FALKORDB_PORT: '6379'
+    volumes:
+      - /mnt/workspace:/app/workspace_paralegal
+      - /mnt/workspace:/mnt/workspace
+      - /home/aaronwhaley/workspace_local:/app/workspace_local
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/aaronwhaley/roscoe/src/roscoe:/deps/roscoe/src/roscoe
+      - /home/aaronwhaley/roscoe/langgraph.json:/deps/roscoe/langgraph.json
+      - /home/aaronwhaley/roscoe/credentials.json:/deps/roscoe/credentials.json
+      - /home/aaronwhaley/roscoe/token.json:/deps/roscoe/token.json
+    networks:
+      - roscoe-network
+    restart: unless-stopped
+    entrypoint: ["/storage/entrypoint.sh"]
+
+  uploads:
+    image: roscoe-agents:local
+    container_name: roscoe-uploads
+    ports:
+      - 8125:8125
+    environment:
+      WORKSPACE_ROOT: /mnt/workspace
+      LOCAL_WORKSPACE: /app/workspace_local
+      UPLOADS_BASE_DIR: uploads/inbox
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-50}
+      UPLOAD_TOKEN: ${UPLOAD_TOKEN:-}
+      PYTHONPATH: /deps/roscoe/src
+    volumes:
+      - /mnt/workspace:/mnt/workspace
+      - /home/aaronwhaley/workspace_local:/app/workspace_local
+      - /home/aaronwhaley/roscoe/src/roscoe:/deps/roscoe/src/roscoe
+    networks:
+      - roscoe-network
+    restart: unless-stopped
+    entrypoint: []
+    command: ["python", "-m", "uvicorn", "roscoe.upload_service:app", "--host", "0.0.0.0", "--port", "8125"]
+
+volumes:
+  postgres_data:
+  redis_data:
+  graphdb_data:
+
+networks:
+  roscoe-network:
+    external: true
+    name: roscoe_roscoe-network

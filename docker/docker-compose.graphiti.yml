@@ -1,0 +1,28 @@
+# Docker Compose for Graphiti Knowledge Graph
+# 
+# This adds FalkorDB (Redis-compatible graph database) for Graphiti.
+# Run with: docker compose -f docker-compose.graphiti.yml up -d
+#
+# Or merge into main docker-compose.yml on the VM.
+
+services:
+  roscoe-graphdb:
+    image: falkordb/falkordb:latest
+    container_name: roscoe-graphdb
+    ports:
+      - "6380:6379"  # Redis protocol (using 6380 to avoid conflict with existing Redis)
+      - "3001:3000"  # FalkorDB Browser UI (using 3001 to avoid conflicts)
+    volumes:
+      - graphdb-data:/data
+    environment:
+      - FALKORDB_ARGS=--save 60 1  # Persist every 60 seconds if 1+ changes
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  graphdb-data:
+    driver: local

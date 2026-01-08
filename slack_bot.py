@@ -179,27 +179,38 @@ def _collect_streamed_response(response: Response) -> str:
     return agent_response.strip()
 
 
-def send_to_roscoe(user_message: str, slack_user_id: str) -> str:
+def send_to_roscoe(user_message: str, slack_user_id: str, slack_channel: str = None) -> str:
     """
     Send a message to Roscoe agent via LangGraph API.
 
     Args:
         user_message: The user's message
         slack_user_id: Slack user ID for thread continuity
+        slack_channel: Optional Slack channel ID for context
 
     Returns:
         Agent's response or error message
     """
     logger.info("Routing Slack user %s message: %s", slack_user_id, user_message[:80])
+    
+    # Inject Slack context so the agent knows to continue responding via Slack
+    slack_context = f"""[SLACK CONVERSATION - User: {slack_user_id}]
+For this conversation, use the send_slack_message tool for any progress updates, 
+interim status messages, or notifications during long-running tasks. The initial 
+response will automatically go to Slack, but subsequent updates should use the tool.
+---
+"""
+    enhanced_message = slack_context + user_message
+    
     try:
-        thread_id = _ensure_thread(slack_user_id)
+        thread_id = _ensure_thread(slack_user_id, metadata={"slack_channel": slack_channel or "dm"})
         logger.debug("Using thread %s", thread_id)
 
         response = session.post(
             f"{LANGGRAPH_API_URL}/threads/{thread_id}/runs/stream",
             json={
                 "assistant_id": ASSISTANT_ID,
-                "input": {"messages": [{"role": "user", "content": user_message}]},
+                "input": {"messages": [{"role": "user", "content": enhanced_message}]},
                 "stream_mode": "messages",
             },
             stream=True,
@@ -248,11 +259,12 @@ def handle_app_mention(event, say):
             say("Yes? How can I help?", thread_ts=event["ts"])
             return
 
-        # Get user info
+        # Get user and channel info
         slack_user_id = event["user"]
+        slack_channel = event.get("channel")
 
-        # Send to Roscoe agent
-        response = send_to_roscoe(user_message, slack_user_id)
+        # Send to Roscoe agent with channel context
+        response = send_to_roscoe(user_message, slack_user_id, slack_channel)
 
         # Reply in thread
         say(text=response, thread_ts=event["ts"])
@@ -280,9 +292,10 @@ def handle_direct_message(event, say):
     try:
         user_message = event["text"]
         slack_user_id = event["user"]
+        slack_channel = event.get("channel")
 
-        # Send to Roscoe agent
-        response = send_to_roscoe(user_message, slack_user_id)
+        # Send to Roscoe agent with DM context
+        response = send_to_roscoe(user_message, slack_user_id, slack_channel)
 
         # Reply
         say(text=response)
@@ -305,13 +318,14 @@ def handle_slash_command(ack, command, respond):
     try:
         user_message = command["text"]
         slack_user_id = command["user_id"]
+        slack_channel = command.get("channel_id")
 
         if not user_message:
             respond("Usage: `/roscoe [your question or command]`\nExample: `/roscoe status Wilson case`")
             return
 
-        # Send to Roscoe agent
-        response = send_to_roscoe(user_message, slack_user_id)
+        # Send to Roscoe agent with channel context
+        response = send_to_roscoe(user_message, slack_user_id, slack_channel)
 
         # Reply
         respond(text=response)
