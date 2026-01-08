@@ -46,6 +46,12 @@ except ImportError:
 GCS_WORKSPACE = Path(os.environ.get("WORKSPACE_ROOT", "/mnt/workspace"))
 LOCAL_WORKSPACE = Path(os.environ.get("LOCAL_WORKSPACE", "/home/aaronwhaley/workspace_local"))
 
+# Directories to watch for PDFs (relative to GCS_WORKSPACE)
+# Only monitor case-related folders, not the entire workspace (which has 8000+ PDFs)
+WATCH_DIRECTORIES = [
+    "projects",         # Case folders (each case has Medical-Records, Discovery, etc.)
+]
+
 # State tracking
 STATE_FILE = LOCAL_WORKSPACE / ".sync_metadata" / "pdf_conversions.json"
 LOG_FILE = LOCAL_WORKSPACE / ".sync_metadata" / "pdf_watcher.log"
@@ -168,9 +174,12 @@ def get_markdown_path(pdf_path: Path, gcs_workspace: Path, local_workspace: Path
     return md_path
 
 
-def find_new_pdfs(gcs_workspace: Path, state: dict) -> list[tuple[Path, str]]:
+def find_new_pdfs(gcs_workspace: Path, state: dict, watch_dirs: list[str] = None) -> list[tuple[Path, str]]:
     """
     Find PDFs that need conversion.
+
+    Only searches specified directories to avoid scanning the entire workspace
+    (which may have thousands of reference PDFs not relevant to active cases).
 
     Returns list of (pdf_path, hash) tuples for PDFs that:
     - Have no corresponding markdown file
@@ -178,26 +187,41 @@ def find_new_pdfs(gcs_workspace: Path, state: dict) -> list[tuple[Path, str]]:
     """
     new_pdfs = []
 
-    for pdf_path in gcs_workspace.rglob("*.pdf"):
-        # Skip hidden directories
-        if any(part.startswith('.') for part in pdf_path.parts):
+    # Use configured watch directories or fall back to provided list
+    dirs_to_watch = watch_dirs or WATCH_DIRECTORIES
+
+    for watch_dir in dirs_to_watch:
+        watch_path = gcs_workspace / watch_dir
+        if not watch_path.exists():
+            logger.debug(f"Watch directory does not exist: {watch_path}")
             continue
 
-        # Get relative path for state tracking
-        try:
-            rel_path = str(pdf_path.relative_to(gcs_workspace))
-        except ValueError:
-            rel_path = pdf_path.name
+        logger.debug(f"Scanning: {watch_path}")
 
-        # Check if already converted
-        pdf_hash = get_pdf_hash(pdf_path)
-
-        if rel_path in state.get("converted", {}):
-            if state["converted"][rel_path].get("hash") == pdf_hash:
-                # Already converted with same hash
+        for pdf_path in watch_path.rglob("*.pdf"):
+            # Skip hidden directories
+            if any(part.startswith('.') for part in pdf_path.parts):
                 continue
 
-        new_pdfs.append((pdf_path, pdf_hash))
+            # Get relative path for state tracking
+            try:
+                rel_path = str(pdf_path.relative_to(gcs_workspace))
+            except ValueError:
+                rel_path = pdf_path.name
+
+            # Check if already converted
+            try:
+                pdf_hash = get_pdf_hash(pdf_path)
+            except Exception as e:
+                logger.warning(f"Could not hash {rel_path}: {e}")
+                continue
+
+            if rel_path in state.get("converted", {}):
+                if state["converted"][rel_path].get("hash") == pdf_hash:
+                    # Already converted with same hash
+                    continue
+
+            new_pdfs.append((pdf_path, pdf_hash))
 
     return new_pdfs
 
@@ -297,6 +321,7 @@ def run_daemon():
     logger.info("Starting PDF watcher daemon")
     logger.info(f"  GCS workspace: {GCS_WORKSPACE}")
     logger.info(f"  Local workspace: {LOCAL_WORKSPACE}")
+    logger.info(f"  Watch directories: {WATCH_DIRECTORIES}")
     logger.info(f"  Poll interval: {POLL_INTERVAL}s")
 
     while True:
