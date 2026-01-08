@@ -107,6 +107,7 @@ services:
       - /home/aaronwhaley/workspace_local:/app/workspace_local
       - /var/run/docker.sock:/var/run/docker.sock
       - /home/aaronwhaley/roscoe/src/roscoe:/deps/roscoe/src/roscoe
+      - /home/aaronwhaley/roscoe/langgraph.json:/deps/roscoe/langgraph.json
       - /home/aaronwhaley/roscoe/credentials.json:/deps/roscoe/credentials.json
       - /home/aaronwhaley/roscoe/token.json:/deps/roscoe/token.json
     networks:
