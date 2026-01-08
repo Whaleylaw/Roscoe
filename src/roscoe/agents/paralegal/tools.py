@@ -92,10 +92,8 @@ from roscoe.core.workspace_resolver import (
     GCS_WORKSPACE,
 )
 
-# Get workspace root for file operations (paralegal agent workspace)
-# Use WORKSPACE_DIR env var (set in production), fallback to relative path for local dev
-# NOTE: This is kept for backward compatibility but file operations should use resolve_path()
-workspace_root = Path(os.environ.get("WORKSPACE_DIR", str(Path(__file__).parent.parent.parent.parent.parent / "workspace_paralegal")))
+# NOTE: File operations now use resolve_path() from workspace_resolver module which routes
+# text files to LOCAL_WORKSPACE and binary files to GCS_WORKSPACE
 
 
 # Define the internet search tool
@@ -159,9 +157,10 @@ def analyze_image(
     """
     try:
         # Convert workspace-relative path to absolute path
+        # Images are binary files - always use GCS workspace mount
         if file_path.startswith('/'):
             file_path = file_path[1:]  # Remove leading slash
-        abs_path = workspace_root / file_path
+        abs_path = GCS_WORKSPACE / file_path
 
         if not abs_path.exists():
             return f"Error: Image file not found at {file_path}"
@@ -241,9 +240,10 @@ def analyze_audio(
         from openai import OpenAI
         
         # Convert workspace-relative path to absolute path
+        # Audio files are binary - always use GCS workspace mount
         if file_path.startswith('/'):
             file_path = file_path[1:]  # Remove leading slash
-        abs_path = workspace_root / file_path
+        abs_path = GCS_WORKSPACE / file_path
 
         if not abs_path.exists():
             return f"Error: Audio file not found at {file_path}"
@@ -333,9 +333,10 @@ def analyze_video(
     """
     try:
         # Convert workspace-relative path to absolute path
+        # Video files are binary - always use GCS workspace mount
         if file_path.startswith('/'):
             file_path = file_path[1:]  # Remove leading slash
-        abs_path = workspace_root / file_path
+        abs_path = GCS_WORKSPACE / file_path
 
         if not abs_path.exists():
             return f"Error: Video file not found at {file_path}"
