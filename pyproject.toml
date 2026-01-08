@@ -29,8 +29,7 @@ dependencies = [
     "python-dotenv",
     "docker>=7.0.0",
     "rapidfuzz",  # Fuzzy string matching for case context middleware
-    "copilotkit",  # CopilotKit SDK for UI integration
-    "fastapi",     # Web framework for CopilotKit endpoint
+    "fastapi",     # Web framework for upload service
     "uvicorn",     # ASGI server
     "openai",      # OpenAI SDK (used for Thesys C1 API)
     "google-cloud-storage",  # GCS SDK for signed URL generation
@@ -55,7 +54,7 @@ dependencies = [
 
 [tool.setuptools]
 package-dir = {"" = "src"}
-packages = ["roscoe", "roscoe.core", "roscoe.agents", "roscoe.agents.paralegal", "roscoe.agents.coding", "roscoe.workflow_engine", "roscoe.workflow_engine.orchestrator", "roscoe.scripts"]
+packages = ["roscoe", "roscoe.core", "roscoe.agents", "roscoe.agents.paralegal", "roscoe.workflow_engine", "roscoe.workflow_engine.orchestrator", "roscoe.scripts"]
 
 [tool.setuptools.package-data]
 "*" = ["*.md", "*.txt", "*.json"]

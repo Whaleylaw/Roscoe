@@ -101,8 +101,6 @@ services:
       PYTHONUNBUFFERED: 1
       FALKORDB_HOST: roscoe-graphdb
       FALKORDB_PORT: '6379'
-      # Unset baked-in LANGSERVE_GRAPHS so it reads from langgraph.json instead
-      LANGSERVE_GRAPHS: ''
     volumes:
       - /mnt/workspace:/app/workspace_paralegal
       - /mnt/workspace:/mnt/workspace
