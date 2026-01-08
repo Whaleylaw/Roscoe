@@ -13,6 +13,7 @@ Architecture:
 3. Skills injection: Relevant skills loaded into system prompt
 4. Custom sub-agent: multimodal-agent (inherits model from MODEL_PROVIDER)
 5. General-purpose sub-agent: Built-in, inherits main agent model
+6. ShellToolMiddleware: Provides Glob, Grep, and shell access to LOCAL_WORKSPACE
 
 Model Selection (via MODEL_PROVIDER environment variable):
 - "anthropic" (default): Claude Sonnet 4.5
@@ -22,10 +23,10 @@ Model Selection (via MODEL_PROVIDER environment variable):
 Research and other capabilities are handled through the skills system.
 See workspace/Skills/skills_manifest.json for available skills.
 
-Script Execution:
-- Docker-based script execution with direct GCS filesystem access
-- Scripts in /Tools/ run in isolated containers with read-write access
-- Playwright browser automation available for web scraping
+Workspace Architecture:
+- GCS_WORKSPACE (/mnt/workspace): Binary files (PDFs, images, audio, video)
+- LOCAL_WORKSPACE (/app/workspace_local): Text files (synced from GCS)
+- ShellToolMiddleware operates on LOCAL_WORKSPACE for fast file operations
 """
 
 import os
@@ -44,8 +45,7 @@ from roscoe.agents.paralegal.sub_agents import get_multimodal_sub_agent
 from roscoe.agents.paralegal.tools import (
     send_slack_message,
     upload_file_to_slack,
-    execute_python_script,  # Docker-based script execution with GCS access
-    execute_python_script_with_browser,  # Playwright browser automation
+    # NOTE: execute_python_script tools removed - use ShellToolMiddleware instead
     list_skills,  # List all available skills with YAML descriptions
     refresh_skills,  # Rescan skills directory mid-session
     load_skill,  # Load a specific skill by name
@@ -103,8 +103,13 @@ MANIFEST_PATH = Path(__file__).parent / "skills_manifest.json"
 # In local dev: Override with WORKSPACE_DIR env variable
 workspace_dir = os.environ.get("WORKSPACE_DIR", "/mnt/workspace")
 
+# Local workspace for fast text file access (synced from GCS)
+# ShellToolMiddleware will point here for fast Glob/Grep operations
+local_workspace_dir = os.environ.get("LOCAL_WORKSPACE", "/home/aaronwhaley/workspace_local")
+
 # Check if we're in production (LangGraph server with checkpointing)
-# Shell tool can't be used with checkpointing due to pickle issues
+# NOTE: ShellToolMiddleware is now enabled - it provides Glob, Grep, and shell access
+# to LOCAL_WORKSPACE for fast text file operations
 is_production = os.environ.get("LANGGRAPH_DEPLOYMENT", "false").lower() == "true"
 
 # Create middleware instances (so tools can access them)
@@ -147,8 +152,7 @@ personal_assistant_agent = create_deep_agent(
     tools=[
         send_slack_message,
         upload_file_to_slack,
-        execute_python_script,  # Docker-based script execution with GCS filesystem access
-        execute_python_script_with_browser,  # Playwright browser automation for web scraping
+        # NOTE: execute_python_script tools removed - ShellToolMiddleware provides shell access
         # File operations
         move_file,  # Move/rename files within workspace
         copy_file,  # Copy files within workspace
@@ -208,17 +212,13 @@ personal_assistant_agent = create_deep_agent(
         skill_selector_middleware,
         # UI context: bridges CopilotKit UI state to agent (open documents, workspace location)
         UIContextMiddleware(),
+        # Shell tool: provides Glob, Grep, and shell commands for LOCAL_WORKSPACE
+        # Points to local SSD for fast text file operations (synced from GCS)
+        ShellToolMiddleware(
+            workspace_root=local_workspace_dir,
+            execution_policy=HostExecutionPolicy(),
+        ),
     ],
-    # DISABLED: ShellToolMiddleware causes pickle errors with LangGraph checkpointing
-    # The middleware below was causing TypeError: cannot pickle '_thread.lock' object
-    # because LANGGRAPH_DEPLOYMENT env var was not set, making is_production=False
-    # Uncomment for local dev testing only:
-    # + ([] if is_production else [
-    #     ShellToolMiddleware(
-    #         workspace_root=workspace_dir,
-    #         execution_policy=HostExecutionPolicy(),
-    #     ),
-    # ]),
     checkpointer=False if not is_production else None,  # Let server handle checkpointing in production
 ).with_config({"recursion_limit": 500})
 
