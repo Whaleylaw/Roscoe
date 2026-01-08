@@ -682,7 +682,8 @@ def display_document(
         if file_path.startswith('/'):
             file_path = file_path[1:]
 
-        abs_path = workspace_root / file_path
+        # Use workspace resolver to route to local (text) or GCS (binary)
+        abs_path = resolve_path(file_path, 'read')
 
         # Validate file exists
         if not abs_path.exists():
@@ -761,7 +762,8 @@ def upload_file_to_slack(
         # Convert workspace-relative path to absolute path
         if file_path.startswith('/'):
             file_path = file_path[1:]
-        abs_path = workspace_root / file_path
+        # Use workspace resolver to route to local (text) or GCS (binary)
+        abs_path = resolve_path(file_path, 'read')
 
         if not abs_path.exists():
             return f"Error: File not found at {file_path}"
