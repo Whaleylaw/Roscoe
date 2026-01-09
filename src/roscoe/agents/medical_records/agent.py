@@ -45,12 +45,11 @@ def create_medical_records_agent():
     tools = get_tools()
 
     # Create the agent with react pattern
-    # Note: ShellToolMiddleware needs to be applied differently in LangGraph
-    # For now, we use create_react_agent with tools
+    # Note: In newer LangGraph versions, use 'prompt' instead of 'state_modifier'
     agent = create_react_agent(
         model=model,
         tools=tools,
-        state_modifier=MEDICAL_RECORDS_ANALYSIS_PROMPT,
+        prompt=MEDICAL_RECORDS_ANALYSIS_PROMPT,
     )
 
     return agent
