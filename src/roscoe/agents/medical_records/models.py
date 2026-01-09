@@ -12,7 +12,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 # ============================================================================
 # MODEL CONFIGURATION
 # ============================================================================
-PRIMARY_MODEL = "claude-sonnet-4-5-20250514"
+PRIMARY_MODEL = "claude-sonnet-4-5-20250929"
 FALLBACK_MODEL = "gemini-3-flash-preview"
 ENABLE_FALLBACK = True
 # ============================================================================
