@@ -72,6 +72,10 @@ from roscoe.agents.paralegal.tools import (
     update_landmark,  # Update landmark status (complete/in_progress/incomplete)
     advance_phase,  # Advance case to next phase (checks blockers)
     recalculate_case_phase,  # Analyze phase readiness (completion % + blockers)
+    # Medical records analysis dispatch (fire-and-forget pattern)
+    dispatch_medical_records_analysis,  # Start background analysis
+    get_medical_analysis_status,  # Check status of running analysis
+    list_analysis_jobs,  # List all analysis jobs
 )
 # Gmail tools for email management (requires Google OAuth credentials)
 from roscoe.agents.paralegal.gmail_tools import (
@@ -197,6 +201,10 @@ personal_assistant_agent = create_deep_agent(
         delete_event,
         find_free_time,
         get_event,
+        # Medical records analysis dispatch (fire-and-forget background analysis)
+        dispatch_medical_records_analysis,  # Start background analysis agent
+        get_medical_analysis_status,  # Check analysis progress
+        list_analysis_jobs,  # List all analysis jobs
     ],
     middleware=[
         # NOTE: create_deep_agent adds its own SummarizationMiddleware internally.

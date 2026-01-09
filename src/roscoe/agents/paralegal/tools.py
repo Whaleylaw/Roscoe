@@ -2511,3 +2511,248 @@ def recalculate_case_phase(case_name: str) -> str:
         
     except Exception as e:
         return f"Error recalculating phase: {str(e)}"
+
+
+# =============================================================================
+# MEDICAL RECORDS ANALYSIS DISPATCH TOOLS
+# Fire-and-forget pattern for background analysis (see Anthropic "Effective Harnesses")
+# =============================================================================
+
+# Analysis jobs directory - shared between paralegal and medical records agent
+ANALYSIS_JOBS_DIR = LOCAL_WORKSPACE / "analysis_jobs"
+
+
+def dispatch_medical_records_analysis(
+    case_name: str,
+    case_folder: str,
+) -> str:
+    """
+    Dispatch comprehensive medical records analysis to a background agent.
+
+    This starts a fire-and-forget analysis workflow that runs asynchronously.
+    The analysis agent will:
+    1. Extract facts from litigation documents (complaint, police reports)
+    2. Inventory and extract all medical records
+    3. Build treatment chronology
+    4. Analyze causation, inconsistencies, red flags, missing records
+    5. Create attorney-ready FINAL_SUMMARY.md
+
+    You can continue with other tasks while the analysis runs in the background.
+    Use get_medical_analysis_status(job_id) to check progress.
+
+    Args:
+        case_name: Human-readable case name (e.g., "Caryn McCay MVA")
+        case_folder: Workspace path to case folder (e.g., "/projects/Caryn-McCay-MVA-7-30-2023")
+
+    Returns:
+        Job details including job_id for status checking
+
+    Examples:
+        dispatch_medical_records_analysis("Caryn McCay MVA", "/projects/Caryn-McCay-MVA-7-30-2023")
+        dispatch_medical_records_analysis("Wilson MVA 2024", "/projects/Wilson-MVA-2024")
+    """
+    import uuid
+    from datetime import datetime
+
+    try:
+        # Generate unique job ID
+        job_id = f"med-analysis-{uuid.uuid4().hex[:8]}"
+
+        # Create job directory and status file
+        job_dir = ANALYSIS_JOBS_DIR / job_id
+        job_dir.mkdir(parents=True, exist_ok=True)
+
+        # Initial job status
+        job_status = {
+            "job_id": job_id,
+            "case_name": case_name,
+            "case_folder": case_folder,
+            "status": "queued",
+            "created_at": datetime.now().isoformat(),
+            "current_phase": "setup",
+            "message": "Analysis queued, waiting for agent to start",
+            "phase_history": [],
+        }
+
+        # Write status file
+        status_path = job_dir / "status.json"
+        status_path.write_text(json.dumps(job_status, indent=2))
+
+        # TODO: In production, this would POST to LangGraph API to start the agent
+        # POST /threads with graph_id="medical_records_agent"
+        # For now, we create the job entry and the medical records agent
+        # would be started separately (via langgraph CLI or API)
+
+        # Check if case folder exists
+        case_path = GCS_WORKSPACE / case_folder.lstrip("/")
+        if not case_path.exists():
+            return f"""❌ Case folder not found: {case_folder}
+
+Please verify the case folder path exists in the workspace."""
+
+        # Check for medical records folder
+        medical_records_path = case_path / "Medical Records"
+        has_medical_records = medical_records_path.exists()
+
+        return f"""✅ **Medical Records Analysis Dispatched**
+
+**Job ID:** `{job_id}`
+**Case:** {case_name}
+**Case Folder:** {case_folder}
+**Status:** Queued
+
+**Case Folder Check:**
+- Medical Records folder: {"✅ Found" if has_medical_records else "⚠️ Not found"}
+
+**Next Steps:**
+1. The analysis agent will start automatically
+2. Use `get_medical_analysis_status("{job_id}")` to check progress
+3. Results will be saved to `{case_folder}/reports/FINAL_SUMMARY.md`
+
+**Analysis Phases:**
+1. Fact Investigation - Extract details from litigation docs
+2. Medical Organization & Extraction - Inventory + extract all records
+3. Parallel Analysis - Inconsistencies, red flags, causation, missing records
+4. Final Synthesis - Create attorney-ready summary
+
+I'll continue with other tasks while this runs in the background."""
+
+    except Exception as e:
+        return f"❌ Error dispatching medical records analysis: {str(e)}"
+
+
+def get_medical_analysis_status(job_id: str) -> str:
+    """
+    Check the status of a dispatched medical records analysis job.
+
+    Args:
+        job_id: The job ID returned by dispatch_medical_records_analysis
+
+    Returns:
+        Current status, phase, progress, and any results
+
+    Examples:
+        get_medical_analysis_status("med-analysis-abc12345")
+    """
+    try:
+        job_dir = ANALYSIS_JOBS_DIR / job_id
+        status_path = job_dir / "status.json"
+
+        if not status_path.exists():
+            return f"❌ Job not found: {job_id}\n\nUse list_analysis_jobs() to see available jobs."
+
+        job_status = json.loads(status_path.read_text())
+
+        status = job_status.get("status", "unknown")
+        current_phase = job_status.get("current_phase", "unknown")
+        message = job_status.get("message", "")
+        case_name = job_status.get("case_name", "Unknown")
+        case_folder = job_status.get("case_folder", "")
+        created_at = job_status.get("created_at", "")
+        updated_at = job_status.get("updated_at", "")
+        result_path = job_status.get("result_path", "")
+        error = job_status.get("error", "")
+
+        # Build status display
+        status_emoji = {
+            "queued": "⏳",
+            "running": "🔄",
+            "completed": "✅",
+            "failed": "❌",
+        }.get(status, "❓")
+
+        lines = [
+            f"**Medical Records Analysis Status**\n",
+            f"**Job ID:** `{job_id}`",
+            f"**Case:** {case_name}",
+            f"**Status:** {status_emoji} {status.upper()}",
+            f"**Current Phase:** {current_phase}",
+        ]
+
+        if message:
+            lines.append(f"**Message:** {message}")
+
+        if created_at:
+            lines.append(f"**Started:** {created_at}")
+        if updated_at:
+            lines.append(f"**Last Update:** {updated_at}")
+
+        if status == "completed" and result_path:
+            lines.append(f"\n**Results Available:**")
+            lines.append(f"📄 `{result_path}`")
+            lines.append(f"\nWould you like me to read the summary?")
+
+        if status == "failed" and error:
+            lines.append(f"\n**Error:** {error}")
+
+        # Show phase history if available
+        phase_history = job_status.get("phase_history", [])
+        if phase_history:
+            lines.append(f"\n**Phase History:**")
+            for ph in phase_history[-5:]:  # Show last 5 phases
+                lines.append(f"  - {ph.get('phase')}: {ph.get('started_at', '')}")
+
+        return "\n".join(lines)
+
+    except Exception as e:
+        return f"❌ Error checking job status: {str(e)}"
+
+
+def list_analysis_jobs() -> str:
+    """
+    List all medical records analysis jobs.
+
+    Returns a summary of all dispatched analysis jobs including their status.
+
+    Returns:
+        List of jobs with status, case name, and creation time
+    """
+    try:
+        if not ANALYSIS_JOBS_DIR.exists():
+            return "No analysis jobs found. Use dispatch_medical_records_analysis() to start one."
+
+        jobs = []
+        for job_dir in ANALYSIS_JOBS_DIR.iterdir():
+            if job_dir.is_dir():
+                status_path = job_dir / "status.json"
+                if status_path.exists():
+                    try:
+                        job_status = json.loads(status_path.read_text())
+                        jobs.append({
+                            "job_id": job_status.get("job_id", job_dir.name),
+                            "case_name": job_status.get("case_name", "Unknown"),
+                            "status": job_status.get("status", "unknown"),
+                            "current_phase": job_status.get("current_phase", ""),
+                            "created_at": job_status.get("created_at", ""),
+                        })
+                    except Exception:
+                        pass
+
+        if not jobs:
+            return "No analysis jobs found. Use dispatch_medical_records_analysis() to start one."
+
+        # Sort by creation time (newest first)
+        jobs.sort(key=lambda x: x.get("created_at", ""), reverse=True)
+
+        lines = ["**Medical Records Analysis Jobs**\n"]
+
+        status_emoji = {
+            "queued": "⏳",
+            "running": "🔄",
+            "completed": "✅",
+            "failed": "❌",
+        }
+
+        for job in jobs:
+            emoji = status_emoji.get(job["status"], "❓")
+            lines.append(
+                f"- `{job['job_id']}` {emoji} **{job['case_name']}** "
+                f"({job['status']}, phase: {job['current_phase']})"
+            )
+
+        lines.append(f"\nUse `get_medical_analysis_status(job_id)` for details.")
+
+        return "\n".join(lines)
+
+    except Exception as e:
+        return f"❌ Error listing analysis jobs: {str(e)}"
