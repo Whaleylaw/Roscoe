@@ -3,9 +3,10 @@
 import { useState } from "react";
 import { FileBrowser } from "./file-browser";
 import { ThreadManager } from "./thread-manager";
+import { JobsKanban } from "./jobs-kanban";
 import { cn } from "@/lib/utils";
 
-type Tab = "files" | "threads";
+type Tab = "files" | "threads" | "jobs";
 
 export function LeftSidebar() {
   const [activeTab, setActiveTab] = useState<Tab>("files");
@@ -18,7 +19,7 @@ export function LeftSidebar() {
           Whaley Law Firm
         </h1>
       </div>
-      
+
       {/* Tab Buttons */}
       <div className="shrink-0 border-b border-[#d4c5a9] p-2 bg-[#f8f7f4]">
         <div className="flex w-full bg-[#f5f3ed] border border-[#d4c5a9] rounded-md p-1">
@@ -44,6 +45,17 @@ export function LeftSidebar() {
             >
               Threads
           </button>
+          <button
+            onClick={() => setActiveTab("jobs")}
+            className={cn(
+              "flex-1 text-[12px] py-1.5 rounded-sm font-medium transition-colors",
+              activeTab === "jobs"
+                ? "bg-[#1e3a5f] text-white"
+                : "text-[#1e3a5f] hover:bg-white/50"
+            )}
+            >
+              Jobs
+          </button>
         </div>
         </div>
 
@@ -52,6 +64,7 @@ export function LeftSidebar() {
         <div className="absolute top-0 left-0 right-0 h-full overflow-y-auto">
           {activeTab === "files" && <FileBrowser />}
           {activeTab === "threads" && <ThreadManager />}
+          {activeTab === "jobs" && <JobsKanban />}
         </div>
       </div>
     </div>
