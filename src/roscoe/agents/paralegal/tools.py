@@ -2691,6 +2691,89 @@ def recalculate_case_phase(case_name: str) -> str:
 ANALYSIS_JOBS_DIR = LOCAL_WORKSPACE / "analysis_jobs"
 
 
+def _invoke_langgraph_agent(graph_id: str, input_message: str, metadata: dict = None) -> dict:
+    """
+    Invoke a LangGraph agent via the REST API (fire-and-forget).
+
+    This creates a new thread and starts a run on the specified graph.
+    The run executes asynchronously - we don't wait for it to complete.
+
+    Args:
+        graph_id: The graph ID from langgraph.json (e.g., "medical_records_agent")
+        input_message: The initial message to send to the agent
+        metadata: Optional metadata to attach to the thread
+
+    Returns:
+        dict with thread_id and run_id if successful, or error details
+    """
+    import urllib.request
+    import urllib.error
+
+    # LangGraph API URL - inside container it's localhost:8000, from host it's :8123
+    langgraph_url = os.environ.get("LANGGRAPH_API_URL", "http://localhost:8000")
+
+    try:
+        # Step 1: Create a new thread
+        thread_data = json.dumps({"metadata": metadata or {}}).encode("utf-8")
+        thread_req = urllib.request.Request(
+            f"{langgraph_url}/threads",
+            data=thread_data,
+            headers={"Content-Type": "application/json"},
+            method="POST"
+        )
+
+        with urllib.request.urlopen(thread_req, timeout=30) as response:
+            thread_response = json.loads(response.read().decode("utf-8"))
+            thread_id = thread_response.get("thread_id")
+
+        if not thread_id:
+            return {"error": "Failed to create thread - no thread_id returned"}
+
+        # Step 2: Start a run on the thread with the specified graph
+        # Use background mode so the run executes asynchronously
+        run_data = json.dumps({
+            "assistant_id": graph_id,
+            "input": {
+                "messages": [
+                    {"role": "user", "content": input_message}
+                ]
+            },
+            "config": {
+                "configurable": {
+                    "thread_id": thread_id
+                }
+            },
+            "stream_mode": "values",  # We don't actually stream, just kick it off
+            "background": True  # Fire-and-forget mode
+        }).encode("utf-8")
+
+        run_req = urllib.request.Request(
+            f"{langgraph_url}/threads/{thread_id}/runs",
+            data=run_data,
+            headers={"Content-Type": "application/json"},
+            method="POST"
+        )
+
+        with urllib.request.urlopen(run_req, timeout=30) as response:
+            run_response = json.loads(response.read().decode("utf-8"))
+            run_id = run_response.get("run_id")
+
+        return {
+            "success": True,
+            "thread_id": thread_id,
+            "run_id": run_id,
+            "graph_id": graph_id
+        }
+
+    except urllib.error.HTTPError as e:
+        error_body = e.read().decode("utf-8") if e.fp else str(e)
+        return {"error": f"HTTP {e.code}: {error_body}"}
+    except urllib.error.URLError as e:
+        return {"error": f"Connection error: {str(e.reason)}"}
+    except Exception as e:
+        return {"error": f"Unexpected error: {str(e)}"}
+
+
 def dispatch_medical_records_analysis(
     case_name: str,
     case_folder: str,
@@ -2731,28 +2814,7 @@ def dispatch_medical_records_analysis(
         job_dir = ANALYSIS_JOBS_DIR / job_id
         job_dir.mkdir(parents=True, exist_ok=True)
 
-        # Initial job status
-        job_status = {
-            "job_id": job_id,
-            "case_name": case_name,
-            "case_folder": case_folder,
-            "status": "queued",
-            "created_at": datetime.now().isoformat(),
-            "current_phase": "setup",
-            "message": "Analysis queued, waiting for agent to start",
-            "phase_history": [],
-        }
-
-        # Write status file
-        status_path = job_dir / "status.json"
-        status_path.write_text(json.dumps(job_status, indent=2))
-
-        # TODO: In production, this would POST to LangGraph API to start the agent
-        # POST /threads with graph_id="medical_records_agent"
-        # For now, we create the job entry and the medical records agent
-        # would be started separately (via langgraph CLI or API)
-
-        # Check if case folder exists
+        # Check if case folder exists first
         case_path = GCS_WORKSPACE / case_folder.lstrip("/")
         if not case_path.exists():
             return f"""❌ Case folder not found: {case_folder}
@@ -2763,18 +2825,88 @@ Please verify the case folder path exists in the workspace."""
         medical_records_path = case_path / "Medical Records"
         has_medical_records = medical_records_path.exists()
 
+        # Initial job status
+        job_status = {
+            "job_id": job_id,
+            "case_name": case_name,
+            "case_folder": case_folder,
+            "status": "queued",
+            "created_at": datetime.now().isoformat(),
+            "current_phase": "setup",
+            "message": "Analysis queued, starting agent...",
+            "phase_history": [],
+        }
+
+        # Write status file
+        status_path = job_dir / "status.json"
+        status_path.write_text(json.dumps(job_status, indent=2))
+
+        # Build the initial message for the medical records agent
+        initial_prompt = f"""You are starting a comprehensive medical records analysis for a personal injury case.
+
+**Job ID:** {job_id}
+**Case Name:** {case_name}
+**Case Folder:** {case_folder}
+
+Your first step is to call `update_job_status` to mark this job as "running" with phase "fact_investigation".
+
+Then proceed with the full analysis workflow:
+1. Fact Investigation - Extract incident details from litigation docs
+2. Medical Organization & Extraction - Inventory and extract all medical records
+3. Parallel Analysis - Analyze inconsistencies, red flags, causation, missing records
+4. Final Synthesis - Create FINAL_SUMMARY.md
+
+Remember to update job status at each phase transition using `update_job_status`.
+When complete, mark status as "completed" with the result_path.
+If you encounter errors, mark status as "failed" with the error message.
+
+Begin the analysis now."""
+
+        # Invoke the medical_records_agent via LangGraph API
+        result = _invoke_langgraph_agent(
+            graph_id="medical_records_agent",
+            input_message=initial_prompt,
+            metadata={
+                "job_id": job_id,
+                "case_name": case_name,
+                "case_folder": case_folder,
+            }
+        )
+
+        if result.get("error"):
+            # Update status to failed if we couldn't start the agent
+            job_status["status"] = "failed"
+            job_status["error"] = f"Failed to start agent: {result['error']}"
+            job_status["updated_at"] = datetime.now().isoformat()
+            status_path.write_text(json.dumps(job_status, indent=2))
+
+            return f"""❌ **Failed to dispatch Medical Records Analysis**
+
+**Error:** {result['error']}
+
+The job status file has been created at `{job_id}/status.json` but the agent could not be started.
+This may be a temporary issue - you can try again later."""
+
+        # Update status with thread/run info
+        job_status["thread_id"] = result.get("thread_id")
+        job_status["run_id"] = result.get("run_id")
+        job_status["message"] = "Agent started successfully"
+        job_status["updated_at"] = datetime.now().isoformat()
+        status_path.write_text(json.dumps(job_status, indent=2))
+
         return f"""✅ **Medical Records Analysis Dispatched**
 
 **Job ID:** `{job_id}`
 **Case:** {case_name}
 **Case Folder:** {case_folder}
-**Status:** Queued
+**Status:** Running (agent started)
+**Thread ID:** `{result.get('thread_id', 'N/A')}`
 
 **Case Folder Check:**
 - Medical Records folder: {"✅ Found" if has_medical_records else "⚠️ Not found"}
 
 **Next Steps:**
-1. The analysis agent will start automatically
+1. The analysis agent is now running in the background
 2. Use `get_medical_analysis_status("{job_id}")` to check progress
 3. Results will be saved to `{case_folder}/reports/FINAL_SUMMARY.md`
 
