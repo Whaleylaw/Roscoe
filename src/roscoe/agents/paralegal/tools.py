@@ -2691,6 +2691,51 @@ def recalculate_case_phase(case_name: str) -> str:
 ANALYSIS_JOBS_DIR = LOCAL_WORKSPACE / "analysis_jobs"
 
 
+def _get_or_create_assistant(langgraph_url: str, graph_id: str) -> str:
+    """
+    Get an existing assistant for the graph, or create one if it doesn't exist.
+
+    Returns the assistant_id (UUID).
+    """
+    import urllib.request
+    import urllib.error
+
+    # Search for existing assistant with this graph_id
+    search_data = json.dumps({"graph_id": graph_id}).encode("utf-8")
+    search_req = urllib.request.Request(
+        f"{langgraph_url}/assistants/search",
+        data=search_data,
+        headers={"Content-Type": "application/json"},
+        method="POST"
+    )
+
+    with urllib.request.urlopen(search_req, timeout=30) as response:
+        assistants = json.loads(response.read().decode("utf-8"))
+
+    if assistants:
+        # Return the first matching assistant's ID
+        return assistants[0]["assistant_id"]
+
+    # No assistant exists - create one
+    create_data = json.dumps({
+        "graph_id": graph_id,
+        "name": graph_id,
+        "config": {"recursion_limit": 500},
+        "metadata": {"created_by": "system"}
+    }).encode("utf-8")
+
+    create_req = urllib.request.Request(
+        f"{langgraph_url}/assistants",
+        data=create_data,
+        headers={"Content-Type": "application/json"},
+        method="POST"
+    )
+
+    with urllib.request.urlopen(create_req, timeout=30) as response:
+        assistant = json.loads(response.read().decode("utf-8"))
+        return assistant["assistant_id"]
+
+
 def _invoke_langgraph_agent(graph_id: str, input_message: str, metadata: dict = None) -> dict:
     """
     Invoke a LangGraph agent via the REST API (fire-and-forget).
@@ -2713,6 +2758,9 @@ def _invoke_langgraph_agent(graph_id: str, input_message: str, metadata: dict = 
     langgraph_url = os.environ.get("LANGGRAPH_API_URL", "http://localhost:8000")
 
     try:
+        # Step 0: Get or create an assistant for this graph
+        assistant_id = _get_or_create_assistant(langgraph_url, graph_id)
+
         # Step 1: Create a new thread
         thread_data = json.dumps({"metadata": metadata or {}}).encode("utf-8")
         thread_req = urllib.request.Request(
@@ -2729,10 +2777,10 @@ def _invoke_langgraph_agent(graph_id: str, input_message: str, metadata: dict = 
         if not thread_id:
             return {"error": "Failed to create thread - no thread_id returned"}
 
-        # Step 2: Start a run on the thread with the specified graph
+        # Step 2: Start a run on the thread with the assistant
         # Use background mode so the run executes asynchronously
         run_data = json.dumps({
-            "assistant_id": graph_id,
+            "assistant_id": assistant_id,
             "input": {
                 "messages": [
                     {"role": "user", "content": input_message}
