@@ -998,12 +998,181 @@ def list_gcs_files(
 
 
 # =============================================================================
-# NOTE: Script execution tools (execute_python_script, execute_python_script_with_browser)
-# were removed in favor of ShellToolMiddleware which provides:
-# - Persistent shell session with Glob/Grep file search
-# - Direct access to LOCAL_WORKSPACE for fast text file operations
-# - Native filesystem access without Docker overhead
+# Script Execution Tools (Docker-based)
+# These tools run Python scripts in isolated Docker containers with full
+# workspace access. Use for scripts that need special dependencies (Playwright,
+# heavy packages) or browser automation.
 # =============================================================================
+
+
+def run_workspace_script(
+    script_path: str,
+    case_name: str = None,
+    script_args: list = None,
+    timeout: int = 300,
+) -> str:
+    """
+    Execute a Python script from the Tools folder in an isolated Docker container.
+
+    Use this for running Python scripts that:
+    - Are stored in /Tools/ folder
+    - Need standard dependencies (requests, pandas, etc.)
+    - Don't require browser automation
+
+    The script runs in Docker with:
+    - Full read/write access to /workspace (GCS mount)
+    - API keys passed through (Tavily, OpenAI, etc.)
+    - 5-minute default timeout (configurable)
+
+    Args:
+        script_path: Path to script relative to workspace root.
+                    Example: "/Tools/create_file_inventory.py" or "Tools/analyze.py"
+        case_name: Optional case folder to use as working directory.
+                  Example: "Wilson-MVA-2024" -> cwd = /workspace/projects/Wilson-MVA-2024
+        script_args: Optional list of command-line arguments.
+                    Example: ["--output", "Reports/result.json", "--verbose"]
+        timeout: Maximum execution time in seconds (default: 300, max: 1800)
+
+    Returns:
+        Formatted execution result with stdout/stderr and status.
+
+    Examples:
+        # Run inventory script for a case
+        run_workspace_script(
+            script_path="/Tools/create_file_inventory.py",
+            case_name="Wilson-MVA-2024"
+        )
+
+        # Run script with arguments
+        run_workspace_script(
+            script_path="/Tools/analyze_data.py",
+            script_args=["--format", "json", "--output", "/Reports/analysis.json"]
+        )
+    """
+    try:
+        from roscoe.agents.paralegal.script_executor import (
+            execute_python_script,
+            format_execution_result,
+        )
+
+        result = execute_python_script(
+            script_path=script_path,
+            case_name=case_name,
+            script_args=script_args,
+            timeout=timeout,
+            enable_playwright=False,
+            enable_internet=True,
+        )
+
+        return format_execution_result(result)
+
+    except Exception as e:
+        return f"Error executing script: {str(e)}"
+
+
+def run_browser_script(
+    script_path: str,
+    case_name: str = None,
+    script_args: list = None,
+    timeout: int = 600,
+) -> str:
+    """
+    Execute a Python script with Playwright browser automation in Docker.
+
+    Use this for scripts that need browser automation:
+    - KYeCourts docket lookups (/Tools/web_scraping/kyecourts_docket.py)
+    - LexisNexis crash report ordering (/Tools/crash_reports/lexis_crash_order.py)
+    - Any web scraping that requires JavaScript rendering
+
+    The script runs in a Playwright-enabled Docker container with:
+    - Chromium browser pre-installed
+    - Full read/write access to /workspace
+    - All API keys and credentials passed through
+    - 10-minute default timeout (browser tasks take longer)
+
+    Args:
+        script_path: Path to script relative to workspace root.
+                    Example: "/Tools/web_scraping/kyecourts_docket.py"
+        case_name: Optional case folder for working directory.
+        script_args: Optional command-line arguments.
+                    Example: ["--county", "JEFFERSON", "--case-number", "25-CI-00133"]
+        timeout: Maximum execution time in seconds (default: 600, max: 1800)
+
+    Returns:
+        Formatted execution result with stdout/stderr and status.
+
+    Examples:
+        # Look up a case on KYeCourts
+        run_browser_script(
+            script_path="/Tools/web_scraping/kyecourts_docket.py",
+            script_args=["--county", "JEFFERSON", "--case-number", "25-CI-00133"]
+        )
+
+        # Order a crash report from LexisNexis
+        run_browser_script(
+            script_path="/Tools/crash_reports/lexis_crash_order.py",
+            script_args=["--report-number", "12345", "--output", "/Reports/crash/"]
+        )
+    """
+    try:
+        from roscoe.agents.paralegal.script_executor import (
+            execute_python_script,
+            format_execution_result,
+        )
+
+        result = execute_python_script(
+            script_path=script_path,
+            case_name=case_name,
+            script_args=script_args,
+            timeout=timeout,
+            enable_playwright=True,  # Use Playwright-enabled Docker image
+            enable_internet=True,
+        )
+
+        return format_execution_result(result)
+
+    except Exception as e:
+        return f"Error executing browser script: {str(e)}"
+
+
+def get_script_execution_info() -> str:
+    """
+    Get information about script execution capabilities.
+
+    Shows:
+    - Current execution mode (docker vs native)
+    - Available Docker images
+    - Whether Playwright is available
+
+    Returns:
+        Status information about script execution environment.
+    """
+    try:
+        from roscoe.agents.paralegal.script_executor import get_execution_mode_info
+
+        info = get_execution_mode_info()
+
+        lines = [
+            "## Script Execution Status",
+            "",
+            f"**Configured Mode:** {info['configured_mode']}",
+            f"**Effective Mode:** {info['effective_mode']}",
+            "",
+            "### Docker Status",
+            f"- SDK Installed: {'Yes' if info['docker_sdk_installed'] else 'No'}",
+            f"- Daemon Available: {'Yes' if info['docker_daemon_available'] else 'No'}",
+            f"- Base Image: {info['base_image']} ({'Available' if info['base_image_available'] else 'Not Found'})",
+            f"- Playwright Image: {info['playwright_image']} ({'Available' if info['playwright_image_available'] else 'Not Found'})",
+            "",
+            "### Paths",
+            f"- Workspace Root: {info['workspace_root']}",
+            f"- Python: {info['native_python']}",
+        ]
+
+        return "\n".join(lines)
+
+    except Exception as e:
+        return f"Error getting execution info: {str(e)}"
 
 
 # =============================================================================

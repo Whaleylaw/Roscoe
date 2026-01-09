@@ -45,7 +45,10 @@ from roscoe.agents.paralegal.sub_agents import get_multimodal_sub_agent
 from roscoe.agents.paralegal.tools import (
     send_slack_message,
     upload_file_to_slack,
-    # NOTE: execute_python_script tools removed - use ShellToolMiddleware instead
+    # Script execution tools (Docker-based isolation)
+    run_workspace_script,  # Execute Python scripts in isolated Docker container
+    run_browser_script,  # Execute scripts with Playwright browser automation
+    get_script_execution_info,  # Check script execution capabilities
     list_skills,  # List all available skills with YAML descriptions
     refresh_skills,  # Rescan skills directory mid-session
     load_skill,  # Load a specific skill by name
@@ -156,7 +159,10 @@ personal_assistant_agent = create_deep_agent(
     tools=[
         send_slack_message,
         upload_file_to_slack,
-        # NOTE: execute_python_script tools removed - ShellToolMiddleware provides shell access
+        # Script execution tools (Docker-based isolation for complex scripts)
+        run_workspace_script,  # Execute Python scripts from Tools folder
+        run_browser_script,  # Execute scripts with Playwright (for KYeCourts, LexisNexis)
+        get_script_execution_info,  # Check Docker/script execution capabilities
         # File operations
         move_file,  # Move/rename files within workspace
         copy_file,  # Copy files within workspace
