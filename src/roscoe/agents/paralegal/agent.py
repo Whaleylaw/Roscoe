@@ -13,7 +13,7 @@ Architecture:
 3. Skills injection: Relevant skills loaded into system prompt
 4. Custom sub-agent: multimodal-agent (inherits model from MODEL_PROVIDER)
 5. General-purpose sub-agent: Built-in, inherits main agent model
-6. ShellToolMiddleware: Provides Glob, Grep, and shell access to LOCAL_WORKSPACE
+6. Patched ShellToolMiddleware: Provides Glob, Grep, and shell access to LOCAL_WORKSPACE (pickle-safe)
 
 Model Selection (via MODEL_PROVIDER environment variable):
 - "anthropic" (default): Claude Sonnet 4.5
@@ -26,16 +26,17 @@ See workspace/Skills/skills_manifest.json for available skills.
 Workspace Architecture:
 - GCS_WORKSPACE (/mnt/workspace): Binary files (PDFs, images, audio, video)
 - LOCAL_WORKSPACE (/app/workspace_local): Text files (synced from GCS)
-- ShellToolMiddleware operates on LOCAL_WORKSPACE for fast file operations
+- Patched ShellToolMiddleware operates on LOCAL_WORKSPACE for fast file operations (pickle-safe)
 """
 
 import os
 from pathlib import Path
 from deepagents import create_deep_agent
 from deepagents.backends import FilesystemBackend
-from langchain.agents.middleware import ShellToolMiddleware, HostExecutionPolicy
+from langchain.agents.middleware import HostExecutionPolicy
 
 from roscoe.agents.paralegal.models import get_agent_llm, MODEL_PROVIDER
+from roscoe.core.patched_shell_middleware import get_patched_shell_middleware
 from roscoe.core.skill_middleware import SkillSelectorMiddleware, set_middleware_instance
 from roscoe.core.case_context_middleware import CaseContextMiddleware
 from roscoe.core.workflow_middleware import WorkflowMiddleware
@@ -115,8 +116,8 @@ workspace_dir = os.environ.get("WORKSPACE_DIR", "/mnt/workspace")
 local_workspace_dir = os.environ.get("LOCAL_WORKSPACE", "/home/aaronwhaley/workspace_local")
 
 # Check if we're in production (LangGraph server with checkpointing)
-# NOTE: ShellToolMiddleware is now enabled - it provides Glob, Grep, and shell access
-# to LOCAL_WORKSPACE for fast text file operations
+# NOTE: Patched ShellToolMiddleware is enabled - it provides Glob, Grep, and shell access
+# to LOCAL_WORKSPACE for fast text file operations (stores session resources externally to avoid pickle errors)
 is_production = os.environ.get("LANGGRAPH_DEPLOYMENT", "false").lower() == "true"
 
 # Create middleware instances (so tools can access them)
@@ -228,7 +229,8 @@ personal_assistant_agent = create_deep_agent(
         UIContextMiddleware(),
         # Shell tool: provides Glob, Grep, and shell commands for LOCAL_WORKSPACE
         # Points to local SSD for fast text file operations (synced from GCS)
-        ShellToolMiddleware(
+        # Using patched version to avoid pickle errors with LangGraph checkpointing
+        get_patched_shell_middleware(
             workspace_root=local_workspace_dir,
             execution_policy=HostExecutionPolicy(),
         ),
