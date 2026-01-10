@@ -14,9 +14,12 @@ interface WorkbenchState {
   // Layout state (ChatGPT/Claude style)
   leftSidebarOpen: boolean;
   rightPanelOpen: boolean;
+  panelsSwapped: boolean; // When true, artifact in center, chat in right panel
   toggleLeftSidebar: () => void;
   toggleRightPanel: () => void;
   setRightPanelOpen: (open: boolean) => void;
+  togglePanelsSwapped: () => void;
+  setPanelsSwapped: (swapped: boolean) => void;
 
   // View state
   centerView: CenterView;
@@ -55,9 +58,12 @@ export const useWorkbenchStore = create<WorkbenchState>((set, get) => ({
   // Layout state (ChatGPT/Claude style) - left OPEN by default (changed from false)
   leftSidebarOpen: true,
   rightPanelOpen: false,
+  panelsSwapped: false,
   toggleLeftSidebar: () => set((state) => ({ leftSidebarOpen: !state.leftSidebarOpen })),
   toggleRightPanel: () => set((state) => ({ rightPanelOpen: !state.rightPanelOpen })),
   setRightPanelOpen: (open) => set({ rightPanelOpen: open }),
+  togglePanelsSwapped: () => set((state) => ({ panelsSwapped: !state.panelsSwapped, rightPanelOpen: true })),
+  setPanelsSwapped: (swapped) => set({ panelsSwapped: swapped }),
 
   // View state
   centerView: "viewer",

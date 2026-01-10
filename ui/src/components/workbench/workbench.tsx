@@ -9,12 +9,13 @@ import { Menu, X, PanelRightClose, PanelRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function Workbench() {
-  const { 
-    leftSidebarOpen, 
-    rightPanelOpen, 
+  const {
+    leftSidebarOpen,
+    rightPanelOpen,
+    panelsSwapped,
     toggleLeftSidebar,
     toggleRightPanel,
-    openDocument 
+    openDocument
   } = useWorkbenchStore();
 
   return (
@@ -31,7 +32,7 @@ export function Workbench() {
         </div>
       </aside>
 
-      {/* Main Content Area - Chat Centered */}
+      {/* Main Content Area - Conditionally Chat or Artifact */}
       <main className="flex-1 min-w-0 max-w-full flex flex-col relative overflow-hidden">
         {/* Top Bar */}
         <div className="shrink-0 flex items-center justify-between px-4 py-2 border-b border-[#d4c5a9] bg-white">
@@ -51,10 +52,10 @@ export function Workbench() {
               rightPanelOpen
                 ? "bg-[#1e3a5f] text-white"
                 : "hover:bg-[#f5f3ed] text-[#1e3a5f]",
-              !openDocument && "opacity-50 cursor-not-allowed"
+              !openDocument && !panelsSwapped && "opacity-50 cursor-not-allowed"
             )}
             title={rightPanelOpen ? "Close panel" : "Open panel"}
-            disabled={!openDocument && !rightPanelOpen}
+            disabled={!openDocument && !rightPanelOpen && !panelsSwapped}
           >
             {rightPanelOpen ? (
               <PanelRightClose className="h-5 w-5" />
@@ -64,25 +65,25 @@ export function Workbench() {
           </button>
         </div>
 
-        {/* Chat - Fully constrained */}
+        {/* Content - Chat or Artifact based on swap state */}
         <div className="flex-1 min-h-0 overflow-hidden">
-          <ChatPanel />
+          {panelsSwapped ? <RightPanel /> : <ChatPanel />}
         </div>
       </main>
 
-      {/* Right Panel - Documents/Artifacts */}
+      {/* Right Panel - Artifact or Chat based on swap state */}
       <aside
         className={cn(
           "shrink-0 border-l border-[#d4c5a9] bg-white shadow-[-2px_0_8px_rgba(30,58,95,0.08)]",
           "transition-all duration-300 ease-in-out",
-          rightPanelOpen ? "w-[500px]" : "w-0"
+          rightPanelOpen ? (panelsSwapped ? "w-[400px]" : "w-[500px]") : "w-0"
         )}
       >
         <div className={cn(
           "h-full transition-opacity duration-200",
           rightPanelOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}>
-          <RightPanel />
+          {panelsSwapped ? <ChatPanel /> : <RightPanel />}
         </div>
       </aside>
     </div>

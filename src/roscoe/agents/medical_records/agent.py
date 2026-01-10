@@ -3,7 +3,7 @@ Medical Records Analysis Agent.
 
 A standalone LangGraph agent for comprehensive medical records analysis
 in personal injury cases. Uses:
-- create_react_agent for the agent loop
+- create_agent (LangChain v1) for the agent loop
 - ShellToolMiddleware for file operations (glob, grep, shell)
 - Progress tracking via progress.json
 - Task list with passes: true/false to prevent premature completion
@@ -14,7 +14,7 @@ This agent is invoked via fire-and-forget pattern from the paralegal DeepAgent.
 import os
 from pathlib import Path
 
-from langgraph.prebuilt import create_react_agent
+from langchain.agents import create_agent
 from langchain.agents.middleware import ShellToolMiddleware, HostExecutionPolicy
 
 from roscoe.agents.medical_records.models import get_agent_llm
@@ -45,11 +45,17 @@ def create_medical_records_agent():
     tools = get_tools()
 
     # Create the agent with react pattern
-    # Note: In newer LangGraph versions, use 'prompt' instead of 'state_modifier'
-    agent = create_react_agent(
+    # Using LangChain v1 create_agent (replaces deprecated create_react_agent)
+    agent = create_agent(
         model=model,
         tools=tools,
-        prompt=MEDICAL_RECORDS_ANALYSIS_PROMPT,
+        system_prompt=MEDICAL_RECORDS_ANALYSIS_PROMPT,
+        middleware=[
+            ShellToolMiddleware(
+                workspace_root=LOCAL_WORKSPACE,
+                execution_policy=HostExecutionPolicy(),
+            ),
+        ],
     )
 
     return agent

@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 type ViewTab = "document" | "artifact";
 
 export function RightPanel() {
-  const { openDocument, setOpenDocument, setRightPanelOpen } = useWorkbenchStore();
+  const { openDocument, setOpenDocument, setRightPanelOpen, panelsSwapped, setPanelsSwapped } = useWorkbenchStore();
   const [activeTab, setActiveTab] = useState<ViewTab>("document");
   const [agentArtifact, setAgentArtifact] = useState<{
     html: string;
@@ -54,6 +54,10 @@ export function RightPanel() {
     setOpenDocument(null);
     setAgentArtifact(null);
     setManualHTML(null);
+    // Revert swap when closing artifact
+    if (panelsSwapped) {
+      setPanelsSwapped(false);
+    }
   };
 
   // Determine what to show

@@ -1,6 +1,7 @@
 "use client";
 
-import { ExternalLink, Download } from "lucide-react";
+import { ExternalLink, Download, ArrowLeftRight } from "lucide-react";
+import { useWorkbenchStore } from "@/stores/workbench-store";
 
 interface HTMLSandboxProps {
   html: string;
@@ -9,6 +10,8 @@ interface HTMLSandboxProps {
 }
 
 export function HTMLSandbox({ html, title, filePath }: HTMLSandboxProps) {
+  const { panelsSwapped, togglePanelsSwapped } = useWorkbenchStore();
+
   const downloadHTML = () => {
     const blob = new Blob([html], { type: "text/html" });
     const url = URL.createObjectURL(blob);
@@ -30,6 +33,13 @@ export function HTMLSandbox({ html, title, filePath }: HTMLSandboxProps) {
           )}
         </div>
         <div className="flex items-center gap-1">
+          <button
+            onClick={togglePanelsSwapped}
+            title={panelsSwapped ? "Move to side panel" : "Expand to center"}
+            className="p-2 rounded-lg text-[#1e3a5f] hover:bg-[#f5f3ed] border border-transparent hover:border-[#d4c5a9] transition-colors"
+          >
+            <ArrowLeftRight className="h-4 w-4" />
+          </button>
           <button
             onClick={() => {
               const blob = new Blob([html], { type: "text/html" });
