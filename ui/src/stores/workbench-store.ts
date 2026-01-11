@@ -1,11 +1,19 @@
 import { create } from "zustand";
 import { CenterView, LeftView, OpenDocument, WorkspaceFile, Thread } from "@/types";
 
+export interface FileAttachment {
+  name: string;
+  size: number;
+  type: string; // MIME type
+  data: string; // base64 encoded
+}
+
 export interface ChatMessage {
   id: string;
   role: "user" | "assistant";
   content: string;
   timestamp: string;
+  attachments?: FileAttachment[];
 }
 
 type MessageUpdater = ChatMessage[] | ((prev: ChatMessage[]) => ChatMessage[]);

@@ -2,10 +2,23 @@ import { NextRequest } from "next/server";
 
 const LANGGRAPH_URL = process.env.NEXT_PUBLIC_LANGGRAPH_URL || "http://localhost:2024";
 
+interface FileAttachment {
+  name: string;
+  size: number;
+  type: string;
+  data: string; // base64
+}
+
+interface MessageWithAttachments {
+  role: string;
+  content: string;
+  attachments?: FileAttachment[];
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { messages, thread_id } = body;
+    const { messages, thread_id } = body as { messages: MessageWithAttachments[]; thread_id?: string };
 
     console.log("[Chat API] Forwarding to LangGraph:", LANGGRAPH_URL);
     console.log("[Chat API] Thread ID:", thread_id || "(new thread)");
@@ -35,6 +48,65 @@ export async function POST(request: NextRequest) {
       console.log("[Chat API] Created thread:", threadId);
     }
 
+    // Format messages with Claude content blocks for multimodal support
+    const formattedMessages = messages.map((m) => {
+      const hasAttachments = m.attachments && m.attachments.length > 0;
+
+      // If no attachments, use simple string content
+      if (!hasAttachments) {
+        return {
+          type: m.role === "user" ? "human" : "ai",
+          content: m.content,
+        };
+      }
+
+      // With attachments, use content blocks array
+      const contentBlocks: any[] = [];
+
+      // Add text block if content exists
+      if (m.content) {
+        contentBlocks.push({
+          type: "text",
+          text: m.content,
+        });
+      }
+
+      // Add image/document blocks for attachments
+      m.attachments!.forEach((file) => {
+        if (file.type.startsWith("image/")) {
+          // Image attachment - use Claude image format
+          contentBlocks.push({
+            type: "image",
+            source: {
+              type: "base64",
+              media_type: file.type,
+              data: file.data,
+            },
+          });
+        } else {
+          // Non-image: add as document block with text description
+          // Agent will need to handle saving these to workspace
+          contentBlocks.push({
+            type: "document",
+            source: {
+              type: "base64",
+              media_type: file.type,
+              data: file.data,
+            },
+            metadata: {
+              filename: file.name,
+              size: file.size,
+            },
+          });
+        }
+      });
+
+      return {
+        type: m.role === "user" ? "human" : "ai",
+        content: contentBlocks,
+      };
+    });
+
     // Forward to LangGraph with thread_id
     // Include "events" stream mode to capture tool calls in real-time
     const response = await fetch(`${LANGGRAPH_URL}/threads/${threadId}/runs/stream`, {
@@ -45,10 +117,7 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         assistant_id: "roscoe_paralegal",
         input: {
-          messages: messages.map((m: { role: string; content: string }) => ({
-            type: m.role === "user" ? "human" : "ai",
-            content: m.content,
-          })),
+          messages: formattedMessages,
         },
         stream_mode: ["messages", "updates", "events"],
         config: {

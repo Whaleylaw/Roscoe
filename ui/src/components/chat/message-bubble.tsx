@@ -2,19 +2,20 @@
 
 import { useState } from "react";
 import { Avatar } from "@/components/ui/avatar";
-import { User, Scale, ChevronDown, ChevronRight, Loader2 } from "lucide-react";
+import { User, Scale, ChevronDown, ChevronRight, Loader2, FileText, Image as ImageIcon } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { ToolCallInfo } from "./message-list";
+import { ToolCallInfo, FileAttachment } from "./message-list";
 
 interface MessageBubbleProps {
   role: "user" | "assistant";
   content: string;
   timestamp?: string;
   toolCalls?: ToolCallInfo[];
+  attachments?: FileAttachment[];
 }
 
-export function MessageBubble({ role, content, timestamp, toolCalls }: MessageBubbleProps) {
+export function MessageBubble({ role, content, timestamp, toolCalls, attachments }: MessageBubbleProps) {
   const isUser = role === "user";
   const [expandedTools, setExpandedTools] = useState<Set<string>>(new Set());
 
@@ -114,6 +115,44 @@ export function MessageBubble({ role, content, timestamp, toolCalls }: MessageBu
                 )}
               </div>
             ))}
+          </div>
+        )}
+
+        {/* File attachments - shown above message for user, inline for assistant */}
+        {attachments && attachments.length > 0 && (
+          <div className="max-w-[85%] mb-2 space-y-2">
+            {attachments.map((file, index) => {
+              const isImage = file.type.startsWith("image/");
+              return (
+                <div
+                  key={index}
+                  className={`rounded-lg border overflow-hidden ${
+                    isUser ? "bg-white/10 border-[#c9a227]/30" : "bg-white border-[#d4c5a9]"
+                  }`}
+                >
+                  {isImage ? (
+                    <div className="p-2">
+                      <img
+                        src={`data:${file.type};base64,${file.data}`}
+                        alt={file.name}
+                        className="max-w-full max-h-[300px] rounded"
+                      />
+                      <div className="flex items-center gap-2 mt-2 text-xs text-[#8b7355]">
+                        <ImageIcon className="h-3 w-3" />
+                        <span>{file.name}</span>
+                        <span>({(file.size / 1024).toFixed(1)}KB)</span>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-2 p-2 text-xs">
+                      <FileText className="h-4 w-4 text-[#8b7355]" />
+                      <span className="font-medium text-[#2c3e50]">{file.name}</span>
+                      <span className="text-[#8b7355]">({(file.size / 1024).toFixed(1)}KB)</span>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
 

@@ -13,12 +13,20 @@ export interface ToolCallInfo {
   startTime: number;
 }
 
+export interface FileAttachment {
+  name: string;
+  size: number;
+  type: string; // MIME type
+  data: string; // base64 encoded
+}
+
 export interface ChatMessage {
   id: string;
   role: "user" | "assistant";
   content: string;
   timestamp: string;
   toolCalls?: ToolCallInfo[];
+  attachments?: FileAttachment[];
 }
 
 interface MessageListProps {
@@ -63,6 +71,7 @@ export function MessageList({ messages, isStreaming }: MessageListProps) {
               content={message.content}
               timestamp={message.timestamp}
               toolCalls={message.toolCalls}
+              attachments={message.attachments}
             />
           ))
         )}

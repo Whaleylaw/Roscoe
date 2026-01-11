@@ -329,34 +329,34 @@ class Mediation(BaseModel):
 
 ### HIGH PRIORITY
 
-**1. Add Case → Judge Direct Link**
+**1. Add Case → Judge Direct Link** 
 - Makes queries simpler
 - Track case assignments
 
-**2. Add Pleading → Attorney Link**
+**2. Add Pleading → Attorney Link** Yes, we need to add this.
 - Know who filed what
 - Discovery organization
 
-**3. Consider LawFirm Office Structure**
+**3. Consider LawFirm Office Structure** Yes, we need to add this.
 - Multi-office firms common
 - Mirrors medical Facility/Location pattern
 
 ### MEDIUM PRIORITY
 
-**4. Add CourtEvent Entity**
+**4. Add CourtEvent Entity** We need to add this.
 - Hearings, trials, conferences
 - Calendar integration
 
-**5. Enhanced Discovery Tracking**
+**5. Enhanced Discovery Tracking** Yes, we need to add this because our workflow system divides out discovery with interrogatories and depositions and so forth. We need to have that referenced here. 
 - Separate from generic Pleading?
 - Or enhance Pleading properties
 
 ### LOW PRIORITY
 
-**6. Mediation as separate entity**
+**6. Mediation as separate entity** Keep, have mediation be a separate entity.
 - Or part of CourtEvent?
 
-**7. Enhanced Attorney fields**
+**7. Enhanced Attorney fields** Sure!
 - Practice areas, bar dates, etc.
 
 ---

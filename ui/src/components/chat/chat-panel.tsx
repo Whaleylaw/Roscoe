@@ -44,12 +44,13 @@ export function ChatPanel() {
     setCurrentRunId(null);
   }, [langGraphThreadId, currentRunId]);
 
-  const handleSendMessage = async (content: string) => {
+  const handleSendMessage = async (content: string, attachments?: Array<{name: string; size: number; type: string; data: string}>) => {
     const userMessage: ChatMessage = {
       id: `user-${Date.now()}`,
       role: "user",
       content,
       timestamp: new Date().toISOString(),
+      attachments,
     };
 
     // Add user message immediately
@@ -74,13 +75,17 @@ export function ChatPanel() {
     setMessages(withAssistant);
 
     try {
-      // Build message history for LangGraph
+      // Build message history for LangGraph with attachments
       const messageHistory = messages
         .filter(m => m.id !== "welcome") // Don't send welcome message to agent
-        .map(m => ({ role: m.role, content: m.content }));
-      
-      // Add current message
-      messageHistory.push({ role: "user", content });
+        .map(m => ({
+          role: m.role,
+          content: m.content,
+          attachments: m.attachments
+        }));
+
+      // Add current message with attachments
+      messageHistory.push({ role: "user", content, attachments });
 
       let fullContent = "";
 
