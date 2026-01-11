@@ -192,10 +192,20 @@ export async function* streamLangGraphResponse(
   let currentEventType = "";
   let lastYieldedContent = "";
 
+  // Add timeout to prevent infinite hangs (2 minutes max)
+  const STREAM_TIMEOUT_MS = 120000;
+  const streamTimeout = setTimeout(() => {
+    console.warn("[LangGraph] Stream timeout - force closing connection");
+    reader.cancel().catch(() => {});
+  }, STREAM_TIMEOUT_MS);
+
   try {
     while (true) {
       const { done, value } = await reader.read();
-      if (done) break;
+      if (done) {
+        clearTimeout(streamTimeout);
+        break;
+      }
 
       buffer += decoder.decode(value, { stream: true });
       const lines = buffer.split("\n");
@@ -284,6 +294,42 @@ export async function* streamLangGraphResponse(
               }
               // Skip the rest of updates processing (avoid duplicate messages)
               continue;
+            }
+
+            // Handle messages/partial and messages/metadata events explicitly
+            if (currentEventType.startsWith("messages/")) {
+              // Format: array of message objects
+              if (Array.isArray(data) && data.length > 0) {
+                for (const item of data) {
+                  // Check for AI message with content
+                  if (item.content) {
+                    const text = extractTextContent(item.content);
+                    if (text) {
+                      // Always yield new content from messages/ events
+                      if (text.length > lastYieldedContent.length || text !== lastYieldedContent) {
+                        lastYieldedContent = text;
+                        console.log("[LangGraph] Message content:", text.slice(0, 100) + (text.length > 100 ? "..." : ""));
+                        yield { type: "message", content: text };
+                      }
+                    }
+
+                    // Check for tool_calls
+                    if (item.tool_calls && Array.isArray(item.tool_calls)) {
+                      for (const tc of item.tool_calls) {
+                        console.log("[LangGraph] Tool call:", tc.name);
+                        yield {
+                          type: "tool_call",
+                          tool_name: tc.name,
+                          tool_args: tc.args,
+                          tool_call_id: tc.id,
+                        };
+                      }
+                    }
+                    break; // Only process first message
+                  }
+                }
+              }
+              continue; // Skip generic processing for messages/ events
             }
 
             // Handle different LangGraph response formats
@@ -377,6 +423,7 @@ export async function* streamLangGraphResponse(
       }
     }
   } catch (e) {
+    clearTimeout(streamTimeout);
     // Check if this was an abort
     if (signal?.aborted) {
       console.log("[LangGraph] Stream aborted by user");
@@ -385,6 +432,7 @@ export async function* streamLangGraphResponse(
     }
     throw e;
   } finally {
+    clearTimeout(streamTimeout);
     reader.releaseLock();
   }
 }
