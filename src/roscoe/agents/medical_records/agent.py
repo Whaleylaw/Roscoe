@@ -4,7 +4,7 @@ Medical Records Analysis Agent.
 A standalone LangGraph agent for comprehensive medical records analysis
 in personal injury cases. Uses:
 - create_agent (LangChain v1) for the agent loop
-- ShellToolMiddleware for file operations (glob, grep, shell)
+- Patched ShellToolMiddleware for file operations (fixes pickle errors)
 - Progress tracking via progress.json
 - Task list with passes: true/false to prevent premature completion
 
@@ -15,8 +15,9 @@ import os
 from pathlib import Path
 
 from langchain.agents import create_agent
-from langchain.agents.middleware import ShellToolMiddleware, HostExecutionPolicy
+from langchain.agents.middleware import HostExecutionPolicy
 
+from roscoe.core.patched_shell_middleware import get_patched_shell_middleware
 from roscoe.agents.medical_records.models import get_agent_llm
 from roscoe.agents.medical_records.prompts import MEDICAL_RECORDS_ANALYSIS_PROMPT
 from roscoe.agents.medical_records.tools import get_tools
@@ -32,7 +33,7 @@ def create_medical_records_agent():
 
     Uses:
     - Claude Sonnet with Gemini fallback
-    - ShellToolMiddleware for file operations
+    - Patched ShellToolMiddleware for file operations (fixes pickle errors)
     - Custom progress tracking tools
 
     Returns:
@@ -51,7 +52,7 @@ def create_medical_records_agent():
         tools=tools,
         system_prompt=MEDICAL_RECORDS_ANALYSIS_PROMPT,
         middleware=[
-            ShellToolMiddleware(
+            get_patched_shell_middleware(
                 workspace_root=LOCAL_WORKSPACE,
                 execution_policy=HostExecutionPolicy(),
             ),
