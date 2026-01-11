@@ -58,6 +58,7 @@ from roscoe.agents.paralegal.tools import (
     move_file,  # Move/rename files within workspace
     copy_file,  # Copy files within workspace
     display_document,  # Display document/artifact in UI canvas
+    generate_directory_browser,  # Generate interactive HTML directory browser
     # Lob.com physical mail tools
     verify_address,  # Validate/standardize mailing addresses
     send_letter,  # Send letters via USPS
@@ -168,6 +169,7 @@ personal_assistant_agent = create_deep_agent(
         move_file,  # Move/rename files within workspace
         copy_file,  # Copy files within workspace
         display_document,  # Display document/artifact in UI canvas (right panel)
+        generate_directory_browser,  # Generate interactive HTML directory browser
         # Lob.com physical mail tools
         verify_address,  # Validate/standardize mailing addresses before sending
         send_letter,  # Send letters via USPS (demand letters, notices)
