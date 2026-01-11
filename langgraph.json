@@ -8,5 +8,8 @@
     "python_version": "3.11",
     "store": {
         "uri": "postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable"
+    },
+    "config": {
+        "recursion_limit": 250
     }
 }
