@@ -82,3 +82,40 @@ def test_count_items():
     files, folders = count_items(tree)
     assert files == 3
     assert folders == 2  # root + sub
+
+
+def test_generate_directory_browser_creates_html(tmp_path, monkeypatch):
+    """Test tool generates HTML file and calls display_document."""
+    from roscoe.agents.paralegal.tools import generate_directory_browser
+
+    # Create test workspace
+    workspace = tmp_path / "workspace"
+    workspace.mkdir()
+    (workspace / "Reports").mkdir()
+    (workspace / "test.txt").write_text("test")
+
+    # Mock LOCAL_WORKSPACE and display_document
+    monkeypatch.setattr('roscoe.agents.paralegal.tools.LOCAL_WORKSPACE', workspace)
+
+    display_called = []
+    def mock_display(path, title=None):
+        display_called.append((path, title))
+        return "✓ Displayed"
+    monkeypatch.setattr('roscoe.agents.paralegal.tools.display_document', mock_display)
+
+    # Call tool
+    result = generate_directory_browser(root_path="/", max_depth=2)
+
+    # Verify HTML was created
+    reports = workspace / "Reports"
+    html_files = list(reports.glob("directory_browser_*.html"))
+    assert len(html_files) == 1
+
+    # Verify display_document was called
+    assert len(display_called) == 1
+
+    # Verify HTML content
+    html_content = html_files[0].read_text()
+    assert "Whaley Law Firm" in html_content
+    assert "test.txt" in html_content
+    assert "const directoryData = " in html_content

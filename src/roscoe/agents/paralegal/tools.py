@@ -95,6 +95,13 @@ from roscoe.core.workspace_resolver import (
 # NOTE: File operations now use resolve_path() from workspace_resolver module which routes
 # text files to LOCAL_WORKSPACE and binary files to GCS_WORKSPACE
 
+# Import directory browser components
+from roscoe.agents.paralegal.directory_browser_template import HTML_TEMPLATE
+from roscoe.agents.paralegal.directory_browser_helpers import (
+    build_directory_tree,
+    count_items,
+)
+
 
 # Define the internet search tool
 def internet_search(
@@ -722,6 +729,133 @@ def display_document(
 
     except Exception as e:
         return f"❌ Error displaying document: {str(e)}"
+
+
+def generate_directory_browser(
+    root_path: str = "/",
+    max_depth: int = 3,
+    file_extensions: Optional[List[str]] = None,
+    exclude_patterns: Optional[List[str]] = None,
+    sort_by: Literal["name", "modified", "size"] = "name",
+    show_hidden: bool = False,
+) -> str:
+    """
+    Generate an interactive HTML directory browser for the workspace.
+
+    Creates a standalone HTML file that displays the directory structure with
+    expandable folders and clickable files. The HTML is shown in the document viewer.
+
+    Use this when:
+    - User asks to "show me the files" or "what's in this folder"
+    - User wants to browse a project directory
+    - User needs to see available reports or documents
+    - Replacing the old left panel file browser
+
+    Args:
+        root_path: Starting directory path (workspace-relative, e.g., "/", "/projects/Wilson-MVA-2024")
+        max_depth: Maximum folder depth to include (1-5, default 3)
+        file_extensions: Only show these extensions, e.g., ["pdf", "docx"] (None = all)
+        exclude_patterns: Skip items matching patterns, e.g., ["__pycache__", "*.pyc"]
+        sort_by: Sort by "name", "modified", or "size"
+        show_hidden: Include hidden files (starting with .)
+
+    Returns:
+        Success message with path to generated HTML
+
+    Examples:
+        # Show entire workspace
+        generate_directory_browser()
+
+        # Show specific project folder, 2 levels deep
+        generate_directory_browser(root_path="/projects/Wilson-MVA-2024", max_depth=2)
+
+        # Show only PDFs in Reports
+        generate_directory_browser(root_path="/Reports", file_extensions=["pdf"])
+
+        # Show recent files (sorted by modification time)
+        generate_directory_browser(root_path="/Reports", sort_by="modified", max_depth=2)
+    """
+    try:
+        from datetime import datetime
+        import json
+
+        # Normalize root_path
+        if root_path.startswith('/'):
+            root_path = root_path[1:]
+
+        # Resolve to absolute path
+        abs_root = LOCAL_WORKSPACE / root_path if root_path else LOCAL_WORKSPACE
+
+        # Validate path exists
+        if not abs_root.exists():
+            return f"❌ Path not found: {root_path or '/'}\n\nAvailable paths:\n- /Reports\n- /Database\n- /projects"
+
+        if not abs_root.is_dir():
+            return f"❌ Path is not a directory: {root_path}"
+
+        # Validate max_depth
+        if max_depth < 1 or max_depth > 5:
+            return "❌ max_depth must be between 1 and 5"
+
+        # Build directory tree
+        tree = build_directory_tree(
+            abs_root,
+            max_depth=max_depth,
+            current_depth=0,
+            show_hidden=show_hidden,
+            file_extensions=file_extensions,
+            exclude_patterns=exclude_patterns or ["__pycache__", ".git", ".DS_Store", "node_modules"],
+            sort_by=sort_by,
+        )
+
+        # Convert absolute paths to workspace-relative
+        def relativize_paths(node: Dict, base: Path) -> None:
+            if 'path' in node:
+                p = Path(node['path'])
+                try:
+                    rel = p.relative_to(base)
+                    node['path'] = f"/{rel}" if rel != Path('.') else "/"
+                except ValueError:
+                    pass
+
+            for child in node.get('children', []):
+                relativize_paths(child, base)
+
+        relativize_paths(tree, LOCAL_WORKSPACE)
+
+        # Count items
+        file_count, folder_count = count_items(tree)
+
+        # Generate timestamp
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timestamp_slug = datetime.now().strftime('%Y%m%d_%H%M%S')
+
+        # Generate HTML
+        tree_json = json.dumps(tree, indent=2)
+        html_content = HTML_TEMPLATE.format(
+            root_path=f"/{root_path}" if root_path else "/",
+            timestamp=timestamp,
+            file_count=file_count,  # Root is a folder, not a file
+            folder_count=folder_count - 1,  # Don't count root folder
+            tree_json=tree_json,
+        )
+
+        # Write to Reports
+        output_filename = f"directory_browser_{timestamp_slug}.html"
+        output_path = LOCAL_WORKSPACE / "Reports" / output_filename
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(html_content, encoding='utf-8')
+
+        # Display in right panel
+        display_result = display_document(
+            f"/Reports/{output_filename}",
+            title=f"Directory: {root_path or '/'}"
+        )
+
+        return f"✓ Directory browser generated and displayed\n\n📁 Showing: {root_path or '/'}\n📊 Contents: {file_count - 1} files, {folder_count - 1} folders\n💾 Saved: /Reports/{output_filename}\n\n{display_result}"
+
+    except Exception as e:
+        return f"❌ Error generating directory browser: {str(e)}"
 
 
 def upload_file_to_slack(
