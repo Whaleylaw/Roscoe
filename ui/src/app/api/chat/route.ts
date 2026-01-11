@@ -83,20 +83,27 @@ export async function POST(request: NextRequest) {
               data: file.data,
             },
           });
+        } else if (file.type.startsWith("text/") || file.name.endsWith(".txt") || file.name.endsWith(".md")) {
+          // Text file - decode and include as text content
+          try {
+            const decoded = Buffer.from(file.data, "base64").toString("utf-8");
+            contentBlocks.push({
+              type: "text",
+              text: `\n\n[File: ${file.name}]\n${decoded}\n[End of file]\n`,
+            });
+          } catch (e) {
+            console.error("[Chat API] Failed to decode text file:", file.name, e);
+            contentBlocks.push({
+              type: "text",
+              text: `\n\n[File attached: ${file.name} (${file.size} bytes, ${file.type})]\nNote: This file could not be decoded as text.\n`,
+            });
+          }
         } else {
-          // Non-image: add as document block with text description
-          // Agent will need to handle saving these to workspace
+          // Binary file (PDF, DOCX, etc.) - add as text description
+          // Agent should save to workspace and process via tools
           contentBlocks.push({
-            type: "document",
-            source: {
-              type: "base64",
-              media_type: file.type,
-              data: file.data,
-            },
-            metadata: {
-              filename: file.name,
-              size: file.size,
-            },
+            type: "text",
+            text: `\n\n[File attached: ${file.name} (${file.size} bytes, ${file.type})]\nData: base64:${file.data.substring(0, 100)}...\nNote: Binary file attached. Please save to workspace for processing.\n`,
           });
         }
       });
