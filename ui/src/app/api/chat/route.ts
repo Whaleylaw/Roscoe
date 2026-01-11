@@ -51,6 +51,9 @@ export async function POST(request: NextRequest) {
           })),
         },
         stream_mode: ["messages", "updates", "events"],
+        config: {
+          recursion_limit: 250,
+        },
       }),
     });
 
