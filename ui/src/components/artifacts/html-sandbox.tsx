@@ -11,6 +11,7 @@ interface HTMLSandboxProps {
 
 export function HTMLSandbox({ html, title, filePath }: HTMLSandboxProps) {
   const { panelsSwapped, togglePanelsSwapped } = useWorkbenchStore();
+  // Note: postMessage handling for open_document is done in RightPanel
 
   const downloadHTML = () => {
     const blob = new Blob([html], { type: "text/html" });

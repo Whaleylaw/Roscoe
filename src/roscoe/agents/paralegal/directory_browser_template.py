@@ -222,6 +222,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             const [viewerType, icon] = getFileInfo(fileExtension);
 
             // Send message to parent window to open file
+            // Use '*' as targetOrigin since srcdoc iframes have origin "null"
+            // Security: parent validates message structure before processing
             window.parent.postMessage({{
                 type: 'open_document',
                 payload: {{
@@ -229,7 +231,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                     type: viewerType,
                     source: 'directory_browser'
                 }}
-            }}, window.location.origin);
+            }}, '*');
 
             // Visual feedback
             console.log('Opening file:', filePath, 'as', viewerType);

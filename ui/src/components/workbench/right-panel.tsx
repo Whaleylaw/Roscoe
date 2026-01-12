@@ -49,8 +49,9 @@ export function RightPanel() {
   // Listen for postMessage from directory browser iframe
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
-      // SECURITY: Only accept messages from same origin
-      if (event.origin !== window.location.origin) {
+      // SECURITY: Accept messages from same origin OR from srcdoc iframes (origin "null")
+      // For srcdoc iframes, the origin is the string "null", not the value null
+      if (event.origin !== window.location.origin && event.origin !== "null") {
         console.warn('[RightPanel] Rejected postMessage from unauthorized origin:', event.origin);
         return;
       }
