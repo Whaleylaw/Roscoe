@@ -275,8 +275,31 @@ export async function* streamLangGraphResponse(
 
             // Check for tool results in "updates" stream (tool outputs)
             if (currentEventType === "updates") {
-              // Look for tool messages in various formats
-              const messages = data.messages || data.state?.messages || [];
+              // LangGraph update format can be:
+              // 1. { messages: [...] }
+              // 2. { state: { messages: [...] } }
+              // 3. { [nodeName]: { messages: [...] } } - e.g., { tools: { messages: [...] } }
+
+              let messages: any[] = [];
+
+              // Direct messages array
+              if (data.messages && Array.isArray(data.messages)) {
+                messages = data.messages;
+              }
+              // State with messages
+              else if (data.state?.messages && Array.isArray(data.state.messages)) {
+                messages = data.state.messages;
+              }
+              // Node-based updates (e.g., data.tools.messages, data.agent.messages)
+              else {
+                // Check all keys in data for objects with messages arrays
+                for (const key in data) {
+                  if (data[key]?.messages && Array.isArray(data[key].messages)) {
+                    messages = data[key].messages;
+                    break; // Take first match
+                  }
+                }
+              }
 
               for (const msg of messages) {
                 // Tool result format: { role: "tool", name: "write_file", content: "..." }
