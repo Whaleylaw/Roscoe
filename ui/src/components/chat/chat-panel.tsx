@@ -192,7 +192,9 @@ export function ChatPanel() {
 
         // Handle tool_result (from updates stream)
         else if (chunk.type === "tool_result") {
-          console.log("[Tool Result]", chunk.tool_name, chunk.tool_result);
+          console.log("[Tool Result]", chunk.tool_name, "Type:", typeof chunk.tool_result);
+          console.log("[Tool Result] Full result:", chunk.tool_result);
+
           // Update tool call status in the message
           setMessages((prev) => prev.map((m) =>
             m.id === assistantId
@@ -228,16 +230,22 @@ export function ChatPanel() {
           // Check if this is a display_document request (from any tool)
           // Tools like generate_directory_browser internally call display_document()
           // and include the JSON marker in their return value
+          console.log("[Tool Result] Checking for __display_document__, result type:", typeof result);
           if (typeof result === "string") {
+            console.log("[Tool Result] Result is string, length:", result.length);
+            console.log("[Tool Result] First 500 chars:", result.substring(0, 500));
             try {
               // Try to find JSON with __display_document__ marker anywhere in the result
               // Look for the pattern starting with { and containing "__display_document__": true
               // Extract the entire JSON object (may span multiple lines)
               const jsonMatch = result.match(/\{[\s\S]*?"__display_document__"[\s\S]*?\}/);
+              console.log("[Tool Result] JSON match found:", jsonMatch ? "YES" : "NO");
               if (jsonMatch) {
+                console.log("[Tool Result] Matched JSON:", jsonMatch[0]);
                 const parsed = JSON.parse(jsonMatch[0]);
+                console.log("[Tool Result] Parsed JSON:", parsed);
                 if (parsed.__display_document__) {
-                  console.log("[Tool Result] Display document requested:", parsed);
+                  console.log("[Tool Result] ✅ Display document requested:", parsed);
                   // Map tool's type to OpenDocument type
                   const typeMap: Record<string, "pdf" | "docx" | "md" | "html"> = {
                     pdf: "pdf",
@@ -248,16 +256,21 @@ export function ChatPanel() {
                     txt: "md", // Text files render as markdown
                   };
                   const docType = typeMap[parsed.type] || "md";
+                  console.log("[Tool Result] Opening document:", parsed.path, "Type:", docType);
                   setOpenDocument({
                     path: parsed.path,
                     type: docType,
                   });
                 }
+              } else {
+                console.log("[Tool Result] No __display_document__ marker found in result");
               }
             } catch (e) {
               // Not JSON or parse error, log and ignore
-              console.log("[Tool Result] Failed to parse display_document JSON:", e);
+              console.error("[Tool Result] Failed to parse display_document JSON:", e);
             }
+          } else {
+            console.log("[Tool Result] Result is not a string, it's:", typeof result);
           }
         }
 
