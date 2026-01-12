@@ -13,9 +13,10 @@ interface MessageBubbleProps {
   timestamp?: string;
   toolCalls?: ToolCallInfo[];
   attachments?: FileAttachment[];
+  messageType?: "text" | "tool_group";
 }
 
-export function MessageBubble({ role, content, timestamp, toolCalls, attachments }: MessageBubbleProps) {
+export function MessageBubble({ role, content, timestamp, toolCalls, attachments, messageType }: MessageBubbleProps) {
   const isUser = role === "user";
   const [expandedTools, setExpandedTools] = useState<Set<string>>(new Set());
 
@@ -44,6 +45,72 @@ export function MessageBubble({ role, content, timestamp, toolCalls, attachments
 
   const hasToolCalls = toolCalls && toolCalls.length > 0;
 
+  // For tool_group type, render only tool calls without avatar and message bubble
+  if (messageType === "tool_group") {
+    return (
+      <div className="flex gap-3">
+        {/* Spacer to align with message bubbles */}
+        <div className="w-8 shrink-0" />
+        <div className="flex-1">
+          <div className="w-full max-w-[85%] space-y-1">
+            {toolCalls?.map((tool) => (
+              <div
+                key={tool.id}
+                className={`text-xs rounded-md border ${
+                  tool.status === "running"
+                    ? "border-[#c9a227]/40 bg-[#fef9e7]"
+                    : "border-green-300/40 bg-green-50"
+                }`}
+              >
+                <button
+                  onClick={() => toggleToolExpanded(tool.id)}
+                  className="w-full flex items-center gap-2 px-2 py-1.5 text-left hover:bg-black/5"
+                >
+                  {expandedTools.has(tool.id) ? (
+                    <ChevronDown className="h-3 w-3 text-[#8b7355]" />
+                  ) : (
+                    <ChevronRight className="h-3 w-3 text-[#8b7355]" />
+                  )}
+                  {tool.status === "running" ? (
+                    <Loader2 className="h-3 w-3 animate-spin text-[#c9a227]" />
+                  ) : (
+                    <span className="text-green-600">✓</span>
+                  )}
+                  <span className="font-mono text-[#5a4a3a]">{tool.name}</span>
+                  {tool.status === "running" && (
+                    <span className="text-[#8b7355] ml-auto">
+                      {Math.round((Date.now() - tool.startTime) / 1000)}s
+                    </span>
+                  )}
+                </button>
+                {expandedTools.has(tool.id) && (
+                  <div className="px-2 pb-2 border-t border-[#d4c5a9]/30">
+                    {tool.args && (
+                      <div className="mt-1">
+                        <span className="text-[#8b7355]">Args:</span>
+                        <pre className="mt-0.5 p-1.5 bg-[#f5f0e8] rounded text-[10px] overflow-x-auto whitespace-pre-wrap break-all">
+                          {formatToolArgs(tool.args)}
+                        </pre>
+                      </div>
+                    )}
+                    {tool.result && (
+                      <div className="mt-1">
+                        <span className="text-[#8b7355]">Result:</span>
+                        <pre className="mt-0.5 p-1.5 bg-[#f5f0e8] rounded text-[10px] overflow-x-auto max-h-32 whitespace-pre-wrap break-all">
+                          {formatToolArgs(tool.result)}
+                        </pre>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={`flex gap-3 ${isUser ? "flex-row-reverse" : ""}`}>
       <Avatar className={`h-8 w-8 shrink-0 flex items-center justify-center ${
@@ -57,7 +124,7 @@ export function MessageBubble({ role, content, timestamp, toolCalls, attachments
       </Avatar>
 
       <div className={`flex-1 ${isUser ? "items-end" : "items-start"} flex flex-col`}>
-        {/* Tool calls - rendered above the message content */}
+        {/* Tool calls - rendered above the message content (for non-tool_group messages) */}
         {hasToolCalls && (
           <div className="w-full max-w-[85%] mb-2 space-y-1">
             {toolCalls.map((tool) => (

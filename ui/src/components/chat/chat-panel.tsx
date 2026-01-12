@@ -14,6 +14,11 @@ export function ChatPanel() {
   const [currentRunId, setCurrentRunId] = useState<string | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
 
+  // Trace-like rendering: turn tracking state
+  const [currentTurnId, setCurrentTurnId] = useState<string | null>(null);
+  const [activeMessageId, setActiveMessageId] = useState<string | null>(null);
+  const [toolGroupId, setToolGroupId] = useState<string | null>(null);
+
   // Callback when a new thread is created by the backend
   const handleThreadCreated = useCallback((threadId: string) => {
     console.log("[ChatPanel] LangGraph thread created:", threadId);
@@ -63,14 +68,29 @@ export function ChatPanel() {
     // Create AbortController for this request
     abortControllerRef.current = new AbortController();
 
+    // Create turn ID for trace-like rendering
+    const turnId = `turn-${Date.now()}`;
+    setCurrentTurnId(turnId);
+    setToolGroupId(null); // Reset tool group
+
+    // Local tracking variables (state updates don't work in async loops due to closures)
+    let currentActiveMessageId: string;
+    let currentToolGroupId: string | null = null;
+
     // Create placeholder for assistant message with empty toolCalls array
     const assistantId = `assistant-${Date.now()}`;
+    currentActiveMessageId = assistantId;
+    setActiveMessageId(assistantId);
     const withAssistant = [...withUserMessage, {
       id: assistantId,
       role: "assistant" as const,
       content: "",
       timestamp: new Date().toISOString(),
       toolCalls: [] as ToolCallInfo[],
+      // Trace-like rendering fields
+      turnId,
+      messageType: "text" as const,
+      isComplete: false,
     }];
     setMessages(withAssistant);
 
@@ -106,88 +126,193 @@ export function ChatPanel() {
 
         // Handle message content
         if (chunk.type === "message" && chunk.content) {
-          // Replace content, don't append (LangGraph sends full content each time)
-          // Check if new content is longer (accumulating) or completely different
-          if (chunk.content.length > fullContent.length && chunk.content.startsWith(fullContent)) {
-            // Incremental streaming - take the new longer content
-            fullContent = chunk.content;
-          } else if (!fullContent.includes(chunk.content)) {
-            // Completely new content - replace
-            fullContent = chunk.content;
+          const newContent = chunk.content;
+
+          // If there's an active tool group, mark it as complete before adding text
+          if (currentToolGroupId) {
+            setMessages((prev) => prev.map((m) =>
+              m.id === currentToolGroupId ? { ...m, isComplete: true } : m
+            ));
+            currentToolGroupId = null;
+            setToolGroupId(null);
+          }
+
+          // Detect if this is a NEW message segment (trace-like behavior)
+          const isNewSegment =
+            fullContent.length > 0 &&
+            !newContent.startsWith(fullContent) &&
+            !fullContent.startsWith(newContent);
+
+          if (isNewSegment) {
+            // Create a new message bubble for this segment
+            const newMessageId = `assistant-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`;
+            console.log("[ChatPanel] New message segment detected, creating:", newMessageId);
+
+            setMessages((prev) => {
+              // Mark previous message as complete
+              const updated = prev.map((m) =>
+                m.id === currentActiveMessageId ? { ...m, isComplete: true } : m
+              );
+              // Add new message
+              return [...updated, {
+                id: newMessageId,
+                role: "assistant" as const,
+                content: newContent,
+                timestamp: new Date().toISOString(),
+                toolCalls: [],
+                turnId,
+                messageType: "text" as const,
+                isComplete: false,
+              }];
+            });
+
+            currentActiveMessageId = newMessageId;
+            setActiveMessageId(newMessageId);
+            fullContent = newContent;
+          } else if (newContent.length > fullContent.length && newContent.startsWith(fullContent)) {
+            // Accumulating - update in place
+            fullContent = newContent;
+            setMessages((prev) => prev.map((m) =>
+              m.id === currentActiveMessageId
+                ? { ...m, content: fullContent }
+                : m
+            ));
+          } else if (newContent.length > fullContent.length) {
+            // Content is longer but doesn't start with fullContent - still update
+            fullContent = newContent;
+            setMessages((prev) => prev.map((m) =>
+              m.id === currentActiveMessageId
+                ? { ...m, content: fullContent }
+                : m
+            ));
           }
           // If chunk.content is a subset of fullContent, ignore it (duplicate)
 
           setStreamingContent(fullContent);
-
-          // Update the assistant message in place
-          setMessages((prev) => prev.map((m) =>
-            m.id === assistantId
-              ? { ...m, content: fullContent }
-              : m
-          ));
         }
 
         // Handle tool_start (from events stream)
         else if (chunk.type === "tool_start") {
           const toolId = chunk.tool_call_id || `tool-${Date.now()}`;
           console.log("[Tool Start]", chunk.tool_name, chunk.tool_args);
-          // Add tool call to the assistant message's toolCalls array
-          setMessages((prev) => prev.map((m) =>
-            m.id === assistantId
-              ? {
-                  ...m,
-                  toolCalls: [...(m.toolCalls || []), {
-                    id: toolId,
-                    name: chunk.tool_name || "unknown",
-                    args: chunk.tool_args,
-                    status: "running" as const,
-                    startTime: Date.now(),
-                  }],
-                }
-              : m
-          ));
-        }
 
-        // Handle tool_end (from events stream)
-        else if (chunk.type === "tool_end") {
-          const toolId = chunk.tool_call_id;
-          console.log("[Tool End]", chunk.tool_name, chunk.tool_result);
-          // Update the tool call status in the message
-          setMessages((prev) => prev.map((m) =>
-            m.id === assistantId
-              ? {
-                  ...m,
-                  toolCalls: (m.toolCalls || []).map(t =>
-                    t.id === toolId || (toolId === undefined && t.name === chunk.tool_name && t.status === "running")
-                      ? { ...t, status: "completed" as const, result: chunk.tool_result }
-                      : t
-                  ),
-                }
-              : m
-          ));
-        }
+          // Mark current text message as complete before tool calls
+          if (currentActiveMessageId && fullContent.length > 0) {
+            setMessages((prev) => prev.map((m) =>
+              m.id === currentActiveMessageId ? { ...m, isComplete: true } : m
+            ));
+          }
 
-        // Handle tool_call (from messages stream - fallback)
-        else if (chunk.type === "tool_call") {
-          const toolId = chunk.tool_call_id || `tool-${Date.now()}`;
-          console.log("[Tool Call]", chunk.tool_name, chunk.tool_args);
-          // Add tool call to message if not already tracked
-          setMessages((prev) => prev.map((m) => {
-            if (m.id !== assistantId) return m;
-            const toolCalls = m.toolCalls || [];
-            const exists = toolCalls.some(t => t.id === toolId || (t.name === chunk.tool_name && t.status === "running"));
-            if (exists) return m;
-            return {
-              ...m,
-              toolCalls: [...toolCalls, {
+          // Create or update tool group message
+          if (!currentToolGroupId) {
+            // Create new tool group message
+            const newToolGroupId = `tool-group-${Date.now()}`;
+            currentToolGroupId = newToolGroupId;
+            setToolGroupId(newToolGroupId);
+
+            setMessages((prev) => [...prev, {
+              id: newToolGroupId,
+              role: "assistant" as const,
+              content: "",
+              timestamp: new Date().toISOString(),
+              toolCalls: [{
                 id: toolId,
                 name: chunk.tool_name || "unknown",
                 args: chunk.tool_args,
                 status: "running" as const,
                 startTime: Date.now(),
               }],
+              turnId,
+              messageType: "tool_group" as const,
+              isComplete: false,
+            }]);
+          } else {
+            // Add to existing tool group
+            setMessages((prev) => prev.map((m) =>
+              m.id === currentToolGroupId
+                ? {
+                    ...m,
+                    toolCalls: [...(m.toolCalls || []), {
+                      id: toolId,
+                      name: chunk.tool_name || "unknown",
+                      args: chunk.tool_args,
+                      status: "running" as const,
+                      startTime: Date.now(),
+                    }],
+                  }
+                : m
+            ));
+          }
+        }
+
+        // Handle tool_end (from events stream)
+        else if (chunk.type === "tool_end") {
+          const toolId = chunk.tool_call_id;
+          console.log("[Tool End]", chunk.tool_name, chunk.tool_result);
+          // Update the tool call status in the tool group (or any message that has it)
+          setMessages((prev) => prev.map((m) => {
+            // Look for the tool in this message's toolCalls
+            const hasThisTool = (m.toolCalls || []).some(t =>
+              t.id === toolId || (toolId === undefined && t.name === chunk.tool_name && t.status === "running")
+            );
+            if (!hasThisTool) return m;
+            return {
+              ...m,
+              toolCalls: (m.toolCalls || []).map(t =>
+                t.id === toolId || (toolId === undefined && t.name === chunk.tool_name && t.status === "running")
+                  ? { ...t, status: "completed" as const, result: chunk.tool_result }
+                  : t
+              ),
             };
           }));
+        }
+
+        // Handle tool_call (from messages stream - fallback)
+        else if (chunk.type === "tool_call") {
+          const toolId = chunk.tool_call_id || `tool-${Date.now()}`;
+          console.log("[Tool Call]", chunk.tool_name, chunk.tool_args);
+
+          // Create or update tool group if needed
+          if (!currentToolGroupId) {
+            const newToolGroupId = `tool-group-${Date.now()}`;
+            currentToolGroupId = newToolGroupId;
+            setToolGroupId(newToolGroupId);
+
+            setMessages((prev) => [...prev, {
+              id: newToolGroupId,
+              role: "assistant" as const,
+              content: "",
+              timestamp: new Date().toISOString(),
+              toolCalls: [{
+                id: toolId,
+                name: chunk.tool_name || "unknown",
+                args: chunk.tool_args,
+                status: "running" as const,
+                startTime: Date.now(),
+              }],
+              turnId,
+              messageType: "tool_group" as const,
+              isComplete: false,
+            }]);
+          } else {
+            // Add to existing tool group if not already tracked
+            setMessages((prev) => prev.map((m) => {
+              if (m.id !== currentToolGroupId) return m;
+              const toolCalls = m.toolCalls || [];
+              const exists = toolCalls.some(t => t.id === toolId || (t.name === chunk.tool_name && t.status === "running"));
+              if (exists) return m;
+              return {
+                ...m,
+                toolCalls: [...toolCalls, {
+                  id: toolId,
+                  name: chunk.tool_name || "unknown",
+                  args: chunk.tool_args,
+                  status: "running" as const,
+                  startTime: Date.now(),
+                }],
+              };
+            }));
+          }
         }
 
         // Handle tool_result (from updates stream)
@@ -195,19 +320,21 @@ export function ChatPanel() {
           console.log("[Tool Result]", chunk.tool_name, "Type:", typeof chunk.tool_result);
           console.log("[Tool Result] Full result:", chunk.tool_result);
 
-          // Update tool call status in the message
-          setMessages((prev) => prev.map((m) =>
-            m.id === assistantId
-              ? {
-                  ...m,
-                  toolCalls: (m.toolCalls || []).map(t =>
-                    (t.id === chunk.tool_call_id) || (t.name === chunk.tool_name && t.status === "running")
-                      ? { ...t, status: "completed" as const, result: chunk.tool_result }
-                      : t
-                  ),
-                }
-              : m
-          ));
+          // Update tool call status in the tool group (or any message that has it)
+          setMessages((prev) => prev.map((m) => {
+            const hasThisTool = (m.toolCalls || []).some(t =>
+              (t.id === chunk.tool_call_id) || (t.name === chunk.tool_name && t.status === "running")
+            );
+            if (!hasThisTool) return m;
+            return {
+              ...m,
+              toolCalls: (m.toolCalls || []).map(t =>
+                (t.id === chunk.tool_call_id) || (t.name === chunk.tool_name && t.status === "running")
+                  ? { ...t, status: "completed" as const, result: chunk.tool_result }
+                  : t
+              ),
+            };
+          }));
 
           // Check if this is a file write that created an HTML artifact
           const result = chunk.tool_result;
@@ -277,11 +404,11 @@ export function ChatPanel() {
         // Handle errors
         else if (chunk.type === "error") {
           console.log("[Error]", chunk.content);
-          // User cancelled - update message to show cancelled
+          // User cancelled - update the active message to show cancelled
           if (chunk.content === "Request cancelled") {
             setMessages((prev) => prev.map((m) =>
-              m.id === assistantId
-                ? { ...m, content: fullContent + "\n\n*[Cancelled by user]*" }
+              m.id === currentActiveMessageId
+                ? { ...m, content: fullContent + "\n\n*[Cancelled by user]*", isComplete: true }
                 : m
             ));
           }
@@ -291,17 +418,17 @@ export function ChatPanel() {
       // Final update with complete content
       if (fullContent) {
         setMessages((prev) => prev.map((m) =>
-          m.id === assistantId
+          m.id === currentActiveMessageId
             ? { ...m, content: fullContent, timestamp: new Date().toISOString() }
             : m
         ));
       }
-      
+
     } catch (error) {
       console.error("Error streaming:", error);
       setMessages((prev) => prev.map((m) =>
-        m.id === assistantId
-          ? { ...m, content: "Sorry, I encountered an error. Please check your connection and try again." }
+        m.id === currentActiveMessageId
+          ? { ...m, content: "Sorry, I encountered an error. Please check your connection and try again.", isComplete: true }
           : m
       ));
     } finally {
@@ -309,6 +436,18 @@ export function ChatPanel() {
       setStreamingContent("");
       setCurrentRunId(null);
       abortControllerRef.current = null;
+
+      // Mark all messages in this turn as complete (hides tool groups)
+      if (currentTurnId) {
+        setMessages((prev) => prev.map((m) =>
+          m.turnId === currentTurnId
+            ? { ...m, isComplete: true }
+            : m
+        ));
+      }
+      setCurrentTurnId(null);
+      setActiveMessageId(null);
+      setToolGroupId(null);
     }
   };
 

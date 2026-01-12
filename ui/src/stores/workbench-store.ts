@@ -24,6 +24,10 @@ export interface ChatMessage {
   timestamp: string;
   toolCalls?: ToolCallInfo[];
   attachments?: FileAttachment[];
+  // Trace-like rendering fields
+  turnId?: string;                              // Groups messages in same turn
+  messageType?: "text" | "tool_group";          // Type of message segment
+  isComplete?: boolean;                         // True when not streaming
 }
 
 type MessageUpdater = ChatMessage[] | ((prev: ChatMessage[]) => ChatMessage[]);

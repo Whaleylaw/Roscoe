@@ -27,6 +27,10 @@ export interface ChatMessage {
   timestamp: string;
   toolCalls?: ToolCallInfo[];
   attachments?: FileAttachment[];
+  // Trace-like rendering fields
+  turnId?: string;                              // Groups messages in same turn
+  messageType?: "text" | "tool_group";          // Type of message segment
+  isComplete?: boolean;                         // True when not streaming
 }
 
 interface MessageListProps {
@@ -43,9 +47,14 @@ export function MessageList({ messages, isStreaming }: MessageListProps) {
     bottomRef.current?.scrollIntoView({ behavior: isStreaming ? "auto" : "smooth" });
   }, [messages, isStreaming]);
 
-  // Filter out empty assistant messages (unless streaming)
+  // Filter out empty assistant messages (unless streaming) and completed tool groups
   const displayMessages = messages.filter(m => {
-    if (m.role === "assistant" && !m.content) {
+    // Hide completed tool groups after turn finishes
+    if (m.messageType === "tool_group" && m.isComplete) {
+      return false;
+    }
+
+    if (m.role === "assistant" && !m.content && m.messageType !== "tool_group") {
       // Only show empty assistant message if it's the last one and we're streaming
       const isLast = m === messages[messages.length - 1];
       return isLast && isStreaming;
@@ -72,6 +81,7 @@ export function MessageList({ messages, isStreaming }: MessageListProps) {
               timestamp={message.timestamp}
               toolCalls={message.toolCalls}
               attachments={message.attachments}
+              messageType={message.messageType}
             />
           ))
         )}
