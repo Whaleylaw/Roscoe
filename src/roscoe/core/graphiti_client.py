@@ -2285,6 +2285,49 @@ async def generate_case_summary(case_name: str) -> dict:
 # using Cypher. Use these for structural/relationship queries where you know
 # exactly what you're looking for.
 
+
+def _filter_embeddings_from_record(record):
+    """
+    Remove embedding vectors from a query result record.
+
+    Filters out:
+    - Keys named 'embedding', 'vector', 'embeddings', 'name_embedding'
+    - Any key ending in '_embedding'
+    - Any value that is a list of 100+ floats (likely a vector)
+
+    This prevents large embedding vectors from being passed to the agent,
+    reducing token usage and noise while keeping embeddings in the database
+    for semantic search.
+    """
+    if not isinstance(record, dict):
+        return record
+
+    filtered = {}
+    for key, value in record.items():
+        # Skip known embedding key names
+        if key in ('embedding', 'vector', 'embeddings', 'name_embedding'):
+            continue
+        # Skip keys ending in _embedding
+        if isinstance(key, str) and key.endswith('_embedding'):
+            continue
+        # Skip values that look like embedding vectors (list of 100+ floats)
+        if isinstance(value, (list, tuple)) and len(value) > 100:
+            if value and all(isinstance(x, (int, float)) for x in value[:10]):
+                continue
+        # Recursively filter nested dicts
+        if isinstance(value, dict):
+            filtered[key] = _filter_embeddings_from_record(value)
+        elif isinstance(value, list):
+            filtered[key] = [
+                _filter_embeddings_from_record(item) if isinstance(item, dict) else item
+                for item in value
+            ]
+        else:
+            filtered[key] = value
+
+    return filtered
+
+
 async def run_cypher_query_direct(query: str, parameters: Optional[dict] = None) -> list:
     """
     Execute a raw Cypher query directly against FalkorDB (sync client, no Graphiti).
@@ -2308,13 +2351,14 @@ async def run_cypher_query_direct(query: str, parameters: Optional[dict] = None)
     # Execute query (sync)
     result = graph.query(query, parameters or {})
 
-    # Convert to list of dicts
+    # Convert to list of dicts, filtering out embedding vectors
     records = []
     if result.result_set:
         headers = [h[1] if isinstance(h, (list, tuple)) else str(h) for h in result.header]
         for row in result.result_set:
             record = {headers[i]: row[i] for i in range(len(headers))}
-            records.append(record)
+            # Filter out embedding vectors before returning to agent
+            records.append(_filter_embeddings_from_record(record))
 
     return records
 
