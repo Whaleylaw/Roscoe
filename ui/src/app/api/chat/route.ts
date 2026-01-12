@@ -98,9 +98,25 @@ export async function POST(request: NextRequest) {
               text: `\n\n[File attached: ${file.name} (${file.size} bytes, ${file.type})]\nNote: This file could not be decoded as text.\n`,
             });
           }
+        } else if (file.type === "application/pdf") {
+          // PDF - send as document content block for Claude vision
+          console.log("[Chat API] Sending PDF as document content block:", file.name, file.size, "bytes");
+          contentBlocks.push({
+            type: "document",
+            source: {
+              type: "base64",
+              media_type: "application/pdf",
+              data: file.data,
+            },
+          });
+          // Also add filename as context
+          contentBlocks.push({
+            type: "text",
+            text: `[Attached PDF: ${file.name}]`,
+          });
         } else {
-          // Binary file (PDF, DOCX, etc.) - add as text description
-          // Agent should save to workspace and process via tools
+          // Other binary files (DOCX, etc.) - add as text description
+          // These need to be saved to workspace and processed via tools
           contentBlocks.push({
             type: "text",
             text: `\n\n[File attached: ${file.name} (${file.size} bytes, ${file.type})]\nData: base64:${file.data.substring(0, 100)}...\nNote: Binary file attached. Please save to workspace for processing.\n`,
