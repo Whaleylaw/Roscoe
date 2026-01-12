@@ -37,6 +37,8 @@ from langchain.agents.middleware import HostExecutionPolicy
 
 from roscoe.agents.paralegal.models import get_agent_llm, MODEL_PROVIDER
 from roscoe.core.patched_shell_middleware import get_patched_shell_middleware
+# Patch FilesystemBackend.glob_info to add timeout and result limits (prevents agent hangs)
+import roscoe.core.patched_filesystem_backend  # noqa: F401 - imported for side effects
 from roscoe.core.skill_middleware import SkillSelectorMiddleware, set_middleware_instance
 from roscoe.core.case_context_middleware import CaseContextMiddleware
 from roscoe.core.workflow_middleware import WorkflowMiddleware
