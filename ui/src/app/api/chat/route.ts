@@ -194,6 +194,11 @@ export async function POST(request: NextRequest) {
         stream_mode: ["messages", "updates", "events"],
         config: {
           recursion_limit: 250,
+          // Pass thread_id as metadata for LangSmith trace grouping
+          // LangSmith groups traces by session_id, thread_id, or conversation_id
+          metadata: {
+            thread_id: threadId,
+          },
         },
       }),
     });
