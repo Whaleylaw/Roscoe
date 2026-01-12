@@ -673,6 +673,33 @@ class CourtEvent(BaseModel):
     source: Optional[str] = Field(default=None, description="calendar | court_notice | case_data")
 
 
+class CalendarEvent(BaseModel):
+    """A scheduled event - deadline, task, hearing, or reminder. Supports both case-specific and firm-wide events."""
+    # Required
+    title: str = Field(description="Event title - REQUIRED")
+    event_date: date = Field(description="Date of event - REQUIRED")
+    event_type: str = Field(default="task", description="deadline | task | hearing | deposition | mediation | reminder | meeting | other")
+
+    # Timing
+    event_time: Optional[str] = Field(default=None, description="Time (e.g., '9:00 AM')")
+
+    # Status & Priority
+    status: str = Field(default="pending", description="pending | completed | cancelled")
+    priority: str = Field(default="medium", description="high | medium | low")
+
+    # Details
+    description: Optional[str] = Field(default=None, description="Detailed description")
+    notes: Optional[str] = Field(default=None, description="Additional notes")
+
+    # Ownership (for firm-wide vs case events)
+    case_name: Optional[str] = Field(default=None, description="Associated case name, or None for firm-wide events")
+
+    # Tracking
+    completed_at: Optional[datetime] = Field(default=None, description="When event was completed")
+    created_at: Optional[datetime] = Field(default=None, description="When event was created")
+    source: str = Field(default="user", description="user | agent | system | migration")
+
+
 # --- Vendor Entities ---
 
 class Expert(BaseModel):
@@ -1545,6 +1572,11 @@ EDGE_TYPE_MAP = {
     ("CourtEvent", "Court"): ["In"],
     ("CourtEvent", "CircuitDivision"): ["In"],
     ("CourtEvent", "DistrictDivision"): ["In"],
+
+    # =========================================================================
+    # Calendar Event relationships
+    # =========================================================================
+    ("Case", "CalendarEvent"): ["HasEvent"],
 
     # =========================================================================
     # Court Division relationships

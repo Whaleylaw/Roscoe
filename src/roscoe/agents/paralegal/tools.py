@@ -3239,3 +3239,349 @@ def list_analysis_jobs() -> str:
 
     except Exception as e:
         return f"❌ Error listing analysis jobs: {str(e)}"
+
+
+# =============================================================================
+# CALENDAR TOOLS - Graph-based calendar management
+# =============================================================================
+
+def create_calendar_event(
+    title: str,
+    event_date: str,
+    event_type: str = "task",
+    case_name: str = None,
+    priority: str = "medium",
+    event_time: str = None,
+    notes: str = None,
+) -> str:
+    """
+    Create a calendar event, deadline, or task.
+
+    Use this to schedule:
+    - Deadlines (discovery due dates, filing deadlines, statute of limitations)
+    - Tasks (follow-up calls, document reviews, client meetings)
+    - Hearings and depositions
+    - Reminders
+    - Firm-wide events (leave case_name empty)
+
+    Args:
+        title: Event title (e.g., "Discovery Responses Due", "Follow up with client")
+        event_date: Date in YYYY-MM-DD format (e.g., "2026-01-20")
+        event_type: Type of event - deadline | task | hearing | deposition | mediation | reminder | meeting | other
+        case_name: Case folder name to associate with, or None/empty for firm-wide events
+        priority: Priority level - high | medium | low
+        event_time: Optional time (e.g., "9:00 AM", "2:30 PM")
+        notes: Optional additional details or context
+
+    Returns:
+        Confirmation with event details
+    """
+    import asyncio
+    from roscoe.core.graph_manager import create_calendar_event as graph_create_event
+
+    try:
+        # Run the async function
+        loop = asyncio.get_event_loop()
+        if loop.is_running():
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future = executor.submit(
+                    asyncio.run,
+                    graph_create_event(
+                        title=title,
+                        event_date=event_date,
+                        event_type=event_type,
+                        case_name=case_name if case_name else None,
+                        priority=priority,
+                        event_time=event_time,
+                        notes=notes,
+                        source="agent"
+                    )
+                )
+                result = future.result(timeout=30)
+        else:
+            result = loop.run_until_complete(
+                graph_create_event(
+                    title=title,
+                    event_date=event_date,
+                    event_type=event_type,
+                    case_name=case_name if case_name else None,
+                    priority=priority,
+                    event_time=event_time,
+                    notes=notes,
+                    source="agent"
+                )
+            )
+
+        if result:
+            lines = [
+                f"✅ **Calendar Event Created**\n",
+                f"**Title:** {title}",
+                f"**Date:** {event_date}",
+                f"**Type:** {event_type}",
+                f"**Priority:** {priority}",
+            ]
+            if event_time:
+                lines.append(f"**Time:** {event_time}")
+            if case_name:
+                lines.append(f"**Case:** {case_name}")
+            else:
+                lines.append(f"**Scope:** Firm-wide")
+            if notes:
+                lines.append(f"**Notes:** {notes}")
+            return "\n".join(lines)
+        else:
+            return f"❌ Failed to create calendar event. Please try again."
+
+    except Exception as e:
+        logger.error(f"Error creating calendar event: {e}")
+        return f"❌ Error creating calendar event: {str(e)}"
+
+
+def complete_calendar_event(
+    title: str,
+    event_date: str = None,
+    case_name: str = None,
+) -> str:
+    """
+    Mark a calendar event as completed.
+
+    Args:
+        title: Event title to complete (or partial match)
+        event_date: Optional date (YYYY-MM-DD) to disambiguate if multiple events have same title
+        case_name: Optional case name to disambiguate
+
+    Returns:
+        Confirmation message
+    """
+    import asyncio
+    from roscoe.core.graph_manager import complete_calendar_event as graph_complete_event
+
+    try:
+        loop = asyncio.get_event_loop()
+        if loop.is_running():
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future = executor.submit(
+                    asyncio.run,
+                    graph_complete_event(
+                        title=title,
+                        event_date=event_date,
+                        case_name=case_name if case_name else None
+                    )
+                )
+                result = future.result(timeout=30)
+        else:
+            result = loop.run_until_complete(
+                graph_complete_event(
+                    title=title,
+                    event_date=event_date,
+                    case_name=case_name if case_name else None
+                )
+            )
+
+        if result:
+            return f"✅ **Event Completed:** {title}"
+        else:
+            return f"❌ Could not find a matching pending event with title '{title}'. Make sure the event exists and is not already completed."
+
+    except Exception as e:
+        logger.error(f"Error completing calendar event: {e}")
+        return f"❌ Error completing calendar event: {str(e)}"
+
+
+def search_calendar(
+    query: str = None,
+    start_date: str = None,
+    end_date: str = None,
+    case_name: str = None,
+    status: str = "all",
+    event_type: str = None,
+) -> str:
+    """
+    Search and list calendar events.
+
+    Args:
+        query: Optional text search in title/notes
+        start_date: Events on/after this date (YYYY-MM-DD)
+        end_date: Events on/before this date (YYYY-MM-DD)
+        case_name: Filter to specific case, or leave empty for all
+        status: Filter by status - pending | completed | all (default: all)
+        event_type: Filter by type - deadline | task | hearing | deposition | etc.
+
+    Returns:
+        Formatted list of matching events
+    """
+    import asyncio
+    from roscoe.core.graph_manager import search_calendar_events
+
+    try:
+        loop = asyncio.get_event_loop()
+        if loop.is_running():
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future = executor.submit(
+                    asyncio.run,
+                    search_calendar_events(
+                        query=query,
+                        start_date=start_date,
+                        end_date=end_date,
+                        case_name=case_name if case_name else None,
+                        status=status,
+                        event_type=event_type
+                    )
+                )
+                events = future.result(timeout=30)
+        else:
+            events = loop.run_until_complete(
+                search_calendar_events(
+                    query=query,
+                    start_date=start_date,
+                    end_date=end_date,
+                    case_name=case_name if case_name else None,
+                    status=status,
+                    event_type=event_type
+                )
+            )
+
+        if not events:
+            filters = []
+            if query:
+                filters.append(f"query='{query}'")
+            if start_date:
+                filters.append(f"from {start_date}")
+            if end_date:
+                filters.append(f"to {end_date}")
+            if case_name:
+                filters.append(f"case='{case_name}'")
+            if status != "all":
+                filters.append(f"status={status}")
+            if event_type:
+                filters.append(f"type={event_type}")
+            filter_str = " ".join(filters) if filters else "no filters"
+            return f"📅 No calendar events found matching: {filter_str}"
+
+        # Format results
+        lines = [f"📅 **Calendar Events** ({len(events)} found)\n"]
+
+        # Group by date
+        from collections import defaultdict
+        by_date = defaultdict(list)
+        for event in events:
+            date = event.get("event_date", "Unknown")
+            by_date[date].append(event)
+
+        # Sort dates
+        for date in sorted(by_date.keys()):
+            lines.append(f"### {date}")
+            for event in by_date[date]:
+                status_icon = "✅" if event.get("status") == "completed" else "⏳"
+                priority_icon = {"high": "🔴", "medium": "🟡", "low": "🟢"}.get(event.get("priority", "medium"), "")
+                title = event.get("title", "Untitled")
+                event_type = event.get("event_type", "")
+                case = event.get("case_name") or "Firm-wide"
+                time = event.get("event_time", "")
+
+                line = f"- {status_icon} {priority_icon} **{title}**"
+                if time:
+                    line += f" @ {time}"
+                line += f" ({event_type}) - {case}"
+                lines.append(line)
+
+                if event.get("notes"):
+                    lines.append(f"  *{event.get('notes')}*")
+
+            lines.append("")
+
+        return "\n".join(lines)
+
+    except Exception as e:
+        logger.error(f"Error searching calendar: {e}")
+        return f"❌ Error searching calendar: {str(e)}"
+
+
+def update_calendar_event(
+    title: str,
+    event_date: str,
+    new_date: str = None,
+    new_title: str = None,
+    new_priority: str = None,
+    new_time: str = None,
+    new_notes: str = None,
+) -> str:
+    """
+    Update an existing calendar event.
+
+    Args:
+        title: Current event title (used to find the event)
+        event_date: Current event date (YYYY-MM-DD, used to identify the event)
+        new_date: New date if rescheduling (YYYY-MM-DD)
+        new_title: New title if renaming
+        new_priority: New priority (high | medium | low)
+        new_time: New time (e.g., "9:00 AM")
+        new_notes: Updated notes (replaces existing)
+
+    Returns:
+        Confirmation with updated details
+    """
+    import asyncio
+    from roscoe.core.graph_manager import update_calendar_event as graph_update_event
+
+    try:
+        # Build updates dict
+        updates = {}
+        if new_date:
+            updates["event_date"] = new_date
+        if new_title:
+            updates["title"] = new_title
+        if new_priority:
+            updates["priority"] = new_priority
+        if new_time:
+            updates["event_time"] = new_time
+        if new_notes:
+            updates["notes"] = new_notes
+
+        if not updates:
+            return "❌ No updates specified. Provide at least one of: new_date, new_title, new_priority, new_time, new_notes"
+
+        loop = asyncio.get_event_loop()
+        if loop.is_running():
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future = executor.submit(
+                    asyncio.run,
+                    graph_update_event(
+                        title=title,
+                        event_date=event_date,
+                        **updates
+                    )
+                )
+                result = future.result(timeout=30)
+        else:
+            result = loop.run_until_complete(
+                graph_update_event(
+                    title=title,
+                    event_date=event_date,
+                    **updates
+                )
+            )
+
+        if result:
+            lines = [f"✅ **Event Updated:** {title}\n", "**Changes:**"]
+            if new_date:
+                lines.append(f"  - Date: {event_date} → {new_date}")
+            if new_title:
+                lines.append(f"  - Title: {title} → {new_title}")
+            if new_priority:
+                lines.append(f"  - Priority: → {new_priority}")
+            if new_time:
+                lines.append(f"  - Time: → {new_time}")
+            if new_notes:
+                lines.append(f"  - Notes updated")
+            return "\n".join(lines)
+        else:
+            return f"❌ Could not find event '{title}' on {event_date}. Check the title and date are correct."
+
+    except Exception as e:
+        logger.error(f"Error updating calendar event: {e}")
+        return f"❌ Error updating calendar event: {str(e)}"

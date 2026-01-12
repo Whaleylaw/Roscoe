@@ -130,76 +130,36 @@ class CaseContextMiddleware(AgentMiddleware):
 
     def _load_calendar_context(self) -> str:
         """
-        Load today's tasks and overdue items from calendar.json.
+        Load today's tasks and overdue items from the knowledge graph.
 
-        Reads the calendar file and filters events into:
-        - Today's tasks: date == today AND status != "completed"
-        - Overdue: date < today AND status != "completed"
+        Queries CalendarEvent entities from FalkorDB and filters into:
+        - Today's tasks: date == today AND status == "pending"
+        - Overdue: date < today AND status == "pending"
 
         Returns formatted markdown for injection into system prompt.
         """
-        calendar_path = self.database_dir / "calendar.json"
-
         try:
-            if not calendar_path.exists():
-                logger.info("[CALENDAR] calendar.json not found, skipping calendar context")
-                return ""
-        except PermissionError:
-            logger.warning("[CALENDAR] Permission denied accessing calendar.json, skipping")
-            return ""
+            from roscoe.core.graph_manager import get_overdue_and_today_events_sync
 
-        try:
-            eastern = pytz.timezone('America/New_York')
-            today = datetime.now(eastern).date()
-            
-            with open(calendar_path) as f:
-                data = json.load(f)
-            
-            events = data.get("events", [])
-            today_tasks = []
-            overdue = []
-            
-            for evt in events:
-                # Skip completed events
-                if evt.get("status") == "completed":
-                    continue
-                
-                # Parse event date
-                evt_date_str = evt.get("date")
-                if not evt_date_str:
-                    continue
-                    
-                try:
-                    evt_date = datetime.strptime(evt_date_str, "%Y-%m-%d").date()
-                except ValueError:
-                    logger.warning(f"[CALENDAR] Invalid date format: {evt_date_str}")
-                    continue
-                
-                # Categorize by date
-                if evt_date == today:
-                    today_tasks.append(evt)
-                elif evt_date < today:
-                    overdue.append(evt)
-            
+            events = get_overdue_and_today_events_sync()
+            overdue = events.get("overdue", [])
+            today_tasks = events.get("today", [])
+
             # If no tasks, return empty
             if not today_tasks and not overdue:
                 logger.info("[CALENDAR] No pending tasks for today or overdue")
                 return ""
-            
+
             # Build formatted output
             sections = []
-            sections.append("## 📅 Calendar Overview\n")
-            
+            sections.append("## Calendar Overview\n")
+
             # Overdue section
             if overdue:
-                # Sort by date (oldest first) then priority
-                priority_order = {"high": 0, "medium": 1, "low": 2}
-                overdue.sort(key=lambda x: (x.get("date", ""), priority_order.get(x.get("priority", "low"), 2)))
-                
-                sections.append(f"### ⚠️ OVERDUE ({len(overdue)} item{'s' if len(overdue) != 1 else ''})")
+                sections.append(f"### OVERDUE ({len(overdue)} item{'s' if len(overdue) != 1 else ''})")
                 sections.append("| Task | Due | Case | Priority |")
                 sections.append("|------|-----|------|----------|")
-                
+
                 for evt in overdue:
                     title = evt.get("title", "Untitled")
                     due_date = evt.get("date", "Unknown")
@@ -210,40 +170,44 @@ class CaseContextMiddleware(AgentMiddleware):
                         due_formatted = due_date
                     project = evt.get("project_name", "")
                     # Extract client name from project name (first part before hyphen pattern)
-                    case_display = project.split("-")[0] + " " + project.split("-")[1] if "-" in project and len(project.split("-")) > 1 else project
+                    if project and "-" in project:
+                        parts = project.split("-")
+                        case_display = parts[0] + " " + parts[1] if len(parts) > 1 else project
+                    else:
+                        case_display = project or "Firm"
                     priority = evt.get("priority", "medium")
                     sections.append(f"| {title} | {due_formatted} | {case_display} | {priority} |")
-                
+
                 sections.append("")
-            
+
             # Today's tasks section
             if today_tasks:
-                # Sort by priority
-                priority_order = {"high": 0, "medium": 1, "low": 2}
-                today_tasks.sort(key=lambda x: priority_order.get(x.get("priority", "low"), 2))
-                
-                sections.append(f"### 📋 TODAY'S TASKS ({len(today_tasks)} item{'s' if len(today_tasks) != 1 else ''})")
+                sections.append(f"### TODAY'S TASKS ({len(today_tasks)} item{'s' if len(today_tasks) != 1 else ''})")
                 sections.append("| Task | Case | Priority | Notes |")
                 sections.append("|------|------|----------|-------|")
-                
+
                 for evt in today_tasks:
                     title = evt.get("title", "Untitled")
                     project = evt.get("project_name", "")
                     # Extract client name from project name
-                    case_display = project.split("-")[0] + " " + project.split("-")[1] if "-" in project and len(project.split("-")) > 1 else project
+                    if project and "-" in project:
+                        parts = project.split("-")
+                        case_display = parts[0] + " " + parts[1] if len(parts) > 1 else project
+                    else:
+                        case_display = project or "Firm"
                     priority = evt.get("priority", "medium")
-                    notes = evt.get("notes", "")[:50] + "..." if len(evt.get("notes", "")) > 50 else evt.get("notes", "")
+                    notes_raw = evt.get("notes", "") or ""
+                    notes = notes_raw[:50] + "..." if len(notes_raw) > 50 else notes_raw
                     sections.append(f"| {title} | {case_display} | {priority} | {notes} |")
-                
+
                 sections.append("")
-            
+
             result = "\n".join(sections) + "\n---\n\n"
-            logger.info(f"[CALENDAR] Loaded {len(overdue)} overdue and {len(today_tasks)} today's tasks")
-            print(f"📅 [CALENDAR] Loaded {len(overdue)} overdue and {len(today_tasks)} today's tasks", flush=True)
+            logger.info(f"[CALENDAR] Loaded {len(overdue)} overdue and {len(today_tasks)} today's tasks from graph")
             return result
-            
+
         except Exception as e:
-            logger.error(f"[CALENDAR] Error loading calendar: {e}")
+            logger.error(f"[CALENDAR] Error loading calendar from graph: {e}")
             return ""
 
     def _inject_datetime(self, request) -> Any:

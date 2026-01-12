@@ -81,6 +81,11 @@ from roscoe.agents.paralegal.tools import (
     dispatch_medical_records_analysis,  # Start background analysis
     get_medical_analysis_status,  # Check status of running analysis
     list_analysis_jobs,  # List all analysis jobs
+    # Calendar tools (graph-based internal calendar)
+    create_calendar_event,  # Create deadlines, tasks, hearings
+    complete_calendar_event,  # Mark events as completed
+    search_calendar,  # Search/list calendar events
+    update_calendar_event,  # Update existing events
 )
 # Gmail tools for email management (requires Google OAuth credentials)
 from roscoe.agents.paralegal.gmail_tools import (
@@ -214,6 +219,11 @@ personal_assistant_agent = create_deep_agent(
         dispatch_medical_records_analysis,  # Start background analysis agent
         get_medical_analysis_status,  # Check analysis progress
         list_analysis_jobs,  # List all analysis jobs
+        # Internal calendar tools (graph-based deadlines, tasks, events)
+        create_calendar_event,  # Create deadlines, tasks, hearings, reminders
+        complete_calendar_event,  # Mark events as completed
+        search_calendar,  # Search/list calendar events with filters
+        update_calendar_event,  # Reschedule or modify events
     ],
     middleware=[
         # NOTE: create_deep_agent adds its own SummarizationMiddleware internally.
