@@ -273,7 +273,7 @@ export async function* streamLangGraphResponse(
               continue;
             }
 
-            // Check for tool results in "updates" stream (tool outputs)
+            // Check for tool results AND AI messages in "updates" stream
             if (currentEventType === "updates") {
               // LangGraph update format can be:
               // 1. { messages: [...] }
@@ -313,6 +313,30 @@ export async function* streamLangGraphResponse(
                     tool_result: msg.content,
                     tool_call_id: msg.tool_call_id,
                   };
+                }
+
+                // AI message in updates stream (final message after tool calls)
+                // This is critical - the final AI response comes through updates, not messages/
+                if (msg.type === "ai" && msg.content) {
+                  const text = extractTextContent(msg.content);
+                  if (text && text !== lastYieldedContent) {
+                    console.log("[LangGraph] AI message in updates:", text.slice(0, 100) + (text.length > 100 ? "..." : ""));
+                    lastYieldedContent = text;
+                    yield { type: "message", content: text };
+                  }
+
+                  // Also check for tool_calls in AI messages
+                  if (msg.tool_calls && Array.isArray(msg.tool_calls)) {
+                    for (const tc of msg.tool_calls) {
+                      console.log("[LangGraph] Tool call in updates:", tc.name);
+                      yield {
+                        type: "tool_call",
+                        tool_name: tc.name,
+                        tool_args: tc.args,
+                        tool_call_id: tc.id,
+                      };
+                    }
+                  }
                 }
               }
               // Skip the rest of updates processing (avoid duplicate messages)
