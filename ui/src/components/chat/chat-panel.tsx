@@ -225,26 +225,32 @@ export function ChatPanel() {
             );
           }
 
-          // Check if this is a display_document tool result
-          if (chunk.tool_name === "display_document" && typeof result === "string") {
+          // Check if this is a display_document request (from any tool)
+          // Tools like generate_directory_browser internally call display_document()
+          // and include the JSON marker in their return value
+          if (typeof result === "string") {
             try {
-              const parsed = JSON.parse(result);
-              if (parsed.__display_document__) {
-                console.log("[Tool Result] Display document requested:", parsed);
-                // Map tool's type to OpenDocument type
-                const typeMap: Record<string, "pdf" | "docx" | "md" | "html"> = {
-                  pdf: "pdf",
-                  docx: "docx",
-                  md: "md",
-                  html: "html",
-                  image: "pdf", // Images can be displayed in PDF viewer or we need to add image type
-                  txt: "md", // Text files render as markdown
-                };
-                const docType = typeMap[parsed.type] || "md";
-                setOpenDocument({
-                  path: parsed.path,
-                  type: docType,
-                });
+              // Try to find JSON with __display_document__ marker anywhere in the result
+              const jsonMatch = result.match(/\{[^{}]*"__display_document__"\s*:\s*true[^{}]*\}/);
+              if (jsonMatch) {
+                const parsed = JSON.parse(jsonMatch[0]);
+                if (parsed.__display_document__) {
+                  console.log("[Tool Result] Display document requested:", parsed);
+                  // Map tool's type to OpenDocument type
+                  const typeMap: Record<string, "pdf" | "docx" | "md" | "html"> = {
+                    pdf: "pdf",
+                    docx: "docx",
+                    md: "md",
+                    html: "html",
+                    image: "pdf", // Images can be displayed in PDF viewer or we need to add image type
+                    txt: "md", // Text files render as markdown
+                  };
+                  const docType = typeMap[parsed.type] || "md";
+                  setOpenDocument({
+                    path: parsed.path,
+                    type: docType,
+                  });
+                }
               }
             } catch {
               // Not JSON or parse error, ignore
