@@ -13,11 +13,15 @@ This module provides tools for the paralegal agent:
 import os
 import json
 import re
+import logging
+import asyncio
 from typing import Literal, Optional, Any, List, Dict
 from pathlib import Path
 from tavily import TavilyClient
 from langchain_core.messages import HumanMessage
 import base64
+
+logger = logging.getLogger(__name__)
 
 # Import multimodal LLM getter for analyze_image, analyze_audio, analyze_video tools
 # IMPORTANT: Use the getter function, not the module-level variable (which is None)
@@ -3333,6 +3337,14 @@ def list_analysis_jobs() -> str:
 # CALENDAR TOOLS - Graph-based calendar management
 # =============================================================================
 
+def _run_calendar_async(coro):
+    """Run an async coroutine from a sync context (for calendar tools)."""
+    import concurrent.futures
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        future = executor.submit(asyncio.run, coro)
+        return future.result(timeout=30)
+
+
 def create_calendar_event(
     title: str,
     event_date: str,
@@ -3364,42 +3376,21 @@ def create_calendar_event(
     Returns:
         Confirmation with event details
     """
-    import asyncio
     from roscoe.core.graph_manager import create_calendar_event as graph_create_event
 
     try:
-        # Run the async function
-        loop = asyncio.get_event_loop()
-        if loop.is_running():
-            import concurrent.futures
-            with concurrent.futures.ThreadPoolExecutor() as executor:
-                future = executor.submit(
-                    asyncio.run,
-                    graph_create_event(
-                        title=title,
-                        event_date=event_date,
-                        event_type=event_type,
-                        case_name=case_name if case_name else None,
-                        priority=priority,
-                        event_time=event_time,
-                        notes=notes,
-                        source="agent"
-                    )
-                )
-                result = future.result(timeout=30)
-        else:
-            result = loop.run_until_complete(
-                graph_create_event(
-                    title=title,
-                    event_date=event_date,
-                    event_type=event_type,
-                    case_name=case_name if case_name else None,
-                    priority=priority,
-                    event_time=event_time,
-                    notes=notes,
-                    source="agent"
-                )
+        result = _run_calendar_async(
+            graph_create_event(
+                title=title,
+                event_date=event_date,
+                event_type=event_type,
+                case_name=case_name if case_name else None,
+                priority=priority,
+                event_time=event_time,
+                notes=notes,
+                source="agent"
             )
+        )
 
         if result:
             lines = [
@@ -3442,31 +3433,16 @@ def complete_calendar_event(
     Returns:
         Confirmation message
     """
-    import asyncio
     from roscoe.core.graph_manager import complete_calendar_event as graph_complete_event
 
     try:
-        loop = asyncio.get_event_loop()
-        if loop.is_running():
-            import concurrent.futures
-            with concurrent.futures.ThreadPoolExecutor() as executor:
-                future = executor.submit(
-                    asyncio.run,
-                    graph_complete_event(
-                        title=title,
-                        event_date=event_date,
-                        case_name=case_name if case_name else None
-                    )
-                )
-                result = future.result(timeout=30)
-        else:
-            result = loop.run_until_complete(
-                graph_complete_event(
-                    title=title,
-                    event_date=event_date,
-                    case_name=case_name if case_name else None
-                )
+        result = _run_calendar_async(
+            graph_complete_event(
+                title=title,
+                event_date=event_date,
+                case_name=case_name if case_name else None
             )
+        )
 
         if result:
             return f"✅ **Event Completed:** {title}"
@@ -3500,37 +3476,19 @@ def search_calendar(
     Returns:
         Formatted list of matching events
     """
-    import asyncio
     from roscoe.core.graph_manager import search_calendar_events
 
     try:
-        loop = asyncio.get_event_loop()
-        if loop.is_running():
-            import concurrent.futures
-            with concurrent.futures.ThreadPoolExecutor() as executor:
-                future = executor.submit(
-                    asyncio.run,
-                    search_calendar_events(
-                        query=query,
-                        start_date=start_date,
-                        end_date=end_date,
-                        case_name=case_name if case_name else None,
-                        status=status,
-                        event_type=event_type
-                    )
-                )
-                events = future.result(timeout=30)
-        else:
-            events = loop.run_until_complete(
-                search_calendar_events(
-                    query=query,
-                    start_date=start_date,
-                    end_date=end_date,
-                    case_name=case_name if case_name else None,
-                    status=status,
-                    event_type=event_type
-                )
+        events = _run_calendar_async(
+            search_calendar_events(
+                query=query,
+                start_date=start_date,
+                end_date=end_date,
+                case_name=case_name if case_name else None,
+                status=status,
+                event_type=event_type
             )
+        )
 
         if not events:
             filters = []
@@ -3612,7 +3570,6 @@ def update_calendar_event(
     Returns:
         Confirmation with updated details
     """
-    import asyncio
     from roscoe.core.graph_manager import update_calendar_event as graph_update_event
 
     try:
@@ -3632,27 +3589,13 @@ def update_calendar_event(
         if not updates:
             return "❌ No updates specified. Provide at least one of: new_date, new_title, new_priority, new_time, new_notes"
 
-        loop = asyncio.get_event_loop()
-        if loop.is_running():
-            import concurrent.futures
-            with concurrent.futures.ThreadPoolExecutor() as executor:
-                future = executor.submit(
-                    asyncio.run,
-                    graph_update_event(
-                        title=title,
-                        event_date=event_date,
-                        **updates
-                    )
-                )
-                result = future.result(timeout=30)
-        else:
-            result = loop.run_until_complete(
-                graph_update_event(
-                    title=title,
-                    event_date=event_date,
-                    **updates
-                )
+        result = _run_calendar_async(
+            graph_update_event(
+                title=title,
+                event_date=event_date,
+                **updates
             )
+        )
 
         if result:
             lines = [f"✅ **Event Updated:** {title}\n", "**Changes:**"]
