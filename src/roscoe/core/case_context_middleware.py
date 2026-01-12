@@ -189,8 +189,6 @@ class CaseContextMiddleware(AgentMiddleware):
             # Build formatted output
             sections = []
             sections.append("## 📅 Calendar Overview\n")
-            sections.append("**Calendar Location**: `/Database/calendar.json`")
-            sections.append("_(Use this path when creating, updating, or completing calendar events)_\n")
             
             # Overdue section
             if overdue:
