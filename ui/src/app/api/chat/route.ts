@@ -1,6 +1,39 @@
 import { NextRequest } from "next/server";
+import { promises as fs } from "fs";
+import path from "path";
 
 const LANGGRAPH_URL = process.env.NEXT_PUBLIC_LANGGRAPH_URL || "http://localhost:2024";
+const WORKSPACE_ROOT = process.env.NEXT_PUBLIC_WORKSPACE_ROOT || "/mnt/workspace";
+const TEMP_UPLOAD_DIR = path.join(WORKSPACE_ROOT, "uploads", "temp");
+
+/**
+ * Save an attachment to the temp folder and return the workspace-relative path.
+ * This allows the agent to use file tools to move/copy the file.
+ */
+async function saveAttachmentToTemp(file: FileAttachment): Promise<string | null> {
+  try {
+    // Ensure temp directory exists
+    await fs.mkdir(TEMP_UPLOAD_DIR, { recursive: true });
+
+    // Generate unique filename with timestamp
+    const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+    const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, "_");
+    const filename = `${timestamp}_${safeName}`;
+    const fullPath = path.join(TEMP_UPLOAD_DIR, filename);
+
+    // Decode base64 and write binary file
+    const buffer = Buffer.from(file.data, "base64");
+    await fs.writeFile(fullPath, buffer);
+
+    // Return workspace-relative path (what the agent will use)
+    const relativePath = `/uploads/temp/${filename}`;
+    console.log(`[Chat API] Saved attachment to temp: ${relativePath} (${buffer.length} bytes)`);
+    return relativePath;
+  } catch (error) {
+    console.error(`[Chat API] Failed to save attachment ${file.name}:`, error);
+    return null;
+  }
+}
 
 interface FileAttachment {
   name: string;
@@ -49,7 +82,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Format messages with Claude content blocks for multimodal support
-    const formattedMessages = messages.map((m) => {
+    // Use Promise.all since we have async operations (saving attachments)
+    const formattedMessages = await Promise.all(messages.map(async (m) => {
       const hasAttachments = m.attachments && m.attachments.length > 0;
 
       // If no attachments, use simple string content
@@ -72,7 +106,8 @@ export async function POST(request: NextRequest) {
       }
 
       // Add image/document blocks for attachments
-      m.attachments!.forEach((file) => {
+      // Use for...of to properly handle async operations
+      for (const file of m.attachments!) {
         if (file.type.startsWith("image/")) {
           // Image attachment - use Claude image format
           contentBlocks.push({
@@ -83,6 +118,14 @@ export async function POST(request: NextRequest) {
               data: file.data,
             },
           });
+          // Save to temp folder so agent can move/copy with file tools
+          const tempPath = await saveAttachmentToTemp(file);
+          if (tempPath) {
+            contentBlocks.push({
+              type: "text",
+              text: `[Image: ${file.name} saved to: ${tempPath}]`,
+            });
+          }
         } else if (file.type.startsWith("text/") || file.name.endsWith(".txt") || file.name.endsWith(".md")) {
           // Text file - decode and include as text content
           try {
@@ -109,26 +152,32 @@ export async function POST(request: NextRequest) {
               data: file.data,
             },
           });
-          // Also add filename as context
+          // Save to temp folder so agent can move/copy with file tools
+          const tempPath = await saveAttachmentToTemp(file);
+          // Add filename and temp path as context
           contentBlocks.push({
             type: "text",
-            text: `[Attached PDF: ${file.name}]`,
+            text: tempPath
+              ? `[Attached PDF: ${file.name}]\n[File saved to: ${tempPath} - use file tools to move/copy this file]`
+              : `[Attached PDF: ${file.name}]`,
           });
         } else {
-          // Other binary files (DOCX, etc.) - add as text description
-          // These need to be saved to workspace and processed via tools
+          // Other binary files (DOCX, etc.) - save to temp and tell agent where it is
+          const tempPath = await saveAttachmentToTemp(file);
           contentBlocks.push({
             type: "text",
-            text: `\n\n[File attached: ${file.name} (${file.size} bytes, ${file.type})]\nData: base64:${file.data.substring(0, 100)}...\nNote: Binary file attached. Please save to workspace for processing.\n`,
+            text: tempPath
+              ? `\n\n[File attached: ${file.name} (${file.size} bytes, ${file.type})]\n[File saved to: ${tempPath} - use file tools to move/copy this file]\n`
+              : `\n\n[File attached: ${file.name} (${file.size} bytes, ${file.type})]\nNote: Binary file attached but could not be saved to temp folder.\n`,
           });
         }
-      });
+      }
 
       return {
         type: m.role === "user" ? "human" : "ai",
         content: contentBlocks,
       };
-    });
+    }));
 
     // Forward to LangGraph with thread_id
     // Include "events" stream mode to capture tool calls in real-time
