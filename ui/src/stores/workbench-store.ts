@@ -8,11 +8,21 @@ export interface FileAttachment {
   data: string; // base64 encoded
 }
 
+export interface ToolCallInfo {
+  id: string;
+  name: string;
+  args?: any;
+  status: "running" | "completed";
+  result?: any;
+  startTime: number;
+}
+
 export interface ChatMessage {
   id: string;
   role: "user" | "assistant";
   content: string;
   timestamp: string;
+  toolCalls?: ToolCallInfo[];
   attachments?: FileAttachment[];
 }
 

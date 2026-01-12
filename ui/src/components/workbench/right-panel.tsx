@@ -46,6 +46,65 @@ export function RightPanel() {
     }
   }, [openDocument]);
 
+  // Listen for postMessage from directory browser iframe
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      // SECURITY: Only accept messages from same origin
+      if (event.origin !== window.location.origin) {
+        console.warn('[RightPanel] Rejected postMessage from unauthorized origin:', event.origin);
+        return;
+      }
+
+      if (event.data.type === 'open_document') {
+        const payload = event.data.payload;
+
+        // Validate payload structure
+        if (!payload || typeof payload !== 'object') {
+          console.error('[RightPanel] Invalid payload structure');
+          return;
+        }
+
+        const { path, type, source } = payload;
+
+        // Validate required fields
+        if (!path || typeof path !== 'string') {
+          console.error('[RightPanel] Missing or invalid path');
+          return;
+        }
+
+        if (!type || typeof type !== 'string') {
+          console.error('[RightPanel] Missing or invalid type');
+          return;
+        }
+
+        console.log('[RightPanel] Received open_document message:', {
+          path,
+          type,
+          source,
+        });
+
+        // Validate type
+        const validTypes = ['pdf', 'docx', 'md', 'html'];
+        if (!validTypes.includes(type)) {
+          console.error('[RightPanel] Invalid document type:', type);
+          return;
+        }
+
+        // Open the document
+        setOpenDocument({
+          path,
+          type: type as 'pdf' | 'docx' | 'md' | 'html',
+        });
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+  }, [setOpenDocument]);
+
   const handleClose = () => {
     setRightPanelOpen(false);
   };

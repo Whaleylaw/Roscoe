@@ -144,12 +144,13 @@ export async function POST(request: NextRequest) {
 
     // Stream the response back with thread_id and run_id in headers
     const runId = response.headers.get("X-Run-Id") || "";
-    const headers = new Headers({
-      "Content-Type": "text/event-stream",
-      "Cache-Control": "no-cache",
-      "Connection": "keep-alive",
-      "X-Thread-Id": threadId,
-    });
+    const headers = new Headers();
+    headers.set("Content-Type", "text/event-stream");
+    headers.set("Cache-Control", "no-cache");
+    headers.set("Connection", "keep-alive");
+    if (threadId) {
+      headers.set("X-Thread-Id", threadId);
+    }
 
     // Forward the run ID if present
     if (runId) {

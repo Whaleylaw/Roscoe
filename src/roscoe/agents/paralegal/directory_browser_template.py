@@ -229,7 +229,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                     type: viewerType,
                     source: 'directory_browser'
                 }}
-            }}, '*');
+            }}, window.location.origin);
 
             // Visual feedback
             console.log('Opening file:', filePath, 'as', viewerType);
