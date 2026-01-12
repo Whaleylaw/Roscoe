@@ -231,7 +231,9 @@ export function ChatPanel() {
           if (typeof result === "string") {
             try {
               // Try to find JSON with __display_document__ marker anywhere in the result
-              const jsonMatch = result.match(/\{[^{}]*"__display_document__"\s*:\s*true[^{}]*\}/);
+              // Look for the pattern starting with { and containing "__display_document__": true
+              // Extract the entire JSON object (may span multiple lines)
+              const jsonMatch = result.match(/\{[\s\S]*?"__display_document__"[\s\S]*?\}/);
               if (jsonMatch) {
                 const parsed = JSON.parse(jsonMatch[0]);
                 if (parsed.__display_document__) {
@@ -252,8 +254,9 @@ export function ChatPanel() {
                   });
                 }
               }
-            } catch {
-              // Not JSON or parse error, ignore
+            } catch (e) {
+              // Not JSON or parse error, log and ignore
+              console.log("[Tool Result] Failed to parse display_document JSON:", e);
             }
           }
         }
