@@ -1,0 +1,137 @@
+{
+  "plan_file": "docs/plans/2026-01-11-roscoe-v2-second-brain-phases-2-6.md",
+  "created_at": "2026-01-11T17:00:00Z",
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Task 1: CompositeBackend Setup with /memories/ Routes",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/paralegal/agent.py",
+        "Roscoe_v1_essentials/core/memory_backend.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T18:01:39.683933"
+    },
+    {
+      "id": 2,
+      "name": "Task 2: TELOS Directory Structure",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/workspace/memories/TELOS/",
+        "Roscoe_v1_essentials/scripts/init_telos_structure.sh"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T18:05:39.159143"
+    },
+    {
+      "id": 3,
+      "name": "Task 3: TELOSMiddleware Implementation",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/core/telos_middleware.py",
+        "tests/core/test_telos_middleware.py",
+        "Roscoe_v1_essentials/paralegal/agent.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T18:13:43.957376"
+    },
+    {
+      "id": 4,
+      "name": "Task 4: Inbox Log Schema in Graph",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/core/migrations/add_inbox_log_indexes.py",
+        "Roscoe_v1_essentials/core/capture_middleware.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T18:29:16.779160"
+    },
+    {
+      "id": 5,
+      "name": "Task 5: Fix Capture Tool",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/agents/paralegal/fix_capture_tool.py",
+        "Roscoe_v1_essentials/agents/paralegal/tools.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T18:43:02.166239"
+    },
+    {
+      "id": 6,
+      "name": "Task 6: ContinuityMiddleware Skeleton",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/core/continuity_middleware.py",
+        "tests/core/test_continuity_middleware.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T18:49:31.570801"
+    },
+    {
+      "id": 7,
+      "name": "Task 7: MemoryBox Graph Schema",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/core/migrations/add_memorybox_schema.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T18:58:12.421790"
+    },
+    {
+      "id": 8,
+      "name": "Task 8: Implement Topic Continuity Detection",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/core/continuity_middleware.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T19:08:58.756796"
+    },
+    {
+      "id": 9,
+      "name": "Task 9: ProactiveSurfacingMiddleware Setup",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/core/proactive_surfacing_middleware.py",
+        "tests/core/test_proactive_surfacing.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-11T19:21:41.615755"
+    },
+    {
+      "id": 10,
+      "name": "Task 10: Digest Generator Subagent",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/agents/digest_generator/agent.py",
+        "Roscoe_v1_essentials/agents/digest_generator/prompts.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-12T00:44:35.840551"
+    },
+    {
+      "id": 11,
+      "name": "Task 11: MorningBrief Skill",
+      "status": "completed",
+      "files": [
+        "Roscoe_v1_essentials/workspace/Skills/MorningBrief/SKILL.md"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-12T00:49:27.911474"
+    },
+    {
+      "id": 12,
+      "name": "Task 12: Integration Testing Suite",
+      "status": "completed",
+      "files": [
+        "tests/integration/test_second_brain_flow.py"
+      ],
+      "commit_sha": null,
+      "completed_at": "2026-01-12T01:14:40.920883"
+    }
+  ],
+  "current_task_id": 12,
+  "last_updated": "2026-01-12T01:14:40.921025"
+}
