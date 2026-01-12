@@ -2354,145 +2354,233 @@ def update_landmark(
 ) -> str:
     """
     Update a landmark's status for a case in the knowledge graph.
-    
+
     Landmarks are checkpoints that track case progress. Each phase has multiple
     landmarks that should be completed before advancing to the next phase.
-    Some landmarks are "hard blockers" - the case cannot advance until they're complete.
-    
+    Some landmarks are "hard blockers" (marked with ⭐) - the case cannot advance
+    until they're complete.
+
     Use this tool when:
     - You've completed a workflow and need to mark its landmark complete
     - A task is in progress and you want to track that
     - A landmark doesn't apply to this case (e.g., no wage loss claim)
-    
+
     Args:
         case_name: The case folder name (e.g., "Christopher-Lanier-MVA-6-28-2025")
-        landmark_id: The landmark identifier. Common landmarks include:
+        landmark_id: The landmark identifier (snake_case). Key landmarks by phase:
+
+            Onboarding phase:
+            - "client_info_received"
+            - "contract_signed"
+            - "medical_auth_signed"
+
             File Setup phase:
-            - "retainer_signed" (HARD BLOCKER)
             - "full_intake_complete"
-            - "insurance_claims_setup"
-            - "providers_setup"
-            
+            - "accident_report_obtained"
+            - "insurance_claims_set_up"
+            - "providers_set_up"
+
             Treatment phase:
-            - "client_checkin_current"
-            - "providers_monitored"
+            - "client_check_in_schedule_active"
+            - "all_providers_have_records_requested"
             - "treatment_complete"
-            
+
             Demand phase:
             - "all_records_received"
             - "all_bills_received"
-            - "demand_sent" (HARD BLOCKER)
-            
+            - "demand_sent_⭐_hard_blocker" (HARD BLOCKER)
+
             Negotiation phase:
             - "initial_offer_received"
-            - "settlement_reached"
-            
+            - "settlement_reached_(exit_condition)"
+
+            Litigation phase:
+            - "complaint_filed_⭐_hard_blocker" (HARD BLOCKER)
+            - "trial_ready_⭐_hard_blocker" (HARD BLOCKER)
+
         status: The new status:
             - "complete": Task/checkpoint is fully done
             - "in_progress": Currently working on it
             - "incomplete": Not started or blocked
             - "not_applicable": Doesn't apply to this case
         sub_steps: Optional dict of sub-step completions for complex landmarks.
-            Example for insurance_claims_setup:
-            {"bi_insurance_identified": True, "bi_lor_sent": True, "bi_claim_acknowledged": False}
         notes: Optional notes explaining the status or what was done.
-    
+
     Returns:
         Confirmation message with updated status.
-    
+
     Examples:
-        # Mark retainer signed (hard blocker for file_setup)
+        # Mark contract signed (onboarding)
         update_landmark(
             case_name="Christopher-Lanier-MVA-6-28-2025",
-            landmark_id="retainer_signed",
+            landmark_id="contract_signed",
             status="complete",
             notes="Signed via DocuSign on 2025-12-15"
         )
-        
-        # Mark insurance setup in progress with sub-steps
+
+        # Mark insurance setup complete
         update_landmark(
             case_name="Christopher-Lanier-MVA-6-28-2025",
-            landmark_id="insurance_claims_setup",
-            status="in_progress",
-            sub_steps={
-                "bi_insurance_identified": True,
-                "bi_lor_sent": True,
-                "bi_claim_acknowledged": False,
-                "pip_carrier_determined": True,
-                "pip_application_sent": True
-            },
-            notes="Waiting on BI claim acknowledgment from State Farm"
-        )
-        
-        # Mark wage loss as not applicable
-        update_landmark(
-            case_name="Wilson-MVA-2024",
-            landmark_id="wage_loss_documented",
-            status="not_applicable",
-            notes="Client did not miss work"
+            landmark_id="insurance_claims_set_up",
+            status="complete",
+            notes="BI and PIP claims established"
         )
     """
     graphiti_enabled = os.environ.get("GRAPHITI_ENABLED", "true").lower() == "true"
-    
+
     if not graphiti_enabled:
         return "Error: Knowledge graph is disabled. Set GRAPHITI_ENABLED=true to enable."
-    
+
     try:
-        from roscoe.core.graphiti_client import update_case_landmark_status, get_landmark_status
-        
+        from roscoe.core.graphiti_client import (
+            update_case_landmark_status,
+            get_landmark_status,
+            run_cypher_query
+        )
+
+        async def _find_landmark(lid: str) -> Optional[str]:
+            """Try to find a matching landmark, with fuzzy matching fallback."""
+            # First try exact match
+            result = await run_cypher_query(
+                "MATCH (l:Landmark {landmark_id: $lid}) RETURN l.landmark_id as id",
+                {"lid": lid}
+            )
+            if result:
+                return lid
+
+            # Try case-insensitive match
+            result = await run_cypher_query(
+                "MATCH (l:Landmark) WHERE toLower(l.landmark_id) = toLower($lid) RETURN l.landmark_id as id",
+                {"lid": lid}
+            )
+            if result:
+                return result[0]["id"]
+
+            # Try partial match (contains)
+            result = await run_cypher_query(
+                "MATCH (l:Landmark) WHERE toLower(l.landmark_id) CONTAINS toLower($lid) OR toLower(l.name) CONTAINS toLower($lid) RETURN l.landmark_id as id, l.name as name LIMIT 5",
+                {"lid": lid}
+            )
+            if result and len(result) == 1:
+                # Single match - use it
+                return result[0]["id"]
+
+            return None
+
+        async def _get_similar_landmarks(lid: str) -> List[Dict]:
+            """Get similar landmarks to suggest."""
+            # Get all landmarks that might match
+            result = await run_cypher_query(
+                """MATCH (l:Landmark)
+                   WHERE toLower(l.landmark_id) CONTAINS toLower($lid)
+                      OR toLower(l.name) CONTAINS toLower($lid)
+                      OR toLower($lid) CONTAINS toLower(l.landmark_id)
+                   RETURN l.landmark_id as id, l.name as name, l.phase as phase
+                   LIMIT 10""",
+                {"lid": lid}
+            )
+            return result if result else []
+
+        async def _get_phase_landmarks(phase: str) -> List[Dict]:
+            """Get all landmarks for a phase."""
+            result = await run_cypher_query(
+                "MATCH (l:Landmark {phase: $phase}) RETURN l.landmark_id as id, l.name as name ORDER BY l.landmark_id",
+                {"phase": phase}
+            )
+            return result if result else []
+
         async def _update():
+            # Try to find the landmark with fuzzy matching
+            resolved_id = await _find_landmark(landmark_id)
+
+            if not resolved_id:
+                # Landmark not found - provide helpful error
+                similar = await _get_similar_landmarks(landmark_id)
+                if similar:
+                    suggestions = "\n".join([f"  - `{s['id']}` ({s['name']})" for s in similar])
+                    return {
+                        "error": True,
+                        "message": f"❌ Landmark '{landmark_id}' not found.\n\n**Did you mean one of these?**\n{suggestions}"
+                    }
+                else:
+                    return {
+                        "error": True,
+                        "message": f"❌ Landmark '{landmark_id}' not found. Use `get_case_workflow_status()` to see available landmarks."
+                    }
+
+            # If we found a different ID than requested, note it
+            id_changed = resolved_id != landmark_id
+
             # Update the landmark
             success = await update_case_landmark_status(
                 case_name=case_name,
-                landmark_id=landmark_id,
+                landmark_id=resolved_id,
                 status=status,
                 sub_steps=sub_steps,
                 notes=notes
             )
-            
+
             if not success:
-                return None
-            
+                return {
+                    "error": True,
+                    "message": f"❌ Failed to update landmark '{resolved_id}' for case '{case_name}'. The case may not exist."
+                }
+
             # Get the updated status
-            return await get_landmark_status(case_name, landmark_id)
-        
+            result = await get_landmark_status(case_name, resolved_id)
+            if result:
+                result["resolved_id"] = resolved_id
+                result["id_changed"] = id_changed
+                result["original_id"] = landmark_id
+            return result
+
         result = _run_async(_update())
-        
+
         if not result:
-            return f"❌ Failed to update landmark '{landmark_id}' for case '{case_name}'. The landmark may not exist."
-        
-        # Format response
+            return f"❌ Failed to update landmark '{landmark_id}' for case '{case_name}'."
+
+        # Check for error response
+        if isinstance(result, dict) and result.get("error"):
+            return result["message"]
+
+        # Format successful response
         status_emoji = {
             "complete": "✅",
             "in_progress": "🔄",
             "incomplete": "⏳",
             "not_applicable": "➖"
         }
-        
+
         emoji = status_emoji.get(status, "📌")
         is_hard = " (HARD BLOCKER)" if result.get("is_hard_blocker") else ""
-        
+
+        resolved_id = result.get("resolved_id", landmark_id)
         output = [
-            f"{emoji} Landmark updated: **{result.get('display_name', landmark_id)}**{is_hard}",
+            f"{emoji} Landmark updated: **{result.get('display_name', resolved_id)}**{is_hard}",
             "",
             f"**Case**: {case_name}",
             f"**Status**: {status}",
             f"**Phase**: {result.get('phase')}",
         ]
-        
+
+        # Note if we resolved to a different ID
+        if result.get("id_changed"):
+            output.append(f"**Note**: Resolved '{result.get('original_id')}' → '{resolved_id}'")
+
         if notes:
             output.append(f"**Notes**: {notes}")
-        
+
         if sub_steps:
             completed = sum(1 for v in sub_steps.values() if v)
             total = len(sub_steps)
             output.append(f"**Sub-steps**: {completed}/{total} complete")
-        
+
         return "\n".join(output)
-        
+
     except ImportError as e:
         return f"Error: Graphiti client not available. {str(e)}"
     except Exception as e:
+        logger.error(f"Error updating landmark: {e}")
         return f"Error updating landmark: {str(e)}"
 
 
