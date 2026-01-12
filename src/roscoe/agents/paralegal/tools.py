@@ -783,8 +783,8 @@ def generate_directory_browser(
         if root_path.startswith('/'):
             root_path = root_path[1:]
 
-        # Resolve to absolute path
-        abs_root = LOCAL_WORKSPACE / root_path if root_path else LOCAL_WORKSPACE
+        # Resolve to absolute path (use GCS_WORKSPACE for mounted GCS bucket)
+        abs_root = GCS_WORKSPACE / root_path if root_path else GCS_WORKSPACE
 
         # Validate path exists
         if not abs_root.exists():
@@ -821,7 +821,7 @@ def generate_directory_browser(
             for child in node.get('children', []):
                 relativize_paths(child, base)
 
-        relativize_paths(tree, LOCAL_WORKSPACE)
+        relativize_paths(tree, GCS_WORKSPACE)
 
         # Count items
         file_count, folder_count = count_items(tree)
@@ -840,9 +840,9 @@ def generate_directory_browser(
             tree_json=tree_json,
         )
 
-        # Write to Reports
+        # Write to Reports (in GCS workspace so UI can access it)
         output_filename = f"directory_browser_{timestamp_slug}.html"
-        output_path = LOCAL_WORKSPACE / "Reports" / output_filename
+        output_path = GCS_WORKSPACE / "Reports" / output_filename
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(html_content, encoding='utf-8')
 
