@@ -1142,7 +1142,7 @@ def list_gcs_files(
 def run_workspace_script(
     script_path: str,
     case_name: str = None,
-    script_args: list = None,
+    script_args: List[str] = None,
     timeout: int = 300,
 ) -> str:
     """
@@ -1207,7 +1207,7 @@ def run_workspace_script(
 def run_browser_script(
     script_path: str,
     case_name: str = None,
-    script_args: list = None,
+    script_args: List[str] = None,
     timeout: int = 600,
 ) -> str:
     """
