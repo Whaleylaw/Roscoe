@@ -74,6 +74,9 @@ services:
       redis:
         condition: service_healthy
     environment:
+      # CRITICAL: Unset LANGSERVE_GRAPHS so LangGraph reads from langgraph.json
+      # The base image bakes LANGSERVE_GRAPHS during build which becomes stale
+      LANGSERVE_GRAPHS: ""
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
       GOOGLE_API_KEY: ${GOOGLE_API_KEY}
       TAVILY_API_KEY: ${TAVILY_API_KEY:-}

@@ -66,6 +66,12 @@ echo ""
 echo "=== Starting LangGraph API Server ==="
 echo ""
 
+# CRITICAL: Unset LANGSERVE_GRAPHS so LangGraph reads from langgraph.json file
+# The base image bakes LANGSERVE_GRAPHS during build, which becomes stale.
+# By unsetting it, LangGraph will read the mounted langgraph.json instead.
+unset LANGSERVE_GRAPHS
+echo "Cleared LANGSERVE_GRAPHS - will read from langgraph.json"
+
 # Start the LangGraph server
 # The server reads langgraph.json and serves the configured graphs
 exec langgraph up --host 0.0.0.0 --port 8000
