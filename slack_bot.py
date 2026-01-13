@@ -5,6 +5,16 @@ Slack Bot for Roscoe - Bidirectional Chat Integration
 This bot enables chatting with Roscoe from Slack using Socket Mode.
 Runs as a sidecar process (local dev or VM) alongside the LangGraph server.
 
+Commands:
+    /roscoe [message]    - Talk to the Paralegal agent (legal research, cases)
+    /roscoe-reset        - Reset Paralegal conversation
+    /brain [message]     - Talk to Second Brain agent (tasks, notes, memory)
+    /brain-reset         - Reset Second Brain conversation
+
+Also responds to:
+    - Direct messages (DMs) to the bot → Paralegal
+    - @Roscoe mentions in channels → Paralegal
+
 Usage:
     python slack_bot.py
 
@@ -179,37 +189,47 @@ def _collect_streamed_response(response: Response) -> str:
     return agent_response.strip()
 
 
-def send_to_roscoe(user_message: str, slack_user_id: str, slack_channel: str = None) -> str:
+def send_to_agent(
+    user_message: str,
+    slack_user_id: str,
+    slack_channel: str = None,
+    assistant_id: str = None,
+) -> str:
     """
-    Send a message to Roscoe agent via LangGraph API.
+    Send a message to a LangGraph agent.
 
     Args:
         user_message: The user's message
         slack_user_id: Slack user ID for thread continuity
         slack_channel: Optional Slack channel ID for context
+        assistant_id: Which agent to route to (default: ASSISTANT_ID / roscoe_paralegal)
 
     Returns:
         Agent's response or error message
     """
-    logger.info("Routing Slack user %s message: %s", slack_user_id, user_message[:80])
-    
+    agent_id = assistant_id or ASSISTANT_ID
+    logger.info("Routing Slack user %s to %s: %s", slack_user_id, agent_id, user_message[:80])
+
     # Inject Slack context so the agent knows to continue responding via Slack
     slack_context = f"""[SLACK CONVERSATION - User: {slack_user_id}]
-For this conversation, use the send_slack_message tool for any progress updates, 
-interim status messages, or notifications during long-running tasks. The initial 
+For this conversation, use the send_slack_message tool for any progress updates,
+interim status messages, or notifications during long-running tasks. The initial
 response will automatically go to Slack, but subsequent updates should use the tool.
 ---
 """
     enhanced_message = slack_context + user_message
-    
+
+    # Use agent-specific thread keys to keep conversations separate
+    thread_key = f"{slack_user_id}:{agent_id}"
+
     try:
-        thread_id = _ensure_thread(slack_user_id, metadata={"slack_channel": slack_channel or "dm"})
-        logger.debug("Using thread %s", thread_id)
+        thread_id = _ensure_thread(thread_key, metadata={"slack_channel": slack_channel or "dm", "agent": agent_id})
+        logger.debug("Using thread %s for agent %s", thread_id, agent_id)
 
         response = session.post(
             f"{LANGGRAPH_API_URL}/threads/{thread_id}/runs/stream",
             json={
-                "assistant_id": ASSISTANT_ID,
+                "assistant_id": agent_id,
                 "input": {"messages": [{"role": "user", "content": enhanced_message}]},
                 "stream_mode": "messages",
             },
@@ -238,6 +258,12 @@ response will automatically go to Slack, but subsequent updates should use the t
     except Exception as exc:  # pragma: no cover - defensive logging
         logger.exception("Unexpected error while sending message to Roscoe")
         return f"Sorry, I ran into an error: {exc}"
+
+
+# Backwards compatibility alias
+def send_to_roscoe(user_message: str, slack_user_id: str, slack_channel: str = None) -> str:
+    """Send to the default Roscoe agent (paralegal)."""
+    return send_to_agent(user_message, slack_user_id, slack_channel, ASSISTANT_ID)
 
 
 @app.event("app_mention")
@@ -345,12 +371,77 @@ def handle_reset_command(ack, command, respond):
     ack()
 
     slack_user_id = command["user_id"]
+    thread_key = f"{slack_user_id}:{ASSISTANT_ID}"
 
-    if slack_user_id in conversation_threads:
-        del conversation_threads[slack_user_id]
+    if thread_key in conversation_threads:
+        del conversation_threads[thread_key]
         respond("✅ Conversation reset. I've forgotten our previous conversation.")
     else:
         respond("No active conversation to reset.")
+
+
+# ---------------------------------------------------------------------------
+# Second Brain Commands
+# ---------------------------------------------------------------------------
+SECOND_BRAIN_ID = "roscoe_second_brain"
+
+
+@app.command("/brain")
+def handle_brain_command(ack, command, respond):
+    """
+    Handle /brain slash command - routes to Second Brain agent.
+
+    Example: /brain remind me to call Timothy tomorrow
+    Example: /brain capture idea: implement voice memos
+    Example: /brain what tasks do I have?
+    """
+    ack()  # Acknowledge command receipt
+
+    try:
+        user_message = command["text"]
+        slack_user_id = command["user_id"]
+        slack_channel = command.get("channel_id")
+
+        if not user_message:
+            respond(
+                "🧠 *Second Brain* - Your personal memory assistant\n\n"
+                "Usage: `/brain [your message]`\n\n"
+                "Examples:\n"
+                "• `/brain remind me to call Timothy tomorrow`\n"
+                "• `/brain capture idea: voice memo feature`\n"
+                "• `/brain what tasks do I have?`\n"
+                "• `/brain give me my morning brief`"
+            )
+            return
+
+        # Send to Second Brain agent
+        response = send_to_agent(user_message, slack_user_id, slack_channel, SECOND_BRAIN_ID)
+
+        # Reply
+        respond(text=response)
+
+    except Exception as e:
+        logger.exception("Error while handling /brain command")
+        respond(f"Sorry, I encountered an error: {str(e)}")
+
+
+@app.command("/brain-reset")
+def handle_brain_reset_command(ack, command, respond):
+    """
+    Reset Second Brain conversation thread for this user.
+
+    Example: /brain-reset
+    """
+    ack()
+
+    slack_user_id = command["user_id"]
+    thread_key = f"{slack_user_id}:{SECOND_BRAIN_ID}"
+
+    if thread_key in conversation_threads:
+        del conversation_threads[thread_key]
+        respond("🧠 Second Brain conversation reset. Starting fresh!")
+    else:
+        respond("No active Second Brain conversation to reset.")
 
 
 def _log_langgraph_status() -> None:
