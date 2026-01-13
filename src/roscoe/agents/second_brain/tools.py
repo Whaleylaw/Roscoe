@@ -14,6 +14,11 @@ from typing import Optional, List, Literal
 logger = logging.getLogger(__name__)
 
 
+def _escape_cypher_string(value: str) -> str:
+    """Escape string for safe use in Cypher queries."""
+    return value.replace("'", "\\'").replace("\n", "\\n")
+
+
 # =============================================================================
 # CAPTURE TOOLS
 # =============================================================================
@@ -437,7 +442,7 @@ async def search_captures(
 
     labels = type_to_label.get(capture_type, type_to_label["all"])
     results = []
-    search_term = query.lower()
+    search_term = _escape_cypher_string(query.lower())
 
     for label in labels:
         cypher = f"""
@@ -566,9 +571,10 @@ async def query_cases(
         return "\n".join(output)
 
     elif query_type == "search" and search_term:
+        search_term_escaped = _escape_cypher_string(search_term)
         query = f"""
             MATCH (c:Case)
-            WHERE toLower(c.name) CONTAINS toLower('{search_term}')
+            WHERE toLower(c.name) CONTAINS toLower('{search_term_escaped}')
             RETURN c.name as name, c.case_type as type
             LIMIT {limit}
         """
