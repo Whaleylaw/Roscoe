@@ -218,10 +218,28 @@ class CaptureMiddleware(AgentMiddleware):
         # Remove None values
         props = {k: v for k, v in props.items() if v is not None}
 
+        # Build property string for Cypher CREATE (FalkorDB doesn't support $props map)
+        prop_items = []
+        for key, value in props.items():
+            if isinstance(value, str):
+                # Escape quotes in strings
+                escaped_value = value.replace("'", "\\'").replace("\n", "\\n")
+                prop_items.append(f"{key}: '{escaped_value}'")
+            elif isinstance(value, (int, float)):
+                prop_items.append(f"{key}: {value}")
+            elif isinstance(value, bool):
+                prop_items.append(f"{key}: {str(value).lower()}")
+            else:
+                # For complex types, convert to string
+                escaped_value = str(value).replace("'", "\\'")
+                prop_items.append(f"{key}: '{escaped_value}'")
+
+        props_str = ", ".join(prop_items)
+
         # Create entity node
-        query = f"CREATE (e:{category} $props) RETURN e.id as id"
+        query = f"CREATE (e:{category} {{{props_str}}}) RETURN e.id as id"
         try:
-            result = await run_cypher_query(query, {"props": props})
+            result = await run_cypher_query(query)
             if result and len(result) > 0:
                 logger.info(f"[CAPTURE] Created entity: {entity_id}")
                 return entity_id
