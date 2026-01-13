@@ -283,3 +283,51 @@ class CaptureMiddleware(AgentMiddleware):
         except Exception as e:
             logger.error(f"[CAPTURE] Failed to create log: {e}", exc_info=True)
             return None
+
+    def wrap_model_call(self, request, handler):
+        """Synchronous passthrough - captures handled in async mode."""
+        return handler(request)
+
+    async def awrap_model_call(self, request, handler):
+        """
+        Check for captures in user message before model call.
+
+        This runs on every model invocation. It:
+        1. Extracts the latest user message
+        2. Classifies it via LLM
+        3. If capture detected, creates entity + audit log
+        4. Continues to next middleware (does not short-circuit)
+        """
+        try:
+            message = self._extract_user_message(list(request.messages))
+
+            if message and len(message.strip()) >= 10:
+                classification = await self._classify_message(message)
+
+                if (classification and
+                    classification.get('is_capture') and
+                    classification.get('category') not in ['NONE', None]):
+
+                    category = classification['category']
+                    confidence = classification.get('confidence', 0)
+
+                    logger.info(
+                        f"[CAPTURE] Detected: {category} "
+                        f"(confidence: {confidence:.2f})"
+                    )
+
+                    # Create entity in graph
+                    entity_id = await self._write_to_graph(classification, message)
+
+                    # Create audit log
+                    await self._create_capture_log(message, classification, entity_id)
+
+                    status = 'filed' if confidence >= self.confidence_threshold else 'needs_review'
+                    print(f"📥 [CAPTURE] {category} ({status})", flush=True)
+
+        except Exception as e:
+            # Don't fail the request if capture detection fails
+            logger.error(f"[CAPTURE] Error in capture detection: {e}", exc_info=True)
+
+        # Always continue to next handler
+        return await handler(request)
