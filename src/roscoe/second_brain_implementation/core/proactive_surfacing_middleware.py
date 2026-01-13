@@ -236,7 +236,7 @@ class ProactiveSurfacingMiddleware(AgentMiddleware):
         Returns:
             Digest content as markdown string, or None if generation fails
         """
-        from paralegal.digest_generator.agent import (
+        from roscoe.second_brain_implementation.paralegal.digest_generator.agent import (
             generate_morning_digest,
             format_digest_markdown
         )
