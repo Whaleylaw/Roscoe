@@ -161,6 +161,15 @@ skill_selector_middleware = SkillSelectorMiddleware(
     similarity_threshold=0.3  # Minimum similarity score (0-1)
 )
 
+# Second Brain middleware instances
+capture_middleware = CaptureMiddleware(confidence_threshold=0.7)
+telos_middleware = TELOSMiddleware(workspace_dir=workspace_dir)
+continuity_middleware = ContinuityMiddleware(graph_client=graph_client)
+proactive_surfacing_middleware = ProactiveSurfacingMiddleware(
+    graph_client=graph_client,
+    slack_client=get_slack_client()
+)
+
 # Set the middleware instance globally so tools (list_skills, load_skill) can access it
 set_middleware_instance(skill_selector_middleware)
 
