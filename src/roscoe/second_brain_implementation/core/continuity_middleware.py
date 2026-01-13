@@ -96,27 +96,33 @@ class ContinuityMiddleware(AgentMiddleware):
 
         Args:
             state: Agent state dict
-            runtime: Runtime context with config (contains thread_id)
+            runtime: Runtime context (may or may not have config)
 
         Returns:
-            Dict with recent_memory_boxes and current_thread_id
+            Dict with recent_memory_boxes and current_thread_id, or None if unavailable
         """
-        # Extract thread_id from runtime config
-        thread_id = runtime.config.get('configurable', {}).get('thread_id')
+        try:
+            # Try to extract thread_id from runtime config (may not be available)
+            thread_id = None
+            if hasattr(runtime, 'config') and runtime.config:
+                thread_id = runtime.config.get('configurable', {}).get('thread_id')
 
-        if not thread_id:
-            logger.warning("[CONTINUITY] No thread_id in runtime config")
+            if not thread_id:
+                logger.debug("[CONTINUITY] No thread_id available in before_agent, skipping box preload")
+                return None
+
+            # Get recent boxes from graph
+            recent_boxes = self._get_recent_boxes(thread_id, limit=5)
+
+            logger.info(f"[CONTINUITY] Loaded {len(recent_boxes)} recent boxes for thread {thread_id}")
+
+            return {
+                "recent_memory_boxes": recent_boxes,
+                "current_thread_id": thread_id
+            }
+        except Exception as e:
+            logger.warning(f"[CONTINUITY] before_agent failed (non-fatal): {e}")
             return None
-
-        # Get recent boxes from graph
-        recent_boxes = self._get_recent_boxes(thread_id, limit=5)
-
-        logger.info(f"[CONTINUITY] Loaded {len(recent_boxes)} recent boxes for thread {thread_id}")
-
-        return {
-            "recent_memory_boxes": recent_boxes,
-            "current_thread_id": thread_id
-        }
 
     def _get_recent_boxes(self, thread_id: str, limit: int = 5) -> List[Dict]:
         """
