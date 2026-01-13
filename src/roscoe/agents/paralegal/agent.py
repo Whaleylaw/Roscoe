@@ -42,15 +42,6 @@ from roscoe.core.skill_middleware import SkillSelectorMiddleware, set_middleware
 from roscoe.core.case_context_middleware import CaseContextMiddleware
 from roscoe.core.workflow_middleware import WorkflowMiddleware
 from roscoe.core.ui_context_middleware import UIContextMiddleware
-# Second Brain middleware imports
-from roscoe.core.capture_middleware import CaptureMiddleware
-from roscoe.second_brain_implementation.core.telos_middleware import TELOSMiddleware
-from roscoe.second_brain_implementation.core.continuity_middleware import ContinuityMiddleware
-from roscoe.second_brain_implementation.core.proactive_surfacing_middleware import ProactiveSurfacingMiddleware
-from roscoe.second_brain_implementation.core.memory_backend import create_memory_backend
-from roscoe.second_brain_implementation.paralegal.fix_capture_tool import fix_capture
-from roscoe.core.graph_adapter import graph_client
-from roscoe.core.slack_adapter import get_slack_client
 from roscoe.agents.paralegal.prompts import minimal_personal_assistant_prompt
 from roscoe.agents.paralegal.sub_agents import get_multimodal_sub_agent
 from roscoe.agents.paralegal.tools import (
@@ -161,15 +152,6 @@ skill_selector_middleware = SkillSelectorMiddleware(
     similarity_threshold=0.3  # Minimum similarity score (0-1)
 )
 
-# Second Brain middleware instances
-capture_middleware = CaptureMiddleware(confidence_threshold=0.7)
-telos_middleware = TELOSMiddleware(workspace_dir=workspace_dir)
-continuity_middleware = ContinuityMiddleware(graph_client=graph_client)
-proactive_surfacing_middleware = ProactiveSurfacingMiddleware(
-    graph_client=graph_client,
-    slack_client=get_slack_client()
-)
-
 # Set the middleware instance globally so tools (list_skills, load_skill) can access it
 set_middleware_instance(skill_selector_middleware)
 
@@ -184,7 +166,7 @@ personal_assistant_agent = create_deep_agent(
         get_multimodal_sub_agent(),  # Multimodal analysis (model from MODEL_PROVIDER)
     ],
     model=get_agent_llm(),  # Model determined by MODEL_PROVIDER (see models.py) - lazily initialized
-    backend=create_memory_backend,  # Routes /memories/ to persistent storage
+    backend=None,  # Default backend
     tools=[
         send_slack_message,
         upload_file_to_slack,
@@ -249,29 +231,12 @@ personal_assistant_agent = create_deep_agent(
         complete_calendar_event,  # Mark events as completed
         search_calendar,  # Search/list calendar events with filters
         update_calendar_event,  # Reschedule or modify events
-        # Second Brain tools
-        fix_capture,  # Correct misclassified captures
     ],
     middleware=[
-        # Second Brain middleware (NEW)
-        capture_middleware,              # 1. Detect captures (tasks, ideas, interactions)
-        telos_middleware,                # 2. Load attorney context (TELOS)
-
-        # Existing middleware
-        case_context_middleware,         # 3. Detect client/case mentions
-        workflow_middleware,             # 4. Inject workflow guidance
-
-        # Second Brain middleware (NEW)
-        continuity_middleware,           # 5. Topic continuity detection
-
-        # Existing middleware
-        skill_selector_middleware,       # 6. Semantic skill matching
-        UIContextMiddleware(),           # 7. UI state bridging
-
-        # Second Brain middleware (NEW)
-        proactive_surfacing_middleware,  # 8. Morning digests (7 AM)
-
-        # Existing middleware
+        case_context_middleware,         # 1. Detect client/case mentions
+        workflow_middleware,             # 2. Inject workflow guidance
+        skill_selector_middleware,       # 3. Semantic skill matching
+        UIContextMiddleware(),           # 4. UI state bridging
         get_patched_shell_middleware(
             workspace_root=local_workspace_dir,
             execution_policy=HostExecutionPolicy(),
