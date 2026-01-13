@@ -105,8 +105,8 @@ class CaseContextMiddleware(AgentMiddleware):
         # Key: (thread_id, case_name), Value: context dict
         self._context_cache = {}
 
-        print(f"🔥🔥🔥 CASE CONTEXT MIDDLEWARE INITIALIZED - {len(self.caselist)} cases, {len(self.chunks_manifest.get('chunks', []))} chunks loaded 🔥🔥🔥", flush=True)
-        logger.info(f"[CASE CONTEXT] Initialized with {len(self.caselist)} cases and {len(self.chunks_manifest.get('chunks', []))} context chunks")
+        print(f"🔥🔥🔥 CASE CONTEXT MIDDLEWARE INITIALIZED - {len(self.caselist)} cases from graph, {len(self.chunks_manifest.get('chunks', []))} chunks loaded 🔥🔥🔥", flush=True)
+        logger.info(f"[CASE CONTEXT] Initialized with {len(self.caselist)} cases from graph and {len(self.chunks_manifest.get('chunks', []))} context chunks")
 
     def _get_datetime_header(self) -> str:
         """Generate current date/time header for injection into system prompt."""
@@ -233,17 +233,44 @@ class CaseContextMiddleware(AgentMiddleware):
         return request.override(messages=messages)
 
     def _load_caselist(self) -> List[Dict]:
-        """Load caselist.json from Database folder."""
-        caselist_path = self.database_dir / "caselist.json"
-        if not caselist_path.exists():
-            logger.warning(f"[CASE CONTEXT] caselist.json not found at {caselist_path}")
-            return []
-
+        """Load cases from FalkorDB knowledge graph."""
         try:
-            with open(caselist_path) as f:
-                return json.load(f)
+            import concurrent.futures
+
+            async def _query_cases():
+                from roscoe.core.graphiti_client import run_cypher_query
+
+                query = """
+                    MATCH (c:Case)
+                    OPTIONAL MATCH (c)-[:HAS_CLIENT]->(client:Client)
+                    RETURN c.name as project_name, client.name as client_name
+                """
+                results = await run_cypher_query(query, {})
+                return [
+                    {"project_name": r.get("project_name"), "client_name": r.get("client_name")}
+                    for r in results
+                    if r.get("project_name")
+                ]
+
+            # Run async query synchronously
+            with concurrent.futures.ThreadPoolExecutor() as pool:
+                future = pool.submit(asyncio.run, _query_cases())
+                cases = future.result(timeout=30)
+
+            logger.info(f"[CASE CONTEXT] Loaded {len(cases)} cases from knowledge graph")
+            return cases
+
         except Exception as e:
-            logger.error(f"[CASE CONTEXT] Error loading caselist: {e}")
+            logger.error(f"[CASE CONTEXT] Error loading cases from graph: {e}")
+            # Fallback to JSON if graph fails
+            caselist_path = self.database_dir / "caselist.json"
+            if caselist_path.exists():
+                try:
+                    with open(caselist_path) as f:
+                        logger.warning("[CASE CONTEXT] Falling back to caselist.json")
+                        return json.load(f)
+                except Exception:
+                    pass
             return []
 
     def _build_name_mapping(self) -> Dict[str, str]:
@@ -254,13 +281,31 @@ class CaseContextMiddleware(AgentMiddleware):
         - Full client name: "Caryn McCay" -> project_name
         - Last name only: "McCay" -> project_name
         - First name only: "Caryn" -> project_name (lower priority)
+        - Extracted from project_name if client_name missing
         """
         mapping = {}
         for case in self.caselist:
             project_name = case.get("project_name", "")
             client_name = case.get("client_name", "")
 
-            if not client_name or not project_name:
+            if not project_name:
+                continue
+
+            # If no client_name, try to extract from project_name
+            # e.g., "Antonio-Lopez-MVA-11-14-2025" -> "Antonio Lopez"
+            if not client_name:
+                parts = project_name.split("-")
+                # Take name parts before case type (MVA, WC, Premise, etc.)
+                case_types = {"mva", "wc", "premise", "sf", "db", "wd", "estate", "dual"}
+                name_parts = []
+                for part in parts:
+                    if part.lower() in case_types:
+                        break
+                    name_parts.append(part)
+                if name_parts:
+                    client_name = " ".join(name_parts)
+
+            if not client_name:
                 continue
 
             # Normalize client name
