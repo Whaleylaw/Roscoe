@@ -1038,6 +1038,8 @@ ENTITY_TYPES = [
     WorkflowTool,
     # Workflow state entities (case-specific state)
     LandmarkStatus,   # Tracks landmark completion per case
+    # Calendar / Scheduling entities
+    CalendarEvent,    # Deadlines, tasks, hearings, reminders (case or firm-wide)
 ]
 
 # =============================================================================
