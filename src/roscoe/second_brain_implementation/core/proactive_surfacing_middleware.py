@@ -125,9 +125,19 @@ class ProactiveSurfacingMiddleware(AgentMiddleware):
         if current_time is None:
             current_time = datetime.now()
 
-        # Extract user_id and thread_id from runtime config
-        user_id = runtime.config.get('configurable', {}).get('user_id', 'default')
-        thread_id = runtime.config.get('configurable', {}).get('thread_id')
+        # Extract user_id and thread_id from runtime config (may not be available)
+        try:
+            if hasattr(runtime, 'config') and runtime.config:
+                user_id = runtime.config.get('configurable', {}).get('user_id', 'default')
+                thread_id = runtime.config.get('configurable', {}).get('thread_id')
+            else:
+                logger.debug("[PROACTIVE SURFACING] No runtime.config available, using defaults")
+                user_id = 'default'
+                thread_id = None
+        except Exception as e:
+            logger.warning(f"[PROACTIVE SURFACING] Error accessing runtime config: {e}")
+            user_id = 'default'
+            thread_id = None
 
         today = current_time.date()
 
