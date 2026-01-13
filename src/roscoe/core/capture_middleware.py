@@ -157,3 +157,129 @@ class CaptureMiddleware(AgentMiddleware):
         except Exception as e:
             logger.error(f"[CAPTURE] Classification failed: {e}", exc_info=True)
             return None
+
+    async def _write_to_graph(self, classification: Dict, raw_text: str) -> Optional[str]:
+        """
+        Create entity node in graph based on classification.
+
+        Args:
+            classification: Dict with category and extracted_data
+            raw_text: Original message text
+
+        Returns:
+            Entity ID if created, None on failure
+        """
+        from roscoe.core.graphiti_client import run_cypher_query
+
+        category = classification['category']
+        data = classification.get('extracted_data', {}) or {}
+        entity_id = f"{category}_{datetime.now().strftime('%Y%m%d_%H%M%S_%f')}"
+
+        # Build entity properties based on category
+        props = {
+            "id": entity_id,
+            "created_at": datetime.now().isoformat(),
+            "raw_text": raw_text[:500]  # Store truncated original
+        }
+
+        if category == 'PersonalAssistant_Task':
+            props.update({
+                "name": data.get("name", raw_text[:50]),
+                "next_action": data.get("next_action", ""),
+                "due_date": data.get("due_date"),
+                "status": "pending"
+            })
+        elif category == 'PersonalAssistant_Idea':
+            props.update({
+                "name": data.get("name", raw_text[:50]),
+                "one_liner": data.get("one_liner", raw_text[:100])
+            })
+        elif category == 'PersonalAssistant_Interaction':
+            props.update({
+                "name": data.get("name", "Interaction"),
+                "interaction_type": data.get("interaction_type", "unknown"),
+                "participants": json.dumps(data.get("participants", [])),
+                "occurred_at": data.get("occurred_at"),
+                "notes": data.get("notes", raw_text[:200])
+            })
+        elif category == 'Case_Note':
+            props.update({
+                "case_name": data.get("case_name", ""),
+                "note_content": data.get("note_content", raw_text)
+            })
+        else:
+            # Attorney, Judge, OpposingCounsel
+            props.update({
+                "name": data.get("name", "Unknown"),
+                "person_type": data.get("person_type", category.split('_')[-1]),
+                "context": data.get("context", raw_text[:200])
+            })
+
+        # Remove None values
+        props = {k: v for k, v in props.items() if v is not None}
+
+        # Create entity node
+        query = f"CREATE (e:{category} $props) RETURN e.id as id"
+        try:
+            result = await run_cypher_query(query, {"props": props})
+            if result and len(result) > 0:
+                logger.info(f"[CAPTURE] Created entity: {entity_id}")
+                return entity_id
+            return None
+        except Exception as e:
+            logger.error(f"[CAPTURE] Failed to create entity: {e}", exc_info=True)
+            return None
+
+    async def _create_capture_log(
+        self,
+        raw_text: str,
+        classification: Dict,
+        entity_id: Optional[str]
+    ) -> Optional[str]:
+        """
+        Create CaptureLog audit node.
+
+        Args:
+            raw_text: Original message
+            classification: Classification result
+            entity_id: ID of created entity (if any)
+
+        Returns:
+            CaptureLog ID
+        """
+        from roscoe.core.graphiti_client import run_cypher_query
+
+        log_id = f"CaptureLog_{datetime.now().strftime('%Y%m%d_%H%M%S_%f')}"
+        confidence = classification.get('confidence', 0.5)
+        status = 'filed' if confidence >= self.confidence_threshold else 'needs_review'
+
+        query = """
+        CREATE (log:CaptureLog {
+            id: $log_id,
+            raw_text: $raw_text,
+            category: $category,
+            confidence: $confidence,
+            confidence_reason: $confidence_reason,
+            status: $status,
+            entity_id: $entity_id,
+            correction_count: 0,
+            captured_at: timestamp()
+        })
+        RETURN log.id as id
+        """
+
+        try:
+            await run_cypher_query(query, {
+                "log_id": log_id,
+                "raw_text": raw_text[:1000],
+                "category": classification.get('category', 'NONE'),
+                "confidence": confidence,
+                "confidence_reason": classification.get('confidence_reason', ''),
+                "status": status,
+                "entity_id": entity_id
+            })
+            logger.info(f"[CAPTURE] Created log: {log_id} (status={status})")
+            return log_id
+        except Exception as e:
+            logger.error(f"[CAPTURE] Failed to create log: {e}", exc_info=True)
+            return None
