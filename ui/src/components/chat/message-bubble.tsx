@@ -226,7 +226,7 @@ export function MessageBubble({ role, content, timestamp, toolCalls, attachments
         {/* Message content */}
         <div className={`max-w-[85%] shadow-sm ${
           isUser
-            ? "px-5 py-3 bg-[#c9a227] text-[#1e3a5f] rounded-[14px_14px_4px_14px]"
+            ? "px-6 py-3 min-w-[60px] bg-[#c9a227] text-[#1e3a5f] rounded-[14px_14px_4px_14px]"
             : "px-4 py-3 bg-[#f5f3ed] border border-[#d4c5a9] text-[#2c3e50] rounded-[14px_14px_14px_4px]"
         }`}>
           {isUser ? (
