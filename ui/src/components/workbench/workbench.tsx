@@ -66,7 +66,8 @@ export function Workbench() {
         </div>
 
         {/* Content - Chat or Artifact based on swap state */}
-        <div className="flex-1 min-h-0 overflow-hidden pb-36">
+        {/* Using calc to leave 144px (1.5in) clearance at bottom */}
+        <div className="min-h-0 overflow-hidden" style={{ height: 'calc(100% - 144px)' }}>
           {panelsSwapped ? <RightPanel /> : <ChatPanel />}
         </div>
       </main>
