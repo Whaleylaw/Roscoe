@@ -55,3 +55,59 @@ Return ONLY valid JSON:
     // For Attorney/Judge/OpposingCounsel: "name", "person_type", "context"
   }}
 }}'''
+
+
+class CaptureMiddleware(AgentMiddleware):
+    """
+    Detect and classify captures from user messages.
+
+    Creates:
+    - CaptureLog node (audit trail with confidence score)
+    - Entity node (Task, Idea, Interaction, etc.)
+
+    Low confidence captures (< threshold) get status='needs_review'.
+    """
+
+    name: str = "capture"
+    tools: list = []
+
+    def __init__(self, confidence_threshold: float = 0.7):
+        """
+        Initialize CaptureMiddleware.
+
+        Args:
+            confidence_threshold: Minimum confidence to auto-file (default 0.7).
+                                  Below this, status='needs_review'.
+        """
+        self.confidence_threshold = confidence_threshold
+        self._llm = None  # Lazy init to avoid pickle issues
+        logger.info(f"[CAPTURE] Initialized with threshold={confidence_threshold}")
+        print("CAPTURE MIDDLEWARE INITIALIZED", flush=True)
+
+    def _get_llm(self):
+        """Lazy initialize LLM to avoid pickle errors with LangGraph checkpointing."""
+        if self._llm is None:
+            self._llm = ChatAnthropic(
+                model="claude-haiku-4-5-20251001",
+                temperature=0,
+                max_retries=2
+            )
+        return self._llm
+
+    def _extract_user_message(self, messages: List) -> Optional[str]:
+        """Extract the latest user message content."""
+        for msg in reversed(messages):
+            if isinstance(msg, HumanMessage):
+                content = msg.content
+                if isinstance(content, str):
+                    return content
+                elif isinstance(content, list):
+                    # Handle multimodal messages
+                    text_parts = []
+                    for block in content:
+                        if isinstance(block, dict) and block.get('type') == 'text':
+                            text_parts.append(block.get('text', ''))
+                        elif isinstance(block, str):
+                            text_parts.append(block)
+                    return ' '.join(text_parts)
+        return None
