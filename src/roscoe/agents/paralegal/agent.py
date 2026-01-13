@@ -32,7 +32,6 @@ Workspace Architecture:
 import os
 from pathlib import Path
 from deepagents import create_deep_agent
-from deepagents.backends import FilesystemBackend
 from langchain.agents.middleware import HostExecutionPolicy
 
 from roscoe.agents.paralegal.models import get_agent_llm, MODEL_PROVIDER
@@ -184,7 +183,7 @@ personal_assistant_agent = create_deep_agent(
         get_multimodal_sub_agent(),  # Multimodal analysis (model from MODEL_PROVIDER)
     ],
     model=get_agent_llm(),  # Model determined by MODEL_PROVIDER (see models.py) - lazily initialized
-    backend=FilesystemBackend(root_dir=workspace_dir, virtual_mode=True),
+    backend=create_memory_backend,  # Routes /memories/ to persistent storage
     tools=[
         send_slack_message,
         upload_file_to_slack,
