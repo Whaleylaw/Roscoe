@@ -1,0 +1,18 @@
+{
+  "plan_file": "docs/plans/2026-01-13-roscoe-second-brain-agent.md",
+  "current_task_id": 10,
+  "started_at": "2026-01-13T20:00:00",
+  "completed_at": "2026-01-13T20:12:00",
+  "tasks": [
+    {"id": 1, "name": "Create agent directory and __init__.py", "status": "completed", "commit_sha": "3fbcdd29"},
+    {"id": 2, "name": "Create models.py", "status": "completed", "commit_sha": "763716fb"},
+    {"id": 3, "name": "Create prompts.py", "status": "completed", "commit_sha": "d6621ffe"},
+    {"id": 4, "name": "Create tools.py", "status": "completed", "commit_sha": "d99c9109"},
+    {"id": 5, "name": "Create agent.py", "status": "completed", "commit_sha": "704bd543"},
+    {"id": 6, "name": "Clean paralegal agent.py", "status": "completed", "commit_sha": "4a6c6866"},
+    {"id": 7, "name": "Update langgraph.json", "status": "completed", "commit_sha": "bbc08e23"},
+    {"id": 8, "name": "Deploy to VM", "status": "completed", "commit_sha": "d1c19801"},
+    {"id": 9, "name": "Test Second Brain agent", "status": "completed", "commit_sha": "b1cc5a2e"},
+    {"id": 10, "name": "Test Paralegal agent", "status": "completed", "commit_sha": "b1cc5a2e"}
+  ]
+}

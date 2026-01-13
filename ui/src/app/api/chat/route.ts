@@ -51,10 +51,14 @@ interface MessageWithAttachments {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { messages, thread_id } = body as { messages: MessageWithAttachments[]; thread_id?: string };
+    const { messages, thread_id, agent_id } = body as { messages: MessageWithAttachments[]; thread_id?: string; agent_id?: string };
+
+    // Use provided agent_id or default to paralegal
+    const assistantId = agent_id || "roscoe_paralegal";
 
     console.log("[Chat API] Forwarding to LangGraph:", LANGGRAPH_URL);
     console.log("[Chat API] Thread ID:", thread_id || "(new thread)");
+    console.log("[Chat API] Agent ID:", assistantId);
     console.log("[Chat API] Messages:", messages?.length || 0, "messages");
 
     // Create a thread if one wasn't provided
@@ -187,7 +191,7 @@ export async function POST(request: NextRequest) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        assistant_id: "roscoe_paralegal",
+        assistant_id: assistantId,
         input: {
           messages: formattedMessages,
         },

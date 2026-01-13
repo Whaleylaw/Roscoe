@@ -74,6 +74,10 @@ interface WorkbenchState {
   // LangGraph thread ID (the real backend thread ID)
   langGraphThreadId: string | null;
   setLangGraphThreadId: (id: string | null) => void;
+
+  // Agent selection
+  selectedAgent: string;
+  setSelectedAgent: (agent: string) => void;
 }
 
 export const useWorkbenchStore = create<WorkbenchState>((set, get) => ({
@@ -127,4 +131,8 @@ export const useWorkbenchStore = create<WorkbenchState>((set, get) => ({
   // LangGraph thread ID
   langGraphThreadId: null,
   setLangGraphThreadId: (id) => set({ langGraphThreadId: id }),
+
+  // Agent selection - defaults to paralegal
+  selectedAgent: "roscoe_paralegal",
+  setSelectedAgent: (agent) => set({ selectedAgent: agent }),
 }));

@@ -5,10 +5,16 @@ import { MessageList, ChatMessage, ToolCallInfo } from "./message-list";
 import { MessageInput } from "./message-input";
 import { streamLangGraphResponse, cancelRun } from "@/lib/langgraph-client";
 import { useWorkbenchStore } from "@/stores/workbench-store";
-import { Loader2, Square } from "lucide-react";
+import { Loader2, Square, ChevronDown } from "lucide-react";
+
+// Available agents
+const AGENTS = [
+  { id: "roscoe_paralegal", name: "Paralegal", description: "Legal research, case management, documents" },
+  { id: "roscoe_second_brain", name: "Second Brain", description: "Tasks, notes, reminders, memory" },
+];
 
 export function ChatPanel() {
-  const { messages, setMessages, langGraphThreadId, setLangGraphThreadId, setOpenDocument } = useWorkbenchStore();
+  const { messages, setMessages, langGraphThreadId, setLangGraphThreadId, setOpenDocument, selectedAgent, setSelectedAgent } = useWorkbenchStore();
   const [isLoading, setIsLoading] = useState(false);
   const [streamingContent, setStreamingContent] = useState("");
   const [currentRunId, setCurrentRunId] = useState<string | null>(null);
@@ -111,13 +117,14 @@ export function ChatPanel() {
 
       // Stream from LangGraph with thread tracking
       // Pass existing thread ID if available, get new thread ID via callback
-      console.log("[ChatPanel] Starting stream with thread:", langGraphThreadId || "(new)");
+      console.log("[ChatPanel] Starting stream with thread:", langGraphThreadId || "(new)", "agent:", selectedAgent);
       for await (const chunk of streamLangGraphResponse(
         messageHistory,
         langGraphThreadId || undefined,
         handleThreadCreated,
         handleRunStarted,
-        abortControllerRef.current.signal
+        abortControllerRef.current.signal,
+        selectedAgent
       )) {
         // Handle run_start event
         if (chunk.type === "run_start" && chunk.run_id) {
@@ -451,8 +458,43 @@ export function ChatPanel() {
     }
   };
 
+  // Get current agent info
+  const currentAgent = AGENTS.find(a => a.id === selectedAgent) || AGENTS[0];
+
+  // Handle agent change - also reset thread for new agent context
+  const handleAgentChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newAgent = e.target.value;
+    setSelectedAgent(newAgent);
+    // Reset thread when switching agents so they start fresh
+    setLangGraphThreadId(null);
+    setMessages([]);
+  };
+
   return (
     <div className="flex h-full flex-col bg-[#f8f7f4]">
+      {/* Agent selector header */}
+      <div className="shrink-0 border-b border-[#d4c5a9] bg-white px-4 py-2">
+        <div className="flex items-center gap-2">
+          <label className="text-xs text-[#8b7355] font-medium">Agent:</label>
+          <div className="relative">
+            <select
+              value={selectedAgent}
+              onChange={handleAgentChange}
+              disabled={isLoading}
+              className="appearance-none bg-[#f8f7f4] border border-[#d4c5a9] rounded px-3 py-1.5 pr-8 text-sm text-[#3d3929] cursor-pointer hover:bg-[#f0ede4] focus:outline-none focus:ring-2 focus:ring-[#8b7355] disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {AGENTS.map(agent => (
+                <option key={agent.id} value={agent.id}>
+                  {agent.name}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 text-[#8b7355] pointer-events-none" />
+          </div>
+          <span className="text-xs text-[#a89a7c] ml-2">{currentAgent.description}</span>
+        </div>
+      </div>
+
       {/* Messages - tool calls now render inline within messages */}
       <MessageList messages={messages} isStreaming={isLoading} />
 

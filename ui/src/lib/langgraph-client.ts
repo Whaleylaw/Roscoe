@@ -143,13 +143,15 @@ export async function* streamLangGraphResponse(
   threadId?: string,
   onThreadCreated?: (threadId: string) => void,
   onRunStarted?: (runId: string) => void,
-  signal?: AbortSignal
+  signal?: AbortSignal,
+  agentId?: string
 ): AsyncGenerator<StreamChunk> {
   // Use our API proxy to avoid CORS issues
   const endpoint = "/api/chat";
 
   console.log("[LangGraph] Streaming via proxy:", endpoint);
   console.log("[LangGraph] Thread ID:", threadId || "(new thread)");
+  console.log("[LangGraph] Agent ID:", agentId || "roscoe_paralegal (default)");
   console.log("[LangGraph] Messages:", messages.length);
 
   const response = await fetch(endpoint, {
@@ -157,7 +159,7 @@ export async function* streamLangGraphResponse(
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ messages, thread_id: threadId }),
+    body: JSON.stringify({ messages, thread_id: threadId, agent_id: agentId }),
     signal, // Allow aborting the fetch
   });
 

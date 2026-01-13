@@ -1,0 +1,38 @@
+# Roscoe Second Brain - Separate Agent Progress
+
+Started: 2026-01-13
+Plan: docs/plans/2026-01-13-roscoe-second-brain-agent.md
+Skill: subagent-driven-development
+
+## Context
+
+Creating separate Roscoe Second Brain agent because:
+- CaptureMiddleware in paralegal lacked context (ran before case_context_middleware)
+- Misclassified captures (e.g., "Timothy Rule" guessed as Attorney instead of Client)
+- Dedicated agent receives full conversation context for accurate classification
+
+## Session Log
+
+### 2026-01-13 20:00 - Fresh Start
+
+All tasks pending. Beginning with Task 1.
+
+**Phase 1: Create Second Brain Agent Structure**
+- Task 1: Create agent directory and __init__.py - PENDING
+- Task 2: Create models.py - PENDING
+- Task 3: Create prompts.py - PENDING
+- Task 4: Create tools.py - PENDING
+- Task 5: Create agent.py - PENDING
+
+**Phase 2: Remove Second Brain from Paralegal**
+- Task 6: Clean paralegal agent.py - PENDING
+
+**Phase 3: Register and Deploy**
+- Task 7: Update langgraph.json - PENDING
+- Task 8: Deploy to VM - PENDING
+
+**Phase 4: Verification**
+- Task 9: Test Second Brain agent - PENDING
+- Task 10: Test Paralegal agent - PENDING
+
+## Status: IN PROGRESS - Task 1
