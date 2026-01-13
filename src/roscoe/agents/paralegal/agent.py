@@ -250,22 +250,25 @@ personal_assistant_agent = create_deep_agent(
         update_calendar_event,  # Reschedule or modify events
     ],
     middleware=[
-        # NOTE: create_deep_agent adds its own SummarizationMiddleware internally.
-        # It triggers at 85% of model's max_input_tokens (~850k for Gemini).
-        # We can't override it without switching to create_agent (bigger change).
-        # If hitting rate limits, consider switching models or using create_agent.
+        # Second Brain middleware (NEW)
+        capture_middleware,              # 1. Detect captures (tasks, ideas, interactions)
+        telos_middleware,                # 2. Load attorney context (TELOS)
 
-        # Case context injection: detects client mentions, loads case data
-        case_context_middleware,
-        # Workflow orchestration: computes workflow state, injects guidance with resource paths
-        workflow_middleware,
-        # Skill selector: semantic search + skill injection (scans SKILL.md files)
-        skill_selector_middleware,
-        # UI context: bridges CopilotKit UI state to agent (open documents, workspace location)
-        UIContextMiddleware(),
-        # Shell tool: provides Glob, Grep, and shell commands for LOCAL_WORKSPACE
-        # Points to local SSD for fast text file operations (synced from GCS)
-        # Using patched version to avoid pickle errors with LangGraph checkpointing
+        # Existing middleware
+        case_context_middleware,         # 3. Detect client/case mentions
+        workflow_middleware,             # 4. Inject workflow guidance
+
+        # Second Brain middleware (NEW)
+        continuity_middleware,           # 5. Topic continuity detection
+
+        # Existing middleware
+        skill_selector_middleware,       # 6. Semantic skill matching
+        UIContextMiddleware(),           # 7. UI state bridging
+
+        # Second Brain middleware (NEW)
+        proactive_surfacing_middleware,  # 8. Morning digests (7 AM)
+
+        # Existing middleware
         get_patched_shell_middleware(
             workspace_root=local_workspace_dir,
             execution_policy=HostExecutionPolicy(),
