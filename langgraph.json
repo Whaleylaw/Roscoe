@@ -2,6 +2,7 @@
     "dependencies": ["."],
     "graphs": {
         "roscoe_paralegal": "./src/roscoe/agents/paralegal/agent.py:personal_assistant_agent",
+        "roscoe_second_brain": "./src/roscoe/agents/second_brain/agent.py:second_brain_agent",
         "medical_records_agent": "./src/roscoe/agents/medical_records/agent.py:medical_records_agent"
     },
     "env": ".env",
