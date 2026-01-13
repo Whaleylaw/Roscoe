@@ -111,3 +111,49 @@ class CaptureMiddleware(AgentMiddleware):
                             text_parts.append(block)
                     return ' '.join(text_parts)
         return None
+
+    async def _classify_message(self, message: str) -> Optional[Dict]:
+        """
+        Classify message using LLM to detect captures.
+
+        Args:
+            message: User message text
+
+        Returns:
+            Classification dict with is_capture, category, confidence, extracted_data
+            or None if classification fails
+        """
+        if not message or len(message.strip()) < 5:
+            return None
+
+        try:
+            prompt = CLASSIFICATION_PROMPT.format(message=message[:2000])  # Truncate long messages
+            response = await self._get_llm().ainvoke([HumanMessage(content=prompt)])
+
+            # Parse JSON response
+            text = response.content
+
+            # Extract JSON from markdown code block if present
+            json_match = re.search(r'```(?:json)?\s*(.*?)\s*```', text, re.DOTALL)
+            if json_match:
+                text = json_match.group(1)
+
+            classification = json.loads(text)
+
+            # Validate required fields
+            if 'is_capture' not in classification:
+                classification['is_capture'] = False
+            if 'category' not in classification:
+                classification['category'] = 'NONE'
+            if 'confidence' not in classification:
+                classification['confidence'] = 0.5
+
+            logger.debug(f"[CAPTURE] Classification: {classification}")
+            return classification
+
+        except json.JSONDecodeError as e:
+            logger.warning(f"[CAPTURE] Failed to parse LLM response as JSON: {e}")
+            return None
+        except Exception as e:
+            logger.error(f"[CAPTURE] Classification failed: {e}", exc_info=True)
+            return None
