@@ -66,7 +66,7 @@ export function Workbench() {
         </div>
 
         {/* Content - Chat or Artifact based on swap state */}
-        <div className="flex-1 min-h-0 overflow-hidden">
+        <div className="flex-1 min-h-0 overflow-hidden pb-36">
           {panelsSwapped ? <RightPanel /> : <ChatPanel />}
         </div>
       </main>

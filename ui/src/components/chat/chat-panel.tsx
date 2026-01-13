@@ -456,30 +456,26 @@ export function ChatPanel() {
       {/* Messages - tool calls now render inline within messages */}
       <MessageList messages={messages} isStreaming={isLoading} />
 
-      {/* Input container with bottom spacing */}
-      <div className="shrink-0">
-        <div className="border-t border-[#d4c5a9] bg-white px-4 py-3">
-          {/* Status bar with cancel button */}
-          {isLoading && (
-            <div className="flex items-center justify-between text-xs text-[#8b7355] mb-2">
-              <div className="flex items-center gap-2">
-                <Loader2 className="h-3 w-3 animate-spin" />
-                <span>Working...</span>
-              </div>
-              <button
-                onClick={handleCancel}
-                className="flex items-center gap-1 px-2 py-1 rounded hover:bg-red-100 text-red-600 transition-colors"
-                title="Cancel request"
-              >
-                <Square className="h-3 w-3 fill-current" />
-                <span>Cancel</span>
-              </button>
+      {/* Input */}
+      <div className="shrink-0 border-t border-[#d4c5a9] bg-white px-4 py-3">
+        {/* Status bar with cancel button */}
+        {isLoading && (
+          <div className="flex items-center justify-between text-xs text-[#8b7355] mb-2">
+            <div className="flex items-center gap-2">
+              <Loader2 className="h-3 w-3 animate-spin" />
+              <span>Working...</span>
             </div>
-          )}
-          <MessageInput onSend={handleSendMessage} disabled={isLoading} />
-        </div>
-        {/* Bottom spacer - 1.5 inches (~144px) clearance from screen edge */}
-        <div className="h-36 bg-[#f8f7f4]" />
+            <button
+              onClick={handleCancel}
+              className="flex items-center gap-1 px-2 py-1 rounded hover:bg-red-100 text-red-600 transition-colors"
+              title="Cancel request"
+            >
+              <Square className="h-3 w-3 fill-current" />
+              <span>Cancel</span>
+            </button>
+          </div>
+        )}
+        <MessageInput onSend={handleSendMessage} disabled={isLoading} />
       </div>
     </div>
   );
