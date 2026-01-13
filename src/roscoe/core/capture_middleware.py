@@ -82,7 +82,7 @@ class CaptureMiddleware(AgentMiddleware):
         self.confidence_threshold = confidence_threshold
         self._llm = None  # Lazy init to avoid pickle issues
         logger.info(f"[CAPTURE] Initialized with threshold={confidence_threshold}")
-        print("CAPTURE MIDDLEWARE INITIALIZED", flush=True)
+        print("📥 CAPTURE MIDDLEWARE INITIALIZED", flush=True)
 
     def _get_llm(self):
         """Lazy initialize LLM to avoid pickle errors with LangGraph checkpointing."""
