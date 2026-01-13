@@ -48,6 +48,7 @@ from roscoe.second_brain_implementation.core.telos_middleware import TELOSMiddle
 from roscoe.second_brain_implementation.core.continuity_middleware import ContinuityMiddleware
 from roscoe.second_brain_implementation.core.proactive_surfacing_middleware import ProactiveSurfacingMiddleware
 from roscoe.second_brain_implementation.core.memory_backend import create_memory_backend
+from roscoe.second_brain_implementation.paralegal.fix_capture_tool import fix_capture
 from roscoe.core.graph_adapter import graph_client
 from roscoe.core.slack_adapter import get_slack_client
 from roscoe.agents.paralegal.prompts import minimal_personal_assistant_prompt
@@ -248,6 +249,8 @@ personal_assistant_agent = create_deep_agent(
         complete_calendar_event,  # Mark events as completed
         search_calendar,  # Search/list calendar events with filters
         update_calendar_event,  # Reschedule or modify events
+        # Second Brain tools
+        fix_capture,  # Correct misclassified captures
     ],
     middleware=[
         # Second Brain middleware (NEW)
