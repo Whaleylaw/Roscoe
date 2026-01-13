@@ -43,6 +43,14 @@ from roscoe.core.skill_middleware import SkillSelectorMiddleware, set_middleware
 from roscoe.core.case_context_middleware import CaseContextMiddleware
 from roscoe.core.workflow_middleware import WorkflowMiddleware
 from roscoe.core.ui_context_middleware import UIContextMiddleware
+# Second Brain middleware imports
+from roscoe.core.capture_middleware import CaptureMiddleware
+from roscoe.second_brain_implementation.core.telos_middleware import TELOSMiddleware
+from roscoe.second_brain_implementation.core.continuity_middleware import ContinuityMiddleware
+from roscoe.second_brain_implementation.core.proactive_surfacing_middleware import ProactiveSurfacingMiddleware
+from roscoe.second_brain_implementation.core.memory_backend import create_memory_backend
+from roscoe.core.graph_adapter import graph_client
+from roscoe.core.slack_adapter import get_slack_client
 from roscoe.agents.paralegal.prompts import minimal_personal_assistant_prompt
 from roscoe.agents.paralegal.sub_agents import get_multimodal_sub_agent
 from roscoe.agents.paralegal.tools import (
