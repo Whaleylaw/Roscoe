@@ -225,6 +225,156 @@ Be specific, objective, and thorough. Focus on facts, not conclusions."""
         return f"Image analysis error: {str(e)}"
 
 
+def view_pdf(
+    file_path: str,
+    pages: Optional[str] = None,
+    analysis_prompt: Optional[str] = None,
+) -> str:
+    """
+    View and analyze a PDF file using vision capabilities.
+
+    Converts PDF pages to images and analyzes them with a multimodal LLM,
+    allowing the agent to "see" the actual PDF content including layouts,
+    images, tables, and formatting that text extraction might miss.
+
+    This is especially useful for:
+    - Medical records with complex formatting
+    - Documents with tables, charts, or images
+    - Scanned documents or forms
+    - Verifying OCR accuracy
+    - Understanding document layout and structure
+
+    Args:
+        file_path: Workspace-relative path to the PDF (e.g., "/projects/case/Medical Records/report.pdf")
+        pages: Which pages to view. Options:
+               - None (default): First 3 pages
+               - "all": All pages (use carefully for large PDFs)
+               - "1": Single page
+               - "1-5": Page range
+               - "1,3,5": Specific pages
+        analysis_prompt: Optional specific analysis instructions. If not provided, uses document analysis default.
+
+    Returns:
+        Detailed visual analysis of the PDF pages.
+
+    Examples:
+        view_pdf("/projects/Wilson-MVA-2024/Medical Records/MRI_report.pdf")
+        view_pdf("/projects/case/bills/hospital_bill.pdf", pages="1", analysis_prompt="Extract the total amount due")
+        view_pdf("/projects/case/Medical Records/surgical_notes.pdf", pages="1-3")
+    """
+    try:
+        from pdf2image import convert_from_path
+        from io import BytesIO
+
+        # Convert workspace-relative path to absolute path
+        # PDFs are binary files - always use GCS workspace mount
+        if file_path.startswith('/'):
+            file_path = file_path[1:]  # Remove leading slash
+        abs_path = GCS_WORKSPACE / file_path
+
+        if not abs_path.exists():
+            return f"Error: PDF file not found at {file_path}"
+
+        if not str(abs_path).lower().endswith('.pdf'):
+            return f"Error: File is not a PDF: {file_path}"
+
+        # Parse page specification
+        first_page = None
+        last_page = None
+        specific_pages = None
+
+        if pages is None:
+            # Default: first 3 pages
+            first_page = 1
+            last_page = 3
+        elif pages.lower() == "all":
+            # All pages - no limits
+            pass
+        elif "-" in pages:
+            # Range like "1-5"
+            parts = pages.split("-")
+            first_page = int(parts[0])
+            last_page = int(parts[1])
+        elif "," in pages:
+            # Specific pages like "1,3,5"
+            specific_pages = [int(p.strip()) for p in pages.split(",")]
+        else:
+            # Single page
+            first_page = int(pages)
+            last_page = int(pages)
+
+        # Convert PDF to images
+        logger.info(f"Converting PDF to images: {file_path}")
+
+        if specific_pages:
+            # Convert specific pages one at a time and collect
+            images = []
+            for page_num in specific_pages:
+                page_images = convert_from_path(
+                    str(abs_path),
+                    first_page=page_num,
+                    last_page=page_num,
+                    dpi=150  # Good balance of quality vs size
+                )
+                images.extend(page_images)
+        else:
+            convert_kwargs = {"dpi": 150}
+            if first_page:
+                convert_kwargs["first_page"] = first_page
+            if last_page:
+                convert_kwargs["last_page"] = last_page
+            images = convert_from_path(str(abs_path), **convert_kwargs)
+
+        if not images:
+            return f"Error: No pages could be converted from {file_path}"
+
+        # Convert images to base64
+        image_contents = []
+        for i, img in enumerate(images):
+            buffer = BytesIO()
+            img.save(buffer, format="PNG")
+            img_base64 = base64.b64encode(buffer.getvalue()).decode('utf-8')
+
+            page_num = specific_pages[i] if specific_pages else (first_page or 1) + i
+            image_contents.append({
+                "type": "text",
+                "text": f"\n--- Page {page_num} ---\n"
+            })
+            image_contents.append({
+                "type": "image_url",
+                "image_url": {"url": f"data:image/png;base64,{img_base64}"}
+            })
+
+        # Default document analysis prompt
+        if not analysis_prompt:
+            analysis_prompt = """Analyze this PDF document. Provide:
+
+1. **Document Type**: What kind of document is this (medical record, bill, letter, form, etc.)
+2. **Key Information**: Important details, dates, names, amounts, diagnoses, etc.
+3. **Layout & Structure**: How the document is organized
+4. **Tables/Data**: Any tabular data with key values
+5. **Notable Details**: Anything significant or unusual
+6. **Text Quality**: Is the text clear, or are there OCR/scan issues?
+
+Be thorough and extract all relevant information visible in the document."""
+
+        # Build message with prompt and all page images
+        message_content = [{"type": "text", "text": analysis_prompt}] + image_contents
+        message = HumanMessage(content=message_content)
+
+        # Get analysis from multimodal LLM
+        response = get_multimodal_llm().invoke([message])
+
+        page_info = f"pages {pages}" if pages else f"pages 1-{min(3, len(images))}"
+        return f"**PDF Analysis: {file_path}** ({page_info}, {len(images)} page(s) viewed)\n\n{response.content}"
+
+    except ImportError as e:
+        return f"Error: pdf2image library not available. Install with: pip install pdf2image\nDetails: {e}"
+    except Exception as e:
+        logger.exception(f"PDF view error for {file_path}")
+        return f"PDF view error: {str(e)}"
+
+
 # Define the audio analysis tool (uses OpenAI Whisper for transcription)
 def analyze_audio(
     file_path: str,

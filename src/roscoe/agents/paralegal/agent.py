@@ -60,6 +60,9 @@ from roscoe.agents.paralegal.tools import (
     move_file,  # Move/rename files within workspace
     copy_file,  # Copy files within workspace
     display_document,  # Display document/artifact in UI canvas
+    # Vision tools (multimodal analysis)
+    analyze_image,  # Analyze images using vision LLM
+    view_pdf,  # View and analyze PDFs using vision (converts pages to images)
     generate_directory_browser,  # Generate interactive HTML directory browser
     # Lob.com physical mail tools
     verify_address,  # Validate/standardize mailing addresses
@@ -177,6 +180,9 @@ personal_assistant_agent = create_deep_agent(
         copy_file,  # Copy files within workspace
         display_document,  # Display document/artifact in UI canvas (right panel)
         generate_directory_browser,  # Generate interactive HTML directory browser
+        # Vision tools (multimodal analysis)
+        analyze_image,  # Analyze images (accident photos, injuries, damage) using vision
+        view_pdf,  # View PDFs using vision (medical records, bills, scanned docs)
         # Lob.com physical mail tools
         verify_address,  # Validate/standardize mailing addresses before sending
         send_letter,  # Send letters via USPS (demand letters, notices)
