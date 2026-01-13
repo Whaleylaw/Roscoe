@@ -31,15 +31,15 @@ documents/
 # ===========================================
 # Old/Duplicate Files at Root (moved to src/roscoe/)
 # ===========================================
-agent.py
-models.py
-prompts.py
-tools.py
-sub_agents.py
-middleware.py
-skill_middleware.py
-medical_sub_agents.py
-roscoe_prompt.md
+/agent.py
+/models.py
+/prompts.py
+/tools.py
+/sub_agents.py
+/middleware.py
+/skill_middleware.py
+/medical_sub_agents.py
+/roscoe_prompt.md
 # GRAPH_RECURSION_LIMIT.md
 
 # ===========================================
