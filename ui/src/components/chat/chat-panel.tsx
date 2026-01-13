@@ -452,12 +452,12 @@ export function ChatPanel() {
   };
 
   return (
-    <div className="flex h-full flex-col bg-[#f8f7f4]">
+    <div className="flex h-full flex-col bg-[#f8f7f4] pb-24">
       {/* Messages - tool calls now render inline within messages */}
       <MessageList messages={messages} isStreaming={isLoading} />
 
-      {/* Input - positioned with bottom margin to move up from screen edge */}
-      <div className="border-t border-[#d4c5a9] bg-white px-4 py-3 mb-16">
+      {/* Input - positioned with clearance from bottom */}
+      <div className="border-t border-[#d4c5a9] bg-white px-4 py-3">
         {/* Status bar with cancel button */}
         {isLoading && (
           <div className="flex items-center justify-between text-xs text-[#8b7355] mb-2">

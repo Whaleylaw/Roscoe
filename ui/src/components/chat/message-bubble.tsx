@@ -224,10 +224,10 @@ export function MessageBubble({ role, content, timestamp, toolCalls, attachments
         )}
 
         {/* Message content */}
-        <div className={`px-4 py-3 max-w-[85%] shadow-sm ${
+        <div className={`max-w-[85%] shadow-sm ${
           isUser
-            ? "bg-[#c9a227] text-[#1e3a5f] rounded-[14px_14px_4px_14px]"
-            : "bg-[#f5f3ed] border border-[#d4c5a9] text-[#2c3e50] rounded-[14px_14px_14px_4px]"
+            ? "px-5 py-3 bg-[#c9a227] text-[#1e3a5f] rounded-[14px_14px_4px_14px]"
+            : "px-4 py-3 bg-[#f5f3ed] border border-[#d4c5a9] text-[#2c3e50] rounded-[14px_14px_14px_4px]"
         }`}>
           {isUser ? (
             <p className="text-[13px] whitespace-pre-wrap leading-relaxed font-medium">{content}</p>
