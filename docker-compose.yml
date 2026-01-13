@@ -74,9 +74,10 @@ services:
       redis:
         condition: service_healthy
     environment:
-      # CRITICAL: Unset LANGSERVE_GRAPHS so LangGraph reads from langgraph.json
+      # Override LANGSERVE_GRAPHS with all registered graphs
       # The base image bakes LANGSERVE_GRAPHS during build which becomes stale
-      LANGSERVE_GRAPHS: ""
+      # This must be kept in sync with langgraph.json
+      LANGSERVE_GRAPHS: '{"roscoe_paralegal": "/deps/roscoe/src/roscoe/agents/paralegal/agent.py:personal_assistant_agent", "roscoe_second_brain": "/deps/roscoe/src/roscoe/agents/second_brain/agent.py:second_brain_agent", "medical_records_agent": "/deps/roscoe/src/roscoe/agents/medical_records/agent.py:medical_records_agent"}'
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
       GOOGLE_API_KEY: ${GOOGLE_API_KEY}
       TAVILY_API_KEY: ${TAVILY_API_KEY:-}
