@@ -29,6 +29,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     # Git for pip installs from git repos
     git \
+    # LibreOffice for DOCX to PDF conversion (document templates)
+    libreoffice-writer \
+    libreoffice-common \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy only pyproject.toml first for better caching

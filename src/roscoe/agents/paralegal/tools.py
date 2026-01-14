@@ -3900,3 +3900,185 @@ def get_statute_status(case_name: str) -> str:
     except Exception as e:
         logger.error(f"Error getting SOL status: {e}")
         return f"❌ Error getting SOL status: {str(e)}"
+
+
+# =============================================================================
+# DOCUMENT TEMPLATE TOOLS - Generate documents from templates
+# =============================================================================
+
+def list_document_templates(
+    category: Optional[str] = None,
+) -> str:
+    """
+    List all available document templates.
+
+    Templates are DOCX files with merge fields ({{field_name}}) that can be
+    automatically populated with case data from the knowledge graph or manual input.
+
+    Args:
+        category: Optional filter by category (correspondence, legal, intake, etc.)
+
+    Returns:
+        Formatted list of templates with IDs, names, descriptions, and required inputs.
+
+    Examples:
+        list_document_templates()
+        list_document_templates(category="correspondence")
+    """
+    from roscoe.core.template_processor import list_templates
+
+    try:
+        templates = list_templates()
+
+        if category:
+            templates = [t for t in templates if t.get('category') == category]
+
+        if not templates:
+            msg = "No templates found"
+            if category:
+                msg += f" in category '{category}'"
+            msg += ". Templates should be placed in /workspace/Templates/ with .yaml metadata files."
+            return msg
+
+        lines = ["## Available Document Templates\n"]
+
+        for t in templates:
+            lines.append(f"### {t.get('name', 'Unnamed')}")
+            lines.append(f"**ID:** `{t.get('id')}`")
+            lines.append(f"**Description:** {t.get('description', 'No description')}")
+            lines.append(f"**Category:** {t.get('category', 'uncategorized')}")
+            lines.append(f"**Mode:** {t.get('input_mode', 'direct')}")
+
+            # Show required inputs based on mode
+            if t.get('input_mode') == 'graph' and t.get('graph_inputs'):
+                lines.append("**Required inputs:**")
+                for inp in t['graph_inputs']:
+                    req = "required" if inp.get('required') else "optional"
+                    lines.append(f"  - `{inp['name']}` ({req}): {inp.get('description', '')}")
+            elif t.get('fields'):
+                required_fields = [
+                    f for f in t['fields']
+                    if f.get('required') and f.get('source') not in ['computed', 'config']
+                ]
+                if required_fields:
+                    lines.append("**Required fields:**")
+                    for f in required_fields:
+                        lines.append(f"  - `{f['name']}`: {f.get('description', '')}")
+
+            lines.append("")
+
+        return "\n".join(lines)
+    except Exception as e:
+        logger.error(f"Error listing templates: {e}")
+        return f"❌ Error listing templates: {str(e)}"
+
+
+def create_document_from_template(
+    template_id: str,
+    case_name: Optional[str] = None,
+    inputs: Optional[Dict[str, str]] = None,
+    output_path: Optional[str] = None,
+) -> str:
+    """
+    Generate a document from a template.
+
+    Templates can operate in two modes:
+
+    **Graph mode (input_mode='graph'):**
+    - Provide case_name and required graph_inputs (like provider_name)
+    - The tool automatically pulls client info, dates, etc. from the knowledge graph
+    - Best for standard correspondence tied to a case
+
+    **Direct mode (input_mode='direct'):**
+    - Provide all required fields manually in the inputs dict
+    - Best for one-off letters or when graph data isn't available
+
+    Args:
+        template_id: Template ID (from list_document_templates)
+        case_name: Case folder name (required for graph mode, used for output path)
+        inputs: Dict of input values - graph_inputs for graph mode, or all fields for direct mode
+        output_path: Optional custom output path (default: /projects/{case}/correspondence/)
+
+    Returns:
+        Success message with path to generated PDF, or error message.
+
+    Examples:
+        # Graph-integrated: Medical records request (auto-pulls client info from graph)
+        create_document_from_template(
+            template_id="med-records-request-v1",
+            case_name="Wilson-MVA-2024",
+            inputs={"provider_name": "Allstar Chiropractic"}
+        )
+
+        # Direct input: Simple letter with all fields provided
+        create_document_from_template(
+            template_id="simple-letter-v1",
+            inputs={
+                "recipient_name": "John Smith",
+                "recipient_address": "123 Main St, Louisville, KY 40202",
+                "subject": "Follow-up",
+                "body": "Thank you for your time..."
+            }
+        )
+    """
+    from roscoe.core.template_processor import generate_document, get_template
+
+    inputs = inputs or {}
+
+    # Validate template exists
+    template = get_template(template_id)
+    if not template:
+        return f"❌ Template '{template_id}' not found. Use list_document_templates() to see available templates."
+
+    # Validate required inputs based on mode
+    if template.get('input_mode') == 'graph':
+        if not case_name:
+            return "❌ case_name is required for graph-integrated templates"
+
+        missing = []
+        for inp in template.get('graph_inputs', []):
+            if inp.get('required') and inp['name'] != 'case_name' and inp['name'] not in inputs:
+                missing.append(inp['name'])
+        if missing:
+            return f"❌ Missing required inputs: {', '.join(missing)}"
+    else:
+        # Direct mode - check required fields
+        missing = []
+        for field in template.get('fields', []):
+            if field.get('required') and field.get('source') not in ['computed', 'config']:
+                if field['name'] not in inputs:
+                    missing.append(field['name'])
+        if missing:
+            return f"❌ Missing required fields: {', '.join(missing)}"
+
+    # Generate document
+    try:
+        result = _run_calendar_async(generate_document(
+            template_id=template_id,
+            case_name=case_name,
+            graph_inputs=inputs if template.get('input_mode') == 'graph' else None,
+            direct_inputs=inputs if template.get('input_mode') != 'graph' else inputs,
+            output_path=output_path,
+        ))
+
+        if result.get('success'):
+            lines = [
+                f"✅ **Document Generated Successfully!**",
+                f"",
+                f"**Template:** {result.get('template_name')}",
+                f"**PDF:** `{result.get('pdf_path')}`",
+                f"**DOCX:** `{result.get('docx_path')}`",
+                f"",
+                f"**Fields merged:**",
+            ]
+            for k, v in result.get('fields_used', {}).items():
+                display_val = str(v)[:50] + "..." if len(str(v)) > 50 else str(v)
+                lines.append(f"  - {k}: {display_val}")
+
+            return "\n".join(lines)
+        else:
+            return f"❌ {result.get('error', 'Unknown error')}"
+
+    except Exception as e:
+        logger.error(f"Error generating document: {e}")
+        return f"❌ Error generating document: {str(e)}"

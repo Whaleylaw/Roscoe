@@ -1,0 +1,70 @@
+id: "letter-of-rep-v1"
+name: "Letter of Representation"
+description: "Letter notifying insurance company or other party of legal representation"
+category: "correspondence"
+output_filename: "letter_of_representation_{recipient_type}_{date}.pdf"
+
+input_mode: "graph"
+
+graph_inputs:
+  - name: "case_name"
+    type: "string"
+    description: "Case folder name"
+    required: true
+  - name: "recipient_name"
+    type: "string"
+    description: "Name of recipient (insurance company, adjuster, or party)"
+    required: true
+  - name: "recipient_address"
+    type: "string"
+    description: "Mailing address of recipient"
+    required: true
+  - name: "recipient_type"
+    type: "string"
+    description: "Type: insurer, defendant, attorney, other"
+    required: false
+
+fields:
+  - name: "client_name"
+    graph_query: |
+      MATCH (c:Case {name: $case_name})-[:HAS_CLIENT]->(cl:Client)
+      RETURN cl.name
+    description: "Client's full legal name"
+  - name: "client_dob"
+    graph_query: |
+      MATCH (c:Case {name: $case_name})-[:HAS_CLIENT]->(cl:Client)
+      RETURN cl.dob
+    description: "Client's date of birth"
+  - name: "date_of_injury"
+    graph_query: |
+      MATCH (c:Case {name: $case_name})
+      RETURN c.date_of_injury
+    description: "Date of accident/injury"
+  - name: "claim_number"
+    graph_query: |
+      MATCH (c:Case {name: $case_name})-[:HAS_CLAIM]->(claim)
+      WHERE claim.claim_number IS NOT NULL
+      RETURN claim.claim_number
+      LIMIT 1
+    description: "Insurance claim number (if known)"
+  - name: "recipient_name"
+    source: "input"
+    description: "Recipient name"
+  - name: "recipient_address"
+    source: "input"
+    description: "Recipient address"
+  - name: "firm_name"
+    source: "config"
+    description: "Law firm name"
+  - name: "firm_address"
+    source: "config"
+    description: "Law firm address"
+  - name: "firm_phone"
+    source: "config"
+    description: "Law firm phone number"
+  - name: "firm_fax"
+    source: "config"
+    description: "Law firm fax number"
+  - name: "today_date"
+    source: "computed"
+    description: "Today's date"

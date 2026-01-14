@@ -93,6 +93,9 @@ from roscoe.agents.paralegal.tools import (
     # Statute of limitations tools
     update_statute_status,  # Mark SOL as filed, tolled, or n/a
     get_statute_status,  # Get current SOL status for a case
+    # Document template tools
+    list_document_templates,  # List available document templates with metadata
+    create_document_from_template,  # Generate documents (letters, forms) from templates
 )
 # Gmail tools for email management (requires Google OAuth credentials)
 from roscoe.agents.paralegal.gmail_tools import (
@@ -237,6 +240,9 @@ personal_assistant_agent = create_deep_agent(
         # Statute of limitations tools
         update_statute_status,  # Mark SOL as filed/tolled/n/a
         get_statute_status,  # Get current SOL status for a case
+        # Document template tools
+        list_document_templates,  # List available document templates
+        create_document_from_template,  # Generate documents from templates
     ],
     middleware=[
         case_context_middleware,         # 1. Detect client/case mentions

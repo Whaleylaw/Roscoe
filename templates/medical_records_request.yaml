@@ -1,0 +1,59 @@
+id: "med-records-request-v1"
+name: "Medical Records Request"
+description: "HIPAA-compliant request letter for medical records from a healthcare provider"
+category: "correspondence"
+output_filename: "med_records_request_{provider_name}_{date}.pdf"
+
+input_mode: "graph"
+
+graph_inputs:
+  - name: "case_name"
+    type: "string"
+    description: "Case folder name (e.g., 'Wilson-MVA-2024')"
+    required: true
+  - name: "provider_name"
+    type: "string"
+    description: "Medical provider/facility name to request records from"
+    required: true
+
+fields:
+  - name: "client_name"
+    graph_query: |
+      MATCH (c:Case {name: $case_name})-[:HAS_CLIENT]->(cl:Client)
+      RETURN cl.name
+    description: "Client's full legal name"
+  - name: "client_dob"
+    graph_query: |
+      MATCH (c:Case {name: $case_name})-[:HAS_CLIENT]->(cl:Client)
+      RETURN cl.dob
+    description: "Client's date of birth"
+  - name: "client_ssn_last4"
+    graph_query: |
+      MATCH (c:Case {name: $case_name})-[:HAS_CLIENT]->(cl:Client)
+      RETURN right(cl.ssn, 4)
+    description: "Last 4 digits of SSN (for patient identification)"
+  - name: "provider_name"
+    source: "input"
+    description: "Provider facility name (from agent input)"
+  - name: "provider_address"
+    graph_query: |
+      MATCH (f:Facility {name: $provider_name})-[:LOCATED_AT]->(l:Location)
+      RETURN l.address + ', ' + l.city + ', ' + l.state + ' ' + l.zip
+    description: "Provider mailing address"
+  - name: "date_of_injury"
+    graph_query: |
+      MATCH (c:Case {name: $case_name})
+      RETURN c.date_of_injury
+    description: "Date of accident/injury"
+  - name: "firm_name"
+    source: "config"
+    description: "Law firm name (from firm_settings.json)"
+  - name: "firm_address"
+    source: "config"
+    description: "Law firm address"
+  - name: "firm_phone"
+    source: "config"
+    description: "Law firm phone number"
+  - name: "today_date"
+    source: "computed"
+    description: "Today's date (auto-generated)"

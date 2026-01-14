@@ -1,0 +1,45 @@
+id: "simple-letter-v1"
+name: "Simple Letter"
+description: "Generic letter template where all fields are provided by the agent"
+category: "correspondence"
+output_filename: "letter_{date}.pdf"
+
+input_mode: "direct"
+
+fields:
+  - name: "recipient_name"
+    type: "string"
+    required: true
+    description: "Recipient's full name"
+  - name: "recipient_address"
+    type: "string"
+    required: true
+    description: "Recipient's mailing address"
+  - name: "subject"
+    type: "string"
+    required: true
+    description: "Letter subject/RE line"
+  - name: "salutation"
+    type: "string"
+    required: false
+    description: "Greeting (default: 'Dear [recipient_name]')"
+  - name: "body"
+    type: "string"
+    required: true
+    description: "Main content of the letter"
+  - name: "closing"
+    type: "string"
+    required: false
+    description: "Closing phrase (default: 'Sincerely')"
+  - name: "firm_name"
+    source: "config"
+    description: "Law firm name"
+  - name: "firm_address"
+    source: "config"
+    description: "Law firm address"
+  - name: "firm_phone"
+    source: "config"
+    description: "Law firm phone"
+  - name: "today_date"
+    source: "computed"
+    description: "Today's date"
