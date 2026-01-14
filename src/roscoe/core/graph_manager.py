@@ -949,3 +949,116 @@ async def search_calendar_events(
     ''', params)
 
     return results if results else []
+
+
+async def update_case_sol_status(
+    case_name: str,
+    sol_status: str,
+    complaint_filed_date: Optional[str] = None,
+    sol_notes: Optional[str] = None
+) -> Dict:
+    """
+    Update statute of limitations status on a Case node.
+
+    Use this when:
+    - A complaint has been filed (status='filed', include filed_date)
+    - SOL is tolled for some reason (status='tolled', include notes explaining why)
+    - SOL doesn't apply (status='n/a', e.g., workers comp cases in some jurisdictions)
+
+    Args:
+        case_name: Case folder name (e.g., "John-Doe-MVA-01-15-2024")
+        sol_status: pending | filed | tolled | n/a
+        complaint_filed_date: Date complaint was filed (YYYY-MM-DD), required if status='filed'
+        sol_notes: Optional notes explaining the status
+
+    Returns:
+        Dict with updated status or error
+    """
+    from roscoe.core.graphiti_client import run_cypher_query
+
+    # Validate status
+    valid_statuses = {"pending", "filed", "tolled", "n/a"}
+    if sol_status not in valid_statuses:
+        return {"error": f"Invalid status '{sol_status}'. Must be one of: {valid_statuses}"}
+
+    # If status is 'filed', complaint_filed_date is required
+    if sol_status == "filed" and not complaint_filed_date:
+        return {"error": "complaint_filed_date is required when sol_status='filed'"}
+
+    # Build SET clauses
+    set_clauses = ["c.sol_status = $sol_status", "c.sol_updated_at = $now"]
+    params = {
+        "case_name": case_name,
+        "sol_status": sol_status,
+        "now": datetime.now().isoformat()
+    }
+
+    if complaint_filed_date:
+        set_clauses.append("c.complaint_filed_date = $complaint_filed_date")
+        params["complaint_filed_date"] = complaint_filed_date
+
+    if sol_notes:
+        set_clauses.append("c.sol_notes = $sol_notes")
+        params["sol_notes"] = sol_notes
+
+    set_str = ", ".join(set_clauses)
+
+    # Try updating Case node (primary label)
+    result = await run_cypher_query(f'''
+        MATCH (c:Case {{name: $case_name}})
+        SET {set_str}
+        RETURN c.name as case_name, c.sol_status as sol_status,
+               c.complaint_filed_date as complaint_filed_date, c.sol_notes as sol_notes
+    ''', params)
+
+    # If not found, try Entity with entity_type='Case'
+    if not result:
+        result = await run_cypher_query(f'''
+            MATCH (c:Entity {{entity_type: 'Case', name: $case_name}})
+            SET {set_str}
+            RETURN c.name as case_name, c.sol_status as sol_status,
+                   c.complaint_filed_date as complaint_filed_date, c.sol_notes as sol_notes
+        ''', params)
+
+    if result:
+        return {
+            "success": True,
+            "case_name": result[0].get("case_name"),
+            "sol_status": result[0].get("sol_status"),
+            "complaint_filed_date": result[0].get("complaint_filed_date"),
+            "sol_notes": result[0].get("sol_notes")
+        }
+    else:
+        return {"error": f"Case '{case_name}' not found in graph"}
+
+
+async def get_case_sol_status(case_name: str) -> Dict:
+    """
+    Get current SOL status for a case.
+
+    Returns:
+        Dict with sol_status, complaint_filed_date, sol_notes, accident_date, case_type
+    """
+    from roscoe.core.graphiti_client import run_cypher_query
+
+    # Try Case node first
+    result = await run_cypher_query('''
+        MATCH (c:Case {name: $case_name})
+        RETURN c.name as case_name, c.sol_status as sol_status,
+               c.complaint_filed_date as complaint_filed_date, c.sol_notes as sol_notes,
+               c.accident_date as accident_date, c.case_type as case_type
+    ''', {"case_name": case_name})
+
+    # Fallback to Entity
+    if not result:
+        result = await run_cypher_query('''
+            MATCH (c:Entity {entity_type: 'Case', name: $case_name})
+            RETURN c.name as case_name, c.sol_status as sol_status,
+                   c.complaint_filed_date as complaint_filed_date, c.sol_notes as sol_notes,
+                   c.accident_date as accident_date, c.case_type as case_type
+        ''', {"case_name": case_name})
+
+    if result:
+        return result[0]
+    else:
+        return {"error": f"Case '{case_name}' not found"}

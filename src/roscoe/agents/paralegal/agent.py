@@ -90,6 +90,9 @@ from roscoe.agents.paralegal.tools import (
     complete_calendar_event,  # Mark events as completed
     search_calendar,  # Search/list calendar events
     update_calendar_event,  # Update existing events
+    # Statute of limitations tools
+    update_statute_status,  # Mark SOL as filed, tolled, or n/a
+    get_statute_status,  # Get current SOL status for a case
 )
 # Gmail tools for email management (requires Google OAuth credentials)
 from roscoe.agents.paralegal.gmail_tools import (
@@ -231,6 +234,9 @@ personal_assistant_agent = create_deep_agent(
         complete_calendar_event,  # Mark events as completed
         search_calendar,  # Search/list calendar events with filters
         update_calendar_event,  # Reschedule or modify events
+        # Statute of limitations tools
+        update_statute_status,  # Mark SOL as filed/tolled/n/a
+        get_statute_status,  # Get current SOL status for a case
     ],
     middleware=[
         case_context_middleware,         # 1. Detect client/case mentions

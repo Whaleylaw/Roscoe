@@ -3766,3 +3766,137 @@ def update_calendar_event(
     except Exception as e:
         logger.error(f"Error updating calendar event: {e}")
         return f"❌ Error updating calendar event: {str(e)}"
+
+
+# ---------------------------------------------------------------------------
+# Statute of Limitations Tools
+# ---------------------------------------------------------------------------
+
+def update_statute_status(
+    case_name: str,
+    status: str,
+    complaint_filed_date: str = None,
+    notes: str = None,
+) -> str:
+    """
+    Update the statute of limitations status for a case.
+
+    Use this tool when:
+    - A complaint has been filed (use status='filed' with the filing date)
+    - The SOL is tolled (status='tolled' with explanation in notes)
+    - SOL doesn't apply to this case type (status='n/a')
+
+    Args:
+        case_name: Case folder name (e.g., "John-Doe-MVA-01-15-2024")
+        status: One of: pending | filed | tolled | n/a
+            - pending: Default, SOL clock is running
+            - filed: Complaint filed, SOL satisfied (requires complaint_filed_date)
+            - tolled: SOL paused for legal reason (explain in notes)
+            - n/a: SOL doesn't apply to this case
+        complaint_filed_date: Date complaint was filed (YYYY-MM-DD), required if status='filed'
+        notes: Optional explanation (e.g., "Tolled due to defendant's bankruptcy filing")
+
+    Returns:
+        Confirmation message with updated status
+    """
+    from roscoe.core.graph_manager import update_case_sol_status
+
+    try:
+        result = _run_calendar_async(
+            update_case_sol_status(
+                case_name=case_name,
+                sol_status=status,
+                complaint_filed_date=complaint_filed_date,
+                sol_notes=notes
+            )
+        )
+
+        if result.get("error"):
+            return f"❌ {result['error']}"
+
+        if result.get("success"):
+            lines = [f"✅ **SOL Status Updated for {case_name}**\n"]
+            lines.append(f"- **Status:** {result.get('sol_status', status)}")
+            if result.get("complaint_filed_date"):
+                lines.append(f"- **Complaint Filed:** {result['complaint_filed_date']}")
+            if result.get("sol_notes"):
+                lines.append(f"- **Notes:** {result['sol_notes']}")
+            return "\n".join(lines)
+        else:
+            return f"❌ Failed to update SOL status for {case_name}"
+
+    except Exception as e:
+        logger.error(f"Error updating SOL status: {e}")
+        return f"❌ Error updating SOL status: {str(e)}"
+
+
+def get_statute_status(case_name: str) -> str:
+    """
+    Get the current statute of limitations status for a case.
+
+    Args:
+        case_name: Case folder name
+
+    Returns:
+        Current SOL status including deadline, days remaining, and any filed complaint info
+    """
+    from roscoe.core.graph_manager import get_case_sol_status
+    from roscoe.workflow_engine.orchestrator.graph_state_computer import GraphStateComputer
+
+    try:
+        # Get stored SOL status from graph
+        sol_data = _run_calendar_async(get_case_sol_status(case_name))
+
+        if sol_data.get("error"):
+            return f"❌ {sol_data['error']}"
+
+        lines = [f"## SOL Status for {case_name}\n"]
+
+        stored_status = sol_data.get("sol_status")
+        complaint_date = sol_data.get("complaint_filed_date")
+        sol_notes = sol_data.get("sol_notes")
+
+        if stored_status == "filed":
+            lines.append(f"✅ **Status:** FILED")
+            lines.append(f"- Complaint filed: {complaint_date}")
+            if sol_notes:
+                lines.append(f"- Notes: {sol_notes}")
+            return "\n".join(lines)
+
+        if stored_status == "tolled":
+            lines.append(f"⏸️ **Status:** TOLLED")
+            if sol_notes:
+                lines.append(f"- Reason: {sol_notes}")
+            return "\n".join(lines)
+
+        if stored_status == "n/a":
+            lines.append(f"ℹ️ **Status:** N/A")
+            if sol_notes:
+                lines.append(f"- Notes: {sol_notes}")
+            return "\n".join(lines)
+
+        # Default: Calculate deadline
+        accident_date = sol_data.get("accident_date")
+        case_type = sol_data.get("case_type", "mva")
+
+        if not accident_date:
+            lines.append("⚠️ **Status:** Unknown - accident date not set")
+            return "\n".join(lines)
+
+        # Use the state computer's calculation
+        computer = GraphStateComputer()
+        sol_calc = computer._calculate_sol(accident_date, case_type.lower() if case_type else "mva")
+
+        status_emoji = {"critical": "🔴", "warning": "🟡", "safe": "🟢"}.get(sol_calc.get("status"), "⚪")
+
+        lines.append(f"{status_emoji} **Status:** {sol_calc.get('status', 'unknown').upper()}")
+        lines.append(f"- **Deadline:** {sol_calc.get('deadline', 'Unknown')}")
+        lines.append(f"- **Days Remaining:** {sol_calc.get('days_remaining', 'Unknown')}")
+        lines.append(f"- **Base Date:** {accident_date}")
+        lines.append(f"- **SOL Period:** {sol_calc.get('years', 2)} years ({case_type})")
+
+        return "\n".join(lines)
+
+    except Exception as e:
+        logger.error(f"Error getting SOL status: {e}")
+        return f"❌ Error getting SOL status: {str(e)}"

@@ -122,14 +122,33 @@ class DerivedWorkflowState(BaseModel):
         
         if self.statute_of_limitations:
             sol = self.statute_of_limitations
+            sol_status = sol.get("status", "unknown")
             lines.append("")
             lines.append(f"### Statute of Limitations")
-            lines.append(f"**Deadline:** {sol.get('deadline', 'Unknown')}")
-            lines.append(f"**Days Remaining:** {sol.get('days_remaining', 'Unknown')}")
-            if sol.get("status") == "critical":
-                lines.append("**⚠️ CRITICAL - Under 60 days remaining!**")
-            elif sol.get("status") == "warning":
-                lines.append("**⚠️ Warning - Under 180 days remaining**")
+
+            # Handle special statuses first
+            if sol_status == "filed":
+                lines.append("**✅ FILED** - Complaint has been filed")
+                if sol.get("complaint_filed_date"):
+                    lines.append(f"**Filed Date:** {sol['complaint_filed_date']}")
+                if sol.get("notes"):
+                    lines.append(f"**Notes:** {sol['notes']}")
+            elif sol_status == "tolled":
+                lines.append("**⏸️ TOLLED** - Statute is paused")
+                if sol.get("notes"):
+                    lines.append(f"**Reason:** {sol['notes']}")
+            elif sol_status == "n/a":
+                lines.append("**ℹ️ N/A** - Statute does not apply")
+                if sol.get("notes"):
+                    lines.append(f"**Notes:** {sol['notes']}")
+            else:
+                # Standard deadline tracking
+                lines.append(f"**Deadline:** {sol.get('deadline', 'Unknown')}")
+                lines.append(f"**Days Remaining:** {sol.get('days_remaining', 'Unknown')}")
+                if sol_status == "critical":
+                    lines.append("**🔴 CRITICAL - Under 60 days remaining!**")
+                elif sol_status == "warning":
+                    lines.append("**🟡 Warning - Under 180 days remaining**")
         
         return "\n".join(lines)
 
@@ -191,12 +210,15 @@ class GraphWorkflowStateComputer:
         current_phase_landmarks = state.get("current_phase_landmarks", {})
         landmarks_list = current_phase_landmarks.get("landmarks", [])
         
-        # Calculate SOL
+        # Calculate SOL (respects stored status overrides)
         sol = self._calculate_sol(
             case_info.get("accident_date"),
-            case_info.get("accident_type", "mva")
+            case_info.get("accident_type", "mva"),
+            sol_status=case_info.get("sol_status"),
+            complaint_filed_date=case_info.get("complaint_filed_date"),
+            sol_notes=case_info.get("sol_notes")
         )
-        
+
         return DerivedWorkflowState(
             case_id=case_name,
             client_name=client_info.get("name", "Unknown"),
@@ -264,10 +286,13 @@ class GraphWorkflowStateComputer:
         landmarks_complete = 0
         landmarks_total = len(phase_0_landmarks)
 
-        # Calculate SOL
+        # Calculate SOL (respects stored status overrides)
         sol = self._calculate_sol(
             case_info.get("accident_date"),
-            case_info.get("accident_type", "mva")
+            case_info.get("accident_type", "mva"),
+            sol_status=case_info.get("sol_status"),
+            complaint_filed_date=case_info.get("complaint_filed_date"),
+            sol_notes=case_info.get("sol_notes")
         )
 
         return DerivedWorkflowState(
@@ -296,31 +321,37 @@ class GraphWorkflowStateComputer:
         )
     
     async def _get_case_info(self, case_name: str) -> Dict[str, Any]:
-        """Query graph for case entity info."""
+        """Query graph for case entity info including SOL status."""
         from roscoe.core.graphiti_client import run_cypher_query
-        
+
         query = """
             MATCH (c:Case {name: $case_name})
-            RETURN c.name as name, c.case_type as case_type, c.accident_date as accident_date
+            RETURN c.name as name, c.case_type as case_type, c.accident_date as accident_date,
+                   c.sol_status as sol_status, c.complaint_filed_date as complaint_filed_date,
+                   c.sol_notes as sol_notes
             LIMIT 1
         """
         results = await run_cypher_query(query, {"case_name": case_name})
-        
+
         if results:
+            r = results[0]
             # Parse accident date from case name if not in entity
-            accident_date = results[0].get("accident_date")
-            accident_type = results[0].get("case_type", "mva")
-            
+            accident_date = r.get("accident_date")
+            accident_type = r.get("case_type", "mva")
+
             if not accident_date:
                 accident_date, accident_type = self._parse_case_name(case_name)
-            
+
             return {
-                "name": results[0].get("name", case_name),
+                "name": r.get("name", case_name),
                 "accident_date": accident_date,
                 "accident_type": accident_type,
+                "sol_status": r.get("sol_status"),
+                "complaint_filed_date": r.get("complaint_filed_date"),
+                "sol_notes": r.get("sol_notes"),
                 "created_at": datetime.now().isoformat(),
             }
-        
+
         # Fallback to parsing case name
         accident_date, accident_type = self._parse_case_name(case_name)
         return {
@@ -478,16 +509,59 @@ class GraphWorkflowStateComputer:
             "account_number": r.get("account_number"),
         } for r in results]
     
-    def _calculate_sol(self, accident_date: Optional[str], claim_type: str) -> Dict[str, Any]:
-        """Calculate statute of limitations."""
+    def _calculate_sol(
+        self,
+        accident_date: Optional[str],
+        claim_type: str,
+        sol_status: Optional[str] = None,
+        complaint_filed_date: Optional[str] = None,
+        sol_notes: Optional[str] = None
+    ) -> Dict[str, Any]:
+        """
+        Calculate statute of limitations, respecting stored status overrides.
+
+        If sol_status is set to 'filed', 'tolled', or 'n/a', returns that status
+        instead of calculating days remaining.
+
+        Args:
+            accident_date: Date of accident (YYYY-MM-DD)
+            claim_type: Type of case (mva, premise, slip_fall, etc.)
+            sol_status: Stored status override (pending, filed, tolled, n/a)
+            complaint_filed_date: Date complaint was filed if status='filed'
+            sol_notes: Any notes about the SOL status
+        """
+        # Check for status overrides first
+        if sol_status == "filed":
+            return {
+                "status": "filed",
+                "message": f"Complaint filed on {complaint_filed_date}" if complaint_filed_date else "Complaint filed",
+                "complaint_filed_date": complaint_filed_date,
+                "notes": sol_notes,
+            }
+
+        if sol_status == "tolled":
+            return {
+                "status": "tolled",
+                "message": sol_notes or "SOL tolled - see case notes",
+                "notes": sol_notes,
+            }
+
+        if sol_status == "n/a":
+            return {
+                "status": "n/a",
+                "message": sol_notes or "SOL not applicable to this case",
+                "notes": sol_notes,
+            }
+
+        # Default calculation
         if not accident_date:
             return {"status": "unknown", "message": "Accident date not known"}
-        
+
         try:
             accident_dt = datetime.fromisoformat(accident_date)
         except ValueError:
             return {"status": "unknown", "message": "Invalid accident date format"}
-        
+
         sol_years = {
             "mva": 2,
             "premise": 1,
@@ -497,17 +571,17 @@ class GraphWorkflowStateComputer:
             "wc": 2,
             "dog_bite": 1,
         }.get(claim_type, 2)
-        
+
         deadline = accident_dt + timedelta(days=sol_years * 365)
         days_remaining = (deadline - datetime.now()).days
-        
+
         if days_remaining <= 60:
             status = "critical"
         elif days_remaining <= 180:
             status = "warning"
         else:
             status = "safe"
-        
+
         return {
             "base_date": accident_date,
             "years": sol_years,
