@@ -10,7 +10,7 @@
 # 3. Installs Python dependencies from pyproject.toml
 # 4. Mounts source code at runtime (no rebuild needed for code changes)
 
-FROM langchain/langgraph-api:latest
+FROM langchain/langgraph-api:3.11
 
 # Set working directory
 WORKDIR /deps/Roscoe
