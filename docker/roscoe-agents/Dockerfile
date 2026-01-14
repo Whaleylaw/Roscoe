@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     # OCR support
     tesseract-ocr \
     # Image processing
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
     # Build tools for some Python packages
     build-essential \
