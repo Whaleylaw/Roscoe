@@ -12,8 +12,8 @@
 
 FROM langchain/langgraph-api:3.11
 
-# Set working directory
-WORKDIR /deps/Roscoe
+# Set working directory (lowercase to match docker-compose volume mounts)
+WORKDIR /deps/roscoe
 
 # Install system dependencies for PDF processing, image handling, etc.
 USER root
@@ -103,14 +103,14 @@ COPY docker/roscoe-agents/entrypoint.sh /storage/entrypoint.sh
 RUN chmod +x /storage/entrypoint.sh
 
 # Source code is mounted at runtime via docker-compose volumes:
-# /home/aaronwhaley/roscoe/src/roscoe:/deps/Roscoe/src/roscoe
+# /home/aaronwhaley/roscoe/src/roscoe:/deps/roscoe/src/roscoe
 # This allows code changes without rebuilding the image.
 
-# The LangGraph server expects code at /deps/Roscoe/src/roscoe
+# The LangGraph server expects code at /deps/roscoe/src/roscoe
 # which maps to the graphs defined in langgraph.json
 
 # Set Python path to find the mounted source
-ENV PYTHONPATH="/deps/Roscoe/src:${PYTHONPATH}"
+ENV PYTHONPATH="/deps/roscoe/src:${PYTHONPATH}"
 
 # Expose the LangGraph API port
 EXPOSE 8000

@@ -49,15 +49,15 @@ if [ -n "$REDIS_URI" ]; then
 fi
 
 # Verify source code is mounted
-if [ ! -d "/deps/Roscoe/src/roscoe" ]; then
-    echo "WARNING: Source code not mounted at /deps/Roscoe/src/roscoe"
+if [ ! -d "/deps/roscoe/src/roscoe" ]; then
+    echo "WARNING: Source code not mounted at /deps/roscoe/src/roscoe"
     echo "Make sure docker-compose.yml has the correct volume mount."
 fi
 
 # List available graphs from langgraph.json
-if [ -f "/deps/Roscoe/langgraph.json" ]; then
+if [ -f "/deps/roscoe/langgraph.json" ]; then
     echo "LangGraph configuration found:"
-    cat /deps/Roscoe/langgraph.json
+    cat /deps/roscoe/langgraph.json
 else
     echo "WARNING: langgraph.json not found"
 fi
@@ -72,6 +72,17 @@ echo ""
 unset LANGSERVE_GRAPHS
 echo "Cleared LANGSERVE_GRAPHS - will read from langgraph.json"
 
-# Start the LangGraph server
-# The server reads langgraph.json and serves the configured graphs
-exec langgraph up --host 0.0.0.0 --port 8000
+# Set server config
+export LANGGRAPH_SERVER_HOST=${LANGGRAPH_SERVER_HOST:-0.0.0.0}
+export PORT=${PORT:-8000}
+export UVICORN_TIMEOUT_KEEP_ALIVE=${UVICORN_TIMEOUT_KEEP_ALIVE:-75}
+
+# Start the LangGraph API server using uvicorn (same as base image)
+echo "Starting API server on $LANGGRAPH_SERVER_HOST:$PORT"
+exec uvicorn langgraph_api.server:app \
+    --log-config /api/logging.json \
+    --host $LANGGRAPH_SERVER_HOST \
+    --port $PORT \
+    --no-access-log \
+    --timeout-graceful-shutdown 3600 \
+    --timeout-keep-alive $UVICORN_TIMEOUT_KEEP_ALIVE
