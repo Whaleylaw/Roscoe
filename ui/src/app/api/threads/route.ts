@@ -123,3 +123,51 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
+export async function PATCH(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const { thread_id, metadata } = body;
+
+    if (!thread_id) {
+      return new Response(
+        JSON.stringify({ error: "thread_id is required" }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
+    console.log("[Threads API] Updating thread metadata:", thread_id, metadata);
+
+    // Update thread metadata via LangGraph API
+    const response = await fetch(`${LANGGRAPH_URL}/threads/${thread_id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ metadata }),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("[Threads API] LangGraph error:", response.status, errorText);
+      return new Response(
+        JSON.stringify({ error: `LangGraph error: ${response.status}`, details: errorText }),
+        { status: response.status, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
+    const data = await response.json();
+    console.log("[Threads API] Updated thread:", data.thread_id);
+
+    return new Response(JSON.stringify({ success: true, thread_id: data.thread_id, metadata: data.metadata }), {
+      headers: { "Content-Type": "application/json" },
+    });
+
+  } catch (error) {
+    console.error("[Threads API] Error:", error);
+    return new Response(
+      JSON.stringify({ error: "Failed to update thread", details: String(error) }),
+      { status: 500, headers: { "Content-Type": "application/json" } }
+    );
+  }
+}

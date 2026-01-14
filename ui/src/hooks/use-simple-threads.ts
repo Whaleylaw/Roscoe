@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { useWorkbenchStore } from "@/stores/workbench-store";
+import { updateThreadMetadata } from "@/lib/langgraph-client";
 
 export interface SimpleThread {
   id: string;
@@ -161,20 +162,33 @@ export function useSimpleThreads(
 
     // Debounce thread updates to avoid rapid re-renders during streaming
     const timeoutId = setTimeout(() => {
-      setThreads(prev => prev.map(t =>
-        t.id === activeThreadId
-          ? {
-              ...t,
-              messages: currentMessages,
-              messageCount: currentMessages.length,
-              updated: new Date().toISOString(),
-              // Update title based on first user message
-              title: getThreadTitle(currentMessages, t.title),
-              // Update status based on last message
-              status: getThreadStatus(currentMessages),
-            }
-          : t
-      ));
+      setThreads(prev => {
+        const updated = prev.map(t => {
+          if (t.id !== activeThreadId) return t;
+
+          const newTitle = getThreadTitle(currentMessages, t.title);
+          const titleChanged = newTitle !== t.title && t.title === "New Conversation";
+
+          // If title changed from "New Conversation", persist to API
+          if (titleChanged && !t.id.startsWith("thread-")) {
+            updateThreadMetadata(t.id, { title: newTitle }).then(success => {
+              if (success) {
+                console.log("[Threads] Auto-persisted title:", t.id, newTitle);
+              }
+            }).catch(console.error);
+          }
+
+          return {
+            ...t,
+            messages: currentMessages,
+            messageCount: currentMessages.length,
+            updated: new Date().toISOString(),
+            title: newTitle,
+            status: getThreadStatus(currentMessages),
+          };
+        });
+        return updated;
+      });
     }, 300); // 300ms debounce
 
     return () => clearTimeout(timeoutId);
@@ -275,6 +289,28 @@ export function useSimpleThreads(
     return activeThreadId;
   }, [activeThreadId]);
 
+  // Rename a thread (update title and persist to API)
+  const renameThread = useCallback(async (id: string, newTitle: string) => {
+    // Update local state immediately
+    setThreads(prev => prev.map(t =>
+      t.id === id ? { ...t, title: newTitle, updated: new Date().toISOString() } : t
+    ));
+
+    // If it's a LangGraph thread (UUID format), persist to API
+    if (!id.startsWith("thread-")) {
+      try {
+        const success = await updateThreadMetadata(id, { title: newTitle });
+        if (success) {
+          console.log("[Threads] Persisted title to LangGraph:", id, newTitle);
+        } else {
+          console.warn("[Threads] Failed to persist title to LangGraph:", id);
+        }
+      } catch (error) {
+        console.error("[Threads] Error persisting title:", error);
+      }
+    }
+  }, []);
+
   return {
     threads,
     activeThreadId,
@@ -283,6 +319,7 @@ export function useSimpleThreads(
     deleteThread,
     updateThreadLangGraphId,
     getLangGraphThreadId,
+    renameThread,
   };
 }
 

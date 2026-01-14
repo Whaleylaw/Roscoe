@@ -94,6 +94,36 @@ export async function createThread(): Promise<string | null> {
   }
 }
 
+/**
+ * Update thread metadata (e.g., title) in LangGraph via Next.js API route
+ */
+export async function updateThreadMetadata(
+  threadId: string,
+  metadata: Record<string, any>
+): Promise<boolean> {
+  try {
+    const response = await fetch("/api/threads", {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ thread_id: threadId, metadata }),
+    });
+
+    if (!response.ok) {
+      console.error("[LangGraph] Failed to update thread metadata:", response.status);
+      return false;
+    }
+
+    const data = await response.json();
+    console.log("[LangGraph] Updated thread metadata:", data);
+    return data.success === true;
+  } catch (error) {
+    console.error("[LangGraph] Error updating thread metadata:", error);
+    return false;
+  }
+}
+
 // Helper to extract text content from various message formats
 function extractTextContent(content: any): string {
   if (typeof content === "string") {

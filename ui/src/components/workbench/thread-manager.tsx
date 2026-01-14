@@ -1,6 +1,7 @@
 "use client";
 
-import { MessageSquare, Plus, Trash2, Circle, ArrowLeft } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
+import { MessageSquare, Plus, Trash2, Circle, ArrowLeft, Pencil, Check, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useSimpleThreads, SimpleThread } from "@/hooks/use-simple-threads";
@@ -9,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 export function ThreadManager() {
   const { messages, setMessages } = useWorkbenchStore();
-  const { threads, activeThreadId, createThread, switchThread, deleteThread } = useSimpleThreads(messages, setMessages);
+  const { threads, activeThreadId, createThread, switchThread, deleteThread, renameThread } = useSimpleThreads(messages, setMessages);
 
   // Deselect thread (go back to thread list view)
   const deselectThread = () => {
@@ -50,6 +51,7 @@ export function ThreadManager() {
                 isActive={thread.id === activeThreadId}
                 onSelect={() => switchThread(thread.id)}
                 onDelete={() => deleteThread(thread.id)}
+                onRename={(newTitle) => renameThread(thread.id, newTitle)}
               />
             ))
           )}
@@ -71,14 +73,54 @@ interface ThreadItemProps {
   isActive: boolean;
   onSelect: () => void;
   onDelete: () => void;
+  onRename: (newTitle: string) => void;
 }
 
-function ThreadItem({ thread, isActive, onSelect, onDelete }: ThreadItemProps) {
+function ThreadItem({ thread, isActive, onSelect, onDelete, onRename }: ThreadItemProps) {
+  const [isEditing, setIsEditing] = useState(false);
+  const [editTitle, setEditTitle] = useState(thread.title);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  // Focus input when editing starts
+  useEffect(() => {
+    if (isEditing && inputRef.current) {
+      inputRef.current.focus();
+      inputRef.current.select();
+    }
+  }, [isEditing]);
+
   const statusColor = {
     active: "text-blue-500",
     complete: "text-green-500",
     error: "text-red-500",
   }[thread.status];
+
+  const handleStartEdit = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setEditTitle(thread.title);
+    setIsEditing(true);
+  };
+
+  const handleSaveEdit = () => {
+    const trimmed = editTitle.trim();
+    if (trimmed && trimmed !== thread.title) {
+      onRename(trimmed);
+    }
+    setIsEditing(false);
+  };
+
+  const handleCancelEdit = () => {
+    setEditTitle(thread.title);
+    setIsEditing(false);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      handleSaveEdit();
+    } else if (e.key === "Escape") {
+      handleCancelEdit();
+    }
+  };
 
   return (
     <div
@@ -86,26 +128,79 @@ function ThreadItem({ thread, isActive, onSelect, onDelete }: ThreadItemProps) {
         "group flex items-center gap-2 rounded-md px-2 py-2 hover:bg-accent cursor-pointer",
         isActive && "bg-accent"
       )}
-      onClick={onSelect}
+      onClick={isEditing ? undefined : onSelect}
     >
       <Circle className={cn("h-2 w-2 fill-current shrink-0", statusColor)} />
       <div className="flex-1 min-w-0">
-        <p className="text-sm font-medium truncate">{thread.title}</p>
-        <p className="text-xs text-muted-foreground">
-          {thread.messageCount} messages
-        </p>
+        {isEditing ? (
+          <div className="flex items-center gap-1">
+            <input
+              ref={inputRef}
+              type="text"
+              value={editTitle}
+              onChange={(e) => setEditTitle(e.target.value)}
+              onKeyDown={handleKeyDown}
+              onBlur={handleSaveEdit}
+              className="h-6 text-sm px-1 flex-1 min-w-0 rounded border border-input bg-background"
+              onClick={(e) => e.stopPropagation()}
+            />
+            <Button
+              size="sm"
+              variant="ghost"
+              className="h-6 w-6 p-0"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleSaveEdit();
+              }}
+            >
+              <Check className="h-3 w-3" />
+            </Button>
+            <Button
+              size="sm"
+              variant="ghost"
+              className="h-6 w-6 p-0"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleCancelEdit();
+              }}
+            >
+              <X className="h-3 w-3" />
+            </Button>
+          </div>
+        ) : (
+          <>
+            <p className="text-sm font-medium truncate">{thread.title}</p>
+            <p className="text-xs text-muted-foreground">
+              {thread.messageCount} messages
+            </p>
+          </>
+        )}
       </div>
-      <Button
-        size="sm"
-        variant="ghost"
-        className="opacity-0 group-hover:opacity-100"
-        onClick={(e) => {
-          e.stopPropagation();
-          onDelete();
-        }}
-      >
-        <Trash2 className="h-3 w-3" />
-      </Button>
+      {!isEditing && (
+        <>
+          <Button
+            size="sm"
+            variant="ghost"
+            className="opacity-0 group-hover:opacity-100 h-6 w-6 p-0"
+            onClick={handleStartEdit}
+            title="Rename"
+          >
+            <Pencil className="h-3 w-3" />
+          </Button>
+          <Button
+            size="sm"
+            variant="ghost"
+            className="opacity-0 group-hover:opacity-100 h-6 w-6 p-0"
+            onClick={(e) => {
+              e.stopPropagation();
+              onDelete();
+            }}
+            title="Delete"
+          >
+            <Trash2 className="h-3 w-3" />
+          </Button>
+        </>
+      )}
     </div>
   );
 }
